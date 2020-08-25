@@ -1,0 +1,11 @@
+[c/ff4f4f:WARNING]
+Mod doesn't add new content
+
+Русификатор включает перевод для:
+
+• Calamity v1.4.5.2
+• Thorium v1.6.3.7
+• Elements Awoken v1.3.13.3
+• Mod of Redemption v0.7.9.62
+
+Обо всех изменениях в русификаторе вы можете узнать на нашем Дискорд сервере

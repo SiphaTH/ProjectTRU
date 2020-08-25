@@ -1,0 +1,156 @@
+﻿using Terraria.Localization;
+using Terraria.ModLoader;
+
+namespace CalamityRuTranslate.ElementsAwoken.NPCs
+{
+	internal class ElementsAwokenNPCs
+	{
+		public static void Setup()
+		{
+			NPCs();
+		}
+		private static void NPCs()
+		{
+			Mod elementsAwoken = ModLoader.GetMod("ElementsAwoken");
+			
+			elementsAwoken.GetNPC("AllKnowerBody").DisplayName.AddTranslation(GameCulture.Russian, "Всезнающий");
+			elementsAwoken.GetNPC("AllKnowerHead").DisplayName.AddTranslation(GameCulture.Russian, "Всезнающий");
+			elementsAwoken.GetNPC("AllKnowerTail").DisplayName.AddTranslation(GameCulture.Russian, "Всезнающий");
+			elementsAwoken.GetNPC("RadiantMaster").DisplayName.AddTranslation(GameCulture.Russian, "Светозарный мастер");
+			elementsAwoken.GetNPC("RadiantMasterDeath").DisplayName.AddTranslation(GameCulture.Russian, "Звук смерти светозарного воина");
+			elementsAwoken.GetNPC("RadiantWarrior").DisplayName.AddTranslation(GameCulture.Russian, "Светозарный воин");
+			elementsAwoken.GetNPC("SparklingSlime").DisplayName.AddTranslation(GameCulture.Russian, "Переливающийся слизень");
+			elementsAwoken.GetNPC("StarlightGlobule").DisplayName.AddTranslation(GameCulture.Russian, "Глобула звёздного света");
+			elementsAwoken.GetNPC("StellarStarfish").DisplayName.AddTranslation(GameCulture.Russian, "Космическая звезда");
+			elementsAwoken.GetNPC("AbyssSkull").DisplayName.AddTranslation(GameCulture.Russian, "Череп бездны");
+			elementsAwoken.GetNPC("AbyssSkullette").DisplayName.AddTranslation(GameCulture.Russian, "Черепушка бездны");
+			elementsAwoken.GetNPC("AccursedFlier").DisplayName.AddTranslation(GameCulture.Russian, "Проклятый летун");
+			elementsAwoken.GetNPC("DimensionalHive").DisplayName.AddTranslation(GameCulture.Russian, "Пространственный улей");
+			elementsAwoken.GetNPC("Immolator").DisplayName.AddTranslation(GameCulture.Russian, "Жертвенник огня");
+			elementsAwoken.GetNPC("ReaverSlime").DisplayName.AddTranslation(GameCulture.Russian, "Опустошающий слизень");
+			elementsAwoken.GetNPC("VoidFly").DisplayName.AddTranslation(GameCulture.Russian, "Пустотная муха");
+			elementsAwoken.GetNPC("VoidKnight").DisplayName.AddTranslation(GameCulture.Russian, "Пустотный рыцарь");
+			elementsAwoken.GetNPC("ZergCaster").DisplayName.AddTranslation(GameCulture.Russian, "Зерг-заклинатель");
+			elementsAwoken.GetNPC("EtherealHunter").DisplayName.AddTranslation(GameCulture.Russian, "Эфирный охотник");
+			elementsAwoken.GetNPC("VoidCrawler").DisplayName.AddTranslation(GameCulture.Russian, "Пустотный ползун");
+			elementsAwoken.GetNPC("VoidGolem").DisplayName.AddTranslation(GameCulture.Russian, "Пустотный голем");
+			elementsAwoken.GetNPC("ArmoredTrencherBody").DisplayName.AddTranslation(GameCulture.Russian, "Бронированный траншеекопатель");
+			elementsAwoken.GetNPC("ArmoredTrencherHead").DisplayName.AddTranslation(GameCulture.Russian, "Бронированный траншеекопатель");
+			elementsAwoken.GetNPC("ArmoredTrencherTail").DisplayName.AddTranslation(GameCulture.Russian, "Бронированный траншеекопатель");
+			elementsAwoken.GetNPC("AncientAmalgam").DisplayName.AddTranslation(GameCulture.Russian, "Древняя амальгама");
+			elementsAwoken.GetNPC("AncientAmalgamDeath").DisplayName.AddTranslation(GameCulture.Russian, "Древняя амальгама");
+			elementsAwoken.GetNPC("AncientAmalgamFist").DisplayName.AddTranslation(GameCulture.Russian, "Кулак древней амальгамы");
+			elementsAwoken.GetNPC("Izaris").DisplayName.AddTranslation(GameCulture.Russian, "Изарис");
+			elementsAwoken.GetNPC("Kirvein").DisplayName.AddTranslation(GameCulture.Russian, "Кирвейн");
+			elementsAwoken.GetNPC("Krecheus").DisplayName.AddTranslation(GameCulture.Russian, "Кречеус");
+			elementsAwoken.GetNPC("Xernon").DisplayName.AddTranslation(GameCulture.Russian, "Ксернон");
+			elementsAwoken.GetNPC("CrystalSerpentBody").DisplayName.AddTranslation(GameCulture.Russian, "Кристальный змей");
+			elementsAwoken.GetNPC("CrystalSerpentHead").DisplayName.AddTranslation(GameCulture.Russian, "Кристальный змей");
+			elementsAwoken.GetNPC("CrystalSerpentTail").DisplayName.AddTranslation(GameCulture.Russian, "Кристальный змей");
+			elementsAwoken.GetNPC("EnergySeeker").DisplayName.AddTranslation(GameCulture.Russian, "Ищущий энергию");
+			elementsAwoken.GetNPC("AquaticReaper").DisplayName.AddTranslation(GameCulture.Russian, "Прислужник Акваус");
+			elementsAwoken.GetNPC("Aqueous").DisplayName.AddTranslation(GameCulture.Russian, "Акваус");
+			elementsAwoken.GetNPC("AqueousMinion1").DisplayName.AddTranslation(GameCulture.Russian, "Прислужник Акваус");
+			elementsAwoken.GetNPC("AqueousMinion2").DisplayName.AddTranslation(GameCulture.Russian, "Прислужник Акваус");
+			elementsAwoken.GetNPC("Azana").DisplayName.AddTranslation(GameCulture.Russian, "Азана");
+			elementsAwoken.GetNPC("AzanaEye").DisplayName.AddTranslation(GameCulture.Russian, "Азана");
+			elementsAwoken.GetNPC("InfectionMouth").DisplayName.AddTranslation(GameCulture.Russian, "Заражающие уста");
+			elementsAwoken.GetNPC("CosmicObserver").DisplayName.AddTranslation(GameCulture.Russian, "Космический наблюдатель");
+			elementsAwoken.GetNPC("CosmicObserverHand").DisplayName.AddTranslation(GameCulture.Russian, "Рука космического наблюдателя");
+			elementsAwoken.GetNPC("CosmicObserverSpawn").DisplayName.AddTranslation(GameCulture.Russian, "Космический наблюдатель");
+			elementsAwoken.GetNPC("Furosia").DisplayName.AddTranslation(GameCulture.Russian, "Фуроза");
+			elementsAwoken.GetNPC("HealingHearth").DisplayName.AddTranslation(GameCulture.Russian, "Исцеляющее сердце");
+			elementsAwoken.GetNPC("Infernace").DisplayName.AddTranslation(GameCulture.Russian, "Инфернэйс");
+			elementsAwoken.GetNPC("InfernaceSpawner").DisplayName.AddTranslation(GameCulture.Russian, "Страж Инфернэйса");
+			elementsAwoken.GetNPC("RockLarge").DisplayName.AddTranslation(GameCulture.Russian, "Камень");
+			elementsAwoken.GetNPC("RockMedium").DisplayName.AddTranslation(GameCulture.Russian, "Камень");
+			elementsAwoken.GetNPC("RockSmall").DisplayName.AddTranslation(GameCulture.Russian, "Камень");
+			elementsAwoken.GetNPC("Obsidious").DisplayName.AddTranslation(GameCulture.Russian, "Обсидиус");
+			elementsAwoken.GetNPC("ObsidiousHand").DisplayName.AddTranslation(GameCulture.Russian, "Рука Обсидиуса");
+			elementsAwoken.GetNPC("ObsidiousHuman").DisplayName.AddTranslation(GameCulture.Russian, "Обсидиус");
+			elementsAwoken.GetNPC("ObsidiousTransition").DisplayName.AddTranslation(GameCulture.Russian, "Обсидиус");
+			elementsAwoken.GetNPC("Permafrost").DisplayName.AddTranslation(GameCulture.Russian, "Пермафрост");
+			elementsAwoken.GetNPC("PermafrostMinion").DisplayName.AddTranslation(GameCulture.Russian, "Дух Пермафроста");
+			elementsAwoken.GetNPC("PermaOrbital").DisplayName.AddTranslation(GameCulture.Russian, "Спутник Пермафроста");
+			elementsAwoken.GetNPC("RegarothBody").DisplayName.AddTranslation(GameCulture.Russian, "Регарот");
+			elementsAwoken.GetNPC("RegarothHead").DisplayName.AddTranslation(GameCulture.Russian, "Регарот");
+			elementsAwoken.GetNPC("RegarothTail").DisplayName.AddTranslation(GameCulture.Russian, "Регарот");
+			elementsAwoken.GetNPC("RegarothMinionBody").DisplayName.AddTranslation(GameCulture.Russian, "Громоподобный");
+			elementsAwoken.GetNPC("RegarothMinionHead").DisplayName.AddTranslation(GameCulture.Russian, "Громоподобный");
+			elementsAwoken.GetNPC("RegarothMinionTail").DisplayName.AddTranslation(GameCulture.Russian, "Громоподобный");
+			elementsAwoken.GetNPC("MiniFighter").DisplayName.AddTranslation(GameCulture.Russian, "Мини воин");
+			elementsAwoken.GetNPC("ScourgeFighter").DisplayName.AddTranslation(GameCulture.Russian, "Карающий воин");
+			elementsAwoken.GetNPC("GuardianProbe").DisplayName.AddTranslation(GameCulture.Russian, "Храмовый страж");
+			elementsAwoken.GetNPC("TheGuardian").DisplayName.AddTranslation(GameCulture.Russian, "Хранитель");
+			elementsAwoken.GetNPC("TheGuardianFly").DisplayName.AddTranslation(GameCulture.Russian, "Хранитель");
+			elementsAwoken.GetNPC("AncientWyrmArms").DisplayName.AddTranslation(GameCulture.Russian, "Древний змей");
+			elementsAwoken.GetNPC("AncientWyrmBody").DisplayName.AddTranslation(GameCulture.Russian, "Древний змей");
+			elementsAwoken.GetNPC("AncientWyrmHead").DisplayName.AddTranslation(GameCulture.Russian, "Древний змей");
+			elementsAwoken.GetNPC("AncientWyrmTail").DisplayName.AddTranslation(GameCulture.Russian, "Древний змей");
+			elementsAwoken.GetNPC("TheEye").DisplayName.AddTranslation(GameCulture.Russian, "Глаз");
+			elementsAwoken.GetNPC("VoidLeviathanBody").DisplayName.AddTranslation(GameCulture.Russian, "Пустотный левиафан");
+			elementsAwoken.GetNPC("VoidLeviathanHead").DisplayName.AddTranslation(GameCulture.Russian, "Пустотный левиафан");
+			elementsAwoken.GetNPC("VoidLeviathanTail").DisplayName.AddTranslation(GameCulture.Russian, "Пустотный левиафан");
+			elementsAwoken.GetNPC("VoidLeviathanOrb").DisplayName.AddTranslation(GameCulture.Russian, "Сфера пустоты");
+			elementsAwoken.GetNPC("ElderShadeWyrmBody").DisplayName.AddTranslation(GameCulture.Russian, "Древний теневой змей");
+			elementsAwoken.GetNPC("ElderShadeWyrmHead").DisplayName.AddTranslation(GameCulture.Russian, "Древний теневой змей");
+			elementsAwoken.GetNPC("ElderShadeWyrmTail").DisplayName.AddTranslation(GameCulture.Russian, "Древний теневой змей");
+			elementsAwoken.GetNPC("ShadeWyrmBody").DisplayName.AddTranslation(GameCulture.Russian, "Теневой змей");
+			elementsAwoken.GetNPC("ShadeWyrmHead").DisplayName.AddTranslation(GameCulture.Russian, "Теневой змей");
+			elementsAwoken.GetNPC("ShadeWyrmTail").DisplayName.AddTranslation(GameCulture.Russian, "Теневой змей");
+			elementsAwoken.GetNPC("BarrenOrbital").DisplayName.AddTranslation(GameCulture.Russian, "Безжизненная душа");
+			elementsAwoken.GetNPC("BarrenSoul").DisplayName.AddTranslation(GameCulture.Russian, "Безжизненная душа");
+			elementsAwoken.GetNPC("Firefly").DisplayName.AddTranslation(GameCulture.Russian, "Огненный светлячок");
+			elementsAwoken.GetNPC("SoulOfInfernace").DisplayName.AddTranslation(GameCulture.Russian, "Душа Инфернэйса");
+			elementsAwoken.GetNPC("Volcanox").DisplayName.AddTranslation(GameCulture.Russian, "Вулканокс");
+			elementsAwoken.GetNPC("VolcanoxHook").DisplayName.AddTranslation(GameCulture.Russian, "Крюк Вулканокса");
+			elementsAwoken.GetNPC("VolcanoxTentacle").DisplayName.AddTranslation(GameCulture.Russian, "Щупальце Вулканокса");
+			elementsAwoken.GetNPC("Wasteland").DisplayName.AddTranslation(GameCulture.Russian, "Картул");
+			elementsAwoken.GetNPC("WastelandDeath").DisplayName.AddTranslation(GameCulture.Russian, "Картул");
+			elementsAwoken.GetNPC("WastelandEgg").DisplayName.AddTranslation(GameCulture.Russian, "Яйцо");
+			elementsAwoken.GetNPC("WastelandMinion").DisplayName.AddTranslation(GameCulture.Russian, "Мутировавший скорпион");
+			elementsAwoken.GetNPC("ChaosKnight").DisplayName.AddTranslation(GameCulture.Russian, "Хаосный рыцарь");
+			elementsAwoken.GetNPC("ChaosWraith").DisplayName.AddTranslation(GameCulture.Russian, "Хаосный фантом");
+			elementsAwoken.GetNPC("MysticBunny").DisplayName.AddTranslation(GameCulture.Russian, "Мистический кролик");
+			elementsAwoken.GetNPC("DesertElemental").DisplayName.AddTranslation(GameCulture.Russian, "Пустынный элементаль");
+			elementsAwoken.GetNPC("FireElemental").DisplayName.AddTranslation(GameCulture.Russian, "Огненный элементаль");
+			elementsAwoken.GetNPC("FrostElemental").DisplayName.AddTranslation(GameCulture.Russian, "Морозный элементаль");
+			elementsAwoken.GetNPC("SkyElemental").DisplayName.AddTranslation(GameCulture.Russian, "Небесный элементаль");
+			elementsAwoken.GetNPC("VoidElemental").DisplayName.AddTranslation(GameCulture.Russian, "Пустотный элементаль");
+			elementsAwoken.GetNPC("WaterElemental").DisplayName.AddTranslation(GameCulture.Russian, "Водный элементаль");
+			elementsAwoken.GetNPC("VampireBat").DisplayName.AddTranslation(GameCulture.Russian, "Летучая мышь-вампир");
+			elementsAwoken.GetNPC("GiantVampireBat").DisplayName.AddTranslation(GameCulture.Russian, "Гигантская летучая мышь-вампир");
+			elementsAwoken.GetNPC("Gnome").DisplayName.AddTranslation(GameCulture.Russian, "Гном");
+			elementsAwoken.GetNPC("InfernoSpirit").DisplayName.AddTranslation(GameCulture.Russian, "Адский дух");
+			elementsAwoken.GetNPC("Pebleer").DisplayName.AddTranslation(GameCulture.Russian, "Галечник");
+			elementsAwoken.GetNPC("Stoneer").DisplayName.AddTranslation(GameCulture.Russian, "Каменщик");
+			elementsAwoken.GetNPC("DragonCharger").DisplayName.AddTranslation(GameCulture.Russian, "Драконий набрасыватель");
+			elementsAwoken.GetNPC("GreaterDrakoniteGolem").DisplayName.AddTranslation(GameCulture.Russian, "Дракорыцарь");
+			elementsAwoken.GetNPC("MagmaSlime").DisplayName.AddTranslation(GameCulture.Russian, "Магмовый слизень");
+			elementsAwoken.GetNPC("DragonBat").DisplayName.AddTranslation(GameCulture.Russian, "Дракономышь");
+			elementsAwoken.GetNPC("DragonSlime").DisplayName.AddTranslation(GameCulture.Russian, "Драконослизень");
+			elementsAwoken.GetNPC("DragonWarrior").DisplayName.AddTranslation(GameCulture.Russian, "Драконовоин");
+			elementsAwoken.GetNPC("DrakoniteElemental").DisplayName.AddTranslation(GameCulture.Russian, "Драконитовый элементаль");
+			elementsAwoken.GetNPC("FlyingJaw").DisplayName.AddTranslation(GameCulture.Russian, "Летающая пасть");
+			elementsAwoken.GetNPC("PetalClasper").DisplayName.AddTranslation(GameCulture.Russian, "Лепестковый класпер");
+			elementsAwoken.GetNPC("GiantTick").DisplayName.AddTranslation(GameCulture.Russian, "Гигантский клещ");
+			elementsAwoken.GetNPC("MortemWalker").DisplayName.AddTranslation(GameCulture.Russian, "Посмертный ходок");
+			elementsAwoken.GetNPC("SkyCrawler").DisplayName.AddTranslation(GameCulture.Russian, "Небесный ползун");
+			elementsAwoken.GetNPC("Puff").DisplayName.AddTranslation(GameCulture.Russian, "Пушистик");
+			elementsAwoken.GetNPC("SpikedPuff").DisplayName.AddTranslation(GameCulture.Russian, "Шипованный пушистик");
+			elementsAwoken.GetNPC("StellarBat").DisplayName.AddTranslation(GameCulture.Russian, "Звёздная летучая мышь");
+			elementsAwoken.GetNPC("StellarCenturion").DisplayName.AddTranslation(GameCulture.Russian, "Звёздный центурион");
+			elementsAwoken.GetNPC("StellarEntity").DisplayName.AddTranslation(GameCulture.Russian, "Звёздная сущность");
+			elementsAwoken.GetNPC("MiniToySlime").DisplayName.AddTranslation(GameCulture.Russian, "Маленький игрушечный слизень");
+			elementsAwoken.GetNPC("ToySlime").DisplayName.AddTranslation(GameCulture.Russian, "Игрушечный слизень");
+			elementsAwoken.GetNPC("MutatedScorpion").DisplayName.AddTranslation(GameCulture.Russian, "Мутировавший скорпион");
+			elementsAwoken.GetNPC("SolarFragment").DisplayName.AddTranslation(GameCulture.Russian, "Солнечный фрагмент");
+			elementsAwoken.GetNPC("InfernaceGuardian").DisplayName.AddTranslation(GameCulture.Russian, "Страж Инфернэйса");
+			elementsAwoken.GetNPC("Scorpion").DisplayName.AddTranslation(GameCulture.Russian, "Скорпион");
+			elementsAwoken.GetNPC("GiantToad").DisplayName.AddTranslation(GameCulture.Russian, "Гигантская жаба");
+			elementsAwoken.GetNPC("Alchemist").DisplayName.AddTranslation(GameCulture.Russian, "Алхимик");
+			elementsAwoken.GetNPC("Psychologist").DisplayName.AddTranslation(GameCulture.Russian, "Психолог");
+			elementsAwoken.GetNPC("Storyteller").DisplayName.AddTranslation(GameCulture.Russian, "Сказитель");
+		}
+	}
+}

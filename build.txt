@@ -1,0 +1,7 @@
+displayName = Project tRU
+author = Yum
+version = 1.5.1.1
+hideCode = true
+hideResources = true
+weakReferences = CalamityMod, ThoriumMod, ElementsAwoken, Redemption
+homepage = https://discord.gg/rVZYT3u
