@@ -1040,6 +1040,7 @@ namespace CalamityRuTranslate
 			{
 				ThoriumBuffs.Setup();
 				ThoriumTiles.Setup();
+                ThoriumChestName.Setup();
 				ThoriumNpc.Setup();
 				ThoriumItemName.Setup();
 				ThoriumItemTooltip.Setup();
