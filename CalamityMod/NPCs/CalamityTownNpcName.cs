@@ -123,7 +123,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 				{
 					if (npc.GivenName == "StreakistYT")
 					{
-						npc.GivenName = "СтрикистУАЙТИ";
+						npc.GivenName = "СтрикистYT";
 					}
 					if (npc.GivenName == "Neoplasmatic")
 					{
@@ -132,6 +132,14 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					if (npc.GivenName == "Devin")
 					{
 						npc.GivenName = "Девин";
+					}
+					if (npc.GivenName == "Woffle")
+					{
+						npc.GivenName = "Воффл";
+					}
+					if (npc.GivenName == "Cameron")
+					{
+						npc.GivenName = "Кэмерон";
 					}
 					if (npc.GivenName == "Ben Shapiro")
 					{
@@ -147,7 +155,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Asher")
 					{
-						npc.GivenName = "Ашер";
+						npc.GivenName = "Эшер";
 					}
 					if (npc.GivenName == "Bradley")
 					{
@@ -163,7 +171,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Brett")
 					{
-						npc.GivenName = "Бретт";
+						npc.GivenName = "Брэтт";
 					}
 					if (npc.GivenName == "Chris")
 					{
@@ -187,7 +195,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Daniel")
 					{
-						npc.GivenName = "Даниил";
+						npc.GivenName = "Дэниел";
 					}
 					if (npc.GivenName == "Dylan")
 					{
@@ -267,7 +275,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Scott")
 					{
-						npc.GivenName = "Скот";
+						npc.GivenName = "Скотт";
 					}
 					if (npc.GivenName == "Seth")
 					{
@@ -291,7 +299,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Wyatt")
 					{
-						npc.GivenName = "Уайт";
+						npc.GivenName = "Уайатт";
 					}
 					if (npc.GivenName == "Vlad")
 					{
@@ -319,7 +327,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Calvin")
 					{
-						npc.GivenName = "Кальвин";
+						npc.GivenName = "Кельвин";
 					}
 					if (npc.GivenName == "Edmund")
 					{
@@ -339,7 +347,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Frank")
 					{
-						npc.GivenName = "Франк";
+						npc.GivenName = "Фрэнк";
 					}
 					if (npc.GivenName == "Frederick")
 					{
@@ -367,7 +375,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Isaac")
 					{
-						npc.GivenName = "Исаак";
+						npc.GivenName = "Айзек";
 					}
 					if (npc.GivenName == "Joseph")
 					{
@@ -375,7 +383,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Louis")
 					{
-						npc.GivenName = "Лойс";
+						npc.GivenName = "Луис";
 					}
 					if (npc.GivenName == "Milton")
 					{
@@ -395,11 +403,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Walter")
 					{
-						npc.GivenName = "Волтер";
+						npc.GivenName = "Уолтер";
 					}
 					if (npc.GivenName == "Wilbur")
 					{
-						npc.GivenName = "Вилбур";
+						npc.GivenName = "Уилбур";
 					}
 				}
 
@@ -415,15 +423,15 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Allison")
 					{
-						npc.GivenName = "Элисон";
+						npc.GivenName = "Эллисон";
 					}
 					if (npc.GivenName == "Amy")
 					{
-						npc.GivenName = "Эмми";
+						npc.GivenName = "Эми";
 					}
 					if (npc.GivenName == "Caitlin")
 					{
-						npc.GivenName = "Кэйтлин";
+						npc.GivenName = "Катлин";
 					}
 					if (npc.GivenName == "Carly")
 					{
@@ -447,7 +455,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Heather")
 					{
-						npc.GivenName = "Хезер";
+						npc.GivenName = "Хэйзер";
 					}
 					if (npc.GivenName == "Helen")
 					{
@@ -471,11 +479,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Katelyn")
 					{
-						npc.GivenName = "Кетелин";
+						npc.GivenName = "Кейтилин";
 					}
 					if (npc.GivenName == "Katherine")
 					{
-						npc.GivenName = "Катерина";
+						npc.GivenName = "Кейтрин";
 					}
 					if (npc.GivenName == "Kathryn")
 					{
@@ -483,11 +491,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Katie")
 					{
-						npc.GivenName = "Кэти";
+						npc.GivenName = "Кейти";
 					}
 					if (npc.GivenName == "Kayla")
 					{
-						npc.GivenName = "Кэйл";
+						npc.GivenName = "Кайла";
 					}
 					if (npc.GivenName == "Lisa")
 					{
@@ -495,11 +503,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Lorraine")
 					{
-						npc.GivenName = "Лорэйн";
+						npc.GivenName = "Лоррейн";
 					}
 					if (npc.GivenName == "Madeline")
 					{
-						npc.GivenName = "Маделина";
+						npc.GivenName = "Мэделин";
 					}
 					if (npc.GivenName == "Molly")
 					{
@@ -511,11 +519,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 				{
 					if (npc.GivenName == "Bazdin")
 					{
-						npc.GivenName = "Баздин";
+						npc.GivenName = "Бэйздин";
 					}
 					if (npc.GivenName == "Beldin")
 					{
-						npc.GivenName = "Белдин";
+						npc.GivenName = "Бельдин";
 					}
 					if (npc.GivenName == "Boften")
 					{
@@ -543,11 +551,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Duerthen")
 					{
-						npc.GivenName = "Дьюртен";
+						npc.GivenName = "Дюрфен";
 					}
 					if (npc.GivenName == "Durim")
 					{
-						npc.GivenName = "Дьюрим";
+						npc.GivenName = "Дурим";
 					}
 					if (npc.GivenName == "Fikod")
 					{
@@ -555,7 +563,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Garval")
 					{
-						npc.GivenName = "Гарваль";
+						npc.GivenName = "Гарвал";
 					}
 					if (npc.GivenName == "Gimli")
 					{
@@ -567,11 +575,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Jarut")
 					{
-						npc.GivenName = "Ярут";
+						npc.GivenName = "Джарут";
 					}
 					if (npc.GivenName == "Morthal")
 					{
-						npc.GivenName = "Мортал";
+						npc.GivenName = "Морфал";
 					}
 					if (npc.GivenName == "Norkas")
 					{
@@ -579,15 +587,15 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Norsun")
 					{
-						npc.GivenName = "Норсан";
+						npc.GivenName = "Норсун";
 					}
 					if (npc.GivenName == "Oten")
 					{
-						npc.GivenName = "Отен";
+						npc.GivenName = "Оутен";
 					}
 					if (npc.GivenName == "Ovbere")
 					{
-						npc.GivenName = "Овбир";
+						npc.GivenName = "Овбер";
 					}
 					if (npc.GivenName == "Tordak")
 					{
@@ -595,7 +603,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Urist")
 					{
-						npc.GivenName = "Арист";
+						npc.GivenName = "Урист";
 					}
 				}
 
@@ -603,11 +611,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 				{
 					if (npc.GivenName == "Abdosir")
 					{
-						npc.GivenName = "Абдосир";
+						npc.GivenName = "Абдозир";
 					}
 					if (npc.GivenName == "Ahinadab")
 					{
-						npc.GivenName = "Ахинадаб";
+						npc.GivenName = "Ахинадав";
 					}
 					if (npc.GivenName == "Ahirom")
 					{
@@ -619,7 +627,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Batnoam")
 					{
-						npc.GivenName = "Батноам";
+						npc.GivenName = "Батном";
 					}
 					if (npc.GivenName == "Bodashtart")
 					{
@@ -627,7 +635,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Danel")
 					{
-						npc.GivenName = "Данель";
+						npc.GivenName = "Данел";
 					}
 					if (npc.GivenName == "Hannibal")
 					{
@@ -635,7 +643,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Hanno")
 					{
-						npc.GivenName = "Ханно";
+						npc.GivenName = "Ганнон";
 					}
 					if (npc.GivenName == "Hiram")
 					{
@@ -647,11 +655,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Philosir")
 					{
-						npc.GivenName = "Филосир";
+						npc.GivenName = "Филозир";
 					}
 					if (npc.GivenName == "Sikarbaal")
 					{
-						npc.GivenName = "Сикобаль";
+						npc.GivenName = "Сикарбаал";
 					}
 					if (npc.GivenName == "Tabnit")
 					{
@@ -659,7 +667,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Yehomilk")
 					{
-						npc.GivenName = "Йегомилк";
+						npc.GivenName = "Йехомилк";
 					}
 					if (npc.GivenName == "Yutpan")
 					{
@@ -695,11 +703,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Chryseis")
 					{
-						npc.GivenName = "Крисейс";
+						npc.GivenName = "Хризис";
 					}
 					if (npc.GivenName == "Elysia")
 					{
-						npc.GivenName = "Элисия";
+						npc.GivenName = "Элизия";
 					}
 					if (npc.GivenName == "Emerenta")
 					{
@@ -707,7 +715,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Evvie")
 					{
-						npc.GivenName = "Эвви";
+						npc.GivenName = "Ивви";
 					}
 					if (npc.GivenName == "Faye")
 					{
@@ -723,7 +731,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Lunette")
 					{
-						npc.GivenName = "Лунетт";
+						npc.GivenName = "Люнетт";
 					}
 					if (npc.GivenName == "Nata")
 					{
@@ -739,7 +747,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Shea")
 					{
-						npc.GivenName = "Ши";
+						npc.GivenName = "Шия";
 					}
 					if (npc.GivenName == "Tania")
 					{
@@ -751,7 +759,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Xylia")
 					{
-						npc.GivenName = "Ксилия";
+						npc.GivenName = "Силия";
 					}
 					if (npc.GivenName == "Rythmi")
 					{
@@ -777,11 +785,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					{
 						npc.GivenName = "Дрифтер";
 					}
-					if (npc.GivenName == "Drifter")
+					if (npc.GivenName == "Finchi")
 					{
-						npc.GivenName = "Finchi";
+						npc.GivenName = "Финчи";
 					}
-					if (npc.GivenName == "Финчи")
+					if (npc.GivenName == "Andre")
 					{
 						npc.GivenName = "Андре";
 					}
@@ -807,7 +815,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Darryl")
 					{
-						npc.GivenName = "Дэррил";
+						npc.GivenName = "Деррил";
 					}
 					if (npc.GivenName == "DeAndre")
 					{
@@ -815,7 +823,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Demetrius")
 					{
-						npc.GivenName = "Димитрий";
+						npc.GivenName = "Деметрий";
 					}
 					if (npc.GivenName == "DeShawn")
 					{
@@ -831,7 +839,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Jamal")
 					{
-						npc.GivenName = "Джамаль";
+						npc.GivenName = "Джамал";
 					}
 					if (npc.GivenName == "Malik")
 					{
@@ -839,11 +847,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Marquis")
 					{
-						npc.GivenName = "Маркиз";
+						npc.GivenName = "Маркис";
 					}
 					if (npc.GivenName == "Maurice")
 					{
-						npc.GivenName = "Маврикий";
+						npc.GivenName = "Морис";
 					}
 					if (npc.GivenName == "Reginald")
 					{
@@ -851,7 +859,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Terrance")
 					{
-						npc.GivenName = "Терранс";
+						npc.GivenName = "Терренс";
 					}
 					if (npc.GivenName == "Terrell")
 					{
@@ -871,11 +879,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Willie")
 					{
-						npc.GivenName = "Вилли";
+						npc.GivenName = "Уилли";
 					}
 					if (npc.GivenName == "Xavier")
 					{
-						npc.GivenName = "Ксавье";
+						npc.GivenName = "Ксавьер";
 					}
 				}
 
@@ -891,7 +899,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Biah")
 					{
-						npc.GivenName = "Биа";
+						npc.GivenName = "Байя";
 					}
 					if (npc.GivenName == "Bri")
 					{
@@ -911,11 +919,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Hazel")
 					{
-						npc.GivenName = "Хейзел";
+						npc.GivenName = "Хэйзел";
 					}
 					if (npc.GivenName == "Iris")
 					{
-						npc.GivenName = "Ирида";
+						npc.GivenName = "Айрис";
 					}
 					if (npc.GivenName == "Kati")
 					{
@@ -931,11 +939,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Meliyah")
 					{
-						npc.GivenName = "Мелийя";
+						npc.GivenName = "Мелия";
 					}
 					if (npc.GivenName == "Pearl")
 					{
-						npc.GivenName = "Перл";
+						npc.GivenName = "Пёрл";
 					}
 					if (npc.GivenName == "Petra")
 					{
@@ -983,11 +991,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Enzo")
 					{
-						npc.GivenName = "Энзо";
+						npc.GivenName = "Энцо";
 					}
 					if (npc.GivenName == "Esreadel")
 					{
-						npc.GivenName = "Эреадель";
+						npc.GivenName = "Эсридель";
 					}
 					if (npc.GivenName == "Guido")
 					{
@@ -1007,7 +1015,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Luciano")
 					{
-						npc.GivenName = "Лучано";
+						npc.GivenName = "Лучиано";
 					}
 					if (npc.GivenName == "Ludo")
 					{
@@ -1035,7 +1043,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Raphael")
 					{
-						npc.GivenName = "Рафаил";
+						npc.GivenName = "Рафаэль";
 					}
 					if (npc.GivenName == "Stefano")
 					{
@@ -1079,7 +1087,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Ivan")
 					{
-						npc.GivenName = "Иван";
+						npc.GivenName = "Айвен";
 					}
 					if (npc.GivenName == "Izzy")
 					{
@@ -1107,7 +1115,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Nathan")
 					{
-						npc.GivenName = "Натан";
+						npc.GivenName = "Нейтан";
 					}
 					if (npc.GivenName == "Phillip")
 					{
@@ -1143,7 +1151,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 				{
 					if (npc.GivenName == "Arback")
 					{
-						npc.GivenName = "Арбек";
+						npc.GivenName = "Арбак";
 					}
 					if (npc.GivenName == "Dalek")
 					{
@@ -1159,11 +1167,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Fahd")
 					{
-						npc.GivenName = "Фахд";
+						npc.GivenName = "Фад";
 					}
 					if (npc.GivenName == "Fjell")
 					{
-						npc.GivenName = "Фьелл";
+						npc.GivenName = "Фьёль";
 					}
 					if (npc.GivenName == "Gnudar")
 					{
@@ -1171,15 +1179,15 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Grodax")
 					{
-						npc.GivenName = "Гродак";
+						npc.GivenName = "Гродакс";
 					}
 					if (npc.GivenName == "Knogs")
 					{
-						npc.GivenName = "Кногз";
+						npc.GivenName = "Ногс";
 					}
 					if (npc.GivenName == "Knub")
 					{
-						npc.GivenName = "Кнуб";
+						npc.GivenName = "Наб";
 					}
 					if (npc.GivenName == "Mobart")
 					{
@@ -1199,7 +1207,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Nuxatk")
 					{
-						npc.GivenName = "Нуксатк";
+						npc.GivenName = "Нузатк";
 					}
 					if (npc.GivenName == "Ragz")
 					{
@@ -1215,7 +1223,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Stazen")
 					{
-						npc.GivenName = "Стазен";
+						npc.GivenName = "Стацен";
 					}
 					if (npc.GivenName == "Stezom")
 					{
@@ -1235,11 +1243,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Xanos")
 					{
-						npc.GivenName = "Ханос";
+						npc.GivenName = "Ксанос";
 					}
 					if (npc.GivenName == "Xon")
 					{
-						npc.GivenName = "Кон";
+						npc.GivenName = "Ксон";
 					}
 				}
 
@@ -1247,7 +1255,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 				{
 					if (npc.GivenName == "Abibe")
 					{
-						npc.GivenName = "Абибе";
+						npc.GivenName = "Абиб";
 					}
 					if (npc.GivenName == "Gboto")
 					{
@@ -1255,11 +1263,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Jamundi")
 					{
-						npc.GivenName = "Джамунди";
+						npc.GivenName = "Хамунди";
 					}
 					if (npc.GivenName == "Kogi-ghi")
 					{
-						npc.GivenName = "Коги-хи";
+						npc.GivenName = "Коги-гхи";
 					}
 					if (npc.GivenName == "Konah")
 					{
@@ -1267,7 +1275,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Opuni")
 					{
-						npc.GivenName = "Окуни";
+						npc.GivenName = "Опуни";
 					}
 					if (npc.GivenName == "Tairona")
 					{
@@ -1283,11 +1291,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Xirigua")
 					{
-						npc.GivenName = "Сиригуа";
+						npc.GivenName = "Зиригуа";
 					}
 					if (npc.GivenName == "Zop'a")
 					{
-						npc.GivenName = "Зоп'а";
+						npc.GivenName = "Зопа";
 					}
 				}
 
@@ -1319,7 +1327,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Cyril")
 					{
-						npc.GivenName = "Сирил";
+						npc.GivenName = "Сайрил";
 					}
 					if (npc.GivenName == "Edgar")
 					{
@@ -1331,7 +1339,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Edward")
 					{
-						npc.GivenName = "Эдуард";
+						npc.GivenName = "Эдвард";
 					}
 					if (npc.GivenName == "Eustace")
 					{
@@ -1415,7 +1423,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Dawn")
 					{
-						npc.GivenName = "Дан";
+						npc.GivenName = "Заря";
 					}
 					if (npc.GivenName == "Ella")
 					{
@@ -1463,7 +1471,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Selah")
 					{
-						npc.GivenName = "Селах";
+						npc.GivenName = "Сэла";
 					}
 					if (npc.GivenName == "Selene")
 					{
@@ -1479,7 +1487,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Shirlena")
 					{
-						npc.GivenName = "Ширена";
+						npc.GivenName = "Ширлена";
 					}
 					if (npc.GivenName == "Sophia")
 					{
@@ -1487,7 +1495,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Susana")
 					{
-						npc.GivenName = "Сюзана";
+						npc.GivenName = "Сюзанна";
 					}
 					if (npc.GivenName == "Terra")
 					{
@@ -1503,31 +1511,31 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 				{
 					if (npc.GivenName == "Bailey")
 					{
-						npc.GivenName = "Бейли";
+						npc.GivenName = "Бэйли";
 					}
 					if (npc.GivenName == "Bambi")
 					{
-						npc.GivenName = "Бамби";
+						npc.GivenName = "Бэмби";
 					}
 					if (npc.GivenName == "Bunny")
 					{
-						npc.GivenName = "Банни";
+						npc.GivenName = "Заинька";
 					}
 					if (npc.GivenName == "Candy")
 					{
-						npc.GivenName = "Кэнди";
+						npc.GivenName = "Карамелька";
 					}
 					if (npc.GivenName == "Cherry")
 					{
-						npc.GivenName = "Чери";
+						npc.GivenName = "Черри";
 					}
 					if (npc.GivenName == "Dazzle")
 					{
-						npc.GivenName = "Дазл";
+						npc.GivenName = "Очаровашка";
 					}
 					if (npc.GivenName == "Destiny")
 					{
-						npc.GivenName = "Дэстини";
+						npc.GivenName = "Дестини";
 					}
 					if (npc.GivenName == "Fantasia")
 					{
@@ -1535,15 +1543,15 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Fantasy")
 					{
-						npc.GivenName = "Фантази";
+						npc.GivenName = "Фантазёрка";
 					}
 					if (npc.GivenName == "Glitter")
 					{
-						npc.GivenName = "Глиттер";
+						npc.GivenName = "Блёстка";
 					}
 					if (npc.GivenName == "Isis")
 					{
-						npc.GivenName = "Исида";
+						npc.GivenName = "Айзис";
 					}
 					if (npc.GivenName == "Lexus")
 					{
@@ -1551,34 +1559,34 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Paris")
 					{
-						npc.GivenName = "Парис";
+						npc.GivenName = "Пэрис";
 					}
 					if (npc.GivenName == "Sparkle")
 					{
-						npc.GivenName = "Спаркл";
+						npc.GivenName = "Искорка";
 					}
 					if (npc.GivenName == "Star")
 					{
-						npc.GivenName = "Стар";
+						npc.GivenName = "Звёздочка";
 					}
 					if (npc.GivenName == "Sugar")
 					{
-						npc.GivenName = "Шугар";
+						npc.GivenName = "Милашка";
 					}
 					if (npc.GivenName == "Trixy")
 					{
-						npc.GivenName = "Трикси";
+						npc.GivenName = "Проказница";
 					}
 				}
 				if (npc.type == NPCID.Wizard)
 				{
 					if (npc.GivenName == "Abram")
 					{
-						npc.GivenName = "Авраам";
+						npc.GivenName = "Абрам";
 					}
 					if (npc.GivenName == "Alasdair")
 					{
-						npc.GivenName = "Аласдэйр";
+						npc.GivenName = "Аластер";
 					}
 					if (npc.GivenName == "Arddun")
 					{
@@ -1586,11 +1594,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Arwyn")
 					{
-						npc.GivenName = "Арвин";
+						npc.GivenName = "Аруин";
 					}
 					if (npc.GivenName == "Berwyn")
 					{
-						npc.GivenName = "Бервин";
+						npc.GivenName = "Беруин";
 					}
 					if (npc.GivenName == "Dalamar")
 					{
@@ -1598,7 +1606,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Dulais")
 					{
-						npc.GivenName = "Далез";
+						npc.GivenName = "Дулаш";
 					}
 					if (npc.GivenName == "Elric")
 					{
@@ -1610,11 +1618,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Gearroid")
 					{
-						npc.GivenName = "Гирроид";
+						npc.GivenName = "Геррод";
 					}
 					if (npc.GivenName == "Greum")
 					{
-						npc.GivenName = "Греум";
+						npc.GivenName = "Грюм";
 					}
 					if (npc.GivenName == "Gwentor")
 					{
@@ -1630,7 +1638,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Maelor")
 					{
-						npc.GivenName = "Мэлор";
+						npc.GivenName = "Маэлор";
 					}
 					if (npc.GivenName == "Magius")
 					{
@@ -1642,7 +1650,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Ningauble")
 					{
-						npc.GivenName = "Нижаубле";
+						npc.GivenName = "Нингобль";
 					}
 					if (npc.GivenName == "Sargon")
 					{
@@ -1650,7 +1658,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Seonag")
 					{
-						npc.GivenName = "Сонаг";
+						npc.GivenName = "Шонаг";
 					}
 					if (npc.GivenName == "Tagar")
 					{
@@ -1658,15 +1666,15 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Xanadu")
 					{
-						npc.GivenName = "Шанаду";
+						npc.GivenName = "Занаду";
 					}
 					if (npc.GivenName == "Mage One-Trick")
 					{
-						npc.GivenName = "Маг Один-трюк";
+						npc.GivenName = "Маг Трюкач";
 					}
 					if (npc.GivenName == "Inorim, son of Ivukey")
 					{
-						npc.GivenName = "Инорим, сын Ивуки";
+						npc.GivenName = "Инорим, сын Ивукей";
 					}
 					if (npc.GivenName == "Jensen")
 					{
@@ -1690,7 +1698,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Rutherford")
 					{
-						npc.GivenName = "Резерфорд";
+						npc.GivenName = "Ратерфорд";
 					}
 					if (npc.GivenName == "Chester")
 					{
@@ -1722,7 +1730,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "McKinly")
 					{
-						npc.GivenName = "МакКинли";
+						npc.GivenName = "Мак-Кинли";
 					}
 					if (npc.GivenName == "Lyndon")
 					{
@@ -1734,7 +1742,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Harrison")
 					{
-						npc.GivenName = "Харрисон";
+						npc.GivenName = "Гаррисон";
 					}
 					if (npc.GivenName == "Woodrow")
 					{
@@ -1746,7 +1754,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Blanton")
 					{
-						npc.GivenName = "Блантон";
+						npc.GivenName = "Блэнтон";
 					}
 					if (npc.GivenName == "Dwyer")
 					{
@@ -1758,7 +1766,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Agnew")
 					{
-						npc.GivenName = "Агнью";
+						npc.GivenName = "Агню";
 					}
 				}
 
@@ -1778,39 +1786,39 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Cremini")
 					{
-						npc.GivenName = "Крмини";
+						npc.GivenName = "Шампиньон";
 					}
 					if (npc.GivenName == "Enoki")
 					{
-						npc.GivenName = "Эноки";
+						npc.GivenName = "Опёнок";
 					}
 					if (npc.GivenName == "Maitake")
 					{
-						npc.GivenName = "Майтаке";
+						npc.GivenName = "Грифола";
 					}
 					if (npc.GivenName == "Morel")
 					{
-						npc.GivenName = "Морель";
+						npc.GivenName = "Сморчок";
 					}
 					if (npc.GivenName == "Muscaria")
 					{
-						npc.GivenName = "Мускария";
+						npc.GivenName = "Мухомор";
 					}
 					if (npc.GivenName == "Porcini")
 					{
-						npc.GivenName = "Порчини";
+						npc.GivenName = "Боровик";
 					}
 					if (npc.GivenName == "Reishi")
 					{
-						npc.GivenName = "Рейши";
+						npc.GivenName = "Трутовик";
 					}
 					if (npc.GivenName == "Shiitake")
 					{
-						npc.GivenName = "Шиитаке";
+						npc.GivenName = "Лентинула";
 					}
 					if (npc.GivenName == "Shimeji")
 					{
-						npc.GivenName = "Шимедзи";
+						npc.GivenName = "Рядовка";
 					}
 				}
 
@@ -1818,7 +1826,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 				{
 					if (npc.GivenName == "Black Beard")
 					{
-						npc.GivenName = "Черная Борода";
+						npc.GivenName = "Чёрная Борода";
 					}
 					if (npc.GivenName == "Captain Bullywort")
 					{
@@ -1830,7 +1838,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Captain Stoney Dirt")
 					{
-						npc.GivenName = "Капитан Каменная грязь";
+						npc.GivenName = "Капитан Грязный Камень";
 					}
 					if (npc.GivenName == "David")
 					{
@@ -1838,7 +1846,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Gunpowder Garry")
 					{
-						npc.GivenName = "Порох Гарри";
+						npc.GivenName = "Пороховой Гарри";
 					}
 					if (npc.GivenName == "Jack")
 					{
@@ -1850,19 +1858,19 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "James T. Beard")
 					{
-						npc.GivenName = "Джеймс Т. Боард";
+						npc.GivenName = "Джеймс Т. Борода";
 					}
 					if (npc.GivenName == "Red Beard")
 					{
-						npc.GivenName = "Красная Борода";
+						npc.GivenName = "Рыжебородый";
 					}
 					if (npc.GivenName == "Wet Beard")
 					{
-						npc.GivenName = "Влажная Борода";
+						npc.GivenName = "Мокрая Борода";
 					}
 					if (npc.GivenName == "Tyler Van Hook")
 					{
-						npc.GivenName = "Тайлер Ван Хук";
+						npc.GivenName = "Тайлер Ван Крюк";
 					}
 				}
 
@@ -1916,6 +1924,10 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					{
 						npc.GivenName = "Лили";
 					}
+					if (npc.GivenName == "Daawn")
+					{
+						npc.GivenName = "Даан";
+					}
 					if (npc.GivenName == "Lydia")
 					{
 						npc.GivenName = "Лидия";
@@ -1954,7 +1966,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Zylphia")
 					{
-						npc.GivenName = "Зилфия";
+						npc.GivenName = "Зильфия";
 					}
 				}
 
@@ -1982,7 +1994,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Theta")
 					{
-						npc.GivenName = "Ита";
+						npc.GivenName = "Тета";
 					}
 					if (npc.GivenName == "Kappa")
 					{
@@ -2018,7 +2030,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Phi")
 					{
-						npc.GivenName = "Фи";
+						npc.GivenName = "Пи";
 					}
 					if (npc.GivenName == "Ci")
 					{
@@ -2038,11 +2050,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Niner-7")
 					{
-						npc.GivenName = "Номер-7";
+						npc.GivenName = "Девятый-7";
 					}
 					if (npc.GivenName == "A.N.D.Y")
 					{
-						npc.GivenName = "А.Н.Д.И.";
+						npc.GivenName = "Э.Н.Д.И";
 					}
 					if (npc.GivenName == "Syn-X")
 					{
@@ -2058,11 +2070,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Aedan")
 					{
-						npc.GivenName = "Эйдан";
+						npc.GivenName = "Айдан";
 					}
 					if (npc.GivenName == "Aphraim")
 					{
-						npc.GivenName = "Афраим";
+						npc.GivenName = "Эфрем";
 					}
 					if (npc.GivenName == "Bohemas")
 					{
@@ -2074,11 +2086,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Gallius")
 					{
-						npc.GivenName = "Галлиус";
+						npc.GivenName = "Галлий";
 					}
 					if (npc.GivenName == "Llewellyn")
 					{
-						npc.GivenName = "Лэвллин";
+						npc.GivenName = "Ллеуэллин";
 					}
 					if (npc.GivenName == "Mercer")
 					{
@@ -2086,7 +2098,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Rawleigh")
 					{
-						npc.GivenName = "Роулейгх";
+						npc.GivenName = "Роули";
 					}
 					if (npc.GivenName == "Riley")
 					{
@@ -2102,7 +2114,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Willy")
 					{
-						npc.GivenName = "Вилли";
+						npc.GivenName = "Уилли";
 					}
 				}
 				
@@ -2110,15 +2122,15 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 				{
 					if (npc.GivenName == "Billy Marrows")
 					{
-						npc.GivenName = "Билли Мэрроус";
+						npc.GivenName = "Билли Позвоночникс";
 					}
 					if (npc.GivenName == "Bones McGee")
 					{
-						npc.GivenName = "Кости МакГи";
+						npc.GivenName = "Костяной Макги";
 					}
 					if (npc.GivenName == "Gloomy Mays")
 					{
-						npc.GivenName = "Глуми Мэйс";
+						npc.GivenName = "Мрачный Мэйс";
 					}
 					if (npc.GivenName == "Jack Sellington")
 					{
@@ -2126,19 +2138,19 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 					}
 					if (npc.GivenName == "Mandible Calavera")
 					{
-						npc.GivenName = "Мэндибл Кэлавера";
+						npc.GivenName = "Челюстный Калавера";
 					}
 					if (npc.GivenName == "Mika")
 					{
-						npc.GivenName = "Мики";
+						npc.GivenName = "Мика";
 					}
 					if (npc.GivenName == "No-Eyed Wiley")
 					{
-						npc.GivenName = "Безглазый Вилли";
+						npc.GivenName = "Безглазый Уайли";
 					}
 					if (npc.GivenName == "Rattles Magoo")
 					{
-						npc.GivenName = "Рэттлс Магу";
+						npc.GivenName = "Гремящий Магу";
 					}
 					if (npc.GivenName == "Skellington")
 					{
