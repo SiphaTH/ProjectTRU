@@ -1264,7 +1264,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			calamity.GetItem("RaidersGlory").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет ихоровыми стрелами с увеличенной скоростью\nЭти стрелы также заставляют врагов выронить больше денег");
 			calamity.GetItem("RealmRavager").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет разрушительными разрывными пулями");
 			calamity.GetItem("RubicoPrime").Tooltip.AddTranslation(GameCulture.Russian,"Полуавтоматическая снайперская винтовка, стреляющая 5-секундными очередями\nСтреляет ударными патронами с увеличенным множителем критического удара и наносят дополнительный урон неорганическим целям");
-			calamity.GetItem("SandstormGun").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет песчаными пулями, которые разрываются);
+			calamity.GetItem("SandstormGun").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет песчаными пулями, которые разрываются");
 			calamity.GetItem("Scorpion").Tooltip.AddTranslation(GameCulture.Russian,"БУМ\nНажмите Правую клавишу мыши, чтобы выстрелить ядерной ракетой");
 			calamity.GetItem("SDFMG").Tooltip.AddTranslation(GameCulture.Russian,"Он пришёл с края Террарии\n50% шанс не использовать боеприпасы");
 			calamity.GetItem("Seabow").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет медленно-движущимися водными зарядами");
