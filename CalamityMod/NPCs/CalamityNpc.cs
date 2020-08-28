@@ -226,7 +226,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 			calamity.GetNPC("StormlionCharger").DisplayName.AddTranslation(GameCulture.Russian,"Штормовой лев");
 			calamity.GetNPC("SunBat").DisplayName.AddTranslation(GameCulture.Russian,"Солнечная мышь");
 			calamity.GetNPC("Sunskater").DisplayName.AddTranslation(GameCulture.Russian,"Солнечная водомерка");
-			calamity.GetNPC("SuperDummyNPC").DisplayName.AddTranslation(GameCulture.Russian,"Улучшенный манекен");
+			calamity.GetNPC("SuperDummyNPC").DisplayName.AddTranslation(GameCulture.Russian,"Сверхманекен");
 			calamity.GetNPC("ThiccWaifu").DisplayName.AddTranslation(GameCulture.Russian,"Облачный элементаль");
 			calamity.GetNPC("WulfrumDrone").DisplayName.AddTranslation(GameCulture.Russian,"Вульфрумовый дрон");
 			calamity.GetNPC("WulfrumGyrator").DisplayName.AddTranslation(GameCulture.Russian,"Вульфрумовый вращатель");

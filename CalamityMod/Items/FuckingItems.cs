@@ -533,7 +533,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 					foreach (TooltipLine tooltipLine in tooltips)
 					{
 						string str = tooltipLine.text;
-						string resultA = str.Replace("Holding this weapon grants ", "Держа в руках это оружие, ");
+						string resultA = str.Replace("Holding this weapon grants ", "Держание этого оружие в руках, ");
 						string resultB = resultA.Replace("5% increased jump speed", "увеличивает скорость прыжка на 5%");
 						string resultC = resultB.Replace("20% increased jump speed", "увеличивает скорость прыжка на 20%");
 						tooltipLine.text = resultC;

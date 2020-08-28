@@ -457,8 +457,8 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 // ==================================================================================================================
 			calamity.GetBuff("AerospecSummonSetBuff").DisplayName.AddTranslation(GameCulture.Russian,"Валькирия");
 			calamity.GetBuff("AerospecSummonSetBuff").Description.AddTranslation(GameCulture.Russian,"Валькирия будет защищать вас");
-			calamity.GetBuff("ApexSharkBuff").DisplayName.AddTranslation(GameCulture.Russian,"Древняя минеральная акула");
-			calamity.GetBuff("ApexSharkBuff").Description.AddTranslation(GameCulture.Russian,"Древний, но такой опасный");
+			calamity.GetBuff("ApexSharkBuff").DisplayName.AddTranslation(GameCulture.Russian,"Древняя ископаемая акула");
+			calamity.GetBuff("ApexSharkBuff").Description.AddTranslation(GameCulture.Russian,"Древняя, но такая опасная");
 			calamity.GetBuff("AquaticStar").DisplayName.AddTranslation(GameCulture.Russian,"Акватическая звезда");
 			calamity.GetBuff("AquaticStar").Description.AddTranslation(GameCulture.Russian,"Акватическая звезда будет защищать вас");
 			calamity.GetBuff("AstrageldonBuff").DisplayName.AddTranslation(GameCulture.Russian,"Астральное желе");
@@ -471,8 +471,8 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("BelladonnaSpiritBuff").Description.AddTranslation(GameCulture.Russian,"Милый лесной дух следует за вами");
 			calamity.GetBuff("BlackHawkBuff").DisplayName.AddTranslation(GameCulture.Russian,"Чёрный ястреб");
 			calamity.GetBuff("BlackHawkBuff").Description.AddTranslation(GameCulture.Russian,"Истребитель будет защищать вас");
-			calamity.GetBuff("BloodClot").DisplayName.AddTranslation(GameCulture.Russian,"Сгусток крови");
-			calamity.GetBuff("BloodClot").Description.AddTranslation(GameCulture.Russian,"Сгусток крови будет защищать вас");
+			calamity.GetBuff("BloodClot").DisplayName.AddTranslation(GameCulture.Russian,"Тромб");
+			calamity.GetBuff("BloodClot").Description.AddTranslation(GameCulture.Russian,"Тромб будет защищать вас");
 			calamity.GetBuff("BloodDragonsBuff").DisplayName.AddTranslation(GameCulture.Russian,"Драконы-скелеты");
 			calamity.GetBuff("BloodDragonsBuff").Description.AddTranslation(GameCulture.Russian,"Большая счастливая семья");
 			calamity.GetBuff("BrimstoneWaifu").DisplayName.AddTranslation(GameCulture.Russian,"Серный элементаль");
@@ -541,8 +541,8 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("HotE").Description.AddTranslation(GameCulture.Russian,"Все элементали будут защищать вас");
 			calamity.GetBuff("HowlTrio").DisplayName.AddTranslation(GameCulture.Russian,"Сердце Хаула");
 			calamity.GetBuff("HowlTrio").Description.AddTranslation(GameCulture.Russian,"Хаул защищает вас, Кальцифер освещает ваш путь, Пугало-Репка следует за вами");
-			calamity.GetBuff("IceClasper").DisplayName.AddTranslation(GameCulture.Russian,"Ледяной класпер");
-			calamity.GetBuff("IceClasper").Description.AddTranslation(GameCulture.Russian,"Ледяной класпер будет защищать вас");
+			calamity.GetBuff("IceClasper").DisplayName.AddTranslation(GameCulture.Russian,"Ледяной клещ");
+			calamity.GetBuff("IceClasper").Description.AddTranslation(GameCulture.Russian,"Ледяной клещ будет защищать вас");
 			calamity.GetBuff("IgneousExaltationBuff").DisplayName.AddTranslation(GameCulture.Russian,"Магматический клинок");
 			calamity.GetBuff("IgneousExaltationBuff").Description.AddTranslation(GameCulture.Russian,"Клинок вращается вокруг вас");
 			calamity.GetBuff("MagicHatBuff").DisplayName.AddTranslation(GameCulture.Russian,"Магическая шляпа");

@@ -122,7 +122,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 					{
 						string str = tooltipLine.text;
 						string resultA = str.Replace("Provides immunity to chilling and freezing effects", "Обеспечивает невосприимчивостью к ледяным и замораживающим эффектам");
-						string resultB = resultA.Replace("Provides a regeneration boost while wearing the Eskimo armor", "Обеспечивает повышенной регенерацией пока на вас надет комплект Эскимоса");
+						string resultB = resultA.Replace("Provides a regeneration boost while wearing the Eskimo armor", "Обеспечивает повышенной регенерацией пока на вас надет комплект эскимоса");
 						string resultC = resultB.Replace("Provides cold protection in Death Mode", "Обеспечивает защитой от холода в режиме Смерти");
 						tooltipLine.text = resultC;
 					}

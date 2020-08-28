@@ -77,7 +77,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 					    item.type == calamity.ItemType("DemonshadeGreaves"))
 					{
 						string str = tooltipLine.text;
-						string resultA = str.Replace("100% increased minion damage\nAll attacks inflict the demon flame debuff\nShadowbeams and demon scythes will fire down when you are hit\nA friendly red devil follows you around\nPress ", "величивает урон миньонов на 100%\nВсе атаки накладывают «Пламя демона»\nТеневые лучи и демонические косы обрушатся на врагов, когда вас ранили\nДружелюбный красный дьявол следует за вами\nНажмите ");
+						string resultA = str.Replace("100% increased minion damage\nAll attacks inflict the demon flame debuff\nShadowbeams and demon scythes will fire down when you are hit\nA friendly red devil follows you around\nPress ", "Увеличивает урон миньонов на 100%\nВсе атаки накладывают «Пламя демона»\nТеневые лучи и демонические косы обрушатся на врагов, когда вас ранили\nДружелюбный красный дьявол следует за вами\nНажмите ");
 						string resultB = resultA.Replace(" to enrage nearby enemies with a dark magic spell for 10 seconds\nThis makes them do 25% more damage but they also take 125% more damage", ", чтобы разозлить ближайших врагов заклинанием тёмной магии на 10 секунд\nЭто заставит их наносить на 25% больше урона, но также получать его на 125% больше");
 						tooltipLine.text = resultB;
 					}
