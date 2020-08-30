@@ -76,8 +76,8 @@ namespace CalamityRuTranslate.CalamityMod.Projectiles
             calamity.GetProjectile("DarkEnergyBall").DisplayName.AddTranslation(GameCulture.Russian, "Тёмная энергия");
             calamity.GetProjectile("DarkEnergyBall2").DisplayName.AddTranslation(GameCulture.Russian, "Тёмная энергия");
             calamity.GetProjectile("DarkOrb").DisplayName.AddTranslation(GameCulture.Russian, "Тёмная сфера");
-            calamity.GetProjectile("DestroyerFrostLaser").DisplayName.AddTranslation(GameCulture.Russian, "Ледяной луч");
-            calamity.GetProjectile("DestroyerHomingLaser").DisplayName.AddTranslation(GameCulture.Russian, "Преследующий лазер");
+            calamity.GetProjectile("DestroyerCursedLaser").DisplayName.AddTranslation(GameCulture.Russian, "Проклятый лазер");
+            calamity.GetProjectile("DestroyerElectricLaser").DisplayName.AddTranslation(GameCulture.Russian, "Электрический лазер");
             calamity.GetProjectile("DeusMine").DisplayName.AddTranslation(GameCulture.Russian, "Астральная мина");
             calamity.GetProjectile("DeusRitualDrama").DisplayName.AddTranslation(GameCulture.Russian, "Ритуальная драма Деуса");
             calamity.GetProjectile("DoGBeam").DisplayName.AddTranslation(GameCulture.Russian, "Портальный лазер");
