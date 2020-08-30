@@ -2288,7 +2288,7 @@ namespace CalamityRuTranslate
             
             al.Index++;
             al.Emit(OpCodes.Pop);
-            al.Emit(OpCodes.Ldstr, EncodingTransform("Программа Аструм Ауреуса выполнена. Запущенна программа возврата."));
+            al.Emit(OpCodes.Ldstr, EncodingTransform("Программа Аструм Ареуса выполнена. Запущенна программа возврата."));
             
             var am = new ILCursor(il);
             
@@ -2297,7 +2297,7 @@ namespace CalamityRuTranslate
             
             am.Index++;
             am.Emit(OpCodes.Pop);
-            am.Emit(OpCodes.Ldstr, EncodingTransform("Аструм Ауреус"));
+            am.Emit(OpCodes.Ldstr, EncodingTransform("Аструм Ареус"));
             
             var an = new ILCursor(il);
             
@@ -2315,7 +2315,7 @@ namespace CalamityRuTranslate
             
             ao.Index++;
             ao.Emit(OpCodes.Pop);
-            ao.Emit(OpCodes.Ldstr, EncodingTransform("ВРАЖДЕБНЫЕ ЭКЗЕМПЛЯРЫ УНИЧТОЖЕНЫ. ЗАПУЩЕНА ПРОГРАММА ВОЗВРАТА НА БАЗУ."));
+            ao.Emit(OpCodes.Ldstr, EncodingTransform("ВРАЖДЕБНЫЕ СУЩНОСТИ УНИЧТОЖЕНЫ. ЗАПУЩЕНА ПРОГРАММА ВОЗВРАТА НА БАЗУ."));
             
             var ap = new ILCursor(il);
             
@@ -2344,7 +2344,7 @@ namespace CalamityRuTranslate
             
             ar.Index++;
             ar.Emit(OpCodes.Pop);
-            ar.Emit(OpCodes.Ldstr, EncodingTransform("Машина бесформенных жертв отправилась на поиски истинного преступника."));
+            ar.Emit(OpCodes.Ldstr, EncodingTransform("Машина бесформенных жертв отправилась на поиски истинного нарушителя."));
             
             var cz = new ILCursor(il);
             
@@ -2427,7 +2427,7 @@ namespace CalamityRuTranslate
             
             ba.Index++;
             ba.Emit(OpCodes.Pop);
-            ba.Emit(OpCodes.Ldstr, EncodingTransform("Неудачный эксперимент возвращается к своему репродуктивному распорядку."));
+            ba.Emit(OpCodes.Ldstr, EncodingTransform("Неудачный эксперимент вернулся к своему репродуктивному распорядку."));
             
             var bb = new ILCursor(il);
             
@@ -2651,7 +2651,7 @@ namespace CalamityRuTranslate
             
             bz.Index++;
             bz.Emit(OpCodes.Pop);
-            bz.Emit(OpCodes.Ldstr, EncodingTransform("Ярон посчитал вас слишком слабым, чтобы оставаться рядом с вашим надгробием."));
+            bz.Emit(OpCodes.Ldstr, EncodingTransform("Ярон считает вас слишком слабым, чтобы оставаться с вашим надгробием."));
             
             var ca = new ILCursor(il);
             
