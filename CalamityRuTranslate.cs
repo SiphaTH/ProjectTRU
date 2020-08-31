@@ -51,21 +51,13 @@ namespace CalamityRuTranslate
                         DeathText = GetFont("Fonts/Death_Text");
                         CombatText = GetFont("Fonts/Combat_Text");
                         CombatCrit = GetFont("Fonts/Combat_Crit");
-
+                        
                         Main.fontItemStack = ItemStack;
                         Main.fontMouseText = MouseText;
                         Main.fontDeathText = DeathText;
                         Main.fontCombatText[0] = CombatText;
                         Main.fontCombatText[1] = CombatCrit;
                     }
-                }
-                else if (!Main.dedServ)
-                {
-                    Main.fontItemStack = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Item_Stack");
-                    Main.fontMouseText = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Mouse_Text");
-                    Main.fontDeathText = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Death_Text");
-                    Main.fontCombatText[0] = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Combat_Text");
-                    Main.fontCombatText[1] = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Combat_Crit");
                 }
             }
 			
@@ -939,15 +931,6 @@ namespace CalamityRuTranslate
             CombatText = null;
             CombatCrit = null;
 
-            if (!Main.dedServ)
-            {
-                Main.fontItemStack = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Item_Stack");
-                Main.fontMouseText = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Mouse_Text");
-                Main.fontDeathText = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Death_Text");
-                Main.fontCombatText[0] = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Combat_Text");
-                Main.fontCombatText[1] = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Combat_Crit");
-            }
-            
             if (HandleMouseInteraction != null) ModifyHandleMouseInteraction -= Ua_ModifyHandleMouseInteraction;
             if (DrawAcidRain != null) ModifyDrawAcidRain -= Calamity_ModifyDrawAcidRain;
             if (DrawStealth != null) ModifyDrawStealth -= Calamity_ModifyDrawStealth;

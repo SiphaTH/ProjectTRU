@@ -18,7 +18,7 @@ namespace CalamityRuTranslate
         [Label("Шрифт Comic Sans MS")]
         [Tooltip("Если вам не нравится новый шрифт который предлагает русификатор\nи вы хотите играть со своим, вы можете его отключить\nТребуется перезагрузка мода")]
         [ReloadRequired]
-        public bool NewRussianTerrariaFont { get; set; }
+        public bool NewRussianTerrariaFont;
 
         public override bool AcceptClientChanges(ModConfig pendingConfig, int whoAmI, ref string message)
         {
