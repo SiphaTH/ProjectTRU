@@ -56,7 +56,7 @@ namespace CalamityRuTranslate
                         Main.fontCombatText[0] = CombatText;
                         Main.fontCombatText[1] = CombatCrit;
                     }
-                }
+				}
 
                 if (Calamity != null)
                 {
@@ -183,7 +183,7 @@ namespace CalamityRuTranslate
 				}
 			}
 		}
-
+        
         private Mod Calamity => ModLoader.GetMod("CalamityMod");
         private Mod Thorium => ModLoader.GetMod("ThoriumMod");
         private Mod Redemption => ModLoader.GetMod("Redemption");

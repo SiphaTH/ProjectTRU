@@ -37,7 +37,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 			calamity.GetNPC("GulperEelTail").DisplayName.AddTranslation(GameCulture.Russian, "Большеротый угорь");
 			calamity.GetNPC("Laserfish").DisplayName.AddTranslation(GameCulture.Russian,"Рыба-лазер");
 			calamity.GetNPC("LuminousCorvina").DisplayName.AddTranslation(GameCulture.Russian, "Люминесцентный горбыль");
-            calamity.GetNPC("MirageJelly").DisplayName.AddTranslation(GameCulture.Russian,"Иллюзорная медуза");
+            calamity.GetNPC("MirageJelly").DisplayName.AddTranslation(GameCulture.Russian,"Миражная медуза");
 			calamity.GetNPC("MorayEel").DisplayName.AddTranslation(GameCulture.Russian,"Мурена");
 			calamity.GetNPC("OarfishBody").DisplayName.AddTranslation(GameCulture.Russian,"Ремень-рыба");
 			calamity.GetNPC("OarfishHead").DisplayName.AddTranslation(GameCulture.Russian,"Ремень-рыба");
@@ -50,8 +50,8 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 			calamity.GetNPC("BloodwormFleeing").DisplayName.AddTranslation(GameCulture.Russian,"Кровавый червь");
 			calamity.GetNPC("BloodwormNormal").DisplayName.AddTranslation(GameCulture.Russian,"Кровавый червь");
 			calamity.GetNPC("CragmawMire").DisplayName.AddTranslation(GameCulture.Russian,"Болотистый скалозев");
-			calamity.GetNPC("FlakBaby").DisplayName.AddTranslation(GameCulture.Russian,"Маленький артиллерийский краб");
-			calamity.GetNPC("FlakCrab").DisplayName.AddTranslation(GameCulture.Russian,"Артиллерийский краб");
+			calamity.GetNPC("FlakBaby").DisplayName.AddTranslation(GameCulture.Russian,"Маленький краб зенитного огня");
+			calamity.GetNPC("FlakCrab").DisplayName.AddTranslation(GameCulture.Russian,"Краб зенитного огня");
 			calamity.GetNPC("GammaSlime").DisplayName.AddTranslation(GameCulture.Russian,"Гамма-слизень");
 			calamity.GetNPC("NuclearTerror").DisplayName.AddTranslation(GameCulture.Russian,"Ядерный террор");
 			calamity.GetNPC("NuclearToad").DisplayName.AddTranslation(GameCulture.Russian,"Ядерная жаба");
@@ -92,8 +92,8 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 			calamity.GetNPC("StellarCulex").DisplayName.AddTranslation(GameCulture.Russian,"Звёздный москит");
 			calamity.GetNPC("Twinkler").DisplayName.AddTranslation(GameCulture.Russian,"Мерцатель");
 // -------------------------------------------------------------------------------
-			calamity.GetNPC("AstrumAureus").DisplayName.AddTranslation(GameCulture.Russian,"Аструм Ауреус");
-			calamity.GetNPC("AureusSpawn").DisplayName.AddTranslation(GameCulture.Russian,"Отродье Ауреуса");
+			calamity.GetNPC("AstrumAureus").DisplayName.AddTranslation(GameCulture.Russian,"Аструм Ареус");
+			calamity.GetNPC("AureusSpawn").DisplayName.AddTranslation(GameCulture.Russian,"Отродье Ареуса");
 // -------------------------------------------------------------------------------
 			calamity.GetNPC("AstrumDeusBodySpectral").DisplayName.AddTranslation(GameCulture.Russian,"Аструм Деус");
 			calamity.GetNPC("AstrumDeusHeadSpectral").DisplayName.AddTranslation(GameCulture.Russian,"Аструм Деус");
@@ -342,12 +342,12 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 			calamity.GetNPC("DetonatingFlare").DisplayName.AddTranslation(GameCulture.Russian,"Взрывающиеся огни");
 			calamity.GetNPC("DetonatingFlare2").DisplayName.AddTranslation(GameCulture.Russian,"Взрывающиеся огни");
 			calamity.GetNPC("Yharon").DisplayName.AddTranslation(GameCulture.Russian,"Дракон Джунглей, Ярон");
-// -------------------------------------------------------------------------------			
+// -------------------------------------------------------------------------------
 			calamity.GetNPC("DILF").DisplayName.AddTranslation(GameCulture.Russian,"Архимаг");
 			calamity.GetNPC("FAP").DisplayName.AddTranslation(GameCulture.Russian,"Пьяная принцесса");
 			calamity.GetNPC("SEAHOE").DisplayName.AddTranslation(GameCulture.Russian,"Морской король");
 			calamity.GetNPC("THIEF").DisplayName.AddTranslation(GameCulture.Russian,"Бандит");
-// -------------------------------------------------------------------------------	
+// -------------------------------------------------------------------------------
 		}
 	}
 }

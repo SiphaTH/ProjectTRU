@@ -497,10 +497,10 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("CorvidHarbringerBuff").Description.AddTranslation(GameCulture.Russian,"Могущественный ворон будет защищать вас");
 			calamity.GetBuff("CosmicEnergy").DisplayName.AddTranslation(GameCulture.Russian,"Космическая энергия");
 			calamity.GetBuff("CosmicEnergy").Description.AddTranslation(GameCulture.Russian,"Космическая энергия будет защищать вас");
-			calamity.GetBuff("CosmicViperEngineBuff").DisplayName.AddTranslation(GameCulture.Russian,"Космический вайпер");
+			calamity.GetBuff("CosmicViperEngineBuff").DisplayName.AddTranslation(GameCulture.Russian,"Космический Вайпер");
 			calamity.GetBuff("CosmicViperEngineBuff").Description.AddTranslation(GameCulture.Russian,"Космический боевой корабль будет защищать вас");
-			calamity.GetBuff("CosmilampBuff").DisplayName.AddTranslation(GameCulture.Russian,"Космолампа");
-			calamity.GetBuff("CosmilampBuff").Description.AddTranslation(GameCulture.Russian,"Космолампа будет защищать вас");
+			calamity.GetBuff("CosmilampBuff").DisplayName.AddTranslation(GameCulture.Russian,"Космилампа");
+			calamity.GetBuff("CosmilampBuff").Description.AddTranslation(GameCulture.Russian,"Космилампа будет защищать вас");
 			calamity.GetBuff("Crimslime").DisplayName.AddTranslation(GameCulture.Russian,"Багряный слизень");
 			calamity.GetBuff("Crimslime").Description.AddTranslation(GameCulture.Russian,"Багряный слизень будет защищать вас");
 			calamity.GetBuff("DaedalusSummonSetBuff").DisplayName.AddTranslation(GameCulture.Russian,"Кристалл Дедала");

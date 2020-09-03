@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Reflection;
-using log4net.Repository.Hierarchy;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
 using MonoMod.RuntimeDetour.HookGen;
