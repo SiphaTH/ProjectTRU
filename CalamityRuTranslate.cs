@@ -40,7 +40,7 @@ namespace CalamityRuTranslate
 			{
 				Instance = this;
 				
-				if (tRuConfig.NewRussianTerrariaFont)
+				if (ModContent.GetInstance<Config>().NewRussianTerrariaFont)
 				{
 					if(!Main.dedServ)
                     {
@@ -56,6 +56,14 @@ namespace CalamityRuTranslate
                         Main.fontCombatText[0] = CombatText;
                         Main.fontCombatText[1] = CombatCrit;
                     }
+				}
+				else if (!Main.dedServ)
+				{
+					Main.fontItemStack = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Item_Stack");
+					Main.fontMouseText = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Mouse_Text");
+					Main.fontDeathText = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Death_Text");
+					Main.fontCombatText[0] = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Combat_Text");
+					Main.fontCombatText[1] = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Combat_Crit");
 				}
 
                 if (Calamity != null)
@@ -80,13 +88,21 @@ namespace CalamityRuTranslate
 
         public override void Unload()
 		{
-            tRuConfig = null;
-            ItemStack = null;
+			ItemStack = null;
             MouseText = null;
             DeathText = null;
             CombatText = null;
             CombatCrit = null;
             Instance = null;
+            
+			if (!Main.dedServ)
+            {
+	            Main.fontItemStack = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Item_Stack");
+	            Main.fontMouseText = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Mouse_Text");
+	            Main.fontDeathText = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Death_Text");
+	            Main.fontCombatText[0] = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Combat_Text");
+	            Main.fontCombatText[1] = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Combat_Crit");
+            }
             
             ModifyCalamityIL.Unload();
 		}
@@ -194,7 +210,6 @@ namespace CalamityRuTranslate
 		private DynamicSpriteFont DeathText;
 		private DynamicSpriteFont CombatText;
 		private DynamicSpriteFont CombatCrit;
-		internal static Config tRuConfig;
 		internal static CalamityRuTranslate Instance;
     }
 }
