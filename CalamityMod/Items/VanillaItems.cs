@@ -193,68 +193,68 @@ namespace CalamityRuTranslate.CalamityMod.Items
 						{
 							tooltipLine2.text = "+3% шанс критического удара";
 						}
-
-						if (item.accessory)
+					}
+					
+					if (item.accessory)
+					{
+						if (tooltipLine2.text == "+1 defense\n+0.25% damage reduction")
 						{
-							if (tooltipLine2.text == "+1 defense\n+0.25% damage reduction")
-							{
-								tooltipLine2.text = "+1 защиты\n+0.25% сопротивление урону";
-							}
+							tooltipLine2.text = "+1 защиты\n+0.25% сопротивление урону";
+						}
 
-							if (tooltipLine2.text == "+2 defense\n+0.25% damage reduction")
-							{
-								tooltipLine2.text = "+2 защиты\n+0.25% сопротивление урону";
-							}
+						if (tooltipLine2.text == "+2 defense\n+0.25% damage reduction")
+						{
+							tooltipLine2.text = "+2 защиты\n+0.25% сопротивление урону";
+						}
 
-							if (tooltipLine2.text == "+3 defense\n+0.25% damage reduction")
-							{
-								tooltipLine2.text = "+3 защиты\n+0.25% сопротивление урону";
-							}
+						if (tooltipLine2.text == "+3 defense\n+0.25% damage reduction")
+						{
+							tooltipLine2.text = "+3 защиты\n+0.25% сопротивление урону";
+						}
 
-							if (tooltipLine2.text == "+2 defense\n+0.5% damage reduction")
-							{
-								tooltipLine2.text = "+2 защиты\n+0.5% сопротивление урону";
-							}
+						if (tooltipLine2.text == "+2 defense\n+0.5% damage reduction")
+						{
+							tooltipLine2.text = "+2 защиты\n+0.5% сопротивление урону";
+						}
 
-							if (tooltipLine2.text == "+3 defense\n+0.5% damage reduction")
-							{
-								tooltipLine2.text = "+3 защиты\n+0.5% сопротивление урону";
-							}
+						if (tooltipLine2.text == "+3 defense\n+0.5% damage reduction")
+						{
+							tooltipLine2.text = "+3 защиты\n+0.5% сопротивление урону";
+						}
 
-							if (tooltipLine2.text == "+4 defense\n+0.5% damage reduction")
-							{
-								tooltipLine2.text = "+4 защиты\n+0.5% сопротивление урону";
-							}
+						if (tooltipLine2.text == "+4 defense\n+0.5% damage reduction")
+						{
+							tooltipLine2.text = "+4 защиты\n+0.5% сопротивление урону";
+						}
 
-							if (tooltipLine2.text == "+3 defense\n+0.75% damage reduction")
-							{
-								tooltipLine2.text = "+3 защиты\n+0.75% сопротивление урону";
-							}
+						if (tooltipLine2.text == "+3 defense\n+0.75% damage reduction")
+						{
+							tooltipLine2.text = "+3 защиты\n+0.75% сопротивление урону";
+						}
 
-							if (tooltipLine2.text == "+4 defense\n+0.75% damage reduction")
-							{
-								tooltipLine2.text = "+4 защиты\n+0.75% сопротивление урону";
-							}
+						if (tooltipLine2.text == "+4 defense\n+0.75% damage reduction")
+						{
+							tooltipLine2.text = "+4 защиты\n+0.75% сопротивление урону";
+						}
 
-							if (tooltipLine2.text == "+6 defense\n+0.75% damage reduction")
-							{
-								tooltipLine2.text = "+6 защиты\n+0.75% сопротивление урону";
-							}
+						if (tooltipLine2.text == "+6 defense\n+0.75% damage reduction")
+						{
+							tooltipLine2.text = "+6 защиты\n+0.75% сопротивление урону";
+						}
 
-							if (tooltipLine2.text == "+4 defense\n+1% damage reduction")
-							{
-								tooltipLine2.text = "+4 защиты\n+1% сопротивление урону";
-							}
+						if (tooltipLine2.text == "+4 defense\n+1% damage reduction")
+						{
+							tooltipLine2.text = "+4 защиты\n+1% сопротивление урону";
+						}
 
-							if (tooltipLine2.text == "+6 defense\n+1% damage reduction")
-							{
-								tooltipLine2.text = "+6 защиты\n+1% сопротивление урону";
-							}
+						if (tooltipLine2.text == "+6 defense\n+1% damage reduction")
+						{
+							tooltipLine2.text = "+6 защиты\n+1% сопротивление урону";
+						}
 
-							if (tooltipLine2.text == "+8 defense\n+1% damage reduction")
-							{
-								tooltipLine2.text = "+8 защиты\n+1% сопротивление урону";
-							}
+						if (tooltipLine2.text == "+8 defense\n+1% damage reduction")
+						{
+							tooltipLine2.text = "+8 защиты\n+1% сопротивление урону";
 						}
 					}
 
