@@ -10,7 +10,8 @@ namespace CalamityRuTranslate
         public override void OnLoaded() => CalamityRuTranslate.TRuConfig = this;
 
         [Header("Шрифт")]
-        [Label("Шрифт Comic Sans MS")]
+        
+        [Label("Шрифт JetBrains Mono")]
         [Tooltip("Если вам не нравится новый шрифт который предлагает русификатор\nи вы хотите играть со своим, вы можете его отключить\nТребуется перезагрузка мода")]
         [DefaultValue(true)]
         [ReloadRequired]
