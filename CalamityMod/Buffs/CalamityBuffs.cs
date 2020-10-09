@@ -79,7 +79,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("BloodflareBloodFrenzyCooldown").Description.AddTranslation(GameCulture.Russian,"Ваше кровавое неистовство перезаряжается");
 			calamity.GetBuff("BloodflareSoulCooldown").DisplayName.AddTranslation(GameCulture.Russian,"Перезарядка душ кровавой вспышки");
 			calamity.GetBuff("BloodflareSoulCooldown").Description.AddTranslation(GameCulture.Russian,"Ваши души перезаряжаются");
-			calamity.GetBuff("BrimflameFrenzyCooldown").DisplayName.AddTranslation(GameCulture.Russian,"Перезарядка неистовства серного пламени");
+			calamity.GetBuff("BrimflameFrenzyCooldown").DisplayName.AddTranslation(GameCulture.Russian,"Перезарядка серного неистовства");
 			calamity.GetBuff("BrimflameFrenzyCooldown").Description.AddTranslation(GameCulture.Russian,"Ваше использование серной магии истощило вас");
 			calamity.GetBuff("ConcoctionCooldown").DisplayName.AddTranslation(GameCulture.Russian,"Перезарядка смеси");
 			calamity.GetBuff("ConcoctionCooldown").Description.AddTranslation(GameCulture.Russian,"Возрождение перезаряжается");
@@ -94,7 +94,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("FleshTotemCooldown").DisplayName.AddTranslation(GameCulture.Russian,"Перезарядка тотема плоти");
 			calamity.GetBuff("FleshTotemCooldown").Description.AddTranslation(GameCulture.Russian,"Эффект тотема плоти перезаряжается");
 			calamity.GetBuff("GodSlayerCooldown").DisplayName.AddTranslation(GameCulture.Russian,"Перезарядка богоубийцы");
-			calamity.GetBuff("GodSlayerCooldown").Description.AddTranslation(GameCulture.Russian,"Весь урон увеличен на 10%; эффект богоубийцы перезаряжается");
+			calamity.GetBuff("GodSlayerCooldown").Description.AddTranslation(GameCulture.Russian,"Регенрация здоровья отключена; эффект богоубийцы перезаряжается");
 			calamity.GetBuff("IceShieldBrokenBuff").DisplayName.AddTranslation(GameCulture.Russian,"Перезарядка ледяного щита");
 			calamity.GetBuff("IceShieldBrokenBuff").Description.AddTranslation(GameCulture.Russian,"Щит восстанавливается");
 			calamity.GetBuff("InkBombCooldown").DisplayName.AddTranslation(GameCulture.Russian,"Перезарядка чернильной бомбы");
@@ -241,7 +241,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("PinkHealthCandle").Description.AddTranslation(GameCulture.Russian,"Его яркий свет наполняет окружающих надеждой");
 			calamity.GetBuff("PurpleDefenseCandle").DisplayName.AddTranslation(GameCulture.Russian,"Несокрушимость");
 			calamity.GetBuff("PurpleDefenseCandle").Description.AddTranslation(GameCulture.Russian,"Ни дождь, ни ветер не могут погасить его вечное пламя");
-			calamity.GetBuff("TranquilityCandleBuff").DisplayName.AddTranslation(GameCulture.Russian,"Свеча спокойствия");
+			calamity.GetBuff("TranquilityCandleBuff").DisplayName.AddTranslation(GameCulture.Russian,"Свеча успокоения");
 			calamity.GetBuff("TranquilityCandleBuff").Description.AddTranslation(GameCulture.Russian,"Скорость появления врагов вокруг свечи снижена!");
 			calamity.GetBuff("YellowDamageCandle").DisplayName.AddTranslation(GameCulture.Russian,"Злоба");
 			calamity.GetBuff("YellowDamageCandle").Description.AddTranslation(GameCulture.Russian,"Его ненавистное свечение мерцает от ярости");
@@ -275,7 +275,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("GravityNormalizerBuff").DisplayName.AddTranslation(GameCulture.Russian,"Нормализация гравитации");
 			calamity.GetBuff("GravityNormalizerBuff").Description.AddTranslation(GameCulture.Russian,"Гравитация в космосе нормализована, невосприимчивость к «Искажению»");
 			calamity.GetBuff("HolyWrathBuff").DisplayName.AddTranslation(GameCulture.Russian,"Священный гнев");
-			calamity.GetBuff("HolyWrathBuff").Description.AddTranslation(GameCulture.Russian,"Урон, скорость передвижения и время полёта увеличены, все атаки накладывают «Святые огни»");
+			calamity.GetBuff("HolyWrathBuff").Description.AddTranslation(GameCulture.Russian,"Урон, скорость передвижения и время полёта увеличены; все атаки накладывают «Святые огни»");
 			calamity.GetBuff("Invincible").DisplayName.AddTranslation(GameCulture.Russian,"Неуязвимый");
 			calamity.GetBuff("Invincible").Description.AddTranslation(GameCulture.Russian,"Неуязвимость к урону и большинству дебаффов");
 			calamity.GetBuff("Omniscience").DisplayName.AddTranslation(GameCulture.Russian,"Всеведение");
@@ -289,7 +289,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("Revivify").DisplayName.AddTranslation(GameCulture.Russian,"Возрождение");
 			calamity.GetBuff("Revivify").Description.AddTranslation(GameCulture.Russian,"Вы исцеляетесь на часть урона, который вы получили");
 			calamity.GetBuff("ShadowBuff").DisplayName.AddTranslation(GameCulture.Russian,"Тень");
-			calamity.GetBuff("ShadowBuff").Description.AddTranslation(GameCulture.Russian,"Вы невидимы, некоторые разбойные оружия дают и получают усиления, восстановление скрытности увеличено");
+			calamity.GetBuff("ShadowBuff").Description.AddTranslation(GameCulture.Russian,"Вы невидимы, некоторые разбойные оружия дают и получают усиления, скорость восстановления скрытности увеличено");
 			calamity.GetBuff("Soaring").DisplayName.AddTranslation(GameCulture.Russian,"Парение");
 			calamity.GetBuff("Soaring").Description.AddTranslation(GameCulture.Russian,"Время полёта крыльев и скорость увеличены\nИстинные удары ближнего боя восстанавливают время полёта крыльев");
 			calamity.GetBuff("SulphurskinBuff").DisplayName.AddTranslation(GameCulture.Russian,"Сернистая кожа");
@@ -329,7 +329,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("BloodyBoost").Description.AddTranslation(GameCulture.Russian,"Атакующие и защитные характеристики увеличены\nЛечебные зелья даруют больше здоровья");
 			calamity.GetBuff("BossZen").DisplayName.AddTranslation(GameCulture.Russian,"Босс Дзен");
 			calamity.GetBuff("BossZen").Description.AddTranslation(GameCulture.Russian,"Активный босс снижает скорость появления...намного");
-			calamity.GetBuff("BrimflameFrenzyBuff").DisplayName.AddTranslation(GameCulture.Russian,"Неистовство серного пламени");
+			calamity.GetBuff("BrimflameFrenzyBuff").DisplayName.AddTranslation(GameCulture.Russian,"Серное неистовство");
 			calamity.GetBuff("BrimflameFrenzyBuff").Description.AddTranslation(GameCulture.Russian,"Тёмная магия усиливает ваши атаки ценой вашей жизни");
 			calamity.GetBuff("ChiBuff").DisplayName.AddTranslation(GameCulture.Russian,"Ци");
 			calamity.GetBuff("ChiBuff").Description.AddTranslation(GameCulture.Russian,"Ваша следующая атака усилена и вы более устойчивы к урону");
@@ -346,19 +346,19 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("HallowedRuneAtkBuff").DisplayName.AddTranslation(GameCulture.Russian,"Святая сила");
 			calamity.GetBuff("HallowedRuneAtkBuff").Description.AddTranslation(GameCulture.Russian,"Урон миньонов увеличен на 15%");
 			calamity.GetBuff("HallowedRuneDefBuff").DisplayName.AddTranslation(GameCulture.Russian,"Святая защита");
-			calamity.GetBuff("HallowedRuneDefBuff").Description.AddTranslation(GameCulture.Russian,"Защита увеличена на 7 и сопротивление урону увеличено на 7%");
+			calamity.GetBuff("HallowedRuneDefBuff").Description.AddTranslation(GameCulture.Russian,"Защита увеличена на 7 и сопротивление урону на 7%");
 			calamity.GetBuff("HallowedRuneRegenBuff").DisplayName.AddTranslation(GameCulture.Russian,"Святая регенерация");
 			calamity.GetBuff("HallowedRuneRegenBuff").Description.AddTranslation(GameCulture.Russian,"Регенерация здоровья");
 			calamity.GetBuff("IceShieldBuff").DisplayName.AddTranslation(GameCulture.Russian,"Ледяной щит");
 			calamity.GetBuff("IceShieldBuff").Description.AddTranslation(GameCulture.Russian,"Поглощает 20% урона от следующего полученного вами удара, затем разрушается");
 			calamity.GetBuff("KamiBuff").DisplayName.AddTranslation(GameCulture.Russian,"Инъекция Ками");
-			calamity.GetBuff("KamiBuff").Description.AddTranslation(GameCulture.Russian,"Увеличена защита, скорость передвижения и урон");
+			calamity.GetBuff("KamiBuff").Description.AddTranslation(GameCulture.Russian,"Скорость передвижения и урон увеличены");
 			calamity.GetBuff("Molten").DisplayName.AddTranslation(GameCulture.Russian,"Расплавленный");
 			calamity.GetBuff("Molten").Description.AddTranslation(GameCulture.Russian,"Сопротивление к эффектам холода");
 			calamity.GetBuff("Mushy").DisplayName.AddTranslation(GameCulture.Russian,"Слащавый");
 			calamity.GetBuff("Mushy").Description.AddTranslation(GameCulture.Russian,"Защита и регенерация здоровья увеличены");
 			calamity.GetBuff("PolarisBuff").DisplayName.AddTranslation(GameCulture.Russian,"Полярное усиление");
-			calamity.GetBuff("PolarisBuff").Description.AddTranslation(GameCulture.Russian,"Северная звезда усиливает ваше оружие");
+			calamity.GetBuff("PolarisBuff").Description.AddTranslation(GameCulture.Russian,"Полярная звезда усиливает ваше оружие");
 			calamity.GetBuff("ProfanedCrystalBuff").DisplayName.AddTranslation(GameCulture.Russian,"Преданность");
 			calamity.GetBuff("ProfanedCrystalBuff").Description.AddTranslation(GameCulture.Russian,"Осквернённая душа внутри была осквернена могущественной магией высшей ведьмы");
 			calamity.GetBuff("RageMode").DisplayName.AddTranslation(GameCulture.Russian,"Режим ярости");

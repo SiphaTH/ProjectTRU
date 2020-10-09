@@ -9,10 +9,13 @@ namespace CalamityRuTranslate.ThoriumMod.Items
         {
             if (ModLoader.GetMod("ThoriumMod") != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
             {
-                if (type == ModLoader.GetMod("ThoriumMod").ItemType("Guppy"))
+                if (CalamityRuTranslate.TRuConfig.ThoriumTranslation)
                 {
-                    chat = "Находиться в море столь долго было так одиноко... я завел себе друга - маленькую рыбку, которую я назвал Маленьким Гаппи! Однако, он вечно сбегает из своего аквариума! Я его потерял и он мне дорог, так что поймай его, друг мой!";
-                    catchLocation = "Поймать в Океане";
+                    if (type == ModLoader.GetMod("ThoriumMod").ItemType("Guppy"))
+                    {
+                        chat = "Находиться в море столь долго было так одиноко... я завел себе друга - маленькую рыбку, которую я назвал Маленьким Гаппи! Однако, он вечно сбегает из своего аквариума! Я его потерял и он мне дорог, так что поймай его, друг мой!";
+                        catchLocation = "Поймать в Океане";
+                    }
                 }
             }
         }

@@ -21,7 +21,7 @@ namespace CalamityRuTranslate.CalamityMod.Projectiles
             calamity.GetProjectile("CragmawSpike").DisplayName.AddTranslation(GameCulture.Russian, "Шип");
             calamity.GetProjectile("CragmawVibeCheckChain").DisplayName.AddTranslation(GameCulture.Russian, "Ты думаешь, что в безопасности?");
             calamity.GetProjectile("CrimsonSpike").DisplayName.AddTranslation(GameCulture.Russian, "Шип");
-            calamity.GetProjectile("DraedonLaser").DisplayName.AddTranslation(GameCulture.Russian, "Лазер");
+            calamity.GetProjectile("DraedonLaser").DisplayName.AddTranslation(GameCulture.Russian, "Лазер турели лаборатории");
             calamity.GetProjectile("EarthRockBig").DisplayName.AddTranslation(GameCulture.Russian, "Камень");
             calamity.GetProjectile("EarthRockSmall").DisplayName.AddTranslation(GameCulture.Russian, "Камень");
             calamity.GetProjectile("FlakAcid").DisplayName.AddTranslation(GameCulture.Russian, "Кислота");
@@ -57,7 +57,6 @@ namespace CalamityRuTranslate.CalamityMod.Projectiles
             calamity.GetProjectile("BigFlare2").DisplayName.AddTranslation(GameCulture.Russian, "Большая вспышка");
             calamity.GetProjectile("BirbAura").DisplayName.AddTranslation(GameCulture.Russian, "Аура дракона");
             calamity.GetProjectile("BirbAuraFlare").DisplayName.AddTranslation(GameCulture.Russian, "Вспышка ауры дракона");
-            calamity.GetProjectile("BloodClot").DisplayName.AddTranslation(GameCulture.Russian, "Кровавый тромб");
             calamity.GetProjectile("BloodGeyser").DisplayName.AddTranslation(GameCulture.Russian, "Кровяной гейзер");
             calamity.GetProjectile("BrimstoneBall").DisplayName.AddTranslation(GameCulture.Russian, "Шар серного огня");
             calamity.GetProjectile("BrimstoneBarrage").DisplayName.AddTranslation(GameCulture.Russian, "Серный дротик");
@@ -66,7 +65,7 @@ namespace CalamityRuTranslate.CalamityMod.Projectiles
             calamity.GetProjectile("BrimstoneGigaBlast").DisplayName.AddTranslation(GameCulture.Russian, "Серный огненный взрыв");
             calamity.GetProjectile("BrimstoneHellblast").DisplayName.AddTranslation(GameCulture.Russian, "Серный адский взрыв");
             calamity.GetProjectile("BrimstoneHellblast2").DisplayName.AddTranslation(GameCulture.Russian, "Серный адский взрыв");
-            calamity.GetProjectile("BrimstoneHellfireball").DisplayName.AddTranslation(GameCulture.Russian, "Шар адского серного огня");
+            calamity.GetProjectile("BrimstoneHellfireball").DisplayName.AddTranslation(GameCulture.Russian, "Серный адский огненный шар");
             calamity.GetProjectile("BrimstoneLaser").DisplayName.AddTranslation(GameCulture.Russian, "Серный лазер");
             calamity.GetProjectile("BrimstoneLaserSplit").DisplayName.AddTranslation(GameCulture.Russian, "Серный преследующий лазер");
             calamity.GetProjectile("BrimstoneMonster").DisplayName.AddTranslation(GameCulture.Russian, "Серное отродье");
@@ -84,7 +83,7 @@ namespace CalamityRuTranslate.CalamityMod.Projectiles
             calamity.GetProjectile("DoGBeamPortal").DisplayName.AddTranslation(GameCulture.Russian, "Портал лучей");
             calamity.GetProjectile("DoGDeath").DisplayName.AddTranslation(GameCulture.Russian, "Смертельный луч");
             calamity.GetProjectile("DoGFire").DisplayName.AddTranslation(GameCulture.Russian, "Смертельный огонь");
-            calamity.GetProjectile("DoGNebulaShot").DisplayName.AddTranslation(GameCulture.Russian, "Смертельный лазер");
+            calamity.GetProjectile("DoGTeleportRift").DisplayName.AddTranslation(GameCulture.Russian, "Разлом");
             calamity.GetProjectile("EssenceDust").DisplayName.AddTranslation(GameCulture.Russian, "Космическая пыль");
             calamity.GetProjectile("Flare").DisplayName.AddTranslation(GameCulture.Russian, "Вспышка");
             calamity.GetProjectile("FlareBomb").DisplayName.AddTranslation(GameCulture.Russian, "Бомба вспышки");
@@ -158,6 +157,13 @@ namespace CalamityRuTranslate.CalamityMod.Projectiles
             calamity.GetProjectile("WaterSpear").DisplayName.AddTranslation(GameCulture.Russian, "Водяное копьё");
             calamity.GetProjectile("YharonFireball").DisplayName.AddTranslation(GameCulture.Russian, "Шар драконьего огня");
             calamity.GetProjectile("YharonFireball2").DisplayName.AddTranslation(GameCulture.Russian, "Шар драконьего огня");
+            calamity.GetProjectile("AcidDrop").DisplayName.AddTranslation(GameCulture.Russian, "Кислота");
+            calamity.GetProjectile("BrimstoneGeyser").DisplayName.AddTranslation(GameCulture.Russian, "Дым");
+            calamity.GetProjectile("GeyserTelegraph").DisplayName.AddTranslation(GameCulture.Russian, "Гейзер");
+            calamity.GetProjectile("HotSteam").DisplayName.AddTranslation(GameCulture.Russian, "Пар");
+            calamity.GetProjectile("LavaChunk").DisplayName.AddTranslation(GameCulture.Russian, "Лавовый кусок");
+            calamity.GetProjectile("LightningMark").DisplayName.AddTranslation(GameCulture.Russian, "Отметка молнии");
+            calamity.GetProjectile("SmokeTelegraph").DisplayName.AddTranslation(GameCulture.Russian, "Дым");
         }
     }
 }

@@ -1,5 +1,5 @@
 [c/ff4f4f:WARNING]
-Mod doesn't add new content
+The mod doesn't add new content
 
 Русификатор включает перевод для:
 

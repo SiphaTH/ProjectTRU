@@ -16,5 +16,17 @@ namespace CalamityRuTranslate
         [DefaultValue(true)]
         [ReloadRequired]
         public bool NewRussianTerrariaFont { get; set; }
+        
+        [Header("Перевод")]
+        
+        [Label("Calamity")]
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool CalamityTranslation { get; set; }
+        
+        [Label("Thorium")]
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool ThoriumTranslation { get; set; }
     }
 }

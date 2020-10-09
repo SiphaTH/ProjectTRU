@@ -164,7 +164,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
                 new[]
                 {
                     "SupremeBossText7",
-                    "Хмм... возможно, мне стоит дать младшим развлечься."
+                    "Хм... возможно, мне стоит дать младшим развлечься."
                 },
                 new[]
                 {
@@ -374,7 +374,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
                 new[]
                 {
                     "DeusAltarRejectNightText",
-                    "Бог звёзд отвергает вашу жертву. Ритуал можно проводить только ночью."
+                    "Бог звёзд отвергает ваше подношение. Ритуал можно проводить только ночью."
                 },
                 new[]
                 {
@@ -658,7 +658,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Thank you for saving me...though now I admit I am without a home since mine got destroyed.")
             {
-                Main.npcChatText = "Спасибо, что спасли меня... Ну теперь я признаю, что у меня нет дома, так как мой был разрушен.";
+                Main.npcChatText = "Спасибо, что спасли меня... Теперь я признаю, что у меня нет дома, так как мой был разрушен.";
             }
 
             if (Main.npcChatText == "I must admit...I am not quite used to this weather. It's too warm for my taste...")
@@ -703,17 +703,17 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Hmm...some would say that an unforeseen outside force is the root of the blood moon...")
             {
-                Main.npcChatText = "Хмм... Некоторые сказали бы, что невиданная сила снаружи это корень кровавой луны...";
+                Main.npcChatText = "Хм... Некоторые сказали бы, что невиданная сила снаружи это корень кровавой луны...";
             }
 
             if (Main.npcChatText == "I was once the greatest Archmage of ice that ever hailed the lands. Whether or not that is still applicable, I am not sure...")
             {
-                Main.npcChatText = "Я был величайшем Архимагом льда, существовавшим когда-либо на этих землях. Применимо ли это звание сейчас? Не знаю...";
+                Main.npcChatText = "Я был величайшем Архимагом льда, существовавшим когда-либо на этих землях. Применимо ли это звание сейчас? Не уверен...";
             }
 
             if (Main.npcChatText == "There used to be other Archmages of other elements. I wonder where they are now...if they are also alive...")
             {
-                Main.npcChatText = "Раньше были и другие Архимаги стихий. Интересно, где они сейчас?... Если они живы...";
+                Main.npcChatText = "Раньше были и другие Архимаги стихий. Интересно, где они сейчас?.. Если они живы...";
             }
 
             if (Main.npcChatText == "Oh...I wish I could tell you all about my life and the lessons I have learned, but it appears you have a great many things to do...")
@@ -766,12 +766,12 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == Main.player[Main.myPlayer].name + "...just between us, I think I forgot my soul in the ice castle. If you see it, please do let me know.")
             {
-                Main.npcChatText = Main.player[Main.myPlayer].name + "....только между нами, я думаю, что забыл свою душу в ледяном замке. Если вы её увидите, пожалуйста, дайте мне знать.";
+                Main.npcChatText = Main.player[Main.myPlayer].name + " ...только между нами, я думаю, что забыл свою душу в ледяном замке. Если вы её увидите, пожалуйста, дайте мне знать.";
             }
 
             if (Main.npcChatText == "It wouldn't be the first time something unknown and powerful dropped from the heavens...I would tread carefully if I were you...")
             {
-                Main.npcChatText = "Это был не первый раз, когда что-то неизвестное и могущественное упало с небес...На вашем месте я бы действовал осторожно...";
+                Main.npcChatText = "Это был не первый раз, когда что-то неизвестное и могущественное упало с небес... На вашем месте я бы действовал осторожно...";
             }
 
             if (Main.npcChatText == "Why are you talking to me right now? Either way, I expect you to turn in a perfect performance!")
@@ -811,7 +811,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Nothard/10, if I fight bosses I wanna feel like screaming 'OH YES DADDY!' while I die repeatedly.")
             {
-                Main.npcChatText = "Если я бы сражалась с боссом, то я бы орала: 'О ДА ПАПОЧКА', — пока босс неоднократно меня убивает.";
+                Main.npcChatText = "Если бы я сражалась с боссом, то я бы орала: 'О ДА ПАПОЧКА', — пока босс неоднократно меня убивает.";
             }
 
             if (Main.npcChatText == "Like I always say, when you're drunk you can tolerate annoying people a lot more easily...")
@@ -826,7 +826,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "I'm either laughing because I'm drunk or because I've lost my mind. Probably both.")
             {
-                Main.npcChatText = "Я смеюсь или потому что я пьяна, или потому что я безумна. Возможно, и то и другое.";
+                Main.npcChatText = "Я смеюсь или потому что пьяна, или потому что безумна. Возможно, и то и другое.";
             }
 
             if (Main.npcChatText == "When I'm drunk I'm way happier...at least until the talking worms start to appear.")
@@ -871,7 +871,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Are you sure you're 21? ...alright, fine, but don't tell anyone I sold you this.")
             {
-                Main.npcChatText = "Ты уверен, что тебе 21 год?... хорошо, хорошо, только не говори никому, что я продала тебе это.";
+                Main.npcChatText = "Ты уверен, что тебе 21 год?.. хорошо, хорошо, только не говори никому, что я продала тебе это.";
             }
 
             if (Main.npcChatText == "Drink something that turns you into a magical flying unicorn so you can be super gay.")
@@ -911,7 +911,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Why did that weird monster need that many tentacles? ...actually, don't answer that.")
             {
-                Main.npcChatText = "Зачем этому странному монстру понадобилось столько щупалец?..вообще, не отвечай на этот вопрос.";
+                Main.npcChatText = "Зачем этому странному монстру понадобилось столько щупалец?.. вообще, не отвечай на этот вопрос.";
             }
 
             if (Main.npcChatText == "There's chemicals in the water...and they're turning the frogs gay!")
@@ -995,9 +995,9 @@ namespace CalamityRuTranslate.CalamityMod.Localization
                 Main.npcChatText = "Ты ко мне пристаёшь?";
             }
 
-            if (Main.npcChatText == "If I was a magical horse, I'd be out in space swirling cocktails, as I watch space worms battle for my enjoyment.")
+            if (Main.npcChatText == "If I was a magical horse, I'd be out in space, swirling cocktails, as I watch space worms battle for my enjoyment.")
             {
-                Main.npcChatText = "Если я был бы пони, то я была бы в космосе, окружённым вихрями коктейлей и наблюдал бы за космическими червями, сражающемся на моё удовольствие.";
+                Main.npcChatText = "Если я была бы пони, то я была бы в космосе, окружённым вихрями коктейлей и наблюдал бы за космическими червями, сражающемся на моё удовольствие.";
             }
 
             for (int k = 0; k < 200 && flag; k++)
@@ -1009,7 +1009,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
                         string str = Main.npcChatText;
                         string resultA = str.Replace("Hey ", "Привет Codora, kot_stahanovec, ");
                         string resultB = resultA.Replace(" and ", " и ");
-                        string resultC = resultB.Replace("! You're all pretty good! ...wait, who are you again?", "! Вы все очень хороши! ...подожди, кто вы опять такой?");
+                        string resultC = resultB.Replace("! You're all pretty good! ...wait, who are you again?", "! Вы все очень хороши! ...подожди, а ты кто такой?");
                         string resultD = resultC.Replace("You have failed ", "Вы потерпели неудачу ");
                         string resultE = resultD.Replace(" times", " раза");
                         string resultF = resultE.Replace(" time", " раз");
@@ -1040,7 +1040,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "How can I survive on land? Ah, that is a secret. No, actually...I can breathe air like you!")
             {
-                Main.npcChatText = "Как я могу выжить на суше? Ах, это секрет. Вообще-то, нет...Я могу дышать воздухом, как ты!";
+                Main.npcChatText = "Как я могу выжить на суше? Ах, это секрет. Вообще-то, нет... Я могу дышать воздухом, как ты!";
             }
 
             if (Main.npcChatText == "Why do you ask if it's the males that carry the young? Don't your males carry their young?")
@@ -1131,7 +1131,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "I suppose that witch was mistaken. Defeating the Ceaseless Void and the Devourer has not caused our world to collapse... but I would not lower my guard if I were you.")
             {
-                Main.npcChatText = "Наверное, ведьма ошиблась. Победа над Бесконечной пустотой и Пожирателем не привела к краху нашего мира... но на твоём месте я бы не стал терять бдительность.";
+                Main.npcChatText = "Наверное, ведьма ошиблась. Победа над Нескончаемой пустотой и Пожирателем не привела к краху нашего мира... но на твоём месте я бы не стал терять бдительность.";
             }
 
             if (Main.npcChatText == "Pockets of ore have appeared once more in the land. This will allow you to create the most powerful weaponry and armor imagined!")
@@ -1211,7 +1211,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Providence is as much the sun goddess as much as the Moon Lord is the moon god. They are two sides of the same coin, choosing to remain neutral amongst our petty squabbles.")
             {
-                Main.npcChatText = "Провиденс настолько же богиня солнца, насколько Лунный лорд — бог луны. Они — две стороны одной монеты, предпочитающие занимать нейтральную позицию в наших мелких ссорах.";
+                Main.npcChatText = "Провиденс настолько богиня солнца, насколько Лунный лорд — бог луны. Они — две стороны одной монеты, предпочитающие занимать нейтральную позицию в наших мелких ссорах.";
             }
 
             if (Main.npcChatText == "The stories have it that when Providence faced and defeated Yharim and his forces she lost a lot of energy and reverted to a more skeletal form. She's merely a fraction of the power she was before.")
@@ -1221,7 +1221,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "The men at the front of the dungeon are performing a ritual to keep the Moon Lord contained in his prison. In order to gain Yharim's attention, however, you may need to defeat them.")
             {
-                Main.npcChatText = "Люди на входе в темницу проводят ритуал сдерживания Лунного лорда в заточении. Однако, чтобы привлечь внимание Ярима тебе, скорее всего, придётся убить их.";
+                Main.npcChatText = "Люди на входе в темницу проводят ритуал сдерживания Лунного Лорда в заточении. Однако, чтобы привлечь внимание Ярима тебе, скорее всего, придётся убить их.";
             }
             
             if (Main.npcChatText == "The Abyss has become far more active than before. You might be able to mine some of the volcanic rubble contained within.")
@@ -1231,7 +1231,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "The plague was just one of the many experiments authorized by Yharim to raze towns to the ground. This is probably one of the few he shelved for being too terrible.")
             {
-                Main.npcChatText = "Чума была лишь одним из немногих экспериментов Ярима по стиранию городов с лица земли. Возможно, что этот эксперимент — один из немногих, отложенных Лордом в долгий ящик, потому что он был слишком ужасен.";
+                Main.npcChatText = "Чума была лишь одним из немногих экспериментов Ярима по стиранию городов с лица земли. Возможно, этот эксперимент — один из немногих, отложенных Лордом в долгий ящик, потому что он был слишком ужасен.";
             }
 
             if (Main.npcChatText == "You will find more ores have been unlocked due to the magic sealing them away being dispelled. Some of them may require more than just the ore itself to create.")
@@ -1276,12 +1276,12 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "When exploring the jungle temple be careful. You may not wish to disturb the Lihzard's idol, the Golem. It's quite the destructive force.")
             {
-                Main.npcChatText = "Будьте осторожны пока исследуете джунгли. Я сомневаюсь, что вы захотите потревожить защитника ящщеров, Голема. Это довольно разрушительная сила.";
+                Main.npcChatText = "Будьте осторожны пока исследуете джунгли. Я сомневаюсь, что вы захотите потревожить божество ящщеров, Голема. Это довольно разрушительная сила.";
             }
 
             if (Main.npcChatText == "Have you heard of the story of Archmage Permafrost? Rumor has it he's been locked away in an icy prison by Lord Yharim. Perhaps you would be able to free him if Cryogen was destroyed.")
             {
-                Main.npcChatText = "Ты слышал историю об архимаге Пермафросте? Ходят слухи, что он был заперт в своём ледяной тюрьме Лордом Яримом. Я думаю, что ты сможешь его освободить после того, как уничтожишь Криогена.";
+                Main.npcChatText = "Ты слышал историю об архимаге Пермафросте? Ходят слухи, что он был заперт в своей ледяной тюрьме Лордом Яримом. Я думаю, что ты сможешь его освободить после того, как уничтожишь Криогена.";
             }
 
             if (Main.npcChatText == "There are rumors of ores that lay in latency. When you defeat certain bosses you will undo the ancient magic which conceals those materials.")
@@ -1296,7 +1296,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Ah yes, the Abyss. That trench is full of powerful creatures that could devour you in a heartbeat. I would explore the dungeon first.")
             {
-                Main.npcChatText = "Ах да, бездна. Эта траншея полна могущественных существ, которые могут сожрать тебя в мгновение ока. На твоём месте я бы сначала обследовал темницу..";
+                Main.npcChatText = "Ах да, бездна. Эта траншея полна могущественных существ, которые могут сожрать тебя в мгновение ока. На твоём месте я бы сначала исследовал темницу.";
             }
 
             if (Main.npcChatText == "The Sulphurous Seas are dangerous. The toxic waters will burn your skin, but if you can brave them you will be able to reach the Abyss, where there are powerful weapons and dangers aplenty.")
@@ -1321,7 +1321,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Scattered across the lands are shrines dedicated to the gods. You can take whatever is in them, but a few items you may not be able to use until much later.")
             {
-                Main.npcChatText = "По всей стране разбросаны святыни, посвящённые богам. Вы можете взять всё, что в них есть, но некоторые предметы вы не сможете использовать некоторое время.";
+                Main.npcChatText = "По всей земле разбросаны святыни, посвящённые богам. Вы можете взять всё, что в них есть, но некоторые предметы вы не сможете использовать некоторое время.";
             }
 
             if (Main.npcChatText == "I'm assuming you've heard the legends that speak of the ninja, Statis? There are some who say that if you were able to defeat the gods which his clan once worshipped you would be able to harness some of his powers.")
@@ -1376,7 +1376,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Statis' clan's got nothing on me. Mostly cause they're all dead.")
             {
-                Main.npcChatText = "Клан Статиса не имеет ничего на меня. В основном потому что они все мертвы.";
+                Main.npcChatText = "У клана Статиса ничего на меня нет. В основном потому что они все мертвы.";
             }
 
             if (Main.npcChatText == "Where is my party hat? Well, I stole it of course.")
@@ -1491,7 +1491,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "I tried looting Storm Weaver's armor once. Before I could get a chunk of the stuff... well let's just say the bigger, fatter cosmic worm arrived and it didn't end well.")
             {
-                Main.npcChatText = "Я однажды попыталась получить броню Штормового Ткача. До того, как я смогла достать хотя бы кусок этой вещи… давай просто скажем, что появился большой толстый космический червь и это всё кончилось печально.";
+                Main.npcChatText = "Я однажды попыталась получить броню Штормового Ткача. До того, как я смогла достать хотя бы кусок этой вещи... давай просто скажем, что появился большой толстый космический червь и это всё кончилось печально.";
             }
 
             if (Main.npcChatText == "I'd rather not be here. This place has bad vibes, y'know? It brings back some unpleasant memories.")
@@ -1524,7 +1524,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
             {
                 if (Main.npcChatText == "Want in on a little secret? Since " + Main.npc[num9].GivenName + " always gets so much cash from you, I've been stealing some of it as we go. I need you to keep quiet about it, so here.")
                 {
-                    Main.npcChatText = "Хочешь маленький секрет? С тех пор как " + Main.npc[num9].GivenName + " получает слишком много денег, я решила своровать немного у него. За твоё молчание ты получишь это.";
+                    Main.npcChatText = "Хочешь маленький секрет? Так как " + Main.npc[num9].GivenName + " получает слишком много денег, я решила своровать немного у него. За твоё молчание ты получишь это.";
                 } 
             }
             
@@ -1535,7 +1535,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Sorry, I got nothing. Perhaps you could reforge something and come back later...")
             {
-                Main.npcChatText = "Извините, у меня ничего нет. Возможно, ты что-то перекуёшь и вернёшься позже...";
+                Main.npcChatText = "Извини, у меня ничего нет. Возможно, ты что-то перекуёшь и вернёшься позже...";
             }
 
             if (Main.npcChatText == "Could you be so kind as to, ah...check hell for me...? I left someone I kind of care about down there.")
@@ -1708,7 +1708,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "That starborne illness sits upon this land like a blister. Do even more vile forces of corruption exist in worlds beyond?")
             {
-                Main.npcChatText = "Болезнь звёзд заразила эти земле. Существуют ли ещё более гнусные силы разложения в потусторонних мирах?";
+                Main.npcChatText = "Болезнь звёзд заразила эти земли. Существуют ли ещё более гнусные силы разложения в потусторонних мирах?";
             }
 
             if (Main.npcChatText == "Циррус put me up to this.")
@@ -1723,7 +1723,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
             
             if (Main.npcChatText == "\u0093I'm not here for any reason! Just picking up mushrooms for uh, later use.")
             {
-                Main.npcChatText = "\u0093Я здесь не по какой-то причине! Просто собираю грибы для последующего использования.";
+                Main.npcChatText = "Я здесь не по какой-то причине! Просто собираю грибы для последующего использования.";
             }
 
             if (Main.npcChatText == "Please don't catch space lice. Or Crimson lice. Or just lice in general.")
@@ -1771,7 +1771,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
             
             if (Main.npcChatText == "You know...we haven't had an invasion in a while...")
             {
-                Main.npcChatText = "Вы знаете...у нас давно не было нашествий...";
+                Main.npcChatText = "Вы знаете... у нас давно не было нашествий...";
             }
 
             if (Main.npcChatText == "That's the biggest moth I've ever seen for sure. You'd need one big gun to take one of those down.")
@@ -1806,7 +1806,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "The caverns have become increasingly dark as of late, so I stocked up on some special torches if you have the funds.")
             {
-                Main.npcChatText = "Пещеры в последнее время стали всё темнее, поэтому я запасся факелами и готов тебе их продать, если у тебя есть средства.";
+                Main.npcChatText = "Пещеры в последнее время стали всё темнее, поэтому я запасся факелами и готов тебе их продать, если у тебя есть монеты.";
             }
 
             if (Main.npcChatText == "What do you mean your traps aren't making the cut? Don't look at me!")
@@ -1826,7 +1826,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Maybe I should've waterproofed my gadgets... They're starting to corrode.")
             {
-                Main.npcChatText = "Может, мне стоило гидроизолировать мои гаджеты ... Они начинают ржаветь.";
+                Main.npcChatText = "Может, мне стоило гидроизолировать мои гаджеты... Они начинают ржаветь.";
             }
             
             if (Main.npcChatText == "Care for a little Moonshine?")
@@ -1836,7 +1836,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Sheesh, Циррус is a little cruel, isn't she? I never claimed to be an expert on anything but ale!")
             {
-                Main.npcChatText = "Воу, Циррус немного жестокая, не так ли? Я никогда не утверждал, что разбираюсь в чем-то, кроме Эля!";
+                Main.npcChatText = "Воу, Циррус немного жестокая, не так ли? Я никогда не утверждал, что разбираюсь в чем-то, кроме эля!";
             }
 
             if (Main.npcChatText == "Aye, I've heard of a mythical creature in the oceans, singing with an alluring voice. Careful when yer fishin out there.")
@@ -1886,7 +1886,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Draedon? He's...a little 'high octane' if you know what I mean.")
             {
-                Main.npcChatText = "Дрэйдон? Он ... немного 'высокооктановый', если вы понимаете, о чём я.";
+                Main.npcChatText = "Дрэйдон? Он... немного 'высокооктановый', если вы понимаете, о чём я.";
             }
 
             if (Main.npcChatText == "Those oversized bugs terrorizing the jungle... Surely you of all people could shut them down!")
@@ -1901,7 +1901,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Those screams...I'm not sure why, but I feel like a nameless fear has awoken in my heart.")
             {
-                Main.npcChatText = "Эти крики... Я не знаю почему, но я чувствую, как безымянный страх проснулся в моём сердце.";
+                Main.npcChatText = "Эти крики... Я не уверен почему, но чувствую как безызвестный страх пробуждается в моём сердце.";
             }
 
             if (Main.npcChatText == "I can faintly hear ghostly shrieks from the dungeon...and not ones I'm familiar with at all. Just what is going on in there?")
@@ -1966,7 +1966,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "Devourer of what, you said? Devourer of Funds, if its payroll is anything to go by!")
             {
-                Main.npcChatText = "Пожиратель чего, ты сказал? Пожиратель средств, если его зарплата хоть что-то значит!";
+                Main.npcChatText = "Пожиратель чего, ты сказал? Пожиратель монет, если его зарплата хоть что-то значит!";
             }
 
             if (Main.npcChatText == "Goodness! That cane has swagger!")

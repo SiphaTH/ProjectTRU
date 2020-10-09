@@ -28,7 +28,7 @@ namespace CalamityRuTranslate
             Type stealthUI = null;
             Type calamityPlayer = null;
             Type cheatTestThing = null;
-            Type draedonHologramChatUI = null;
+            Type labHologramProjectorUI = null;
             Type draedonLogHellGUI = null;
             Type draedonLogJungleGUI = null;
             Type draedonLogPlanetoidGUI = null;
@@ -66,6 +66,8 @@ namespace CalamityRuTranslate
             Type perforatorHeadMedium = null;
             Type profanedGuardianBoss3 = null;
             Type profanedGuardianBoss = null;
+            Type bossRushUI = null;
+            Type coldDivinity = null;
 
             Assembly calamityAssembly = Calamity.GetType().Assembly;
 
@@ -183,9 +185,9 @@ namespace CalamityRuTranslate
 
             foreach (Type o in calamityAssembly.GetTypes())
             {
-                if (o.Name == "DraedonHologramChatUI")
+                if (o.Name == "LabHologramProjectorUI")
                 {
-                    draedonHologramChatUI = o;
+                    labHologramProjectorUI = o;
                 }
             }
 
@@ -412,6 +414,22 @@ namespace CalamityRuTranslate
                     profanedGuardianBoss = aq;
                 }
             }
+            
+            foreach (Type ar in calamityAssembly.GetTypes())
+            {
+                if (ar.Name == "BossRushUI")
+                {
+                    bossRushUI = ar;
+                }
+            }
+            
+            foreach (Type at in calamityAssembly.GetTypes())
+            {
+                if (at.Name == "ColdDivinity")
+                {
+                    coldDivinity = at;
+                }
+            }
 
             if (ripperUI != null)
             {
@@ -425,17 +443,17 @@ namespace CalamityRuTranslate
 
             if (acidRainUI != null)
             {
-                DrawAcidRain = acidRainUI.GetMethod("Draw", BindingFlags.Static | BindingFlags.Public);
-            }
-
-            if (stealthUI != null)
-            {
-                DrawStealth = stealthUI.GetMethod("Draw", BindingFlags.Static | BindingFlags.Public);
+                DrawAcidRain = acidRainUI.GetMethod("get_InvasionName", BindingFlags.Instance | BindingFlags.Public);
             }
 
             if (DrawAcidRain != null)
             {
                 ModifyDrawAcidRain += Calamity_ModifyDrawAcidRain;
+            }
+            
+            if (stealthUI != null)
+            {
+                DrawStealth = stealthUI.GetMethod("Draw", BindingFlags.Static | BindingFlags.Public);
             }
 
             if (DrawStealth != null)
@@ -469,14 +487,14 @@ namespace CalamityRuTranslate
                 ModifyUpdateAccessory += Ua_ModifyUpdateAccessory;
             }
 
-            if (draedonHologramChatUI != null)
+            if (labHologramProjectorUI != null)
             {
-                SelectDiaglog = draedonHologramChatUI.GetMethod("SelectDiaglog", BindingFlags.Public | BindingFlags.Static);
+                ChooseDialogue = labHologramProjectorUI.GetMethod("ChooseDialogue", BindingFlags.Public | BindingFlags.Static);
             }
 
-            if (SelectDiaglog != null)
+            if (ChooseDialogue != null)
             {
-                ModifySelectDiaglog += Ua_ModifySelectDiaglog;
+                ModifyChooseDialogue += Ua_ModifyChooseDialogue;
             }
 
             if (draedonLogHellGUI != null)
@@ -898,11 +916,61 @@ namespace CalamityRuTranslate
             {
                 ModifyBossLootProfanedGuardianBoss += Ua_ModifyBossLootProfanedGuardianBoss;
             }
+            
+            if (bossRushUI != null)
+            {
+                InvasionNamebossRushUI = bossRushUI.GetMethod("get_InvasionName", BindingFlags.Public | BindingFlags.Instance);
+            }
+
+            if (InvasionNamebossRushUI != null)
+            {
+                ModifyInvasionNamebossRushUI += Ua_ModifyInvasionNamebossRushUI;
+            }
+            
+            if (coldDivinity != null)
+            {
+                ColdDivinityModifyTooltips = coldDivinity.GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance);
+            }
+
+            if (ColdDivinityModifyTooltips != null)
+            {
+                ModifyColdDivinityModifyTooltips += Ua_ModifyColdDivinityModifyTooltips;
+            }
 
             #endregion
         }
 
         #region IL Editing
+
+        private static void Ua_ModifyColdDivinityModifyTooltips(ILContext il)
+        {
+            var a = new ILCursor(il);
+
+            if (!a.TryGotoNext(i => i.MatchLdstr("Tooltip7")))
+            {
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyColdDivinityModifyTooltips a failed");
+                return;
+            }
+        
+            a.Index++;
+            a.Emit(OpCodes.Pop);
+            a.Emit(OpCodes.Ldstr, "Tooltip6");
+        }
+        
+        private static void Ua_ModifyInvasionNamebossRushUI(ILContext il)
+        {
+            var a = new ILCursor(il);
+        
+            if (!a.TryGotoNext(i => i.MatchLdstr("Boss Rush")))
+            {
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyInvasionNamebossRushUI a failed");
+                return;
+            }
+        
+            a.Index++;
+            a.Emit(OpCodes.Pop);
+            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Босс-Раш"));
+        }
         
         private static void Ua_ModifyBossLootProfanedGuardianBoss(ILContext il)
         {
@@ -1348,7 +1416,7 @@ namespace CalamityRuTranslate
         
             a.Index++;
             a.Emit(OpCodes.Pop);
-            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Используйте ") + "[i:{0}]" + EncodingCyrillic.EncodingTransform(" или дождитесь, пока событие произойдет естественным образом после того, как Глаз Ктулху будет побеждён."));
+            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Используйте ") + "[i:{0}]" + EncodingCyrillic.EncodingTransform(" или дождитесь, пока событие произойдёт естественным образом после того, как Глаз Ктулху будет побеждён."));
         
             var b = new ILCursor(il);
         
@@ -1384,7 +1452,7 @@ namespace CalamityRuTranslate
         
             d.Index++;
             d.Emit(OpCodes.Pop);
-            d.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Используйте ") + "[i:{0}]" + EncodingCyrillic.EncodingTransform(" или ") + "[i:{1}]" + EncodingCyrillic.EncodingTransform(" или дождитесь, пока событие произойдет естественным образом после того, как Глаз Ктулху будет побеждён."));
+            d.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Используйте ") + "[i:{0}]" + EncodingCyrillic.EncodingTransform(" или ") + "[i:{1}]" + EncodingCyrillic.EncodingTransform(" или дождитесь, пока событие произойдёт естественным образом после того, как Глаз Ктулху будет побеждён."));
         
             var e = new ILCursor(il);
         
@@ -1420,7 +1488,7 @@ namespace CalamityRuTranslate
         
             g.Index++;
             g.Emit(OpCodes.Pop);
-            g.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Используйте ")+ "[i:{0}]" + EncodingCyrillic.EncodingTransform(" или ") + "[i:{1}]" + EncodingCyrillic.EncodingTransform(" или дождитесь, пока событие произойдет естественным образом после того, как Полтергаст будет побеждён."));
+            g.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Используйте ")+ "[i:{0}]" + EncodingCyrillic.EncodingTransform(" или ") + "[i:{1}]" + EncodingCyrillic.EncodingTransform(" или дождитесь, пока событие произойдёт естественным образом после того, как Полтергаст будет побеждён."));
         
             var h = new ILCursor(il);
         
@@ -1704,7 +1772,7 @@ namespace CalamityRuTranslate
         
             a.Index++;
             a.Emit(OpCodes.Pop);
-            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" страдал тяжелой анемией."));
+            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" страдал тяжёлой анемией."));
         
             var b = new ILCursor(il);
         
@@ -1824,13 +1892,13 @@ namespace CalamityRuTranslate
             a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" пытался изменить правила."));
         }
         
-        private static void Ua_ModifySelectDiaglog(ILContext il)
+        private static void Ua_ModifyChooseDialogue(ILContext il)
         {
             var a = new ILCursor(il);
         
             if (!a.TryGotoNext(i => i.MatchLdstr("To any personnel engaged in the laboratories. Please wear your steel engraved ID badge at all times. It is the easiest method to discern your body if any accidents do occur.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog a failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue a failed");
                 return;
             }
         
@@ -1842,7 +1910,7 @@ namespace CalamityRuTranslate
         
             if (!b.TryGotoNext(i => i.MatchLdstr("To experiment is to fail. To fail is to learn. To learn is to advance.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog b failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue b failed");
                 return;
             }
         
@@ -1854,7 +1922,7 @@ namespace CalamityRuTranslate
         
             if (!c.TryGotoNext(i => i.MatchLdstr("Apparent danger while researching serves only to enhance the research experience.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog c failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue c failed");
                 return;
             }
         
@@ -1866,7 +1934,7 @@ namespace CalamityRuTranslate
         
             if (!d.TryGotoNext(i => i.MatchLdstr("Laser-type weapon prototypes are incredibly lethal and are not to be used within presentation halls.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog d failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue d failed");
                 return;
             }
         
@@ -1878,7 +1946,7 @@ namespace CalamityRuTranslate
         
             if (!e.TryGotoNext(i => i.MatchLdstr("High-energy plasma emissions have adverse effects on both flesh and metal. Do not attempt to handle vented plasma.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog e failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue e failed");
                 return;
             }
         
@@ -1890,7 +1958,7 @@ namespace CalamityRuTranslate
         
             if (!f.TryGotoNext(i => i.MatchLdstr("Electric shocks from military equipment are intended to be fatal. If you survive such a shock, that is a clear indicator that the device is not functioning properly. Please report any such cases.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog f failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue f failed");
                 return;
             }
         
@@ -1902,7 +1970,7 @@ namespace CalamityRuTranslate
         
             if (!g.TryGotoNext(i => i.MatchLdstr("All employees are hereby notified that they will be held accountable for any collateral damage caused by Gauss weapon fire, even during sanctioned testing exercises.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog g failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue g failed");
                 return;
             }
         
@@ -1914,7 +1982,7 @@ namespace CalamityRuTranslate
         
             if (!h.TryGotoNext(i => i.MatchLdstr("Security Field Emitters will vaporize all unauthorized equipment and personnel. Please leave personal effects in the designated lockers off-site. This also means: Do not bring any family members who are not enlisted as personnel.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog h failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue h failed");
                 return;
             }
         
@@ -1926,7 +1994,7 @@ namespace CalamityRuTranslate
         
             if (!ii.TryGotoNext(i => i.MatchLdstr("If one does manage to breach restricted testing facilities, do at least record any unexpected burns, lacerations, bruising, fractur... ...trauma, shocks and otherwise. Thank you.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog ii failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue ii failed");
                 return;
             }
         
@@ -1938,7 +2006,7 @@ namespace CalamityRuTranslate
         
             if (!j.TryGotoNext(i => i.MatchLdstr("The power grid has been... ...eavily compromised. Abort research and proceed to the emergency exits located at... ...and egress with haste.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog j failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue j failed");
                 return;
             }
         
@@ -1950,7 +2018,7 @@ namespace CalamityRuTranslate
         
             if (!k.TryGotoNext(i => i.MatchLdstr("Notify the Security Department of any aggressive local fauna immediately.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog k failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue k failed");
                 return;
             }
         
@@ -1962,7 +2030,7 @@ namespace CalamityRuTranslate
         
             if (!l.TryGotoNext(i => i.MatchLdstr("Sensors have detected a significant breach in the spacetime continuum.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog l failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue l failed");
                 return;
             }
         
@@ -1974,7 +2042,7 @@ namespace CalamityRuTranslate
         
             if (!m.TryGotoNext(i => i.MatchLdstr("Please help. I'm stuck in this hologram machine.")))
             {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifySelectDiaglog m failed");
+                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyChooseDialogue m failed");
                 return;
             }
         
@@ -2789,7 +2857,7 @@ namespace CalamityRuTranslate
             
             bh.Index++;
             bh.Emit(OpCodes.Pop);
-            bh.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Нескончаемая Пустота"));
+            bh.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Нескончаемая пустота"));
             
             var bi = new ILCursor(il);
             
@@ -3093,7 +3161,7 @@ namespace CalamityRuTranslate
         
             b.Index++;
             b.Emit(OpCodes.Pop);
-            b.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Образец, который развил грандиозные размеры и необъяснимо впечатляющие телепатические способности. Что самое любопытное, так это его сильная связь со своими меньшими родственниками. Когда он оказывается под угрозой, другие моллюски сплачиваются вокруг своего агрессора и начинают атаковать. Может быть, это самые первые признаки высшей формы жизни, эволюционное звено, скрытое в затонувшем море? Или самоотверженная случайность, которая привела бы к уничтожению, если они населяли любую область, кроме этих умиротворённых пещер."));
+            b.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Образец, который развил грандиозные размеры и необъяснимо-впечатляющие телепатические способности. Что самое любопытное, так это его сильная связь со своими меньшими родственниками. Когда он оказывается под угрозой, другие моллюски окружают своего агрессора и начинают атаковать. Может быть, это самые первые признаки высшей формы жизни, эволюционное звено, скрытое в затерянном море? Или самоотверженная случайность, которая привела бы к уничтожению, если они населяли любую область, кроме этих умиротворённых пещер."));
         
             var c = new ILCursor(il);
         
@@ -3105,7 +3173,7 @@ namespace CalamityRuTranslate
         
             c.Index++;
             c.Emit(OpCodes.Pop);
-            c.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("У морских обитателей в этих пещерах есть глаза, внешне они молочно-белые, но на деле они рудименты. На их жёстких узловатых шкурах кристаллы растут в большом количестве, обеспечивая существам защиту. Возможно, это ещё одна адаптация к жизни, которую они приняли. Но самое поразительное чудо — внутренности их тел. В образцах, подвергнутых вскрытию, я заметил, что минерал находится в самой их пищеварительной системе и, возможно, через какой-то химический процесс передаёт питательные вещества их вялым хозяевам. Своеобразное, но совершенно благотворное взаимодействие."));
+            c.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("У морских обитателей в этих пещерах есть глаза-рудименты, внешне они молочно-белые. На их жёстких узловатых шкурах кристаллы растут в большом количестве, обеспечивая существам защиту. Возможно, это ещё одна адаптация к жизни, которую они приняли. Но самое поразительное чудо — внутренности их тел. В образцах, подвергнутых вскрытию, я заметил, что минерал находится в самой их пищеварительной системе и, возможно, через какой-то химический процесс передаёт питательные вещества их вялым хозяевам. Своеобразное, но совершенно благотворное взаимодействие."));
         }
         
         private static void Calamity_ModifyModifyGetTextByPageSnowBiomeGUI(ILContext il)
@@ -3120,7 +3188,7 @@ namespace CalamityRuTranslate
         
             a.Index++;
             a.Emit(OpCodes.Pop);
-            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Замерзающая тундра, где существуют и процветают существа, полностью приспособленные к минусовым температурам. Это шокирующий переход от чистых лесов и выжженной солнцем пустыни. Климат, подобный этому, не должен существовать естественно. Погодные условия на этих ледяных равнинах, кажется, неестественно меняются. Вероятно, этому есть причина, которая требует дальнейших исследований."));
+            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Холодная тундра, где существуют и процветают существа, полностью приспособленные к минусовым температурам. Это шокирующий переход от чистых лесов и выжженной солнцем пустыни. Климат, подобный этому, не должен существовать естественно. Погодные условия на этих ледяных равнинах, кажется, неестественно меняются. Вероятно, этому есть причина, которая требует дальнейших исследований."));
         
             var b = new ILCursor(il);
         
@@ -3144,7 +3212,7 @@ namespace CalamityRuTranslate
         
             c.Index++;
             c.Emit(OpCodes.Pop);
-            c.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Интригующе. Я нашёл механизмы, когда-то заполнявшие туннели. Они находились в ледяных пещерах, поломанные из-за веков во льду и талой воды. Мастерство исполнения поражает. Я нашёл схожести с моими работами, а также узнал что-то новое. Но кто их создал? Почему настолько сложные машины находятся в такой скудной и унылой среде обитания. Возможно, именно это они виноваты в настолько неестественных условиях."));
+            c.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Интригующе. Я нашёл механизмы, когда-то заполнявшие туннели. Они находились в ледяных пещерах, поломанные из-за веков во льду и талой воды. Мастерство исполнения поражает. Я нашёл схожести с моими работами, а также узнал что-то новое. Но кто их создал? Почему настолько сложные машины находятся в такой скудной и унылой среде обитания. Возможно, именно они виноваты в настолько неестественных условиях."));
         }
         
         private static void Calamity_ModifyModifyGetTextByPagePlanetoidGUI(ILContext il)
@@ -3159,7 +3227,7 @@ namespace CalamityRuTranslate
         
             a.Index++;
             a.Emit(OpCodes.Pop);
-            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Висящие низко на орбите массы земли и другие структуры мира, обеспечивают укромное и отдалённое место для исследований. Это лучший вариант для изучения астрономии и других наук. В моих лабораториях я тестирую способность к выживанию растений в условиях холода и вакуума. Несмотря на то что многие растения погибли, способности к выживанию некоторых поражает, подтверждая способность к продолжительной жизни здесь."));
+            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Висящие низко на орбите массы земли и другие структуры мира, обеспечивают укромное и отдалённое место для исследований. Это оптимальный вариант для изучения астрономии и других наук. В моих лабораториях я выращиваю разные растения и тестирую их способность к выживанию в условиях холода и вакуума стратосферы. Несмотря на то, что многие растения погибают, существование жизни здесь подтверждается. Просто нужно дать этой жизни больше времени на развитие."));
         
             var b = new ILCursor(il);
         
@@ -3171,7 +3239,7 @@ namespace CalamityRuTranslate
         
             b.Index++;
             b.Emit(OpCodes.Pop);
-            b.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Раздутый отвратительный космический червь, который находится под контролем Лорда. Идея создания брони, подходящей ему во всех отношениях, была предложением, от которого я не мог отказаться. Выкованная из космической стали, моего собственного создания, броня защищала практически от любой атаки. А также она не уменьшает изначальной гибкости существа, а ещё увеличивает пространственные способности. Я доволен результатом."));
+            b.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Раздутый отвратительный космический червь. Впрочем, я понимаю, почему Лорд его использует, ведь он может его контролировать... Идея создания брони, подходящей ему во всех отношениях, была предложением, от которого я не мог отказаться. Выкованная из космической стали, моего собственного создания, броня защищала практически от любой атаки. А также она не уменьшает изначальной гибкости существа, а ещё увеличивает пространственные способности. Я доволен результатом."));
         
             var c = new ILCursor(il);
         
@@ -3183,7 +3251,7 @@ namespace CalamityRuTranslate
         
             c.Index++;
             c.Emit(OpCodes.Pop);
-            c.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Меня мало волнует космос. Да, я путешествовал по нему, но сейчас мне достаточно работы по изучению собственного мира. Даже если бы я и заселил другую планету, желание Лорда в поставке ему технологий стало бы причиной моего ухода с планеты. Возможно, когда я изучу и проверю каждую местную вещь, я займусь чем-то большим."));
+            c.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Меня мало волнует космос. Да, я путешествовал по нему, но сейчас мне достаточно работы по изучению собственного мира. Даже если бы я когда-то жил на другой планете, одного желания Лорда получать мои технологии было бы достаточно, чтобы я улетел с неё сюда. Если же я когда-нибудь полностью изучу каждый кусочек этого места, то тогда, возможно, я обращу свой взор наверх, в сторону макроскопического."));
          }
         
         private static void Calamity_ModifyModifyGetTextByPageJungleGUI(ILContext il)
@@ -3210,7 +3278,7 @@ namespace CalamityRuTranslate
         
             b.Index++;
             b.Emit(OpCodes.Pop);
-            b.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Механически усиленная пчелиная матка, над которой я ранее экспериментировал, теоретически была идеальным разносчиком чумы. Однако, когда технологии начали менять сущность пчёлы, начались проблемы. Разум насекомого противостоял нанотехнологиям, такого раньше не происходило. Она выросла невероятно жестокой и почти не подчинялась приказам. Однако, если мы хотим использовать её, нет другого способа, кроме как, позволить ей свободно разгуливать. Я буду рассматривать это дальше."));
+            b.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Механически усиленная королева пчёл, над которой я ранее экспериментировал, теоретически была идеальным разносчиком чумы. Однако, когда технологии начали менять сущность пчелы, начались проблемы. Разум насекомого противостоял нанотехнологиям, такого раньше не происходило. Она выросла невероятно жестокой и почти не подчинялась приказам. Однако, если мы хотим использовать её, нет другого способа, кроме как позволить ей свободно разгуливать. Я продожлу изучать это дальше."));
         
             var c = new ILCursor(il);
         
@@ -3222,7 +3290,7 @@ namespace CalamityRuTranslate
         
             c.Index++;
             c.Emit(OpCodes.Pop);
-            c.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Вирус, способный пожирать и превращать практически всё. И тщательно сделанная нанотехнология контроля. Создание шло пугающе быстро, создавая мерзкое существо. Я стараюсь сделать так, чтобы она была дружелюбна к обычным формам жизни. Однако это не главная проблема. Многие не решались продолжать создание, но я разрешил уйти, если они пожелают. Я не нуждался ни в ком, кто не был бы так же предан делу, как мои машины."));
+            c.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Вирус, способный пожирать и превращать практически всё. И тщательно сделанная нанотехнология контроля. Превращение шло пугающе быстро, создавая мерзкую тварь. Я стараюсь сделать так, чтобы она была дружелюбна к обычным формам жизни. Однако это не главная проблема. Многие не решались продолжать создание, но я разрешил уйти, если они пожелают. Я не нуждался ни в ком, кто не был бы так же предан делу, как мои машины."));
         }
         
         private static void Calamity_ModifyDrawAcidRain(ILContext il)
@@ -3267,7 +3335,7 @@ namespace CalamityRuTranslate
         
             a.Index++;
             a.Emit(OpCodes.Pop);
-            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" пища для Змей."));
+            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" стал пищей для змей."));
         
             var b = new ILCursor(il);
         
@@ -3279,7 +3347,7 @@ namespace CalamityRuTranslate
         
             b.Index++;
             b.Emit(OpCodes.Pop);
-            b.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Кислород не смог достичь "));
+            b.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Не хватило кислорода для "));
         
             var c = new ILCursor(il);
         
@@ -3414,7 +3482,7 @@ namespace CalamityRuTranslate
         
             d.Index++;
             d.Emit(OpCodes.Pop);
-            d.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" душа была высвобождена лавой."));
+            d.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" душа была освобождена лавой."));
         
             var e = new ILCursor(il);
         
@@ -3570,7 +3638,7 @@ namespace CalamityRuTranslate
         
             q.Index++;
             q.Emit(OpCodes.Pop);
-            q.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" инфекция распространилась слишком далеко."));
+            q.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" инфекция распространилась слишком сильно."));
         
             var r = new ILCursor(il);
         
@@ -3618,7 +3686,7 @@ namespace CalamityRuTranslate
         
             u.Index++;
             u.Emit(OpCodes.Pop);
-            u.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" здоровье была полностью преобразована в ману."));
+            u.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" здоровье было полностью преобразовано в ману."));
         
             var v = new ILCursor(il);
         
@@ -3657,7 +3725,7 @@ namespace CalamityRuTranslate
         
             a.Index++;
             a.Emit(OpCodes.Pop);
-            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Весь природный ландшафт — постоянный источник геотермальной энергии и тепла для печи. Если он не был бы совсем необитаемым, за исключением демонов и духов, то я проводил больше исследований в недрах земли. Где я точно ни поселился бы, так это серные скалы. Магма там... несговорчива и агрессивна, намного больше, чем это возможно. Всё из-за того, что она пропиталась проклятыми тёмными душами, любезно предоставленными этой Ведьмой."));
+            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Весь природный ландшафт — постоянный источник геотермальной энергии и тепла для кузни. Если бы он не был совсем необитаемым, за исключением демонов и духов, я бы проводил больше исследований в недрах земли. Где я точно ни поселился бы, так это в серных скалах. Магма там... 'несговорчива' и агрессивна, намного больше, чем это возможно. Всё из-за того, что она пропиталась проклятыми тёмными душами, любезно предоставленными этой Ведьмой."));
         
             var b = new ILCursor(il);
         
@@ -3669,7 +3737,7 @@ namespace CalamityRuTranslate
         
             b.Index++;
             b.Emit(OpCodes.Pop);
-            b.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Меч, окружённый моим вниманием во время создания. Он сформировался в магме, а закалён огнём душ. Его лезвие — непревзойдённое, хотя его охват ограничен, что делает сплошное применение сомнительным. Я могу считать, что это моя первая работа сделанная во имя искусства и мастерства. Если я был рождён синтетически, то любое моё творение, вызывающие вопрос: «Был ли я создан?» — результат, которым можно гордиться. Это доказывает, что я всё же могу быть награждён музой."));
+            b.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Меч, полностью окружённый моим вниманием во время создания. Он сформировался в магме, а закалён огнём душ. Его лезвие — непревзойдённое, хотя его дальность ограничена, что делает общее применение сомнительным. Я думаю, что это моя первая работа, сделанная во имя искусства и мастерства. Если я был рождён синтетически, то любое моё творение, вызывающие вопрос: «Был ли я создан?» — результат, которым можно гордиться. Это доказывает, что я всё же могу быть удостоенным музы."));
         
             var c = new ILCursor(il);
         
@@ -3681,7 +3749,7 @@ namespace CalamityRuTranslate
         
             c.Index++;
             c.Emit(OpCodes.Pop);
-            c.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Какое ужасное существо, но всё же интересное с научной точки зрения. В отличие от сплава душ темницы, эта сущность была сформирована не из одного грешника, а из многих. Ещё одно отличие заключается в том, что ограничения, вызванные искусственностью существования темницы, не применяются к нему. Именно законы Ада свели их вместе в единого владыку подземного мира. И когда невинная жизнь приносится в жертву... Их голод, который, кажется, находится в гармонии с загробной жизнью, нарастает."));
+            c.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Какое ужасное существо, но всё же интересное с научной точки зрения. В отличие от сплава душ темницы, эта сущность была сформирована не из одного грешника, а из многих. Ещё одно отличие заключается в том, что ограничения, вызванные искусственным происхождением темницы, неприменимы к нему. Именно законы Ада свели их вместе в единого владыку подземного мира. И когда невинная жизнь приносится в жертву... Их голод, который, кажется, является частью загробной жизни, нарастает."));
         }
         
         private static void Ua_ModifyHandleMouseInteraction(ILContext il)
@@ -3738,7 +3806,7 @@ namespace CalamityRuTranslate
             if (PreKill != null) ModifyPreKill -= Ua_ModifyPreKill;
             if (KillPlayer != null) ModifyKillPlayer -= Ua_ModifyKillPlayer;
             if (UpdateAccessory != null) ModifyUpdateAccessory -= Ua_ModifyUpdateAccessory;
-            if (SelectDiaglog != null) ModifySelectDiaglog -= Ua_ModifySelectDiaglog;
+            if (ChooseDialogue != null) ModifyChooseDialogue -= Ua_ModifyChooseDialogue;
             if (GetTextByPageHellGUI != null) ModifyGetTextByPageHellGUI -= Calamity_ModifyGetTextByPageHellGUI;
             if (GetTextByPageJungleGUI != null) ModifyGetTextByPageJungleGUI -= Calamity_ModifyModifyGetTextByPageJungleGUI;
             if (GetTextByPagePlanetoidGUI != null) ModifyGetTextByPagePlanetoidGUI -= Calamity_ModifyModifyGetTextByPagePlanetoidGUI;
@@ -3781,6 +3849,8 @@ namespace CalamityRuTranslate
             if (BossLootPerforatorHeadMedium != null) ModifyBossLootPerforatorHeadMedium -= Ua_ModifyBossLootPerforatorHeadMedium;
             if (BossLootProfanedGuardianBoss3 != null) ModifyBossLootProfanedGuardianBoss3 -= Ua_ModifyBossLootProfanedGuardianBoss3;
             if (BossLootProfanedGuardianBoss != null) ModifyBossLootProfanedGuardianBoss -= Ua_ModifyBossLootProfanedGuardianBoss;
+            if (InvasionNamebossRushUI != null) ModifyInvasionNamebossRushUI -= Ua_ModifyInvasionNamebossRushUI;
+            if (ColdDivinityModifyTooltips != null) ModifyColdDivinityModifyTooltips -= Ua_ModifyColdDivinityModifyTooltips;
 
             #endregion
         }
@@ -3862,10 +3932,10 @@ namespace CalamityRuTranslate
             add => HookEndpointManager.Modify(SetChatButtonsTHIEF, value);
             remove => HookEndpointManager.Unmodify(SetChatButtonsTHIEF, value);
         }
-        private static event ILContext.Manipulator ModifySelectDiaglog
+        private static event ILContext.Manipulator ModifyChooseDialogue
         {
-            add => HookEndpointManager.Modify(SelectDiaglog, value);
-            remove => HookEndpointManager.Unmodify(SelectDiaglog, value);
+            add => HookEndpointManager.Modify(ChooseDialogue, value);
+            remove => HookEndpointManager.Unmodify(ChooseDialogue, value);
         }
         private static event ILContext.Manipulator ModifyUseItemArmageddon
         {
@@ -4032,6 +4102,16 @@ namespace CalamityRuTranslate
             add => HookEndpointManager.Modify(BossLootProfanedGuardianBoss, value);
             remove => HookEndpointManager.Unmodify(BossLootProfanedGuardianBoss, value);
         }
+        private static event ILContext.Manipulator ModifyInvasionNamebossRushUI
+        {
+            add => HookEndpointManager.Modify(InvasionNamebossRushUI, value);
+            remove => HookEndpointManager.Unmodify(InvasionNamebossRushUI, value);
+        }
+        private static event ILContext.Manipulator ModifyColdDivinityModifyTooltips 
+        {
+            add => HookEndpointManager.Modify(ColdDivinityModifyTooltips, value);
+            remove => HookEndpointManager.Unmodify(ColdDivinityModifyTooltips, value);
+        }
 
         #endregion
 
@@ -4044,7 +4124,7 @@ namespace CalamityRuTranslate
         private static MethodInfo KillPlayer;
         private static MethodInfo UpdateAccessory;
         private static MethodInfo AddCalamityBosses;
-        private static MethodInfo SelectDiaglog;
+        private static MethodInfo ChooseDialogue;
         private static MethodInfo GetTextByPageHellGUI;
         private static MethodInfo GetTextByPageJungleGUI;
         private static MethodInfo GetTextByPagePlanetoidGUI;
@@ -4086,6 +4166,8 @@ namespace CalamityRuTranslate
         private static MethodInfo BossLootPerforatorHeadSmall;
         private static MethodInfo BossLootBumblefuck;
         private static MethodInfo BossLootProfanedGuardianBoss;
+        private static MethodInfo InvasionNamebossRushUI;
+        private static MethodInfo ColdDivinityModifyTooltips;
 
         #endregion
 

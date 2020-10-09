@@ -58,17 +58,23 @@ namespace CalamityRuTranslate
                     }
 				}
 
-				if (Calamity != null)
-                {
-                    CalamityLocalization.CalamityAddLocalizations();
-                    ModifyCalamityIL.Setup();
-                }
+				if (TRuConfig.CalamityTranslation)
+				{
+					if (Calamity != null)
+					{
+						CalamityLocalization.CalamityAddLocalizations();
+						ModifyCalamityIL.Setup();
+					}
+				}
 
-                if (Thorium != null)
-                {
-                    ThoriumSupport.ThoriumAddLocalizations();
-                }
-
+				if (TRuConfig.ThoriumTranslation)
+				{
+					if (Thorium != null)
+					{
+						ThoriumSupport.ThoriumAddLocalizations();
+					}
+				}
+				
                 if (Redemption != null)
                 {
                     MoRSupport.RedemptionAddLocalizations();
@@ -104,22 +110,28 @@ namespace CalamityRuTranslate
 		{
             if (LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
             {
-                if (Calamity != null)
-                {
-                    CalamityLocalization.CalamityNpcChat();
-                }
+	            if (TRuConfig.CalamityTranslation)
+	            {
+		            if (Calamity != null)
+		            {
+			            CalamityLocalization.CalamityNpcChat();
+		            }
+	            }
 
-                if (Thorium != null)
-                {
-                    ThoriumSupport.ThoriumNpcChat();
-                    ThoriumSupport.ThoriumBardClass();
-                }
-
+	            if (TRuConfig.ThoriumTranslation)
+	            {
+		            if (Thorium != null)
+		            {
+			            ThoriumSupport.ThoriumNpcChat();
+			            ThoriumSupport.ThoriumBardClass();
+		            }
+	            }
+	            
                 if (ElementsAwoken != null)
                 {
                     ModEASupport.ElementsAwokenNpcChat();
                 }
-
+	                
                 if (Redemption != null)
                 {
                     MoRSupport.CombatText();
@@ -132,25 +144,31 @@ namespace CalamityRuTranslate
 		{
 			if (Calamity != null)
 			{
-				CalamityBuffs.Setup();
-				CalamityItemName.Setup();
-				CalamityItemTooltip.Setup();
-				CalamityNpc.Setup(); 
-                CalamityProjectiles.Setup();
-                CalamityTiles.Setup();
-                CalamityPrefixName.Setup();
-                CalamityChestName.Setup();
+				if (TRuConfig.CalamityTranslation)
+				{
+					CalamityBuffs.Setup();
+					CalamityItemName.Setup();
+					CalamityItemTooltip.Setup();
+					CalamityNpc.Setup(); 
+					CalamityProjectiles.Setup();
+					CalamityTiles.Setup();
+					CalamityPrefixName.Setup();
+					CalamityChestName.Setup();
+				}
 			}
 
-			if (Thorium != null)
+			if (TRuConfig.ThoriumTranslation)
 			{
-				ThoriumBuffs.Setup();
-				ThoriumTiles.Setup();
-                ThoriumChestName.Setup();
-				ThoriumNpc.Setup();
-				ThoriumItemName.Setup();
-				ThoriumItemTooltip.Setup();
-				ThoriumPrefixName.Setup();
+				if (Thorium != null)
+				{
+					ThoriumBuffs.Setup();
+					ThoriumTiles.Setup();
+					ThoriumChestName.Setup();
+					ThoriumNpc.Setup();
+					ThoriumItemName.Setup();
+					ThoriumItemTooltip.Setup();
+					ThoriumPrefixName.Setup();
+				}
 			}
 			
 			if (ElementsAwoken != null)
