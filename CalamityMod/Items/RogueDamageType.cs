@@ -13,30 +13,34 @@ namespace CalamityRuTranslate.CalamityMod.Items
         {
             if (ModLoader.GetMod("CalamityMod") != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
             {
-                foreach (TooltipLine tooltip in tooltips)
+                if (CalamityRuTranslate.TRuConfig.CalamityTranslation)
                 {
-                    if (tooltip.Name == "Damage")
+                    foreach (TooltipLine tooltip in tooltips)
                     {
-                        string[] splitText = tooltip.text.Split(' ');
-                        string damageValue = splitText.First();
-                        string str = tooltip.text;
-                        string resultA = str.Replace(" rogue метании", " разбойный урон");
-                        tooltip.text = resultA;
-                        string dmg = damageValue + " разбойный урон";
-                        
-                        if (tooltip.text == dmg)
+                        if (tooltip.Name == "Damage")
                         {
-                            tooltip.overrideColor = new Color(255, 184, 108);
+                            string[] splitText = tooltip.text.Split(' ');
+                            string damageValue = splitText.First();
+                            string str = tooltip.text;
+                            string resultA = str.Replace(" rogue метании", " разбойный урон");
+                            tooltip.text = resultA;
+                            string dmg = damageValue + " разбойный урон";
+
+                            if (tooltip.text == dmg)
+                            {
+                                tooltip.overrideColor = new Color(255, 184, 108);
+                            }
                         }
                     }
-                }
-                foreach (TooltipLine tooltip2 in tooltips)
-                {
-                    if (tooltip2.Name == "Damage")
+
+                    foreach (TooltipLine tooltip2 in tooltips)
                     {
-                        string str = tooltip2.text;
-                        string resultA = str.Replace(" true melee damage", " истинный урон ближнего боя");
-                        tooltip2.text = resultA;
+                        if (tooltip2.Name == "Damage")
+                        {
+                            string str = tooltip2.text;
+                            string resultA = str.Replace(" true melee damage", " истинный урон ближнего боя");
+                            tooltip2.text = resultA;
+                        }
                     }
                 }
             }

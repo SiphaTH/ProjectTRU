@@ -7,22 +7,26 @@ namespace CalamityRuTranslate
     public class Config : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ClientSide;
-
-        public override void OnLoaded()
-        {
-            CalamityRuTranslate.tRuConfig = this;
-        }
+        public override void OnLoaded() => CalamityRuTranslate.TRuConfig = this;
 
         [Header("Шрифт")]
-        [DefaultValue(true)]
-        [Label("Шрифт Comic Sans MS")]
+        
+        [Label("Шрифт JetBrains Mono")]
         [Tooltip("Если вам не нравится новый шрифт который предлагает русификатор\nи вы хотите играть со своим, вы можете его отключить\nТребуется перезагрузка мода")]
+        [DefaultValue(true)]
         [ReloadRequired]
         public bool NewRussianTerrariaFont { get; set; }
-
-        public override bool AcceptClientChanges(ModConfig pendingConfig, int whoAmI, ref string message)
-        {
-            return true;
-        }
+        
+        [Header("Перевод")]
+        
+        [Label("Calamity")]
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool CalamityTranslation { get; set; }
+        
+        [Label("Thorium")]
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool ThoriumTranslation { get; set; }
     }
 }

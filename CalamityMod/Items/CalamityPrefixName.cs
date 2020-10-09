@@ -15,7 +15,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			
 			calamity.GetPrefix("Pointy").DisplayName.AddTranslation(GameCulture.Russian, "Заострённый");
 			calamity.GetPrefix("Sharp").DisplayName.AddTranslation(GameCulture.Russian, "Острый");
-			calamity.GetPrefix("Feathered").DisplayName.AddTranslation(GameCulture.Russian, "Cтремительный");
+			calamity.GetPrefix("Feathered").DisplayName.AddTranslation(GameCulture.Russian, "Стремительный");
 			calamity.GetPrefix("Sleek").DisplayName.AddTranslation(GameCulture.Russian, "Обтекаемый");
 			calamity.GetPrefix("Hefty").DisplayName.AddTranslation(GameCulture.Russian, "Увесистый");
 			calamity.GetPrefix("Mighty").DisplayName.AddTranslation(GameCulture.Russian, "Могучий");

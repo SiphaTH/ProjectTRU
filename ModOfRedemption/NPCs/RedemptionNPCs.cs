@@ -114,7 +114,7 @@ namespace CalamityRuTranslate.ModOfRedemption.NPCs
             redemption.GetNPC("SnowyBoi").DisplayName.AddTranslation(GameCulture.Russian, "Хладнокровный заклинатель");
             redemption.GetNPC("SpaceKeeper").DisplayName.AddTranslation(GameCulture.Russian, "Космический хранитель");
             redemption.GetNPC("SpacePaladin").DisplayName.AddTranslation(GameCulture.Russian, "Космический паладин");
-            redemption.GetNPC("StoneGolemAncient1").DisplayName.AddTranslation(GameCulture.Russian, "Древний каменный големц");
+            redemption.GetNPC("StoneGolemAncient1").DisplayName.AddTranslation(GameCulture.Russian, "Древний каменный голем");
             redemption.GetNPC("StoneGolemAncient2").DisplayName.AddTranslation(GameCulture.Russian, "Древний каменный голем");
             redemption.GetNPC("SunkenCaptain").DisplayName.AddTranslation(GameCulture.Russian, "Затонувший капитан");
             redemption.GetNPC("SunkenDeckhand").DisplayName.AddTranslation(GameCulture.Russian, "Затонувший пират");

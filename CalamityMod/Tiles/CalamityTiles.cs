@@ -29,30 +29,30 @@ namespace CalamityRuTranslate.CalamityMod.Tiles
 			chaoticBrick.AddTranslation(GameCulture.Russian, "Хаотический кирпич");
 			tile3.AddMapEntry(new Color(255, 0, 0), chaoticBrick);
 			
-			ModTile tile4 = TileLoader.GetTile(calamity.TileType("DraedonFactoryFieldGenerator"));
-			ModTranslation draedonFactoryFieldGenerator = tile4.CreateMapEntryName();
-			draedonFactoryFieldGenerator.AddTranslation(GameCulture.Russian, "Генератор поля");
-			tile4.AddMapEntry(new Color(53, 49, 52), draedonFactoryFieldGenerator);
+			ModTile tile4 = TileLoader.GetTile(calamity.TileType("ChargingStation"));
+			ModTranslation chargingStation = tile4.CreateMapEntryName();
+			chargingStation.AddTranslation(GameCulture.Russian, "Зарядное устройство");
+			tile4.AddMapEntry(new Color(67, 72, 81), chargingStation);
 			
-			ModTile tile5 = TileLoader.GetTile(calamity.TileType("DraedonFuelFactory"));
-			ModTranslation draedonFuelFactory = tile5.CreateMapEntryName();
-			draedonFuelFactory.AddTranslation(GameCulture.Russian, "Топливная фабрика");
-			tile5.AddMapEntry(new Color(67, 72, 81), draedonFuelFactory);
+			ModTile tile5 = TileLoader.GetTile(calamity.TileType("DraedonLabTurret"));
+			ModTranslation draedonLabTurret = tile5.CreateMapEntryName();
+			draedonLabTurret.AddTranslation(GameCulture.Russian, "Турель лаборатории");
+			tile5.AddMapEntry(new Color(67, 72, 81), draedonLabTurret);
 			
-			ModTile tile6 = TileLoader.GetTile(calamity.TileType("DraedonItemCharger"));
-			ModTranslation draedonItemCharger = tile6.CreateMapEntryName();
-			draedonItemCharger.AddTranslation(GameCulture.Russian, "Зарядное устройство");
-			tile6.AddMapEntry(new Color(67, 72, 81), draedonItemCharger);
+			ModTile tile6 = TileLoader.GetTile(calamity.TileType("InactivePowerCellFactory"));
+			ModTranslation inactivePowerCellFactory = tile6.CreateMapEntryName();
+			inactivePowerCellFactory.AddTranslation(GameCulture.Russian, "Неактивная фабрика по производству силовых ячеек");
+			tile6.AddMapEntry(new Color(67, 72, 81), inactivePowerCellFactory);
 			
-			ModTile tile7 = TileLoader.GetTile(calamity.TileType("DraedonTurretTile"));
-			ModTranslation draedonTurretTile = tile7.CreateMapEntryName();
-			draedonTurretTile.AddTranslation(GameCulture.Russian, "Турель");
-			tile7.AddMapEntry(new Color(67, 72, 81), draedonTurretTile);
+			ModTile tile7 = TileLoader.GetTile(calamity.TileType("LabHologramProjector"));
+			ModTranslation labHologramProjector = tile7.CreateMapEntryName();
+			labHologramProjector.AddTranslation(GameCulture.Russian, "Голограммный проектор лаборатории");
+			tile7.AddMapEntry(new Color(99, 131, 199), labHologramProjector);
 			
-			ModTile tile8 = TileLoader.GetTile(calamity.TileType("InactiveDraedonFuelFactory"));
-			ModTranslation inactiveDraedonFuelFactory = tile8.CreateMapEntryName();
-			inactiveDraedonFuelFactory.AddTranslation(GameCulture.Russian, "Бездействующая топливная фабрика");
-			tile8.AddMapEntry(new Color(67, 72, 81), inactiveDraedonFuelFactory);
+			ModTile tile8 = TileLoader.GetTile(calamity.TileType("PowerCellFactory"));
+			ModTranslation powerCellFactory = tile8.CreateMapEntryName();
+			powerCellFactory.AddTranslation(GameCulture.Russian, "Фабрика по производству силовых ячеек");
+			tile8.AddMapEntry(new Color(67, 72, 81), powerCellFactory);
 			
 			ModTile tile9 = TileLoader.GetTile(calamity.TileType("SecurityChestTile"));
 			ModTranslation securityChestTile = tile9.CreateMapEntryName();
@@ -366,12 +366,12 @@ namespace CalamityRuTranslate.CalamityMod.Tiles
 
 			ModTile tile71 = TileLoader.GetTile(calamity.TileType("AuricToiletTile"));
 			ModTranslation auricToiletTile = tile71.CreateMapEntryName();
-			auricToiletTile.AddTranslation(GameCulture.Russian, "Золотоносный туалет");
+			auricToiletTile.AddTranslation(GameCulture.Russian, "Золотосодержащий туалет");
 			tile71.AddMapEntry(new Color(191, 142, 111), auricToiletTile);
 
 			ModTile tile72 = TileLoader.GetTile(calamity.TileType("BabyFlakHermitCageTile"));
 			ModTranslation babyFlakHermitCageTile = tile72.CreateMapEntryName();
-			babyFlakHermitCageTile.AddTranslation(GameCulture.Russian, "Клетка с маленьким артиреллйским крабом");
+			babyFlakHermitCageTile.AddTranslation(GameCulture.Russian, "Террариум с маленьким крабом зенитного огня");
 			tile72.AddMapEntry(new Color(175, 238, 238), babyFlakHermitCageTile);
 
 			ModTile tile73 = TileLoader.GetTile(calamity.TileType("BabyGhostBellJarTile"));
@@ -411,7 +411,7 @@ namespace CalamityRuTranslate.CalamityMod.Tiles
 
 			ModTile tile80 = TileLoader.GetTile(calamity.TileType("PiggyCageTile"));
 			ModTranslation piggyCageTile = tile80.CreateMapEntryName();
-			piggyCageTile.AddTranslation(GameCulture.Russian, "Клетка с поросёнком");
+			piggyCageTile.AddTranslation(GameCulture.Russian, "Террариум с поросёнком");
 			tile80.AddMapEntry(new Color(175, 238, 238), piggyCageTile);
 
 			ModTile tile81 = TileLoader.GetTile(calamity.TileType("PinkCandle"));
@@ -431,7 +431,7 @@ namespace CalamityRuTranslate.CalamityMod.Tiles
 
 			ModTile tile84 = TileLoader.GetTile(calamity.TileType("TranquilityCandle"));
 			ModTranslation tranquilityCandle = tile84.CreateMapEntryName();
-			tranquilityCandle.AddTranslation(GameCulture.Russian, "Свеча спокойствия");
+			tranquilityCandle.AddTranslation(GameCulture.Russian, "Свеча успокоения");
 			tile84.AddMapEntry(new Color(238, 145, 105), tranquilityCandle);
 
 			ModTile tile85 = TileLoader.GetTile(calamity.TileType("TwinklerInABottleTile"));
@@ -471,12 +471,12 @@ namespace CalamityRuTranslate.CalamityMod.Tiles
 
 			ModTile tile92 = TileLoader.GetTile(calamity.TileType("MonolithCrafting"));
 			ModTranslation monolithCrafting = tile92.CreateMapEntryName();
-			monolithCrafting.AddTranslation(GameCulture.Russian, "Монолитная амальгама");
+			monolithCrafting.AddTranslation(GameCulture.Russian, "Монолитное слияние");
 			tile92.AddMapEntry(new Color(191, 142, 111), monolithCrafting);
 
 			ModTile tile93 = TileLoader.GetTile(calamity.TileType("PlagueInfuser"));
 			ModTranslation plagueInfuser = tile93.CreateMapEntryName();
-			plagueInfuser.AddTranslation(GameCulture.Russian, "Чумной инфузер");
+			plagueInfuser.AddTranslation(GameCulture.Russian, "Чумной инфузёр");
 			tile93.AddMapEntry(new Color(191, 142, 111), plagueInfuser);
 
 			ModTile tile94 = TileLoader.GetTile(calamity.TileType("ProfanedBasin"));
@@ -1876,7 +1876,7 @@ namespace CalamityRuTranslate.CalamityMod.Tiles
 			
 			ModTile tile373 = TileLoader.GetTile(calamity.TileType("AuricOre"));
 			ModTranslation auricOre = tile373.CreateMapEntryName();
-			auricOre.AddTranslation(GameCulture.Russian, "Золотоносная руда");
+			auricOre.AddTranslation(GameCulture.Russian, "Золотосодержащая руда");
 			tile373.AddMapEntry(new Color(255, 200, 0), auricOre);
 			
 			ModTile tile374 = TileLoader.GetTile(calamity.TileType("ChaoticOre"));
@@ -1906,7 +1906,7 @@ namespace CalamityRuTranslate.CalamityMod.Tiles
 			
 			ModTile tile379 = TileLoader.GetTile(calamity.TileType("UelibloomOre"));
 			ModTranslation uelibloomOre = tile379.CreateMapEntryName();
-			uelibloomOre.AddTranslation(GameCulture.Russian, "Улиблумовая руда");
+			uelibloomOre.AddTranslation(GameCulture.Russian, "Руда буйного цветения");
 			tile379.AddMapEntry(new Color(0, 255, 0), uelibloomOre);
 			
 			ModTile tile380 = TileLoader.GetTile(calamity.TileType("BrainCoral"));
@@ -1921,7 +1921,7 @@ namespace CalamityRuTranslate.CalamityMod.Tiles
 			
 			ModTile tile382 = TileLoader.GetTile(calamity.TileType("FanCoral"));
 			ModTranslation fanCoral = tile382.CreateMapEntryName();
-			fanCoral.AddTranslation(GameCulture.Russian, "Воздушный коралл");
+			fanCoral.AddTranslation(GameCulture.Russian, "Веерный коралл");
 			tile382.AddMapEntry(new Color(0, 0, 80), fanCoral);
 			
 			ModTile tile383 = TileLoader.GetTile(calamity.TileType("Navystone"));
@@ -1931,8 +1931,8 @@ namespace CalamityRuTranslate.CalamityMod.Tiles
 			
 			ModTile tile384 = TileLoader.GetTile(calamity.TileType("SeaAnemone"));
 			ModTranslation seaAnemone = tile384.CreateMapEntryName();
-			seaAnemone.AddTranslation(GameCulture.Russian, "Актиния");
-			tile384.AddMapEntry(new Color(0, 0, 80), seaAnemone);
+			seaAnemone.AddTranslation(GameCulture.Russian, "Морская актиния");
+			tile384.AddMapEntry(new Color(0, 0, 80), seaAnemone);	
 			
 			ModTile tile385 = TileLoader.GetTile(calamity.TileType("SeaPrism"));
 			ModTranslation seaPrism = tile385.CreateMapEntryName();
