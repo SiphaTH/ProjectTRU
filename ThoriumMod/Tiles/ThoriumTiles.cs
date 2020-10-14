@@ -257,7 +257,7 @@ namespace CalamityRuTranslate.ThoriumMod.Tiles
 			
 			ModTile tile129 = TileLoader.GetTile(thorium.TileType("FurnitureDresser"));
 			ModTranslation furnitureDresserNaga = tile129.CreateMapEntryName(tile42.Name + "_Naga");
-			furnitureDresserNaga.AddTranslation(GameCulture.Russian, "Нага комод");
+			furnitureDresserNaga.AddTranslation(GameCulture.Russian, "Нага-комод");
 			tile129.AddMapEntry(new Color(191, 142, 111), furnitureDresserNaga);
 			
 			ModTile tile43 = TileLoader.GetTile(thorium.TileType("FurnitureLamp"));
@@ -427,7 +427,7 @@ namespace CalamityRuTranslate.ThoriumMod.Tiles
 			
 			ModTile tile131 = TileLoader.GetTile(thorium.TileType("NagaChest"));
 			ModTranslation nagaChest = tile131.CreateMapEntryName();
-			nagaChest.AddTranslation(GameCulture.Russian, "Нага сундук");
+			nagaChest.AddTranslation(GameCulture.Russian, "Нага-сундук");
 			tile131.AddMapEntry(new Color(174, 129, 92), nagaChest);
 			
 			ModTile tile75 = TileLoader.GetTile(thorium.TileType("OceanCrystal"));
@@ -652,7 +652,7 @@ namespace CalamityRuTranslate.ThoriumMod.Tiles
 			
 			ModTile tile134 = TileLoader.GetTile(thorium.TileType("TrappedChests"));
 			ModTranslation valadiumChestTrapped = tile134.CreateMapEntryName("ValadiumChest_Trapped");
-			valadiumChestTrapped.AddTranslation(GameCulture.Russian, "Валадиумный сундук");
+			valadiumChestTrapped.AddTranslation(GameCulture.Russian, "Валадиумовый сундук");
 			tile134.AddMapEntry(new Color(174, 129, 92), valadiumChestTrapped);
 			
 			ModTile tile135 = TileLoader.GetTile(thorium.TileType("TrappedChests"));
@@ -667,7 +667,7 @@ namespace CalamityRuTranslate.ThoriumMod.Tiles
 			
 			ModTile tile137 = TileLoader.GetTile(thorium.TileType("TrappedChests"));
 			ModTranslation nagaChestTrapped = tile137.CreateMapEntryName("NagaChest_Trapped");
-			nagaChestTrapped.AddTranslation(GameCulture.Russian, "Нага сундук");
+			nagaChestTrapped.AddTranslation(GameCulture.Russian, "Нага-сундук");
 			tile137.AddMapEntry(new Color(174, 129, 92), nagaChestTrapped);
 			
 			ModTile tile117 = TileLoader.GetTile(thorium.TileType("Trophies"));
@@ -687,7 +687,7 @@ namespace CalamityRuTranslate.ThoriumMod.Tiles
 			
 			ModTile tile138 = TileLoader.GetTile(thorium.TileType("ValadiumChest"));
 			ModTranslation valadiumChest = tile138.CreateMapEntryName();
-			valadiumChest.AddTranslation(GameCulture.Russian, "Валадиумный сундук");
+			valadiumChest.AddTranslation(GameCulture.Russian, "Валадиумовый сундук");
 			tile138.AddMapEntry(new Color(174, 129, 92), valadiumChest);
 			
 			ModTile tile120 = TileLoader.GetTile(thorium.TileType("ValadiumChunk"));

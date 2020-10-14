@@ -26,9 +26,9 @@ namespace CalamityRuTranslate.ThoriumMod.Tiles
             TileLoader.GetTile(thorium.TileType("YewChest")).chest = "Тисовый сундук";
             TileLoader.GetTile(thorium.TileType("OrnateChest")).chest = "Изысканный сундук";
             TileLoader.GetTile(thorium.TileType("CursedChest")).chest = "Проклятый сундук";
-            TileLoader.GetTile(thorium.TileType("NagaChest")).chest = "Нага сундук";
+            TileLoader.GetTile(thorium.TileType("NagaChest")).chest = "Нага-сундук";
             TileLoader.GetTile(thorium.TileType("ShadyChest")).chest = "Теневой сундук";
-            TileLoader.GetTile(thorium.TileType("ValadiumChest")).chest = "Валадиумный сундук";
+            TileLoader.GetTile(thorium.TileType("ValadiumChest")).chest = "Валадиумовый сундук";
             TileLoader.GetTile(thorium.TileType("FurnitureDresser")).dresser = "Комод";
         }
     }

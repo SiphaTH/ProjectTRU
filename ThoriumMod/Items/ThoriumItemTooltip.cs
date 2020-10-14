@@ -89,7 +89,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("FesteringWalkerBanner").Tooltip.AddTranslation(GameCulture.Russian, "Игроки поблизости получают бонус против: Гнойный ходок");
 			thorium.GetItem("FlamekinCasterBanner").Tooltip.AddTranslation(GameCulture.Russian, "Игроки поблизости получают бонус против: Огнерожденный маг");
 			thorium.GetItem("FlyingBioMassBanner").Tooltip.AddTranslation(GameCulture.Russian, "Игроки поблизости получают бонус против: Летающая био-масса");
-			thorium.GetItem("FreezerBanner").Tooltip.AddTranslation(GameCulture.Russian, "Игроки поблизости получают бонус против: Замороз");
+			thorium.GetItem("FreezerBanner").Tooltip.AddTranslation(GameCulture.Russian, "Игроки поблизости получают бонус против: Заморозь");
 			thorium.GetItem("FrostBurntBanner").Tooltip.AddTranslation(GameCulture.Russian, "Игроки поблизости получают бонус против: Обожжённый морозом");
 			thorium.GetItem("FrostFangBanner").Tooltip.AddTranslation(GameCulture.Russian, "Игроки поблизости получают бонус против: Морозный клык");
 			thorium.GetItem("FrostWormBanner").Tooltip.AddTranslation(GameCulture.Russian, "Игроки поблизости получают бонус против: Морозный червь");
@@ -184,7 +184,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("BronzeFragments").Tooltip.AddTranslation(GameCulture.Russian, "'Его поразительное качество сохранилось даже спустя столько времени...'");
 			thorium.GetItem("BronzeGladius").Tooltip.AddTranslation(GameCulture.Russian, "Атаки могут заковать противника в камень, останавливая его на месте.\nБоссы не подвержены этому эффекту");
 			thorium.GetItem("BronzeGreaves").Tooltip.AddTranslation(GameCulture.Russian, "Повышает скорость метания на 10%\nПовышает скорость передвижения на 10%");
-			thorium.GetItem("BronzeHelmet").Tooltip.AddTranslation(GameCulture.Russian, "Повышает шанс критического метательного удара на 10%\nПовышает скорость метательных санрядов на 10%");
+			thorium.GetItem("BronzeHelmet").Tooltip.AddTranslation(GameCulture.Russian, "Повышает шанс критического метательного удара на 10%\nПовышает скорость метательных снарядов на 10%");
 			thorium.GetItem("BronzeSpear").Tooltip.AddTranslation(GameCulture.Russian, "Атаки могут заковать противника в камень, останавливая его на месте.\nБоссы не подвержены этому эффекту");
 			thorium.GetItem("BronzeThrowing").Tooltip.AddTranslation(GameCulture.Russian, "Наносит на 35% больше урона и может превратить противника в камень во время падения\nДистанция броска зависит от положения курсора");
 			thorium.GetItem("GorganGazeStaff").Tooltip.AddTranslation(GameCulture.Russian, "Есть шанс превратить противника, на которого указывает курсор, в камень");
@@ -201,7 +201,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("DarkMageBag").Tooltip.AddTranslation(GameCulture.Russian, "Нажмите правую клавишу мыши, чтобы открыть");
 			thorium.GetItem("DarkMageStaff").Tooltip.AddTranslation(GameCulture.Russian, "Быстро стреляет неточными лучами магии, лечащими союзников");
 			thorium.GetItem("DarkTome").Tooltip.AddTranslation(GameCulture.Russian, "Стреляет комплектом из трех магических выстрелов");
-			thorium.GetItem("GrogBlueprint").Tooltip.AddTranslation(GameCulture.Russian, "Этим может заинтересоваться Повар");
+			thorium.GetItem("GrogBlueprint").Tooltip.AddTranslation(GameCulture.Russian, "Сложное руководство по правильной практике пивоварения");
 			thorium.GetItem("OgreBag").Tooltip.AddTranslation(GameCulture.Russian, "Нажмите правую клавишу мыши, чтобы открыть");
 			thorium.GetItem("OgreSandal").Tooltip.AddTranslation(GameCulture.Russian, "Повышает скорость передвижения на 10%\nПри приземлении на твердую поверхность вы выпускаете мощную ударную волну\nУрон, отбрасывание и радиус волны увеличиваются пропорционально высоте падения");
 			thorium.GetItem("OgreSnotGun").Tooltip.AddTranslation(GameCulture.Russian, "Выстреливает залпом сопливых шаров");
@@ -249,7 +249,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("Mjölnir").Tooltip.AddTranslation(GameCulture.Russian, "Выпускает быстрые образы легендарного Мьёльнира\nУдар по противнику вызывает дугу цепной молнии\nНажмите правую клавишу мыши, чтобы вызвать вокруг вас бурю ионизированного разрушения");
 			thorium.GetItem("OmniMask").Tooltip.AddTranslation(GameCulture.Russian, "'Носите лицо самого Хаоса...'");
 			thorium.GetItem("RagBag").Tooltip.AddTranslation(GameCulture.Russian, "Нажмите правую клавишу мыши, чтобы открыть");
-			thorium.GetItem("RagSymbol").Tooltip.AddTranslation(GameCulture.Russian, "Начинает Рагнарёк...\nМожно использовать только ночью");
+			thorium.GetItem("RagSymbol").Tooltip.AddTranslation(GameCulture.Russian, "Высвобождает Первородных...\nМожно использовать только ночью");
 			thorium.GetItem("SlagMask").Tooltip.AddTranslation(GameCulture.Russian, "'Носите лицо самой Агрессии...'");
 			thorium.GetItem("WarpCore").Tooltip.AddTranslation(GameCulture.Russian, "'Пропитан силой смерти реальности и пожирателя грез'\nПовышает скорость передвижения... за пределами понимания");
 			thorium.GetItem("CrystalineCharm").Tooltip.AddTranslation(GameCulture.Russian, "Повышает скорость добычи на 20%\n+1 к радиусу кирок и буров");
@@ -383,7 +383,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("StarMask").Tooltip.AddTranslation(GameCulture.Russian, "'Кто со мной смотреть на звезды?'");
 			thorium.GetItem("StarRod").Tooltip.AddTranslation(GameCulture.Russian, "Вызывает исцеляющие звезды на позицию вашего курсора");
 			thorium.GetItem("StarTrail").Tooltip.AddTranslation(GameCulture.Russian, "При взмахе выпускает самонаводящийся звезду");
-			thorium.GetItem("BlacksmithsBarrier").Tooltip.AddTranslation(GameCulture.Russian, "Защита 2\nУменьшает отбрасывание ударов противника");
+			thorium.GetItem("BlacksmithsBarrier").Tooltip.AddTranslation(GameCulture.Russian, "Уменьшает отбрасывание ударов противника");
 			thorium.GetItem("DurasteelBlade").Tooltip.AddTranslation(GameCulture.Russian, "'Видно мастерство кузнеца, сковавшего это'");
 			thorium.GetItem("DurasteelChainsaw").Tooltip.AddTranslation(GameCulture.Russian, "'Видно мастерство кузнеца, сковавшего это'");
 			thorium.GetItem("DurasteelChestplate").Tooltip.AddTranslation(GameCulture.Russian, "'Видно мастерство кузнеца, сковавшего это'\nПовышает урон на 8%");
@@ -548,6 +548,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("BardEmblem").Tooltip.AddTranslation(GameCulture.Russian, "Повышает симфонический урон на 15%");
 			thorium.GetItem("BardLeggings").Tooltip.AddTranslation(GameCulture.Russian, "Увеличивают восстановление вдохновения на 4%");
 			thorium.GetItem("Bassoon").Tooltip.AddTranslation(GameCulture.Russian, "Запускает бомбу-липучку в виде фагота\nНажмите правую клавишу мыши, чтобы сдетонировать все бомбы, иссушающая всех противников поблизости");
+			thorium.GetItem("BetsysBellow").Tooltip.AddTranslation(GameCulture.Russian, "Создает шквал тлеющих огней, которые плавят ближайших врагов");
 			thorium.GetItem("BloomerBell").Tooltip.AddTranslation(GameCulture.Russian, "Звон колокола приносит в мир растущие очаровывающие семена\nНанесение урона противникам ненадолго увеличивает ваше восстановление здоровья");
 			thorium.GetItem("BloomWeave").Tooltip.AddTranslation(GameCulture.Russian, "'Ты еще не видел такой качественной ткани'");
 			thorium.GetItem("BoneTrumpet").Tooltip.AddTranslation(GameCulture.Russian, "Стреляет потрясающими звуками трубы");
@@ -798,7 +799,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("FallingTwilight").Tooltip.AddTranslation(GameCulture.Russian, "Быстро раскручивает вокруг вас созданную из чистой тьмы косу\nУдары по противнику наполняют атаки ближайшего союзника ночной энергией");
 			thorium.GetItem("FeatherBarrierRod").Tooltip.AddTranslation(GameCulture.Russian, "Покрывает союзника недолговечным барьером из перьев\nНажмите правую клавишу мыши, чтобы покрыть этим барьером себя");
 			thorium.GetItem("ForgottenCrossNecklace").Tooltip.AddTranslation(GameCulture.Russian, "'Напоминание о старом друге...'\nЛечащие заклинания увеличат защиту цели на 20 единиц на 15 секунд\nУвеличивает длительность неуязвимости после получения урона");
-			thorium.GetItem("FortifyingWand").Tooltip.AddTranslation(GameCulture.Russian, "Высвобождает искры укрепляющей энергии\nЗащищает здоровье союзника, вплоть до 25");
+			thorium.GetItem("FortifyingWand").Tooltip.AddTranslation(GameCulture.Russian, "Высвобождает искры исцеляющей энергии\nИсцеляет в 3 раза больше здоровья, если вы и ваш союзник не в бою");
 			thorium.GetItem("GigaNeedle").Tooltip.AddTranslation(GameCulture.Russian, "'Не рекомендовано чувствительным людям'\nПротыкает союзника большой лечащей иглой");
 			thorium.GetItem("GlitteringScepter").Tooltip.AddTranslation(GameCulture.Russian, "Атакует кристаллической энергией, окружая и защищая союзников\nКристаллы защищают здоровье союзника на 1, вплоть до 30\nСоюзника могут окружать только 3 кристалла, которые распадаются через 15 секунд");
 			thorium.GetItem("GoodBook").Tooltip.AddTranslation(GameCulture.Russian, "Стреляет лечащим импульсом на среднюю дистанцию");
@@ -921,7 +922,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("WildUmbra").Tooltip.AddTranslation(GameCulture.Russian, "Выпускает залп алчущих теней по направления вашего курсора\nПоловина стоимости жизни отдается вашему союзнику с наименьшим здоровьем");
 			thorium.GetItem("WoodenBaton").Tooltip.AddTranslation(GameCulture.Russian, "Вращает вокруг хлипкую деревянную дубинку");
 			thorium.GetItem("Wynebgwrthucher").Tooltip.AddTranslation(GameCulture.Russian, "Увеличивает защиту на 2\nУменьшает количество получаемого отбрасывания\nУспешное исцеление союзника восстанавливает вам 5 здоровья");
-			thorium.GetItem("BaconRecipe").Tooltip.AddTranslation(GameCulture.Russian, "Этим может заинтересоваться Повар");
+			thorium.GetItem("BaconRecipe").Tooltip.AddTranslation(GameCulture.Russian, "'Чуть не потерял время...'");
 			thorium.GetItem("BlackBlade").Tooltip.AddTranslation(GameCulture.Russian, "При взмахе выпускает черный поток ветра\nНанесение урона позволяет вам складывать урон и иссушение противников до 50 раз");
 			thorium.GetItem("BlackBow").Tooltip.AddTranslation(GameCulture.Russian, "Выстреливает залпом из стрел\nНанесение урона позволяет вам складывать урон и иссушение противников до 50 раз");
 			thorium.GetItem("BlackCane").Tooltip.AddTranslation(GameCulture.Russian, "Призывает теневой лук и теневой меч, атакующие противников\nНанесение урона позволяет вам складывать урон и иссушение противников до 50 раз");
@@ -998,6 +999,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("OlympicTorch").Tooltip.AddTranslation(GameCulture.Russian, "Метание повышают вашу скорость передвижения по 1% до 25%\nМетание повышает вашу скорость бросков 0.4% до 10%\nЕсли не наносить метательный урон, эти эффекты пропадут через 3 секунды");
 			thorium.GetItem("PaddedGrip").Tooltip.AddTranslation(GameCulture.Russian, "Подбор метательного предмета имеет шанс 20% повторится, копируя его\nЭтот эффект может быть активирован лишь раз в секунду");
 			thorium.GetItem("PharaohsSlab").Tooltip.AddTranslation(GameCulture.Russian, "Метает древнюю плиту пирамиды, при ударе высвобождающую самонаводящихся червей\nИспользование этого оружия истощает вас, сильно уменьшая урон\nУбийство противника немного уменьшит истощение");
+			thorium.GetItem("PiratesPurse").Tooltip.AddTranslation(GameCulture.Russian, "Враги, убитые вашим метательным уроном выпускают скопление разрушающих монет\nВраги, получившие урон от монет, сбрасывают больше монет при смерти");
 			thorium.GetItem("PlagueDoctersGarb").Tooltip.AddTranslation(GameCulture.Russian, "'Что за мерзость ты собираешься варить?'\nПовышает метательный урон на 14%\nПовышает скорость метания на 10%");
 			thorium.GetItem("PlagueDoctersLeggings").Tooltip.AddTranslation(GameCulture.Russian, "'Что за мерзость ты собираешься варить?'\nПовышает метательный урон на 14%\nПовышает шанс критического метательного удара на 10%");
 			thorium.GetItem("PlagueDoctersMask").Tooltip.AddTranslation(GameCulture.Russian, "'Что за мерзость ты собираешься варить?'\nПовышает метательный урон на 12%\nПовышает шанс не потратить метательный предмет на 33%\nМаксимальное количество очков техник увеличено на 1");
@@ -1021,6 +1023,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("SwampSpike").Tooltip.AddTranslation(GameCulture.Russian, "Может заразить противника до 5 раз, нанося нескончаемый суммируемый урон\nИспользование этого оружия истощает вас, сильно уменьшая урон\nУбийство противника немного уменьшит истощение");
 			thorium.GetItem("TechniqueBlankScroll").Tooltip.AddTranslation(GameCulture.Russian, "'Используется в создании уникальных техник'\nПосле активации техники, начните наносить метательный урон, чтобы восполнить очки техники\nОчки техники пропадают через некоторое время, если вы не продолжаете наносить урон\nНажмите клавишу 'Throwing Technique', чтобы активировать способность техник");
 			thorium.GetItem("TerraKnife").Tooltip.AddTranslation(GameCulture.Russian, "Нажмите левую клавишу мыши, чтобы быстро бросить обычный терра-кинжал\nНажмите правую клавишу мыши, чтобы бросить пронзающий терра-нож, который непрерывно наносит урон выбранной цели\nИспользование этого оружия истощает вас, сильно уменьшая урон\nУбийство противника немного уменьшит истощение");
+			thorium.GetItem("ThiefsWallet").Tooltip.AddTranslation(GameCulture.Russian, "Враги, убитые вашим метательным уроном, сбрасывают до 2 дополнительных серебряных монет");
 			thorium.GetItem("ThrowingGuide").Tooltip.AddTranslation(GameCulture.Russian, "15% вашего метательного урона будет дублировано");
 			thorium.GetItem("ThrowingGuideVolume2").Tooltip.AddTranslation(GameCulture.Russian, "Повышает ваш метательный урон на 10%\n20% вашего метательного урона будет дублировано");
 			thorium.GetItem("ThrowingGuideVolume3").Tooltip.AddTranslation(GameCulture.Russian, "Повышает ваш метательный урон на 10%\nДает 10% шанс не потратить метательный предмет\n25% вашего метательного урона будет дублировано");
@@ -1080,7 +1083,6 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("LifeBloomLeggings").Tooltip.AddTranslation(GameCulture.Russian, "'Ты един с природой'\nУвеличивает максимальное число прислужников\nПовышает урон прислужников на 8%\nПовышает скорость передвижения на 15%");
 			thorium.GetItem("LifeBloomMail").Tooltip.AddTranslation(GameCulture.Russian, "'Ты един с природой'\nУвеличивает максимальное число прислужников\nПовышает урон прислужников на 10%\nПовышает отбрасывание прислужников");
 			thorium.GetItem("LifeBloomMask").Tooltip.AddTranslation(GameCulture.Russian, "'Ты един с природой'\nУвеличивает максимальное число прислужников\nПовышает урон прислужников на 8%");
-			thorium.GetItem("LivingLeaf").Tooltip.AddTranslation(GameCulture.Russian, "Этим может заинтересоваться Повар");
 			thorium.GetItem("LivingWoodBoots").Tooltip.AddTranslation(GameCulture.Russian, "Повышает урон прислужников на 1");
 			thorium.GetItem("LivingWoodChestguard").Tooltip.AddTranslation(GameCulture.Russian, "Повышает урон прислужников на 1");
 			thorium.GetItem("LivingWoodMask").Tooltip.AddTranslation(GameCulture.Russian, "Повышает отбрасывание прислужников");
@@ -1142,6 +1144,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("AbsintheFury").Tooltip.AddTranslation(GameCulture.Russian, "При ударе выпускает мощный токсин для поражения противника");
 			thorium.GetItem("AlienTech").Tooltip.AddTranslation(GameCulture.Russian, "'Вы едва понимаете устройство этой сложной техники'");
 			thorium.GetItem("Altar").Tooltip.AddTranslation(GameCulture.Russian, "При взаимодействии повышает бонус исцеления");
+			thorium.GetItem("AncientCheeseBlock").Tooltip.AddTranslation(GameCulture.Russian, "'Мы все с чего-то начинаем'\nПризывает крысу, следующую за вами повсюду");
 			thorium.GetItem("AncientDrachma").Tooltip.AddTranslation(GameCulture.Russian, "Призывает любопытный мешок древних монет");
 			thorium.GetItem("ArmorBane").Tooltip.AddTranslation(GameCulture.Russian, "Превращает мушкетные пули в болты погибели\nБолты погибели будут накладывать огонь и ихор на противников");
 			thorium.GetItem("AstroBeetleHusk").Tooltip.AddTranslation(GameCulture.Russian, "Уменьшает получаемый урон на 5%\nКогда экипирован, вы генерируете 20 дополнительных единиц здоровья");
@@ -1156,10 +1159,10 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("CactusFruit").Tooltip.AddTranslation(GameCulture.Russian, "'Несмотря на колючки, выглядит аппетитно...'\nПосле употребления дает иммунитет к отрицательным эффектам, влияющим на ваше состояние");
 			thorium.GetItem("ChefHat").Tooltip.AddTranslation(GameCulture.Russian, "'Шеф-повар не в обиде за это'");
 			thorium.GetItem("Chum").Tooltip.AddTranslation(GameCulture.Russian, "'Этот приятель наверняка привлечет голодных морских обитателей'");
-			thorium.GetItem("CloudyChewToy").Tooltip.AddTranslation(GameCulture.Russian, "Призывает маленькую... виверну-волченка?");
+			thorium.GetItem("CloudyChewToy").Tooltip.AddTranslation(GameCulture.Russian, "Призывает маленькую... виверну-волчонка?");
 			thorium.GetItem("CooksApron").Tooltip.AddTranslation(GameCulture.Russian, "'Шеф-повар не в обиде за это'");
 			thorium.GetItem("CrabClaw").Tooltip.AddTranslation(GameCulture.Russian, "Вы можете прокатиться на гигантском крабе\nНа крабе вы можете ходить по жидкостям");
-			thorium.GetItem("DeathMirror").Tooltip.AddTranslation(GameCulture.Russian, "'Те, кто часто видят свою смерть, быстро сходят с ума...'\nТелепортирует вас к месту последней смерти\nВаше место смерти сохраняется только после получения этого предмета\nВаше место смерти сохраняется на одну минуту");
+			thorium.GetItem("DeathMirror").Tooltip.AddTranslation(GameCulture.Russian, "'Те, кто часто видят свою смерть, быстро сходят с ума...'\nТелепортирует вас к месту последней смерти\nВаше место смерти сохраняется только после получения этого предмета");
 			thorium.GetItem("DesecratedHeart").Tooltip.AddTranslation(GameCulture.Russian, "Призывает ездового голодного зверя!");
 			thorium.GetItem("DetachedUFOBlaster").Tooltip.AddTranslation(GameCulture.Russian, "Стреляет мощным энергетическим импульсом");
 			thorium.GetItem("EbonyTail").Tooltip.AddTranslation(GameCulture.Russian, "Вливает в пораженную цель яд");
@@ -1172,7 +1175,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("Fertilizer").Tooltip.AddTranslation(GameCulture.Russian, "Мгновенно выращивает зрелое растение из саженца");
 			thorium.GetItem("FlyingBroom").Tooltip.AddTranslation(GameCulture.Russian, "'Знак любви Мастер-спарк'\nПризывает ездовую летающую метлу");
 			thorium.GetItem("FrostPlagueStaff").Tooltip.AddTranslation(GameCulture.Russian, "Призывает шквал ядовитых и замораживающих снарядов");
-			thorium.GetItem("GatewayGlass").Tooltip.AddTranslation(GameCulture.Russian, "Позволяет вам поставить временные врата, к которым вы можете телепортироваться\nНажмите правую клавишу мыши, чтобы поставить врата\nНажмите левую клавишу мыши, чтобы телепортироваться к вашим вратам");
+			thorium.GetItem("GatewayGlass").Tooltip.AddTranslation(GameCulture.Russian, "Позволяет вам поставить временные врата, к которым вы можете быстро вернуться\nНажмите правую клавишу мыши, чтобы поставить врата\nНажмите левую клавишу мыши, чтобы телепортироваться к вашим вратам");
 			thorium.GetItem("Glacieor").Tooltip.AddTranslation(GameCulture.Russian, "Атаки меча имеют шанс существенно уменьшить скорость передвижения противников\nБоссы не подвержены этому эффекту");
 			thorium.GetItem("GraveBuster").Tooltip.AddTranslation(GameCulture.Russian, "Создает волну хватающих костяных рук");
 			thorium.GetItem("HailBomber").Tooltip.AddTranslation(GameCulture.Russian, "Призывает снеговиков-камикадзе, взрывающихся после удара по противнику");
@@ -1263,7 +1266,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("KeyofTides").Tooltip.AddTranslation(GameCulture.Russian, "'Наполнен энергией нынешнего океана'");
 			thorium.GetItem("MushymenStaff").Tooltip.AddTranslation(GameCulture.Russian, "Призывает кидающего копья грибного человечка\nКопья имеют шанс заразить противника мицелием");
 			thorium.GetItem("MyceliumWhip").Tooltip.AddTranslation(GameCulture.Russian, "Урон имеет шанс заразить цель мицелием");
-			thorium.GetItem("PoseidonCharge").Tooltip.AddTranslation(GameCulture.Russian, "Нажмите правую клавишу мыши, чтобы выпустить линию пузырей");
+			thorium.GetItem("PoseidonCharge").Tooltip.AddTranslation(GameCulture.Russian, "Нажмите Правую клавишу мыши, чтобы выпустить разрушительную линию пузырей");
 			thorium.GetItem("PrimesFury").Tooltip.AddTranslation(GameCulture.Russian, "При взмахе есть шанс разрядить энергетическую волну, наносящую тройной урон");
 			thorium.GetItem("Schmelze").Tooltip.AddTranslation(GameCulture.Russian, "Атаки наносят суммируемый эффект ожога");
 			thorium.GetItem("Scorn").Tooltip.AddTranslation(GameCulture.Russian, "Стреляет тремя пулями по три");
@@ -1317,12 +1320,12 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("LichCarapace").Tooltip.AddTranslation(GameCulture.Russian, "'Объятия смерти...'\nПовышает метательный урон на 20%\nСкорость метательных снарядов повышена на 30%");
 			thorium.GetItem("LichCatalyst").Tooltip.AddTranslation(GameCulture.Russian, "Призывает Лича\nМожно использовать только ночью");
 			thorium.GetItem("LichCowl").Tooltip.AddTranslation(GameCulture.Russian, "'Объятия смерти...'\nПовышает метательный урон на 10%\nПовышает шанс не потратить метательный предмет на 33%\nМаксимальное количество очков техники увеличено на 1");
-			thorium.GetItem("LichGaze").Tooltip.AddTranslation(GameCulture.Russian, "'Ничто не избежит взора Смерти'\nНажмите клавишу 'Accessory Ability', чтобы на протяжении 10 секунд все ваши метательные атаки были критическими\nПосле окончания этого эффекта, вы на протяжении одной минуты наносите на 15% меньше урона");
+			thorium.GetItem("LichGaze").Tooltip.AddTranslation(GameCulture.Russian, "'Ничто не избежит взора Смерти'\nНажмите клавишу 'Accessory Ability', чтобы на протяжении 10 секунд все ваши метательные атаки были критическими\nПосле окончания этого эффекта, вы на протяжении одной минуты наносите на 10% меньше урона");
 			thorium.GetItem("LichHood").Tooltip.AddTranslation(GameCulture.Russian, "'Немного страшнее, чем обычный капюшон'");
 			thorium.GetItem("LichTalon").Tooltip.AddTranslation(GameCulture.Russian, "'Объятия смерти...'\nПовышает метательный урон на 15%\nПовышает шанс критического метательного удара на 5%");
 			thorium.GetItem("SoulCleaver").Tooltip.AddTranslation(GameCulture.Russian, "Быстро бросает большое пронзающее лезвие, которое понижает защиту противника\nИспользование этого оружия истощает вас, сильно уменьшая урон\nУбийство противника немного уменьшит истощение");
-			thorium.GetItem("SoulRender").Tooltip.AddTranslation(GameCulture.Russian, "Взмахи вызывают летучие клинки души\nУ этого оружия очень большой радиус атаки");
-			thorium.GetItem("SpiritBand").Tooltip.AddTranslation(GameCulture.Russian, "'Ваше тело стало бесплотным...'\nПока экипирован, получаемый урон не может превышать 150\nЭтот эффект можно активировать только раз в 10 секунд");
+			thorium.GetItem("SoulRender").Tooltip.AddTranslation(GameCulture.Russian, "Взмахи выпускают летучие клинки души");
+			thorium.GetItem("SpiritBand").Tooltip.AddTranslation(GameCulture.Russian, "'Ваше тело стало бесплотным...'\nПока экипирован, получаемый урон не может превышать 125\nЭтот эффект можно активировать только раз в 10 секунд");
 			thorium.GetItem("TheLostCross").Tooltip.AddTranslation(GameCulture.Russian, "'Напоминание о старом друге...'\nИсцеляющие заклинания увеличивают защиту лечимой цели на 20 на протяжении 15 секунд");
 			thorium.GetItem("WitherStaff").Tooltip.AddTranslation(GameCulture.Russian, "Быстро высвобождает глобулы энергии смерти, которые накладывают 'иссушение'\nПод действием 'иссушения' плоть противников быстро разлагается");
 			thorium.GetItem("IllumiteBarrage").Tooltip.AddTranslation(GameCulture.Russian, "Запускает шквал осветительных ракет, которые временно подсвечивают пораженных противников\nПодсвеченные противники немного освещают местность и получают на 5% больше урона");
@@ -1402,7 +1405,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("DarkGate").Tooltip.AddTranslation(GameCulture.Russian, "Вызовет между вами и выбранным видимым местом временные врата\nИгроки могут щелкнуть по вратам правой кнопкой мыши, чтобы перейти на другую сторону, исцеляя себя при этом");
 			thorium.GetItem("DarkGrip").Tooltip.AddTranslation(GameCulture.Russian, "Постоянно вызывает ограду из теневых рук на месте вашего курсора");
 			thorium.GetItem("DashPotion").Tooltip.AddTranslation(GameCulture.Russian, "Позволяет вам делать рывки двойным нажатием A или D");
-			thorium.GetItem("DeathEmbrace").Tooltip.AddTranslation(GameCulture.Russian, "'Ткань этого плаща была сшита для помощи вам в трудные моменты'\nЗащита 4\nУменьшает получаемый урон на 5%\nДает иммунитет к Слабости и Сломанной броне\nСущественно увеличивает длительность неуязвимости после получения урона\nКогда экипирован, получаемый урон не может превышать 150\nЭтот эффект может проявиться только каждые 15 секунд");
+			thorium.GetItem("DeathEmbrace").Tooltip.AddTranslation(GameCulture.Russian, "'Ткань этого плаща была сшита для помощи вам в трудные моменты'\nЗащита 4\nУменьшает получаемый урон на 5%\nДает иммунитет к Слабости и Сломанной броне\nСущественно увеличивает длительность неуязвимости после получения урона\nКогда экипирован, получаемый урон не может превышать 125\nЭтот эффект может проявиться только каждые 15 секунд");
 			thorium.GetItem("DelectableNut").Tooltip.AddTranslation(GameCulture.Russian, "'Купо! Купо!'\nПризывает маленького крылатого друга");
 			thorium.GetItem("DMR").Tooltip.AddTranslation(GameCulture.Russian, "Быстро стреляет высокоскоростными патронами\nНажмите правую клавишу мыши, чтобы отдалить камеру");
 			thorium.GetItem("DragonkinStaff").Tooltip.AddTranslation(GameCulture.Russian, "Призывает адский череп дракона на цепи, сжигающий ваших противников");
@@ -1506,7 +1509,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("Shockbuster").Tooltip.AddTranslation(GameCulture.Russian, "Стреляет слабыми статическими лучами, которые прилипают к противникам\nНажмите правую клавишу мыши, чтобы запустить шоковую гранату, детонирующую ближайшие лучи, нанося колоссальный урон");
 			thorium.GetItem("ShusWrath").Tooltip.AddTranslation(GameCulture.Russian, "Превращает обычные стрелы после удара по противнику в долговечные брызги песка");
 			thorium.GetItem("SilversBlade").Tooltip.AddTranslation(GameCulture.Russian, "Призывает стационарного адского защитника, чтобы отпугивать и поджигать противников");
-			thorium.GetItem("SimpleBroom").Tooltip.AddTranslation(GameCulture.Russian, "’У тебя когда-нибудь было чувство дежа вю?’\nПризывает следующих за вами милых горничных");
+			thorium.GetItem("SimpleBroom").Tooltip.AddTranslation(GameCulture.Russian, "’У тебя когда-нибудь было чувство дежавю?’\nПризывает следующих за вами милых горничных");
 			thorium.GetItem("Skadoosh").Tooltip.AddTranslation(GameCulture.Russian, "'Обретите внутренний покой...'");
 			thorium.GetItem("SmitingHammer").Tooltip.AddTranslation(GameCulture.Russian, "Метает светящийся молот, что карает противников огнем\nЗа каждую секунду, что противник находится в огне, вы получаете 2 святых заряда\nНажмите правую кнопку мыши, чтобы высвободить все святые заряды, нанося урон горящим противникам");
 			thorium.GetItem("SnowWhite").Tooltip.AddTranslation(GameCulture.Russian, "Нажмите правую клавишу мыши для переключения между стихийными атаками");
@@ -1556,10 +1559,10 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("ChiTea").Tooltip.AddTranslation(GameCulture.Russian, "'Отлично подойдет для дней, когда хочешь побыть один'\nНа некоторое время уменьшает возрождение противников\nДает незначительные повышения всех характеристик");
 			thorium.GetItem("ConflagrationPotion").Tooltip.AddTranslation(GameCulture.Russian, "Повышает ваш урон на 15%, ценой временного получения урона");
 			thorium.GetItem("EtherianGrog").Tooltip.AddTranslation(GameCulture.Russian, "'Да у этой штуки неплохой удар!'\nНа некоторое время увеличивает урон\nНемного опьяняет");
-			thorium.GetItem("ExplosiveCoatingItem").Tooltip.AddTranslation(GameCulture.Russian, "Метательные атаки имеют шанс подорвать противника, поджигая ближайших к нему противников");
+			thorium.GetItem("ExplosiveCoatingItem").Tooltip.AddTranslation(GameCulture.Russian, "Метательные атаки имеют шанс подорвать противника, плавя ближайших врагов");
 			thorium.GetItem("FishRepellent").Tooltip.AddTranslation(GameCulture.Russian, "Отпугивает большинство рыб");
 			thorium.GetItem("FrostCoatingItem").Tooltip.AddTranslation(GameCulture.Russian, "Метательные атаки имеют шанс значительно замедлить пораженных противников");
-			thorium.GetItem("FrostHeartPotion").Tooltip.AddTranslation(GameCulture.Russian, "Замораживает вас на месте, но сильно увеличивает восстановление здоровья и защиту");
+			thorium.GetItem("FrostHeartPotion").Tooltip.AddTranslation(GameCulture.Russian, "Замораживает вас на месте, но сильно увеличивает восстановление здоровья и защиту на короткое время");
 			thorium.GetItem("FruitSalad").Tooltip.AddTranslation(GameCulture.Russian, "'Приготовлен из свежей капусты и собранной недалеко черники!'\nНа некоторое время увеличивает радиус подбора сердец\nДает незначительные повышения всех характеристик");
 			thorium.GetItem("GlowingSouffle").Tooltip.AddTranslation(GameCulture.Russian, "'Даже после съедания, его свечение никуда не пропадает'\nНа некоторое время создает вокруг вас ауру света\nДает незначительные повышения всех характеристик");
 			thorium.GetItem("GorganCoatingItem").Tooltip.AddTranslation(GameCulture.Russian, "Метательные атаки имеют шанс превратить противника в камень");
@@ -1571,12 +1574,12 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("LesserLifeWater").Tooltip.AddTranslation(GameCulture.Russian, "'Напитанный живительными свойствами'\nДарует восстановление здоровья и увеличивает максимальное его количество");
 			thorium.GetItem("LifeFruitPlatter").Tooltip.AddTranslation(GameCulture.Russian, "'Одна из немногих действительно съедобных вещей в Террарии...'\nНа некоторое время увеличивает максимальный запас здоровья\nДает незначительные повышения всех характеристик");
 			thorium.GetItem("LifeWater").Tooltip.AddTranslation(GameCulture.Russian, "'Напитанный сильными живительными свойствами'\nДарует восстановление здоровья и увеличивает максимальное его количество");
-			thorium.GetItem("ManaBerry").Tooltip.AddTranslation(GameCulture.Russian, "Этим может заинтересоваться Повар");
+			thorium.GetItem("ManaBerry").Tooltip.AddTranslation(GameCulture.Russian, "'Сладость не поддается описанию'");
 			thorium.GetItem("ManaDelight").Tooltip.AddTranslation(GameCulture.Russian, "'В каждом укусе чувствуется энергия'\nНе вызывает послезельевую болезнь");
 			thorium.GetItem("MeanGreenStew").Tooltip.AddTranslation(GameCulture.Russian, "'просто несколько зеленых вещей в миске, что может пойти не так?'\nНа некоторое время повышает шанс критического удара\nДает незначительные повышения всех характеристик");
 			thorium.GetItem("MidnightOil").Tooltip.AddTranslation(GameCulture.Russian, "После выпивания противники обращают на вас гораздо меньше внимания");
 			thorium.GetItem("MistakeStew").Tooltip.AddTranslation(GameCulture.Russian, "'Само блюдо может быть и не ошибка, но есть бы я его не советовал...'\nНа некоторое время увеличивает возрождение противников\nДает незначительные повышения всех характеристик");
-			thorium.GetItem("PricklyJam").Tooltip.AddTranslation(GameCulture.Russian, "'При правильной обработке, розовая колючая груша не вызывает галюцинации!'\nНа некоторое увеличивает ваши способности отражения урона\nДает незначительные повышения всех характеристик");
+			thorium.GetItem("PricklyJam").Tooltip.AddTranslation(GameCulture.Russian, "'При правильной обработке, розовая колючая груша не вызывает галлюцинации!'\nНа некоторое увеличивает ваши способности отражения урона\nДает незначительные повышения всех характеристик");
 			thorium.GetItem("QuestionableRack").Tooltip.AddTranslation(GameCulture.Russian, "'Каким образом Повар смог сделать это съедобным - за пределами вашего понимания'\nНа некоторое время увеличивает возрождение противников\nДает незначительные повышения всех характеристик");
 			thorium.GetItem("SauteedShroom").Tooltip.AddTranslation(GameCulture.Russian, "'Немного обжарки и весь жир может пойти на...'\nНа некоторое время увеличивает максимальное количество призывных существ\nДает незначительные повышения всех характеристик");
 			thorium.GetItem("SeaSpaghetti").Tooltip.AddTranslation(GameCulture.Russian, "'Водоросль в этом блюде столь похожа на лапшу...'\nНа некоторое время увеличивает скорость передвижения в воде\nДает незначительные повышения всех характеристик");
@@ -1613,10 +1616,10 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("LeadShield").Tooltip.AddTranslation(GameCulture.Russian, "Увеличивает защиту на 1\nКогда экипирован, вы защищаете 11 дополнительных единиц здоровья");
 			thorium.GetItem("ManaChargedRocketeers").Tooltip.AddTranslation(GameCulture.Russian, "Позволяет летать ценой маны\nСущественно повышает восстановление маны");
 			thorium.GetItem("MarchingBoots").Tooltip.AddTranslation(GameCulture.Russian, "Повышает скорость передвижения на 5%\nКогда вы бегаете повышается скорость восстановления вашего вдохновения");
-			thorium.GetItem("MoltenScale").Tooltip.AddTranslation(GameCulture.Russian, "Увеличивает защиту на 2\nКогда экипирована, противники поблизости поджигаются");
+			thorium.GetItem("MoltenScale").Tooltip.AddTranslation(GameCulture.Russian, "Когда экипирована, противники поблизости поджигаются");
 			thorium.GetItem("MoltenSpearTip").Tooltip.AddTranslation(GameCulture.Russian, "Копья выпускают горящие наконечники копья");
 			thorium.GetItem("NinjaEmblem").Tooltip.AddTranslation(GameCulture.Russian, "Повышает метательный урон на 15%");
-			thorium.GetItem("ObsidianScale").Tooltip.AddTranslation(GameCulture.Russian, "Увеличивает защиту на 2\nДает иммунитет к огненным блокам\nПонижает отбрасывание при получении вами удара\nКогда экипирована, противники поблизости будут плавиться");
+			thorium.GetItem("ObsidianScale").Tooltip.AddTranslation(GameCulture.Russian, "Дает иммунитет к огненным блокам\nПонижает отбрасывание при получении вами удара\nКогда экипирована, противники поблизости будут плавиться");
 			thorium.GetItem("OnyxRing").Tooltip.AddTranslation(GameCulture.Russian, "Увеличивает пробивание брони на 1");
 			thorium.GetItem("OpalRing").Tooltip.AddTranslation(GameCulture.Russian, "Увеличивает симфонический урон на 1");
 			thorium.GetItem("PearlRing").Tooltip.AddTranslation(GameCulture.Russian, "Повышает лучезарный урон на 1");

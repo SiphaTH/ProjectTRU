@@ -149,7 +149,7 @@ namespace CalamityRuTranslate.ThoriumMod.Buffs
 			thorium.GetBuff("Grimshadow3").Description.AddTranslation(GameCulture.Russian, "По воде идет рябь...");
 			thorium.GetBuff("Halloween").DisplayName.AddTranslation(GameCulture.Russian, "Хэллоуин!");
 			thorium.GetBuff("Halloween").Description.AddTranslation(GameCulture.Russian, "Ну, считается что сейчас Хэллоуин...");
-			thorium.GetBuff("Hallucination").DisplayName.AddTranslation(GameCulture.Russian, "Галюцинации");
+			thorium.GetBuff("Hallucination").DisplayName.AddTranslation(GameCulture.Russian, "Галлюцинации");
 			thorium.GetBuff("Hallucination").Description.AddTranslation(GameCulture.Russian, "Что-то не так...");
 			thorium.GetBuff("Hexed").DisplayName.AddTranslation(GameCulture.Russian, "Заколдован");
 			thorium.GetBuff("Hexed").Description.AddTranslation(GameCulture.Russian, "Вы превратились в лягушку!");
@@ -267,8 +267,6 @@ namespace CalamityRuTranslate.ThoriumMod.Buffs
 			thorium.GetBuff("TerrariumMix").Description.AddTranslation(GameCulture.Russian, "Расколот элементами Террарии");
 			thorium.GetBuff("TerrariumRegen").DisplayName.AddTranslation(GameCulture.Russian, "Поцелуй Террарии");
 			thorium.GetBuff("TerrariumRegen").Description.AddTranslation(GameCulture.Russian, "Силы Террарии оберегают вас");
-			thorium.GetBuff("TouchOfOmnicide").DisplayName.AddTranslation(GameCulture.Russian, "Касание Омницида");
-			thorium.GetBuff("TouchOfOmnicide").Description.AddTranslation(GameCulture.Russian, "Остановите конец света, пока не стало слишком поздно!");
 			thorium.GetBuff("ToxicCoating").DisplayName.AddTranslation(GameCulture.Russian, "Насыщение метательного оружия: Токсины");
 			thorium.GetBuff("ToxicCoating").Description.AddTranslation(GameCulture.Russian, "Метательное оружие имеет шанс отравить врагов");
 			thorium.GetBuff("TrueStrike").DisplayName.AddTranslation(GameCulture.Russian, "Истинный удар");
@@ -474,6 +472,8 @@ namespace CalamityRuTranslate.ThoriumMod.Buffs
 			thorium.GetBuff("Regeneration").Description.AddTranslation(GameCulture.Russian, "Этот противник восстанавливает здоровье");
 			thorium.GetBuff("AbyssalWhistleBuff").DisplayName.AddTranslation(GameCulture.Russian, "Глубинный кролик");
 			thorium.GetBuff("AbyssalWhistleBuff").Description.AddTranslation(GameCulture.Russian, "Этот бедный малыш может быть последним из своего вида...");
+			thorium.GetBuff("AncientRatBuff").DisplayName.AddTranslation(GameCulture.Russian, "Древняя крыса");
+			thorium.GetBuff("AncientRatBuff").Description.AddTranslation(GameCulture.Russian, "Крыса тоже древняя? Ага!");
 			thorium.GetBuff("BabyBaliBuff").DisplayName.AddTranslation(GameCulture.Russian, "Экзотическая майна");
 			thorium.GetBuff("BabyBaliBuff").Description.AddTranslation(GameCulture.Russian, "Этот особенный птенец любит тебя!");
 			thorium.GetBuff("BioFeederBuff").DisplayName.AddTranslation(GameCulture.Russian, "Био-кормушка");
