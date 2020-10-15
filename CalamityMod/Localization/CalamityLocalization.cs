@@ -1978,6 +1978,11 @@ namespace CalamityRuTranslate.CalamityMod.Localization
             {
                 Main.npcChatText = "Динамит богоубийства? Парень, мне нравится как это звучит!";
             }
+            
+            if (Main.npcChatText == "Now is not the time!")
+            {
+                Main.npcChatText = "Сейчас не время!";
+            }
         }
     }
 }
