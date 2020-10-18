@@ -34,7 +34,7 @@ namespace CalamityRuTranslate.ThoriumMod.Buffs
 			thorium.GetBuff("BerserkSoul").DisplayName.AddTranslation(GameCulture.Russian, "Душа берсерка");
 			thorium.GetBuff("BerserkSoul").Description.AddTranslation(GameCulture.Russian, "Если этот противник умрет, наружу вырвется агрессивный дух");
 			thorium.GetBuff("BlightFever").DisplayName.AddTranslation(GameCulture.Russian, "Лихорадка");
-			thorium.GetBuff("BlightFever").Description.AddTranslation(GameCulture.Russian, "\t оставил на этом существе свою печать...");
+			thorium.GetBuff("BlightFever").Description.AddTranslation(GameCulture.Russian, "Омницид оставил на этом существе свою печать...");
 			thorium.GetBuff("BloodRush").DisplayName.AddTranslation(GameCulture.Russian, "Ускоренное сердцебиение");
 			thorium.GetBuff("BloodRush").Description.AddTranslation(GameCulture.Russian, "Скорость передвижения и добычи повышены на 15%");
 			thorium.GetBuff("BouncingFlameBuff").DisplayName.AddTranslation(GameCulture.Russian, "Цепное пламя");
