@@ -1341,7 +1341,7 @@ namespace CalamityRuTranslate
         
             a.Index++;
             a.Emit(OpCodes.Pop);
-            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Одолейте Гигантского моллюска после победы над Пустыннм Бичем"));
+            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform("Одолейте Гигантского моллюска после победы над Пустынным бичем"));
         
             var b = new ILCursor(il);
         
@@ -1604,7 +1604,7 @@ namespace CalamityRuTranslate
         private static void Ua_ModifyAIChibiiDoggo(ILContext il)
         {
             var a = new ILCursor(il);
-        
+            
             if (!a.TryGotoNext(i => i.MatchLdstr(" couldn't stand the sharp objects.")))
             {
                 CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyAIChibiiDoggo a failed");

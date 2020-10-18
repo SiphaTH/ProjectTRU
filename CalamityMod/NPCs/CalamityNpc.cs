@@ -43,7 +43,7 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 			calamity.GetNPC("OarfishHead").DisplayName.AddTranslation(GameCulture.Russian,"Ремень-рыба");
 			calamity.GetNPC("OarfishTail").DisplayName.AddTranslation(GameCulture.Russian,"Ремень-рыба");
 			calamity.GetNPC("Reaper").DisplayName.AddTranslation(GameCulture.Russian, "Акула-жнец");
-            calamity.GetNPC("ToxicMinnow").DisplayName.AddTranslation(GameCulture.Russian,"Ядовитый минноу");
+            calamity.GetNPC("ToxicMinnow").DisplayName.AddTranslation(GameCulture.Russian,"Ядовитый пескарь");
             calamity.GetNPC("Viperfish").DisplayName.AddTranslation(GameCulture.Russian,"Рыба-гадюка");
             calamity.GetNPC("AcidEel").DisplayName.AddTranslation(GameCulture.Russian,"Кислотный угорь");
 			calamity.GetNPC("BloodwormFleeing").DisplayName.AddTranslation(GameCulture.Russian,"Кровавый червь");
