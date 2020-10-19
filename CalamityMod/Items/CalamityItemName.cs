@@ -1509,7 +1509,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("PoleWarper").DisplayName.AddTranslation(GameCulture.Russian,"Искажатель полюса");
             calamity.GetItem("PulseDragon").DisplayName.AddTranslation(GameCulture.Russian,"Импульсный дракон");
             calamity.GetItem("PulsePistol").DisplayName.AddTranslation(GameCulture.Russian,"Импульсный пистолет");
-            calamity.GetItem("PulseRifle").DisplayName.AddTranslation(GameCulture.Russian,"Импульсная винтовка Дрэйдона");
+            calamity.GetItem("PulseRifle").DisplayName.AddTranslation(GameCulture.Russian,"Импульсная винтовка");
             calamity.GetItem("PulseTurretRemote").DisplayName.AddTranslation(GameCulture.Russian,"Пульт управления импульсной турелью");
             calamity.GetItem("SnakeEyes").DisplayName.AddTranslation(GameCulture.Russian,"Змеиные глаза");
             calamity.GetItem("StarSwallowerContainmentUnit").DisplayName.AddTranslation(GameCulture.Russian,"Блок содержания поглотителя звёзд");
