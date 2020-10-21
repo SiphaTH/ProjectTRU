@@ -69,7 +69,7 @@ namespace CalamityRuTranslate.TheSpirit.NPCs
             spirit.GetNPC("Vilemoth").DisplayName.AddTranslation(GameCulture.Russian,"Гнойная муха");
             spirit.GetNPC("VileWasp").DisplayName.AddTranslation(GameCulture.Russian,"Надоедливая муха");
             spirit.GetNPC("Wheezer").DisplayName.AddTranslation(GameCulture.Russian,"Хрипун");
-            spirit.GetNPC("WinterbornMagic").DisplayName.AddTranslation(GameCulture.Russian,"Зимнерожденный-вестник");
+            spirit.GetNPC("WinterbornMagic").DisplayName.AddTranslation(GameCulture.Russian,"Зимнерождённый вестник");
             spirit.GetNPC("WinterbornMelee").DisplayName.AddTranslation(GameCulture.Russian,"Зимнерождённый");
             spirit.GetNPC("WitherBall").DisplayName.AddTranslation(GameCulture.Russian,"Иссушающая сфера");
             spirit.GetNPC("AstralAmalgram").DisplayName.AddTranslation(GameCulture.Russian,"Астральное слияние");
@@ -113,7 +113,7 @@ namespace CalamityRuTranslate.TheSpirit.NPCs
             spirit.GetNPC("ChildofScarabeus").DisplayName.AddTranslation(GameCulture.Russian,"Дитя Скарабея");
             spirit.GetNPC("Scarab").DisplayName.AddTranslation(GameCulture.Russian,"Скарабей");
             spirit.GetNPC("Scarabeus").DisplayName.AddTranslation(GameCulture.Russian,"Скарабей");
-            spirit.GetNPC("Starfarer").DisplayName.AddTranslation(GameCulture.Russian,"Звёздоплаватель");
+            spirit.GetNPC("ArcadeProbe").DisplayName.AddTranslation(GameCulture.Russian,"Звёздоплаватель");
             spirit.GetNPC("LaserBase").DisplayName.AddTranslation(GameCulture.Russian,"Лазерный запускатель");
             spirit.GetNPC("SteamRaiderBody").DisplayName.AddTranslation(GameCulture.Russian,"Звёздный странник");
             spirit.GetNPC("SteamRaiderBody2").DisplayName.AddTranslation(GameCulture.Russian,"Звёздный странник");
@@ -162,8 +162,8 @@ namespace CalamityRuTranslate.TheSpirit.NPCs
             spirit.GetNPC("DungeonCubeBlue").DisplayName.AddTranslation(GameCulture.Russian,"Куб темницы");
             spirit.GetNPC("DungeonCubeGreen").DisplayName.AddTranslation(GameCulture.Russian,"Куб темницы");
             spirit.GetNPC("DungeonCubePink").DisplayName.AddTranslation(GameCulture.Russian,"Куб темницы");
-            spirit.GetNPC("Illusionist").DisplayName.AddTranslation(GameCulture.Russian,"Вурдалак");
-            spirit.GetNPC("IllusionistSpectre").DisplayName.AddTranslation(GameCulture.Russian,"Фантом вурдалака");
+            spirit.GetNPC("Illusionist").DisplayName.AddTranslation(GameCulture.Russian,"Неупокоенная душа");
+            spirit.GetNPC("IllusionistSpectre").DisplayName.AddTranslation(GameCulture.Russian,"Фантом неупокоенной души");
             spirit.GetNPC("PlagueDoctor").DisplayName.AddTranslation(GameCulture.Russian,"Тёмный алхимик");
             spirit.GetNPC("SpectralSkull").DisplayName.AddTranslation(GameCulture.Russian,"Спектральный череп");
             spirit.GetNPC("GoldCrateMimic").DisplayName.AddTranslation(GameCulture.Russian,"Золотой ящик-мимик");
