@@ -186,19 +186,37 @@ namespace CalamityRuTranslate.CalamityMod.Items
 
 					if (item.accessory)
 					{
-						foreach (TooltipLine tooltipLine in tooltips)
+						if (item.prefix == 67 || item.prefix == 68)
 						{
-							string str = tooltipLine.text;
-							string resultA = str.Replace("critical strike chance", "шанс критического удара");
-							tooltipLine.text = resultA;
+							foreach (TooltipLine tooltipLine in tooltips)
+							{
+								if (tooltipLine.Name == "PrefixAccCritChance")
+								{
+									string str = tooltipLine.text;
+									string resultA = str.Replace("critical strike chance", "шанс критического удара");
+									tooltipLine.text = resultA;
+								}
+							}
 						}
-						
-						foreach (TooltipLine tooltipLine2 in tooltips)
+
+						if (item.prefix == 62 || item.prefix == 63 || item.prefix == 64 || item.prefix == 65)
 						{
-							string str = tooltipLine2.text;
-                            string resultA = str.Replace("defense", "защиты");
-                            string resultB = resultA.Replace("damage reduction", "сопротивление урону");
-                            tooltipLine2.text = resultB;
+							foreach (TooltipLine tooltipLine2 in tooltips)
+							{
+								string str = tooltipLine2.text;
+								string resultA = str.Replace("defense", "защиты");
+								tooltipLine2.text = resultA;
+							}
+
+							foreach (TooltipLine tooltipLine3 in tooltips)
+							{
+								if (tooltipLine3.Name == "PrefixAccDefense")
+								{
+									string str = tooltipLine3.text;
+									string resultA = str.Replace("damage reduction", "сопротивление урону");
+									tooltipLine3.text = resultA;
+								}
+							}
 						}
 					}
 
