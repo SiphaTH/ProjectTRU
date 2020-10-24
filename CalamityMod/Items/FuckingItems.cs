@@ -431,7 +431,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 				            string resultN = resultM.Replace("And so we burn it all in the name of purity", "И поэтому мы сжигаем всё это во имя чистоты");
 				            string resultO = resultN.Replace("The soul within this crystal has been defiled by the powerful magic of a supreme witch", "Душа в этом кристалле была развращена могущественной магией высшей ведьмы");
 				            string resultP = resultO.Replace("Merchants will reject a defiled soul such as this.", "Торговцы отвергнут осквернённую душу, такую как эта");
-				            string resultQ = resultP.Replace("Transforms Magic attacks into a powerful splitting fireball for ", "Превращает магические атаки в мощный раскалывающийся огненный шар за ");
+				            string resultQ = resultP.Replace("Transforms Magic attacks into a powerful splitting fireball for ", "Превращает магические атаки в мощный разделяющийся огненный шар за ");
 				            string resultR = resultQ.Replace(" mana per cast", " маны");
 				            tooltipLine.text = resultR;
 			            }

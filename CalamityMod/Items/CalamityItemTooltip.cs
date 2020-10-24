@@ -579,7 +579,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 // ==================================================================================================================
 			calamity.GetItem("BearEye").Tooltip.AddTranslation(GameCulture.Russian,"Призывает питомца — ангела-хранителя");
 			calamity.GetItem("BloodyVein").Tooltip.AddTranslation(GameCulture.Russian,"Призывает сросшуюся груду плоти");
-			calamity.GetItem("BrimstoneJewel").Tooltip.AddTranslation(GameCulture.Russian,"Высшая награда за победу над таким зверем...\nКто же знал, что она окажется такой чертовски милой!");
+			calamity.GetItem("BrimstoneJewel").Tooltip.AddTranslation(GameCulture.Russian,"Высшая награда за победу над такой бестией...\nКто же знал, что она окажется такой чертовски милой!");
 			calamity.GetItem("CharredRelic").Tooltip.AddTranslation(GameCulture.Russian,"Содержит немного серы");
 			calamity.GetItem("ChromaticOrb").Tooltip.AddTranslation(GameCulture.Russian,"Она тепло светится в вашей руке\nПризывает светящегося питомца — древнего дракона, который подсвечивает ближайших врагов и источники опасности\nОбеспечивает небольшим количеством света в бездне");
 			calamity.GetItem("CosmicPlushie").Tooltip.AddTranslation(GameCulture.Russian,"Призывает пожирателя космоса?..\nОстрые предметы, возможно, включены\nПодавляет дружелюбных красных дьяволов");
@@ -735,7 +735,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			calamity.GetItem("BloodyWormFood").Tooltip.AddTranslation(GameCulture.Russian,"Призывает Улей Перфоратора");
 			calamity.GetItem("BossRush").Tooltip.AddTranslation(GameCulture.Russian,"Ритуальный артефакт, который, как полагают, привёл к Концу несколько тысячелетий назад\nЗапечатанный в бездне, вдали от тех, кто попытается злоупотреблять им\nАктивирует событие Босс-Раш, повторное использование отключит событие\nВо время события, все провода и проводимые устройства будут отключены");
 			calamity.GetItem("BulbofDoom").Tooltip.AddTranslation(GameCulture.Russian,"Призывает Плантеру");
-			calamity.GetItem("CharredIdol").Tooltip.AddTranslation(GameCulture.Russian,"Используйте в серных скалах на ваш страх и риск\nПризывает Серного элементаля\nБосс впадает в ярость за пределами своего дома, в скалах");
+			calamity.GetItem("CharredIdol").Tooltip.AddTranslation(GameCulture.Russian,"Используйте в серной скале на ваш страх и риск\nПризывает Серного элементаля\nБосс впадает в ярость за пределами своего дома, в скалах");
 			calamity.GetItem("ChickenEgg").Tooltip.AddTranslation(GameCulture.Russian,"Призывает верного хранителя короля-тирана\nОно тоскует по джунглям\nНе расходуется");
 			calamity.GetItem("CosmicWorm").Tooltip.AddTranslation(GameCulture.Russian,"Призывает Пожирателя Богов\nТУТ ModifyTooltips\nНе расходуется");
 			calamity.GetItem("CryoKey").Tooltip.AddTranslation(GameCulture.Russian,"Призывает Криогена\nБосс впадает в ярость за пределами заснеженной тундры");
@@ -1216,7 +1216,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			calamity.GetItem("FlarewingBow").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет скоплением стрел\nПревращает деревянные стрелы в отскакивающих горящих обсидиановых летучих мышей");
 			calamity.GetItem("FlurrystormCannon").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет вереницей снежков, которые со временем становятся быстрее\nЕсть шанс также выстрелить куском льда, который разбивается на осколки\n50% шанс не использовать снежок");
 			calamity.GetItem("FrostbiteBlaster").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет скоплением сосулек");
-			calamity.GetItem("Fungicide").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет грибковыми патронами, которые раскалываются при ударе");
+			calamity.GetItem("Fungicide").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет грибковыми патронами, которые разделяются при ударе");
 			calamity.GetItem("Galeforce").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет скоплением перьев с низким уроном");
 			calamity.GetItem("GoldenEagle").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет 5 пулями за раз");
 			calamity.GetItem("Goobow").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет двумя потоками слизи");

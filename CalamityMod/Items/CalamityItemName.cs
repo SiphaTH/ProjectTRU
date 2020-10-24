@@ -559,9 +559,9 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("KnowledgeAstralInfection").DisplayName.AddTranslation(GameCulture.Russian,"История — Астральная инфекция");
             calamity.GetItem("KnowledgeAstrumAureus").DisplayName.AddTranslation(GameCulture.Russian,"История — Аструм Ареус");
             calamity.GetItem("KnowledgeAstrumDeus").DisplayName.AddTranslation(GameCulture.Russian,"История — Аструм Деус");
-            calamity.GetItem("KnowledgeBloodMoon").DisplayName.AddTranslation(GameCulture.Russian,"История — Кровавая Луна");
+            calamity.GetItem("KnowledgeBloodMoon").DisplayName.AddTranslation(GameCulture.Russian,"История — Кровавая луна");
             calamity.GetItem("KnowledgeBrainofCthulhu").DisplayName.AddTranslation(GameCulture.Russian,"История — Мозг Ктулху");
-            calamity.GetItem("KnowledgeBrimstoneCrag").DisplayName.AddTranslation(GameCulture.Russian,"История — Серные Скалы");
+            calamity.GetItem("KnowledgeBrimstoneCrag").DisplayName.AddTranslation(GameCulture.Russian,"История — Серная скала");
             calamity.GetItem("KnowledgeBrimstoneElemental").DisplayName.AddTranslation(GameCulture.Russian,"История — Серный элементаль");
             calamity.GetItem("KnowledgeBumblebirb").DisplayName.AddTranslation(GameCulture.Russian,"История — Псевдодракон");
             calamity.GetItem("KnowledgeCalamitas").DisplayName.AddTranslation(GameCulture.Russian,"История — Каламитас");
@@ -589,7 +589,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("KnowledgePlaguebringerGoliath").DisplayName.AddTranslation(GameCulture.Russian,"История — Разносчица чумы, Голиаф");
             calamity.GetItem("KnowledgePlantera").DisplayName.AddTranslation(GameCulture.Russian,"История — Плантера");
             calamity.GetItem("KnowledgePolterghast").DisplayName.AddTranslation(GameCulture.Russian,"История — Полтергаст");
-            calamity.GetItem("KnowledgeProfanedGuardians").DisplayName.AddTranslation(GameCulture.Russian,"История — Осквернённые Стражи");
+            calamity.GetItem("KnowledgeProfanedGuardians").DisplayName.AddTranslation(GameCulture.Russian,"История — Осквернённые стражи");
             calamity.GetItem("KnowledgeProvidence").DisplayName.AddTranslation(GameCulture.Russian,"История — Провиденс, Осквернённая Богиня");
             calamity.GetItem("KnowledgeQueenBee").DisplayName.AddTranslation(GameCulture.Russian,"История — Королева Пчёл");
             calamity.GetItem("KnowledgeRavager").DisplayName.AddTranslation(GameCulture.Russian,"История — Разрушитель");
@@ -1922,7 +1922,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("DarkechoGreatbow").DisplayName.AddTranslation(GameCulture.Russian,"Большой лук тёмного эхо");
             calamity.GetItem("Deathwind").DisplayName.AddTranslation(GameCulture.Russian,"Ветер смерти");
             calamity.GetItem("DodusHandcannon").DisplayName.AddTranslation(GameCulture.Russian,"Ручная пушка Доду");
-            calamity.GetItem("DragonsBreath").DisplayName.AddTranslation(GameCulture.Russian,"Дыхание Дракона");
+            calamity.GetItem("DragonsBreath").DisplayName.AddTranslation(GameCulture.Russian,"Дыхание дракона");
             calamity.GetItem("Drataliornus").DisplayName.AddTranslation(GameCulture.Russian,"Драталиорн");
             calamity.GetItem("Dualpoon").DisplayName.AddTranslation(GameCulture.Russian,"Дуалпун");
             calamity.GetItem("EffluviumBow").DisplayName.AddTranslation(GameCulture.Russian,"Испарённый лук");

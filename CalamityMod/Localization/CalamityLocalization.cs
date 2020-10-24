@@ -54,7 +54,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
                 new[]
                 {
                     "BrimmyBossText",
-                    "Защитное заклинание было снято со скал! Теперь вы можете добывать обугленную руду."
+                    "Защитное заклинание было снято со скалы! Теперь вы можете добывать обугленную руду."
                 },
                 new[]
                 {
@@ -926,7 +926,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             if (Main.npcChatText == "I hear it's amazing when the famous purple-stuffed worm out in flap-jaw space, with the tuning fork, does a raw blink on Hara-kiri rock. I need scissors! 61!")
             {
-                Main.npcChatText = "Я слышала, что это потрясающе, когда знаменитый фиолетовый червяк с челюстями, с камертоном появляется на мгновение на скале Харакири. Мне нужны ножницы ! 61!";
+                Main.npcChatText = "Я слышала, что это потрясающе, когда знаменитый фиолетовый червяк с челюстями, с камертоном появляется на мгновение на скале Харакири. Мне нужны ножницы! 61!";
             }
 
             if (num2 != -1)
@@ -1007,7 +1007,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
                     if (Main.npc[Main.player[Main.myPlayer].talkNPC].type == ModLoader.GetMod("CalamityMod").NPCType("FAP"))
                     {
                         string str = Main.npcChatText;
-                        string resultA = str.Replace("Hey ", "Привет Codora, kot_stahanovec, ");
+                        string resultA = str.Replace("Hey ", "Привет Eternity, osaka_drift, ILLIK ");
                         string resultB = resultA.Replace(" and ", " и ");
                         string resultC = resultB.Replace("! You're all pretty good! ...wait, who are you again?", "! Вы все очень хороши! ...подожди, а ты кто такой?");
                         string resultD = resultC.Replace("You have failed ", "Вы потерпели неудачу ");
