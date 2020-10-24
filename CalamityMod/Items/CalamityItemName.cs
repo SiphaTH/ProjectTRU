@@ -1546,7 +1546,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("CalamitasInferno").DisplayName.AddTranslation(GameCulture.Russian,"Плеть хаоса");
             calamity.GetItem("CarnageRay").DisplayName.AddTranslation(GameCulture.Russian,"Луч резни");
             calamity.GetItem("ClamorNoctus").DisplayName.AddTranslation(GameCulture.Russian,"Крик ночи");
-            calamity.GetItem("Climax").DisplayName.AddTranslation(GameCulture.Russian,"Электрический экстаз");
+            calamity.GetItem("Climax").DisplayName.AddTranslation(GameCulture.Russian,"Электрический апогей");
             calamity.GetItem("ClothiersWrath").DisplayName.AddTranslation(GameCulture.Russian,"Гнев Портного");
             calamity.GetItem("CoralSpout").DisplayName.AddTranslation(GameCulture.Russian,"Коралловая струя");
             calamity.GetItem("CosmicRainbow").DisplayName.AddTranslation(GameCulture.Russian,"Космическая радуга");
