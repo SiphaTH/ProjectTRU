@@ -56,7 +56,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			calamity.GetItem("BloodyWormTooth").Tooltip.AddTranslation(GameCulture.Russian,"Увеличивает сопротивление урону и характеристики ближнего боя на 5%\nКогда здоровье ниже 50% увеличивает сопротивление урону и характеристики ближнего боя на 10%");
 			calamity.GetItem("BloomStone").Tooltip.AddTranslation(GameCulture.Russian,"Одна из древних реликвий\nПриближающиеся враги получают урон; увеличивает весь урон на 3%\nВы выращиваете цветы на траве под вами. Шанс вырастить случайное растение-краситель на бестравяной земле");
 			calamity.GetItem("BlunderBooster").Tooltip.AddTranslation(GameCulture.Russian,"Увеличивает разбойный урон на 12% и скорость снарядов разбойника на 15%\nПризывает ауру красной молнии, которая окружает игрока и электрифицирует ближайших врагов\nТУТ ModifyTooltips\nЭтот эффект имеет 3 секунды перезарядки перед повторным использованием");
-			calamity.GetItem("BurdenBreaker").Tooltip.AddTranslation(GameCulture.Russian,"Тяжёлые времена\nУбирает рамки неуязвимости\nЕсли вы хотите сумасшедшее испытание, экипируйте это\nСоприкосновение с лавой мгновенно убивает вас");
+			calamity.GetItem("BurdenBreaker").Tooltip.AddTranslation(GameCulture.Russian,"Тяжёлые времена\nУбирает кадры неуязвимости\nЕсли вы хотите сумасшедшее испытание, экипируйте это\nСоприкосновение с лавой мгновенно убивает вас");
 			calamity.GetItem("CalamityRing").Tooltip.AddTranslation(GameCulture.Russian,"Проклято?\nУвеличивает весь урон на 15%\nПока активна неуязвимость с неба обрушиваются серные огни");
 			calamity.GetItem("CelestialJewel").Tooltip.AddTranslation(GameCulture.Russian,"Ускоряет регенерацию здоровья, даже под воздействием дебаффа, наносящего урон\nВо время действия дебаффа, наносящего урон, вы получаете 20 единиц защиты\nТУТ ModifyTooltips");
 			calamity.GetItem("ChaosAmulet").Tooltip.AddTranslation(GameCulture.Russian,"Эффект зелья шахтёра; увеличивает регенерацию здоровья");
@@ -1043,7 +1043,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			calamity.GetItem("GalaxySmasherMelee").Tooltip.AddTranslation(GameCulture.Russian,"Взрывается и вызывает смертельные лазеры при попадании во врага");
 			calamity.GetItem("GalileoGladius").Tooltip.AddTranslation(GameCulture.Russian,"Не стоит недооценивать силу маленьких космических мечей\nСтреляет самонаводящимся полумесяцем\nСоздаёт планетоиды при попадании во врага");
 			calamity.GetItem("GeliticBlade").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет гелевой волной, которая замедляет при попадании во врага");
-			calamity.GetItem("GildedProboscis").Tooltip.AddTranslation(GameCulture.Russian,"Игнорирует рамки иммунитета\nЛечит игрока при попадании");
+			calamity.GetItem("GildedProboscis").Tooltip.AddTranslation(GameCulture.Russian,"Игнорирует кадры неуязвимости\nЛечит игрока при попадании");
 			calamity.GetItem("GlacialCrusher").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет очень медленными ледяными снарядами, которые набирают силу и замораживают врагов\nДлительность заморозки, зависит от пройденного расстояния снаряда\nИстинные удары ближнего боя наносят огромный урон замороженным врагам\nВраги, на которых не действует заморозка, получают больше урона");
 			calamity.GetItem("GoldplumeSpear").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет падающими перьями");
 			calamity.GetItem("GrandDad").Tooltip.AddTranslation(GameCulture.Russian,"Снижает защиту врага до 0, когда они поражены\nВраги теряются в пространстве и времени\n7");
@@ -1070,7 +1070,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			calamity.GetItem("MonstrousKnives").Tooltip.AddTranslation(GameCulture.Russian,"Бросает скопление ножей, которые могут исцелить владельца");
 			calamity.GetItem("Mourningstar").Tooltip.AddTranslation(GameCulture.Russian,"Запускает два солнечных кнута, которые взрываются при попадании");
 			calamity.GetItem("Murasama").Tooltip.AddTranslation(GameCulture.Russian,"Да будет кровь!\nID и уровень мощности заблокированы\nДокажите свою силу или используйте правильный ID пользователя, чтобы владеть этим мечом");
-			calamity.GetItem("Nadir").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет пустотными эссенциями, снимающими кожу с ближайших врагов при помощи щупалец\nИгнорирует рамки иммунитета\n'Бездна долго смотрела на вас. Теперь он говорит, и он не говорит тихо'");
+			calamity.GetItem("Nadir").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет пустотными эссенциями, снимающими кожу с ближайших врагов при помощи щупалец\nИгнорирует кадры неуязвимости\n'Бездна долго смотрела на вас. Теперь он говорит, и он не говорит тихо'");
 			calamity.GetItem("NanoblackReaperMelee").Tooltip.AddTranslation(GameCulture.Russian,"Высвобождает шторм наночёрных энергетических лезвий\nЛезвия нацелены на боссов когда это возможно\n'Она задушила их в своей ненависти'");
 			calamity.GetItem("Nebulash").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет мечом-кнутом, который испускает взрывы частиц при попадании");
 			calamity.GetItem("NeptunesBounty").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет трезубцем, который обрушивает дополнительные трезубцы в полёте\nУдары по врагам накладывают дебафф «Давление глубин»\nЧем ниже защита врага, тем больше урона он получает от этого дебаффа");
@@ -1105,7 +1105,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			calamity.GetItem("StellarStriker").Tooltip.AddTranslation(GameCulture.Russian,"Призывает с неба скопление лунных вспышек при попадании во врага");
 			calamity.GetItem("StormRuler").Tooltip.AddTranslation(GameCulture.Russian,"Только шторм способен повалить великое дерево\nСтреляет лучами, которые создают торнадо при ударе\nТорнадо засасывают врагов");
 			calamity.GetItem("StormSaber").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет двумя штормовыми лучами\nОдин с клинка и один с неба");
-			calamity.GetItem("StreamGouge").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет клоном копья\nИгнорирует рамки иммунитета");
+			calamity.GetItem("StreamGouge").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет клоном копья\nИгнорирует кадры неуязвимости");
 			calamity.GetItem("SubmarineShocker").Tooltip.AddTranslation(GameCulture.Russian,"Враги выпускают электрические искры при попадании");
 			calamity.GetItem("SulphurousGrabber").Tooltip.AddTranslation(GameCulture.Russian,"Изредка выпускает кольцо цветных пузырей\nЙо-йо усиливается после прикосновения к зелёному пузырю\nОчень манёвренное йо-йо");
 			calamity.GetItem("Swordsplosion").Tooltip.AddTranslation(GameCulture.Russian,"Скопление мечей");
@@ -1159,7 +1159,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 // ==================================================================================================================
 					// Ranged
 // ==================================================================================================================
-			calamity.GetItem("AcesHigh").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет чередой карт с разными эффектами в зависимости от масти карты\nЧервы обладают кражей здоровья. Пики пронзают и игнорируют рамки иммунитета\nБубны взрываются. Трефы разделяются на три");
+			calamity.GetItem("AcesHigh").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет чередой карт с разными эффектами в зависимости от масти карты\nЧервы обладают кражей здоровья. Пики пронзают и игнорируют кадры неуязвимости\nБубны взрываются. Трефы разделяются на три");
 			calamity.GetItem("Aeries").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет ударно-взрывными патронами, которые могут украсть здоровье врага");
 			calamity.GetItem("Alluvion").Tooltip.AddTranslation(GameCulture.Russian,"Небольшой шанс превратить деревянные стрелы в акул\nНизкий шанс превратить деревянные стрелы в стрелы тайфуна\nСтреляет потоком из десяти стрел за раз");
 			calamity.GetItem("AMR").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет снайперским патроном .50 калибра, который разрывает защиту и снижает сопротивление урону врага\nЕсли вы нанесли критический удар цели, рядом с ней будет выпущен второе скопление пуль");
@@ -1224,7 +1224,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			calamity.GetItem("GunkShot").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет скоплением пуль");
 			calamity.GetItem("HalibutCannon").Tooltip.AddTranslation(GameCulture.Russian,"Становится более мощным по мере вашего прогресса\n(Да, он всё ещё дисбалансен)\nПредмет режима Месть");
 			calamity.GetItem("HalleysInferno").Tooltip.AddTranslation(GameCulture.Russian,"Галлей пришёл раньше, чем ожидалось\nСтреляет горящей кометой\n50% шанс не использовать гель\nНажмите ПКМ, чтобы отдалить");
-			calamity.GetItem("HeavenlyGale").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет шквалом из 5 случайных экзострел\nЗелёные экзострелы разрываются торнадом при ударе\nСиние экзострелы заставляют второе скопление стрел стрелять при попадании во врага\nОранжевые экзострелы вызывают взрывы при ударе\nБирюзовые экзострелы игнорируют рамки иммунитета врага\n66% шанс не использовать боеприпасы");
+			calamity.GetItem("HeavenlyGale").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет шквалом из 5 случайных экзострел\nЗелёные экзострелы разрываются торнадом при ударе\nСиние экзострелы заставляют второе скопление стрел стрелять при попадании во врага\nОранжевые экзострелы вызывают взрывы при ударе\nБирюзовые экзострелы игнорируют кадры неуязвимости врага\n66% шанс не использовать боеприпасы");
 			calamity.GetItem("Hellborn").Tooltip.AddTranslation(GameCulture.Russian,"Превращает все пули в разрывные патроны\nВраги, которые прикасаются к ружью во время стрельбы, получают огромный урон");
 			calamity.GetItem("Helstorm").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет двумя пулями за раз\nОружие также наносит урон врагам, которые к нему прикасаются");
 			calamity.GetItem("Impaler").Tooltip.AddTranslation(GameCulture.Russian,"Стреляет взрывными или пылающими кольями\nМгновенно убивает вампиров и летучих мышей");
@@ -1365,7 +1365,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			calamity.GetItem("FrostyFlare").Tooltip.AddTranslation(GameCulture.Russian,"Не вставлять в сигнальный пистолет!\nПрилипает к врагам\nФормирует град\nПри скрытном ударе сигнальная ракета оставляет позади снежинки и вызывает фантомные копии вместо ледяных осколков");
 			calamity.GetItem("GalaxySmasherRogue").Tooltip.AddTranslation(GameCulture.Russian,"Взрывается и вызывает смертельные лазеры при попадании во врага");
 			calamity.GetItem("GelDart").Tooltip.AddTranslation(GameCulture.Russian, "Бросает отскакивающие дротики\nПри скрытном ударе дротик игнорирует гравитацию и отскакивает более энергично\nОни дополнительно просачивают слизь и покрывают врагов тёмным осадком");
-			calamity.GetItem("GhoulishGouger").Tooltip.AddTranslation(GameCulture.Russian,"Бросает омерзительную косу, которая игнорирует рамки иммунитета\nПри скрытном ударе создаёт души при попадании во врага");
+			calamity.GetItem("GhoulishGouger").Tooltip.AddTranslation(GameCulture.Russian,"Бросает омерзительную косу, которая игнорирует кадры неуязвимости\nПри скрытном ударе создаёт души при попадании во врага");
 			calamity.GetItem("GildedDagger").Tooltip.AddTranslation(GameCulture.Russian,"Бросает блестящий клинок, который рикошетит к другому врагу при попадании\nПри скрытном ударе заставляет клинок вернутся после рикошета, нанося на 20% больше урона\nПри скрытном ударе также увеличивает пронзание");
 			calamity.GetItem("Glaive").Tooltip.AddTranslation(GameCulture.Russian,"Складывает до 3 штук в ячейке\nПри скрытном ударе бумеранг чрезвычайно быстрый и пронзает насквозь бесконечное количество врагов");
 			calamity.GetItem("GleamingDagger").Tooltip.AddTranslation(GameCulture.Russian,"Бросает блестящий клинок, который рикошетит к другому врагу при попадании\nПри скрытном ударе заставляет клинок вернутся после рикошета, нанося на 20% больше урона\nПри скрытном ударе также увеличивает пронзание");

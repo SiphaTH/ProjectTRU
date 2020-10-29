@@ -172,7 +172,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 						if (tooltipLine.Name == "PrefixSSDmg")
 						{
 							string str = tooltipLine.text;
-							string resultA = str.Replace("stealth strike damage", "урона при скрытом ударе");
+							string resultA = str.Replace("stealth strike damage", "урона при скрытном ударе");
 							tooltipLine.text = resultA;
 						}
 						
