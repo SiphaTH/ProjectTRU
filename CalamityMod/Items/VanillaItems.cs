@@ -45,9 +45,10 @@ namespace CalamityRuTranslate.CalamityMod.Items
 							string str = tooltipLine.text;
 							string resultA = str.Replace("Provides immunity to direct damage from touching lava", "Обеспечивает иммунитетом к прямым повреждениям от соприкосновения с лавой");
 							string resultB = resultA.Replace("Provides temporary immunity to lava burn damage", "Обеспечивает временным иммунитетом к ожогу от лавы");
-							string resultC = resultB.Replace("Reduces lava burn damage", "Снижает урон от ожога лавы");
-							string resultD = resultC.Replace("Provides heat protection in Death Mode", "Обеспечивает защитой от жары в режиме Смерти");
-							tooltipLine.text = resultD;
+							string resultC = resultB.Replace("Greatly increases lava immunity time regeneration", "Значительно увеличивает время восстановления невосприимчивости к лаве");
+							string resultD = resultC.Replace("Reduces lava burn damage", "Снижает урон от ожога лавы");
+							string resultE = resultD.Replace("Provides heat protection in Death Mode", "Обеспечивает защитой от жары в режиме Смерти");
+							tooltipLine.text = resultE;
 						}
 					}
 

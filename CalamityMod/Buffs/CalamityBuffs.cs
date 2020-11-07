@@ -423,9 +423,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("FrozenLungs").DisplayName.AddTranslation(GameCulture.Russian,"Замороженные лёгкие");
 			calamity.GetBuff("FrozenLungs").Description.AddTranslation(GameCulture.Russian,"Ледяные воды ограничивают ваше дыхание");
 			calamity.GetBuff("GlacialState").DisplayName.AddTranslation(GameCulture.Russian,"Ледниковое состояние");
-			calamity.GetBuff("GlacialState").Description.AddTranslation(GameCulture.Russian,"Не можете двигаться и защита разрушена");	
-			calamity.GetBuff("Horror").DisplayName.AddTranslation(GameCulture.Russian,"Ужас");
-			calamity.GetBuff("Horror").Description.AddTranslation(GameCulture.Russian,"Ужас...");
+			calamity.GetBuff("GlacialState").Description.AddTranslation(GameCulture.Russian,"Не можете двигаться и защита разрушена");
 			calamity.GetBuff("Irradiated").DisplayName.AddTranslation(GameCulture.Russian,"Облучённый");
 			calamity.GetBuff("Irradiated").Description.AddTranslation(GameCulture.Russian,"Ваша кожа горит");
 			calamity.GetBuff("KamiDebuff").DisplayName.AddTranslation(GameCulture.Russian,"Грипп Ками");

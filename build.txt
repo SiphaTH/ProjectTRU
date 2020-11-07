@@ -1,6 +1,6 @@
 displayName = Project tRU
 author = Yum
-version = 2.0.0.1
+version = 2.0.1.0
 hideCode = true
 hideResources = true
 weakReferences = ThoriumMod, ElementsAwoken, Redemption

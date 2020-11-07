@@ -215,14 +215,6 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 				            tip = "Теперь вы посланник осквернённой богини!\nМёд охлаждает ваше пламя, усиливая ваши защитные способности\nВаша ослабленная жизненная сила подпитывает ваши отчаянные атаки";
 			            }
 		            }
-
-		            if (type == calamity.BuffType("Horror"))
-		            {
-			            if (tip == "The horror fuels your strength")
-			            {
-				            tip = "Ужас подпитывает вашу силу";
-			            }
-		            }
 	            }
             }
         }

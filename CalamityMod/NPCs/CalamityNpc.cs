@@ -268,8 +268,6 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 			calamity.GetNPC("SlimeSpawnCorrupt2").DisplayName.AddTranslation(GameCulture.Russian,"Искажённый слизень");
 			calamity.GetNPC("SlimeSpawnCrimson").DisplayName.AddTranslation(GameCulture.Russian,"Багряный слизень");
 			calamity.GetNPC("SlimeSpawnCrimson2").DisplayName.AddTranslation(GameCulture.Russian,"Багряный слизень");
-			calamity.GetNPC("StasisProbe").DisplayName.AddTranslation(GameCulture.Russian, "Стазис-дрон");
-			calamity.GetNPC("StasisProbeNaked").DisplayName.AddTranslation(GameCulture.Russian, "Стазис-дрон");
 			calamity.GetNPC("StormWeaverBody").DisplayName.AddTranslation(GameCulture.Russian,"Штормовой Ткач");
 			calamity.GetNPC("StormWeaverBodyNaked").DisplayName.AddTranslation(GameCulture.Russian,"Штормовой Ткач");
 			calamity.GetNPC("StormWeaverHead").DisplayName.AddTranslation(GameCulture.Russian,"Штормовой Ткач");
