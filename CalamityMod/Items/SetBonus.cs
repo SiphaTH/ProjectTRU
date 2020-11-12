@@ -1,4 +1,7 @@
-﻿using Terraria;
+﻿using System.Collections.Generic;
+using CalamityMod;
+using CalamityMod.World;
+using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ID;
@@ -7,6 +10,8 @@ namespace CalamityRuTranslate.CalamityMod.Items
 {
     public class SetBonus: GlobalItem
     {
+        private static bool DeathMode => CalamityWorld.death;
+
         public override string IsArmorSet(Item head, Item body, Item legs)
         {
             Mod calamity = ModLoader.GetMod("CalamityMod");
@@ -15,6 +20,13 @@ namespace CalamityRuTranslate.CalamityMod.Items
             {
                 if (CalamityRuTranslate.TRuConfig.CalamityTranslation)
                 {
+                    if (head.type == calamity.ItemType("ForbiddenCirclet") &&
+                        body.type == ItemID.AncientBattleArmorShirt &&
+                        legs.type == ItemID.AncientBattleArmorPants)
+                    {
+                        return "AncientForbiddenCirclet";
+                    }
+                    
                     if (head.type == calamity.ItemType("ShroomiteVisage") &&
                         body.type == ItemID.ShroomiteBreastplate &&
                         legs.type == ItemID.ShroomiteLeggings)
@@ -155,6 +167,13 @@ namespace CalamityRuTranslate.CalamityMod.Items
                         return "BloodflareSummoner";
                     }
 
+                    if (head.type == calamity.ItemType("BloodflareHornedHelm") &&
+                        body.type == calamity.ItemType("BloodflareBodyArmor") &&
+                        legs.type == calamity.ItemType("BloodflareCuisses"))
+                    {
+                        return "BloodflareRanged";
+                    }
+                    
                     if (head.type == calamity.ItemType("BloodflareHornedMask") &&
                         body.type == calamity.ItemType("BloodflareBodyArmor") &&
                         legs.type == calamity.ItemType("BloodflareCuisses"))
@@ -167,6 +186,13 @@ namespace CalamityRuTranslate.CalamityMod.Items
                         legs.type == calamity.ItemType("BloodflareCuisses"))
                     {
                         return "BloodflareMelee";
+                    }
+                    
+                    if (head.type == calamity.ItemType("BrimflameScowl") &&
+                        body.type == calamity.ItemType("BrimflameRobes") &&
+                        legs.type == calamity.ItemType("BrimflameBoots"))
+                    {
+                        return "Brimflame";
                     }
 
                     if (head.type == calamity.ItemType("DaedalusHat") &&
@@ -203,12 +229,26 @@ namespace CalamityRuTranslate.CalamityMod.Items
                     {
                         return "DaedalusRogue";
                     }
+                    
+                    if (head.type == calamity.ItemType("DemonshadeHelm") &&
+                        body.type == calamity.ItemType("DemonshadeBreastplate") &&
+                        legs.type == calamity.ItemType("DemonshadeGreaves"))
+                    {
+                        return "Demonshade";
+                    }
 
                     if (head.type == calamity.ItemType("DesertProwlerHat") &&
                         body.type == calamity.ItemType("DesertProwlerShirt") &&
                         legs.type == calamity.ItemType("DesertProwlerPants"))
                     {
                         return "DesertProwler";
+                    }
+                    
+                    if (head.type == calamity.ItemType("FearmongerGreathelm") &&
+                        body.type == calamity.ItemType("FearmongerPlateMail") &&
+                        legs.type == calamity.ItemType("FearmongerGreaves"))
+                    {
+                        return "Fearmonger";
                     }
 
                     if (head.type == calamity.ItemType("FathomSwarmerVisage") &&
@@ -258,6 +298,27 @@ namespace CalamityRuTranslate.CalamityMod.Items
                         legs.type == calamity.ItemType("MolluskShelleggings"))
                     {
                         return "Mollusk";
+                    }
+
+                    if (head.type == calamity.ItemType("OmegaBlueHelmet") ||
+                        body.type == calamity.ItemType("OmegaBlueChestplate") ||
+                        legs.type == calamity.ItemType("OmegaBlueLeggings"))
+                    {
+                        return "OmegaBlue";
+                    }
+                    
+                    if (head.type == calamity.ItemType("PlagueReaperMask") ||
+                        body.type == calamity.ItemType("PlagueReaperVest") ||
+                        legs.type == calamity.ItemType("PlagueReaperStriders"))
+                    {
+                        return "PlagueReaper";
+                    }
+                    
+                    if (head.type == calamity.ItemType("PrismaticHelmet") ||
+                        body.type == calamity.ItemType("PrismaticRegalia") ||
+                        legs.type == calamity.ItemType("PrismaticGreaves"))
+                    {
+                        return "Prismatic";
                     }
 
                     if (head.type == calamity.ItemType("PlaguebringerVisor") &&
@@ -386,6 +447,13 @@ namespace CalamityRuTranslate.CalamityMod.Items
                         return "Sulfur";
                     }
 
+                    if (head.type == calamity.ItemType("TarragonHelm") &&
+                        body.type == calamity.ItemType("TarragonBreastplate") &&
+                        legs.type == calamity.ItemType("TarragonLeggings"))
+                    {
+                        return "TarragonMelee";
+                    }
+                    
                     if (head.type == calamity.ItemType("TarragonHelmet") &&
                         body.type == calamity.ItemType("TarragonBreastplate") &&
                         legs.type == calamity.ItemType("TarragonLeggings"))
@@ -512,6 +580,9 @@ namespace CalamityRuTranslate.CalamityMod.Items
 
         public override void UpdateArmorSet(Player player, string set)
         {
+            string armorSetHotkey = global::CalamityMod.CalamityMod.TarraHotKey.TooltipHotkeyString();
+            int ancientStorm = (int)(60f * Main.LocalPlayer.manaCost);
+
             Mod calamity = ModLoader.GetMod("CalamityMod");
             
             if (calamity != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
@@ -520,6 +591,9 @@ namespace CalamityRuTranslate.CalamityMod.Items
                 {
                     switch (set)
                     {
+                        case "AncientForbiddenCirclet":
+                            player.setBonus = "Нажмите " + armorSetHotkey + ", для призыва древнего шторма в место, указанное мышью\nДревний шторм стоит " + ancientStorm + " маны и получает бонусы как от призывателя, так и от разбойника\nРазбойные скрытные удары создают самонаводящихся пожирателей при попадании во врага\nМиньоны наносят полный урон, пока вы держите разбойное оружие\nАтаки разбойника и призывателя зависят от характеристик с самым большим бонусом\nСкрытность разбойника накапливается быстрее, пока вы не атакуете и медленнее, пока вы движетесь, максимум до 100\nПосле заполнения шкалы скрытности вы сможете выполнить скрытный удар\nСкрытность расходуется только при атаке и не расходуется при движении\nЧем выше ваша скрытность, тем выше разбойный урон, шанс критического удара и скорость передвижения";
+                            return;
                         case "Shroomite":
                             player.setBonus = "Пока вы не двигаетесь, вы входите в режим скрытности\nСкрытность увеличивает дальность атак и уменьшает шанс быть обнаруженным врагами";
                             return;
@@ -580,11 +654,17 @@ namespace CalamityRuTranslate.CalamityMod.Items
                         case "BloodflareSummoner":
                             player.setBonus = "Увеличивает урон миньонов на 55%\nЗначительно увеличивает регенерацию здоровья\nУ врагов с уровнем здоровья ниже 50% может выпасть сердце при ударе\nУ врагов с уровнем здоровья выше 50% может выпасть кристалл маны при ударе\nУ врагов, убитых во время кровавой луны, выше шанс выпадения кровавой сферы\nПризывает мины полтергаста кружиться вокруг вас\nПри 90% здоровья и выше вы получаете 10% увеличение урона миньонов\nПри 50% здоровья и ниже вы получаете 20 защиты и 2 единицы регенерации здоровья";
                             return;
+                        case "BloodflareRanged":
+                            player.setBonus = "Значительно увеличивает регенерацию здоровья\nУ врагов с уровнем здоровья ниже 50% может выпасть сердце при ударе\nУ врагов с уровнем здоровья выше 50% может выпасть кристалл маны при ударе\nУ врагов, убитых во время кровавой луны, выше шанс выпадения кровавой сферы\nНажатие " + armorSetHotkey + ", высвободит уничтожающие ваших врагов души полтергаста\nЭтот эффект имеет 30 секунд перезарядки\nУ стрелкового оружия есть шанс выстрелить кровавыми взрывными сферами";
+                            return;
                         case "BloodflareMagic":
                             player.setBonus = "Значительно увеличивает регенерацию здоровья\nУ врагов с уровнем здоровья ниже 50% может выпасть сердце при ударе\nУ врагов с уровнем здоровья выше 50% может выпасть кристалл маны при ударе\nУ врагов, убитых во время кровавой луны, выше шанс выпадения кровавой сферы\nМагическое оружие иногда стреляет призрачными зарядами\nМагические критические удары вызывают взрыв пламени каждые 2 секунды";
                             return;
                         case "BloodflareMelee":
                             player.setBonus = "Значительно увеличивает регенерацию здоровья\nВраги чаще выбирают вас в качестве цели\nУ врагов с уровнем здоровья ниже 50% может выпасть сердце при ударе\nУ врагов с уровнем здоровья выше 50% может выпасть кристалл маны при ударе\nУ врагов, убитых во время кровавой луны, выше шанс выпадения кровавой сферы\nИстинные удары ближнего боя будут исцелять вас\nПосле того как вы нанесёте 15 истинных ударов врагу, вы впадёте в «Кровавое неистовство» на 5 секунд\nВо время этого вы получите 25% увеличение урона ближнего боя и шанса критического удара, а контактный урон будет снижен вдвое\nЭтот эффект имеет 30 секунд перезарядки";
+                            return;
+                        case "Brimflame":
+                            player.setBonus = "Дополнительно дарует увеличенный урон и шанс критического удара на 15%\nНажатие " + armorSetHotkey + ", чтобы активирует эффект «Серное неистовство»\nВо время действия этого эффекта ваш урон значительно увеличивается\nОднако это происходит ценой быстрой потери здоровья и отсутствием регенерации маны\nЭффект можно отключить, однако у «Серного неистовства» есть 30 секундная перезарядка";
                             return;
                         case "DaedalusMagic":
                             player.setBonus = "Увеличивает магический урон на 5%\nУ вас есть 10% шанс поглотить физические атаки и снаряды которые попали в вас\nЕсли вы поглощаете атаку, вы исцеляетесь на 1/2 от урона этой атаки";
@@ -601,8 +681,16 @@ namespace CalamityRuTranslate.CalamityMod.Items
                         case "DaedalusRogue":
                             player.setBonus = "Увеличивает разбойный урон на 5%\nРазбойные снаряды выбрасывают кристальные осколки во время полёта\nСкрытность разбойника накапливается, когда вы атакуете и не двигаетесь, максимум до 105\nПосле заполнения шкалы скрытности вы сможете выполнить скрытный удар\nСкрытность расходуется только при атаке и не расходуется при движении\nЧем выше ваша скрытность, тем выше разбойный урон, шанс критического удара и скорость передвижения";
                             return;
+                        case "Demonshade":
+                            player.setBonus = "Увеличивает урон миньонов на 100%\nВсе атаки накладывают дебафф «Пламя демона»\nТеневые лучи и демонические косы обрушатся на врагов, когда вас ранили\nДружелюбный красный дьявол следует за вами\nНажатие " + armorSetHotkey + ", разозлит ближайших врагов заклинанием тёмной магии на 10 секунд\nЭто заставит их наносить на 25% больше урона, но также получать его на 125% больше";
+                            return;
                         case "DesertProwler":
                             player.setBonus = "Стрелковые атаки наносят дополнительно 1 единицу фиксированного урона\nСтрелковые критические удары редко могут поднять песчаную бурю";
+                            return;
+                        case "Fearmonger":
+                            player.setBonus = DeathMode ? 
+                                "Увеличивает урон миньонов на 30%\nПонижение урона миньонов при использовании оружия другого класса снижено\nНевосприимчивость ко всем формам мороза и огня\nВсе атаки миньонов даруют колоссальную регенерацию здоровья\nУвеличивает сопротивление урону на 15% во время тыквенной и ледяной луны\nЭто дополнительное сопротивление урону игнорирует ванильный передел\nОбеспечивает защитой от холода в режиме Смерти" : 
+                                "Увеличивает урон миньонов на 30%\nПонижение урона миньонов при использовании оружия другого класса снижено\nНевосприимчивость ко всем формам мороза и огня\nВсе атаки миньонов даруют колоссальную регенерацию здоровья\nУвеличивает сопротивление урону на 15% во время тыквенной и ледяной луны\nЭто дополнительное сопротивление урону игнорирует ванильный передел";
                             return;
                         case "FathomSwarmer":
                             player.setBonus = "Увеличивает урон миньонов на 10% и максимальное число миньонов на 1\nДарует способность лазить по стенам\nУвеличивает урон миньонов на 30%, находясь в жидкостях\nОбеспечивает умеренным количеством света в бездне и умеренно снижает потерю дыхания в бездне";
@@ -624,6 +712,15 @@ namespace CalamityRuTranslate.CalamityMod.Items
                             return;
                         case "Mollusk":
                             player.setBonus = "Два моллюска помогают вам в бою\nУвеличивает урон на 10%\nВаше горизонтальное движение замедлено";
+                            return;
+                        case "OmegaBlue":
+                            player.setBonus = "Увеличивает пробивание брони на 50\nУвеличивает урон и шанс критического удара на 10%\nКороткие щупальца исцеляют вас, высасывая жизнь врага\nНажатие " + armorSetHotkey + ", активирует «Безумие бездны» на 5 секунд\n«Безумие бездны» увеличивает урон, шанс критического удара и агрессивность/дистанцию атаки щупалец\nЭтот эффект имеет 25 секунд перезарядки";
+                            return;
+                        case "PlagueReaper":
+                            player.setBonus = "Уменьшает использование боеприпасов на 25% и увеличивает время полёта на 5%\nВраги получают на 10% больше урона от стрелковых снарядов, когда они поражены дебаффом «Чума»\nПолучая удар, приводит к падению с неба чумного пепла\nНажатие " + armorSetHotkey + ", ослепит вас в течение 5 секунд, но значительно увеличив свой стрелковый урон\nИмеет 25 секунд перезарядки";
+                            return;
+                        case "Prismatic":
+                            player.setBonus = "Увеличивает максимальный запас маны на 40 и снижает расход маны на 15%\nУвеличивает скорость регенерации маны\nНажатие " + armorSetHotkey + ", выпустит шквал смертоносных лазеров в позицию курсора мыши в течение следующих 5 секунд\nИмеет 30 секунд перезарядки";
                             return;
                         case "Plaguebringer":
                             player.setBonus = "Дарует чумной рывок, чтобы таранить врагов и накладывать на них дебафф «Чума»\nПризывает маленькую разносчицу чумы защищать вас и наделять силой ближайших миньонов";
@@ -679,6 +776,9 @@ namespace CalamityRuTranslate.CalamityMod.Items
                         case "Sulfur":
                             player.setBonus = "Атакуя врагов и получая удар от врагов, накладывает на них дебафф «Отравление»\nДарует дополнительный прыжок, который вызывает сернистый пузырь\nУменьшает воздействие сернистых вод\nУмеренно снижает потерю дыхания в бездне\nСкрытность разбойника накапливается быстрее, пока вы не атакуете и медленнее, пока вы движетесь, максимум до 100\nПосле заполнения шкалы скрытности вы сможете выполнить скрытный удар\nСкрытность расходуется только при атаке и не расходуется при движении\nЧем выше ваша скрытность, тем выше разбойный урон, шанс критического удара и скорость передвижения";
                             return;
+                        case "TarragonMelee":
+                            player.setBonus = "Увеличивает дальность подбора сердец\nПосле смерти врагов может выпасть больше сердец\nУ вас есть 25% шанс получить бафф регенерации здоровья при получении урона\nНажатие " + armorSetHotkey + ", покроет вас жизненной энергией, которая значительно снизит урон при контакте с врагом в течение 10 секунд\nИмеет 30 секунд перезарядки";
+                            return;
                         case "TarragonRogue":
                             player.setBonus = "Уменьшает скорость появления врагов\nУвеличивает дальность подбора сердец\nПосле смерти врагов может выпасть больше сердец\nПосле каждых 25 разбойных критических ударов вы получаете неуязвимость к урону на 5 секунд\nЭтот эффект может срабатывать только раз в 30 секунд\nНаходясь под действием дебаффа, вы получаете 10% увеличенный разбойный урон\nСкрытность разбойника накапливается быстрее, пока вы не атакуете и медленнее, пока вы движетесь, максимум до 115\nПосле заполнения шкалы скрытности вы сможете выполнить скрытный удар\nСкрытность расходуется только при атаке и не расходуется при движении\nЧем выше ваша скрытность, тем выше разбойный урон, шанс критического удара и скорость передвижения";
                             return;
@@ -730,6 +830,32 @@ namespace CalamityRuTranslate.CalamityMod.Items
                         case "Xeroc":
                             player.setBonus = "Увеличивает разбойный урон и скорость снарядов на 9%\nРазбойные снаряды имеют особые эффекты при попадании во врага\nВы переполняетесь космическим гневом и яростью при получении урона\nСкрытность разбойника накапливается быстрее, пока вы не атакуете и медленнее, пока вы движетесь, максимум до 115\nПосле заполнения шкалы скрытности вы сможете выполнить скрытный удар\nСкрытность расходуется только при атаке и не расходуется при движении\nЧем выше ваша скрытность, тем выше разбойный урон, шанс критического удара и скорость передвижения";
                             return;
+                    }
+                }
+            }
+        }
+
+        public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
+        {
+            Mod calamity = ModLoader.GetMod("CalamityMod");
+
+            if (calamity != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
+            {
+                if (CalamityRuTranslate.TRuConfig.CalamityTranslation)
+                {
+                    if (item.type == ItemID.AncientBattleArmorHat ||
+                        item.type == ItemID.AncientBattleArmorShirt ||
+                        item.type == ItemID.AncientBattleArmorPants)
+                    {
+                        foreach (TooltipLine tooltipLine in tooltips)
+                        {
+                            if (tooltipLine.Name == "SetBonus")
+                            {
+                                string str = tooltipLine.text;
+                                string resultA = str.Replace("The minion damage nerf is reduced while wielding magic weapons", "Понижение урона миньонов снижено, пока вы держите магическое оружие");
+                                tooltipLine.text = resultA;
+                            }
+                        }
                     }
                 }
             }
