@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using CalamityMod;
+using CalamityMod.World;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -338,7 +340,18 @@ namespace CalamityRuTranslate.CalamityMod.Items
             }
         }
 		public override void ModifyTooltips(Item item, List < TooltipLine > tooltips)
-        {
+		{
+			string AegisHotKey = global::CalamityMod.CalamityMod.AegisHotKey.TooltipHotkeyString();
+			string AstralArcanumUIHotkey = global::CalamityMod.CalamityMod.AstralArcanumUIHotkey.TooltipHotkeyString();
+			string MomentumCapacitatorHotkey = global::CalamityMod.CalamityMod.MomentumCapacitatorHotkey.TooltipHotkeyString();
+			string SandCloakHotkey = global::CalamityMod.CalamityMod.SandCloakHotkey.TooltipHotkeyString();
+			string SpectralVeilHotKey = global::CalamityMod.CalamityMod.SpectralVeilHotKey.TooltipHotkeyString();
+			string NormalityRelocatorHotKey = global::CalamityMod.CalamityMod.NormalityRelocatorHotKey.TooltipHotkeyString();
+			string PlaguePackHotKey = global::CalamityMod.CalamityMod.PlaguePackHotKey.TooltipHotkeyString();
+			string RageHotKey = global::CalamityMod.CalamityMod.RageHotKey.TooltipHotkeyString();
+			string AdrenalineHotKey = global::CalamityMod.CalamityMod.AdrenalineHotKey.TooltipHotkeyString();
+			bool DownedFlag = !CalamityWorld.downedSentinel1 || !CalamityWorld.downedSentinel2 || !CalamityWorld.downedSentinel3;
+	        
             Mod calamity = ModLoader.GetMod("CalamityMod");
 
             if (calamity != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
@@ -349,10 +362,10 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажмите ");
-				            string resultB = resultA.Replace(" to activate buffs to all damage, crit chance, and defense", ", для активации баффов увеличивающий весь урон, шанс критического удара и защиту");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip5")
+				            {
+					            tooltipLine.text = "Нажмите " + AegisHotKey + ", для активации баффов увеличивающий весь урон, шанс критического удара и защиту";
+				            }
 			            }
 		            }
 
@@ -360,10 +373,10 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажмите ");
-				            string resultB = resultA.Replace(" to toggle teleportation UI", ", для открытия меню телепортации");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip5")
+				            {
+					            tooltipLine.text = "Нажмите " + AstralArcanumUIHotkey + ", для открытия меню телепортации";
+				            }
 			            }
 		            }
 
@@ -371,10 +384,10 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажмите ");
-				            string resultB = resultA.Replace(" to teleport to a random location", ", для телепортации в случайное место");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip6")
+				            {
+					            tooltipLine.text = "Нажмите " + AstralArcanumUIHotkey + ", для телепортации в случайное место";
+				            }
 			            }
 		            }
 
@@ -382,10 +395,10 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажмите ");
-				            string resultB = resultA.Replace(" to activate buffs to all damage, crit chance, and defense", ", для активации баффов увеличивающий весь урон, шанс критического удара и защиту");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip5")
+				            {
+					            tooltipLine.text = "Нажмите " + AegisHotKey + ", для активации баффов увеличивающий весь урон, шанс критического удара и защиту";
+				            }
 			            }
 		            }
 
@@ -393,10 +406,10 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажатие ");
-				            string resultB = resultA.Replace(" to consume 30% of your maximum stealth to create an energy field at the cursor position", ", создаёт энергетическое поле в позиции курсора мыши при этом затрачивает 30% от максимальной скрытности");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip0")
+				            {
+					            tooltipLine.text = "Нажатие " + MomentumCapacitatorHotkey + ", создаёт энергетическое поле в позиции курсора мыши при этом затрачивает 30% от максимальной скрытности";
+				            }
 			            }
 		            }
 
@@ -451,10 +464,10 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажатие ");
-				            string resultB = resultA.Replace(" to consume 25% of your maximum stealth to create a protective dust veil which provides +6 defense and +2 life regen", ", создаёт защитную завесу пыли, увеличивающую защиту на 6 и регенерацию здоровья на 2, при этом затрачивает 25% от максимальной скрытности");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = "Нажатие " + SandCloakHotkey + ", создаёт защитную завесу пыли, увеличивающую защиту на 6 и регенерацию здоровья на 2, при этом затрачивает 25% от максимальной скрытности";
+				            }
 			            }
 		            }
 
@@ -462,10 +475,10 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажатие ");
-				            string resultB = resultA.Replace(" to consume 25% of your maximum stealth to perform a short range teleport and render you momentarily invulnerable", ", выполняет телепортацию на короткое расстояние, делая вас на мгновение неуязвимым, при этом затрачивает 25% от максимальной скрытности");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = "Нажатие " + SpectralVeilHotKey + ", выполняет телепортацию на короткое расстояние, делая вас на мгновение неуязвимым, при этом затрачивает 25% от максимальной скрытности";
+				            }
 			            }
 		            }
 
@@ -473,10 +486,10 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажмите ");
-				            string resultB = resultA.Replace(" to teleport to the position of the mouse", ", для телепортации в положение курсора мыши");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = "Нажмите " + NormalityRelocatorHotKey + ", для телепортации в положение курсора мыши";
+				            }
 			            }
 		            }
 
@@ -494,40 +507,46 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажатие ");
-				            string resultB = resultA.Replace(" to consume 25% of your maximum stealth to perform a swift upwards/diagonal dash which leaves a trail of plagued clouds", ", выполняет стремительный рывок вверх/по диагонали, который оставляет за собой след чумных облаков, при этом затрачивает 25% от максимальной скрытности");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip2")
+				            {
+					            tooltipLine.text = "Нажатие " + PlaguePackHotKey + ", выполняет стремительный рывок вверх/по диагонали, который оставляет за собой след чумных облаков, при этом затрачивает 25% от максимальной скрытности";
+				            }
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("SunkenSeaFountain"))
+		            if (ModLoader.GetMod("Fargowiltas") != null)
 		            {
-			            foreach (TooltipLine tooltipLine in tooltips)
+			            if (item.type == calamity.ItemType("SunkenSeaFountain"))
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Forces surrounding biome state to Sunken Sea upon activation", "Ваше окружение меняется на затерянное море при активации");
-				            tooltipLine.text = resultA;
+				            foreach (TooltipLine tooltipLine in tooltips)
+				            {
+					            if (tooltipLine.Name == "Tooltip0")
+					            {
+						            tooltipLine.text = "Ваше окружение меняется на затерянное море при активации";
+					            }
+				            }
 			            }
-		            }
-
-		            if (item.type == calamity.ItemType("SulphurousFountainItem"))
-		            {
-			            foreach (TooltipLine tooltipLine in tooltips)
+			            
+			            if (item.type == calamity.ItemType("SulphurousFountainItem"))
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Forces surrounding biome state to Sulphurous Sea upon activation", "Ваше окружение меняется на сернистое море при активации");
-				            tooltipLine.text = resultA;
+				            foreach (TooltipLine tooltipLine in tooltips)
+				            {
+					            if (tooltipLine.Name == "Tooltip0")
+					            {
+						            tooltipLine.text = "Ваше окружение меняется на сернистое море при активации";
+					            }
+				            }
 			            }
-		            }
-
-		            if (item.type == calamity.ItemType("AstralFountainItem"))
-		            {
-			            foreach (TooltipLine tooltipLine in tooltips)
+			            
+			            if (item.type == calamity.ItemType("AstralFountainItem"))
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Forces surrounding biome state to Astral upon activation", "Ваше окружение меняется на астрал при активации");
-				            tooltipLine.text = resultA;
+				            foreach (TooltipLine tooltipLine in tooltips)
+				            {
+					            if (tooltipLine.Name == "Tooltip0")
+					            {
+						            tooltipLine.text = "Ваше окружение меняется на астрал при активации";
+					            }
+				            }
 			            }
 		            }
 
@@ -535,12 +554,15 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Activates rage. When rage is maxed press ", "Активирует ярость. Когда шкала ярости заполнена, нажмите ");
-				            string resultB = resultA.Replace(" to activate rage mode.", ", для активации режима ярости");
-				            string resultC = resultB.Replace("Activates adrenaline. When adrenaline is maxed press ", "Активирует адреналин. Когда шкала адреналина заполнена, нажмите ");
-				            string resultD = resultC.Replace(" to activate adrenaline mode.", ", для активации режима адреналина");
-				            tooltipLine.text = resultD;
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = "Активирует ярость. Когда шкала ярости заполнена, нажмите " + RageHotKey + ", для активации режима ярости";
+				            }
+				            
+				            if (tooltipLine.Name == "Tooltip3")
+				            {
+					            tooltipLine.text = "Активирует адреналин. Когда шкала адреналина заполнена, нажмите " + AdrenalineHotKey + ", для активации режима адреналина";
+				            }
 			            }
 		            }
 
@@ -548,9 +570,12 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("WARNING! Some sentinels have not been truly defeated yet and will spawn at full power during this fight!", "Внимание! Некоторые стражи ещё не были по-настоящему побеждены и будут сражаться в полную силу во время этой битвы!");
-				            tooltipLine.text = resultA;
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = DownedFlag ? 
+						            "Внимание! Некоторые стражи ещё не были по-настоящему побеждены и будут сражаться в полную силу во время этой битвы!" : 
+						            "";
+				            }
 			            }
 		            }
 
@@ -558,10 +583,10 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажатие ");
-				            string resultB = resultA.Replace(" to consume 25% of your maximum stealth to perform a swift upwards/diagonal dash which leaves a trail of lightning bolts", ", выполняет стремительный рывок вверх/по диагонали, который оставляет за собой след молний, при этом затрачивает 25% от максимальной скрытности");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip2")
+				            {
+					            tooltipLine.text = "Нажатие" + PlaguePackHotKey + ", выполняет стремительный рывок вверх/по диагонали, который оставляет за собой след молний, при этом затрачивает 25% от максимальной скрытности";
+				            }
 			            }
 		            }
 
@@ -569,10 +594,12 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("10% increased jump speed", "Увеличивает скорость прыжка на 10%");
-				            string resultB = resultA.Replace("40% increased jump speed", "Увеличивает скорость прыжка на 40%");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = Main.player[Main.myPlayer].autoJump ? 
+						            "Увеличивает скорость прыжка на 10%" : 
+						            "Увеличивает скорость прыжка на 40%";
+				            }
 			            }
 		            }
 
@@ -580,10 +607,12 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("6% increased jump speed", "Увеличивает скорость прыжка на 6%");
-				            string resultB = resultA.Replace("24% increased jump speed", "Увеличивает скорость прыжка на 24%");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = Main.player[Main.myPlayer].autoJump ? 
+						            "Увеличивает скорость прыжка на 6%" : 
+						            "Увеличивает скорость прыжка на 24%";
+				            }
 			            }
 		            }
 
@@ -591,10 +620,12 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Favorite this item to gain 5% increased movement speed and 2% increased jump speed.", "Пометьте как избранное, чтобы увеличить скорость передвижения на 5% и скорость прыжка на 2%");
-				            string resultB = resultA.Replace("Favorite this item to gain 5% increased movement speed.", "Пометьте как избранное, чтобы увеличить скорость передвижения на 5%");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip2")
+				            {
+					            tooltipLine.text = Main.player[Main.myPlayer].autoJump ? 
+						            "Пометьте как избранное, чтобы увеличить скорость передвижения на 5%" : 
+						            "Пометьте как избранное, чтобы увеличить скорость передвижения на 5% и скорость прыжка на 2%";
+				            }
 			            }
 		            }
 
@@ -602,11 +633,12 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Holding this weapon grants ", "Пока этот предмет в ваших руках ");
-				            string resultB = resultA.Replace("5% increased jump speed", "увеличивает скорость прыжка на 5%");
-				            string resultC = resultB.Replace("20% increased jump speed", "увеличивает скорость прыжка на 20%");
-				            tooltipLine.text = resultC;
+				            if (tooltipLine.Name == "Tooltip4")
+				            {
+					            tooltipLine.text = Main.player[Main.myPlayer].autoJump ? 
+						            "Пока этот предмет в ваших руках увеличивает скорость прыжка на 5%" : 
+						            "Пока этот предмет в ваших руках увеличивает скорость прыжка на 20%";
+				            }
 			            }
 		            }
 
@@ -614,10 +646,12 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Increases movement speed by 10%, jump speed by ", "Увеличивает скорость передвижения на 10%, скорость прыжка на ");
-				            string resultB = resultA.Replace("%, and all damage by 3%", "% и весь урон на 3%");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = Main.player[Main.myPlayer].autoJump ? 
+						            "Увеличивает скорость передвижения на 10%, скорость прыжка на 5% и весь урон на 3%" : 
+						            "Увеличивает скорость передвижения на 10%, скорость прыжка на 20% и весь урон на 3%";
+				            }
 			            }
 		            }
 		            
@@ -625,9 +659,12 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Only gives 37 seconds of Potion Sickness", "Накладывает дебафф «Послезельевая болезнь» на 37 секунд");
-				            tooltipLine.text = resultA;
+				            if (tooltipLine.Name == "Tooltip0")
+				            {
+					            tooltipLine.text = Main.player[Main.myPlayer].pStone ? 
+						            "Накладывает дебафф «Послезельевая болезнь» на 37 секунд" : 
+						            "Накладывает дебафф «Послезельевая болезнь» на 50 секунд";
+				            }
 			            }
 		            }
 	            }

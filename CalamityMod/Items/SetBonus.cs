@@ -20,6 +20,20 @@ namespace CalamityRuTranslate.CalamityMod.Items
             {
                 if (CalamityRuTranslate.TRuConfig.CalamityTranslation)
                 {
+                    if (head.type == ItemID.ObsidianHelm &&
+                        body.type == ItemID.ObsidianShirt &&
+                        legs.type == ItemID.ObsidianPants)
+                    {
+                        return "Obsidian";
+                    }
+                    
+                    if ((head.type == ItemID.EskimoHood || head.type == ItemID.PinkEskimoHood) &&
+                        (body.type == ItemID.EskimoCoat || body.type == ItemID.PinkEskimoCoat) &&
+                        (legs.type == ItemID.EskimoPants || legs.type == ItemID.PinkEskimoPants))
+                    {
+                        return "Eskimo";
+                    }
+                    
                     if (head.type == calamity.ItemType("ForbiddenCirclet") &&
                         body.type == ItemID.AncientBattleArmorShirt &&
                         legs.type == ItemID.AncientBattleArmorPants)
@@ -591,6 +605,16 @@ namespace CalamityRuTranslate.CalamityMod.Items
                 {
                     switch (set)
                     {
+                        case "Obsidian":
+                            player.setBonus = DeathMode ? 
+                                "Увеличивает защиту на 2\nУвеличивает разбойный урон и шанс критического удара на 5%\nДарует невосприимчивость к огненным блокам и временную невосприимчивость к лаве\nСкрытность разбойника накапливается быстрее, пока вы не атакуете и медленнее, пока вы движетесь, максимум до 80\nПосле заполнения шкалы скрытности вы сможете выполнить скрытный удар\nСкрытность расходуется только при атаке и не расходуется при движении\nЧем выше ваша скрытность, тем выше разбойный урон, шанс критического удара и скорость передвижения\nОбеспечивает защитой от жары в режиме Смерти" : 
+                                "Увеличивает защиту на 2\nУвеличивает разбойный урон и шанс критического удара на 5%\nДарует невосприимчивость к огненным блокам и временную невосприимчивость к лаве\nСкрытность разбойника накапливается быстрее, пока вы не атакуете и медленнее, пока вы движетесь, максимум до 80\nПосле заполнения шкалы скрытности вы сможете выполнить скрытный удар\nСкрытность расходуется только при атаке и не расходуется при движении\nЧем выше ваша скрытность, тем выше разбойный урон, шанс критического удара и скорость передвижения";
+                            return;
+                        case "Eskimo":
+                            player.setBonus = DeathMode ? 
+                                "Урон оружий, связанных со льдом увеличен на 10%\nВраги, связанные со льдом наносят сниженный урон\nОбеспечивает невосприимчивостью к дебаффам «Ледяной ожог» и «Ледниковое состояние»\nОбеспечивает защитой от холода в режиме Смерти" : 
+                                "Урон оружий, связанных со льдом увеличен на 10%\nВраги, связанные со льдом наносят сниженный урон\nОбеспечивает невосприимчивостью к дебаффам «Ледяной ожог» и «Ледниковое состояние»";
+                            return;
                         case "AncientForbiddenCirclet":
                             player.setBonus = "Нажмите " + armorSetHotkey + ", для призыва древнего шторма в место, указанное мышью\nДревний шторм стоит " + ancientStorm + " маны и получает бонусы как от призывателя, так и от разбойника\nРазбойные скрытные удары создают самонаводящихся пожирателей при попадании во врага\nМиньоны наносят полный урон, пока вы держите разбойное оружие\nАтаки разбойника и призывателя зависят от характеристик с самым большим бонусом\nСкрытность разбойника накапливается быстрее, пока вы не атакуете и медленнее, пока вы движетесь, максимум до 100\nПосле заполнения шкалы скрытности вы сможете выполнить скрытный удар\nСкрытность расходуется только при атаке и не расходуется при движении\nЧем выше ваша скрытность, тем выше разбойный урон, шанс критического удара и скорость передвижения";
                             return;
@@ -854,6 +878,36 @@ namespace CalamityRuTranslate.CalamityMod.Items
                                 string str = tooltipLine.text;
                                 string resultA = str.Replace("The minion damage nerf is reduced while wielding magic weapons", "Понижение урона миньонов снижено, пока вы держите магическое оружие");
                                 tooltipLine.text = resultA;
+                            }
+                        }
+                    }
+                    
+                    if (item.type == ItemID.MoltenHelmet ||
+                        item.type == ItemID.MoltenBreastplate ||
+                        item.type == ItemID.MoltenGreaves)
+                    {
+                        foreach (TooltipLine tooltipLine in tooltips)
+                        {
+                            if (tooltipLine.Name == "SetBonus")
+                            {
+                                tooltipLine.text = DeathMode ? 
+                                    "Бонус комплекта: Увеличивает урон ближнего боя на 17%\nУвеличивает истинный урон ближнего боя на 20%\nДарует невосприимчивость к огненным блокам и временную невосприимчивость к лаве\nОбеспечивает защитой от жары и холода в режиме Смерти" : 
+                                    "Бонус комплекта: Увеличивает урон ближнего боя на 17%\nУвеличивает истинный урон ближнего боя на 20%\nДарует невосприимчивость к огненным блокам и временную невосприимчивость к лаве";
+                            }
+                        }
+                    }
+                    
+                    if (item.type == ItemID.FrostHelmet ||
+                        item.type == ItemID.FrostBreastplate ||
+                        item.type == ItemID.FrostLeggings)
+                    {
+                        foreach (TooltipLine tooltipLine in tooltips)
+                        {
+                            if (tooltipLine.Name == "SetBonus")
+                            {
+                                tooltipLine.text = DeathMode ? 
+                                    "Бонус комплекта: " + Language.GetTextValue("ArmorSetBonus.Frost") + "\nОбеспечивает защитой от жары и холода в режиме Смерти" : 
+                                    "Бонус комплекта: " + Language.GetTextValue("ArmorSetBonus.Frost");
                             }
                         }
                     }
