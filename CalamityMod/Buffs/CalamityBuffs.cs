@@ -320,7 +320,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("AbyssalMadness").DisplayName.AddTranslation(GameCulture.Russian,"Безумие бездны");
 			calamity.GetBuff("AbyssalMadness").Description.AddTranslation(GameCulture.Russian,"Урон, шанс критического удара, и агрессивность/дистанция атаки щупалец увеличены");
 			calamity.GetBuff("AdrenalineMode").DisplayName.AddTranslation(GameCulture.Russian,"Режим адреналина");
-			calamity.GetBuff("AdrenalineMode").Description.AddTranslation(GameCulture.Russian,"Урон увеличен на 150%");
+			calamity.GetBuff("AdrenalineMode").Description.AddTranslation(GameCulture.Russian,"Урон увеличен на 200%\nМожет быть увеличен другими предметами до 245%");
 			calamity.GetBuff("Afflicted").DisplayName.AddTranslation(GameCulture.Russian,"Страдающий");
 			calamity.GetBuff("Afflicted").Description.AddTranslation(GameCulture.Russian,"Усилен потусторонними духами");
 			calamity.GetBuff("AmidiasBlessing").DisplayName.AddTranslation(GameCulture.Russian,"Благословение Амидиаса");
