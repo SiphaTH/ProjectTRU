@@ -1,3 +1,4 @@
+using CalamityMod.World;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
@@ -5,9 +6,11 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 {
     public class VanillaBuffs: GlobalBuff
 	{
+		private static bool DeathMode => CalamityWorld.death;
+		
 		public override void ModifyBuffTip(int type, ref string tip, ref int rare)
         {
-            Mod calamity = ModLoader.GetMod("CalamityMod");
+	        Mod calamity = ModLoader.GetMod("CalamityMod");
             
             if (calamity != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
             {
@@ -64,39 +67,33 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 				            tip = "Телепорты жезла раздора отключены";
 				            break;
 			            case 39:
-				            if (tip == "Теряет жизнь. All damage taken increased by 20%")
+				            if (CalamityWorld.revenge)
 				            {
 					            tip = "Теряет жизнь. Весь получаемый урон увеличен на 20%";
 				            }
 				            break;
 			            case 124:
-				            if (tip == "Снижает урон от источников холода. Immunity to the Chilled, Frozen, and Glacial State debuffs")
-				            {
-					            tip = "Снижает урон от источников холода. Невосприимчивость к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние»";
-				            }
-
-				            if (tip == "Снижает урон от источников холода. Immunity to the Chilled, Frozen, and Glacial State debuffs. Provides cold protection in Death Mode")
-				            {
-					            tip = "Снижает урон от источников холода. Невосприимчивость к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние». Обеспечивает защитой от холода в режиме Смерти";
-				            }
+				            tip = DeathMode ? 
+					            "Снижает урон от источников холода\nНевосприимчивость к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние»\nОбеспечивает защитой от холода в режиме Смерти" : 
+					            "Снижает урон от источников холода\nНевосприимчивость к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние»";
 				            break;
 			            case 10:
 				            tip = "Даёт невидимость. Дарует разбойные бонусы, держа в руках определённое разбойное оружие";
 				            break;
 			            case 1:
-				            if (tip == "Невосприимчивость к лаве. Provides heat protection in Death Mode")
+				            if (DeathMode)
 				            {
 					            tip = "Невосприимчивость к лаве. Обеспечивает защитой от жары в режиме Смерти";
 				            }
 				            break;
 			            case 116:
-				            if (tip == "враги поблизости воспламеняются. Provides cold protection in Death Mode")
+				            if (DeathMode)
 				            {
 					            tip = "враги поблизости воспламеняются. Обеспечивает защитой от холода в режиме Смерти";
 				            }
 				            break;
 			            case 87:
-				            if (tip == "Восстановление жизни немного ускорено. Provides cold protection in Death Mode")
+				            if (DeathMode)
 				            {
 					            tip = "Восстановление жизни немного ускорено. Обеспечивает защитой от холода в режиме Смерти";
 				            }
@@ -108,7 +105,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 
 		            if (type == calamity.BuffType("Molten"))
 		            {
-			            if (tip == "Сопротивление к эффектам холода. Provides cold protection in Death Mode")
+			            if (DeathMode)
 			            {
 				            tip = "Сопротивление к эффектам холода. Обеспечивает защитой от холода в режиме Смерти";
 			            }
@@ -154,56 +151,47 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 				            tip = "Ваша осквернённая душа скована вашей недостаточной силой призыва";
 			            }
 
-			            if (tip == "You are an emissary of the profaned goddess now!\nThe light of the sun empowers your offensive capabilities"
-			            )
+			            if (tip == "You are an emissary of the profaned goddess now!\nThe light of the sun empowers your offensive capabilities")
 			            {
 				            tip = "Теперь вы посланник осквернённой богини!\nСвет солнца усиливает ваши атакующие способности";
 			            }
 
-			            if (tip == "You are an emissary of the profaned goddess now!\nThe darkness of night cools your flames, empowering your defensive capabilities"
-			            )
+			            if (tip == "You are an emissary of the profaned goddess now!\nThe darkness of night cools your flames, empowering your defensive capabilities")
 			            {
 				            tip = "Теперь вы посланник осквернённой богини!\nНочная тьма охлаждает ваше пламя, усиливая ваши защитные способности";
 			            }
 
-			            if (tip == "You are an emissary of the profaned goddess now!\nThe water douses your flames, empowering your defensive capabilities"
-			            )
+			            if (tip == "You are an emissary of the profaned goddess now!\nThe water douses your flames, empowering your defensive capabilities")
 			            {
 				            tip = "Теперь вы посланник осквернённой богини!\nВода гасит ваше пламя, усиливая ваши защитные способности";
 			            }
 
-			            if (tip == "You are an emissary of the profaned goddess now!\nThe heat of the lava empowers your offensive capabilities"
-			            )
+			            if (tip == "You are an emissary of the profaned goddess now!\nThe heat of the lava empowers your offensive capabilities")
 			            {
 				            tip = "Теперь вы посланник осквернённой богини!\nЖар лавы усиливает ваши атакующие способности";
 			            }
 
-			            if (tip == "You are an emissary of the profaned goddess now!\nThe honey cools your flames, empowering your defensive capabilities"
-			            )
+			            if (tip == "You are an emissary of the profaned goddess now!\nThe honey cools your flames, empowering your defensive capabilities")
 			            {
 				            tip = "Теперь вы посланник осквернённой богини!\nМёд охлаждает ваше пламя, усиливая ваши защитные способности";
 			            }
 
-			            if (tip == "You are an emissary of the profaned goddess now!\nThe water douses your flames, empowering your defensive capabilities\nYour weakened life force fuels your desperate attacks"
-			            )
+			            if (tip == "You are an emissary of the profaned goddess now!\nThe water douses your flames, empowering your defensive capabilities\nYour weakened life force fuels your desperate attacks")
 			            {
 				            tip = "Теперь вы посланник осквернённой богини!\nВода гасит ваше пламя, усиливая ваши защитные способности\nВаша ослабленная жизненная сила подпитывает ваши отчаянные атаки";
 			            }
 
-			            if (tip == "You are an emissary of the profaned goddess now!\nThe heat of the lava empowers your offensive capabilities\nYour weakened life force fuels your desperate attacks"
-			            )
+			            if (tip == "You are an emissary of the profaned goddess now!\nThe heat of the lava empowers your offensive capabilities\nYour weakened life force fuels your desperate attacks")
 			            {
 				            tip = "Теперь вы посланник осквернённой богини!\nЖар лавы усиливает ваши атакующие способности\nВаша ослабленная жизненная сила подпитывает ваши отчаянные атаки";
 			            }
 
-			            if (tip == "You are an emissary of the profaned goddess now!\nThe light of the sun empowers your offensive capabilities\nYour weakened life force fuels your desperate attacks"
-			            )
+			            if (tip == "You are an emissary of the profaned goddess now!\nThe light of the sun empowers your offensive capabilities\nYour weakened life force fuels your desperate attacks")
 			            {
 				            tip = "Теперь вы посланник осквернённой богини!\nСвет солнца усиливает ваши атакующие способности\nВаша ослабленная жизненная сила подпитывает ваши отчаянные атаки";
 			            }
 
-			            if (tip == "You are an emissary of the profaned goddess now!\nThe honey cools your flames, empowering your defensive capabilities\nYour weakened life force fuels your desperate attacks"
-			            )
+			            if (tip == "You are an emissary of the profaned goddess now!\nThe honey cools your flames, empowering your defensive capabilities\nYour weakened life force fuels your desperate attacks")
 			            {
 				            tip = "Теперь вы посланник осквернённой богини!\nМёд охлаждает ваше пламя, усиливая ваши защитные способности\nВаша ослабленная жизненная сила подпитывает ваши отчаянные атаки";
 			            }

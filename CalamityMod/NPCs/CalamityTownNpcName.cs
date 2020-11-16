@@ -284,6 +284,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 						{
 							npc.GivenName = "Мерасмус";
 						}
+						
+						if (npc.GivenName == "Habolo")
+						{
+							npc.GivenName = "Хаболо";
+						}
 					}
 
 					if (npc.type == NPCID.TaxCollector)
@@ -338,6 +343,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 						if (npc.GivenName == "Verth")
 						{
 							npc.GivenName = "Верт";
+						}
+						
+						if (npc.GivenName == "Gormer")
+						{
+							npc.GivenName = "Кормер";
 						}
 					}
 				}

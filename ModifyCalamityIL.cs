@@ -38,10 +38,6 @@ namespace CalamityRuTranslate
             Type fAP = null;
             Type sEAHOE = null;
             Type tHIEF = null;
-            Type armageddon = null;
-            Type death = null;
-            Type defiledRune = null;
-            Type revenge = null;
             Type astralInjection = null;
             Type thornBlossom = null;
             Type lucrecia = null;
@@ -190,39 +186,7 @@ namespace CalamityRuTranslate
                     labHologramProjectorUI = o;
                 }
             }
-
-            foreach (Type p in calamityAssembly.GetTypes())
-            {
-                if (p.Name == "Armageddon")
-                {
-                    armageddon = p;
-                }
-            }
-
-            foreach (Type q in calamityAssembly.GetTypes())
-            {
-                if (q.Name == "Death")
-                {
-                    death = q;
-                }
-            }
-
-            foreach (Type r in calamityAssembly.GetTypes())
-            {
-                if (r.Name == "DefiledRune")
-                {
-                    defiledRune = r;
-                }
-            }
-
-            foreach (Type s in calamityAssembly.GetTypes())
-            {
-                if (s.Name == "Revenge")
-                {
-                    revenge = s;
-                }
-            }
-
+            
             foreach (Type t in calamityAssembly.GetTypes())
             {
                 if (t.Name == "AstralInjection")
@@ -585,46 +549,6 @@ namespace CalamityRuTranslate
             if (SetChatButtonsTHIEF != null)
             {
                 ModifySetChatButtonsTHIEF += Calamity_ModifySetChatButtonsTHIEF;
-            }
-
-            if (armageddon != null)
-            {
-                UseItemArmageddon = armageddon.GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance);
-            }
-
-            if (UseItemArmageddon != null)
-            {
-                ModifyUseItemArmageddon += Ua_ModifyModifyUseItemArmageddon;
-            }
-
-            if (death != null)
-            {
-                UseItemDeath = death.GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance);
-            }
-
-            if (UseItemDeath != null)
-            {
-                ModifyUseItemDeath += Ua_ModifyModifyUseItemDeath;
-            }
-
-            if (defiledRune != null)
-            {
-                UseItemDefiledRune = defiledRune.GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance);
-            }
-
-            if (UseItemDefiledRune != null)
-            {
-                ModifyUseItemDefiledRune += Ua_ModifyModifyUseItemDefiledRune;
-            }
-
-            if (revenge != null)
-            {
-                UseItemRevenge = revenge.GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance);
-            }
-
-            if (UseItemRevenge != null)
-            {
-                ModifyUseItemRevenge += Ua_ModifyModifyUseItemRevenge;
             }
 
             if (astralInjection != null)
@@ -1831,67 +1755,7 @@ namespace CalamityRuTranslate
             a.Emit(OpCodes.Pop);
             a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" кровеносные сосуды лопаются от передозировки наркотиков."));
         }
-        
-        private static void Ua_ModifyModifyUseItemRevenge(ILContext il)
-        {
-            var a = new ILCursor(il);
-        
-            if (!a.TryGotoNext(i => i.MatchLdstr(" tried to change the rules.")))
-            {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyModifyUseItemRevenge a failed");
-                return;
-            }
-        
-            a.Index++;
-            a.Emit(OpCodes.Pop);
-            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" пытался изменить правила."));
-        }
-        
-        private static void Ua_ModifyModifyUseItemDefiledRune(ILContext il)
-        {
-            var a = new ILCursor(il);
-        
-            if (!a.TryGotoNext(i => i.MatchLdstr(" tried to change the rules.")))
-            {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyModifyUseItemDefiledRune a failed");
-                return;
-            }
-        
-            a.Index++;
-            a.Emit(OpCodes.Pop);
-            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" пытался изменить правила."));
-        }
-        
-        private static void Ua_ModifyModifyUseItemDeath(ILContext il)
-        {
-            var a = new ILCursor(il);
-        
-            if (!a.TryGotoNext(i => i.MatchLdstr(" tried to change the rules.")))
-            {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyModifyUseItemDeath a failed");
-                return;
-            }
-        
-            a.Index++;
-            a.Emit(OpCodes.Pop);
-            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" пытался изменить правила."));
-        }
-        
-        private static void Ua_ModifyModifyUseItemArmageddon(ILContext il)
-        {
-            var a = new ILCursor(il);
-        
-            if (!a.TryGotoNext(i => i.MatchLdstr(" tried to change the rules.")))
-            {
-                CalamityRuTranslate.Instance.Logger.Warn("IL edit Ua_ModifyModifyUseItemArmageddon a failed");
-                return;
-            }
-        
-            a.Index++;
-            a.Emit(OpCodes.Pop);
-            a.Emit(OpCodes.Ldstr, EncodingCyrillic.EncodingTransform(" пытался изменить правила."));
-        }
-        
+
         private static void Ua_ModifyChooseDialogue(ILContext il)
         {
             var a = new ILCursor(il);
@@ -3816,10 +3680,6 @@ namespace CalamityRuTranslate
             if (SetChatButtonsFAP != null) ModifySetChatButtonsFAP -= Calamity_ModifySetChatButtonsFAP;
             if (SetChatButtonsSEAHOE != null) ModifySetChatButtonsSEAHOE -= Calamity_ModifySetChatButtonsSEAHOE;
             if (SetChatButtonsTHIEF != null) ModifySetChatButtonsTHIEF -= Calamity_ModifySetChatButtonsTHIEF;
-            if (UseItemArmageddon != null) ModifyUseItemArmageddon -= Ua_ModifyModifyUseItemArmageddon;
-            if (UseItemDeath != null) ModifyUseItemDeath -= Ua_ModifyModifyUseItemDeath;
-            if (UseItemDefiledRune != null) ModifyUseItemDefiledRune -= Ua_ModifyModifyUseItemDefiledRune;
-            if (UseItemRevenge != null) ModifyUseItemRevenge -= Ua_ModifyModifyUseItemRevenge;
             if (OnConsumeItemAstralInjection != null) ModifyOnConsumeItemAstralInjection -= Ua_ModifyOnConsumeItemAstralInjection;
             if (ShootThornBlossom != null) ModifyShootThornBlossom -= Ua_ModifyShootThornBlossom;
             if (ShootThornLucrecia != null) ModifyShootThornLucrecia -= Ua_ModifyShootThornLucrecia;
@@ -3936,26 +3796,6 @@ namespace CalamityRuTranslate
         {
             add => HookEndpointManager.Modify(ChooseDialogue, value);
             remove => HookEndpointManager.Unmodify(ChooseDialogue, value);
-        }
-        private static event ILContext.Manipulator ModifyUseItemArmageddon
-        {
-            add => HookEndpointManager.Modify(UseItemArmageddon, value);
-            remove => HookEndpointManager.Unmodify(UseItemArmageddon, value);
-        }
-        private static event ILContext.Manipulator ModifyUseItemDeath
-        {
-            add => HookEndpointManager.Modify(UseItemDeath, value);
-            remove => HookEndpointManager.Unmodify(UseItemDeath, value);
-        }
-        private static event ILContext.Manipulator ModifyUseItemDefiledRune
-        {
-            add => HookEndpointManager.Modify(UseItemDefiledRune, value);
-            remove => HookEndpointManager.Unmodify(UseItemDefiledRune, value);
-        }
-        private static event ILContext.Manipulator ModifyUseItemRevenge
-        {
-            add => HookEndpointManager.Modify(UseItemRevenge, value);
-            remove => HookEndpointManager.Unmodify(UseItemRevenge, value);
         }
         private static event ILContext.Manipulator ModifyOnConsumeItemAstralInjection
         {
@@ -4133,10 +3973,6 @@ namespace CalamityRuTranslate
         private static MethodInfo SetChatButtonsFAP;
         private static MethodInfo SetChatButtonsSEAHOE;
         private static MethodInfo SetChatButtonsTHIEF;
-        private static MethodInfo UseItemArmageddon;
-        private static MethodInfo UseItemDeath;
-        private static MethodInfo UseItemDefiledRune;
-        private static MethodInfo UseItemRevenge;
         private static MethodInfo OnConsumeItemAstralInjection;
         private static MethodInfo ShootThornBlossom;
         private static MethodInfo ShootThornLucrecia;

@@ -94,7 +94,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("FleshTotemCooldown").DisplayName.AddTranslation(GameCulture.Russian,"Перезарядка тотема плоти");
 			calamity.GetBuff("FleshTotemCooldown").Description.AddTranslation(GameCulture.Russian,"Эффект тотема плоти перезаряжается");
 			calamity.GetBuff("GodSlayerCooldown").DisplayName.AddTranslation(GameCulture.Russian,"Перезарядка богоубийцы");
-			calamity.GetBuff("GodSlayerCooldown").Description.AddTranslation(GameCulture.Russian,"Регенрация здоровья отключена; эффект богоубийцы перезаряжается");
+			calamity.GetBuff("GodSlayerCooldown").Description.AddTranslation(GameCulture.Russian,"Регенерация здоровья сокращена вдвое; эффект богоубийцы перезаряжается");
 			calamity.GetBuff("IceShieldBrokenBuff").DisplayName.AddTranslation(GameCulture.Russian,"Перезарядка ледяного щита");
 			calamity.GetBuff("IceShieldBrokenBuff").Description.AddTranslation(GameCulture.Russian,"Щит восстанавливается");
 			calamity.GetBuff("InkBombCooldown").DisplayName.AddTranslation(GameCulture.Russian,"Перезарядка чернильной бомбы");
@@ -132,6 +132,8 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			calamity.GetBuff("DemonFlames").Description.AddTranslation(GameCulture.Russian, "Очередной горящий дебафф");
 			calamity.GetBuff("GodSlayerInferno").DisplayName.AddTranslation(GameCulture.Russian,"Пламя богоубийцы");
 			calamity.GetBuff("GodSlayerInferno").Description.AddTranslation(GameCulture.Russian,"Ваша плоть сгорает");
+			calamity.GetBuff("HeavyBleeding").DisplayName.AddTranslation(GameCulture.Russian,"Сильное кровотечение");
+			calamity.GetBuff("HeavyBleeding").Description.AddTranslation(GameCulture.Russian,"Вы теряете много крови");
 			calamity.GetBuff("HolyFlames").DisplayName.AddTranslation(GameCulture.Russian,"Святые огни");
 			calamity.GetBuff("HolyFlames").Description.AddTranslation(GameCulture.Russian,"Растворение от святого света");
 			calamity.GetBuff("HolyInferno").DisplayName.AddTranslation(GameCulture.Russian,"Святое инферно");

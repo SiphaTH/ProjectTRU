@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using CalamityMod;
 using CalamityMod.World;
 using Terraria;
 using Terraria.Localization;
@@ -118,28 +119,37 @@ namespace CalamityRuTranslate.CalamityMod.Items
 							}
 						}
 					}
-					
-					foreach (TooltipLine tooltipLine in tooltips)
+
+					if (item.Calamity() != null && item.Calamity().UsesCharge)
 					{
-						if (tooltipLine.Name == "Tooltip0")
+						foreach (TooltipLine tooltipLine in tooltips)
 						{
-							string str = tooltipLine.text;
-							string resultA = str.Replace("Current Charge", "Текущий заряд");
-							tooltipLine.text = resultA;
+							if (tooltipLine.Name == "Tooltip0")
+							{
+								string str = tooltipLine.text;
+								string resultA = str.Replace("Current Charge", "Текущий заряд");
+								tooltipLine.text = resultA;
+							}
 						}
-						
-						if (tooltipLine.Name == "PrefixSSDmg")
+					}
+					
+					if (item.prefix > 0)
+					{
+						foreach (TooltipLine tooltipLine in tooltips)
 						{
-							string str = tooltipLine.text;
-							string resultA = str.Replace("stealth strike damage", "урона при скрытном ударе");
-							tooltipLine.text = resultA;
-						}
+							if (tooltipLine.Name == "PrefixSSDmg")
+							{
+								string str = tooltipLine.text;
+								string resultA = str.Replace("stealth strike damage", "урона при скрытном ударе");
+								tooltipLine.text = resultA;
+							}
 						
-						if (tooltipLine.Name == "PrefixStealthGenBoost")
-						{
-							string str = tooltipLine.text;
-							string resultA = str.Replace("stealth generation", "регенерации скрытности");
-							tooltipLine.text = resultA;
+							if (tooltipLine.Name == "PrefixStealthGenBoost")
+							{
+								string str = tooltipLine.text;
+								string resultA = str.Replace("stealth generation", "регенерации скрытности");
+								tooltipLine.text = resultA;
+							}
 						}
 					}
 
@@ -212,49 +222,49 @@ namespace CalamityRuTranslate.CalamityMod.Items
 								line1.text = "Ближние и разбойные атаки накладывают дебафф «Отравление»";
 								return;
 							case 88:
-								line1.text = "Обеспечивает светом при ношении\nОбеспечивает небольшим количеством света в бездне";
+								line1.text = Language.GetTextValue("ItemTooltip.MiningHelmet") + "\nОбеспечивает небольшим количеством света в бездне";
 								return;
 							case 1326:
-								line1.text = "Телепортирует на позицию курсора мыши\nТелепортация отключена пока активен дебафф «Состояние хаоса»";
+								line1.text = Language.GetTextValue("ItemTooltip.RodofDiscord") + "\nТелепортация отключена пока активен дебафф «Состояние хаоса»";
 								return;
 							case 3032:
-								line1.text = "Возможность впитывать бесконечное количество воды\nНельзя использовать в бездне";
+								line1.text = Language.GetTextValue("ItemTooltip.SuperAbsorbantSponge") + "\nНельзя использовать в бездне";
 								return;
 							case 3062:
-								line1.text = "Призывает сердце, которое даёт свет\nОбеспечивает небольшим количеством света в бездне";
+								line1.text = Language.GetTextValue("ItemTooltip.CrimsonHeart") + "\nОбеспечивает небольшим количеством света в бездне";
 								return;
 							case 115:
-								line1.text = "Создаёт магическую теневую светящуюся сферу\nОбеспечивает небольшим количеством света в бездне";
+								line1.text = Language.GetTextValue("ItemTooltip.ShadowOrb") + "\nОбеспечивает небольшим количеством света в бездне";
 								return;
 							case 3043:
-								line1.text = "Призывает волшебный фонарь, который показывает ближайшее сокровище\nОбеспечивает небольшим количеством света в бездне";
+								line1.text = Language.GetTextValue("ItemTooltip.MagicLantern") + "\nОбеспечивает небольшим количеством света в бездне";
 								return;
 							case 1303:
-								line1.text = "Даёт свет под водой\nОбеспечивает небольшим количеством света в бездне";
+								line1.text = Language.GetTextValue("ItemTooltip.JellyfishNecklace") + "\nОбеспечивает небольшим количеством света в бездне";
 								return;
 							case 425:
-								line1.text = "Призывает фею\nОбеспечивает умеренным количеством света в бездне";
+								line1.text = Language.GetTextValue("ItemTooltip.FairyBell") + "\nОбеспечивает умеренным количеством света в бездне";
 								return;
 							case 3856:
-								line1.text = "Призывает огонёк, который даёт свет\nОбеспечивает умеренным количеством света в бездне";
+								line1.text = Language.GetTextValue("ItemTooltip.DD2PetGhost") + "\nОбеспечивает умеренным количеством света в бездне";
 								return;
 							case 1183:
-								line1.text = "Призывает духа, который даёт свет\nОбеспечивает большим количеством света в бездне";
+								line1.text = Language.GetTextValue("ItemTooltip.WispinaBottle") + "\nОбеспечивает большим количеством света в бездне";
 								return;
 							case 268:
-								line1.text = "Значительно увеличивает возможность дыхания под водой\nУмеренно снижает потерю дыхания в бездне";
+								line1.text = Language.GetTextValue("ItemTooltip.DivingHelmet") + "\nУмеренно снижает потерю дыхания в бездне";
 								return;
 							case 497:
-								line1.text = "При входе в воду превращает владельца в амфибию\nЗначительно снижает потерю дыхания в бездне";
+								line1.text = Language.GetTextValue("ItemTooltip.NeptunesShell") + "\nЗначительно снижает потерю дыхания в бездне";
 								return;
 							case 861:
-								line1.text = "Ночью превращает владельца в оборотня, а в воде - в амфибию\nЗначительно снижает потерю дыхания в бездне";
+								line1.text = Language.GetTextValue("ItemTooltip.MoonShell") + "\nЗначительно снижает потерю дыхания в бездне";
 								return;
 							case 3224:
 								line1.text = "Получаемый урон снижен на 10%";
 								return;
 							case 536:
-								line1.text = "Увеличивает отбрасывание в ближнем бою\nУвеличивает истинный урон ближнего боя на 10%";
+								line1.text = Language.GetTextValue("ItemTooltip.TitanGlove") + "\nУвеличивает истинный урон ближнего боя на 10%";
 								return;
 							case 1503:
 								line1.text = "Снижает магический урон на 20%";
@@ -263,7 +273,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 								line1.text = "Увеличивает урон стрел на 10% и значительно увеличивает скорость стрел";
 								return;
 							case 297:
-								line1.text = "Дарует невидимость\nУсиливает определённые характеристики, держа в руках определённый тип разбойного оружия";
+								line1.text = Language.GetTextValue("ItemTooltip.InvisibilityPotion") + "\nУсиливает определённые характеристики, держа в руках определённый тип разбойного оружия";
 								return;
 						}
 					}
@@ -303,13 +313,13 @@ namespace CalamityRuTranslate.CalamityMod.Items
 						switch (item.type)
 						{
 							case 1860:
-								line3.text = "Даёт свет под водой\nОбеспечивает небольшим количеством света в бездне";
+								line3.text = "Дает свет под водой\nОбеспечивает небольшим количеством света в бездне";
 								return;
 							case 1861:
-								line3.text = "Даёт свет под водой и увеличивает подвижность на льду\nОбеспечивает небольшим количеством света в бездне\nУмеренно снижает потерю дыхания в бездне";
+								line3.text = "Дает свет под водой и увеличивает подвижность на льду\nОбеспечивает небольшим количеством света в бездне\nУмеренно снижает потерю дыхания в бездне";
 								return;
 							case 3577:
-								line3.text = "'Я знаю, о чём ты думаешь...'\nОбеспечивает большим количеством света в бездне";
+								line3.text = "'Я знаю, о чем ты думаешь...'\nОбеспечивает большим количеством света в бездне";
 								return;
 							case 3110:
 								line3.text = "Немного увеличивает все характеристики\nЗначительно снижает потерю дыхания в бездне";

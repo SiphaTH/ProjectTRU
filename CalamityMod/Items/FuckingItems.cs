@@ -556,12 +556,12 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			            {
 				            if (tooltipLine.Name == "Tooltip1")
 				            {
-					            tooltipLine.text = "Активирует ярость. Когда шкала ярости заполнена, нажмите " + RageHotKey + ", для активации режима ярости";
+					            tooltipLine.text = "Активирует ярость. Когда шкала ярости заполнена, нажмите " + RageHotKey + ", для активации ярости";
 				            }
 				            
 				            if (tooltipLine.Name == "Tooltip3")
 				            {
-					            tooltipLine.text = "Активирует адреналин. Когда шкала адреналина заполнена, нажмите " + AdrenalineHotKey + ", для активации режима адреналина";
+					            tooltipLine.text = "Активирует адреналин. Когда шкала адреналина заполнена, нажмите " + AdrenalineHotKey + ", для активации адреналина";
 				            }
 			            }
 		            }

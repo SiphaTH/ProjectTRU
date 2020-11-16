@@ -315,12 +315,12 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("FathomSwarmerBoots").DisplayName.AddTranslation(GameCulture.Russian,"Сапоги глубоководной стаи");
             calamity.GetItem("FathomSwarmerBreastplate").DisplayName.AddTranslation(GameCulture.Russian,"Нагрудник глубоководной стаи");
             calamity.GetItem("FathomSwarmerVisage").DisplayName.AddTranslation(GameCulture.Russian,"Визор глубоководной стаи");
-            calamity.GetItem("FearmongerGreathelm").DisplayName.AddTranslation(GameCulture.Russian,"Топфхелм запугивателя");
+            calamity.GetItem("FearmongerGreathelm").DisplayName.AddTranslation(GameCulture.Russian,"Великий шлем запугивателя");
             calamity.GetItem("FearmongerGreaves").DisplayName.AddTranslation(GameCulture.Russian,"Поножи запугивателя");
             calamity.GetItem("FearmongerPlateMail").DisplayName.AddTranslation(GameCulture.Russian,"Латная кольчуга запугивателя");
             calamity.GetItem("ForbiddenCirclet").DisplayName.AddTranslation(GameCulture.Russian, "Запретная диадема");
             calamity.GetItem("GodSlayerChestplate").DisplayName.AddTranslation(GameCulture.Russian,"Нагрудник богоубийцы");
-            calamity.GetItem("GodSlayerHelm").DisplayName.AddTranslation(GameCulture.Russian,"Рогатый топфхелм богоубийцы");
+            calamity.GetItem("GodSlayerHelm").DisplayName.AddTranslation(GameCulture.Russian,"Рогатый великий шлем богоубийцы");
             calamity.GetItem("GodSlayerHelmet").DisplayName.AddTranslation(GameCulture.Russian,"Каска богоубийцы");
             calamity.GetItem("GodSlayerHornedHelm").DisplayName.AddTranslation(GameCulture.Russian,"Рогатый шлем богоубийцы");
             calamity.GetItem("GodSlayerLeggings").DisplayName.AddTranslation(GameCulture.Russian,"Поножи богоубийцы");
@@ -614,14 +614,12 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("BarofLife").DisplayName.AddTranslation(GameCulture.Russian,"Сплав жизни");
             calamity.GetItem("BeetleJuice").DisplayName.AddTranslation(GameCulture.Russian,"Сок жука");
             calamity.GetItem("BlightedLens").DisplayName.AddTranslation(GameCulture.Russian,"Гибельная линза");
-            calamity.GetItem("BloodlettingEssence").DisplayName.AddTranslation(GameCulture.Russian,"Эссенция кровопускания");
             calamity.GetItem("BloodOrb").DisplayName.AddTranslation(GameCulture.Russian,"Кровавая сфера");
             calamity.GetItem("BloodSample").DisplayName.AddTranslation(GameCulture.Russian,"Образец крови");
             calamity.GetItem("Bloodstone").DisplayName.AddTranslation(GameCulture.Russian,"Кровавый камень");
             calamity.GetItem("BloodstoneCore").DisplayName.AddTranslation(GameCulture.Russian,"Ядро кровавого камня");
             calamity.GetItem("CalamitousEssence").DisplayName.AddTranslation(GameCulture.Russian,"Бедственная эссенция");
             calamity.GetItem("CalamityDust").DisplayName.AddTranslation(GameCulture.Russian,"Пепел бедствия");
-            calamity.GetItem("CloakingGland").DisplayName.AddTranslation(GameCulture.Russian,"Маскировочная железа");
             calamity.GetItem("CoreofCalamity").DisplayName.AddTranslation(GameCulture.Russian,"Ядро бедствия");
             calamity.GetItem("CoreofChaos").DisplayName.AddTranslation(GameCulture.Russian,"Ядро хаоса");
             calamity.GetItem("CoreofCinder").DisplayName.AddTranslation(GameCulture.Russian,"Ядро солнечного света");
@@ -647,16 +645,13 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("EssenceofChaos").DisplayName.AddTranslation(GameCulture.Russian,"Эссенция хаоса");
             calamity.GetItem("EssenceofCinder").DisplayName.AddTranslation(GameCulture.Russian,"Эссенция солнечного света");
             calamity.GetItem("EssenceofEleum").DisplayName.AddTranslation(GameCulture.Russian,"Эссенция элеума");
-            calamity.GetItem("FetidEssence").DisplayName.AddTranslation(GameCulture.Russian,"Зловонная эссенция");
             calamity.GetItem("GalacticaSingularity").DisplayName.AddTranslation(GameCulture.Russian,"Галактическая сингулярность");
             calamity.GetItem("GrandScale").DisplayName.AddTranslation(GameCulture.Russian,"Великая чешуя");
-            calamity.GetItem("GypsyPowder").DisplayName.AddTranslation(GameCulture.Russian,"Пыльца мотылька");
             calamity.GetItem("HadarianMembrane").DisplayName.AddTranslation(GameCulture.Russian,"Мембрана Хадариана");
             calamity.GetItem("HellcasterFragment").DisplayName.AddTranslation(GameCulture.Russian,"Фрагмент души Ярона");
             calamity.GetItem("InfectedArmorPlating").DisplayName.AddTranslation(GameCulture.Russian,"Заражённая защитная пластина");
             calamity.GetItem("LivingShard").DisplayName.AddTranslation(GameCulture.Russian,"Живой осколок");
             calamity.GetItem("Lumenite").DisplayName.AddTranslation(GameCulture.Russian,"Люменил");
-            calamity.GetItem("ManeaterBulb").DisplayName.AddTranslation(GameCulture.Russian,"Луковица людоеда");
             calamity.GetItem("MeldBlob").DisplayName.AddTranslation(GameCulture.Russian,"Литое пятно");
             calamity.GetItem("MeldiateBar").DisplayName.AddTranslation(GameCulture.Russian,"Литая конструкция");
             calamity.GetItem("MolluskHusk").DisplayName.AddTranslation(GameCulture.Russian,"Панцирь моллюска");
@@ -1234,7 +1229,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("SignusTrophy").DisplayName.AddTranslation(GameCulture.Russian,"Трофей Сигнуса");
             calamity.GetItem("SlimeGodTrophy").DisplayName.AddTranslation(GameCulture.Russian,"Трофей Бога Слизней");
             calamity.GetItem("SupremeCalamitasTrophy").DisplayName.AddTranslation(GameCulture.Russian,"Трофей Высшей Каламитас");
-            calamity.GetItem("WeaverTrophy").DisplayName.AddTranslation(GameCulture.Russian,"Трофей Ткача");
+            calamity.GetItem("WeaverTrophy").DisplayName.AddTranslation(GameCulture.Russian,"Трофей Штормового Ткача");
             calamity.GetItem("YharonTrophy").DisplayName.AddTranslation(GameCulture.Russian,"Трофей Ярона");
 // ==================================================================================================================
 					// Ores

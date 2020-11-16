@@ -478,6 +478,11 @@ namespace CalamityRuTranslate.CalamityMod.Localization
                 },
                 new[]
                 {
+                    "ChangingTheRules",
+                    "Вы не можете использовать этот предмет сейчас."
+                },
+                new[]
+                {
                     "FlameText",
                     "Воздух нагревается вокруг вас."
                 },
