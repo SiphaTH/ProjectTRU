@@ -179,7 +179,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("SpiritGenerator").DisplayName.AddTranslation(GameCulture.Russian,"Знак духа");
             calamity.GetItem("Sponge").DisplayName.AddTranslation(GameCulture.Russian,"Губка");
             calamity.GetItem("StarbusterCore").DisplayName.AddTranslation(GameCulture.Russian,"Сердце разрушителя звёзд");
-            calamity.GetItem("StarTaintedGenerator").DisplayName.AddTranslation(GameCulture.Russian,"Звёздно-зараженный генератор");
+            calamity.GetItem("StarTaintedGenerator").DisplayName.AddTranslation(GameCulture.Russian,"Звёздно-заражённый генератор");
             calamity.GetItem("StatisBeltOfCurses").DisplayName.AddTranslation(GameCulture.Russian,"Пустотный кушак Статиса");
             calamity.GetItem("StatisBlessing").DisplayName.AddTranslation(GameCulture.Russian,"Благословение Статиса");
             calamity.GetItem("StatisCurse").DisplayName.AddTranslation(GameCulture.Russian,"Проклятие Статиса");
