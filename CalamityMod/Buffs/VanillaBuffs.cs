@@ -1,4 +1,3 @@
-using CalamityMod.World;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
@@ -6,8 +5,6 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 {
     public class VanillaBuffs: GlobalBuff
 	{
-		private static bool DeathMode => CalamityWorld.death;
-		
 		public override void ModifyBuffTip(int type, ref string tip, ref int rare)
         {
 	        Mod calamity = ModLoader.GetMod("CalamityMod");
@@ -67,33 +64,39 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 				            tip = "Телепорты жезла раздора отключены";
 				            break;
 			            case 39:
-				            if (CalamityWorld.revenge)
+				            if (tip == "Теряет жизнь. All damage taken increased by 20%")
 				            {
 					            tip = "Теряет жизнь. Весь получаемый урон увеличен на 20%";
 				            }
 				            break;
 			            case 124:
-				            tip = DeathMode ? 
-					            "Снижает урон от источников холода\nНевосприимчивость к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние»\nОбеспечивает защитой от холода в режиме Смерти" : 
-					            "Снижает урон от источников холода\nНевосприимчивость к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние»";
+				            if (tip == "Снижает урон от источников холода. Immunity to the Chilled, Frozen, and Glacial State debuffs")
+				            {
+					            tip = "Снижает урон от источников холода. Невосприимчивость к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние»";
+				            }
+
+				            if (tip == "Снижает урон от источников холода. Immunity to the Chilled, Frozen, and Glacial State debuffs. Provides cold protection in Death Mode")
+				            {
+					            tip = "Снижает урон от источников холода. Невосприимчивость к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние». Обеспечивает защитой от холода в режиме Смерти";
+				            }
 				            break;
 			            case 10:
 				            tip = "Даёт невидимость. Дарует разбойные бонусы, держа в руках определённое разбойное оружие";
 				            break;
 			            case 1:
-				            if (DeathMode)
+				            if (tip == "Невосприимчивость к лаве. Provides heat protection in Death Mode")
 				            {
 					            tip = "Невосприимчивость к лаве. Обеспечивает защитой от жары в режиме Смерти";
 				            }
 				            break;
 			            case 116:
-				            if (DeathMode)
+				            if (tip == "враги поблизости воспламеняются. Provides cold protection in Death Mode")
 				            {
 					            tip = "враги поблизости воспламеняются. Обеспечивает защитой от холода в режиме Смерти";
 				            }
 				            break;
 			            case 87:
-				            if (DeathMode)
+				            if (tip == "Восстановление жизни немного ускорено. Provides cold protection in Death Mode")
 				            {
 					            tip = "Восстановление жизни немного ускорено. Обеспечивает защитой от холода в режиме Смерти";
 				            }
@@ -105,7 +108,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 
 		            if (type == calamity.BuffType("Molten"))
 		            {
-			            if (DeathMode)
+			            if (tip == "Сопротивление к эффектам холода. Provides cold protection in Death Mode")
 			            {
 				            tip = "Сопротивление к эффектам холода. Обеспечивает защитой от холода в режиме Смерти";
 			            }

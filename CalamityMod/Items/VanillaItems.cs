@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using CalamityMod;
-using CalamityMod.World;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -11,8 +9,6 @@ namespace CalamityRuTranslate.CalamityMod.Items
 {
 	public class VanillaItems : GlobalItem
 	{
-		private static bool DeathMode => CalamityWorld.death;
-		
 		public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
 		{
 			if (ModLoader.GetMod("CalamityMod") != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
@@ -23,12 +19,10 @@ namespace CalamityRuTranslate.CalamityMod.Items
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{
-							if (tooltipLine.Name == "Tooltip0")
-							{
-								tooltipLine.text = DeathMode ? 
-									Language.GetTextValue("ItemTooltip.WarmthPotion") + "\nДелает вас невосприимчивым к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние»\nОбеспечивает защитой от холода в режиме Смерти" : 
-									Language.GetTextValue("ItemTooltip.WarmthPotion") + "\nДелает вас невосприимчивым к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние»";
-							}
+							string str = tooltipLine.text;
+							string resultA = str.Replace("Makes you immune to the Chilled, Frozen, and Glacial State debuffs", "Делает вас невосприимчивым к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние»");
+							string resultB = resultA.Replace("Provides cold protection in Death Mode", "Обеспечивает защитой от холода в режиме Смерти");
+							tooltipLine.text = resultB;
 						}
 					}
 
@@ -36,12 +30,11 @@ namespace CalamityRuTranslate.CalamityMod.Items
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{
-							if (tooltipLine.Name == "Tooltip1")
-							{
-								tooltipLine.text = DeathMode ? 
-									"Увеличивает урон и скорость атаки ближнего боя на 14%\nУвеличивает истинный урон ближнего боя на 10%\nОбеспечивает защитой от жары и холода в режиме Смерти" : 
-									"Увеличивает урон и скорость атаки ближнего боя на 14%\nУвеличивает истинный урон ближнего боя на 10%";
-							}
+							string str = tooltipLine.text;
+							string resultA = str.Replace("14% increased melee damage and speed", "Увеличивает урон и скорость атаки ближнего боя на 14%");
+							string resultB = resultA.Replace("10% increased true melee damage", "Увеличивает истинный урон ближнего боя на 10%");
+							string resultC = resultB.Replace("Provides heat and cold protection in Death Mode", "Обеспечивает защитой жары от холода в режиме Смерти");
+							tooltipLine.text = resultC;
 						}
 					}
 
@@ -49,12 +42,12 @@ namespace CalamityRuTranslate.CalamityMod.Items
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{
-							if (tooltipLine.Name == "Tooltip0")
-							{
-								tooltipLine.text = DeathMode ? 
-									"Обеспечивает иммунитетом к прямым повреждениям от соприкосновения с лавой\nОбеспечивает временным иммунитетом к ожогу от лавы\nЗначительно увеличивает время восстановления невосприимчивости к лаве\nСнижает урон от ожога лавы\nОбеспечивает защитой от жары в режиме Смерти" : 
-									"Обеспечивает иммунитетом к прямым повреждениям от соприкосновения с лавой\nОбеспечивает временным иммунитетом к ожогу от лавы\nЗначительно увеличивает время восстановления невосприимчивости к лаве\nСнижает урон от ожога лавы";
-							}
+							string str = tooltipLine.text;
+							string resultA = str.Replace("Provides immunity to direct damage from touching lava", "Обеспечивает иммунитетом к прямым повреждениям от соприкосновения с лавой");
+							string resultB = resultA.Replace("Provides temporary immunity to lava burn damage", "Обеспечивает временным иммунитетом к ожогу от лавы");
+							string resultC = resultB.Replace("Reduces lava burn damage", "Снижает урон от ожога лавы");
+							string resultD = resultC.Replace("Provides heat protection in Death Mode", "Обеспечивает защитой от жары в режиме Смерти");
+							tooltipLine.text = resultD;
 						}
 					}
 
@@ -62,12 +55,11 @@ namespace CalamityRuTranslate.CalamityMod.Items
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{
-							if (tooltipLine.Name == "Tooltip0")
-							{
-								tooltipLine.text = DeathMode ? 
-									"Снижает прямой урон от соприкосновения с лавой\nЗначительно снижает урон от ожога лавы\nОбеспечивает защитой от жары в режиме Смерти" : 
-									"Снижает прямой урон от соприкосновения с лавой\nЗначительно снижает урон от ожога лавы";
-							}
+							string str = tooltipLine.text;
+							string resultA = str.Replace("Reduced direct damage from touching lava", "Снижает прямой урон от соприкосновения с лавой");
+							string resultB = resultA.Replace("Greatly reduces lava burn damage", "Значительно снижает урон от ожога лавы");
+							string resultC = resultB.Replace("Provides heat protection in Death Mode", "Обеспечивает защитой от жары в режиме Смерти");
+							tooltipLine.text = resultC;
 						}
 					}
 
@@ -75,12 +67,9 @@ namespace CalamityRuTranslate.CalamityMod.Items
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{
-							if (tooltipLine.Name == "Tooltip0")
-							{
-								tooltipLine.text = DeathMode ? 
-									Language.GetTextValue("ItemTooltip.MagmaStone") + "\nОбеспечивает защитой от жары и холода в режиме Смерти" : 
-									Language.GetTextValue("ItemTooltip.MagmaStone");
-							}
+							string str = tooltipLine.text;
+							string resultA = str.Replace("Provides heat and cold protection in Death Mode", "Обеспечивает защитой от жары и холода в режиме Смерти");
+							tooltipLine.text = resultA;
 						}
 					}
 
@@ -88,12 +77,9 @@ namespace CalamityRuTranslate.CalamityMod.Items
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{
-							if (tooltipLine.Name == "Tooltip1")
-							{
-								tooltipLine.text = DeathMode ? 
-									Language.GetTextValue("ItemTooltip.LavaCharm") + "\nОбеспечивает защитой от жары в режиме Смерти" : 
-									Language.GetTextValue("ItemTooltip.LavaCharm");
-							}
+							string str = tooltipLine.text;
+							string resultA = str.Replace("Provides heat protection in Death Mode", "Обеспечивает защитой от жары в режиме Смерти");
+							tooltipLine.text = resultA;
 						}
 					}
 
@@ -111,26 +97,19 @@ namespace CalamityRuTranslate.CalamityMod.Items
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{
-							if (tooltipLine.Name == "Tooltip0")
-							{
-								tooltipLine.text = DeathMode ? 
-									"Обеспечивает невосприимчивостью к ледяным и замораживающим эффектам\nОбеспечивает повышенной регенерацией пока на вас надет комплект эскимоса\nОбеспечивает защитой от холода в режиме Смерти" : 
-									"Обеспечивает невосприимчивостью к ледяным и замораживающим эффектам\nОбеспечивает повышенной регенерацией пока на вас надет комплект эскимоса";
-							}
+							string str = tooltipLine.text;
+							string resultA = str.Replace("Provides immunity to chilling and freezing effects", "Обеспечивает невосприимчивостью к ледяным и замораживающим эффектам");
+							string resultB = resultA.Replace("Provides a regeneration boost while wearing the Eskimo armor", "Обеспечивает повышенной регенерацией пока на вас надет комплект эскимоса");
+							string resultC = resultB.Replace("Provides cold protection in Death Mode", "Обеспечивает защитой от холода в режиме Смерти");
+							tooltipLine.text = resultC;
 						}
 					}
-
-					if (item.Calamity() != null && item.Calamity().UsesCharge)
+					
+					foreach (TooltipLine tooltipLine in tooltips)
 					{
-						foreach (TooltipLine tooltipLine in tooltips)
-						{
-							if (tooltipLine.Name == "Tooltip0")
-							{
-								string str = tooltipLine.text;
-								string resultA = str.Replace("Current Charge", "Текущий заряд");
-								tooltipLine.text = resultA;
-							}
-						}
+						string str = tooltipLine.text;
+						string resultA = str.Replace("Current Charge", "Текущий заряд");
+						tooltipLine.text = resultA;
 					}
 					
 					if (item.prefix > 0)

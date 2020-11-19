@@ -300,12 +300,12 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("BrimflameRobes").DisplayName.AddTranslation(GameCulture.Russian,"Мантия серного пламени");
             calamity.GetItem("BrimflameScowl").DisplayName.AddTranslation(GameCulture.Russian,"Колпак серного пламени");
             calamity.GetItem("DaedalusBreastplate").DisplayName.AddTranslation(GameCulture.Russian,"Нагрудник Дедала");
-            calamity.GetItem("DaedalusHat").DisplayName.AddTranslation(GameCulture.Russian,"Капюшон Дедала");
-            calamity.GetItem("DaedalusHeadgear").DisplayName.AddTranslation(GameCulture.Russian,"Маска Дедала");
-            calamity.GetItem("DaedalusHelm").DisplayName.AddTranslation(GameCulture.Russian,"Шлем Дедала");
-            calamity.GetItem("DaedalusHelmet").DisplayName.AddTranslation(GameCulture.Russian,"Каска Дедала");
-            calamity.GetItem("DaedalusLeggings").DisplayName.AddTranslation(GameCulture.Russian,"Поножи Дедала");
-            calamity.GetItem("DaedalusVisor").DisplayName.AddTranslation(GameCulture.Russian,"Головной убор Дедала");
+            calamity.GetItem("DaedalusHat").DisplayName.AddTranslation(GameCulture.Russian,"Капюшон дедала");
+            calamity.GetItem("DaedalusHeadgear").DisplayName.AddTranslation(GameCulture.Russian,"Маска дедала");
+            calamity.GetItem("DaedalusHelm").DisplayName.AddTranslation(GameCulture.Russian,"Шлем дедала");
+            calamity.GetItem("DaedalusHelmet").DisplayName.AddTranslation(GameCulture.Russian,"Каска дедала");
+            calamity.GetItem("DaedalusLeggings").DisplayName.AddTranslation(GameCulture.Russian,"Поножи дедала");
+            calamity.GetItem("DaedalusVisor").DisplayName.AddTranslation(GameCulture.Russian,"Головной убор дедала");
             calamity.GetItem("DemonshadeBreastplate").DisplayName.AddTranslation(GameCulture.Russian,"Тенедемонический нагрудник");
             calamity.GetItem("DemonshadeGreaves").DisplayName.AddTranslation(GameCulture.Russian,"Тенедемонические поножи");
             calamity.GetItem("DemonshadeHelm").DisplayName.AddTranslation(GameCulture.Russian,"Тенедемонический шлем");
@@ -1662,7 +1662,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("AbsoluteZero").DisplayName.AddTranslation(GameCulture.Russian,"Абсолютный нуль");
             calamity.GetItem("AbyssBlade").DisplayName.AddTranslation(GameCulture.Russian,"Клинок бездны");
             calamity.GetItem("AccretionDiskMelee").DisplayName.AddTranslation(GameCulture.Russian,"Элементальный диск");
-            calamity.GetItem("AegisBlade").DisplayName.AddTranslation(GameCulture.Russian,"Лезвие эгиды");
+            calamity.GetItem("AegisBlade").DisplayName.AddTranslation(GameCulture.Russian,"Клинок эгиды");
             calamity.GetItem("Aftershock").DisplayName.AddTranslation(GameCulture.Russian,"Сотрясение");
             calamity.GetItem("AirSpinner").DisplayName.AddTranslation(GameCulture.Russian,"Воздушный волчок");
             calamity.GetItem("AmidiasTrident").DisplayName.AddTranslation(GameCulture.Russian,"Трезубец Амидиаса");
@@ -1787,7 +1787,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("NanoblackReaperMelee").DisplayName.AddTranslation(GameCulture.Russian,"Нано-чёрный жнец");
             calamity.GetItem("Nebulash").DisplayName.AddTranslation(GameCulture.Russian,"Кнут туманности");
             calamity.GetItem("NeptunesBounty").DisplayName.AddTranslation(GameCulture.Russian,"Дар Нептуна");
-            calamity.GetItem("NightsStabber").DisplayName.AddTranslation(GameCulture.Russian,"Ночной вонзатель.");
+            calamity.GetItem("NightsStabber").DisplayName.AddTranslation(GameCulture.Russian,"Ночной вонзатель");
             calamity.GetItem("OldLordOathsword").DisplayName.AddTranslation(GameCulture.Russian,"Клятвенный меч старого лорда");
             calamity.GetItem("OmegaBiomeBlade").DisplayName.AddTranslation(GameCulture.Russian,"Омега-клинок биома");
             calamity.GetItem("Omniblade").DisplayName.AddTranslation(GameCulture.Russian,"Омни-меч");
@@ -1823,7 +1823,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("SubmarineShocker").DisplayName.AddTranslation(GameCulture.Russian,"Подводный шокер");
             calamity.GetItem("SulphurousGrabber").DisplayName.AddTranslation(GameCulture.Russian,"Сернистый хапуга");
             calamity.GetItem("Swordsplosion").DisplayName.AddTranslation(GameCulture.Russian,"Мечевзрыв");
-            calamity.GetItem("TeardropCleaver").DisplayName.AddTranslation(GameCulture.Russian,"Лезвие слёз");
+            calamity.GetItem("TeardropCleaver").DisplayName.AddTranslation(GameCulture.Russian,"Клинок слёз");
             calamity.GetItem("TemporalFloeSword").DisplayName.AddTranslation(GameCulture.Russian,"Меч тающей льдины");
             calamity.GetItem("TenebreusTides").DisplayName.AddTranslation(GameCulture.Russian,"Мрачные приливы");
             calamity.GetItem("Terracotta").DisplayName.AddTranslation(GameCulture.Russian,"Терракота");
@@ -2047,7 +2047,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("BouncingEyeball").DisplayName.AddTranslation(GameCulture.Russian,"Отскакивающее глазное яблоко");
             calamity.GetItem("BouncySpikyBall").DisplayName.AddTranslation(GameCulture.Russian,"Прыгучий колючий шар");
             calamity.GetItem("BrackishFlask").DisplayName.AddTranslation(GameCulture.Russian,"Солоноватая колба");
-            calamity.GetItem("Brimblade").DisplayName.AddTranslation(GameCulture.Russian,"Серное лезвие");
+            calamity.GetItem("Brimblade").DisplayName.AddTranslation(GameCulture.Russian,"Серный клинок");
             calamity.GetItem("BurningStrife").DisplayName.AddTranslation(GameCulture.Russian,"Пылающий раздор");
             calamity.GetItem("CelestialReaper").DisplayName.AddTranslation(GameCulture.Russian,"Небесный жнец");
             calamity.GetItem("Celestus").DisplayName.AddTranslation(GameCulture.Russian,"Целестус");
@@ -2103,7 +2103,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("JawsOfOblivion").DisplayName.AddTranslation(GameCulture.Russian,"Челюсти забвения");
             calamity.GetItem("KelvinCatalyst").DisplayName.AddTranslation(GameCulture.Russian,"Катализатор Кельвина");
             calamity.GetItem("Kylie").DisplayName.AddTranslation(GameCulture.Russian,"Кайли");
-            calamity.GetItem("LatcherMine").DisplayName.AddTranslation(GameCulture.Russian,"Защелкивающаяся мина");
+            calamity.GetItem("LatcherMine").DisplayName.AddTranslation(GameCulture.Russian,"Защёлкивающаяся мина");
             calamity.GetItem("LeadTomahawk").DisplayName.AddTranslation(GameCulture.Russian,"Свинцовый томагавк");
             calamity.GetItem("LeonidProgenitor").DisplayName.AddTranslation(GameCulture.Russian,"Леонид, Прародитель");
             calamity.GetItem("LeviathanTeeth").DisplayName.AddTranslation(GameCulture.Russian,"Зубы Левиафана");
@@ -2118,7 +2118,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
             calamity.GetItem("MonkeyDarts").DisplayName.AddTranslation(GameCulture.Russian,"Обезьяньи дротики");
             calamity.GetItem("Mycoroot").DisplayName.AddTranslation(GameCulture.Russian,"Грибокорень");
             calamity.GetItem("MythrilKnife").DisplayName.AddTranslation(GameCulture.Russian,"Мифриловый нож");
-            calamity.GetItem("NanoblackReaperRogue").DisplayName.AddTranslation(GameCulture.Russian,"Наночёрный жнец");
+            calamity.GetItem("NanoblackReaperRogue").DisplayName.AddTranslation(GameCulture.Russian,"Нано-чёрный жнец");
             calamity.GetItem("NastyCholla").DisplayName.AddTranslation(GameCulture.Russian,"Мерзкий Чолла");
             calamity.GetItem("NightsGaze").DisplayName.AddTranslation(GameCulture.Russian,"Ночной взгляд");
             calamity.GetItem("Nychthemeron").DisplayName.AddTranslation(GameCulture.Russian,"Сутки");
