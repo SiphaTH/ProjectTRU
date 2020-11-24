@@ -1,9 +1,8 @@
 ﻿using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.CalamityMod.Items
 {
-    internal class CalamityPrefixName
+    internal static class CalamityPrefixName
 	{
 		public static void Setup()
 		{
@@ -11,28 +10,26 @@ namespace CalamityRuTranslate.CalamityMod.Items
 		}
 		private static void PrefixName()
 		{
-			Mod calamity = ModLoader.GetMod("CalamityMod");
-			
-			calamity.GetPrefix("Pointy").DisplayName.AddTranslation(GameCulture.Russian, "Заострённый");
-			calamity.GetPrefix("Sharp").DisplayName.AddTranslation(GameCulture.Russian, "Острый");
-			calamity.GetPrefix("Feathered").DisplayName.AddTranslation(GameCulture.Russian, "Стремительный");
-			calamity.GetPrefix("Sleek").DisplayName.AddTranslation(GameCulture.Russian, "Обтекаемый");
-			calamity.GetPrefix("Hefty").DisplayName.AddTranslation(GameCulture.Russian, "Увесистый");
-			calamity.GetPrefix("Mighty").DisplayName.AddTranslation(GameCulture.Russian, "Могучий");
-			calamity.GetPrefix("Glorious").DisplayName.AddTranslation(GameCulture.Russian, "Выдающийся");
-			calamity.GetPrefix("Serrated").DisplayName.AddTranslation(GameCulture.Russian, "Зазубренный");
-			calamity.GetPrefix("Vicious").DisplayName.AddTranslation(GameCulture.Russian, "Свирепый");
-			calamity.GetPrefix("Lethal").DisplayName.AddTranslation(GameCulture.Russian, "Убойный");
-			calamity.GetPrefix("Flawless").DisplayName.AddTranslation(GameCulture.Russian, "Безупречный");
-			calamity.GetPrefix("Radical").DisplayName.AddTranslation(GameCulture.Russian, "Радикальный");
-			calamity.GetPrefix("Blunt").DisplayName.AddTranslation(GameCulture.Russian, "Грубый");
-			calamity.GetPrefix("Flimsy").DisplayName.AddTranslation(GameCulture.Russian, "Хрупкий");
-			calamity.GetPrefix("Unbalanced").DisplayName.AddTranslation(GameCulture.Russian, "Несбалансированный");
-			calamity.GetPrefix("Atrocious").DisplayName.AddTranslation(GameCulture.Russian, "Отвратительный");
-			calamity.GetPrefix("Quiet").DisplayName.AddTranslation(GameCulture.Russian, "Тихий");
-			calamity.GetPrefix("Cloaked").DisplayName.AddTranslation(GameCulture.Russian, "Скрытый");
-			calamity.GetPrefix("Camouflaged").DisplayName.AddTranslation(GameCulture.Russian, "Замаскированный");
-			calamity.GetPrefix("Silent").DisplayName.AddTranslation(GameCulture.Russian, "Безмолвный");
+			ModCompatibility.CalamityMod.GetPrefix("Pointy").DisplayName.AddTranslation(GameCulture.Russian, "Заострённый");
+			ModCompatibility.CalamityMod.GetPrefix("Sharp").DisplayName.AddTranslation(GameCulture.Russian, "Острый");
+			ModCompatibility.CalamityMod.GetPrefix("Feathered").DisplayName.AddTranslation(GameCulture.Russian, "Стремительный");
+			ModCompatibility.CalamityMod.GetPrefix("Sleek").DisplayName.AddTranslation(GameCulture.Russian, "Обтекаемый");
+			ModCompatibility.CalamityMod.GetPrefix("Hefty").DisplayName.AddTranslation(GameCulture.Russian, "Увесистый");
+			ModCompatibility.CalamityMod.GetPrefix("Mighty").DisplayName.AddTranslation(GameCulture.Russian, "Могучий");
+			ModCompatibility.CalamityMod.GetPrefix("Glorious").DisplayName.AddTranslation(GameCulture.Russian, "Выдающийся");
+			ModCompatibility.CalamityMod.GetPrefix("Serrated").DisplayName.AddTranslation(GameCulture.Russian, "Зазубренный");
+			ModCompatibility.CalamityMod.GetPrefix("Vicious").DisplayName.AddTranslation(GameCulture.Russian, "Свирепый");
+			ModCompatibility.CalamityMod.GetPrefix("Lethal").DisplayName.AddTranslation(GameCulture.Russian, "Убойный");
+			ModCompatibility.CalamityMod.GetPrefix("Flawless").DisplayName.AddTranslation(GameCulture.Russian, "Безупречный");
+			ModCompatibility.CalamityMod.GetPrefix("Radical").DisplayName.AddTranslation(GameCulture.Russian, "Радикальный");
+			ModCompatibility.CalamityMod.GetPrefix("Blunt").DisplayName.AddTranslation(GameCulture.Russian, "Грубый");
+			ModCompatibility.CalamityMod.GetPrefix("Flimsy").DisplayName.AddTranslation(GameCulture.Russian, "Хрупкий");
+			ModCompatibility.CalamityMod.GetPrefix("Unbalanced").DisplayName.AddTranslation(GameCulture.Russian, "Несбалансированный");
+			ModCompatibility.CalamityMod.GetPrefix("Atrocious").DisplayName.AddTranslation(GameCulture.Russian, "Отвратительный");
+			ModCompatibility.CalamityMod.GetPrefix("Quiet").DisplayName.AddTranslation(GameCulture.Russian, "Тихий");
+			ModCompatibility.CalamityMod.GetPrefix("Cloaked").DisplayName.AddTranslation(GameCulture.Russian, "Скрытый");
+			ModCompatibility.CalamityMod.GetPrefix("Camouflaged").DisplayName.AddTranslation(GameCulture.Russian, "Замаскированный");
+			ModCompatibility.CalamityMod.GetPrefix("Silent").DisplayName.AddTranslation(GameCulture.Russian, "Безмолвный");
 		}
 	}
 }

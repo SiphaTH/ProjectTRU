@@ -9,398 +9,395 @@ namespace CalamityRuTranslate.CalamityMod.Items
 	{
         public override void SetDefaults(Item item)
         {
-            Mod calamity = ModLoader.GetMod("CalamityMod");
-
-            if (calamity != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
+	        if (ModCompatibility.CalamityMod != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
             {
 	            if (CalamityRuTranslate.TRuConfig.CalamityTranslation)
 	            {
-		            if (item.type == calamity.ItemType("OccultBathtub"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultBathtub"))
 		            {
 			            item.SetNameOverride("Потусторонняя ванна");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultBed"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultBed"))
 		            {
 			            item.SetNameOverride("Потусторонняя кровать");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultBookcase"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultBookcase"))
 		            {
 			            item.SetNameOverride("Потусторонний книжный шкаф");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultCandelabra"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultCandelabra"))
 		            {
 			            item.SetNameOverride("Потусторонний канделябр");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultCandle"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultCandle"))
 		            {
 			            item.SetNameOverride("Потусторонняя свеча");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultChair"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultChair"))
 		            {
 			            item.SetNameOverride("Потусторонний стул");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultChandelier"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultChandelier"))
 		            {
 			            item.SetNameOverride("Потусторонняя люстра");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultChest"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultChest"))
 		            {
 			            item.SetNameOverride("Потусторонний сундук");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultClock"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultClock"))
 		            {
 			            item.SetNameOverride("Потусторонние часы");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultDoor"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultDoor"))
 		            {
 			            item.SetNameOverride("Потусторонняя дверь");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultDresser"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultDresser"))
 		            {
 			            item.SetNameOverride("Потусторонний комод");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultLamp"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultLamp"))
 		            {
 			            item.SetNameOverride("Потусторонняя лампа");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultLantern"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultLantern"))
 		            {
 			            item.SetNameOverride("Потусторонний фонарь");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultPiano"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultPiano"))
 		            {
 			            item.SetNameOverride("Потустороннее пианино");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultPlatform"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultPlatform"))
 		            {
 			            item.SetNameOverride("Потусторонняя платформа");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultSink"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultSink"))
 		            {
 			            item.SetNameOverride("Потусторонняя раковина");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultSofa"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultSofa"))
 		            {
 			            item.SetNameOverride("Потусторонний диван");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultStone"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultStone"))
 		            {
 			            item.SetNameOverride("Потусторонний камень");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultTable"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultTable"))
 		            {
 			            item.SetNameOverride("Потусторонний стол");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultWorkBench"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultWorkBench"))
 		            {
 			            item.SetNameOverride("Потусторонний верстак");
 		            }
 
-		            if (item.type == calamity.ItemType("OccultStoneWall"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("OccultStoneWall"))
 		            {
 			            item.SetNameOverride("Стена из потустороннего камня");
 		            }
 
-		            if (item.type == calamity.ItemType("StratusWorkbench"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("StratusWorkbench"))
 		            {
 			            item.SetNameOverride("Слоистый верстак");
 		            }
 
-		            if (item.type == calamity.ItemType("StatigelWorkbench"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("StatigelWorkbench"))
 		            {
 			            item.SetNameOverride("Статиджеловый верстак");
 		            }
 
-		            if (item.type == calamity.ItemType("StatigelBath"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("StatigelBath"))
 		            {
 			            item.SetNameOverride("Статиджеловая ванна");
 		            }
 
-		            if (item.type == calamity.ItemType("ProfanedWorkbench"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("ProfanedWorkbench"))
 		            {
 			            item.SetNameOverride("Осквернённый верстак");
 		            }
 
-		            if (item.type == calamity.ItemType("ProfanedBath"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("ProfanedBath"))
 		            {
 			            item.SetNameOverride("Осквернённая ванна");
 		            }
 
-		            if (item.type == calamity.ItemType("VoidWorkbench"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("VoidWorkbench"))
 		            {
 			            item.SetNameOverride("Пустотный верстак");
 		            }
 
-		            if (item.type == calamity.ItemType("VoidClock"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("VoidClock"))
 		            {
 			            item.SetNameOverride("Пустотный обелиск");
 		            }
 
-		            if (item.type == calamity.ItemType("VoidBath"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("VoidBath"))
 		            {
 			            item.SetNameOverride("Пустотная ванна");
 		            }
 
-		            if (item.type == calamity.ItemType("PlaguedPlateWorkbench"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("PlaguedPlateWorkbench"))
 		            {
 			            item.SetNameOverride("Чумной верстак");
 		            }
 
-		            if (item.type == calamity.ItemType("CosmiliteWorkbench"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("CosmiliteWorkbench"))
 		            {
 			            item.SetNameOverride("Космилитовый верстак");
 		            }
 
-		            if (item.type == calamity.ItemType("CosmiliteBath"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("CosmiliteBath"))
 		            {
 			            item.SetNameOverride("Космилитовая ванна");
 		            }
 
-		            if (item.type == calamity.ItemType("AshenPiano"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AshenPiano"))
 		            {
 			            item.SetNameOverride("Пепельный трубный орган");
 		            }
 
-		            if (item.type == calamity.ItemType("AshenWorkbench"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AshenWorkbench"))
 		            {
 			            item.SetNameOverride("Пепельный верстак");
 		            }
 
-		            if (item.type == calamity.ItemType("EutrophicCrafting"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("EutrophicCrafting"))
 		            {
 			            item.SetNameOverride("Эвтрофная полка");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithCrafting"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithCrafting"))
 		            {
 			            item.SetNameOverride("Монолитное слияние");
 		            }
 
-		            if (item.type == calamity.ItemType("ProfanedBasin"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("ProfanedBasin"))
 		            {
 			            item.SetNameOverride("Осквернённый тигель");
 		            }
 
-		            if (item.type == calamity.ItemType("SilvaBasin"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("SilvaBasin"))
 		            {
 			            item.SetNameOverride("Лучезарный манипулятор");
 		            }
 
-		            if (item.type == calamity.ItemType("AbyssBath"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AbyssBath"))
 		            {
 			            item.SetNameOverride("Ванна бездны");
 		            }
 
-		            if (item.type == calamity.ItemType("AbyssWorkbench"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AbyssWorkbench"))
 		            {
 			            item.SetNameOverride("Верстак бездны");
 		            }
 
-		            if (item.type == calamity.ItemType("AbyssPiano"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AbyssPiano"))
 		            {
 			            item.SetNameOverride("Синтезатор бездны");
 		            }
 
-		            if (item.type == calamity.ItemType("AncientBath"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AncientBath"))
 		            {
 			            item.SetNameOverride("Древняя ванна");
 		            }
 
-		            if (item.type == calamity.ItemType("AshenBath"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AshenBath"))
 		            {
 			            item.SetNameOverride("Пепельная ванна");
 		            }
 
-		            if (item.type == calamity.ItemType("AncientWorkbench"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AncientWorkbench"))
 		            {
 			            item.SetNameOverride("Древний верстак");
 		            }
 
-		            if (item.type == calamity.ItemType("AncientPiano"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AncientPiano"))
 		            {
 			            item.SetNameOverride("Древний трубный орган");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithBathtub"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithBathtub"))
 		            {
 			            item.SetNameOverride("Монолитная ванна");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithBed"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithBed"))
 		            {
 			            item.SetNameOverride("Монолитная кровать");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithBench"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithBench"))
 		            {
 			            item.SetNameOverride("Монолитная скамья");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithBookcase"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithBookcase"))
 		            {
 			            item.SetNameOverride("Монолитный книжный шкаф");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithCandelabra"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithCandelabra"))
 		            {
 			            item.SetNameOverride("Монолитный канделябр");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithCandle"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithCandle"))
 		            {
 			            item.SetNameOverride("Монолитная свеча");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithChair"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithChair"))
 		            {
 			            item.SetNameOverride("Монолитный стул");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithChandelier"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithChandelier"))
 		            {
 			            item.SetNameOverride("Монолитная люстра");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithChest"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithChest"))
 		            {
 			            item.SetNameOverride("Монолитный сундук");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithClock"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithClock"))
 		            {
 			            item.SetNameOverride("Монолитные часы");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithDoor"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithDoor"))
 		            {
 			            item.SetNameOverride("Монолитная дверь");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithDresser"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithDresser"))
 		            {
 			            item.SetNameOverride("Монолитный комод");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithLamp"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithLamp"))
 		            {
 			            item.SetNameOverride("Монолитная лампа");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithLantern"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithLantern"))
 		            {
 			            item.SetNameOverride("Монолитный фонарь");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithPiano"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithPiano"))
 		            {
 			            item.SetNameOverride("Монолитное пианино");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithPlatform"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithPlatform"))
 		            {
 			            item.SetNameOverride("Монолитная платформа");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithSink"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithSink"))
 		            {
 			            item.SetNameOverride("Монолитная раковина");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithTable"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithTable"))
 		            {
 			            item.SetNameOverride("Монолитный стол");
 		            }
 
-		            if (item.type == calamity.ItemType("MonolithWorkBench"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MonolithWorkBench"))
 		            {
 			            item.SetNameOverride("Монолитный верстак");
 		            }
 	            }
             }
         }
+        
 		public override void ModifyTooltips(Item item, List < TooltipLine > tooltips)
 		{
-			Mod calamity = ModLoader.GetMod("CalamityMod");
-
-            if (calamity != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
+			if (ModCompatibility.CalamityMod != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
             {
 	            if (CalamityRuTranslate.TRuConfig.CalamityTranslation)
 	            {
-		            if (item.type == calamity.ItemType("AsgardianAegis"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AsgardianAegis"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажмите ");
-				            string resultB = resultA.Replace(" to activate buffs to all damage, crit chance, and defense", ", для активации баффов увеличивающий весь урон, шанс критического удара и защиту");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip5")
+				            {
+					            tooltipLine.text = "Нажмите " + ModCompatibility.AegisHotKey + ", для активации баффов увеличивающий весь урон, шанс критического удара и защиту";
+				            }
 			            }
 		            }
 		            
-		            if (item.type == calamity.ItemType("AstralArcanum"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AstralArcanum"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажмите ");
-				            string resultB = resultA.Replace(" to toggle teleportation UI", ", для открытия меню телепортации");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip5")
+				            {
+					            tooltipLine.text = "Нажмите " + ModCompatibility.AstralArcanumUIHotkey + ", для открытия меню телепортации";
+				            }
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("CelestialJewel"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("CelestialJewel"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажмите ");
-				            string resultB = resultA.Replace(" to teleport to a random location", ", для телепортации в случайное место");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip6")
+				            {
+					            tooltipLine.text = "Нажмите " + ModCompatibility.AstralArcanumUIHotkey + ", для телепортации в случайное место";
+				            }
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("ElysianAegis"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("ElysianAegis"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажмите ");
-				            string resultB = resultA.Replace(" to activate buffs to all damage, crit chance, and defense", ", для активации баффов увеличивающий весь урон, шанс критического удара и защиту");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip5")
+				            {
+					            tooltipLine.text = "Нажмите " + ModCompatibility.AegisHotKey + ", для активации баффов увеличивающий весь урон, шанс критического удара и защиту";
+				            }
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("MomentumCapacitor"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("MomentumCapacitor"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажатие ");
-				            string resultB = resultA.Replace(" to consume 30% of your maximum stealth to create an energy field at the cursor position", ", создаёт энергетическое поле в позиции курсора мыши при этом затрачивает 30% от максимальной скрытности");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip0")
+				            {
+					            tooltipLine.text = "Нажатие " + ModCompatibility.MomentumCapacitatorHotkey + ", создаёт энергетическое поле в позиции курсора мыши при этом затрачивает 30% от максимальной скрытности";
+				            }
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("Nanotech"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("Nanotech"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
@@ -410,7 +407,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("ProfanedSoulCrystal"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("ProfanedSoulCrystal"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
@@ -437,7 +434,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("RaidersTalisman"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("RaidersTalisman"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
@@ -447,40 +444,40 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			            }
 		            }
 		            
-		            if (item.type == calamity.ItemType("SandCloak"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("SandCloak"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажатие ");
-				            string resultB = resultA.Replace(" to consume 25% of your maximum stealth to create a protective dust veil which provides +6 defense and +2 life regen", ", создаёт защитную завесу пыли, увеличивающую защиту на 6 и регенерацию здоровья на 2, при этом затрачивает 25% от максимальной скрытности");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = "Нажатие " + ModCompatibility.SandCloakHotkey + ", создаёт защитную завесу пыли, увеличивающую защиту на 6 и регенерацию здоровья на 2, при этом затрачивает 25% от максимальной скрытности";
+				            }
 			            }
 		            }
 		            
-		            if (item.type == calamity.ItemType("SpectralVeil"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("SpectralVeil"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажатие ");
-				            string resultB = resultA.Replace(" to consume 25% of your maximum stealth to perform a short range teleport and render you momentarily invulnerable", ", выполняет телепортацию на короткое расстояние, делая вас на мгновение неуязвимым, при этом затрачивает 25% от максимальной скрытности");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = "Нажатие " + ModCompatibility.SpectralVeilHotKey + ", выполняет телепортацию на короткое расстояние, делая вас на мгновение неуязвимым, при этом затрачивает 25% от максимальной скрытности";
+				            }
 			            }
 		            }
 		            
-		            if (item.type == calamity.ItemType("NormalityRelocator"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("NormalityRelocator"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажмите ");
-				            string resultB = resultA.Replace(" to teleport to the position of the mouse", ", для телепортации в положение курсора мыши");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = "Нажмите " + ModCompatibility.NormalityRelocatorHotKey + ", для телепортации в положение курсора мыши";
+				            }
 			            }
 		            }
 		            
-		            if (item.type == calamity.ItemType("Eternity"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("Eternity"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
@@ -490,20 +487,20 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			            }
 		            }
 		            
-		            if (item.type == calamity.ItemType("PlaguedFuelPack"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("PlaguedFuelPack"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажатие ");
-				            string resultB = resultA.Replace(" to consume 25% of your maximum stealth to perform a swift upwards/diagonal dash which leaves a trail of plagued clouds", ", выполняет стремительный рывок вверх/по диагонали, который оставляет за собой след чумных облаков, при этом затрачивает 25% от максимальной скрытности");
-				            tooltipLine.text = resultB;
+				            if (tooltipLine.Name == "Tooltip2")
+				            {
+					            tooltipLine.text = "Нажатие " + ModCompatibility.PlaguePackHotKey + ", выполняет стремительный рывок вверх/по диагонали, который оставляет за собой след чумных облаков, при этом затрачивает 25% от максимальной скрытности";
+				            }
 			            }
 		            }
 		            
 		            if (ModLoader.GetMod("Fargowiltas") != null)
 		            {
-			            if (item.type == calamity.ItemType("SunkenSeaFountain"))
+			            if (item.type == ModCompatibility.CalamityMod.ItemType("SunkenSeaFountain"))
 			            {
 				            foreach (TooltipLine tooltipLine in tooltips)
 				            {
@@ -514,7 +511,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 				            }
 			            }
 			            
-			            if (item.type == calamity.ItemType("SulphurousFountainItem"))
+			            if (item.type == ModCompatibility.CalamityMod.ItemType("SulphurousFountainItem"))
 			            {
 				            foreach (TooltipLine tooltipLine in tooltips)
 				            {
@@ -525,7 +522,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 				            }
 			            }
 			            
-			            if (item.type == calamity.ItemType("AstralFountainItem"))
+			            if (item.type == ModCompatibility.CalamityMod.ItemType("AstralFountainItem"))
 			            {
 				            foreach (TooltipLine tooltipLine in tooltips)
 				            {
@@ -537,41 +534,47 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("Revenge"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("Revenge"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Activates rage. When rage is maxed press ", "Активирует ярость. Когда шкала ярости заполнена, нажмите ");
-				            string resultB = resultA.Replace(" to activate rage mode.", ", для активации ярости");
-				            string resultC = resultB.Replace("Activates adrenaline. When adrenaline is maxed press ", "Активирует адреналин. Когда шкала адреналина заполнена, нажмите ");
-				            string resultD = resultC.Replace(" to activate adrenaline mode.", ", для активации адреналина");
-				            tooltipLine.text = resultD;
-			            }
-		            }
-
-		            if (item.type == calamity.ItemType("CosmicWorm"))
-		            {
-			            foreach (TooltipLine tooltipLine in tooltips)
-			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("WARNING! Some sentinels have not been truly defeated yet and will spawn at full power during this fight!", "Внимание! Некоторые стражи ещё не были по-настоящему побеждены и будут сражаться в полную силу во время этой битвы!");
-				            tooltipLine.text = resultA;
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = "Активирует ярость. Когда шкала ярости заполнена, нажмите " + ModCompatibility.RageHotKey + ", для активации ярости";
 				            }
-		            }
-
-		            if (item.type == calamity.ItemType("BlunderBooster"))
-		            {
-			            foreach (TooltipLine tooltipLine in tooltips)
-			            {
-				            string str = tooltipLine.text;
-				            string resultA = str.Replace("Press ", "Нажатие ");
-				            string resultB = resultA.Replace(" to consume 25% of your maximum stealth to perform a swift upwards/diagonal dash which leaves a trail of lightning bolts", ", выполняет стремительный рывок вверх/по диагонали, который оставляет за собой след молний, при этом затрачивает 25% от максимальной скрытности");
-				            tooltipLine.text = resultB;
+				            
+				            if (tooltipLine.Name == "Tooltip3")
+				            {
+					            tooltipLine.text = "Активирует адреналин. Когда шкала адреналина заполнена, нажмите " + ModCompatibility.AdrenalineHotKey + ", для активации адреналина";
+				            }
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("GrandGelatin"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("CosmicWorm"))
+		            {
+			            foreach (TooltipLine tooltipLine in tooltips)
+			            {
+				            if (tooltipLine.Name == "Tooltip1")
+				            {
+					            tooltipLine.text = ModCompatibility.DownedFlag
+						            ? "Внимание! Некоторые стражи ещё не были по-настоящему побеждены и будут сражаться в полную силу во время этой битвы!"
+						            : "";
+				            }
+			            }
+		            }
+
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("BlunderBooster"))
+		            {
+			            foreach (TooltipLine tooltipLine in tooltips)
+			            {
+				            if (tooltipLine.Name == "Tooltip2")
+				            {
+					            tooltipLine.text = "Нажатие" + ModCompatibility.PlaguePackHotKey + ", выполняет стремительный рывок вверх/по диагонали, который оставляет за собой след молний, при этом затрачивает 25% от максимальной скрытности";
+				            }
+			            }
+		            }
+
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("GrandGelatin"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
@@ -584,7 +587,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("VitalJelly"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("VitalJelly"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
@@ -597,7 +600,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("KnowledgeKingSlime"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("KnowledgeKingSlime"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
@@ -610,7 +613,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("AbandonedSlimeStaff"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AbandonedSlimeStaff"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
@@ -623,7 +626,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			            }
 		            }
 
-		            if (item.type == calamity.ItemType("AeroStone"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("AeroStone"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {
@@ -636,7 +639,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 			            }
 		            }
 		            
-		            if (item.type == calamity.ItemType("SunkenStew"))
+		            if (item.type == ModCompatibility.CalamityMod.ItemType("SunkenStew"))
 		            {
 			            foreach (TooltipLine tooltipLine in tooltips)
 			            {

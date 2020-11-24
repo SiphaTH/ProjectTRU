@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.CalamityMod.Localization
 {
-    internal class CalamityLocalization
+    internal static class CalamityLocalization
     {
         private static string[][] _localizations;
 
@@ -634,9 +634,9 @@ namespace CalamityRuTranslate.CalamityMod.Localization
             
             foreach (string[] array in _localizations)
             {
-                ModTranslation modTranslation = ModLoader.GetMod("CalamityMod").CreateTranslation(array[0]);
+                ModTranslation modTranslation = ModCompatibility.CalamityMod.CreateTranslation(array[0]);
                 modTranslation.SetDefault(array[1]);
-                ModLoader.GetMod("CalamityMod").AddTranslation(modTranslation);
+                ModCompatibility.CalamityMod.AddTranslation(modTranslation);
             }
             
             Unload();
@@ -653,7 +653,7 @@ namespace CalamityRuTranslate.CalamityMod.Localization
             int num7 = NPC.FindFirstNPC(19);
             int num8 = NPC.FindFirstNPC(18);
             int num9 = NPC.FindFirstNPC(107);
-            int num10 = NPC.FindFirstNPC(ModLoader.GetMod("CalamityMod").NPCType("THIEF"));
+            int num10 = NPC.FindFirstNPC(ModCompatibility.CalamityMod.NPCType("THIEF"));
             bool flag = (Main.player[Main.myPlayer].talkNPC != -1);
 
             if (Main.npcChatText == "I deeply appreciate you rescuing me from being trapped within my frozen castle... It's been many, many years...")
@@ -1007,9 +1007,9 @@ namespace CalamityRuTranslate.CalamityMod.Localization
 
             for (int k = 0; k < 200 && flag; k++)
             {
-                if (Main.npc[k].type == ModLoader.GetMod("CalamityMod").NPCType("FAP"))
+                if (Main.npc[k].type == ModCompatibility.CalamityMod.NPCType("FAP"))
                 {
-                    if (Main.npc[Main.player[Main.myPlayer].talkNPC].type == ModLoader.GetMod("CalamityMod").NPCType("FAP"))
+                    if (Main.npc[Main.player[Main.myPlayer].talkNPC].type == ModCompatibility.CalamityMod.NPCType("FAP"))
                     {
                         string str = Main.npcChatText;
                         string resultA = str.Replace("Hey ", "Привет Eternity, osaka_drift, ILLIK ");

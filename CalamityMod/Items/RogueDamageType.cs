@@ -11,7 +11,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (ModLoader.GetMod("CalamityMod") != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
+            if (ModCompatibility.CalamityMod != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
             {
                 if (CalamityRuTranslate.TRuConfig.CalamityTranslation)
                 {
@@ -24,9 +24,9 @@ namespace CalamityRuTranslate.CalamityMod.Items
                             string str = tooltip.text;
                             string resultA = str.Replace(" rogue метании", " разбойный урон");
                             tooltip.text = resultA;
-                            string dmg = damageValue + " разбойный урон";
+                            string newDamageValue = damageValue + " разбойный урон";
 
-                            if (tooltip.text == dmg)
+                            if (tooltip.text == newDamageValue)
                             {
                                 tooltip.overrideColor = new Color(255, 184, 108);
                             }

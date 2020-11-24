@@ -9,13 +9,11 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 	{
 		public override void AI(NPC npc)
 		{
-			Mod calamity = ModLoader.GetMod("CalamityMod");
-			
-			if (calamity != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
+			if (ModCompatibility.CalamityMod != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
 			{
 				if (CalamityRuTranslate.TRuConfig.CalamityTranslation)
 				{
-					if (npc.type == calamity.NPCType("Polterghast"))
+					if (npc.type == ModCompatibility.CalamityMod.NPCType("Polterghast"))
 					{
 						if (npc.GivenName == "Necroghast")
 						{
@@ -28,22 +26,22 @@ namespace CalamityRuTranslate.CalamityMod.NPCs
 						}
 					}
 
-					if (npc.type == calamity.NPCType("DILF"))
+					if (npc.type == ModCompatibility.CalamityMod.NPCType("DILF"))
 					{
 						npc.GivenName = "Пермафрост";
 					}
 
-					if (npc.type == calamity.NPCType("FAP"))
+					if (npc.type == ModCompatibility.CalamityMod.NPCType("FAP"))
 					{
 						npc.GivenName = "Циррус";
 					}
 
-					if (npc.type == calamity.NPCType("SEAHOE"))
+					if (npc.type == ModCompatibility.CalamityMod.NPCType("SEAHOE"))
 					{
 						npc.GivenName = "Амидиас";
 					}
 
-					if (npc.type == calamity.NPCType("THIEF"))
+					if (npc.type == ModCompatibility.CalamityMod.NPCType("THIEF"))
 					{
 						if (npc.GivenName == "Laura")
 						{

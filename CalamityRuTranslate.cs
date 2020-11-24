@@ -18,6 +18,9 @@ using CalamityRuTranslate.ModOfRedemption.Items;
 using CalamityRuTranslate.ModOfRedemption.ModSupport;
 using CalamityRuTranslate.ModOfRedemption.NPCs;
 using CalamityRuTranslate.ModOfRedemption.Tiles;
+using CalamityRuTranslate.TheSpirit.Items;
+using CalamityRuTranslate.TheSpirit.Localization;
+using CalamityRuTranslate.TheSpirit.NPCs;
 using CalamityRuTranslate.ThoriumMod.Buffs;
 using CalamityRuTranslate.ThoriumMod.Items;
 using CalamityRuTranslate.ThoriumMod.ModSupport;
@@ -38,6 +41,7 @@ namespace CalamityRuTranslate
 		{
 			if (LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
 			{
+				ModCompatibility.Load();
 				Instance = this;
 				
 				if (TRuConfig.NewRussianTerrariaFont)
@@ -60,12 +64,20 @@ namespace CalamityRuTranslate
 
 				if (TRuConfig.CalamityTranslation)
 				{
-					if (Calamity != null)
+					if (ModCompatibility.CalamityMod != null)
 					{
 						CalamityLocalization.CalamityAddLocalizations();
 						ModifyCalamityIL.Setup();
 					}
 				}
+
+				// if (TRuConfig.SpiritTranslation)
+				// {
+					// if (Spirit != null)
+					// {
+					// 	ModifyTheSpiritIL.Setup();
+					// }
+				// }
 
 				if (TRuConfig.ThoriumTranslation)
 				{
@@ -104,6 +116,8 @@ namespace CalamityRuTranslate
             }
             
             ModifyCalamityIL.Unload();
+            ModCompatibility.Unload();
+            //ModifyTheSpiritIL.Unload();
 		}
 		
 		public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
@@ -112,12 +126,20 @@ namespace CalamityRuTranslate
             {
 	            if (TRuConfig.CalamityTranslation)
 	            {
-		            if (Calamity != null)
+		            if (ModCompatibility.CalamityMod != null)
 		            {
 			            CalamityLocalization.CalamityNpcChat();
 		            }
 	            }
 
+	            // if (TRuConfig.SpiritTranslation)
+	            // {
+		           //  if (Spirit != null)
+		           //  {
+			          //   TheSpiritLocalization.TheSpiritNpcChat();
+		           //  }
+	            // }
+	            
 	            if (TRuConfig.ThoriumTranslation)
 	            {
 		            if (Thorium != null)
@@ -142,7 +164,7 @@ namespace CalamityRuTranslate
 		
 		public override void PostSetupContent()
 		{
-			if (Calamity != null)
+			if (ModCompatibility.CalamityMod != null)
 			{
 				if (TRuConfig.CalamityTranslation)
 				{
@@ -170,6 +192,12 @@ namespace CalamityRuTranslate
 					ThoriumPrefixName.Setup();
 				}
 			}
+
+			// if (Spirit != null)
+			// {
+			// 	TheSpiritItemName.Setup();
+			// 	TheSpiritNpc.Setup();
+			// }
 			
 			if (ElementsAwoken != null)
 			{
@@ -211,10 +239,10 @@ namespace CalamityRuTranslate
 			}
 		}
         
-        private Mod Calamity => ModLoader.GetMod("CalamityMod");
         private Mod Thorium => ModLoader.GetMod("ThoriumMod");
         private Mod Redemption => ModLoader.GetMod("Redemption");
         private Mod ElementsAwoken => ModLoader.GetMod("ElementsAwoken");
+        private Mod Spirit => ModLoader.GetMod("SpiritMod");
         
         private DynamicSpriteFont ItemStack;
 		private DynamicSpriteFont MouseText;
@@ -223,5 +251,6 @@ namespace CalamityRuTranslate
 		private DynamicSpriteFont CombatCrit;
 		internal static CalamityRuTranslate Instance;
 		internal static Config TRuConfig;
-    }
+		public static bool aprilFools = false;
+	}
 }

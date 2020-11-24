@@ -7,9 +7,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 	{
 		public override void ModifyBuffTip(int type, ref string tip, ref int rare)
         {
-	        Mod calamity = ModLoader.GetMod("CalamityMod");
-            
-            if (calamity != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
+	        if (ModCompatibility.CalamityMod != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
             {
 	            if (CalamityRuTranslate.TRuConfig.CalamityTranslation)
 	            {
@@ -64,57 +62,51 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 				            tip = "Телепорты жезла раздора отключены";
 				            break;
 			            case 39:
-				            if (tip == "Теряет жизнь. All damage taken increased by 20%")
+				            if (ModCompatibility.Revenge)
 				            {
-					            tip = "Теряет жизнь. Весь получаемый урон увеличен на 20%";
+					            tip = Language.GetTextValue("BuffDescription.CursedInferno") + ". Весь получаемый урон увеличен на 20%";
 				            }
 				            break;
 			            case 124:
-				            if (tip == "Снижает урон от источников холода. Immunity to the Chilled, Frozen, and Glacial State debuffs")
-				            {
-					            tip = "Снижает урон от источников холода. Невосприимчивость к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние»";
-				            }
-
-				            if (tip == "Снижает урон от источников холода. Immunity to the Chilled, Frozen, and Glacial State debuffs. Provides cold protection in Death Mode")
-				            {
-					            tip = "Снижает урон от источников холода. Невосприимчивость к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние». Обеспечивает защитой от холода в режиме Смерти";
-				            }
+				            tip = ModCompatibility.DeathMode ? 
+					            Language.GetTextValue("BuffDescription.Warmth") + "\nНевосприимчивость к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние»\nОбеспечивает защитой от холода в режиме Смерти" : 
+					            Language.GetTextValue("BuffDescription.Warmth") + "\nНевосприимчивость к дебаффам «Охлаждение», «Заморозка», и «Ледниковое состояние»";
 				            break;
 			            case 10:
-				            tip = "Даёт невидимость. Дарует разбойные бонусы, держа в руках определённое разбойное оружие";
+				            tip = Language.GetTextValue("BuffDescription.Invisibility") + ". Дарует разбойные бонусы, держа в руках определённое разбойное оружие";
 				            break;
 			            case 1:
-				            if (tip == "Невосприимчивость к лаве. Provides heat protection in Death Mode")
+				            if (ModCompatibility.DeathMode)
 				            {
-					            tip = "Невосприимчивость к лаве. Обеспечивает защитой от жары в режиме Смерти";
+					            tip = Language.GetTextValue("BuffDescription.ObsidianSkin") + ". Обеспечивает защитой от жары в режиме Смерти";
 				            }
 				            break;
 			            case 116:
-				            if (tip == "враги поблизости воспламеняются. Provides cold protection in Death Mode")
+				            if (ModCompatibility.DeathMode)
 				            {
-					            tip = "враги поблизости воспламеняются. Обеспечивает защитой от холода в режиме Смерти";
+					            tip = Language.GetTextValue("BuffDescription.Inferno") + ". Обеспечивает защитой от холода в режиме Смерти";
 				            }
 				            break;
 			            case 87:
-				            if (tip == "Восстановление жизни немного ускорено. Provides cold protection in Death Mode")
+				            if (ModCompatibility.DeathMode)
 				            {
-					            tip = "Восстановление жизни немного ускорено. Обеспечивает защитой от холода в режиме Смерти";
+					            tip = Language.GetTextValue("BuffDescription.Campfire") + ". Обеспечивает защитой от холода в режиме Смерти";
 				            }
 				            break;
 			            case 189:
-				            tip = "Сжигается солнечными лучами";
+				            tip = Language.GetTextValue("BuffDescription.Daybreak");
 				            break;
 		            }
 
-		            if (type == calamity.BuffType("Molten"))
+		            if (type == ModCompatibility.CalamityMod.BuffType("Molten"))
 		            {
-			            if (tip == "Сопротивление к эффектам холода. Provides cold protection in Death Mode")
+			            if (ModCompatibility.DeathMode)
 			            {
 				            tip = "Сопротивление к эффектам холода. Обеспечивает защитой от холода в режиме Смерти";
 			            }
 		            }
 
-		            if (type == calamity.BuffType("ProfanedBabs"))
+		            if (type == ModCompatibility.CalamityMod.BuffType("ProfanedBabs"))
 		            {
 			            if (tip == "The Profaned Babs will accompany you!")
 			            {
@@ -137,7 +129,7 @@ namespace CalamityRuTranslate.CalamityMod.Buffs
 			            }
 		            }
 
-		            if (type == calamity.BuffType("ProfanedCrystalBuff"))
+		            if (type == ModCompatibility.CalamityMod.BuffType("ProfanedCrystalBuff"))
 		            {
 			            if (tip == "An ascended ice construct is suppressing your true potential..")
 			            {

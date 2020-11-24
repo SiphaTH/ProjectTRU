@@ -9,13 +9,11 @@ namespace CalamityRuTranslate.CalamityMod.Items
 	{
 		public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
 		{
-			Mod calamity = ModLoader.GetMod("CalamityMod");
-			
-			if (calamity != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
+			if (ModCompatibility.CalamityMod != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
 			{
 				if (CalamityRuTranslate.TRuConfig.CalamityTranslation)
 				{
-					if (item.type == calamity.ItemType("StatMeter"))
+					if (item.type == ModCompatibility.CalamityMod.ItemType("StatMeter"))
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{
@@ -66,7 +64,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 						}
 					}
 
-					if (item.type == calamity.ItemType("MeleeLevelMeter"))
+					if (item.type == ModCompatibility.CalamityMod.ItemType("MeleeLevelMeter"))
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{
@@ -83,7 +81,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 						}
 					}
 					
-					if (item.type == calamity.ItemType("MagicLevelMeter"))
+					if (item.type == ModCompatibility.CalamityMod.ItemType("MagicLevelMeter"))
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{
@@ -100,7 +98,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 						}
 					}
 					
-					if (item.type == calamity.ItemType("RangedLevelMeter"))
+					if (item.type == ModCompatibility.CalamityMod.ItemType("RangedLevelMeter"))
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{
@@ -117,7 +115,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 						}
 					}
 					
-					if (item.type == calamity.ItemType("RogueLevelMeter"))
+					if (item.type == ModCompatibility.CalamityMod.ItemType("RogueLevelMeter"))
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{
@@ -134,7 +132,7 @@ namespace CalamityRuTranslate.CalamityMod.Items
 						}
 					}
 					
-					if (item.type == calamity.ItemType("SummonLevelMeter"))
+					if (item.type == ModCompatibility.CalamityMod.ItemType("SummonLevelMeter"))
 					{
 						foreach (TooltipLine tooltipLine in tooltips)
 						{

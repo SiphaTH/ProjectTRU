@@ -3,5 +3,5 @@ author = Yum
 version = 2.0.2.1
 hideCode = true
 hideResources = true
-weakReferences = ThoriumMod, ElementsAwoken, Redemption
+weakReferences = CalamityMod, ThoriumMod, ElementsAwoken, Redemption
 homepage = https://discord.gg/rVZYT3u
