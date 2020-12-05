@@ -5,7 +5,7 @@ namespace CalamityRuTranslate
 {
     public static class EncodingCyrillic
     {
-        public static string EncodingTransform(string inputString)
+        public static string EncodeToU16(string line)
         {
             Dictionary<char, string> unicode = new Dictionary<char, string>
             {
@@ -101,24 +101,16 @@ namespace CalamityRuTranslate
             {'8', "\u0038"},
             {'9', "\u0039"}
             };
-            string result = "";
-            foreach (char item in inputString)
-            {
-                string promresult;
-                if (unicode.ContainsKey(item))
-                {
-                    unicode.TryGetValue(item, out promresult);
-                }
+            StringBuilder builder = new StringBuilder();
+            foreach (char @char in line)
+                if (unicode.ContainsKey(@char))
+                    builder.Append(unicode[@char]);
+                else if (Range('a', 'z').Contains(@char) || Range('A', 'Z').Contains(@char))
+                    builder.Append(@char);
                 else
-                {
-                    promresult = "*";
-                }
-                result += promresult;
-            }
+                    throw new System.Exception($"Ошибка загрузки символа: {@char}, {builder}");
             Encoding u16 = Encoding.GetEncoding("UTF-16");
-            byte[] utfArr = u16.GetBytes(result);
-            result = u16.GetString(utfArr);
-            return result;
+            return u16.GetString(u16.GetBytes(builder.ToString()));
         }
     }
 }
