@@ -89,6 +89,6 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         public static string RageHotKey => global::CalamityMod.CalamityMod.RageHotKey.TooltipHotkeyString();
         public static string AdrenalineHotKey => global::CalamityMod.CalamityMod.AdrenalineHotKey.TooltipHotkeyString();
         public static string ArmorSetHotkey => global::CalamityMod.CalamityMod.TarraHotKey.TooltipHotkeyString();
-        public static int AncientStorm => (int)(60f * Main.LocalPlayer.manaCost);
+        public static int AncientStorm => (int) (60f * Main.player[Main.myPlayer].manaCost);
     }
 }

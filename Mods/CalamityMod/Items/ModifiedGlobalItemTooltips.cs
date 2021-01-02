@@ -906,8 +906,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     {
                         case ItemID.WarmthPotion:
                             line1.text = CoreCalamityTranslation.DeathMode ? 
-                                Language.GetTextValue("ItemTooltip.WarmthPotion") + Translation.KeyText("Calamity.VanillaItem.WarmthPotion.DeathMode") : 
-                                Language.GetTextValue("ItemTooltip.WarmthPotion") + Translation.KeyText("Calamity.VanillaItem.WarmthPotion");
+                                Language.GetTextValue("ItemTooltip.WarmthPotion") + string.Format(Translation.KeyText("Calamity.VanillaItem.WarmthPotion.DeathMode"), RussianDictionaries.CalamityBuffs["GlacialState"].Item1) : 
+                                Language.GetTextValue("ItemTooltip.WarmthPotion") + string.Format(Translation.KeyText("Calamity.VanillaItem.WarmthPotion"), RussianDictionaries.CalamityBuffs["GlacialState"].Item1);
                             break;
                         case ItemID.ObsidianSkinPotion:
                             line1.text = CoreCalamityTranslation.DeathMode ? 

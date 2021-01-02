@@ -21,7 +21,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Tiles
 				}
 				catch (NullReferenceException)
 				{
-					throw new TranslationException(translation.Key, GameCulture.Russian);
+					throw new TranslationException(translation.Key);
 				}
 			}
 		}

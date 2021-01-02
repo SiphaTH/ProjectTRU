@@ -17,7 +17,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
 				}
 				catch(NullReferenceException)
 				{
-					throw new TranslationException(translation.Key, GameCulture.Russian);
+					throw new TranslationException(translation.Key);
 				}
 			}
 		}

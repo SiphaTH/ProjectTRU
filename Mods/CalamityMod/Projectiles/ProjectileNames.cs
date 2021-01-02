@@ -17,7 +17,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Projectiles
                 }
                 catch (NullReferenceException)
                 {
-                    throw new TranslationException(translation.Key, GameCulture.Russian);
+                    throw new TranslationException(translation.Key);
                 }
             }
         }

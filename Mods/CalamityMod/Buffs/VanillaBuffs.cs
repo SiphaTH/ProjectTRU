@@ -1,4 +1,5 @@
-﻿using CalamityRuTranslate.Utilities;
+﻿using CalamityRuTranslate.Dictionaries;
+using CalamityRuTranslate.Utilities;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -67,8 +68,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Buffs
                         break;
                     case BuffID.Warmth:
                         tip = CoreCalamityTranslation.DeathMode ? 
-                            Language.GetTextValue("BuffDescription.Warmth") + Translation.KeyText("Calamity.VanillaBuffs.Warmth.DeathMode") : 
-                            Language.GetTextValue("BuffDescription.Warmth") + Translation.KeyText("Calamity.VanillaBuffs.Warmth");
+                            Language.GetTextValue("BuffDescription.Warmth") + string.Format(Translation.KeyText("Calamity.VanillaBuffs.Warmth.DeathMode"), RussianDictionaries.CalamityBuffs["GlacialState"].Item1) : 
+                            Language.GetTextValue("BuffDescription.Warmth") + string.Format(Translation.KeyText("Calamity.VanillaBuffs.Warmth"), RussianDictionaries.CalamityBuffs["GlacialState"].Item1);
                         break;
                     case BuffID.Invisibility:
                         tip = Language.GetTextValue("BuffDescription.Invisibility") + Translation.KeyText("Calamity.VanillaBuffs.Invisibility");

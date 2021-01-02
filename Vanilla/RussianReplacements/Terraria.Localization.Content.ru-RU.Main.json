@@ -680,8 +680,8 @@
 		"WaveComplete": "Волна пройдена!"
 	},
 	"Key": {
-		"DOWN": "ВНИЗ",
-		"UP": "ВВЕРХ"
+		"DOWN": "Вниз",
+		"UP": "Вверх"
 	},
 	"Language": {
 		"English": "English (Английский)",

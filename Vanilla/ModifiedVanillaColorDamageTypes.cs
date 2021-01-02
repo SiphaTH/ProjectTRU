@@ -22,7 +22,10 @@ namespace CalamityRuTranslate.Vanilla
                         }
                         if (item.magic)
                         {
-                            tooltip.overrideColor = new Color(189, 147, 249);
+                            if (tooltip.text.Contains("магический урон"))
+                            {
+                                tooltip.overrideColor = new Color(189, 147, 249);
+                            }
                         }
                         if (item.ranged)
                         {

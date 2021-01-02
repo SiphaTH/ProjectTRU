@@ -18,7 +18,19 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Tiles
                 }
                 catch(NullReferenceException)
                 {
-                    throw new TranslationException(translation.Key, GameCulture.Russian);
+                    throw new TranslationException(translation.Key);
+                }
+            }
+            
+            foreach (var translation in RussianDictionaries.CalamityDresserName)
+            {
+                try
+                {
+                    TileLoader.GetTile(CoreCalamityTranslation.CalamityMod.TileType(translation.Key)).dresser = translation.Value;
+                }
+                catch(NullReferenceException)
+                {
+                    throw new TranslationException(translation.Key);
                 }
             }
         }

@@ -262,7 +262,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
 					Main.npcChatText = "Если это обнаружится, значит, что-то пошло не так.";
 					break;
 				case "Draedon's style of confrontation is very...alien and hands-off. You may be more likely to fight any one of his mechs before taking him down.":
-					Main.npcChatText = "Стиль боя Дрэйдона очень... чужд и выходит из ряда вон. Тебе, скорее всего, придётся сразиться с какой-нибудь из его машин, прежде чем убить его.";
+					Main.npcChatText = "Стиль боя Дрейдона очень... чужд и выходит из ряда вон. Тебе, скорее всего, придётся сразиться с какой-нибудь из его машин, прежде чем убить его.";
 					break;
 				case "Lord Yharim possesses god-like strength. He may not even fight you at full power which is fortunate for you. His attacks may just kill you in one hit, so be careful.":
 					Main.npcChatText = "Лорд Ярим обладает божественной силой. Он может даже не сражаться с вами в полную силу, что очень хорошо для вас. Его атаки могут убить вас одним ударом, так что будьте осторожны.";
@@ -352,7 +352,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
 					Main.npcChatText = "Вы обнаружите, что больше руд станет доступно, так как магия, запечатывающая их, разрушена. Чтобы создать что-то из некоторых таких, можешь потребоваться больше, чем просто руда.";
 					break;
 				case "Throughout the world lie various structures left behind by Draedon. Archaic defenses may remain, but the goods inside may be worth your while.":
-					Main.npcChatText = "По всему миру расположены различные сооружения, оставленные Дрэйдоном. Архаичная система обороны возможно осталась, но предметы, находящиеся внутри, могут стоить потраченных усилий.";
+					Main.npcChatText = "По всему миру расположены различные сооружения, оставленные Дрейдоном. Архаичная система обороны возможно осталась, но предметы, находящиеся внутри, могут стоить потраченных усилий.";
 					break;
 				case "The dungeon is a dark place. None of us know of its true purpose, however, the ancient Eidolist cultists used it for worship before Lord Yharim took it over.":
 					Main.npcChatText = "Темница — тёмное место. Никто из нас не знает его истинного назначения, однако древние фантомные культисты использовали его для поклонения до того, как им завладел Лорд Ярим.";
@@ -370,7 +370,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
 					Main.npcChatText = "Будь осторожен, когда атакуешь что-то в искажении. Ты можешь высвободить куда большую угрозу, чем раньше.";
 					break;
 				case "The Sulphurous Seas were created long ago, when Yharim's dungeon could no longer hold as many corpses as it needed to. Many of the bodies were dumped into the ocean. This, along with severe pollution from the heydays of Draedon's experiments have turned a paradise into a wasteland.":
-					Main.npcChatText = "Сернистые моря были созданы давным-давно, когда темница Ярима уже не могла вместить столько трупов, сколько требовалось. Многие тела были сброшены в океан. Это, как и загрязнения, вызванные исследованиями Дрэйдона, превратили рай в пустошь.";
+					Main.npcChatText = "Сернистые моря были созданы давным-давно, когда темница Ярима уже не могла вместить столько трупов, сколько требовалось. Многие тела были сброшены в океан. Это, как и загрязнения, вызванные исследованиями Дрейдона, превратили рай в пустошь.";
 					break;
 				case "The Sulphurous Seas are dangerous. The toxic waters will burn your skin, but if you can brave them you will be able to reach the Abyss, where there are powerful weapons and dangers aplenty.":
 					Main.npcChatText = "Сернистые моря опасны. Ядовитые воды сожгут вашу кожу, но если вы будете достаточно отважны, то сможете достичь бездны, где есть мощное оружие и множество опасностей.";
@@ -454,7 +454,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
 					Main.npcChatText = "С появлением новых материалов мы с лёгкостью можем сделать новые виды оружия. Ну как мы, ты, а я сворую их у тебя.";
 					break;
 				case "Draedon thinks he can build awesome machines, but he doesn't know how much crap I've stolen from him and sold by dismantling his drones.":
-					Main.npcChatText = "Дрэйдон думает, что он может строить потрясающие машины, но не знает, сколько барахла я наворовала у него и продала, путём уничтожения его же дронов.";
+					Main.npcChatText = "Дрейдон думает, что он может строить потрясающие машины, но не знает, сколько барахла я наворовала у него и продала, путём уничтожения его же дронов.";
 					break;
 				case "Gramma always said never to invade ancient temples or you'll be cursed and die. Let's say both of us attest that is untrue. We're still alive. Somewhat.":
 					Main.npcChatText = "Бабушка говорила никогда не вторгаться в древние храмы, иначе ты будешь проклят и умрёшь. Будем честны, мы оба испытали это проверили. Мы все ещё живы. В каком-то смысле.";
@@ -616,7 +616,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
 					Main.npcChatText = "Всегда стреляйте на луну! Очевидно, что раньше это работало.";
 					break;
 				case "Draedon? He's...a little 'high octane' if you know what I mean.":
-					Main.npcChatText = "Дрэйдон? Он... немного 'высокооктановый', если вы понимаете, о чём я.";
+					Main.npcChatText = "Дрейдон? Он... немного 'высокооктановый', если вы понимаете, о чём я.";
 					break;
 				case "Those oversized bugs terrorizing the jungle... Surely you of all people could shut them down!":
 					Main.npcChatText = "Эти огромные жуки, терроризирующие джунгли... Конечно же, только вы можете их уничтожить!";

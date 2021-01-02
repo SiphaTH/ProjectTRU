@@ -18,10 +18,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Buffs
 				}
 				catch(NullReferenceException)
 				{
-					throw new TranslationException(translation.Key, GameCulture.Russian);
+					throw new TranslationException(translation.Key);
 				}
 			}
 		}
-		
-    }
+	}
 }

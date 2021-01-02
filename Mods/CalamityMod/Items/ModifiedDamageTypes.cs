@@ -17,6 +17,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     if (tooltip.Name == "Damage")
                     {
                         tooltip.text = tooltip.text.Replace("rogue метании", "разбойный урон").Replace("true melee damage", "истинный урон ближнего боя");
+                        
                         if (tooltip.text.Contains("разбойный урон"))
                         {
                             tooltip.overrideColor = new Color(255, 184, 108);
