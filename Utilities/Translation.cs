@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using CalamityRuTranslate.Mods.CalamityMod;
+using CalamityRuTranslate.Mods.ThoriumMod;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
 using Terraria;
@@ -11,35 +12,37 @@ using static System.Linq.Enumerable;
 
 namespace CalamityRuTranslate.Utilities
 {
-	public static class Translation
-	{
-		public static bool IsRussianLanguage => LanguageManager.Instance.ActiveCulture == GameCulture.Russian;
+    public static class Translation
+    {
+        public static bool IsRussianLanguage => LanguageManager.Instance.ActiveCulture == GameCulture.Russian;
 
-		public static bool CheckRussian(string text) => text[0] >= 'а' && 'я' >= text[0] || text[0] >= 'А' && 'Я' >= text[0];
+        public static bool CheckRussian(string text) => text[0] >= 'а' && 'я' >= text[0] || text[0] >= 'А' && 'Я' >= text[0];
+        
+        public static string KeyText(string key) => CalamityRuTranslate.translations[$"Mods.CalamityRuTranslate.{key}"].GetTranslation(Language.ActiveCulture);
+        
+        public static string KeyText2(string key) => Language.GetTextValue($"Mods.CalamityRuTranslate.{key}");
 
-		public static string KeyText(string key) => Language.GetTextValue($"Mods.CalamityRuTranslate.{key}");
-		
-		public static void ILTranslate(ILContext il, string original, string translation, int iterations = 1)
-		{
-			var cursor = new ILCursor(il);
-
-			for (int j = 0; j < iterations; j++)
-			{
-				if (!cursor.TryGotoNext(i => i.MatchLdstr(original)))
-				{
-					CalamityRuTranslate.Instance.Logger.Warn($"IL failed when trying edit \"{original}\" with \"{translation}\"");
-					return;
-				}
-			}
-
-			cursor.Index++;
-			cursor.Emit(OpCodes.Pop);
-			cursor.Emit(OpCodes.Ldstr, translation);
-		}
-		
-		public static string EncodeToUtf16(string line)
+        public static void ILTranslate(ILContext il, string original, string translation, int iterations = 1)
         {
-	        Dictionary<char, string> unicode = new Dictionary<char, string>
+            var cursor = new ILCursor(il);
+
+            for (int j = 0; j < iterations; j++)
+            {
+                if (!cursor.TryGotoNext(i => i.MatchLdstr(original)))
+                {
+                    CalamityRuTranslate.Instance.Logger.Warn($"IL failed when trying edit \"{original}\" with \"{translation}\"");
+                    return;
+                }
+            }
+
+            cursor.Index++;
+            cursor.Emit(OpCodes.Pop);
+            cursor.Emit(OpCodes.Ldstr, translation);
+        }
+
+        public static string EncodeToUtf16(string line)
+        {
+            Dictionary<char, string> unicode = new Dictionary<char, string>
             {
                 {'А', "\u0410"},
                 {'а', "\u0430"},
@@ -139,58 +142,64 @@ namespace CalamityRuTranslate.Utilities
             StringBuilder builder = new StringBuilder();
             foreach (char @char in line)
             {
-	            if (unicode.ContainsKey(@char))
-	            {
-		            builder.Append(unicode[@char]);
-	            }
-	            else if (Range('a', 'z').Contains(@char) || Range('A', 'Z').Contains(@char) || @char == '\n')
-	            {
-		            builder.Append(@char);
-	            }
-	            else
-	            {
-		            throw new Exception($"Ошибка загрузки символа: {@char}, {builder}");
-	            }
+                if (unicode.ContainsKey(@char))
+                {
+                    builder.Append(unicode[@char]);
+                }
+                else if (Range('a', 'z').Contains(@char) || Range('A', 'Z').Contains(@char) || @char == '\n')
+                {
+                    builder.Append(@char);
+                }
+                else
+                {
+                    throw new Exception($"Ошибка загрузки символа: {@char}, {builder}");
+                }
             }
 
             Encoding u16 = Encoding.GetEncoding("UTF-16");
             return u16.GetString(u16.GetBytes(builder.ToString()));
         }
 		
-		public static bool CheckVanillaNpc(NPC npc)
-		{
-			return npc.type == NPCID.Guide ||
-			       npc.type == NPCID.Merchant ||
-			       npc.type == NPCID.Nurse ||
-			       npc.type == NPCID.Demolitionist ||
-			       npc.type == NPCID.DyeTrader ||
-			       npc.type == NPCID.Dryad ||
-			       npc.type == NPCID.ArmsDealer ||
-			       npc.type == NPCID.Stylist ||
-			       npc.type == NPCID.Painter ||
-			       npc.type == NPCID.Angler ||
-			       npc.type == NPCID.GoblinTinkerer ||
-			       npc.type == NPCID.WitchDoctor ||
-			       npc.type == NPCID.Clothier ||
-			       npc.type == NPCID.Mechanic ||
-			       npc.type == NPCID.PartyGirl ||
-			       npc.type == NPCID.Wizard ||
-			       npc.type == NPCID.TaxCollector ||
-			       npc.type == NPCID.Truffle ||
-			       npc.type == NPCID.Pirate ||
-			       npc.type == NPCID.Steampunker ||
-			       npc.type == NPCID.Cyborg ||
-			       npc.type == NPCID.TravellingMerchant ||
-			       npc.type == NPCID.SkeletonMerchant;
-		}
-
-		public static bool CheckCalamityVanillaNpc(NPC npc)
-		{
-			return npc.type == CoreCalamityTranslation.CalamityMod.NPCType("Polterghast") ||
-			       npc.type == CoreCalamityTranslation.CalamityMod.NPCType("DILF") ||
-			       npc.type == CoreCalamityTranslation.CalamityMod.NPCType("FAP") ||
-			       npc.type == CoreCalamityTranslation.CalamityMod.NPCType("SEAHOE") ||
-			       npc.type == CoreCalamityTranslation.CalamityMod.NPCType("THIEF") || CheckVanillaNpc(npc);
-		}
-	}
+         public static bool GlobalTownNpcName(NPC npc)
+        {
+            return npc.type == NPCID.Guide ||
+                   npc.type == NPCID.Merchant ||
+                   npc.type == NPCID.Nurse ||
+                   npc.type == NPCID.Demolitionist ||
+                   npc.type == NPCID.DyeTrader ||
+                   npc.type == NPCID.Dryad ||
+                   npc.type == NPCID.ArmsDealer ||
+                   npc.type == NPCID.Stylist ||
+                   npc.type == NPCID.Painter ||
+                   npc.type == NPCID.Angler ||
+                   npc.type == NPCID.GoblinTinkerer ||
+                   npc.type == NPCID.WitchDoctor ||
+                   npc.type == NPCID.Clothier ||
+                   npc.type == NPCID.Mechanic ||
+                   npc.type == NPCID.PartyGirl ||
+                   npc.type == NPCID.Wizard ||
+                   npc.type == NPCID.TaxCollector ||
+                   npc.type == NPCID.Truffle ||
+                   npc.type == NPCID.Pirate ||
+                   npc.type == NPCID.Steampunker ||
+                   npc.type == NPCID.Cyborg ||
+                   npc.type == NPCID.TravellingMerchant ||
+                   npc.type == NPCID.SkeletonMerchant ||
+                   npc.type == CoreCalamityTranslation.CalamityMod?.NPCType("Polterghast") ||
+                   npc.type == CoreCalamityTranslation.CalamityMod?.NPCType("DILF") ||
+                   npc.type == CoreCalamityTranslation.CalamityMod?.NPCType("FAP") ||
+                   npc.type == CoreCalamityTranslation.CalamityMod?.NPCType("SEAHOE") ||
+                   npc.type == CoreCalamityTranslation.CalamityMod?.NPCType("THIEF") ||
+                   npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Blacksmith") ||
+                   npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Cobbler") ||
+                   npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("ConfusedZombie") ||
+                   npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Cook") ||
+                   npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("DesertTraveler") ||
+                   npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Diverman") ||
+                   npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Druid") ||
+                   npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Spiritualist") ||
+                   npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Tracker") ||
+                   npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("WeaponMaster");
+        }
+    }
 }

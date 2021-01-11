@@ -10,7 +10,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (CoreCalamityTranslation.CalamityMod != null && Translation.IsRussianLanguage && CalamityRuTranslate.TRuConfig.CalamityTranslation)
+            if (CoreCalamityTranslation.CalamityMod != null && Translation.IsRussianLanguage && 
+                CalamityRuTranslate.Config.CalamityTranslation)
             {
                 foreach (TooltipLine tooltip in tooltips)
                 {

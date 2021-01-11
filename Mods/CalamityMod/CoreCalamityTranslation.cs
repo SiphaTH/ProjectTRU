@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using CalamityMod;
 using CalamityMod.World;
 using CalamityRuTranslate.Dictionaries;
@@ -27,17 +26,17 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                 throw new ModVersionException("Calamity", "1.4.5.7");
             }
 
-            if (CalamityMod != null && CalamityRuTranslate.TRuConfig.CalamityTranslation && Translation.IsRussianLanguage)
+            if (CalamityMod != null && CalamityRuTranslate.Config.CalamityTranslation && Translation.IsRussianLanguage)
             {
                 CalamityIL.Load();
-                RussianDictionaries.LoadDictionaries();
-                RussianDictionaries.CalamityTownNpcName = RussianDictionaries.CalamityTownNpcName.Union(RussianDictionaries.VanillaTownNpcName).ToDictionary(x => x.Key, x => x.Value);
+                CalamityTranslationLists.LoadLists();
+                CalamityTranslationDictionaries.LoadDictionaries();
             }
         }
 
         public static void LoadCrossContent()
         {
-            if (CalamityMod != null && CalamityRuTranslate.TRuConfig.CalamityTranslation && Translation.IsRussianLanguage)
+            if (CalamityMod != null && CalamityRuTranslate.Config.CalamityTranslation && Translation.IsRussianLanguage)
             {
                 BuffNames.SetupTranslation();
                 ItemNames.SetupTranslation();
@@ -53,7 +52,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 
         public static void LoadNpcChat()
         {
-            if (CalamityMod != null && CalamityRuTranslate.TRuConfig.CalamityTranslation && Translation.IsRussianLanguage)
+            if (CalamityMod != null && CalamityRuTranslate.Config.CalamityTranslation && Translation.IsRussianLanguage)
             {
                 NpcChatText.SetupTranslation();
             }
@@ -63,15 +62,16 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         {
             CalamityMod = null;
             CalamityIL.Unload();
-            RussianDictionaries.UnloadDictionaries();
+            CalamityTranslationLists.UnloadLists();
+            CalamityTranslationDictionaries.UnloadDictionaries();
         }
 
         private static void AddCalamityLocalization()
         {
-            foreach (var calamityKeys in RussianDictionaries.CalamityKeysLocalization)
+            foreach (var id in CalamityTranslationLists.CalamityKeysLocalization)
             {
-                ModTranslation translation = CalamityMod.CreateTranslation(calamityKeys.Key);
-                translation.SetDefault(calamityKeys.Value);
+                ModTranslation translation = CalamityMod.CreateTranslation(id);
+                translation.SetDefault(Translation.KeyText($"Calamity.KeyLocalization.{id}"));
                 CalamityMod.AddTranslation(translation);
             }
         }
@@ -89,6 +89,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         public static string RageHotKey => global::CalamityMod.CalamityMod.RageHotKey.TooltipHotkeyString();
         public static string AdrenalineHotKey => global::CalamityMod.CalamityMod.AdrenalineHotKey.TooltipHotkeyString();
         public static string ArmorSetHotkey => global::CalamityMod.CalamityMod.TarraHotKey.TooltipHotkeyString();
-        public static int AncientStorm => (int) (60f * Main.player[Main.myPlayer].manaCost);
+        public static string EternityDiscoHex => global::CalamityMod.Items.Weapons.Magic.Eternity.DisoHex;
+        public static int AncientStorm => (int)(60f * Main.player[Main.myPlayer].manaCost);
     }
 }

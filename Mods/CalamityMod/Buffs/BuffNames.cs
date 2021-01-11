@@ -9,16 +9,16 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Buffs
 	{
 		public static void SetupTranslation()
 		{
-			foreach (var translation in RussianDictionaries.CalamityBuffs)
+			foreach (var id in CalamityTranslationLists.CalamityBuffs)
 			{
 				try
 				{
-					CoreCalamityTranslation.CalamityMod.GetBuff(translation.Key).DisplayName.AddTranslation(GameCulture.Russian, translation.Value.Item1);
-					CoreCalamityTranslation.CalamityMod.GetBuff(translation.Key).Description.AddTranslation(GameCulture.Russian, translation.Value.Item2);
+					CoreCalamityTranslation.CalamityMod.GetBuff(id).DisplayName.AddTranslation(GameCulture.Russian, Translation.KeyText($"Calamity.BuffName.{id}"));
+					CoreCalamityTranslation.CalamityMod.GetBuff(id).Description.AddTranslation(GameCulture.Russian, Translation.KeyText($"Calamity.BuffDescription.{id}"));
 				}
 				catch(NullReferenceException)
 				{
-					throw new TranslationException(translation.Key);
+					throw new TranslationException(id);
 				}
 			}
 		}

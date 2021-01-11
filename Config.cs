@@ -7,17 +7,17 @@ namespace CalamityRuTranslate
     public class Config : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ClientSide;
-        public override void OnLoaded() => CalamityRuTranslate.TRuConfig = this;
+        public override void OnLoaded() => CalamityRuTranslate.Config = this;
 
-        [Header("Шрифт")]
+        [Header("$Mods.CalamityRuTranslate.Config.Header.Font")]
         
-        [Label("Шрифт JetBrains Mono")]
-        [Tooltip("Если вам не нравится новый шрифт который предлагает русификатор\nи вы хотите играть со своим, вы можете его отключить\nТребуется перезагрузка мода")]
+        [Label("$Mods.CalamityRuTranslate.Config.Label.Font")]
+        [Tooltip("$Mods.CalamityRuTranslate.Config.Tooltip.Font")]
         [DefaultValue(true)]
         [ReloadRequired]
-        public bool NewRussianTerrariaFont { get; set; }
+        public bool NewTerrariaFont { get; set; }
         
-        [Header("Перевод")]
+        [Header("$Mods.CalamityRuTranslate.Config.Header.Mods")]
         
         [Label("Calamity")]
         [DefaultValue(true)]
@@ -28,5 +28,14 @@ namespace CalamityRuTranslate
         [DefaultValue(true)]
         [ReloadRequired]
         public bool ThoriumTranslation { get; set; }
+        
+        [Header("$Mods.CalamityRuTranslate.Config.Header.Stealth")]
+        
+        [Label("$Mods.CalamityRuTranslate.Config.Label.Stealth")]
+        [Tooltip("$Mods.CalamityRuTranslate.Config.Tooltip.Stealth")]
+        [DefaultValue(true)]
+        public bool CalamityStealth { get; set; }
+        
+        public override bool AcceptClientChanges(ModConfig pendingConfig, int whoAmI, ref string message) => true;
     }
 }

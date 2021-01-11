@@ -55,6 +55,70 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Type profanedGuardianBoss = null;
             Type bossRushUi = null;
             Type coldDivinity = null;
+            Type occultBathtub = null;
+            Type occultBed = null;
+            Type occultBookcase = null;
+            Type occultCandelabra = null;
+            Type occultCandle = null;
+            Type occultChair = null;
+            Type occultChandelier = null;
+            Type occultChest = null;
+            Type occultClock = null;
+            Type occultDoor = null;
+            Type occultDresser = null;
+            Type occultLamp = null;
+            Type occultLantern = null;
+            Type occultPiano = null;
+            Type occultPlatform = null;
+            Type occultSink = null;
+            Type occultSofa = null;
+            Type occultStone = null;
+            Type occultTable = null;
+            Type occultWorkBench = null;
+            Type occultStoneWall = null;
+            Type stratusWorkbench = null;
+            Type statigelWorkbench = null;
+            Type statigelBath = null;
+            Type profanedWorkbench = null;
+            Type profanedBath = null;
+            Type voidWorkbench = null;
+            Type voidClock = null;
+            Type voidBath = null;
+            Type cosmiliteWorkbench = null;
+            Type cosmiliteBath = null;
+            Type ashenPiano = null;
+            Type ashenWorkbench = null;
+            Type eutrophicCrafting = null;
+            Type monolithCrafting = null;
+            Type profanedBasin = null;
+            Type silvaBasin = null;
+            Type abyssBath = null;
+            Type abyssWorkbench = null;
+            Type abyssPiano = null;
+            Type ancientBath = null;
+            Type ashenBath = null;
+            Type ancientWorkbench = null;
+            Type ancientPiano = null;
+            Type monolithBathtub = null;
+            Type monolithBed = null;
+            Type monolithBench = null;
+            Type monolithBookcase = null;
+            Type monolithCandelabra = null;
+            Type monolithCandle = null;
+            Type monolithChair = null;
+            Type monolithChandelier = null;
+            Type monolithChest = null;
+            Type monolithClock = null;
+            Type monolithDoor = null;
+            Type monolithDresser = null;
+            Type monolithLamp = null;
+            Type monolithLantern = null;
+            Type monolithPiano = null;
+            Type monolithPlatform = null;
+            Type monolithSink = null;
+            Type monolithTable = null;
+            Type monolithWorkBench = null;
+            Type nanotech = null;
 
             Assembly calamityAssembly = CoreCalamityTranslation.CalamityMod.GetType().Assembly;
 
@@ -184,6 +248,198 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                         break;
                     case "ColdDivinity":
                         coldDivinity = calamityClass;
+                        break;
+                    case "OccultBathtub" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultBathtub = calamityClass;
+                        break;
+                    case "OccultBed" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultBed = calamityClass;
+                        break;
+                    case "OccultBookcase" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultBookcase = calamityClass;
+                        break;
+                    case "OccultCandelabra" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultCandelabra = calamityClass;
+                        break;
+                    case "OccultCandle" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultCandle = calamityClass;
+                        break;
+                    case "OccultChair" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultChair = calamityClass;
+                        break;
+                    case "OccultChandelier" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultChandelier = calamityClass;
+                        break;
+                    case "OccultChest" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultChest = calamityClass;
+                        break;
+                    case "OccultClock" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultClock = calamityClass;
+                        break;
+                    case "OccultDoor" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultDoor = calamityClass;
+                        break;
+                    case "OccultDresser" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultDresser = calamityClass;
+                        break;
+                    case "OccultLamp" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultLamp = calamityClass;
+                        break;
+                    case "OccultLantern" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultLantern = calamityClass;
+                        break;
+                    case "OccultPiano" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultPiano = calamityClass;
+                        break;
+                    case "OccultPlatform" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultPlatform = calamityClass;
+                        break;
+                    case "OccultSink" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultSink = calamityClass;
+                        break;
+                    case "OccultSofa" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultSofa = calamityClass;
+                        break;
+                    case "OccultStone" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultStone = calamityClass;
+                        break;
+                    case "OccultTable" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultTable = calamityClass;
+                        break;
+                    case "OccultWorkBench" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureOccult":
+                        occultWorkBench = calamityClass;
+                        break;
+                    case "OccultStoneWall" when calamityClass.Namespace == "CalamityMod.Items.Placeables.Walls":
+                        occultStoneWall = calamityClass;
+                        break;
+                    case "StratusWorkbench" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureStratus":
+                        stratusWorkbench = calamityClass;
+                        break;
+                    case "StatigelWorkbench" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureStatigel":
+                        statigelWorkbench = calamityClass;
+                        break;
+                    case "StatigelBath" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureStatigel":
+                        statigelBath = calamityClass;
+                        break;
+                    case "ProfanedWorkbench" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureProfaned":
+                        profanedWorkbench = calamityClass;
+                        break;
+                    case "ProfanedBath" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureProfaned":
+                        profanedBath = calamityClass;
+                        break;
+                    case "VoidWorkbench" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureVoid":
+                        voidWorkbench = calamityClass;
+                        break;
+                    case "VoidClock" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureVoid":
+                        voidClock = calamityClass;
+                        break;
+                    case "VoidBath" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureVoid":
+                        voidBath = calamityClass;
+                        break;
+                    case "CosmiliteWorkbench" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureCosmilite":
+                        cosmiliteWorkbench = calamityClass;
+                        break;
+                    case "CosmiliteBath" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureCosmilite":
+                        cosmiliteBath = calamityClass;
+                        break;
+                    case "AshenPiano" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAshen":
+                        ashenPiano = calamityClass;
+                        break;
+                    case "AshenWorkbench" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAshen":
+                        ashenWorkbench = calamityClass;
+                        break;
+                    case "EutrophicCrafting" when calamityClass.Namespace == "CalamityMod.Items.Placeables.Furniture.CraftingStations":
+                        eutrophicCrafting = calamityClass;
+                        break;
+                    case "MonolithCrafting" when calamityClass.Namespace == "CalamityMod.Items.Placeables.Furniture.CraftingStations":
+                        monolithCrafting = calamityClass;
+                        break;
+                    case "ProfanedBasin" when calamityClass.Namespace == "CalamityMod.Items.Placeables.Furniture.CraftingStations":
+                        profanedBasin = calamityClass;
+                        break;
+                    case "SilvaBasin" when calamityClass.Namespace == "CalamityMod.Items.Placeables.Furniture.CraftingStations":
+                        silvaBasin = calamityClass;
+                        break;
+                    case "AbyssBath" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAbyss":
+                        abyssBath = calamityClass;
+                        break;
+                    case "AbyssWorkbench" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAbyss":
+                        abyssWorkbench = calamityClass;
+                        break;
+                    case "AbyssPiano" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAbyss":
+                        abyssPiano = calamityClass;
+                        break;
+                    case "AncientBath" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAncient":
+                        ancientBath = calamityClass;
+                        break;
+                    case "AshenBath" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAshen":
+                        ashenBath = calamityClass;
+                        break;
+                    case "AncientWorkbench" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAncient":
+                        ancientWorkbench = calamityClass;
+                        break;
+                    case "AncientPiano" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAncient":
+                        ancientPiano = calamityClass;
+                        break;
+                    case "MonolithBathtub" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithBathtub = calamityClass;
+                        break;
+                    case "MonolithBed" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithBed = calamityClass;
+                        break;
+                    case "MonolithBench" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithBench = calamityClass;
+                        break;
+                    case "MonolithBookcase" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithBookcase = calamityClass;
+                        break;
+                    case "MonolithCandelabra" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithCandelabra = calamityClass;
+                        break;
+                    case "MonolithCandle" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithCandle = calamityClass;
+                        break;
+                    case "MonolithChair" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithChair = calamityClass;
+                        break;
+                    case "MonolithChandelier" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithChandelier = calamityClass;
+                        break;
+                    case "MonolithChest" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithChest = calamityClass;
+                        break;
+                    case "MonolithClock" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithClock = calamityClass;
+                        break;
+                    case "MonolithDoor" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithDoor = calamityClass;
+                        break;
+                    case "MonolithDresser" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithDresser = calamityClass;
+                        break;
+                    case "MonolithLamp" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithLamp = calamityClass;
+                        break;
+                    case "MonolithLantern" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithLantern = calamityClass;
+                        break;
+                    case "MonolithPiano" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithPiano = calamityClass;
+                        break;
+                    case "MonolithPlatform" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithPlatform = calamityClass;
+                        break;
+                    case "MonolithSink" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithSink = calamityClass;
+                        break;
+                    case "MonolithTable" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithTable = calamityClass;
+                        break;
+                    case "MonolithWorkBench" when calamityClass.Namespace == "CalamityMod.Items.Placeables.FurnitureAstral":
+                        monolithWorkBench = calamityClass;
+                        break;
+                    case "Nanotech" when calamityClass.Namespace == "CalamityMod.Items.Accessories":
+                        nanotech = calamityClass;
                         break;
                 }
             }
@@ -327,6 +583,198 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             
             _coldDivinityModifyTooltips = coldDivinity?.GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance);
             if(_coldDivinityModifyTooltips != null) ModifyColdDivinityModifyTooltips += Ru_ModifyColdDivinityModifyTooltips;
+            
+            _setDefaultsOccultBathtub = occultBathtub?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultBathtub != null) ModifySetDefaultsOccultBathtub += Ru_ModifySetDefaultsOccultBathtub;
+            
+            _setDefaultsOccultBed = occultBed?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultBed != null) ModifySetDefaultsOccultBed += Ru_ModifySetDefaultsOccultBed;
+            
+            _setDefaultsOccultBookcase = occultBookcase?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultBookcase != null) ModifySetDefaultsOccultBookcase += Ru_ModifySetDefaultsOccultBookcase;
+            
+            _setDefaultsOccultCandelabra = occultCandelabra?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultCandelabra != null) ModifySetDefaultsOccultCandelabra += Ru_ModifySetDefaultsOccultCandelabra;
+            
+            _setDefaultsOccultCandle = occultCandle?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultCandle != null) ModifySetDefaultsOccultCandle += Ru_ModifySetDefaultsOccultCandle;
+            
+            _setDefaultsOccultChair = occultChair?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultChair != null) ModifySetDefaultsOccultChair += Ru_ModifySetDefaultsOccultChair;
+            
+            _setDefaultsOccultChandelier = occultChandelier?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultChandelier != null) ModifySetDefaultsOccultChandelier += Ru_ModifySetDefaultsOccultChandelier;
+            
+            _setDefaultsOccultChest = occultChest?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultChest != null) ModifySetDefaultsOccultChest += Ru_ModifySetDefaultsOccultChest;
+            
+            _setDefaultsOccultClock = occultClock?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultClock != null) ModifySetDefaultsOccultClock += Ru_ModifySetDefaultsOccultClock;
+            
+            _setDefaultsOccultDoor = occultDoor?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultDoor != null) ModifySetDefaultsOccultDoor += Ru_ModifySetDefaultsOccultDoor;
+            
+            _setDefaultsOccultDresser = occultDresser?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultDresser != null) ModifySetDefaultsOccultDresser += Ru_ModifySetDefaultsOccultDresser;
+            
+            _setDefaultsOccultLamp = occultLamp?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultLamp != null) ModifySetDefaultsOccultLamp += Ru_ModifySetDefaultsOccultLamp;
+            
+            _setDefaultsOccultLantern = occultLantern?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultLantern != null) ModifySetDefaultsOccultLantern += Ru_ModifySetDefaultsOccultLantern;
+            
+            _setDefaultsOccultPiano = occultPiano?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultPiano != null) ModifySetDefaultsOccultPiano += Ru_ModifySetDefaultsOccultPiano;
+            
+            _setDefaultsOccultPlatform = occultPlatform?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultPlatform != null) ModifySetDefaultsOccultPlatform += Ru_ModifySetDefaultsOccultPlatform;
+            
+            _setDefaultsOccultSink = occultSink?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultSink != null) ModifySetDefaultsOccultSink += Ru_ModifySetDefaultsOccultSink;
+            
+            _setDefaultsOccultSofa = occultSofa?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultSofa != null) ModifySetDefaultsOccultSofa += Ru_ModifySetDefaultsOccultSofa;
+            
+            _setDefaultsOccultStone = occultStone?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultStone != null) ModifySetDefaultsOccultStone += Ru_ModifySetDefaultsOccultStone;
+            
+            _setDefaultsOccultTable = occultTable?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultTable != null) ModifySetDefaultsOccultTable += Ru_ModifySetDefaultsOccultTable;
+            
+            _setDefaultsOccultWorkBench = occultWorkBench?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultWorkBench != null) ModifySetDefaultsOccultWorkBench += Ru_ModifySetDefaultsOccultWorkBench;
+            
+            _setDefaultsOccultStoneWall = occultStoneWall?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsOccultStoneWall != null) ModifySetDefaultsOccultStoneWall += Ru_ModifySetDefaultsOccultStoneWall;
+            
+            _setDefaultsStratusWorkbench = stratusWorkbench?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsStratusWorkbench != null) ModifySetDefaultsStratusWorkbench += Ru_ModifySetDefaultsStratusWorkbench;
+            
+            _setDefaultsStatigelWorkbench = statigelWorkbench?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsStatigelWorkbench != null) ModifySetDefaultsStatigelWorkbench += Ru_ModifySetDefaultsStatigelWorkbench;
+            
+            _setDefaultsStatigelBath = statigelBath?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsStatigelBath != null) ModifySetDefaultsStatigelBath += Ru_ModifySetDefaultsStatigelBath;
+            
+            _setDefaultsProfanedWorkbench = profanedWorkbench?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsProfanedWorkbench != null) ModifySetDefaultsProfanedWorkbench += Ru_ModifySetDefaultsProfanedWorkbench;
+            
+            _setDefaultsProfanedBath = profanedBath?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsProfanedBath != null) ModifySetDefaultsProfanedBath += Ru_ModifySetDefaultsProfanedBath;
+            
+            _setDefaultsVoidWorkbench = voidWorkbench?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsVoidWorkbench != null) ModifySetDefaultsVoidWorkbench += Ru_ModifySetDefaultsVoidWorkbench;
+            
+            _setDefaultsVoidClock = voidClock?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsVoidClock != null) ModifySetDefaultsVoidClock += Ru_ModifySetDefaultsVoidClock;
+            
+            _setDefaultsVoidBath = voidBath?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsVoidBath != null) ModifySetDefaultsVoidBath += Ru_ModifySetDefaultsVoidBath;
+            
+            _setDefaultsCosmiliteWorkbench = cosmiliteWorkbench?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsCosmiliteWorkbench != null) ModifySetDefaultsCosmiliteWorkbench += Ru_ModifySetDefaultsCosmiliteWorkbench;
+            
+            _setDefaultsCosmiliteBath = cosmiliteBath?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsCosmiliteBath != null) ModifySetDefaultsCosmiliteBath += Ru_ModifySetDefaultsCosmiliteBath;
+            
+            _setDefaultsAshenPiano = ashenPiano?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsAshenPiano != null) ModifySetDefaultsAshenPiano += Ru_ModifySetDefaultsAshenPiano;
+            
+            _setDefaultsAshenWorkbench = ashenWorkbench?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsAshenWorkbench != null) ModifySetDefaultsAshenWorkbench += Ru_ModifySetDefaultsAshenWorkbench;
+            
+            _setDefaultsEutrophicCrafting = eutrophicCrafting?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsEutrophicCrafting != null) ModifySetDefaultsEutrophicCrafting += Ru_ModifySetDefaultsEutrophicCrafting;
+            
+            _setDefaultsMonolithCrafting = monolithCrafting?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithCrafting != null) ModifySetDefaultsMonolithCrafting += Ru_ModifySetDefaultsMonolithCrafting;
+            
+            _setDefaultsProfanedBasin = profanedBasin?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsProfanedBasin != null) ModifySetDefaultsProfanedBasin += Ru_ModifySetDefaultsProfanedBasin;
+            
+            _setDefaultsSilvaBasin = silvaBasin?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsSilvaBasin != null) ModifySetDefaultsSilvaBasin += Ru_ModifySetDefaultsSilvaBasin;
+            
+            _setDefaultsAbyssBath = abyssBath?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsAbyssBath != null) ModifySetDefaultsAbyssBath += Ru_ModifySetDefaultsAbyssBath;
+            
+            _setDefaultsAbyssWorkbench = abyssWorkbench?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsAbyssWorkbench != null) ModifySetDefaultsAbyssWorkbench += Ru_ModifySetDefaultsAbyssWorkbench;
+            
+            _setDefaultsAbyssPiano = abyssPiano?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsAbyssPiano != null) ModifySetDefaultsAbyssPiano += Ru_ModifySetDefaultsAbyssPiano;
+            
+            _setDefaultsAncientBath = ancientBath?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsAncientBath != null) ModifySetDefaultsAncientBath += Ru_ModifySetDefaultsAncientBath;
+            
+            _setDefaultsAshenBath = ashenBath?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsAshenBath != null) ModifySetDefaultsAshenBath += Ru_ModifySetDefaultsAshenBath;
+            
+            _setDefaultsAncientWorkbench = ancientWorkbench?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsAncientWorkbench != null) ModifySetDefaultsAncientWorkbench += Ru_ModifySetDefaultsAncientWorkbench;
+            
+            _setDefaultsAncientPiano = ancientPiano?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsAncientPiano != null) ModifySetDefaultsAncientPiano += Ru_ModifySetDefaultsAncientPiano;
+            
+            _setDefaultsMonolithBathtub = monolithBathtub?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithBathtub != null) ModifySetDefaultsMonolithBathtub += Ru_ModifySetDefaultsMonolithBathtub;
+            
+            _setDefaultsMonolithBed = monolithBed?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithBed != null) ModifySetDefaultsMonolithBed += Ru_ModifySetDefaultsMonolithBed;
+            
+            _setDefaultsMonolithBench = monolithBench?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithBench != null) ModifySetDefaultsMonolithBench += Ru_ModifySetDefaultsMonolithBench;
+            
+            _setDefaultsMonolithBookcase = monolithBookcase?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithBookcase != null) ModifySetDefaultsMonolithBookcase += Ru_ModifySetDefaultsMonolithBookcase;
+            
+            _setDefaultsMonolithCandelabra = monolithCandelabra?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithCandelabra != null) ModifySetDefaultsMonolithCandelabra += Ru_ModifySetDefaultsMonolithCandelabra;
+            
+            _setDefaultsMonolithCandle = monolithCandle?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithCandle != null) ModifySetDefaultsMonolithCandle += Ru_ModifySetDefaultsMonolithCandle;
+            
+            _setDefaultsMonolithChair = monolithChair?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithChair != null) ModifySetDefaultsMonolithChair += Ru_ModifySetDefaultsMonolithChair;
+            
+            _setDefaultsMonolithChandelier = monolithChandelier?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithChandelier != null) ModifySetDefaultsMonolithChandelier += Ru_ModifySetDefaultsMonolithChandelier;
+            
+            _setDefaultsMonolithChest = monolithChest?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithChest != null) ModifySetDefaultsMonolithChest += Ru_ModifySetDefaultsMonolithChest;
+            
+            _setDefaultsMonolithClock = monolithClock?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithClock != null) ModifySetDefaultsMonolithClock += Ru_ModifySetDefaultsMonolithClock;
+            
+            _setDefaultsMonolithDoor = monolithDoor?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithDoor != null) ModifySetDefaultsMonolithDoor += Ru_ModifySetDefaultsMonolithDoor;
+            
+            _setDefaultsMonolithDresser = monolithDresser?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithDresser != null) ModifySetDefaultsMonolithDresser += Ru_ModifySetDefaultsMonolithDresser;
+            
+            _setDefaultsMonolithLamp = monolithLamp?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithLamp != null) ModifySetDefaultsMonolithLamp += Ru_ModifySetDefaultsMonolithLamp;
+            
+            _setDefaultsMonolithLantern = monolithLantern?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithLantern != null) ModifySetDefaultsMonolithLantern += Ru_ModifySetDefaultsMonolithLantern;
+            
+            _setDefaultsMonolithPiano = monolithPiano?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithPiano != null) ModifySetDefaultsMonolithPiano += Ru_ModifySetDefaultsMonolithPiano;
+            
+            _setDefaultsMonolithPlatform = monolithPlatform?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithPlatform != null) ModifySetDefaultsMonolithPlatform += Ru_ModifySetDefaultsMonolithPlatform;
+            
+            _setDefaultsMonolithSink = monolithSink?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithSink != null) ModifySetDefaultsMonolithSink += Ru_ModifySetDefaultsMonolithSink;
+            
+            _setDefaultsMonolithTable = monolithTable?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithTable != null) ModifySetDefaultsMonolithTable += Ru_ModifySetDefaultsMonolithTable;
+            
+            _setDefaultsMonolithWorkBench = monolithWorkBench?.GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance);
+            if(_setDefaultsMonolithWorkBench != null) ModifySetDefaultsMonolithWorkBench += Ru_ModifySetDefaultsMonolithWorkBench;
+            
+            _modifyTooltipsNanotech = nanotech?.GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance);
+            if(_modifyTooltipsNanotech != null) ModifyTooltipsNanotech += Ru_ModifyTooltipsNanotech;
         }
 
         private static void UnloadIL()
@@ -378,6 +826,70 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             if(_bossLootProfanedGuardianBoss != null) ModifyBossLootProfanedGuardianBoss -= Ru_ModifyBossLootProfanedGuardianBoss;
             if(_invasionNamebossRushUi != null) ModifyInvasionNamebossRushUi -= Ru_ModifyInvasionNamebossRushUI;
             if(_coldDivinityModifyTooltips != null) ModifyColdDivinityModifyTooltips -= Ru_ModifyColdDivinityModifyTooltips;
+            if(_setDefaultsOccultBathtub != null) ModifySetDefaultsOccultBathtub -= Ru_ModifySetDefaultsOccultBathtub;
+            if(_setDefaultsOccultBed != null) ModifySetDefaultsOccultBed -= Ru_ModifySetDefaultsOccultBed;
+            if(_setDefaultsOccultBookcase != null) ModifySetDefaultsOccultBookcase -= Ru_ModifySetDefaultsOccultBookcase;
+            if(_setDefaultsOccultCandelabra != null) ModifySetDefaultsOccultCandelabra -= Ru_ModifySetDefaultsOccultCandelabra;
+            if(_setDefaultsOccultCandle != null) ModifySetDefaultsOccultCandle -= Ru_ModifySetDefaultsOccultCandle;
+            if(_setDefaultsOccultChair != null) ModifySetDefaultsOccultChair -= Ru_ModifySetDefaultsOccultChair;
+            if(_setDefaultsOccultChandelier != null) ModifySetDefaultsOccultChandelier -= Ru_ModifySetDefaultsOccultChandelier;
+            if(_setDefaultsOccultChest != null) ModifySetDefaultsOccultChest -= Ru_ModifySetDefaultsOccultChest;
+            if(_setDefaultsOccultClock != null) ModifySetDefaultsOccultClock -= Ru_ModifySetDefaultsOccultClock;
+            if(_setDefaultsOccultDoor != null) ModifySetDefaultsOccultDoor -= Ru_ModifySetDefaultsOccultDoor;
+            if(_setDefaultsOccultDresser != null) ModifySetDefaultsOccultDresser -= Ru_ModifySetDefaultsOccultDresser;
+            if(_setDefaultsOccultLamp != null) ModifySetDefaultsOccultLamp -= Ru_ModifySetDefaultsOccultLamp;
+            if(_setDefaultsOccultLantern != null) ModifySetDefaultsOccultLantern -= Ru_ModifySetDefaultsOccultLantern;
+            if(_setDefaultsOccultPiano != null) ModifySetDefaultsOccultPiano -= Ru_ModifySetDefaultsOccultPiano;
+            if(_setDefaultsOccultPlatform != null) ModifySetDefaultsOccultPlatform -= Ru_ModifySetDefaultsOccultPlatform;
+            if(_setDefaultsOccultSink != null) ModifySetDefaultsOccultSink -= Ru_ModifySetDefaultsOccultSink;
+            if(_setDefaultsOccultSofa != null) ModifySetDefaultsOccultSofa -= Ru_ModifySetDefaultsOccultSofa;
+            if(_setDefaultsOccultStone != null) ModifySetDefaultsOccultStone -= Ru_ModifySetDefaultsOccultStone;
+            if(_setDefaultsOccultTable != null) ModifySetDefaultsOccultTable -= Ru_ModifySetDefaultsOccultTable;
+            if(_setDefaultsOccultWorkBench != null) ModifySetDefaultsOccultWorkBench -= Ru_ModifySetDefaultsOccultWorkBench;
+            if(_setDefaultsOccultStoneWall != null) ModifySetDefaultsOccultStoneWall -= Ru_ModifySetDefaultsOccultStoneWall;
+            if(_setDefaultsStratusWorkbench != null) ModifySetDefaultsStratusWorkbench -= Ru_ModifySetDefaultsStratusWorkbench;
+            if(_setDefaultsStatigelWorkbench != null) ModifySetDefaultsStatigelWorkbench -= Ru_ModifySetDefaultsStatigelWorkbench;
+            if(_setDefaultsStatigelBath != null) ModifySetDefaultsStatigelBath -= Ru_ModifySetDefaultsStatigelBath;
+            if(_setDefaultsProfanedWorkbench != null) ModifySetDefaultsProfanedWorkbench -= Ru_ModifySetDefaultsProfanedWorkbench;
+            if(_setDefaultsProfanedBath != null) ModifySetDefaultsProfanedBath -= Ru_ModifySetDefaultsProfanedBath;
+            if(_setDefaultsVoidWorkbench != null) ModifySetDefaultsVoidWorkbench -= Ru_ModifySetDefaultsVoidWorkbench;
+            if(_setDefaultsVoidClock != null) ModifySetDefaultsVoidClock -= Ru_ModifySetDefaultsVoidClock;
+            if(_setDefaultsVoidBath != null) ModifySetDefaultsVoidBath -= Ru_ModifySetDefaultsVoidBath;
+            if(_setDefaultsCosmiliteWorkbench != null) ModifySetDefaultsCosmiliteWorkbench -= Ru_ModifySetDefaultsCosmiliteWorkbench;
+            if(_setDefaultsCosmiliteBath != null) ModifySetDefaultsCosmiliteBath -= Ru_ModifySetDefaultsCosmiliteBath;
+            if(_setDefaultsAshenPiano != null) ModifySetDefaultsAshenPiano -= Ru_ModifySetDefaultsAshenPiano;
+            if(_setDefaultsAshenWorkbench != null) ModifySetDefaultsAshenWorkbench -= Ru_ModifySetDefaultsAshenWorkbench;
+            if(_setDefaultsEutrophicCrafting != null) ModifySetDefaultsEutrophicCrafting -= Ru_ModifySetDefaultsEutrophicCrafting;
+            if(_setDefaultsMonolithCrafting != null) ModifySetDefaultsMonolithCrafting -= Ru_ModifySetDefaultsMonolithCrafting;
+            if(_setDefaultsProfanedBasin != null) ModifySetDefaultsProfanedBasin -= Ru_ModifySetDefaultsProfanedBasin;
+            if(_setDefaultsSilvaBasin != null) ModifySetDefaultsSilvaBasin -= Ru_ModifySetDefaultsSilvaBasin;
+            if(_setDefaultsAbyssBath != null) ModifySetDefaultsAbyssBath -= Ru_ModifySetDefaultsAbyssBath;
+            if(_setDefaultsAbyssWorkbench != null) ModifySetDefaultsAbyssWorkbench -= Ru_ModifySetDefaultsAbyssWorkbench;
+            if(_setDefaultsAbyssPiano != null) ModifySetDefaultsAbyssPiano -= Ru_ModifySetDefaultsAbyssPiano;
+            if(_setDefaultsAncientBath != null) ModifySetDefaultsAncientBath -= Ru_ModifySetDefaultsAncientBath;
+            if(_setDefaultsAshenBath != null) ModifySetDefaultsAshenBath -= Ru_ModifySetDefaultsAshenBath;
+            if(_setDefaultsAncientWorkbench != null) ModifySetDefaultsAncientWorkbench -= Ru_ModifySetDefaultsAncientWorkbench;
+            if(_setDefaultsAncientPiano != null) ModifySetDefaultsAncientPiano -= Ru_ModifySetDefaultsAncientPiano;
+            if(_setDefaultsMonolithBathtub != null) ModifySetDefaultsMonolithBathtub -= Ru_ModifySetDefaultsMonolithBathtub;
+            if(_setDefaultsMonolithBed != null) ModifySetDefaultsMonolithBed -= Ru_ModifySetDefaultsMonolithBed;
+            if(_setDefaultsMonolithBench != null) ModifySetDefaultsMonolithBench -= Ru_ModifySetDefaultsMonolithBench;
+            if(_setDefaultsMonolithBookcase != null) ModifySetDefaultsMonolithBookcase -= Ru_ModifySetDefaultsMonolithBookcase;
+            if(_setDefaultsMonolithCandelabra != null) ModifySetDefaultsMonolithCandelabra -= Ru_ModifySetDefaultsMonolithCandelabra;
+            if(_setDefaultsMonolithCandle != null) ModifySetDefaultsMonolithCandle -= Ru_ModifySetDefaultsMonolithCandle;
+            if(_setDefaultsMonolithChair != null) ModifySetDefaultsMonolithChair -= Ru_ModifySetDefaultsMonolithChair;
+            if(_setDefaultsMonolithChandelier != null) ModifySetDefaultsMonolithChandelier -= Ru_ModifySetDefaultsMonolithChandelier;
+            if(_setDefaultsMonolithChest != null) ModifySetDefaultsMonolithChest -= Ru_ModifySetDefaultsMonolithChest;
+            if(_setDefaultsMonolithClock != null) ModifySetDefaultsMonolithClock -= Ru_ModifySetDefaultsMonolithClock;
+            if(_setDefaultsMonolithDoor != null) ModifySetDefaultsMonolithDoor -= Ru_ModifySetDefaultsMonolithDoor;
+            if(_setDefaultsMonolithDresser != null) ModifySetDefaultsMonolithDresser -= Ru_ModifySetDefaultsMonolithDresser;
+            if(_setDefaultsMonolithLamp != null) ModifySetDefaultsMonolithLamp -= Ru_ModifySetDefaultsMonolithLamp;
+            if(_setDefaultsMonolithLantern != null) ModifySetDefaultsMonolithLantern -= Ru_ModifySetDefaultsMonolithLantern;
+            if(_setDefaultsMonolithPiano != null) ModifySetDefaultsMonolithPiano -= Ru_ModifySetDefaultsMonolithPiano;
+            if(_setDefaultsMonolithPlatform != null) ModifySetDefaultsMonolithPlatform -= Ru_ModifySetDefaultsMonolithPlatform;
+            if(_setDefaultsMonolithSink != null) ModifySetDefaultsMonolithSink -= Ru_ModifySetDefaultsMonolithSink;
+            if(_setDefaultsMonolithTable != null) ModifySetDefaultsMonolithTable -= Ru_ModifySetDefaultsMonolithTable;
+            if(_setDefaultsMonolithWorkBench != null) ModifySetDefaultsMonolithWorkBench -= Ru_ModifySetDefaultsMonolithWorkBench;
+            if(_modifyTooltipsNanotech != null) ModifyTooltipsNanotech -= Ru_ModifyTooltipsNanotech;
         }
 
         #region IL Editing
@@ -390,13 +902,13 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private static void Ru_ModifyBossLootProfanedGuardianBoss3(ILContext il) => Translation.ILTranslate(il, "A Profaned Guardian", Translation.EncodeToUtf16("Осквернённый страж"));
         
-        private static void Ru_ModifyBossLootPerforatorHeadMedium(ILContext il) => Translation.ILTranslate(il, "The Medium Perforator", Translation.EncodeToUtf16("Перфоратор средний"));
+        private static void Ru_ModifyBossLootPerforatorHeadMedium(ILContext il) => Translation.ILTranslate(il, "The Medium Perforator", Translation.EncodeToUtf16("Перфоратор"));
         
         private static void Ru_ModifyBossLootBumblefuck(ILContext il) => Translation.ILTranslate(il, "A Dragonfolly", Translation.EncodeToUtf16("Псевдодракон"));
         
-        private static void Ru_ModifyBossLootPerforatorHeadSmall(ILContext il) => Translation.ILTranslate(il, "The Small Perforator", Translation.EncodeToUtf16("Перфоратор младший"));
+        private static void Ru_ModifyBossLootPerforatorHeadSmall(ILContext il) => Translation.ILTranslate(il, "The Small Perforator", Translation.EncodeToUtf16("Перфоратор"));
         
-        private static void Ru_ModifyBossLootPerforatorHeadLarge(ILContext il) => Translation.ILTranslate(il, "The Large Perforator", Translation.EncodeToUtf16("Перфоратор старший"));
+        private static void Ru_ModifyBossLootPerforatorHeadLarge(ILContext il) => Translation.ILTranslate(il, "The Large Perforator", Translation.EncodeToUtf16("Перфоратор"));
         
         private static void Ru_ModifyBossLootProfanedGuardianBoss2(ILContext il) => Translation.ILTranslate(il, "A Profaned Guardian", Translation.EncodeToUtf16("Осквернённый страж"));
         
@@ -713,6 +1225,134 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private static void Ru_ModifyDrawStealth(ILContext il) => Translation.ILTranslate(il, "Stealth: ", Translation.EncodeToUtf16("Скрытность: "));
         
+        private static void Ru_ModifySetDefaultsOccultBathtub(ILContext il) => Translation.ILTranslate(il, "Otherworldly Bathtub", Translation.EncodeToUtf16("Потусторонняя ванна"));
+            
+        private static void Ru_ModifySetDefaultsOccultBed(ILContext il) => Translation.ILTranslate(il, "Otherworldly Bed", Translation.EncodeToUtf16("Потусторонняя кровать"));
+            
+        private static void Ru_ModifySetDefaultsOccultBookcase(ILContext il) => Translation.ILTranslate(il, "Otherworldly Bookcase", Translation.EncodeToUtf16("Потусторонний книжный шкаф"));
+            
+        private static void Ru_ModifySetDefaultsOccultCandelabra(ILContext il) => Translation.ILTranslate(il, "Otherworldly Candelabra", Translation.EncodeToUtf16("Потусторонний канделябр"));
+            
+        private static void Ru_ModifySetDefaultsOccultCandle(ILContext il) => Translation.ILTranslate(il, "Otherworldly Candle", Translation.EncodeToUtf16("Потусторонняя свеча"));
+            
+        private static void Ru_ModifySetDefaultsOccultChair(ILContext il) => Translation.ILTranslate(il, "Otherworldly Chair", Translation.EncodeToUtf16("Потусторонний стул"));
+            
+        private static void Ru_ModifySetDefaultsOccultChandelier(ILContext il) => Translation.ILTranslate(il, "Otherworldly Chandelier", Translation.EncodeToUtf16("Потусторонняя люстра"));
+            
+        private static void Ru_ModifySetDefaultsOccultChest(ILContext il) => Translation.ILTranslate(il, "Otherworldly Chest", Translation.EncodeToUtf16("Потусторонний сундук"));
+            
+        private static void Ru_ModifySetDefaultsOccultClock(ILContext il) => Translation.ILTranslate(il, "Otherworldly Clock", Translation.EncodeToUtf16("Потусторонние часы"));
+            
+        private static void Ru_ModifySetDefaultsOccultDoor(ILContext il) => Translation.ILTranslate(il, "Otherworldly Door", Translation.EncodeToUtf16("Потусторонняя дверь"));
+            
+        private static void Ru_ModifySetDefaultsOccultDresser(ILContext il) => Translation.ILTranslate(il, "Otherworldly Dresser", Translation.EncodeToUtf16("Потусторонний комод"));
+            
+        private static void Ru_ModifySetDefaultsOccultLamp(ILContext il) => Translation.ILTranslate(il, "Otherworldly Lamp", Translation.EncodeToUtf16("Потусторонняя лампа"));
+            
+        private static void Ru_ModifySetDefaultsOccultLantern(ILContext il) => Translation.ILTranslate(il, "Otherworldly Lantern", Translation.EncodeToUtf16("Потусторонний фонарь"));
+            
+        private static void Ru_ModifySetDefaultsOccultPiano(ILContext il) => Translation.ILTranslate(il, "Otherworldly Piano", Translation.EncodeToUtf16("Потустороннее пианино"));
+            
+        private static void Ru_ModifySetDefaultsOccultPlatform(ILContext il) => Translation.ILTranslate(il, "Otherworldly Platform", Translation.EncodeToUtf16("Потусторонняя платформа"));
+            
+        private static void Ru_ModifySetDefaultsOccultSink(ILContext il) => Translation.ILTranslate(il, "Otherworldly Sink", Translation.EncodeToUtf16("Потусторонняя раковина"));
+            
+        private static void Ru_ModifySetDefaultsOccultSofa(ILContext il) => Translation.ILTranslate(il, "Otherworldly Sofa", Translation.EncodeToUtf16("Потусторонний диван"));
+            
+        private static void Ru_ModifySetDefaultsOccultStone(ILContext il) => Translation.ILTranslate(il, "Otherworldly Stone", Translation.EncodeToUtf16("Потусторонний камень"));
+            
+        private static void Ru_ModifySetDefaultsOccultTable(ILContext il) => Translation.ILTranslate(il, "Otherworldly Table", Translation.EncodeToUtf16("Потусторонний стол"));
+            
+        private static void Ru_ModifySetDefaultsOccultWorkBench(ILContext il) => Translation.ILTranslate(il, "Otherworldly Work Bench", Translation.EncodeToUtf16("Потусторонний верстак"));
+            
+        private static void Ru_ModifySetDefaultsOccultStoneWall(ILContext il) => Translation.ILTranslate(il, "Otherworldly Stone Wall", Translation.EncodeToUtf16("Стена из потустороннего камня"));
+            
+        private static void Ru_ModifySetDefaultsStratusWorkbench(ILContext il) => Translation.ILTranslate(il, "Stratus Work Bench", Translation.EncodeToUtf16("Слоистый верстак"));
+            
+        private static void Ru_ModifySetDefaultsStatigelWorkbench(ILContext il) => Translation.ILTranslate(il, "Statigel Work Bench", Translation.EncodeToUtf16("Статиджеловый верстак"));
+            
+        private static void Ru_ModifySetDefaultsStatigelBath(ILContext il) => Translation.ILTranslate(il, "Statigel Bathtub", Translation.EncodeToUtf16("Статиджеловая ванна"));
+            
+        private static void Ru_ModifySetDefaultsProfanedWorkbench(ILContext il) => Translation.ILTranslate(il, "Profaned Work Bench", Translation.EncodeToUtf16("Осквернённый верстак"));
+            
+        private static void Ru_ModifySetDefaultsProfanedBath(ILContext il) => Translation.ILTranslate(il, "Profaned Bathtub", Translation.EncodeToUtf16("Осквернённая ванна"));
+            
+        private static void Ru_ModifySetDefaultsVoidWorkbench(ILContext il) => Translation.ILTranslate(il, "Void Work Bench", Translation.EncodeToUtf16("Пустотный верстак"));
+            
+        private static void Ru_ModifySetDefaultsVoidClock(ILContext il) => Translation.ILTranslate(il, "Void Obelisk", Translation.EncodeToUtf16("Пустотный обелиск"));
+            
+        private static void Ru_ModifySetDefaultsVoidBath(ILContext il) => Translation.ILTranslate(il, "Void Bathtub", Translation.EncodeToUtf16("Пустотная ванна"));
+            
+        private static void Ru_ModifySetDefaultsCosmiliteWorkbench(ILContext il) => Translation.ILTranslate(il, "Cosmilite Work Bench", Translation.EncodeToUtf16("Космилитовый верстак"));
+            
+        private static void Ru_ModifySetDefaultsCosmiliteBath(ILContext il) => Translation.ILTranslate(il, "Cosmilite Bathtub", Translation.EncodeToUtf16("Космилитовая ванна"));
+            
+        private static void Ru_ModifySetDefaultsAshenPiano(ILContext il) => Translation.ILTranslate(il, "Ashen Pipe Organ", Translation.EncodeToUtf16("Пепельный трубный орган"));
+            
+        private static void Ru_ModifySetDefaultsAshenWorkbench(ILContext il) => Translation.ILTranslate(il, "Ashen Work Bench", Translation.EncodeToUtf16("Пепельный верстак"));
+            
+        private static void Ru_ModifySetDefaultsEutrophicCrafting(ILContext il) => Translation.ILTranslate(il, "Eutrophic Shelf", Translation.EncodeToUtf16("Эвтрофная полка"));
+            
+        private static void Ru_ModifySetDefaultsMonolithCrafting(ILContext il) => Translation.ILTranslate(il, "Monolith Amalgam", Translation.EncodeToUtf16("Монолитное слияние"));
+            
+        private static void Ru_ModifySetDefaultsProfanedBasin(ILContext il) => Translation.ILTranslate(il, "Profaned Crucible", Translation.EncodeToUtf16("Осквернённый тигель"));
+            
+        private static void Ru_ModifySetDefaultsSilvaBasin(ILContext il) => Translation.ILTranslate(il, "Effulgent Manipulator", Translation.EncodeToUtf16("Лучезарный манипулятор"));
+            
+        private static void Ru_ModifySetDefaultsAbyssBath(ILContext il) => Translation.ILTranslate(il, "Abyss Bathtub", Translation.EncodeToUtf16("Ванна бездны"));
+            
+        private static void Ru_ModifySetDefaultsAbyssWorkbench(ILContext il) => Translation.ILTranslate(il, "Abyss Work Bench", Translation.EncodeToUtf16("Верстак бездны"));
+            
+        private static void Ru_ModifySetDefaultsAbyssPiano(ILContext il) => Translation.ILTranslate(il, "Abyss Synth", Translation.EncodeToUtf16("Синтезатор бездны"));
+            
+        private static void Ru_ModifySetDefaultsAncientBath(ILContext il) => Translation.ILTranslate(il, "Ancient Bathtub", Translation.EncodeToUtf16("Древняя ванна"));
+            
+        private static void Ru_ModifySetDefaultsAshenBath(ILContext il) => Translation.ILTranslate(il, "Ashen Bathtub", Translation.EncodeToUtf16("Пепельная ванна"));
+            
+        private static void Ru_ModifySetDefaultsAncientWorkbench(ILContext il) => Translation.ILTranslate(il, "Ancient Work Bench", Translation.EncodeToUtf16("Древний верстак"));
+            
+        private static void Ru_ModifySetDefaultsAncientPiano(ILContext il) => Translation.ILTranslate(il, "Ancient Pipe Organ", Translation.EncodeToUtf16("Древний трубный орган"));
+            
+        private static void Ru_ModifySetDefaultsMonolithBathtub(ILContext il) => Translation.ILTranslate(il, "Monolith Bathtub", Translation.EncodeToUtf16("Монолитная ванна"));
+            
+        private static void Ru_ModifySetDefaultsMonolithBed(ILContext il) => Translation.ILTranslate(il, "Monolith Bed", Translation.EncodeToUtf16("Монолитная кровать"));
+            
+        private static void Ru_ModifySetDefaultsMonolithBench(ILContext il) => Translation.ILTranslate(il, "Monolith Bench", Translation.EncodeToUtf16("Монолитная скамья"));
+            
+        private static void Ru_ModifySetDefaultsMonolithBookcase(ILContext il) => Translation.ILTranslate(il, "Monolith Bookcase", Translation.EncodeToUtf16("Монолитный книжный шкаф"));
+            
+        private static void Ru_ModifySetDefaultsMonolithCandelabra(ILContext il) => Translation.ILTranslate(il, "Monolith Candelabra", Translation.EncodeToUtf16("Монолитный канделябр"));
+            
+        private static void Ru_ModifySetDefaultsMonolithCandle(ILContext il) => Translation.ILTranslate(il, "Monolith Candle", Translation.EncodeToUtf16("Монолитная свеча"));
+            
+        private static void Ru_ModifySetDefaultsMonolithChair(ILContext il) => Translation.ILTranslate(il, "Monolith Chair", Translation.EncodeToUtf16("Монолитный стул"));
+            
+        private static void Ru_ModifySetDefaultsMonolithChandelier(ILContext il) => Translation.ILTranslate(il, "Monolith Chandelier", Translation.EncodeToUtf16("Монолитная люстра"));
+            
+        private static void Ru_ModifySetDefaultsMonolithChest(ILContext il) => Translation.ILTranslate(il, "Monolith Chest", Translation.EncodeToUtf16("Монолитный сундук"));
+            
+        private static void Ru_ModifySetDefaultsMonolithClock(ILContext il) => Translation.ILTranslate(il, "Monolith Clock", Translation.EncodeToUtf16("Монолитные часы"));
+            
+        private static void Ru_ModifySetDefaultsMonolithDoor(ILContext il) => Translation.ILTranslate(il, "Monolith Door", Translation.EncodeToUtf16("Монолитная дверь"));
+            
+        private static void Ru_ModifySetDefaultsMonolithDresser(ILContext il) => Translation.ILTranslate(il, "Monolith Dresser", Translation.EncodeToUtf16("Монолитный комод"));
+            
+        private static void Ru_ModifySetDefaultsMonolithLamp(ILContext il) => Translation.ILTranslate(il, "Monolith Lamp", Translation.EncodeToUtf16("Монолитная лампа"));
+            
+        private static void Ru_ModifySetDefaultsMonolithLantern(ILContext il) => Translation.ILTranslate(il, "Monolith Lantern", Translation.EncodeToUtf16("Монолитный фонарь"));
+            
+        private static void Ru_ModifySetDefaultsMonolithPiano(ILContext il) => Translation.ILTranslate(il, "Monolith Piano", Translation.EncodeToUtf16("Монолитное пианино"));
+            
+        private static void Ru_ModifySetDefaultsMonolithPlatform(ILContext il) => Translation.ILTranslate(il, "Monolith Platform", Translation.EncodeToUtf16("Монолитная платформа"));
+            
+        private static void Ru_ModifySetDefaultsMonolithSink(ILContext il) => Translation.ILTranslate(il, "Monolith Sink", Translation.EncodeToUtf16("Монолитная раковина"));
+            
+        private static void Ru_ModifySetDefaultsMonolithTable(ILContext il) => Translation.ILTranslate(il, "Monolith Table", Translation.EncodeToUtf16("Монолитный стол"));
+            
+        private static void Ru_ModifySetDefaultsMonolithWorkBench(ILContext il) => Translation.ILTranslate(il, "Monolith Work Bench", Translation.EncodeToUtf16("Монолитный верстак"));
+        
+        private static void Ru_ModifyTooltipsNanotech(ILContext il) => Translation.ILTranslate(il, "Tooltip8", Translation.EncodeToUtf16("Tooltip7"));
+
         #endregion
 
         #region Calamity IL Manipulator
@@ -952,6 +1592,326 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             add => HookEndpointManager.Modify(_coldDivinityModifyTooltips, value);
             remove => HookEndpointManager.Unmodify(_coldDivinityModifyTooltips, value);
         }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultBathtub
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultBathtub, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultBathtub, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultBed
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultBed, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultBed, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultBookcase
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultBookcase, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultBookcase, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultCandelabra
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultCandelabra, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultCandelabra, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultCandle
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultCandle, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultCandle, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultChair
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultChair, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultChair, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultChandelier
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultChandelier, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultChandelier, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultChest
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultChest, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultChest, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultClock
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultClock, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultClock, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultDoor
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultDoor, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultDoor, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultDresser
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultDresser, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultDresser, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultLamp
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultLamp, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultLamp, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultLantern
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultLantern, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultLantern, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultPiano
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultPiano, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultPiano, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultPlatform
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultPlatform, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultPlatform, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultSink
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultSink, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultSink, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultSofa
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultSofa, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultSofa, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultStone
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultStone, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultStone, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultTable
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultTable, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultTable, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultWorkBench
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultWorkBench, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultWorkBench, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsOccultStoneWall
+        {
+            add => HookEndpointManager.Modify(_setDefaultsOccultStoneWall, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsOccultStoneWall, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsStratusWorkbench
+        {
+            add => HookEndpointManager.Modify(_setDefaultsStratusWorkbench, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsStratusWorkbench, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsStatigelWorkbench
+        {
+            add => HookEndpointManager.Modify(_setDefaultsStatigelWorkbench, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsStatigelWorkbench, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsStatigelBath
+        {
+            add => HookEndpointManager.Modify(_setDefaultsStatigelBath, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsStatigelBath, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsProfanedWorkbench
+        {
+            add => HookEndpointManager.Modify(_setDefaultsProfanedWorkbench, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsProfanedWorkbench, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsProfanedBath
+        {
+            add => HookEndpointManager.Modify(_setDefaultsProfanedBath, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsProfanedBath, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsVoidWorkbench
+        {
+            add => HookEndpointManager.Modify(_setDefaultsVoidWorkbench, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsVoidWorkbench, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsVoidClock
+        {
+            add => HookEndpointManager.Modify(_setDefaultsVoidClock, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsVoidClock, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsVoidBath
+        {
+            add => HookEndpointManager.Modify(_setDefaultsVoidBath, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsVoidBath, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsCosmiliteWorkbench
+        {
+            add => HookEndpointManager.Modify(_setDefaultsCosmiliteWorkbench, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsCosmiliteWorkbench, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsCosmiliteBath
+        {
+            add => HookEndpointManager.Modify(_setDefaultsCosmiliteBath, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsCosmiliteBath, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsAshenPiano
+        {
+            add => HookEndpointManager.Modify(_setDefaultsAshenPiano, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsAshenPiano, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsAshenWorkbench
+        {
+            add => HookEndpointManager.Modify(_setDefaultsAshenWorkbench, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsAshenWorkbench, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsEutrophicCrafting
+        {
+            add => HookEndpointManager.Modify(_setDefaultsEutrophicCrafting, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsEutrophicCrafting, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithCrafting
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithCrafting, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithCrafting, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsProfanedBasin
+        {
+            add => HookEndpointManager.Modify(_setDefaultsProfanedBasin, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsProfanedBasin, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsSilvaBasin
+        {
+            add => HookEndpointManager.Modify(_setDefaultsSilvaBasin, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsSilvaBasin, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsAbyssBath
+        {
+            add => HookEndpointManager.Modify(_setDefaultsAbyssBath, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsAbyssBath, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsAbyssWorkbench
+        {
+            add => HookEndpointManager.Modify(_setDefaultsAbyssWorkbench, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsAbyssWorkbench, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsAbyssPiano
+        {
+            add => HookEndpointManager.Modify(_setDefaultsAbyssPiano, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsAbyssPiano, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsAncientBath
+        {
+            add => HookEndpointManager.Modify(_setDefaultsAncientBath, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsAncientBath, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsAshenBath
+        {
+            add => HookEndpointManager.Modify(_setDefaultsAshenBath, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsAshenBath, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsAncientWorkbench
+        {
+            add => HookEndpointManager.Modify(_setDefaultsAncientWorkbench, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsAncientWorkbench, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsAncientPiano
+        {
+            add => HookEndpointManager.Modify(_setDefaultsAncientPiano, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsAncientPiano, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithBathtub
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithBathtub, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithBathtub, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithBed
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithBed, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithBed, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithBench
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithBench, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithBench, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithBookcase
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithBookcase, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithBookcase, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithCandelabra
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithCandelabra, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithCandelabra, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithCandle
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithCandle, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithCandle, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithChair
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithChair, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithChair, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithChandelier
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithChandelier, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithChandelier, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithChest
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithChest, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithChest, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithClock
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithClock, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithClock, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithDoor
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithDoor, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithDoor, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithDresser
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithDresser, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithDresser, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithLamp
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithLamp, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithLamp, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithLantern
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithLantern, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithLantern, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithPiano
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithPiano, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithPiano, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithPlatform
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithPlatform, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithPlatform, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithSink
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithSink, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithSink, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithTable
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithTable, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithTable, value);
+        }
+        private static event ILContext.Manipulator ModifySetDefaultsMonolithWorkBench
+        {
+            add => HookEndpointManager.Modify(_setDefaultsMonolithWorkBench, value);
+            remove => HookEndpointManager.Unmodify(_setDefaultsMonolithWorkBench, value);
+        }
+        private static event ILContext.Manipulator ModifyTooltipsNanotech
+        {
+            add => HookEndpointManager.Modify(_modifyTooltipsNanotech, value);
+            remove => HookEndpointManager.Unmodify(_modifyTooltipsNanotech, value);
+        }
 
         #endregion
 
@@ -1004,6 +1964,70 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         private static MethodInfo _bossLootProfanedGuardianBoss;
         private static MethodInfo _invasionNamebossRushUi;
         private static MethodInfo _coldDivinityModifyTooltips;
+        private static MethodInfo _setDefaultsOccultBathtub;
+        private static MethodInfo _setDefaultsOccultBed;
+        private static MethodInfo _setDefaultsOccultBookcase;
+        private static MethodInfo _setDefaultsOccultCandelabra;
+        private static MethodInfo _setDefaultsOccultCandle;
+        private static MethodInfo _setDefaultsOccultChair;
+        private static MethodInfo _setDefaultsOccultChandelier;
+        private static MethodInfo _setDefaultsOccultChest;
+        private static MethodInfo _setDefaultsOccultClock;
+        private static MethodInfo _setDefaultsOccultDoor;
+        private static MethodInfo _setDefaultsOccultDresser;
+        private static MethodInfo _setDefaultsOccultLamp;
+        private static MethodInfo _setDefaultsOccultLantern;
+        private static MethodInfo _setDefaultsOccultPiano;
+        private static MethodInfo _setDefaultsOccultPlatform;
+        private static MethodInfo _setDefaultsOccultSink;
+        private static MethodInfo _setDefaultsOccultSofa;
+        private static MethodInfo _setDefaultsOccultStone;
+        private static MethodInfo _setDefaultsOccultTable;
+        private static MethodInfo _setDefaultsOccultWorkBench;
+        private static MethodInfo _setDefaultsOccultStoneWall;
+        private static MethodInfo _setDefaultsStratusWorkbench;
+        private static MethodInfo _setDefaultsStatigelWorkbench;
+        private static MethodInfo _setDefaultsStatigelBath;
+        private static MethodInfo _setDefaultsProfanedWorkbench;
+        private static MethodInfo _setDefaultsProfanedBath;
+        private static MethodInfo _setDefaultsVoidWorkbench;
+        private static MethodInfo _setDefaultsVoidClock;
+        private static MethodInfo _setDefaultsVoidBath;
+        private static MethodInfo _setDefaultsCosmiliteWorkbench;
+        private static MethodInfo _setDefaultsCosmiliteBath;
+        private static MethodInfo _setDefaultsAshenPiano;
+        private static MethodInfo _setDefaultsAshenWorkbench;
+        private static MethodInfo _setDefaultsEutrophicCrafting;
+        private static MethodInfo _setDefaultsMonolithCrafting;
+        private static MethodInfo _setDefaultsProfanedBasin;
+        private static MethodInfo _setDefaultsSilvaBasin;
+        private static MethodInfo _setDefaultsAbyssBath;
+        private static MethodInfo _setDefaultsAbyssWorkbench;
+        private static MethodInfo _setDefaultsAbyssPiano;
+        private static MethodInfo _setDefaultsAncientBath;
+        private static MethodInfo _setDefaultsAshenBath;
+        private static MethodInfo _setDefaultsAncientWorkbench;
+        private static MethodInfo _setDefaultsAncientPiano;
+        private static MethodInfo _setDefaultsMonolithBathtub;
+        private static MethodInfo _setDefaultsMonolithBed;
+        private static MethodInfo _setDefaultsMonolithBench;
+        private static MethodInfo _setDefaultsMonolithBookcase;
+        private static MethodInfo _setDefaultsMonolithCandelabra;
+        private static MethodInfo _setDefaultsMonolithCandle;
+        private static MethodInfo _setDefaultsMonolithChair;
+        private static MethodInfo _setDefaultsMonolithChandelier;
+        private static MethodInfo _setDefaultsMonolithChest;
+        private static MethodInfo _setDefaultsMonolithClock;
+        private static MethodInfo _setDefaultsMonolithDoor;
+        private static MethodInfo _setDefaultsMonolithDresser;
+        private static MethodInfo _setDefaultsMonolithLamp;
+        private static MethodInfo _setDefaultsMonolithLantern;
+        private static MethodInfo _setDefaultsMonolithPiano;
+        private static MethodInfo _setDefaultsMonolithPlatform;
+        private static MethodInfo _setDefaultsMonolithSink;
+        private static MethodInfo _setDefaultsMonolithTable;
+        private static MethodInfo _setDefaultsMonolithWorkBench;
+        private static MethodInfo _modifyTooltipsNanotech;
 
         #endregion
     }

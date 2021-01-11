@@ -1,5 +1,4 @@
 ﻿using System;
-using Terraria.Localization;
 
 namespace CalamityRuTranslate.Utilities
 {

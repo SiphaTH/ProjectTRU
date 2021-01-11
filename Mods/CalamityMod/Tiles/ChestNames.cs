@@ -1,7 +1,6 @@
 ﻿using System;
 using CalamityRuTranslate.Dictionaries;
 using CalamityRuTranslate.Utilities;
-using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.Tiles
@@ -10,27 +9,27 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Tiles
     {
         public static void SetupTranslation()
         {
-            foreach (var translation in RussianDictionaries.CalamityChestName)
+            foreach (var id in CalamityTranslationLists.CalamityChest)
             {
                 try
                 {
-                    TileLoader.GetTile(CoreCalamityTranslation.CalamityMod.TileType(translation.Key)).chest = translation.Value;
+                    TileLoader.GetTile(CoreCalamityTranslation.CalamityMod.TileType(id)).chest = Translation.KeyText($"Calamity.ChestName.{id}");
                 }
                 catch(NullReferenceException)
                 {
-                    throw new TranslationException(translation.Key);
+                    throw new TranslationException(id);
                 }
             }
             
-            foreach (var translation in RussianDictionaries.CalamityDresserName)
+            foreach (var id in CalamityTranslationLists.CalamityDresser)
             {
                 try
                 {
-                    TileLoader.GetTile(CoreCalamityTranslation.CalamityMod.TileType(translation.Key)).dresser = translation.Value;
+                    TileLoader.GetTile(CoreCalamityTranslation.CalamityMod.TileType(id)).dresser = Translation.KeyText($"Calamity.DresserName.{id}");
                 }
                 catch(NullReferenceException)
                 {
-                    throw new TranslationException(translation.Key);
+                    throw new TranslationException(id);
                 }
             }
         }

@@ -10,14 +10,14 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Tiles
 	{
 		public static void SetupTranslation()
 		{
-			foreach (var translation in RussianDictionaries.CalamityTiles)
+			foreach (var translation in CalamityTranslationDictionaries.CalamityTiles)
 			{
 				try
 				{
 					ModTile modTile = TileLoader.GetTile(CoreCalamityTranslation.CalamityMod.TileType(translation.Key));
-					ModTranslation modTranslation = modTile.CreateMapEntryName(translation.Value.Item1);
-					modTranslation.AddTranslation(GameCulture.Russian, translation.Value.Item2);
-					modTile.AddMapEntry(translation.Value.Item3, modTranslation);
+					ModTranslation modTranslation = modTile.CreateMapEntryName(translation.Value.MapEntryName);
+					modTranslation.AddTranslation(GameCulture.Russian, Translation.KeyText($"Calamity.TileName.{translation.Key}"));
+					modTile.AddMapEntry(translation.Value.ColorTile, modTranslation);
 				}
 				catch (NullReferenceException)
 				{

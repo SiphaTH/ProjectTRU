@@ -9,15 +9,16 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
     {
         public static void SetupTranslation()
         {
-            foreach (var translation in RussianDictionaries.CalamityItemName)
+            foreach (var id in CalamityTranslationLists.CalamityItemNames)
             {
                 try
                 {
-                    CoreCalamityTranslation.CalamityMod.GetItem(translation.Key).DisplayName.AddTranslation(GameCulture.Russian, translation.Value);
+                    CoreCalamityTranslation.CalamityMod.GetItem(id).DisplayName.AddTranslation(GameCulture.Russian,
+                        Translation.KeyText($"Calamity.ItemName.{id}"));
                 }
                 catch(NullReferenceException)
                 {
-                    throw new TranslationException(translation.Key);
+                    throw new TranslationException(id);
                 }
             }
         }
