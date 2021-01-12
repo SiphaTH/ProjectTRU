@@ -1,8 +1,7 @@
 displayName = Project tRU
 author = tRU Team
-version = 2.1.0.1
+version = 2.1.0.3
 hideCode = true
 hideResources = true
 weakReferences = CalamityMod
-sortAfter = CalamityMod
 homepage = https://discord.gg/rVZYT3u

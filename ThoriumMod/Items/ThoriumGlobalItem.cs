@@ -13,7 +13,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			
 			if (thorium != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
 			{
-				if (CalamityRuTranslate.TRuConfig.ThoriumTranslation)
+				if (CalamityRuTranslate.Config.ThoriumTranslation)
 				{
 					if (item.type == thorium.ItemType("HealerCard"))
 					{
@@ -325,7 +325,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 								.Replace("It has been cursed by a powerful Jungle creature",
 									"Он был проклят могущественным существом джунглей").Replace(
 									"Unlocks an Aquatic Depths Chest in the dungeon",
-									"Открывает Акватический глубоководный сундук в подземелье");
+									"Открывает Мроской глубоководный сундук в подземелье");
 							tooltipLine17.text = resultB7;
 						}
 					}

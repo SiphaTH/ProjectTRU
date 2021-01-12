@@ -260,6 +260,11 @@ namespace CalamityRuTranslate.ThoriumMod.Tiles
 			furnitureDresserNaga.AddTranslation(GameCulture.Russian, "Нага-комод");
 			tile129.AddMapEntry(new Color(191, 142, 111), furnitureDresserNaga);
 			
+			ModTile tile400 = TileLoader.GetTile(thorium.TileType("FurnitureDresser"));
+			ModTranslation furnitureDresserBloodstained = tile400.CreateMapEntryName(tile400.Name + "_Bloodstained");
+			furnitureDresserBloodstained.AddTranslation(GameCulture.Russian, "Окровавленный комод");
+			tile400.AddMapEntry(new Color(191, 142, 111), furnitureDresserBloodstained);
+			
 			ModTile tile43 = TileLoader.GetTile(thorium.TileType("FurnitureLamp"));
 			ModTranslation furnitureLamp = tile43.CreateMapEntryName();
 			furnitureLamp.AddTranslation(GameCulture.Russian, "Лампа");
@@ -669,6 +674,11 @@ namespace CalamityRuTranslate.ThoriumMod.Tiles
 			ModTranslation nagaChestTrapped = tile137.CreateMapEntryName("NagaChest_Trapped");
 			nagaChestTrapped.AddTranslation(GameCulture.Russian, "Нага-сундук");
 			tile137.AddMapEntry(new Color(174, 129, 92), nagaChestTrapped);
+			
+			ModTile tile401 = TileLoader.GetTile(thorium.TileType("TrappedChests"));
+			ModTranslation bloodstainedChestTrapped = tile401.CreateMapEntryName("BloodstainedChest_Trapped");
+			bloodstainedChestTrapped.AddTranslation(GameCulture.Russian, "Окровавленный сундук");
+			tile401.AddMapEntry(new Color(174, 129, 92), bloodstainedChestTrapped);
 			
 			ModTile tile117 = TileLoader.GetTile(thorium.TileType("Trophies"));
 			ModTranslation trophies = tile117.CreateMapEntryName();

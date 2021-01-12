@@ -31,7 +31,7 @@ namespace CalamityRuTranslate.Dictionaries
                 {"AcidWoodTreeSapling", ("", new Color(113, 90, 71))},
                 {"LumenylCrystals", ("", new Color(0, 150, 200))},
                 {"PlantyMush", ("", new Color(0, 120, 0))},
-                {"RustyChestTile", ("chestRusty", new Color(0, 120, 0))},
+                {"RustyChestTile", ("", new Color(191, 142, 111))},
                 {"SteamGeyser", ("", new Color(150, 100, 50))},
                 {"SulphuricFossil1", ("", new Color(113, 90, 71))},
                 {"SulphuricFossil2", ("", new Color(113, 90, 71))},

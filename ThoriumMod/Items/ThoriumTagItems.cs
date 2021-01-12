@@ -11,16 +11,10 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 		{
 			if (ModLoader.GetMod("ThoriumMod") != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
 			{
-				if (CalamityRuTranslate.TRuConfig.ThoriumTranslation)
+				if (CalamityRuTranslate.Config.ThoriumTranslation)
 				{
 					foreach (TooltipLine tooltipLine in tooltips)
 					{
-						if (tooltipLine.Name == "RealityTag")
-						{
-							string resultA = tooltipLine.text.Replace("-Reality Breaker-", "-Нарушитель Реальности-");
-							tooltipLine.text = resultA;
-						}
-
 						if (tooltipLine.Name == "InstrumentTag")
 						{
 							string resultF = tooltipLine.text.Replace("-String Instrument-", "-Струнное-")
@@ -29,37 +23,6 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 								.Replace("-Percussion Instrument-", "-Ударное-")
 								.Replace("-Electronic Instrument-", "-Электронное-");
 							tooltipLine.text = resultF;
-						}
-
-						if (tooltipLine.Name == "TransformationTag")
-						{
-							string resultA2 = tooltipLine.text.Replace("-Transformation-", "-Превращение-");
-							tooltipLine.text = resultA2;
-						}
-
-						if (tooltipLine.Name == "ThrowerTag")
-						{
-							string resultA3 = tooltipLine.text.Replace("-Thrower Class-", "-Метатель-");
-							tooltipLine.text = resultA3;
-						}
-
-						if (tooltipLine.Name == "HealerTag")
-						{
-							string resultA4 = tooltipLine.text.Replace("-Healer Class-", "-Целитель-");
-							tooltipLine.text = resultA4;
-						}
-
-						if (tooltipLine.Name == "ScytheSoulCharge")
-						{
-							string resultB = tooltipLine.text.Replace("Grants ", "Дарует ")
-								.Replace(" soul essence on direct hit", " эссенции души при прямом попадании");
-							tooltipLine.text = resultB;
-						}
-
-						if (tooltipLine.Name == "UseMana")
-						{
-							string resultB2 = tooltipLine.text.Replace(" & ", " и ").Replace(" life", " ед. жизни");
-							tooltipLine.text = resultB2;
 						}
 
 						if (tooltipLine.Name == "InspirationCost")
@@ -178,18 +141,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 									"Устанавливает вашу активную технику на использование");
 							tooltipLine.text = resultB3;
 						}
-
-						if (tooltipLine.Name == "AccessoryWarning")
-						{
-							string resultG = tooltipLine.text.Replace("-Gem Ring-", "-Драгоценное кольцо-")
-								.Replace("-Hibernation Charm-", "-Чары гибернации-")
-								.Replace("-Sound Device-", "-Звуковое устройство-")
-								.Replace("-Omni Shield-", "-Универсальный щит-")
-								.Replace("-Spear Tip-", "-Наконечник копья-")
-								.Replace("-Soul Storage-", "-Хранилище душ-")
-								.Replace("-Life Guard-", "-Страж здоровья-");
-							tooltipLine.text = resultG;
-						}
+						
 
 						if (tooltipLine.Name == "PrefixEmpowermentDuration")
 						{

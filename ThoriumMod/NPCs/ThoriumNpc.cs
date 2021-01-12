@@ -228,7 +228,7 @@ namespace CalamityRuTranslate.ThoriumMod.NPCs
 			thorium.GetNPC("SlagFury").DisplayName.AddTranslation(GameCulture.Russian, "Шлаковый яростень, изначальное пламя");
 			thorium.GetNPC("EncroachingEnergy").DisplayName.AddTranslation(GameCulture.Russian, "Враждебная энергия");
 			thorium.GetNPC("EnergyBarrier").DisplayName.AddTranslation(GameCulture.Russian, "Энергетический барьер");
-			thorium.GetNPC("EnergyCanduit").DisplayName.AddTranslation(GameCulture.Russian, "Энергетический источник");
+			thorium.GetNPC("EnergyStormConduit").DisplayName.AddTranslation(GameCulture.Russian, "Энергетический источник");
 			thorium.GetNPC("GraniteEnergy").DisplayName.AddTranslation(GameCulture.Russian, "Энергетическая амальгама");
 			thorium.GetNPC("GraniteEnergyStorm").DisplayName.AddTranslation(GameCulture.Russian, "Гранитный энергетический шторм");
 			thorium.GetNPC("GraniteSpawn").DisplayName.AddTranslation(GameCulture.Russian, "Нестабильная энергетическая аномалия");

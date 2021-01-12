@@ -279,7 +279,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("GreenDragonScale").DisplayName.AddTranslation(GameCulture.Russian, "Чешуя зеленого дракона");
 			thorium.GetItem("AquaMask").DisplayName.AddTranslation(GameCulture.Russian, "Маска Прилива");
 			thorium.GetItem("DormantHammer").DisplayName.AddTranslation(GameCulture.Russian, "Дремлющий молот");
-			thorium.GetItem("Mjölnir").DisplayName.AddTranslation(GameCulture.Russian, "Мьёльнир");
+			thorium.GetItem("Mjolnir").DisplayName.AddTranslation(GameCulture.Russian, "Мьёльнир");
 			thorium.GetItem("OmniMask").DisplayName.AddTranslation(GameCulture.Russian, "Маска Смерти");
 			thorium.GetItem("RagBag").DisplayName.AddTranslation(GameCulture.Russian, "Мешок с сокровищами");
 			thorium.GetItem("RagSymbol").DisplayName.AddTranslation(GameCulture.Russian, "Монета вестника Рока");
@@ -1177,7 +1177,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("AquaiteBar").DisplayName.AddTranslation(GameCulture.Russian, "Аквайтовый слиток");
 			thorium.GetItem("AquaiteKnife").DisplayName.AddTranslation(GameCulture.Russian, "Аквайтовый нож");
 			thorium.GetItem("AquaPotion").DisplayName.AddTranslation(GameCulture.Russian, "Водное зелье");
-			thorium.GetItem("AquaticDepthsBiomeChest").DisplayName.AddTranslation(GameCulture.Russian, "Акватический глубоководный сундук");
+			thorium.GetItem("AquaticDepthsBiomeChest").DisplayName.AddTranslation(GameCulture.Russian, "Морской глубоководный сундук");
 			thorium.GetItem("AquaticDepthsBiomeChest_Trapped").DisplayName.AddTranslation(GameCulture.Russian, "Акватический глубоководный сундук-ловушка");
 			thorium.GetItem("AquaticDepthsBiomeKey").DisplayName.AddTranslation(GameCulture.Russian, "Ключ акватических глубин");
 			thorium.GetItem("AquaticDepthsCrate").DisplayName.AddTranslation(GameCulture.Russian, "Ящик акватических глубин");
@@ -1944,7 +1944,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("Sousaphone").DisplayName.AddTranslation(GameCulture.Russian, "Сузафон");
 			thorium.GetItem("ArcaneDust").DisplayName.AddTranslation(GameCulture.Russian, "Чародейная пыль");
 			thorium.GetItem("Charm").DisplayName.AddTranslation(GameCulture.Russian, "Очарование");
-			thorium.GetItem("Confuse").DisplayName.AddTranslation(GameCulture.Russian, "Запутанность");
+			thorium.GetItem("Confuse").DisplayName.AddTranslation(GameCulture.Russian, "Замешательство");
 			thorium.GetItem("Dissolve").DisplayName.AddTranslation(GameCulture.Russian, "Расщепление");
 			thorium.GetItem("Freeze").DisplayName.AddTranslation(GameCulture.Russian, "Заморозка");
 			thorium.GetItem("Ignite").DisplayName.AddTranslation(GameCulture.Russian, "Искра");

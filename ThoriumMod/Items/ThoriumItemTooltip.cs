@@ -246,7 +246,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("GreenDragonScale").Tooltip.AddTranslation(GameCulture.Russian, "'Фрагмент древней драконьей силы'");
 			thorium.GetItem("AquaMask").Tooltip.AddTranslation(GameCulture.Russian, "'Носите лицо самой Зоркости...'");
 			thorium.GetItem("DormantHammer").Tooltip.AddTranslation(GameCulture.Russian, "'Кажется, в середине оголовья есть пустое гнездо...'");
-			thorium.GetItem("Mjölnir").Tooltip.AddTranslation(GameCulture.Russian, "Выпускает быстрые образы легендарного Мьёльнира\nУдар по противнику вызывает дугу цепной молнии\nНажмите правую клавишу мыши, чтобы вызвать вокруг вас бурю ионизированного разрушения");
+			thorium.GetItem("Mjolnir").Tooltip.AddTranslation(GameCulture.Russian, "'Пусть это оружие будет доказательством твоего успеха вопреки всему'\nСтремительно бросает электрические образы легендарного Мьёльнира\nНажмите ПКМ, чтобы создать защитный электрический щит");
 			thorium.GetItem("OmniMask").Tooltip.AddTranslation(GameCulture.Russian, "'Носите лицо самого Хаоса...'");
 			thorium.GetItem("RagBag").Tooltip.AddTranslation(GameCulture.Russian, "Нажмите правую клавишу мыши, чтобы открыть");
 			thorium.GetItem("RagSymbol").Tooltip.AddTranslation(GameCulture.Russian, "Высвобождает Первородных...\nМожно использовать только ночью");
@@ -1639,10 +1639,10 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("TungstenBulwark").Tooltip.AddTranslation(GameCulture.Russian, "Увеличивает защиту на 2\nКогда экипирован, вы защищаете 13 дополнительных единиц здоровья");
 			thorium.GetItem("TurboBoots").Tooltip.AddTranslation(GameCulture.Russian, "Повышает скорость передвижения на 5%\nСильно увеличивает высоту прыжка");
 			thorium.GetItem("VileCore").Tooltip.AddTranslation(GameCulture.Russian, "У оружий на цепи есть шанс выпустить гнусный шипастый шар при ударе по противнику\nГнусный шипастый шар обливает противников ихором");
-			thorium.GetItem("WeightedWinglets").Tooltip.AddTranslation(GameCulture.Russian, "Повышает скорость передвижения на 5%\nПозволяют вам контролировать скорость падения клавишами ВВЕРХ и ВНИЗ");
-			thorium.GetItem("WizardShoes").Tooltip.AddTranslation(GameCulture.Russian, "Повышает скорость передвижения на 5%\nВо время бега повышается скорость восстановления маны");
-			thorium.GetItem("ShadowPants").Tooltip.AddTranslation(GameCulture.Russian, "'Отлично подходят для сокрытия тела от света'");
-			thorium.GetItem("ShadowShirt").Tooltip.AddTranslation(GameCulture.Russian, "'Отлично подходит для сокрытия тела от света'");
+			thorium.GetItem("WeightedWinglets").Tooltip.AddTranslation(GameCulture.Russian, "Увеличивает скорость передвижения на 5%\nПозволяет контролировать скорость падения клавишами ВВЕРХ и ВНИЗ");
+			thorium.GetItem("WizardShoes").Tooltip.AddTranslation(GameCulture.Russian, "Увеличивает скорость передвижения на 5%\nВо время бега увеличивает скорость восстановления маны");
+			thorium.GetItem("ShadowPants").Tooltip.AddTranslation(GameCulture.Russian, "'Отлично подходят для сокрытия вашего тела от света'");
+			thorium.GetItem("ShadowShirt").Tooltip.AddTranslation(GameCulture.Russian, "'Отлично подходит для сокрытия вашего тела от света'");
 		}
 	}
 }

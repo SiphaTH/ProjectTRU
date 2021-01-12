@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using CalamityMod;
 using CalamityRuTranslate.Dictionaries;
 using CalamityRuTranslate.Utilities;
 using Terraria;
@@ -23,7 +22,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip5");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.AsgardianAegis.Tooltip5"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.AsgardianAegis.Tooltip5"),
                             CoreCalamityTranslation.AegisHotKey);
                     }
                 }
@@ -32,7 +31,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip6");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.AstralArcanum.Tooltip6"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.AstralArcanum.Tooltip6"),
                             CoreCalamityTranslation.AstralArcanumUiHotkey);
                     }
                 }
@@ -41,7 +40,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip2");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.CelestialJewel.Tooltip2"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.CelestialJewel.Tooltip2"),
                             CoreCalamityTranslation.AstralArcanumUiHotkey);
                     }
                 }
@@ -50,7 +49,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip5");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.ElysianAegis.Tooltip5"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.ElysianAegis.Tooltip5"),
                             CoreCalamityTranslation.AegisHotKey);
                     }
                 }
@@ -59,7 +58,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip0");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.MomentumCapacitor.Tooltip0"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.MomentumCapacitor.Tooltip0"),
                                 CoreCalamityTranslation.MomentumCapacitatorHotkey);
                     }
                 }
@@ -68,7 +67,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip7");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.RaidersTalismanOrNanotech"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.RaidersTalismanOrNanotech"),
                             tooltipLine.text.Split(' ')[3]);
                     }
                 }
@@ -77,7 +76,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip3");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.RaidersTalismanOrNanotech"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.RaidersTalismanOrNanotech"),
                             tooltipLine.text.Split(' ')[3]);
                     }
                 }
@@ -86,15 +85,15 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = Translation.KeyText("Calamity.ItemTooltip.ProfanedSoulCrystal.Tooltip1");
+                        tooltipLine.text = Translation.KeyText2("Calamity.ItemTooltip.ProfanedSoulCrystal.Tooltip1");
                     }
 
-                    if (Main.player[Main.myPlayer].Calamity().profanedCrystalBuffs)
+                    if (CoreCalamityTranslation.ProfanedCrystalBuffs)
                     {
                         TooltipLine tooltipLine5 = tooltips.FirstOrDefault(x => x.Name == "Tooltip5");
                         if (tooltipLine5 != null)
                         {
-                            tooltipLine5.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.ProfanedSoulCrystal.Tooltip5"),
+                            tooltipLine5.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.ProfanedSoulCrystal.Tooltip5"),
                                     tooltipLine5.text.Split(' ')[9]);
                         }
                     }
@@ -104,7 +103,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.SandCloak.Tooltip1"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.SandCloak.Tooltip1"),
                             CoreCalamityTranslation.SandCloakHotkey);
                     }
                 }
@@ -113,7 +112,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.SpectralVeil.Tooltip1"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.SpectralVeil.Tooltip1"),
                             CoreCalamityTranslation.SpectralVeilHotKey);
                     }
                 }
@@ -122,7 +121,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.NormalityRelocator.Tooltip1"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.NormalityRelocator.Tooltip1"),
                             CoreCalamityTranslation.NormalityRelocatorHotKey);
                     }
                 }
@@ -131,7 +130,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.Eternity.Tooltip1"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.Eternity.Tooltip1"),
                             CoreCalamityTranslation.EternityDiscoHex);
                     }
                 }
@@ -140,7 +139,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip2");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.PlaguedFuelPack.Tooltip2"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.PlaguedFuelPack.Tooltip2"),
                             CoreCalamityTranslation.PlaguePackHotKey);
                     }
                 }
@@ -151,11 +150,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                         switch (tooltipLine.Name)
                         {
                             case "Tooltip1":
-                                tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.Revenge.Tooltip1"),
+                                tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.Revenge.Tooltip1"),
                                     CoreCalamityTranslation.RageHotKey);
                                 break;
                             case "Tooltip3":
-                                tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.Revenge.Tooltip3"), 
+                                tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.Revenge.Tooltip3"), 
                                     CoreCalamityTranslation.AdrenalineHotKey);
                                 break;
                         }
@@ -166,7 +165,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
                     if (tooltipLine != null && CoreCalamityTranslation.DownedFlag)
                     {
-                        tooltipLine.text = Translation.KeyText("Calamity.ItemTooltip.CosmicWorm.Tooltip1");
+                        tooltipLine.text = Translation.KeyText2("Calamity.ItemTooltip.CosmicWorm.Tooltip1");
                     }
                 }
                 else if (item.type == CoreCalamityTranslation.CalamityMod.ItemType("BlunderBooster"))
@@ -174,7 +173,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip2");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.BlunderBooster.Tooltip2"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.BlunderBooster.Tooltip2"),
                             CoreCalamityTranslation.PlaguePackHotKey);
                     }
                 }
@@ -183,7 +182,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.GrandGelatin.Tooltip1"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.GrandGelatin.Tooltip1"),
                             Main.player[Main.myPlayer].autoJump ? 10 : 40);
                     }
                 }
@@ -192,7 +191,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.VitalJelly.Tooltip1"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.VitalJelly.Tooltip1"),
                             Main.player[Main.myPlayer].autoJump ? 6 : 24);
                     }
                 }
@@ -202,8 +201,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     if (tooltipLine != null)
                     {
                         tooltipLine.text = Main.player[Main.myPlayer].autoJump
-                            ? Translation.KeyText("Calamity.ItemTooltip.KnowledgeKingSlime.Tooltip2.AutoJump")
-                            : Translation.KeyText("Calamity.ItemTooltip.KnowledgeKingSlime.Tooltip2");
+                            ? Translation.KeyText2("Calamity.ItemTooltip.KnowledgeKingSlime.Tooltip2.AutoJump")
+                            : Translation.KeyText2("Calamity.ItemTooltip.KnowledgeKingSlime.Tooltip2");
                     }
                 }
                 else if (item.type == CoreCalamityTranslation.CalamityMod.ItemType("AbandonedSlimeStaff"))
@@ -211,7 +210,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip4");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.AbandonedSlimeStaff.Tooltip4"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.AbandonedSlimeStaff.Tooltip4"),
                                 Main.player[Main.myPlayer].autoJump ? 5 : 20);
                     }
                 }
@@ -220,7 +219,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.AeroStone.Tooltip1"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.AeroStone.Tooltip1"),
                             Main.player[Main.myPlayer].autoJump ? 5 : 20);
                     }
                 }
@@ -229,7 +228,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip0");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.SunkenStew.Tooltip0"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.SunkenStew.Tooltip0"),
                             Main.player[Main.myPlayer].pStone ? 37 : 50);
                     }
                 }
@@ -241,7 +240,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                         TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip0");
                         if (tooltipLine != null)
                         {
-                            tooltipLine.text = Translation.KeyText("Calamity.ModifyItemTooltip.SunkenSeaFountain");
+                            tooltipLine.text = Translation.KeyText2("Calamity.ModifyItemTooltip.SunkenSeaFountain");
                         }
                     }
                     else if (item.type == CoreCalamityTranslation.CalamityMod.ItemType("SulphurousFountainItem"))
@@ -249,7 +248,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                         TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip0");
                         if (tooltipLine != null)
                         {
-                            tooltipLine.text = Translation.KeyText("Calamity.ModifyItemTooltip.SulphurousFountainItem");
+                            tooltipLine.text = Translation.KeyText2("Calamity.ModifyItemTooltip.SulphurousFountainItem");
                         }
                     }
                     else if (item.type == CoreCalamityTranslation.CalamityMod.ItemType("AstralFountainItem"))
@@ -257,7 +256,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                         TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip0");
                         if (tooltipLine != null)
                         {
-                            tooltipLine.text = Translation.KeyText("Calamity.ModifyItemTooltip.AstralFountainItem");
+                            tooltipLine.text = Translation.KeyText2("Calamity.ModifyItemTooltip.AstralFountainItem");
                         }
                     }
                 }
@@ -279,9 +278,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                         TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == translation.Value.TooltipLineNumber);
                         if (tooltipLine != null)
                         {
-                            tooltipLine.text = Translation.KeyText(translation.Value.NormalTextKey) +
+                            tooltipLine.text = Translation.KeyText2(translation.Value.NormalTextKey) +
                                                (CoreCalamityTranslation.DeathMode
-                                                   ? Translation.KeyText(translation.Value.DeathModeTextKey)
+                                                   ? Translation.KeyText2(translation.Value.DeathModeTextKey)
                                                    : "");
                         }
                         
@@ -294,7 +293,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "Tooltip0");
                     if (tooltipLine != null)
                     {
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.PurifiedJam.Tooltip0"),
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.PurifiedJam.Tooltip0"),
                             CoreCalamityTranslation.DeathMode ? 5 : 10);
                     }
                 }
@@ -323,7 +322,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     if (tooltipLine.Name == "Tooltip0")
                     {
                         tooltipLine.text = tooltipLine.text.Replace("Current Charge",
-                            Translation.KeyText("Calamity.VanillaItem.CalamityTip.CurrentCharge"));
+                            Translation.KeyText2("Calamity.VanillaItem.CalamityTip.CurrentCharge"));
                     }
                 }
 					
@@ -334,13 +333,13 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                         if (tooltipLine.Name == "PrefixSSDmg")
                         {
                             tooltipLine.text = tooltipLine.text.Replace("stealth strike damage",
-                                Translation.KeyText("Calamity.VanillaItem.PrefixSSDmg"));
+                                Translation.KeyText2("Calamity.VanillaItem.PrefixSSDmg"));
                         }
 						
                         if (tooltipLine.Name == "PrefixStealthGenBoost")
                         {
                             tooltipLine.text = tooltipLine.text.Replace("stealth generation",
-                                Translation.KeyText("Calamity.VanillaItem.PrefixStealthGenBoost"));
+                                Translation.KeyText2("Calamity.VanillaItem.PrefixStealthGenBoost"));
                         }
                     }
                 }
@@ -354,7 +353,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                             TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "PrefixAccCritChance");
                             if(tooltipLine != null)
                                 tooltipLine.text = tooltipLine.text.Replace("critical strike chance",
-                                    Translation.KeyText("Calamity.VanillaItem.PrefixAccCritChance"));
+                                    Translation.KeyText2("Calamity.VanillaItem.PrefixAccCritChance"));
                             break;
                         case 62:
                         case 63:
@@ -364,8 +363,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                             TooltipLine tooltipLine2 = tooltips.FirstOrDefault(x => x.Name == "PrefixAccDefense");
                             if(tooltipLine2 != null)
                                 tooltipLine2.text = tooltipLine2.text
-                                    .Replace("defense", Translation.KeyText("Calamity.VanillaItem.Defense"))
-                                    .Replace("damage reduction", Translation.KeyText("Calamity.VanillaItem.PrefixAccDefense"));
+                                    .Replace("defense", Translation.KeyText2("Calamity.VanillaItem.Defense"))
+                                    .Replace("damage reduction", Translation.KeyText2("Calamity.VanillaItem.PrefixAccDefense"));
                             break;
                         }
                     }
@@ -891,18 +890,18 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                         {
                             if (array[i].Contains("Adrenaline"))
                             {
-                                array[i] = string.Format(Translation.KeyText("Calamity.ItemTooltip.StatMeter.RevStats"),
+                                array[i] = string.Format(Translation.KeyText2("Calamity.ItemTooltip.StatMeter.RevStats"),
                                     array[i].Split(' ')[3], 
                                     array[i].Split(' ')[8], 
                                     array[i].Split(' ')[13]);
                             }
                             else if (array[i].Contains("Displays"))
                             {
-                                array[i] = Translation.KeyText("Calamity.ItemTooltip.StatMeter");
+                                array[i] = Translation.KeyText2("Calamity.ItemTooltip.StatMeter");
                             }
                             else if (array[i].Contains("Defense: "))
                             {
-                                array[i] = string.Format(Translation.KeyText("Calamity.ItemTooltip.StatMeter.DefStats"),
+                                array[i] = string.Format(Translation.KeyText2("Calamity.ItemTooltip.StatMeter.DefStats"),
                                     array[i].Split(' ')[1],
                                     array[i].Split(' ')[4],
                                     array[i].Split(' ')[8].Split('\n')[0],
@@ -913,7 +912,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                             }
                             else if (array[i].Contains("True Melee Damage: "))
                             {
-                                array[i] = string.Format(Translation.KeyText("Calamity.ItemTooltip.StatMeter.MeleeStats"),
+                                array[i] = string.Format(Translation.KeyText2("Calamity.ItemTooltip.StatMeter.MeleeStats"),
                                     array[i].Split(' ')[2],
                                     array[i].Split(' ')[7],
                                     array[i].Split(' ')[12].Split('\n')[0],
@@ -921,14 +920,14 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                             }
                             else if (array[i].Contains("Ranged Damage: "))
                             {
-                                array[i] = string.Format(Translation.KeyText("Calamity.ItemTooltip.StatMeter.RangedStats"),
+                                array[i] = string.Format(Translation.KeyText2("Calamity.ItemTooltip.StatMeter.RangedStats"),
                                     array[i].Split(' ')[2],
                                     array[i].Split(' ')[7].Split('\n')[0],
                                     array[i].Split(' ')[10]);
                             }
                             else if (array[i].Contains("Magic Damage: "))
                             {
-                                array[i] = string.Format(Translation.KeyText("Calamity.ItemTooltip.StatMeter.MagicStats"),
+                                array[i] = string.Format(Translation.KeyText2("Calamity.ItemTooltip.StatMeter.MagicStats"),
                                     array[i].Split(' ')[2],
                                     array[i].Split(' ')[7].Split('\n')[0],
                                     array[i].Split(' ')[9],
@@ -936,13 +935,13 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                             }
                             else if (array[i].Contains("Minion Damage: "))
                             {
-                                array[i] = string.Format(Translation.KeyText("Calamity.ItemTooltip.StatMeter.MinionStats"),
+                                array[i] = string.Format(Translation.KeyText2("Calamity.ItemTooltip.StatMeter.MinionStats"),
                                     array[i].Split(' ')[2],
                                     array[i].Split(' ')[6]);
                             }
                             else if (array[i].Contains("Rogue Damage: "))
                             {
-                                array[i] = string.Format(Translation.KeyText("Calamity.ItemTooltip.StatMeter.RogueStats"),
+                                array[i] = string.Format(Translation.KeyText2("Calamity.ItemTooltip.StatMeter.RogueStats"),
                                     array[i].Split(' ')[2],
                                     array[i].Split(' ')[7].Split('\n')[0],
                                     array[i].Split(' ')[10],
@@ -954,21 +953,21 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                             else if (array[i].Contains("Light Strength"))
                             {
                                 array[i] = CoreCalamityTranslation.DeathMode
-                                    ? string.Format(Translation.KeyText("Calamity.ItemTooltip.StatMeter.CaveLightStrength"),
+                                    ? string.Format(Translation.KeyText2("Calamity.ItemTooltip.StatMeter.CaveLightStrength"),
                                         array[i].Split(' ')[3])
-                                    : string.Format(Translation.KeyText("Calamity.ItemTooltip.StatMeter.AbyssLightStrength"),
+                                    : string.Format(Translation.KeyText2("Calamity.ItemTooltip.StatMeter.AbyssLightStrength"),
                                         array[i].Split(' ')[3]);
                             }
                             else if (array[i].Contains("Other Abyss"))
                             {
                                 array[i] = (bool)CoreCalamityTranslation.CalamityMod.Call("GetInZone", 
                                     Main.player[Main.myPlayer], "abyss")
-                                    ? string.Format(Translation.KeyText("Calamity.ItemTooltip.StatMeter.AbyssStats"),
+                                    ? string.Format(Translation.KeyText2("Calamity.ItemTooltip.StatMeter.AbyssStats"),
                                         array[i].Split(' ')[6],
                                         array[i].Split(' ')[11].Split('\n')[0],
                                         array[i].Split(' ')[18].Split('\n')[0],
                                         array[i].Split(' ')[20])
-                                    : Translation.KeyText("Calamity.ItemTooltip.StatMeter.AbyssZone");
+                                    : Translation.KeyText2("Calamity.ItemTooltip.StatMeter.AbyssZone");
                             }
                         }
                         
@@ -982,7 +981,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     if (tooltipLine != null)
                     {
                         string[] array = Regex.Split(tooltipLine.text, "\n");
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.MeleeLevelMeter"), 
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.MeleeLevelMeter"), 
                             Regex.Split(array[3], ": ")[1],
                             Regex.Split(array[4], ": ")[1],
                             Regex.Split(array[5], ": ")[1],
@@ -997,7 +996,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     if (tooltipLine != null)
                     {
                         string[] array = Regex.Split(tooltipLine.text, "\n");
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.MagicLevelMeter"), 
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.MagicLevelMeter"), 
                             Regex.Split(array[3], ": ")[1],
                             Regex.Split(array[4], ": ")[1],
                             Regex.Split(array[5], ": ")[1],
@@ -1012,7 +1011,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     if (tooltipLine != null)
                     {
                         string[] array = Regex.Split(tooltipLine.text, "\n");
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.RangedLevelMeter"), 
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.RangedLevelMeter"), 
                             Regex.Split(array[3], ": ")[1],
                             Regex.Split(array[4], ": ")[1],
                             Regex.Split(array[5], ": ")[1],
@@ -1027,7 +1026,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     if (tooltipLine != null)
                     {
                         string[] array = Regex.Split(tooltipLine.text, "\n");
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.RogueLevelMeter"), 
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.RogueLevelMeter"), 
                             Regex.Split(array[3], ": ")[1],
                             Regex.Split(array[4], ": ")[1],
                             Regex.Split(array[5], ": ")[1],
@@ -1042,7 +1041,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     if (tooltipLine != null)
                     {
                         string[] array = Regex.Split(tooltipLine.text, "\n");
-                        tooltipLine.text = string.Format(Translation.KeyText("Calamity.ItemTooltip.SummonLevelMeter"), 
+                        tooltipLine.text = string.Format(Translation.KeyText2("Calamity.ItemTooltip.SummonLevelMeter"), 
                             Regex.Split(array[3], ": ")[1], 
                             Regex.Split(array[4], ": ")[1],
                             Regex.Split(array[5], ": ")[1], 

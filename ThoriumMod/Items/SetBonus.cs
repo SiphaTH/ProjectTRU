@@ -12,7 +12,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 
 			if (thorium != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
 			{
-				if (CalamityRuTranslate.TRuConfig.ThoriumTranslation)
+				if (CalamityRuTranslate.Config.ThoriumTranslation)
 				{
 					if (head.type == thorium.ItemType("WhisperingHood") &&
 					    body.type == thorium.ItemType("WhisperingTabard") &&
@@ -565,7 +565,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 		{
 			if (ModLoader.GetMod("ThoriumMod") == null || LanguageManager.Instance.ActiveCulture != GameCulture.Russian)
 			{
-				if (CalamityRuTranslate.TRuConfig.ThoriumTranslation)
+				if (CalamityRuTranslate.Config.ThoriumTranslation)
 				{
 					switch (set)
 					{

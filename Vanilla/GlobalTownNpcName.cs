@@ -19,7 +19,7 @@ namespace CalamityRuTranslate.Vanilla
                     }
                     catch
                     {
-                        Main.NewText($"Ошибка загрузки имени {npc.GivenName}");
+                        //Main.NewText($"Ошибка загрузки имени {npc.GivenName}");
                     }
                 }
             }
