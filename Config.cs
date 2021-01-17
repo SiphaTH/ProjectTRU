@@ -29,6 +29,12 @@ namespace CalamityRuTranslate
         [ReloadRequired]
         public bool ThoriumTranslation { get; set; }
         
+        [Label("$Mods.CalamityRuTranslate.Config.Label.Vanilla")]
+        [Tooltip("$Mods.CalamityRuTranslate.Config.Tooltip.Vanilla")]
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool NewVanillaTranslation { get; set; }
+        
         [Header("$Mods.CalamityRuTranslate.Config.Header.Stealth")]
         
         [Label("$Mods.CalamityRuTranslate.Config.Label.Stealth")]

@@ -30,7 +30,7 @@ namespace CalamityRuTranslate
             VanillaIL.LoadIL();
             GlobalDictionaries.LoadDictionaries();
             LoadFont();
-            LoadAlternateRussian(LanguageManager.Instance, "Terraria.Localization.Content.");
+            LoadAlternateRussian(LanguageManager.Instance, Config.NewVanillaTranslation ? "Terraria.Localization.Content." : "Terraria.LocalizationOld.Content.");
             
             if (Translation.IsRussianLanguage)
             {
