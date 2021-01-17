@@ -2,13 +2,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
-using CalamityRuTranslate.Dictionaries;
+using CalamityRuTranslate.DictionariesAndLists;
 using CalamityRuTranslate.Mods.CalamityMod;
 using CalamityRuTranslate.Mods.ThoriumMod;
-using CalamityRuTranslate.ThoriumMod.Items;
 using CalamityRuTranslate.ThoriumMod.ModSupport;
-using CalamityRuTranslate.ThoriumMod.NPCs;
-using CalamityRuTranslate.ThoriumMod.Tiles;
 using CalamityRuTranslate.Utilities;
 using CalamityRuTranslate.Vanilla;
 using ReLogic.Graphics;
@@ -32,16 +29,6 @@ namespace CalamityRuTranslate
             LoadFont();
             LoadAlternateRussian(LanguageManager.Instance, Config.NewVanillaTranslation ? "Terraria.Localization.Content." : "Terraria.LocalizationOld.Content.");
             
-            if (Translation.IsRussianLanguage)
-            {
-                if (Config.ThoriumTranslation)
-                {
-                    if (ModLoader.GetMod("ThoriumMod") != null)
-                    {
-                        ThoriumSupport.ThoriumAddLocalizations();
-                    }
-                }
-            }
             FieldInfo translationsField = typeof(Mod).GetField("translations", BindingFlags.Instance | BindingFlags.NonPublic);
             translations = (Dictionary<string, ModTranslation>)translationsField.GetValue(this);
         }
@@ -83,17 +70,6 @@ namespace CalamityRuTranslate
         {
             CoreCalamityTranslation.LoadCrossContent();
             CoreThoriumTranslation.LoadCrossContent();
-
-            if (Config.ThoriumTranslation)
-            {
-                if (ModLoader.GetMod("ThoriumMod") != null)
-                {
-                    ThoriumTiles.Setup();
-                    ThoriumNpc.Setup();
-                    ThoriumItemName.Setup();
-                    ThoriumItemTooltip.Setup();
-                }
-            }
         }
         
         private void LoadAlternateRussian(LanguageManager languageManager, string prefix)

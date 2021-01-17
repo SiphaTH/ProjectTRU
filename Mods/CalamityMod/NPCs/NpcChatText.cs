@@ -134,8 +134,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
                 switch (npcPhrase)
                 {
                     case
-                        "Why are you talking to me right now? Either way, I expect you to turn in a perfect performance!"
-                        :
+                        "Why are you talking to me right now? Either way, I expect you to turn in a perfect performance!":
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.1");
                         break;
                     case "I could smell my vodka from MILES away!":
@@ -151,16 +150,14 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.5");
                         break;
                     case
-                        "Everyone else is so rude tonight. If they don't get over it soon, I'll break down their doors and make them!"
-                        :
+                        "Everyone else is so rude tonight. If they don't get over it soon, I'll break down their doors and make them!":
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.6");
                         break;
                     case "Being drunk, I have no moral compass atm.":
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.7");
                         break;
                     case
-                        "Nothard/10, if I fight bosses I wanna feel like screaming 'OH YES DADDY!' while I die repeatedly."
-                        :
+                        "Nothard/10, if I fight bosses I wanna feel like screaming 'OH YES DADDY!' while I die repeatedly.":
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.8");
                         break;
                     case "Like I always say, when you're drunk you can tolerate annoying people a lot more easily...":
@@ -188,8 +185,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.16");
                         break;
                     case
-                        "Well I was planning to light some candles in order to relax...ah well, time to code while drunk."
-                        :
+                        "Well I was planning to light some candles in order to relax...ah well, time to code while drunk.":
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.17");
                         break;
                     case "Yes, everyone knows the mechworm is buggy. Well, not so much anymore, but still.":
@@ -202,8 +198,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.21");
                         break;
                     case
-                        "You'll always find me at parties where booze is involved...well, you'll always find booze where I'm involved."
-                        :
+                        "You'll always find me at parties where booze is involved...well, you'll always find booze where I'm involved.":
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.22");
                         break;
                     case "Shoot down the space invaders! Sexy time will be postponed if we are invaded by UFOs!":
@@ -213,8 +208,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.24");
                         break;
                     case
-                        "The only things I'm attracted to are fish women, women, men who look like women and that's it."
-                        :
+                        "The only things I'm attracted to are fish women, women, men who look like women and that's it.":
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.25");
                         break;
                     case "I'll always be watching.":
@@ -227,13 +221,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.28");
                         break;
                     case
-                        "I saw a ghost down by the old train tracks once, flailing wildly at the lily pads, those were the days."
-                        :
+                        "I saw a ghost down by the old train tracks once, flailing wildly at the lily pads, those were the days.":
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.29");
                         break;
                     case
-                        "I hear it's amazing when the famous purple-stuffed worm out in flap-jaw space, with the tuning fork, does a raw blink on Hara-kiri rock. I need scissors! 61!"
-                        :
+                        "I hear it's amazing when the famous purple-stuffed worm out in flap-jaw space, with the tuning fork, does a raw blink on Hara-kiri rock. I need scissors! 61!":
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.30");
                         break;
                     case "Is that a toy? Looks like something I'd carry around if I was 5 years old.":
@@ -243,8 +235,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.39");
                         break;
                     case
-                        "Oh yeah, now you're drinking the good stuff! Do you like it? I created the recipe by mixing fairy dust, crystals and other magical crap."
-                        :
+                        "Oh yeah, now you're drinking the good stuff! Do you like it? I created the recipe by mixing fairy dust, crystals and other magical crap.":
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.40");
                         break;
                     case "So...you're riding me, huh? That's not weird at all.":
@@ -254,8 +245,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.42");
                         break;
                     case
-                        "If I was a magical horse, I'd be out in space, swirling cocktails, as I watch space worms battle for my enjoyment."
-                        :
+                        "If I was a magical horse, I'd be out in space, swirling cocktails, as I watch space worms battle for my enjoyment.":
                         npcPhrase = Translation.KeyText("Calamity.NpcChatText.FAP.43");
                         break;
                     case "Did anyone ever tell you that large assets cause back pain? Well, they were right.":
@@ -291,26 +281,22 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
                 }
                 if (Stylist.IsExistingNPC())
                 {
-                    if (npcPhrase ==
-                        $"You still can't stop me from trying to move in with {Main.npc[Stylist].GivenName}.")
+                    if (npcPhrase == $"You still can't stop me from trying to move in with {Main.npc[Stylist].GivenName}.")
                     {
                         npcPhrase = string.Format(Translation.KeyText("Calamity.NpcChatText.FAP.34"),
                             Main.npc[Stylist].GivenName);
                     }
-                    else if (npcPhrase ==
-                             $"I love it when {Main.npc[Stylist].GivenName}'s hands get sticky from all that...wax.")
+                    else if (npcPhrase == $"I love it when {Main.npc[Stylist].GivenName}'s hands get sticky from all that...wax.")
                     {
                         npcPhrase = string.Format(Translation.KeyText("Calamity.NpcChatText.FAP.35"),
                             Main.npc[Stylist].GivenName);
                     }
-                    else if (npcPhrase ==
-                             $"{Main.npc[Stylist].GivenName} works wonders for my hair...among other things.")
+                    else if (npcPhrase == $"{Main.npc[Stylist].GivenName} works wonders for my hair...among other things.")
                     {
                         npcPhrase = string.Format(Translation.KeyText("Calamity.NpcChatText.FAP.36"),
                             Main.npc[Stylist].GivenName);
                     }
-                    else if (npcPhrase ==
-                             $"Ever since {Main.npc[Stylist].GivenName} moved in I haven't been drinking as much...it's a weird feeling.")
+                    else if (npcPhrase == $"Ever since {Main.npc[Stylist].GivenName} moved in I haven't been drinking as much...it's a weird feeling.")
                     {
                         npcPhrase = string.Format(Translation.KeyText("Calamity.NpcChatText.FAP.37"),
                             Main.npc[Stylist].GivenName);

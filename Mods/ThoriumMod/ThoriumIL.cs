@@ -67,6 +67,8 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
             Type trackerUi = null;
             Type furnitureBed = null;
             Type thoriumPlayer = null;
+            Type illusionistSpawn = null;
+            Type thoriumItem = null;
 
             Assembly thoriumAssembly = CoreThoriumTranslation.ThoriumMod.GetType().Assembly;
 
@@ -232,6 +234,12 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
                         break;
                     case "ThoriumPlayer":
                         thoriumPlayer = thoriumClass;
+                        break;
+                    case "IllusionistSpawn":
+                        illusionistSpawn = thoriumClass;
+                        break;
+                    case "ThoriumItem":
+                        thoriumItem = thoriumClass;
                         break;
                 }
             }
@@ -442,6 +450,12 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
             _preKill = thoriumPlayer?.GetMethod("PreKill", BindingFlags.Public | BindingFlags.Instance);
             if(_postUpdateEquips != null) ModifyPostUpdateEquips += Ru_ModifyPostUpdateEquips;
             if(_preKill != null) ModifyPreKill += Ru_ModifyPreKill;
+            
+            _setChatButtonsIllusionistSpawn = illusionistSpawn?.GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance);
+            if(_setChatButtonsIllusionistSpawn != null) ModifySetChatButtonsIllusionistSpawn += Ru_ModifySetChatButtonsIllusionistSpawn;
+            
+            _usesManaThoriumItem = thoriumItem?.GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance);
+            if(_usesManaThoriumItem != null) ModifyUsesManaThoriumItem += Ru_ModifyUsesManaThoriumItem;
         }
 
         private static void UnloadIL()
@@ -523,6 +537,8 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
             if(_newRightClick != null) ModifyNewRightClick -= Ru_ModifyNewRightClick;
             if(_postUpdateEquips != null) ModifyPostUpdateEquips += Ru_ModifyPostUpdateEquips;
             if(_preKill != null) ModifyPreKill += Ru_ModifyPreKill;
+            if(_setChatButtonsIllusionistSpawn != null) ModifySetChatButtonsIllusionistSpawn -= Ru_ModifySetChatButtonsIllusionistSpawn;
+            if(_usesManaThoriumItem != null) ModifyUsesManaThoriumItem -= Ru_ModifyUsesManaThoriumItem;
         }
 
         #region IL Editing
@@ -791,6 +807,14 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
             Translation.ILTranslate(il, " has failed Terraria...", Translation.EncodeToUtf16(" подвел Террарию..."));
             Translation.ILTranslate(il, " got liquefied.", Translation.EncodeToUtf16(" разжижился."));
             Translation.ILTranslate(il, " couldn't contain the granite energy.", Translation.EncodeToUtf16(" не смог сдержать энергию гранита."));
+        }
+        
+        private static void Ru_ModifySetChatButtonsIllusionistSpawn(ILContext il) => Translation.ILTranslate(il, "Touch", Translation.EncodeToUtf16("Коснуться"));
+        
+        private static void Ru_ModifyUsesManaThoriumItem(ILContext il)
+        {
+            Translation.ILTranslate(il, " & ", Translation.EncodeToUtf16(" и "));
+            Translation.ILTranslate(il, " life", Translation.EncodeToUtf16(" здоровья"));
         }
 
         #endregion
@@ -1182,6 +1206,16 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
             add => HookEndpointManager.Modify(_preKill, value);
             remove => HookEndpointManager.Unmodify(_preKill, value);
         }
+        private static event ILContext.Manipulator ModifySetChatButtonsIllusionistSpawn
+        {
+            add => HookEndpointManager.Modify(_setChatButtonsIllusionistSpawn, value);
+            remove => HookEndpointManager.Unmodify(_setChatButtonsIllusionistSpawn, value);
+        }
+        private static event ILContext.Manipulator ModifyUsesManaThoriumItem
+        {
+            add => HookEndpointManager.Modify(_usesManaThoriumItem, value);
+            remove => HookEndpointManager.Unmodify(_usesManaThoriumItem, value);
+        }
 
         #endregion
         
@@ -1264,6 +1298,8 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
         private static MethodInfo _newRightClick;
         private static MethodInfo _postUpdateEquips;
         private static MethodInfo _preKill;
+        private static MethodInfo _setChatButtonsIllusionistSpawn;
+        private static MethodInfo _usesManaThoriumItem;
 
         #endregion
     }

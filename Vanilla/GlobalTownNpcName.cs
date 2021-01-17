@@ -1,4 +1,4 @@
-﻿using CalamityRuTranslate.Dictionaries;
+﻿using CalamityRuTranslate.DictionariesAndLists;
 using CalamityRuTranslate.Utilities;
 using Terraria;
 using Terraria.ModLoader;
@@ -11,16 +11,9 @@ namespace CalamityRuTranslate.Vanilla
         {
             if (Translation.IsRussianLanguage)
             {
-                if (Translation.GlobalTownNpcName(npc) && !Translation.CheckRussian(npc.GivenName))
+                if (!npc.GivenName.CheckRussian() && Translation.GlobalTownNpcName(npc))
                 {
-                    try
-                    {
-                        npc.GivenName = Translation.KeyText($"Global.TownNpcName.{GlobalDictionaries.GlobalTownNpcName[npc.GivenName]}");
-                    }
-                    catch
-                    {
-                        //Main.NewText($"Ошибка загрузки имени {npc.GivenName}");
-                    }
+                    npc.GivenName = Translation.KeyText($"Global.TownNpcName.{GlobalDictionaries.GlobalTownNpcName[npc.GivenName]}");
                 }
             }
         }

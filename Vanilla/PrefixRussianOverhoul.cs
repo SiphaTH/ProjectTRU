@@ -161,6 +161,72 @@ namespace CalamityRuTranslate.Vanilla
             ItemID.BejeweledValkyrieWing,
             ItemID.LeinforsWings,
             ItemID.WingsNebula,
+            ItemID.CobaltChainsaw,
+            ItemID.MythrilChainsaw,
+            ItemID.AdamantiteChainsaw,
+            ItemID.FleshGrinder,
+            ItemID.BloodLustCluster,
+            ItemID.PalladiumChainsaw,
+            ItemID.OrichalcumChainsaw,
+            ItemID.TitaniumChainsaw,
+            ItemID.ChlorophyteChainsaw,
+            ItemID.SawtoothShark,
+            ItemID.ButchersChainsaw,
+            ItemID.CactusPickaxe,
+            ItemID.TinPickaxe,
+            ItemID.CopperPickaxe,
+            ItemID.IronPickaxe,
+            ItemID.LeadPickaxe,
+            ItemID.SilverPickaxe,
+            ItemID.BonePickaxe,
+            ItemID.TungstenPickaxe,
+            ItemID.CnadyCanePickaxe,
+            ItemID.GoldPickaxe,
+            ItemID.PlatinumPickaxe,
+            ItemID.NightmarePickaxe,
+            ItemID.DeathbringerPickaxe,
+            ItemID.MoltenPickaxe,
+            ItemID.ReaverShark,
+            ItemID.CobaltPickaxe,
+            ItemID.PalladiumPickaxe,
+            ItemID.MythrilPickaxe,
+            ItemID.OrichalcumPickaxe,
+            ItemID.AdamantitePickaxe,
+            ItemID.TitaniumPickaxe,
+            ItemID.ChlorophytePickaxe,
+            ItemID.SpectrePickaxe,
+            ItemID.ShroomiteDiggingClaw,
+            ItemID.VortexPickaxe,
+            ItemID.NebulaPickaxe,
+            ItemID.SolarFlarePickaxe,
+            ItemID.StardustPickaxe,
+            ItemID.Minishark,
+            ItemID.Blowpipe,
+            ItemID.Sickle,
+            ItemID.Vilethorn,
+            ItemID.SnowballCannon,
+            ItemID.DD2LightningAuraT2Popper,
+            ItemID.ZombieArm,
+            ItemID.BladedGlove,
+            ItemID.TheRottedFork,
+            ItemID.TheMeatball,
+            ItemID.Katana,
+            ItemID.TaxCollectorsStickOfDoom,
+            ItemID.CrimsonYoyo,
+            ItemID.SpaceGun,
+            ItemID.Muramasa,
+            ItemID.ClockworkAssaultRifle,
+            ItemID.Swordfish,
+            ItemID.JungleYoyo,
+            ItemID.DyeTradersScimitar,
+            ItemID.WaspGun,
+            ItemID.Starfury,
+            ItemID.Valor,
+            ItemID.BlueMoon,
+            ItemID.PurpleClubberfish,
+            ItemID.BookStaff,
+            ItemID.Megashark,
+            ItemID.MagicMissile,
             
         };
         
@@ -185,6 +251,12 @@ namespace CalamityRuTranslate.Vanilla
             ItemID.GreedyRing,
             ItemID.PygmyNecklace,
             ItemID.Yoraiz0rWings,
+            ItemID.Spear,
+            ItemID.WoodYoyo,
+            ItemID.Rally,
+            ItemID.AntlionClaw,
+            ItemID.RedRyder,
+            ItemID.Blowgun,
             
         };
         
@@ -254,6 +326,7 @@ namespace CalamityRuTranslate.Vanilla
             ItemID.ArkhalisWings,
             ItemID.WingsSolar,
             ItemID.WingsStardust,
+            ItemID.StylistKilLaKillScissorsIWish,
             
         };
 
@@ -616,7 +689,7 @@ namespace CalamityRuTranslate.Vanilla
                 return prefix[3] + item.Name.ToLower();
             }
 
-            return prefix[0];
+            return prefix[0] + item.Name.ToLower();
         }
     }
 }

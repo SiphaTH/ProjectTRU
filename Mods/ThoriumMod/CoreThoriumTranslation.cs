@@ -1,9 +1,13 @@
 ﻿using System;
-using CalamityRuTranslate.Dictionaries;
+using CalamityRuTranslate.DictionariesAndLists;
 using CalamityRuTranslate.Mods.ThoriumMod.Buffs;
 using CalamityRuTranslate.Mods.ThoriumMod.Items;
 using CalamityRuTranslate.Mods.ThoriumMod.Projectiles;
 using CalamityRuTranslate.Mods.ThoriumMod.Tiles;
+using CalamityRuTranslate.ThoriumMod.Items;
+using CalamityRuTranslate.ThoriumMod.ModSupport;
+using CalamityRuTranslate.ThoriumMod.NPCs;
+using CalamityRuTranslate.ThoriumMod.Tiles;
 using CalamityRuTranslate.Utilities;
 using Terraria.ModLoader;
 
@@ -25,6 +29,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
             if (ThoriumMod != null && CalamityRuTranslate.Config.ThoriumTranslation && Translation.IsRussianLanguage)
             {
                 ThoriumIL.Load();
+                ThoriumTranslationLists.LoadLists();
                 ThoriumRussianDictionaries.LoadDictionaries();
             }
         }
@@ -33,10 +38,15 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
         {
             if (ThoriumMod != null && CalamityRuTranslate.Config.ThoriumTranslation && Translation.IsRussianLanguage)
             {
+                ThoriumItemName.Setup();
+                ThoriumItemTooltip.Setup();
+                ThoriumNpc.Setup();
                 BuffNames.SetupTranslation();
                 ProjectileNames.SetupTranslation();
                 PrefixNames.SetupTranslation();
+                ThoriumTiles.Setup();
                 ChestNames.SetupTranslation();
+                ThoriumSupport.ThoriumAddLocalizations();
             }
         }
 

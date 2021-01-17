@@ -1,7 +1,6 @@
 ﻿using System;
-using CalamityRuTranslate.Dictionaries;
+using CalamityRuTranslate.DictionariesAndLists;
 using CalamityRuTranslate.Utilities;
-using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.ThoriumMod.Tiles

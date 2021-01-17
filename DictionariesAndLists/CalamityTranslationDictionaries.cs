@@ -3,7 +3,7 @@ using CalamityRuTranslate.Mods.CalamityMod;
 using Microsoft.Xna.Framework;
 using Terraria.ID;
 
-namespace CalamityRuTranslate.Dictionaries
+namespace CalamityRuTranslate.DictionariesAndLists
 {
     public static class CalamityTranslationDictionaries
     {

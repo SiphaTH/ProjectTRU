@@ -119,6 +119,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Type monolithTable = null;
             Type monolithWorkBench = null;
             Type nanotech = null;
+            Type polterghast = null;
 
             Assembly calamityAssembly = CoreCalamityTranslation.CalamityMod.GetType().Assembly;
 
@@ -440,6 +441,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                         break;
                     case "Nanotech" when calamityClass.Namespace == "CalamityMod.Items.Accessories":
                         nanotech = calamityClass;
+                        break;
+                    case "Polterghast":
+                        polterghast = calamityClass;
                         break;
                 }
             }
@@ -775,6 +779,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             
             _modifyTooltipsNanotech = nanotech?.GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance);
             if(_modifyTooltipsNanotech != null) ModifyTooltipsNanotech += Ru_ModifyTooltipsNanotech;
+            
+            _polterghastNpcGivenName = polterghast?.GetMethod("AI", BindingFlags.Public | BindingFlags.Instance);
+            if(_polterghastNpcGivenName != null) ModifyPolterghastNpcGivenName += Ru_ModifyPolterghastNpcGivenName;
         }
 
         private static void UnloadIL()
@@ -890,6 +897,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             if(_setDefaultsMonolithTable != null) ModifySetDefaultsMonolithTable -= Ru_ModifySetDefaultsMonolithTable;
             if(_setDefaultsMonolithWorkBench != null) ModifySetDefaultsMonolithWorkBench -= Ru_ModifySetDefaultsMonolithWorkBench;
             if(_modifyTooltipsNanotech != null) ModifyTooltipsNanotech -= Ru_ModifyTooltipsNanotech;
+            if(_polterghastNpcGivenName != null) ModifyPolterghastNpcGivenName -= Ru_ModifyPolterghastNpcGivenName;
         }
 
         #region IL Editing
@@ -1352,6 +1360,12 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         private static void Ru_ModifySetDefaultsMonolithWorkBench(ILContext il) => Translation.ILTranslate(il, "Monolith Work Bench", Translation.EncodeToUtf16("Монолитный верстак"));
         
         private static void Ru_ModifyTooltipsNanotech(ILContext il) => Translation.ILTranslate(il, "Tooltip8", Translation.EncodeToUtf16("Tooltip7"));
+        
+        private static void Ru_ModifyPolterghastNpcGivenName(ILContext il)
+        {
+            Translation.ILTranslate(il, "Necroghast", Translation.EncodeToUtf16("Некрогаст"));
+            Translation.ILTranslate(il, "Necroplasm", Translation.EncodeToUtf16("Некроплазм"));
+        }
 
         #endregion
 
@@ -1912,6 +1926,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             add => HookEndpointManager.Modify(_modifyTooltipsNanotech, value);
             remove => HookEndpointManager.Unmodify(_modifyTooltipsNanotech, value);
         }
+        private static event ILContext.Manipulator ModifyPolterghastNpcGivenName
+        {
+            add => HookEndpointManager.Modify(_polterghastNpcGivenName, value);
+            remove => HookEndpointManager.Unmodify(_polterghastNpcGivenName, value);
+        }
 
         #endregion
 
@@ -2028,6 +2047,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         private static MethodInfo _setDefaultsMonolithTable;
         private static MethodInfo _setDefaultsMonolithWorkBench;
         private static MethodInfo _modifyTooltipsNanotech;
+        private static MethodInfo _polterghastNpcGivenName;
 
         #endregion
     }

@@ -1,7 +1,7 @@
 ﻿using System;
 using CalamityMod;
 using CalamityMod.World;
-using CalamityRuTranslate.Dictionaries;
+using CalamityRuTranslate.DictionariesAndLists;
 using CalamityRuTranslate.Mods.CalamityMod.Buffs;
 using CalamityRuTranslate.Mods.CalamityMod.Items;
 using CalamityRuTranslate.Mods.CalamityMod.NPCs;

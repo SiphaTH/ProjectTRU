@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CalamityRuTranslate.Dictionaries
+namespace CalamityRuTranslate.DictionariesAndLists
 {
     public static class CalamityTranslationLists
     {

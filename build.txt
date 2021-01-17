@@ -1,7 +1,7 @@
 displayName = Project tRU
 author = tRU Team
-version = 2.1.0.3
+version = 2.1.0.4
 hideCode = true
 hideResources = true
-weakReferences = CalamityMod
+weakReferences = CalamityMod, ThoriumMod
 homepage = https://discord.gg/rVZYT3u

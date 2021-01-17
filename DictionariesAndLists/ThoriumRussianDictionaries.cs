@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CalamityRuTranslate.Dictionaries
+namespace CalamityRuTranslate.DictionariesAndLists
 {
     public static class ThoriumRussianDictionaries
     {
@@ -9,8 +9,7 @@ namespace CalamityRuTranslate.Dictionaries
         public static Dictionary<string, string> ThoriumProjectiles;
         public static Dictionary<string, string> ThoriumChestName;
         public static Dictionary<string, string> ThoriumDresserName;
-        public static Dictionary<string, string> ThoriumTownNpcName;
-        
+
         public static void LoadDictionaries()
         {
             ThoriumBuffs = new Dictionary<string, (string, string)>
@@ -482,90 +481,6 @@ namespace CalamityRuTranslate.Dictionaries
             {
                 {"FurnitureDresser", "Комод"}
             };
-
-            ThoriumTownNpcName = new Dictionary<string, string>
-            {
-                {"Gregory", "Грегори"},
-                {"Paul", "Пол"},
-                {"Kilbas", "Килбас"},
-                {"Hagan", "Хейген"},
-                {"Hedrick", "Хедрик"},
-                {"Vicktor", "Виктор"},
-                {"Wayland", "Вэйленд"},
-                {"George", "Джордж"},
-                {"Alfred", "Альфред"},
-                {"Desmond", "Дезмонд"},
-                {"Barney", "Барни"},
-                {"Fred", "Фред"},
-                {"Louis", "Льюис"},
-                {"Jonathan", "Джонатан"},
-                {"Griswald", "Гризвальд"},
-                {"Calvin", "Кельвин"},
-                {"Leech", "Пиявка"},
-                {"Bile", "Бил"},
-                {"Bloat", "Блот"},
-                {"Fester", "Фестер"},
-                {"Richter", "Рихтер"},
-                {"Salem", "Салем"},
-                {"Grimm", "Гримм"},
-                {"Mort", "Морт"},
-                {"Emeril", "Эмерил"},
-                {"Guy", "Гай"},
-                {"Gordan", "Гордан"},
-                {"Alton", "Алтон"},
-                {"Éric", "Эрик"},
-                {"Jamie", "Джейми"},
-                {"Jacques", "Жак"},
-                {"Flay", "Флай"},
-                {"Karoo", "Кару"},
-                {"Waiouru", "Вайору"},
-                {"Rangi", "Ранги"},
-                {"Aalim", "Аалим"},
-                {"Maaz", "Мааз"},
-                {"Munzir", "Мунзир"},
-                {"Laiq", "Лайк"},
-                {"Namib", "Намиб"},
-                {"Calder", "Калдер"},
-                {"Sam", "Сэм"},
-                {"Elijah", "Илия"},
-                {"Zane", "Зейн"},
-                {"Stephen", "Стивен"},
-                {"Adin", "Адин"},
-                {"Nolen", "Нолен"},
-                {"Maxwell", "Максвелл"},
-                {"Folium", "Фолиум"},
-                {"Lignum", "Лигнум"},
-                {"Viridis", "Виридис"},
-                {"Lilly", "Лили"},
-                {"Rose", "Роуз"},
-                {"Yarrow", "Йарроу"},
-                {"Camellia", "Камелия"},
-                {"Ligna", "Лигна"},
-                {"Balthasar", "Бальтазар"},
-                {"Pax", "Пакс"},
-                {"Bodhi", "Бодхи"},
-                {"Nix", "Никс"},
-                {"Algalon", "Алгалон"},
-                {"Zen", "Зен"},
-                {"Dhruv", "Друв"},
-                {"Titus", "Титус"},
-                {"Atlas", "Атлант"},
-                {"Daston", "Дастон"},
-                {"Guts", "Гатс"},
-                {"Dalton", "Далтон"},
-                {"Cyris", "Цирис"},
-                {"Aaron", "Аарон"},
-                {"Kwan", "Кван"},
-                {"Garm", "Гарм"},
-                {"Flatoom", "Флатум"},
-                {"Helnos", "Хелнос"},
-                {"Targup", "Таргуп"},
-                {"Glib'tok", "Глиб'ток"},
-                {"Fuzgrom", "Фузгром"},
-                {"Greth'zek", "Грет'зек"},
-                {"Sera'noth", "Сера'нот"},
-                {"Hro'grak", "Хро'грак"}
-            };
         }
 
         public static void UnloadDictionaries()
@@ -575,7 +490,6 @@ namespace CalamityRuTranslate.Dictionaries
             ThoriumProjectiles = null;
             ThoriumChestName = null;
             ThoriumDresserName = null;
-            ThoriumTownNpcName = null;
         }
     }
 }

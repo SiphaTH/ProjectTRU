@@ -10,7 +10,7 @@ namespace CalamityRuTranslate.Vanilla
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (Translation.IsRussianLanguage)
+            if (Translation.IsRussianLanguage && CalamityRuTranslate.Config.NewVanillaTranslation && ModLoader.GetMod("TerrariaOverhaul") == null)
             {
                 foreach (TooltipLine tooltip in tooltips)
                 {

@@ -1,5 +1,5 @@
-﻿using Terraria;
-using Terraria.DataStructures;
+﻿using CalamityRuTranslate.Mods.ThoriumMod;
+using Terraria;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.ThoriumMod.ModSupport
@@ -8,119 +8,119 @@ namespace CalamityRuTranslate.ThoriumMod.ModSupport
 	{
 		private static void Load()
 		{
-			ThoriumSupport._translations = new string[][]
+			_translations = new[]
 			{
-				new string[]
+				new[]
 				{
 					"LodestoneWarning1",
 					"Ваш мир был благословлен Магнетитом!"
 				},
-				new string[]
+				new[]
 				{
 					"LodestoneWarning2",
 					"Ваш мир был благословлен изобилием Магнетита!"
 				},
-				new string[]
+				new[]
 				{
 					"ValadiumWarning1",
 					"Ваш мир был благословлен Валадиумом!"
 				},
-				new string[]
+				new[]
 				{
 					"ValadiumWarning2",
 					"Ваш мир был благословлен изобилием Валадиума!"
 				},
-				new string[]
+				new[]
 				{
 					"GraniteMarbleWarning",
 					"Мраморные и гранитные зоны вашего мира дрожат..."
 				},
-				new string[]
+				new[]
 				{
 					"IllumiteWarning",
 					"Люминесцентная энергия Плантеры проносится сквозь землю..."
 				},
-				new string[]
+				new[]
 				{
 					"AbyssionWarning",
 					"В акватических глубинах что-то шевелится..."
 				},
-				new string[]
+				new[]
 				{
 					"JellyWarning",
 					"Водная глубина пузырится под поверхностью океанов!"
 				},
-				new string[]
+				new[]
 				{
 					"ExpertAbyssion1",
 					"От панциря Абиссиона слышен сильный хруст!"
 				},
-				new string[]
+				new[]
 				{
 					"ExpertAbyssion2",
 					"Абиссион вырвался из своей древней тюрьмы!"
 				},
-				new string[]
+				new[]
 				{
 					"AbyssionDefeat",
 					"Ядовитая мгла глубин была развеяна..."
 				},
-				new string[]
+				new[]
 				{
 					"SpiderDefeat",
 					"Арктический страйдер был побежден!"
 				},
-				new string[]
+				new[]
 				{
 					"SpiderWarning",
 					"Паучьи гнезда шуршат от гнева..."
 				},
-				new string[]
+				new[]
 				{
 					"SpiderAppear",
 					"Восьминогая угроза бродит по ледяным просторам..."
 				},
-				new string[]
+				new[]
 				{
 					"PatchDefeat",
 					"Ужасающий Лоскутик был изгнан из этого мира!"
 				},
-				new string[]
+				new[]
 				{
 					"BloomDefeat",
 					"Неуловимый Трупоцвет увядает..."
 				},
-				new string[]
+				new[]
 				{
 					"IllusionistDefeat",
 					"Загадочный иллюзионист разлетается на куски..."
 				},
-				new string[]
+				new[]
 				{
 					"BuriedAppear",
 					"Освободился погребенный Чемпион!"
 				},
-				new string[]
+				new[]
 				{
 					"GraniteAppear",
 					"Был выпущен Энергетический гранитный шторм!"
 				},
-				new string[]
+				new[]
 				{
 					"DiverFree",
 					"Из этой водной гадости кто-то выпал!"
 				},
-				new string[]
+				new[]
 				{
 					"RagStart",
 					"Террария дрожит..."
 				},
-				new string[]
+				new[]
 				{
 					"RagVictory",
 					"Реальность возвращается к своему спокойному состоянию..."
 				},
-				new string[]
+				new[]
 				{
 					"outdatedBossChecklist",
 					"Ваш мод boss checklist устарел. Вы должны обновить его!"
@@ -138,7 +138,7 @@ namespace CalamityRuTranslate.ThoriumMod.ModSupport
 			Load();
 			foreach (string[] array in _translations)
 			{
-				ModTranslation modTranslation = ModLoader.GetMod("ThoriumMod").CreateTranslation(array[0]);
+				ModTranslation modTranslation = CoreThoriumTranslation.ThoriumMod.CreateTranslation(array[0]);
 				modTranslation.SetDefault(array[1]);
 				ModLoader.GetMod("ThoriumMod").AddTranslation(modTranslation);
 			}

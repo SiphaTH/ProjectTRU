@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CalamityRuTranslate.Dictionaries
+namespace CalamityRuTranslate.DictionariesAndLists
 {
     public static class GlobalDictionaries
     {
@@ -501,8 +501,6 @@ namespace CalamityRuTranslate.Dictionaries
                 {"Marisa", "Marisa"},
                 {"Merasmus", "Merasmus"},
                 {"Mie", "Mie"},
-                {"Necroghast", "Necroghast"},
-                {"Necroplasm", "Necroplasm"},
                 {"Neoplasmatic", "Neoplasmatic"},
                 {"Penelope", "Penelope"},
                 {"Permafrost", "Permafrost"},

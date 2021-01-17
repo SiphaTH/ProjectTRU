@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Reflection;
 using CalamityRuTranslate.Utilities;
 using Terraria;
 using Terraria.Localization;
@@ -14,14 +15,14 @@ namespace CalamityRuTranslate.Mods.ThoriumMod.Items
             {
                 foreach (TooltipLine tooltipLine in tooltips)
                 {
-                    if (tooltipLine.Name == "CookText")
+                    switch (tooltipLine.Name)
                     {
-                        tooltipLine.text = tooltipLine.text.Replace("The cook might be interested in this", Translation.KeyText2("Thorium.VanillaItems.CookText"));
-                    }
-                    
-                    if (tooltipLine.Name == "BugWarning")
-                    {
-                        tooltipLine.text = tooltipLine.text.Replace("-WARNING-\nThis item is highly unstable in tModLoader\nCommon issues include: Item deletion, unpredictable item swapping, tile breaking\nUse at your own risk", Translation.KeyText2("Thorium.VanillaItems.BugWarning"));
+                        case "CookText":
+                            tooltipLine.text = tooltipLine.text.Replace("The cook might be interested in this", Translation.KeyText2("Thorium.VanillaItems.CookText"));
+                            break;
+                        case "BugWarning":
+                            tooltipLine.text = tooltipLine.text.Replace("-WARNING-\nThis item is highly unstable in tModLoader\nCommon issues include: Item deletion, unpredictable item swapping, tile breaking\nUse at your own risk", Translation.KeyText2("Thorium.VanillaItems.BugWarning"));
+                            break;
                     }
                 }
             }
@@ -77,14 +78,9 @@ namespace CalamityRuTranslate.Mods.ThoriumMod.Items
                     switch (tooltipLine.Name)
                     {
                         case "ScytheSoulCharge":
-                            tooltipLine.text = string.Format(Translation.KeyText2("Thorium.OtherTooltips.ScytheSoulCharge"), tooltipLine.text.Split(' ')[1]);
+                            tooltipLine.text = string.Format(Translation.KeyText2("Thorium.OtherTooltips.ScytheSoulCharge"),
+                                tooltipLine.text.Split(' ')[1]);
                             break;
-                        case "UseMana":
-                        {
-                            string[] splitArray = tooltipLine.text.Split(' ');
-                            tooltipLine.text = splitArray.Length == 3 ? string.Format(Language.GetTextValue("CommonItemTooltip.UsesMana"), splitArray[1]) : string.Format(Translation.KeyText2("Thorium.OtherTooltips.UseManaAndHealth"), splitArray[1], splitArray[4]);
-                            break;
-                        }
                     }
                 }
             }
