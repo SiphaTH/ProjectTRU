@@ -17,7 +17,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                 {
                     if (tooltip.Name == "Damage")
                     {
-                        tooltip.text = tooltip.text.Replace("rogue метании", "разбойный урон").Replace("true melee damage", "истинный урон ближнего боя");
+                        tooltip.text = tooltip.text.Replace("rogue метании", "разбойный урон")
+                            .Replace("true melee damage", "истинный урон ближнего боя")
+                            .Replace("Урон", "урон");
                         
                         if (tooltip.text.Contains("разбойный урон"))
                         {
