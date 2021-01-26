@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using CalamityRuTranslate.Utilities;
 using Microsoft.Xna.Framework;
 using Terraria;
@@ -13,19 +14,22 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
             if (CoreCalamityTranslation.CalamityMod != null && Translation.IsRussianLanguage && 
                 CalamityRuTranslate.Config.CalamityTranslation)
             {
-                foreach (TooltipLine tooltip in tooltips)
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Damage");
+                if (tooltip == null) 
+                    return;
+                if (tooltip.text.Contains("rogue метании"))
                 {
-                    if (tooltip.Name == "Damage")
-                    {
-                        tooltip.text = tooltip.text.Replace("rogue метании", "разбойный урон")
-                            .Replace("true melee damage", "истинный урон ближнего боя")
-                            .Replace("Урон", "урон");
-                        
-                        if (tooltip.text.Contains("разбойный урон"))
-                        {
-                            tooltip.overrideColor = new Color(255, 184, 108);
-                        }
-                    }
+                    tooltip.text = tooltip.text.Replace("rogue метании", "ед. разбойного урона");
+                    tooltip.overrideColor = new Color(255, 184, 108);
+                }
+                else if (!item.summon && tooltip.text.Contains("Урон"))
+                {
+                    tooltip.text = tooltip.text.Replace("Урон", "ед. бесклассового урона");
+                    tooltip.overrideColor = new Color(133, 133, 133);
+                }
+                else if (tooltip.text.Contains("true melee damage"))
+                {
+                    tooltip.text = tooltip.text.Replace("true melee damage", "ед. истинного урона ближнего боя");
                 }
             }
         }
