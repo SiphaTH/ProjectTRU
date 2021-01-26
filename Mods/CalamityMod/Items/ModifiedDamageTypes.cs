@@ -17,14 +17,13 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Damage");
                 if (tooltip == null) 
                     return;
-                if (tooltip.text.Contains("rogue метании"))
+                if (tooltip.text.Contains("rogue урона"))
                 {
-                    tooltip.text = tooltip.text.Replace("rogue метании", "ед. разбойного урона");
+                    tooltip.text = tooltip.text.Replace("rogue урона", "ед. разбойного урона");
                     tooltip.overrideColor = new Color(255, 184, 108);
                 }
-                else if (!item.summon && tooltip.text.Contains("Урон"))
+                else if (!item.summon && tooltip.text.Contains("ед. бесклассового урона"))
                 {
-                    tooltip.text = tooltip.text.Replace("Урон", "ед. бесклассового урона");
                     tooltip.overrideColor = new Color(133, 133, 133);
                 }
                 else if (tooltip.text.Contains("true melee damage"))
