@@ -23,7 +23,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             
             if (CalamityMod != null && CalamityMod.Version != new Version(1,4,5,7))
             {
-                throw new ModVersionException("Calamity", "1.4.5.7");
+                throw new ModVersionException("Calamity", "1.4.5.7", CalamityMod.Version);
             }
 
             if (CalamityMod != null && CalamityRuTranslate.Config.CalamityTranslation && Translation.IsRussianLanguage)

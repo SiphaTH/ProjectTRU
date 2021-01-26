@@ -11,7 +11,7 @@ namespace CalamityRuTranslate.Utilities
 
     public class ModVersionException : Exception
     {
-        public ModVersionException(string mod, string version) : base($"Было обнаружено, что вы используете версию мода {mod}, которую не поддерживает русификатор. Русификатор работает только с версией {version}. Если ваша версия {mod} ниже версии {version} - вам необходимо обновить {mod} до последней версии. Если ваша версия {mod} выше версии {version} - вам необходимо ждать обновление русификатора с поддержкой нового обновления {mod}. Она появится в ближайшее время.\n")
+        public ModVersionException(string modName, string modVersion, Version currectModVersion) : base($"Было обнаружено, что вы используете {currectModVersion} версию мода {modName}, которую не поддерживает русификатор. Русификатор работает только с версией {modVersion}. Если ваша версия {modName} ниже версии {modVersion} - вам необходимо обновить {modName} до последней версии. Если ваша версия {modName} выше версии {modVersion} - вам необходимо ждать обновление русификатора с поддержкой нового обновления {modName}. Оно появится в ближайшее время.\n")
         {
         }
     }

@@ -23,7 +23,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 
             if (ThoriumMod != null && ThoriumMod.Version != new Version(1, 6, 3, 13))
             {
-                throw new ModVersionException("Thorium", "1.6.3.13");
+                throw new ModVersionException("Thorium", "1.6.3.13", ThoriumMod.Version);
             }
 
             if (ThoriumMod != null && CalamityRuTranslate.Config.ThoriumTranslation && Translation.IsRussianLanguage)
