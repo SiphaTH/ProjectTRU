@@ -116,7 +116,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                     {
                         string[] array = Regex.Split(tooltipLine.text, "\n");
                         tooltipLine.text = tooltipLine.text.Replace(array[1], 
-                            Translation.KeyText2("Calamity.VanillaSetBonus.Forbidden"));
+                            Translation.KeyText2("Calamity.SetBonus.Forbidden"));
                     }
                 }
             }
