@@ -7,7 +7,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod.NPCs
     {
         public override void AnglerChat(int type, ref string chat, ref string catchLocation)
         {
-            if (CoreThoriumTranslation.ThoriumMod != null && CalamityRuTranslate.Config.ThoriumTranslation)
+            if (CoreThoriumTranslation.ThoriumMod != null && ProjectTRuConfig.Instance.ThoriumTranslation)
             {
                 if (type == CoreThoriumTranslation.ThoriumMod.ItemType("Guppy"))
                 {

@@ -11,7 +11,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod.Items
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (CoreThoriumTranslation.ThoriumMod != null && Translation.IsRussianLanguage && CalamityRuTranslate.Config.ThoriumTranslation)
+            if (CoreThoriumTranslation.ThoriumMod != null && Translation.IsRussianLanguage && ProjectTRuConfig.Instance.ThoriumTranslation)
             {
                 foreach (TooltipLine tooltipLine in tooltips)
                 {
@@ -33,7 +33,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod.Items
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (CoreThoriumTranslation.ThoriumMod != null && Translation.IsRussianLanguage && CalamityRuTranslate.Config.ThoriumTranslation)
+            if (CoreThoriumTranslation.ThoriumMod != null && Translation.IsRussianLanguage && ProjectTRuConfig.Instance.ThoriumTranslation)
             {
                 foreach (TooltipLine tooltipLine in tooltips)
                 {
@@ -71,7 +71,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod.Items
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (CoreThoriumTranslation.ThoriumMod != null && Translation.IsRussianLanguage && CalamityRuTranslate.Config.ThoriumTranslation)
+            if (CoreThoriumTranslation.ThoriumMod != null && Translation.IsRussianLanguage && ProjectTRuConfig.Instance.ThoriumTranslation)
             {
                 foreach (TooltipLine tooltipLine in tooltips)
                 {

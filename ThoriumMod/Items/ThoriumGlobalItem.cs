@@ -13,7 +13,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			
 			if (thorium != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
 			{
-				if (CalamityRuTranslate.Config.ThoriumTranslation)
+				if (ProjectTRuConfig.Instance.ThoriumTranslation)
 				{
 					if (item.type == thorium.ItemType("HealerCard"))
 					{

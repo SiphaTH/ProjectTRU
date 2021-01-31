@@ -11,7 +11,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 		{
 			if (ModLoader.GetMod("ThoriumMod") != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian)
 			{
-				if (CalamityRuTranslate.Config.ThoriumTranslation)
+				if (ProjectTRuConfig.Instance.ThoriumTranslation)
 				{
 					foreach (TooltipLine tooltipLine in tooltips)
 					{

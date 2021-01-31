@@ -5,7 +5,7 @@ using Terraria.Localization;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.Items
 {
-    internal static class PrefixNames
+    internal static class PrefixesTranslation
 	{
 		public static void SetupTranslation()
 		{
@@ -13,7 +13,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
 			{
 				try
 				{
-					CoreCalamityTranslation.CalamityMod.GetPrefix(id).DisplayName.AddTranslation(GameCulture.Russian, Translation.KeyText($"Calamity.PrefixName.{id}"));
+					CoreCalamityTranslation.Calamity.GetPrefix(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"Calamity.PrefixName.{id}"));
 				}
 				catch(NullReferenceException)
 				{

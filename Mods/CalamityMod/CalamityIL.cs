@@ -121,7 +121,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Type nanotech = null;
             Type polterghast = null;
 
-            Assembly calamityAssembly = CoreCalamityTranslation.CalamityMod.GetType().Assembly;
+            Assembly calamityAssembly = CoreCalamityTranslation.Calamity.GetType().Assembly;
 
             foreach (Type calamityClass in calamityAssembly.GetTypes())
             {

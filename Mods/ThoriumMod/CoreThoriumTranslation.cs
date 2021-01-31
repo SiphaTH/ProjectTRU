@@ -26,7 +26,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
                 throw new ModVersionException("Thorium", "1.6.3.13", ThoriumMod.Version);
             }
 
-            if (ThoriumMod != null && CalamityRuTranslate.Config.ThoriumTranslation && Translation.IsRussianLanguage)
+            if (ThoriumMod != null && ProjectTRuConfig.Instance.ThoriumTranslation && Translation.IsRussianLanguage)
             {
                 ThoriumIL.Load();
                 ThoriumTranslationLists.LoadLists();
@@ -36,7 +36,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 
         public static void LoadCrossContent()
         {
-            if (ThoriumMod != null && CalamityRuTranslate.Config.ThoriumTranslation && Translation.IsRussianLanguage)
+            if (ThoriumMod != null && ProjectTRuConfig.Instance.ThoriumTranslation && Translation.IsRussianLanguage)
             {
                 ThoriumItemName.Setup();
                 ThoriumItemTooltip.Setup();
@@ -55,6 +55,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
             ThoriumMod = null;
             ThoriumIL.Unload();
             ThoriumRussianDictionaries.UnloadDictionaries();
+            ThoriumTranslationLists.UnloadLists();
         }
     }
 }

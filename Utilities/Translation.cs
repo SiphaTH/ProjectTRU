@@ -19,14 +19,12 @@ namespace CalamityRuTranslate.Utilities
         public static bool CheckRussian(this string text)
         {
             if (text.Length == 0)
-            {
                 return true;
-            }
             char symbol = text[0];
             return symbol >= 'а' && 'я' >= symbol || symbol >= 'А' && 'Я' >= symbol;
         }
 
-        public static string KeyText(string key) => CalamityRuTranslate.translations[$"Mods.CalamityRuTranslate.{key}"].GetTranslation(Language.ActiveCulture);
+        public static string KeyText(string key) => LangUtilities.Translations[$"Mods.CalamityRuTranslate.{key}"].GetTranslation(Language.ActiveCulture);
         
         public static string KeyText2(string key) => Language.GetTextValue($"Mods.CalamityRuTranslate.{key}");
 
@@ -38,7 +36,7 @@ namespace CalamityRuTranslate.Utilities
             {
                 if (!cursor.TryGotoNext(i => i.MatchLdstr(original)))
                 {
-                    CalamityRuTranslate.Instance.Logger.Warn($"IL failed when trying edit \"{original}\" with \"{translation}\"");
+                    CalamityRuTranslate.Instance.Logger.Warn($"[IL] failed when trying edit \"{original}\" with \"{translation}\"");
                     return;
                 }
             }
@@ -193,10 +191,10 @@ namespace CalamityRuTranslate.Utilities
                     npc.type == NPCID.Cyborg ||
                     npc.type == NPCID.TravellingMerchant ||
                     npc.type == NPCID.SkeletonMerchant ||
-                    npc.type == CoreCalamityTranslation.CalamityMod?.NPCType("DILF") ||
-                    npc.type == CoreCalamityTranslation.CalamityMod?.NPCType("FAP") ||
-                    npc.type == CoreCalamityTranslation.CalamityMod?.NPCType("SEAHOE") ||
-                    npc.type == CoreCalamityTranslation.CalamityMod?.NPCType("THIEF") ||
+                    npc.type == CoreCalamityTranslation.Calamity?.NPCType("DILF") ||
+                    npc.type == CoreCalamityTranslation.Calamity?.NPCType("FAP") ||
+                    npc.type == CoreCalamityTranslation.Calamity?.NPCType("SEAHOE") ||
+                    npc.type == CoreCalamityTranslation.Calamity?.NPCType("THIEF") ||
                     npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Blacksmith") ||
                     npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Cobbler") ||
                     npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("ConfusedZombie") ||

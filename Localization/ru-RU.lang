@@ -1,17 +1,3 @@
-#Config
-Config.Header.Font=Шрифт
-Config.Label.Font=Шрифт JetBrains Mono
-Config.Tooltip.Font=Если вам не нравится новый шрифт который предлагает русификатор\nи вы хотите играть со своим, вы можете его отключить
-
-Config.Label.Vanilla=Новый ванильный перевод
-Config.Tooltip.Vanilla=Если вам не нравится новый ванильный перевод\nи вы привыкли играть со стандартным, вы можете его отключить
-
-Config.Header.Mods=Перевод
-
-Config.Header.Stealth=Скрытность
-Config.Label.Stealth=Описание скрытности
-Config.Tooltip.Stealth=Показывает текст бонусов скрытности на комплектах брони разбойника
-
 #CALAMITY BUFF
 ###############################################
 Calamity.BuffName.PopoBuff=Попо

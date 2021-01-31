@@ -19,31 +19,29 @@ namespace CalamityRuTranslate
 {
     public class CalamityRuTranslate : Mod
     {
-        public override void Load()
+        public static CalamityRuTranslate Instance { get; private set; }
+
+        public CalamityRuTranslate()
         {
             Instance = this;
+        }
+        
+        public override void Load()
+        {
             CoreCalamityTranslation.Load();
             CoreThoriumTranslation.Load();
             VanillaIL.LoadIL();
             GlobalDictionaries.LoadDictionaries();
             LoadFont();
-            LoadAlternateRussian(LanguageManager.Instance, Config.NewVanillaTranslation ? "Terraria.Localization.Content." : "Terraria.LocalizationOld.Content.");
-            
-            FieldInfo translationsField = typeof(Mod).GetField("translations", BindingFlags.Instance | BindingFlags.NonPublic);
-            translations = (Dictionary<string, ModTranslation>)translationsField.GetValue(this);
+            LoadAlternateRussian(LanguageManager.Instance, ProjectTRuConfig.Instance.NewVanillaTranslation ? "Terraria.Localization.Content." : "Terraria.LocalizationOld.Content.");
+            LangUtilities.Load();
         }
 
         public override void Unload()
         {
-            _itemStack = null;
-            _mouseText = null;
-            _deathText = null;
-            _combatText = null;
-            _combatCrit = null;
-            translations = null;
             Instance = null;
-            Config = null;
-            
+            ProjectTRuConfig.Instance = null;
+            LangUtilities.Unload();
             CoreCalamityTranslation.Unload();
             CoreThoriumTranslation.Unload();
             VanillaIL.UnloadIL();
@@ -54,15 +52,9 @@ namespace CalamityRuTranslate
         public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
         {
             CoreCalamityTranslation.LoadNpcChat();
-            if (Translation.IsRussianLanguage)
+            if (Translation.IsRussianLanguage && ProjectTRuConfig.Instance.ThoriumTranslation && ModLoader.GetMod("ThoriumMod") != null)
             {
-                if (Config.ThoriumTranslation)
-                {
-                    if (ModLoader.GetMod("ThoriumMod") != null)
-                    {
-                        ThoriumSupport.ThoriumNpcChat();
-                    }
-                }
+                ThoriumSupport.ThoriumNpcChat();
             }
         }
 		
@@ -95,19 +87,13 @@ namespace CalamityRuTranslate
 
         private void LoadFont()
         {
-            if (Config.NewTerrariaFont && !Main.dedServ)
+            if (ProjectTRuConfig.Instance.NewRussianTerrariaFont && !Main.dedServ)
             {
-                _itemStack = GetFont("Fonts/Item_Stack");
-                _mouseText = GetFont("Fonts/Mouse_Text");
-                _deathText = GetFont("Fonts/Death_Text");
-                _combatText = GetFont("Fonts/Combat_Text");
-                _combatCrit = GetFont("Fonts/Combat_Crit");
-                        
-                Main.fontItemStack = _itemStack;
-                Main.fontMouseText = _mouseText;
-                Main.fontDeathText = _deathText;
-                Main.fontCombatText[0] = _combatText;
-                Main.fontCombatText[1] = _combatCrit;
+                Main.fontItemStack = Instance.GetFont("Fonts/Item_Stack");
+                Main.fontMouseText = Instance.GetFont("Fonts/Mouse_Text");
+                Main.fontDeathText = Instance.GetFont("Fonts/Death_Text");
+                Main.fontCombatText[0] = Instance.GetFont("Fonts/Combat_Text");
+                Main.fontCombatText[1] = Instance.GetFont("Fonts/Combat_Crit");
             }
         }
 
@@ -122,14 +108,5 @@ namespace CalamityRuTranslate
                 Main.fontCombatText[1] = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Combat_Crit");
             }
         }
-        
-        private DynamicSpriteFont _itemStack;
-        private DynamicSpriteFont _mouseText;
-        private DynamicSpriteFont _deathText;
-        private DynamicSpriteFont _combatText;
-        private DynamicSpriteFont _combatCrit;
-        internal static Dictionary<string, ModTranslation> translations;
-        public static CalamityRuTranslate Instance;
-        internal static Config Config;
     }
 }

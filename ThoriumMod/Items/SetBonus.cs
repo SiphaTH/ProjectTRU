@@ -9,9 +9,9 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 	{
 		public override string IsArmorSet(Item head, Item body, Item legs)
 		{
-			if (CoreThoriumTranslation.ThoriumMod != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian && CalamityRuTranslate.Config.ThoriumTranslation)
+			if (CoreThoriumTranslation.ThoriumMod != null && LanguageManager.Instance.ActiveCulture == GameCulture.Russian && ProjectTRuConfig.Instance.ThoriumTranslation)
 			{
-				if (CalamityRuTranslate.Config.ThoriumTranslation)
+				if (ProjectTRuConfig.Instance.ThoriumTranslation)
 				{
 					if (head.type == CoreThoriumTranslation.ThoriumMod.ItemType("WhisperingHood") &&
 					    body.type == CoreThoriumTranslation.ThoriumMod.ItemType("WhisperingTabard") &&
@@ -562,7 +562,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 
 		public override void UpdateArmorSet(Player player, string set)
 		{
-			if ((CoreThoriumTranslation.ThoriumMod != null || LanguageManager.Instance.ActiveCulture != GameCulture.Russian) && CalamityRuTranslate.Config.ThoriumTranslation)
+			if ((CoreThoriumTranslation.ThoriumMod != null || LanguageManager.Instance.ActiveCulture != GameCulture.Russian) && ProjectTRuConfig.Instance.ThoriumTranslation)
 			{
 				switch (set)
 				{

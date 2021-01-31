@@ -15,67 +15,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 {
     internal static class CoreCalamityTranslation
     {
-        public static Mod CalamityMod;
-
-        public static void Load()
-        {
-            CalamityMod = ModLoader.GetMod("CalamityMod");
-            
-            if (CalamityMod != null && CalamityMod.Version != new Version(1,4,5,7))
-            {
-                throw new ModVersionException("Calamity", "1.4.5.7", CalamityMod.Version);
-            }
-
-            if (CalamityMod != null && CalamityRuTranslate.Config.CalamityTranslation && Translation.IsRussianLanguage)
-            {
-                CalamityIL.Load();
-                CalamityTranslationLists.LoadLists();
-                CalamityTranslationDictionaries.LoadDictionaries();
-            }
-        }
-
-        public static void LoadCrossContent()
-        {
-            if (CalamityMod != null && CalamityRuTranslate.Config.CalamityTranslation && Translation.IsRussianLanguage)
-            {
-                BuffNames.SetupTranslation();
-                ItemNames.SetupTranslation();
-                ItemTooltips.SetupTranslation();
-                PrefixNames.SetupTranslation();
-                NpcNames.SetupTranslation();
-                ProjectileNames.SetupTranslation();
-                ChestNames.SetupTranslation();
-                TileNames.SetupTranslation();
-                AddCalamityLocalization();
-            }
-        }
-
-        public static void LoadNpcChat()
-        {
-            if (CalamityMod != null && CalamityRuTranslate.Config.CalamityTranslation && Translation.IsRussianLanguage)
-            {
-                NpcChatText.SetupTranslation();
-            }
-        }
-        
-        public static void Unload()
-        {
-            CalamityMod = null;
-            CalamityIL.Unload();
-            CalamityTranslationLists.UnloadLists();
-            CalamityTranslationDictionaries.UnloadDictionaries();
-        }
-
-        private static void AddCalamityLocalization()
-        {
-            foreach (var id in CalamityTranslationLists.CalamityKeysLocalization)
-            {
-                ModTranslation translation = CalamityMod.CreateTranslation(id);
-                translation.SetDefault(Translation.KeyText($"Calamity.KeyLocalization.{id}"));
-                CalamityMod.AddTranslation(translation);
-            }
-        }
-        
+        public static Mod Calamity => ModLoader.GetMod("CalamityMod");
         public static bool Revenge => CalamityWorld.revenge;
         public static bool DeathMode => CalamityWorld.death;
         public static bool DownedFlag => !CalamityWorld.downedSentinel1 || !CalamityWorld.downedSentinel2 || !CalamityWorld.downedSentinel3;
@@ -92,5 +32,59 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         public static string ArmorSetHotkey => global::CalamityMod.CalamityMod.TarraHotKey.TooltipHotkeyString();
         public static string EternityDiscoHex => global::CalamityMod.Items.Weapons.Magic.Eternity.DisoHex;
         public static int AncientStorm => (int)(60f * Main.player[Main.myPlayer].manaCost);
+
+        public static void Load()
+        {
+            if (Calamity != null && Calamity.Version != new Version(1,4,5,7))
+            {
+                throw new ModVersionException("Calamity", "1.4.5.7", Calamity.Version);
+            }
+
+            if (Calamity != null && Translation.IsRussianLanguage)
+            {
+                CalamityIL.Load();
+                CalamityTranslationLists.LoadLists();
+                CalamityTranslationDictionaries.LoadDictionaries();
+            }
+        }
+
+        public static void LoadCrossContent()
+        {
+            if (Calamity != null)
+            {
+                BuffsTranslation.SetupTranslation();
+                ItemsTranslation.SetupTranslation();
+                PrefixesTranslation.SetupTranslation();
+                NPCTranslation.SetupTranslation();
+                ProjectilesTranslation.SetupTranslation();
+                TilesTranslation.SetupTranslation();
+                AddCalamityLocalization();
+            }
+        }
+
+        public static void LoadNpcChat()
+        {
+            if (Calamity != null)
+            {
+                NPCTextTranslation.SetupTranslation();
+            }
+        }
+        
+        public static void Unload()
+        {
+            CalamityIL.Unload();
+            CalamityTranslationLists.UnloadLists();
+            CalamityTranslationDictionaries.UnloadDictionaries();
+        }
+
+        private static void AddCalamityLocalization()
+        {
+            foreach (var id in CalamityTranslationLists.CalamityKeysLocalization)
+            {
+                ModTranslation translation = Calamity.CreateTranslation(id);
+                translation.SetDefault(LangUtilities.TranslationKey($"Calamity.KeyLocalization.{id}"));
+                Calamity.AddTranslation(translation);
+            }
+        }
     }
 }

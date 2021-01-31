@@ -5,7 +5,7 @@ using Terraria.Localization;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
 {
-	internal static class NpcNames
+	internal static class NPCTranslation
 	{
 		public static void SetupTranslation()
 		{
@@ -13,7 +13,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
 			{
 				try
 				{
-					CoreCalamityTranslation.CalamityMod.GetNPC(id).DisplayName.AddTranslation(GameCulture.Russian, Translation.KeyText($"Calamity.NpcName.{id}"));
+					CoreCalamityTranslation.Calamity.GetNPC(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"Calamity.NpcName.{id}"));
 				}
 				catch(NullReferenceException)
 				{

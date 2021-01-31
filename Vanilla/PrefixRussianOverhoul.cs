@@ -402,15 +402,16 @@ namespace CalamityRuTranslate.Vanilla
 
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (Translation.IsRussianLanguage && CalamityRuTranslate.Config.NewVanillaTranslation)
+            if (Translation.IsRussianLanguage && ProjectTRuConfig.Instance.NewVanillaTranslation)
             {
-                foreach (var tooltip in tooltips.Where(tooltip => tooltip.Name == "ItemName" && item.prefix > 0))
+                TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "ItemName");
+                if(tooltipLine != null && item.prefix > 0)
                 {
                     for (int i = 0; i < _prefixes.Length; i++)
                     {
-                        if(_prefixes[i][0] == Regex.Split(tooltip.text, item.Name)[0])
+                        if(_prefixes[i][0] == Regex.Split(tooltipLine.text, item.Name)[0])
                         {
-                            tooltip.text = GetGenderedPrefix(_prefixes[i], item.type) + item.Name.ToLower();
+                            tooltipLine.text = GetGenderedPrefix(_prefixes[i], item.type) + item.Name.ToLower();
                             return;
                         }
                     }
@@ -418,7 +419,7 @@ namespace CalamityRuTranslate.Vanilla
             }
         }
 
-        private static string GetGenderedPrefix(string[] prefix, int id)
+        private string GetGenderedPrefix(string[] prefix, int id)
         {
             if (_typeW.Contains(id))
             {

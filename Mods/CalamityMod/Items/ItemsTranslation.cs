@@ -1,31 +1,31 @@
 ﻿using System;
 using CalamityRuTranslate.DictionariesAndLists;
 using CalamityRuTranslate.Utilities;
-using Terraria.ModLoader;
+using Terraria.Localization;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.Tiles
+namespace CalamityRuTranslate.Mods.CalamityMod.Items
 {
-    internal static class ChestNames
+    internal static class ItemsTranslation
     {
         public static void SetupTranslation()
         {
-            foreach (var id in CalamityTranslationLists.CalamityChest)
+            foreach (var id in CalamityTranslationLists.CalamityItemNames)
             {
                 try
                 {
-                    TileLoader.GetTile(CoreCalamityTranslation.CalamityMod.TileType(id)).chest = Translation.KeyText($"Calamity.ChestName.{id}");
+                    CoreCalamityTranslation.Calamity.GetItem(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"Calamity.ItemName.{id}"));
                 }
                 catch(NullReferenceException)
                 {
                     throw new TranslationException(id);
                 }
             }
-            
-            foreach (var id in CalamityTranslationLists.CalamityDresser)
+
+            foreach (var id in CalamityTranslationLists.CalamityItemTooltips)
             {
                 try
                 {
-                    TileLoader.GetTile(CoreCalamityTranslation.CalamityMod.TileType(id)).dresser = Translation.KeyText($"Calamity.DresserName.{id}");
+                    CoreCalamityTranslation.Calamity.GetItem(id).Tooltip.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"Calamity.ItemTooltip.{id}"));
                 }
                 catch(NullReferenceException)
                 {

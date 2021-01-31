@@ -5,7 +5,7 @@ using Terraria.Localization;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.Projectiles
 {
-    internal static class ProjectileNames
+    internal static class ProjectilesTranslation
     {
         public static void SetupTranslation()
         {
@@ -13,7 +13,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Projectiles
             {
                 try
                 {
-                    CoreCalamityTranslation.CalamityMod.GetProjectile(id).DisplayName.AddTranslation(GameCulture.Russian, Translation.KeyText($"Calamity.ProjectileName.{id}"));
+                    CoreCalamityTranslation.Calamity.GetProjectile(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"Calamity.ProjectileName.{id}"));
                 }
                 catch (NullReferenceException)
                 {

@@ -31,6 +31,10 @@ namespace CalamityRuTranslate.Vanilla
                     {
                         tooltip.overrideColor = new Color(241, 250, 140);
                     }
+                    else if (!item.summon && tooltip.text.Contains("ед. бесклассового урона"))
+                    {
+                        tooltip.overrideColor = new Color(133, 133, 133);
+                    }
                 }
             }
         }
