@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.DictionariesAndLists;
 using CalamityRuTranslate.Mods.CalamityMod;
 using CalamityRuTranslate.Mods.ThoriumMod;
@@ -31,6 +32,7 @@ namespace CalamityRuTranslate
             CoreCalamityTranslation.Load();
             CoreThoriumTranslation.Load();
             VanillaIL.LoadIL();
+            ILManager.Load();
             GlobalDictionaries.LoadDictionaries();
             LoadFont();
             LoadAlternateRussian(LanguageManager.Instance, ProjectTRuConfig.Instance.NewVanillaTranslation ? "Terraria.Localization.Content." : "Terraria.LocalizationOld.Content.");
@@ -45,6 +47,7 @@ namespace CalamityRuTranslate
             CoreCalamityTranslation.Unload();
             CoreThoriumTranslation.Unload();
             VanillaIL.UnloadIL();
+            ILManager.Unload();
             UnloadFont();
             GlobalDictionaries.UnloadDictionaries();
         }

@@ -42,7 +42,6 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 
             if (Calamity != null && Translation.IsRussianLanguage)
             {
-                CalamityIL.Load();
                 CalamityTranslationLists.LoadLists();
                 CalamityTranslationDictionaries.LoadDictionaries();
             }
@@ -72,7 +71,6 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         public static void Unload()
         {
-            CalamityIL.Unload();
             CalamityTranslationLists.UnloadLists();
             CalamityTranslationDictionaries.UnloadDictionaries();
         }
