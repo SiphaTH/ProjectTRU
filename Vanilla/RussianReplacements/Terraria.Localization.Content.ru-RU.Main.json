@@ -255,7 +255,7 @@
 		"YOU_CAN_DO_IT_Description": "Переживите первую полную ночь своего персонажа.",
 		"YOU_CAN_DO_IT_Name": "У тебя получится!"
 	},
-	"CLI": 
+	"CLI":
 	{
 		"AutomaticPortForward": "Переадресовывать порт автоматически? - ",
 		"AvailableCommands": "Доступные команды:",
@@ -270,7 +270,7 @@
 		"ChooseWorld": "Выберите мир: ",
 		"Clear_Command": "очистить",
 		"Clear_Description": "Очистить окно консоли.",
-		"ClientWasBooted": "{0} отключен от сервера: {1}",
+		"ClientWasBooted": "{0} отключён от сервера: {1}",
 		"Corrupt": "Порча",
 		"Crimson": "Багрянец",
 		"Dawn_Command": "рассвет",
@@ -292,7 +292,7 @@
 		"Help_Command": "помощь",
 		"Help_Description": "Отображает список команд.",
 		"InvalidCommand": "Неверная команда.",
-		"KickMessage": "Исключен с сервера.",
+		"KickMessage": "Исключён с сервера.",
 		"Kick_Command": "исключить",
 		"Kick_Description": "Исключает игрока с сервера.",
 		"Kick_Example": "исключить игрока <player>",
@@ -312,10 +312,10 @@
 		"Noon_Command": "полдень",
 		"Noon_Description": "Сменить время на полдень.",
 		"NoPassword": "Пароль не задан.",
-		"NoPlayers": "Нет подключенных игроков.",
-		"OnePlayerConnected": "Подключен 1 игрок.",
+		"NoPlayers": "Нет подключённых игроков.",
+		"OnePlayerConnected": "Подключён 1 игрок.",
 		"Password": "Пароль: {0}",
-		"PasswordDisabled": "Пароль откючен.",
+		"PasswordDisabled": "Пароль отключён.",
 		"PasswordSet": "Пароль: {0}",
 		"Password_Command": "пароль",
 		"Password_Description": "Показать пароль.",
@@ -361,11 +361,11 @@
 		"Seed_Command": "семечко",
 		"Seed_Description": "Показывает семечко мира."
 	},
-	"Controls": 
+	"Controls":
 	{
 		"RightClick": "ПКМ"
 	},
-	"Currency": 
+	"Currency":
 	{
 		"Copper": "мон. меди",
 		"DefenderMedals": "Медали защитника",
@@ -373,12 +373,12 @@
 		"Platinum": "мон. платины",
 		"Silver": "мон. серебра"
 	},
-	"Enemies": 
+	"Enemies":
 	{
 		"MoonLord": "Лунный лорд",
 		"TheTwins": "Близнецы"
 	},
-	"Error": 
+	"Error":
 	{
 		"BadHeaderBufferOverflow": "Некорректный заголовок приводит к перегрузке буфера чтения.",
 		"CaptureError": "При сохранении снимка возникла ошибка. Повторная попытка...",
@@ -396,7 +396,7 @@
 		"UnableToWritePreferences": "Ошибка записи файла по адресу: {0}",
 		"InvalidLobbyFlag": "Флаг -lobby используется без «{1}» или «{2}». Не обращайте внимания."
 	},
-	"Game": 
+	"Game":
 	{
 		"Actuators": "Приводы",
 		"BallBounceResult": "{0} отбит {1} раз до касания земли!",
@@ -441,9 +441,9 @@
 		"Wave": "Волна: {0}",
 		"WaveCleared": "{0} зачищено",
 		"WaveMessage": "{0}-я волна: {1}",
-		"YellowWires": "Желтые провода"
+		"YellowWires": "Жёлтые провода"
 	},
-	"GameUI": 
+	"GameUI":
 	{
 		"ActuationDeviceOff": "Устройство активации ВЫКЛ.",
 		"ActuationDeviceOn": "Устройство активации ВКЛ.",
@@ -457,24 +457,24 @@
 		"Clear": "Ясно",
 		"Cloudy": "Облачно",
 		"CompassCenter": "Центр",
-		"CompassEast": "{0} м на восток",
-		"CompassWest": "{0} м на запад",
+		"CompassEast": "{0}м на восток",
+		"CompassWest": "{0}м на запад",
 		"CraftingWindow": "Окно создания предметов",
-		"Depth": "{0} м",
-		"DepthLevel": "0 м",
-		"Disabled": "Выкл.",
+		"Depth": "{0}м",
+		"DepthLevel": "0м",
+		"Disabled": "Выключен",
 		"DPS": "{0} ед. урона в секунду",
 		"EastWind": " ({0} км/ч на запад)",
-		"Enabled": "Вкл.",
+		"Enabled": "Включён",
 		"EnemiesNearby": "{0} врагов рядом",
 		"Expert": "Эксперт",
 		"Faded": "Блёклый",
 		"FirstQuarter": "Первая четверть",
 		"FishingPower": "Мастерство рыбалки {0}",
 		"FishingWarning": "Внимание!",
-		"FullFishingPower": "Мастерство рыбалки {0} ({1} %)",
+		"FullFishingPower": "Мастерство рыбалки {0} ({1}%)",
 		"FullMoon": "Полнолуние",
-		"HairStyle": "Прическа",
+		"HairStyle": "Причёска",
 		"HeatDistortion": "Марево от тепла - {0}",
 		"HeavyRain": "Ливень",
 		"Hidden": "Скрыт",
@@ -490,7 +490,7 @@
 		"NewMoon": "Новолуние",
 		"NoDPS": "0 ед. урона в секунду",
 		"NoEnemiesNearby": "Нет врагов рядом",
-		"NoKillCount": "Счетчик убийств недоступен",
+		"NoKillCount": "Счётчик убийств недоступен",
 		"NoRareCreatures": "Нет редких существ рядом",
 		"Normal": "Обычный",
 		"NotEnoughWater": "Недостаточно воды!",
@@ -501,7 +501,7 @@
 		"PaintSprayerOff": "Краскопульт ВЫКЛ.",
 		"PaintSprayerOn": "Краскопульт ВКЛ.",
 		"PartlyCloudy": "Малооблачно",
-		"PlayerDistance": "({0} м)",
+		"PlayerDistance": "({0}м)",
 		"PrecentFishingPower": "Мастерство рыбалки {0}%",
 		"QuickStackToNearby": "Сложить в ближайшие сундуки",
 		"Rain": "Дождь",
@@ -532,7 +532,7 @@
 		"WaveQuality": "Качество волн - {0}",
 		"ZoomCategory": "Приближение"
 	},
-	"Misc": 
+	"Misc":
 	{
 		"ForceWaterSettling": "Принудительно финализирует положение воды.",
 		"ResolutionChanged": "Разрешение изменено на: {0}x{1}.",
@@ -542,7 +542,7 @@
 		"ShortSeconds": "сек",
 		"WaterSettled": "Жидкость обработана."
 	},
-	"Net": 
+	"Net":
 	{
 		"CheatingInvalid": "Обнаружена попытка жульничества: Неверное исключение",
 		"CheatingLiquidSpam": "Обнаружена попытка жульничества: Спам жидкости",
@@ -568,14 +568,14 @@
 		"StatusComplete": "{0} Выполнено!",
 		"WaitingForClients": "Ожидание клиентов..."
 	},
-	"Social": 
+	"Social":
 	{
 		"Joining": "Подключение...",
 		"JoiningFriend": "Присоединение к игроку {0}...",
 		"StatusInGame": "В игре.",
 		"StatusJoining": "Присоединение к игре."
 	},
-	"UI": 
+	"UI":
 	{
 		"Achievements": "Достижения",
 		"Back": "Назад",
@@ -623,20 +623,20 @@
 		"ZoomIn": "{$LegacyMenu.168}",
 		"ZoomOut": "{$LegacyMenu.169}"
 	},
-	"DeathSource": 
+	"DeathSource":
 	{
 		"NPC": "{0} {1}.",
 		"Player": "{0} оружием {2} {1}.",
 		"Projectile": "{0} {1}."
 	},
-	"DeathText": 
+	"DeathText":
 	{
 		"Burned": "{0} не смог погасить огонь.",
 		"Default": "{0}.",
 		"Drowned_1": "{0} забыл, как дышать.",
 		"Drowned_2": "{0} спит с рыбками.",
 		"Drowned_3": "{0} утонул.",
-		"Drowned_4": "{0} пошел на корм акулам.",
+		"Drowned_4": "{0} пошёл на корм акулам.",
 		"Electrocuted": "{0} не выдержал высокого напряжения.",
 		"Fell_1": "{0} разбился насмерть.",
 		"Fell_2": "{0} не отскочил.",
@@ -645,7 +645,7 @@
 		"Lava_3": "{0} попытался плавать в лаве.",
 		"Lava_4": "{0} решил поиграть в магме.",
 		"Petrified_1": "{0} разлетелся на куски.",
-		"Petrified_2": "{0} больше не может быть собран воедино.",
+		"Petrified_2": "{0} больше не может быть собран.",
 		"Petrified_3": "{0} нужно смести в кучу.",
 		"Petrified_4": "{0} стал грязью.",
 		"Poisoned": "{0} не нашёл противоядие.",
@@ -665,7 +665,7 @@
 		"Cut": "{0} был разрезан пополам",
 		"Decapitated": "{0} был обезглавлен",
 		"Destroyed": "{0} был уничтожен",
-		"Dissected": "{0} был жестоко расчленен",
+		"Dissected": "{0} был жестоко расчленён",
 		"EntrailsRippedOut": "Внутренности {0} были извлечены",
 		"Eviscerated": "{0} был выпотрошен",
 		"ExtremitiesDetached": "Конечности {0} были отделены от тела",
@@ -675,11 +675,11 @@
 		"Impaled": "{0} был проколот",
 		"InnardsBecameOutards": "{0} увидел свои внутренности",
 		"Mangled": "Тело {0} было искалечено",
-		"Massacred": "{0} был принесен в жертву",
+		"Massacred": "{0} был принесён в жертву",
 		"Murdered": "{0} был убит",
-		"PileOfFlesh": "{0} был превращен в кучку плоти",
+		"PileOfFlesh": "{0} был превращён в кучку плоти",
 		"Plead": "{0} молил о смерти и был услышан",
-		"Removed": "{0} был устранен из мира",
+		"Removed": "{0} был устранён из мира",
 		"Ripped": "Мясо {0} было отделено от костей",
 		"Ruptured": "Жизненно важные органы {0} были раздавлены",
 		"SkullCrushed": "Череп {0} был раздавлен",
@@ -687,21 +687,21 @@
 		"Snapped": "{0} был сложен вдвое",
 		"TornInHalf": "{0} был разорван напополам"
 	},
-	"DungeonDefenders2": 
+	"DungeonDefenders2":
 	{
-		"BartenderWarning": "Этерианский кристалл не принимает эту зону и мгновенно телепортируется; трактирщик говорил, что кристалл перемещается на свободный ровный участок...",
-		"CantSummonTower": "Похоже, это не работает без этерианского кристалла поблизости...",
-		"InvasionProgressTitle": "Армия Старца",
-		"InvasionStart": "Приближается армия Старца!",
-		"InvasionWin": "Армия Старца побеждена!",
+		"BartenderWarning": "Этерианский кристалл выскакивает, не принимая местность рядом; Трактирщик посоветовал вам сделать территорию более открытой",
+		"CantSummonTower": "Кажется, это не будет работать без кристалла Этернии поблизости...",
+		"InvasionProgressTitle": "Армия Древних",
+		"InvasionStart": "Приближается Армия Древних",
+		"InvasionWin": "Армия Древних побеждена!",
 		"WaveComplete": "Волна пройдена!"
 	},
-	"Key": 
+	"Key":
 	{
 		"DOWN": "Вниз",
 		"UP": "Вверх"
 	},
-	"Language": 
+	"Language":
 	{
 		"English": "English (Английский)",
 		"German": "Deutsch (Немецкий)",
@@ -709,8 +709,8 @@
 		"French": "Français (Французский)",
 		"Spanish": "Español (Испанский)",
 		"Russian": "Русский",
-		"Chinese": "简体中文 (Китайский упрощенный)",
-		"Portuguese": "Português brasileiro (Португальский (бразильский))",
+		"Chinese": "Chinese (Китайский упрощённый)",
+		"Portuguese": "Português brasileiro (Бразильский португальский)",
 		"Polish": "Polski (Польский)"
 	}
 }
