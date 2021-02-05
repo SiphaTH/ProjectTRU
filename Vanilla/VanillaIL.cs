@@ -1,33 +1,28 @@
-﻿using CalamityRuTranslate.Utilities;
+﻿using CalamityRuTranslate.Common;
+using CalamityRuTranslate.Utilities;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Vanilla
 {
-    public static class VanillaIL
+    public class DrawInfoAccsIL : ILEdit
     {
-        public static void LoadIL()
-        {
-            IL.Terraria.Main.DrawInfoAccs += RU_DrawInfoAccs;
-            if(Translation.IsRussianLanguage)
-            {
-                IL.Terraria.NPC.getNewNPCName += RU_getNewNPCName;
-            }
-        }
+        public override string DictKey => "Terraria.Main.DrawInfoAccs";
 
-        public static void UnloadIL()
-        {
-            IL.Terraria.Main.DrawInfoAccs -= RU_DrawInfoAccs;
-            IL.Terraria.NPC.getNewNPCName -= RU_getNewNPCName;
-        }
+        public override bool Autoload() => Translation.IsRussianLanguage;
 
-        private static void RU_DrawInfoAccs(ILContext il)
+        public override void Load() => IL.Terraria.Main.DrawInfoAccs += ChangeDrawInfoAccs;
+
+        public override void Unload() => IL.Terraria.Main.DrawInfoAccs -= ChangeDrawInfoAccs;
+
+        private void ChangeDrawInfoAccs(ILContext il)
         {
             ILCursor cursor = new ILCursor(il);
 
             for (int j = 0; j < 1; j++)
             {
-                if (!cursor.TryGotoNext(i => i.MatchLdcI4(12))) return;
+                if (!cursor.TryGotoNext(i => i.MatchLdcI4(12)))
+                    return;
             }
             
             cursor.Index++;
@@ -38,7 +33,8 @@ namespace CalamityRuTranslate.Vanilla
             
             for (int j = 0; j < 3; j++)
             {
-                if (!cursor.TryGotoNext(i => i.MatchLdcI4(12))) return;
+                if (!cursor.TryGotoNext(i => i.MatchLdcI4(12)))
+                    return;
             }
             
             cursor.Index++;
@@ -47,7 +43,8 @@ namespace CalamityRuTranslate.Vanilla
             
             cursor = new ILCursor(il);
             
-            if (!cursor.TryGotoNext(i => i.MatchLdstr("AM"))) return;
+            if (!cursor.TryGotoNext(i => i.MatchLdstr("AM")))
+                return;
 
             cursor.Index++;
             cursor.Emit(OpCodes.Pop);
@@ -55,14 +52,26 @@ namespace CalamityRuTranslate.Vanilla
             
             cursor = new ILCursor(il);
             
-            if (!cursor.TryGotoNext(i => i.MatchLdstr("PM"))) return;
+            if (!cursor.TryGotoNext(i => i.MatchLdstr("PM")))
+                return;
 
             cursor.Index++;
             cursor.Emit(OpCodes.Pop);
             cursor.Emit(OpCodes.Ldstr, "");
         }
+    }
 
-        private static void RU_getNewNPCName(ILContext il)
+    public class GetNewNPCNameIL : ILEdit
+    {
+        public override string DictKey => "Terraria.NPC.getNewNPCName";
+        
+        public override bool Autoload() => Translation.IsRussianLanguage;
+        
+        public override void Load() => IL.Terraria.NPC.getNewNPCName += TranslationTownNpcName;
+
+        public override void Unload() => IL.Terraria.NPC.getNewNPCName -= TranslationTownNpcName;
+        
+        private void TranslationTownNpcName(ILContext il)
         {
             Translation.ILTranslate(il, "A.N.D.Y", Translation.EncodeToUtf16("Э.Н.Д.И"));
             Translation.ILTranslate(il, "Abdosir", Translation.EncodeToUtf16("Абдозир"));

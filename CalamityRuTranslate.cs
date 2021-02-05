@@ -31,7 +31,6 @@ namespace CalamityRuTranslate
         {
             CoreCalamityTranslation.Load();
             CoreThoriumTranslation.Load();
-            VanillaIL.LoadIL();
             ILManager.Load();
             GlobalDictionaries.LoadDictionaries();
             LoadFont();
@@ -46,7 +45,6 @@ namespace CalamityRuTranslate
             LangUtilities.Unload();
             CoreCalamityTranslation.Unload();
             CoreThoriumTranslation.Unload();
-            VanillaIL.UnloadIL();
             ILManager.Unload();
             UnloadFont();
             GlobalDictionaries.UnloadDictionaries();
