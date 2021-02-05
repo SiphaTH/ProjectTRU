@@ -8,7 +8,6 @@ using CalamityRuTranslate.Mods.CalamityMod;
 using CalamityRuTranslate.Mods.ThoriumMod;
 using CalamityRuTranslate.ThoriumMod.ModSupport;
 using CalamityRuTranslate.Utilities;
-using CalamityRuTranslate.Vanilla;
 using ReLogic.Graphics;
 using Terraria;
 using Terraria.Localization;

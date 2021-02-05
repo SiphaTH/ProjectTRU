@@ -26,7 +26,7 @@ namespace CalamityRuTranslate
         [Label("Thorium")]
         [DefaultValue(true)]
         [ReloadRequired]
-        public bool ThoriumTranslation; 
+        public bool ThoriumTranslation;
 
         [Label("Новый ванильный перевод")]
         [Tooltip("Если вам не нравится новый ванильный перевод\nи вы привыкли играть со стандартным, вы можете его отключить")]

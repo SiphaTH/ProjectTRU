@@ -39,14 +39,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
             switch (set)
             {
                 case "Obsidian":
-                    player.setBonus = LangUtilities.GetTextValue("Calamity","SetBonus.Obsidian") +
-                                      (ProjectTRuConfig.Instance.CalamityStealth ? LangUtilities.GetTextValue("Calamity","SetBonus.Stealth") : "") +
-                                      (CoreCalamityTranslation.DeathMode ? LangUtilities.GetTextValue("Calamity","DeathMode.Heat") : "");
+                    player.setBonus = LangUtilities.GetTextValue("Calamity","SetBonus.Obsidian") + (ProjectTRuConfig.Instance.CalamityStealth ? LangUtilities.GetTextValue("Calamity","SetBonus.Stealth") : "") + (CoreCalamityTranslation.DeathMode ? LangUtilities.GetTextValue("Calamity","DeathMode.Heat") : "");
                     break;
                 case "Fearmonger":
                 case "Eskimo":
-                    player.setBonus = LangUtilities.GetTextValue("Calamity",$"SetBonus.{set}") +
-                                      (CoreCalamityTranslation.DeathMode ? LangUtilities.GetTextValue("Calamity","DeathMode.Cold") : "");
+                    player.setBonus = LangUtilities.GetTextValue("Calamity",$"SetBonus.{set}") + (CoreCalamityTranslation.DeathMode ? LangUtilities.GetTextValue("Calamity","DeathMode.Cold") : "");
                     break;
                 case "AerospecRogue":
                 case "Gladiator":
@@ -65,13 +62,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                 case "WulfrumRogue":
                 case "TarragonRogue":
                 case "SilvaRogue":
-                    player.setBonus = LangUtilities.GetTextValue("Calamity",$"SetBonus.{set}") +
-                                      (ProjectTRuConfig.Instance.CalamityStealth ? LangUtilities.GetTextValue("Calamity","SetBonus.Stealth") : "");
+                    player.setBonus = LangUtilities.GetTextValue("Calamity",$"SetBonus.{set}") + (ProjectTRuConfig.Instance.CalamityStealth ? LangUtilities.GetTextValue("Calamity","SetBonus.Stealth") : "");
                     break;
                 case "AncientForbiddenCirclet":
-                    player.setBonus = string.Format(LangUtilities.GetTextValue("Calamity","SetBonus.AncientForbiddenCirclet"), 
-                        CoreCalamityTranslation.ArmorSetHotkey, CoreCalamityTranslation.AncientStorm) +
-                                      (ProjectTRuConfig.Instance.CalamityStealth ? LangUtilities.GetTextValue("Calamity","SetBonus.Stealth") : "");
+                    player.setBonus = string.Format(LangUtilities.GetTextValue("Calamity","SetBonus.AncientForbiddenCirclet"), CoreCalamityTranslation.ArmorSetHotkey, CoreCalamityTranslation.AncientStorm) + (ProjectTRuConfig.Instance.CalamityStealth ? LangUtilities.GetTextValue("Calamity","SetBonus.Stealth") : "");
                     break;
                 case "TarragonMelee":
                 case "Brimflame":
@@ -79,8 +73,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                 case "OmegaBlue":
                 case "PlagueReaper":
                 case "Prismatic":
-                     player.setBonus = string.Format(LangUtilities.GetTextValue("Calamity",$"SetBonus.{set}"), 
-                         CoreCalamityTranslation.ArmorSetHotkey);
+                     player.setBonus = string.Format(LangUtilities.GetTextValue("Calamity",$"SetBonus.{set}"), CoreCalamityTranslation.ArmorSetHotkey);
                     break;
                  default:
                      player.setBonus = LangUtilities.GetTextValue("Calamity",$"SetBonus.{set}");
