@@ -21,9 +21,9 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
         {
             ThoriumMod = ModLoader.GetMod("ThoriumMod");
 
-            if (ThoriumMod != null && ThoriumMod.Version != new Version(1, 6, 3, 13))
+            if (ThoriumMod != null && ThoriumMod.Version != new Version(1, 6, 4, 0))
             {
-                throw new ModVersionException("Thorium", "1.6.3.13", ThoriumMod.Version);
+                throw new ModVersionException("Thorium", "1.6.4.0", ThoriumMod.Version);
             }
 
             if (ThoriumMod != null && ProjectTRuConfig.Instance.ThoriumTranslation && Translation.IsRussianLanguage)
@@ -41,7 +41,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
                 ThoriumItemName.Setup();
                 ThoriumItemTooltip.Setup();
                 ThoriumNpc.Setup();
-                BuffNames.SetupTranslation();
+                BuffTranslation.SetupTranslation();
                 ProjectileNames.SetupTranslation();
                 PrefixNames.SetupTranslation();
                 ThoriumTiles.Setup();

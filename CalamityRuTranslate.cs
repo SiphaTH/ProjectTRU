@@ -5,6 +5,7 @@ using System.Text;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.DictionariesAndLists;
 using CalamityRuTranslate.Mods.CalamityMod;
+using CalamityRuTranslate.Mods.FargowiltasSouls;
 using CalamityRuTranslate.Mods.ThoriumMod;
 using CalamityRuTranslate.ThoriumMod.ModSupport;
 using CalamityRuTranslate.Utilities;
@@ -21,15 +22,13 @@ namespace CalamityRuTranslate
     {
         public static CalamityRuTranslate Instance { get; private set; }
 
-        public CalamityRuTranslate()
-        {
-            Instance = this;
-        }
-        
+        public CalamityRuTranslate() => Instance = this;
+
         public override void Load()
         {
             CoreCalamityTranslation.Load();
             CoreThoriumTranslation.Load();
+            CoreFargowiltasSoulsTranslation.Load();
             ILManager.Load();
             GlobalDictionaries.LoadDictionaries();
             LoadFont();
@@ -43,6 +42,7 @@ namespace CalamityRuTranslate
             ProjectTRuConfig.Instance = null;
             LangUtilities.Unload();
             CoreCalamityTranslation.Unload();
+            CoreFargowiltasSoulsTranslation.Unload();
             CoreThoriumTranslation.Unload();
             ILManager.Unload();
             UnloadFont();
@@ -61,6 +61,7 @@ namespace CalamityRuTranslate
         public override void PostSetupContent()
         {
             CoreCalamityTranslation.LoadCrossContent();
+            CoreFargowiltasSoulsTranslation.LoadCrossContent();
             CoreThoriumTranslation.LoadCrossContent();
         }
         

@@ -20,11 +20,11 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 						return "Whispering";
 					}
 
-					if (head.type == CoreThoriumTranslation.ThoriumMod.ItemType("BulbHood") && body.type == CoreThoriumTranslation.ThoriumMod.ItemType("BulbChestplate") &&
-					    legs.type == CoreThoriumTranslation.ThoriumMod.ItemType("BulbLeggings"))
-					{
-						return "Bulb";
-					}
+					// if (head.type == CoreThoriumTranslation.ThoriumMod.ItemType("BulbHood") && body.type == CoreThoriumTranslation.ThoriumMod.ItemType("BulbChestplate") &&
+					//     legs.type == CoreThoriumTranslation.ThoriumMod.ItemType("BulbLeggings"))
+					// {
+					// 	return "Bulb";
+					// }
 
 					if (head.type == CoreThoriumTranslation.ThoriumMod.ItemType("DangerHelmet") && body.type == CoreThoriumTranslation.ThoriumMod.ItemType("DangerMail") &&
 					    legs.type == CoreThoriumTranslation.ThoriumMod.ItemType("DangerGreaves"))
@@ -569,9 +569,9 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 					case "Whispering":
 						player.setBonus = "Вы иногда рождаете щупальце глубинной энергии, которая атакует ближайших врагов\nИх удары похищают у врага 1 единицу маны и здоровья\nВы можете иметь максимум 6 щупалец";
 						break;
-					case "Bulb":
-						player.setBonus = "У ваших магических атак есть шанс отравить врага облаком спор";
-						break;
+					// case "Bulb":
+					// 	player.setBonus = "У ваших магических атак есть шанс отравить врага облаком спор";
+					// 	break;
 					case "Danger":
 						player.setBonus = "Вы невосприимчивы к большинству наносящих урон эффектов";
 						break;
@@ -606,7 +606,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 						player.setBonus = "Пламя обволакивает вашу броню и оружие ближнего боя\nУдары по горящему врагу увеличивают силу горения";
 						break;
 					case "SandStone":
-						player.setBonus = "Ветра пустынь окутывают ваши ботинки, даруя песчаный двойной прыжок";
+						player.setBonus = "Пустынные ветра даруют песчаный двойной прыжок";
 						break;
 					case "BlueKnight":
 						player.setBonus = "Неплохо выглядишь!";

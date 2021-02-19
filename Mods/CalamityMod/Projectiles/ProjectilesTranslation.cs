@@ -5,9 +5,9 @@ using Terraria.Localization;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.Projectiles
 {
-    internal static class ProjectilesTranslation
+    public static class ProjectilesTranslation
     {
-        public static void SetupTranslation()
+        internal static void SetupTranslation()
         {
             foreach (var id in CalamityTranslationLists.CalamityProjectiles)
             {

@@ -6,9 +6,9 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.Tiles
 {
-	internal static class TilesTranslation
+	public static class TilesTranslation
 	{
-		public static void SetupTranslation()
+		internal static void SetupTranslation()
 		{
 			foreach (var translation in CalamityTranslationDictionaries.CalamityTiles)
 			{

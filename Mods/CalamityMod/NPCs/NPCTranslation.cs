@@ -5,9 +5,9 @@ using Terraria.Localization;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
 {
-	internal static class NPCTranslation
+	public static class NPCTranslation
 	{
-		public static void SetupTranslation()
+		internal static void SetupTranslation()
 		{
 			foreach (var id in CalamityTranslationLists.CalamityNpc)
 			{

@@ -7,7 +7,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
 {
     internal static class PrefixesTranslation
 	{
-		public static void SetupTranslation()
+		internal static void SetupTranslation()
 		{
 			foreach (var id in CalamityTranslationLists.CalamityPrefix)
 			{

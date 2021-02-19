@@ -14,16 +14,16 @@ namespace CalamityRuTranslate.ThoriumMod.NPCs
 		{
 			Mod thorium = ModLoader.GetMod("ThoriumMod");
 			
-			thorium.GetNPC("RockBoulderMimic").DisplayName.AddTranslation(GameCulture.Russian, "Булыжник");
-			thorium.GetNPC("MoltenBoulderMimic").DisplayName.AddTranslation(GameCulture.Russian, "Булыжник");
-			thorium.GetNPC("DesertBoulderMimic").DisplayName.AddTranslation(GameCulture.Russian, "Булыжник");
-			thorium.GetNPC("IceBoulderMimic").DisplayName.AddTranslation(GameCulture.Russian, "Булыжник");
+			//thorium.GetNPC("RockBoulderMimic").DisplayName.AddTranslation(GameCulture.Russian, "Булыжник");
+			//thorium.GetNPC("MoltenBoulderMimic").DisplayName.AddTranslation(GameCulture.Russian, "Булыжник");
+			//thorium.GetNPC("DesertBoulderMimic").DisplayName.AddTranslation(GameCulture.Russian, "Булыжник");
+			//thorium.GetNPC("IceBoulderMimic").DisplayName.AddTranslation(GameCulture.Russian, "Булыжник");
 			thorium.GetNPC("Illusionist").DisplayName.AddTranslation(GameCulture.Russian, "Иллюзионист");
 			thorium.GetNPC("IllusionistBolt").DisplayName.AddTranslation(GameCulture.Russian, "Иллюзорное стекло");
 			thorium.GetNPC("IllusionistDecoy").DisplayName.AddTranslation(GameCulture.Russian, "Иллюзионист");
 			thorium.GetNPC("IllusionistMirror").DisplayName.AddTranslation(GameCulture.Russian, "Зеркало иллюзиониста");
 			thorium.GetNPC("IllusionistSpawn").DisplayName.AddTranslation(GameCulture.Russian, "Причудливое зеркало");
-			thorium.GetNPC("JungleBoulderMimic").DisplayName.AddTranslation(GameCulture.Russian, "Булыжник");
+			//thorium.GetNPC("JungleBoulderMimic").DisplayName.AddTranslation(GameCulture.Russian, "Булыжник");
 			thorium.GetNPC("AggroDummy").DisplayName.AddTranslation(GameCulture.Russian, "Злобный манекен");
 			thorium.GetNPC("AncientArcher").DisplayName.AddTranslation(GameCulture.Russian, "Древний лучник");
 			thorium.GetNPC("AncientCharger").DisplayName.AddTranslation(GameCulture.Russian, "Древний набрасыватель");
@@ -82,7 +82,7 @@ namespace CalamityRuTranslate.ThoriumMod.NPCs
 			thorium.GetNPC("FrostWormBody").DisplayName.AddTranslation(GameCulture.Russian, "Морозный червь");
 			thorium.GetNPC("FrostWormHead").DisplayName.AddTranslation(GameCulture.Russian, "Морозный червь");
 			thorium.GetNPC("FrostWormTail").DisplayName.AddTranslation(GameCulture.Russian, "Морозный червь");
-			thorium.GetNPC("FrostyWisp").DisplayName.AddTranslation(GameCulture.Russian, "Морозный висп");
+			//thorium.GetNPC("FrostyWisp").DisplayName.AddTranslation(GameCulture.Russian, "Морозный висп");
 			thorium.GetNPC("FrozenFace").DisplayName.AddTranslation(GameCulture.Russian, "Заледенелый лицемонстр");
 			thorium.GetNPC("FrozenGross").DisplayName.AddTranslation(GameCulture.Russian, "Заледенелый поганец");
 			thorium.GetNPC("GelatinousCube").DisplayName.AddTranslation(GameCulture.Russian, "Желатиновый куб");
@@ -168,13 +168,13 @@ namespace CalamityRuTranslate.ThoriumMod.NPCs
 			thorium.GetNPC("BloodDrop").DisplayName.AddTranslation(GameCulture.Russian, "Кровавая капля");
 			thorium.GetNPC("GorgedEye").DisplayName.AddTranslation(GameCulture.Russian, "Насытившийся глаз");
 			thorium.GetNPC("GraveLimb").DisplayName.AddTranslation(GameCulture.Russian, "Могильная конечность");
-			thorium.GetNPC("ImpaledZombie").DisplayName.AddTranslation(GameCulture.Russian, "Пронзенный зомби");
+			//thorium.GetNPC("ImpaledZombie").DisplayName.AddTranslation(GameCulture.Russian, "Пронзенный зомби");
 			thorium.GetNPC("Maggot").DisplayName.AddTranslation(GameCulture.Russian, "Изголодавшаяся личинка");
-			thorium.GetNPC("NecroticImbuer").DisplayName.AddTranslation(GameCulture.Russian, "Некротический заклинатель");
+			thorium.GetNPC("NecroticImbuer").DisplayName.AddTranslation(GameCulture.Russian, "Кровавый маг");
 			thorium.GetNPC("PatchWerk").DisplayName.AddTranslation(GameCulture.Russian, "Лоскутик");
 			thorium.GetNPC("SeveredLegs").DisplayName.AddTranslation(GameCulture.Russian, "Отрубленные ноги");
 			thorium.GetNPC("Shade").DisplayName.AddTranslation(GameCulture.Russian, "Удушающая тень");
-			thorium.GetNPC("Warg").DisplayName.AddTranslation(GameCulture.Russian, "Жаждущий крови варг");
+			thorium.GetNPC("Warg").DisplayName.AddTranslation(GameCulture.Russian, "Кровавый варг");
 			thorium.GetNPC("CorpseBloom").DisplayName.AddTranslation(GameCulture.Russian, "Трупоцвет");
 			thorium.GetNPC("CorpsePetal").DisplayName.AddTranslation(GameCulture.Russian, "Лепесток трупоцвета");
 			thorium.GetNPC("CorpseWeed").DisplayName.AddTranslation(GameCulture.Russian, "Трупный побег");

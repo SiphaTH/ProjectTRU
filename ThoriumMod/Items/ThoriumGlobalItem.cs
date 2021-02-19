@@ -15,22 +15,22 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			{
 				if (ProjectTRuConfig.Instance.ThoriumTranslation)
 				{
-					if (item.type == thorium.ItemType("HealerCard"))
-					{
-						foreach (TooltipLine tooltipLine in tooltips)
-						{
-							string resultG = tooltipLine.text
-								.Replace("'Gifted to truly dedicated healers'",
-									"'Дар истинно преданным делу целителям'")
-								.Replace("Total lives saved: ", "Всего жизней спасено: ")
-								.Replace("Total close calls: ", "На волоске от гибели: ")
-								.Replace("Total damage mitigated: ", "Всего урона снижено: ")
-								.Replace("Total healing done: ", "Общее количество исцеленного здоровья: ")
-								.Replace("Highest heal streak: ", "Наивысшая серия исцеления: ")
-								.Replace("Current Bonus Healing: ", "Текущий бонус лечения: ");
-							tooltipLine.text = resultG;
-						}
-					}
+					// if (item.type == thorium.ItemType("HealerCard"))
+					// {
+					// 	foreach (TooltipLine tooltipLine in tooltips)
+					// 	{
+					// 		string resultG = tooltipLine.text
+					// 			.Replace("'Gifted to truly dedicated healers'",
+					// 				"'Дар истинно преданным делу целителям'")
+					// 			.Replace("Total lives saved: ", "Всего жизней спасено: ")
+					// 			.Replace("Total close calls: ", "На волоске от гибели: ")
+					// 			.Replace("Total damage mitigated: ", "Всего урона снижено: ")
+					// 			.Replace("Total healing done: ", "Общее количество исцеленного здоровья: ")
+					// 			.Replace("Highest heal streak: ", "Наивысшая серия исцеления: ")
+					// 			.Replace("Current Bonus Healing: ", "Текущий бонус лечения: ");
+					// 		tooltipLine.text = resultG;
+					// 	}
+					// }
 
 					if (item.type == thorium.ItemType("SoulLink"))
 					{

@@ -31,11 +31,11 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("WhisperingTabard").DisplayName.AddTranslation(GameCulture.Russian, "Шепчущий камзол");
 			thorium.GetItem("Aerial").DisplayName.AddTranslation(GameCulture.Russian, "Воздушный");
 			thorium.GetItem("ArcaneArmorFabricator").DisplayName.AddTranslation(GameCulture.Russian, "Изготовитель мистических доспехов");
-			thorium.GetItem("AvianCartilage").DisplayName.AddTranslation(GameCulture.Russian, "Птичий хрящ");
+			//thorium.GetItem("AvianCartilage").DisplayName.AddTranslation(GameCulture.Russian, "Птичий хрящ");
 			thorium.GetItem("BloomingBlade").DisplayName.AddTranslation(GameCulture.Russian, "Цветущий палаш");
-			thorium.GetItem("BulbChestplate").DisplayName.AddTranslation(GameCulture.Russian, "Бутонный нагрудник");
-			thorium.GetItem("BulbHood").DisplayName.AddTranslation(GameCulture.Russian, "Бутонный капюшон");
-			thorium.GetItem("BulbLeggings").DisplayName.AddTranslation(GameCulture.Russian, "Бутонные поножи");
+			//thorium.GetItem("BulbChestplate").DisplayName.AddTranslation(GameCulture.Russian, "Бутонный нагрудник");
+			//thorium.GetItem("BulbHood").DisplayName.AddTranslation(GameCulture.Russian, "Бутонный капюшон");
+			//thorium.GetItem("BulbLeggings").DisplayName.AddTranslation(GameCulture.Russian, "Бутонные поножи");
 			thorium.GetItem("DangerDagger").DisplayName.AddTranslation(GameCulture.Russian, "Опасный кинжал");
 			thorium.GetItem("DangerDaikatana").DisplayName.AddTranslation(GameCulture.Russian, "Опасная дайкатана");
 			thorium.GetItem("DangerDoomerang").DisplayName.AddTranslation(GameCulture.Russian, "Опасный смертеранг");
@@ -45,7 +45,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("DangerMail").DisplayName.AddTranslation(GameCulture.Russian, "Опасная кольчуга");
 			thorium.GetItem("DangerShard").DisplayName.AddTranslation(GameCulture.Russian, "Осколок опасности");
 			thorium.GetItem("FalconeerCane").DisplayName.AddTranslation(GameCulture.Russian, "Соколиная жердь");
-			thorium.GetItem("FeatherArrow").DisplayName.AddTranslation(GameCulture.Russian, "Перьевая стрела");
+			//thorium.GetItem("FeatherArrow").DisplayName.AddTranslation(GameCulture.Russian, "Перьевая стрела");
 			thorium.GetItem("FeatherFoe").DisplayName.AddTranslation(GameCulture.Russian, "Перьевой недоброжелатель");
 			thorium.GetItem("FlightBoots").DisplayName.AddTranslation(GameCulture.Russian, "Поножи полета");
 			thorium.GetItem("FlightMail").DisplayName.AddTranslation(GameCulture.Russian, "Кольчуга полета");
@@ -56,7 +56,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("HarpyPelter").DisplayName.AddTranslation(GameCulture.Russian, "Ливень");
 			thorium.GetItem("HarpyTalon").DisplayName.AddTranslation(GameCulture.Russian, "Коготь гарпии");
 			thorium.GetItem("Petal").DisplayName.AddTranslation(GameCulture.Russian, "Лепесток");
-			thorium.GetItem("PetalBloom").DisplayName.AddTranslation(GameCulture.Russian, "Лепестковый цветок");
+			//thorium.GetItem("PetalBloom").DisplayName.AddTranslation(GameCulture.Russian, "Лепестковый цветок");
 			thorium.GetItem("PetalShield").DisplayName.AddTranslation(GameCulture.Russian, "Лепестковый щит");
 			thorium.GetItem("PetalWand").DisplayName.AddTranslation(GameCulture.Russian, "Лепестковый жезл");
 			thorium.GetItem("RodFlocking").DisplayName.AddTranslation(GameCulture.Russian, "Стайный жезл");
@@ -127,7 +127,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("HammerHeadBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя акулы-молота");
 			thorium.GetItem("HoppingSpiderBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя паука-попрыгуна");
 			thorium.GetItem("HorrorBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя ужасающего набрасывателя");
-			thorium.GetItem("ImpaledZombieBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя пронзенного зомби");
+			//thorium.GetItem("ImpaledZombieBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя пронзенного зомби");
 			thorium.GetItem("InfernalHoundBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя инфернальной гончей");
 			thorium.GetItem("InvaderBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя враждебного вторженца");
 			thorium.GetItem("KrakenBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя кракена");
@@ -144,7 +144,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("MossWaspBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя лишайной осы");
 			thorium.GetItem("MudManBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя грязевого человека");
 			thorium.GetItem("NecroPotBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя некротического горшка");
-			thorium.GetItem("NecroticImbuerBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя некротического заклинателя");
+			thorium.GetItem("NecroticImbuerBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя кровавого мага");
 			thorium.GetItem("NestlingBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя птенца");
 			thorium.GetItem("OctopusBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя осьминога");
 			thorium.GetItem("PhantomBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя Le Fantôme");
@@ -172,7 +172,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("VampireSquidBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя адского вампира");
 			thorium.GetItem("VileSpitterBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя парящего нечестивца");
 			thorium.GetItem("VoltBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя электрического угря");
-			thorium.GetItem("WargBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя жаждущего крови варга");
+			thorium.GetItem("WargBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя кровавого варга");
 			thorium.GetItem("WindElementalBanner").DisplayName.AddTranslation(GameCulture.Russian, "Знамя элементаля ветра");
 			thorium.GetItem("BersekerShard").DisplayName.AddTranslation(GameCulture.Russian, "Осколок берсерка");
 			thorium.GetItem("BerserkBlade").DisplayName.AddTranslation(GameCulture.Russian, "Пылающий гнев");
@@ -407,7 +407,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("CursedWall").DisplayName.AddTranslation(GameCulture.Russian, "Проклятая стена");
 			thorium.GetItem("CursedWorkbench").DisplayName.AddTranslation(GameCulture.Russian, "Проклятый верстак");
 			thorium.GetItem("CyanStainedGlass").DisplayName.AddTranslation(GameCulture.Russian, "Голубое витражное стекло");
-			thorium.GetItem("DarksteelHelmetStand").DisplayName.AddTranslation(GameCulture.Russian, "Манекен со шлемом из темной стали");
+			//thorium.GetItem("DarksteelHelmetStand").DisplayName.AddTranslation(GameCulture.Russian, "Манекен со шлемом из темной стали");
 			thorium.GetItem("DecorativePotion").DisplayName.AddTranslation(GameCulture.Russian, "Декоративное зелье");
 			thorium.GetItem("DepthRock").DisplayName.AddTranslation(GameCulture.Russian, "Глубинный камень");
 			thorium.GetItem("DepthsMusicBox").DisplayName.AddTranslation(GameCulture.Russian, "Музыкальная шкатулка (морские глубины)");
@@ -1011,7 +1011,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("BardLeggings").DisplayName.AddTranslation(GameCulture.Russian, "Рейтузы глашатая");
 			thorium.GetItem("Bassoon").DisplayName.AddTranslation(GameCulture.Russian, "Фагот");
 			thorium.GetItem("BetsysBellow").DisplayName.AddTranslation(GameCulture.Russian, "Рев Бетси");
-			thorium.GetItem("BloomerBell").DisplayName.AddTranslation(GameCulture.Russian, "Колокол цветения");
+			thorium.GetItem("BloomerBell").DisplayName.AddTranslation(GameCulture.Russian, "Цветущий колокол");
 			thorium.GetItem("BloomWeave").DisplayName.AddTranslation(GameCulture.Russian, "Цветущая ткань");
 			thorium.GetItem("BoneTrumpet").DisplayName.AddTranslation(GameCulture.Russian, "Костяная труба");
 			thorium.GetItem("Bongos").DisplayName.AddTranslation(GameCulture.Russian, "Бонго");
@@ -1234,7 +1234,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("ApothecaryLife").DisplayName.AddTranslation(GameCulture.Russian, "Алый аптекарский флакон");
 			thorium.GetItem("ApothecaryMana").DisplayName.AddTranslation(GameCulture.Russian, "Голубой аптекарский флакон");
 			thorium.GetItem("AquaiteScythe").DisplayName.AddTranslation(GameCulture.Russian, "Аквайтовая коса");
-			thorium.GetItem("ArcaniteEmblem").DisplayName.AddTranslation(GameCulture.Russian, "Арканитовая эмблема");
+			//thorium.GetItem("ArcaniteEmblem").DisplayName.AddTranslation(GameCulture.Russian, "Арканитовая эмблема");
 			thorium.GetItem("ArchangelHeart").DisplayName.AddTranslation(GameCulture.Russian, "Сердце архангела");
 			thorium.GetItem("ArchDemonCurse").DisplayName.AddTranslation(GameCulture.Russian, "Проклятие архидемона");
 			thorium.GetItem("AscensionStatuette").DisplayName.AddTranslation(GameCulture.Russian, "Статуэтка Вознесения");
@@ -1301,7 +1301,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("HallowedPaladinLeggings").DisplayName.AddTranslation(GameCulture.Russian, "Сакральные поножи");
 			thorium.GetItem("HallowedScythe").DisplayName.AddTranslation(GameCulture.Russian, "Освященная коса");
 			thorium.GetItem("HeadMirror").DisplayName.AddTranslation(GameCulture.Russian, "Налобное зеркало");
-			thorium.GetItem("HealerCard").DisplayName.AddTranslation(GameCulture.Russian, "Карта целителя");
+			//thorium.GetItem("HealerCard").DisplayName.AddTranslation(GameCulture.Russian, "Карта целителя");
 			thorium.GetItem("HealingRain").DisplayName.AddTranslation(GameCulture.Russian, "Скипетр небесных облаков");
 			thorium.GetItem("HeartWand").DisplayName.AddTranslation(GameCulture.Russian, "Сердечный жезл");
 			thorium.GetItem("HereticBreaker").DisplayName.AddTranslation(GameCulture.Russian, "Дробитель еретиков");
@@ -1398,7 +1398,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("TrueBloodHarvest").DisplayName.AddTranslation(GameCulture.Russian, "Истинная кровавая жатва");
 			thorium.GetItem("TrueFallingTwilight").DisplayName.AddTranslation(GameCulture.Russian, "Истинные падающие сумерки");
 			thorium.GetItem("TrueHallowedScythe").DisplayName.AddTranslation(GameCulture.Russian, "Истинная освященная коса");
-			thorium.GetItem("TulipStaff").DisplayName.AddTranslation(GameCulture.Russian, "Тюльпановый посох");
+			thorium.GetItem("TulipStaff").DisplayName.AddTranslation(GameCulture.Russian, "Цветущий посох");
 			thorium.GetItem("TurnUndead").DisplayName.AddTranslation(GameCulture.Russian, "Обращение в нежить");
 			thorium.GetItem("TwilightStaff").DisplayName.AddTranslation(GameCulture.Russian, "Сумеречный посох");
 			thorium.GetItem("Twinkle").DisplayName.AddTranslation(GameCulture.Russian, "Сияние");
@@ -1681,7 +1681,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("OceanSlasher").DisplayName.AddTranslation(GameCulture.Russian, "Океанический рассекатель");
 			thorium.GetItem("OceanTomahawk").DisplayName.AddTranslation(GameCulture.Russian, "Океанический томагавк");
 			thorium.GetItem("SeahorseWand").DisplayName.AddTranslation(GameCulture.Russian, "Посох морского конька");
-			thorium.GetItem("AbsintheFury").DisplayName.AddTranslation(GameCulture.Russian, "Полынное неистовство");
+			//thorium.GetItem("AbsintheFury").DisplayName.AddTranslation(GameCulture.Russian, "Полынное неистовство");
 			thorium.GetItem("AlienTech").DisplayName.AddTranslation(GameCulture.Russian, "Странная инопланетная технология");
 			thorium.GetItem("Altar").DisplayName.AddTranslation(GameCulture.Russian, "Алтарь");
 			thorium.GetItem("AncientDrachma").DisplayName.AddTranslation(GameCulture.Russian, "Древняя драхма");
@@ -1697,7 +1697,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("BlisterSack").DisplayName.AddTranslation(GameCulture.Russian, "Волдырный мешочек");
 			thorium.GetItem("Blood").DisplayName.AddTranslation(GameCulture.Russian, "Кровь");
 			thorium.GetItem("BoneFlayerTail").DisplayName.AddTranslation(GameCulture.Russian, "Хвост костяного летуна");
-			thorium.GetItem("BrokenDarksteelHelmet").DisplayName.AddTranslation(GameCulture.Russian, "Сломанный шлем из темной стали");
+			//thorium.GetItem("BrokenDarksteelHelmet").DisplayName.AddTranslation(GameCulture.Russian, "Сломанный шлем из темной стали");
 			thorium.GetItem("BulletStorm").DisplayName.AddTranslation(GameCulture.Russian, "Буря пуль");
 			thorium.GetItem("CactusFruit").DisplayName.AddTranslation(GameCulture.Russian, "Кактусовый инжир");
 			thorium.GetItem("ChefHat").DisplayName.AddTranslation(GameCulture.Russian, "Поварской колпак");
@@ -1724,7 +1724,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("FrostPlagueStaff").DisplayName.AddTranslation(GameCulture.Russian, "Морозный посох чумы");
 			thorium.GetItem("GatewayGlass").DisplayName.AddTranslation(GameCulture.Russian, "Зеркальные врата");
 			thorium.GetItem("GhostlyGrapple").DisplayName.AddTranslation(GameCulture.Russian, "Призрачный крюк");
-			thorium.GetItem("Glacieor").DisplayName.AddTranslation(GameCulture.Russian, "Ледник");
+			//thorium.GetItem("Glacieor").DisplayName.AddTranslation(GameCulture.Russian, "Ледник");
 			thorium.GetItem("GnomePick").DisplayName.AddTranslation(GameCulture.Russian, "Кирка короля гномов");
 			thorium.GetItem("GraveBuster").DisplayName.AddTranslation(GameCulture.Russian, "Разрушитель могил");
 			thorium.GetItem("HailBomber").DisplayName.AddTranslation(GameCulture.Russian, "Градовая бомба");
@@ -1764,9 +1764,9 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("Spoon").DisplayName.AddTranslation(GameCulture.Russian, "Ложка");
 			thorium.GetItem("Spud").DisplayName.AddTranslation(GameCulture.Russian, "Картофелина");
 			thorium.GetItem("SpudBomber").DisplayName.AddTranslation(GameCulture.Russian, "Картофелемет");
-			thorium.GetItem("StoneSledge").DisplayName.AddTranslation(GameCulture.Russian, "Каменная кувалда");
-			thorium.GetItem("SurtrsSword").DisplayName.AddTranslation(GameCulture.Russian, "Меч Суртура");
-			thorium.GetItem("ThiefDagger").DisplayName.AddTranslation(GameCulture.Russian, "Воровской кинжал");
+			//thorium.GetItem("StoneSledge").DisplayName.AddTranslation(GameCulture.Russian, "Каменная кувалда");
+			//thorium.GetItem("SurtrsSword").DisplayName.AddTranslation(GameCulture.Russian, "Меч Суртура");
+			//thorium.GetItem("ThiefDagger").DisplayName.AddTranslation(GameCulture.Russian, "Воровской кинжал");
 			thorium.GetItem("ThoriumCube").DisplayName.AddTranslation(GameCulture.Russian, "Ториевый куб");
 			thorium.GetItem("TommyGun").DisplayName.AddTranslation(GameCulture.Russian, "Автомат Томпсона");
 			thorium.GetItem("VegaPhaser").DisplayName.AddTranslation(GameCulture.Russian, "Вега фазер");
@@ -1875,8 +1875,8 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("CycloneBook").DisplayName.AddTranslation(GameCulture.Russian, "Циклон");
 			thorium.GetItem("DarkWave").DisplayName.AddTranslation(GameCulture.Russian, "Темная волна");
 			thorium.GetItem("DynastyWarFan").DisplayName.AddTranslation(GameCulture.Russian, "Веер из родового дерева");
-			thorium.GetItem("EnchantedArmor").DisplayName.AddTranslation(GameCulture.Russian, "Магическая броня");
-			thorium.GetItem("Enchantersword").DisplayName.AddTranslation(GameCulture.Russian, "Меч зачарователя");
+			//thorium.GetItem("EnchantedArmor").DisplayName.AddTranslation(GameCulture.Russian, "Магическая броня");
+			//thorium.GetItem("Enchantersword").DisplayName.AddTranslation(GameCulture.Russian, "Меч зачарователя");
 			thorium.GetItem("HallowedCharm").DisplayName.AddTranslation(GameCulture.Russian, "Освященный амулет");
 			thorium.GetItem("HallowedStaff").DisplayName.AddTranslation(GameCulture.Russian, "Освященный посох");
 			thorium.GetItem("HighTide").DisplayName.AddTranslation(GameCulture.Russian, "Высокий прилив");
@@ -1894,7 +1894,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("TimeBook").DisplayName.AddTranslation(GameCulture.Russian, "Врата времени");
 			thorium.GetItem("TitaniumStaff").DisplayName.AddTranslation(GameCulture.Russian, "Титановый посох");
 			thorium.GetItem("TrueBloodboil").DisplayName.AddTranslation(GameCulture.Russian, "Истинная бурлящая кровь");
-			thorium.GetItem("TrueEnchantersSword").DisplayName.AddTranslation(GameCulture.Russian, "Истинный меч зачарователя");
+			//thorium.GetItem("TrueEnchantersSword").DisplayName.AddTranslation(GameCulture.Russian, "Истинный меч зачарователя");
 			thorium.GetItem("TrueHallowedStaff").DisplayName.AddTranslation(GameCulture.Russian, "Истинный освященный посох");
 			thorium.GetItem("TrueLightsLament").DisplayName.AddTranslation(GameCulture.Russian, "Истинный плач света");
 			thorium.GetItem("VesselBuster").DisplayName.AddTranslation(GameCulture.Russian, "Разрушитель сосудов");
@@ -2243,7 +2243,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("CursedCore").DisplayName.AddTranslation(GameCulture.Russian, "Проклятое цепное ядро");
 			thorium.GetItem("DiamondRing").DisplayName.AddTranslation(GameCulture.Russian, "Кольцо с алмазом");
 			thorium.GetItem("EmeraldRing").DisplayName.AddTranslation(GameCulture.Russian, "Кольцо с изумрудом");
-			thorium.GetItem("EnchantedShield").DisplayName.AddTranslation(GameCulture.Russian, "Зачарованный щит");
+			//thorium.GetItem("EnchantedShield").DisplayName.AddTranslation(GameCulture.Russian, "Зачарованный щит");
 			thorium.GetItem("FearMonger").DisplayName.AddTranslation(GameCulture.Russian, "Торговец страхом");
 			thorium.GetItem("Firestormboots").DisplayName.AddTranslation(GameCulture.Russian, "Сапоги огненного шторма");
 			thorium.GetItem("GoldAegis").DisplayName.AddTranslation(GameCulture.Russian, "Золотая эгида");
@@ -2254,7 +2254,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("IronShield").DisplayName.AddTranslation(GameCulture.Russian, "Железный щит");
 			thorium.GetItem("LeadShield").DisplayName.AddTranslation(GameCulture.Russian, "Свинцовый щит");
 			thorium.GetItem("LeatherGlove").DisplayName.AddTranslation(GameCulture.Russian, "Кожаная перчатка");
-			thorium.GetItem("ManaChargedRocketeers").DisplayName.AddTranslation(GameCulture.Russian, "Мана-ракетные сапоги");
+			//thorium.GetItem("ManaChargedRocketeers").DisplayName.AddTranslation(GameCulture.Russian, "Мана-ракетные сапоги");
 			thorium.GetItem("MarchingBoots").DisplayName.AddTranslation(GameCulture.Russian, "Маршевые сапоги");
 			thorium.GetItem("MoltenScale").DisplayName.AddTranslation(GameCulture.Russian, "Раскаленная чешуя");
 			thorium.GetItem("MoltenSpearTip").DisplayName.AddTranslation(GameCulture.Russian, "Раскаленный наконечник копья");

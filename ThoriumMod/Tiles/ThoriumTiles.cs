@@ -437,7 +437,7 @@ namespace CalamityRuTranslate.ThoriumMod.Tiles
 			ModTile tile75 = TileLoader.GetTile(CoreThoriumTranslation.ThoriumMod.TileType("OceanCrystal"));
 			ModTranslation oceanCrystal = tile75.CreateMapEntryName();
 			oceanCrystal.AddTranslation(GameCulture.Russian, "Акватический кристалл");
-			tile75.AddMapEntry(new Color(150, 235, 235), oceanCrystal);
+			tile75.AddMapEntry(new Color(175, 235, 255), oceanCrystal);
 			
 			ModTile tile76 = TileLoader.GetTile(CoreThoriumTranslation.ThoriumMod.TileType("Onyx"));
 			ModTranslation onyx = tile76.CreateMapEntryName();

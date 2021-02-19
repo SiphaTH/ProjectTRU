@@ -301,7 +301,9 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
             if(_doCensusModSupport != null) ModifyDoCensusModSupport += Ru_ModifyDoCensusModSupport;
             
             _displayDrShieldIcon = thoriumMod?.GetMethod("DisplayDRShieldIcon", BindingFlags.NonPublic | BindingFlags.Instance);
+            _displayHealerIcon = thoriumMod?.GetMethod("DisplayHealerIcon", BindingFlags.NonPublic | BindingFlags.Instance);
             if(_displayDrShieldIcon != null) ModifyDisplayDrShieldIcon += Ru_ModifyDisplayDrShieldIcon;
+            if(_displayHealerIcon != null) ModifyDisplayHealerIcon += Ru_ModifyDisplayHealerIcon;
 
             _titleAlmostContract = almostContract?.GetMethod("get_Title", BindingFlags.Public | BindingFlags.Instance);
             _descriptionAlmostContract = almostContract?.GetMethod("get_Description", BindingFlags.Public | BindingFlags.Instance);
@@ -480,6 +482,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
             if(_doBossChecklistSupport != null) ModifyDoBossChecklistSupport -= Ru_ModifyDoBossChecklistSupport;
             if(_doCensusModSupport != null) ModifyDoCensusModSupport -= Ru_ModifyDoCensusModSupport;
             if(_displayDrShieldIcon != null) ModifyDisplayDrShieldIcon -= Ru_ModifyDisplayDrShieldIcon;
+            if(_displayHealerIcon != null) ModifyDisplayHealerIcon -= Ru_ModifyDisplayHealerIcon;
             if(_titleAlmostContract != null) ModifyTitleAlmostContract -= Ru_ModifyTitleAlmostContract;
             if(_descriptionAlmostContract != null) ModifyDescriptionAlmostContract -= Ru_ModifyDescriptionAlmostContract;
             if(_titleBoneLeeContract != null) ModifyTitleBoneLeeContract -= Ru_ModifyTitleBoneLeeContract;
@@ -693,11 +696,11 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
         
         private static void Ru_ModifyTitleMothContract(ILContext il) => Translation.ILTranslate(il, "Gonna Need a Bigger Lamp", Translation.EncodeToUtf16("Понадобится лампа побольше"));
         
-        private static void Ru_ModifyDescriptionMothContract(ILContext il) => Translation.ILTranslate(il, "Don't be fooled, kid, the creature that lurks within the jungle is a being of pure terror, not beauty. Its mere existence is testament to our arrogance as individuals. It's... a moth!", Translation.EncodeToUtf16("Не дай себя обмануть, парень, то существо, которое прячется в джунглях несет лишь террор, а не красоту. Само ее существование это следствие самоуверенности отдельных лиц. Это... Моль!"));
+        private static void Ru_ModifyDescriptionMothContract(ILContext il) => Translation.ILTranslate(il, "Don't be fooled, kid, the creature that lurks within the underground jungle is a being of pure terror, not beauty. Its mere existence is testament to our arrogance as individuals. It's... a moth!", Translation.EncodeToUtf16("Не дай себя обмануть, парень, то существо, которое прячется в подземных джунглях несет лишь ужас, а не красоту. Само ее существование это следствие самоуверенности отдельных лиц. Это... Моль!"));
         
         private static void Ru_ModifyTitleMothronContract(ILContext il) => Translation.ILTranslate(il, "Destroy All Monsters", Translation.EncodeToUtf16("Уничтожь всех чудищ"));
         
-        private static void Ru_ModifyDescriptionMothronContract(ILContext il) => Translation.ILTranslate(il, "When the moon perfectly blocks the sun, the terror within us is released upon the world. My biggest fear has manifested as well. Hey, we don't choose what we fear, kid...", Translation.EncodeToUtf16("Когда луна полностью закрывает солнце, наши страхи выходят в этот мир. Мой самый жуткий кошмар также проявился. Хэй, не мы выбираем свои страхи, парень..."));
+        private static void Ru_ModifyDescriptionMothronContract(ILContext il) => Translation.ILTranslate(il, "When the moon perfectly blocks the sun, the terror within us is released upon the world. My biggest fear has manifested as well in the form of a mutant moth! Hey, we don't choose what we fear, kid...", Translation.EncodeToUtf16("Когда луна полностью закрывает солнце, наши страхи выходят в этот мир. Мой самый жуткий кошмар также проявился в виде мотылька-мутанта!. Хэй, не мы выбираем свои страхи, парень..."));
         
         private static void Ru_ModifyTitleNymphContract(ILContext il) => Translation.ILTranslate(il, "Damsel of Distress", Translation.EncodeToUtf16("Девица бедствий"));
         
@@ -815,6 +818,16 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
         {
             Translation.ILTranslate(il, " & ", Translation.EncodeToUtf16(" и "));
             Translation.ILTranslate(il, " life", Translation.EncodeToUtf16(" здоровья"));
+        }
+        
+        private static void Ru_ModifyDisplayHealerIcon(ILContext il)
+        {
+            Translation.ILTranslate(il, ":Healer Stats]\nCurrent Bonus Healing: ", Translation.EncodeToUtf16(":Характеристики целителя]\nТекущее бонусное лечение: "));
+            //Translation.ILTranslate(il, "\nBest Heal Streak: ", Translation.EncodeToUtf16("\n"));
+            Translation.ILTranslate(il, "\nHealing done: ", Translation.EncodeToUtf16("\nВсего исцелено: "));
+            Translation.ILTranslate(il, "\nDamage mitigated: ", Translation.EncodeToUtf16("\nПредотвращено урона: "));
+            Translation.ILTranslate(il, "\nLives saved: ", Translation.EncodeToUtf16("\nЖизней спасено: "));
+            Translation.ILTranslate(il, "\nClose calls: ", Translation.EncodeToUtf16("\nНа волоске"));
         }
 
         #endregion
@@ -1216,6 +1229,12 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
             add => HookEndpointManager.Modify(_usesManaThoriumItem, value);
             remove => HookEndpointManager.Unmodify(_usesManaThoriumItem, value);
         }
+        
+        private static event ILContext.Manipulator ModifyDisplayHealerIcon
+        {
+            add => HookEndpointManager.Modify(_displayHealerIcon, value);
+            remove => HookEndpointManager.Unmodify(_displayHealerIcon, value);
+        }
 
         #endregion
         
@@ -1241,6 +1260,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
         private static MethodInfo _doBossChecklistSupport;
         private static MethodInfo _doCensusModSupport;
         private static MethodInfo _displayDrShieldIcon;
+        private static MethodInfo _displayHealerIcon;
         private static MethodInfo _titleAlmostContract;
         private static MethodInfo _descriptionAlmostContract;
         private static MethodInfo _titleBoneLeeContract;

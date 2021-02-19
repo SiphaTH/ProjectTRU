@@ -5,9 +5,9 @@ using Terraria.Localization;
 
 namespace CalamityRuTranslate.Mods.ThoriumMod.Buffs
 {
-    internal static class BuffNames
+    public static class BuffTranslation
     {
-        public static void SetupTranslation()
+        internal static void SetupTranslation()
         {
             foreach (var translation in ThoriumRussianDictionaries.ThoriumBuffs)
             {
