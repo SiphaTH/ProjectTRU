@@ -9437,7 +9437,7 @@ FargoSouls.ItemName.NecroEnchant=Некротическое усиление
 FargoSouls.ItemTooltip.NecroEnchant=Убитые враги могут выронить груду костей\nПрикоснитесь к груде костей, чтобы вызвать дружелюбного хранителя темницы\nУрон зависит от максимального запаса здоровья побеждённого врага\nБоссы роняют кости каждые 10% потерянного здоровья\nПризывает питомца — скелетрончика\n'Добро пожаловать в зону костей'
 
 FargoSouls.ItemName.NinjaEnchant=Усиление ниндзя
-FargoSouls.ItemTooltip.NinjaEnchant=Бросьте дымовую бомбу, чтобы телепортироваться к ней и получить бафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.FirstStrike}»\nИспользование жезла раздора также дарует этот бафф\n{$Mods.CalamityRuTranslate.FargoSouls.BuffName.FirstStrike} гарантирует, что ваша следующая атака будет критической, которая нанесёт в 3 раза больше урона\n'Вижу — не вижу'
+FargoSouls.ItemTooltip.NinjaEnchant=Бросьте дымовую бомбу, чтобы телепортироваться к ней и получить бафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.FirstStrike}»\nИспользование жезла раздора также дарует этот бафф\n«{$Mods.CalamityRuTranslate.FargoSouls.BuffName.FirstStrike}» гарантирует, что ваша следующая атака будет критической, которая нанесёт в 3 раза больше урона\n'Вижу — не вижу'
 
 FargoSouls.ItemName.ObsidianEnchant=Обсидиановое усиление
 FargoSouls.ItemTooltip.ObsidianEnchant=Невосприимчивость к огню и лаве\nВы можете нормально двигаться и плавать в лаве\nВаши атаки вызывают взрывы, находясь в лаве\n'Земля зовёт'
@@ -9518,10 +9518,10 @@ FargoSouls.ItemName.TungstenEnchant=Вольфрамовое усиление
 FargoSouls.ItemTooltip.TungstenEnchant=Увеличивает размер меча на 150%\nКаждые полсекунды снаряд будет увеличиваться в два раза\nУвеличенные мечи и снаряды наносят на 15% больше урона при критическом ударе\n'Больше — всегда лучше'
 
 FargoSouls.ItemName.TurtleEnchant=Черепашье усиление
-FargoSouls.ItemTooltip.TurtleEnchant=Вы погружаетесь в панцирь если стите на месте и не атакуете\nПогрузившись в панцирь, вы получите 90% сопротивление урону и будете отражать снаряды\nПолучив 10 ударов разрушает панцирь\nОтражает 100% контактного урона\nВраги могут взорваться иглами после смерти\nПризывает питомцев — ручную ящерицу и черепаху\n'У вас внезапно появилось желание укрыться в панцире'
+FargoSouls.ItemTooltip.TurtleEnchant=Вы погружаетесь в панцирь если стоите на месте и не атакуете\nПогрузившись в панцирь, вы получите 90% сопротивление урону и будете отражать снаряды\nПолучив 10 ударов разрушает панцирь\nОтражает 100% контактного урона\nВраги могут взорваться иглами после смерти\nПризывает питомцев — ручную ящерицу и черепаху\n'У вас внезапно появилось желание укрыться в панцире'
 
 FargoSouls.ItemName.ValhallaKnightEnchant=Усиление рыцаря Вальгаллы
-FargoSouls.ItemTooltip.ValhallaKnightEnchant=Непрерывные атаки по врагу даруют вам бафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.ValhallaBuff}»\nЗа это время вы снизите кадры неуязвимости врагов\nGreatly enhances Ballista effectiveness\nЭффекты от предмета «{$ItemName.ShinyStone}»\nПризывает питомца — дракона\n'Вольгалла зовёт'
+FargoSouls.ItemTooltip.ValhallaKnightEnchant=Непрерывные атаки по врагу даруют вам бафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.ValhallaBuff}»\nЗа это время вы снизите кадры неуязвимости врагов\nЗначительно повышает эффективность Баллисты\nЭффекты от предмета «{$ItemName.ShinyStone}»\nПризывает питомца — дракона\n'Вольгалла зовёт'
 
 FargoSouls.ItemName.VortexEnchant=Вихревое усиление
 FargoSouls.ItemTooltip.VortexEnchant=Дважды нажмите вниз, чтобы переключить невидимость, снижая шанс врагов попасть по вам, но замедляет передвижение\nПри входе в невидимость создаёт вихрь, притягивающий врагов и снаряды\nПока вы невидимы ваши собственные снаряды не будут всасываться\nПризывает питомца — куба-спутника\n'Ворвись в реальность'
@@ -9551,43 +9551,43 @@ FargoSouls.ItemName.EarthForce=Сила Земли
 FargoSouls.ItemTooltip.EarthForce=Ваши снаряды с 25% шансом могут взорваться осколками\nУвеличивает скорость атаки оружием на 20%\nЗначительно увеличивает регенерацию здоровья при попадании во врага\nВы создаёте сферу разрушающей жизненной энергии каждые 80 восстановленных единиц здоровья\nЦветочные лепестки наносят дополнительный урон\nНаносящие урон дебаффы наносят в 5 раза больше урона\nОдин из ваших снарядов будет разделятся на 3 каждые 750 миллисекунд\nВы быстро становитесь неуязвимым при попадании во врага\n'Благословение Гайи озаряет вас'
 
 FargoSouls.ItemName.LifeForce=Сила Жизни
-FargoSouls.ItemTooltip.LifeForce=Вы будете выращивать тыквы, ходя по земле\nОтражает 100% контактного урона\nВраги могут взорваться иглами после смерти\nЛюбая дружелюбная пчела или оса станет мега пчелой\nВаши миньоны могут нанести критический удар с 30% шансом\nВы погружаетесь в панцирь если стоите на месте и атакуете\nЖуки защищают вас от урона\nУвеличивает время полёта на 50%\nПризывает нескольких питомцев\n'Rare is a living thing that dare disobey your will'
+FargoSouls.ItemTooltip.LifeForce=Вы будете выращивать тыквы, ходя по земле\nОтражает 100% контактного урона\nВраги могут взорваться иглами после смерти\nЛюбая дружелюбная пчела или оса станет мега пчелой\nВаши миньоны могут нанести критический удар с 30% шансом\nВы погружаетесь в панцирь если стоите на месте и атакуете\nЖуки защищают вас от урона\nУвеличивает время полёта на 50%\nПризывает нескольких питомцев\n'Редко живое существо, которое осмелится не подчиниться твоей воле'
 
 FargoSouls.ItemName.NatureForce=Сила Природы
-FargoSouls.ItemTooltip.NatureForce=После получения удара, значительно увеличит регенерацию здоровья пока удар не будет исцелён\nЕсли вы получите ещё один удар до исцеления, вы потеряете исцеление в дополнение к обычному урону\nБлижайшие враги воспламеняются\nЧем ближе они к вам, тем больший урон они получают\nКогда вы получили удар, вы яростно взрываетесь нанося ближайшим врагам урон\nНевосприимчивость к дебаффу «{$BuffName.Wet}»\nВызывает миниатюрную бурю после нанесения урона врагам\nВызывает вокруг вас сосульки\nВы получаете небольшую область вокруг вас, которая замедляет снаряды наполовину\nПризывает кольцо кристальных листьев, которые стреляют в ближайших врагов\nПрыжки будут выпускать продолжительный взрыв спор\nВесь сбор растений удвоен\nНе двигаясь, вы становитесь невидимым\nПока вы невидимы, все атаки оставляют след грибов\nЭффекты от предмета «{$ItemName.FlowerBoots}»\nПризывает нескольких питомцев\n'Tapped into every secret of the wilds'
+FargoSouls.ItemTooltip.NatureForce=После получения удара, значительно увеличит регенерацию здоровья пока удар не будет исцелён\nЕсли вы получите ещё один удар до исцеления, вы потеряете исцеление в дополнение к обычному урону\nБлижайшие враги воспламеняются\nЧем ближе они к вам, тем больший урон они получают\nКогда вы получили удар, вы яростно взрываетесь нанося ближайшим врагам урон\nНевосприимчивость к дебаффу «{$BuffName.Wet}»\nВызывает миниатюрную бурю после нанесения урона врагам\nВызывает вокруг вас сосульки\nВы получаете небольшую область вокруг вас, которая замедляет снаряды наполовину\nПризывает кольцо кристальных листьев, которые стреляют в ближайших врагов\nПрыжки будут выпускать продолжительный взрыв спор\nВесь сбор растений удвоен\nНе двигаясь, вы становитесь невидимым\nПока вы невидимы, все атаки оставляют след грибов\nЭффекты от предмета «{$ItemName.FlowerBoots}»\nПризывает нескольких питомцев\n'Раскрыл все секреты природы'
 
 FargoSouls.ItemName.ShadowForce=Сила Тени
 FargoSouls.ItemTooltip.ShadowForce=Три теневые сферы витают вокруг вас\nВаши атаки могут наложить на врагов дебафф «{$BuffName.Darkness}»\nУбитые враги могут выронить груду костей\nВсе ваши миньоны получают дополнительную атаку в виде косы\nБросьте дымовую бомбу, чтобы телепортироваться к ней и получить бафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.FirstStrike}»\nВы получите одноразовый рывок монаха, который работает в любом направлении если не атакуете\nСделайте рывок в стену, чтобы телепортироваться сквозь неё\nПризывает огнемётного миньона, который последует за курсором мыши после зажимания на пару секунд ЛКМ\nПри атаке, выстрелы огнемётного миньона проявляются из вашей тени\nЗначительно усиливает эффективность огнемётной башни и ауры света\nЭффекты от предмета «{$ItemName.MasterNinjaGear}»\nПризывает нескольких питомцев\n'Темно, темнее, ещё темнее'
 
 FargoSouls.ItemName.SpiritForce=Сила Духа
-FargoSouls.ItemTooltip.SpiritForce=Если ваше здоровье опустится до нуля, вы возродитесь с 50 единицами здоровья и создадите несколько костей\nПодберите кости, как только они перестанут двигаться восстановив 15 единиц здоровья за каждую подобранную кость\nДважды нажмите вниз, чтобы вызвать древнюю бурю в место расположения курсора мыши\nЛюбые снаряды пролетевшие через бурю получат 60% прибавку к урону\nПризывает зачарованный меч\nВы получаете щит, отражающий снаряды\nВы можете продолжать призывать временных миньонов после максимального количества доступного числа призывов\nВаш урон может вызвать разрушающие сферы\nЕсли вы нанесли критический удар, вы можете получить исцеляющую сферу\nПризывает нескольких питомцев\n'Ascend from this mortal realm'
+FargoSouls.ItemTooltip.SpiritForce=Если ваше здоровье опустится до нуля, вы возродитесь с 50 единицами здоровья и создадите несколько костей\nПодберите кости, как только они перестанут двигаться восстановив 15 единиц здоровья за каждую подобранную кость\nДважды нажмите вниз, чтобы вызвать древнюю бурю в место расположения курсора мыши\nЛюбые снаряды пролетевшие через бурю получат 60% прибавку к урону\nПризывает зачарованный меч\nВы получаете щит, отражающий снаряды\nВы можете продолжать призывать временных миньонов после максимального количества доступного числа призывов\nВаш урон может вызвать разрушающие сферы\nЕсли вы нанесли критический удар, вы можете получить исцеляющую сферу\nПризывает нескольких питомцев\n'Вознеситесь из царства смертных'
 
 FargoSouls.ItemName.TerraForce=Сила Терры
-FargoSouls.ItemTooltip.TerraForce=Атаки могут поразить врагов молнией\nШанс критического удара начинается с 10%\nНанесите критический удар, чтобы увеличить его на 4%\nПолучив удар, сбросит шанс критического удара\nПозволяет игроку делать рывок во врага\nНажмите ПКМ, чтобы защитится щитом\nВы притягиваете предметы на большем расстоянии\nУвеличивает размер меча на 150%\nКаждую четверть секунды увеличивает размер снаряда вдвое\nАтаки могут наложить дебафф «{Mods.CalamityRuTranslate.$FargoSouls.BuffName.LeadPoison}»\nДарует подвижность в лаве и невосприимчивость к огню и лаве\nВаши атаки вызывают взрывы\n'The land lends its strength'
+FargoSouls.ItemTooltip.TerraForce=Атаки могут поразить врагов молнией\nШанс критического удара начинается с 10%\nНанесите критический удар, чтобы увеличить его на 4%\nПолучив удар, сбросит шанс критического удара\nПозволяет игроку делать рывок во врага\nНажмите ПКМ, чтобы защитится щитом\nВы притягиваете предметы на большем расстоянии\nУвеличивает размер меча на 150%\nКаждую четверть секунды увеличивает размер снаряда вдвое\nАтаки могут наложить дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LeadPoison}»\nДарует подвижность в лаве и невосприимчивость к огню и лаве\nВаши атаки вызывают взрывы\n'Земля придаёт вам силу'
 
 FargoSouls.ItemName.TimberForce=Сила леса
-FargoSouls.ItemTooltip.TimberForce=Critters will explode 1 second after being released\n50% chance to not consume critters\nAttacks will periodically be accompanied by several snowballs\nAll grappling hooks shoot, pull, and retract 2.5x as fast\nYou have an aura of Shadowflame, Cursed Flames, and Bleeding\nDouble tap down to spawn a palm tree sentry that throws nuts at enemies\nProjectiles may spawn a star when they hit something\n'Чрезвычайно жёсткий'
+FargoSouls.ItemTooltip.TimberForce=Животные взорвутся через 1 секунду после того, как будут выпущены\n50% шанс не использовать животных\nАтаки будут периодически сопровождаться несколькими снежками\nВсе крюки выпускаются, притягивают и возвращаются в 2.5 раза быстрее\nВы получаете ауру «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Shadowflame}», «{$BuffName.CursedInferno}» и «{$BuffName.Bleeding}»\nДважды нажмите вниз, чтобы вызвать пальмовое дерево, которое бросает кокосы во врагов\nСнаряды могут вызвать звезду при попадании во что-либо\n'Чрезвычайно жёсткий'
 
 FargoSouls.ItemName.WillForce=Сила воли
-FargoSouls.ItemTooltip.WillForce=Ваши атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Midas}»\nНажмите клавишу Turn Gold, чтобы погрузится в золотой панцирь\nВы не сможете двигаться или атаковать, но будете невосприимчивы ко всему урону\nВраги с 20% шансом роняют в 5 раз больше предметов\nКопья обрушатся на поражённых врагов\nДважды нажмите вниз, чтобы создать сосредоточенный дождь из стрел в положение курсора мыши\nНепрерывные атаки по врагу даруют вам бафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.ValhallaBuff}»\nЗначительно усиливает эффективность баллисты и ловушек со взрывчаткой\nЭффекты от предметов «{$ItemName.GreedyRing}», «{$ItemName.CelestialShell}» и «{$ItemName.ShinyStone}»\nПризывает нескольких питомцев\n'A mind of unbreakable determination'
+FargoSouls.ItemTooltip.WillForce=Ваши атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Midas}»\nНажмите клавишу Turn Gold, чтобы погрузится в золотой панцирь\nВы не сможете двигаться или атаковать, но будете невосприимчивы ко всему урону\nВраги с 20% шансом роняют в 5 раз больше предметов\nКопья обрушатся на поражённых врагов\nДважды нажмите вниз, чтобы создать сосредоточенный дождь из стрел в положение курсора мыши\nНепрерывные атаки по врагу даруют вам бафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.ValhallaBuff}»\nЗначительно усиливает эффективность Баллисты и ловушек со взрывчаткой\nЭффекты от предметов «{$ItemName.GreedyRing}», «{$ItemName.CelestialShell}» и «{$ItemName.ShinyStone}»\nПризывает нескольких питомцев\n'Разум неразрушимой решимости'
 
 FargoSouls.ItemName.AeolusBoots=Ботинки Эола
 FargoSouls.ItemTooltip.AeolusBoots=Позволяет летать, супер быстро бегать и дарует дополнительную мобильность на льду\nУвеличивает скорость передвижения на 8%\nПозволяет владельцу совершать двойной прыжок\nУвеличивает скорость прыжка и предотвращает урон от падения\n'Беги как ветер'
 
 FargoSouls.ItemName.AgitatingLens=Волнующая линза
-FargoSouls.ItemTooltip.AgitatingLens=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Berserked}»\nУвеличивает урон на 10% когда здоровье ниже 50%\nРывком или быстрым бегом вы создадите след демонических кос\n'The irritable remnant of a defeated foe'
+FargoSouls.ItemTooltip.AgitatingLens=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Berserked}»\nУвеличивает урон на 10% когда здоровье ниже 50%\nРывком или быстрым бегом вы создадите след демонических кос\n'Раздражающие останки побеждённого врага'
 
 FargoSouls.ItemName.BetsysHeart=Сердце Бетси
-FargoSouls.ItemTooltip.BetsysHeart=Невосприимчивость к дебаффам «{$BuffName.OgreSpit}», «{$BuffName.WitheredWeapon}», «{$BuffName.WitheredArmor}»\nВаши критические удары накладывают дебафф «{$BuffName.BetsysCurse}»\nНажмите клавишу Fireball Dash, чтобы выполнить короткий рывок в неуязвимости\n'Lightly roasted, medium rare'
+FargoSouls.ItemTooltip.BetsysHeart=Невосприимчивость к дебаффам «{$BuffName.OgreSpit}», «{$BuffName.WitheredWeapon}», «{$BuffName.WitheredArmor}»\nВаши критические удары накладывают дебафф «{$BuffName.BetsysCurse}»\nНажмите клавишу Fireball Dash, чтобы выполнить короткий рывок в неуязвимости\n'Слегка пригоревший, средней прожарки'
 
 FargoSouls.ItemName.BionomicCluster=Биономный кластер
-FargoSouls.ItemTooltip.BionomicCluster=Невосприимчивость к дебаффам «{$BuffName.Frostburn}», «{$BuffName.ShadowFlame}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.SqueakyToy}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Guilty}», «{$BuffName.WindPushed}» и «{$BuffName.Suffocation}»\nНевосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.FlamesoftheUniverse}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.ClippedWings}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Crippled}», «{$BuffName.Webbed}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Purified}»\nНевосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Lovestruck}», «{$BuffName.Stinky}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Midas}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Hexed}», урону от кактуса и врагам, которые воруют предметы\nВаши атаки могут наложить дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.ClippedWings}», вызвать морозные шары и создать сердца\nВы получаете авто-атаку на все предметы, улучшенное ночное зрение и ускоренное возрождение, когда ни один босс не жив \nАвтоматически использует зелье маны при необходимости\nАтаки по вам могут пискнуть и нанести вам 1 единицу урона\nВы извергаетесь щупальцами теневого пламени, когда ранены и воздаждаетесь с большим количеством здоровья\nС некоторых врагов будут падать зелья; 50% скидка на перековку\nПризывает дружелюбного радужного слизня\nИспользуйте для телепортации на вашу последнюю точку смерти и нажмите ПКМ, чтобы отдалить\n'The amalgamate born of a thousand common enemies'
+FargoSouls.ItemTooltip.BionomicCluster=Невосприимчивость к дебаффам «{$BuffName.Frostburn}», «{$BuffName.ShadowFlame}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.SqueakyToy}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Guilty}», «{$BuffName.WindPushed}» и «{$BuffName.Suffocation}»\nНевосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.FlamesoftheUniverse}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.ClippedWings}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Crippled}», «{$BuffName.Webbed}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Purified}»\nНевосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Lovestruck}», «{$BuffName.Stinky}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Midas}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Hexed}», урону от кактуса и врагам, которые воруют предметы\nВаши атаки могут наложить дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.ClippedWings}», вызвать морозные шары и создать сердца\nВы получаете авто-атаку на все предметы, улучшенное ночное зрение и ускоренное возрождение, когда ни один босс не жив \nАвтоматически использует зелье маны при необходимости\nАтаки по вам могут пискнуть и нанести вам 1 единицу урона\nВы извергаетесь щупальцами теневого пламени, когда ранены и возраждаетесь с большим количеством здоровья\nС некоторых врагов будут падать зелья; 50% скидка на перековку\nПризывает дружелюбного радужного слизня\nИспользуйте для телепортации на вашу последнюю точку смерти и нажмите ПКМ, чтобы отдалить\n'Слияние тысяч мелких врагов'
 
 FargoSouls.ItemName.CelestialRune=Небесная руна
 FargoSouls.ItemTooltip.CelestialRune=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.MarkedforDeath}»\nВы можете периодически совершать дополнительные атаки в зависимости от типа оружия\nПолучив урон создаст дружественное древнее видение атакующий врагов\n'Заклинание побеждённого врага, получившее новое предназначение'
 
 FargoSouls.ItemName.ChaliceoftheMoon=Чаша луны
-FargoSouls.ItemTooltip.ChaliceoftheMoon=Невосприимчивость к дебаффам «{$BuffName.Venom}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.IvyVenom}», «{$BuffName.Burning}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Fused}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LowGround}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.MarkedforDeath}»\nНевосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Swarming}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Atrophied}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Jammed}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.ReverseManaFlow}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Antisocial}»\nУвеличивает регенерацию здоровья\nPress down in the air to fastfall\nFastfall will create a fiery eruption on impact after falling a certain distance\nWhen you land after a jump, you create a burst of boulders\nYou fire additional attacks depending on weapon type and erupt into Ancient Visions when injured\nSummons a friendly Cultist and plant to fight at your side\n'The moon smiles'
+FargoSouls.ItemTooltip.ChaliceoftheMoon=Невосприимчивость к дебаффам «{$BuffName.Venom}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.IvyVenom}», «{$BuffName.Burning}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Fused}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LowGround}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.MarkedforDeath}»\nНевосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Swarming}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Atrophied}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Jammed}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.ReverseManaFlow}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Antisocial}»\nУвеличивает регенерацию здоровья\nНажмите клавишу вниз, чтобы быстро падать\nБыстрое падение создаст огненное извержение при ударе после падения с определённой высоты\nКогда вы приземляетесь после прыжка, вы создаёте взрыв валунов\nВы создаёте дополнительную атаку в зависимости от типа оружия и извергаетесь древними видениями при получении урона\nПризывает дружественного культиста и растение сражаться на вашей стороне\n'Луна улыбается'
 
 FargoSouls.ItemName.ConcentratedRainbowMatter=Концентрированное радужное вещество
 FargoSouls.ItemTooltip.ConcentratedRainbowMatter=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.FlamesoftheUniverse}»\nПризывает маленького радужного слизня\n'Вкуси радугу'
@@ -9596,10 +9596,10 @@ FargoSouls.ItemName.CorruptHeart=Искажённое сердце
 FargoSouls.ItemTooltip.CorruptHeart=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Rotting}»\nУвеличивает скорость передвижения на 10%\nВы вызываете маленьких пожирателей искать своих врагов каждые несколько атак\n'Мухи отказываются к нему приближаться'
 
 FargoSouls.ItemName.CyclonicFin=Мерзкий жезл
-FargoSouls.ItemTooltip.CyclonicFin=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.AbomFang}»\nIncreased critical damage gained per Sparkling Adoration graze\nHalves Sparkling Adoration heart cooldown\nSpectral Abominationn periodically manifests to support your critical hits\nSpectral Abominationn also inflicts Mutant Nibble\nYou can endure any attack and survive with 1 life\nOnce triggered, you cannot heal for 10 seconds\nEndurance recovers when you reach full life again\n'Seems like something's missing'
+FargoSouls.ItemTooltip.CyclonicFin=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.AbomFang}»\nУвеличивает критический урон за каждый уворот искрящегося обожания\nСнижает перезарядку сердца предмета «{$Mods.CalamityRuTranslate.FargoSouls.ItemName.SparklingAdoration}» вдвое\nСпектральный Мерзостть периодически появляется поддержать ваши критические удары\nСпектральный Мерзостть также накладывает дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.MutantNibble}»\nВы можете выдержать любую атаку и выжить с 1 единицей здоровья\nПосле срабатывания вы не можете лечиться в течение 10 секунд\nВыносливость восстанавливается, когда у вас полностью восстанавливается запас здоровья\n'Кажется, чего-то не хватает'
 
 FargoSouls.ItemName.DubiousCircuitry=Неясная схема
-FargoSouls.ItemTooltip.DubiousCircuitry=Невосприимчивость к дебаффам «{$BuffName.CursedInferno}», «{$BuffName.Ichor}», «{$Mods.CalamityRuTranslante.FargoSouls.BuffName.LightningRod}», «{$Mods.CalamityRuTranslante.FargoSouls.BuffName.Defenseless}», «{$Mods.CalamityRuTranslante.FargoSouls.BuffName.NanoInjection}» и отбрасыванию\nВаши атаки накладывают дебаффы «{$BuffName.CursedInferno}» и «{$BuffName.Ichor}»\nВаши атаки с небольшим шансом могут наложить дебафф «{$Mods.CalamityRuTranslante.FargoSouls.BuffName.LightningRod}»\nДва дружественных зонда сражаются на вашей стороне\nСнижает получаемый урон на 5%\n'Malware probably not included'
+FargoSouls.ItemTooltip.DubiousCircuitry=Невосприимчивость к дебаффам «{$BuffName.CursedInferno}», «{$BuffName.Ichor}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LightningRod}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Defenseless}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.NanoInjection}» и отбрасыванию\nВаши атаки накладывают дебаффы «{$BuffName.CursedInferno}» и «{$BuffName.Ichor}»\nВаши атаки с небольшим шансом могут наложить дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LightningRod}»\nДва дружественных зонда сражаются на вашей стороне\nСнижает получаемый урон на 5%\n'Вирусы, возможно, не включено'
 
 FargoSouls.ItemName.EurusSock=Носки Афелия
 FargoSouls.ItemTooltip.EurusSock={$ItemTooltip.HermesBoots}
@@ -9608,76 +9608,76 @@ FargoSouls.ItemName.FrigidGemstone=Холодный самоцвет
 FargoSouls.ItemTooltip.FrigidGemstone=Невосприимчивость к дебаффу «{$BuffName.Frostburn}»\nВаши атаки вызывают морозные шары которые атакуют ваших врагов\n'Осколок древнего магического льда'
 
 FargoSouls.ItemName.FusedLens=Сросшиеся линзы
-FargoSouls.ItemTooltip.FusedLens=Невосприимчивость к дебаффам «{$BuffName.CursedInferno}» и «{$BuffName.Ichor}»\nВаши атаки накладывают дебаффы «{$BuffName.CursedInferno}» и «{$BuffName.Ichor}»\n'Too melted to improve vision'
+FargoSouls.ItemTooltip.FusedLens=Невосприимчивость к дебаффам «{$BuffName.CursedInferno}» и «{$BuffName.Ichor}»\nВаши атаки накладывают дебаффы «{$BuffName.CursedInferno}» и «{$BuffName.Ichor}»\n'Слишком подплавлено, чтобы улучшать зрение'
 
 FargoSouls.ItemName.GalacticGlobe=Галактический шар
 FargoSouls.ItemTooltip.GalacticGlobe=Невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Flipped}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Unstable}», «{$BuffName.VortexDebuff}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.CurseoftheMoon}»\nПозволяет владельцу управлять гравитацией\nСтабилизирует гравитацию в космосе и в жидкостях\nПризывает истинные глаза Ктулху защищать вас\nУвеличивает время полёта на 100%\n'Всегда наблюдаю'
 
 FargoSouls.ItemName.GroundStick=Пульт дистанционного управления
-FargoSouls.ItemTooltip.GroundStick=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LightningRod}»\nВаши атаки с небольшим шансом могут наложить дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LightningRod}»\nДва дружественных зонда сражаются на вашей стороне\n'A defeated foe's segment with an antenna glued on'
+FargoSouls.ItemTooltip.GroundStick=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LightningRod}»\nВаши атаки с небольшим шансом могут наложить дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LightningRod}»\nДва дружественных зонда сражаются на вашей стороне\n'Сегмент побеждённого врага с приклеенной антенной'
 
 FargoSouls.ItemName.GuttedHeart=Выпотрошенное сердце
-FargoSouls.ItemTooltip.GuttedHeart=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Bloodthirsty}»\nУвеличивает максимальный запас здоровья на 10%\nПолзун парит вокруг вас блокируя немного урона\nНовый ползун появляется каждые 15 секунд и за раз может существовать 5 ползунов\nУвеличивает скорость появления ползуна, когда вы не двигаетесь\n'Once beating in the mind of a defeated foe'
+FargoSouls.ItemTooltip.GuttedHeart=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Bloodthirsty}»\nУвеличивает максимальный запас здоровья на 10%\nПолзун парит вокруг вас блокируя немного урона\nНовый ползун появляется каждые 15 секунд и за раз может существовать 5 ползунов\nУвеличивает скорость появления ползуна, когда вы не двигаетесь\n'Однажды бившийся в разуме побеждённого врага'
 
 FargoSouls.ItemName.HeartoftheMasochist=Сердце вечного
-FargoSouls.ItemTooltip.HeartoftheMasochist=Невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LivingWasteland}», «{$BuffName.Frozen}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Hypothermia}», «{$BuffName.OgreSpit}», «{$BuffName.WitheredWeapon}», «{$BuffName.WitheredArmor}»\nНевосприимчивость к дебаффам «{$BuffName.Rabies}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.MutantNibble}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Flipped}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Unstable}», «{$BuffName.VortexDebuff}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.CurseoftheMoon}»\nНевосприимчивость к дебаффам «{$BuffName.Wet}», «{$BuffName.Electrified}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.OceanicMaul}», «{$BuffName.MoonLeech}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.NullificationCurse}» и водным дебаффам\nУвеличивает урон, шанс критического удара и сопротивление урону на 5%\nУвеличивает длительность полёта на 100%\nВы можете периодически совершать дополнительные атаки в зависимости от типа оружия\nВаши критические атаки накладывают дебаффы «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Rotting}» и «{$BuffName.BetsysCurse}»\nPress the Fireball Dash key to perform a short invincible dash\nДарует эффект от дебаффа «{$BuffName.Wet}» во время езды на милом Рыброне и контроль над гравитацией\nSummons a friendly super Flocko, Mini Saucer, and true eyes of Cthulhu\n'Warm, beating, and no body needed'
+FargoSouls.ItemTooltip.HeartoftheMasochist=Невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LivingWasteland}», «{$BuffName.Frozen}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Hypothermia}», «{$BuffName.OgreSpit}», «{$BuffName.WitheredWeapon}», «{$BuffName.WitheredArmor}»\nНевосприимчивость к дебаффам «{$BuffName.Rabies}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.MutantNibble}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Flipped}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Unstable}», «{$BuffName.VortexDebuff}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.CurseoftheMoon}»\nНевосприимчивость к дебаффам «{$BuffName.Wet}», «{$BuffName.Electrified}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.OceanicMaul}», «{$BuffName.MoonLeech}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.NullificationCurse}» и водным дебаффам\nУвеличивает урон, шанс критического удара и сопротивление урону на 5%\nУвеличивает длительность полёта на 100%\nВы можете периодически совершать дополнительные атаки в зависимости от типа оружия\nВаши критические атаки накладывают дебаффы «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Rotting}» и «{$BuffName.BetsysCurse}»\nНажмите клавишу Fireball Dash, чтобы выполнить короткий рывок в неуязвимости\nДарует эффект от дебаффа «{$BuffName.Wet}» во время езды на милом Рыброне и контроль над гравитацией\nПризывает дружелюбного Супер Флоко, маленькую летающую тарелку марсиан и истинные глаза Ктухлу\n'Тёплое, бьющееся, не требует тела'
 
 FargoSouls.ItemName.IceQueensCrown=Корона снежной королевы
-FargoSouls.ItemTooltip.IceQueensCrown=Невосприимчивость к дебаффам «{$BuffName.Frozen}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Hypothermia}»\nУвеличивает сопротивление урону на 5%\nSummons a friendly super Flocko\n'The royal symbol of a defeated foe'
+FargoSouls.ItemTooltip.IceQueensCrown=Невосприимчивость к дебаффам «{$BuffName.Frozen}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Hypothermia}»\nУвеличивает сопротивление урону на 5%\nПризывает дружелюбного Супер Флоко\n'Королевский символ побеждённого врага'
 
 FargoSouls.ItemName.LihzahrdTreasureBox=Сундук с сокровищами ящщеров
-FargoSouls.ItemTooltip.LihzahrdTreasureBox=Невосприимчивость к дебаффам «{$BuffName.Burning}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Fused}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LowGround}»\nPress down in the air to fastfall\nFastfall will create a fiery eruption on impact after falling a certain distance\nWhen you land after a jump, you create a burst of boulders\n'Too many booby traps to open'
+FargoSouls.ItemTooltip.LihzahrdTreasureBox=Невосприимчивость к дебаффам «{$BuffName.Burning}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Fused}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LowGround}»\nНажмите клавишу вниз, чтобы быстро падать\nБыстрое падение создаст огненное извержение при ударе после падения с определённой высоты\nКогда вы приземляетесь после прыжка, вы создаёте взрыв валунов\n'Слишком много ловушек, чтобы открыть'
 
 FargoSouls.ItemName.LumpOfFlesh=Кусок плоти
-FargoSouls.ItemTooltip.LumpOfFlesh=Невосприимчивость к дебаффам «{$BuffName.Blackout}», «{$BuffName.Obstructed}», «{$BuffName.Dazed}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Stunned}»\nУвеличивает урон миньонов на 16%, но немного снижает защиту\nУвеличивает максимальное число миньонов на 2\nУвеличивает максимальное число турелей на 2\nThe pungent eyeball charges energy to fire a laser as you attack\nВраги реже выбирают вас в качестве цели\nMakes armed and magic skeletons less hostile outside the Dungeon\n'It's growing'
+FargoSouls.ItemTooltip.LumpOfFlesh=Невосприимчивость к дебаффам «{$BuffName.Blackout}», «{$BuffName.Obstructed}», «{$BuffName.Dazed}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Stunned}»\nУвеличивает урон миньонов на 16%, но немного снижает защиту\nУвеличивает максимальное число миньонов на 2\nУвеличивает максимальное число турелей на 2\nКогда вы атакуете, глазное яблоко заряжает выстрел лазером\nВраги реже выбирают вас в качестве цели\nДелает скелетов вне темницы менее агрессивными\n'Оно растёт'
 
 FargoSouls.ItemName.MagicalBulb=Магический бутон
-FargoSouls.ItemTooltip.MagicalBulb=Невосприимчивость к дебаффам «{$BuffName.Venom}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.IvyVenom}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Swarming}»\nУвеличивает регенерацию здоровья\nAttracts a legendary plant's offspring which flourishes in combat\n'Matricide?'
+FargoSouls.ItemTooltip.MagicalBulb=Невосприимчивость к дебаффам «{$BuffName.Venom}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.IvyVenom}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Swarming}»\nУвеличивает регенерацию здоровья\nПривлекает потомка легендарного растения, который цветёт в бою\n'Матереубийство?'
 
 FargoSouls.ItemName.MutantAntibodies=Антитела Мутанта
-FargoSouls.ItemTooltip.MutantAntibodies=Невосприимчивость к дебаффам «{$BuffName.Wet}», «{$BuffName.Rabies}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.MutantNibble}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.OceanicMaul}»\nНевосприимчивость к большинству дебаффов, вызванных погружением в воду\nДарует эффект от дебаффа «{$BuffName.Wet}» во время езды на милом Рыброне\nУвеличивает урон на 20%\n'Healthy drug recommended by 0 out of 10 doctors'
+FargoSouls.ItemTooltip.MutantAntibodies=Невосприимчивость к дебаффам «{$BuffName.Wet}», «{$BuffName.Rabies}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.MutantNibble}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.OceanicMaul}»\nНевосприимчивость к большинству дебаффов, вызванных погружением в воду\nДарует эффект от дебаффа «{$BuffName.Wet}» во время езды на милом Рыброне\nУвеличивает урон на 20%\n'Здоровый препарат, рекомендуемый 0 из 10 врачей'
 
 FargoSouls.ItemName.MutantEye=Глаз Мутанта
-FargoSouls.ItemTooltip.MutantEye=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.MutantFang}»\n25% increased graze bonus critical damage cap\nUpgrades Sparkling Adoration hearts to love rays\nIncreases critical damage gained per graze\nIncreases Spectral Abominationn respawn rate and damage\nReduces Abominable Rebirth duration\nPress the Mutant Bomb key to unleash a wave of spheres and destroy most hostile projectiles\nMutant Bomb has a 60 second cooldown\n'Only a little suspicious'
+FargoSouls.ItemTooltip.MutantEye=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.MutantFang}»\nУвеличивает предел критического урона от уворота от снаряда поблизости на 25%\nУлучшает сердца предмета «{$Mods.CalamityRuTranslate.FargoSouls.ItemName.SparklingAdoration}» до лучей любви\nУвеличивает критический урон за каждого уклонение от снарядов поблизости\nУвеличивает частоту возрождения и урон спектрального Мерзостть\nСнижает длительность дебаффа «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.AbomRebirth}»\nНажмите клавишу Mutant Bomb, чтобы высвободить волну сфер и уничтожить большинство вражеских снарядов\nMutant Bomb имеет 60 перезарядки\n'Всего лишь чуть-чуть подозрительно'
 
 FargoSouls.ItemName.MysticSkull=Мистический череп
-FargoSouls.ItemTooltip.MysticSkull=Работает в инвентаре\nНевосприимчивость к дебаффу «{$BuffName.Suffocation}»\nСнижает магический урон на 10%\nАвтоматически использует зелье маны при необходимости\n'The quietly muttering head of a defeated foe'
+FargoSouls.ItemTooltip.MysticSkull=Работает в инвентаре\nНевосприимчивость к дебаффу «{$BuffName.Suffocation}»\nСнижает магический урон на 10%\nАвтоматически использует зелье маны при необходимости\n'Тихо бормочущая голова побеждённого врага'
 
 FargoSouls.ItemName.NecromanticBrew=Некромантическое варево
-FargoSouls.ItemTooltip.NecromanticBrew=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Lethargic}»\nПризывает 2 руки Скелетрона атаковать ваших врагов\n'The bone-growing solution of a defeated foe'
+FargoSouls.ItemTooltip.NecromanticBrew=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Lethargic}»\nПризывает 2 руки Скелетрона атаковать ваших врагов\n'Средство для роста костей побеждённого врага'
 
 FargoSouls.ItemName.NymphsPerfume=Духи нимфы
-FargoSouls.ItemTooltip.NymphsPerfume=Невосприимчивость к дебаффам «{$BuffName.Lovestruck}», «{$BuffName.Stinky}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Hexed}»\nВы возрождаетесь с большим количеством здоровья\nВаши атаки иногда создают сердца\n'The scent is somewhat overpowering'
+FargoSouls.ItemTooltip.NymphsPerfume=Невосприимчивость к дебаффам «{$BuffName.Lovestruck}», «{$BuffName.Stinky}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Hexed}»\nВы возрождаетесь с большим количеством здоровья\nВаши атаки иногда создают сердца\n'Несколько подавляющий аромат'
 
 FargoSouls.ItemName.PuffInABottle=Дымок в бутылке
 FargoSouls.ItemTooltip.PuffInABottle=Позволяет владельцу делать двойной прыжок
 
 FargoSouls.ItemName.PumpkingsCape=Накидка тыквенного короля
-FargoSouls.ItemTooltip.PumpkingsCape=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LivingWasteland}»\nУвеличивает урон и шанс критического удара на 5%\nВаши критические атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Rotting}»\nВы можете периодически совершать дополнительные атаки в зависимости от типа оружия\n'Somehow, it's the right size'
+FargoSouls.ItemTooltip.PumpkingsCape=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LivingWasteland}»\nУвеличивает урон и шанс критического удара на 5%\nВаши критические атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Rotting}»\nВы можете периодически совершать дополнительные атаки в зависимости от типа оружия\n'Каким-то образом это правильный размер'
 
 FargoSouls.ItemName.PungentEyeball=Смердящее глазное яблоко
-FargoSouls.ItemTooltip.PungentEyeball=Невосприимчивость к дебаффам «{$BuffName.Blackout}» и «{$BuffName.Obstructed}»\nУвеличивает максимальное число миньонов на 2\nУвеличивает максимальное число турелей на 2\n'It's fermenting'
+FargoSouls.ItemTooltip.PungentEyeball=Невосприимчивость к дебаффам «{$BuffName.Blackout}» и «{$BuffName.Obstructed}»\nУвеличивает максимальное число миньонов на 2\nУвеличивает максимальное число турелей на 2\n'Оно бродит'
 
 FargoSouls.ItemName.PureHeart=Чистое сердце
-FargoSouls.ItemTooltip.PureHeart=Невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Rotting}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Bloodthirsty}»\nНевосприимчивость к дебаффам биома\nУвеличивает скорость передвижения и максимальный запас здоровья на 20%\nВы вызываете маленьких пожирателей, которые ищут врагов каждые несколько атак.\nПолзуны парят вокруг вас блокируя немного урона\nНовый ползун появляется каждые 15 секунд и за раз может существовать 5 ползунов\nУвеличивает скорость появления ползуна, когда вы не двигаетесь\n'It pulses with vitality'
+FargoSouls.ItemTooltip.PureHeart=Невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Rotting}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Bloodthirsty}»\nНевосприимчивость к дебаффам биома\nУвеличивает скорость передвижения и максимальный запас здоровья на 20%\nВы вызываете маленьких пожирателей, которые ищут врагов каждые несколько атак.\nПолзуны парят вокруг вас блокируя немного урона\nНовый ползун появляется каждые 15 секунд и за раз может существовать 5 ползунов\nУвеличивает скорость появления ползуна, когда вы не двигаетесь\n'Пульсирует жизненной силой'
 
 FargoSouls.ItemName.QueenStinger=Жало королевы
-FargoSouls.ItemTooltip.QueenStinger=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Infested}»\nУвеличивает пробивание брони на 10\nВаши атаки накладывают дебафф «{$BuffName.Poisoned}» и распыляют мёд, который увеличивает регенерацию здоровья\nПчёлы и слабые шершни становятся дружелюбными\n'Ripped right off of a defeated foe'
+FargoSouls.ItemTooltip.QueenStinger=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Infested}»\nУвеличивает пробивание брони на 10\nВаши атаки накладывают дебафф «{$BuffName.Poisoned}» и распыляют мёд, который увеличивает регенерацию здоровья\nПчёлы и слабые шершни становятся дружелюбными\n'Вырванный прямо из побеждённого врага'
 
 FargoSouls.ItemName.ReinforcedPlating=Усиленная обшивка
-FargoSouls.ItemTooltip.ReinforcedPlating=Невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Defenseless}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.NanoInjection}» и отбрасыванию\nСнижает получаемый урон на 5%\n'The sturdiest piece of a defeated foe'
+FargoSouls.ItemTooltip.ReinforcedPlating=Невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Defenseless}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.NanoInjection}» и отбрасыванию\nСнижает получаемый урон на 5%\n'Самый прочный кусок побеждённого врага'
 
 FargoSouls.ItemName.SandsofTime=Пески времени
-FargoSouls.ItemTooltip.SandsofTime=Работает в инвентаре\nНевосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.WindPushed}» и урону от кактуса\nВы возрождаетесь в два раза быстрее, когда ни один босс не жив\nИспользуйте для телепортации на вашу последнюю точку смерти\n'Не ронять ни при каких обстоятельствах'
+FargoSouls.ItemTooltip.SandsofTime=Работает в инвентаре\nНевосприимчивость к дебаффу «{$BuffName.WindPushed}» и урону от кактуса\nВы возрождаетесь в два раза быстрее, когда ни один босс не жив\nИспользуйте для телепортации на вашу последнюю точку смерти\n'Не ронять ни при каких обстоятельствах'
 
 FargoSouls.ItemName.SaucerControlConsole=Консоль управления марсианской летающей тарелки
-FargoSouls.ItemTooltip.SaucerControlConsole=Невосприимчивость к дебаффу «{$BuffName.Electrified}»\nПризывает дружелюбную маленькую летающею тарелку марсиан\n'Just keep it in airplane mode'
+FargoSouls.ItemTooltip.SaucerControlConsole=Невосприимчивость к дебаффу «{$BuffName.Electrified}»\nПризывает дружелюбную маленькую летающею тарелку марсиан\n'Просто держи это в режиме полёта'
 
 FargoSouls.ItemName.SecurityWallet=Защищённый кошелёк
-FargoSouls.ItemTooltip.SecurityWallet=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Midas}» и врагам, которые воруют предметы\n50% скидка на перековку\n'Not secure against being looted off of one's corpse'
+FargoSouls.ItemTooltip.SecurityWallet=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Midas}» и врагам, которые воруют предметы\n50% скидка на перековку\n'Не защещен от кражи с трупа'
 
 FargoSouls.ItemName.SinisterIcon=Зловещая икона
-FargoSouls.ItemTooltip.SinisterIcon=Предотвращает естественное появление боссов вызванное режимом Вечности\nУвеличивает скорость появления врагов\nВраги с 2000 или менее максимальным здоровьем удваивают добычу при смерти, но не роняют монеты\n'Most definitely not alive'
+FargoSouls.ItemTooltip.SinisterIcon=Предотвращает естественное появление боссов вызванное режимом Вечности\nУвеличивает скорость появления врагов\nВраги с 2000 или менее максимальным здоровьем удваивают добычу при смерти, но не роняют монеты\n'Определённо не жив'
 
 FargoSouls.ItemName.SkullCharm=Амулет с черепом
 FargoSouls.ItemTooltip.SkullCharm=Невосприимчивость к дебаффам «{$BuffName.Dazed}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Stunned}»\nУвеличивает получаемый и наносимый урон на 10%\nВраги реже выбирают вас в качестве цели\nДелает скелетов вне темницы менее агрессивными\n'Больше не в своей тарелке'
@@ -9685,8 +9685,8 @@ FargoSouls.ItemTooltip.SkullCharm=Невосприимчивость к деба
 FargoSouls.ItemName.SlimyShield=Склизкий щит
 FargoSouls.ItemTooltip.SlimyShield=Невосприимчивость к дебаффу «{$BuffName.Slimed}»\nУвеличивает скорость падения на 15%\nКогда вы приземлитесь после прыжка, на положение курсора мыши упадёт слизь\n'Вырвано из внутренностей побеждённого врага'
 
-FargoSouls.ItemName.SparklingAdoration=Сверкающее обожание
-FargoSouls.ItemTooltip.SparklingAdoration=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Lovestruck}» и ложным сердцам\nGraze projectiles to gain up to 25% increased critical damage\nБонус критического урона со временем уменьшается и полностью пропадает при получении урона\nВаши атаки периодически вызывают крадущие здоровье сердца\n'С чувством!'
+FargoSouls.ItemName.SparklingAdoration=Искрящееся обожание
+FargoSouls.ItemTooltip.SparklingAdoration=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Lovestruck}» и ложным сердцам\nУворачивайтесь от снарядов поблизости, чтобы получить до 25% повышенного критического урона\nБонус критического урона со временем уменьшается и полностью пропадает при получении урона\nВаши атаки периодически вызывают крадущие здоровье сердца\n'С чувством!'
 
 FargoSouls.ItemName.SqueakyToy=Игрушка-пищалка
 FargoSouls.ItemTooltip.SqueakyToy=Невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.SqueakyToy}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Guilty}»\nАтаки по вам могут пискнуть и нанести вам 1 единицу урона\n'Любимая игрушка побеждённого врага..?'
@@ -9740,7 +9740,7 @@ FargoSouls.ItemName.TerrariaSoul=Душа Террарии
 FargoSouls.ItemTooltip.TerrariaSoul=Призывает огненные шары, теневые сферы, сосульки, лиственные кристаллы, огнемётного миньона, святые меч и щит, жуков и нескольких питомцев\nПереключите видимость, чтобы убрать питомцев; нажмите ПКМ, чтобы защитится щитом\nДважды нажмите вниз, чтобы призвать турель и портал, вызвать бурю и дождь из стрел, переключить невидимость и направить вашего усиленного стража\nКлавиша Turn Gold покроет вас золотом, клавиша Freeze Time заморозит время; миньоны извергают косы\nСолнечный щит позволяет вам делать рывок; сделайте рывок в стену, чтобы телепортироваться сквозь неё\nБросьте дымовую бомбу, чтобы телепортироваться к ней и получить бафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.FirstStrike}»\nАтаки могут призвать молнии, лепестки, спектральные сферы, стража темницы, снежки, копья или усилители\nАтаки вызывают усиленную регенерацию здоровья, теневой уворот, огнемётные выстрелы, метеоритный дождь и снижают количество кадров неуязвимости врага\nШанс критического удара начинается с 25%. Нанесите критический удар, чтобы увеличить его на 5%. На 100% каждая 10 атака получает 4% кражи здоровья\nПолучение урона отражает его, сбрасывает шанс критического удара и вызывает кровавый гейзер\nСнаряды могут разделиться или разбиться и призвать падающие звёзды; увеличивает размеры снарядов и предметов; вы притягиваете предметы издалека\nБлижайшие враги поджигаются; вы оставляете за собой след из огней; прыгните, чтобы вызвать взрыв спор\nДарует багряную регенерацию, невосприимчивость к огню, урону от падения и лаве; сбор растений удвоен\nДарует 50% шанс мега-пчелы, 15% шанс критического удара миньонов, 20% шанс удвоенного выпадения предметов\nЖивотные получают огромную защиту и их души помогут вам; вы можете призвать временных миньонов\nВсе крюки более эффективны и выстреливают самонаводящиеся снаряды; значительно усиливает все турели из DD2\nВаши атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Midas}»; враги взрываются иглами\nВы взрываетесь при получении урона, нанося урон врагам и возрождаетесь с 200 единицами здоровья при смерти\nЭффекты от предметов «{$ItemName.FlowerBoots}», «{$ItemName.MasterNinjaGear}», «{$ItemName.GreedyRing}», «{$ItemName.CelestialShell}» и «{$ItemName.ShinyStone}»\n'Истинный мастер Террарии'
 
 FargoSouls.ItemName.TrawlerSoul=Душа рыбака
-FargoSouls.ItemTooltip.TrawlerSoul=Значительно увеличивает силу рыбалки\nВсе удочки имеют 10 дополнительных леск\nВы ловите рыбу почти мгновенно\nЭффекты баффов «{$BuffName.Sonar}» и «$BuffName.Crate»\nЭффекты от предмета «{$ItemName.AnglerTackleBag}»\n'Рыба ловит сама себя'
+FargoSouls.ItemTooltip.TrawlerSoul=Значительно увеличивает силу рыбалки\nВсе удочки имеют 10 дополнительных леск\nВы ловите рыбу почти мгновенно\nЭффекты от баффов «{$BuffName.Sonar}» и «{$BuffName.Crate}»\nЭффекты от предмета «{$ItemName.AnglerTackleBag}»\n'Рыба ловит сама себя'
 
 FargoSouls.ItemName.UniverseSoul=Душа Вселенной
 FargoSouls.ItemTooltip.UniverseSoul=Увеличивает весь урон на 66%\nУвеличивает скорость атаки всего оружия на 50%\nУвеличивает скорость стрельбы на 50%\nУвеличивает шанс критического удара на 25%\nКритические удары наносят в 5 раз больше урона\nВсё оружие имеет двойное отбрасывание\nУвеличивает максимальный запас мана на 300\nУвеличивает максимальное число миньонов на 8\nУвеличивает максимальное число турелей на 4\nВсе атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.FlamesoftheUniverse}»\nЭффекты от предметов «{$ItemName.FireGauntlet}» и «{$ItemName.YoyoBag}»\nЭффекты от предметов «{$ItemName.SniperScope}», «{$ItemName.CelestialCuffs}» и «{$ItemName.ManaFlower}»\n'Небеса преклоняются перед тобой'
@@ -9785,28 +9785,22 @@ FargoSouls.ItemName.MutantP1Reset=Сброс 1Ф Мутанта
 FargoSouls.ItemTooltip.MutantP1Reset=Заставляет Мутанта забыть, что вы победили его в первой фазе\nРезультат не гарантирован в мультиплеере\nВам, наверное, не стоило это читать...
 
 FargoSouls.ItemName.LifeDye=Райский краситель
-FargoSouls.ItemTooltip.LifeDye= 
 
 FargoSouls.ItemName.WillDye=Волевой краситель
-FargoSouls.ItemTooltip.WillDye= 
 
 FargoSouls.ItemName.GaiaDye=Краситель Гайя
-FargoSouls.ItemTooltip.GaiaDye= 
 
 FargoSouls.ItemName.AbomBag=Мешок с сокровищами
 FargoSouls.ItemTooltip.AbomBag=Нажмите ПКМ, чтобы открыть
 
 FargoSouls.ItemName.BrokenBlade=Сломанный клинок
-FargoSouls.ItemTooltip.BrokenBlade= 
 
 FargoSouls.ItemName.BrokenHilt=Сломанная рукоять
-FargoSouls.ItemTooltip.BrokenHilt= 
 
 FargoSouls.ItemName.CelestialSeal=Небесная печать
 FargoSouls.ItemTooltip.CelestialSeal=Навсегда увеличивает количество слотов для аксессуаров\nМожно использовать только после Сердца демона
 
 FargoSouls.ItemName.DeviatingEnergy=Отклоняющаяся энергия
-FargoSouls.ItemTooltip.DeviatingEnergy= 
 
 FargoSouls.ItemName.DeviBag=Мешок с сокровищами
 FargoSouls.ItemTooltip.DeviBag=Нажмите ПКМ, чтобы открыть
@@ -9818,7 +9812,6 @@ FargoSouls.ItemName.MutantBag=Мешок с сокровищами
 FargoSouls.ItemTooltip.MutantBag=Нажмите ПКМ, чтобы открыть
 
 FargoSouls.ItemName.MutantScale=Мерзкая энергия
-FargoSouls.ItemTooltip.MutantScale= 
 
 FargoSouls.ItemName.MutantsDiscountCard=Дисконтная карта Мутанта
 FargoSouls.ItemTooltip.MutantsDiscountCard=Навсегда снижает цены у Мутанта на 20%
@@ -9839,7 +9832,6 @@ FargoSouls.ItemName.OrdinaryCarrot=Обыкновенная морковь
 FargoSouls.ItemTooltip.OrdinaryCarrot=Улучшает ночное зрение\nНемного увеличивает все характеристики\nДлительность 1 минута\nНажмите ПКМ в инвентаре, чтобы отдалить\n'Сорванный с лица побеждённого врага'
 
 FargoSouls.ItemName.PhantasmalEnergy=Призрачная энергия
-FargoSouls.ItemTooltip.PhantasmalEnergy= 
 
 FargoSouls.ItemName.RabiesShot=Выстрел от бешенства
 FargoSouls.ItemTooltip.RabiesShot=Исцеляет от дебаффа «{$BuffName.Rabies}»
@@ -9851,7 +9843,6 @@ FargoSouls.ItemName.Sadism=Энергия Вечности
 FargoSouls.ItemTooltip.Sadism=Невосприимчивость почти ко всем дебаффам из режима Вечности\n'Доказательство принятия Вечности'
 
 FargoSouls.ItemName.TopHatSquirrelCaught=Белка в цилиндре
-FargoSouls.ItemTooltip.TopHatSquirrelCaught= 
 
 FargoSouls.ItemName.AcornConstruct=Желудёвая конструкция
 FargoSouls.ItemTooltip.AcornConstruct=Поездка на белке
@@ -9869,10 +9860,8 @@ FargoSouls.ItemName.AbominationnVoodooDoll=Куклу вуду Мерзостт�
 FargoSouls.ItemTooltip.AbominationnVoodooDoll=Призывает Мерзостть к вам в город\n'Ты ужасный человек'
 
 FargoSouls.ItemName.AbomsCurse=Проклятие Мерзостти
-FargoSouls.ItemTooltip.AbomsCurse= 
 
 FargoSouls.ItemName.DevisCurse=Проклятие Девиантт
-FargoSouls.ItemTooltip.DevisCurse= 
 
 FargoSouls.ItemName.MutantsCurse=Проклятие Мутанта
 FargoSouls.ItemTooltip.MutantsCurse='По крайней мере, вам не нужна эта кукла'
@@ -9885,31 +9874,24 @@ FargoSouls.ItemName.TruffleWormEX=Трюфельный червь ЕХ
 FargoSouls.ItemTooltip.TruffleWormEX=Используется только в режиме Мазохиста\nThe tides surge in its presence\nYou probably shouldn't be reading this...
 
 FargoSouls.ItemName.AbomTrophy=Трофей Мерзостти
-FargoSouls.ItemTooltip.AbomTrophy= 
 
 FargoSouls.ItemName.DeviTrophy=Трофей Девиантт
-FargoSouls.ItemTooltip.DeviTrophy= 
 
 FargoSouls.ItemName.GoldenDippingVat=Чан для окунания в золото
 FargoSouls.ItemTooltip.GoldenDippingVat=Используется для создания золотых животных
 
 FargoSouls.ItemName.MutantStatue=Статуя Мутанта
-FargoSouls.ItemTooltip.MutantStatue= 
 
 FargoSouls.ItemName.MutantStatueGift=Статуя Мутанта (Подарок)
-FargoSouls.ItemTooltip.MutantStatueGift= 
 
 FargoSouls.ItemName.MutantTrophy=Трофей Мутанта
-FargoSouls.ItemTooltip.MutantTrophy= 
 
 FargoSouls.ItemName.ScremPainting=Картина Screm
 FargoSouls.ItemTooltip.ScremPainting='Merry N. Tuse'
 
 FargoSouls.ItemName.TophatSquirrelBanner=Знамя белки в цилиндре
-FargoSouls.ItemTooltip.TophatSquirrelBanner= 
 
 FargoSouls.ItemName.TophatSquirrelCage=Террариум с белкой в цилиндре
-FargoSouls.ItemTooltip.TophatSquirrelCage= 
 
 FargoSouls.ItemName.BoneZone=Костная зона
 FargoSouls.ItemTooltip.BoneZone=Использует кости как боеприпасы\n33% шанс не использовать боеприпасы\n'Растрескавшиеся останки побеждённого врага...'
@@ -9965,7 +9947,7 @@ FargoSouls.ItemTooltip.PhantasmalLeashOfCthulhu='Душа истинного г�
 FargoSouls.ItemName.SlimeRain=Слизневый дождь
 FargoSouls.ItemTooltip.SlimeRain='Внутренности короля разбрасываются по всей земле...'
 
-FargoSouls.ItemName.SparklingLove=Сверкающая любовь
+FargoSouls.ItemName.SparklingLove=Искрящаяся любовь
 FargoSouls.ItemTooltip.SparklingLove=Нажмите ПКМ, чтобы призвать душу Девиантт\nУзор становится плотнее с 5 пустыми миньон-слотами\n'Поглощающий душу демонический топор любви и справедливости, оставленный сражённым врагом...'
 
 FargoSouls.ItemName.StyxGazer=Наблюдатель Стикса
@@ -9990,7 +9972,6 @@ FargoSouls.ItemName.BatScepterSummon={$ItemName.BatScepter} (Призывате�
 FargoSouls.ItemTooltip.BatScepterSummon={$ItemTooltip.BatScepter}
 
 FargoSouls.ItemName.WaspGunSummon={$ItemName.WaspGun} (Призыватель)
-FargoSouls.ItemTooltip.WaspGunSummon= 
 
 FargoSouls.ItemName.PiranhaGunSummon={$ItemName.PiranhaGun} (Призыватель)
 FargoSouls.ItemTooltip.PiranhaGunSummon={$ItemTooltip.PiranhaGun}
@@ -10340,21 +10321,21 @@ FargoSouls.CustomTooltip.EternitySouls.239=Effects of Abyssal Diving Suit
 FargoSouls.CustomTooltip.EternitySouls.240=Effects of Lumenous Amulet
 FargoSouls.CustomTooltip.EternitySouls.241=Effects of Aquatic Emblem
 FargoSouls.CustomTooltip.EternitySouls.242=Effects of Nebulous Core
-FargoSouls.CustomTooltip.EternitySouls.243=Effects of Draedon's Heart
-FargoSouls.CustomTooltip.EternitySouls.244=Effects of The Amalgam
-FargoSouls.CustomTooltip.EternitySouls.245=Effects of Godly Soul Artifact
-FargoSouls.CustomTooltip.EternitySouls.246=Effects of Yharim's Gift
-FargoSouls.CustomTooltip.EternitySouls.247=Effects of Heart of the Elements
-FargoSouls.CustomTooltip.EternitySouls.248=Effects of The Sponge
-FargoSouls.CustomTooltip.EternitySouls.249=Effects of Giant Pearl
-FargoSouls.CustomTooltip.EternitySouls.250=Effects of Amidias' Pendant
-FargoSouls.CustomTooltip.EternitySouls.251=Effects of Fabled Tortoise Shell
-FargoSouls.CustomTooltip.EternitySouls.252=Effects of Plague Hive
-FargoSouls.CustomTooltip.EternitySouls.253=Effects of Astral Arcanum
-FargoSouls.CustomTooltip.EternitySouls.254=Effects of Hide of Astrum Deus
-FargoSouls.CustomTooltip.EternitySouls.255=Effects of Profaned Soul Artifact
-FargoSouls.CustomTooltip.EternitySouls.256=Effects of Dark Sun Ring
-FargoSouls.CustomTooltip.EternitySouls.257=Effects of Elemental Gauntlet
+FargoSouls.CustomTooltip.EternitySouls.243=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.DraedonsHeart}»
+FargoSouls.CustomTooltip.EternitySouls.244=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.TheAmalgam}»
+FargoSouls.CustomTooltip.EternitySouls.245=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.GodlySoulArtifact}»
+FargoSouls.CustomTooltip.EternitySouls.246=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.YharimsGift}»
+FargoSouls.CustomTooltip.EternitySouls.247=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.HeartoftheElements}»
+FargoSouls.CustomTooltip.EternitySouls.248=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.Sponge}»
+FargoSouls.CustomTooltip.EternitySouls.249=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.GiantPearl}»
+FargoSouls.CustomTooltip.EternitySouls.250=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.AmidiasPendant}»
+FargoSouls.CustomTooltip.EternitySouls.251=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.FabledTortoiseShell}»
+FargoSouls.CustomTooltip.EternitySouls.252=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.PlagueHive}»
+FargoSouls.CustomTooltip.EternitySouls.253=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.AstralArcanum}»
+FargoSouls.CustomTooltip.EternitySouls.254=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.HideofAstrumDeus}»
+FargoSouls.CustomTooltip.EternitySouls.255=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.ProfanedSoulArtifact}»
+FargoSouls.CustomTooltip.EternitySouls.256=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.DarkSunRing}»
+FargoSouls.CustomTooltip.EternitySouls.257=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.ElementalGauntlet}»
 FargoSouls.CustomTooltip.EternitySouls.258=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.ElementalQuiver}»
 FargoSouls.CustomTooltip.EternitySouls.259=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.EtherealTalisman}»
 FargoSouls.CustomTooltip.EternitySouls.260=Эффекты от предмета «{$Mods.CalamityRuTranslate.Calamity.ItemName.StatisBeltOfCurses}»
