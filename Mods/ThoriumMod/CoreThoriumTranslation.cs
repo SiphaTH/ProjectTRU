@@ -21,9 +21,9 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
         {
             ThoriumMod = ModLoader.GetMod("ThoriumMod");
 
-            if (ThoriumMod != null && ThoriumMod.Version != new Version(1, 6, 4, 0))
+            if (ThoriumMod != null && ThoriumMod.Version != new Version(1, 6, 4, 1))
             {
-                throw new ModVersionException("Thorium", "1.6.4.0", ThoriumMod.Version);
+                throw new ModVersionException("Thorium", "1.6.4.1", ThoriumMod.Version);
             }
 
             if (ThoriumMod != null && ProjectTRuConfig.Instance.ThoriumTranslation && Translation.IsRussianLanguage)
