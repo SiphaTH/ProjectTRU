@@ -9013,6 +9013,14 @@ Global.TownNpcName.Fuzgrom=Фузгром
 Global.TownNpcName.Grethzek=Грет'зек
 Global.TownNpcName.Seranoth=Сера'нот
 Global.TownNpcName.Hrograk=Хро'грак
+Global.TownNpcName.Brendan=Брендан
+Global.TownNpcName.Cliffton=Клиффтон
+Global.TownNpcName.Conrad=Конрад
+Global.TownNpcName.Gustav=Густав
+Global.TownNpcName.Hunter=Охотник
+Global.TownNpcName.Linus=Лайнус
+Global.TownNpcName.Roy=Рой
+Global.TownNpcName.Schneider=Шнайдер
 ###############################################
 ###############################################
 
@@ -10418,6 +10426,715 @@ FargoSouls.TileName.SquidwardDoorClosed=Дверь Сквидварда
 FargoSouls.TileName.SquidwardDoorOpen=Дверь Сквидварда
 ###############################################
 
+###############################################
+###############################################
+
+#FARGO BUFFS
+###############################################
+Fargo.BuffName.Omnistation=Omnistation
+Fargo.BuffDescription.Omnistation=Effects of all vanilla stations
+
+Fargo.BuffName.OmnistationPlus=Omnistation+
+Fargo.BuffDescription.OmnistationPlus=Effects of all stations, vanilla and modded
+
+Fargo.BuffName.WoodDrop=Wood Drop
+Fargo.BuffDescription.WoodDrop= 
+
+#FARGO ITEMS
+###############################################
+Fargo.ItemName.BoneQuiver=Endless Bone Quiver
+
+Fargo.ItemName.ChlorophyteQuiver=Endless Chlorophyte Quiver
+Fargo.ItemTooltip.ChlorophyteQuiver=Bounces back after hitting a wall
+
+Fargo.ItemName.CursedQuiver=Endless Cursed Quiver
+
+Fargo.ItemName.FlameQuiver=Endless Flame Quiver
+
+Fargo.ItemName.FrostburnQuiver=Endless Frostburn Quiver
+
+Fargo.ItemName.HellfireQuiver=Endless Hellfire Quiver
+
+Fargo.ItemName.HolyQuiver=Endless Holy Quiver
+Fargo.ItemTooltip.HolyQuiver=Summons falling stars on impact
+
+Fargo.ItemName.IchorQuiver=Endless Ichor Quiver
+Fargo.ItemTooltip.IchorQuiver=Decreases target's defense
+
+Fargo.ItemName.JesterQuiver=Endless Jester's Quiver
+
+Fargo.ItemName.LuminiteQuiver=Endless Luminite Quiver
+Fargo.ItemTooltip.LuminiteQuiver='Shooting them down at the speed of sound!'
+
+Fargo.ItemName.UnholyQuiver=Endless Unholy Quiver
+
+Fargo.ItemName.VenomQuiver=Endless Venom Quiver
+
+Fargo.ItemName.ChlorophytePouch=Endless Chlorophyte Pouch
+Fargo.ItemTooltip.ChlorophytePouch=Chases after your enemy
+
+Fargo.ItemName.CrystalPouch=Endless Crystal Pouch
+Fargo.ItemTooltip.CrystalPouch=Creates several crystal shards on impact
+
+Fargo.ItemName.CursedPouch=Endless Cursed Pouch
+
+Fargo.ItemName.ExplosivePouch=Endless Explosive Pouch
+Fargo.ItemTooltip.ExplosivePouch=Explodes on impact
+
+Fargo.ItemName.GoldenPouch=Endless Golden Pouch
+Fargo.ItemTooltip.GoldenPouch=Enemies killed will drop more money
+
+Fargo.ItemName.IchorPouch=Endless Ichor Pouch
+Fargo.ItemTooltip.IchorPouch=Decreases target's defense
+
+Fargo.ItemName.LuminitePouch=Endless Luminite Pouch
+Fargo.ItemTooltip.LuminitePouch='Line 'em up and knock 'em down...'
+
+Fargo.ItemName.MeteorPouch=Endless Meteor Pouch
+
+Fargo.ItemName.NanoPouch=Endless Nano Pouch
+Fargo.ItemTooltip.NanoPouch=Causes confusion
+
+Fargo.ItemName.PartyPouch=Endless Party Pouch
+Fargo.ItemTooltip.PartyPouch=Explodes into confetti on impact
+
+Fargo.ItemName.SilverPouch=Endless Silver Pouch
+
+Fargo.ItemName.VelocityPouch=Endless High Velocity Pouch
+
+Fargo.ItemName.VenomPouch=Endless Venom Pouch
+Fargo.ItemTooltip.VenomPouch=Inflicts target with venom
+
+Fargo.ItemName.CrystalDartBox=Endless Crystal Dart Box
+
+Fargo.ItemName.CursedDartBox=Endless Cursed Dart Box
+
+Fargo.ItemName.IchorDartBox=Endless Ichor Dart Box
+
+Fargo.ItemName.PoisonDartBox=Endless Poison Dart Box
+
+Fargo.ItemName.Rocket1Bag=Endless Rocket1 Bag
+
+Fargo.ItemName.Rocket2Bag=Endless Rocket2 Bag
+
+Fargo.ItemName.Rocket3Bag=Endless Rocket3 Bag
+
+Fargo.ItemName.Rocket4Bag=Endless Rocket4 Bag
+
+Fargo.ItemName.Abominationn=Abominationn
+Fargo.ItemTooltip.Abominationn='I sure wish I was a boss.'
+
+Fargo.ItemName.Angler=Angler
+Fargo.ItemTooltip.Angler='You'd be a great helper minion!'
+
+Fargo.ItemName.ArmsDealer=Arms Dealer
+Fargo.ItemTooltip.ArmsDealer='Keep your hands off my gun, buddy!'
+
+Fargo.ItemName.Clothier=Clothier
+Fargo.ItemTooltip.Clothier='Thanks again for freeing me from my curse.'
+
+Fargo.ItemName.Cyborg=Cyborg
+Fargo.ItemTooltip.Cyborg='My expedition efficiency was critically reduced when a projectile impacted my locomotive actuator.'
+
+Fargo.ItemName.Demolitionist=Demolitionist
+Fargo.ItemTooltip.Demolitionist='It's a good day to die!'
+
+Fargo.ItemName.Deviantt=Deviantt
+Fargo.ItemTooltip.Deviantt='Embrace suffering... and while you're at it, embrace another purchase!'
+
+Fargo.ItemName.Dryad=Dryad
+Fargo.ItemTooltip.Dryad='Be safe; Terraria needs you!'
+
+Fargo.ItemName.DyeTrader=Dye Trader
+Fargo.ItemTooltip.DyeTrader='My dear, what you're wearing is much too drab.'
+
+Fargo.ItemName.GoblinTinkerer=Goblin Tinkerer
+Fargo.ItemTooltip.GoblinTinkerer='Looking for a gadgets expert? I'm your goblin!'
+
+Fargo.ItemName.Guide=Guide
+Fargo.ItemTooltip.Guide='They say there is a person who will tell you how to survive in this land.'
+
+Fargo.ItemName.LumberJack=The LumberJack
+Fargo.ItemTooltip.LumberJack='I eat a bowl of woodchips for breakfast... without any milk.'
+
+Fargo.ItemName.Mechanic=Mechanic
+Fargo.ItemTooltip.Mechanic='Always buy more wire than you need!'
+
+Fargo.ItemName.Merchant=Merchant
+Fargo.ItemTooltip.Merchant='Did you say gold? I'll take that off of ya.'
+
+Fargo.ItemName.Mutant=Mutant
+Fargo.ItemTooltip.Mutant='You're lucky I'm on your side.'
+
+Fargo.ItemName.Nurse=Nurse
+Fargo.ItemTooltip.Nurse='Show me where it hurts.'
+
+Fargo.ItemName.Painter=Painter
+Fargo.ItemTooltip.Painter='I know the difference between turquoise and blue-green. But I won't tell you.'
+
+Fargo.ItemName.PartyGirl=Party Girl
+Fargo.ItemTooltip.PartyGirl='We have to talk. It's... it's about parties.'
+
+Fargo.ItemName.Pirate=Pirate
+Fargo.ItemTooltip.Pirate='Stay off me booty, ya scallywag!'
+
+Fargo.ItemName.SantaClaus=Santa Claus
+Fargo.ItemTooltip.SantaClaus='What? You thought I wasn't real?'
+
+Fargo.ItemName.SkeletonMerchant=Skeleton Merchant
+Fargo.ItemTooltip.SkeletonMerchant='You would not believe some of the things people throw at me... Wanna buy some of it?'
+
+Fargo.ItemName.Squirrel=Squirrel
+Fargo.ItemTooltip.Squirrel=*squeak*
+
+Fargo.ItemName.Steampunker=Steampunker
+Fargo.ItemTooltip.Steampunker='Show me some gears!'
+
+Fargo.ItemName.Stylist=Stylist
+Fargo.ItemTooltip.Stylist='Did you even try to brush your hair today?'
+
+Fargo.ItemName.Tavernkeep=Tavernkeep
+Fargo.ItemTooltip.Tavernkeep='What am I doing here...'
+
+Fargo.ItemName.TaxCollector=Tax Collector
+Fargo.ItemTooltip.TaxCollector='You again? Suppose you want more money!?'
+
+Fargo.ItemName.TravellingMerchant=Travelling Merchant
+Fargo.ItemTooltip.TravellingMerchant='I sell wares from places that might not even exist!'
+
+Fargo.ItemName.Truffle=Truffle
+Fargo.ItemTooltip.Truffle='Everyone in this town feels a bit off.'
+
+Fargo.ItemName.WitchDoctor=Witch Doctor
+Fargo.ItemTooltip.WitchDoctor='Which doctor am I? The Witch Doctor am I.'
+
+Fargo.ItemName.Wizard=Wizard
+Fargo.ItemTooltip.Wizard='Want me to pull a coin from behind your ear? No? Ok.'
+
+Fargo.ItemName.AutoHouse=InstaHouse
+Fargo.ItemTooltip.AutoHouse=Places an NPC house instantly
+
+Fargo.ItemName.BoomShuriken=Boom Shuriken
+Fargo.ItemTooltip.BoomShuriken=Rapid firing explosives
+
+Fargo.ItemName.CityBuster=City Buster
+Fargo.ItemTooltip.CityBuster=Destroys a large area\nWill not remove background walls\nUse at your own risk
+
+Fargo.ItemName.DoubleObsidianInstabridge=Double Obsidian Instabridge
+Fargo.ItemTooltip.DoubleObsidianInstabridge=Creates 2 bridges of obsidian platforms across the whole world\nAlso clears the area between and above the platforms\nDo not use if any important building is nearby
+
+Fargo.ItemName.InstaBridge=Instabridge
+Fargo.ItemTooltip.InstaBridge=Creates a bridge of platforms across the whole world\nAlso clears the area right above the platforms\nDo not use if any important building is nearby
+
+Fargo.ItemName.InstaTrack=Instatrack
+Fargo.ItemTooltip.InstaTrack=Creates a minecart track across the whole world\nAlso clears the area right above the tracks\nDo not use if any important building is nearby
+
+Fargo.ItemName.Instavator=Instavator
+Fargo.ItemTooltip.Instavator=Creates a hellevator instantly\nDo not use if any important building is below
+
+Fargo.ItemName.LihzahrdInstactuationBomb=Lihzahrd Instactuation Bomb
+Fargo.ItemTooltip.LihzahrdInstactuationBomb=Clears a space around the Lihzahrd Altar when used while standing in front of it\nActuates Lihzahrd Brick and destroys others\nOnly works in the Jungle Temple and after Plantera is defeated
+
+Fargo.ItemName.MiniInstaBridge=Mini Instabridge
+Fargo.ItemTooltip.MiniInstaBridge=Creates a long bridge of platforms\nWill not break any blocks
+
+Fargo.ItemName.ObsidianInstaBridge=Obsidian Instabridge
+Fargo.ItemTooltip.ObsidianInstaBridge=Creates a bridge of obsidian platforms across the whole world\nAlso clears the area right above the platforms\nDo not use if any important building is nearby
+
+Fargo.ItemName.Trollbomb=Troll Bomb
+Fargo.ItemTooltip.Trollbomb=Summon a random bomb
+
+Fargo.ItemName.BattleCry=Battle Cry
+Fargo.ItemTooltip.BattleCry=Increase spawn rates by 10x on use\nUse it again to decrease them
+
+Fargo.ItemName.DeathFruit=Death Fruit
+Fargo.ItemTooltip.DeathFruit=Permanently decreases maximum life by 20\nEffects may not be reversible for characters that have used modded life-increasing items
+
+Fargo.ItemName.DevianttsSundial=Deviantt's Sundial
+Fargo.ItemTooltip.DevianttsSundial='For getting through those early nights'\nActivates the Enchanted Sundial effect\nCan only be used once
+
+Fargo.ItemName.ExpertToggle=Expert's Token
+Fargo.ItemTooltip.ExpertToggle=Toggles Expert mode
+
+Fargo.ItemName.IceCrate=Ice Crate
+Fargo.ItemTooltip.IceCrate=Right click to open
+
+Fargo.ItemName.PortableSundial=Portable Sundial
+Fargo.ItemTooltip.PortableSundial=Left click to instantly switch from day to night\nRight click to activate the Enchanted Sundial effect\nThis will also reset travelling merchant's shops
+
+Fargo.ItemName.ShadowCrate=Shadow Crate
+Fargo.ItemTooltip.ShadowCrate=Right click to open
+
+Fargo.ItemName.ShadowLockBox=Shadow Lock Box
+Fargo.ItemTooltip.ShadowLockBox=Right click to open\nRequires a Shadow Key
+
+Fargo.ItemName.Stats=Stat Sheet
+
+Fargo.ItemName.SuperDummy=Super Dummy
+Fargo.ItemTooltip.SuperDummy=Spawns a super dummy at your cursor\nSame as regular Target Dummy except minions and projectiles detect and home onto it\nOn hit effects get triggered as well\nRight click to remove all spawned super dummies
+
+Fargo.ItemName.CorruptRenewal=Corruption Renewal
+Fargo.ItemTooltip.CorruptRenewal=Corrupts a large radius
+
+Fargo.ItemName.CorruptRenewalSupreme=Corruption Renewal Supreme
+Fargo.ItemTooltip.CorruptRenewalSupreme=Corrupts the entire world
+
+Fargo.ItemName.CrimsonRenewal=Crimson Renewal
+Fargo.ItemTooltip.CrimsonRenewal=Crimsons a large radius
+
+Fargo.ItemName.CrimsonRenewalSupreme=Crimson Renewal Supreme
+Fargo.ItemTooltip.CrimsonRenewalSupreme=Crimsons the entire world
+
+Fargo.ItemName.HallowRenewal=Hallowed Renewal
+Fargo.ItemTooltip.HallowRenewal=Hallows a large radius
+
+Fargo.ItemName.HallowRenewalSupreme=Hallowed Renewal Supreme
+Fargo.ItemTooltip.HallowRenewalSupreme=Hallows the entire world
+
+Fargo.ItemName.MushroomRenewal=Mushroom Renewal
+Fargo.ItemTooltip.MushroomRenewal=Shroomifies a large radius
+
+Fargo.ItemName.MushroomRenewalSupreme=Mushroom Renewal Supreme
+Fargo.ItemTooltip.MushroomRenewalSupreme=Shroomifies the entire world
+
+Fargo.ItemName.PurityRenewal=Purity Renewal
+Fargo.ItemTooltip.PurityRenewal=Cleanses a large radius
+
+Fargo.ItemName.PurityRenewalSupreme=Purity Renewal Supreme
+Fargo.ItemTooltip.PurityRenewalSupreme=Cleanses the entire world
+
+Fargo.ItemName.MapViewer=The Ancient Master's Map of the Lost King's Great Ancestors
+Fargo.ItemTooltip.MapViewer=Reveals an area of the map around you
+
+Fargo.ItemName.Abeemination2=A Bee In My Nation
+Fargo.ItemTooltip.Abeemination2=Summons Queen Bee
+
+Fargo.ItemName.CelestialSigil2=Celestially Sigil
+Fargo.ItemTooltip.CelestialSigil2=Summons the Moon Lord instantly
+
+Fargo.ItemName.GoreySpine=Red Stained Spine
+Fargo.ItemTooltip.GoreySpine=Summons the Brain of Cthulhu
+
+Fargo.ItemName.MechEye=Some Kind of Metallic Eye
+Fargo.ItemTooltip.MechEye=Summons the Twins
+
+Fargo.ItemName.MechSkull=Some Kind of Metallic Skull
+Fargo.ItemTooltip.MechSkull=Summons Skeletron Prime
+
+Fargo.ItemName.MechWorm=Some Kind of Metallic Worm
+Fargo.ItemTooltip.MechWorm=Summons the Destroyer
+
+Fargo.ItemName.SlimyCrown=Slimy Crown
+Fargo.ItemTooltip.SlimyCrown=Summons King Slime
+
+Fargo.ItemName.SuspiciousEye=Eye That Could Be Seen As Suspicious
+Fargo.ItemTooltip.SuspiciousEye=Summons the Eye of Cthulhu
+
+Fargo.ItemName.TruffleWorm2=Truffly Worm
+Fargo.ItemTooltip.TruffleWorm2=Summons Duke Fishron without fishing
+
+Fargo.ItemName.WormyFood=Wormy Food
+Fargo.ItemTooltip.WormyFood=Summons the Eater of Worlds
+
+Fargo.ItemName.BatteredClub=Battered Club
+Fargo.ItemTooltip.BatteredClub=Summons the Ogre
+
+Fargo.ItemName.BetsyEgg=Dragon's Egg
+Fargo.ItemTooltip.BetsyEgg=Summons Betsy
+
+Fargo.ItemName.CursedSextant=Cursed Sextant
+Fargo.ItemTooltip.CursedSextant=Starts the Blood Moon
+
+Fargo.ItemName.FestiveOrnament=Festive Ornament
+Fargo.ItemTooltip.FestiveOrnament=Summons Everscream\nOnly usable at night
+
+Fargo.ItemName.ForbiddenScarab=Forbidden Scarab
+Fargo.ItemTooltip.ForbiddenScarab=Starts a Sandstorm
+
+Fargo.ItemName.ForbiddenTome=Forbidden Tome
+Fargo.ItemTooltip.ForbiddenTome=Summons a Dark Mage
+
+Fargo.ItemName.HeadofMan=Head of Man
+Fargo.ItemTooltip.HeadofMan=Summons Headless Horseman\nOnly usable at night
+
+Fargo.ItemName.IceKingsRemains=Ice King's Remains
+Fargo.ItemTooltip.IceKingsRemains=Summons Ice Queen\nOnly usable at night
+
+Fargo.ItemName.MartianMemoryStick=Martian Memory Stick
+Fargo.ItemTooltip.MartianMemoryStick=Summons Martian Saucer
+
+Fargo.ItemName.NaughtyList=Naughty List
+Fargo.ItemTooltip.NaughtyList=Summons Santa-NK1\nOnly usable at night
+
+Fargo.ItemName.PartyCone=Party Cone
+Fargo.ItemTooltip.PartyCone=Starts a Party!
+
+Fargo.ItemName.PillarSummon=Outsider's Portal
+Fargo.ItemTooltip.PillarSummon=Summons the Celestial Pillars
+
+Fargo.ItemName.RunawayProbe=Runaway Probe
+Fargo.ItemTooltip.RunawayProbe=Starts the Martian invasion
+
+Fargo.ItemName.SlimyBarometer=Slimy Barometer
+Fargo.ItemTooltip.SlimyBarometer=Starts the Slime Rain
+
+Fargo.ItemName.SpookyBranch=Spooky Branch
+Fargo.ItemTooltip.SpookyBranch=Summons Mourning Wood\nOnly usable at night
+
+Fargo.ItemName.SuspiciousLookingScythe=Suspicious Looking Scythe
+Fargo.ItemTooltip.SuspiciousLookingScythe=Summons Pumpking\nOnly usable at night
+
+Fargo.ItemName.WeatherBalloon=Weather Balloon
+Fargo.ItemTooltip.WeatherBalloon=Starts the Rain
+
+Fargo.ItemName.AmalgamatedSkull=Amalgamated Skull
+Fargo.ItemTooltip.AmalgamatedSkull=Summons the skeleton gunners\nOnly usable at night or underground
+
+Fargo.ItemName.AmalgamatedSpirit=Amalgamated Spirit
+Fargo.ItemTooltip.AmalgamatedSpirit=Summons the skeleton mages\nOnly usable at night or underground
+
+Fargo.ItemName.AthenianIdol=Athenian Idol
+Fargo.ItemTooltip.AthenianIdol=Summons Medusa\nOnly usable at night or underground
+
+Fargo.ItemName.AttractiveOre=Attractive Ore
+Fargo.ItemTooltip.AttractiveOre=Summons Undead Miner\nOnly usable at night or underground
+
+Fargo.ItemName.CloudSnack=Cloud Snack
+Fargo.ItemTooltip.CloudSnack=Summons Wyvern
+
+Fargo.ItemName.ClownLicense=Clown License
+Fargo.ItemTooltip.ClownLicense=Summons Clown\nOnly usable at night or underground
+
+Fargo.ItemName.CoreoftheFrostCore=Core of the Frost Core
+Fargo.ItemTooltip.CoreoftheFrostCore=Summons Ice Golem
+
+Fargo.ItemName.CorruptChest=Corrupt Chest
+Fargo.ItemTooltip.CorruptChest=Summons Corrupt Mimic
+
+Fargo.ItemName.CrimsonChest=Crimson Chest
+Fargo.ItemTooltip.CrimsonChest=Summons Crimson Mimic
+
+Fargo.ItemName.DilutedRainbowMatter=Diluted Rainbow Matter
+Fargo.ItemTooltip.DilutedRainbowMatter=Summons Rainbow Slime
+
+Fargo.ItemName.Eggplant=Eggplant
+Fargo.ItemTooltip.Eggplant=Summons Doctor Bones\nOnly usable at night or underground
+
+Fargo.ItemName.ForbiddenForbiddenFragment=Forbidden Forbidden Fragment
+Fargo.ItemTooltip.ForbiddenForbiddenFragment=Summons Sand Elemental
+
+Fargo.ItemName.GrandCross=Grand Cross
+Fargo.ItemTooltip.GrandCross=Summons Paladin\nOnly usable at night or underground
+
+Fargo.ItemName.HallowChest=Hallow Chest
+Fargo.ItemTooltip.HallowChest=Summons Hallowed Mimic
+
+Fargo.ItemName.HeartChocolate=Heart Chocolate
+Fargo.ItemTooltip.HeartChocolate=Summons Nymph\nOnly usable at night or underground
+
+Fargo.ItemName.HolyGrail=Holy Grail
+Fargo.ItemTooltip.HolyGrail=Summons Tim\nOnly usable at night or underground
+
+Fargo.ItemName.InnocuousSkull=Innocuous Skull
+Fargo.ItemTooltip.InnocuousSkull=Summons Baby Guardian
+
+Fargo.ItemName.JungleChest=Jungle Chest
+Fargo.ItemTooltip.JungleChest=Summons Jungle Mimic
+
+Fargo.ItemName.LeesHeadband=Lee's Headband
+Fargo.ItemTooltip.LeesHeadband=Summons Bone Lee\nOnly usable at night or underground
+
+Fargo.ItemName.MothLamp=Moth Lamp
+Fargo.ItemTooltip.MothLamp=Summons Moth
+
+Fargo.ItemName.MothronEgg=Mothron Egg
+Fargo.ItemTooltip.MothronEgg=Summons Mothron\nOnly usable during Solar Eclipse
+
+Fargo.ItemName.PinkSlimeCrown=Pink Slime Crown
+Fargo.ItemTooltip.PinkSlimeCrown=Summons Pinky
+
+Fargo.ItemName.PirateFlag=Pirate Flag
+Fargo.ItemTooltip.PirateFlag=Summons Pirate Captain\nOnly usable at night or underground
+
+Fargo.ItemName.PlunderedBooty=Plundered Booty
+Fargo.ItemTooltip.PlunderedBooty=Summons Flying Dutchman
+
+Fargo.ItemName.RuneOrb=Rune Orb
+Fargo.ItemTooltip.RuneOrb=Summons Rune Wizard\nOnly usable at night or underground
+
+Fargo.ItemName.ShadowflameIcon=Shadowflame Icon
+Fargo.ItemTooltip.ShadowflameIcon=Summons Goblin Summoner\nOnly usable during Goblin Army
+
+Fargo.ItemName.SlimyLockBox=Slimy Lock Box
+Fargo.ItemTooltip.SlimyLockBox=Summons Dungeon Slime
+
+Fargo.ItemName.SuspiciousLookingChest=Suspicious Looking Chest
+Fargo.ItemTooltip.SuspiciousLookingChest=Summons Mimic\nSummons Ice Mimic when in underground snow biome
+
+Fargo.ItemName.WormSnack=Worm Snack
+Fargo.ItemTooltip.WormSnack=Summons Giant Worm in pre-Hardmode\nSummons Digger in Hardmode\nOnly usable underground
+
+Fargo.ItemName.AncientSeal=Ancient Seal
+Fargo.ItemTooltip.AncientSeal=Summons ALL the bosses modded included\n'Use at your own risk'
+
+Fargo.ItemName.CultistSummon=Zealot's Possession
+Fargo.ItemTooltip.CultistSummon=Summons the Lunatic Cultist\nDoes not spawn the pillars on death
+
+Fargo.ItemName.DeathBringerFairy=Death Bringer Fairy
+Fargo.ItemTooltip.DeathBringerFairy=Summons all pre-hardmode bosses\nCertain bosses will only spawn if you're in their specific biome
+
+Fargo.ItemName.FleshyDoll=Fleshy Doll
+Fargo.ItemTooltip.FleshyDoll=Summons the Wall of Flesh\nMake sure you use it in the Underworld
+
+Fargo.ItemName.MechanicalAmalgam=Mechanical Amalgam
+Fargo.ItemTooltip.MechanicalAmalgam=Summons all 3 Mechanical bosses
+
+Fargo.ItemName.MutantVoodoo=Mutant Voodoo Doll
+Fargo.ItemTooltip.MutantVoodoo=Summons ALL the bosses
+
+Fargo.ItemName.PlanterasFruit=Plantera's Fruit
+Fargo.ItemTooltip.PlanterasFruit=Summons Plantera
+
+Fargo.ItemName.SuspiciousSkull=Suspicious Skull
+Fargo.ItemTooltip.SuspiciousSkull=Summons Skeletron without killing the Clothier\nSummons the Dungeon Guardian during the day
+
+Fargo.ItemName.OverloadBee=Overstuffed Larva
+Fargo.ItemTooltip.OverloadBee=Summons several Queen Bees
+
+Fargo.ItemName.OverloadBetsy=Dragon Egg Tray
+Fargo.ItemTooltip.OverloadBetsy=Summons several Betsys
+
+Fargo.ItemName.OverloadBrain=Brain Storm
+Fargo.ItemTooltip.OverloadBrain=Summons several Brains of Cthulhu
+
+Fargo.ItemName.OverloadCultist=Zealot's Madness
+Fargo.ItemTooltip.OverloadCultist=Summons several Lunatic Cultists
+
+Fargo.ItemName.OverloadDestroyer=Seismic Actuator
+Fargo.ItemTooltip.OverloadDestroyer=Summons several Destroyers
+
+Fargo.ItemName.OverloadedSlimeRain=Slimy Stormcaller
+Fargo.ItemTooltip.OverloadedSlimeRain=Summons an Overloaded Slime Rain\nUse again to stop the event
+
+Fargo.ItemName.Overloader=Overloader
+Fargo.ItemTooltip.Overloader=Used to craft swarm summons\nWhen used, all summons in the stack will be consumed\nThe more consumed, the more bosses will spawn
+
+Fargo.ItemName.OverloadEye=Eyemalgamation
+Fargo.ItemTooltip.OverloadEye=Summons several Eyes of Cthulhu
+
+Fargo.ItemName.OverloadFish=Truffle Worm Clump
+Fargo.ItemTooltip.OverloadFish=Summons several Duke Fishrons
+
+Fargo.ItemName.OverloadFrostMoon=Overloaded Naughty Present
+Fargo.ItemTooltip.OverloadFrostMoon=Summons an Overloaded Frost Moon\nUse again to stop the event
+
+Fargo.ItemName.OverloadGoblins=Goblin War Banner
+Fargo.ItemTooltip.OverloadGoblins=Summons an Overloaded Goblin Invasion\nUse again to stop the event
+
+Fargo.ItemName.OverloadGolem=Runic Power Cell
+Fargo.ItemTooltip.OverloadGolem=Summons several Golems
+
+Fargo.ItemName.OverloadMartians=Overloaded Runaway Probe
+Fargo.ItemTooltip.OverloadMartians=Summons an Overloaded Martian Invasion\nUse again to stop the event
+
+Fargo.ItemName.OverloadMoon=Runic Inscription
+Fargo.ItemTooltip.OverloadMoon=Summons several Moon Lords
+
+Fargo.ItemName.OverloadPirates=Pirate's Bounty
+Fargo.ItemTooltip.OverloadPirates=Summons an Overloaded Pirate Invasion\nUse again to stop the event
+
+Fargo.ItemName.OverloadPlant=Heart of the Jungle
+Fargo.ItemTooltip.OverloadPlant=Summons several Planteras
+
+Fargo.ItemName.OverloadPrime=Primal Control Chip
+Fargo.ItemTooltip.OverloadPrime=Summons several Skeletron Primes
+
+Fargo.ItemName.OverloadPumpkinMoon=Overloaded Pumpkin Moon Medallion
+Fargo.ItemTooltip.OverloadPumpkinMoon=Summons an Overloaded Pumpkin Moon\nUse again to stop the event
+
+Fargo.ItemName.OverloadSkele=Skull Chain Necklace
+Fargo.ItemTooltip.OverloadSkele=Summons several Skeletrons during the night\nSummons several Dungeon Guardians during the day
+
+Fargo.ItemName.OverloadSlimeCrown=Swarm Crown
+Fargo.ItemTooltip.OverloadSlimeCrown=Summons several King Slimes
+
+Fargo.ItemName.OverloadTwins=Omnifocal Lens
+Fargo.ItemTooltip.OverloadTwins=Summons several sets of Twins
+
+Fargo.ItemName.OverloadWall=Bundle of Dolls
+Fargo.ItemTooltip.OverloadWall=Summons several Walls of Flesh
+
+Fargo.ItemName.OverloadWorm=Worm Chicken
+Fargo.ItemTooltip.OverloadWorm=Summons several Eater of Worlds
+
+#Из АА
+#Fargo.ItemName.Clawbomination=Clawbomination
+#Fargo.ItemTooltip.Clawbomination=Summons several Grips of Chaos
+
+#Из АА
+#Fargo.ItemName.GlowingMasshroom=Glowing Masshroom
+#Fargo.ItemTooltip.GlowingMasshroom=Summons several Feudal Fungi
+
+#Из АА
+#Fargo.ItemName.Masshroom=Masshroom
+#Fargo.ItemTooltip.Masshroom=Summons several Mushroom Monarchs
+
+Fargo.ItemName.EnergizerBee=Buzzy Energizer
+Fargo.ItemTooltip.EnergizerBee='Smells like it tastes like honey'
+
+Fargo.ItemName.EnergizerBetsy=Draco Energizer
+Fargo.ItemTooltip.EnergizerBetsy='You feel like you've waited three thousand years'
+
+Fargo.ItemName.EnergizerBrain=Brainy Energizer
+Fargo.ItemTooltip.EnergizerBrain='You still feel dumb'
+
+Fargo.ItemName.EnergizerCultist=Insanity Energizer
+Fargo.ItemTooltip.EnergizerCultist='You're probably insane'
+
+Fargo.ItemName.EnergizerDestroy=Destruction Energizer
+Fargo.ItemTooltip.EnergizerDestroy='It makes you want to break some kids'
+
+Fargo.ItemName.EnergizerDG=Extra Boney Energizer
+Fargo.ItemTooltip.EnergizerDG='Reminds you of a mean cow'
+
+Fargo.ItemName.EnergizerEye=Optical Energizer
+Fargo.ItemTooltip.EnergizerEye='It feels like it's watching you'
+
+Fargo.ItemName.EnergizerFish=Fishy Energizer
+Fargo.ItemTooltip.EnergizerFish='You feel content'
+
+Fargo.ItemName.EnergizerGolem=Lihzahrd Energizer
+Fargo.ItemTooltip.EnergizerGolem='You wish it was spelled "lizard"
+
+Fargo.ItemName.EnergizerMoon=Lunar Energizer
+Fargo.ItemTooltip.EnergizerMoon='You enjoy cheese'
+
+Fargo.ItemName.EnergizerPlant=Leafy Energizer
+Fargo.ItemTooltip.EnergizerPlant='Being a leaf sounds like a good time'
+
+Fargo.ItemName.EnergizerPrime=Prime Energizer
+Fargo.ItemTooltip.EnergizerPrime='You feel like a new you'
+
+Fargo.ItemName.EnergizerSkele=Boney Energizer
+Fargo.ItemTooltip.EnergizerSkele='Reminds you of a cow'
+
+Fargo.ItemName.EnergizerSlime=Slimy Energizer
+Fargo.ItemTooltip.EnergizerSlime='It feels a bit slimy'
+
+Fargo.ItemName.EnergizerTwins=Sibling Energizer
+Fargo.ItemTooltip.EnergizerTwins='You wish you had more'
+
+Fargo.ItemName.EnergizerWall=Wally Energizer
+Fargo.ItemTooltip.EnergizerWall='You feel claustrophobic'
+
+Fargo.ItemName.EnergizerWorm=Wormy Energizer
+Fargo.ItemTooltip.EnergizerWorm='It's a little squishy'
+
+#Из Ториума
+Fargo.ItemName.OverloadCoznix=Void Lens 2.0
+Fargo.ItemTooltip.OverloadCoznix=Summons several Fallen Beholders
+
+#Из Ториума
+Fargo.ItemName.OverloadJelly=Jellyfish Resonator 2.0
+Fargo.ItemTooltip.OverloadJelly=Summons several Queen Jellyfish
+
+#Из Ториума
+Fargo.ItemName.OverloadLich=Necromantic Blade
+Fargo.ItemTooltip.OverloadLich=Summons several Liches
+
+#Из Ториума
+Fargo.ItemName.OverloadSaucer=Star Caller 2.0
+Fargo.ItemTooltip.OverloadSaucer=Summons several Star Scouters
+
+#Из Ториума
+Fargo.ItemName.OverloadStrider=Cryo Egg
+Fargo.ItemTooltip.OverloadStrider=Summons several Borean Striders
+
+Fargo.ItemName.OverloadThunderbird=Charged Bird Whistle
+Fargo.ItemTooltip.OverloadThunderbird=Summons several Grand Thunder Birds
+
+Fargo.ItemName.LihzahrdPowerCell2=Lihzahrd Battery Pack
+Fargo.ItemTooltip.LihzahrdPowerCell2=Summons the Golem without an altar
+
+Fargo.ItemName.CrucibleCosmos=Crucible of the Cosmos
+Fargo.ItemTooltip.CrucibleCosmos=Functions as every crafting station\n'It seems to be hiding magnificent power'
+
+Fargo.ItemName.EchPainting=Ech Painting
+Fargo.ItemTooltip.EchPainting='Groalt W. Fai'
+
+Fargo.ItemName.ElementalAssembler=Elemental Assembler
+Fargo.ItemTooltip.ElementalAssembler=Functions as several basic crafting stations
+
+Fargo.ItemName.MultitaskCenter=Multitask Center
+Fargo.ItemTooltip.MultitaskCenter=Functions as several basic crafting stations
+
+Fargo.ItemName.Omnistation=Omnistation
+Fargo.ItemTooltip.Omnistation=Effects of all vanilla buff stations\nGrants Honey when touched\nRight click while holding a weapon for its respective buff
+
+Fargo.ItemName.Omnistation2=Omnistation
+Fargo.ItemTooltip.Omnistation2=Effects of all vanilla buff stations\nGrants Honey when touched\nRight click while holding a weapon for its respective buff
+
+# if Calamity || Thorium != null
+Fargo.ItemName.OmnistationPlus=Omnistation+
+Fargo.ItemTooltip.OmnistationPlus=Effects of all buff stations, modded and vanilla\nGrants Honey when touched\nRight click while holding a weapon for its respective buff\nCurrently only supports Thorium and Calamity
+
+Fargo.ItemName.RegalStatue=Regal Statue
+Fargo.ItemTooltip.RegalStatue=Town NPCs respawn extremely quickly when nearby
+
+Fargo.ItemName.WalkingRick=Walking Rick
+Fargo.ItemTooltip.WalkingRick='Kien R. Oco'
+
+Fargo.ItemName.WoodenToken=Wooden Token
+Fargo.ItemTooltip.WoodenToken='The sign of a true wood lover'
+
+Fargo.ItemName.AbominationnBody=Abominationn Body
+
+Fargo.ItemName.AbominationnMask=Abominationn Mask
+
+Fargo.ItemName.AbominationnPants=Abominationn Pants
+
+Fargo.ItemName.AbominationnScythe=Abominationn's Scythe
+
+Fargo.ItemName.DevianttBody=Deviantt Body
+
+Fargo.ItemName.DevianttMask=Deviantt Mask
+
+Fargo.ItemName.DevianttPants=Deviantt Pants
+
+Fargo.ItemName.LumberHat=LumberJack Hat
+
+Fargo.ItemName.LumberjackBody=Lumberjack Body
+
+Fargo.ItemName.LumberjackMask=Lumberjack Mask
+
+Fargo.ItemName.LumberjackPants=Lumberjack Pants
+
+Fargo.ItemName.MutantBody=Mutant Body
+
+Fargo.ItemName.MutantMask=Mutant Mask
+
+Fargo.ItemName.MutantPants=Mutant Pants
+
+Fargo.ItemName.LumberJaxe=The Lumber Jaxe
+Fargo.ItemTooltip.LumberJaxe=Hit enemies may drop wood when killed\n'The former weapon of a true axe wielding hero'
+
+#FARGO TILES
+###############################################
+Fargo.TileName.MultitaskCenterSheet=Multitask Center
+Fargo.TileName.CrucibleCosmosSheet=Crucible of the Cosmos
+Fargo.TileName.ElementalAssemblerSheet=Elemental Assembler
+Fargo.TileName.OmnistationPlusSheet=Omnistation+
+Fargo.TileName.OmnistationSheet=Omnistation
+Fargo.TileName.RegalStatueSheet=Regal Statue
+
+#FARGO NPC
+###############################################
+FargoSouls.NpcName.Deviantt=Deviantt
+FargoSouls.NpcName.Abominationn=Abominationn
+FargoSouls.NpcName.LumberJack=LumberJack
+FargoSouls.NpcName.Mutant=Mutant
+FargoSouls.NpcName.Squirrel=Squirrel
+FargoSouls.NpcName.SuperDummy=Super Dummy
 
 ###############################################
 ###############################################
@@ -10466,3 +11183,8 @@ Thorium.Tags.HealerTag=Целитель
 #Thorium Other Tooltips
 Thorium.OtherTooltips.ScytheSoulCharge=Дарует {0} эссенции души при прямом попадании
 Thorium.OtherTooltips.UseManaAndHealth={$CommonItemTooltip.UsesMana} и {1} здоровья
+
+
+###############################################
+###############################################
+
