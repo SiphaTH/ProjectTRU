@@ -9043,7 +9043,7 @@ FargoSouls.BuffName.Grabbed=Схваченный
 FargoSouls.BuffDescription.Grabbed=Нажимайте клавиши движения чтобы выбраться!
 
 FargoSouls.BuffName.MutantFang=Клык Мутанта
-FargoSouls.BuffDescription.MutantFang=Сила режима Вечности принуждает вас
+FargoSouls.BuffDescription.MutantFang=Сила режима Вечности подчиняет вас
 
 FargoSouls.BuffName.MutantPresence=Присутствие Мутанта
 FargoSouls.BuffDescription.MutantPresence=Защита, сопротивление урону и регенерация здоровья снижены; все специальные способности душ выключены; эффект от дебаффа «{$BuffName.ChaosState}»
@@ -9054,11 +9054,11 @@ FargoSouls.BuffDescription.AbomCooldown=Вы не вынесете ещё одн
 FargoSouls.BuffName.AbomRebirth=Мерзкое возрождение
 FargoSouls.BuffDescription.AbomRebirth=Вы не можете исцеляться и не можете умереть, пока не получите удар
 
-FargoSouls.BuffName.Antisocial=Интроверт
+FargoSouls.BuffName.Antisocial=Асоциальность
 FargoSouls.BuffDescription.Antisocial=У вас нет друзей
 
 FargoSouls.BuffName.Atrophied=Атрофия
-FargoSouls.BuffDescription.Atrophied=Ваши мышцы истощены
+FargoSouls.BuffDescription.Atrophied=Ваши мышцы деградировали
 
 FargoSouls.BuffName.Berserked=Разъярённый
 FargoSouls.BuffDescription.Berserked=Вы не можете держать себя в руках
@@ -9073,37 +9073,37 @@ FargoSouls.BuffName.Crippled=Искалеченный
 FargoSouls.BuffDescription.Crippled=Вы не можете бегать
 
 FargoSouls.BuffName.CurseoftheMoon=Проклятие луны
-FargoSouls.BuffDescription.CurseoftheMoon=Ярость луны пожирает вас
+FargoSouls.BuffDescription.CurseoftheMoon=Ярость луны поглощает вас
 
 FargoSouls.BuffName.Defenseless=Беззащитный
-FargoSouls.BuffDescription.Defenseless=Ваша защита полностью сломлена
+FargoSouls.BuffDescription.Defenseless=Защита полностью сломлена
 
 FargoSouls.BuffName.FlamesoftheUniverse=Пламя Вселенной
-FargoSouls.BuffDescription.FlamesoftheUniverse=Сами небеса осудили вас
+FargoSouls.BuffDescription.FlamesoftheUniverse=Сами небеса покарали вас
 
 FargoSouls.BuffName.Flipped=Перевёрнутый
-FargoSouls.BuffDescription.Flipped=Ваша гравитация перевёрнута
+FargoSouls.BuffDescription.Flipped=Гравитация инвертирована
 
 FargoSouls.BuffName.FlippedHallow=Перевёрнутый
-FargoSouls.BuffDescription.FlippedHallow=Ваша гравитация перевёрнута
+FargoSouls.BuffDescription.FlippedHallow=Гравитация инвертирована
 
-FargoSouls.BuffName.Fused=Снаряжённый
-FargoSouls.BuffDescription.Fused=Вы ко всему готовы
+FargoSouls.BuffName.Fused=Запал
+FargoSouls.BuffDescription.Fused=Взрывной выход
 
 FargoSouls.BuffName.GodEater=Пожиратель богов
 FargoSouls.BuffDescription.GodEater=Ваша душа проклята божественным гневом
 
-FargoSouls.BuffName.Guilty=Виновность
+FargoSouls.BuffName.Guilty=Виновный
 FargoSouls.BuffDescription.Guilty=Оружие притуплено чувством вины за убийство невинных животных
 
 FargoSouls.BuffName.Hexed=Заколдован
 FargoSouls.BuffDescription.Hexed=Ваши атаки исцеляют врагов
 
-FargoSouls.BuffName.HolyPrice=Святая жертва
-FargoSouls.BuffDescription.HolyPrice=Ваши атаки наносят на 33% меньше урона
+FargoSouls.BuffName.HolyPrice=Святая цена
+FargoSouls.BuffDescription.HolyPrice=Урон снижен на 10%
 
 FargoSouls.BuffName.Hypothermia=Гипотермия
-FargoSouls.BuffDescription.Hypothermia=Увеличенный получаемый урон от морозных атак
+FargoSouls.BuffDescription.Hypothermia=Получаемый урон от морозных атак увеличен
 
 FargoSouls.BuffName.Infested=Заражённый
 FargoSouls.BuffDescription.Infested=Всё может стать только хуже
@@ -9111,53 +9111,53 @@ FargoSouls.BuffDescription.Infested=Всё может стать только х
 FargoSouls.BuffName.InfestedEX=Заражённый ЕХ
 FargoSouls.BuffDescription.InfestedEX=Всё может стать только хуже
 
-FargoSouls.BuffName.IvyVenom=Плющевой яд
-FargoSouls.BuffDescription.IvyVenom=Теряя здоровья, вы получаете дебафф {$Mods.CalamityRuTranslate.FargoSouls.BuffName.InfestedEX} через 20 секунд
+FargoSouls.BuffName.IvyVenom=Яд плющей
+FargoSouls.BuffDescription.IvyVenom=Вы медленно теряете здоровье\nВы получите дебафф {$Mods.CalamityRuTranslate.FargoSouls.BuffName.InfestedEX} через 20 сек
 
-FargoSouls.BuffName.Jammed=Заклинено
+FargoSouls.BuffName.Jammed=Заклиненный
 FargoSouls.BuffDescription.Jammed=Ваше стрелковое оружие неисправно
 
-FargoSouls.BuffName.Lethargic=Апатичный
-FargoSouls.BuffDescription.Lethargic=Ваше оружие ощущается вялым
+FargoSouls.BuffName.Lethargic=Летаргия
+FargoSouls.BuffDescription.Lethargic=Ваше оружие замедленно
 
 FargoSouls.BuffName.LightningRod=Громоотвод
 FargoSouls.BuffDescription.LightningRod=Вы привлекаете молнии
 
 FargoSouls.BuffName.LihzahrdBlessing=Благословение ящщеров
-FargoSouls.BuffDescription.LihzahrdBlessing=Провода работают и снижена скорость появления врагов в Храме джунглей
+FargoSouls.BuffDescription.LihzahrdBlessing=Использование вещей связанных с проводами возможно\nСкорость появления врагов в храме джунглей снижена
 
 FargoSouls.BuffName.LihzahrdCurse=Проклятие ящщеров
-FargoSouls.BuffDescription.LihzahrdCurse=Провода не работают в Храме джунглей
+FargoSouls.BuffDescription.LihzahrdCurse=Использование вещей связанных с проводами невозможно
 
 FargoSouls.BuffName.LivingWasteland=Живая пустошь
 FargoSouls.BuffDescription.LivingWasteland=Всё вокруг вас гниёт
 
-FargoSouls.BuffName.Lovestruck=Влюблённый
+FargoSouls.BuffName.Lovestruck=Безумно влюблённый
 FargoSouls.BuffDescription.Lovestruck=Вы влюблены!
 
-FargoSouls.BuffName.LowGround=Низкая посадка
+FargoSouls.BuffName.LowGround=Заземленность
 FargoSouls.BuffDescription.LowGround=Вы не можете стоять на платформах или жидкостях
 
-FargoSouls.BuffName.MarkedforDeath=Отмеченный Смертью
+FargoSouls.BuffName.MarkedforDeath=Отмеченный смертью
 FargoSouls.BuffDescription.MarkedforDeath=Просто не попадись
 
 FargoSouls.BuffName.Midas={$BuffName.Midas}
-FargoSouls.BuffDescription.Midas=Роняет монеты при попадании
+FargoSouls.BuffDescription.Midas=Вы теряете денеги при получении урона
 
 FargoSouls.BuffName.MutantNibble=Укус Мутанта
-FargoSouls.BuffDescription.MutantNibble=Вы никак не можете исцелиться
+FargoSouls.BuffDescription.MutantNibble=Восстановление здоровья невозможно
 
 FargoSouls.BuffName.NanoInjection=Нано-инъекция
 FargoSouls.BuffDescription.NanoInjection=Регенерация здоровья и характеристики снижены
 
-FargoSouls.BuffName.NullificationCurse=Проклятие обнуления
-FargoSouls.BuffDescription.NullificationCurse=Вы не можете увернуться и у Лунного Лорда иммунитет к циклическому урону!
+FargoSouls.BuffName.NullificationCurse=Проклятие недействительности
+FargoSouls.BuffDescription.NullificationCurse=Увороты невозможны\nЛунный Лорд получает урон только от одного типа, меняющегося циклически
 
 FargoSouls.BuffName.OceanicMaul=Океаническое истязание
 FargoSouls.BuffDescription.OceanicMaul=Защитные характеристики и максимальный запас здоровья снижены
 
 FargoSouls.BuffName.OceanicSeal=Океаническая печать
-FargoSouls.BuffDescription.OceanicSeal=Ни увернуться, ни украсть здоровье, ни унестись, ни сбежать
+FargoSouls.BuffDescription.OceanicSeal=Увороты, кража здоровья и сверхскорость отключены; вам не сбежать 
 
 FargoSouls.BuffName.Oiled={$BuffName.Oiled}
 FargoSouls.BuffDescription.Oiled={$BuffDescription.Oiled}
@@ -9169,16 +9169,16 @@ FargoSouls.BuffName.Recovering=Выздоровление
 FargoSouls.BuffDescription.Recovering=Медсестра не может вас вылечить
 
 FargoSouls.BuffName.ReverseManaFlow=Обратный поток маны
-FargoSouls.BuffDescription.ReverseManaFlow=Ваше магическое оружие использует здоровье вместо маны
+FargoSouls.BuffDescription.ReverseManaFlow=Магические оружия используют здоровье вместо маны
 
 FargoSouls.BuffName.Rotting=Гниение
-FargoSouls.BuffDescription.Rotting=Ваше тело портится
+FargoSouls.BuffDescription.Rotting=Ваше тело гниет
 
 FargoSouls.BuffName.Sadism=Вечность
 FargoSouls.BuffDescription.Sadism=Сила режима Вечности с вами
 
-FargoSouls.BuffName.Shadowflame=Теневое пламя
-FargoSouls.BuffDescription.Shadowflame=Потеря здоровья
+FargoSouls.BuffName.Shadowflame={$BuffName.ShadowFlame}
+FargoSouls.BuffDescription.Shadowflame={$BuffDescription.ShadowFlame}
 
 FargoSouls.BuffName.SqueakyToy=Игрушка-пищалка
 FargoSouls.BuffDescription.SqueakyToy=Ваши атаки — игрушки-пищалки
@@ -10421,7 +10421,7 @@ FargoSouls.TileName.AbomTrophy=Трофей Мерзостти
 FargoSouls.TileName.DeviTrophy=Трофей Девиантт
 FargoSouls.TileName.MutantStatue=Статуя Мутанта
 FargoSouls.TileName.MutantStatueGift=Статуя Мутанта
-FargoSouls.TileName.MutantTrophy=Трофей мутанта
+FargoSouls.TileName.MutantTrophy=Трофей Мутанта
 FargoSouls.TileName.SquidwardDoorClosed=Дверь Сквидварда
 FargoSouls.TileName.SquidwardDoorOpen=Дверь Сквидварда
 ###############################################
@@ -10431,710 +10431,699 @@ FargoSouls.TileName.SquidwardDoorOpen=Дверь Сквидварда
 
 #FARGO BUFFS
 ###############################################
-Fargo.BuffName.Omnistation=Omnistation
-Fargo.BuffDescription.Omnistation=Effects of all vanilla stations
+Fargo.BuffName.Omnistation=Омнистанция
+Fargo.BuffDescription.Omnistation=Эффект от всех ванильных станций
 
-Fargo.BuffName.OmnistationPlus=Omnistation+
-Fargo.BuffDescription.OmnistationPlus=Effects of all stations, vanilla and modded
+Fargo.BuffName.OmnistationPlus=Омнистанция+
+Fargo.BuffDescription.OmnistationPlus=Эффект от всех станций
 
-Fargo.BuffName.WoodDrop=Wood Drop
+Fargo.BuffName.WoodDrop=Выпадающее дерево
 Fargo.BuffDescription.WoodDrop= 
 
 #FARGO ITEMS
 ###############################################
-Fargo.ItemName.BoneQuiver=Endless Bone Quiver
+Fargo.ItemName.BoneQuiver=Колчан с бесконечными костяными стрелами
 
-Fargo.ItemName.ChlorophyteQuiver=Endless Chlorophyte Quiver
-Fargo.ItemTooltip.ChlorophyteQuiver=Bounces back after hitting a wall
+Fargo.ItemName.ChlorophyteQuiver=Колчан с бесконечными хлорофитовыми стрелами
+Fargo.ItemTooltip.ChlorophyteQuiver={$ItemTooltip.ChlorophyteArrow}
 
-Fargo.ItemName.CursedQuiver=Endless Cursed Quiver
+Fargo.ItemName.CursedQuiver=Колчан с бесконечными проклятыми стрелами
 
-Fargo.ItemName.FlameQuiver=Endless Flame Quiver
+Fargo.ItemName.FlameQuiver=Колчан с бесконечными подожженными стрелами
 
-Fargo.ItemName.FrostburnQuiver=Endless Frostburn Quiver
+Fargo.ItemName.FrostburnQuiver=Колчан с бесконечными стрелами ледяного ожога
 
-Fargo.ItemName.HellfireQuiver=Endless Hellfire Quiver
+Fargo.ItemName.HellfireQuiver=Колчан с бесконечными стрелами адского огня
 
-Fargo.ItemName.HolyQuiver=Endless Holy Quiver
-Fargo.ItemTooltip.HolyQuiver=Summons falling stars on impact
+Fargo.ItemName.HolyQuiver=Колчан с бесконечными святыми стрелами
+Fargo.ItemTooltip.HolyQuiver={$ItemTooltip.HolyArrow}
 
-Fargo.ItemName.IchorQuiver=Endless Ichor Quiver
-Fargo.ItemTooltip.IchorQuiver=Decreases target's defense
+Fargo.ItemName.IchorQuiver=Колчан с бесконечными ихоровыми стрелами
+Fargo.ItemTooltip.IchorQuiver={$ItemTooltip.IchorArrow}
 
-Fargo.ItemName.JesterQuiver=Endless Jester's Quiver
+Fargo.ItemName.JesterQuiver=Колчан с бесконечными стрелами шута
 
-Fargo.ItemName.LuminiteQuiver=Endless Luminite Quiver
-Fargo.ItemTooltip.LuminiteQuiver='Shooting them down at the speed of sound!'
+Fargo.ItemName.LuminiteQuiver=Колчан с бесконечными люминитовыми стрелами
+Fargo.ItemTooltip.LuminiteQuiver={$ItemTooltip.MoonlordArrow}
 
-Fargo.ItemName.UnholyQuiver=Endless Unholy Quiver
+Fargo.ItemName.UnholyQuiver=Колчан с бесконечными порочными стрелами
 
-Fargo.ItemName.VenomQuiver=Endless Venom Quiver
+Fargo.ItemName.VenomQuiver=Колчан с бесконечными ядовитыми стрелами
 
-Fargo.ItemName.ChlorophytePouch=Endless Chlorophyte Pouch
-Fargo.ItemTooltip.ChlorophytePouch=Chases after your enemy
+Fargo.ItemName.ChlorophytePouch=Мешочек с бесконечными хлорофитовыми пулями
+Fargo.ItemTooltip.ChlorophytePouch={$ItemTooltip.ChlorophyteBullet}
 
-Fargo.ItemName.CrystalPouch=Endless Crystal Pouch
-Fargo.ItemTooltip.CrystalPouch=Creates several crystal shards on impact
+Fargo.ItemName.CrystalPouch=Мешочек с бесконечными кристальными пулями
+Fargo.ItemTooltip.CrystalPouch={$ItemTooltip.CrystalBullet}
 
-Fargo.ItemName.CursedPouch=Endless Cursed Pouch
+Fargo.ItemName.CursedPouch=Мешочек с бесконечными проклятыми пулями
 
-Fargo.ItemName.ExplosivePouch=Endless Explosive Pouch
-Fargo.ItemTooltip.ExplosivePouch=Explodes on impact
+Fargo.ItemName.ExplosivePouch=Мешочек с бесконечными разрывными пулями
+Fargo.ItemTooltip.ExplosivePouch={$ItemTooltip.ExplodingBullet}
 
-Fargo.ItemName.GoldenPouch=Endless Golden Pouch
-Fargo.ItemTooltip.GoldenPouch=Enemies killed will drop more money
+Fargo.ItemName.GoldenPouch=Мешочек с бесконечными золотыми пулями
+Fargo.ItemTooltip.GoldenPouch={$ItemTooltip.GoldenBullet}
 
-Fargo.ItemName.IchorPouch=Endless Ichor Pouch
-Fargo.ItemTooltip.IchorPouch=Decreases target's defense
+Fargo.ItemName.IchorPouch=Мешочек с бесконечными ихоровыми пулями
+Fargo.ItemTooltip.IchorPouch={$ItemTooltip.IchorBullet}
 
-Fargo.ItemName.LuminitePouch=Endless Luminite Pouch
-Fargo.ItemTooltip.LuminitePouch='Line 'em up and knock 'em down...'
+Fargo.ItemName.LuminitePouch=Мешочек с бесконечными люминитовыми пулями
+Fargo.ItemTooltip.LuminitePouch={$ItemTooltip.MoonlordBullet}
 
-Fargo.ItemName.MeteorPouch=Endless Meteor Pouch
+Fargo.ItemName.MeteorPouch=Мешочек с бесконечными метеоритовыми пулями
 
-Fargo.ItemName.NanoPouch=Endless Nano Pouch
-Fargo.ItemTooltip.NanoPouch=Causes confusion
+Fargo.ItemName.NanoPouch=Мешочек с бесконечными нанопулями
+Fargo.ItemTooltip.NanoPouch={$ItemTooltip.NanoBullet}
 
-Fargo.ItemName.PartyPouch=Endless Party Pouch
-Fargo.ItemTooltip.PartyPouch=Explodes into confetti on impact
+Fargo.ItemName.PartyPouch=Мешочек с бесконечными пулями вечеринки
+Fargo.ItemTooltip.PartyPouch={$ItemTooltip.PartyBullet}
 
-Fargo.ItemName.SilverPouch=Endless Silver Pouch
+Fargo.ItemName.SilverPouch=Мешочек с бесконечными серебряными пулями
 
-Fargo.ItemName.VelocityPouch=Endless High Velocity Pouch
+Fargo.ItemName.VelocityPouch=Мешочек с бесконечными высокоскоростными пулями
 
-Fargo.ItemName.VenomPouch=Endless Venom Pouch
-Fargo.ItemTooltip.VenomPouch=Inflicts target with venom
+Fargo.ItemName.VenomPouch=Мешочек с бесконечными ядовитыми пулями
+Fargo.ItemTooltip.VenomPouch={$ItemTooltip.VenomBullet}
 
-Fargo.ItemName.CrystalDartBox=Endless Crystal Dart Box
+Fargo.ItemName.CrystalDartBox=Коробка с бесконечными кристальными дротиками
 
-Fargo.ItemName.CursedDartBox=Endless Cursed Dart Box
+Fargo.ItemName.CursedDartBox=Коробка с бесконечными проклятыми дротиками
 
-Fargo.ItemName.IchorDartBox=Endless Ichor Dart Box
+Fargo.ItemName.IchorDartBox=Коробка с бесконечными ихоровыми дротиками
 
-Fargo.ItemName.PoisonDartBox=Endless Poison Dart Box
+Fargo.ItemName.PoisonDartBox=Коробка с бесконечными отравленными дротиками
 
-Fargo.ItemName.Rocket1Bag=Endless Rocket1 Bag
+Fargo.ItemName.Rocket1Bag=Сумка с бесконечными I ракетами 
 
-Fargo.ItemName.Rocket2Bag=Endless Rocket2 Bag
+Fargo.ItemName.Rocket2Bag=Сумка с бесконечными II ракетами 
 
-Fargo.ItemName.Rocket3Bag=Endless Rocket3 Bag
+Fargo.ItemName.Rocket3Bag=Сумка с бесконечными III ракетами 
 
-Fargo.ItemName.Rocket4Bag=Endless Rocket4 Bag
+Fargo.ItemName.Rocket4Bag=Сумка с бесконечными IV ракетами 
 
-Fargo.ItemName.Abominationn=Abominationn
-Fargo.ItemTooltip.Abominationn='I sure wish I was a boss.'
+Fargo.ItemName.Abominationn=Мерзостть
+Fargo.ItemTooltip.Abominationn='Я очень хочу быть боссом.'
 
-Fargo.ItemName.Angler=Angler
-Fargo.ItemTooltip.Angler='You'd be a great helper minion!'
+Fargo.ItemName.Angler={$NPCName.Angler}
+Fargo.ItemTooltip.Angler='Ты был бы отличным помощником!'
 
-Fargo.ItemName.ArmsDealer=Arms Dealer
-Fargo.ItemTooltip.ArmsDealer='Keep your hands off my gun, buddy!'
+Fargo.ItemName.ArmsDealer={$NPCName.ArmsDealer}
+Fargo.ItemTooltip.ArmsDealer='Руки прочь от моей пушки, дружище!'
 
-Fargo.ItemName.Clothier=Clothier
-Fargo.ItemTooltip.Clothier='Thanks again for freeing me from my curse.'
+Fargo.ItemName.Clothier={$NPCName.Clothier}
+Fargo.ItemTooltip.Clothier='Еще раз спасибо, что освободил меня от проклятия.'
 
-Fargo.ItemName.Cyborg=Cyborg
-Fargo.ItemTooltip.Cyborg='My expedition efficiency was critically reduced when a projectile impacted my locomotive actuator.'
+Fargo.ItemName.Cyborg={$NPCName.Cyborg}
+Fargo.ItemTooltip.Cyborg='Эффективность была сильно снижен после того, как снаряд сжал привод моего локомотива.'
 
-Fargo.ItemName.Demolitionist=Demolitionist
-Fargo.ItemTooltip.Demolitionist='It's a good day to die!'
+Fargo.ItemName.Demolitionist={$NPCName.Demolitionist}
+Fargo.ItemTooltip.Demolitionist='Сегодня хороший день для смерти.'
 
-Fargo.ItemName.Deviantt=Deviantt
-Fargo.ItemTooltip.Deviantt='Embrace suffering... and while you're at it, embrace another purchase!'
+Fargo.ItemName.Deviantt=Девиантт
+Fargo.ItemTooltip.Deviantt='Примите страдание... и пока вы этим занимаетесь, примите еще одну покупку!'
 
-Fargo.ItemName.Dryad=Dryad
-Fargo.ItemTooltip.Dryad='Be safe; Terraria needs you!'
+Fargo.ItemName.Dryad={$NPCName.Dryad}
+Fargo.ItemTooltip.Dryad='Будьте в безопасности; вы нужны Террарии!'
 
-Fargo.ItemName.DyeTrader=Dye Trader
-Fargo.ItemTooltip.DyeTrader='My dear, what you're wearing is much too drab.'
+Fargo.ItemName.DyeTrader={$NPCName.DyeTrader}
+Fargo.ItemTooltip.DyeTrader='Дружище, ты носишь слишком скучные вещи'
 
-Fargo.ItemName.GoblinTinkerer=Goblin Tinkerer
-Fargo.ItemTooltip.GoblinTinkerer='Looking for a gadgets expert? I'm your goblin!'
+Fargo.ItemName.GoblinTinkerer={$NPCName.GoblinTinkerer}
+Fargo.ItemTooltip.GoblinTinkerer='Ищете эксперта по гаджетам? Я тот, кто тебе нужен!'
 
-Fargo.ItemName.Guide=Guide
-Fargo.ItemTooltip.Guide='They say there is a person who will tell you how to survive in this land.'
+Fargo.ItemName.Guide={$NPCName.Guide}
+Fargo.ItemTooltip.Guide='Говорят, есть человек, который расскажет вам, как выжить здесь.'
 
-Fargo.ItemName.LumberJack=The LumberJack
-Fargo.ItemTooltip.LumberJack='I eat a bowl of woodchips for breakfast... without any milk.'
+Fargo.ItemName.LumberJack=Дровосек
+Fargo.ItemTooltip.LumberJack='На завтрак я съедаю миску щепок... без молока.'
 
-Fargo.ItemName.Mechanic=Mechanic
-Fargo.ItemTooltip.Mechanic='Always buy more wire than you need!'
+Fargo.ItemName.Mechanic={$NPCName.Mechanic}
+Fargo.ItemTooltip.Mechanic='Покупайте проводов больше, чем вам нужно!'
 
-Fargo.ItemName.Merchant=Merchant
-Fargo.ItemTooltip.Merchant='Did you say gold? I'll take that off of ya.'
+Fargo.ItemName.Merchant={$NPCName.Merchant}
+Fargo.ItemTooltip.Merchant='Вы сказали золото?'
 
-Fargo.ItemName.Mutant=Mutant
-Fargo.ItemTooltip.Mutant='You're lucky I'm on your side.'
+Fargo.ItemName.Mutant=Мутант
+Fargo.ItemTooltip.Mutant='Тебе повезло, что я на твоей стороне.'
 
-Fargo.ItemName.Nurse=Nurse
-Fargo.ItemTooltip.Nurse='Show me where it hurts.'
+Fargo.ItemName.Nurse={$NPCName.Nurse}
+Fargo.ItemTooltip.Nurse='Покажи мне, где болит.'
 
-Fargo.ItemName.Painter=Painter
-Fargo.ItemTooltip.Painter='I know the difference between turquoise and blue-green. But I won't tell you.'
+Fargo.ItemName.Painter={$NPCName.Painter}
+Fargo.ItemTooltip.Painter='Я знаю разницу между бирюзовым и сине-зеленым, но тебе не скажу.'
 
-Fargo.ItemName.PartyGirl=Party Girl
-Fargo.ItemTooltip.PartyGirl='We have to talk. It's... it's about parties.'
+Fargo.ItemName.PartyGirl={$NPCName.PartyGirl}
+Fargo.ItemTooltip.PartyGirl='Нам надо поговорить... о вечеринках.'
 
-Fargo.ItemName.Pirate=Pirate
-Fargo.ItemTooltip.Pirate='Stay off me booty, ya scallywag!'
+Fargo.ItemName.Pirate={$NPCName.Pirate}
+Fargo.ItemTooltip.Pirate='Держись подальше от моего сокровища, мерзавец!'
 
-Fargo.ItemName.SantaClaus=Santa Claus
-Fargo.ItemTooltip.SantaClaus='What? You thought I wasn't real?'
+Fargo.ItemName.SantaClaus={$NPCName.SantaClaus}
+Fargo.ItemTooltip.SantaClaus='Что? Ты думал, что я ненастоящий?'
 
-Fargo.ItemName.SkeletonMerchant=Skeleton Merchant
-Fargo.ItemTooltip.SkeletonMerchant='You would not believe some of the things people throw at me... Wanna buy some of it?'
+Fargo.ItemName.SkeletonMerchant={$NPCName.SkeletonMerchant}
+Fargo.ItemTooltip.SkeletonMerchant='Ты не поверишь, что люди бросают в меня... Хочешь купить что-нибудь из этого?'
 
-Fargo.ItemName.Squirrel=Squirrel
-Fargo.ItemTooltip.Squirrel=*squeak*
+Fargo.ItemName.Squirrel=Белка
+Fargo.ItemTooltip.Squirrel=*писк*
 
-Fargo.ItemName.Steampunker=Steampunker
-Fargo.ItemTooltip.Steampunker='Show me some gears!'
+Fargo.ItemName.Steampunker={$NPCName.Steampunker}
+Fargo.ItemTooltip.Steampunker='Покажи мне шестеренки!'
 
-Fargo.ItemName.Stylist=Stylist
-Fargo.ItemTooltip.Stylist='Did you even try to brush your hair today?'
+Fargo.ItemName.Stylist={$NPCName.Stylist}
+Fargo.ItemTooltip.Stylist='Ты хоть пытался причесаться?'
 
-Fargo.ItemName.Tavernkeep=Tavernkeep
-Fargo.ItemTooltip.Tavernkeep='What am I doing here...'
+Fargo.ItemName.Tavernkeep={$NPCName.Tavernkeep}
+Fargo.ItemTooltip.Tavernkeep='Что я здесь делаю?..'
 
-Fargo.ItemName.TaxCollector=Tax Collector
-Fargo.ItemTooltip.TaxCollector='You again? Suppose you want more money!?'
+Fargo.ItemName.TaxCollector={$NPCName.TaxCollector}
+Fargo.ItemTooltip.TaxCollector='Опять ты? И, конечно, ты хочешь больше денег!?'
 
-Fargo.ItemName.TravellingMerchant=Travelling Merchant
-Fargo.ItemTooltip.TravellingMerchant='I sell wares from places that might not even exist!'
+Fargo.ItemName.TravellingMerchant={$NPCName.TravellingMerchant}
+Fargo.ItemTooltip.TravellingMerchant='Я продаю товары из мест, которые, возможно, даже не существуют!'
 
-Fargo.ItemName.Truffle=Truffle
-Fargo.ItemTooltip.Truffle='Everyone in this town feels a bit off.'
+Fargo.ItemName.Truffle={$NPCName.Truffle}
+Fargo.ItemTooltip.Truffle='Все в этом городе чувствуют себя немного не в своей тарелке.'
 
-Fargo.ItemName.WitchDoctor=Witch Doctor
-Fargo.ItemTooltip.WitchDoctor='Which doctor am I? The Witch Doctor am I.'
+Fargo.ItemName.WitchDoctor={$NPCName.WitchDoctor}
+Fargo.ItemTooltip.WitchDoctor='Я не врач, я знахарь.'
 
-Fargo.ItemName.Wizard=Wizard
-Fargo.ItemTooltip.Wizard='Want me to pull a coin from behind your ear? No? Ok.'
+Fargo.ItemName.Wizard={$NPCName.Wizard}
+Fargo.ItemTooltip.Wizard='Хочешь, я вытащу монетку у тебя из-за уха? Нет? Ладно.'
 
-Fargo.ItemName.AutoHouse=InstaHouse
-Fargo.ItemTooltip.AutoHouse=Places an NPC house instantly
+Fargo.ItemName.AutoHouse=Автодом
+Fargo.ItemTooltip.AutoHouse=Размещает дом подходящий НИП'ам
 
-Fargo.ItemName.BoomShuriken=Boom Shuriken
-Fargo.ItemTooltip.BoomShuriken=Rapid firing explosives
+Fargo.ItemName.BoomShuriken=Взрывной сюрикен
+Fargo.ItemTooltip.BoomShuriken=Быстрый взрывающийся сюрикен
 
-Fargo.ItemName.CityBuster=City Buster
-Fargo.ItemTooltip.CityBuster=Destroys a large area\nWill not remove background walls\nUse at your own risk
+Fargo.ItemName.CityBuster=Уничтожитель городов
+Fargo.ItemTooltip.CityBuster=Уничтожает все, кроме стен, в большом радиусе\nИспользуйте на свой страх и риск
 
-Fargo.ItemName.DoubleObsidianInstabridge=Double Obsidian Instabridge
-Fargo.ItemTooltip.DoubleObsidianInstabridge=Creates 2 bridges of obsidian platforms across the whole world\nAlso clears the area between and above the platforms\nDo not use if any important building is nearby
+Fargo.ItemName.DoubleObsidianInstabridge=Двойной обсидиановый автомост
+Fargo.ItemTooltip.DoubleObsidianInstabridge=Создает 2 обсидиановых платформы длинной во весь мир\nТакже отчищает пространство между ними\nНе стоит использовать рядом с важными постройками
 
-Fargo.ItemName.InstaBridge=Instabridge
-Fargo.ItemTooltip.InstaBridge=Creates a bridge of platforms across the whole world\nAlso clears the area right above the platforms\nDo not use if any important building is nearby
+Fargo.ItemName.InstaBridge=Автомост
+Fargo.ItemTooltip.InstaBridge=Создает платформу длинной во весь мир\nТакже отчищает пространство над ней\nНе стоит использовать рядом с важными постройками
 
-Fargo.ItemName.InstaTrack=Instatrack
-Fargo.ItemTooltip.InstaTrack=Creates a minecart track across the whole world\nAlso clears the area right above the tracks\nDo not use if any important building is nearby
+Fargo.ItemName.InstaTrack=Авторельсы
+Fargo.ItemTooltip.InstaTrack=Создает рельсы длинной во весь мир\nТакже отчищает пространство над ними\nНе стоит использовать рядом с важными постройками
 
-Fargo.ItemName.Instavator=Instavator
-Fargo.ItemTooltip.Instavator=Creates a hellevator instantly\nDo not use if any important building is below
+Fargo.ItemName.Instavator=Автохэллеватор
+Fargo.ItemTooltip.Instavator=Создаёт «лифт» в ад\nНе стоит использовать рядом с важными постройками
 
 Fargo.ItemName.LihzahrdInstactuationBomb=Lihzahrd Instactuation Bomb
-Fargo.ItemTooltip.LihzahrdInstactuationBomb=Clears a space around the Lihzahrd Altar when used while standing in front of it\nActuates Lihzahrd Brick and destroys others\nOnly works in the Jungle Temple and after Plantera is defeated
+Fargo.ItemTooltip.LihzahrdInstactuationBomb=Отчистит место около алтаря ящщеров; необходимо стоят напротив него\nАктивирует кирпичи ящщеров и уничтожает остальные блоки\nРаботает только в храме джунглей и только после убийства плантеры
 
-Fargo.ItemName.MiniInstaBridge=Mini Instabridge
-Fargo.ItemTooltip.MiniInstaBridge=Creates a long bridge of platforms\nWill not break any blocks
+Fargo.ItemName.MiniInstaBridge=Мини автомост
+Fargo.ItemTooltip.MiniInstaBridge=Создает длинную платформу\nНе ломает блоки
 
-Fargo.ItemName.ObsidianInstaBridge=Obsidian Instabridge
-Fargo.ItemTooltip.ObsidianInstaBridge=Creates a bridge of obsidian platforms across the whole world\nAlso clears the area right above the platforms\nDo not use if any important building is nearby
+Fargo.ItemName.ObsidianInstaBridge=Обсидиановый автомост
+Fargo.ItemTooltip.ObsidianInstaBridge=Создает обсидиановую платформу длинной во весь мир\nТакже отчищает пространство над ними\nНе стоит использовать рядом с важными постройками
 
-Fargo.ItemName.Trollbomb=Troll Bomb
-Fargo.ItemTooltip.Trollbomb=Summon a random bomb
+Fargo.ItemName.Trollbomb=Бомба-тролль
+Fargo.ItemTooltip.Trollbomb=Призывает случайную бомбу
 
-Fargo.ItemName.BattleCry=Battle Cry
-Fargo.ItemTooltip.BattleCry=Increase spawn rates by 10x on use\nUse it again to decrease them
+Fargo.ItemName.BattleCry=Боевой клич
+Fargo.ItemTooltip.BattleCry=Увеличивает cкорость появления врагов в 10 раз\nИспользуйте еще раз чтобы уменьшить её
 
-Fargo.ItemName.DeathFruit=Death Fruit
-Fargo.ItemTooltip.DeathFruit=Permanently decreases maximum life by 20\nEffects may not be reversible for characters that have used modded life-increasing items
+Fargo.ItemName.DeathFruit=Фрукт смерти
+Fargo.ItemTooltip.DeathFruit=Навсегда уменьшает максимальный запас здоровья на 20\nЭффект может быть необратимым для персонажей использовавших модовые вещи, увеличивающие здоровье
 
-Fargo.ItemName.DevianttsSundial=Deviantt's Sundial
-Fargo.ItemTooltip.DevianttsSundial='For getting through those early nights'\nActivates the Enchanted Sundial effect\nCan only be used once
+Fargo.ItemName.DevianttsSundial=Солнечные часы Девиантт
+Fargo.ItemTooltip.DevianttsSundial='Это поможет пережить первые ночи'\nЭффект зачарованных солнечных часов\nМогут быть использованы только раз
 
-Fargo.ItemName.ExpertToggle=Expert's Token
-Fargo.ItemTooltip.ExpertToggle=Toggles Expert mode
+Fargo.ItemName.ExpertToggle=Жетон эксперта
+Fargo.ItemTooltip.ExpertToggle=Переключает режим эксперта
 
-Fargo.ItemName.IceCrate=Ice Crate
-Fargo.ItemTooltip.IceCrate=Right click to open
+Fargo.ItemName.IceCrate=Ледяной ящик
+Fargo.ItemTooltip.IceCrate={$CommonItemTooltip.RightClickToOpen}
 
-Fargo.ItemName.PortableSundial=Portable Sundial
-Fargo.ItemTooltip.PortableSundial=Left click to instantly switch from day to night\nRight click to activate the Enchanted Sundial effect\nThis will also reset travelling merchant's shops
+Fargo.ItemName.PortableSundial=Карманные солнечные часы
+Fargo.ItemTooltip.PortableSundial=Нажатие ЛКМ моментально переключит день и ночь\nНажатие ПКМ активирует эффект зачарованных солнечных часов\nПерезагружает магазин странствующего торговца
 
-Fargo.ItemName.ShadowCrate=Shadow Crate
-Fargo.ItemTooltip.ShadowCrate=Right click to open
+Fargo.ItemName.ShadowCrate=Теневой ящик
+Fargo.ItemTooltip.ShadowCrate={$CommonItemTooltip.RightClickToOpen}
 
-Fargo.ItemName.ShadowLockBox=Shadow Lock Box
-Fargo.ItemTooltip.ShadowLockBox=Right click to open\nRequires a Shadow Key
+Fargo.ItemName.ShadowLockBox=Теневой сейф
+Fargo.ItemTooltip.ShadowLockBox={$CommonItemTooltip.RightClickToOpen}\nТребует теневой ключ
 
-Fargo.ItemName.Stats=Stat Sheet
+Fargo.ItemName.Stats=Список характеристик
 
-Fargo.ItemName.SuperDummy=Super Dummy
-Fargo.ItemTooltip.SuperDummy=Spawns a super dummy at your cursor\nSame as regular Target Dummy except minions and projectiles detect and home onto it\nOn hit effects get triggered as well\nRight click to remove all spawned super dummies
+Fargo.ItemName.SuperDummy=Сверхманекен
+Fargo.ItemTooltip.SuperDummy=Создаёт сверхманекена\nВсе миньоны и снаряды самонаводяться на него\nНажмите ПКМ, чтобы убить всех сверхманекенов
 
-Fargo.ItemName.CorruptRenewal=Corruption Renewal
-Fargo.ItemTooltip.CorruptRenewal=Corrupts a large radius
+Fargo.ItemName.CorruptRenewal=Искажённый восстановитель
+Fargo.ItemTooltip.CorruptRenewal=Распространяет искажение в большом радиусе
 
-Fargo.ItemName.CorruptRenewalSupreme=Corruption Renewal Supreme
-Fargo.ItemTooltip.CorruptRenewalSupreme=Corrupts the entire world
+Fargo.ItemName.CorruptRenewalSupreme=Искажённый мегавосстановитель
+Fargo.ItemTooltip.CorruptRenewalSupreme=Распространяет искажение по всему миру
 
-Fargo.ItemName.CrimsonRenewal=Crimson Renewal
-Fargo.ItemTooltip.CrimsonRenewal=Crimsons a large radius
+Fargo.ItemName.CrimsonRenewal=Багряный восстановитель
+Fargo.ItemTooltip.CrimsonRenewal=Распространяет багрянец в большом радиусе
 
-Fargo.ItemName.CrimsonRenewalSupreme=Crimson Renewal Supreme
-Fargo.ItemTooltip.CrimsonRenewalSupreme=Crimsons the entire world
+Fargo.ItemName.CrimsonRenewalSupreme=Багряный мегавосстановитель
+Fargo.ItemTooltip.CrimsonRenewalSupreme=Распространяет багрянец по всему миру
 
-Fargo.ItemName.HallowRenewal=Hallowed Renewal
-Fargo.ItemTooltip.HallowRenewal=Hallows a large radius
+Fargo.ItemName.HallowRenewal=Святой восстановитель
+Fargo.ItemTooltip.HallowRenewal=Распространяет святость в большом радиусе
 
-Fargo.ItemName.HallowRenewalSupreme=Hallowed Renewal Supreme
-Fargo.ItemTooltip.HallowRenewalSupreme=Hallows the entire world
+Fargo.ItemName.HallowRenewalSupreme=Святой мегавосстановитель
+Fargo.ItemTooltip.HallowRenewalSupreme=Распространяет святость по всему миру
 
-Fargo.ItemName.MushroomRenewal=Mushroom Renewal
-Fargo.ItemTooltip.MushroomRenewal=Shroomifies a large radius
+Fargo.ItemName.MushroomRenewal=Грибной восстановитель
+Fargo.ItemTooltip.MushroomRenewal=Распространяет грибные биомы в большом радиусе
 
-Fargo.ItemName.MushroomRenewalSupreme=Mushroom Renewal Supreme
-Fargo.ItemTooltip.MushroomRenewalSupreme=Shroomifies the entire world
+Fargo.ItemName.MushroomRenewalSupreme=Грибной мегавосстановитель
+Fargo.ItemTooltip.MushroomRenewalSupreme=Распространяет грибные биомы по всему миру
 
-Fargo.ItemName.PurityRenewal=Purity Renewal
-Fargo.ItemTooltip.PurityRenewal=Cleanses a large radius
+Fargo.ItemName.PurityRenewal=Восстановитель
+Fargo.ItemTooltip.PurityRenewal=Отчищает всё в большом радиусе
 
-Fargo.ItemName.PurityRenewalSupreme=Purity Renewal Supreme
-Fargo.ItemTooltip.PurityRenewalSupreme=Cleanses the entire world
+Fargo.ItemName.PurityRenewalSupreme=Мегавосстановитель
+Fargo.ItemTooltip.PurityRenewalSupreme=Отчищает весь мир
 
-Fargo.ItemName.MapViewer=The Ancient Master's Map of the Lost King's Great Ancestors
-Fargo.ItemTooltip.MapViewer=Reveals an area of the map around you
+Fargo.ItemName.MapViewer=Карта древнего мастер из рода забытого короля
+Fargo.ItemTooltip.MapViewer=Открывает карту вокруг вас
 
-Fargo.ItemName.Abeemination2=A Bee In My Nation
-Fargo.ItemTooltip.Abeemination2=Summons Queen Bee
+Fargo.ItemName.Abeemination2=Массивная пчела 
+Fargo.ItemTooltip.Abeemination2={$ItemTooltip.Abeemination}
 
-Fargo.ItemName.CelestialSigil2=Celestially Sigil
-Fargo.ItemTooltip.CelestialSigil2=Summons the Moon Lord instantly
+Fargo.ItemName.CelestialSigil2=Печать небес 
+Fargo.ItemTooltip.CelestialSigil2={$ItemTooltip.CelestialSigil} моментально
 
-Fargo.ItemName.GoreySpine=Red Stained Spine
-Fargo.ItemTooltip.GoreySpine=Summons the Brain of Cthulhu
+Fargo.ItemName.GoreySpine=Красный позвоночник
+Fargo.ItemTooltip.GoreySpine={$ItemTooltip.BloodySpine}
 
-Fargo.ItemName.MechEye=Some Kind of Metallic Eye
-Fargo.ItemTooltip.MechEye=Summons the Twins
+Fargo.ItemName.MechEye=Какой-то железный глаз
+Fargo.ItemTooltip.MechEye={$ItemTooltip.MechanicalEye}
 
-Fargo.ItemName.MechSkull=Some Kind of Metallic Skull
-Fargo.ItemTooltip.MechSkull=Summons Skeletron Prime
+Fargo.ItemName.MechSkull=Какой-то железный череп
+Fargo.ItemTooltip.MechSkull={$ItemTooltip.MechanicalSkull}
 
-Fargo.ItemName.MechWorm=Some Kind of Metallic Worm
-Fargo.ItemTooltip.MechWorm=Summons the Destroyer
+Fargo.ItemName.MechWorm=Какой-то железный червь
+Fargo.ItemTooltip.MechWorm={$ItemTooltip.MechanicalWorm}
 
-Fargo.ItemName.SlimyCrown=Slimy Crown
-Fargo.ItemTooltip.SlimyCrown=Summons King Slime
+Fargo.ItemName.SlimyCrown=Склизкая корона
+Fargo.ItemTooltip.SlimyCrown={$ItemTooltip.SlimeCrown}
 
-Fargo.ItemName.SuspiciousEye=Eye That Could Be Seen As Suspicious
-Fargo.ItemTooltip.SuspiciousEye=Summons the Eye of Cthulhu
+Fargo.ItemName.SuspiciousEye=Глаз, который можно рассматривать как подозрительный
+Fargo.ItemTooltip.SuspiciousEye={$ItemTooltip.SuspiciousLookingEye}
 
-Fargo.ItemName.TruffleWorm2=Truffly Worm
-Fargo.ItemTooltip.TruffleWorm2=Summons Duke Fishron without fishing
+Fargo.ItemName.TruffleWorm2=Червивый трюфель
+Fargo.ItemTooltip.TruffleWorm2={$ItemTooltip.TruffleWorm}
 
-Fargo.ItemName.WormyFood=Wormy Food
-Fargo.ItemTooltip.WormyFood=Summons the Eater of Worlds
+Fargo.ItemName.WormyFood=Червивая еда
+Fargo.ItemTooltip.WormyFood={$ItemTooltip.WormFood}
 
-Fargo.ItemName.BatteredClub=Battered Club
-Fargo.ItemTooltip.BatteredClub=Summons the Ogre
+Fargo.ItemName.BatteredClub=Поношенная дубина
+Fargo.ItemTooltip.BatteredClub=Призывает огра
 
-Fargo.ItemName.BetsyEgg=Dragon's Egg
-Fargo.ItemTooltip.BetsyEgg=Summons Betsy
+Fargo.ItemName.BetsyEgg=Драконье яйцо
+Fargo.ItemTooltip.BetsyEgg=Призывает Бетси
 
-Fargo.ItemName.CursedSextant=Cursed Sextant
-Fargo.ItemTooltip.CursedSextant=Starts the Blood Moon
+Fargo.ItemName.CursedSextant=Проклятый секстант
+Fargo.ItemTooltip.CursedSextant=Вызывает кровавую луну
 
-Fargo.ItemName.FestiveOrnament=Festive Ornament
-Fargo.ItemTooltip.FestiveOrnament=Summons Everscream\nOnly usable at night
+Fargo.ItemName.FestiveOrnament=Праздничное украшение
+Fargo.ItemTooltip.FestiveOrnament=Призывает злую ель\Можно использовать только ночью
 
-Fargo.ItemName.ForbiddenScarab=Forbidden Scarab
-Fargo.ItemTooltip.ForbiddenScarab=Starts a Sandstorm
+Fargo.ItemName.ForbiddenScarab=Запретный скарабей
+Fargo.ItemTooltip.ForbiddenScarab=Вызывает песчаную бурю
 
-Fargo.ItemName.ForbiddenTome=Forbidden Tome
-Fargo.ItemTooltip.ForbiddenTome=Summons a Dark Mage
+Fargo.ItemName.ForbiddenTome=Запретный том
+Fargo.ItemTooltip.ForbiddenTome=Призывает тёмного мага
 
-Fargo.ItemName.HeadofMan=Head of Man
-Fargo.ItemTooltip.HeadofMan=Summons Headless Horseman\nOnly usable at night
+Fargo.ItemName.HeadofMan=Голова
+Fargo.ItemTooltip.HeadofMan=Призывает всадника без головы\nМожно использовать только ночью
 
-Fargo.ItemName.IceKingsRemains=Ice King's Remains
-Fargo.ItemTooltip.IceKingsRemains=Summons Ice Queen\nOnly usable at night
+Fargo.ItemName.IceKingsRemains=Останки ледяного короля
+Fargo.ItemTooltip.IceKingsRemains=Призывает ледяную королеву\nМожно использовать только ночью
 
-Fargo.ItemName.MartianMemoryStick=Martian Memory Stick
-Fargo.ItemTooltip.MartianMemoryStick=Summons Martian Saucer
+Fargo.ItemName.MartianMemoryStick=Марсианская карта памяти
+Fargo.ItemTooltip.MartianMemoryStick=Призывает летающую тарелку марсиан
 
-Fargo.ItemName.NaughtyList=Naughty List
-Fargo.ItemTooltip.NaughtyList=Summons Santa-NK1\nOnly usable at night
+Fargo.ItemName.NaughtyList=Список непослушных
+Fargo.ItemTooltip.NaughtyList=Призывает Санта-НК1\nМожно использовать только ночью
 
-Fargo.ItemName.PartyCone=Party Cone
-Fargo.ItemTooltip.PartyCone=Starts a Party!
+Fargo.ItemName.PartyCone=Праздничный колпак
+Fargo.ItemTooltip.PartyCone=Начинает вечеринку!
 
-Fargo.ItemName.PillarSummon=Outsider's Portal
-Fargo.ItemTooltip.PillarSummon=Summons the Celestial Pillars
+Fargo.ItemName.PillarSummon=Портал Чужого
+Fargo.ItemTooltip.PillarSummon=Призывает небесные башни
 
-Fargo.ItemName.RunawayProbe=Runaway Probe
-Fargo.ItemTooltip.RunawayProbe=Starts the Martian invasion
+Fargo.ItemName.RunawayProbe=Убегающий зонд
+Fargo.ItemTooltip.RunawayProbe=Вызывает марсианское нашествие
 
-Fargo.ItemName.SlimyBarometer=Slimy Barometer
-Fargo.ItemTooltip.SlimyBarometer=Starts the Slime Rain
+Fargo.ItemName.SlimyBarometer=Склизкий барометр
+Fargo.ItemTooltip.SlimyBarometer=Вызывает дождь слизней
 
-Fargo.ItemName.SpookyBranch=Spooky Branch
-Fargo.ItemTooltip.SpookyBranch=Summons Mourning Wood\nOnly usable at night
+Fargo.ItemName.SpookyBranch=Жуткая ветвь
+Fargo.ItemTooltip.SpookyBranch=Призывает плакучий древень\nМожно использовать только ночью
 
-Fargo.ItemName.SuspiciousLookingScythe=Suspicious Looking Scythe
-Fargo.ItemTooltip.SuspiciousLookingScythe=Summons Pumpking\nOnly usable at night
+Fargo.ItemName.SuspiciousLookingScythe=Подозрительная коса
+Fargo.ItemTooltip.SuspiciousLookingScythe=Призывает тыквенного короля\nМожно использовать только ночью
 
-Fargo.ItemName.WeatherBalloon=Weather Balloon
-Fargo.ItemTooltip.WeatherBalloon=Starts the Rain
+Fargo.ItemName.WeatherBalloon=Метеозонд
+Fargo.ItemTooltip.WeatherBalloon=Вызывает дождь
 
-Fargo.ItemName.AmalgamatedSkull=Amalgamated Skull
-Fargo.ItemTooltip.AmalgamatedSkull=Summons the skeleton gunners\nOnly usable at night or underground
+Fargo.ItemName.AmalgamatedSkull=Сросшийся череп
+Fargo.ItemTooltip.AmalgamatedSkull=Призывает скелетов-стрелков\nМожно использовать только ночью или под землей
 
-Fargo.ItemName.AmalgamatedSpirit=Amalgamated Spirit
-Fargo.ItemTooltip.AmalgamatedSpirit=Summons the skeleton mages\nOnly usable at night or underground
+Fargo.ItemName.AmalgamatedSpirit=Сросшийся дух
+Fargo.ItemTooltip.AmalgamatedSpirit=Призывает скелетов-магов\nМожно использовать только ночью или под землей
 
-Fargo.ItemName.AthenianIdol=Athenian Idol
-Fargo.ItemTooltip.AthenianIdol=Summons Medusa\nOnly usable at night or underground
+Fargo.ItemName.AthenianIdol=Идол Афины
+Fargo.ItemTooltip.AthenianIdol=Призывает Медузу горгону\nМожно использовать только ночью или под землей
 
-Fargo.ItemName.AttractiveOre=Attractive Ore
-Fargo.ItemTooltip.AttractiveOre=Summons Undead Miner\nOnly usable at night or underground
+Fargo.ItemName.AttractiveOre=Привлекательная руда
+Fargo.ItemTooltip.AttractiveOre=Призывает скелета-шахтера\nМожно использовать только ночью или под землей
 
-Fargo.ItemName.CloudSnack=Cloud Snack
-Fargo.ItemTooltip.CloudSnack=Summons Wyvern
+Fargo.ItemName.CloudSnack=Облачная закуска
+Fargo.ItemTooltip.CloudSnack=Призывает виверну
 
-Fargo.ItemName.ClownLicense=Clown License
-Fargo.ItemTooltip.ClownLicense=Summons Clown\nOnly usable at night or underground
+Fargo.ItemName.ClownLicense=Удостоверение клоуна
+Fargo.ItemTooltip.ClownLicense=Призывает клоуна\nМожно использовать только ночью или под землей
 
-Fargo.ItemName.CoreoftheFrostCore=Core of the Frost Core
-Fargo.ItemTooltip.CoreoftheFrostCore=Summons Ice Golem
+Fargo.ItemName.CoreoftheFrostCore=Ядро морозного ядра
+Fargo.ItemTooltip.CoreoftheFrostCore=Призывает ледяного голема
 
-Fargo.ItemName.CorruptChest=Corrupt Chest
-Fargo.ItemTooltip.CorruptChest=Summons Corrupt Mimic
+Fargo.ItemName.CorruptChest=Искажённый сундук
+Fargo.ItemTooltip.CorruptChest=Призывает искажённого мимика
 
-Fargo.ItemName.CrimsonChest=Crimson Chest
-Fargo.ItemTooltip.CrimsonChest=Summons Crimson Mimic
+Fargo.ItemName.CrimsonChest=Багряный сундук
+Fargo.ItemTooltip.CrimsonChest=Призывает багряного мимика
 
-Fargo.ItemName.DilutedRainbowMatter=Diluted Rainbow Matter
-Fargo.ItemTooltip.DilutedRainbowMatter=Summons Rainbow Slime
+Fargo.ItemName.DilutedRainbowMatter=Разбавленная радугой материя
+Fargo.ItemTooltip.DilutedRainbowMatter=Призывает радужного слизеня
 
-Fargo.ItemName.Eggplant=Eggplant
-Fargo.ItemTooltip.Eggplant=Summons Doctor Bones\nOnly usable at night or underground
+Fargo.ItemName.Eggplant=Баклажан
+Fargo.ItemTooltip.Eggplant=Призывает доктора боунса\nМожно использовать только ночью или под землей
 
-Fargo.ItemName.ForbiddenForbiddenFragment=Forbidden Forbidden Fragment
-Fargo.ItemTooltip.ForbiddenForbiddenFragment=Summons Sand Elemental
+Fargo.ItemName.ForbiddenForbiddenFragment=Запрещенный запретный фрагмент
+Fargo.ItemTooltip.ForbiddenForbiddenFragment=Призывает песчаного элементаля
 
-Fargo.ItemName.GrandCross=Grand Cross
-Fargo.ItemTooltip.GrandCross=Summons Paladin\nOnly usable at night or underground
+Fargo.ItemName.GrandCross=Большой крест
+Fargo.ItemTooltip.GrandCross=Призывает паладина\nМожно использовать только ночью или под землей
 
-Fargo.ItemName.HallowChest=Hallow Chest
-Fargo.ItemTooltip.HallowChest=Summons Hallowed Mimic
+Fargo.ItemName.HallowChest=Освященный сундук
+Fargo.ItemTooltip.HallowChest=Призывает освященный мимик
 
-Fargo.ItemName.HeartChocolate=Heart Chocolate
-Fargo.ItemTooltip.HeartChocolate=Summons Nymph\nOnly usable at night or underground
+Fargo.ItemName.HeartChocolate=Шоколадное сердце
+Fargo.ItemTooltip.HeartChocolate=Призывает нифму\nМожно использовать только ночью или под землей
 
-Fargo.ItemName.HolyGrail=Holy Grail
-Fargo.ItemTooltip.HolyGrail=Summons Tim\nOnly usable at night or underground
+Fargo.ItemName.HolyGrail=Грааль
+Fargo.ItemTooltip.HolyGrail=Призывает Тима\nМожно использовать только ночью или под землей
 
-Fargo.ItemName.InnocuousSkull=Innocuous Skull
-Fargo.ItemTooltip.InnocuousSkull=Summons Baby Guardian
+Fargo.ItemName.InnocuousSkull=Безвредный череп
+Fargo.ItemTooltip.InnocuousSkull=Призывает малыша стража темницы
 
-Fargo.ItemName.JungleChest=Jungle Chest
-Fargo.ItemTooltip.JungleChest=Summons Jungle Mimic
+Fargo.ItemName.JungleChest=Сундук джунглей
+Fargo.ItemTooltip.JungleChest=Призывает мимика джунглей
 
-Fargo.ItemName.LeesHeadband=Lee's Headband
-Fargo.ItemTooltip.LeesHeadband=Summons Bone Lee\nOnly usable at night or underground
+Fargo.ItemName.LeesHeadband=Повязка Ли
+Fargo.ItemTooltip.LeesHeadband=Призывает Костюса Ли\nМожно использовать только ночью или под землей
 
-Fargo.ItemName.MothLamp=Moth Lamp
-Fargo.ItemTooltip.MothLamp=Summons Moth
+Fargo.ItemName.MothLamp=Мотыльковая лампа
+Fargo.ItemTooltip.MothLamp=Призывает мотылька
 
-Fargo.ItemName.MothronEgg=Mothron Egg
-Fargo.ItemTooltip.MothronEgg=Summons Mothron\nOnly usable during Solar Eclipse
+Fargo.ItemName.MothronEgg=Яйцо мотрона
+Fargo.ItemTooltip.MothronEgg=Призывает мотрона\nМожно использовать только во время солнечного затмения
 
-Fargo.ItemName.PinkSlimeCrown=Pink Slime Crown
-Fargo.ItemTooltip.PinkSlimeCrown=Summons Pinky
+Fargo.ItemName.PinkSlimeCrown=Розовая корона слизня
+Fargo.ItemTooltip.PinkSlimeCrown=Призывает пинки
 
-Fargo.ItemName.PirateFlag=Pirate Flag
-Fargo.ItemTooltip.PirateFlag=Summons Pirate Captain\nOnly usable at night or underground
+Fargo.ItemName.PirateFlag=Пиратский флаг
+Fargo.ItemTooltip.PirateFlag=Призывает капитана пиратов\nМожно использовать только ночью или под землей
 
-Fargo.ItemName.PlunderedBooty=Plundered Booty
-Fargo.ItemTooltip.PlunderedBooty=Summons Flying Dutchman
+Fargo.ItemName.PlunderedBooty=Награбленная добыча
+Fargo.ItemTooltip.PlunderedBooty=Призывает летучего голландец
 
-Fargo.ItemName.RuneOrb=Rune Orb
-Fargo.ItemTooltip.RuneOrb=Summons Rune Wizard\nOnly usable at night or underground
+Fargo.ItemName.RuneOrb=Рунный шар
+Fargo.ItemTooltip.RuneOrb=Призывает рунического мага\nМожно использовать только ночью или под землей
 
-Fargo.ItemName.ShadowflameIcon=Shadowflame Icon
-Fargo.ItemTooltip.ShadowflameIcon=Summons Goblin Summoner\nOnly usable during Goblin Army
+Fargo.ItemName.ShadowflameIcon=Знак теневого пламени
+Fargo.ItemTooltip.ShadowflameIcon=Призывает гоблина-призывателя\nМожно использовать только во время армии гоблинов
 
-Fargo.ItemName.SlimyLockBox=Slimy Lock Box
-Fargo.ItemTooltip.SlimyLockBox=Summons Dungeon Slime
+Fargo.ItemName.SlimyLockBox=Склизкий сейф
+Fargo.ItemTooltip.SlimyLockBox=Призывает слизня темницы
 
-Fargo.ItemName.SuspiciousLookingChest=Suspicious Looking Chest
-Fargo.ItemTooltip.SuspiciousLookingChest=Summons Mimic\nSummons Ice Mimic when in underground snow biome
+Fargo.ItemName.SuspiciousLookingChest=Подозрительный сундук
+Fargo.ItemTooltip.SuspiciousLookingChest=Призывает мимика
 
-Fargo.ItemName.WormSnack=Worm Snack
-Fargo.ItemTooltip.WormSnack=Summons Giant Worm in pre-Hardmode\nSummons Digger in Hardmode\nOnly usable underground
+Fargo.ItemName.WormSnack=Закуска для червей
+Fargo.ItemTooltip.WormSnack=Призывает гигантского червя в Прехардмоде\Призывает землекопа в Хардмоде\nМожно использовать только под землей
 
-Fargo.ItemName.AncientSeal=Ancient Seal
-Fargo.ItemTooltip.AncientSeal=Summons ALL the bosses modded included\n'Use at your own risk'
+Fargo.ItemName.AncientSeal=Древняя печать
+Fargo.ItemTooltip.AncientSeal=Призывает ВСЕХ боссов, даже модовых\nИспользуйте на свой страх и риск
 
-Fargo.ItemName.CultistSummon=Zealot's Possession
-Fargo.ItemTooltip.CultistSummon=Summons the Lunatic Cultist\nDoes not spawn the pillars on death
+Fargo.ItemName.CultistSummon=Имущество фанатика
+Fargo.ItemTooltip.CultistSummon=Призывает культиста-лунатика\nНе призывает небесные башни после смерти
 
-Fargo.ItemName.DeathBringerFairy=Death Bringer Fairy
-Fargo.ItemTooltip.DeathBringerFairy=Summons all pre-hardmode bosses\nCertain bosses will only spawn if you're in their specific biome
+Fargo.ItemName.DeathBringerFairy=Фея, несущая смерть
+Fargo.ItemTooltip.DeathBringerFairy=Призывает всех прехардмодных боссов\nНекоторые боссы будут спавниться только в определенных биомах
 
-Fargo.ItemName.FleshyDoll=Fleshy Doll
-Fargo.ItemTooltip.FleshyDoll=Summons the Wall of Flesh\nMake sure you use it in the Underworld
+Fargo.ItemName.FleshyDoll=Кукла из плоти
+Fargo.ItemTooltip.FleshyDoll=Призывает стену плоти\nУбедитесь, что используете ее в аду
 
-Fargo.ItemName.MechanicalAmalgam=Mechanical Amalgam
-Fargo.ItemTooltip.MechanicalAmalgam=Summons all 3 Mechanical bosses
+Fargo.ItemName.MechanicalAmalgam=Механическая амальгама
+Fargo.ItemTooltip.MechanicalAmalgam=Призывает 3 механических боссов
 
-Fargo.ItemName.MutantVoodoo=Mutant Voodoo Doll
-Fargo.ItemTooltip.MutantVoodoo=Summons ALL the bosses
+Fargo.ItemName.MutantVoodoo=Кукла вуду Мутанта
+Fargo.ItemTooltip.MutantVoodoo=Призывает ВСЕХ боссов
 
-Fargo.ItemName.PlanterasFruit=Plantera's Fruit
-Fargo.ItemTooltip.PlanterasFruit=Summons Plantera
+Fargo.ItemName.PlanterasFruit=Фрукт плантеры
+Fargo.ItemTooltip.PlanterasFruit=Призывает плантеру
 
-Fargo.ItemName.SuspiciousSkull=Suspicious Skull
-Fargo.ItemTooltip.SuspiciousSkull=Summons Skeletron without killing the Clothier\nSummons the Dungeon Guardian during the day
+Fargo.ItemName.SuspiciousSkull=Подозрительный череп
+Fargo.ItemTooltip.SuspiciousSkull=Призывает скелетрона без убийства портного\nПризывает стража темницы днём
 
-Fargo.ItemName.OverloadBee=Overstuffed Larva
-Fargo.ItemTooltip.OverloadBee=Summons several Queen Bees
+Fargo.ItemName.OverloadBee=Переполненный кокон
+Fargo.ItemTooltip.OverloadBee=Призывает несколько королев пчёл
 
-Fargo.ItemName.OverloadBetsy=Dragon Egg Tray
-Fargo.ItemTooltip.OverloadBetsy=Summons several Betsys
+Fargo.ItemName.OverloadBetsy=Лоток драконих яиц
+Fargo.ItemTooltip.OverloadBetsy=Призывает несколько Бетси
 
-Fargo.ItemName.OverloadBrain=Brain Storm
-Fargo.ItemTooltip.OverloadBrain=Summons several Brains of Cthulhu
+Fargo.ItemName.OverloadBrain=Мозговой штурм
+Fargo.ItemTooltip.OverloadBrain=Призывает несколько мозгов Ктулху
 
-Fargo.ItemName.OverloadCultist=Zealot's Madness
-Fargo.ItemTooltip.OverloadCultist=Summons several Lunatic Cultists
+Fargo.ItemName.OverloadCultist=Безумие фанатика
+Fargo.ItemTooltip.OverloadCultist=Призывает несколько Культистов-лунатиков
 
-Fargo.ItemName.OverloadDestroyer=Seismic Actuator
-Fargo.ItemTooltip.OverloadDestroyer=Summons several Destroyers
+Fargo.ItemName.OverloadDestroyer=Сейсмический активатор
+Fargo.ItemTooltip.OverloadDestroyer=Призывает несколько уничтожителей
 
-Fargo.ItemName.OverloadedSlimeRain=Slimy Stormcaller
-Fargo.ItemTooltip.OverloadedSlimeRain=Summons an Overloaded Slime Rain\nUse again to stop the event
+Fargo.ItemName.OverloadedSlimeRain=Склизкий буревестник
+Fargo.ItemTooltip.OverloadedSlimeRain=Вызывает перегруженный дождь слизней\nИспользуйте еще раз, чтобы закончить событие
 
-Fargo.ItemName.Overloader=Overloader
-Fargo.ItemTooltip.Overloader=Used to craft swarm summons\nWhen used, all summons in the stack will be consumed\nThe more consumed, the more bosses will spawn
+Fargo.ItemName.Overloader=Перегрузчик
+Fargo.ItemTooltip.Overloader=Используется для создания перегруженных предметов призыва\nКогда используется, весь стак перегруженных предметов призыва будет потрачен\nЧем больше будет использовано, тем больше боссов призовётся
 
-Fargo.ItemName.OverloadEye=Eyemalgamation
-Fargo.ItemTooltip.OverloadEye=Summons several Eyes of Cthulhu
+Fargo.ItemName.OverloadEye=Глазлияние
+Fargo.ItemTooltip.OverloadEye=Призывает несколько глазов Ктулху
 
-Fargo.ItemName.OverloadFish=Truffle Worm Clump
-Fargo.ItemTooltip.OverloadFish=Summons several Duke Fishrons
+Fargo.ItemName.OverloadFish=Клубок трюфельных червей
+Fargo.ItemTooltip.OverloadFish=Призывает несколько герцогов Рыбронов
 
-Fargo.ItemName.OverloadFrostMoon=Overloaded Naughty Present
-Fargo.ItemTooltip.OverloadFrostMoon=Summons an Overloaded Frost Moon\nUse again to stop the event
+Fargo.ItemName.OverloadFrostMoon=Перегруженный подарок для непослушных
+Fargo.ItemTooltip.OverloadFrostMoon=Вызывает перегруженную морозную луну\nИспользуйте еще раз, чтобы закончить событие
 
-Fargo.ItemName.OverloadGoblins=Goblin War Banner
-Fargo.ItemTooltip.OverloadGoblins=Summons an Overloaded Goblin Invasion\nUse again to stop the event
+Fargo.ItemName.OverloadGoblins=Военное знамя гоблинов
+Fargo.ItemTooltip.OverloadGoblins=Вызывает перегруженную армию гоблинов\nИспользуйте еще раз, чтобы закончить событие
 
-Fargo.ItemName.OverloadGolem=Runic Power Cell
-Fargo.ItemTooltip.OverloadGolem=Summons several Golems
+Fargo.ItemName.OverloadGolem=Руническая батарейка
+Fargo.ItemTooltip.OverloadGolem=Призывает несколько големов
 
-Fargo.ItemName.OverloadMartians=Overloaded Runaway Probe
-Fargo.ItemTooltip.OverloadMartians=Summons an Overloaded Martian Invasion\nUse again to stop the event
+Fargo.ItemName.OverloadMartians=Перегруженный убегающий зонд
+Fargo.ItemTooltip.OverloadMartians=Вызывает перегруженное марсианское нашествие\nИспользуйте еще раз, чтобы закончить событие
 
-Fargo.ItemName.OverloadMoon=Runic Inscription
-Fargo.ItemTooltip.OverloadMoon=Summons several Moon Lords
+Fargo.ItemName.OverloadMoon=Руническая надпись
+Fargo.ItemTooltip.OverloadMoon=Призывает несколько лунных лордов
 
-Fargo.ItemName.OverloadPirates=Pirate's Bounty
-Fargo.ItemTooltip.OverloadPirates=Summons an Overloaded Pirate Invasion\nUse again to stop the event
+Fargo.ItemName.OverloadPirates=Пиратская награда
+Fargo.ItemTooltip.OverloadPirates=Вызывает перегруженное пиратское нашествие\nИспользуйте еще раз, чтобы закончить событие
 
-Fargo.ItemName.OverloadPlant=Heart of the Jungle
-Fargo.ItemTooltip.OverloadPlant=Summons several Planteras
+Fargo.ItemName.OverloadPlant=Сердце джунглей
+Fargo.ItemTooltip.OverloadPlant=Призывает несколько плантер
 
-Fargo.ItemName.OverloadPrime=Primal Control Chip
-Fargo.ItemTooltip.OverloadPrime=Summons several Skeletron Primes
+Fargo.ItemName.OverloadPrime=Чип управления Праймом
+Fargo.ItemTooltip.OverloadPrime=Призывает несколько Скелетронов Праймов
 
-Fargo.ItemName.OverloadPumpkinMoon=Overloaded Pumpkin Moon Medallion
-Fargo.ItemTooltip.OverloadPumpkinMoon=Summons an Overloaded Pumpkin Moon\nUse again to stop the event
+Fargo.ItemName.OverloadPumpkinMoon=Перегруженный медальон тыквенной луны
+Fargo.ItemTooltip.OverloadPumpkinMoon=Призывает перегруженную тыквенную луну\nИспользуйте еще раз, чтобы закончить событие
 
-Fargo.ItemName.OverloadSkele=Skull Chain Necklace
-Fargo.ItemTooltip.OverloadSkele=Summons several Skeletrons during the night\nSummons several Dungeon Guardians during the day
+Fargo.ItemName.OverloadSkele=Ожерелья с цепочкой из черепов
+Fargo.ItemTooltip.OverloadSkele=Призывает несколько Скелетронов ночью\nПризывает несколько стражей темницы днем
 
-Fargo.ItemName.OverloadSlimeCrown=Swarm Crown
-Fargo.ItemTooltip.OverloadSlimeCrown=Summons several King Slimes
+Fargo.ItemName.OverloadSlimeCrown=Сверхкорона
+Fargo.ItemTooltip.OverloadSlimeCrown=Призывает несколько королей слизня
 
-Fargo.ItemName.OverloadTwins=Omnifocal Lens
-Fargo.ItemTooltip.OverloadTwins=Summons several sets of Twins
+Fargo.ItemName.OverloadTwins=Омнифокальные линзы
+Fargo.ItemTooltip.OverloadTwins=Призывает несколько пар близнецов
 
-Fargo.ItemName.OverloadWall=Bundle of Dolls
-Fargo.ItemTooltip.OverloadWall=Summons several Walls of Flesh
+Fargo.ItemName.OverloadWall=Связка кукол
+Fargo.ItemTooltip.OverloadWall=Призывает несколько стен плоти
 
-Fargo.ItemName.OverloadWorm=Worm Chicken
-Fargo.ItemTooltip.OverloadWorm=Summons several Eater of Worlds
+Fargo.ItemName.OverloadWorm=Червивая курица
+Fargo.ItemTooltip.OverloadWorm=Призывает несколько пожирателей миров
 
-#Из АА
-#Fargo.ItemName.Clawbomination=Clawbomination
-#Fargo.ItemTooltip.Clawbomination=Summons several Grips of Chaos
+Fargo.ItemName.EnergizerBee=Жужащая батарея
+Fargo.ItemTooltip.EnergizerBee='Пахнет, будто на вкус как мёд'
 
-#Из АА
-#Fargo.ItemName.GlowingMasshroom=Glowing Masshroom
-#Fargo.ItemTooltip.GlowingMasshroom=Summons several Feudal Fungi
+Fargo.ItemName.EnergizerBetsy=Драконья батарея
+Fargo.ItemTooltip.EnergizerBetsy='Кажется, что прошло три тысячелетия'
 
-#Из АА
-#Fargo.ItemName.Masshroom=Masshroom
-#Fargo.ItemTooltip.Masshroom=Summons several Mushroom Monarchs
+Fargo.ItemName.EnergizerBrain=Батарея мозга
+Fargo.ItemTooltip.EnergizerBrain='Все ещё тупой'
 
-Fargo.ItemName.EnergizerBee=Buzzy Energizer
-Fargo.ItemTooltip.EnergizerBee='Smells like it tastes like honey'
+Fargo.ItemName.EnergizerCultist=Батарея безумия 
+Fargo.ItemTooltip.EnergizerCultist='Возможно вы сошли с ума'
 
-Fargo.ItemName.EnergizerBetsy=Draco Energizer
-Fargo.ItemTooltip.EnergizerBetsy='You feel like you've waited three thousand years'
+Fargo.ItemName.EnergizerDestroy=Батарея уничтожения
+Fargo.ItemTooltip.EnergizerDestroy='Теперь вам хочется разбить детей'
 
-Fargo.ItemName.EnergizerBrain=Brainy Energizer
-Fargo.ItemTooltip.EnergizerBrain='You still feel dumb'
+Fargo.ItemName.EnergizerDG=Сверхкостяная батарея
+Fargo.ItemTooltip.EnergizerDG='Напоминает злую корову'
 
-Fargo.ItemName.EnergizerCultist=Insanity Energizer
-Fargo.ItemTooltip.EnergizerCultist='You're probably insane'
+Fargo.ItemName.EnergizerEye=Оптическая батарея
+Fargo.ItemTooltip.EnergizerEye='Кажется, он все еще наблюдает за вами'
 
-Fargo.ItemName.EnergizerDestroy=Destruction Energizer
-Fargo.ItemTooltip.EnergizerDestroy='It makes you want to break some kids'
+Fargo.ItemName.EnergizerFish=Рыбная батарея
+Fargo.ItemTooltip.EnergizerFish='Вы удовлетворены'
 
-Fargo.ItemName.EnergizerDG=Extra Boney Energizer
-Fargo.ItemTooltip.EnergizerDG='Reminds you of a mean cow'
+Fargo.ItemName.EnergizerGolem=Батарея ящщеров
+Fargo.ItemTooltip.EnergizerGolem='Вот бы это писалось «ящер»'
 
-Fargo.ItemName.EnergizerEye=Optical Energizer
-Fargo.ItemTooltip.EnergizerEye='It feels like it's watching you'
+Fargo.ItemName.EnergizerMoon=Лунная батарея
+Fargo.ItemTooltip.EnergizerMoon='М-м-м, сыр...'
 
-Fargo.ItemName.EnergizerFish=Fishy Energizer
-Fargo.ItemTooltip.EnergizerFish='You feel content'
+Fargo.ItemName.EnergizerPlant=Лиственная батарея
+Fargo.ItemTooltip.EnergizerPlant='Быть листком - весело'
 
-Fargo.ItemName.EnergizerGolem=Lihzahrd Energizer
-Fargo.ItemTooltip.EnergizerGolem='You wish it was spelled "lizard"
+Fargo.ItemName.EnergizerPrime=Батарея Прайма
+Fargo.ItemTooltip.EnergizerPrime='Ты - новый ты'
 
-Fargo.ItemName.EnergizerMoon=Lunar Energizer
-Fargo.ItemTooltip.EnergizerMoon='You enjoy cheese'
+Fargo.ItemName.EnergizerSkele=Костяная батарея
+Fargo.ItemTooltip.EnergizerSkele='Напоминает корову'
 
-Fargo.ItemName.EnergizerPlant=Leafy Energizer
-Fargo.ItemTooltip.EnergizerPlant='Being a leaf sounds like a good time'
+Fargo.ItemName.EnergizerSlime=Склизкая батарея
+Fargo.ItemTooltip.EnergizerSlime='Склизкая на ощупь'
 
-Fargo.ItemName.EnergizerPrime=Prime Energizer
-Fargo.ItemTooltip.EnergizerPrime='You feel like a new you'
+Fargo.ItemName.EnergizerTwins=Батарея родни
+Fargo.ItemTooltip.EnergizerTwins='Кран подъёмный'
 
-Fargo.ItemName.EnergizerSkele=Boney Energizer
-Fargo.ItemTooltip.EnergizerSkele='Reminds you of a cow'
+Fargo.ItemName.EnergizerWall=Настенная батарея
+Fargo.ItemTooltip.EnergizerWall='Вы чувствуете клаустрофобию'
 
-Fargo.ItemName.EnergizerSlime=Slimy Energizer
-Fargo.ItemTooltip.EnergizerSlime='It feels a bit slimy'
-
-Fargo.ItemName.EnergizerTwins=Sibling Energizer
-Fargo.ItemTooltip.EnergizerTwins='You wish you had more'
-
-Fargo.ItemName.EnergizerWall=Wally Energizer
-Fargo.ItemTooltip.EnergizerWall='You feel claustrophobic'
-
-Fargo.ItemName.EnergizerWorm=Wormy Energizer
-Fargo.ItemTooltip.EnergizerWorm='It's a little squishy'
+Fargo.ItemName.EnergizerWorm=Червивая батарея
+Fargo.ItemTooltip.EnergizerWorm='Она мягкая на ощупь'
 
 #Из Ториума
-Fargo.ItemName.OverloadCoznix=Void Lens 2.0
-Fargo.ItemTooltip.OverloadCoznix=Summons several Fallen Beholders
+Fargo.ItemName.OverloadCoznix=Пустотная линза 2.0
+Fargo.ItemTooltip.OverloadCoznix=Призывает несколько падших созерцателей
 
 #Из Ториума
-Fargo.ItemName.OverloadJelly=Jellyfish Resonator 2.0
-Fargo.ItemTooltip.OverloadJelly=Summons several Queen Jellyfish
+Fargo.ItemName.OverloadJelly=Медузный резонатор 2.0
+Fargo.ItemTooltip.OverloadJelly=Призывает несколько королев медуз
 
 #Из Ториума
-Fargo.ItemName.OverloadLich=Necromantic Blade
-Fargo.ItemTooltip.OverloadLich=Summons several Liches
+Fargo.ItemName.OverloadLich=Меч некроманта
+Fargo.ItemTooltip.OverloadLich=Призывает несколько личей
 
 #Из Ториума
-Fargo.ItemName.OverloadSaucer=Star Caller 2.0
-Fargo.ItemTooltip.OverloadSaucer=Summons several Star Scouters
+Fargo.ItemName.OverloadSaucer=Звездный передатчик 2.0
+Fargo.ItemTooltip.OverloadSaucer=Призывает несколько звёздных разведчиков
 
 #Из Ториума
-Fargo.ItemName.OverloadStrider=Cryo Egg
-Fargo.ItemTooltip.OverloadStrider=Summons several Borean Striders
+Fargo.ItemName.OverloadStrider=Криояйцо
+Fargo.ItemTooltip.OverloadStrider=Призывает несколько северных странников
 
-Fargo.ItemName.OverloadThunderbird=Charged Bird Whistle
-Fargo.ItemTooltip.OverloadThunderbird=Summons several Grand Thunder Birds
+#Из Ториума
+Fargo.ItemName.OverloadThunderbird=Заряженный птичий свисток
+Fargo.ItemTooltip.OverloadThunderbird=Призывает несколько великих гром-птиц
 
-Fargo.ItemName.LihzahrdPowerCell2=Lihzahrd Battery Pack
-Fargo.ItemTooltip.LihzahrdPowerCell2=Summons the Golem without an altar
+Fargo.ItemName.LihzahrdPowerCell2=Батарейный блок ящщеров
+Fargo.ItemTooltip.LihzahrdPowerCell2=Призывает голема без алтаря
 
-Fargo.ItemName.CrucibleCosmos=Crucible of the Cosmos
-Fargo.ItemTooltip.CrucibleCosmos=Functions as every crafting station\n'It seems to be hiding magnificent power'
+Fargo.ItemName.CrucibleCosmos=Горнило вселенной
+Fargo.ItemTooltip.CrucibleCosmos=Работает как все станции создания вместе\n'В нём скрывается великоленая сила'
 
-Fargo.ItemName.EchPainting=Ech Painting
-Fargo.ItemTooltip.EchPainting='Groalt W. Fai'
+Fargo.ItemName.EchPainting=Ъ
+Fargo.ItemTooltip.EchPainting=Эь
 
-Fargo.ItemName.ElementalAssembler=Elemental Assembler
-Fargo.ItemTooltip.ElementalAssembler=Functions as several basic crafting stations
+Fargo.ItemName.ElementalAssembler=Элементальный сборщик
+Fargo.ItemTooltip.ElementalAssembler=Работает как несколько основных станций создания вместе
 
-Fargo.ItemName.MultitaskCenter=Multitask Center
-Fargo.ItemTooltip.MultitaskCenter=Functions as several basic crafting stations
+Fargo.ItemName.MultitaskCenter=Мультифункциональный центр
+Fargo.ItemTooltip.MultitaskCenter=Работает как несколько основных станций создания вместе
 
-Fargo.ItemName.Omnistation=Omnistation
-Fargo.ItemTooltip.Omnistation=Effects of all vanilla buff stations\nGrants Honey when touched\nRight click while holding a weapon for its respective buff
+Fargo.ItemName.Omnistation=Омнистанция
+Fargo.ItemTooltip.Omnistation=Эффект всех ванильных станций\nДарует бафф «Мёд» при касании\nНажатие ПКМ, удерживая оружия, даст соответствующий бафф
 
-Fargo.ItemName.Omnistation2=Omnistation
-Fargo.ItemTooltip.Omnistation2=Effects of all vanilla buff stations\nGrants Honey when touched\nRight click while holding a weapon for its respective buff
+Fargo.ItemName.Omnistation2=Омнистанция
+Fargo.ItemTooltip.Omnistation2=Эффект всех ванильных станций\nДарует бафф «Мёд» при касании\nНажатие ПКМ, удерживая оружия, даст соответствующий бафф
 
 # if Calamity || Thorium != null
-Fargo.ItemName.OmnistationPlus=Omnistation+
-Fargo.ItemTooltip.OmnistationPlus=Effects of all buff stations, modded and vanilla\nGrants Honey when touched\nRight click while holding a weapon for its respective buff\nCurrently only supports Thorium and Calamity
+Fargo.ItemName.OmnistationPlus=Омнистанция+
+Fargo.ItemTooltip.OmnistationPlus=Эффект всех станций\nДарует бафф «Мёд» при касании\nНажатие ПКМ, удерживая оружия, даст соответствующий бафф\nПоддерживает Thorium и Calamity
 
-Fargo.ItemName.RegalStatue=Regal Statue
-Fargo.ItemTooltip.RegalStatue=Town NPCs respawn extremely quickly when nearby
+Fargo.ItemName.RegalStatue=Королевская статуя
+Fargo.ItemTooltip.RegalStatue=Городские НИП'ы спавнятся быстрее
 
-Fargo.ItemName.WalkingRick=Walking Rick
-Fargo.ItemTooltip.WalkingRick='Kien R. Oco'
+Fargo.ItemName.WalkingRick=Идущий рик
+Fargo.ItemTooltip.WalkingRick='Махасиро Сарукаи'
 
-Fargo.ItemName.WoodenToken=Wooden Token
-Fargo.ItemTooltip.WoodenToken='The sign of a true wood lover'
+Fargo.ItemName.WoodenToken=Древесный знак
+Fargo.ItemTooltip.WoodenToken='Символ истинного любителя деревьев'
 
-Fargo.ItemName.AbominationnBody=Abominationn Body
+Fargo.ItemName.AbominationnBody=Тело Мерзостти
 
-Fargo.ItemName.AbominationnMask=Abominationn Mask
+Fargo.ItemName.AbominationnMask=Маска Мерзостти
 
-Fargo.ItemName.AbominationnPants=Abominationn Pants
+Fargo.ItemName.AbominationnPants=Штаны Мерзостти
 
-Fargo.ItemName.AbominationnScythe=Abominationn's Scythe
+Fargo.ItemName.AbominationnScythe=Коса Мерзостти
 
-Fargo.ItemName.DevianttBody=Deviantt Body
+Fargo.ItemName.DevianttBody=Тело Девиантт
 
-Fargo.ItemName.DevianttMask=Deviantt Mask
+Fargo.ItemName.DevianttMask=Маска Девиантт
 
-Fargo.ItemName.DevianttPants=Deviantt Pants
+Fargo.ItemName.DevianttPants=Штаны Девиантт
 
-Fargo.ItemName.LumberHat=LumberJack Hat
+Fargo.ItemName.LumberHat=Шляпа дровосека
 
-Fargo.ItemName.LumberjackBody=Lumberjack Body
+Fargo.ItemName.LumberjackBody=Тело дровосека
 
-Fargo.ItemName.LumberjackMask=Lumberjack Mask
+Fargo.ItemName.LumberjackMask=Маска дровосека
 
-Fargo.ItemName.LumberjackPants=Lumberjack Pants
+Fargo.ItemName.LumberjackPants=Штаны дровосека
 
-Fargo.ItemName.MutantBody=Mutant Body
+Fargo.ItemName.MutantBody=Тело Мутанта
 
-Fargo.ItemName.MutantMask=Mutant Mask
+Fargo.ItemName.MutantMask=Маска Мутанта
 
-Fargo.ItemName.MutantPants=Mutant Pants
+Fargo.ItemName.MutantPants=Штаны Мутанта
 
-Fargo.ItemName.LumberJaxe=The Lumber Jaxe
-Fargo.ItemTooltip.LumberJaxe=Hit enemies may drop wood when killed\n'The former weapon of a true axe wielding hero'
+Fargo.ItemName.LumberJaxe=Топор лесоруба
+Fargo.ItemTooltip.LumberJaxe=Ударенные противники будут ронять дерево при смерти\n'Бывшее оружие настоящего героя владеющего топором'
 
 #FARGO TILES
 ###############################################
-Fargo.TileName.MultitaskCenterSheet=Multitask Center
-Fargo.TileName.CrucibleCosmosSheet=Crucible of the Cosmos
-Fargo.TileName.ElementalAssemblerSheet=Elemental Assembler
-Fargo.TileName.OmnistationPlusSheet=Omnistation+
-Fargo.TileName.OmnistationSheet=Omnistation
-Fargo.TileName.RegalStatueSheet=Regal Statue
+Fargo.TileName.MultitaskCenterSheet=Мультифункциональный центр
+Fargo.TileName.CrucibleCosmosSheet=Горнило вселенной
+Fargo.TileName.ElementalAssemblerSheet=Элементальный сборщик
+Fargo.TileName.OmnistationPlusSheet=Омнистанция+
+Fargo.TileName.OmnistationSheet=Омнистанци
+Fargo.TileName.RegalStatueSheet=Королевская статуя
 
 #FARGO NPC
 ###############################################
-FargoSouls.NpcName.Deviantt=Deviantt
-FargoSouls.NpcName.Abominationn=Abominationn
-FargoSouls.NpcName.LumberJack=LumberJack
-FargoSouls.NpcName.Mutant=Mutant
-FargoSouls.NpcName.Squirrel=Squirrel
-FargoSouls.NpcName.SuperDummy=Super Dummy
+FargoSouls.NpcName.Deviantt=Девиантт
+FargoSouls.NpcName.Abominationn=Мерзостть
+FargoSouls.NpcName.LumberJack=Дровосек
+FargoSouls.NpcName.Mutant=Мутант
+FargoSouls.NpcName.Squirrel=Белка
+FargoSouls.NpcName.SuperDummy=Сверхманекен
 
 ###############################################
 ###############################################
