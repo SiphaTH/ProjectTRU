@@ -517,7 +517,7 @@
       "BorealWoodTable": "Стол из северной древесины",
       "BorealWoodWall": "Стена из заснеженной древесины",
       "BorealWoodWorkBench": "Верстак из северной древесины",
-      "BossBagBetsy": "{$ItemName.SkeletronBossBag}"
+      "BossBagBetsy": "{$ItemName.SkeletronBossBag}",
       "BossMaskBetsy": "Маска Бетси",
       "BossMaskCultist": "Маска древнего культиста",
       "BossMaskDarkMage": "Маска темного мага",

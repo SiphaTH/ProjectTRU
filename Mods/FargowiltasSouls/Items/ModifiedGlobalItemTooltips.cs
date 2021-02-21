@@ -13,17 +13,17 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.Items
 
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (item.type == CoreFargowiltasSoulsTranslation.FargoSouls.ItemType("EternitySoul"))
-            {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "tooltip");
-                if (tooltip != null)
-                {
-                    foreach (var translation in FargoSoulsTranslationDictionaries.FargoSoulsEternitySoul)
-                    {
-                        tooltip.text = tooltip.text.Replace(translation.Key, translation.Value);
-                    }
-                }
-            }
+            // if (item.type == CoreFargowiltasSoulsTranslation.FargoSouls.ItemType("EternitySoul"))
+            // {
+            //     TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "tooltip");
+            //     if (tooltip != null)
+            //     {
+            //         foreach (var translation in FargoSoulsTranslationDictionaries.FargoSoulsEternitySoul)
+            //         {
+            //             tooltip.text = tooltip.text.Replace(translation.Key, translation.Value);
+            //         }
+            //     }
+            // }
 
             if (item.type == CoreFargowiltasSoulsTranslation.FargoSouls.ItemType("MedallionoftheFallenKing") ||
                 item.type == CoreFargowiltasSoulsTranslation.FargoSouls.ItemType("ComputationOrb") ||

@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using CalamityRuTranslate.Mods.CalamityMod;
-using CalamityRuTranslate.Mods.ThoriumMod;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
-using Terraria;
-using Terraria.ID;
 using Terraria.Localization;
 using static System.Linq.Enumerable;
 
@@ -15,15 +11,7 @@ namespace CalamityRuTranslate.Utilities
     public static class Translation
     {
         public static bool IsRussianLanguage => LanguageManager.Instance.ActiveCulture == GameCulture.Russian;
-
-        public static bool CheckRussian(this string text)
-        {
-            if (text.Length == 0)
-                return true;
-            char symbol = text[0];
-            return symbol >= 'а' && 'я' >= symbol || symbol >= 'А' && 'Я' >= symbol;
-        }
-
+        
         public static string KeyText(string key) => LangUtilities.Translations[$"Mods.CalamityRuTranslate.{key}"].GetTranslation(Language.ActiveCulture);
         
         public static string KeyText2(string key) => Language.GetTextValue($"Mods.CalamityRuTranslate.{key}");
@@ -130,6 +118,9 @@ namespace CalamityRuTranslate.Utilities
                 {'»', "\u00BB"},
                 {'«', "\u00AB"},
                 {',', "\u002C"},
+                {'$', "\u0024"},
+                {'{', "\u007b"},
+                {'}', "\u007d"},
                 {'\'', "\u0027"},
                 {'/', "\u002F"},
                 {'[', "\u005b"},
@@ -165,46 +156,5 @@ namespace CalamityRuTranslate.Utilities
             Encoding u16 = Encoding.GetEncoding("UTF-16");
             return u16.GetString(u16.GetBytes(builder.ToString()));
         }
-		
-         public static bool GlobalTownNpcName(NPC npc)
-         {
-             return npc.type == NPCID.Guide ||
-                    npc.type == NPCID.Merchant ||
-                    npc.type == NPCID.Nurse ||
-                    npc.type == NPCID.Demolitionist ||
-                    npc.type == NPCID.DyeTrader ||
-                    npc.type == NPCID.Dryad ||
-                    npc.type == NPCID.ArmsDealer ||
-                    npc.type == NPCID.Stylist ||
-                    npc.type == NPCID.Painter ||
-                    npc.type == NPCID.Angler ||
-                    npc.type == NPCID.GoblinTinkerer ||
-                    npc.type == NPCID.WitchDoctor ||
-                    npc.type == NPCID.Clothier ||
-                    npc.type == NPCID.Mechanic ||
-                    npc.type == NPCID.PartyGirl ||
-                    npc.type == NPCID.Wizard ||
-                    npc.type == NPCID.TaxCollector ||
-                    npc.type == NPCID.Truffle ||
-                    npc.type == NPCID.Pirate ||
-                    npc.type == NPCID.Steampunker ||
-                    npc.type == NPCID.Cyborg ||
-                    npc.type == NPCID.TravellingMerchant ||
-                    npc.type == NPCID.SkeletonMerchant ||
-                    npc.type == CoreCalamityTranslation.Calamity?.NPCType("DILF") ||
-                    npc.type == CoreCalamityTranslation.Calamity?.NPCType("FAP") ||
-                    npc.type == CoreCalamityTranslation.Calamity?.NPCType("SEAHOE") ||
-                    npc.type == CoreCalamityTranslation.Calamity?.NPCType("THIEF") ||
-                    npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Blacksmith") ||
-                    npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Cobbler") ||
-                    npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("ConfusedZombie") ||
-                    npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Cook") ||
-                    npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("DesertTraveler") ||
-                    npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Diverman") ||
-                    npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Druid") ||
-                    npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Spiritualist") ||
-                    npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("Tracker") ||
-                    npc.type == CoreThoriumTranslation.ThoriumMod?.NPCType("WeaponMaster");
-         }
     }
 }
