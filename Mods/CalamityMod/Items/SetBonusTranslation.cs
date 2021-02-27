@@ -39,7 +39,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
             switch (set)
             {
                 case "Obsidian":
-                    player.setBonus = LangUtilities.GetTextValue("Calamity","SetBonus.Obsidian") + (ProjectTRuConfig.Instance.CalamityStealth ? LangUtilities.GetTextValue("Calamity","SetBonus.Stealth") : "") + (CoreCalamityTranslation.DeathMode ? LangUtilities.GetTextValue("Calamity","DeathMode.Heat") : "");
+                    player.setBonus = LangUtilities.GetTextValue("Calamity","SetBonus.Obsidian") + (ProjectTRuConfig.Instance.CalamityStealthDescription ? LangUtilities.GetTextValue("Calamity","SetBonus.Stealth") : "") + (CoreCalamityTranslation.DeathMode ? LangUtilities.GetTextValue("Calamity","DeathMode.Heat") : "");
                     break;
                 case "Fearmonger":
                 case "Eskimo":
@@ -62,10 +62,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Items
                 case "WulfrumRogue":
                 case "TarragonRogue":
                 case "SilvaRogue":
-                    player.setBonus = LangUtilities.GetTextValue("Calamity",$"SetBonus.{set}") + (ProjectTRuConfig.Instance.CalamityStealth ? LangUtilities.GetTextValue("Calamity","SetBonus.Stealth") : "");
+                    player.setBonus = LangUtilities.GetTextValue("Calamity",$"SetBonus.{set}") + (ProjectTRuConfig.Instance.CalamityStealthDescription ? LangUtilities.GetTextValue("Calamity","SetBonus.Stealth") : "");
                     break;
                 case "AncientForbiddenCirclet":
-                    player.setBonus = string.Format(LangUtilities.GetTextValue("Calamity","SetBonus.AncientForbiddenCirclet"), CoreCalamityTranslation.ArmorSetHotkey, CoreCalamityTranslation.AncientStorm) + (ProjectTRuConfig.Instance.CalamityStealth ? LangUtilities.GetTextValue("Calamity","SetBonus.Stealth") : "");
+                    player.setBonus = string.Format(LangUtilities.GetTextValue("Calamity","SetBonus.AncientForbiddenCirclet"), CoreCalamityTranslation.ArmorSetHotkey, CoreCalamityTranslation.AncientStorm) + (ProjectTRuConfig.Instance.CalamityStealthDescription ? LangUtilities.GetTextValue("Calamity","SetBonus.Stealth") : "");
                     break;
                 case "TarragonMelee":
                 case "Brimflame":

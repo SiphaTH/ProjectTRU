@@ -3,7 +3,7 @@ using Terraria.ModLoader.Config;
 
 namespace CalamityRuTranslate
 {
-    [Label("Config")]
+    [Label("Конфигурация")]
     public class ProjectTRuConfig : ModConfig
     {
         public static ProjectTRuConfig Instance { get; set; }
@@ -33,16 +33,15 @@ namespace CalamityRuTranslate
         [DefaultValue(true)]
         [ReloadRequired]
         public bool NewVanillaTranslation;
-        
-        [Label("Определение рода предметов для префиксов (Бета)")]
-        [Tooltip("Добавляет определение рода предметов для префиксов (Пока только ванильные предметы)")]
-        [DefaultValue(false)]
-        [ReloadRequired]
-        public bool NewPrefixes;
+
+        [Label("Цветной тип урона")]
+        [Tooltip("Если вам не нравится цветные типы урона на оружиях, вы можете это отключить")]
+        [DefaultValue(true)]
+        public bool ColoredDamageTypes;
         
         [Label("Описание механики скрытности Каламити")]
         [Tooltip("Показывает текст бонуса скрытности на комплектах брони разбойника")]
         [DefaultValue(true)]
-        public bool CalamityStealth;
+        public bool CalamityStealthDescription;
     }
 }

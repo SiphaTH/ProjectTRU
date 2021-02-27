@@ -20,25 +20,19 @@ namespace CalamityRuTranslate.Common
                         ILEdit ilEdit = Activator.CreateInstance(type) as ILEdit;
 
                         if (ilEdit.Autoload())
-                        {
                             ILEdits.Add(ilEdit.DictKey, ilEdit);
-                        }
                     }
                 }
             }
             
             foreach (ILEdit ilEdit in ILEdits.Values)
-            {
                 ilEdit.Load();
-            }
         }
 
         public static void Unload()
         {
             foreach (ILEdit ilEdit in ILEdits.Values)
-            {
                 ilEdit.Unload();
-            }
 
             ILEdits = null;
         }

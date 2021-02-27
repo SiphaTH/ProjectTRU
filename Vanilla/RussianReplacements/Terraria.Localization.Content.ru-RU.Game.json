@@ -3,7 +3,7 @@
 	{
 		"HasBeenDefeated_Plural": "{0} побеждены!",
 		"HasBeenDefeated_Single": "{0} побеждён!",
-		"HasAwoken": "Пробудился босс {0}!",
+		"HasAwoken": "{0} пробудился!",
 		"HasArrived": "{0} прибыл(а)!"
 	},
 	"ArmorSetBonus": 

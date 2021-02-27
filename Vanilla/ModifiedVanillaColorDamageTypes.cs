@@ -11,7 +11,7 @@ namespace CalamityRuTranslate.Vanilla
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (Translation.IsRussianLanguage)
+            if (Translation.IsRussianLanguage && ProjectTRuConfig.Instance.ColoredDamageTypes)
             {
                 foreach (TooltipLine tooltip in tooltips.Where(tooltip => tooltip.Name == "Damage"))
                 {

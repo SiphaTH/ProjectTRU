@@ -8,52 +8,24 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 {
     public class FargoPlayerIL : ILEdit
     {
-        public override string DictKey => "FargowiltasSouls";
+        public override string DictKey => "FargowiltasSouls.FargoPlayer";
         
-        private event ILContext.Manipulator OnEnterWorldHook
-        {
-            add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.FargoPlayer").GetMethod("OnEnterWorld", BindingFlags.Public | BindingFlags.Instance), value);
-        
-            remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.FargoPlayer").GetMethod("OnEnterWorld", BindingFlags.Public | BindingFlags.Instance), value);
-        }
-        
-        private event ILContext.Manipulator PreUpdateHook
-        {
-            add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.FargoPlayer").GetMethod("PreUpdate", BindingFlags.Public | BindingFlags.Instance), value);
-        
-            remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.FargoPlayer").GetMethod("PreUpdate", BindingFlags.Public | BindingFlags.Instance), value);
-        }
-        
-        private event ILContext.Manipulator PreKillHook
-        {
-            add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.FargoPlayer").GetMethod("PreKill", BindingFlags.Public | BindingFlags.Instance), value);
-        
-            remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.FargoPlayer").GetMethod("PreKill", BindingFlags.Public | BindingFlags.Instance), value);
-        }
-        
-        private event ILContext.Manipulator CatchFishHook
-        {
-            add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.FargoPlayer").GetMethod("CatchFish", BindingFlags.Public | BindingFlags.Instance), value);
-        
-            remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.FargoPlayer").GetMethod("CatchFish", BindingFlags.Public | BindingFlags.Instance), value);
-        }
-
         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
 
         public override void Load()
         {
-            OnEnterWorldHook += TranslationOnEnterWorldHook;
-            PreUpdateHook += TranslationPreUpdateHook;
-            PreKillHook += TranslationPreKill;
-            CatchFishHook += TranslationCatchFishHook;
+            IL.FargowiltasSouls.FargoPlayer.OnEnterWorld += TranslationOnEnterWorldHook;
+            IL.FargowiltasSouls.FargoPlayer.PreUpdate += TranslationPreUpdateHook;
+            IL.FargowiltasSouls.FargoPlayer.PreKill += TranslationPreKill;
+            IL.FargowiltasSouls.FargoPlayer.CatchFish += TranslationCatchFishHook;
         }
 
         public override void Unload()
         {
-            OnEnterWorldHook -= TranslationOnEnterWorldHook;
-            PreUpdateHook -= TranslationPreUpdateHook;
-            PreKillHook -= TranslationPreKill;
-            CatchFishHook -= TranslationCatchFishHook;
+            IL.FargowiltasSouls.FargoPlayer.OnEnterWorld -= TranslationOnEnterWorldHook;
+            IL.FargowiltasSouls.FargoPlayer.PreUpdate -= TranslationPreUpdateHook;
+            IL.FargowiltasSouls.FargoPlayer.PreKill -= TranslationPreKill;
+            IL.FargowiltasSouls.FargoPlayer.CatchFish -= TranslationCatchFishHook;
         }
 
         private void TranslationOnEnterWorldHook(ILContext il)
@@ -75,32 +47,25 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
             Translation.ILTranslate(il, " was reaped by the cold hand of death.", Translation.EncodeToUtf16(" был сожжён холодной рукой смерти."));
         }
         
-        private void TranslationCatchFishHook(ILContext il) => Translation.ILTranslate(il, "Duke Fishron EX has awoken!", Translation.EncodeToUtf16("Пробудился босс Герцог Рыброн ЕХ!"));
+        private void TranslationCatchFishHook(ILContext il) => Translation.ILTranslate(il, "Duke Fishron EX has awoken!", Translation.EncodeToUtf16("Герцог Рыброн ЕХ пробудился!"));
     }
     
     public class FargowiltasIL : ILEdit
     {
-        public override string DictKey => "FargowiltasSouls2";
-        
-        private event ILContext.Manipulator FargowiltasHook
-        {
-            add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Fargowiltas").GetMethod("HandlePacket", BindingFlags.Public | BindingFlags.Instance), value);
-        
-            remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Fargowiltas").GetMethod("HandlePacket", BindingFlags.Public | BindingFlags.Instance), value);
-        }
+        public override string DictKey => "FargowiltasSouls.Fargowiltas.HandlePacket";
         
         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
 
-        public override void Load() => FargowiltasHook += TranslationFargowiltasHook;
+        public override void Load() => IL.FargowiltasSouls.Fargowiltas.HandlePacket += TranslationFargowiltasHook;
         
-        public override void Unload() => FargowiltasHook -= TranslationFargowiltasHook;
+        public override void Unload() => IL.FargowiltasSouls.Fargowiltas.HandlePacket -= TranslationFargowiltasHook;
         
-        private void TranslationFargowiltasHook(ILContext il) => Translation.ILTranslate(il, "Duke Fishron EX has awoken!", Translation.EncodeToUtf16("Пробудился босс Герцог Рыброн ЕХ!"));
+        private void TranslationFargowiltasHook(ILContext il) => Translation.ILTranslate(il, "Duke Fishron EX has awoken!", Translation.EncodeToUtf16("Герцог Рыброн ЕХ пробудился!"));
     }
     
      public class BossChecklistCompatibilityIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.ModCompatibilities";
+         public override string DictKey => "FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility";
          
          private event ILContext.Manipulator InitializeBossesHook
          {
@@ -177,93 +142,44 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
      public class EModeGlobalNPCIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.NPCs";
-         
-         private event ILContext.Manipulator KingSlimeAIHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("KingSlimeAI", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("KingSlimeAI", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
-         private event ILContext.Manipulator QueenBeeAIHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("QueenBeeAI", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("QueenBeeAI", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
-         private event ILContext.Manipulator SetDefaultsHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
-         private event ILContext.Manipulator PreAIHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("PreAI", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("PreAI", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
-         private event ILContext.Manipulator OnHitPlayerHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
-         private event ILContext.Manipulator CheckDeadHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("CheckDead", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("CheckDead", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
-         private event ILContext.Manipulator ModifyHitByItemHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("ModifyHitByItem", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.NPCs.EModeGlobalNPC").GetMethod("ModifyHitByItem", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
+         public override string DictKey => "FargowiltasSouls.NPCs.EModeGlobalNPC";
+
          public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
          
          public override void Load()
          {
-             KingSlimeAIHook += TranslationKingSlimeAIHook;
-             QueenBeeAIHook += TranslationQueenBeeAIHook;
-             SetDefaultsHook += TranslationSetDefaultsHook;
-             PreAIHook += TranslationPreAIHook;
-             OnHitPlayerHook += TranslationOnHitPlayerHook;
-             CheckDeadHook += TranslationCheckDeadHook;
-             ModifyHitByItemHook += TranslationModifyHitByItemHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.KingSlimeAI += TranslationKingSlimeAIHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.QueenBeeAI += TranslationQueenBeeAIHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.SetDefaults += TranslationSetDefaultsHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.PreAI += TranslationPreAIHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.OnHitPlayer += TranslationOnHitPlayerHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.CheckDead += TranslationCheckDeadHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.ModifyHitByItem += TranslationModifyHitByItemHook;
          }
 
          public override void Unload()
          {
-             KingSlimeAIHook -= TranslationKingSlimeAIHook;
-             QueenBeeAIHook -= TranslationQueenBeeAIHook;
-             SetDefaultsHook -= TranslationSetDefaultsHook;
-             PreAIHook -= TranslationPreAIHook;
-             OnHitPlayerHook -= TranslationOnHitPlayerHook;
-             CheckDeadHook -= TranslationCheckDeadHook;
-             ModifyHitByItemHook -= TranslationModifyHitByItemHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.KingSlimeAI -= TranslationKingSlimeAIHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.QueenBeeAI -= TranslationQueenBeeAIHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.SetDefaults -= TranslationSetDefaultsHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.PreAI -= TranslationPreAIHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.OnHitPlayer -= TranslationOnHitPlayerHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.CheckDead -= TranslationCheckDeadHook;
+             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.ModifyHitByItem -= TranslationModifyHitByItemHook;
          }
 
          private void TranslationKingSlimeAIHook(ILContext il)
          {
-             Translation.ILTranslate(il, "King Slime has enraged!", Translation.EncodeToUtf16("Король Слизней в ярости!"));
-             Translation.ILTranslate(il, "King Slime has enraged!", Translation.EncodeToUtf16("Король Слизней в ярости!"), 2);
+             Translation.ILTranslate(il, "King Slime has enraged!", Translation.EncodeToUtf16("Король слизней в ярости!"));
+             Translation.ILTranslate(il, "King Slime has enraged!", Translation.EncodeToUtf16("Король слизней в ярости!"), 2);
          }
          
          private void TranslationQueenBeeAIHook(ILContext il)
          {
-             Translation.ILTranslate(il, "Royal Subject has awoken!", Translation.EncodeToUtf16("Пробудился босс Королевская особа!"));
-             Translation.ILTranslate(il, "Royal Subject has awoken!", Translation.EncodeToUtf16("Пробудился босс Королевская особа!"), 2);
-             Translation.ILTranslate(il, "Royal Subject has awoken!", Translation.EncodeToUtf16("Пробудился босс Королевская особа!"), 3);
-             Translation.ILTranslate(il, "Royal Subject has awoken!", Translation.EncodeToUtf16("Пробудился босс Королевская особа!"), 4);
+             Translation.ILTranslate(il, "Royal Subject has awoken!", Translation.EncodeToUtf16("Королевская особа пробудилась!"));
+             Translation.ILTranslate(il, "Royal Subject has awoken!", Translation.EncodeToUtf16("Королевская особа пробудилась!"), 2);
+             Translation.ILTranslate(il, "Royal Subject has awoken!", Translation.EncodeToUtf16("Королевская особа пробудилась!"), 3);
+             Translation.ILTranslate(il, "Royal Subject has awoken!", Translation.EncodeToUtf16("Королевская особа пробудилась!"), 4);
          }
          
          private void TranslationSetDefaultsHook(ILContext il) => Translation.ILTranslate(il, "Duke Fishron EX", Translation.EncodeToUtf16("Герцог Рыброн ЕХ"));
@@ -308,20 +224,13 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
      public class MutantsFuryIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Misc";
-         
-         private event ILContext.Manipulator MutantsFuryHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Misc.MutantsFury").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Misc.MutantsFury").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
+         public override string DictKey => "FargowiltasSouls.Items.Misc.MutantsFury.UseItem";
+
          public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
          
-         public override void Load() => MutantsFuryHook += TranslationMutantsFuryHook;
+         public override void Load() => IL.FargowiltasSouls.Items.Misc.MutantsFury.UseItem += TranslationMutantsFuryHook;
          
-         public override void Unload() => MutantsFuryHook -= TranslationMutantsFuryHook;
+         public override void Unload() => IL.FargowiltasSouls.Items.Misc.MutantsFury.UseItem -= TranslationMutantsFuryHook;
          
          private void TranslationMutantsFuryHook(ILContext il)
          {
@@ -332,108 +241,73 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
      
      public class AbominationnVoodooDollIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Summons";
-         
-         private event ILContext.Manipulator AbominationnVoodooDollHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Summons.AbominationnVoodooDoll").GetMethod("Update", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Summons.AbominationnVoodooDoll").GetMethod("Update", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
+         public override string DictKey => "FargowiltasSouls.Items.Summons.AbominationnVoodooDoll.Update";
+
          public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
          
-         public override void Load() => AbominationnVoodooDollHook += TranslationAbominationnVoodooDollHook;
+         public override void Load() => IL.FargowiltasSouls.Items.Summons.AbominationnVoodooDoll.Update += TranslationAbominationnVoodooDollHook;
          
-         public override void Unload() => AbominationnVoodooDollHook -= TranslationAbominationnVoodooDollHook;
+         public override void Unload() => IL.FargowiltasSouls.Items.Summons.AbominationnVoodooDoll.Update -= TranslationAbominationnVoodooDollHook;
          
          private void TranslationAbominationnVoodooDollHook(ILContext il) => Translation.ILTranslate(il, "Mutant has been enraged by the death of his brother!", Translation.EncodeToUtf16("Мутант в ярости от гибели брата!"));
      }
      
      public class AbomsCurseIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Summons2";
-         
-         private event ILContext.Manipulator AbomsCurseHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Summons.AbomsCurse").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Summons.AbomsCurse").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
+         public override string DictKey => "FargowiltasSouls.Items.Summons.AbomsCurse.UseItem";
+
          public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
          
-         public override void Load() => AbomsCurseHook += TranslationAbomsCurseHook;
+         public override void Load() => IL.FargowiltasSouls.Items.Summons.AbomsCurse.UseItem += TranslationAbomsCurseHook;
          
-         public override void Unload() => AbomsCurseHook -= TranslationAbomsCurseHook;
+         public override void Unload() => IL.FargowiltasSouls.Items.Summons.AbomsCurse.UseItem -= TranslationAbomsCurseHook;
          
-         private void TranslationAbomsCurseHook(ILContext il) => Translation.ILTranslate(il, "Abominationn has awoken!", Translation.EncodeToUtf16("Пробудился босс Мерзостть!"));
+         private void TranslationAbomsCurseHook(ILContext il) => Translation.ILTranslate(il, "Abominationn has awoken!", Translation.EncodeToUtf16("Мерзостть пробудился!"));
      }
      
      public class DevisCurseIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Summons3";
-         
-         private event ILContext.Manipulator DevisCurseHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Summons.DevisCurse").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Summons.DevisCurse").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
+         public override string DictKey => "FargowiltasSouls.Items.Summons.DevisCurse.UseItem";
+
          public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
          
-         public override void Load() => DevisCurseHook += TranslationDevisCurseHook;
+         public override void Load() => IL.FargowiltasSouls.Items.Summons.DevisCurse.UseItem += TranslationDevisCurseHook;
          
-         public override void Unload() => DevisCurseHook -= TranslationDevisCurseHook;
+         public override void Unload() => IL.FargowiltasSouls.Items.Summons.DevisCurse.UseItem -= TranslationDevisCurseHook;
          
          private void TranslationDevisCurseHook(ILContext il)
          {
-             Translation.ILTranslate(il, "Deviantt has awoken!", Translation.EncodeToUtf16("Пробудился босс Девиантт!"));
-             Translation.ILTranslate(il, "Deviantt has awoken!", Translation.EncodeToUtf16("Пробудился босс Девиантт!"), 2);
+             Translation.ILTranslate(il, "Deviantt has awoken!", Translation.EncodeToUtf16("Девиантт пробудился!"));
+             Translation.ILTranslate(il, "Deviantt has awoken!", Translation.EncodeToUtf16("Девиантт пробудился!"), 2);
          }
      }
      
      public class MutantsCurseIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Summons4";
-         
-         private event ILContext.Manipulator MutantsCurseHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Summons.MutantsCurse").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Summons.MutantsCurse").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
+         public override string DictKey => "FargowiltasSouls.Items.Summons.MutantsCurse.UseItem";
+
          public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
          
-         public override void Load() => MutantsCurseHook += TranslationMutantsCurseHook;
+         public override void Load() => IL.FargowiltasSouls.Items.Summons.MutantsCurse.UseItem += TranslationMutantsCurseHook;
          
-         public override void Unload() => MutantsCurseHook -= TranslationMutantsCurseHook;
+         public override void Unload() => IL.FargowiltasSouls.Items.Summons.MutantsCurse.UseItem -= TranslationMutantsCurseHook;
          
          private void TranslationMutantsCurseHook(ILContext il)
          {
-             Translation.ILTranslate(il, "Mutant has awoken!", Translation.EncodeToUtf16("Пробудился босс Мутант!"));
-             Translation.ILTranslate(il, "Mutant has awoken!", Translation.EncodeToUtf16("Пробудился босс Мутант!"), 2);
+             Translation.ILTranslate(il, "Mutant has awoken!", Translation.EncodeToUtf16("Мутант пробудился!"));
+             Translation.ILTranslate(il, "Mutant has awoken!", Translation.EncodeToUtf16("Мутант пробудился!"), 2);
          }
      }
      
      public class SigilOfChampionsIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Summons5";
-         
-         private event ILContext.Manipulator SigilOfChampionsHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Summons.SigilOfChampions").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Summons.SigilOfChampions").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
+         public override string DictKey => "FargowiltasSouls.Items.Summons.SigilOfChampions.UseItem";
+
          public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
          
-         public override void Load() => SigilOfChampionsHook += TranslationSigilOfChampionsHook;
+         public override void Load() => IL.FargowiltasSouls.Items.Summons.SigilOfChampions.UseItem += TranslationSigilOfChampionsHook;
          
-         public override void Unload() => SigilOfChampionsHook -= TranslationSigilOfChampionsHook;
+         public override void Unload() => IL.FargowiltasSouls.Items.Summons.SigilOfChampions.UseItem -= TranslationSigilOfChampionsHook;
          
          private void TranslationSigilOfChampionsHook(ILContext il)
          {
@@ -452,20 +326,13 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
      
      public class PiranhaPlantVoodooDollIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Patreon.LaBonez";
-         
-         private event ILContext.Manipulator PiranhaPlantVoodooDollHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Patreon.LaBonez.PiranhaPlantVoodooDoll").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Patreon.LaBonez.PiranhaPlantVoodooDoll").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         }
+         public override string DictKey => "FargowiltasSouls.Patreon.LaBonez.PiranhaPlantVoodooDoll.UseItem";
          
          public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
          
-         public override void Load() => PiranhaPlantVoodooDollHook += TranslationPiranhaPlantVoodooDollHook;
+         public override void Load() => IL.FargowiltasSouls.Patreon.LaBonez.PiranhaPlantVoodooDoll.UseItem += TranslationPiranhaPlantVoodooDollHook;
          
-         public override void Unload() => PiranhaPlantVoodooDollHook -= TranslationPiranhaPlantVoodooDollHook;
+         public override void Unload() => IL.FargowiltasSouls.Patreon.LaBonez.PiranhaPlantVoodooDoll.UseItem -= TranslationPiranhaPlantVoodooDollHook;
          
          private void TranslationPiranhaPlantVoodooDollHook(ILContext il)
          {
@@ -476,72 +343,51 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
      
      public class PatreonPlayerIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls3";
-         
-         private event ILContext.Manipulator PatreonPlayerHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.PatreonPlayer").GetMethod("OnEnterWorld", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.PatreonPlayer").GetMethod("OnEnterWorld", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
+         public override string DictKey => "FargowiltasSouls.PatreonPlayer.OnEnterWorld";
+
          public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
          
-         public override void Load() => PatreonPlayerHook += TranslationPatreonPlayerHook;
+         public override void Load() => IL.FargowiltasSouls.PatreonPlayer.OnEnterWorld += TranslationPatreonPlayerHook;
          
-         public override void Unload() => PatreonPlayerHook -= TranslationPatreonPlayerHook;
+         public override void Unload() => IL.FargowiltasSouls.PatreonPlayer.OnEnterWorld -= TranslationPatreonPlayerHook;
          
          private void TranslationPatreonPlayerHook(ILContext il) => Translation.ILTranslate(il, "Your special patreon effects are active ", Translation.EncodeToUtf16("Ваш особый эффект патреона - "));
      }
      
      public class MutantSpawnIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Projectiles.Pets";
-         
-         private event ILContext.Manipulator MutantSpawnHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Projectiles.Pets.MutantSpawn").GetMethod("BeCompanionCube", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Projectiles.Pets.MutantSpawn").GetMethod("BeCompanionCube", BindingFlags.Public | BindingFlags.Instance), value);
-         }
-         
+         public override string DictKey => "FargowiltasSouls.Projectiles.Pets.MutantSpawn.BeCompanionCube";
+
          public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
          
-         public override void Load() => MutantSpawnHook += TranslationMutantSpawnHook;
+         public override void Load() => IL.FargowiltasSouls.Projectiles.Pets.MutantSpawn.BeCompanionCube += TranslationMutantSpawnHook;
          
-         public override void Unload() => MutantSpawnHook -= TranslationMutantSpawnHook;
+         public override void Unload() => IL.FargowiltasSouls.Projectiles.Pets.MutantSpawn.BeCompanionCube -= TranslationMutantSpawnHook;
          
          private void TranslationMutantSpawnHook(ILContext il)
          {
-             Translation.ILTranslate(il, "Mutant has awoken!", Translation.EncodeToUtf16("Пробудился босс Мутант!"));
-             Translation.ILTranslate(il, "Mutant has awoken!", Translation.EncodeToUtf16("Пробудился босс Мутант!"), 2);
+             Translation.ILTranslate(il, "Mutant has awoken!", Translation.EncodeToUtf16("Мутант пробудился!"));
+             Translation.ILTranslate(il, "Mutant has awoken!", Translation.EncodeToUtf16("Мутант пробудился!"), 2);
              Translation.ILTranslate(il, "You think you're safe?", Translation.EncodeToUtf16("Думаете, вы в безопасности?"));
          }
      }
      
      public class MasochistIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items";
-         
-         private event ILContext.Manipulator UseItemHook
-         {
-             add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Masochist").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         
-             remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.Items.Masochist").GetMethod("UseItem", BindingFlags.Public | BindingFlags.Instance), value);
-         }
+         public override string DictKey => "FargowiltasSouls.Items.Masochist.UseItem";
          
          public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
          
-         public override void Load() => UseItemHook += TranslationUseItemHook;
+         public override void Load() => IL.FargowiltasSouls.Items.Masochist.UseItem += TranslationUseItemHook;
          
-         public override void Unload() => UseItemHook -= TranslationUseItemHook;
+         public override void Unload() => IL.FargowiltasSouls.Items.Masochist.UseItem -= TranslationUseItemHook;
          
          private void TranslationUseItemHook(ILContext il)
          {
              Translation.ILTranslate(il, "Eternity Mode initiated!", Translation.EncodeToUtf16("Режим Вечности активирован!"));
              Translation.ILTranslate(il, "Eternity Mode deactivated!", Translation.EncodeToUtf16("Режим Вечности деактивирован!"));
-             Translation.ILTranslate(il, "Deviantt has awoken!", Translation.EncodeToUtf16("Пробудился босс Девиантт!"));
-             Translation.ILTranslate(il, "Deviantt has awoken!", Translation.EncodeToUtf16("Пробудился босс Девиантт!"), 2);
+             Translation.ILTranslate(il, "Deviantt has awoken!", Translation.EncodeToUtf16("Девиантт пробудился!"));
+             Translation.ILTranslate(il, "Deviantt has awoken!", Translation.EncodeToUtf16("Девиантт пробудился!"), 2);
          }
      }
 }

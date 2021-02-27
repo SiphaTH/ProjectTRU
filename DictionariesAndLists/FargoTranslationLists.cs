@@ -1,4 +1,7 @@
 ﻿using System.Collections.Generic;
+using CalamityRuTranslate.Mods.CalamityMod;
+using CalamityRuTranslate.Mods.FargowiltasSouls;
+using CalamityRuTranslate.Mods.ThoriumMod;
 
 namespace CalamityRuTranslate.DictionariesAndLists
 {
@@ -7,6 +10,7 @@ namespace CalamityRuTranslate.DictionariesAndLists
         public static List<string> FargoBuffs;
         public static List<string> FargoItemName;
         public static List<string> FargoItemTooltip;
+        public static List<string> FargoThoriumCrossItems;
         public static List<string> FargoNPCs;
 
         public static void LoadLists()
@@ -158,7 +162,6 @@ namespace CalamityRuTranslate.DictionariesAndLists
                 "HallowChest",
                 "HeartChocolate",
                 "HolyGrail",
-                //"InnocuousSkull",
                 "JungleChest",
                 "LeesHeadband",
                 "MothLamp",
@@ -219,12 +222,6 @@ namespace CalamityRuTranslate.DictionariesAndLists
                 "EnergizerTwins",
                 "EnergizerWall",
                 "EnergizerWorm",
-                // "OverloadCoznix",
-                // "OverloadJelly",
-                // "OverloadLich",
-                // "OverloadSaucer",
-                // "OverloadStrider",
-                // "OverloadThunderbird",
                 "LihzahrdPowerCell2",
                 "CrucibleCosmos",
                 "EchPainting",
@@ -232,7 +229,6 @@ namespace CalamityRuTranslate.DictionariesAndLists
                 "MultitaskCenter",
                 "Omnistation",
                 "Omnistation2",
-                //"OmnistationPlus",
                 "RegalStatue",
                 "WalkingRick",
                 "WoodenToken",
@@ -250,7 +246,7 @@ namespace CalamityRuTranslate.DictionariesAndLists
                 "MutantBody",
                 "MutantMask",
                 "MutantPants",
-                "LumberJaxe"
+                "LumberJaxe",
             };
 
             FargoItemTooltip = new List<string>
@@ -372,7 +368,6 @@ namespace CalamityRuTranslate.DictionariesAndLists
                 "HallowChest",
                 "HeartChocolate",
                 "HolyGrail",
-                //"InnocuousSkull",
                 "JungleChest",
                 "LeesHeadband",
                 "MothLamp",
@@ -433,12 +428,6 @@ namespace CalamityRuTranslate.DictionariesAndLists
                 "EnergizerTwins",
                 "EnergizerWall",
                 "EnergizerWorm",
-                // "OverloadCoznix",
-                // "OverloadJelly",
-                // "OverloadLich",
-                // "OverloadSaucer",
-                // "OverloadStrider",
-                // "OverloadThunderbird",
                 "LihzahrdPowerCell2",
                 "CrucibleCosmos",
                 "EchPainting",
@@ -446,22 +435,49 @@ namespace CalamityRuTranslate.DictionariesAndLists
                 "MultitaskCenter",
                 "Omnistation",
                 "Omnistation2",
-                //"OmnistationPlus",
                 "RegalStatue",
                 "WalkingRick",
                 "WoodenToken",
-                "LumberJaxe"
+                "LumberJaxe",
             };
 
+            FargoThoriumCrossItems = new List<string>
+            {
+                "OverloadCoznix",
+                "OverloadJelly",
+                "OverloadLich",
+                "OverloadSaucer",
+                "OverloadStrider",
+                "OverloadThunderbird",
+            };
+            
+            if (CoreFargowiltasSoulsTranslation.FargoSouls != null)
+            {
+                FargoItemName.Add("InnocuousSkull");
+                FargoItemTooltip.Add("InnocuousSkull");
+            }
+            if (CoreThoriumTranslation.ThoriumMod != null || CoreCalamityTranslation.Calamity != null)
+            {
+                FargoItemName.Add("OmnistationPlus");
+                FargoItemTooltip.Add("OmnistationPlus");
+            }
+            if (CoreThoriumTranslation.ThoriumMod != null)
+            {
+                FargoItemName.AddRange(FargoThoriumCrossItems);
+                FargoItemTooltip.AddRange(FargoThoriumCrossItems);
+            }
+            
             FargoNPCs = new List<string>
             {
                 "Abominationn",
                 "Deviantt",
                 "LumberJack",
                 "Mutant",
-                "Squirrel",
-                "SuperDummy"
+                "SuperDummy",
             };
+            
+            if(CoreFargowiltasSoulsTranslation.FargoSouls != null)
+                FargoNPCs.Add("Squirrel");
         }
 
         public static void UnloadLists()
@@ -469,6 +485,7 @@ namespace CalamityRuTranslate.DictionariesAndLists
             FargoBuffs = null;
             FargoItemName = null;
             FargoItemTooltip = null;
+            FargoThoriumCrossItems = null;
             FargoNPCs = null;
         }
     }

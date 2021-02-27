@@ -5,6 +5,7 @@ using CalamityRuTranslate.Mods.Fargowiltas.Items;
 using CalamityRuTranslate.Mods.Fargowiltas.NPCs;
 using CalamityRuTranslate.Mods.Fargowiltas.Tiles;
 using CalamityRuTranslate.Utilities;
+using Terraria;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.Fargowiltas
@@ -29,7 +30,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public static void LoadCrossContent()
         {
-            if (Fargo != null)
+            if (Fargo != null && !Main.dedServ)
             {
                 BuffsTranslation.SetupTranslation();
                 ItemsTranslation.SetupTranslation();
@@ -37,7 +38,15 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
                 TilesTranslation.SetupTranslation();
             }
         }
-        
+
+        public static void LoadNpcChat()
+        {
+            if (Fargo != null)
+            {
+                NPCTextTranslation.SetupTranslation();
+            }
+        }
+
         public static void Unload()
         {
             FargoTranslationLists.UnloadLists();

@@ -55,6 +55,7 @@ namespace CalamityRuTranslate
         public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
         {
             CoreCalamityTranslation.LoadNpcChat();
+            CoreFargowiltasTranslation.LoadNpcChat();
             if (Translation.IsRussianLanguage && ProjectTRuConfig.Instance.ThoriumTranslation && ModLoader.GetMod("ThoriumMod") != null)
             {
                 ThoriumSupport.ThoriumNpcChat();

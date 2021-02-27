@@ -241,6 +241,120 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.NPCs
                     case "I once heard Mutant mention a once cat-like being so far beyond us that its existence transcends cause and effect. It's more like a law of reality.":
                         npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.33");
                         break;
+                    case "What's that? You want to fight me for real? ...nah, I can't put up a good fight on my own.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.41");
+                        break;
+                    case "What's that? You want to fight my big brother? ...maybe if he had a reason to.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.42");
+                        break;
+                    case "Now's a good time to go for damage on your accessory modifiers. Keep an eye on your enemies and look for patterns!":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.43");
+                        break;
+                    case "Only a specific type of weapon will work against each specific pillar. As for that moon guy, his weakness will keep changing.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.44");
+                        break;
+                    case "Some powerful enemies like that dungeon guy can create their own arenas.You won't be able to escape, so make full use of the room you do have.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.45");
+                        break;
+                    case "Did you beat that fish pig dragon yet? He's strong enough to break defenses in one hit. Too bad you don't have any reinforced plating to prevent that, right?":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.46");
+                        break;
+                    case "That golem? It gets upset when you leave the temple, so fighting in there is best. It'll also try to take the high ground against you...":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.47");
+                        break;
+                    case "That overgrown plant inflicts a special venom that works her into an enraged frenzy. She also has a ring of crystal leaves, but minions go through it.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.48");
+                        break;
+                    case "Watch out when you break your fourth altar! It might attract the pirates, so be sure you're ready when you do it.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.49");
+                        break;
+                    case "That metal worm has a few upgrades. It'll start shooting dark stars and flying. When it coils around you, don't try to escape!":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.50");
+                        break;
+                    case "I saw that metal eye spinning while firing a huge laser the other day. Too bad you can't teleport through an attack like that on command, right?":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.51");
+                        break;
+                    case "You'll have to destroy the limbs before you can hurt that metal skull. But once it reveals its true form, focus on taking down the head instead.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.52");
+                        break;
+                    case "That thing's mouth is as good as immune to damage, so you'll have to aim for the eyes. What thing? You know, that thing.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.53");
+                        break;
+                    case "Next up is me! Make sure you can recognize whatever attack I'll throw at you. Blocks and turning away can nullify petrification!":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.54");
+                        break;
+                    case "The master of the dungeon can revive itself with a sliver of life for a last stand. Be ready to run for it when you make the killing blow.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.55");
+                        break;
+                    case "The queen bee will summon her progeny for backup. She's harder to hurt while they're there, so take them out first.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.56");
+                        break;
+                    case "When the brain gets mad, it'll confuse you every few seconds. Four rings to confuse you, one ring when it wears off!":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.57");
+                        break;
+                    case "When you hurt the world eater, its segments will break off as smaller eaters. Don't let them pile up!":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.58");
+                        break;
+                    case "Watch out when you break your second Crimson Heart! It might attract the goblins, so prepare before you do it.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.59");
+                        break;
+                    case "Watch out when you break your second Shadow Orb! It might attract the goblins, so prepare before you do it.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.60");
+                        break;
+                    case "If that big floating eyeball hits you, some of its anger rubs off and you can't stop attacking! Make sure you aren't holding any mirrors if this happens.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.61");
+                        break;
+                    case "Gonna fight that slime king soon? Don't spend too long up and out of his reach or he'll get mad. Very, very mad.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.62");
+                        break;
+                    case "Seems like everyone's learning to project auras these days. If you look at the particles, you can see whether it'll affect you at close range or a distance.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.63");
+                        break;
+                    case "There's probably a thousand items to protect against all these debuffs. It's a shame you don't have a thousand hands to carry them all at once.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.64");
+                        break;
+                    case "Don't forget you can turn off your soul toggles in the Mod Configurations menu!":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.65");
+                        break;
+                    case "Just so you know, ammos are less effective. Only a tiny fraction of their damage can contribute to your total output!":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.66");
+                        break;
+                    case "Found any Top Hat Squirrels yet? Keep one in your inventory and maybe a special friend will show up!":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.67");
+                        break;
+                    case "I don't have any more Life Crystals for you, but Cthulhu's eye is going on a new diet of them. Not that they would share.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.68");
+                        break;
+                    case "I've always wondered why those other monsters never bothered to carry any healing potions. Well, you probably shouldn't wait and see if they actually do.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.69");
+                        break;
+                    case "Watch out for those fish! Sharks will leave you alone if you leave them alone, but piranhas go wild when they smell blood.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.70");
+                        break;
+                    case "The water is bogging you down? Never had an issue with it, personally... Have you tried breathing water instead of air?":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.71");
+                        break;
+                    case "The underworld has gotten a lot hotter since the last time I visited. I hear an obsidian skull is a good luck charm against burning alive, though.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.72");
+                        break;
+                    case "Want to have a breath-holding contest? The empty vacuum of space would be perfect.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.73");
+                        break;
+                    case "The spirits of light and dark stopped by and they sounded pretty upset with you. Don't be too surprised if something happens to you for entering their territory!":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.74");
+                        break;
+                    case "Why not go hunting for some rare monsters every once in a while? Plenty of treasure to be looted and all that.":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.75");
+                        break;
+                    case "Why're you so sad? Has the underground hallow been disorientating? Try turning that frown upside-down, I hear that gravity potions can help!":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.76");
+                        break;
+                    case "If you ask me, Plantera is really letting herself go. Chlorophyte and Life Fruit aren't THAT healthy!":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.77");
+                        break;
+                    case "Trick or treat? Merry Christmas? I don't have anything for you, but go ask Pumpking or Ice Queen!":
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.Deviantt.78");
+                        break;
                 }
 
                 if (npcPhrase == $"{Main.LocalPlayer.name}! I saw something rodent-y just now! You don't have a hamster infestation, right? Right!?")
@@ -377,7 +491,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.NPCs
                         npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.LumberJack.31");
                         break;
                     case "I'm resting after a good day of chopping, come back tomorrow and maybe I'll have something else for you.":
-                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.LumberJackLumberJack.32");
+                        npcPhrase = LangUtilities.TranslationKey("Fargo.NpcChatText.LumberJack.32");
                         break;
                 }
 
@@ -581,7 +695,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.NPCs
                 
                 if (LumberJack.IsExistingNPC() && npcPhrase == $"It's okay {Main.npc[Mutant].GivenName}, just don't look straight into {Main.npc[LumberJack].GivenName}'s eyes. He can't scare you that way...")
                 {
-                    npcPhrase = string.Format(LangUtilities.TranslationKey("Fargo.NpcChatText.Mutant.61"), Main.npc[LumberJack].GivenName);
+                    npcPhrase = string.Format(LangUtilities.TranslationKey("Fargo.NpcChatText.Mutant.61"), Main.npc[Mutant].GivenName, Main.npc[LumberJack].GivenName);
                 }
                 
                 if (Nurse.IsExistingNPC() && npcPhrase == $"Whenever we're alone, {Main.npc[Nurse].GivenName} keeps throwing syringes at me, no matter how many times I tell her to stop!")

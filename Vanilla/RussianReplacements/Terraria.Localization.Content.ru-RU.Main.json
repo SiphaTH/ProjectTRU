@@ -538,8 +538,8 @@
 		"ResolutionChanged": "Разрешение изменено на: {0}x{1}.",
 		"ShortDays": "дн",
 		"ShortHours": "ч",
-		"ShortMinutes": "мин",
-		"ShortSeconds": "сек",
+		"ShortMinutes": "м",
+		"ShortSeconds": "с",
 		"WaterSettled": "Жидкость обработана."
 	},
 	"Net":

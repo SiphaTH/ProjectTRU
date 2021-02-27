@@ -49,7 +49,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 
         public static void LoadCrossContent()
         {
-            if (Calamity != null)
+            if (Calamity != null && !Main.dedServ)
             {
                 BuffsTranslation.SetupTranslation();
                 ItemsTranslation.SetupTranslation();
