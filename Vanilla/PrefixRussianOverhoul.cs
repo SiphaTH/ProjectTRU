@@ -402,7 +402,7 @@ namespace CalamityRuTranslate.Vanilla
 
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (Translation.IsRussianLanguage && ProjectTRuConfig.Instance.NewVanillaTranslation)
+            if (Translation.IsRussianLanguage && ProjectTRuConfig.Instance.NewVanillaTranslation && ProjectTRuConfig.Instance.NewPrefixes)
             {
                 TooltipLine tooltipLine = tooltips.FirstOrDefault(x => x.Name == "ItemName");
                 if(tooltipLine != null && item.prefix > 0)

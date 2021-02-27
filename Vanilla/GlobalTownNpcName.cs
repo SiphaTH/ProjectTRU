@@ -9,7 +9,7 @@ namespace CalamityRuTranslate.Vanilla
     {
         public override void AI(NPC npc)
         {
-            if (!npc.GivenName.CheckRussian() && Translation.GlobalTownNpcName(npc))
+            if (GlobalDictionaries.GlobalTownNpcName.ContainsKey(npc.GivenName))
             {
                 npc.GivenName = LangUtilities.TranslationKey($"Global.TownNpcName.{GlobalDictionaries.GlobalTownNpcName[npc.GivenName]}");
             }

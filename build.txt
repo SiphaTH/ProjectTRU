@@ -3,5 +3,5 @@ author = tRU Team
 version = 2.1.1.0
 hideCode = true
 hideResources = true
-weakReferences = CalamityMod, ThoriumMod, FargowiltasSouls
+weakReferences = CalamityMod, ThoriumMod, FargowiltasSouls, Fargowiltas
 homepage = https://discord.gg/AmFJFYcq4q

@@ -34,6 +34,12 @@ namespace CalamityRuTranslate
         [ReloadRequired]
         public bool NewVanillaTranslation;
         
+        [Label("Определение рода предметов для префиксов (Бета)")]
+        [Tooltip("Добавляет определение рода предметов для префиксов (Пока только ванильные предметы)")]
+        [DefaultValue(false)]
+        [ReloadRequired]
+        public bool NewPrefixes;
+        
         [Label("Описание механики скрытности Каламити")]
         [Tooltip("Показывает текст бонуса скрытности на комплектах брони разбойника")]
         [DefaultValue(true)]
