@@ -17,6 +17,7 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
             MyColors = new[] {new Color(209, 77, 253), new Color(143, 77, 253), new Color(83, 2, 218)};
             CurrentColor = MyColors[0];
             TargetColor = MyColors[1];
+            RatioChanger += f => f + 0.015f;
         }
 
         public override void SetDefaults()

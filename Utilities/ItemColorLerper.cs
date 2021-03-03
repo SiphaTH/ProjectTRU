@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
+using On.Terraria.Social.Steam;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Utilities
 {
     public abstract class ItemColorLerper : ModItem
     {
+        public static Func<float, float> RatioChanger;
         public static Color[] MyColors;
         public static Color CurrentColor;
         public static Color TargetColor;
@@ -22,7 +24,7 @@ namespace CalamityRuTranslate.Utilities
                 
                 if (Ratio < 1f)
                 {
-                    Ratio += 0.015f;
+                    Ratio = RatioChanger?.Invoke(Ratio) ?? 0;
                 }
                 else
                 {
