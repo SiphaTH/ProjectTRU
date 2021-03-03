@@ -41,8 +41,6 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 {
     public class RipperUIIL : ILEdit
     {
-        public override string DictKey => "CalamityMod.UI.RipperUI";
-
         private event ILContext.Manipulator RipperUIHook
         {
             add => HookEndpointManager.Modify(typeof(RipperUI).GetMethod("HandleMouseInteraction", BindingFlags.Static | BindingFlags.NonPublic), value);
@@ -50,7 +48,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(RipperUI).GetMethod("HandleMouseInteraction", BindingFlags.Static | BindingFlags.NonPublic), value);
         }
 
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
 
         public override void Load() => RipperUIHook += TranslationRipperUIHook;
 
@@ -61,52 +59,51 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, "Adrenaline: {0} / {1}", Translation.EncodeToUtf16("Адреналин: {0} / {1}"));
             Translation.ILTranslate(il, "Rage: {0} / {1}", Translation.EncodeToUtf16("Ярость: {0} / {1}"));
         }
-
     }
-
+    
     public class StealthUIIL : ILEdit
     {
-        public override string DictKey => "CalamityMod.UI.StealthUI";
-
+        
+    
         private event ILContext.Manipulator StealthUIHook
         {
             add => HookEndpointManager.Modify(typeof(StealthUI).GetMethod("Draw", BindingFlags.Static | BindingFlags.Public), value);
             
             remove => HookEndpointManager.Unmodify(typeof(StealthUI).GetMethod("Draw", BindingFlags.Static | BindingFlags.Public), value);
         }
-
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+    
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => StealthUIHook += TranslationStealthUIHook;
-
+    
         public override void Unload() => StealthUIHook -= TranslationStealthUIHook;
         
         private void TranslationStealthUIHook(ILContext il) => Translation.ILTranslate(il, "Stealth: ", Translation.EncodeToUtf16("Скрытность: "));
     }
-
+    
     public class AcidRainUIIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.UI.AcidRainUI";
-
+        
+    
         private event ILContext.Manipulator AcidRainUIHook
         {
             add => HookEndpointManager.Modify(typeof(AcidRainUI).GetMethod("get_InvasionName", BindingFlags.Instance | BindingFlags.Public), value);
             
             remove => HookEndpointManager.Unmodify(typeof(AcidRainUI).GetMethod("get_InvasionName", BindingFlags.Instance | BindingFlags.Public), value);
         }
-
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+    
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
     
         public override void Load() => AcidRainUIHook += TranslationAcidRainUIHook;
-
+    
         public override void Unload() => AcidRainUIHook -= TranslationAcidRainUIHook;
         
         private void TranslationAcidRainUIHook(ILContext il) => Translation.ILTranslate(il, "Acid Rain", Translation.EncodeToUtf16("Кислотный дождь"));
     }
-
+    
     public class CalamityPlayerIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.CalPlayer.CalamityPlayer";
+        
             
         private event ILContext.Manipulator PreKillHook
         {
@@ -114,7 +111,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             
             remove => HookEndpointManager.Unmodify(typeof(CalamityPlayer).GetMethod("PreKill", BindingFlags.Instance | BindingFlags.Public), value);
         }
-
+    
         private event ILContext.Manipulator KillPlayerHook
         {
             add => HookEndpointManager.Modify(typeof(CalamityPlayer).GetMethod("KillPlayer", BindingFlags.Instance | BindingFlags.Public), value);
@@ -122,20 +119,20 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(CalamityPlayer).GetMethod("KillPlayer", BindingFlags.Instance | BindingFlags.Public), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
             PreKillHook += TranslationPreKillHook;
             KillPlayerHook += TranslationKillPlayerHook;
         }
-
+    
         public override void Unload()
         {
             PreKillHook -= TranslationPreKillHook;
             KillPlayerHook -= TranslationKillPlayerHook;
         }
-
+    
         private void TranslationPreKillHook(ILContext il)
         {
             Translation.ILTranslate(il, " downed too many shots.", Translation.EncodeToUtf16(" выпил слишком много напитков."));
@@ -176,10 +173,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, " was destroyed by a mysterious force.", Translation.EncodeToUtf16(" был уничтожен таинственной силой."));
         }
     }
-
+    
     public class CheatTestThingIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Accessories.CheatTestThing";
+        
         
         private event ILContext.Manipulator CheatTestThingHook
         {
@@ -188,7 +185,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(CheatTestThing).GetMethod("UpdateAccessory", BindingFlags.Instance | BindingFlags.Public), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => CheatTestThingHook += TranslationCheatTestThingHook;
     
@@ -196,10 +193,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationCheatTestThingHook(ILContext il) => Translation.ILTranslate(il, " isn't worthy.", Translation.EncodeToUtf16(" не достоин."));
     }
-
+    
     public class DraedonLogHellGUIIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.UI.DraedonLogHellGUI";
+        
             
         private event ILContext.Manipulator DraedonLogHellGUIHook
         {
@@ -208,7 +205,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogHellGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DraedonLogHellGUIHook += TranslationDraedonLogHellGUIHook;
     
@@ -221,10 +218,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, "What a terrible abomination and yet an enticing subject. Not unlike the fusion of spirits which haunts the dungeons, this entity is formed not of one, but a multitude of sinners. What holds different for it however, is that the limitations caused by the artificiality of the dungeon's existence do not apply to it. It is the laws of hell which brought them together into a single overlord of the underworld. And when an innocent life is sacrificed... Their hunger, which appears to be in tune with the afterlife, surges.", Translation.EncodeToUtf16("Какое ужасное существо, но всё же интересное с научной точки зрения. В отличие от сплава душ темницы, эта сущность была сформирована не из одного грешника, а из многих. Ещё одно отличие заключается в том, что ограничения, вызванные искусственным происхождением темницы, неприменимы к нему. Именно законы Ада свели их вместе в единого владыку подземного мира. И когда невинная жизнь приносится в жертву... Их голод, который, кажется, является частью загробной жизни, нарастает."));
         }
     }
-
+    
     public class DraedonLogJungleGUIIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.UI.DraedonLogJungleGUI";
+        
             
         private event ILContext.Manipulator DraedonLogJungleGUIHook
         {
@@ -233,7 +230,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogJungleGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DraedonLogJungleGUIHook += TranslationDraedonLogJungleGUIHook;
     
@@ -246,10 +243,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, "A virus, capable of devouring and converting almost anything. And nanotechnology, constructed painstakingly for the sake of control. Development was swift, and every piece fell into place almost eerily, forming an abhorrent existence. I struggle to think of practical applications which would be friendly to common life forms. However, it is not a major concern. Many were hesitant to continue its creation, but I granted them leave if they desired. I would have no need for any who were not entirely as dedicated as my machines.", Translation.EncodeToUtf16("Вирус, способный пожирать и превращать практически всё. И тщательно сделанная нанотехнология контроля. Превращение шло пугающе быстро, создавая мерзкую тварь. Я стараюсь сделать так, чтобы она была дружелюбна к обычным формам жизни. Однако это не главная проблема. Многие не решались продолжать создание, но я разрешил уйти, если они пожелают. Я не нуждался ни в ком, кто не был бы так же предан делу, как мои машины."));
         }
     }
-
+    
     public class DraedonLogPlanetoidGUIIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.UI.DraedonLogPlanetoidGUI";
+        
             
         private event ILContext.Manipulator DraedonLogPlanetoidGUIHook
         {
@@ -258,7 +255,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogPlanetoidGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DraedonLogPlanetoidGUIHook += TranslationDraedonLogPlanetoidGUIHook;
     
@@ -271,10 +268,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, "I do not care much for the interstellar, or the cosmos. Though I have traversed it, there is still plenty in my own world to manage and discover at this time. Even if I once inhabited a different planet, the Lord's wishes that I provide him machinery were the only condition that I needed to leave it and settle elsewhere. Once I have discovered and dissected every part of this place, perhaps then, I could look up towards the macroscopic.", Translation.EncodeToUtf16("Меня мало волнует космос. Да, я путешествовал по нему, но сейчас мне достаточно работы по изучению собственного мира. Даже если бы я когда-то жил на другой планете, одного желания Лорда получать мои технологии было бы достаточно, чтобы я улетел с неё сюда. Если же я когда-нибудь полностью изучу каждый кусочек этого места, то тогда, возможно, я обращу свой взор наверх, в сторону макроскопического."));
         }
     }
-
+    
     public class DraedonLogSnowBiomeGUIIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.UI.DraedonLogSnowBiomeGUI";
+        
             
         private event ILContext.Manipulator DraedonLogSnowBiomeGUIHook
         {
@@ -283,7 +280,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogSnowBiomeGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DraedonLogSnowBiomeGUIHook += TranslationDraedonLogSnowBiomeGUIHook;
     
@@ -296,10 +293,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, "Intriguing. Though embedded deep into the caverns of ice and worn from centuries of frost and meltwater, I have uncovered several mechanisms which once filled the tunnels here. The ingenuity present is remarkable, and I have found parallels within my own work, as well as devices even I have something to learn from. From where do these come? Why machinery so complex in so sparse and dreary a habitat? Perhaps, they are related to the unnatural conditions.", Translation.EncodeToUtf16("Интригующе. Я нашёл механизмы, когда-то заполнявшие туннели. Они находились в ледяных пещерах, поломанные из-за веков во льду и талой воды. Мастерство исполнения поражает. Я нашёл схожести с моими работами, а также узнал что-то новое. Но кто их создал? Почему настолько сложные машины находятся в такой скудной и унылой среде обитания. Возможно, именно они виноваты в настолько неестественных условиях."));
         }
     }
-
+    
     public class DraedonLogSunkenSeaGUIIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.UI.DraedonLogSunkenSeaGUI";
+        
             
         private event ILContext.Manipulator DraedonLogSunkenSeaGUIHook
         {
@@ -308,7 +305,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogSunkenSeaGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DraedonLogSunkenSeaGUIHook += TranslationDraedonLogSunkenSeaGUIHook;
     
@@ -321,10 +318,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, "The marine life in these caves do have eyes though they are barely functional, dulled by lack of use and milky white upon observation. On their tough, gnarled hides, crystals find an easy purchase, and grow in great numbers, providing the creatures protection. Perhaps another adaptation to the life they have adopted. The most striking wonder is within their bodies. In specimens dissected, I have noticed that the mineral is buried into their very digestive systems, and perhaps, through some chemical process, pass nutrients into their sluggish hosts. A peculiar yet entirely beneficial interaction.", Translation.EncodeToUtf16("У морских обитателей в этих пещерах есть глаза-рудименты, внешне они молочно-белые. На их жёстких узловатых шкурах кристаллы растут в большом количестве, обеспечивая существам защиту. Возможно, это ещё одна адаптация к жизни, которую они приняли. Но самое поразительное чудо — внутренности их тел. В образцах, подвергнутых вскрытию, я заметил, что минерал находится в самой их пищеварительной системе и, возможно, через какой-то химический процесс передаёт питательные вещества их вялым хозяевам. Своеобразное, но совершенно благотворное взаимодействие."));
         }
     }
-
+    
     public class WeakReferenceSupportIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.WeakReferenceSupport";
+        
             
         private event ILContext.Manipulator AddCalamityBossesHook
         {
@@ -347,7 +344,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityInvasions", BindingFlags.NonPublic | BindingFlags.Static), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -355,14 +352,14 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             CensusSupportHook += TranslationCensusSupportHook;
             AddCalamityInvasionsHook += TranslationAddCalamityInvasionsHook;
         }
-
+    
         public override void Unload()
         {
             AddCalamityBossesHook -= TranslationAddCalamityBossesHook;
             CensusSupportHook -= TranslationCensusSupportHook;
             AddCalamityInvasionsHook -= TranslationAddCalamityInvasionsHook;
         }
-
+    
         private void TranslationAddCalamityBossesHook(ILContext il)
         {
             Translation.ILTranslate(il, "Use a [i:{0}] in the Desert Biome", Translation.EncodeToUtf16("Используйте [i:{0}] в пустыне."));
@@ -471,10 +468,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, "The mysterious creatures of the sulphuric sea descended back into the deep ocean.", Translation.EncodeToUtf16("Таинственные существа сернистого моря спустились обратно в глубины океана."), 2);
         }
     }
-
+    
     public class FAPIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.TownNPCs.FAP";
+        
             
         private event ILContext.Manipulator SetChatButtonsHook
         {
@@ -490,28 +487,28 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(FAP).GetMethod("GetChat", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
             SetChatButtonsHook += TranslationSetChatButtonsHook;
             GetChatHook += TranslationGetChatHook;
         }
-
+    
         public override void Unload()
         {
             SetChatButtonsHook -= TranslationSetChatButtonsHook;
             GetChatHook -= TranslationGetChatHook;
         }
-
+    
         private void TranslationSetChatButtonsHook(ILContext il) => Translation.ILTranslate(il, "Death Count", Translation.EncodeToUtf16("Количество смертей"));
         
         private void TranslationGetChatHook(ILContext il) => Translation.ILTranslate(il, " was slapped too hard.", Translation.EncodeToUtf16(" получил слишком сильную пощечину."));
     }
-
+    
     public class SEAHOEIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.TownNPCs.SEAHOE";
+        
             
         private event ILContext.Manipulator SetChatButtonsHook
         {
@@ -520,7 +517,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.NPCs.TownNPCs.SEAHOE").GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => SetChatButtonsHook += TranslationSetChatButtonsHook;
     
@@ -528,10 +525,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationSetChatButtonsHook(ILContext il) => Translation.ILTranslate(il, "Help", Translation.EncodeToUtf16("Помощь"));
     }
-
+    
     public class THIEFIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.TownNPCs.THIEF";
+        
             
         private event ILContext.Manipulator SetChatButtonsHook
         {
@@ -540,7 +537,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(THIEF).GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => SetChatButtonsHook += TranslationSetChatButtonsHook;
     
@@ -548,10 +545,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationSetChatButtonsHook(ILContext il) => Translation.ILTranslate(il, "Refund", Translation.EncodeToUtf16("Возврат"));
     }
-
+    
     public class LabHologramProjectorUIIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.UI.LabHologramProjectorUI";
+        
             
         private event ILContext.Manipulator LabHologramProjectorUIHook
         {
@@ -560,7 +557,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(LabHologramProjectorUI).GetMethod("ChooseDialogue", BindingFlags.Public | BindingFlags.Static), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => LabHologramProjectorUIHook += TranslationLabHologramProjectorUIHook;
     
@@ -583,10 +580,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, "Please help. I'm stuck in this hologram machine.", Translation.EncodeToUtf16("Пожалуйста, помогите. Я застрял в голограмме."));
         }
     }
-
+    
     public class AstralInjectionIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Potions.AstralInjection";
+        
             
         private event ILContext.Manipulator AstralInjectionHook
         {
@@ -595,7 +592,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(AstralInjection).GetMethod("OnConsumeItem", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => AstralInjectionHook += TranslationAstralInjectionHook;
     
@@ -603,10 +600,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationAstralInjectionHook(ILContext il) => Translation.ILTranslate(il, "'s blood vessels burst from drug overdose.", Translation.EncodeToUtf16(" кровеносные сосуды лопаются от передозировки наркотиков."));
     }
-
+    
     public class ThornBlossomIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Weapons.Magic.ThornBlossom";
+        
             
         private event ILContext.Manipulator ThornBlossomHook
         {
@@ -615,7 +612,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ThornBlossom).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => ThornBlossomHook += TranslationThornBlossomHook;
     
@@ -623,10 +620,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationThornBlossomHook(ILContext il) => Translation.ILTranslate(il, " was violently pricked by a flower.", Translation.EncodeToUtf16(" был яростно уколот цветком."));
     }
-
+    
     public class LucreciaIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Weapons.Melee.Lucrecia";
+        
             
         private event ILContext.Manipulator LucreciaHook
         {
@@ -635,7 +632,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(Lucrecia).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => LucreciaHook += TranslationLucreciaHook;
     
@@ -643,10 +640,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationLucreciaHook(ILContext il) => Translation.ILTranslate(il, "'s DNA was destroyed.", Translation.EncodeToUtf16(" ДНК была уничтожена."));
     }
-
+    
     public class BloodBoilerIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Weapons.Ranged.BloodBoiler";
+        
             
         private event ILContext.Manipulator BloodBoilerHook
         {
@@ -655,7 +652,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(BloodBoiler).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => BloodBoilerHook += TranslationBloodBoilerHook;
     
@@ -667,10 +664,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, " was unable to obtain a blood transfusion.", Translation.EncodeToUtf16(" не удалось добиться переливания крови."));
         }
     }
-
+    
     public class MolecularManipulatorIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Weapons.Ranged.MolecularManipulator";
+        
             
         private event ILContext.Manipulator MolecularManipulatorHook
         {
@@ -679,7 +676,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(MolecularManipulator).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => MolecularManipulatorHook += TranslationMolecularManipulatorHook;
     
@@ -691,10 +688,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, " was vaporized by the imbuement of her life.", Translation.EncodeToUtf16(" испарилась из-за насыщенности своей жизни."));
         }
     }
-
+    
     public class NullificationRifleIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Weapons.Ranged.NullificationRifle";
+        
             
         private event ILContext.Manipulator NullificationRifleHook
         {
@@ -703,7 +700,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(NullificationRifle).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => NullificationRifleHook += TranslationNullificationRifleHook;
     
@@ -715,10 +712,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, " was vaporized by the imbuement of her life.", Translation.EncodeToUtf16(" испарилась из-за насыщенности своей жизни."));
         }
     }
-
+    
     public class DevourerofGodsHeadIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.DevourerofGods.DevourerofGodsHead";
+        
             
         private event ILContext.Manipulator DevourerofGodsHeadHook
         {
@@ -727,7 +724,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DevourerofGodsHead).GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DevourerofGodsHeadHook += TranslationDevourerofGodsHeadHook;
     
@@ -735,10 +732,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationDevourerofGodsHeadHook(ILContext il) => Translation.ILTranslate(il, "'s essence was consumed by the devourer.", Translation.EncodeToUtf16(" сущность была поглощена пожирателем."));
     }
-
+    
     public class DevourerofGodsHeadSIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.DevourerofGods.DevourerofGodsHeadS";
+        
             
         private event ILContext.Manipulator DevourerofGodsHeadSHook
         {
@@ -747,7 +744,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DevourerofGodsHeadS).GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DevourerofGodsHeadSHook += TranslationDevourerofGodsHeadSHook;
     
@@ -755,10 +752,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationDevourerofGodsHeadSHook(ILContext il) => Translation.ILTranslate(il, "'s essence was consumed by the devourer.", Translation.EncodeToUtf16(" сущность была поглощена пожирателем."));
     }
-
+    
     public class FearlessGoldfishWarriorIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.NormalNPCs.FearlessGoldfishWarrior";
+        
             
         private event ILContext.Manipulator FearlessGoldfishWarriorHook
         {
@@ -767,7 +764,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(FearlessGoldfishWarrior).GetMethod("ModifyHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => FearlessGoldfishWarriorHook += TranslationFearlessGoldfishWarriorHook;
     
@@ -775,10 +772,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationFearlessGoldfishWarriorHook(ILContext il) => Translation.ILTranslate(il, " was once again impaled by Goldfish.", Translation.EncodeToUtf16(" был снова проткнут Золотой рыбкой."));
     }
-
+    
     public class HealOrbProvIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Projectiles.Boss.HealOrbProv";
+        
             
         private event ILContext.Manipulator HealOrbProvHook
         {
@@ -787,7 +784,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(HealOrbProv).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => HealOrbProvHook += TranslationHealOrbProvHook;
     
@@ -795,10 +792,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationHealOrbProvHook(ILContext il) => Translation.ILTranslate(il, " burst into sinless ash.", Translation.EncodeToUtf16(" превратился в безгрешный пепел."));
     }
-
+    
     public class HolyBurnOrbIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Projectiles.Boss.HolyBurnOrb";
+        
             
         private event ILContext.Manipulator HolyBurnOrbHook
         {
@@ -807,7 +804,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(HolyBurnOrb).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => HolyBurnOrbHook += TranslationHolyBurnOrbHook;
     
@@ -815,10 +812,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationHolyBurnOrbHook(ILContext il) => Translation.ILTranslate(il, " burst into sinless ash.", Translation.EncodeToUtf16(" превратился в безгрешный пепел."));
     }
-
+    
     public class ChibiiDoggoIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Projectiles.Pets.ChibiiDoggo";
+        
             
         private event ILContext.Manipulator AIHook
         {
@@ -834,20 +831,20 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ChibiiDoggo).GetMethod("SpawnDoggo", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
             AIHook += TranslationAIHook;
             SpawnDoggoHook += TranslationSpawnDoggoHook;
         }
-
+    
         public override void Unload()
         {
             AIHook -= TranslationAIHook;
             SpawnDoggoHook -= TranslationSpawnDoggoHook;
         }
-
+    
         private void TranslationAIHook(ILContext il) => Translation.ILTranslate(il, " couldn't stand the sharp objects.", Translation.EncodeToUtf16(" не выдерживал острых предметов."));
         
         private void TranslationSpawnDoggoHook(ILContext il)
@@ -856,10 +853,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, "Don't get cocky, kid!", Translation.EncodeToUtf16("Не будь таким самоуверенным, малыш!"));
         }
     }
-
+    
     public class CalamityUtilsIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.CalamityUtils";
+        
             
         private event ILContext.Manipulator CalamityUtilsHook
         {
@@ -868,7 +865,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(CalamityUtils).GetMethod("BedRightClick", BindingFlags.Public | BindingFlags.Static), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => CalamityUtilsHook += TranslationCalamityUtilsHook;
     
@@ -880,10 +877,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, "Spawn point set!", Translation.EncodeToUtf16("Точка воскрешения задана!"));
         }
     }
-
+    
     public class PlaguedPlateBedIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Tiles.FurniturePlaguedPlate.PlaguedPlateBed";
+        
             
         private event ILContext.Manipulator PlaguedPlateBedHook
         {
@@ -892,7 +889,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(PlaguedPlateBed).GetMethod("NewRightClick", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => PlaguedPlateBedHook += TranslationPlaguedPlateBedHook;
     
@@ -904,10 +901,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, "Spawn point set!", Translation.EncodeToUtf16("Точка воскрешения задана!"));
         }
     }
-
+    
     public class RavagerBodyIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.Ravager.RavagerBody";
+        
             
         private event ILContext.Manipulator RavagerBodyHook
         {
@@ -916,7 +913,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(RavagerBody).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => RavagerBodyHook += TranslationRavagerBodyHook;
     
@@ -924,10 +921,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationRavagerBodyHook(ILContext il) => Translation.ILTranslate(il, "Ravager", Translation.EncodeToUtf16("Разрушитель"));
     }
-
+    
     public class CalamitasRun3IL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.Calamitas.CalamitasRun3";
+        
             
         private event ILContext.Manipulator CalamitasRun3Hook
         {
@@ -936,7 +933,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(CalamitasRun3).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => CalamitasRun3Hook += TranslationCalamitasRun3Hook;
     
@@ -944,10 +941,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationCalamitasRun3Hook(ILContext il) => Translation.ILTranslate(il, "The Calamitas Clone", Translation.EncodeToUtf16("Клон Каламитас"));
     }
-
+    
     public class BossHPUIIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.UI.BossHealthBarManager+BossHPUI";
+        
             
         private event ILContext.Manipulator DrawHook
         {
@@ -963,20 +960,20 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("DrawOpenAnim", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
             DrawHook += TranslationDrawHook;
             DrawOpenAnimHook += TranslationDrawOpenAnimHook;
         }
-
+    
         public override void Unload()
         {
             DrawHook -= TranslationDrawHook;
             DrawOpenAnimHook -= TranslationDrawOpenAnimHook;
         }
-
+    
         private void TranslationDrawHook(ILContext il)
         {
             Translation.ILTranslate(il, "(Segments left: ", Translation.EncodeToUtf16("(Осталось сегментов: "));
@@ -1003,10 +1000,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             Translation.ILTranslate(il, "(Large Slimes left: ", Translation.EncodeToUtf16("(Осталось больших слизней: "));
         }
     }
-
+    
     public class ProfanedGuardianBoss2IL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.ProfanedGuardians.ProfanedGuardianBoss2";
+        
             
         private event ILContext.Manipulator ProfanedGuardianBoss2Hook
         {
@@ -1015,7 +1012,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ProfanedGuardianBoss2).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => ProfanedGuardianBoss2Hook += TranslationProfanedGuardianBoss2Hook;
     
@@ -1023,10 +1020,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationProfanedGuardianBoss2Hook(ILContext il) => Translation.ILTranslate(il, "A Profaned Guardian", Translation.EncodeToUtf16("Осквернённый страж"));
     }
-
+    
     public class PerforatorHeadLargeIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.Perforator.PerforatorHeadLarge";
+        
             
         private event ILContext.Manipulator PerforatorHeadLargeHook
         {
@@ -1035,7 +1032,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(PerforatorHeadLarge).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => PerforatorHeadLargeHook += TranslationPerforatorHeadLargeHook;
     
@@ -1043,10 +1040,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationPerforatorHeadLargeHook(ILContext il) => Translation.ILTranslate(il, "The Large Perforator", Translation.EncodeToUtf16("Перфоратор"));
     }
-
+    
     public class PerforatorHeadSmallIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.Perforator.PerforatorHeadSmall";
+        
             
         private event ILContext.Manipulator PerforatorHeadSmallHook
         {
@@ -1055,7 +1052,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(PerforatorHeadSmall).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => PerforatorHeadSmallHook += TranslationPerforatorHeadSmallHook;
     
@@ -1063,10 +1060,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationPerforatorHeadSmallHook(ILContext il) => Translation.ILTranslate(il, "The Small Perforator", Translation.EncodeToUtf16("Перфоратор"));
     }
-
+    
     public class BumblefuckIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.Bumblebirb.Bumblefuck";
+        
             
         private event ILContext.Manipulator BumblefuckHook
         {
@@ -1075,7 +1072,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(Bumblefuck).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => BumblefuckHook += TranslationBumblefuckHook;
     
@@ -1083,10 +1080,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationBumblefuckHook(ILContext il) => Translation.ILTranslate(il, "A Dragonfolly", Translation.EncodeToUtf16("Псевдодракон"));
     }
-
+    
     public class PerforatorHeadMediumIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.Perforator.PerforatorHeadMedium";
+        
             
         private event ILContext.Manipulator PerforatorHeadMediumHook
         {
@@ -1095,7 +1092,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(PerforatorHeadMedium).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => PerforatorHeadMediumHook += TranslationPerforatorHeadMediumHook;
     
@@ -1103,10 +1100,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationPerforatorHeadMediumHook(ILContext il) => Translation.ILTranslate(il, "The Medium Perforator", Translation.EncodeToUtf16("Перфоратор"));
     }
-
+    
     public class ProfanedGuardianBoss3IL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.ProfanedGuardians.ProfanedGuardianBoss3";
+        
             
         private event ILContext.Manipulator ProfanedGuardianBoss3Hook
         {
@@ -1115,7 +1112,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ProfanedGuardianBoss3).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => ProfanedGuardianBoss3Hook += TranslationProfanedGuardianBoss3Hook;
     
@@ -1123,10 +1120,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationProfanedGuardianBoss3Hook(ILContext il) => Translation.ILTranslate(il, "A Profaned Guardian", Translation.EncodeToUtf16("Осквернённый страж"));
     }
-
+    
     public class ProfanedGuardianBossIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.ProfanedGuardians.ProfanedGuardianBoss";
+        
             
         private event ILContext.Manipulator ProfanedGuardianBossHook
         {
@@ -1135,7 +1132,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ProfanedGuardianBoss).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => ProfanedGuardianBossHook += TranslationProfanedGuardianBossHook;
     
@@ -1143,10 +1140,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationProfanedGuardianBossHook(ILContext il) => Translation.ILTranslate(il, "A Profaned Guardian", Translation.EncodeToUtf16("Осквернённый страж"));
     }
-
+    
     public class BossRushUIIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.UI.BossRushUI";
+        
             
         private event ILContext.Manipulator BossRushUIHook
         {
@@ -1155,7 +1152,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(BossRushUI).GetMethod("get_InvasionName", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => BossRushUIHook += TranslationBossRushUIHook;
     
@@ -1163,10 +1160,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationBossRushUIHook(ILContext il) => Translation.ILTranslate(il, "Boss Rush", Translation.EncodeToUtf16("Босс-Раш"));
     }
-
+    
     public class ColdDivinityIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Weapons.Summon.ColdDivinity";
+        
             
         private event ILContext.Manipulator ColdDivinityHook
         {
@@ -1175,7 +1172,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ColdDivinity).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => ColdDivinityHook += TranslationColdDivinityHook;
     
@@ -1183,67 +1180,67 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationColdDivinityHook(ILContext il) => Translation.ILTranslate(il, "Tooltip7", "Tooltip6");
     }
-
+    
     public class FurnitureOccultIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Placeables.FurnitureOccult";
-
+        
+    
         private event ILContext.Manipulator OccultBathtubHook
         {
             add => HookEndpointManager.Modify(typeof(OccultBathtub).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         
             remove => HookEndpointManager.Unmodify(typeof(OccultBathtub).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-
+    
         private event ILContext.Manipulator OccultBedHook
         {
             add => HookEndpointManager.Modify(typeof(OccultBed).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         
             remove => HookEndpointManager.Unmodify(typeof(OccultBed).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-
+    
         private event ILContext.Manipulator OccultBookcaseHook
         {
             add => HookEndpointManager.Modify(typeof(OccultBookcase).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         
             remove => HookEndpointManager.Unmodify(typeof(OccultBookcase).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-
+    
         private event ILContext.Manipulator OccultCandelabraHook
         {
             add => HookEndpointManager.Modify(typeof(OccultCandelabra).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         
             remove => HookEndpointManager.Unmodify(typeof(OccultCandelabra).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-
+    
         private event ILContext.Manipulator OccultCandleHook
         {
             add => HookEndpointManager.Modify(typeof(OccultCandle).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         
             remove => HookEndpointManager.Unmodify(typeof(OccultCandle).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-
+    
         private event ILContext.Manipulator OccultChairHook
         {
             add => HookEndpointManager.Modify(typeof(OccultChair).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         
             remove => HookEndpointManager.Unmodify(typeof(OccultChair).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-
+    
         private event ILContext.Manipulator OccultChandelierHook
         {
             add => HookEndpointManager.Modify(typeof(OccultChandelier).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         
             remove => HookEndpointManager.Unmodify(typeof(OccultChandelier).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-
+    
         private event ILContext.Manipulator OccultChestHook
         {
             add => HookEndpointManager.Modify(typeof(OccultChest).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         
             remove => HookEndpointManager.Unmodify(typeof(OccultChest).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-
+    
         private event ILContext.Manipulator OccultClockHook
         {
             add => HookEndpointManager.Modify(typeof(OccultClock).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1264,7 +1261,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
             remove => HookEndpointManager.Unmodify(typeof(OccultDresser).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-
+    
         private event ILContext.Manipulator OccultLampHook
         {
             add => HookEndpointManager.Modify(typeof(OccultLamp).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1335,8 +1332,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(OccultStoneWall).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
-
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+    
         public override void Load()
         {
             OccultBathtubHook += TranslationOccultBathtubHook;
@@ -1361,7 +1358,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             OccultWorkBenchHook += TranslationOccultWorkBenchHook;
             OccultStoneWallHook += TranslationOccultStoneWallHook;
         }
-
+    
         public override void Unload()
         {
             OccultBathtubHook -= TranslationOccultBathtubHook;
@@ -1386,7 +1383,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             OccultWorkBenchHook -= TranslationOccultWorkBenchHook;
             OccultStoneWallHook -= TranslationOccultStoneWallHook;
         }
-
+    
         private void TranslationOccultBathtubHook(ILContext il) => Translation.ILTranslate(il, "Otherworldly Bathtub", Translation.EncodeToUtf16("Потусторонняя ванна"));
         
         private void TranslationOccultBedHook(ILContext il) => Translation.ILTranslate(il, "Otherworldly Bed", Translation.EncodeToUtf16("Потусторонняя кровать"));
@@ -1429,10 +1426,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationOccultStoneWallHook(ILContext il) => Translation.ILTranslate(il, "Otherworldly Stone Wall", Translation.EncodeToUtf16("Стена из потустороннего камня"));
     }
-
+    
     public class StratusWorkbenchIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Placeables.FurnitureStratus.StratusWorkbench";
+        
             
         private event ILContext.Manipulator StratusWorkbenchHook
         {
@@ -1441,7 +1438,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(StratusWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => StratusWorkbenchHook += TranslationStratusWorkbenchHook;
     
@@ -1449,10 +1446,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationStratusWorkbenchHook(ILContext il) => Translation.ILTranslate(il, "Stratus Work Bench", Translation.EncodeToUtf16("Слоистый верстак"));
     }
- 
+    
     public class FurnitureStatigelIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Placeables.FurnitureStatigel";
+        
             
         private event ILContext.Manipulator StatigelWorkbenchHook
         {
@@ -1468,28 +1465,28 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(StatigelBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
             StatigelWorkbenchHook += TranslationStatigelWorkbenchHook;
             StatigelBathHook += TranslationStatigelBathHook;
         }
-
+    
         public override void Unload()
         {
             StatigelWorkbenchHook -= TranslationStatigelWorkbenchHook;
             StatigelBathHook -= TranslationStatigelBathHook;
         }
-
+    
         private void TranslationStatigelWorkbenchHook(ILContext il) => Translation.ILTranslate(il, "Statigel Work Bench", Translation.EncodeToUtf16("Статиджеловый верстак"));
         
         private void TranslationStatigelBathHook(ILContext il) => Translation.ILTranslate(il, "Statigel Bathtub", Translation.EncodeToUtf16("Статиджеловая ванна"));
     }
-
+    
     public class FurnitureProfanedIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Placeables.FurnitureProfaned";
+        
             
         private event ILContext.Manipulator ProfanedWorkbenchHook
         {
@@ -1505,28 +1502,28 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ProfanedBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
             ProfanedWorkbenchHook += TranslationProfanedWorkbenchHook;
             ProfanedBathHook += TranslationProfanedBathHook;
         }
-
+    
         public override void Unload()
         {
             ProfanedWorkbenchHook -= TranslationProfanedWorkbenchHook;
             ProfanedBathHook -= TranslationProfanedBathHook;
         }
-
+    
         private void TranslationProfanedWorkbenchHook(ILContext il) => Translation.ILTranslate(il, "Profaned Work Bench", Translation.EncodeToUtf16("Осквернённый верстак"));
         
         private void TranslationProfanedBathHook(ILContext il) => Translation.ILTranslate(il, "Profaned Bathtub", Translation.EncodeToUtf16("Осквернённая ванна"));
     }
-   
+    
     public class FurnitureVoidIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Placeables.FurnitureVoid";
+        
             
         private event ILContext.Manipulator VoidWorkbenchHook
         {
@@ -1549,7 +1546,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(VoidBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1557,24 +1554,24 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             VoidClockHook += TranslationVoidClockHook;
             VoidBathHook += TranslationVoidBathHook;
         }
-
+    
         public override void Unload()
         {
             VoidWorkbenchHook -= TranslationVoidWorkbenchHook;
             VoidClockHook -= TranslationVoidClockHook;
             VoidBathHook -= TranslationVoidBathHook;
         }
-
+    
         private void TranslationVoidWorkbenchHook(ILContext il) => Translation.ILTranslate(il, "Void Work Bench", Translation.EncodeToUtf16("Пустотный верстак"));
         
         private void TranslationVoidClockHook(ILContext il) => Translation.ILTranslate(il, "Void Obelisk", Translation.EncodeToUtf16("Пустотный обелиск"));
         
         private void TranslationVoidBathHook(ILContext il) => Translation.ILTranslate(il, "Void Bathtub", Translation.EncodeToUtf16("Пустотная ванна"));
     }
-  
+    
     public class FurnitureCosmiliteIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Placeables.FurnitureCosmilite";
+        
             
         private event ILContext.Manipulator CosmiliteWorkbenchHook
         {
@@ -1590,28 +1587,28 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(CosmiliteBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
             CosmiliteWorkbenchHook += TranslationCosmiliteWorkbenchHook;
             CosmiliteBathHook += TranslationCosmiliteBathHook;
         }
-
+    
         public override void Unload()
         {
             CosmiliteWorkbenchHook -= TranslationCosmiliteWorkbenchHook;
             CosmiliteBathHook -= TranslationCosmiliteBathHook;
         }
-
+    
         private void TranslationCosmiliteWorkbenchHook(ILContext il) => Translation.ILTranslate(il, "Cosmilite Work Bench", Translation.EncodeToUtf16("Космилитовый верстак"));
         
         private void TranslationCosmiliteBathHook(ILContext il) => Translation.ILTranslate(il, "Cosmilite Bathtub", Translation.EncodeToUtf16("Космилитовая ванна"));
     }
-
+    
     public class FurnitureAshenIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Placeables.FurnitureAshen";
+        
             
         private event ILContext.Manipulator AshenPianoHook
         {
@@ -1634,7 +1631,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(AshenBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1642,24 +1639,24 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             AshenWorkbenchHook += TranslationAshenWorkbenchHook;
             AshenBathHook += TranslationAshenBathHook;
         }
-
+    
         public override void Unload()
         {
             AshenPianoHook -= TranslationAshenPianoHook;
             AshenWorkbenchHook -= TranslationAshenWorkbenchHook;
             AshenBathHook -= TranslationAshenBathHook;
         }
-
+    
         private void TranslationAshenPianoHook(ILContext il) => Translation.ILTranslate(il, "Ashen Pipe Organ", Translation.EncodeToUtf16("Пепельный трубный орган"));
         
         private void TranslationAshenWorkbenchHook(ILContext il) => Translation.ILTranslate(il, "Ashen Work Bench", Translation.EncodeToUtf16("Пепельный верстак"));
         
         private void TranslationAshenBathHook(ILContext il) => Translation.ILTranslate(il, "Ashen Bathtub", Translation.EncodeToUtf16("Пепельная ванна"));
     }
- 
+    
     public class CraftingStationsIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Placeables.Furniture.CraftingStations";
+        
             
         private event ILContext.Manipulator EutrophicCraftingHook
         {
@@ -1689,7 +1686,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(SilvaBasin).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1698,7 +1695,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             ProfanedBasinHook += TranslationProfanedBasinHook;
             SilvaBasinHook += TranslationSilvaBasinHook;
         }
-
+    
         public override void Unload()
         {
             EutrophicCraftingHook -= TranslationEutrophicCraftingHook;
@@ -1706,7 +1703,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             ProfanedBasinHook -= TranslationProfanedBasinHook;
             SilvaBasinHook -= TranslationSilvaBasinHook;
         }
-
+    
         private void TranslationEutrophicCraftingHook(ILContext il) => Translation.ILTranslate(il, "Eutrophic Shelf", Translation.EncodeToUtf16("Эвтрофная полка"));
         
         private void TranslationMonolithCraftingHook(ILContext il) => Translation.ILTranslate(il, "Monolith Amalgam", Translation.EncodeToUtf16("Монолитное слияние"));
@@ -1715,10 +1712,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationSilvaBasinHook(ILContext il) => Translation.ILTranslate(il, "Effulgent Manipulator", Translation.EncodeToUtf16("Лучезарный манипулятор"));
     }
- 
+    
     public class FurnitureAbyssIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Placeables.FurnitureAbyss";
+        
             
         private event ILContext.Manipulator AbyssBathHook
         {
@@ -1741,7 +1738,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(AbyssPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1749,24 +1746,24 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             AbyssWorkbenchHook += TranslationAbyssWorkbenchHook;
             AbyssPianoHook += TranslationAbyssPianoHook;
         }
-
+    
         public override void Unload()
         {
             AbyssBathHook -= TranslationAbyssBathHook;
             AbyssWorkbenchHook -= TranslationAbyssWorkbenchHook;
             AbyssPianoHook -= TranslationAbyssPianoHook;
         }
-
+    
         private void TranslationAbyssBathHook(ILContext il) => Translation.ILTranslate(il, "Abyss Bathtub", Translation.EncodeToUtf16("Ванна бездны"));
         
         private void TranslationAbyssWorkbenchHook(ILContext il) => Translation.ILTranslate(il, "Abyss Work Bench", Translation.EncodeToUtf16("Верстак бездны"));
         
         private void TranslationAbyssPianoHook(ILContext il) => Translation.ILTranslate(il, "Abyss Synth", Translation.EncodeToUtf16("Синтезатор бездны"));
     }
- 
+    
     public class FurnitureAncientIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Placeables.FurnitureAncient";
+        
             
         private event ILContext.Manipulator AncientBathHook
         {
@@ -1789,7 +1786,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(AncientPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1797,24 +1794,24 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             AncientWorkbenchHook += TranslationAncientWorkbenchHook;
             AncientPianoHook += TranslationAncientPianoHook;
         }
-
+    
         public override void Unload()
         {
             AncientBathHook -= TranslationAncientBathHook;
             AncientWorkbenchHook -= TranslationAncientWorkbenchHook;
             AncientPianoHook -= TranslationAncientPianoHook;
         }
-
+    
         private void TranslationAncientBathHook(ILContext il) => Translation.ILTranslate(il, "Ancient Bathtub", Translation.EncodeToUtf16("Древняя ванна"));
         
         private void TranslationAncientWorkbenchHook(ILContext il) => Translation.ILTranslate(il, "Ancient Work Bench", Translation.EncodeToUtf16("Древний верстак"));
         
         private void TranslationAncientPianoHook(ILContext il) => Translation.ILTranslate(il, "Ancient Pipe Organ", Translation.EncodeToUtf16("Древний трубный орган"));
     }
-
+    
     public class FurnitureAstralIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Placeables.FurnitureAstral";
+        
             
         private event ILContext.Manipulator MonolithBathtubHook
         {
@@ -1949,7 +1946,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(MonolithWorkBench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1973,7 +1970,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             MonolithTableHook += TranslationMonolithTableHook;
             MonolithWorkBenchHook += TranslationMonolithWorkBenchHook;
         }
-
+    
         public override void Unload()
         {
             MonolithBathtubHook -= TranslationMonolithBathtubHook;
@@ -1996,7 +1993,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             MonolithTableHook -= TranslationMonolithTableHook;
             MonolithWorkBenchHook -= TranslationMonolithWorkBenchHook;
         }
-
+    
         private void TranslationMonolithBathtubHook(ILContext il) => Translation.ILTranslate(il, "Monolith Bathtub", Translation.EncodeToUtf16("Монолитная ванна"));
         
         private void TranslationMonolithBedHook(ILContext il) => Translation.ILTranslate(il, "Monolith Bed", Translation.EncodeToUtf16("Монолитная кровать"));
@@ -2035,44 +2032,40 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationMonolithWorkBenchHook(ILContext il) => Translation.ILTranslate(il, "Monolith Work Bench", Translation.EncodeToUtf16("Монолитный верстак"));
     }
-  
+    
     public class NanotechIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.Items.Accessories.Nanotech";
-
         private event ILContext.Manipulator NanotechHook
         {
             add => HookEndpointManager.Modify(typeof(Nanotech).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
         
             remove => HookEndpointManager.Unmodify(typeof(Nanotech).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
         }
-
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
-
+    
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+    
         public override void Load() => NanotechHook += TranslationNanotechHook;
-
+    
         public override void Unload() => NanotechHook -= TranslationNanotechHook;
-
+    
         private void TranslationNanotechHook(ILContext il) => Translation.ILTranslate(il, "Tooltip8", Translation.EncodeToUtf16("Tooltip7"));
     }
         
     public class PolterghastIL: ILEdit
     {
-        public override string DictKey => "CalamityMod.NPCs.Polterghast.Polterghast";
-
         private event ILContext.Manipulator PolterghastHook
         {
             add => HookEndpointManager.Modify(typeof(Polterghast).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
         
             remove => HookEndpointManager.Unmodify(typeof(Polterghast).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
         }
-
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null;
-
+    
+        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+    
         public override void Load() => PolterghastHook += TranslationPolterghastHook;
-
+    
         public override void Unload() => PolterghastHook -= TranslationPolterghastHook;
-
+    
         private void TranslationPolterghastHook(ILContext il)
         {
             Translation.ILTranslate(il, "Necroghast", Translation.EncodeToUtf16("Некрогаст"));

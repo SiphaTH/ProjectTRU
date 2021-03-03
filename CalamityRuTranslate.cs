@@ -3,6 +3,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 using CalamityRuTranslate.Common;
+using CalamityRuTranslate.Content;
 using CalamityRuTranslate.DictionariesAndLists;
 using CalamityRuTranslate.Mods.CalamityMod;
 using CalamityRuTranslate.Mods.Fargowiltas;
@@ -50,24 +51,31 @@ namespace CalamityRuTranslate
             ILManager.Unload();
             UnloadFont();
             GlobalDictionaries.UnloadDictionaries();
+            TRuGlowmask.Unload();
         }
 		
         public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
         {
-            CoreCalamityTranslation.LoadNpcChat();
-            CoreFargowiltasTranslation.LoadNpcChat();
-            if (Translation.IsRussianLanguage && ProjectTRuConfig.Instance.ThoriumTranslation && ModLoader.GetMod("ThoriumMod") != null)
+            if (Translation.IsRussianLanguage)
             {
-                ThoriumSupport.ThoriumNpcChat();
+                CoreCalamityTranslation.LoadNpcChat();
+                CoreFargowiltasTranslation.LoadNpcChat();
+                if (ProjectTRuConfig.Instance.ThoriumTranslation && ModLoader.GetMod("ThoriumMod") != null)
+                {
+                    ThoriumSupport.ThoriumNpcChat();
+                }
             }
         }
 		
         public override void PostSetupContent()
         {
-            CoreCalamityTranslation.LoadCrossContent();
-            CoreFargowiltasTranslation.LoadCrossContent();
-            CoreFargowiltasSoulsTranslation.LoadCrossContent();
-            CoreThoriumTranslation.LoadCrossContent();
+            if (Translation.IsRussianLanguage && !Main.dedServ)
+            {
+                CoreCalamityTranslation.LoadCrossContent();
+                CoreFargowiltasTranslation.LoadCrossContent();
+                CoreFargowiltasSoulsTranslation.LoadCrossContent();
+                CoreThoriumTranslation.LoadCrossContent();
+            }
         }
         
         private void LoadAlternateRussian(LanguageManager languageManager, string prefix)
@@ -93,7 +101,7 @@ namespace CalamityRuTranslate
 
         private void LoadFont()
         {
-            if (ProjectTRuConfig.Instance.NewRussianTerrariaFont && !Main.dedServ)
+            if (ProjectTRuConfig.Instance.NewRussianTerrariaFont && Translation.IsRussianLanguage && !Main.dedServ)
             {
                 Main.fontItemStack = Instance.GetFont("Fonts/Item_Stack");
                 Main.fontMouseText = Instance.GetFont("Fonts/Mouse_Text");

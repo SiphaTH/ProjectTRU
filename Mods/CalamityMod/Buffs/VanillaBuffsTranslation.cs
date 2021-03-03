@@ -7,84 +7,106 @@ namespace CalamityRuTranslate.Mods.CalamityMod.Buffs
 {
     public class VanillaBuffsTranslation : GlobalBuff
     {
-        public override bool Autoload(ref string name) => CoreCalamityTranslation.Calamity != null;
+        public override bool Autoload(ref string name) => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
         
         public override void ModifyBuffTip(int type, ref string tip, ref int rare)
         {
             switch (type)
             {
                 case BuffID.NebulaUpDmg1:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.NebulaUpDmg1");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.NebulaUpDmg1");
                     break;
+                
                 case BuffID.NebulaUpDmg2:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.NebulaUpDmg2");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.NebulaUpDmg2");
                     break;
+                
                 case BuffID.NebulaUpDmg3:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.NebulaUpDmg3");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.NebulaUpDmg3");
                     break;
+                
                 case BuffID.BeetleEndurance1:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.BeetleEndurance1");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.BeetleEndurance1");
                     break;
+                
                 case BuffID.BeetleEndurance2:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.BeetleEndurance2");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.BeetleEndurance2");
                     break;
+                
                 case BuffID.BeetleEndurance3:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.BeetleEndurance3");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.BeetleEndurance3");
                     break;
+                
                 case BuffID.WeaponImbueVenom:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.WeaponImbueVenom");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.WeaponImbueVenom");
                     break;
+                
                 case BuffID.WeaponImbueCursedFlames:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.WeaponImbueCursedFlames");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.WeaponImbueCursedFlames");
                     break;
+                
                 case BuffID.WeaponImbueFire:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.WeaponImbueFire");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.WeaponImbueFire");
                     break;
+                
                 case BuffID.WeaponImbueGold:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.WeaponImbueGold");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.WeaponImbueGold");
                     break;
+                
                 case BuffID.WeaponImbueIchor:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.WeaponImbueIchor");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.WeaponImbueIchor");
                     break;
+                
                 case BuffID.WeaponImbueNanites:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.WeaponImbueNanites");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.WeaponImbueNanites");
                     break;
+                
                 case BuffID.WeaponImbueConfetti:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.WeaponImbueConfetti");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.WeaponImbueConfetti");
                     break;
+                
                 case BuffID.WeaponImbuePoison:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.WeaponImbuePoison");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.WeaponImbuePoison");
                     break;
+                
                 case BuffID.IceBarrier:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.IceBarrier");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.IceBarrier");
                     break;
+                
                 case BuffID.ChaosState:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.ChaosState");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.ChaosState");
                     break;
+                
                 case BuffID.CursedInferno:
                     if (CoreCalamityTranslation.Revenge)
-                        tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.CursedInferno");
+                        tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.CursedInferno");
                     break;
+                
                 case BuffID.Warmth:
                     tip = CoreCalamityTranslation.DeathMode
-                        ? LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.Warmth.DeathMode")
-                        : LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.Warmth");
+                        ? LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.Warmth.DeathMode")
+                        : LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.Warmth");
                     break;
+                
                 case BuffID.Invisibility:
-                    tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.Invisibility");
+                    tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.Invisibility");
                     break;
+                
                 case BuffID.ObsidianSkin:
                     if (CoreCalamityTranslation.DeathMode)
-                        tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.ObsidianSkin.DeathMode");
+                        tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.ObsidianSkin.DeathMode");
                     break;
+                
                 case BuffID.Inferno:
                     if (CoreCalamityTranslation.DeathMode)
-                        tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.Inferno.DeathMode");
+                        tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.Inferno.DeathMode");
                     break;
+                
                 case BuffID.Campfire:
                     if (CoreCalamityTranslation.DeathMode)
-                        tip = LangUtilities.GetTextValue("Calamity","Vanilla.BuffDescription.Campfire.DeathMode");
+                        tip = LangUtilities.GetTextValue("Calamity", "Vanilla.BuffDescription.Campfire.DeathMode");
                     break;
+                
                 case BuffID.Daybreak:
                     tip = Language.GetTextValue("BuffDescription.Daybreak");
                     break;

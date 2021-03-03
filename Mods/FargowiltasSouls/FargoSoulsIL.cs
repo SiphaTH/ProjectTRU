@@ -8,9 +8,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 {
     public class FargoPlayerIL : ILEdit
     {
-        public override string DictKey => "FargowiltasSouls.FargoPlayer";
-        
-        public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+        public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
 
         public override void Load()
         {
@@ -52,9 +50,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
     
     public class FargowiltasIL : ILEdit
     {
-        public override string DictKey => "FargowiltasSouls.Fargowiltas.HandlePacket";
-        
-        public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+        public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.FargowiltasSouls.Fargowiltas.HandlePacket += TranslationFargowiltasHook;
         
@@ -65,8 +61,6 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
     
      public class BossChecklistCompatibilityIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility";
-         
          private event ILContext.Manipulator InitializeBossesHook
          {
              add => HookEndpointManager.Modify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeBosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
@@ -81,7 +75,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
              remove => HookEndpointManager.Unmodify(CoreFargowiltasSoulsTranslation.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeMinibosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
          }
          
-         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
 
          public override void Load()
          {
@@ -142,9 +136,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
      public class EModeGlobalNPCIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.NPCs.EModeGlobalNPC";
-
-         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
          
          public override void Load()
          {
@@ -224,9 +216,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
      public class MutantsFuryIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Misc.MutantsFury.UseItem";
-
-         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
          
          public override void Load() => IL.FargowiltasSouls.Items.Misc.MutantsFury.UseItem += TranslationMutantsFuryHook;
          
@@ -241,9 +231,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
      
      public class AbominationnVoodooDollIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Summons.AbominationnVoodooDoll.Update";
-
-         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
          
          public override void Load() => IL.FargowiltasSouls.Items.Summons.AbominationnVoodooDoll.Update += TranslationAbominationnVoodooDollHook;
          
@@ -254,9 +242,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
      
      public class AbomsCurseIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Summons.AbomsCurse.UseItem";
-
-         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
          
          public override void Load() => IL.FargowiltasSouls.Items.Summons.AbomsCurse.UseItem += TranslationAbomsCurseHook;
          
@@ -267,9 +253,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
      
      public class DevisCurseIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Summons.DevisCurse.UseItem";
-
-         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
          
          public override void Load() => IL.FargowiltasSouls.Items.Summons.DevisCurse.UseItem += TranslationDevisCurseHook;
          
@@ -284,9 +268,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
      
      public class MutantsCurseIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Summons.MutantsCurse.UseItem";
-
-         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
          
          public override void Load() => IL.FargowiltasSouls.Items.Summons.MutantsCurse.UseItem += TranslationMutantsCurseHook;
          
@@ -301,9 +283,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
      
      public class SigilOfChampionsIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Summons.SigilOfChampions.UseItem";
-
-         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
          
          public override void Load() => IL.FargowiltasSouls.Items.Summons.SigilOfChampions.UseItem += TranslationSigilOfChampionsHook;
          
@@ -326,9 +306,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
      
      public class PiranhaPlantVoodooDollIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Patreon.LaBonez.PiranhaPlantVoodooDoll.UseItem";
-         
-         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
          
          public override void Load() => IL.FargowiltasSouls.Patreon.LaBonez.PiranhaPlantVoodooDoll.UseItem += TranslationPiranhaPlantVoodooDollHook;
          
@@ -343,9 +321,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
      
      public class PatreonPlayerIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.PatreonPlayer.OnEnterWorld";
-
-         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
          
          public override void Load() => IL.FargowiltasSouls.PatreonPlayer.OnEnterWorld += TranslationPatreonPlayerHook;
          
@@ -356,9 +332,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
      
      public class MutantSpawnIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Projectiles.Pets.MutantSpawn.BeCompanionCube";
-
-         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
          
          public override void Load() => IL.FargowiltasSouls.Projectiles.Pets.MutantSpawn.BeCompanionCube += TranslationMutantSpawnHook;
          
@@ -374,9 +348,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
      
      public class MasochistIL : ILEdit
      {
-         public override string DictKey => "FargowiltasSouls.Items.Masochist.UseItem";
-         
-         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+         public override bool Autoload() => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
          
          public override void Load() => IL.FargowiltasSouls.Items.Masochist.UseItem += TranslationUseItemHook;
          

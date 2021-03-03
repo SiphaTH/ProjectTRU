@@ -2,8 +2,6 @@
 {
     public abstract class ILEdit
     {
-        public abstract string DictKey { get; }
-
         public virtual bool Autoload() => true;
 
         public abstract void Load();

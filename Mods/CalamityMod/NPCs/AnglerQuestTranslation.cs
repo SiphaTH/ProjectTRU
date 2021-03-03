@@ -1,6 +1,5 @@
 ﻿using CalamityRuTranslate.Mods.CalamityMod.Items;
 using CalamityRuTranslate.Utilities;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.NPCs
 {

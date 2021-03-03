@@ -7,8 +7,6 @@ namespace CalamityRuTranslate.Vanilla
 {
     public class DrawInfoAccsIL : ILEdit
     {
-        public override string DictKey => "Terraria.Main.DrawInfoAccs";
-
         public override bool Autoload() => Translation.IsRussianLanguage;
 
         public override void Load() => IL.Terraria.Main.DrawInfoAccs += ChangeDrawInfoAccs;
@@ -63,8 +61,6 @@ namespace CalamityRuTranslate.Vanilla
 
     public class GetNewNPCNameIL : ILEdit
     {
-        public override string DictKey => "Terraria.NPC.getNewNPCName";
-        
         public override bool Autoload() => Translation.IsRussianLanguage;
         
         public override void Load() => IL.Terraria.NPC.getNewNPCName += TranslationTownNpcName;

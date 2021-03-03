@@ -9,20 +9,17 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.Items
 {
     public class SetBonusTranslation : GlobalItem
     {
-        public override bool Autoload(ref string name) => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+        public override bool Autoload(ref string name) => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
 
         public override string IsArmorSet(Item head, Item body, Item legs)
         {
-            if (Translation.IsRussianLanguage)
+            var armorSet = FargoSoulsTranslationDictionaries.FargoSoulsArmorSets.FirstOrDefault(x =>
+                head.type == x.Key.Head && body.type == x.Key.Body && legs.type == x.Key.Legs);
+            if (!armorSet.Equals(new KeyValuePair<(int Head, int Body, int Legs), string>()))
             {
-                var armorSet = FargoSoulsTranslationDictionaries.FargoSoulsArmorSets.FirstOrDefault(x =>
-                    head.type == x.Key.Head && body.type == x.Key.Body && legs.type == x.Key.Legs);
-                if (!armorSet.Equals(new KeyValuePair<(int Head, int Body, int Legs), string>()))
-                {
-                    return armorSet.Value;
-                }
+                return armorSet.Value;
             }
-            
+                
             return "";
         }
 

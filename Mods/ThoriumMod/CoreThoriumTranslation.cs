@@ -53,7 +53,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
         public static void Unload()
         {
             ThoriumMod = null;
-            ThoriumIL.Unload();
+            //ThoriumIL.Unload();
             ThoriumRussianDictionaries.UnloadDictionaries();
             ThoriumTranslationLists.UnloadLists();
         }

@@ -5,11 +5,11 @@ namespace CalamityRuTranslate.Common
 {
     public class ILManager
     {
-        public static Dictionary<string, ILEdit> ILEdits;
+        public static List<ILEdit> ILEdits;
 
         public static void Load()
         {
-            ILEdits = new Dictionary<string, ILEdit>();
+            ILEdits = new List<ILEdit>();
 
             foreach (Type type in CalamityRuTranslate.Instance.Code.GetTypes())
             {
@@ -20,18 +20,18 @@ namespace CalamityRuTranslate.Common
                         ILEdit ilEdit = Activator.CreateInstance(type) as ILEdit;
 
                         if (ilEdit.Autoload())
-                            ILEdits.Add(ilEdit.DictKey, ilEdit);
+                            ILEdits.Add(ilEdit);
                     }
                 }
             }
             
-            foreach (ILEdit ilEdit in ILEdits.Values)
+            foreach (ILEdit ilEdit in ILEdits)
                 ilEdit.Load();
         }
 
         public static void Unload()
         {
-            foreach (ILEdit ilEdit in ILEdits.Values)
+            foreach (ILEdit ilEdit in ILEdits)
                 ilEdit.Unload();
 
             ILEdits = null;

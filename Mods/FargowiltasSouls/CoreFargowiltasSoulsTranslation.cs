@@ -5,7 +5,6 @@ using CalamityRuTranslate.Mods.FargowiltasSouls.Items;
 using CalamityRuTranslate.Mods.FargowiltasSouls.NPCs;
 using CalamityRuTranslate.Mods.FargowiltasSouls.Tiles;
 using CalamityRuTranslate.Utilities;
-using Terraria;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.FargowiltasSouls
@@ -21,7 +20,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                 throw new ModVersionException("FargowiltasSouls", "1.3.95", FargoSouls.Version);
             }
 
-            if (FargoSouls != null && Translation.IsRussianLanguage)
+            if (FargoSouls != null)
             {
                 FargoSoulsTranslationLists.LoadLists();
                 FargoSoulsTranslationDictionaries.LoadDictionaries();
@@ -30,7 +29,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         public static void LoadCrossContent()
         {
-            if (FargoSouls != null && !Main.dedServ)
+            if (FargoSouls != null)
             {
                 BuffsTranslation.SetupTranslation();
                 ItemsTranslation.SetupTranslation();

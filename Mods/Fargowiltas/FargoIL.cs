@@ -9,9 +9,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 {
     public class BattleCryIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Misc.BattleCry.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Misc.BattleCry.UseItem += TranslationUseItemHook;
     
@@ -27,9 +25,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class ExpertToggleIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Misc.ExpertToggle.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Misc.ExpertToggle.UseItem += TranslationUseItemHook;
     
@@ -44,9 +40,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class CursedSextantIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.CursedSextant.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.Abom.CursedSextant.UseItem += TranslationUseItemHook;
     
@@ -57,9 +51,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class ForbiddenScarabIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.ForbiddenScarab.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.Abom.ForbiddenScarab.UseItem += TranslationUseItemHook;
     
@@ -70,9 +62,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class PartyConeIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.PartyCone.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.Abom.PartyCone.UseItem += TranslationUseItemHook;
     
@@ -83,8 +73,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class PillarSummonIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.PillarSummon.Shoot";
-    
         private event ILContext.Manipulator ShootHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.PillarSummon").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
@@ -92,7 +80,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.PillarSummon").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => ShootHook += TranslationShootHook;
     
@@ -107,9 +95,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class WeatherBalloonIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.WeatherBalloon.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.Abom.WeatherBalloon.UseItem += TranslationUseItemHook;
     
@@ -120,8 +106,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class AncientSealIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Mutant.AncientSeal";
-
         private event ILContext.Manipulator ShootHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Mutant.AncientSeal").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
@@ -129,7 +113,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Mutant.AncientSeal").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load()
         {
@@ -154,8 +138,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class DeathBringerFairyIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Mutant.DeathBringerFairy.Shoot";
-    
         private event ILContext.Manipulator ShootHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Mutant.DeathBringerFairy").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
@@ -163,7 +145,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Mutant.DeathBringerFairy").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => ShootHook += TranslationShootHook;
     
@@ -178,8 +160,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class MutantVoodooIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Mutant.MutantVoodoo.Shoot";
-    
         private event ILContext.Manipulator ShootHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Mutant.MutantVoodoo").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
@@ -187,7 +167,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Mutant.MutantVoodoo").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => ShootHook += TranslationShootHook;
     
@@ -202,8 +182,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class SuspiciousSkullIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Mutant.SuspiciousSkull.Shoot";
-    
         private event ILContext.Manipulator ShootHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Mutant.SuspiciousSkull").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
@@ -211,7 +189,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Mutant.SuspiciousSkull").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => ShootHook += TranslationShootHook;
     
@@ -228,9 +206,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadCoznixIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.Thorium.OverloadCoznix.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.Thorium.OverloadCoznix.UseItem += TranslationUseItemHook;
 
@@ -245,9 +221,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadJellyIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.Thorium.OverloadJelly.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.Thorium.OverloadJelly.UseItem += TranslationUseItemHook;
 
@@ -262,9 +236,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadLichIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.Thorium.OverloadLich.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.Thorium.OverloadLich.UseItem += TranslationUseItemHook;
 
@@ -279,9 +251,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadSaucerIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.Thorium.OverloadSaucer.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.Thorium.OverloadSaucer.UseItem += TranslationUseItemHook;
 
@@ -296,9 +266,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadStriderIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.Thorium.OverloadStrider.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.Thorium.OverloadStrider.UseItem += TranslationUseItemHook;
 
@@ -313,9 +281,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadThunderbirdIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.Thorium.OverloadThunderbird.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.Thorium.OverloadThunderbird.UseItem += TranslationUseItemHook;
 
@@ -330,9 +296,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadFrostMoonIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadFrostMoon.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadFrostMoon.UseItem += TranslationUseItemHook;
 
@@ -351,9 +315,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadGoblinsIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadGoblins.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadGoblins.UseItem += TranslationUseItemHook;
 
@@ -368,9 +330,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadMartiansIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadMartians.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadMartians.UseItem += TranslationUseItemHook;
 
@@ -385,9 +345,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadPiratesIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadPirates.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadPirates.UseItem += TranslationUseItemHook;
 
@@ -402,9 +360,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadPumpkinMoonIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadPumpkinMoon.UseItem";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadPumpkinMoon.UseItem += TranslationUseItemHook;
 
@@ -423,8 +379,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class BaseSummonIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.BaseSummon.Shoot";
-    
         private event ILContext.Manipulator ShootHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.BaseSummon").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
@@ -432,7 +386,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.BaseSummon").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => ShootHook += TranslationShootHook;
     
@@ -447,8 +401,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class WormyFoodIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.WormyFood.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.WormyFood").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -456,7 +408,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.WormyFood").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -467,8 +419,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class BatteredClubIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.BatteredClub.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.BatteredClub").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -476,7 +426,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.BatteredClub").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -487,8 +437,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class BetsyEggIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.BetsyEgg.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.BetsyEgg").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -496,7 +444,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.BetsyEgg").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -507,8 +455,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class FestiveOrnamentIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.FestiveOrnament.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.FestiveOrnament").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -516,7 +462,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.FestiveOrnament").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -527,8 +473,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class ForbiddenTomeIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.ForbiddenTome.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.ForbiddenTome").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -536,7 +480,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.ForbiddenTome").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -547,8 +491,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class HeadofManIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.HeadofMan.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.HeadofMan").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -556,7 +498,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.HeadofMan").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -567,8 +509,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class IceKingsRemainsIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.IceKingsRemains.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.IceKingsRemains").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -576,7 +516,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.IceKingsRemains").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -587,8 +527,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class MartianMemoryStickIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.MartianMemoryStick.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.MartianMemoryStick").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -596,7 +534,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.MartianMemoryStick").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -607,8 +545,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class NaughtyListIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.NaughtyList.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.NaughtyList").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -616,7 +552,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.NaughtyList").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -627,8 +563,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class SpookyBranchIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.SpookyBranch.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.SpookyBranch").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -636,7 +570,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.SpookyBranch").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -647,8 +581,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class SuspiciousLookingScytheIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abom.SuspiciousLookingScythe.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.SuspiciousLookingScythe").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -656,7 +588,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abom.SuspiciousLookingScythe").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -667,8 +599,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class AthenianIdolIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.AthenianIdol.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.AthenianIdol").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -676,7 +606,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.AthenianIdol").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -687,8 +617,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class AttractiveOreIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.AttractiveOre.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.AttractiveOre").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -696,7 +624,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.AttractiveOre").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -707,8 +635,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class CloudSnackIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.CloudSnack.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.CloudSnack").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -716,7 +642,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.CloudSnack").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -727,8 +653,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class ClownLicenseIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.ClownLicense.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.ClownLicense").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -736,7 +660,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.ClownLicense").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -747,8 +671,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class CoreoftheFrostCoreIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.CoreoftheFrostCore.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.CoreoftheFrostCore").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -756,7 +678,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.CoreoftheFrostCore").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -767,8 +689,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class CorruptChestIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.CorruptChest.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.CorruptChest").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -776,7 +696,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.CorruptChest").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -787,8 +707,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class CrimsonChestIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.CrimsonChest.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.CrimsonChest").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -796,7 +714,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.CrimsonChest").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -807,8 +725,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class DilutedRainbowMatterIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.DilutedRainbowMatter.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.DilutedRainbowMatter").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -816,7 +732,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.DilutedRainbowMatter").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -827,8 +743,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class EggplantIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.Eggplant.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.Eggplant").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -836,7 +750,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.Eggplant").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -847,8 +761,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class ForbiddenForbiddenFragmentIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.ForbiddenForbiddenFragment.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.ForbiddenForbiddenFragment").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -856,7 +768,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.ForbiddenForbiddenFragment").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -867,8 +779,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class GrandCrossIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.GrandCross.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.GrandCross").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -876,7 +786,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.GrandCross").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -887,8 +797,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class HallowChestIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.HallowChest.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.HallowChest").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -896,7 +804,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.HallowChest").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -907,8 +815,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class HeartChocolateIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.HeartChocolate.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.HeartChocolate").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -916,7 +822,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.HeartChocolate").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -927,8 +833,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class HolyGrailIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.HolyGrail.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.HolyGrail").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -936,7 +840,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.HolyGrail").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -947,8 +851,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class InnocuousSkullIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.InnocuousSkull.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.InnocuousSkull").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -956,7 +858,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.InnocuousSkull").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -967,8 +869,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class JungleChestIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.JungleChest.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.JungleChest").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -976,7 +876,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.JungleChest").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -987,8 +887,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class LeesHeadbandIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.LeesHeadband.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.LeesHeadband").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -996,7 +894,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.LeesHeadband").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1007,8 +905,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class MothLampIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.MothLamp.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.MothLamp").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1016,7 +912,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.MothLamp").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1027,8 +923,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class MothronEggIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.MothronEgg.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.MothronEgg").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1036,7 +930,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.MothronEgg").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1047,8 +941,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class PinkSlimeCrownIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.PinkSlimeCrown.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.PinkSlimeCrown").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1056,7 +948,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.PinkSlimeCrown").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1067,8 +959,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class PirateFlagIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.PirateFlag.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.PirateFlag").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1076,7 +966,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.PirateFlag").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1087,8 +977,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class PlunderedBootyIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.PlunderedBooty.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.PlunderedBooty").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1096,7 +984,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.PlunderedBooty").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1107,8 +995,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class RuneOrbIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.RuneOrb.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.RuneOrb").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1116,7 +1002,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.RuneOrb").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1127,8 +1013,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class ShadowflameIconIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.ShadowflameIcon.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.ShadowflameIcon").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1136,7 +1020,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.ShadowflameIcon").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1147,8 +1031,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class SlimyLockBoxIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.SlimyLockBox.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.SlimyLockBox").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1156,7 +1038,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.SlimyLockBox").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1167,8 +1049,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class SuspiciousLookingChestIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.SuspiciousLookingChest.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.SuspiciousLookingChest").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1176,7 +1056,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.SuspiciousLookingChest").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1187,8 +1067,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class WormSnackIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Deviantt.WormSnack.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.WormSnack").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1196,7 +1074,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.WormSnack").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1211,8 +1089,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class CultistSummonIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Mutant.CultistSummon.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Mutant.CultistSummon").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1220,7 +1096,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Mutant.CultistSummon").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1231,8 +1107,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class PlanterasFruitIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Mutant.PlanterasFruit.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Mutant.PlanterasFruit").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1240,7 +1114,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Mutant.PlanterasFruit").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1251,8 +1125,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class Abeemination2IL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.Abeemination2.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abeemination2").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1260,7 +1132,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.Abeemination2").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1271,8 +1143,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class CelestialSigil2IL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.CelestialSigil2.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.CelestialSigil2").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1280,7 +1150,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.CelestialSigil2").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1291,8 +1161,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class GoreySpineIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.GoreySpine.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.GoreySpine").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1300,7 +1168,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.GoreySpine").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1311,8 +1179,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class LihzahrdPowerCell2IL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.VanillaCopy.LihzahrdPowerCell2.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.VanillaCopy.LihzahrdPowerCell2").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1320,7 +1186,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.VanillaCopy.LihzahrdPowerCell2").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1331,8 +1197,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class MechSkullIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.MechSkull.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechSkull").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1340,7 +1204,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechSkull").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1351,8 +1215,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class MechWormIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.MechWorm.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechWorm").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1360,7 +1222,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechWorm").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1371,8 +1233,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class SlimyCrownIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SlimyCrown.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.SlimyCrown").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1380,7 +1240,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.SlimyCrown").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1391,8 +1251,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class SuspiciousEyeIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SuspiciousEye.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.SuspiciousEye").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1400,7 +1258,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.SuspiciousEye").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1411,8 +1269,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class TruffleWorm2IL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.TruffleWorm2.get_NPCName";
-        
         private event ILContext.Manipulator NPCNameHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.TruffleWorm2").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
@@ -1420,7 +1276,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Summons.TruffleWorm2").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => NPCNameHook += TranslationNPCNameHook;
 
@@ -1431,9 +1287,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class StatsFargoIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Misc.Stats.ModifyTooltips";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null ;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load()
         {
@@ -1467,8 +1321,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
      public class StatsThoriumIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Misc.Stats.ThoriumStats";
-        
         private event ILContext.Manipulator ThoriumStatsHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Misc.Stats").GetMethod("ThoriumStats", BindingFlags.NonPublic | BindingFlags.Instance), value);
@@ -1476,7 +1328,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.Items.Misc.Stats").GetMethod("ThoriumStats", BindingFlags.NonPublic | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && CoreThoriumTranslation.ThoriumMod != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && CoreThoriumTranslation.ThoriumMod != null && Translation.IsRussianLanguage;
 
         public override void Load()
         {
@@ -1505,9 +1357,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class AbominationnIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.NPCs.Abominationn";
-
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load()
         {
@@ -1532,9 +1382,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class DevianttIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.NPCs.Deviantt.SetChatButtons";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.NPCs.Deviantt.SetChatButtons += TranslationSetChatButtonsHook;
 
@@ -1549,8 +1397,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class FargoGlobalNPCIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.NPCs.FargoGlobalNPC";
-        
         private event ILContext.Manipulator SwarmHook
         {
             add => HookEndpointManager.Modify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.NPCs.FargoGlobalNPC").GetMethod("Swarm", BindingFlags.NonPublic | BindingFlags.Instance), value);
@@ -1558,7 +1404,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             remove => HookEndpointManager.Unmodify(CoreFargowiltasTranslation.Fargo.Code.GetType("Fargowiltas.NPCs.FargoGlobalNPC").GetMethod("Swarm", BindingFlags.NonPublic | BindingFlags.Instance), value);
         }
 
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load()
         {
@@ -1587,9 +1433,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class FargowiltasIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Fargowiltas";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load()
         {
@@ -1617,9 +1461,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class LumberJackIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.NPCs.LumberJack.SetChatButtons";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.NPCs.LumberJack.SetChatButtons += TranslationSetChatButtonsHook;
 
@@ -1630,9 +1472,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class MutantIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.NPCs.Mutant.SetChatButtons";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
 
         public override void Load() => IL.Fargowiltas.NPCs.Mutant.SetChatButtons += TranslationSetChatButtonsHook;
 
@@ -1649,9 +1489,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadBeeIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadBee.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadBee.ctor += TranslationCtorHook;
     
@@ -1665,9 +1503,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadBetsyIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadBetsy.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadBetsy.ctor += TranslationCtorHook;
     
@@ -1678,9 +1514,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadBrainIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadBrain.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadBrain.ctor += TranslationCtorHook;
     
@@ -1691,9 +1525,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadCultistIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadCultist.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadCultist.ctor += TranslationCtorHook;
     
@@ -1704,9 +1536,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadDestroyerIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadDestroyer.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadDestroyer.ctor += TranslationCtorHook;
     
@@ -1717,9 +1547,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadEyeIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadEye.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadEye.ctor += TranslationCtorHook;
     
@@ -1730,9 +1558,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadFishIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadFish.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadFish.ctor += TranslationCtorHook;
     
@@ -1743,9 +1569,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadGolemIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadGolem.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadGolem.ctor += TranslationCtorHook;
     
@@ -1756,9 +1580,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadMoonIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadMoon.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadMoon.ctor += TranslationCtorHook;
     
@@ -1769,9 +1591,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadPlantIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadPlant.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadPlant.ctor += TranslationCtorHook;
     
@@ -1782,9 +1602,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadPrimeIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadPrime.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadPrime.ctor += TranslationCtorHook;
     
@@ -1795,9 +1613,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadSkeleIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadSkele.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadSkele.ctor += TranslationCtorHook;
     
@@ -1808,9 +1624,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadSlimeCrownIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadSlimeCrown.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadSlimeCrown.ctor += TranslationCtorHook;
     
@@ -1821,9 +1635,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadTwinsIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadTwins.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadTwins.ctor += TranslationCtorHook;
     
@@ -1834,10 +1646,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadWallIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadWall.ctor";
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
         
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
-    
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadWall.ctor += TranslationCtorHook;
     
         public override void Unload() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadWall.ctor -= TranslationCtorHook;
@@ -1847,9 +1657,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     
     public class OverloadWormIL : ILEdit
     {
-        public override string DictKey => "Fargowiltas.Items.Summons.SwarmSummons.OverloadWorm.ctor";
-        
-        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null;
+        public override bool Autoload() => CoreFargowiltasTranslation.Fargo != null && Translation.IsRussianLanguage;
     
         public override void Load() => IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadWorm.ctor += TranslationCtorHook;
     

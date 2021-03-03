@@ -40,7 +40,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                 throw new ModVersionException("Calamity", "1.4.5.7", Calamity.Version);
             }
 
-            if (Calamity != null && Translation.IsRussianLanguage)
+            if (Calamity != null)
             {
                 CalamityTranslationLists.LoadLists();
                 CalamityTranslationDictionaries.LoadDictionaries();
@@ -49,7 +49,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 
         public static void LoadCrossContent()
         {
-            if (Calamity != null && !Main.dedServ)
+            if (Calamity != null)
             {
                 BuffsTranslation.SetupTranslation();
                 ItemsTranslation.SetupTranslation();
@@ -77,11 +77,14 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 
         private static void AddCalamityLocalization()
         {
-            foreach (var id in CalamityTranslationLists.CalamityKeysLocalization)
+            if (Translation.IsRussianLanguage)
             {
-                ModTranslation translation = Calamity.CreateTranslation(id);
-                translation.SetDefault(LangUtilities.TranslationKey($"Calamity.KeyLocalization.{id}"));
-                Calamity.AddTranslation(translation);
+                foreach (var id in CalamityTranslationLists.CalamityKeysLocalization)
+                {
+                    ModTranslation translation = Calamity.CreateTranslation(id);
+                    translation.SetDefault(LangUtilities.TranslationKey($"Calamity.KeyLocalization.{id}"));
+                    Calamity.AddTranslation(translation);
+                }
             }
         }
     }

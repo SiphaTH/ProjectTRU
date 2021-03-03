@@ -9,7 +9,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.Items
 {
     public class ModifiedGlobalItemTooltips : GlobalItem
     {
-        public override bool Autoload(ref string name) => CoreFargowiltasSoulsTranslation.FargoSouls != null;
+        public override bool Autoload(ref string name) => CoreFargowiltasSoulsTranslation.FargoSouls != null && Translation.IsRussianLanguage;
 
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {

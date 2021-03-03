@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
-using Terraria;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Content.Vanity.Yum
@@ -9,15 +8,11 @@ namespace CalamityRuTranslate.Content.Vanity.Yum
     [AutoloadEquip(EquipType.Body)]
     public class YumChest : ModItem
     {
-        public override bool Autoload(ref string name)
-        {
-            return false;
-        }
-        
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Доспех Yum");
-            Tooltip.SetDefault("Доспехи старого человека");
+            DisplayName.SetDefault("Мантия Yum");
+            Tooltip.SetDefault("{$CommonItemTooltip.DevItem}\nМантия старого человека");
+            TRuGlowmask.AddGlowMask(item.type, "CalamityRuTranslate/Content/Glowmasks/YumChest_Glow");
         }
 
         public override void SetDefaults()

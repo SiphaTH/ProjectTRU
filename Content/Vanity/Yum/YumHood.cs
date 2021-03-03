@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
-using Terraria;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Content.Vanity.Yum
@@ -9,15 +8,11 @@ namespace CalamityRuTranslate.Content.Vanity.Yum
     [AutoloadEquip(EquipType.Head)]
     public class YumHood : ModItem
     {
-        public override bool Autoload(ref string name)
-        {
-            return false;
-        }
-
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Капюшон Yum");
-            Tooltip.SetDefault("Капюшон старого человека");
+            Tooltip.SetDefault("{$CommonItemTooltip.DevItem}\nКапюшон старого человека");
+            TRuGlowmask.AddGlowMask(item.type, "CalamityRuTranslate/Content/Glowmasks/YumHood_Glow");
         }
 
         public override void SetDefaults()
@@ -35,15 +30,5 @@ namespace CalamityRuTranslate.Content.Vanity.Yum
                 tooltip.overrideColor = new Color(252, 255, 166);
             }
         }
-        
-        // public override bool IsArmorSet(Item head, Item body, Item legs)
-        // {
-        //     return body.type == ModContent.ItemType<YumChest>() && legs.type == ModContent.ItemType<YumBoots>();
-        // }
-        //
-        // public override void UpdateArmorSet(Player player)
-        // {
-        //     player.GetModPlayer<ProjectTRuPlayer>().SetYum = true;
-        // }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using CalamityRuTranslate.Mods.FargowiltasSouls;
+using CalamityRuTranslate.Utilities;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -551,7 +552,7 @@ namespace CalamityRuTranslate.Vanilla
         {
             On.Terraria.Item.AffixName += delegate(On.Terraria.Item.orig_AffixName orig, Item self)
             {
-                if (!ProjectTRuConfig.Instance.NewVanillaTranslation)
+                if (!ProjectTRuConfig.Instance.NewVanillaTranslation && !Translation.IsRussianLanguage)
                     return orig.Invoke(self);
 
                 if (self.prefix >= Lang.prefix.Length)
@@ -567,7 +568,7 @@ namespace CalamityRuTranslate.Vanilla
                         return GetGenderedPrefix(_prefixes[i], self.type) + " " + self.Name.ToLower();
                 }
 
-                return prefix + " " + self.Name.ToLower();
+                return prefix + " " + self.Name;
             };
             return base.Autoload(ref name);
         }
