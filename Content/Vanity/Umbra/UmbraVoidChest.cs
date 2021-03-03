@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using CalamityRuTranslate.Utilities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
@@ -7,12 +8,15 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Content.Vanity.Umbra
 {
     [AutoloadEquip(EquipType.Body)]
-    public class UmbraVoidChest : ModItem
+    public class UmbraVoidChest : ItemColorLerper
     {
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Пустотный нагрудник Umbra");
             Tooltip.SetDefault("{$CommonItemTooltip.DevItem}");
+            MyColors = new[] {new Color(209, 77, 253), new Color(143, 77, 253), new Color(83, 2, 218)};
+            CurrentColor = MyColors[0];
+            TargetColor = MyColors[1];
         }
 
         public override void SetDefaults()
@@ -21,14 +25,6 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
             item.height = 32;
             item.rare = 1;
             item.vanity = true;
-        }
-
-        public override void ModifyTooltips(List<TooltipLine> list)
-        {
-            foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
-            {
-                tooltip.overrideColor = new Color(Main.DiscoR, 51, 255 - (int)(Main.DiscoR * 0.4));
-            }
         }
     }
 }

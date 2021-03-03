@@ -13,7 +13,7 @@ namespace CalamityRuTranslate.Content.Vanity.StepMolchX
 
         public override void SetDefaults()
         {
-            item.width = 22;
+            item.width = 24;
             item.height = 22;
             item.rare = 1;
             item.vanity = true;
