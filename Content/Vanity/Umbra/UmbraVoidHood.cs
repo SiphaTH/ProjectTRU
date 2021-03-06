@@ -8,16 +8,23 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Content.Vanity.Umbra
 {
     [AutoloadEquip(EquipType.Head)]
-    public class UmbraVoidHood : ItemColorLerper
+    public class UmbraVoidHood : ModItem
     {
+        private static int tooltipIndex;
+        private static int Counter = 10;
+
+        private string[] tooltipStrings =
+        {
+            "РПИГПМЭ",
+            "РФТУПУЁ",
+            "РПДМПУЙУЭ",
+            "УЁВА"
+        };
+        
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Пустотный капюшон Umbra");
-            Tooltip.SetDefault("{$CommonItemTooltip.DevItem}");
-            MyColors = new[] {new Color(209, 77, 253), new Color(143, 77, 253), new Color(83, 2, 218)};
-            CurrentColor = MyColors[0];
-            TargetColor = MyColors[1];
-            RatioChanger += f => f + 0.015f;
+            Tooltip.SetDefault("{$CommonItemTooltip.DevItem}\n[c/fcffb3:Один] лишь Цезарь укажет путь к свету");
         }
 
         public override void SetDefaults()
@@ -28,14 +35,23 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
             item.vanity = true;
         }
         
-        public override bool IsArmorSet(Item head, Item body, Item legs)
+        public override void ModifyTooltips(List<TooltipLine> list)
         {
-            return body.type == ModContent.ItemType<UmbraVoidChest>() && legs.type == ModContent.ItemType<UmbraVoidGreaves>();
-        }
-        
-        public override void ArmorSetShadows(Player player)
-        {
-            player.armorEffectDrawShadow = true;
+            list.Add(new TooltipLine(mod, "tooltip", tooltipStrings[tooltipIndex]));
+
+            Counter--;
+            
+            if (Counter <= 0)
+            {
+                tooltipIndex = Main.rand.Next(tooltipStrings.Length);
+
+                Counter = 50;
+            }
+            
+            foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
+            {
+                tooltip.overrideColor = Translation.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
+            }
         }
     }
 }

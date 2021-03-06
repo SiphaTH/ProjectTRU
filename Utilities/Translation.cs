@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Xna.Framework;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
+using Terraria;
 using Terraria.Localization;
 using static System.Linq.Enumerable;
 
@@ -34,6 +36,12 @@ namespace CalamityRuTranslate.Utilities
             cursor.Emit(OpCodes.Ldstr, translation);
         }
 
+        public static Color ColorSwap(Color firstColor, Color secondColor, float seconds)
+        {
+            float num = (float) ((Math.Sin(6.28318548202515 / seconds * Main.GlobalTime) + 1.0) * 0.5);
+            return Color.Lerp(firstColor, secondColor, num);
+        }
+        
         public static string EncodeToUtf16(string line)
         {
             Dictionary<char, string> unicode = new Dictionary<char, string>

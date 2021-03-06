@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Content;
-using CalamityRuTranslate.DictionariesAndLists;
 using CalamityRuTranslate.Mods.CalamityMod;
 using CalamityRuTranslate.Mods.Fargowiltas;
 using CalamityRuTranslate.Mods.FargowiltasSouls;
@@ -24,33 +24,36 @@ namespace CalamityRuTranslate
     {
         public static CalamityRuTranslate Instance { get; private set; }
 
+        private ModRussianTranslation[] _translations =
+        {
+            new CoreCalamityTranslation(),
+            new CoreFargowiltasSoulsTranslation(),
+            new CoreFargowiltasTranslation()
+        };
+        
         public CalamityRuTranslate() => Instance = this;
 
         public override void Load()
         {
-            CoreCalamityTranslation.Load();
             CoreThoriumTranslation.Load();
-            CoreFargowiltasSoulsTranslation.Load();
-            CoreFargowiltasTranslation.Load();
             ILManager.Load();
-            GlobalDictionaries.LoadDictionaries();
             LoadFont();
             LoadAlternateRussian(LanguageManager.Instance, ProjectTRuConfig.Instance.NewVanillaTranslation ? "Terraria.Localization.Content." : "Terraria.LocalizationOld.Content.");
             LangUtilities.Load();
+            
+            foreach (ModRussianTranslation translation in _translations)
+                translation.Load();
         }
 
         public override void Unload()
         {
+            LoadAlternateRussian(LanguageManager.Instance, "Terraria.LocalizationOld.Content.");
             Instance = null;
             ProjectTRuConfig.Instance = null;
             LangUtilities.Unload();
-            CoreCalamityTranslation.Unload();
-            CoreFargowiltasSoulsTranslation.Unload();
-            CoreFargowiltasTranslation.Unload();
             CoreThoriumTranslation.Unload();
             ILManager.Unload();
             UnloadFont();
-            GlobalDictionaries.UnloadDictionaries();
             TRuGlowmask.Unload();
         }
 		
@@ -58,8 +61,14 @@ namespace CalamityRuTranslate
         {
             if (Translation.IsRussianLanguage)
             {
-                CoreCalamityTranslation.LoadNpcChat();
-                CoreFargowiltasTranslation.LoadNpcChat();
+                foreach (ModRussianTranslation translation in _translations)
+                {
+                    if (translation.ModInstance != null)
+                    {
+                        translation.DialogueTranslation();
+                    }
+                }
+                
                 if (ProjectTRuConfig.Instance.ThoriumTranslation && ModLoader.GetMod("ThoriumMod") != null)
                 {
                     ThoriumSupport.ThoriumNpcChat();
@@ -71,29 +80,32 @@ namespace CalamityRuTranslate
         {
             if (Translation.IsRussianLanguage && !Main.dedServ)
             {
-                CoreCalamityTranslation.LoadCrossContent();
-                CoreFargowiltasTranslation.LoadCrossContent();
-                CoreFargowiltasSoulsTranslation.LoadCrossContent();
+                foreach (ModRussianTranslation translation in _translations)
+                {
+                    if (translation.ModInstance != null)
+                    {
+                        translation.SetupTranslation();
+                    }
+                }
                 CoreThoriumTranslation.LoadCrossContent();
             }
         }
         
         private void LoadAlternateRussian(LanguageManager languageManager, string prefix)
         {
+            TmodFile _tModFile = typeof(CalamityRuTranslate).GetProperty("File", BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(Instance) as TmodFile;
+            
             if (Translation.IsRussianLanguage)
             {
-                foreach (TmodFile.FileEntry item in typeof(Mod).GetProperty("File", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(this) as TmodFile)
+                foreach (TmodFile.FileEntry item in _tModFile.Where(entry => Path.GetFileNameWithoutExtension(entry.Name).StartsWith(prefix + languageManager.ActiveCulture.CultureInfo.Name)))
                 {
-                    if (Path.GetFileNameWithoutExtension(item.Name).StartsWith(prefix + languageManager.ActiveCulture.CultureInfo.Name) && item.Name.EndsWith(".json"))
+                    try
                     {
-                        try
-                        {
-                            languageManager.LoadLanguageFromFileText(Encoding.UTF8.GetString(GetFileBytes(item.Name)));
-                        }
-                        catch
-                        {
-                            Logger.InfoFormat("Failed to load language file: " + item);
-                        }
+                        languageManager.LoadLanguageFromFileText(Encoding.UTF8.GetString(GetFileBytes(item.Name)));
+                    }
+                    catch
+                    {
+                        Logger.InfoFormat("Failed to load language file: " + item);
                     }
                 }
             }

@@ -1,55 +1,51 @@
 ﻿using System;
-using CalamityRuTranslate.DictionariesAndLists;
-using CalamityRuTranslate.Mods.Fargowiltas.Buffs;
-using CalamityRuTranslate.Mods.Fargowiltas.Items;
-using CalamityRuTranslate.Mods.Fargowiltas.NPCs;
-using CalamityRuTranslate.Mods.Fargowiltas.Tiles;
+using CalamityRuTranslate.Catalogs;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Utilities;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.Fargowiltas
 {
-    internal static class CoreFargowiltasTranslation
+    public class CoreFargowiltasTranslation : ModRussianTranslation
     {
-        public static Mod Fargo => ModLoader.GetMod("Fargowiltas");
-
-        public static void Load()
+        public CoreFargowiltasTranslation() : base("Fargowiltas")
         {
-            if (Fargo != null && Fargo.Version != new Version(2, 2, 7))
-            {
-                throw new ModVersionException("Fargowiltas", "2.2.7", Fargo.Version);
-            }
+            BuffTranslation = FargoTranslationCatalog.Buff;
+            ItemNameTranslation = FargoTranslationCatalog.ItemName;
+            ItemTooltipTranslation = FargoTranslationCatalog.ItemTooltip;
+            NPCTranslation = FargoTranslationCatalog.NPC;
+            TileTranslation = FargoTranslationCatalog.Tile;
+        }
 
-            if (Fargo != null)
+        public override void Load()
+        {
+            if (IsLoaded && ModInstance.Version != new Version(2, 2, 7))
             {
-                FargoTranslationLists.LoadLists();
-                FargoTranslationDictionaries.LoadDictionaries();
+                throw new ModVersionException("Fargowiltas", "2.2.7", ModInstance.Version);
+            }
+            
+            if (ModsCall.FargoSouls != null)
+            {
+                ItemNameTranslation.Add("InnocuousSkull");
+                ItemTooltipTranslation.Add("InnocuousSkull");
+                NPCTranslation.Add("Squirrel");
+            }
+            
+            if (ModsCall.Thorium != null || ModsCall.Calamity != null)
+            {
+                ItemNameTranslation.Add("OmnistationPlus");
+                ItemTooltipTranslation.Add("OmnistationPlus");
+            }
+            
+            if (ModsCall.Thorium != null)
+            {
+                ItemNameTranslation.AddRange(FargoTranslationCatalog.FargoThoriumCrossItems);
+                ItemTooltipTranslation.AddRange(FargoTranslationCatalog.FargoThoriumCrossItems);
             }
         }
 
-        public static void LoadCrossContent()
+        public override void DialogueTranslation()
         {
-            if (Fargo != null)
-            {
-                BuffsTranslation.SetupTranslation();
-                ItemsTranslation.SetupTranslation();
-                NPCTranslation.SetupTranslation();
-                TilesTranslation.SetupTranslation();
-            }
-        }
-
-        public static void LoadNpcChat()
-        {
-            if (Fargo != null)
-            {
-                NPCTextTranslation.SetupTranslation();
-            }
-        }
-
-        public static void Unload()
-        {
-            FargoTranslationLists.UnloadLists();
-            FargoTranslationDictionaries.UnloadDictionaries();
+            NPCDialogueTranslation.SetupTranslation();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using CalamityRuTranslate.DictionariesAndLists;
+﻿using CalamityRuTranslate.Catalogs;
 using CalamityRuTranslate.Utilities;
 using Terraria;
 using Terraria.ModLoader;
@@ -11,9 +11,9 @@ namespace CalamityRuTranslate.Vanilla
 
         public override void AI(NPC npc)
         {
-            if (GlobalDictionaries.GlobalTownNpcName.ContainsKey(npc.GivenName) && !Main.dedServ)
+            if (GlobalCatalog.TownNpcName.ContainsKey(npc.GivenName) && !Main.dedServ)
             {
-                npc.GivenName = LangUtilities.TranslationKey($"Global.TownNpcName.{GlobalDictionaries.GlobalTownNpcName[npc.GivenName]}");
+                npc.GivenName = LangUtilities.TranslationKey($"Global.TownNpcName.{GlobalCatalog.TownNpcName[npc.GivenName]}");
             }
         }
     }

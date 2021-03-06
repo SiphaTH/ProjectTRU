@@ -2,28 +2,30 @@
 using System.Linq;
 using CalamityRuTranslate.Utilities;
 using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Content.Vanity.Umbra
 {
-    [AutoloadEquip(EquipType.Body)]
-    public class UmbraVoidChest : ModItem
+    [AutoloadEquip(EquipType.Wings)]
+    public class UmbraWings : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Пустотный нагрудник Umbra");
-            Tooltip.SetDefault(
-                "{$CommonItemTooltip.DevItem}\nСплав сие одеяния - единственный во всей Вселенной, что может сдержать 'ничего'");
+            DisplayName.SetDefault("Полуночные крылья Umbra");
+            Tooltip.SetDefault("{$CommonItemTooltip.DevItem}");
         }
 
         public override void SetDefaults()
         {
-            item.width = 44;
-            item.height = 32;
+            item.width = 36;
+            item.height = 34;
             item.rare = 1;
-            item.vanity = true;
+            item.accessory = true;
         }
         
+        public override void UpdateAccessory(Player player, bool hideVisual) => player.wingTimeMax = 180;
+
         public override void ModifyTooltips(List<TooltipLine> list)
         {
             foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))

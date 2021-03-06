@@ -1,47 +1,27 @@
 ﻿using System;
-using CalamityRuTranslate.DictionariesAndLists;
-using CalamityRuTranslate.Mods.FargowiltasSouls.Buffs;
-using CalamityRuTranslate.Mods.FargowiltasSouls.Items;
-using CalamityRuTranslate.Mods.FargowiltasSouls.NPCs;
-using CalamityRuTranslate.Mods.FargowiltasSouls.Tiles;
+using CalamityRuTranslate.Catalogs;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Utilities;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.FargowiltasSouls
 {
-    internal static class CoreFargowiltasSoulsTranslation
+    public class CoreFargowiltasSoulsTranslation : ModRussianTranslation
     {
-        public static Mod FargoSouls => ModLoader.GetMod("FargowiltasSouls");
-        
-        public static void Load()
+        public CoreFargowiltasSoulsTranslation() : base("FargowiltasSouls")
         {
-            if (FargoSouls != null && FargoSouls.Version != new Version(1,3,95))
-            {
-                throw new ModVersionException("FargowiltasSouls", "1.3.95", FargoSouls.Version);
-            }
-
-            if (FargoSouls != null)
-            {
-                FargoSoulsTranslationLists.LoadLists();
-                FargoSoulsTranslationDictionaries.LoadDictionaries();
-            }
+            BuffTranslation = FargoSoulsTranslationCatalog.Buff;
+            ItemNameTranslation = FargoSoulsTranslationCatalog.ItemName;
+            ItemTooltipTranslation = FargoSoulsTranslationCatalog.ItemTooltip;
+            NPCTranslation = FargoSoulsTranslationCatalog.NPC;
+            TileTranslation = FargoSoulsTranslationCatalog.Tile;
         }
 
-        public static void LoadCrossContent()
+        public override void Load()
         {
-            if (FargoSouls != null)
+            if (IsLoaded && ModInstance.Version != new Version(1,3,95))
             {
-                BuffsTranslation.SetupTranslation();
-                ItemsTranslation.SetupTranslation();
-                NPCTranslation.SetupTranslation();
-                TilesTranslation.SetupTranslation();
+                throw new ModVersionException("FargowiltasSouls", "1.3.95", ModInstance.Version);
             }
-        }
-
-        public static void Unload()
-        {
-            FargoSoulsTranslationLists.UnloadLists();
-            FargoSoulsTranslationDictionaries.UnloadDictionaries();
         }
     }
 }

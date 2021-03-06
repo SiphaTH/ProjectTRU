@@ -1,5 +1,5 @@
 ﻿using System;
-using CalamityRuTranslate.DictionariesAndLists;
+using CalamityRuTranslate.Catalogs;
 using CalamityRuTranslate.Mods.ThoriumMod.Buffs;
 using CalamityRuTranslate.Mods.ThoriumMod.Items;
 using CalamityRuTranslate.Mods.ThoriumMod.Projectiles;
@@ -53,7 +53,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
         public static void Unload()
         {
             ThoriumMod = null;
-            //ThoriumIL.Unload();
+            ThoriumIL.Unload();
             ThoriumRussianDictionaries.UnloadDictionaries();
             ThoriumTranslationLists.UnloadLists();
         }

@@ -1,5 +1,5 @@
 ﻿using System;
-using CalamityRuTranslate.DictionariesAndLists;
+using CalamityRuTranslate.Catalogs;
 using CalamityRuTranslate.Utilities;
 using Terraria.Localization;
 

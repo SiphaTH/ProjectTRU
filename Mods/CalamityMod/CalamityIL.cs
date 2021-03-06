@@ -48,7 +48,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(RipperUI).GetMethod("HandleMouseInteraction", BindingFlags.Static | BindingFlags.NonPublic), value);
         }
 
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
 
         public override void Load() => RipperUIHook += TranslationRipperUIHook;
 
@@ -72,7 +72,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(StealthUI).GetMethod("Draw", BindingFlags.Static | BindingFlags.Public), value);
         }
     
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => StealthUIHook += TranslationStealthUIHook;
     
@@ -92,7 +92,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(AcidRainUI).GetMethod("get_InvasionName", BindingFlags.Instance | BindingFlags.Public), value);
         }
     
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
     
         public override void Load() => AcidRainUIHook += TranslationAcidRainUIHook;
     
@@ -119,7 +119,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(CalamityPlayer).GetMethod("KillPlayer", BindingFlags.Instance | BindingFlags.Public), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -185,7 +185,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(CheatTestThing).GetMethod("UpdateAccessory", BindingFlags.Instance | BindingFlags.Public), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => CheatTestThingHook += TranslationCheatTestThingHook;
     
@@ -205,7 +205,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogHellGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DraedonLogHellGUIHook += TranslationDraedonLogHellGUIHook;
     
@@ -230,7 +230,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogJungleGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DraedonLogJungleGUIHook += TranslationDraedonLogJungleGUIHook;
     
@@ -255,7 +255,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogPlanetoidGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DraedonLogPlanetoidGUIHook += TranslationDraedonLogPlanetoidGUIHook;
     
@@ -280,7 +280,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogSnowBiomeGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DraedonLogSnowBiomeGUIHook += TranslationDraedonLogSnowBiomeGUIHook;
     
@@ -305,7 +305,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogSunkenSeaGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DraedonLogSunkenSeaGUIHook += TranslationDraedonLogSunkenSeaGUIHook;
     
@@ -325,26 +325,26 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             
         private event ILContext.Manipulator AddCalamityBossesHook
         {
-            add => HookEndpointManager.Modify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityBosses", BindingFlags.Static | BindingFlags.NonPublic), value);
+            add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityBosses", BindingFlags.Static | BindingFlags.NonPublic), value);
         
-            remove => HookEndpointManager.Unmodify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityBosses", BindingFlags.Static | BindingFlags.NonPublic), value);
+            remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityBosses", BindingFlags.Static | BindingFlags.NonPublic), value);
         }
         
         private event ILContext.Manipulator CensusSupportHook
         {
-            add => HookEndpointManager.Modify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("CensusSupport", BindingFlags.NonPublic | BindingFlags.Static), value);
+            add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("CensusSupport", BindingFlags.NonPublic | BindingFlags.Static), value);
         
-            remove => HookEndpointManager.Unmodify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("CensusSupport", BindingFlags.NonPublic | BindingFlags.Static), value);
+            remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("CensusSupport", BindingFlags.NonPublic | BindingFlags.Static), value);
         }
         
         private event ILContext.Manipulator AddCalamityInvasionsHook
         {
-            add => HookEndpointManager.Modify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityInvasions", BindingFlags.NonPublic | BindingFlags.Static), value);
+            add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityInvasions", BindingFlags.NonPublic | BindingFlags.Static), value);
         
-            remove => HookEndpointManager.Unmodify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityInvasions", BindingFlags.NonPublic | BindingFlags.Static), value);
+            remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityInvasions", BindingFlags.NonPublic | BindingFlags.Static), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -487,7 +487,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(FAP).GetMethod("GetChat", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -512,12 +512,12 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             
         private event ILContext.Manipulator SetChatButtonsHook
         {
-            add => HookEndpointManager.Modify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.NPCs.TownNPCs.SEAHOE").GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
+            add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.NPCs.TownNPCs.SEAHOE").GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
         
-            remove => HookEndpointManager.Unmodify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.NPCs.TownNPCs.SEAHOE").GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
+            remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.NPCs.TownNPCs.SEAHOE").GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => SetChatButtonsHook += TranslationSetChatButtonsHook;
     
@@ -537,7 +537,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(THIEF).GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => SetChatButtonsHook += TranslationSetChatButtonsHook;
     
@@ -557,7 +557,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(LabHologramProjectorUI).GetMethod("ChooseDialogue", BindingFlags.Public | BindingFlags.Static), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => LabHologramProjectorUIHook += TranslationLabHologramProjectorUIHook;
     
@@ -592,7 +592,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(AstralInjection).GetMethod("OnConsumeItem", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => AstralInjectionHook += TranslationAstralInjectionHook;
     
@@ -612,7 +612,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ThornBlossom).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => ThornBlossomHook += TranslationThornBlossomHook;
     
@@ -632,7 +632,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(Lucrecia).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => LucreciaHook += TranslationLucreciaHook;
     
@@ -652,7 +652,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(BloodBoiler).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => BloodBoilerHook += TranslationBloodBoilerHook;
     
@@ -676,7 +676,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(MolecularManipulator).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => MolecularManipulatorHook += TranslationMolecularManipulatorHook;
     
@@ -700,7 +700,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(NullificationRifle).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => NullificationRifleHook += TranslationNullificationRifleHook;
     
@@ -724,7 +724,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DevourerofGodsHead).GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DevourerofGodsHeadHook += TranslationDevourerofGodsHeadHook;
     
@@ -744,7 +744,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(DevourerofGodsHeadS).GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => DevourerofGodsHeadSHook += TranslationDevourerofGodsHeadSHook;
     
@@ -764,7 +764,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(FearlessGoldfishWarrior).GetMethod("ModifyHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => FearlessGoldfishWarriorHook += TranslationFearlessGoldfishWarriorHook;
     
@@ -784,7 +784,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(HealOrbProv).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => HealOrbProvHook += TranslationHealOrbProvHook;
     
@@ -804,7 +804,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(HolyBurnOrb).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => HolyBurnOrbHook += TranslationHolyBurnOrbHook;
     
@@ -831,7 +831,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ChibiiDoggo).GetMethod("SpawnDoggo", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -865,7 +865,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(CalamityUtils).GetMethod("BedRightClick", BindingFlags.Public | BindingFlags.Static), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => CalamityUtilsHook += TranslationCalamityUtilsHook;
     
@@ -889,7 +889,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(PlaguedPlateBed).GetMethod("NewRightClick", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => PlaguedPlateBedHook += TranslationPlaguedPlateBedHook;
     
@@ -913,7 +913,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(RavagerBody).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => RavagerBodyHook += TranslationRavagerBodyHook;
     
@@ -933,7 +933,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(CalamitasRun3).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => CalamitasRun3Hook += TranslationCalamitasRun3Hook;
     
@@ -948,19 +948,19 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             
         private event ILContext.Manipulator DrawHook
         {
-            add => HookEndpointManager.Modify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("Draw", BindingFlags.Public | BindingFlags.Instance), value);
+            add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("Draw", BindingFlags.Public | BindingFlags.Instance), value);
         
-            remove => HookEndpointManager.Unmodify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("Draw", BindingFlags.Public | BindingFlags.Instance), value);
+            remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("Draw", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
         private event ILContext.Manipulator DrawOpenAnimHook
         {
-            add => HookEndpointManager.Modify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("DrawOpenAnim", BindingFlags.Public | BindingFlags.Instance), value);
+            add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("DrawOpenAnim", BindingFlags.Public | BindingFlags.Instance), value);
         
-            remove => HookEndpointManager.Unmodify(CoreCalamityTranslation.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("DrawOpenAnim", BindingFlags.Public | BindingFlags.Instance), value);
+            remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("DrawOpenAnim", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1012,7 +1012,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ProfanedGuardianBoss2).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => ProfanedGuardianBoss2Hook += TranslationProfanedGuardianBoss2Hook;
     
@@ -1032,7 +1032,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(PerforatorHeadLarge).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => PerforatorHeadLargeHook += TranslationPerforatorHeadLargeHook;
     
@@ -1052,7 +1052,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(PerforatorHeadSmall).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => PerforatorHeadSmallHook += TranslationPerforatorHeadSmallHook;
     
@@ -1072,7 +1072,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(Bumblefuck).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => BumblefuckHook += TranslationBumblefuckHook;
     
@@ -1092,7 +1092,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(PerforatorHeadMedium).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => PerforatorHeadMediumHook += TranslationPerforatorHeadMediumHook;
     
@@ -1112,7 +1112,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ProfanedGuardianBoss3).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => ProfanedGuardianBoss3Hook += TranslationProfanedGuardianBoss3Hook;
     
@@ -1132,7 +1132,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ProfanedGuardianBoss).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => ProfanedGuardianBossHook += TranslationProfanedGuardianBossHook;
     
@@ -1152,7 +1152,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(BossRushUI).GetMethod("get_InvasionName", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => BossRushUIHook += TranslationBossRushUIHook;
     
@@ -1172,7 +1172,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ColdDivinity).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => ColdDivinityHook += TranslationColdDivinityHook;
     
@@ -1332,7 +1332,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(OccultStoneWall).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
     
         public override void Load()
         {
@@ -1438,7 +1438,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(StratusWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load() => StratusWorkbenchHook += TranslationStratusWorkbenchHook;
     
@@ -1465,7 +1465,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(StatigelBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1502,7 +1502,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(ProfanedBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1546,7 +1546,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(VoidBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1587,7 +1587,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(CosmiliteBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1631,7 +1631,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(AshenBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1686,7 +1686,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(SilvaBasin).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1738,7 +1738,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(AbyssPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1786,7 +1786,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(AncientPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -1946,7 +1946,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(MonolithWorkBench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
         
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
         
         public override void Load()
         {
@@ -2042,7 +2042,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(Nanotech).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
         }
     
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
     
         public override void Load() => NanotechHook += TranslationNanotechHook;
     
@@ -2060,7 +2060,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(typeof(Polterghast).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
         }
     
-        public override bool Autoload() => CoreCalamityTranslation.Calamity != null && Translation.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Calamity != null && Translation.IsRussianLanguage;
     
         public override void Load() => PolterghastHook += TranslationPolterghastHook;
     
