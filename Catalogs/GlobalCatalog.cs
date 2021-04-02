@@ -663,7 +663,7 @@ namespace CalamityRuTranslate.Catalogs
             {"Puff", "Puff"},
             {"Coco", "Coco"},
             {"Truffle", "Truffle"},
-            {"Squeaks", "Squeaks"},
+            {"Squeaks", "Squeaks"}
         };
     }
 }

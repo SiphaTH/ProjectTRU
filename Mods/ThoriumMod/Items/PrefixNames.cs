@@ -1,6 +1,6 @@
 ﻿using System;
 using CalamityRuTranslate.Catalogs;
-using CalamityRuTranslate.Utilities;
+using CalamityRuTranslate.Common.Exceptions;
 using Terraria.Localization;
 
 namespace CalamityRuTranslate.Mods.ThoriumMod.Items

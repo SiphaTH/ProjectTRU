@@ -1,5 +1,5 @@
 ﻿using CalamityRuTranslate.Catalogs;
-using CalamityRuTranslate.Utilities;
+using CalamityRuTranslate.Common.Utilities;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -7,13 +7,13 @@ namespace CalamityRuTranslate.Vanilla
 {
     public class GlobalTownNpcName : GlobalNPC
     {
-        public override bool Autoload(ref string name) => Translation.IsRussianLanguage;
+        public override bool Autoload(ref string name) => TranslationUtils.IsRussianLanguage;
 
         public override void AI(NPC npc)
         {
             if (GlobalCatalog.TownNpcName.ContainsKey(npc.GivenName) && !Main.dedServ)
             {
-                npc.GivenName = LangUtilities.TranslationKey($"Global.TownNpcName.{GlobalCatalog.TownNpcName[npc.GivenName]}");
+                npc.GivenName = LangUtils.TranslationKey($"Global.TownNpcName.{GlobalCatalog.TownNpcName[npc.GivenName]}");
             }
         }
     }

@@ -378,7 +378,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("TitanicTrioPaint").DisplayName.AddTranslation(GameCulture.Russian, "Титаническое трио");
 			thorium.GetItem("UnderseaBountyPaint").DisplayName.AddTranslation(GameCulture.Russian, "Подводная награда");
 			thorium.GetItem("BlackStainedGlass").DisplayName.AddTranslation(GameCulture.Russian, "Черное витражное стекло");
-			thorium.GetItem("BoreanStriderMusicBox").DisplayName.AddTranslation(GameCulture.Russian, "Музыкальная шкатулка (арктический страйдер)");
+			thorium.GetItem("BoreanStriderMusicBox").DisplayName.AddTranslation(GameCulture.Russian, "Музыкальная шкатулка (Борейский странник)");
 			thorium.GetItem("CherryAstroturf").DisplayName.AddTranslation(GameCulture.Russian, "Вишневая земля");
 			thorium.GetItem("ChessBlock").DisplayName.AddTranslation(GameCulture.Russian, "Клетчатый кирпич");
 			thorium.GetItem("ChessWall").DisplayName.AddTranslation(GameCulture.Russian, "Клетчатая стена");

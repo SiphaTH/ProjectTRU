@@ -450,7 +450,7 @@ namespace CalamityRuTranslate.Catalogs
                 {"VoidLaserPro", "Пустотный лазер"},
                 {"VoidPortal1", "Пустотный портал"},
                 {"VoidPortal2", "Пустотный портал"},
-                {"Whirlpool", "Водоворот"},
+                {"Whirlpool", "Водоворот"}
             };
 
             ThoriumChestName = new Dictionary<string, string>

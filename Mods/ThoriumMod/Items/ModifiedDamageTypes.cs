@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using CalamityRuTranslate.Utilities;
+using CalamityRuTranslate.Common.Utilities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
@@ -10,7 +10,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod.Items
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (CoreThoriumTranslation.ThoriumMod != null && Translation.IsRussianLanguage && ProjectTRuConfig.Instance.ThoriumTranslation)
+            if (CoreThoriumTranslation.ThoriumMod != null && TranslationUtils.IsRussianLanguage && TRuConfig.Instance.ThoriumTranslation)
             {
                 foreach (TooltipLine tooltip in tooltips)
                 {

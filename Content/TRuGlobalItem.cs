@@ -1,6 +1,7 @@
 ﻿using CalamityRuTranslate.Content.Vanity.CCC;
 using CalamityRuTranslate.Content.Vanity.StepMolchX;
 using CalamityRuTranslate.Content.Vanity.Umbra;
+using CalamityRuTranslate.Content.Vanity.Veystreks;
 using CalamityRuTranslate.Content.Vanity.Yum;
 using Terraria;
 using Terraria.ID;
@@ -25,31 +26,37 @@ namespace CalamityRuTranslate.Content
                         case ItemID.FishronBossBag:
                         case ItemID.CultistBossBag:
                         case ItemID.MoonLordBossBag:
-                            if (Main.rand.NextBool(5))
+                            if (Main.rand.NextBool(20))
                             {
                                 player.QuickSpawnItem(ModContent.ItemType<StepMolchXHood>());
                                 player.QuickSpawnItem(ModContent.ItemType<StepMolchXChest>());
                                 player.QuickSpawnItem(ModContent.ItemType<StepMolchXBoots>());
                             }
-                            if (Main.rand.NextBool(5))
+                            if (Main.rand.NextBool(20))
                             {
                                 player.QuickSpawnItem(ModContent.ItemType<CccMask>());
                                 player.QuickSpawnItem(ModContent.ItemType<CccChest>());
                                 player.QuickSpawnItem(ModContent.ItemType<CccBoots>());
                             }
-                            if (Main.rand.NextBool(5))
+                            if (Main.rand.NextBool(20))
                             {
                                 player.QuickSpawnItem(ModContent.ItemType<UmbraVoidHood>());
                                 player.QuickSpawnItem(ModContent.ItemType<UmbraVoidChest>());
                                 player.QuickSpawnItem(ModContent.ItemType<UmbraVoidGreaves>());
                                 player.QuickSpawnItem(ModContent.ItemType<UmbraWings>());
                             }
-                            if (Main.rand.NextBool(5))
+                            if (Main.rand.NextBool(20))
                             {
                                 player.QuickSpawnItem(ModContent.ItemType<YumHood>());
                                 player.QuickSpawnItem(ModContent.ItemType<YumChest>());
                                 player.QuickSpawnItem(ModContent.ItemType<YumBoots>());
                             }
+                            // if (Main.rand.NextBool(20))
+                            // {
+                            //     player.QuickSpawnItem(ModContent.ItemType<VeystreksScarf>());
+                            //     player.QuickSpawnItem(ModContent.ItemType<VeystreksChest>());
+                            //     player.QuickSpawnItem(ModContent.ItemType<VeystreksBoots>());
+                            // }
                             break;
                     }
                     break;

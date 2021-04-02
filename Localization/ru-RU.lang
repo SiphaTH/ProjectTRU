@@ -3435,7 +3435,7 @@ Calamity.ItemName.AgedSecurityChest=Старый охранный сундук
 Calamity.ItemName.ChargingStationItem=Зарядное устройство
 Calamity.ItemTooltip.ChargingStationItem=Заряжает вооружение Дрейдона с помощью силовых ячеек\nПоместите предмет и силовые ячейки в зарядное устройство для подзарядки предмета
 
-Calamity.ItemName.HazardChevronPanels=Опасные шевронные панели
+Calamity.ItemName.HazardChevronPanels=Предупредительная панель
 
 Calamity.ItemName.LabHologramProjectorItem=Голограммный проектор лаборатории
 
@@ -3447,7 +3447,7 @@ Calamity.ItemName.LaboratoryDisplayItem=Дисплей лаборатории
 
 Calamity.ItemName.LaboratoryDoorItem=Дверь лаборатории
 
-Calamity.ItemName.LaboratoryElectricPanelItem=Электрическая панель лаборатории
+Calamity.ItemName.LaboratoryElectricPanelItem=Электрический щит лаборатории
 
 Calamity.ItemName.LaboratoryPanels=Панели лаборатории
 
@@ -4122,7 +4122,7 @@ Calamity.ItemTooltip.Navyplate=Резонирует с потусторонне�
 Calamity.ItemName.PlagueContainmentCells=Чумопластина
 Calamity.ItemTooltip.PlagueContainmentCells=Резонирует с потусторонней энергией
 
-Calamity.ItemName.HazardChevronWall=Опасная шевронная стена
+Calamity.ItemName.HazardChevronWall=Предупредительная стена
 
 Calamity.ItemName.LaboratoryPanelWall=Стена из панелей лаборатории
 
@@ -4872,7 +4872,7 @@ Calamity.ItemName.GammaFusillade=Биорасстрел
 Calamity.ItemTooltip.GammaFusillade=Высвобождает концентрированный луч энергии жизни
 
 Calamity.ItemName.Genisis=Генизис
-Calamity.ItemTooltip.Genisis=Стреляет Y-образным лучом разрушительной энергии и скопление лазеров
+Calamity.ItemTooltip.Genisis=Стреляет Y-образным лучом разрушительной энергии и скоплением лазеров
 
 Calamity.ItemName.GhastlyVisage=Призрачный лик
 Calamity.ItemTooltip.GhastlyVisage=Стреляет взрывной самонаводящейся призрачной энергией
@@ -6556,7 +6556,7 @@ Calamity.ItemName.ScourgeoftheSeas=Бич морей
 Calamity.ItemTooltip.ScourgeoftheSeas=Разлетается ядовитым облаком после удара по врагу\nПри скрытном ударе дротик покрыт мерзкими токсинами, поражая врагов мощным эффектом
 
 Calamity.ItemName.SeafoamBomb=Бомба морской пены
-Calamity.ItemTooltip.SeafoamBomb=Бросает бомбу, которая разрывается пузырём, наносящим дополнительный урон врагам\nПри скрытном ударе бомба быстрее и взрывается 5 пузырями
+Calamity.ItemTooltip.SeafoamBomb=Бросает бомбу, которая разрывается пузырём, наносящим дополнительный урон врагам\nПри скрытном ударе бомба быстрее и разрывается 5 пузырями
 
 Calamity.ItemName.SealedSingularity=Запечатанная сингулярность
 Calamity.ItemTooltip.SealedSingularity=Разбивается при ударе, вызывая чёрную дыру, которая засасывает ближайших врагов\nПри скрытном ударе вызывает чёрную дыру, которая длится дольше и засасывает врагов с большей силой
@@ -9283,7 +9283,7 @@ FargoSouls.BuffName.MutantSpawnBuff=Отродье Мутанта
 FargoSouls.BuffDescription.MutantSpawnBuff=Отродье Мутанта
 
 FargoSouls.BuffName.HellFire=Адский огонь
-FargoSouls.BuffDescription.HellFire= 
+FargoSouls.BuffDescription.HellFire=⠀
 
 FargoSouls.BuffName.BetsyDash=Рывок Бетси
 FargoSouls.BuffDescription.BetsyDash=Вы неуязвимы
@@ -9313,7 +9313,7 @@ FargoSouls.BuffName.HuntressCD=Перезарядка дождя из стрел
 FargoSouls.BuffDescription.HuntressCD=Вы не можете повторно активировать дождь из стрел
 
 FargoSouls.BuffName.LeadPoison=Свинцовый яд
-FargoSouls.BuffDescription.LeadPoison= 
+FargoSouls.BuffDescription.LeadPoison=⠀
 
 FargoSouls.BuffName.MonkBuff=Медитация
 FargoSouls.BuffDescription.MonkBuff=У вас есть один заряд рывка монаха
@@ -9325,10 +9325,10 @@ FargoSouls.BuffName.ShellHide=Под панцирем
 FargoSouls.BuffDescription.ShellHide=Все снаряды поглощаются
 
 FargoSouls.BuffName.Shock=Шок
-FargoSouls.BuffDescription.Shock= 
+FargoSouls.BuffDescription.Shock=⠀
 
 FargoSouls.BuffName.SolarFlare=Солнечная вспышка
-FargoSouls.BuffDescription.SolarFlare= 
+FargoSouls.BuffDescription.SolarFlare=⠀
 
 FargoSouls.BuffName.SquireBuff=Сила оруженосца
 FargoSouls.BuffDescription.SquireBuff=Немного снижает количество кадров неуязвимости врага
@@ -9337,7 +9337,7 @@ FargoSouls.BuffName.SuperBleed=Кровавый гейзер
 FargoSouls.BuffDescription.SuperBleed=Вы выплёскиваете кровь в целях самозащиты
 
 FargoSouls.BuffName.Swarmed=Окружённый
-FargoSouls.BuffDescription.Swarmed= 
+FargoSouls.BuffDescription.Swarmed=⠀
 
 FargoSouls.BuffName.TimeFrozen=Заморозка времени
 FargoSouls.BuffDescription.TimeFrozen=Вы остановились во времени
@@ -9368,6 +9368,11 @@ FargoSouls.BuffDescription.DoveBuff=Голубь следует за вами
 
 FargoSouls.BuffName.FishMinionBuff=Рыба
 FargoSouls.BuffDescription.FishMinionBuff=Рыба будет сражаться за вас
+
+
+
+FargoSouls.Vanilla.BuffDescription.ShadowDodge={$BuffDescription.ShadowDodge}\nРежим Вечности: Успешное уклонение снизит ваш наносимый урон
+FargoSouls.Vanilla.BuffDescription.IceBarrier={$BuffDescription.IceBarrier}\nРежим Вечности: Эффективность снижена до 15%
 
 
 
@@ -10106,15 +10111,15 @@ FargoSouls.SetBonus.MutantMask=Фантазматические сферы ст�
 FargoSouls.TooltipName.Help=Нажмите ПКМ, чтобы преобразовать
 FargoSouls.TooltipName.Tooltip=>> Предмет патрона <<
 FargoSouls.TooltipName.Eternity=Вечность
-FargoSouls.TooltipName.masoNerf1=[c/ff0000:Режим Вечности:] Снижает на 80% урон для стрелковых оружий
-FargoSouls.TooltipName.masoNerf2=[c/ff0000:Режим Вечности:] Снижает на 20% урон для стрелковых оружий
-FargoSouls.TooltipName.masoNerf3=[c/ff0000:Режим Вечности:] Может разделится 4 раза в секунду
-FargoSouls.TooltipName.masoNerf4=[c/ff0000:Режим Вечности:] Скорость и длительность снижены
-FargoSouls.TooltipName.masoNerf5=[c/ff0000:Режим Вечности:] Нельзя использовать, пока не побеждён Скелетрон
-FargoSouls.TooltipName.masoNerf6=[c/ff0000:Режим Вечности:] Теневое уклонение временно снижает ваш урон
-FargoSouls.TooltipName.masoNerf7=[c/ff0000:Режим Вечности:] Исцеляющие сферы движутся медленнее и быстро исчезают
-FargoSouls.TooltipName.masoNerf8=[c/ff0000:Режим Вечности:] Сопротивление урону составляет 15% вместо 25%
-FargoSouls.TooltipName.masoNerf9=[c/ff0000:Режим Вечности:] Снижен шанс кражи здоровья
+FargoSouls.TooltipName.masoNerf.Ammo=[c/ff0000:Режим Вечности:] Снижает на 80% урон для стрелковых оружий
+FargoSouls.TooltipName.masoNerf.AmmoRocket=[c/ff0000:Режим Вечности:] Снижает на 20% урон для стрелковых оружий
+FargoSouls.TooltipName.masoNerf2.CrystalBullet.HolyArrow=[c/ff0000:Режим Вечности:] Может разделится 4 раза в секунду
+FargoSouls.TooltipName.masoNerf2.ChlorophyteBullet=[c/ff0000:Режим Вечности:] Скорость и длительность снижены
+FargoSouls.TooltipName.masoNerf.WaterBolt=[c/ff0000:Режим Вечности:] Нельзя использовать, пока не побеждён Скелетрон
+FargoSouls.TooltipName.masoNerf.TitaniumPieces=[c/ff0000:Режим Вечности:] Теневое уклонение временно снижает ваш урон
+FargoSouls.TooltipName.masoNerf.SpectreHood=[c/ff0000:Режим Вечности:] Исцеляющие сферы движутся медленнее и быстро исчезают
+FargoSouls.TooltipName.masoNerf.FrozenTurtleShell=[c/ff0000:Режим Вечности:] Сопротивление урону составляет 15% вместо 25%
+FargoSouls.TooltipName.masoNerf2.VampireKnives=[c/ff0000:Режим Вечности:] Снижен шанс кражи здоровья
 
 FargoSouls.CustomTooltip.EternitySouls.1=Увеличивает урон на 250%
 FargoSouls.CustomTooltip.EternitySouls.2=Увеличивает скорость атаки на 250%
@@ -11059,7 +11064,7 @@ Fargo.ItemTooltip.OverloadSaucer=Призывает несколько звёз�
 
 #Из Ториума
 Fargo.ItemName.OverloadStrider=Криояйцо
-Fargo.ItemTooltip.OverloadStrider=Призывает несколько северных странников
+Fargo.ItemTooltip.OverloadStrider=Призывает несколько борейских странников
 
 #Из Ториума
 Fargo.ItemName.OverloadThunderbird=Заряженный птичий свисток

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 
 namespace CalamityRuTranslate.Common
 {
-    public class ILManager
+    // Original Code https://github.com/Steviegt6/CataclysmMod
+    public static class ILManager
     {
-        public static List<ILEdit> ILEdits;
+        private static List<ILEdit> ILEdits;
 
         public static void Load()
         {
@@ -13,16 +14,14 @@ namespace CalamityRuTranslate.Common
 
             foreach (Type type in CalamityRuTranslate.Instance.Code.GetTypes())
             {
-                if (!type.IsAbstract && type.GetConstructor(new Type[] { }) != null)
-                {
-                    if (type.IsSubclassOf(typeof(ILEdit)))
-                    {
-                        ILEdit ilEdit = Activator.CreateInstance(type) as ILEdit;
-
-                        if (ilEdit.Autoload())
-                            ILEdits.Add(ilEdit);
-                    }
-                }
+                if (type.IsAbstract && type.GetConstructor(new Type[] { }) != null)
+                    continue;
+                
+                if (!type.IsSubclassOf(typeof(ILEdit)))
+                    continue;
+                
+                if(Activator.CreateInstance(type) is ILEdit ilEdit && ilEdit.Autoload())
+                    ILEdits.Add(ilEdit);
             }
             
             foreach (ILEdit ilEdit in ILEdits)

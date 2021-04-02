@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using CalamityRuTranslate.Catalogs;
 using CalamityRuTranslate.Common;
-using CalamityRuTranslate.Utilities;
+using CalamityRuTranslate.Common.Utilities;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -10,41 +9,21 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 {
     public class SetBonusTranslation : GlobalItem
     {
-        private static readonly Dictionary<string, (int Head, int Body, int Legs)> FargoSoulsArmorSet =
-            new Dictionary<string, (int Head, int Body, int Legs)>
-            {
-                {"EridanusHat", (ModsCall.FargoSouls.ItemType("EridanusHat"), ModsCall.FargoSouls.ItemType("EridanusBattleplate"), ModsCall.FargoSouls.ItemType("EridanusLegwear"))},
-                {"GaiaHelmet", (ModsCall.FargoSouls.ItemType("GaiaHelmet"), ModsCall.FargoSouls.ItemType("GaiaPlate"), ModsCall.FargoSouls.ItemType("GaiaGreaves"))},
-                {"MutantMask", (ModsCall.FargoSouls.ItemType("MutantMask"), ModsCall.FargoSouls.ItemType("MutantBody"), ModsCall.FargoSouls.ItemType("MutantPants"))}
-                
-            };
+        private static readonly List<ArmorSetInfo> ArmorSets = new List<ArmorSetInfo>
+        {
+            new ArmorSetInfo(ModsCall.FargoSouls.ItemType("EridanusHat"), ModsCall.FargoSouls.ItemType("EridanusBattleplate"), ModsCall.FargoSouls.ItemType("EridanusLegwear"), "EridanusHat"),
+            
+            new ArmorSetInfo(ModsCall.FargoSouls.ItemType("GaiaHelmet"), ModsCall.FargoSouls.ItemType("GaiaPlate"), ModsCall.FargoSouls.ItemType("GaiaGreaves"), "GaiaHelmet"),
+            
+            new ArmorSetInfo(ModsCall.FargoSouls.ItemType("MutantMask"), ModsCall.FargoSouls.ItemType("MutantBody"), ModsCall.FargoSouls.ItemType("MutantPants"), "MutantMask")
+        };
         
-        public override bool Autoload(ref string name) => ModsCall.FargoSouls != null && Translation.IsRussianLanguage;
+        public override bool Autoload(ref string name) => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
 
-        public override string IsArmorSet(Item head, Item body, Item legs)
-        {
-            foreach (var armorSet in FargoSoulsArmorSet.Where(armorSet => head.type == armorSet.Value.Head && body.type == armorSet.Value.Body && legs.type == armorSet.Value.Legs))
-            {
-                return armorSet.Key;
-            }
+        public override string IsArmorSet(Item head, Item body, Item legs) => ArmorSets
+            .Where(set => set.CheckArmorSet(head.type, body.type, legs.type)).Select(info => info.GetArmorSetName())
+            .FirstOrDefault();
 
-            return "";
-        }
-
-        public override void UpdateArmorSet(Player player, string set)
-        {
-            switch (set)
-            {
-                case "EridanusHat":
-                case "GaiaHelmet":
-                case "MutantMask":
-                    player.setBonus = LangUtilities.GetTextValue("FargoSouls", $"SetBonus.{set}");
-                    break;
-                
-                default:
-                    player.setBonus = LangUtilities.GetTextValue("FargoSouls", $"SetBonus.{set}");
-                    break;
-            }
-        }
+        public override void UpdateArmorSet(Player player, string set) => player.setBonus = LangUtils.GetTextValue("FargoSouls", $"SetBonus.{set}");
     }
 }

@@ -361,7 +361,7 @@ namespace CalamityRuTranslate.Catalogs
             "FigBranch",
             "ParadoxWolfSoul",
             "SquidwardDoor",
-            "MissDrakovisFishingPole",
+            "MissDrakovisFishingPole"
         };
         public static List<string> ItemTooltip = new List<string>
         {
@@ -592,7 +592,7 @@ namespace CalamityRuTranslate.Catalogs
             "FigBranch",
             "ParadoxWolfSoul",
             "SquidwardDoor",
-            "MissDrakovisFishingPole",
+            "MissDrakovisFishingPole"
         };
         public static List<string> NPC = new List<string>
         {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using CalamityRuTranslate.Utilities;
+using CalamityRuTranslate.Common.Exceptions;
+using CalamityRuTranslate.Common.Utilities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Localization;
@@ -72,24 +73,24 @@ namespace CalamityRuTranslate.Common
 
         public void TryDialogueTranslation()
         {
-            if (ModInstance != null && Translation.IsRussianLanguage)
+            if (ModInstance != null && TranslationUtils.IsRussianLanguage)
                 DialogueTranslation();
         }
 
         public void TrySetupContentTranslation()
         {
-            if (ModInstance != null && Translation.IsRussianLanguage && !Main.dedServ)
+            if (ModInstance != null && TranslationUtils.IsRussianLanguage && !Main.dedServ)
                 SetupTranslation();
         }
-        
+
         private void SetupTranslation()
         {
             foreach (var id in BuffTranslation)
             {
                 try
                 {
-                    ModInstance.GetBuff(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"{_modName}.BuffName.{id}"));
-                    ModInstance.GetBuff(id).Description.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"{_modName}.BuffDescription.{id}"));
+                    ModInstance.GetBuff(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtils.TranslationKey($"{_modName}.BuffName.{id}"));
+                    ModInstance.GetBuff(id).Description.AddTranslation(GameCulture.Russian, LangUtils.TranslationKey($"{_modName}.BuffDescription.{id}"));
                 }
                 catch (NullReferenceException)
                 {
@@ -101,7 +102,7 @@ namespace CalamityRuTranslate.Common
             {
                 try
                 {
-                    ModInstance.GetItem(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"{_modName}.ItemName.{id}"));
+                    ModInstance.GetItem(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtils.TranslationKey($"{_modName}.ItemName.{id}"));
                 }
                 catch (NullReferenceException)
                 {
@@ -113,7 +114,7 @@ namespace CalamityRuTranslate.Common
             {
                 try
                 {
-                    ModInstance.GetItem(id).Tooltip.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"{_modName}.ItemTooltip.{id}"));
+                    ModInstance.GetItem(id).Tooltip.AddTranslation(GameCulture.Russian, LangUtils.TranslationKey($"{_modName}.ItemTooltip.{id}"));
                 }
                 catch (NullReferenceException)
                 {
@@ -125,7 +126,7 @@ namespace CalamityRuTranslate.Common
             {
                 try
                 {
-                    ModInstance.GetNPC(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"{_modName}.NpcName.{id}"));
+                    ModInstance.GetNPC(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtils.TranslationKey($"{_modName}.NpcName.{id}"));
                 }
                 catch (NullReferenceException)
                 {
@@ -139,7 +140,7 @@ namespace CalamityRuTranslate.Common
                 {
                     ModTile modTile = TileLoader.GetTile(ModInstance.TileType(id.Key));
                     ModTranslation modTranslation = modTile.CreateMapEntryName(id.Value.Item1);
-                    modTranslation.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"{_modName}.TileName.{id.Key}"));
+                    modTranslation.AddTranslation(GameCulture.Russian, LangUtils.TranslationKey($"{_modName}.TileName.{id.Key}"));
                     modTile.AddMapEntry(id.Value.Item2, modTranslation);
                 }
                 catch (NullReferenceException)
@@ -152,7 +153,7 @@ namespace CalamityRuTranslate.Common
             {
                 try
                 {
-                    TileLoader.GetTile(ModInstance.TileType(id)).chest = LangUtilities.TranslationKey($"{_modName}.ChestName.{id}");
+                    TileLoader.GetTile(ModInstance.TileType(id)).chest = LangUtils.TranslationKey($"{_modName}.ChestName.{id}");
                 }
                 catch (NullReferenceException)
                 {
@@ -164,7 +165,7 @@ namespace CalamityRuTranslate.Common
             {
                 try
                 {
-                    TileLoader.GetTile(ModInstance.TileType(id)).dresser = LangUtilities.TranslationKey($"{_modName}.DresserName.{id}");
+                    TileLoader.GetTile(ModInstance.TileType(id)).dresser = LangUtils.TranslationKey($"{_modName}.DresserName.{id}");
                 }
                 catch (NullReferenceException)
                 {
@@ -176,7 +177,7 @@ namespace CalamityRuTranslate.Common
             {
                 try
                 {
-                    ModInstance.GetProjectile(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"{_modName}.ProjectileName.{id}"));
+                    ModInstance.GetProjectile(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtils.TranslationKey($"{_modName}.ProjectileName.{id}"));
                 }
                 catch (NullReferenceException)
                 {
@@ -188,7 +189,7 @@ namespace CalamityRuTranslate.Common
             {
                 try
                 {
-                    ModInstance.GetPrefix(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtilities.TranslationKey($"{_modName}.PrefixName.{id}"));
+                    ModInstance.GetPrefix(id).DisplayName.AddTranslation(GameCulture.Russian, LangUtils.TranslationKey($"{_modName}.PrefixName.{id}"));
                 }
                 catch (NullReferenceException)
                 {
@@ -199,7 +200,7 @@ namespace CalamityRuTranslate.Common
             foreach (var id in KeyLocalization)
             {
                 ModTranslation modTranslation = ModInstance.CreateTranslation(id);
-                modTranslation.SetDefault(LangUtilities.TranslationKey($"{_modName}.KeyLocalization.{id}"));
+                modTranslation.SetDefault(LangUtils.TranslationKey($"{_modName}.KeyLocalization.{id}"));
                 ModInstance.AddTranslation(modTranslation);
             }
         }

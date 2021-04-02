@@ -1,5 +1,7 @@
 ﻿using System;
 using CalamityRuTranslate.Catalogs;
+using CalamityRuTranslate.Common.Exceptions;
+using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Mods.ThoriumMod.Buffs;
 using CalamityRuTranslate.Mods.ThoriumMod.Items;
 using CalamityRuTranslate.Mods.ThoriumMod.Projectiles;
@@ -8,7 +10,6 @@ using CalamityRuTranslate.ThoriumMod.Items;
 using CalamityRuTranslate.ThoriumMod.ModSupport;
 using CalamityRuTranslate.ThoriumMod.NPCs;
 using CalamityRuTranslate.ThoriumMod.Tiles;
-using CalamityRuTranslate.Utilities;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.ThoriumMod
@@ -26,7 +27,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
                 throw new ModVersionException("Thorium", "1.6.4.1", ThoriumMod.Version);
             }
 
-            if (ThoriumMod != null && ProjectTRuConfig.Instance.ThoriumTranslation && Translation.IsRussianLanguage)
+            if (ThoriumMod != null && TRuConfig.Instance.ThoriumTranslation && TranslationUtils.IsRussianLanguage)
             {
                 ThoriumIL.Load();
                 ThoriumTranslationLists.LoadLists();
@@ -36,7 +37,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 
         public static void LoadCrossContent()
         {
-            if (ThoriumMod != null && ProjectTRuConfig.Instance.ThoriumTranslation && Translation.IsRussianLanguage)
+            if (ThoriumMod != null && TRuConfig.Instance.ThoriumTranslation && TranslationUtils.IsRussianLanguage)
             {
                 ThoriumItemName.Setup();
                 ThoriumItemTooltip.Setup();

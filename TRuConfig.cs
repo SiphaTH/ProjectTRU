@@ -4,9 +4,9 @@ using Terraria.ModLoader.Config;
 namespace CalamityRuTranslate
 {
     [Label("Конфигурация")]
-    public class ProjectTRuConfig : ModConfig
+    public class TRuConfig : ModConfig
     {
-        public static ProjectTRuConfig Instance { get; set; }
+        public static TRuConfig Instance { get; set; }
         
         public override void OnLoaded() => Instance = this;
         

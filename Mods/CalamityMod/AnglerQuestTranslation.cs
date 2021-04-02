@@ -1,5 +1,5 @@
 ﻿using CalamityRuTranslate.Common;
-using CalamityRuTranslate.Utilities;
+using CalamityRuTranslate.Common.Utilities;
 
 namespace CalamityRuTranslate.Mods.CalamityMod
 {
@@ -9,28 +9,28 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         {
             if (type == ModsCall.Calamity.ItemType("EutrophicSandfish"))
             {
-                chat = LangUtilities.TranslationKey("Calamity.AnglerQuest.EutrophicSandfish.Chat");
-                catchLocation = LangUtilities.TranslationKey("Calamity.AnglerQuest.EutrophicSandfish.CatchLocation");
+                chat = LangUtils.TranslationKey("Calamity.AnglerQuest.EutrophicSandfish.Chat");
+                catchLocation = LangUtils.TranslationKey("Calamity.AnglerQuest.EutrophicSandfish.CatchLocation");
             }
             else if (type == ModsCall.Calamity.ItemType("Serpentuna"))
             {
-                chat = LangUtilities.TranslationKey("Calamity.AnglerQuest.Serpentuna.Chat");
-                catchLocation = LangUtilities.TranslationKey("Calamity.AnglerQuest.Serpentuna.CatchLocation");
+                chat = LangUtils.TranslationKey("Calamity.AnglerQuest.Serpentuna.Chat");
+                catchLocation = LangUtils.TranslationKey("Calamity.AnglerQuest.Serpentuna.CatchLocation");
             }
             else if (type == ModsCall.Calamity.ItemType("SurfClam"))
             {
-                chat = LangUtilities.TranslationKey("Calamity.AnglerQuest.SurfClam.Chat");
-                catchLocation = LangUtilities.TranslationKey("Calamity.AnglerQuest.SurfClam.CatchLocation");
+                chat = LangUtils.TranslationKey("Calamity.AnglerQuest.SurfClam.Chat");
+                catchLocation = LangUtils.TranslationKey("Calamity.AnglerQuest.SurfClam.CatchLocation");
             }
             else if (type == ModsCall.Calamity.ItemType("Brimlish"))
             {
-                chat = LangUtilities.TranslationKey("Calamity.AnglerQuest.Brimlish.Chat");
-                catchLocation = LangUtilities.TranslationKey("Calamity.AnglerQuest.Brimlish.CatchLocation");
+                chat = LangUtils.TranslationKey("Calamity.AnglerQuest.Brimlish.Chat");
+                catchLocation = LangUtils.TranslationKey("Calamity.AnglerQuest.Brimlish.CatchLocation");
             }
             else if (type == ModsCall.Calamity.ItemType("Slurpfish"))
             {
-                chat = LangUtilities.TranslationKey("Calamity.AnglerQuest.Slurpfish.Chat");
-                catchLocation = LangUtilities.TranslationKey("Calamity.AnglerQuest.Slurpfish.CatchLocation");
+                chat = LangUtils.TranslationKey("Calamity.AnglerQuest.Slurpfish.Chat");
+                catchLocation = LangUtils.TranslationKey("Calamity.AnglerQuest.Slurpfish.CatchLocation");
             }
         }
     }

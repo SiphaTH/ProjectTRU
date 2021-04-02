@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Reflection;
-using CalamityRuTranslate.Utilities;
+using CalamityRuTranslate.Common.Utilities;
 using MonoMod.Cil;
 using MonoMod.RuntimeDetour.HookGen;
 
@@ -546,288 +546,288 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 
         #region IL Editing
 
-        private static void Ru_ModifyGetCombatTextAquaticAbility(ILContext il) => Translation.ILTranslate(il, "% underwater breath & speed", Translation.EncodeToUtf16("% подводного дыхания и скорости"));
+        private static void Ru_ModifyGetCombatTextAquaticAbility(ILContext il) => TranslationUtils.ILTranslate(il, "% underwater breath & speed", TranslationUtils.EncodeToUtf16("% подводного дыхания и скорости"));
         
-        private static void Ru_ModifyGetCombatTextAttackSpeed(ILContext il) => Translation.ILTranslate(il, "% attack speed", Translation.EncodeToUtf16("% скорости атаки"));
+        private static void Ru_ModifyGetCombatTextAttackSpeed(ILContext il) => TranslationUtils.ILTranslate(il, "% attack speed", TranslationUtils.EncodeToUtf16("% скорости атаки"));
         
-        private static void Ru_ModifyGetCombatTextCriticalStrikeChance(ILContext il) => Translation.ILTranslate(il, "% critical strike chance", Translation.EncodeToUtf16("% шанс критического удара"));
+        private static void Ru_ModifyGetCombatTextCriticalStrikeChance(ILContext il) => TranslationUtils.ILTranslate(il, "% critical strike chance", TranslationUtils.EncodeToUtf16("% шанс критического удара"));
         
-        private static void Ru_ModifyGetCombatTextDamage(ILContext il) => Translation.ILTranslate(il, "% damage", Translation.EncodeToUtf16("% урона"));
+        private static void Ru_ModifyGetCombatTextDamage(ILContext il) => TranslationUtils.ILTranslate(il, "% damage", TranslationUtils.EncodeToUtf16("% урона"));
         
-        private static void Ru_ModifyGetCombatTextDamageReduction(ILContext il) => Translation.ILTranslate(il, "% damage reduction", Translation.EncodeToUtf16("% сопротивление урону"));
+        private static void Ru_ModifyGetCombatTextDamageReduction(ILContext il) => TranslationUtils.ILTranslate(il, "% damage reduction", TranslationUtils.EncodeToUtf16("% сопротивление урону"));
         
-        private static void Ru_ModifyGetCombatTextDefense(ILContext il) => Translation.ILTranslate(il, " defense", Translation.EncodeToUtf16(" защиты"));
+        private static void Ru_ModifyGetCombatTextDefense(ILContext il) => TranslationUtils.ILTranslate(il, " defense", TranslationUtils.EncodeToUtf16(" защиты"));
 
         private static void Ru_ModifyGetCombatTextEmpowermentProlongation(ILContext il)
         {
-            Translation.ILTranslate(il, " second", Translation.EncodeToUtf16(" секунда"));
-            Translation.ILTranslate(il, " seconds", Translation.EncodeToUtf16(" секунды"));
+            TranslationUtils.ILTranslate(il, " second", TranslationUtils.EncodeToUtf16(" секунда"));
+            TranslationUtils.ILTranslate(il, " seconds", TranslationUtils.EncodeToUtf16(" секунды"));
         }
         
-        private static void Ru_ModifyGetCombatTextFlatDamage(ILContext il) => Translation.ILTranslate(il, " flat damage", Translation.EncodeToUtf16(" фиксированого урона"));
+        private static void Ru_ModifyGetCombatTextFlatDamage(ILContext il) => TranslationUtils.ILTranslate(il, " flat damage", TranslationUtils.EncodeToUtf16(" фиксированого урона"));
         
-        private static void Ru_ModifyGetCombatTextFlightTime(ILContext il) => Translation.ILTranslate(il, "% flight time", Translation.EncodeToUtf16("% времени полёта"));
+        private static void Ru_ModifyGetCombatTextFlightTime(ILContext il) => TranslationUtils.ILTranslate(il, "% flight time", TranslationUtils.EncodeToUtf16("% времени полёта"));
         
-        private static void Ru_ModifyGetCombatTextInvincibilityFrames(ILContext il) => Translation.ILTranslate(il, "  sec. of after hit invincibility", Translation.EncodeToUtf16(" сек. неуязвимости"));
+        private static void Ru_ModifyGetCombatTextInvincibilityFrames(ILContext il) => TranslationUtils.ILTranslate(il, "  sec. of after hit invincibility", TranslationUtils.EncodeToUtf16(" сек. неуязвимости"));
         
-        private static void Ru_ModifyGetCombatTextJumpHeight(ILContext il) => Translation.ILTranslate(il, " block of jump height", Translation.EncodeToUtf16(" блока высоты прыжка"));
+        private static void Ru_ModifyGetCombatTextJumpHeight(ILContext il) => TranslationUtils.ILTranslate(il, " block of jump height", TranslationUtils.EncodeToUtf16(" блока высоты прыжка"));
         
-        private static void Ru_ModifyGetCombatTextLifeRegeneration(ILContext il) => Translation.ILTranslate(il, " life/sec", Translation.EncodeToUtf16(" здоровья/сек"));
+        private static void Ru_ModifyGetCombatTextLifeRegeneration(ILContext il) => TranslationUtils.ILTranslate(il, " life/sec", TranslationUtils.EncodeToUtf16(" здоровья/сек"));
         
-        private static void Ru_ModifyGetCombatTextMovementSpeed(ILContext il) => Translation.ILTranslate(il, "% base and bonus movement speed", Translation.EncodeToUtf16("% базовой и дополнительной скорости передвижения"));
+        private static void Ru_ModifyGetCombatTextMovementSpeed(ILContext il) => TranslationUtils.ILTranslate(il, "% base and bonus movement speed", TranslationUtils.EncodeToUtf16("% базовой и дополнительной скорости передвижения"));
         
-        private static void Ru_ModifyGetCombatTextResourceConsumptionChance(ILContext il) => Translation.ILTranslate(il, "% chance to not consume resource", Translation.EncodeToUtf16("% шанс не использовать ресурс"));
+        private static void Ru_ModifyGetCombatTextResourceConsumptionChance(ILContext il) => TranslationUtils.ILTranslate(il, "% chance to not consume resource", TranslationUtils.EncodeToUtf16("% шанс не использовать ресурс"));
         
-        private static void Ru_ModifyGetCombatTextResourceGrabRange(ILContext il) => Translation.ILTranslate(il, " resource item grab range", Translation.EncodeToUtf16(" дальность захвата предметов"));
+        private static void Ru_ModifyGetCombatTextResourceGrabRange(ILContext il) => TranslationUtils.ILTranslate(il, " resource item grab range", TranslationUtils.EncodeToUtf16(" дальность захвата предметов"));
         
-        private static void Ru_ModifyGetCombatTextResourceMaximum(ILContext il) => Translation.ILTranslate(il, "% maximum resource", Translation.EncodeToUtf16(" максимума ресурсов"));
+        private static void Ru_ModifyGetCombatTextResourceMaximum(ILContext il) => TranslationUtils.ILTranslate(il, "% maximum resource", TranslationUtils.EncodeToUtf16(" максимума ресурсов"));
         
-        private static void Ru_ModifyGetCombatTextResourceRegen(ILContext il) => Translation.ILTranslate(il, "% resource regeneration", Translation.EncodeToUtf16(" регенерации ресурсов"));
+        private static void Ru_ModifyGetCombatTextResourceRegen(ILContext il) => TranslationUtils.ILTranslate(il, "% resource regeneration", TranslationUtils.EncodeToUtf16(" регенерации ресурсов"));
         
         private static void Ru_ModifyDoBossChecklistSupport(ILContext il)
         {
-            Translation.ILTranslate(il, "The Grand Thunder Bird", Translation.EncodeToUtf16("Великая гром-птица"));
-            Translation.ILTranslate(il, "Use a [i:", Translation.EncodeToUtf16("Используйте [i:"));
-            Translation.ILTranslate(il, "] with [i:", Translation.EncodeToUtf16("] с [i:"));
-            Translation.ILTranslate(il, "] during the day in the Desert.", Translation.EncodeToUtf16("] днём в пустыне."));
-            Translation.ILTranslate(il, "Patch Werk", Translation.EncodeToUtf16("Лоскутик"));
-            Translation.ILTranslate(il, "Randomly appears during the Blood Moon. Start the Blood Moon with a [i:", Translation.EncodeToUtf16("Случайно появляется во время кровавой луны. Начните кровавую луну используя [i:"));
-            Translation.ILTranslate(il, "The Queen Jellyfish", Translation.EncodeToUtf16("Королева медуз"));
-            Translation.ILTranslate(il, "Use a [i:", Translation.EncodeToUtf16("Используйте [i:"), 2);
-            Translation.ILTranslate(il, "] during the day at the Ocean.", Translation.EncodeToUtf16("] днём в океане."));
-            Translation.ILTranslate(il, "Viscount", Translation.EncodeToUtf16("Виконт"));
-            Translation.ILTranslate(il, "Use 5 [i:", Translation.EncodeToUtf16("Используйте 5 [i:"));
-            Translation.ILTranslate(il, "] at an underground Blood Chamber. Use a [i:", Translation.EncodeToUtf16("] в поздемной кровавой камере. Используйте [i:"));
-            Translation.ILTranslate(il, "] to track down the Blood Chamber.", Translation.EncodeToUtf16("] чтобы найти кровавую камеру."));
-            Translation.ILTranslate(il, "Corpse Bloom", Translation.EncodeToUtf16("Трупоцвет"));
-            Translation.ILTranslate(il, "Randomly appears in the post-Skeletron underground jungle.", Translation.EncodeToUtf16("Случайно появляется в подземных джунглях после убийства Скелетрона."));
-            Translation.ILTranslate(il, "Illusionist", Translation.EncodeToUtf16("Иллюзионист"));
-            Translation.ILTranslate(il, "Randomly appears in the Dungeon.", Translation.EncodeToUtf16("Случайно появляется в темнице."));
-            Translation.ILTranslate(il, "Granite Energy Storm", Translation.EncodeToUtf16("Гранитный энергетический шторм"));
-            Translation.ILTranslate(il, "Use a [i:", Translation.EncodeToUtf16("Используйте [i:"), 3);
-            Translation.ILTranslate(il, "] deep underground within a Granite Enclosure or find and defeat an Unstable Energy Anomaly.", Translation.EncodeToUtf16("] глубоко под землёй в гранитных пещерах или найдите и одолейте Нестабильную энергетическую аномалию"));
-            Translation.ILTranslate(il, "Buried Champion", Translation.EncodeToUtf16("Погребённый чемпион"));
-            Translation.ILTranslate(il, "Use a [i:", Translation.EncodeToUtf16("Используйте [i:"), 4);
-            Translation.ILTranslate(il, "] deep underground within a Marble Enclosure or find and defeat a Bizarre Rock Formation.", Translation.EncodeToUtf16("] глубоко под землёй в мраморных пещерах или найдите и одолейте Причудливую горную породу"));
-            Translation.ILTranslate(il, "Star Scouter", Translation.EncodeToUtf16("Звёздный разведчик"));
-            Translation.ILTranslate(il, "Use a [i:", Translation.EncodeToUtf16("Используйте [i:"), 5);
-            Translation.ILTranslate(il, "] high in the sky.", Translation.EncodeToUtf16("] высоко в небе."));
-            Translation.ILTranslate(il, "Borean Strider", Translation.EncodeToUtf16("Арктический страйдер"));
-            Translation.ILTranslate(il, "Randomly appears during a Blizzard or summoned with a [i:", Translation.EncodeToUtf16("Случайно появляется во время метели или вызывается [i:"));
-            Translation.ILTranslate(il, "Coznix, the Fallen Beholder", Translation.EncodeToUtf16("Козникс, падший Созерцатель"));
-            Translation.ILTranslate(il, "Use a [i:", Translation.EncodeToUtf16("Используйте [i:"), 6);
-            Translation.ILTranslate(il, "] within the Underworld.", Translation.EncodeToUtf16("] в аду."));
-            Translation.ILTranslate(il, "The Lich", Translation.EncodeToUtf16("Лич"));
-            Translation.ILTranslate(il, "Use a [i:", Translation.EncodeToUtf16("Используйте [i:"), 7);
-            Translation.ILTranslate(il, "] during the Night.", Translation.EncodeToUtf16("] ночью."));
-            Translation.ILTranslate(il, "Abyssion, the Forgotten One", Translation.EncodeToUtf16("Абиссион, Забытый"));
-            Translation.ILTranslate(il, "Pick up 3 [i:", Translation.EncodeToUtf16("Поднимите 3 [i:"));
-            Translation.ILTranslate(il, "], which are dropped by Aquatic Hallucinations in the Aquatic Depths.", Translation.EncodeToUtf16("], которые падают с Морской иллюзии в акватических глубинах."));
-            Translation.ILTranslate(il, "The Primordials", Translation.EncodeToUtf16("Вечные"));
-            Translation.ILTranslate(il, "Use a [i:", Translation.EncodeToUtf16("Используйте [i:"), 8);
-            Translation.ILTranslate(il, "] and prepare for the worst...", Translation.EncodeToUtf16("] и готовьтесь к худшему..."));
+            TranslationUtils.ILTranslate(il, "The Grand Thunder Bird", TranslationUtils.EncodeToUtf16("Великая гром-птица"));
+            TranslationUtils.ILTranslate(il, "Use a [i:", TranslationUtils.EncodeToUtf16("Используйте [i:"));
+            TranslationUtils.ILTranslate(il, "] with [i:", TranslationUtils.EncodeToUtf16("] с [i:"));
+            TranslationUtils.ILTranslate(il, "] during the day in the Desert.", TranslationUtils.EncodeToUtf16("] днём в пустыне."));
+            TranslationUtils.ILTranslate(il, "Patch Werk", TranslationUtils.EncodeToUtf16("Лоскутик"));
+            TranslationUtils.ILTranslate(il, "Randomly appears during the Blood Moon. Start the Blood Moon with a [i:", TranslationUtils.EncodeToUtf16("Случайно появляется во время кровавой луны. Начните кровавую луну используя [i:"));
+            TranslationUtils.ILTranslate(il, "The Queen Jellyfish", TranslationUtils.EncodeToUtf16("Королева медуз"));
+            TranslationUtils.ILTranslate(il, "Use a [i:", TranslationUtils.EncodeToUtf16("Используйте [i:"), 2);
+            TranslationUtils.ILTranslate(il, "] during the day at the Ocean.", TranslationUtils.EncodeToUtf16("] днём в океане."));
+            TranslationUtils.ILTranslate(il, "Viscount", TranslationUtils.EncodeToUtf16("Виконт"));
+            TranslationUtils.ILTranslate(il, "Use 5 [i:", TranslationUtils.EncodeToUtf16("Используйте 5 [i:"));
+            TranslationUtils.ILTranslate(il, "] at an underground Blood Chamber. Use a [i:", TranslationUtils.EncodeToUtf16("] в поздемной кровавой камере. Используйте [i:"));
+            TranslationUtils.ILTranslate(il, "] to track down the Blood Chamber.", TranslationUtils.EncodeToUtf16("] чтобы найти кровавую камеру."));
+            TranslationUtils.ILTranslate(il, "Corpse Bloom", TranslationUtils.EncodeToUtf16("Трупоцвет"));
+            TranslationUtils.ILTranslate(il, "Randomly appears in the post-Skeletron underground jungle.", TranslationUtils.EncodeToUtf16("Случайно появляется в подземных джунглях после убийства Скелетрона."));
+            TranslationUtils.ILTranslate(il, "Illusionist", TranslationUtils.EncodeToUtf16("Иллюзионист"));
+            TranslationUtils.ILTranslate(il, "Randomly appears in the Dungeon.", TranslationUtils.EncodeToUtf16("Случайно появляется в темнице."));
+            TranslationUtils.ILTranslate(il, "Granite Energy Storm", TranslationUtils.EncodeToUtf16("Гранитный энергетический шторм"));
+            TranslationUtils.ILTranslate(il, "Use a [i:", TranslationUtils.EncodeToUtf16("Используйте [i:"), 3);
+            TranslationUtils.ILTranslate(il, "] deep underground within a Granite Enclosure or find and defeat an Unstable Energy Anomaly.", TranslationUtils.EncodeToUtf16("] глубоко под землёй в гранитных пещерах или найдите и одолейте Нестабильную энергетическую аномалию"));
+            TranslationUtils.ILTranslate(il, "Buried Champion", TranslationUtils.EncodeToUtf16("Погребённый чемпион"));
+            TranslationUtils.ILTranslate(il, "Use a [i:", TranslationUtils.EncodeToUtf16("Используйте [i:"), 4);
+            TranslationUtils.ILTranslate(il, "] deep underground within a Marble Enclosure or find and defeat a Bizarre Rock Formation.", TranslationUtils.EncodeToUtf16("] глубоко под землёй в мраморных пещерах или найдите и одолейте Причудливую горную породу"));
+            TranslationUtils.ILTranslate(il, "Star Scouter", TranslationUtils.EncodeToUtf16("Звёздный разведчик"));
+            TranslationUtils.ILTranslate(il, "Use a [i:", TranslationUtils.EncodeToUtf16("Используйте [i:"), 5);
+            TranslationUtils.ILTranslate(il, "] high in the sky.", TranslationUtils.EncodeToUtf16("] высоко в небе."));
+            TranslationUtils.ILTranslate(il, "Borean Strider", TranslationUtils.EncodeToUtf16("Борейский странник"));
+            TranslationUtils.ILTranslate(il, "Randomly appears during a Blizzard or summoned with a [i:", TranslationUtils.EncodeToUtf16("Случайно появляется во время метели или вызывается [i:"));
+            TranslationUtils.ILTranslate(il, "Coznix, the Fallen Beholder", TranslationUtils.EncodeToUtf16("Козникс, падший Созерцатель"));
+            TranslationUtils.ILTranslate(il, "Use a [i:", TranslationUtils.EncodeToUtf16("Используйте [i:"), 6);
+            TranslationUtils.ILTranslate(il, "] within the Underworld.", TranslationUtils.EncodeToUtf16("] в аду."));
+            TranslationUtils.ILTranslate(il, "The Lich", TranslationUtils.EncodeToUtf16("Лич"));
+            TranslationUtils.ILTranslate(il, "Use a [i:", TranslationUtils.EncodeToUtf16("Используйте [i:"), 7);
+            TranslationUtils.ILTranslate(il, "] during the Night.", TranslationUtils.EncodeToUtf16("] ночью."));
+            TranslationUtils.ILTranslate(il, "Abyssion, the Forgotten One", TranslationUtils.EncodeToUtf16("Абиссион, Забытый"));
+            TranslationUtils.ILTranslate(il, "Pick up 3 [i:", TranslationUtils.EncodeToUtf16("Поднимите 3 [i:"));
+            TranslationUtils.ILTranslate(il, "], which are dropped by Aquatic Hallucinations in the Aquatic Depths.", TranslationUtils.EncodeToUtf16("], которые падают с Морской иллюзии в акватических глубинах."));
+            TranslationUtils.ILTranslate(il, "The Primordials", TranslationUtils.EncodeToUtf16("Вечные"));
+            TranslationUtils.ILTranslate(il, "Use a [i:", TranslationUtils.EncodeToUtf16("Используйте [i:"), 8);
+            TranslationUtils.ILTranslate(il, "] and prepare for the worst...", TranslationUtils.EncodeToUtf16("] и готовьтесь к худшему..."));
         }
         
         private static void Ru_ModifyDoCensusModSupport(ILContext il)
         {
-            Translation.ILTranslate(il, "Have any kind of basic mushroom in your inventory ([i/s1:5][i/s1:183][i/s1:60][i/s1:2887])", Translation.EncodeToUtf16("Положите в инвентарь любой из этих грибов ([i/s1:5][i/s1:183][i/s1:60][i/s1:2887])"));
-            Translation.ILTranslate(il, "Have any kind of non-cobbler boot accessory equipped or in your inventory ([i/s1:285][i/s1:54][i/s1:128][i/s1:863] etc.)", Translation.EncodeToUtf16("Экипируйте или положите в инвентарь любой из этих предметов ([i/s1:285][i/s1:54][i/s1:128][i/s1:863] и т.д.)"));
-            Translation.ILTranslate(il, "Defeat the [c/4dffb8:Grand Thunder Bird]", Translation.EncodeToUtf16("Одолейте [c/4dffb8:Великую гром-птицу]"));
-            Translation.ILTranslate(il, "Defeat [c/4dffb8:Patchwerk] during a Blood Moon", Translation.EncodeToUtf16("Одолейте [c/4dffb8:Лоскутика] в кровавую луну"));
-            Translation.ILTranslate(il, "Defeat the Eye of Cthulhu", Translation.EncodeToUtf16("Одолейте Глаз Ктулху"));
-            Translation.ILTranslate(il, "Defeat the Eye of Cthulhu", Translation.EncodeToUtf16("Одолейте Глаз Ктулху"), 2);
-            Translation.ILTranslate(il, "Defeat the [c/4dffb8:Queen Jellyfish]", Translation.EncodeToUtf16("Одолейте [c/4dffb8:Королеву медуз]"));
-            Translation.ILTranslate(il, "Defeat [c/4dffb8:Corpse Bloom] in the post-Skeletron Jungle", Translation.EncodeToUtf16("Одолейте [c/4dffb8:Трупоцвет] в джунглях после убийства Скелетрона."));
-            Translation.ILTranslate(il, "Defeat the [c/4dffb8:Buried Champion]", Translation.EncodeToUtf16("Одолейте [c/4dffb8:Погребённого чемпиона]"));
-            Translation.ILTranslate(il, "Defeat the [c/4dffb8:Fallen Beholder]", Translation.EncodeToUtf16("Одолейте [c/4dffb8:Падшего Созерцателя]"));
+            TranslationUtils.ILTranslate(il, "Have any kind of basic mushroom in your inventory ([i/s1:5][i/s1:183][i/s1:60][i/s1:2887])", TranslationUtils.EncodeToUtf16("Положите в инвентарь любой из этих грибов ([i/s1:5][i/s1:183][i/s1:60][i/s1:2887])"));
+            TranslationUtils.ILTranslate(il, "Have any kind of non-cobbler boot accessory equipped or in your inventory ([i/s1:285][i/s1:54][i/s1:128][i/s1:863] etc.)", TranslationUtils.EncodeToUtf16("Экипируйте или положите в инвентарь любой из этих предметов ([i/s1:285][i/s1:54][i/s1:128][i/s1:863] и т.д.)"));
+            TranslationUtils.ILTranslate(il, "Defeat the [c/4dffb8:Grand Thunder Bird]", TranslationUtils.EncodeToUtf16("Одолейте [c/4dffb8:Великую гром-птицу]"));
+            TranslationUtils.ILTranslate(il, "Defeat [c/4dffb8:Patchwerk] during a Blood Moon", TranslationUtils.EncodeToUtf16("Одолейте [c/4dffb8:Лоскутика] в кровавую луну"));
+            TranslationUtils.ILTranslate(il, "Defeat the Eye of Cthulhu", TranslationUtils.EncodeToUtf16("Одолейте Глаз Ктулху"));
+            TranslationUtils.ILTranslate(il, "Defeat the Eye of Cthulhu", TranslationUtils.EncodeToUtf16("Одолейте Глаз Ктулху"), 2);
+            TranslationUtils.ILTranslate(il, "Defeat the [c/4dffb8:Queen Jellyfish]", TranslationUtils.EncodeToUtf16("Одолейте [c/4dffb8:Королеву медуз]"));
+            TranslationUtils.ILTranslate(il, "Defeat [c/4dffb8:Corpse Bloom] in the post-Skeletron Jungle", TranslationUtils.EncodeToUtf16("Одолейте [c/4dffb8:Трупоцвет] в джунглях после убийства Скелетрона."));
+            TranslationUtils.ILTranslate(il, "Defeat the [c/4dffb8:Buried Champion]", TranslationUtils.EncodeToUtf16("Одолейте [c/4dffb8:Погребённого чемпиона]"));
+            TranslationUtils.ILTranslate(il, "Defeat the [c/4dffb8:Fallen Beholder]", TranslationUtils.EncodeToUtf16("Одолейте [c/4dffb8:Падшего Созерцателя]"));
         }
         
         private static void Ru_ModifyDisplayDrShieldIcon(ILContext il)
         {
-            Translation.ILTranslate(il, "Total: ", Translation.EncodeToUtf16("Всего: "));
-            Translation.ILTranslate(il, "% Damage Reduction\nVanilla: ", Translation.EncodeToUtf16("% сопротивления урону\nВанилла: "));
-            Translation.ILTranslate(il, "%\nThorium: ", Translation.EncodeToUtf16("%\nТориум: "));
-            Translation.ILTranslate(il, "% Before Cap)", Translation.EncodeToUtf16("% до предела"));
+            TranslationUtils.ILTranslate(il, "Total: ", TranslationUtils.EncodeToUtf16("Всего: "));
+            TranslationUtils.ILTranslate(il, "% Damage Reduction\nVanilla: ", TranslationUtils.EncodeToUtf16("% сопротивления урону\nВанилла: "));
+            TranslationUtils.ILTranslate(il, "%\nThorium: ", TranslationUtils.EncodeToUtf16("%\nТориум: "));
+            TranslationUtils.ILTranslate(il, "% Before Cap)", TranslationUtils.EncodeToUtf16("% до предела"));
         }
 
-        private static void Ru_ModifyTitleAlmostContract(ILContext il) => Translation.ILTranslate(il, "To Be Continued...", Translation.EncodeToUtf16("Продолжение следует..."));
+        private static void Ru_ModifyTitleAlmostContract(ILContext il) => TranslationUtils.ILTranslate(il, "To Be Continued...", TranslationUtils.EncodeToUtf16("Продолжение следует..."));
         
-        private static void Ru_ModifyDescriptionAlmostContract(ILContext il) => Translation.ILTranslate(il, "Complete all other contracts to continue...", Translation.EncodeToUtf16("Сначала завершите все оставшиеся контракты..."));
+        private static void Ru_ModifyDescriptionAlmostContract(ILContext il) => TranslationUtils.ILTranslate(il, "Complete all other contracts to continue...", TranslationUtils.EncodeToUtf16("Сначала завершите все оставшиеся контракты..."));
         
-        private static void Ru_ModifyTitleBoneLeeContract(ILContext il) => Translation.ILTranslate(il, "Tracker's End", Translation.EncodeToUtf16("Конец Охотника"));
+        private static void Ru_ModifyTitleBoneLeeContract(ILContext il) => TranslationUtils.ILTranslate(il, "Tracker's End", TranslationUtils.EncodeToUtf16("Конец Охотника"));
 
         private static void Ru_ModifyDescriptionBoneLeeContract(ILContext il)
         {
-            Translation.ILTranslate(il, "I've got a personal contract for you, kid. I don't ask this of you lightly, so please hear me out. Years ago, me and my partner, Lee, would take on the world together. We were an unstoppable duo, but made the grave error of underestimating a particularly difficult contract. In a desperate attempt to save me, he was struck down within the Dungeon halls where he surely rots. I've never forgiven myself for what happened... Please, go into the Dungeon and put his tortured soul to rest.", Translation.EncodeToUtf16("Парень, у меня есть для тебя особый контракт. Ты должен взяться за это всерьёз, так что выслушай меня. Много лет назад, я и мой друг Ли исследовали мир вместе. Мы были неудержимы, но допустили смертельную ошибку - недооценили один особенно сложный контракт. В отчаянной попытке спасти меня он был скинут в залы Темницы, где он, скорее всего, гниёт до сих пор. Я никогда не прощу себя за это... Пожалуйста, отправься в Темницу и дай его измученной душе отдых."));
-            Translation.ILTranslate(il, "You've done me a favor I could never repay in a thousand lifetimes. What I would give to apologize to Lee face to face... I'm confident, that at this point, you've surpassed any strength we thought we possessed. It's sobering to be humbled by an upstart like you, kid. As a reward, I've got a collection of weapons Lee would often use. I'm sure he would be honored if you wielded them in battle. Take care out there!", Translation.EncodeToUtf16("Ты окозал мне услугу, которую я не смогу отплатить и за тысячу жизней. Я бы всё отдал, что бы попрощаться с Ли лицом к лицу... Я уверен, что к этому моменту ты уже превзошёл нас в силе. Это отрезвляюще - быть оскорбленным таким выскочкой, как ты. В награду, у меня есть коллекция оружия, которое Ли часто использовал. Уверен, он был бы почтён, если бы ты орудовал ими в бою. Береги себя!"));
+            TranslationUtils.ILTranslate(il, "I've got a personal contract for you, kid. I don't ask this of you lightly, so please hear me out. Years ago, me and my partner, Lee, would take on the world together. We were an unstoppable duo, but made the grave error of underestimating a particularly difficult contract. In a desperate attempt to save me, he was struck down within the Dungeon halls where he surely rots. I've never forgiven myself for what happened... Please, go into the Dungeon and put his tortured soul to rest.", TranslationUtils.EncodeToUtf16("Парень, у меня есть для тебя особый контракт. Ты должен взяться за это всерьёз, так что выслушай меня. Много лет назад, я и мой друг Ли исследовали мир вместе. Мы были неудержимы, но допустили смертельную ошибку - недооценили один особенно сложный контракт. В отчаянной попытке спасти меня он был скинут в залы Темницы, где он, скорее всего, гниёт до сих пор. Я никогда не прощу себя за это... Пожалуйста, отправься в Темницу и дай его измученной душе отдых."));
+            TranslationUtils.ILTranslate(il, "You've done me a favor I could never repay in a thousand lifetimes. What I would give to apologize to Lee face to face... I'm confident, that at this point, you've surpassed any strength we thought we possessed. It's sobering to be humbled by an upstart like you, kid. As a reward, I've got a collection of weapons Lee would often use. I'm sure he would be honored if you wielded them in battle. Take care out there!", TranslationUtils.EncodeToUtf16("Ты окозал мне услугу, которую я не смогу отплатить и за тысячу жизней. Я бы всё отдал, что бы попрощаться с Ли лицом к лицу... Я уверен, что к этому моменту ты уже превзошёл нас в силе. Это отрезвляюще - быть оскорбленным таким выскочкой, как ты. В награду, у меня есть коллекция оружия, которое Ли часто использовал. Уверен, он был бы почтён, если бы ты орудовал ими в бою. Береги себя!"));
         }
         
-        private static void Ru_ModifyTitleCursedContract(ILContext il) => Translation.ILTranslate(il, "Enchanted Engagement", Translation.EncodeToUtf16("Зачарованное вовлечение"));
+        private static void Ru_ModifyTitleCursedContract(ILContext il) => TranslationUtils.ILTranslate(il, "Enchanted Engagement", TranslationUtils.EncodeToUtf16("Зачарованное вовлечение"));
         
-        private static void Ru_ModifyDescriptionCursedContract(ILContext il) => Translation.ILTranslate(il, "I'm sure you've seen that unregulated spirit magic can lead to a lot of things, such as possessed weapons and armor. That prospect alone is terrifying, but when powerful artifacts are possessed, things can get ugly... Keep your eyes peeled for aggressive Enchanted weapons deep underground.", Translation.EncodeToUtf16("Я уверен ты наблюдал, что неконтролируемая духовная магия может привести к разным последствиям, например, к одержимости брони или оружия. Сама перспектива этого уже ужасающая, но когда мощные артефакты становятся одержимыми, дела могут стать ещё хуже... Смотри в оба за наличием агрессивных заколдованных орудий в подземельях."));
+        private static void Ru_ModifyDescriptionCursedContract(ILContext il) => TranslationUtils.ILTranslate(il, "I'm sure you've seen that unregulated spirit magic can lead to a lot of things, such as possessed weapons and armor. That prospect alone is terrifying, but when powerful artifacts are possessed, things can get ugly... Keep your eyes peeled for aggressive Enchanted weapons deep underground.", TranslationUtils.EncodeToUtf16("Я уверен ты наблюдал, что неконтролируемая духовная магия может привести к разным последствиям, например, к одержимости брони или оружия. Сама перспектива этого уже ужасающая, но когда мощные артефакты становятся одержимыми, дела могут стать ещё хуже... Смотри в оба за наличием агрессивных заколдованных орудий в подземельях."));
         
-        private static void Ru_ModifyTitleDoctorContract(ILContext il) => Translation.ILTranslate(il, "Arc of the Lost Raider", Translation.EncodeToUtf16("Ковчег заплутавшего Расхитителя"));
+        private static void Ru_ModifyTitleDoctorContract(ILContext il) => TranslationUtils.ILTranslate(il, "Arc of the Lost Raider", TranslationUtils.EncodeToUtf16("Ковчег заплутавшего Расхитителя"));
         
-        private static void Ru_ModifyDescriptionDoctorContract(ILContext il) => Translation.ILTranslate(il, "Many adventurers have braved the intense foliage of the jungle, but even fewer return. I sent a friend of mine, Doctor Bones, out on a mission to the jungle quite a while ago, but he hasn't returned... Could you go check out the jungle's surface at night and see if you can find any signs of him?", Translation.EncodeToUtf16("Многие путешественники смогли пройти сквозь густые заросли джунглей, но лишь немногие вернулись. Я послал своего друга, Доктора Бонса, на миссию в джунгли довольно давно, но он так и не вернулся... Не мог бы ты посетить и обследовать поверхность джунглей ночью и найти хоть какие-то его следы?"));
+        private static void Ru_ModifyDescriptionDoctorContract(ILContext il) => TranslationUtils.ILTranslate(il, "Many adventurers have braved the intense foliage of the jungle, but even fewer return. I sent a friend of mine, Doctor Bones, out on a mission to the jungle quite a while ago, but he hasn't returned... Could you go check out the jungle's surface at night and see if you can find any signs of him?", TranslationUtils.EncodeToUtf16("Многие путешественники смогли пройти сквозь густые заросли джунглей, но лишь немногие вернулись. Я послал своего друга, Доктора Бонса, на миссию в джунгли довольно давно, но он так и не вернулся... Не мог бы ты посетить и обследовать поверхность джунглей ночью и найти хоть какие-то его следы?"));
         
-        private static void Ru_ModifyTitleGildedContract(ILContext il) => Translation.ILTranslate(il, "Pay Day", Translation.EncodeToUtf16("Час расплаты"));
+        private static void Ru_ModifyTitleGildedContract(ILContext il) => TranslationUtils.ILTranslate(il, "Pay Day", TranslationUtils.EncodeToUtf16("Час расплаты"));
         
-        private static void Ru_ModifyDescriptionGildedContract(ILContext il) => Translation.ILTranslate(il, "Radiant beasts have been spotted prowling underground Terraria, illuminating a path of ruin. The Gilded Bat, Gilded Lycan and Gilded Slime light up their surrounding area and pack quite a punch. It would be best if their numbers dwindled, even just a little...", Translation.EncodeToUtf16("Недавно в подземельях Террарии были замечены лучезарные твари, освещающие свой путь разрушений. Позолоченная летучая мышь, слизень и ликан подсвечивают окружающую местность и бьют довольно сильно. Будет намного лучше, если их число упадёт, даже немного."));
+        private static void Ru_ModifyDescriptionGildedContract(ILContext il) => TranslationUtils.ILTranslate(il, "Radiant beasts have been spotted prowling underground Terraria, illuminating a path of ruin. The Gilded Bat, Gilded Lycan and Gilded Slime light up their surrounding area and pack quite a punch. It would be best if their numbers dwindled, even just a little...", TranslationUtils.EncodeToUtf16("Недавно в подземельях Террарии были замечены лучезарные твари, освещающие свой путь разрушений. Позолоченная летучая мышь, слизень и ликан подсвечивают окружающую местность и бьют довольно сильно. Будет намного лучше, если их число упадёт, даже немного."));
         
-        private static void Ru_ModifyTitleHagContract(ILContext il) => Translation.ILTranslate(il, "Haggard Hagglers", Translation.EncodeToUtf16("Измодждённый торгаш"));
+        private static void Ru_ModifyTitleHagContract(ILContext il) => TranslationUtils.ILTranslate(il, "Haggard Hagglers", TranslationUtils.EncodeToUtf16("Измодждённый торгаш"));
         
-        private static void Ru_ModifyDescriptionHagContract(ILContext il) => Translation.ILTranslate(il, "Many try to take shortcuts in their quest for power, often calling upon the elements for their boon. But while the elements can provide what they seek, it comes with a hefty price. There exists beings known as Hags that roam the world looking to steal back their traded youth. The Underworld, Jungle, Ocean, and Sky are the most likely spots to find one. Do us a favor and take one out.", Translation.EncodeToUtf16("Многие пробуют сэкономить время в погоне за силой, зачастую взывая к элементам для своей же выгоды. Хоть элементы и могут предоставить то, что от них просят, это будет стоить многого. Существуют Ведьмы, которые бродят по миру в поисках своей утерянной молодости, которую они хотят украсть обратно. Они обычно встречаются в аду, джунглях, океане и на небесах. Сделай нам одолжение - убей одну из них."));
+        private static void Ru_ModifyDescriptionHagContract(ILContext il) => TranslationUtils.ILTranslate(il, "Many try to take shortcuts in their quest for power, often calling upon the elements for their boon. But while the elements can provide what they seek, it comes with a hefty price. There exists beings known as Hags that roam the world looking to steal back their traded youth. The Underworld, Jungle, Ocean, and Sky are the most likely spots to find one. Do us a favor and take one out.", TranslationUtils.EncodeToUtf16("Многие пробуют сэкономить время в погоне за силой, зачастую взывая к элементам для своей же выгоды. Хоть элементы и могут предоставить то, что от них просят, это будет стоить многого. Существуют Ведьмы, которые бродят по миру в поисках своей утерянной молодости, которую они хотят украсть обратно. Они обычно встречаются в аду, джунглях, океане и на небесах. Сделай нам одолжение - убей одну из них."));
         
-        private static void Ru_ModifyTitleHardmodeContract(ILContext il) => Translation.ILTranslate(il, "To Be Continued...", Translation.EncodeToUtf16("Продолжение следует..."));
+        private static void Ru_ModifyTitleHardmodeContract(ILContext il) => TranslationUtils.ILTranslate(il, "To Be Continued...", TranslationUtils.EncodeToUtf16("Продолжение следует..."));
         
-        private static void Ru_ModifyDescriptionHardmodeContract(ILContext il) => Translation.ILTranslate(il, "Defeat the terrifying Wall of Flesh to continue...", Translation.EncodeToUtf16("Победите ужасающую Стену плоти для новых контрактов."));
+        private static void Ru_ModifyDescriptionHardmodeContract(ILContext il) => TranslationUtils.ILTranslate(il, "Defeat the terrifying Wall of Flesh to continue...", TranslationUtils.EncodeToUtf16("Победите ужасающую Стену плоти для новых контрактов."));
         
-        private static void Ru_ModifyTitleIceContract(ILContext il) => Translation.ILTranslate(il, "Ice Breaker", Translation.EncodeToUtf16("Крушитель льда"));
+        private static void Ru_ModifyTitleIceContract(ILContext il) => TranslationUtils.ILTranslate(il, "Ice Breaker", TranslationUtils.EncodeToUtf16("Крушитель льда"));
         
-        private static void Ru_ModifyDescriptionIceContract(ILContext il) => Translation.ILTranslate(il, "Better pack some warm clothes for this one kid; this automaton, crafted from the coldest ice you can fathom, only appears in raging blizzards. Its deadly frost beams will freeze you solid if you aren't careful, so keep on the move and hide behind cover!", Translation.EncodeToUtf16("Лучше взять вещи потеплее для этого дела, парень; этот механизм, собранный из самого холодного льда, который ты только можешь себе представить, появляется только во время страшных вьюг. Его смертельный ледяной луч превратит тебя в лядышку, если ты недостаточно аккуратен, так что не прекращай двигаться и прячься за укрытиями!"));
+        private static void Ru_ModifyDescriptionIceContract(ILContext il) => TranslationUtils.ILTranslate(il, "Better pack some warm clothes for this one kid; this automaton, crafted from the coldest ice you can fathom, only appears in raging blizzards. Its deadly frost beams will freeze you solid if you aren't careful, so keep on the move and hide behind cover!", TranslationUtils.EncodeToUtf16("Лучше взять вещи потеплее для этого дела, парень; этот механизм, собранный из самого холодного льда, который ты только можешь себе представить, появляется только во время страшных вьюг. Его смертельный ледяной луч превратит тебя в лядышку, если ты недостаточно аккуратен, так что не прекращай двигаться и прячься за укрытиями!"));
         
-        private static void Ru_ModifyTitleMimicContract(ILContext il) => Translation.ILTranslate(il, "Fool's Gold", Translation.EncodeToUtf16("Золото дураков"));
+        private static void Ru_ModifyTitleMimicContract(ILContext il) => TranslationUtils.ILTranslate(il, "Fool's Gold", TranslationUtils.EncodeToUtf16("Золото дураков"));
         
-        private static void Ru_ModifyDescriptionMimicContract(ILContext il) => Translation.ILTranslate(il, "I don't know what you did out there, kid, but things have gotten a lot more hectic. With the released spirits possessing our world, you can't trust anything now! Worse yet, it seems some avarice spirits have possessed a collection of chests deep underground turning them into Mimics. Keep your eyes peeled for any chests laying around. They may not be what they seem...", Translation.EncodeToUtf16("Я не знаю что ты наделал, парень, но всё в округе стало гораздо неспокойнее. После того, как освободившиеся духи заполнили этот мир, нельзя ничему доверять! И еще хуже то, что некоторые наиболее алчные духи, похоже, поработили множество сундуков подземелья, превращая их в мимиков. Будь повнимательнее, если видишь оставленные сундуки. Они могут оказаться не тем, чем кажутся..."));
+        private static void Ru_ModifyDescriptionMimicContract(ILContext il) => TranslationUtils.ILTranslate(il, "I don't know what you did out there, kid, but things have gotten a lot more hectic. With the released spirits possessing our world, you can't trust anything now! Worse yet, it seems some avarice spirits have possessed a collection of chests deep underground turning them into Mimics. Keep your eyes peeled for any chests laying around. They may not be what they seem...", TranslationUtils.EncodeToUtf16("Я не знаю что ты наделал, парень, но всё в округе стало гораздо неспокойнее. После того, как освободившиеся духи заполнили этот мир, нельзя ничему доверять! И еще хуже то, что некоторые наиболее алчные духи, похоже, поработили множество сундуков подземелья, превращая их в мимиков. Будь повнимательнее, если видишь оставленные сундуки. Они могут оказаться не тем, чем кажутся..."));
         
-        private static void Ru_ModifyTitleMinotaurContract(ILContext il) => Translation.ILTranslate(il, "Beast in the Maze", Translation.EncodeToUtf16("Чудовище Лабиринта"));
+        private static void Ru_ModifyTitleMinotaurContract(ILContext il) => TranslationUtils.ILTranslate(il, "Beast in the Maze", TranslationUtils.EncodeToUtf16("Чудовище Лабиринта"));
         
-        private static void Ru_ModifyDescriptionMinotaurContract(ILContext il) => Translation.ILTranslate(il, "The Dungeon is bad enough with skeletons and slimes roaming around, but with a Raging Minotaur loose, it gets even more complicated. That beast can charge at incredible speed, blindsiding anyone not paying attention and crippling their movement. Don't get staggered out there, kid.", Translation.EncodeToUtf16("Темница - плохое место само по себе, из-за бродящих по нему слизней и скелетов. Но после освобождения разъяренного Минотавра, оно стала в разы опаснее. Это невероятно быстрое чудовище исподтишка нападает на невнимательных и калечит их. Постарайся стоять на своих ногах покрепче, парень."));
+        private static void Ru_ModifyDescriptionMinotaurContract(ILContext il) => TranslationUtils.ILTranslate(il, "The Dungeon is bad enough with skeletons and slimes roaming around, but with a Raging Minotaur loose, it gets even more complicated. That beast can charge at incredible speed, blindsiding anyone not paying attention and crippling their movement. Don't get staggered out there, kid.", TranslationUtils.EncodeToUtf16("Темница - плохое место само по себе, из-за бродящих по нему слизней и скелетов. Но после освобождения разъяренного Минотавра, оно стала в разы опаснее. Это невероятно быстрое чудовище исподтишка нападает на невнимательных и калечит их. Постарайся стоять на своих ногах покрепче, парень."));
         
-        private static void Ru_ModifyTitleMothContract(ILContext il) => Translation.ILTranslate(il, "Gonna Need a Bigger Lamp", Translation.EncodeToUtf16("Понадобится лампа побольше"));
+        private static void Ru_ModifyTitleMothContract(ILContext il) => TranslationUtils.ILTranslate(il, "Gonna Need a Bigger Lamp", TranslationUtils.EncodeToUtf16("Понадобится лампа побольше"));
         
-        private static void Ru_ModifyDescriptionMothContract(ILContext il) => Translation.ILTranslate(il, "Don't be fooled, kid, the creature that lurks within the underground jungle is a being of pure terror, not beauty. Its mere existence is testament to our arrogance as individuals. It's... a moth!", Translation.EncodeToUtf16("Не дай себя обмануть, парень, то существо, которое прячется в подземных джунглях несет лишь ужас, а не красоту. Само ее существование это следствие самоуверенности отдельных лиц. Это... Моль!"));
+        private static void Ru_ModifyDescriptionMothContract(ILContext il) => TranslationUtils.ILTranslate(il, "Don't be fooled, kid, the creature that lurks within the underground jungle is a being of pure terror, not beauty. Its mere existence is testament to our arrogance as individuals. It's... a moth!", TranslationUtils.EncodeToUtf16("Не дай себя обмануть, парень, то существо, которое прячется в подземных джунглях несет лишь ужас, а не красоту. Само ее существование это следствие самоуверенности отдельных лиц. Это... Моль!"));
         
-        private static void Ru_ModifyTitleMothronContract(ILContext il) => Translation.ILTranslate(il, "Destroy All Monsters", Translation.EncodeToUtf16("Уничтожь всех чудищ"));
+        private static void Ru_ModifyTitleMothronContract(ILContext il) => TranslationUtils.ILTranslate(il, "Destroy All Monsters", TranslationUtils.EncodeToUtf16("Уничтожь всех чудищ"));
         
-        private static void Ru_ModifyDescriptionMothronContract(ILContext il) => Translation.ILTranslate(il, "When the moon perfectly blocks the sun, the terror within us is released upon the world. My biggest fear has manifested as well in the form of a mutant moth! Hey, we don't choose what we fear, kid...", Translation.EncodeToUtf16("Когда луна полностью закрывает солнце, наши страхи выходят в этот мир. Мой самый жуткий кошмар также проявился в виде мотылька-мутанта!. Хэй, не мы выбираем свои страхи, парень..."));
+        private static void Ru_ModifyDescriptionMothronContract(ILContext il) => TranslationUtils.ILTranslate(il, "When the moon perfectly blocks the sun, the terror within us is released upon the world. My biggest fear has manifested as well in the form of a mutant moth! Hey, we don't choose what we fear, kid...", TranslationUtils.EncodeToUtf16("Когда луна полностью закрывает солнце, наши страхи выходят в этот мир. Мой самый жуткий кошмар также проявился в виде мотылька-мутанта!. Хэй, не мы выбираем свои страхи, парень..."));
         
-        private static void Ru_ModifyTitleNymphContract(ILContext il) => Translation.ILTranslate(il, "Damsel of Distress", Translation.EncodeToUtf16("Девица бедствий"));
+        private static void Ru_ModifyTitleNymphContract(ILContext il) => TranslationUtils.ILTranslate(il, "Damsel of Distress", TranslationUtils.EncodeToUtf16("Девица бедствий"));
         
-        private static void Ru_ModifyDescriptionNymphContract(ILContext il) => Translation.ILTranslate(il, "You've got a good heart, kid. Don't let that be the end of you with this contract... Deep within the snow caves, there hides a creature masquerading as a defenseless young girl. Once close enough, however, you'll see she's not so defenseless. Take her out if you find her!", Translation.EncodeToUtf16("У тебя доброе сердце, парень. Но не дай ему стать причиной твоего конца во время этого контракта... Глубоко в заснеженных пещерах прячется существо, маскирующееся под безобидную молодую девушку. Но, стоит тебе подойти и ты убеждаешься, что она не так беззащитна. Прикончи ее, если найдешь!"));
+        private static void Ru_ModifyDescriptionNymphContract(ILContext il) => TranslationUtils.ILTranslate(il, "You've got a good heart, kid. Don't let that be the end of you with this contract... Deep within the snow caves, there hides a creature masquerading as a defenseless young girl. Once close enough, however, you'll see she's not so defenseless. Take her out if you find her!", TranslationUtils.EncodeToUtf16("У тебя доброе сердце, парень. Но не дай ему стать причиной твоего конца во время этого контракта... Глубоко в заснеженных пещерах прячется существо, маскирующееся под безобидную молодую девушку. Но, стоит тебе подойти и ты убеждаешься, что она не так беззащитна. Прикончи ее, если найдешь!"));
         
-        private static void Ru_ModifyTitlePigronContract(ILContext il) => Translation.ILTranslate(il, "Boared to Death", Translation.EncodeToUtf16("Захрючен до смерти"));
+        private static void Ru_ModifyTitlePigronContract(ILContext il) => TranslationUtils.ILTranslate(il, "Boared to Death", TranslationUtils.EncodeToUtf16("Захрючен до смерти"));
         
-        private static void Ru_ModifyDescriptionPigronContract(ILContext il) => Translation.ILTranslate(il, "The Pigron are a rather bizarre hybrid of creatures. 50% pig, 50% dragon, and 100% evil. You might encounter them where the ice caverns meet the worlds evil. Beware their grumbling bellies as they approach; It's quite audible.", Translation.EncodeToUtf16("Свинодракон это довольно причудливый гибрид существ. 50% свиньи, 50% дракона и 100% зла. Ты можешь встретить их там, где оледенелые пещеры встречаются с заражением. Остерегайся их пустых животов; они очень громкие."));
+        private static void Ru_ModifyDescriptionPigronContract(ILContext il) => TranslationUtils.ILTranslate(il, "The Pigron are a rather bizarre hybrid of creatures. 50% pig, 50% dragon, and 100% evil. You might encounter them where the ice caverns meet the worlds evil. Beware their grumbling bellies as they approach; It's quite audible.", TranslationUtils.EncodeToUtf16("Свинодракон это довольно причудливый гибрид существ. 50% свиньи, 50% дракона и 100% зла. Ты можешь встретить их там, где оледенелые пещеры встречаются с заражением. Остерегайся их пустых животов; они очень громкие."));
         
-        private static void Ru_ModifyTitlePinkyContract(ILContext il) => Translation.ILTranslate(il, "Pinky, the World Ender", Translation.EncodeToUtf16("Пинки, Вестник конца"));
+        private static void Ru_ModifyTitlePinkyContract(ILContext il) => TranslationUtils.ILTranslate(il, "Pinky, the World Ender", TranslationUtils.EncodeToUtf16("Пинки, Вестник конца"));
         
-        private static void Ru_ModifyDescriptionPinkyContract(ILContext il) => Translation.ILTranslate(il, "Never before have I heard of a creature with such terrifying power... It's pink, it's mean, and it journeys around with a powerful storm of slime. Destroy it!", Translation.EncodeToUtf16("Я еще никогда не слышал о существе с настолько устрашающей силой... Оно розовое, оно злое и оно путешествует по миру, преследуемое сильным штормом из слизи. Уничтожь это!"));
+        private static void Ru_ModifyDescriptionPinkyContract(ILContext il) => TranslationUtils.ILTranslate(il, "Never before have I heard of a creature with such terrifying power... It's pink, it's mean, and it journeys around with a powerful storm of slime. Destroy it!", TranslationUtils.EncodeToUtf16("Я еще никогда не слышал о существе с настолько устрашающей силой... Оно розовое, оно злое и оно путешествует по миру, преследуемое сильным штормом из слизи. Уничтожь это!"));
         
-        private static void Ru_ModifyTitlePirateShipContract(ILContext il) => Translation.ILTranslate(il, "Drunken Sailor's Query", Translation.EncodeToUtf16("Вопрос пьяного моряка"));
+        private static void Ru_ModifyTitlePirateShipContract(ILContext il) => TranslationUtils.ILTranslate(il, "Drunken Sailor's Query", TranslationUtils.EncodeToUtf16("Вопрос пьяного моряка"));
         
-        private static void Ru_ModifyDescriptionPirateShipContract(ILContext il) => Translation.ILTranslate(il, "Have you heard tale of the pirates and their insatiable lust for gold? They can smell a coin from miles around, and from the looks of it, you've got quite a few. I would keep on guard for their inevitable siege. Make them regret attacking here by breaking one of their Flying Dutchman ships.", Translation.EncodeToUtf16("Слышал ли ты сказки о пиратах и их неутолимую тягу к золоту? Они способны учуять запах золотой монеты за многие километры и, похоже, денег у тебя предостаточно. Я буду стаять на страже, в ожидании их неизбежной осады. Заставь их пожалеть об этой атаке, сломав один из их Летучих Голландцев."));
+        private static void Ru_ModifyDescriptionPirateShipContract(ILContext il) => TranslationUtils.ILTranslate(il, "Have you heard tale of the pirates and their insatiable lust for gold? They can smell a coin from miles around, and from the looks of it, you've got quite a few. I would keep on guard for their inevitable siege. Make them regret attacking here by breaking one of their Flying Dutchman ships.", TranslationUtils.EncodeToUtf16("Слышал ли ты сказки о пиратах и их неутолимую тягу к золоту? Они способны учуять запах золотой монеты за многие километры и, похоже, денег у тебя предостаточно. Я буду стаять на страже, в ожидании их неизбежной осады. Заставь их пожалеть об этой атаке, сломав один из их Летучих Голландцев."));
         
-        private static void Ru_ModifyTitleRecluseContract(ILContext il) => Translation.ILTranslate(il, "Not so Itsy Bitsy", Translation.EncodeToUtf16("Не совсем крошка-паучок"));
+        private static void Ru_ModifyTitleRecluseContract(ILContext il) => TranslationUtils.ILTranslate(il, "Not so Itsy Bitsy", TranslationUtils.EncodeToUtf16("Не совсем крошка-паучок"));
         
-        private static void Ru_ModifyDescriptionRecluseContract(ILContext il) => Translation.ILTranslate(il, "Alright kid, I've got a bit of a double contract for you this time; a lot of our fellow townsfolk have severe cases of arachnophobia it seems. Rumors of a 'Brown Recluse' roaming the spider caverns have surfaced, but it seems like our only way to draw it out of hiding is to ALSO take down some kind of icy 'Gargantuan Spider', which prowls the tundra during harsh blizzards. If you can take both of them down, the folks around here should feel a lot safer.", Translation.EncodeToUtf16("Ну что ж, парень, у меня для тебя есть двойной контракт в этот раз. Многие из наших жителей, похоже, имеют тяжелые случаи арахнофобии. Появились слухи о 'Буром Отшельнике', бродящему в паучьих пещерах, но, похоже, что бы выманить его из убежища нам ТАКЖЕ стоит убить какого-то ледяного 'Гигантского Паука', который бродит по тундре во время суровых вьюг. Если ты их обоих устранишь, наши люди смогут чувствовать себя намного безопаснее."));
+        private static void Ru_ModifyDescriptionRecluseContract(ILContext il) => TranslationUtils.ILTranslate(il, "Alright kid, I've got a bit of a double contract for you this time; a lot of our fellow townsfolk have severe cases of arachnophobia it seems. Rumors of a 'Brown Recluse' roaming the spider caverns have surfaced, but it seems like our only way to draw it out of hiding is to ALSO take down some kind of icy 'Gargantuan Spider', which prowls the tundra during harsh blizzards. If you can take both of them down, the folks around here should feel a lot safer.", TranslationUtils.EncodeToUtf16("Ну что ж, парень, у меня для тебя есть двойной контракт в этот раз. Многие из наших жителей, похоже, имеют тяжелые случаи арахнофобии. Появились слухи о 'Буром Отшельнике', бродящему в паучьих пещерах, но, похоже, что бы выманить его из убежища нам ТАКЖЕ стоит убить какого-то ледяного 'Гигантского Паука', который бродит по тундре во время суровых вьюг. Если ты их обоих устранишь, наши люди смогут чувствовать себя намного безопаснее."));
         
-        private static void Ru_ModifyTitleRuneContract(ILContext il) => Translation.ILTranslate(il, "Rune Prune", Translation.EncodeToUtf16("Рунный-Занудный"));
+        private static void Ru_ModifyTitleRuneContract(ILContext il) => TranslationUtils.ILTranslate(il, "Rune Prune", TranslationUtils.EncodeToUtf16("Рунный-Занудный"));
         
-        private static void Ru_ModifyDescriptionRuneContract(ILContext il) => Translation.ILTranslate(il, "The uncontrollable energies released by the Wall of Flesh's defeat have allowed some unsavory individuals to get quite a power boost. A rogue skeleton has harnessed the power of some long sealed spirits, and now terrorizes the underground as a Rune Wizard. His power is volatile and unpredictable; We can't allow him to live!", Translation.EncodeToUtf16("Неконтролируемая энергия, выпущенная после победы над стеной плоти, позволила некоторым неприятным существам получить нехилое усиление. Один скелет смог использовать силы запечатанных духов в свою пользу и теперь терроризирует подземелья под именем Рунного мага. Его силы изменчивы и непредсказуемы; Мы не можем позволить ему жить!"));
+        private static void Ru_ModifyDescriptionRuneContract(ILContext il) => TranslationUtils.ILTranslate(il, "The uncontrollable energies released by the Wall of Flesh's defeat have allowed some unsavory individuals to get quite a power boost. A rogue skeleton has harnessed the power of some long sealed spirits, and now terrorizes the underground as a Rune Wizard. His power is volatile and unpredictable; We can't allow him to live!", TranslationUtils.EncodeToUtf16("Неконтролируемая энергия, выпущенная после победы над стеной плоти, позволила некоторым неприятным существам получить нехилое усиление. Один скелет смог использовать силы запечатанных духов в свою пользу и теперь терроризирует подземелья под именем Рунного мага. Его силы изменчивы и непредсказуемы; Мы не можем позволить ему жить!"));
         
-        private static void Ru_ModifyTitleSandContract(ILContext il) => Translation.ILTranslate(il, "Line in the Sand", Translation.EncodeToUtf16("Черта на песке"));
+        private static void Ru_ModifyTitleSandContract(ILContext il) => TranslationUtils.ILTranslate(il, "Line in the Sand", TranslationUtils.EncodeToUtf16("Черта на песке"));
         
-        private static void Ru_ModifyDescriptionSandContract(ILContext il) => Translation.ILTranslate(il, "An elemental's personality is heavily influenced by the environment it forms in. Considering sandstorms are rough, coarse, and dangerous, you can imagine why we would want to take down a few Sand Elementals. Watch your step for any nasty monsters wanting to take a bite out of you, kid!", Translation.EncodeToUtf16("Среда обитания элементаля сильно влияет на его характер. Зная, как грубы и опасны бури пустынь, ты можешь понять, почему нам лучше уничтожить несколько элементалей. Остерегайся монстров, которые так и хотят укусить тебя, парень!"));
+        private static void Ru_ModifyDescriptionSandContract(ILContext il) => TranslationUtils.ILTranslate(il, "An elemental's personality is heavily influenced by the environment it forms in. Considering sandstorms are rough, coarse, and dangerous, you can imagine why we would want to take down a few Sand Elementals. Watch your step for any nasty monsters wanting to take a bite out of you, kid!", TranslationUtils.EncodeToUtf16("Среда обитания элементаля сильно влияет на его характер. Зная, как грубы и опасны бури пустынь, ты можешь понять, почему нам лучше уничтожить несколько элементалей. Остерегайся монстров, которые так и хотят укусить тебя, парень!"));
         
-        private static void Ru_ModifyTitleTimContract(ILContext il) => Translation.ILTranslate(il, "Casting a Shadow", Translation.EncodeToUtf16("Заклинатель теней"));
+        private static void Ru_ModifyTitleTimContract(ILContext il) => TranslationUtils.ILTranslate(il, "Casting a Shadow", TranslationUtils.EncodeToUtf16("Заклинатель теней"));
         
-        private static void Ru_ModifyDescriptionTimContract(ILContext il) => Translation.ILTranslate(il, "I've managed to track down quite an elusive dark caster in the deeper levels of our world by the name of... Tim. Names aside, he's got quite a bit of power behind him, but one fatal weakness. It seems he's quite prideful of his outfit, thinking his better than any other. Maybe you should wear a gem robe to lure him out...?", Translation.EncodeToUtf16("В глубинах нашего мира я смог отследить довольно необычного тёмного колдуна. Его имя... Тим. Хотя имя не так уж и важно. Он довольно силён, но имеет одну смертельную слабость - он cлишком сильно гордится своим внешним видом. Может, тебе стоит надеть робу с самоцветами, дабы выманить его...?"));
+        private static void Ru_ModifyDescriptionTimContract(ILContext il) => TranslationUtils.ILTranslate(il, "I've managed to track down quite an elusive dark caster in the deeper levels of our world by the name of... Tim. Names aside, he's got quite a bit of power behind him, but one fatal weakness. It seems he's quite prideful of his outfit, thinking his better than any other. Maybe you should wear a gem robe to lure him out...?", TranslationUtils.EncodeToUtf16("В глубинах нашего мира я смог отследить довольно необычного тёмного колдуна. Его имя... Тим. Хотя имя не так уж и важно. Он довольно силён, но имеет одну смертельную слабость - он cлишком сильно гордится своим внешним видом. Может, тебе стоит надеть робу с самоцветами, дабы выманить его...?"));
         
-        private static void Ru_ModifyTitleWyvernContract(ILContext il) => Translation.ILTranslate(il, "Off Cloud Nine", Translation.EncodeToUtf16("С седьмого неба"));
+        private static void Ru_ModifyTitleWyvernContract(ILContext il) => TranslationUtils.ILTranslate(il, "Off Cloud Nine", TranslationUtils.EncodeToUtf16("С седьмого неба"));
         
-        private static void Ru_ModifyDescriptionWyvernContract(ILContext il) => Translation.ILTranslate(il, "The winds of change are upon us it seems. But these winds don't seem to be in our favor... A nasty nest of Wyverns have found their way to the nearby sky islands floating just above our heads. I think it would be best for everyone if some of them were culled.", Translation.EncodeToUtf16("Похоже, на нас тоже повеяло ветром перемен, но эти перемены далеко не в нашу пользу... Стая виверн нашли путь к островам, парящим прямо над нашими головами. Я думаю, всем будет лучше, если мы усмирим парочку."));
+        private static void Ru_ModifyDescriptionWyvernContract(ILContext il) => TranslationUtils.ILTranslate(il, "The winds of change are upon us it seems. But these winds don't seem to be in our favor... A nasty nest of Wyverns have found their way to the nearby sky islands floating just above our heads. I think it would be best for everyone if some of them were culled.", TranslationUtils.EncodeToUtf16("Похоже, на нас тоже повеяло ветром перемен, но эти перемены далеко не в нашу пользу... Стая виверн нашли путь к островам, парящим прямо над нашими головами. Я думаю, всем будет лучше, если мы усмирим парочку."));
         
-        private static void Ru_ModifyGetPriceText(ILContext il) => Translation.ILTranslate(il, "vanquisher medals", Translation.EncodeToUtf16("медалей победителя"));
+        private static void Ru_ModifyGetPriceText(ILContext il) => TranslationUtils.ILTranslate(il, "vanquisher medals", TranslationUtils.EncodeToUtf16("медалей победителя"));
 
         private static void Ru_ModifySetChatButtonsTracker(ILContext il)
         {
-            Translation.ILTranslate(il, "Spend Medals", Translation.EncodeToUtf16("Потратить медали"));
-            Translation.ILTranslate(il, "Available Contracts", Translation.EncodeToUtf16("Доступные контракты"));
+            TranslationUtils.ILTranslate(il, "Spend Medals", TranslationUtils.EncodeToUtf16("Потратить медали"));
+            TranslationUtils.ILTranslate(il, "Available Contracts", TranslationUtils.EncodeToUtf16("Доступные контракты"));
         }
         
         private static void Ru_ModifySetChatButtonsDesertTraveler(ILContext il)
         {
-            Translation.ILTranslate(il, "Sandstorm ", Translation.EncodeToUtf16("Песчаная буря "));
-            Translation.ILTranslate(il, "(80 Silver)", Translation.EncodeToUtf16("(80 серебряных)"));
-            Translation.ILTranslate(il, "(1 Gold)", Translation.EncodeToUtf16("(1 золотая)"));
+            TranslationUtils.ILTranslate(il, "Sandstorm ", TranslationUtils.EncodeToUtf16("Песчаная буря "));
+            TranslationUtils.ILTranslate(il, "(80 Silver)", TranslationUtils.EncodeToUtf16("(80 серебряных)"));
+            TranslationUtils.ILTranslate(il, "(1 Gold)", TranslationUtils.EncodeToUtf16("(1 золотая)"));
         }
         
-        private static void Ru_ModifySetChatButtonsSpiritualist(ILContext il) => Translation.ILTranslate(il, "Guardian Angel (5 Purified Shards)", Translation.EncodeToUtf16("Ангел-хранитель (5 очищенных осколков)"));
+        private static void Ru_ModifySetChatButtonsSpiritualist(ILContext il) => TranslationUtils.ILTranslate(il, "Guardian Angel (5 Purified Shards)", TranslationUtils.EncodeToUtf16("Ангел-хранитель (5 очищенных осколков)"));
         
-        private static void Ru_ModifySetChatButtonsDiverman(ILContext il) => Translation.ILTranslate(il, "Air Tank", Translation.EncodeToUtf16("Воздушный баллон"));
+        private static void Ru_ModifySetChatButtonsDiverman(ILContext il) => TranslationUtils.ILTranslate(il, "Air Tank", TranslationUtils.EncodeToUtf16("Воздушный баллон"));
         
         private static void Ru_ModifySetChatButtonsWeaponMaster(ILContext il)
         {
-            Translation.ILTranslate(il, "Hire Demon ", Translation.EncodeToUtf16("Нанять демона "));
-            Translation.ILTranslate(il, "(8 Gold)", Translation.EncodeToUtf16("(8 золотых)"));
-            Translation.ILTranslate(il, "(10 Gold)", Translation.EncodeToUtf16("(10 золотых)"));
+            TranslationUtils.ILTranslate(il, "Hire Demon ", TranslationUtils.EncodeToUtf16("Нанять демона "));
+            TranslationUtils.ILTranslate(il, "(8 Gold)", TranslationUtils.EncodeToUtf16("(8 золотых)"));
+            TranslationUtils.ILTranslate(il, "(10 Gold)", TranslationUtils.EncodeToUtf16("(10 золотых)"));
         }
         
-        private static void Ru_ModifySetChatButtonsCook(ILContext il) => Translation.ILTranslate(il, "Supply Ingredients", Translation.EncodeToUtf16("Снабдить ингредиентами"));
+        private static void Ru_ModifySetChatButtonsCook(ILContext il) => TranslationUtils.ILTranslate(il, "Supply Ingredients", TranslationUtils.EncodeToUtf16("Снабдить ингредиентами"));
         
         private static void Ru_ModifySetChatButtonsConfusedZombie(ILContext il)
         {
-            Translation.ILTranslate(il, "Enemy Repellent ", Translation.EncodeToUtf16("Репеллент"));
-            Translation.ILTranslate(il, "(1 Gold 60 Silver)", Translation.EncodeToUtf16("(1 золотая 60 серебряных)"));
-            Translation.ILTranslate(il, "(2 Gold)", Translation.EncodeToUtf16("(2 золотые)"));
+            TranslationUtils.ILTranslate(il, "Enemy Repellent ", TranslationUtils.EncodeToUtf16("Репеллент"));
+            TranslationUtils.ILTranslate(il, "(1 Gold 60 Silver)", TranslationUtils.EncodeToUtf16("(1 золотая 60 серебряных)"));
+            TranslationUtils.ILTranslate(il, "(2 Gold)", TranslationUtils.EncodeToUtf16("(2 золотые)"));
         }
         
-        private static void Ru_ModifySetChatButtonsCobbler(ILContext il) => Translation.ILTranslate(il, "Shine Shoes", Translation.EncodeToUtf16("Полированная обувь"));
+        private static void Ru_ModifySetChatButtonsCobbler(ILContext il) => TranslationUtils.ILTranslate(il, "Shine Shoes", TranslationUtils.EncodeToUtf16("Полированная обувь"));
         
-        private static void Ru_ModifyTitleDangerContract(ILContext il) => Translation.ILTranslate(il, "Learning the Ropes", Translation.EncodeToUtf16("Изучение верёвок"));
+        private static void Ru_ModifyTitleDangerContract(ILContext il) => TranslationUtils.ILTranslate(il, "Learning the Ropes", TranslationUtils.EncodeToUtf16("Изучение верёвок"));
         
         private static void Ru_ModifyModifyDescriptionDangerContract(ILContext il)
         {
-            Translation.ILTranslate(il, "Alright kid, I think we should start you off easy... I've tracked down a group of wild creatures deep beneath our surface. On your adventures underground, you may encounter formidable creatures known as Crawdads, Salamanders and Giant Shellys. Taking out a couple of them would make the world a lot safer, and let me sleep peacefully for the night.", Translation.EncodeToUtf16("Хорошо, парень, я думаю, мы должны начать с простого... Я выследил группу диких существ глубоко под поверхностью. В своих приключениях под землей вы можете встретить грозных существ, известных как пресноводный рак, саламандра и гигантский ракушечник. Уничтожив пару из них, вы сделаете мир намного безопаснее и позволите мне спокойно спать по ночам."));
-            Translation.ILTranslate(il, "Not bad at all, kid. Hopefully it wasn't too hard hunting one down. You may have noticed they dropped a 'Vanquisher Medal'. With those, you can redeem them for items I keep on me. Typically, they relate to the tracked creature, so be sure to visit me after completing any contracts.", Translation.EncodeToUtf16("Недурно, парень. Надеюсь, было не так уж сложно охотиться на кого-то из них. Ты, наверное, заметил, что они обронили 'Медаль победителя'. Ты можешь обменять их на вещи, которые я храню при себе. Как правило, они относятся к отслеживаемому существу, так что не забудь навестить меня после выполнения любых контрактов."));
+            TranslationUtils.ILTranslate(il, "Alright kid, I think we should start you off easy... I've tracked down a group of wild creatures deep beneath our surface. On your adventures underground, you may encounter formidable creatures known as Crawdads, Salamanders and Giant Shellys. Taking out a couple of them would make the world a lot safer, and let me sleep peacefully for the night.", TranslationUtils.EncodeToUtf16("Хорошо, парень, я думаю, мы должны начать с простого... Я выследил группу диких существ глубоко под поверхностью. В своих приключениях под землей вы можете встретить грозных существ, известных как пресноводный рак, саламандра и гигантский ракушечник. Уничтожив пару из них, вы сделаете мир намного безопаснее и позволите мне спокойно спать по ночам."));
+            TranslationUtils.ILTranslate(il, "Not bad at all, kid. Hopefully it wasn't too hard hunting one down. You may have noticed they dropped a 'Vanquisher Medal'. With those, you can redeem them for items I keep on me. Typically, they relate to the tracked creature, so be sure to visit me after completing any contracts.", TranslationUtils.EncodeToUtf16("Недурно, парень. Надеюсь, было не так уж сложно охотиться на кого-то из них. Ты, наверное, заметил, что они обронили 'Медаль победителя'. Ты можешь обменять их на вещи, которые я храню при себе. Как правило, они относятся к отслеживаемому существу, так что не забудь навестить меня после выполнения любых контрактов."));
         }
         
         private static void Ru_ModifyOnInitialize(ILContext il)
         {
-            Translation.ILTranslate(il, "Close", Translation.EncodeToUtf16("Закрыть"));
-            Translation.ILTranslate(il, "Previous", Translation.EncodeToUtf16("Предыдущий"));
-            Translation.ILTranslate(il, "Next", Translation.EncodeToUtf16("Следующий"));
+            TranslationUtils.ILTranslate(il, "Close", TranslationUtils.EncodeToUtf16("Закрыть"));
+            TranslationUtils.ILTranslate(il, "Previous", TranslationUtils.EncodeToUtf16("Предыдущий"));
+            TranslationUtils.ILTranslate(il, "Next", TranslationUtils.EncodeToUtf16("Следующий"));
         }
         
         private static void Ru_ModifyNewRightClick(ILContext il)
         {
-            Translation.ILTranslate(il, "Spawn point removed!", Translation.EncodeToUtf16("Точка воскрешения удалена!"));
-            Translation.ILTranslate(il, "Spawn point set!", Translation.EncodeToUtf16("Точка воскрешения задана!"));
+            TranslationUtils.ILTranslate(il, "Spawn point removed!", TranslationUtils.EncodeToUtf16("Точка воскрешения удалена!"));
+            TranslationUtils.ILTranslate(il, "Spawn point set!", TranslationUtils.EncodeToUtf16("Точка воскрешения задана!"));
         }
         
         private static void Ru_ModifyPostUpdateEquips(ILContext il)
         {
-            Translation.ILTranslate(il, " held on to life for as long as they could.", Translation.EncodeToUtf16(" держался за жизнь до последнего."));
-            Translation.ILTranslate(il, " gave it their all...", Translation.EncodeToUtf16(" пожертвовал всем..."));
-            Translation.ILTranslate(il, " was consumed by darkness...", Translation.EncodeToUtf16(" был поглощён тьмой..."));
+            TranslationUtils.ILTranslate(il, " held on to life for as long as they could.", TranslationUtils.EncodeToUtf16(" держался за жизнь до последнего."));
+            TranslationUtils.ILTranslate(il, " gave it their all...", TranslationUtils.EncodeToUtf16(" пожертвовал всем..."));
+            TranslationUtils.ILTranslate(il, " was consumed by darkness...", TranslationUtils.EncodeToUtf16(" был поглощён тьмой..."));
         }
         
         private static void Ru_ModifyPreKill(ILContext il)
         {
-            Translation.ILTranslate(il, " was completely eradicated.", Translation.EncodeToUtf16(" был полностью искоренен."));
-            Translation.ILTranslate(il, " couldn't 'grasp' the situation.", Translation.EncodeToUtf16(" не смог 'уловить' ситуацию."));
-            Translation.ILTranslate(il, " has failed Terraria...", Translation.EncodeToUtf16(" подвел Террарию..."));
-            Translation.ILTranslate(il, " got liquefied.", Translation.EncodeToUtf16(" разжижился."));
-            Translation.ILTranslate(il, " couldn't contain the granite energy.", Translation.EncodeToUtf16(" не смог сдержать энергию гранита."));
+            TranslationUtils.ILTranslate(il, " was completely eradicated.", TranslationUtils.EncodeToUtf16(" был полностью искоренен."));
+            TranslationUtils.ILTranslate(il, " couldn't 'grasp' the situation.", TranslationUtils.EncodeToUtf16(" не смог 'уловить' ситуацию."));
+            TranslationUtils.ILTranslate(il, " has failed Terraria...", TranslationUtils.EncodeToUtf16(" подвел Террарию..."));
+            TranslationUtils.ILTranslate(il, " got liquefied.", TranslationUtils.EncodeToUtf16(" разжижился."));
+            TranslationUtils.ILTranslate(il, " couldn't contain the granite energy.", TranslationUtils.EncodeToUtf16(" не смог сдержать энергию гранита."));
         }
         
-        private static void Ru_ModifySetChatButtonsIllusionistSpawn(ILContext il) => Translation.ILTranslate(il, "Touch", Translation.EncodeToUtf16("Коснуться"));
+        private static void Ru_ModifySetChatButtonsIllusionistSpawn(ILContext il) => TranslationUtils.ILTranslate(il, "Touch", TranslationUtils.EncodeToUtf16("Коснуться"));
         
         private static void Ru_ModifyUsesManaThoriumItem(ILContext il)
         {
-            Translation.ILTranslate(il, " & ", Translation.EncodeToUtf16(" и "));
-            Translation.ILTranslate(il, " life", Translation.EncodeToUtf16(" здоровья"));
+            TranslationUtils.ILTranslate(il, " & ", TranslationUtils.EncodeToUtf16(" и "));
+            TranslationUtils.ILTranslate(il, " life", TranslationUtils.EncodeToUtf16(" здоровья"));
         }
         
         private static void Ru_ModifyDisplayHealerIcon(ILContext il)
         {
-            Translation.ILTranslate(il, ":Healer Stats]\nCurrent Bonus Healing: ", Translation.EncodeToUtf16(":Характеристики целителя]\nТекущее бонусное лечение: "));
+            TranslationUtils.ILTranslate(il, ":Healer Stats]\nCurrent Bonus Healing: ", TranslationUtils.EncodeToUtf16(":Характеристики целителя]\nТекущее бонусное лечение: "));
             //Translation.ILTranslate(il, "\nBest Heal Streak: ", Translation.EncodeToUtf16("\n"));
-            Translation.ILTranslate(il, "\nHealing done: ", Translation.EncodeToUtf16("\nВсего исцелено: "));
-            Translation.ILTranslate(il, "\nDamage mitigated: ", Translation.EncodeToUtf16("\nПредотвращено урона: "));
-            Translation.ILTranslate(il, "\nLives saved: ", Translation.EncodeToUtf16("\nЖизней спасено: "));
-            Translation.ILTranslate(il, "\nClose calls: ", Translation.EncodeToUtf16("\nНа волоске"));
+            TranslationUtils.ILTranslate(il, "\nHealing done: ", TranslationUtils.EncodeToUtf16("\nВсего исцелено: "));
+            TranslationUtils.ILTranslate(il, "\nDamage mitigated: ", TranslationUtils.EncodeToUtf16("\nПредотвращено урона: "));
+            TranslationUtils.ILTranslate(il, "\nLives saved: ", TranslationUtils.EncodeToUtf16("\nЖизней спасено: "));
+            TranslationUtils.ILTranslate(il, "\nClose calls: ", TranslationUtils.EncodeToUtf16("\nНа волоске"));
         }
 
         #endregion

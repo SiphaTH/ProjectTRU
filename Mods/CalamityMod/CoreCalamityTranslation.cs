@@ -1,7 +1,7 @@
 ﻿using System;
 using CalamityRuTranslate.Catalogs;
 using CalamityRuTranslate.Common;
-using CalamityRuTranslate.Utilities;
+using CalamityRuTranslate.Common.Exceptions;
 
 namespace CalamityRuTranslate.Mods.CalamityMod
 {
@@ -23,15 +23,12 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 
         public override void Load()
         {
-            if (IsLoaded && ModInstance.Version != new Version(1, 4, 5, 7))
+            if (ModInstance.Version != new Version(1, 4, 5, 7))
             {
                 throw new ModVersionException("Calamity", "1.4.5.7", ModsCall.Calamity.Version);
             }
         }
         
-        public override void DialogueTranslation()
-        {
-            NPCDialogueTranslation.SetupTranslation();
-        }
+        public override void DialogueTranslation() => NPCDialogueTranslation.SetupTranslation();
     }
 }

@@ -158,8 +158,8 @@ namespace CalamityRuTranslate.ThoriumMod.NPCs
 			thorium.GetNPC("BlizzardBat").DisplayName.AddTranslation(GameCulture.Russian, "Снежная летучая мышь");
 			thorium.GetNPC("BoreanHopper").DisplayName.AddTranslation(GameCulture.Russian, "Арктический прыгун");
 			thorium.GetNPC("BoreanMyte1").DisplayName.AddTranslation(GameCulture.Russian, "Арктический клещ");
-			thorium.GetNPC("BoreanStrider").DisplayName.AddTranslation(GameCulture.Russian, "Арктический страйдер");
-			thorium.GetNPC("BoreanStriderPopped").DisplayName.AddTranslation(GameCulture.Russian, "Арктический страйдер");
+			thorium.GetNPC("BoreanStrider").DisplayName.AddTranslation(GameCulture.Russian, "Борейский странник");
+			thorium.GetNPC("BoreanStriderPopped").DisplayName.AddTranslation(GameCulture.Russian, "Борейский странник");
 			thorium.GetNPC("FrostBurnt").DisplayName.AddTranslation(GameCulture.Russian, "Обожжённый морозом");
 			thorium.GetNPC("FrostBurntFlayer").DisplayName.AddTranslation(GameCulture.Russian, "Обожжённый морозом");
 			thorium.GetNPC("SnowElemental").DisplayName.AddTranslation(GameCulture.Russian, "Элементаль снега");

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using CalamityRuTranslate.Utilities;
+using CalamityRuTranslate.Common.Utilities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
@@ -9,7 +9,7 @@ namespace CalamityRuTranslate.Vanilla
 {
     public class ModifiedVanillaColorDamageTypes : GlobalItem
     {
-        public override bool Autoload(ref string name) => ProjectTRuConfig.Instance.ColoredDamageTypes && Translation.IsRussianLanguage;
+        public override bool Autoload(ref string name) => TRuConfig.Instance.ColoredDamageTypes && TranslationUtils.IsRussianLanguage;
 
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {

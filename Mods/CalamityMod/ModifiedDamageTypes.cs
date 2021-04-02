@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using CalamityRuTranslate.Utilities;
+using CalamityMod.Items;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
@@ -11,20 +11,17 @@ namespace CalamityRuTranslate.Mods.CalamityMod
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (Translation.IsRussianLanguage)
+            TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Damage");
+            if (tooltip != null)
             {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Damage");
-                if (tooltip != null)
+                if (item.GetGlobalItem<CalamityGlobalItem>().rogue)
                 {
-                    if (tooltip.text.Contains("rogue урона"))
-                    {
-                        tooltip.text = tooltip.text.Replace("rogue урона", "ед. разбойного урона");
-                        tooltip.overrideColor = new Color(255, 184, 108);
-                    }
-                    else if (tooltip.text.Contains("true melee damage"))
-                    {
-                        tooltip.text = tooltip.text.Replace("true melee damage", "ед. истинного урона ближнего боя");
-                    }
+                    tooltip.text = tooltip.text.Replace("rogue урона", "ед. разбойного урона");
+                    tooltip.overrideColor = new Color(255, 184, 108);
+                }
+                else if (item.melee)
+                {
+                    tooltip.text = tooltip.text.Replace("true melee damage", "ед. истинного урона ближнего боя");
                 }
             }
         }

@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Content
@@ -11,11 +12,8 @@ namespace CalamityRuTranslate.Content
     {
         private static readonly Dictionary<int, Texture2D> ItemGlowMask = new Dictionary<int, Texture2D>();
 
-        internal static void Unload()
-        {
-            ItemGlowMask.Clear();
-        }
-        
+        internal static void Unload() => ItemGlowMask.Clear();
+
         public static void AddGlowMask(int itemType, string texturePath)
         {
             ItemGlowMask[itemType] = ModContent.GetTexture(texturePath);
@@ -26,7 +24,7 @@ namespace CalamityRuTranslate.Content
 	        Texture2D textureHead;
 	        if (!player.armor[10].IsAir)
 	        {
-		        if (player.armor[10].type >= 3930 && ItemGlowMask.TryGetValue(player.armor[10].type, out textureHead))
+		        if (player.armor[10].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[10].type, out textureHead))
 		        {
 			        InsertAfterVanillaLayer(layers, "Head", new PlayerLayer(mod.Name, "GlowMaskHead", delegate(PlayerDrawInfo info)
 			        {
@@ -34,7 +32,7 @@ namespace CalamityRuTranslate.Content
 			        }));
 		        }
 	        }
-	        else if (player.armor[0].type >= 3930 && ItemGlowMask.TryGetValue(player.armor[0].type, out textureHead))
+	        else if (player.armor[0].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[0].type, out textureHead))
 	        {
 		        InsertAfterVanillaLayer(layers, "Head", new PlayerLayer(mod.Name, "GlowMaskHead", delegate(PlayerDrawInfo info)
 		        {
@@ -45,7 +43,7 @@ namespace CalamityRuTranslate.Content
 	        Texture2D textureBody;
 	        if (!player.armor[11].IsAir)
 	        {
-	        	if (player.armor[11].type >= 3930 && ItemGlowMask.TryGetValue(player.armor[11].type, out textureBody))
+	        	if (player.armor[11].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[11].type, out textureBody))
 	        	{
 	        		InsertAfterVanillaLayer(layers, "Body", new PlayerLayer(mod.Name, "GlowMaskBody", delegate(PlayerDrawInfo info)
 	        		{
@@ -53,7 +51,7 @@ namespace CalamityRuTranslate.Content
 	        		}));
 	        	}
 	        }
-	        else if (player.armor[1].type >= 3930 && ItemGlowMask.TryGetValue(player.armor[1].type, out textureBody))
+	        else if (player.armor[1].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[1].type, out textureBody))
 	        {
 	        	InsertAfterVanillaLayer(layers, "Body", new PlayerLayer(mod.Name, "GlowMaskBody", delegate(PlayerDrawInfo info)
 	        	{
@@ -64,7 +62,7 @@ namespace CalamityRuTranslate.Content
 	        Texture2D textureArms;
 	        if (!player.armor[11].IsAir)
 	        {
-		        if (player.armor[11].type >= 3930 && ItemGlowMask.TryGetValue(player.armor[11].type, out textureArms))
+		        if (player.armor[11].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[11].type, out textureArms))
 		        {
 			        InsertAfterVanillaLayer(layers, "Arms", new PlayerLayer(mod.Name, "GlowMaskBody", delegate(PlayerDrawInfo info)
 			        {
@@ -72,7 +70,7 @@ namespace CalamityRuTranslate.Content
 			        }));
 		        }
 	        }
-	        else if (player.armor[1].type >= 3930 && ItemGlowMask.TryGetValue(player.armor[1].type, out textureArms))
+	        else if (player.armor[1].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[1].type, out textureArms))
 	        {
 		        InsertAfterVanillaLayer(layers, "Arms", new PlayerLayer(mod.Name, "GlowMaskBody", delegate(PlayerDrawInfo info)
 		        {
@@ -83,7 +81,7 @@ namespace CalamityRuTranslate.Content
 	        Texture2D textureLegs;
             if (!player.armor[12].IsAir)
             {
-                if (player.armor[12].type >= 3930 && ItemGlowMask.TryGetValue(player.armor[12].type, out textureLegs))
+                if (player.armor[12].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[12].type, out textureLegs))
                 {
                     InsertAfterVanillaLayer(layers, "Legs", new PlayerLayer(mod.Name, "GlowMaskLegs", delegate(PlayerDrawInfo info)
                     {
@@ -91,7 +89,7 @@ namespace CalamityRuTranslate.Content
                     }));
                 }
             }
-            else if (player.armor[2].type >= 3930 && ItemGlowMask.TryGetValue(player.armor[2].type, out textureLegs))
+            else if (player.armor[2].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[2].type, out textureLegs))
 			{
 				InsertAfterVanillaLayer(layers, "Legs", new PlayerLayer(mod.Name, "GlowMaskLegs", delegate(PlayerDrawInfo info)
 				{
@@ -112,8 +110,8 @@ namespace CalamityRuTranslate.Content
             }
             layers.Add(newPlayerLayer);
         }
-        
-        public static void DrawArmorGlowMask(EquipType type, Texture2D texture, PlayerDrawInfo drawInfo)
+
+        private static void DrawArmorGlowMask(EquipType type, Texture2D texture, PlayerDrawInfo drawInfo)
         {
 	        switch (type)
 	        {

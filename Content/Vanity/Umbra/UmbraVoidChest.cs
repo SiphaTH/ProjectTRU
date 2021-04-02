@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using CalamityRuTranslate.Utilities;
+using CalamityRuTranslate.Common.Utilities;
 using Microsoft.Xna.Framework;
 using Terraria.ModLoader;
 
@@ -28,7 +28,7 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
         {
             foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
             {
-                tooltip.overrideColor = Translation.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
+                tooltip.overrideColor = ItemNameColorSwap.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
             }
         }
     }

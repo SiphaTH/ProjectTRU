@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CalamityRuTranslate.Utilities
+namespace CalamityRuTranslate.Common.Exceptions
 {
     public class TranslationException : Exception
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using CalamityRuTranslate.Catalogs;
 using CalamityRuTranslate.Common;
-using CalamityRuTranslate.Utilities;
+using CalamityRuTranslate.Common.Exceptions;
 
 namespace CalamityRuTranslate.Mods.FargowiltasSouls
 {
@@ -18,7 +18,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         public override void Load()
         {
-            if (IsLoaded && ModInstance.Version != new Version(1,3,95))
+            if (ModInstance.Version != new Version(1,3,95))
             {
                 throw new ModVersionException("FargowiltasSouls", "1.3.95", ModInstance.Version);
             }

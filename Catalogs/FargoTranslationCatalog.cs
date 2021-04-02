@@ -235,7 +235,7 @@ namespace CalamityRuTranslate.Catalogs
             "MutantBody",
             "MutantMask",
             "MutantPants",
-            "LumberJaxe",
+            "LumberJaxe"
         };
         public static List<string> ItemTooltip = new List<string>
         {
@@ -426,16 +426,7 @@ namespace CalamityRuTranslate.Catalogs
             "RegalStatue",
             "WalkingRick",
             "WoodenToken",
-            "LumberJaxe",
-        };
-        public static List<string> FargoThoriumCrossItems = new List<string>
-        {
-            "OverloadCoznix",
-            "OverloadJelly",
-            "OverloadLich",
-            "OverloadSaucer",
-            "OverloadStrider",
-            "OverloadThunderbird",
+            "LumberJaxe"
         };
         public static List<string> NPC = new List<string>
         {
@@ -443,7 +434,7 @@ namespace CalamityRuTranslate.Catalogs
             "Deviantt",
             "LumberJack",
             "Mutant",
-            "SuperDummy",
+            "SuperDummy"
         };
         
         public static Dictionary<string, (string MapEntryName, Color ColorTile)> Tile =
@@ -455,7 +446,7 @@ namespace CalamityRuTranslate.Catalogs
                 {"OmnistationPlusSheet", ("", new Color(221, 85, 125))},
                 {"OmnistationSheet", ("", new Color(221, 85, 125))},
                 {"OmnistationSheet2", ("", new Color(102, 116, 130))},
-                {"RegalStatueSheet", ("", new Color(200, 200, 200))},
+                {"RegalStatueSheet", ("", new Color(200, 200, 200))}
             };
     }
 }
