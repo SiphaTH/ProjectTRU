@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using CalamityRuTranslate.Common.Exceptions;
 using CalamityRuTranslate.Common.Utilities;
-using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -12,10 +11,10 @@ namespace CalamityRuTranslate.Common
     public abstract class ModRussianTranslation
     {
         public Mod ModInstance => ModLoader.GetMod(_innerModName);
-        
+
         private readonly string _innerModName;
         private readonly string _modName;
-        
+
         protected List<string> BuffTranslation;
         protected List<string> ItemNameTranslation;
         protected List<string> ItemTooltipTranslation;
@@ -25,12 +24,12 @@ namespace CalamityRuTranslate.Common
         protected List<string> ProjectileTranslation;
         protected List<string> PrefixTranslation;
         protected List<string> KeyLocalization;
-        protected Dictionary<string, (string, Color)> TileTranslation;
+        protected List<ModTileTranslation> TileTranslation;
 
         protected ModRussianTranslation(string mod)
         {
             _innerModName = mod;
-            
+
             BuffTranslation = new List<string>();
             ItemNameTranslation = new List<string>();
             ItemTooltipTranslation = new List<string>();
@@ -40,31 +39,31 @@ namespace CalamityRuTranslate.Common
             ProjectileTranslation = new List<string>();
             PrefixTranslation = new List<string>();
             KeyLocalization = new List<string>();
-            TileTranslation = new Dictionary<string, (string, Color)>();
-            
+            TileTranslation = new List<ModTileTranslation>();
+
             switch (mod)
             {
                 case "CalamityMod":
                     _modName = "Calamity";
                     break;
-                
+
                 case "ThoriumMod":
                     _modName = "Thorium";
                     break;
-                
+
                 case "Fargowiltas":
                     _modName = "Fargo";
                     break;
-                
+
                 case "FargowiltasSouls":
                     _modName = "FargoSouls";
                     break;
-                
+
                 default:
                     throw new ArgumentException(nameof(mod));
             }
         }
-        
+
         public void TryLoad()
         {
             if(ModInstance != null)
@@ -94,10 +93,10 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new TranslationException(id);
+                    throw new ModTypeException(id);
                 }
             }
-            
+
             foreach (var id in ItemNameTranslation)
             {
                 try
@@ -106,10 +105,10 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new TranslationException(id);
+                    throw new ModTypeException(id);
                 }
             }
-            
+
             foreach (var id in ItemTooltipTranslation)
             {
                 try
@@ -118,10 +117,10 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new TranslationException(id);
+                    throw new ModTypeException(id);
                 }
             }
-            
+
             foreach (var id in NPCTranslation)
             {
                 try
@@ -130,25 +129,25 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new TranslationException(id);
+                    throw new ModTypeException(id);
                 }
             }
-            
+
             foreach (var id in TileTranslation)
             {
                 try
                 {
-                    ModTile modTile = TileLoader.GetTile(ModInstance.TileType(id.Key));
-                    ModTranslation modTranslation = modTile.CreateMapEntryName(id.Value.Item1);
-                    modTranslation.AddTranslation(GameCulture.Russian, LangUtils.TranslationKey($"{_modName}.TileName.{id.Key}"));
-                    modTile.AddMapEntry(id.Value.Item2, modTranslation);
+                    ModTile modTile = TileLoader.GetTile(ModInstance.TileType(id.TileId));
+                    ModTranslation modTranslation = modTile.CreateMapEntryName(id.MapEntryName);
+                    modTranslation.AddTranslation(GameCulture.Russian, LangUtils.TranslationKey($"{_modName}.TileName.{id.TranslationKey}"));
+                    modTile.AddMapEntry(id.TileColor, modTranslation);
                 }
                 catch (NullReferenceException)
                 {
-                    throw new TranslationException(id.Key);
+                    throw new ModTypeException(id.TileId);
                 }
             }
-            
+
             foreach (var id in ChestTranslation)
             {
                 try
@@ -157,10 +156,10 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new TranslationException(id);
+                    throw new ModTypeException(id);
                 }
             }
-            
+
             foreach (var id in DresserTranslation)
             {
                 try
@@ -169,10 +168,10 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new TranslationException(id);
+                    throw new ModTypeException(id);
                 }
             }
-            
+
             foreach (var id in ProjectileTranslation)
             {
                 try
@@ -181,10 +180,10 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new TranslationException(id);
+                    throw new ModTypeException(id);
                 }
             }
-            
+
             foreach (var id in PrefixTranslation)
             {
                 try
@@ -193,10 +192,10 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new TranslationException(id);
+                    throw new ModTypeException(id);
                 }
             }
-            
+
             foreach (var id in KeyLocalization)
             {
                 ModTranslation modTranslation = ModInstance.CreateTranslation(id);
@@ -204,7 +203,7 @@ namespace CalamityRuTranslate.Common
                 ModInstance.AddTranslation(modTranslation);
             }
         }
-        
+
         public virtual void Load() { }
 
         public virtual void DialogueTranslation() { }
