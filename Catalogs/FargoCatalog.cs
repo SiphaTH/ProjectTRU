@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
+using CalamityRuTranslate.Common;
 using Microsoft.Xna.Framework;
 
 namespace CalamityRuTranslate.Catalogs
 {
-    public static class FargoTranslationCatalog
+    public static class FargoCatalog
     {
         public static List<string> Buff = new List<string>
         {
@@ -11,6 +12,7 @@ namespace CalamityRuTranslate.Catalogs
             "OmnistationPlus",
             "WoodDrop"
         };
+
         public static List<string> ItemName = new List<string>
         {
             "BoneQuiver",
@@ -237,6 +239,7 @@ namespace CalamityRuTranslate.Catalogs
             "MutantPants",
             "LumberJaxe"
         };
+
         public static List<string> ItemTooltip = new List<string>
         {
             "ChlorophyteQuiver",
@@ -428,6 +431,7 @@ namespace CalamityRuTranslate.Catalogs
             "WoodenToken",
             "LumberJaxe"
         };
+
         public static List<string> NPC = new List<string>
         {
             "Abominationn",
@@ -436,17 +440,16 @@ namespace CalamityRuTranslate.Catalogs
             "Mutant",
             "SuperDummy"
         };
-        
-        public static Dictionary<string, (string MapEntryName, Color ColorTile)> Tile =
-            new Dictionary<string, (string MapEntryName, Color ColorTile)>
-            {
-                {"MultitaskCenterSheet", ("", new Color(200, 200, 200))},
-                {"CrucibleCosmosSheet", ("", new Color(200, 200, 200))},
-                {"ElementalAssemblerSheet", ("", new Color(200, 200, 200))},
-                {"OmnistationPlusSheet", ("", new Color(221, 85, 125))},
-                {"OmnistationSheet", ("", new Color(221, 85, 125))},
-                {"OmnistationSheet2", ("", new Color(102, 116, 130))},
-                {"RegalStatueSheet", ("", new Color(200, 200, 200))}
-            };
+
+        public static List<ModTileTranslation> Tile = new List<ModTileTranslation>
+        {
+            new ModTileTranslation("MultitaskCenterSheet", "", new Color(200, 200, 200)),
+            new ModTileTranslation("CrucibleCosmosSheet", "", new Color(200, 200, 200)),
+            new ModTileTranslation("ElementalAssemblerSheet", "", new Color(200, 200, 200)),
+            new ModTileTranslation("OmnistationPlusSheet", "", new Color(221, 85, 125)),
+            new ModTileTranslation("OmnistationSheet", "", new Color(221, 85, 125)),
+            new ModTileTranslation("OmnistationSheet2", "", new Color(102, 116, 130)),
+            new ModTileTranslation("RegalStatueSheet", "", new Color(200, 200, 200))
+        };
     }
 }

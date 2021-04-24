@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
+using CalamityRuTranslate.Common;
 using Microsoft.Xna.Framework;
 
 namespace CalamityRuTranslate.Catalogs
 {
-    public static class FargoSoulsTranslationCatalog
+    public static class FargoSoulsCatalog
     {
         public static List<string> Buff = new List<string>
         {
@@ -113,6 +114,7 @@ namespace CalamityRuTranslate.Catalogs
             "DoveBuff",
             "FishMinionBuff"
         };
+
         public static List<string> ItemName = new List<string>
         {
             "Masochist",
@@ -363,6 +365,7 @@ namespace CalamityRuTranslate.Catalogs
             "SquidwardDoor",
             "MissDrakovisFishingPole"
         };
+
         public static List<string> ItemTooltip = new List<string>
         {
             "Masochist",
@@ -594,6 +597,7 @@ namespace CalamityRuTranslate.Catalogs
             "SquidwardDoor",
             "MissDrakovisFishingPole"
         };
+
         public static List<string> NPC = new List<string>
         {
             "AbomBoss",
@@ -630,17 +634,16 @@ namespace CalamityRuTranslate.Catalogs
             "MutantBoss",
             "MutantIllusion"
         };
-        
-        public static Dictionary<string, (string MapEntryName, Color ColorTile)> Tile =
-            new Dictionary<string, (string MapEntryName, Color ColorTile)>
+
+        public static List<ModTileTranslation> Tile = new List<ModTileTranslation>
         {
-            {"AbomTrophy", ("", new Color(120, 85, 60))},
-            {"DeviTrophy", ("", new Color(120, 85, 60))},
-            {"MutantStatue", ("", new Color(144, 144, 144))},
-            {"MutantStatueGift", ("", new Color(144, 144, 144))},
-            {"MutantTrophy", ("", new Color(120, 85, 60))},
-            {"SquidwardDoorClosed", ("", new Color(200, 200, 200))},
-            {"SquidwardDoorOpen", ("", new Color(200, 200, 200))}
+            new ModTileTranslation("AbomTrophy", "", new Color(120, 85, 60)),
+            new ModTileTranslation("DeviTrophy", "", new Color(120, 85, 60)),
+            new ModTileTranslation("MutantStatue", "", new Color(144, 144, 144)),
+            new ModTileTranslation("MutantStatueGift", "", new Color(144, 144, 144)),
+            new ModTileTranslation("MutantTrophy", "", new Color(120, 85, 60)),
+            new ModTileTranslation("SquidwardDoorClosed", "", new Color(200, 200, 200)),
+            new ModTileTranslation("SquidwardDoorOpen", "", new Color(200, 200, 200)),
         };
     }
 }
