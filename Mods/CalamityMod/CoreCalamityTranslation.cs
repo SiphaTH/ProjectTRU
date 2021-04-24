@@ -9,26 +9,29 @@ namespace CalamityRuTranslate.Mods.CalamityMod
     {
         public CoreCalamityTranslation() : base("CalamityMod")
         {
-            BuffTranslation = CalamityTranslationCatalog.Buff;
-            ItemNameTranslation = CalamityTranslationCatalog.ItemName;
-            ItemTooltipTranslation = CalamityTranslationCatalog.ItemTooltip;
-            ProjectileTranslation = CalamityTranslationCatalog.Projectile;
-            NPCTranslation = CalamityTranslationCatalog.NPC;
-            ChestTranslation = CalamityTranslationCatalog.Chest;
-            DresserTranslation = CalamityTranslationCatalog.Dresser;
-            PrefixTranslation = CalamityTranslationCatalog.Prefix;
-            KeyLocalization = CalamityTranslationCatalog.KeyLocalization;
-            TileTranslation = CalamityTranslationCatalog.Tile;
+            BuffTranslation = CalamityCatalog.Buff;
+            ItemNameTranslation = CalamityCatalog.ItemName;
+            ItemTooltipTranslation = CalamityCatalog.ItemTooltip;
+            ProjectileTranslation = CalamityCatalog.Projectile;
+            NPCTranslation = CalamityCatalog.NPC;
+            ChestTranslation = CalamityCatalog.Chest;
+            DresserTranslation = CalamityCatalog.Dresser;
+            PrefixTranslation = CalamityCatalog.Prefix;
+            KeyLocalization = CalamityCatalog.KeyLocalization;
+            TileTranslation = CalamityCatalog.Tile;
         }
 
-        public override void Load()
-        {
-            if (ModInstance.Version != new Version(1, 4, 5, 7))
-            {
-                throw new ModVersionException("Calamity", "1.4.5.7", ModsCall.Calamity.Version);
-            }
-        }
+         private readonly Version ExpectedCalamityVersion = new Version(1, 4, 5, 7);
         
+         public override void Load()
+         {
+             if (ModInstance.Version != ExpectedCalamityVersion)
+             {
+                 throw new ModVersionException("Calamity Mod (No Calamity Music)", ModInstance.Version,
+                     ExpectedCalamityVersion, ModVersionException.ExceptionType.OutdatedCalamity);
+             }
+         }
+
         public override void DialogueTranslation() => NPCDialogueTranslation.SetupTranslation();
     }
 }

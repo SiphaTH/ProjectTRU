@@ -9,20 +9,23 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
     {
         public CoreFargowiltasTranslation() : base("Fargowiltas")
         {
-            BuffTranslation = FargoTranslationCatalog.Buff;
-            ItemNameTranslation = FargoTranslationCatalog.ItemName;
-            ItemTooltipTranslation = FargoTranslationCatalog.ItemTooltip;
-            NPCTranslation = FargoTranslationCatalog.NPC;
-            TileTranslation = FargoTranslationCatalog.Tile;
+            BuffTranslation = FargoCatalog.Buff;
+            ItemNameTranslation = FargoCatalog.ItemName;
+            ItemTooltipTranslation = FargoCatalog.ItemTooltip;
+            NPCTranslation = FargoCatalog.NPC;
+            TileTranslation = FargoCatalog.Tile;
         }
+
+        private readonly Version ExpectedFargoVersion = new Version(2, 2, 7);
 
         public override void Load()
         {
-            if (ModInstance.Version != new Version(2, 2, 7))
+            if (ModInstance.Version != ExpectedFargoVersion)
             {
-                throw new ModVersionException("Fargowiltas", "2.2.7", ModInstance.Version);
+                throw new ModVersionException("Fargo's Mutant Mod", ModInstance.Version, ExpectedFargoVersion,
+                    ModVersionException.ExceptionType.OutdatedFargo);
             }
-            
+
             if (ModsCall.FargoSouls != null)
             {
                 ItemNameTranslation.Add("InnocuousSkull");
@@ -35,7 +38,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
                 ItemTooltipTranslation.Remove("InnocuousSkull");
                 NPCTranslation.Remove("Squirrel");
             }
-            
+
             if (ModsCall.Thorium != null || ModsCall.Calamity != null)
             {
                 ItemNameTranslation.Add("OmnistationPlus");
@@ -55,7 +58,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
                 ItemNameTranslation.Add("OverloadSaucer");
                 ItemNameTranslation.Add("OverloadStrider");
                 ItemNameTranslation.Add("OverloadThunderbird");
-                
+
                 ItemTooltipTranslation.Add("OverloadCoznix");
                 ItemTooltipTranslation.Add("OverloadJelly");
                 ItemTooltipTranslation.Add("OverloadLich");
@@ -71,7 +74,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
                 ItemNameTranslation.Remove("OverloadSaucer");
                 ItemNameTranslation.Remove("OverloadStrider");
                 ItemNameTranslation.Remove("OverloadThunderbird");
-                
+
                 ItemTooltipTranslation.Remove("OverloadCoznix");
                 ItemTooltipTranslation.Remove("OverloadJelly");
                 ItemTooltipTranslation.Remove("OverloadLich");

@@ -9,18 +9,21 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
     {
         public CoreFargowiltasSoulsTranslation() : base("FargowiltasSouls")
         {
-            BuffTranslation = FargoSoulsTranslationCatalog.Buff;
-            ItemNameTranslation = FargoSoulsTranslationCatalog.ItemName;
-            ItemTooltipTranslation = FargoSoulsTranslationCatalog.ItemTooltip;
-            NPCTranslation = FargoSoulsTranslationCatalog.NPC;
-            TileTranslation = FargoSoulsTranslationCatalog.Tile;
+            BuffTranslation = FargoSoulsCatalog.Buff;
+            ItemNameTranslation = FargoSoulsCatalog.ItemName;
+            ItemTooltipTranslation = FargoSoulsCatalog.ItemTooltip;
+            NPCTranslation = FargoSoulsCatalog.NPC;
+            TileTranslation = FargoSoulsCatalog.Tile;
         }
+
+        private readonly Version ExpectedFargoSoulsVersion = new Version(1, 3, 95);
 
         public override void Load()
         {
-            if (ModInstance.Version != new Version(1,3,95))
+            if (ModInstance.Version != ExpectedFargoSoulsVersion)
             {
-                throw new ModVersionException("FargowiltasSouls", "1.3.95", ModInstance.Version);
+                throw new ModVersionException("Fargo's Souls Mod", ModInstance.Version, ExpectedFargoSoulsVersion,
+                    ModVersionException.ExceptionType.OutdatedFargoSouls);
             }
         }
     }
