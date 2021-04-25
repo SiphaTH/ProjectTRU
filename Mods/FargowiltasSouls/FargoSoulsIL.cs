@@ -1,6 +1,13 @@
 ﻿using System.Reflection;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
+using IL.FargowiltasSouls;
+using IL.FargowiltasSouls.Items;
+using IL.FargowiltasSouls.Items.Misc;
+using IL.FargowiltasSouls.Items.Summons;
+using IL.FargowiltasSouls.NPCs;
+using IL.FargowiltasSouls.Patreon.LaBonez;
+using IL.FargowiltasSouls.Projectiles.Pets;
 using MonoMod.Cil;
 using MonoMod.RuntimeDetour.HookGen;
 
@@ -12,18 +19,18 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         public override void Load()
         {
-            IL.FargowiltasSouls.FargoPlayer.OnEnterWorld += TranslationOnEnterWorldHook;
-            IL.FargowiltasSouls.FargoPlayer.PreUpdate += TranslationPreUpdateHook;
-            IL.FargowiltasSouls.FargoPlayer.PreKill += TranslationPreKill;
-            IL.FargowiltasSouls.FargoPlayer.CatchFish += TranslationCatchFishHook;
+            FargoPlayer.OnEnterWorld += TranslationOnEnterWorldHook;
+            FargoPlayer.PreUpdate += TranslationPreUpdateHook;
+            FargoPlayer.PreKill += TranslationPreKill;
+            FargoPlayer.CatchFish += TranslationCatchFishHook;
         }
 
         public override void Unload()
         {
-            IL.FargowiltasSouls.FargoPlayer.OnEnterWorld -= TranslationOnEnterWorldHook;
-            IL.FargowiltasSouls.FargoPlayer.PreUpdate -= TranslationPreUpdateHook;
-            IL.FargowiltasSouls.FargoPlayer.PreKill -= TranslationPreKill;
-            IL.FargowiltasSouls.FargoPlayer.CatchFish -= TranslationCatchFishHook;
+            FargoPlayer.OnEnterWorld -= TranslationOnEnterWorldHook;
+            FargoPlayer.PreUpdate -= TranslationPreUpdateHook;
+            FargoPlayer.PreKill -= TranslationPreKill;
+            FargoPlayer.CatchFish -= TranslationCatchFishHook;
         }
 
         private void TranslationOnEnterWorldHook(ILContext il)
@@ -31,9 +38,9 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
             TranslationUtils.ILTranslate(il, "Fargo's Music Mod not found!", TranslationUtils.EncodeToUtf16("Fargo's Music Mod не найден"));
             TranslationUtils.ILTranslate(il, "Please install Fargo's Music Mod for the full experience!!", TranslationUtils.EncodeToUtf16("Пожалуйста, установите Fargo's Music Mod для полноценного опыта!"));
         }
-        
+
         private void TranslationPreUpdateHook(ILContext il) => TranslationUtils.ILTranslate(il, " was pricked by a Cactus.", TranslationUtils.EncodeToUtf16(" был проколот кактусом."));
-        
+
         private void TranslationPreKill(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "You've been revived!", TranslationUtils.EncodeToUtf16("Вы возродились!"));
@@ -44,50 +51,50 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
             TranslationUtils.ILTranslate(il, " was annihilated by divine wrath.", TranslationUtils.EncodeToUtf16(" был истреблён божественным гневом."));
             TranslationUtils.ILTranslate(il, " was reaped by the cold hand of death.", TranslationUtils.EncodeToUtf16(" был сожжён холодной рукой смерти."));
         }
-        
+
         private void TranslationCatchFishHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX has awoken!", TranslationUtils.EncodeToUtf16("Герцог Рыброн ЕХ пробудился!"));
     }
-    
+
     public class FargowiltasIL : ILEdit
     {
         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load() => IL.FargowiltasSouls.Fargowiltas.HandlePacket += TranslationFargowiltasHook;
-        
+
         public override void Unload() => IL.FargowiltasSouls.Fargowiltas.HandlePacket -= TranslationFargowiltasHook;
-        
+
         private void TranslationFargowiltasHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX has awoken!", TranslationUtils.EncodeToUtf16("Герцог Рыброн ЕХ пробудился!"));
     }
-    
+
      public class BossChecklistCompatibilityIL : ILEdit
      {
          private event ILContext.Manipulator InitializeBossesHook
          {
              add => HookEndpointManager.Modify(ModsCall.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeBosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
-         
+
              remove => HookEndpointManager.Unmodify(ModsCall.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeBosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
          }
-         
+
          private event ILContext.Manipulator InitializeMinibossesHook
          {
              add => HookEndpointManager.Modify(ModsCall.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeMinibosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
-         
+
              remove => HookEndpointManager.Unmodify(ModsCall.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeMinibosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
          }
-         
+
          public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
 
-         public override void Load()
-         {
-             InitializeBossesHook += TranslationInitializeBossesHook;
-             InitializeMinibossesHook += TranslationInitializeMinibossesHook;
-         }
+        public override void Load()
+        {
+            InitializeBossesHook += TranslationInitializeBossesHook;
+            InitializeMinibossesHook += TranslationInitializeMinibossesHook;
+        }
 
-         public override void Unload()
-         {
-             InitializeBossesHook -= TranslationInitializeBossesHook;
-             InitializeMinibossesHook -= TranslationInitializeMinibossesHook;
-         }
+        public override void Unload()
+        {
+            InitializeBossesHook -= TranslationInitializeBossesHook;
+            InitializeMinibossesHook -= TranslationInitializeMinibossesHook;
+        }
 
          private void TranslationInitializeBossesHook(ILContext il)
          {
@@ -134,38 +141,38 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
          }
      }
 
-     public class EModeGlobalNPCIL : ILEdit
-     {
-         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
-         
-         public override void Load()
-         {
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.KingSlimeAI += TranslationKingSlimeAIHook;
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.QueenBeeAI += TranslationQueenBeeAIHook;
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.SetDefaults += TranslationSetDefaultsHook;
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.PreAI += TranslationPreAIHook;
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.OnHitPlayer += TranslationOnHitPlayerHook;
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.CheckDead += TranslationCheckDeadHook;
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.ModifyHitByItem += TranslationModifyHitByItemHook;
-         }
+    public class EModeGlobalNPCIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
 
-         public override void Unload()
-         {
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.KingSlimeAI -= TranslationKingSlimeAIHook;
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.QueenBeeAI -= TranslationQueenBeeAIHook;
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.SetDefaults -= TranslationSetDefaultsHook;
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.PreAI -= TranslationPreAIHook;
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.OnHitPlayer -= TranslationOnHitPlayerHook;
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.CheckDead -= TranslationCheckDeadHook;
-             IL.FargowiltasSouls.NPCs.EModeGlobalNPC.ModifyHitByItem -= TranslationModifyHitByItemHook;
-         }
+        public override void Load()
+        {
+            EModeGlobalNPC.KingSlimeAI += TranslationKingSlimeAIHook;
+            EModeGlobalNPC.QueenBeeAI += TranslationQueenBeeAIHook;
+            EModeGlobalNPC.SetDefaults += TranslationSetDefaultsHook;
+            EModeGlobalNPC.PreAI += TranslationPreAIHook;
+            EModeGlobalNPC.OnHitPlayer += TranslationOnHitPlayerHook;
+            EModeGlobalNPC.CheckDead += TranslationCheckDeadHook;
+            EModeGlobalNPC.ModifyHitByItem += TranslationModifyHitByItemHook;
+        }
+
+        public override void Unload()
+        {
+            EModeGlobalNPC.KingSlimeAI -= TranslationKingSlimeAIHook;
+            EModeGlobalNPC.QueenBeeAI -= TranslationQueenBeeAIHook;
+            EModeGlobalNPC.SetDefaults -= TranslationSetDefaultsHook;
+            EModeGlobalNPC.PreAI -= TranslationPreAIHook;
+            EModeGlobalNPC.OnHitPlayer -= TranslationOnHitPlayerHook;
+            EModeGlobalNPC.CheckDead -= TranslationCheckDeadHook;
+            EModeGlobalNPC.ModifyHitByItem -= TranslationModifyHitByItemHook;
+        }
 
          private void TranslationKingSlimeAIHook(ILContext il)
          {
              TranslationUtils.ILTranslate(il, "King Slime has enraged!", TranslationUtils.EncodeToUtf16("Король слизней в ярости!"));
              TranslationUtils.ILTranslate(il, "King Slime has enraged!", TranslationUtils.EncodeToUtf16("Король слизней в ярости!"), 2);
          }
-         
+
          private void TranslationQueenBeeAIHook(ILContext il)
          {
              TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", TranslationUtils.EncodeToUtf16("Королевская особа пробудилась!"));
@@ -173,9 +180,9 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
              TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", TranslationUtils.EncodeToUtf16("Королевская особа пробудилась!"), 3);
              TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", TranslationUtils.EncodeToUtf16("Королевская особа пробудилась!"), 4);
          }
-         
+
          private void TranslationSetDefaultsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX", TranslationUtils.EncodeToUtf16("Герцог Рыброн ЕХ"));
-         
+
          private void TranslationPreAIHook(ILContext il)
          {
              TranslationUtils.ILTranslate(il, " sucked dry.", TranslationUtils.EncodeToUtf16(" выдохся."));
@@ -184,7 +191,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
              TranslationUtils.ILTranslate(il, "A Clown has exploded!", TranslationUtils.EncodeToUtf16("Клоун взорвался!"));
              TranslationUtils.ILTranslate(il, "A Clown has exploded!", TranslationUtils.EncodeToUtf16("Клоун взорвался!"), 2);
          }
-         
+
          private void TranslationOnHitPlayerHook(ILContext il)
          {
              TranslationUtils.ILTranslate(il, " was eaten alive by a Man Eater.", TranslationUtils.EncodeToUtf16(" был съеден заживо людоедом."));
@@ -202,7 +209,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
              TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 11);
              TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 12);
          }
-         
+
          private void TranslationCheckDeadHook(ILContext il)
          {
              TranslationUtils.ILTranslate(il, "Skeletron has entered Dungeon Guardian form!", TranslationUtils.EncodeToUtf16("Скелетрон принял форму стража темницы!"));
@@ -210,156 +217,156 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
              TranslationUtils.ILTranslate(il, "Duke Fishron EX has been defeated!", TranslationUtils.EncodeToUtf16("Герцог Рыброн ЕХ был побеждён!"));
              TranslationUtils.ILTranslate(il, "Duke Fishron EX has been defeated!", TranslationUtils.EncodeToUtf16("Герцог Рыброн ЕХ был побеждён!"), 2);
          }
-         
+
          private void TranslationModifyHitByItemHook(ILContext il) => TranslationUtils.ILTranslate(il, " was impaled by a Giant Tortoise.", TranslationUtils.EncodeToUtf16(" был пронзён гигантской черепахой."));
      }
 
-     public class MutantsFuryIL : ILEdit
-     {
-         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
-         
-         public override void Load() => IL.FargowiltasSouls.Items.Misc.MutantsFury.UseItem += TranslationMutantsFuryHook;
-         
-         public override void Unload() => IL.FargowiltasSouls.Items.Misc.MutantsFury.UseItem -= TranslationMutantsFuryHook;
-         
-         private void TranslationMutantsFuryHook(ILContext il)
-         {
-             TranslationUtils.ILTranslate(il, "Mutant is angered!", TranslationUtils.EncodeToUtf16("Мутант в ярости!"));
-             TranslationUtils.ILTranslate(il, "Mutant is calm.", TranslationUtils.EncodeToUtf16("Мутант спокоен."));
-         }
-     }
-     
-     public class AbominationnVoodooDollIL : ILEdit
-     {
-         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
-         
-         public override void Load() => IL.FargowiltasSouls.Items.Summons.AbominationnVoodooDoll.Update += TranslationAbominationnVoodooDollHook;
-         
-         public override void Unload() => IL.FargowiltasSouls.Items.Summons.AbominationnVoodooDoll.Update -= TranslationAbominationnVoodooDollHook;
-         
-         private void TranslationAbominationnVoodooDollHook(ILContext il) => TranslationUtils.ILTranslate(il, "Mutant has been enraged by the death of his brother!", TranslationUtils.EncodeToUtf16("Мутант в ярости от гибели брата!"));
-     }
-     
-     public class AbomsCurseIL : ILEdit
-     {
-         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
-         
-         public override void Load() => IL.FargowiltasSouls.Items.Summons.AbomsCurse.UseItem += TranslationAbomsCurseHook;
-         
-         public override void Unload() => IL.FargowiltasSouls.Items.Summons.AbomsCurse.UseItem -= TranslationAbomsCurseHook;
-         
-         private void TranslationAbomsCurseHook(ILContext il) => TranslationUtils.ILTranslate(il, "Abominationn has awoken!", TranslationUtils.EncodeToUtf16("Мерзостть пробудился!"));
-     }
-     
-     public class DevisCurseIL : ILEdit
-     {
-         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
-         
-         public override void Load() => IL.FargowiltasSouls.Items.Summons.DevisCurse.UseItem += TranslationDevisCurseHook;
-         
-         public override void Unload() => IL.FargowiltasSouls.Items.Summons.DevisCurse.UseItem -= TranslationDevisCurseHook;
-         
-         private void TranslationDevisCurseHook(ILContext il)
-         {
-             TranslationUtils.ILTranslate(il, "Deviantt has awoken!", TranslationUtils.EncodeToUtf16("Девиантт пробудился!"));
-             TranslationUtils.ILTranslate(il, "Deviantt has awoken!", TranslationUtils.EncodeToUtf16("Девиантт пробудился!"), 2);
-         }
-     }
-     
-     public class MutantsCurseIL : ILEdit
-     {
-         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
-         
-         public override void Load() => IL.FargowiltasSouls.Items.Summons.MutantsCurse.UseItem += TranslationMutantsCurseHook;
-         
-         public override void Unload() => IL.FargowiltasSouls.Items.Summons.MutantsCurse.UseItem -= TranslationMutantsCurseHook;
-         
-         private void TranslationMutantsCurseHook(ILContext il)
-         {
-             TranslationUtils.ILTranslate(il, "Mutant has awoken!", TranslationUtils.EncodeToUtf16("Мутант пробудился!"));
-             TranslationUtils.ILTranslate(il, "Mutant has awoken!", TranslationUtils.EncodeToUtf16("Мутант пробудился!"), 2);
-         }
-     }
-     
-     public class SigilOfChampionsIL : ILEdit
-     {
-         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
-         
-         public override void Load() => IL.FargowiltasSouls.Items.Summons.SigilOfChampions.UseItem += TranslationSigilOfChampionsHook;
-         
-         public override void Unload() => IL.FargowiltasSouls.Items.Summons.SigilOfChampions.UseItem -= TranslationSigilOfChampionsHook;
-         
-         private void TranslationSigilOfChampionsHook(ILContext il)
-         {
-             TranslationUtils.ILTranslate(il, "A strong spirit stirs...", TranslationUtils.EncodeToUtf16("Сильный дух будоражит..."));
-             TranslationUtils.ILTranslate(il, "The core of the planet rumbles...", TranslationUtils.EncodeToUtf16("Ядро планеты урчит..."));
-             TranslationUtils.ILTranslate(il, "A verdant wind is blowing...", TranslationUtils.EncodeToUtf16("Дует зелёный ветер..."));
-             TranslationUtils.ILTranslate(il, "The stones tremble around you...", TranslationUtils.EncodeToUtf16("Камни дрожат вокруг вас..."));
-             TranslationUtils.ILTranslate(il, "The stars are aligning...", TranslationUtils.EncodeToUtf16("Звезды выравниваются..."));
-             TranslationUtils.ILTranslate(il, "Metallic groans echo from the depths...", TranslationUtils.EncodeToUtf16("Металлические стоны эхом разносятся из глубины..."));
-             TranslationUtils.ILTranslate(il, "A wave of warmth passes over you...", TranslationUtils.EncodeToUtf16("Волна тепла проходит по тебе..."));
-             TranslationUtils.ILTranslate(il, "The darkness of the night feels deeper...", TranslationUtils.EncodeToUtf16("Темнота ночи кажется глубже..."));
-             TranslationUtils.ILTranslate(il, "You are surrounded by the rustling of trees...", TranslationUtils.EncodeToUtf16("Вы окружены шорохом деревьев..."));
-             TranslationUtils.ILTranslate(il, "Nothing seems to answer the call...", TranslationUtils.EncodeToUtf16("Кажется, никто не отвечает на звонок..."));
-         }
-     }
-     
-     public class PiranhaPlantVoodooDollIL : ILEdit
-     {
-         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
-         
-         public override void Load() => IL.FargowiltasSouls.Patreon.LaBonez.PiranhaPlantVoodooDoll.UseItem += TranslationPiranhaPlantVoodooDollHook;
-         
-         public override void Unload() => IL.FargowiltasSouls.Patreon.LaBonez.PiranhaPlantVoodooDoll.UseItem -= TranslationPiranhaPlantVoodooDollHook;
-         
-         private void TranslationPiranhaPlantVoodooDollHook(ILContext il)
-         {
-             TranslationUtils.ILTranslate(il, "The suffering continues.", TranslationUtils.EncodeToUtf16("Страдания продолжаются."));
-             TranslationUtils.ILTranslate(il, "The suffering wanes.", TranslationUtils.EncodeToUtf16("Страдания ослабевают."));
-         }
-     }
-     
-     public class PatreonPlayerIL : ILEdit
-     {
-         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
-         
-         public override void Load() => IL.FargowiltasSouls.PatreonPlayer.OnEnterWorld += TranslationPatreonPlayerHook;
-         
-         public override void Unload() => IL.FargowiltasSouls.PatreonPlayer.OnEnterWorld -= TranslationPatreonPlayerHook;
-         
-         private void TranslationPatreonPlayerHook(ILContext il) => TranslationUtils.ILTranslate(il, "Your special patreon effects are active ", TranslationUtils.EncodeToUtf16("Ваш особый эффект патреона - "));
-     }
-     
-     public class MutantSpawnIL : ILEdit
-     {
-         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
-         
-         public override void Load() => IL.FargowiltasSouls.Projectiles.Pets.MutantSpawn.BeCompanionCube += TranslationMutantSpawnHook;
-         
-         public override void Unload() => IL.FargowiltasSouls.Projectiles.Pets.MutantSpawn.BeCompanionCube -= TranslationMutantSpawnHook;
-         
-         private void TranslationMutantSpawnHook(ILContext il)
-         {
-             TranslationUtils.ILTranslate(il, "Mutant has awoken!", TranslationUtils.EncodeToUtf16("Мутант пробудился!"));
-             TranslationUtils.ILTranslate(il, "Mutant has awoken!", TranslationUtils.EncodeToUtf16("Мутант пробудился!"), 2);
-             TranslationUtils.ILTranslate(il, "You think you're safe?", TranslationUtils.EncodeToUtf16("Думаете, вы в безопасности?"));
-         }
-     }
-     
-     public class MasochistIL : ILEdit
-     {
-         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
-         
-         public override void Load() => IL.FargowiltasSouls.Items.Masochist.UseItem += TranslationUseItemHook;
-         
-         public override void Unload() => IL.FargowiltasSouls.Items.Masochist.UseItem -= TranslationUseItemHook;
-         
-         private void TranslationUseItemHook(ILContext il)
-         {
-             TranslationUtils.ILTranslate(il, "Eternity Mode initiated!", TranslationUtils.EncodeToUtf16("Режим Вечности активирован!"));
-             TranslationUtils.ILTranslate(il, "Eternity Mode deactivated!", TranslationUtils.EncodeToUtf16("Режим Вечности деактивирован!"));
-             TranslationUtils.ILTranslate(il, "Deviantt has awoken!", TranslationUtils.EncodeToUtf16("Девиантт пробудился!"));
-             TranslationUtils.ILTranslate(il, "Deviantt has awoken!", TranslationUtils.EncodeToUtf16("Девиантт пробудился!"), 2);
-         }
-     }
+    public class MutantsFuryIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => MutantsFury.UseItem += TranslationMutantsFuryHook;
+
+        public override void Unload() => MutantsFury.UseItem -= TranslationMutantsFuryHook;
+
+        private void TranslationMutantsFuryHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Mutant is angered!", TranslationUtils.EncodeToUtf16("Мутант в ярости!"));
+            TranslationUtils.ILTranslate(il, "Mutant is calm.", TranslationUtils.EncodeToUtf16("Мутант спокоен."));
+        }
+    }
+
+    public class AbominationnVoodooDollIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => AbominationnVoodooDoll.Update += TranslationAbominationnVoodooDollHook;
+
+        public override void Unload() => AbominationnVoodooDoll.Update -= TranslationAbominationnVoodooDollHook;
+
+        private void TranslationAbominationnVoodooDollHook(ILContext il) => TranslationUtils.ILTranslate(il, "Mutant has been enraged by the death of his brother!", TranslationUtils.EncodeToUtf16("Мутант в ярости от гибели брата!"));
+    }
+
+    public class AbomsCurseIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => AbomsCurse.UseItem += TranslationAbomsCurseHook;
+
+        public override void Unload() => AbomsCurse.UseItem -= TranslationAbomsCurseHook;
+
+        private void TranslationAbomsCurseHook(ILContext il) => TranslationUtils.ILTranslate(il, "Abominationn has awoken!", TranslationUtils.EncodeToUtf16("Мерзостть пробудился!"));
+    }
+
+    public class DevisCurseIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => DevisCurse.UseItem += TranslationDevisCurseHook;
+
+        public override void Unload() => DevisCurse.UseItem -= TranslationDevisCurseHook;
+
+        private void TranslationDevisCurseHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Deviantt has awoken!", TranslationUtils.EncodeToUtf16("Девиантт пробудился!"));
+            TranslationUtils.ILTranslate(il, "Deviantt has awoken!", TranslationUtils.EncodeToUtf16("Девиантт пробудился!"), 2);
+        }
+    }
+
+    public class MutantsCurseIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => MutantsCurse.UseItem += TranslationMutantsCurseHook;
+
+        public override void Unload() => MutantsCurse.UseItem -= TranslationMutantsCurseHook;
+
+        private void TranslationMutantsCurseHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Mutant has awoken!", TranslationUtils.EncodeToUtf16("Мутант пробудился!"));
+            TranslationUtils.ILTranslate(il, "Mutant has awoken!", TranslationUtils.EncodeToUtf16("Мутант пробудился!"), 2);
+        }
+    }
+
+    public class SigilOfChampionsIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => SigilOfChampions.UseItem += TranslationSigilOfChampionsHook;
+
+        public override void Unload() => SigilOfChampions.UseItem -= TranslationSigilOfChampionsHook;
+
+        private void TranslationSigilOfChampionsHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "A strong spirit stirs...", TranslationUtils.EncodeToUtf16("Сильный дух будоражит..."));
+            TranslationUtils.ILTranslate(il, "The core of the planet rumbles...", TranslationUtils.EncodeToUtf16("Ядро планеты урчит..."));
+            TranslationUtils.ILTranslate(il, "A verdant wind is blowing...", TranslationUtils.EncodeToUtf16("Дует зелёный ветер..."));
+            TranslationUtils.ILTranslate(il, "The stones tremble around you...", TranslationUtils.EncodeToUtf16("Камни дрожат вокруг вас..."));
+            TranslationUtils.ILTranslate(il, "The stars are aligning...", TranslationUtils.EncodeToUtf16("Звезды выравниваются..."));
+            TranslationUtils.ILTranslate(il, "Metallic groans echo from the depths...", TranslationUtils.EncodeToUtf16("Металлические стоны эхом разносятся из глубины..."));
+            TranslationUtils.ILTranslate(il, "A wave of warmth passes over you...", TranslationUtils.EncodeToUtf16("Волна тепла проходит по тебе..."));
+            TranslationUtils.ILTranslate(il, "The darkness of the night feels deeper...", TranslationUtils.EncodeToUtf16("Темнота ночи кажется глубже..."));
+            TranslationUtils.ILTranslate(il, "You are surrounded by the rustling of trees...", TranslationUtils.EncodeToUtf16("Вы окружены шорохом деревьев..."));
+            TranslationUtils.ILTranslate(il, "Nothing seems to answer the call...", TranslationUtils.EncodeToUtf16("Кажется, никто не отвечает на звонок..."));
+        }
+    }
+
+    public class PiranhaPlantVoodooDollIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => PiranhaPlantVoodooDoll.UseItem += TranslationPiranhaPlantVoodooDollHook;
+
+        public override void Unload() => PiranhaPlantVoodooDoll.UseItem -= TranslationPiranhaPlantVoodooDollHook;
+
+        private void TranslationPiranhaPlantVoodooDollHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "The suffering continues.", TranslationUtils.EncodeToUtf16("Страдания продолжаются."));
+            TranslationUtils.ILTranslate(il, "The suffering wanes.", TranslationUtils.EncodeToUtf16("Страдания ослабевают."));
+        }
+    }
+
+    public class PatreonPlayerIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => PatreonPlayer.OnEnterWorld += TranslationPatreonPlayerHook;
+
+        public override void Unload() => PatreonPlayer.OnEnterWorld -= TranslationPatreonPlayerHook;
+
+        private void TranslationPatreonPlayerHook(ILContext il) => TranslationUtils.ILTranslate(il, "Your special patreon effects are active ", TranslationUtils.EncodeToUtf16("Ваш особый эффект патреона - "));
+    }
+
+    public class MutantSpawnIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => MutantSpawn.BeCompanionCube += TranslationMutantSpawnHook;
+
+        public override void Unload() => MutantSpawn.BeCompanionCube -= TranslationMutantSpawnHook;
+
+        private void TranslationMutantSpawnHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Mutant has awoken!", TranslationUtils.EncodeToUtf16("Мутант пробудился!"));
+            TranslationUtils.ILTranslate(il, "Mutant has awoken!", TranslationUtils.EncodeToUtf16("Мутант пробудился!"), 2);
+            TranslationUtils.ILTranslate(il, "You think you're safe?", TranslationUtils.EncodeToUtf16("Думаете, вы в безопасности?"));
+        }
+    }
+
+    public class MasochistIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => Masochist.UseItem += TranslationUseItemHook;
+
+        public override void Unload() => Masochist.UseItem -= TranslationUseItemHook;
+
+        private void TranslationUseItemHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Eternity Mode initiated!", TranslationUtils.EncodeToUtf16("Режим Вечности активирован!"));
+            TranslationUtils.ILTranslate(il, "Eternity Mode deactivated!", TranslationUtils.EncodeToUtf16("Режим Вечности деактивирован!"));
+            TranslationUtils.ILTranslate(il, "Deviantt has awoken!", TranslationUtils.EncodeToUtf16("Девиантт пробудился!"));
+            TranslationUtils.ILTranslate(il, "Deviantt has awoken!", TranslationUtils.EncodeToUtf16("Девиантт пробудился!"), 2);
+        }
+    }
 }

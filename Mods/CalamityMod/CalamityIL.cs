@@ -44,7 +44,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         private event ILContext.Manipulator RipperUIHook
         {
             add => HookEndpointManager.Modify(typeof(RipperUI).GetMethod("HandleMouseInteraction", BindingFlags.Static | BindingFlags.NonPublic), value);
-            
+
             remove => HookEndpointManager.Unmodify(typeof(RipperUI).GetMethod("HandleMouseInteraction", BindingFlags.Static | BindingFlags.NonPublic), value);
         }
 
@@ -60,73 +60,73 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "Rage: {0} / {1}", TranslationUtils.EncodeToUtf16("Ярость: {0} / {1}"));
         }
     }
-    
+
     public class StealthUIIL : ILEdit
     {
         private event ILContext.Manipulator StealthUIHook
         {
             add => HookEndpointManager.Modify(typeof(StealthUI).GetMethod("Draw", BindingFlags.Static | BindingFlags.Public), value);
-            
+
             remove => HookEndpointManager.Unmodify(typeof(StealthUI).GetMethod("Draw", BindingFlags.Static | BindingFlags.Public), value);
         }
-    
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => StealthUIHook += TranslationStealthUIHook;
-    
+
         public override void Unload() => StealthUIHook -= TranslationStealthUIHook;
-        
+
         private void TranslationStealthUIHook(ILContext il) => TranslationUtils.ILTranslate(il, "Stealth: ", TranslationUtils.EncodeToUtf16("Скрытность: "));
     }
-    
-    public class AcidRainUIIL: ILEdit
+
+    public class AcidRainUIIL : ILEdit
     {
         private event ILContext.Manipulator AcidRainUIHook
         {
             add => HookEndpointManager.Modify(typeof(AcidRainUI).GetMethod("get_InvasionName", BindingFlags.Instance | BindingFlags.Public), value);
-            
+
             remove => HookEndpointManager.Unmodify(typeof(AcidRainUI).GetMethod("get_InvasionName", BindingFlags.Instance | BindingFlags.Public), value);
         }
-    
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-    
+
         public override void Load() => AcidRainUIHook += TranslationAcidRainUIHook;
-    
+
         public override void Unload() => AcidRainUIHook -= TranslationAcidRainUIHook;
-        
+
         private void TranslationAcidRainUIHook(ILContext il) => TranslationUtils.ILTranslate(il, "Acid Rain", TranslationUtils.EncodeToUtf16("Кислотный дождь"));
     }
-    
-    public class CalamityPlayerIL: ILEdit
+
+    public class CalamityPlayerIL : ILEdit
     {
         private event ILContext.Manipulator PreKillHook
         {
             add => HookEndpointManager.Modify(typeof(CalamityPlayer).GetMethod("PreKill", BindingFlags.Instance | BindingFlags.Public), value);
-            
+
             remove => HookEndpointManager.Unmodify(typeof(CalamityPlayer).GetMethod("PreKill", BindingFlags.Instance | BindingFlags.Public), value);
         }
-    
+
         private event ILContext.Manipulator KillPlayerHook
         {
             add => HookEndpointManager.Modify(typeof(CalamityPlayer).GetMethod("KillPlayer", BindingFlags.Instance | BindingFlags.Public), value);
-            
+
             remove => HookEndpointManager.Unmodify(typeof(CalamityPlayer).GetMethod("KillPlayer", BindingFlags.Instance | BindingFlags.Public), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             PreKillHook += TranslationPreKillHook;
             KillPlayerHook += TranslationKillPlayerHook;
         }
-    
+
         public override void Unload()
         {
             PreKillHook -= TranslationPreKillHook;
             KillPlayerHook -= TranslationKillPlayerHook;
         }
-    
+
         private void TranslationPreKillHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, " downed too many shots.", TranslationUtils.EncodeToUtf16(" выпил слишком много напитков."));
@@ -153,7 +153,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, " succumbed to alcohol sickness.", TranslationUtils.EncodeToUtf16(" поддался алкогольной болезни."));
             TranslationUtils.ILTranslate(il, " was summoned too soon.", TranslationUtils.EncodeToUtf16(" был призван слишком рано."));
         }
-        
+
         private void TranslationKillPlayerHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, " is food for the Wyrms.", TranslationUtils.EncodeToUtf16(" стал пищей для змей."));
@@ -167,40 +167,40 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, " was destroyed by a mysterious force.", TranslationUtils.EncodeToUtf16(" был уничтожен таинственной силой."));
         }
     }
-    
-    public class CheatTestThingIL: ILEdit
+
+    public class CheatTestThingIL : ILEdit
     {
         private event ILContext.Manipulator CheatTestThingHook
         {
             add => HookEndpointManager.Modify(typeof(CheatTestThing).GetMethod("UpdateAccessory", BindingFlags.Instance | BindingFlags.Public), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(CheatTestThing).GetMethod("UpdateAccessory", BindingFlags.Instance | BindingFlags.Public), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => CheatTestThingHook += TranslationCheatTestThingHook;
-    
+
         public override void Unload() => CheatTestThingHook -= TranslationCheatTestThingHook;
         
         private void TranslationCheatTestThingHook(ILContext il) => TranslationUtils.ILTranslate(il, " isn't worthy.", TranslationUtils.EncodeToUtf16(" не достоин."));
     }
-    
-    public class DraedonLogHellGUIIL: ILEdit
+
+    public class DraedonLogHellGUIIL : ILEdit
     {
         private event ILContext.Manipulator DraedonLogHellGUIHook
         {
             add => HookEndpointManager.Modify(typeof(DraedonLogHellGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogHellGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => DraedonLogHellGUIHook += TranslationDraedonLogHellGUIHook;
-    
+
         public override void Unload() => DraedonLogHellGUIHook -= TranslationDraedonLogHellGUIHook;
-        
+
         private void TranslationDraedonLogHellGUIHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "The entire landscape is a constant source of geothermal energy, and heat for a forge. If it was not entirely uninhabitable save for demons and spirits, I would conduct much more of my research in the bowels of the earth. Where I have actively chosen not to settle however, is in the crags of the underworld. There, the magma is... uncooperative and far more corrosive than should be possible, as it is saturated with cursed, twisted souls, courtesy of that Witch.", TranslationUtils.EncodeToUtf16("Весь природный ландшафт — постоянный источник геотермальной энергии и тепла для кузни. Если бы он не был совсем необитаемым, за исключением демонов и духов, я бы проводил больше исследований в недрах земли. Где я точно ни поселился бы, так это в скалах ада. Магма там... 'несговорчива' и агрессивна, намного больше, чем это возможно. Всё из-за того, что она пропиталась проклятыми тёмными душами, любезно предоставленными этой Ведьмой."));
@@ -208,22 +208,22 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "What a terrible abomination and yet an enticing subject. Not unlike the fusion of spirits which haunts the dungeons, this entity is formed not of one, but a multitude of sinners. What holds different for it however, is that the limitations caused by the artificiality of the dungeon's existence do not apply to it. It is the laws of hell which brought them together into a single overlord of the underworld. And when an innocent life is sacrificed... Their hunger, which appears to be in tune with the afterlife, surges.", TranslationUtils.EncodeToUtf16("Какое ужасное существо, но всё же интересное с научной точки зрения. В отличие от сплава душ темницы, эта сущность была сформирована не из одного грешника, а из многих. Ещё одно отличие заключается в том, что ограничения, вызванные искусственным происхождением темницы, неприменимы к нему. Именно законы Ада свели их вместе в единого владыку подземного мира. И когда невинная жизнь приносится в жертву... Их голод, который, кажется, является частью загробной жизни, нарастает."));
         }
     }
-    
-    public class DraedonLogJungleGUIIL: ILEdit
+
+    public class DraedonLogJungleGUIIL : ILEdit
     {
         private event ILContext.Manipulator DraedonLogJungleGUIHook
         {
             add => HookEndpointManager.Modify(typeof(DraedonLogJungleGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogJungleGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => DraedonLogJungleGUIHook += TranslationDraedonLogJungleGUIHook;
-    
+
         public override void Unload() => DraedonLogJungleGUIHook -= TranslationDraedonLogJungleGUIHook;
-        
+
         private void TranslationDraedonLogJungleGUIHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "As I record this, it would not be a stretch to call the jungle the hub of this planet. All is centered around it, and none know not of it. It brings me no small amount of unease to see the uncomfortable, raw forms of the living beings who pass through on their journeys above. Fortunately these labs provide everything I need in my research and more. There is no need to ever visit the surface, save for summons on the Lord's orders.", TranslationUtils.EncodeToUtf16("Поскольку я записываю это, не будет ошибкой назвать джунгли центром этой планеты. Всё сосредоточено вокруг них, но мало кто знает об этом. Я испытываю немалое беспокойство, видя неудобные, грубые формы живых существ, которые живут в них наверху. К счастью, эти лаборатории обеспечивают всё, что мне нужно в моих исследованиях и не только. Нет никакой необходимости когда-либо посещать поверхность, за исключением вызова по приказу Лорда."));
@@ -231,22 +231,22 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "A virus, capable of devouring and converting almost anything. And nanotechnology, constructed painstakingly for the sake of control. Development was swift, and every piece fell into place almost eerily, forming an abhorrent existence. I struggle to think of practical applications which would be friendly to common life forms. However, it is not a major concern. Many were hesitant to continue its creation, but I granted them leave if they desired. I would have no need for any who were not entirely as dedicated as my machines.", TranslationUtils.EncodeToUtf16("Вирус, способный пожирать и превращать практически всё. И тщательно сделанная нанотехнология контроля. Превращение шло пугающе быстро, создавая мерзкую тварь. Я стараюсь сделать так, чтобы она была дружелюбна к обычным формам жизни. Однако это не главная проблема. Многие не решались продолжать создание, но я разрешил уйти, если они пожелают. Я не нуждался ни в ком, кто не был бы так же предан делу, как мои машины."));
         }
     }
-    
-    public class DraedonLogPlanetoidGUIIL: ILEdit
+
+    public class DraedonLogPlanetoidGUIIL : ILEdit
     {
         private event ILContext.Manipulator DraedonLogPlanetoidGUIHook
         {
             add => HookEndpointManager.Modify(typeof(DraedonLogPlanetoidGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogPlanetoidGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => DraedonLogPlanetoidGUIHook += TranslationDraedonLogPlanetoidGUIHook;
-    
+
         public override void Unload() => DraedonLogPlanetoidGUIHook -= TranslationDraedonLogPlanetoidGUIHook;
-        
+
         private void TranslationDraedonLogPlanetoidGUIHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Hung low in orbit, masses of ground and various parts of the world provide a secluded and distant point for research. Undeniably optimal for the science of astronomy and otherwise. In my labs here I grow many things, testing their limits against the cold and vacuum of the stratosphere. Though not many survive, the existence of certain creatures here, confirm the capabilities of life simply given more time.", TranslationUtils.EncodeToUtf16("Висящие низко на орбите массы земли и другие структуры мира, обеспечивают укромное и отдалённое место для исследований. Это оптимальный вариант для изучения астрономии и других наук. В моих лабораториях я выращиваю разные растения и тестирую их способность к выживанию в условиях холода и вакуума стратосферы. Несмотря на то, что многие растения погибают, существование жизни здесь подтверждается. Просто нужно дать этой жизни больше времени на развитие."));
@@ -254,22 +254,22 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "I do not care much for the interstellar, or the cosmos. Though I have traversed it, there is still plenty in my own world to manage and discover at this time. Even if I once inhabited a different planet, the Lord's wishes that I provide him machinery were the only condition that I needed to leave it and settle elsewhere. Once I have discovered and dissected every part of this place, perhaps then, I could look up towards the macroscopic.", TranslationUtils.EncodeToUtf16("Меня мало волнует космос. Да, я путешествовал по нему, но сейчас мне достаточно работы по изучению собственного мира. Даже если бы я когда-то жил на другой планете, одного желания Лорда получать мои технологии было бы достаточно, чтобы я улетел с неё сюда. Если же я когда-нибудь полностью изучу каждый кусочек этого места, то тогда, возможно, я обращу свой взор наверх, в сторону макроскопического."));
         }
     }
-    
-    public class DraedonLogSnowBiomeGUIIL: ILEdit
+
+    public class DraedonLogSnowBiomeGUIIL : ILEdit
     {
         private event ILContext.Manipulator DraedonLogSnowBiomeGUIHook
         {
             add => HookEndpointManager.Modify(typeof(DraedonLogSnowBiomeGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogSnowBiomeGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => DraedonLogSnowBiomeGUIHook += TranslationDraedonLogSnowBiomeGUIHook;
-    
+
         public override void Unload() => DraedonLogSnowBiomeGUIHook -= TranslationDraedonLogSnowBiomeGUIHook;
-        
+
         private void TranslationDraedonLogSnowBiomeGUIHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "A freezing tundra, where only creatures entirely adapted to the subzero temperatures exist and thrive. It is a shocking transition from the forests of the purity and the sun baked desert. A climate like this should not exist naturally in this part of the world with ease. The weather patterns seem to shift unnaturally arounds the skies of these icy plains. There is likely a reason for this, which necessitates further research.", TranslationUtils.EncodeToUtf16("Холодная тундра, где существуют и процветают существа, полностью приспособленные к минусовым температурам. Это шокирующий переход от чистых лесов и выжженной солнцем пустыни. Климат, подобный этому, не должен существовать естественно. Погодные условия на этих ледяных равнинах, кажется, неестественно меняются. Вероятно, этому есть причина, которая требует дальнейших исследований."));
@@ -277,22 +277,22 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "Intriguing. Though embedded deep into the caverns of ice and worn from centuries of frost and meltwater, I have uncovered several mechanisms which once filled the tunnels here. The ingenuity present is remarkable, and I have found parallels within my own work, as well as devices even I have something to learn from. From where do these come? Why machinery so complex in so sparse and dreary a habitat? Perhaps, they are related to the unnatural conditions.", TranslationUtils.EncodeToUtf16("Интригующе. Я нашёл механизмы, когда-то заполнявшие туннели. Они находились в ледяных пещерах, поломанные из-за веков во льду и талой воды. Мастерство исполнения поражает. Я нашёл схожести с моими работами, а также узнал что-то новое. Но кто их создал? Почему настолько сложные машины находятся в такой скудной и унылой среде обитания. Возможно, именно они виноваты в настолько неестественных условиях."));
         }
     }
-    
-    public class DraedonLogSunkenSeaGUIIL: ILEdit
+
+    public class DraedonLogSunkenSeaGUIIL : ILEdit
     {
         private event ILContext.Manipulator DraedonLogSunkenSeaGUIHook
         {
             add => HookEndpointManager.Modify(typeof(DraedonLogSunkenSeaGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(DraedonLogSunkenSeaGUI).GetMethod("GetTextByPage", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => DraedonLogSunkenSeaGUIHook += TranslationDraedonLogSunkenSeaGUIHook;
-    
+
         public override void Unload() => DraedonLogSunkenSeaGUIHook -= TranslationDraedonLogSunkenSeaGUIHook;
-        
+
         private void TranslationDraedonLogSunkenSeaGUIHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Preserved for millennia, a paradise for the living beings who sought shelter in prehistoric seas. They remain untouched by evolution, save for their adaptations to the oxygen starved waters and dim crystals, continuing to thrive. One mystery which continues to escape my understanding however, is how large some of the creatures have become. There is a blatant lack of nutrition and oxygen in the caves, and yet...", TranslationUtils.EncodeToUtf16("Сохранившийся на протяжении тысячелетий рай для живых существ, искавших убежища в доисторических морях. Они остаются не тронутыми эволюцией, за исключением их адаптации к необогащенной воздухом воде и тусклым кристаллам, продолжая процветать. Однако одна загадка, которая продолжает ускользать от моего понимания, заключается в том, насколько большими стали некоторые из этих существ. В пещерах явно не хватает питания и кислорода, и всё же..."));
@@ -300,46 +300,46 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "The marine life in these caves do have eyes though they are barely functional, dulled by lack of use and milky white upon observation. On their tough, gnarled hides, crystals find an easy purchase, and grow in great numbers, providing the creatures protection. Perhaps another adaptation to the life they have adopted. The most striking wonder is within their bodies. In specimens dissected, I have noticed that the mineral is buried into their very digestive systems, and perhaps, through some chemical process, pass nutrients into their sluggish hosts. A peculiar yet entirely beneficial interaction.", TranslationUtils.EncodeToUtf16("У морских обитателей в этих пещерах есть глаза-рудименты, внешне они молочно-белые. На их жёстких узловатых шкурах кристаллы растут в большом количестве, обеспечивая существам защиту. Возможно, это ещё одна адаптация к жизни, которую они приняли. Но самое поразительное чудо — внутренности их тел. В образцах, подвергнутых вскрытию, я заметил, что минерал находится в самой их пищеварительной системе и, возможно, через какой-то химический процесс передаёт питательные вещества их вялым хозяевам. Своеобразное, но совершенно благотворное взаимодействие."));
         }
     }
-    
-    public class WeakReferenceSupportIL: ILEdit
+
+    public class WeakReferenceSupportIL : ILEdit
     {
         private event ILContext.Manipulator AddCalamityBossesHook
         {
             add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityBosses", BindingFlags.Static | BindingFlags.NonPublic), value);
-        
+
             remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityBosses", BindingFlags.Static | BindingFlags.NonPublic), value);
         }
-        
+
         private event ILContext.Manipulator CensusSupportHook
         {
             add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("CensusSupport", BindingFlags.NonPublic | BindingFlags.Static), value);
-        
+
             remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("CensusSupport", BindingFlags.NonPublic | BindingFlags.Static), value);
         }
-        
+
         private event ILContext.Manipulator AddCalamityInvasionsHook
         {
             add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityInvasions", BindingFlags.NonPublic | BindingFlags.Static), value);
-        
+
             remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetMethod("AddCalamityInvasions", BindingFlags.NonPublic | BindingFlags.Static), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             AddCalamityBossesHook += TranslationAddCalamityBossesHook;
             CensusSupportHook += TranslationCensusSupportHook;
             AddCalamityInvasionsHook += TranslationAddCalamityInvasionsHook;
         }
-    
+
         public override void Unload()
         {
             AddCalamityBossesHook -= TranslationAddCalamityBossesHook;
             CensusSupportHook -= TranslationCensusSupportHook;
             AddCalamityInvasionsHook -= TranslationAddCalamityInvasionsHook;
         }
-    
+
         private void TranslationAddCalamityBossesHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Use a [i:{0}] in the Desert Biome", TranslationUtils.EncodeToUtf16("Используйте [i:{0}] в пустыне."));
@@ -424,7 +424,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "Please don't waste my time.", TranslationUtils.EncodeToUtf16("Пожалуйста, не трать моё время."));
             TranslationUtils.ILTranslate(il, "Supreme Calamitas", TranslationUtils.EncodeToUtf16("Высшая Каламитас"));
         }
-        
+
         private void TranslationCensusSupportHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Defeat a Giant Clam after defeating the Desert Scourge", TranslationUtils.EncodeToUtf16("Одолейте Гигантского моллюска после победы над Пустынным бичем"));
@@ -434,7 +434,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "Have [i:", TranslationUtils.EncodeToUtf16("Имейте [i:"));
             TranslationUtils.ILTranslate(il, "] in your inventory in Hardmode", TranslationUtils.EncodeToUtf16("] в вашем инвентаре в Хардмоде"));
         }
-        
+
         private void TranslationAddCalamityInvasionsHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Use a [i:{0}] or wait for the invasion to occur naturally after the Eye of Cthulhu is defeated.", TranslationUtils.EncodeToUtf16("Используйте [i:{0}] или дождитесь, пока событие произойдёт естественным образом после победы над Глазом Ктулху."));
@@ -448,93 +448,93 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "The mysterious creatures of the sulphuric sea descended back into the deep ocean.", TranslationUtils.EncodeToUtf16("Таинственные существа сернистого моря спустились обратно в глубины океана."), 2);
         }
     }
-    
-    public class FAPIL: ILEdit
+
+    public class FAPIL : ILEdit
     {
         private event ILContext.Manipulator SetChatButtonsHook
         {
             add => HookEndpointManager.Modify(typeof(FAP).GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(FAP).GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator GetChatHook
         {
             add => HookEndpointManager.Modify(typeof(FAP).GetMethod("GetChat", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(FAP).GetMethod("GetChat", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             SetChatButtonsHook += TranslationSetChatButtonsHook;
             GetChatHook += TranslationGetChatHook;
         }
-    
+
         public override void Unload()
         {
             SetChatButtonsHook -= TranslationSetChatButtonsHook;
             GetChatHook -= TranslationGetChatHook;
         }
-    
+
         private void TranslationSetChatButtonsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Death Count", TranslationUtils.EncodeToUtf16("Количество смертей"));
-        
+
         private void TranslationGetChatHook(ILContext il) => TranslationUtils.ILTranslate(il, " was slapped too hard.", TranslationUtils.EncodeToUtf16(" получил слишком сильную пощечину."));
     }
-    
-    public class SEAHOEIL: ILEdit
+
+    public class SEAHOEIL : ILEdit
     {
         private event ILContext.Manipulator SetChatButtonsHook
         {
             add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.NPCs.TownNPCs.SEAHOE").GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.NPCs.TownNPCs.SEAHOE").GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => SetChatButtonsHook += TranslationSetChatButtonsHook;
-    
+
         public override void Unload() => SetChatButtonsHook -= TranslationSetChatButtonsHook;
-        
+
         private void TranslationSetChatButtonsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Help", TranslationUtils.EncodeToUtf16("Помощь"));
     }
-    
-    public class THIEFIL: ILEdit
+
+    public class THIEFIL : ILEdit
     {
         private event ILContext.Manipulator SetChatButtonsHook
         {
             add => HookEndpointManager.Modify(typeof(THIEF).GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(THIEF).GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => SetChatButtonsHook += TranslationSetChatButtonsHook;
-    
+
         public override void Unload() => SetChatButtonsHook -= TranslationSetChatButtonsHook;
-        
+
         private void TranslationSetChatButtonsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Refund", TranslationUtils.EncodeToUtf16("Возврат"));
     }
-    
-    public class LabHologramProjectorUIIL: ILEdit
+
+    public class LabHologramProjectorUIIL : ILEdit
     {
         private event ILContext.Manipulator LabHologramProjectorUIHook
         {
             add => HookEndpointManager.Modify(typeof(LabHologramProjectorUI).GetMethod("ChooseDialogue", BindingFlags.Public | BindingFlags.Static), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(LabHologramProjectorUI).GetMethod("ChooseDialogue", BindingFlags.Public | BindingFlags.Static), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => LabHologramProjectorUIHook += TranslationLabHologramProjectorUIHook;
-    
+
         public override void Unload() => LabHologramProjectorUIHook -= TranslationLabHologramProjectorUIHook;
-        
+
         private void TranslationLabHologramProjectorUIHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "To any personnel engaged in the laboratories. Please wear your steel engraved ID badge at all times. It is the easiest method to discern your body if any accidents do occur.", TranslationUtils.EncodeToUtf16("Напоминаем всему персоналу. Пожалуйста, носите ваш персональный стальной идентификационный значок. Это самый простой способ опознать тело в случае несчастного случая."));
@@ -552,366 +552,366 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "Please help. I'm stuck in this hologram machine.", TranslationUtils.EncodeToUtf16("Пожалуйста, помогите. Я застрял в голограмме."));
         }
     }
-    
-    public class AstralInjectionIL: ILEdit
+
+    public class AstralInjectionIL : ILEdit
     {
         private event ILContext.Manipulator AstralInjectionHook
         {
             add => HookEndpointManager.Modify(typeof(AstralInjection).GetMethod("OnConsumeItem", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(AstralInjection).GetMethod("OnConsumeItem", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => AstralInjectionHook += TranslationAstralInjectionHook;
-    
+
         public override void Unload() => AstralInjectionHook -= TranslationAstralInjectionHook;
-        
+
         private void TranslationAstralInjectionHook(ILContext il) => TranslationUtils.ILTranslate(il, "'s blood vessels burst from drug overdose.", TranslationUtils.EncodeToUtf16(" кровеносные сосуды лопаются от передозировки наркотиков."));
     }
-    
-    public class ThornBlossomIL: ILEdit
+
+    public class ThornBlossomIL : ILEdit
     {
         private event ILContext.Manipulator ThornBlossomHook
         {
             add => HookEndpointManager.Modify(typeof(ThornBlossom).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(ThornBlossom).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => ThornBlossomHook += TranslationThornBlossomHook;
-    
+
         public override void Unload() => ThornBlossomHook -= TranslationThornBlossomHook;
-        
+
         private void TranslationThornBlossomHook(ILContext il) => TranslationUtils.ILTranslate(il, " was violently pricked by a flower.", TranslationUtils.EncodeToUtf16(" был яростно уколот цветком."));
     }
-    
-    public class LucreciaIL: ILEdit
+
+    public class LucreciaIL : ILEdit
     {
         private event ILContext.Manipulator LucreciaHook
         {
             add => HookEndpointManager.Modify(typeof(Lucrecia).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(Lucrecia).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => LucreciaHook += TranslationLucreciaHook;
-    
+
         public override void Unload() => LucreciaHook -= TranslationLucreciaHook;
-        
+
         private void TranslationLucreciaHook(ILContext il) => TranslationUtils.ILTranslate(il, "'s DNA was destroyed.", TranslationUtils.EncodeToUtf16(" ДНК была уничтожена."));
     }
-    
-    public class BloodBoilerIL: ILEdit
+
+    public class BloodBoilerIL : ILEdit
     {
         private event ILContext.Manipulator BloodBoilerHook
         {
             add => HookEndpointManager.Modify(typeof(BloodBoiler).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(BloodBoiler).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => BloodBoilerHook += TranslationBloodBoilerHook;
-    
+
         public override void Unload() => BloodBoilerHook -= TranslationBloodBoilerHook;
-        
+
         private void TranslationBloodBoilerHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, " suffered from severe anemia.", TranslationUtils.EncodeToUtf16(" страдал тяжёлой анемией."));
             TranslationUtils.ILTranslate(il, " was unable to obtain a blood transfusion.", TranslationUtils.EncodeToUtf16(" не удалось добиться переливания крови."));
         }
     }
-    
-    public class MolecularManipulatorIL: ILEdit
+
+    public class MolecularManipulatorIL : ILEdit
     {
         private event ILContext.Manipulator MolecularManipulatorHook
         {
             add => HookEndpointManager.Modify(typeof(MolecularManipulator).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MolecularManipulator).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => MolecularManipulatorHook += TranslationMolecularManipulatorHook;
-    
+
         public override void Unload() => MolecularManipulatorHook -= TranslationMolecularManipulatorHook;
-        
+
         private void TranslationMolecularManipulatorHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, " was vaporized by the imbuement of his life.", TranslationUtils.EncodeToUtf16(" испарился из-за насыщенности своей жизни."));
             TranslationUtils.ILTranslate(il, " was vaporized by the imbuement of her life.", TranslationUtils.EncodeToUtf16(" испарилась из-за насыщенности своей жизни."));
         }
     }
-    
-    public class NullificationRifleIL: ILEdit
+
+    public class NullificationRifleIL : ILEdit
     {
         private event ILContext.Manipulator NullificationRifleHook
         {
             add => HookEndpointManager.Modify(typeof(NullificationRifle).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(NullificationRifle).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => NullificationRifleHook += TranslationNullificationRifleHook;
-    
+
         public override void Unload() => NullificationRifleHook -= TranslationNullificationRifleHook;
-        
+
         private void TranslationNullificationRifleHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, " was vaporized by the imbuement of his life.", TranslationUtils.EncodeToUtf16(" испарился из-за насыщенности своей жизни."));
             TranslationUtils.ILTranslate(il, " was vaporized by the imbuement of her life.", TranslationUtils.EncodeToUtf16(" испарилась из-за насыщенности своей жизни."));
         }
     }
-    
-    public class DevourerofGodsHeadIL: ILEdit
+
+    public class DevourerofGodsHeadIL : ILEdit
     {
         private event ILContext.Manipulator DevourerofGodsHeadHook
         {
             add => HookEndpointManager.Modify(typeof(DevourerofGodsHead).GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(DevourerofGodsHead).GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => DevourerofGodsHeadHook += TranslationDevourerofGodsHeadHook;
-    
+
         public override void Unload() => DevourerofGodsHeadHook -= TranslationDevourerofGodsHeadHook;
-        
+
         private void TranslationDevourerofGodsHeadHook(ILContext il) => TranslationUtils.ILTranslate(il, "'s essence was consumed by the devourer.", TranslationUtils.EncodeToUtf16(" сущность была поглощена пожирателем."));
     }
-    
-    public class DevourerofGodsHeadSIL: ILEdit
+
+    public class DevourerofGodsHeadSIL : ILEdit
     {
         private event ILContext.Manipulator DevourerofGodsHeadSHook
         {
             add => HookEndpointManager.Modify(typeof(DevourerofGodsHeadS).GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(DevourerofGodsHeadS).GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => DevourerofGodsHeadSHook += TranslationDevourerofGodsHeadSHook;
-    
+
         public override void Unload() => DevourerofGodsHeadSHook -= TranslationDevourerofGodsHeadSHook;
-        
+
         private void TranslationDevourerofGodsHeadSHook(ILContext il) => TranslationUtils.ILTranslate(il, "'s essence was consumed by the devourer.", TranslationUtils.EncodeToUtf16(" сущность была поглощена пожирателем."));
     }
-    
-    public class FearlessGoldfishWarriorIL: ILEdit
+
+    public class FearlessGoldfishWarriorIL : ILEdit
     {
         private event ILContext.Manipulator FearlessGoldfishWarriorHook
         {
             add => HookEndpointManager.Modify(typeof(FearlessGoldfishWarrior).GetMethod("ModifyHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(FearlessGoldfishWarrior).GetMethod("ModifyHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => FearlessGoldfishWarriorHook += TranslationFearlessGoldfishWarriorHook;
-    
+
         public override void Unload() => FearlessGoldfishWarriorHook -= TranslationFearlessGoldfishWarriorHook;
-        
+
         private void TranslationFearlessGoldfishWarriorHook(ILContext il) => TranslationUtils.ILTranslate(il, " was once again impaled by Goldfish.", TranslationUtils.EncodeToUtf16(" был снова проткнут Золотой рыбкой."));
     }
-    
-    public class HealOrbProvIL: ILEdit
+
+    public class HealOrbProvIL : ILEdit
     {
         private event ILContext.Manipulator HealOrbProvHook
         {
             add => HookEndpointManager.Modify(typeof(HealOrbProv).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(HealOrbProv).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => HealOrbProvHook += TranslationHealOrbProvHook;
-    
+
         public override void Unload() => HealOrbProvHook -= TranslationHealOrbProvHook;
-        
+
         private void TranslationHealOrbProvHook(ILContext il) => TranslationUtils.ILTranslate(il, " burst into sinless ash.", TranslationUtils.EncodeToUtf16(" превратился в безгрешный пепел."));
     }
-    
-    public class HolyBurnOrbIL: ILEdit
+
+    public class HolyBurnOrbIL : ILEdit
     {
         private event ILContext.Manipulator HolyBurnOrbHook
         {
             add => HookEndpointManager.Modify(typeof(HolyBurnOrb).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(HolyBurnOrb).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => HolyBurnOrbHook += TranslationHolyBurnOrbHook;
-    
+
         public override void Unload() => HolyBurnOrbHook -= TranslationHolyBurnOrbHook;
-        
+
         private void TranslationHolyBurnOrbHook(ILContext il) => TranslationUtils.ILTranslate(il, " burst into sinless ash.", TranslationUtils.EncodeToUtf16(" превратился в безгрешный пепел."));
     }
-    
-    public class ChibiiDoggoIL: ILEdit
+
+    public class ChibiiDoggoIL : ILEdit
     {
         private event ILContext.Manipulator AIHook
         {
             add => HookEndpointManager.Modify(typeof(ChibiiDoggo).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(ChibiiDoggo).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator SpawnDoggoHook
         {
             add => HookEndpointManager.Modify(typeof(ChibiiDoggo).GetMethod("SpawnDoggo", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(ChibiiDoggo).GetMethod("SpawnDoggo", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             AIHook += TranslationAIHook;
             SpawnDoggoHook += TranslationSpawnDoggoHook;
         }
-    
+
         public override void Unload()
         {
             AIHook -= TranslationAIHook;
             SpawnDoggoHook -= TranslationSpawnDoggoHook;
         }
-    
+
         private void TranslationAIHook(ILContext il) => TranslationUtils.ILTranslate(il, " couldn't stand the sharp objects.", TranslationUtils.EncodeToUtf16(" не выдерживал острых предметов."));
-        
+
         private void TranslationSpawnDoggoHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "It's not over yet, kid!", TranslationUtils.EncodeToUtf16("Это ещё не конец, малыш!"));
             TranslationUtils.ILTranslate(il, "Don't get cocky, kid!", TranslationUtils.EncodeToUtf16("Не будь таким самоуверенным, малыш!"));
         }
     }
-    
-    public class CalamityUtilsIL: ILEdit
+
+    public class CalamityUtilsIL : ILEdit
     {
         private event ILContext.Manipulator CalamityUtilsHook
         {
             add => HookEndpointManager.Modify(typeof(CalamityUtils).GetMethod("BedRightClick", BindingFlags.Public | BindingFlags.Static), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(CalamityUtils).GetMethod("BedRightClick", BindingFlags.Public | BindingFlags.Static), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => CalamityUtilsHook += TranslationCalamityUtilsHook;
-    
+
         public override void Unload() => CalamityUtilsHook -= TranslationCalamityUtilsHook;
-        
+
         private void TranslationCalamityUtilsHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Spawn point removed!", TranslationUtils.EncodeToUtf16("Точка воскрешения удалена!"));
             TranslationUtils.ILTranslate(il, "Spawn point set!", TranslationUtils.EncodeToUtf16("Точка воскрешения задана!"));
         }
     }
-    
-    public class PlaguedPlateBedIL: ILEdit
+
+    public class PlaguedPlateBedIL : ILEdit
     {
         private event ILContext.Manipulator PlaguedPlateBedHook
         {
             add => HookEndpointManager.Modify(typeof(PlaguedPlateBed).GetMethod("NewRightClick", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(PlaguedPlateBed).GetMethod("NewRightClick", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => PlaguedPlateBedHook += TranslationPlaguedPlateBedHook;
-    
+
         public override void Unload() => PlaguedPlateBedHook -= TranslationPlaguedPlateBedHook;
-        
+
         private void TranslationPlaguedPlateBedHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Spawn point removed!", TranslationUtils.EncodeToUtf16("Точка воскрешения удалена!"));
             TranslationUtils.ILTranslate(il, "Spawn point set!", TranslationUtils.EncodeToUtf16("Точка воскрешения задана!"));
         }
     }
-    
-    public class RavagerBodyIL: ILEdit
+
+    public class RavagerBodyIL : ILEdit
     {
         private event ILContext.Manipulator RavagerBodyHook
         {
             add => HookEndpointManager.Modify(typeof(RavagerBody).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(RavagerBody).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => RavagerBodyHook += TranslationRavagerBodyHook;
-    
+
         public override void Unload() => RavagerBodyHook -= TranslationRavagerBodyHook;
-        
+
         private void TranslationRavagerBodyHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ravager", TranslationUtils.EncodeToUtf16("Разрушитель"));
     }
-    
-    public class CalamitasRun3IL: ILEdit
+
+    public class CalamitasRun3IL : ILEdit
     {
         private event ILContext.Manipulator CalamitasRun3Hook
         {
             add => HookEndpointManager.Modify(typeof(CalamitasRun3).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(CalamitasRun3).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => CalamitasRun3Hook += TranslationCalamitasRun3Hook;
-    
+
         public override void Unload() => CalamitasRun3Hook -= TranslationCalamitasRun3Hook;
-        
+
         private void TranslationCalamitasRun3Hook(ILContext il) => TranslationUtils.ILTranslate(il, "The Calamitas Clone", TranslationUtils.EncodeToUtf16("Клон Каламитас"));
     }
-    
-    public class BossHPUIIL: ILEdit
+
+    public class BossHPUIIL : ILEdit
     {
         private event ILContext.Manipulator DrawHook
         {
             add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("Draw", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("Draw", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator DrawOpenAnimHook
         {
             add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("DrawOpenAnim", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("DrawOpenAnim", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             DrawHook += TranslationDrawHook;
             DrawOpenAnimHook += TranslationDrawOpenAnimHook;
         }
-    
+
         public override void Unload()
         {
             DrawHook -= TranslationDrawHook;
             DrawOpenAnimHook -= TranslationDrawOpenAnimHook;
         }
-    
+
         private void TranslationDrawHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "(Segments left: ", TranslationUtils.EncodeToUtf16("(Осталось сегментов: "));
@@ -924,7 +924,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "(Body Parts left: ", TranslationUtils.EncodeToUtf16("(Осталось частей тела: "));
             TranslationUtils.ILTranslate(il, "(Large Slimes left: ", TranslationUtils.EncodeToUtf16("(Осталось больших слизней: "));
         }
-        
+
         private void TranslationDrawOpenAnimHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "(Segments left: ", TranslationUtils.EncodeToUtf16("(Осталось сегментов: "));
@@ -938,320 +938,320 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "(Large Slimes left: ", TranslationUtils.EncodeToUtf16("(Осталось больших слизней: "));
         }
     }
-    
-    public class ProfanedGuardianBoss2IL: ILEdit
+
+    public class ProfanedGuardianBoss2IL : ILEdit
     {
         private event ILContext.Manipulator ProfanedGuardianBoss2Hook
         {
             add => HookEndpointManager.Modify(typeof(ProfanedGuardianBoss2).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(ProfanedGuardianBoss2).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => ProfanedGuardianBoss2Hook += TranslationProfanedGuardianBoss2Hook;
-    
+
         public override void Unload() => ProfanedGuardianBoss2Hook -= TranslationProfanedGuardianBoss2Hook;
-        
+
         private void TranslationProfanedGuardianBoss2Hook(ILContext il) => TranslationUtils.ILTranslate(il, "A Profaned Guardian", TranslationUtils.EncodeToUtf16("Осквернённый страж"));
     }
-    
-    public class PerforatorHeadLargeIL: ILEdit
+
+    public class PerforatorHeadLargeIL : ILEdit
     {
         private event ILContext.Manipulator PerforatorHeadLargeHook
         {
             add => HookEndpointManager.Modify(typeof(PerforatorHeadLarge).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(PerforatorHeadLarge).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => PerforatorHeadLargeHook += TranslationPerforatorHeadLargeHook;
-    
+
         public override void Unload() => PerforatorHeadLargeHook -= TranslationPerforatorHeadLargeHook;
-        
+
         private void TranslationPerforatorHeadLargeHook(ILContext il) => TranslationUtils.ILTranslate(il, "The Large Perforator", TranslationUtils.EncodeToUtf16("Перфоратор"));
     }
-    
-    public class PerforatorHeadSmallIL: ILEdit
+
+    public class PerforatorHeadSmallIL : ILEdit
     {
         private event ILContext.Manipulator PerforatorHeadSmallHook
         {
             add => HookEndpointManager.Modify(typeof(PerforatorHeadSmall).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(PerforatorHeadSmall).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => PerforatorHeadSmallHook += TranslationPerforatorHeadSmallHook;
-    
+
         public override void Unload() => PerforatorHeadSmallHook -= TranslationPerforatorHeadSmallHook;
-        
+
         private void TranslationPerforatorHeadSmallHook(ILContext il) => TranslationUtils.ILTranslate(il, "The Small Perforator", TranslationUtils.EncodeToUtf16("Перфоратор"));
     }
-    
-    public class BumblefuckIL: ILEdit
+
+    public class BumblefuckIL : ILEdit
     {
         private event ILContext.Manipulator BumblefuckHook
         {
             add => HookEndpointManager.Modify(typeof(Bumblefuck).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(Bumblefuck).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => BumblefuckHook += TranslationBumblefuckHook;
-    
+
         public override void Unload() => BumblefuckHook -= TranslationBumblefuckHook;
-        
+
         private void TranslationBumblefuckHook(ILContext il) => TranslationUtils.ILTranslate(il, "A Dragonfolly", TranslationUtils.EncodeToUtf16("Псевдодракон"));
     }
-    
-    public class PerforatorHeadMediumIL: ILEdit
+
+    public class PerforatorHeadMediumIL : ILEdit
     {
         private event ILContext.Manipulator PerforatorHeadMediumHook
         {
             add => HookEndpointManager.Modify(typeof(PerforatorHeadMedium).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(PerforatorHeadMedium).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => PerforatorHeadMediumHook += TranslationPerforatorHeadMediumHook;
-    
+
         public override void Unload() => PerforatorHeadMediumHook -= TranslationPerforatorHeadMediumHook;
-        
+
         private void TranslationPerforatorHeadMediumHook(ILContext il) => TranslationUtils.ILTranslate(il, "The Medium Perforator", TranslationUtils.EncodeToUtf16("Перфоратор"));
     }
-    
-    public class ProfanedGuardianBoss3IL: ILEdit
+
+    public class ProfanedGuardianBoss3IL : ILEdit
     {
         private event ILContext.Manipulator ProfanedGuardianBoss3Hook
         {
             add => HookEndpointManager.Modify(typeof(ProfanedGuardianBoss3).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(ProfanedGuardianBoss3).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => ProfanedGuardianBoss3Hook += TranslationProfanedGuardianBoss3Hook;
-    
+
         public override void Unload() => ProfanedGuardianBoss3Hook -= TranslationProfanedGuardianBoss3Hook;
-        
+
         private void TranslationProfanedGuardianBoss3Hook(ILContext il) => TranslationUtils.ILTranslate(il, "A Profaned Guardian", TranslationUtils.EncodeToUtf16("Осквернённый страж"));
     }
-    
-    public class ProfanedGuardianBossIL: ILEdit
+
+    public class ProfanedGuardianBossIL : ILEdit
     {
         private event ILContext.Manipulator ProfanedGuardianBossHook
         {
             add => HookEndpointManager.Modify(typeof(ProfanedGuardianBoss).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(ProfanedGuardianBoss).GetMethod("BossLoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => ProfanedGuardianBossHook += TranslationProfanedGuardianBossHook;
-    
+
         public override void Unload() => ProfanedGuardianBossHook -= TranslationProfanedGuardianBossHook;
-        
+
         private void TranslationProfanedGuardianBossHook(ILContext il) => TranslationUtils.ILTranslate(il, "A Profaned Guardian", TranslationUtils.EncodeToUtf16("Осквернённый страж"));
     }
-    
-    public class BossRushUIIL: ILEdit
+
+    public class BossRushUIIL : ILEdit
     {
         private event ILContext.Manipulator BossRushUIHook
         {
             add => HookEndpointManager.Modify(typeof(BossRushUI).GetMethod("get_InvasionName", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(BossRushUI).GetMethod("get_InvasionName", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => BossRushUIHook += TranslationBossRushUIHook;
-    
+
         public override void Unload() => BossRushUIHook -= TranslationBossRushUIHook;
-        
+
         private void TranslationBossRushUIHook(ILContext il) => TranslationUtils.ILTranslate(il, "Boss Rush", TranslationUtils.EncodeToUtf16("Босс-Раш"));
     }
-    
-    public class ColdDivinityIL: ILEdit
+
+    public class ColdDivinityIL : ILEdit
     {
         private event ILContext.Manipulator ColdDivinityHook
         {
             add => HookEndpointManager.Modify(typeof(ColdDivinity).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(ColdDivinity).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => ColdDivinityHook += TranslationColdDivinityHook;
-    
+
         public override void Unload() => ColdDivinityHook -= TranslationColdDivinityHook;
-        
+
         private void TranslationColdDivinityHook(ILContext il) => TranslationUtils.ILTranslate(il, "Tooltip7", "Tooltip6");
     }
-    
-    public class FurnitureOccultIL: ILEdit
+
+    public class FurnitureOccultIL : ILEdit
     {
         private event ILContext.Manipulator OccultBathtubHook
         {
             add => HookEndpointManager.Modify(typeof(OccultBathtub).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultBathtub).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-    
+
         private event ILContext.Manipulator OccultBedHook
         {
             add => HookEndpointManager.Modify(typeof(OccultBed).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultBed).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-    
+
         private event ILContext.Manipulator OccultBookcaseHook
         {
             add => HookEndpointManager.Modify(typeof(OccultBookcase).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultBookcase).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-    
+
         private event ILContext.Manipulator OccultCandelabraHook
         {
             add => HookEndpointManager.Modify(typeof(OccultCandelabra).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultCandelabra).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-    
+
         private event ILContext.Manipulator OccultCandleHook
         {
             add => HookEndpointManager.Modify(typeof(OccultCandle).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultCandle).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-    
+
         private event ILContext.Manipulator OccultChairHook
         {
             add => HookEndpointManager.Modify(typeof(OccultChair).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultChair).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-    
+
         private event ILContext.Manipulator OccultChandelierHook
         {
             add => HookEndpointManager.Modify(typeof(OccultChandelier).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultChandelier).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-    
+
         private event ILContext.Manipulator OccultChestHook
         {
             add => HookEndpointManager.Modify(typeof(OccultChest).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultChest).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-    
+
         private event ILContext.Manipulator OccultClockHook
         {
             add => HookEndpointManager.Modify(typeof(OccultClock).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultClock).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator OccultDoorHook
         {
             add => HookEndpointManager.Modify(typeof(OccultDoor).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultDoor).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator OccultDresserHook
         {
             add => HookEndpointManager.Modify(typeof(OccultDresser).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultDresser).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-    
+
         private event ILContext.Manipulator OccultLampHook
         {
             add => HookEndpointManager.Modify(typeof(OccultLamp).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultLamp).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator OccultLanternHook
         {
             add => HookEndpointManager.Modify(typeof(OccultLantern).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultLantern).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator OccultPianoHook
         {
             add => HookEndpointManager.Modify(typeof(OccultPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator OccultPlatformHook
         {
             add => HookEndpointManager.Modify(typeof(OccultPlatform).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultPlatform).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator OccultSinkHook
         {
             add => HookEndpointManager.Modify(typeof(OccultSink).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultSink).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator OccultSofaHook
         {
             add => HookEndpointManager.Modify(typeof(OccultSofa).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultSofa).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator OccultStoneHook
         {
             add => HookEndpointManager.Modify(typeof(OccultStone).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultStone).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator OccultTableHook
         {
             add => HookEndpointManager.Modify(typeof(OccultTable).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultTable).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator OccultWorkBenchHook
         {
             add => HookEndpointManager.Modify(typeof(OccultWorkBench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultWorkBench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator OccultStoneWallHook
         {
             add => HookEndpointManager.Modify(typeof(OccultStoneWall).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(OccultStoneWall).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-    
+
         public override void Load()
         {
             OccultBathtubHook += TranslationOccultBathtubHook;
@@ -1276,7 +1276,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             OccultWorkBenchHook += TranslationOccultWorkBenchHook;
             OccultStoneWallHook += TranslationOccultStoneWallHook;
         }
-    
+
         public override void Unload()
         {
             OccultBathtubHook -= TranslationOccultBathtubHook;
@@ -1301,297 +1301,297 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             OccultWorkBenchHook -= TranslationOccultWorkBenchHook;
             OccultStoneWallHook -= TranslationOccultStoneWallHook;
         }
-    
+
         private void TranslationOccultBathtubHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Bathtub", TranslationUtils.EncodeToUtf16("Потусторонняя ванна"));
-        
+
         private void TranslationOccultBedHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Bed", TranslationUtils.EncodeToUtf16("Потусторонняя кровать"));
-        
+
         private void TranslationOccultBookcaseHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Bookcase", TranslationUtils.EncodeToUtf16("Потусторонний книжный шкаф"));
-        
+
         private void TranslationOccultCandelabraHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Candelabra", TranslationUtils.EncodeToUtf16("Потусторонний канделябр"));
-        
+
         private void TranslationOccultCandleHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Candle", TranslationUtils.EncodeToUtf16("Потусторонняя свеча"));
-        
+
         private void TranslationOccultChairHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Chair", TranslationUtils.EncodeToUtf16("Потусторонний стул"));
-        
+
         private void TranslationOccultChandelierHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Chandelier", TranslationUtils.EncodeToUtf16("Потусторонняя люстра"));
-        
+
         private void TranslationOccultChestHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Chest", TranslationUtils.EncodeToUtf16("Потусторонний сундук"));
-        
+
         private void TranslationOccultClockHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Clock", TranslationUtils.EncodeToUtf16("Потусторонние часы"));
-        
+
         private void TranslationOccultDoorHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Door", TranslationUtils.EncodeToUtf16("Потусторонняя дверь"));
-        
+
         private void TranslationOccultDresserHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Dresser", TranslationUtils.EncodeToUtf16("Потусторонний комод"));
-        
+
         private void TranslationOccultLampHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Lamp", TranslationUtils.EncodeToUtf16("Потусторонняя лампа"));
-        
+
         private void TranslationOccultLanternHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Lantern", TranslationUtils.EncodeToUtf16("Потусторонний фонарь"));
-        
+
         private void TranslationOccultPianoHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Piano", TranslationUtils.EncodeToUtf16("Потустороннее пианино"));
-        
+
         private void TranslationOccultPlatformHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Platform", TranslationUtils.EncodeToUtf16("Потусторонняя платформа"));
-        
+
         private void TranslationOccultSinkHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Sink", TranslationUtils.EncodeToUtf16("Потусторонняя раковина"));
-        
+
         private void TranslationOccultSofaHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Sofa", TranslationUtils.EncodeToUtf16("Потусторонний диван"));
-        
+
         private void TranslationOccultStoneHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Stone", TranslationUtils.EncodeToUtf16("Потусторонний камень"));
-        
+
         private void TranslationOccultTableHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Table", TranslationUtils.EncodeToUtf16("Потусторонний стол"));
-        
+
         private void TranslationOccultWorkBenchHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Work Bench", TranslationUtils.EncodeToUtf16("Потусторонний верстак"));
-        
+
         private void TranslationOccultStoneWallHook(ILContext il) => TranslationUtils.ILTranslate(il, "Otherworldly Stone Wall", TranslationUtils.EncodeToUtf16("Стена из потустороннего камня"));
     }
-    
-    public class StratusWorkbenchIL: ILEdit
+
+    public class StratusWorkbenchIL : ILEdit
     {
         private event ILContext.Manipulator StratusWorkbenchHook
         {
             add => HookEndpointManager.Modify(typeof(StratusWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(StratusWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load() => StratusWorkbenchHook += TranslationStratusWorkbenchHook;
-    
+
         public override void Unload() => StratusWorkbenchHook -= TranslationStratusWorkbenchHook;
-        
+
         private void TranslationStratusWorkbenchHook(ILContext il) => TranslationUtils.ILTranslate(il, "Stratus Work Bench", TranslationUtils.EncodeToUtf16("Слоистый верстак"));
     }
-    
-    public class FurnitureStatigelIL: ILEdit
+
+    public class FurnitureStatigelIL : ILEdit
     {
         private event ILContext.Manipulator StatigelWorkbenchHook
         {
             add => HookEndpointManager.Modify(typeof(StatigelWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(StatigelWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator StatigelBathHook
         {
             add => HookEndpointManager.Modify(typeof(StatigelBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(StatigelBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             StatigelWorkbenchHook += TranslationStatigelWorkbenchHook;
             StatigelBathHook += TranslationStatigelBathHook;
         }
-    
+
         public override void Unload()
         {
             StatigelWorkbenchHook -= TranslationStatigelWorkbenchHook;
             StatigelBathHook -= TranslationStatigelBathHook;
         }
-    
+
         private void TranslationStatigelWorkbenchHook(ILContext il) => TranslationUtils.ILTranslate(il, "Statigel Work Bench", TranslationUtils.EncodeToUtf16("Статиджеловый верстак"));
-        
+
         private void TranslationStatigelBathHook(ILContext il) => TranslationUtils.ILTranslate(il, "Statigel Bathtub", TranslationUtils.EncodeToUtf16("Статиджеловая ванна"));
     }
-    
-    public class FurnitureProfanedIL: ILEdit
+
+    public class FurnitureProfanedIL : ILEdit
     {
         private event ILContext.Manipulator ProfanedWorkbenchHook
         {
             add => HookEndpointManager.Modify(typeof(ProfanedWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(ProfanedWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator ProfanedBathHook
         {
             add => HookEndpointManager.Modify(typeof(ProfanedBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(ProfanedBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             ProfanedWorkbenchHook += TranslationProfanedWorkbenchHook;
             ProfanedBathHook += TranslationProfanedBathHook;
         }
-    
+
         public override void Unload()
         {
             ProfanedWorkbenchHook -= TranslationProfanedWorkbenchHook;
             ProfanedBathHook -= TranslationProfanedBathHook;
         }
-    
+
         private void TranslationProfanedWorkbenchHook(ILContext il) => TranslationUtils.ILTranslate(il, "Profaned Work Bench", TranslationUtils.EncodeToUtf16("Осквернённый верстак"));
-        
+
         private void TranslationProfanedBathHook(ILContext il) => TranslationUtils.ILTranslate(il, "Profaned Bathtub", TranslationUtils.EncodeToUtf16("Осквернённая ванна"));
     }
-    
-    public class FurnitureVoidIL: ILEdit
+
+    public class FurnitureVoidIL : ILEdit
     {
         private event ILContext.Manipulator VoidWorkbenchHook
         {
             add => HookEndpointManager.Modify(typeof(VoidWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(VoidWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator VoidClockHook
         {
             add => HookEndpointManager.Modify(typeof(VoidClock).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(VoidClock).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator VoidBathHook
         {
             add => HookEndpointManager.Modify(typeof(VoidBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(VoidBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             VoidWorkbenchHook += TranslationVoidWorkbenchHook;
             VoidClockHook += TranslationVoidClockHook;
             VoidBathHook += TranslationVoidBathHook;
         }
-    
+
         public override void Unload()
         {
             VoidWorkbenchHook -= TranslationVoidWorkbenchHook;
             VoidClockHook -= TranslationVoidClockHook;
             VoidBathHook -= TranslationVoidBathHook;
         }
-    
+
         private void TranslationVoidWorkbenchHook(ILContext il) => TranslationUtils.ILTranslate(il, "Void Work Bench", TranslationUtils.EncodeToUtf16("Пустотный верстак"));
-        
+
         private void TranslationVoidClockHook(ILContext il) => TranslationUtils.ILTranslate(il, "Void Obelisk", TranslationUtils.EncodeToUtf16("Пустотный обелиск"));
-        
+
         private void TranslationVoidBathHook(ILContext il) => TranslationUtils.ILTranslate(il, "Void Bathtub", TranslationUtils.EncodeToUtf16("Пустотная ванна"));
     }
-    
-    public class FurnitureCosmiliteIL: ILEdit
+
+    public class FurnitureCosmiliteIL : ILEdit
     {
         private event ILContext.Manipulator CosmiliteWorkbenchHook
         {
             add => HookEndpointManager.Modify(typeof(CosmiliteWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(CosmiliteWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator CosmiliteBathHook
         {
             add => HookEndpointManager.Modify(typeof(CosmiliteBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(CosmiliteBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             CosmiliteWorkbenchHook += TranslationCosmiliteWorkbenchHook;
             CosmiliteBathHook += TranslationCosmiliteBathHook;
         }
-    
+
         public override void Unload()
         {
             CosmiliteWorkbenchHook -= TranslationCosmiliteWorkbenchHook;
             CosmiliteBathHook -= TranslationCosmiliteBathHook;
         }
-    
+
         private void TranslationCosmiliteWorkbenchHook(ILContext il) => TranslationUtils.ILTranslate(il, "Cosmilite Work Bench", TranslationUtils.EncodeToUtf16("Космилитовый верстак"));
-        
+
         private void TranslationCosmiliteBathHook(ILContext il) => TranslationUtils.ILTranslate(il, "Cosmilite Bathtub", TranslationUtils.EncodeToUtf16("Космилитовая ванна"));
     }
-    
-    public class FurnitureAshenIL: ILEdit
+
+    public class FurnitureAshenIL : ILEdit
     {
         private event ILContext.Manipulator AshenPianoHook
         {
             add => HookEndpointManager.Modify(typeof(AshenPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(AshenPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator AshenWorkbenchHook
         {
             add => HookEndpointManager.Modify(typeof(AshenWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(AshenWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator AshenBathHook
         {
             add => HookEndpointManager.Modify(typeof(AshenBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(AshenBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             AshenPianoHook += TranslationAshenPianoHook;
             AshenWorkbenchHook += TranslationAshenWorkbenchHook;
             AshenBathHook += TranslationAshenBathHook;
         }
-    
+
         public override void Unload()
         {
             AshenPianoHook -= TranslationAshenPianoHook;
             AshenWorkbenchHook -= TranslationAshenWorkbenchHook;
             AshenBathHook -= TranslationAshenBathHook;
         }
-    
+
         private void TranslationAshenPianoHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ashen Pipe Organ", TranslationUtils.EncodeToUtf16("Пепельный трубный орган"));
-        
+
         private void TranslationAshenWorkbenchHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ashen Work Bench", TranslationUtils.EncodeToUtf16("Пепельный верстак"));
-        
+
         private void TranslationAshenBathHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ashen Bathtub", TranslationUtils.EncodeToUtf16("Пепельная ванна"));
     }
-    
-    public class CraftingStationsIL: ILEdit
+
+    public class CraftingStationsIL : ILEdit
     {
         private event ILContext.Manipulator EutrophicCraftingHook
         {
             add => HookEndpointManager.Modify(typeof(EutrophicCrafting).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(EutrophicCrafting).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithCraftingHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithCrafting).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithCrafting).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator ProfanedBasinHook
         {
             add => HookEndpointManager.Modify(typeof(ProfanedBasin).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(ProfanedBasin).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator SilvaBasinHook
         {
             add => HookEndpointManager.Modify(typeof(SilvaBasin).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(SilvaBasin).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             EutrophicCraftingHook += TranslationEutrophicCraftingHook;
@@ -1599,7 +1599,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             ProfanedBasinHook += TranslationProfanedBasinHook;
             SilvaBasinHook += TranslationSilvaBasinHook;
         }
-    
+
         public override void Unload()
         {
             EutrophicCraftingHook -= TranslationEutrophicCraftingHook;
@@ -1607,245 +1607,245 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             ProfanedBasinHook -= TranslationProfanedBasinHook;
             SilvaBasinHook -= TranslationSilvaBasinHook;
         }
-    
+
         private void TranslationEutrophicCraftingHook(ILContext il) => TranslationUtils.ILTranslate(il, "Eutrophic Shelf", TranslationUtils.EncodeToUtf16("Эвтрофная полка"));
-        
+
         private void TranslationMonolithCraftingHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Amalgam", TranslationUtils.EncodeToUtf16("Монолитное слияние"));
-        
+
         private void TranslationProfanedBasinHook(ILContext il) => TranslationUtils.ILTranslate(il, "Profaned Crucible", TranslationUtils.EncodeToUtf16("Осквернённый тигель"));
-        
+
         private void TranslationSilvaBasinHook(ILContext il) => TranslationUtils.ILTranslate(il, "Effulgent Manipulator", TranslationUtils.EncodeToUtf16("Лучезарный манипулятор"));
     }
-    
-    public class FurnitureAbyssIL: ILEdit
+
+    public class FurnitureAbyssIL : ILEdit
     {
         private event ILContext.Manipulator AbyssBathHook
         {
             add => HookEndpointManager.Modify(typeof(AbyssBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(AbyssBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator AbyssWorkbenchHook
         {
             add => HookEndpointManager.Modify(typeof(AbyssWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(AbyssWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator AbyssPianoHook
         {
             add => HookEndpointManager.Modify(typeof(AbyssPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(AbyssPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             AbyssBathHook += TranslationAbyssBathHook;
             AbyssWorkbenchHook += TranslationAbyssWorkbenchHook;
             AbyssPianoHook += TranslationAbyssPianoHook;
         }
-    
+
         public override void Unload()
         {
             AbyssBathHook -= TranslationAbyssBathHook;
             AbyssWorkbenchHook -= TranslationAbyssWorkbenchHook;
             AbyssPianoHook -= TranslationAbyssPianoHook;
         }
-    
+
         private void TranslationAbyssBathHook(ILContext il) => TranslationUtils.ILTranslate(il, "Abyss Bathtub", TranslationUtils.EncodeToUtf16("Ванна бездны"));
-        
+
         private void TranslationAbyssWorkbenchHook(ILContext il) => TranslationUtils.ILTranslate(il, "Abyss Work Bench", TranslationUtils.EncodeToUtf16("Верстак бездны"));
-        
+
         private void TranslationAbyssPianoHook(ILContext il) => TranslationUtils.ILTranslate(il, "Abyss Synth", TranslationUtils.EncodeToUtf16("Синтезатор бездны"));
     }
-    
-    public class FurnitureAncientIL: ILEdit
+
+    public class FurnitureAncientIL : ILEdit
     {
         private event ILContext.Manipulator AncientBathHook
         {
             add => HookEndpointManager.Modify(typeof(AncientBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(AncientBath).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator AncientWorkbenchHook
         {
             add => HookEndpointManager.Modify(typeof(AncientWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(AncientWorkbench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator AncientPianoHook
         {
             add => HookEndpointManager.Modify(typeof(AncientPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(AncientPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             AncientBathHook += TranslationAncientBathHook;
             AncientWorkbenchHook += TranslationAncientWorkbenchHook;
             AncientPianoHook += TranslationAncientPianoHook;
         }
-    
+
         public override void Unload()
         {
             AncientBathHook -= TranslationAncientBathHook;
             AncientWorkbenchHook -= TranslationAncientWorkbenchHook;
             AncientPianoHook -= TranslationAncientPianoHook;
         }
-    
+
         private void TranslationAncientBathHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ancient Bathtub", TranslationUtils.EncodeToUtf16("Древняя ванна"));
-        
+
         private void TranslationAncientWorkbenchHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ancient Work Bench", TranslationUtils.EncodeToUtf16("Древний верстак"));
-        
+
         private void TranslationAncientPianoHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ancient Pipe Organ", TranslationUtils.EncodeToUtf16("Древний трубный орган"));
     }
-    
-    public class FurnitureAstralIL: ILEdit
+
+    public class FurnitureAstralIL : ILEdit
     {
         private event ILContext.Manipulator MonolithBathtubHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithBathtub).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithBathtub).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithBedHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithBed).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithBed).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithBenchHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithBench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithBench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithBookcaseHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithBookcase).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithBookcase).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithCandelabraHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithCandelabra).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithCandelabra).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithCandleHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithCandle).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithCandle).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithChairHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithChair).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithChair).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithChandelierHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithChandelier).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithChandelier).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithChestHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithChest).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithChest).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithClockHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithClock).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithClock).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithDoorHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithDoor).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithDoor).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithDresserHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithDresser).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithDresser).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithLampHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithLamp).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithLamp).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithPianoHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithPiano).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithLanternHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithLantern).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-            
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithLantern).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithPlatformHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithPlatform).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-            
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithPlatform).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithSinkHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithSink).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithSink).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithTableHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithTable).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithTable).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         private event ILContext.Manipulator MonolithWorkBenchHook
         {
             add => HookEndpointManager.Modify(typeof(MonolithWorkBench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(MonolithWorkBench).GetMethod("SetDefaults", BindingFlags.Public | BindingFlags.Instance), value);
         }
-        
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-        
+
         public override void Load()
         {
             MonolithBathtubHook += TranslationMonolithBathtubHook;
@@ -1868,7 +1868,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             MonolithTableHook += TranslationMonolithTableHook;
             MonolithWorkBenchHook += TranslationMonolithWorkBenchHook;
         }
-    
+
         public override void Unload()
         {
             MonolithBathtubHook -= TranslationMonolithBathtubHook;
@@ -1891,79 +1891,79 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             MonolithTableHook -= TranslationMonolithTableHook;
             MonolithWorkBenchHook -= TranslationMonolithWorkBenchHook;
         }
-    
+
         private void TranslationMonolithBathtubHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Bathtub", TranslationUtils.EncodeToUtf16("Монолитная ванна"));
-        
+
         private void TranslationMonolithBedHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Bed", TranslationUtils.EncodeToUtf16("Монолитная кровать"));
-        
+
         private void TranslationMonolithBenchHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Bench", TranslationUtils.EncodeToUtf16("Монолитная скамья"));
-        
+
         private void TranslationMonolithBookcaseHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Bookcase", TranslationUtils.EncodeToUtf16("Монолитный книжный шкаф"));
-        
+
         private void TranslationMonolithCandelabraHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Candelabra", TranslationUtils.EncodeToUtf16("Монолитный канделябр"));
-        
+
         private void TranslationMonolithCandleHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Candle", TranslationUtils.EncodeToUtf16("Монолитная свеча"));
-        
+
         private void TranslationMonolithChairHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Chair", TranslationUtils.EncodeToUtf16("Монолитный стул"));
-        
+
         private void TranslationMonolithChandelierHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Chandelier", TranslationUtils.EncodeToUtf16("Монолитная люстра"));
-        
+
         private void TranslationMonolithChestHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Chest", TranslationUtils.EncodeToUtf16("Монолитный сундук"));
-        
+
         private void TranslationMonolithClockHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Clock", TranslationUtils.EncodeToUtf16("Монолитные часы"));
-        
+
         private void TranslationMonolithDoorHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Door", TranslationUtils.EncodeToUtf16("Монолитная дверь"));
-        
+
         private void TranslationMonolithDresserHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Dresser", TranslationUtils.EncodeToUtf16("Монолитный комод"));
-        
+
         private void TranslationMonolithLampHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Lamp", TranslationUtils.EncodeToUtf16("Монолитная лампа"));
-        
+
         private void TranslationMonolithPianoHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Piano", TranslationUtils.EncodeToUtf16("Монолитное пианино"));
-        
+
         private void TranslationMonolithLanternHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Lantern", TranslationUtils.EncodeToUtf16("Монолитный фонарь"));
-        
+
         private void TranslationMonolithPlatformHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Platform", TranslationUtils.EncodeToUtf16("Монолитная платформа"));
-        
+
         private void TranslationMonolithSinkHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Sink", TranslationUtils.EncodeToUtf16("Монолитная раковина"));
-        
+
         private void TranslationMonolithTableHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Table", TranslationUtils.EncodeToUtf16("Монолитный стол"));
-        
+
         private void TranslationMonolithWorkBenchHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Work Bench", TranslationUtils.EncodeToUtf16("Монолитный верстак"));
     }
-    
-    public class NanotechIL: ILEdit
+
+    public class NanotechIL : ILEdit
     {
         private event ILContext.Manipulator NanotechHook
         {
             add => HookEndpointManager.Modify(typeof(Nanotech).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(Nanotech).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
         }
-    
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-    
+
         public override void Load() => NanotechHook += TranslationNanotechHook;
-    
+
         public override void Unload() => NanotechHook -= TranslationNanotechHook;
-    
+
         private void TranslationNanotechHook(ILContext il) => TranslationUtils.ILTranslate(il, "Tooltip8", TranslationUtils.EncodeToUtf16("Tooltip7"));
     }
-        
-    public class PolterghastIL: ILEdit
+
+    public class PolterghastIL : ILEdit
     {
         private event ILContext.Manipulator PolterghastHook
         {
             add => HookEndpointManager.Modify(typeof(Polterghast).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
-        
+
             remove => HookEndpointManager.Unmodify(typeof(Polterghast).GetMethod("AI", BindingFlags.Public | BindingFlags.Instance), value);
         }
-    
+
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-    
+
         public override void Load() => PolterghastHook += TranslationPolterghastHook;
-    
+
         public override void Unload() => PolterghastHook -= TranslationPolterghastHook;
-    
+
         private void TranslationPolterghastHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Necroghast", TranslationUtils.EncodeToUtf16("Некрогаст"));
