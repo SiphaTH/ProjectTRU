@@ -22,9 +22,9 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Spawn rates ", TranslationUtils.EncodeToUtf16("Скорость появления врагов "));
-            TranslationUtils.ILTranslate(il, "increased!", TranslationUtils.EncodeToUtf16("увеличена!"));
-            TranslationUtils.ILTranslate(il, "decreased!", TranslationUtils.EncodeToUtf16("снижена!"));
+            TranslationUtils.ILTranslate(il, "Spawn rates ", "Скорость появления врагов ");
+            TranslationUtils.ILTranslate(il, "increased!", "увеличена!");
+            TranslationUtils.ILTranslate(il, "decreased!", "снижена!");
         }
     }
 
@@ -38,8 +38,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Expert mode is now enabled!", TranslationUtils.EncodeToUtf16("Режим эксперта теперь включён!"));
-            TranslationUtils.ILTranslate(il, "Expert mode is now disabled!", TranslationUtils.EncodeToUtf16("Режим эксперта теперь отключён!"));
+            TranslationUtils.ILTranslate(il, "Expert mode is now enabled!", "Режим эксперта теперь включён!");
+            TranslationUtils.ILTranslate(il, "Expert mode is now disabled!", "Режим эксперта теперь отключён!");
         }
     }
 
@@ -51,7 +51,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => CursedSextant.UseItem -= TranslationUseItemHook;
 
-        private void TranslationUseItemHook(ILContext il) => TranslationUtils.ILTranslate(il, "The Blood Moon is rising...", TranslationUtils.EncodeToUtf16("Кровавая луна восходит..."));
+        private void TranslationUseItemHook(ILContext il) => TranslationUtils.ILTranslate(il, "The Blood Moon is rising...", "Кровавая луна восходит...");
     }
 
     public class ForbiddenScarabIL : ILEdit
@@ -62,7 +62,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => ForbiddenScarab.UseItem -= TranslationUseItemHook;
 
-        private void TranslationUseItemHook(ILContext il) => TranslationUtils.ILTranslate(il, "A sandstorm has begun.", TranslationUtils.EncodeToUtf16("Началась песчаная буря."));
+        private void TranslationUseItemHook(ILContext il) => TranslationUtils.ILTranslate(il, "A sandstorm has begun.", "Началась песчаная буря.");
     }
 
     public class PartyConeIL : ILEdit
@@ -73,7 +73,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => PartyCone.UseItem -= TranslationUseItemHook;
 
-        private void TranslationUseItemHook(ILContext il) => TranslationUtils.ILTranslate(il, "Looks like someone's throwing a Party!", TranslationUtils.EncodeToUtf16("Похоже, кто-то закатывает вечеринку!"));
+        private void TranslationUseItemHook(ILContext il) => TranslationUtils.ILTranslate(il, "Looks like someone's throwing a Party!", "Похоже, кто-то закатывает вечеринку!");
     }
 
     public class PillarSummonIL : ILEdit
@@ -93,8 +93,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationShootHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "The Celestial Pillars have awoken!", TranslationUtils.EncodeToUtf16("Небесные башни пробудились!"));
-            TranslationUtils.ILTranslate(il, "The Celestial Pillars have awoken!", TranslationUtils.EncodeToUtf16("Небесные башни пробудились!"), 2);
+            TranslationUtils.ILTranslate(il, "The Celestial Pillars have awoken!", "Небесные башни пробудились!");
+            TranslationUtils.ILTranslate(il, "The Celestial Pillars have awoken!", "Небесные башни пробудились!", 2);
         }
     }
 
@@ -106,7 +106,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => WeatherBalloon.UseItem -= TranslationUseItemHook;
 
-        private void TranslationUseItemHook(ILContext il) => TranslationUtils.ILTranslate(il, "Rain clouds cover the sky.", TranslationUtils.EncodeToUtf16("Тучи закрывают небо."));
+        private void TranslationUseItemHook(ILContext il) => TranslationUtils.ILTranslate(il, "Rain clouds cover the sky.", "Тучи закрывают небо.");
     }
 
     public class AncientSealIL : ILEdit
@@ -134,11 +134,11 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationShootHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Every boss has awoken!", TranslationUtils.EncodeToUtf16("Все боссы пробудились!"));
-            TranslationUtils.ILTranslate(il, "Every boss has awoken!", TranslationUtils.EncodeToUtf16("Все боссы пробудились!"), 2);
+            TranslationUtils.ILTranslate(il, "Every boss has awoken!", "Все боссы пробудились!");
+            TranslationUtils.ILTranslate(il, "Every boss has awoken!", "Все боссы пробудились!", 2);
         }
 
-        private void TranslationSpawnBossHook(ILContext il) => TranslationUtils.ILTranslate(il, " has awoken!", TranslationUtils.EncodeToUtf16(" пробудился!"));
+        private void TranslationSpawnBossHook(ILContext il) => TranslationUtils.ILTranslate(il, " has awoken!", " пробудился!");
     }
 
     public class DeathBringerFairyIL : ILEdit
@@ -158,8 +158,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationShootHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Several bosses have awoken!", TranslationUtils.EncodeToUtf16("Несколько боссов пробудились!"));
-            TranslationUtils.ILTranslate(il, "Several bosses have awoken!", TranslationUtils.EncodeToUtf16("Несколько боссов пробудились!"), 2);
+            TranslationUtils.ILTranslate(il, "Several bosses have awoken!", "Несколько боссов пробудились!");
+            TranslationUtils.ILTranslate(il, "Several bosses have awoken!", "Несколько боссов пробудились!", 2);
         }
     }
 
@@ -181,9 +181,9 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
         private void TranslationShootHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Several bosses have awoken!",
-                TranslationUtils.EncodeToUtf16("Несколько боссов пробудились!"));
+                "Несколько боссов пробудились!");
             TranslationUtils.ILTranslate(il, "Several bosses have awoken!",
-                TranslationUtils.EncodeToUtf16("Несколько боссов пробудились!"), 2);
+                "Несколько боссов пробудились!", 2);
         }
     }
 
@@ -204,10 +204,10 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationShootHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Skeletron has awoken!", TranslationUtils.EncodeToUtf16("Скелетрон пробудился!"));
-            TranslationUtils.ILTranslate(il, "Skeletron has awoken!", TranslationUtils.EncodeToUtf16("Скелетрон пробудился!"), 2);
-            TranslationUtils.ILTranslate(il, "Dungeon Guardian has awoken!", TranslationUtils.EncodeToUtf16("Страж темницы пробудился!"));
-            TranslationUtils.ILTranslate(il, "Dungeon Guardian has awoken!", TranslationUtils.EncodeToUtf16("Страж темницы пробудился!"), 2);
+            TranslationUtils.ILTranslate(il, "Skeletron has awoken!", "Скелетрон пробудился!");
+            TranslationUtils.ILTranslate(il, "Skeletron has awoken!", "Скелетрон пробудился!", 2);
+            TranslationUtils.ILTranslate(il, "Dungeon Guardian has awoken!", "Страж темницы пробудился!");
+            TranslationUtils.ILTranslate(il, "Dungeon Guardian has awoken!", "Страж темницы пробудился!", 2);
         }
     }
 
@@ -221,8 +221,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "The gates of hell have opened wide!", TranslationUtils.EncodeToUtf16("Врата ада распахнулись!"));
-            TranslationUtils.ILTranslate(il, "The gates of hell have opened wide!", TranslationUtils.EncodeToUtf16("Врата ада распахнулись!"), 2);
+            TranslationUtils.ILTranslate(il, "The gates of hell have opened wide!", "Врата ада распахнулись!");
+            TranslationUtils.ILTranslate(il, "The gates of hell have opened wide!", "Врата ада распахнулись!", 2);
         }
     }
 
@@ -236,8 +236,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "National Jelly Day has arrived!", TranslationUtils.EncodeToUtf16("Наступил национальный день желе!"));
-            TranslationUtils.ILTranslate(il, "National Jelly Day has arrived!", TranslationUtils.EncodeToUtf16("Наступил национальный день желе!"), 2);
+            TranslationUtils.ILTranslate(il, "National Jelly Day has arrived!", "Наступил национальный день желе!");
+            TranslationUtils.ILTranslate(il, "National Jelly Day has arrived!", "Наступил национальный день желе!", 2);
         }
     }
 
@@ -251,8 +251,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Death is in the air!", TranslationUtils.EncodeToUtf16("Смерть витает в воздухе!"));
-            TranslationUtils.ILTranslate(il, "Death is in the air!", TranslationUtils.EncodeToUtf16("Смерть витает в воздухе!"), 2);
+            TranslationUtils.ILTranslate(il, "Death is in the air!", "Смерть витает в воздухе!");
+            TranslationUtils.ILTranslate(il, "Death is in the air!", "Смерть витает в воздухе!", 2);
         }
     }
 
@@ -266,8 +266,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Invaders have arrived!", TranslationUtils.EncodeToUtf16("Произошло вторжение!"));
-            TranslationUtils.ILTranslate(il, "Invaders have arrived!", TranslationUtils.EncodeToUtf16("Произошло вторжение!"), 2);
+            TranslationUtils.ILTranslate(il, "Invaders have arrived!", "Произошло вторжение!");
+            TranslationUtils.ILTranslate(il, "Invaders have arrived!", "Произошло вторжение!", 2);
         }
     }
 
@@ -281,8 +281,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "A wave of frozen air begins howling!", TranslationUtils.EncodeToUtf16("Морозный ветер завывает!"));
-            TranslationUtils.ILTranslate(il, "A wave of frozen air begins howling!", TranslationUtils.EncodeToUtf16("Морозный ветер завывает!"), 2);
+            TranslationUtils.ILTranslate(il, "A wave of frozen air begins howling!", "Морозный ветер завывает!");
+            TranslationUtils.ILTranslate(il, "A wave of frozen air begins howling!", "Морозный ветер завывает!", 2);
         }
     }
 
@@ -296,8 +296,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Electricity fills the air!", TranslationUtils.EncodeToUtf16("Электричество наполняет воздух!"));
-            TranslationUtils.ILTranslate(il, "Electricity fills the air!", TranslationUtils.EncodeToUtf16("Электричество наполняет воздух!"), 2);
+            TranslationUtils.ILTranslate(il, "Electricity fills the air!", "Электричество наполняет воздух!");
+            TranslationUtils.ILTranslate(il, "Electricity fills the air!", "Электричество наполняет воздух!", 2);
         }
     }
 
@@ -311,12 +311,12 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "The Frost Moon fades away!", TranslationUtils.EncodeToUtf16("Морозная луна исчезает!"));
-            TranslationUtils.ILTranslate(il, "The Frost Moon fades away!", TranslationUtils.EncodeToUtf16("Морозная луна исчезает!"), 2);
-            TranslationUtils.ILTranslate(il, "The Frost Moon is rising...", TranslationUtils.EncodeToUtf16("Восходит морозная луна..."));
-            TranslationUtils.ILTranslate(il, "The Frost Moon is rising...", TranslationUtils.EncodeToUtf16("Восходит морозная луна..."), 2);
-            TranslationUtils.ILTranslate(il, "Wave: 20: Everything", TranslationUtils.EncodeToUtf16("Волна 20: Все"));
-            TranslationUtils.ILTranslate(il, "Wave: 20: Everything", TranslationUtils.EncodeToUtf16("Волна 20: Все"), 2);
+            TranslationUtils.ILTranslate(il, "The Frost Moon fades away!", "Морозная луна исчезает!");
+            TranslationUtils.ILTranslate(il, "The Frost Moon fades away!", "Морозная луна исчезает!", 2);
+            TranslationUtils.ILTranslate(il, "The Frost Moon is rising...", "Восходит морозная луна...");
+            TranslationUtils.ILTranslate(il, "The Frost Moon is rising...", "Восходит морозная луна...", 2);
+            TranslationUtils.ILTranslate(il, "Wave: 20: Everything", "Волна 20: Все");
+            TranslationUtils.ILTranslate(il, "Wave: 20: Everything", "Волна 20: Все", 2);
         }
     }
 
@@ -330,8 +330,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "The goblins have calmed down!", TranslationUtils.EncodeToUtf16("Гоблины успокоились!"));
-            TranslationUtils.ILTranslate(il, "The goblins have calmed down!", TranslationUtils.EncodeToUtf16("Гоблины успокоились!"), 2);
+            TranslationUtils.ILTranslate(il, "The goblins have calmed down!", "Гоблины успокоились!");
+            TranslationUtils.ILTranslate(il, "The goblins have calmed down!", "Гоблины успокоились!", 2);
         }
     }
 
@@ -345,8 +345,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "The martians have calmed down!", TranslationUtils.EncodeToUtf16("Марсиане успокоились!"));
-            TranslationUtils.ILTranslate(il, "The martians have calmed down!", TranslationUtils.EncodeToUtf16("Марсиане успокоились!"), 2);
+            TranslationUtils.ILTranslate(il, "The martians have calmed down!", "Марсиане успокоились!");
+            TranslationUtils.ILTranslate(il, "The martians have calmed down!", "Марсиане успокоились!", 2);
         }
     }
 
@@ -360,8 +360,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "The pirates have calmed down!", TranslationUtils.EncodeToUtf16("Пираты успокоились!"));
-            TranslationUtils.ILTranslate(il, "The pirates have calmed down!", TranslationUtils.EncodeToUtf16("Пираты успокоились!"), 2);
+            TranslationUtils.ILTranslate(il, "The pirates have calmed down!", "Пираты успокоились!");
+            TranslationUtils.ILTranslate(il, "The pirates have calmed down!", "Пираты успокоились!", 2);
         }
     }
 
@@ -375,12 +375,12 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "The Pumpkin Moon fades away!", TranslationUtils.EncodeToUtf16("Тыквенная луна исчезает!"));
-            TranslationUtils.ILTranslate(il, "The Pumpkin Moon fades away!", TranslationUtils.EncodeToUtf16("Тыквенная луна исчезает!"), 2);
-            TranslationUtils.ILTranslate(il, "The Pumpkin Moon is rising...", TranslationUtils.EncodeToUtf16("Восходит тыквенная луна..."));
-            TranslationUtils.ILTranslate(il, "The Pumpkin Moon is rising...", TranslationUtils.EncodeToUtf16("Восходит тыквенная луна..."), 2);
-            TranslationUtils.ILTranslate(il, "Wave: 15: Everything", TranslationUtils.EncodeToUtf16("Волна 15: Все"));
-            TranslationUtils.ILTranslate(il, "Wave: 15: Everything", TranslationUtils.EncodeToUtf16("Волна 15: Все"), 2);
+            TranslationUtils.ILTranslate(il, "The Pumpkin Moon fades away!", "Тыквенная луна исчезает!");
+            TranslationUtils.ILTranslate(il, "The Pumpkin Moon fades away!", "Тыквенная луна исчезает!", 2);
+            TranslationUtils.ILTranslate(il, "The Pumpkin Moon is rising...", "Восходит тыквенная луна...");
+            TranslationUtils.ILTranslate(il, "The Pumpkin Moon is rising...", "Восходит тыквенная луна...", 2);
+            TranslationUtils.ILTranslate(il, "Wave: 15: Everything", "Волна 15: Все");
+            TranslationUtils.ILTranslate(il, "Wave: 15: Everything", "Волна 15: Все", 2);
         }
     }
 
@@ -401,8 +401,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationShootHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, " has awoken!", TranslationUtils.EncodeToUtf16(" пробудился!"));
-            TranslationUtils.ILTranslate(il, " has awoken!", TranslationUtils.EncodeToUtf16(" пробудился!"), 2);
+            TranslationUtils.ILTranslate(il, " has awoken!", " пробудился!");
+            TranslationUtils.ILTranslate(il, " has awoken!", " пробудился!", 2);
         }
     }
 
@@ -422,7 +422,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Eater of Worlds", TranslationUtils.EncodeToUtf16("Пожиратель миров"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Eater of Worlds", "Пожиратель миров");
     }
 
     public class BatteredClubIL : ILEdit
@@ -440,7 +440,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ogre", TranslationUtils.EncodeToUtf16("Огр"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ogre", "Огр");
     }
 
     public class BetsyEggIL : ILEdit
@@ -458,7 +458,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Betsy", TranslationUtils.EncodeToUtf16("Бетси"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Betsy", "Бетси");
     }
 
     public class FestiveOrnamentIL : ILEdit
@@ -476,7 +476,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Everscream", TranslationUtils.EncodeToUtf16("Злая ель"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Everscream", "Злая ель");
     }
 
     public class ForbiddenTomeIL : ILEdit
@@ -494,7 +494,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Dark Mage", TranslationUtils.EncodeToUtf16("Тёмный маг"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Dark Mage", "Тёмный маг");
     }
 
     public class HeadofManIL : ILEdit
@@ -512,7 +512,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Headless Horseman", TranslationUtils.EncodeToUtf16("Всадник без головы"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Headless Horseman", "Всадник без головы");
     }
 
     public class IceKingsRemainsIL : ILEdit
@@ -530,7 +530,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ice Queen", TranslationUtils.EncodeToUtf16("Ледяная королева"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ice Queen", "Ледяная королева");
     }
 
     public class MartianMemoryStickIL : ILEdit
@@ -549,7 +549,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Martian Saucer", TranslationUtils.EncodeToUtf16("Летающая тарелка марсиан"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Martian Saucer", "Летающая тарелка марсиан");
     }
 
     public class NaughtyListIL : ILEdit
@@ -568,7 +568,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Santa-NK1", TranslationUtils.EncodeToUtf16("Санта-НК1"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Santa-NK1", "Санта-НК1");
     }
 
     public class SpookyBranchIL : ILEdit
@@ -586,7 +586,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Mourning Wood", TranslationUtils.EncodeToUtf16("Плакучий древень"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Mourning Wood", "Плакучий древень");
     }
 
     public class SuspiciousLookingScytheIL : ILEdit
@@ -604,7 +604,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Pumpking", TranslationUtils.EncodeToUtf16("Тыквенный король"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Pumpking", "Тыквенный король");
     }
 
     public class AthenianIdolIL : ILEdit
@@ -622,7 +622,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Medusa", TranslationUtils.EncodeToUtf16("Медуза"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Medusa", "Медуза");
     }
 
     public class AttractiveOreIL : ILEdit
@@ -641,7 +641,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Undead Miner", TranslationUtils.EncodeToUtf16("Скелет-шахтёр"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Undead Miner", "Скелет-шахтёр");
     }
 
     public class CloudSnackIL : ILEdit
@@ -660,7 +660,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Wyvern", TranslationUtils.EncodeToUtf16("Виверна"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Wyvern", "Виверна");
     }
 
     public class ClownLicenseIL : ILEdit
@@ -678,7 +678,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Clown", TranslationUtils.EncodeToUtf16("Клоун"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Clown", "Клоун");
     }
 
     public class CoreoftheFrostCoreIL : ILEdit
@@ -696,7 +696,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ice Golem", TranslationUtils.EncodeToUtf16("Ледяной голем"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ice Golem", "Ледяной голем");
     }
 
     public class CorruptChestIL : ILEdit
@@ -714,7 +714,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Corrupt Mimic", TranslationUtils.EncodeToUtf16("Искажённый мимик"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Corrupt Mimic", "Искажённый мимик");
     }
 
     public class CrimsonChestIL : ILEdit
@@ -732,7 +732,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Crimson Mimic", TranslationUtils.EncodeToUtf16("Багряный мимик"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Crimson Mimic", "Багряный мимик");
     }
 
     public class DilutedRainbowMatterIL : ILEdit
@@ -750,7 +750,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Rainbow Slime", TranslationUtils.EncodeToUtf16("Радужный слизень"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Rainbow Slime", "Радужный слизень");
     }
 
     public class EggplantIL : ILEdit
@@ -769,7 +769,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Doctor Bones", TranslationUtils.EncodeToUtf16("Доктор Боунс"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Doctor Bones", "Доктор Боунс");
     }
 
     public class ForbiddenForbiddenFragmentIL : ILEdit
@@ -787,7 +787,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Sand Elemental", TranslationUtils.EncodeToUtf16("Песчаный элементаль"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Sand Elemental", "Песчаный элементаль");
     }
 
     public class GrandCrossIL : ILEdit
@@ -805,7 +805,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Paladin", TranslationUtils.EncodeToUtf16("Паладин"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Paladin", "Паладин");
     }
 
     public class HallowChestIL : ILEdit
@@ -823,7 +823,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Hallowed Mimic", TranslationUtils.EncodeToUtf16("Освящённый мимик"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Hallowed Mimic", "Освящённый мимик");
     }
 
     public class HeartChocolateIL : ILEdit
@@ -841,7 +841,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Nymph", TranslationUtils.EncodeToUtf16("Нимфа"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Nymph", "Нимфа");
     }
 
     public class HolyGrailIL : ILEdit
@@ -859,7 +859,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Tim", TranslationUtils.EncodeToUtf16("Тим"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Tim", "Тим");
     }
 
     public class InnocuousSkullIL : ILEdit
@@ -877,7 +877,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Baby Guardian", TranslationUtils.EncodeToUtf16("Маленький страж"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Baby Guardian", "Маленький страж");
     }
 
     public class JungleChestIL : ILEdit
@@ -895,7 +895,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Jungle Mimic", TranslationUtils.EncodeToUtf16("Мимик джунглей"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Jungle Mimic", "Мимик джунглей");
     }
 
     public class LeesHeadbandIL : ILEdit
@@ -913,7 +913,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Bone Lee", TranslationUtils.EncodeToUtf16("Костюс Ли"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Bone Lee", "Костюс Ли");
     }
 
     public class MothLampIL : ILEdit
@@ -931,7 +931,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Moth", TranslationUtils.EncodeToUtf16("Мотылёк"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Moth", "Мотылёк");
     }
 
     public class MothronEggIL : ILEdit
@@ -949,7 +949,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Mothron", TranslationUtils.EncodeToUtf16("Мотрон"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Mothron", "Мотрон");
     }
 
     public class PinkSlimeCrownIL : ILEdit
@@ -967,7 +967,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Pinky", TranslationUtils.EncodeToUtf16("Пинки"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Pinky", "Пинки");
     }
 
     public class PirateFlagIL : ILEdit
@@ -985,7 +985,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Pirate Captain", TranslationUtils.EncodeToUtf16("Капитан пиратов"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Pirate Captain", "Капитан пиратов");
     }
 
     public class PlunderedBootyIL : ILEdit
@@ -1003,7 +1003,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Flying Dutchman", TranslationUtils.EncodeToUtf16("Летучий голландец"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Flying Dutchman", "Летучий голландец");
     }
 
     public class RuneOrbIL : ILEdit
@@ -1021,7 +1021,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Rune Wizard", TranslationUtils.EncodeToUtf16("Рунический маг"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Rune Wizard", "Рунический маг");
     }
 
     public class ShadowflameIconIL : ILEdit
@@ -1039,7 +1039,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Goblin Summoner", TranslationUtils.EncodeToUtf16("Гоблин-призыватель"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Goblin Summoner", "Гоблин-призыватель");
     }
 
     public class SlimyLockBoxIL : ILEdit
@@ -1057,7 +1057,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Dungeon Slime", TranslationUtils.EncodeToUtf16("Слизень темницы"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Dungeon Slime", "Слизень темницы");
     }
 
     public class SuspiciousLookingChestIL : ILEdit
@@ -1075,7 +1075,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Mimic", TranslationUtils.EncodeToUtf16("Мимик"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Mimic", "Мимик");
     }
 
     public class WormSnackIL : ILEdit
@@ -1095,8 +1095,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationNPCNameHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Digger", TranslationUtils.EncodeToUtf16("Землекоп"));
-            TranslationUtils.ILTranslate(il, "Giant Worm", TranslationUtils.EncodeToUtf16("Гигантский червь"));
+            TranslationUtils.ILTranslate(il, "Digger", "Землекоп");
+            TranslationUtils.ILTranslate(il, "Giant Worm", "Гигантский червь");
         }
     }
 
@@ -1115,7 +1115,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Lunatic Cultist", TranslationUtils.EncodeToUtf16("Культист-лунатик"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Lunatic Cultist", "Культист-лунатик");
     }
 
     public class PlanterasFruitIL : ILEdit
@@ -1133,7 +1133,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Plantera", TranslationUtils.EncodeToUtf16("Плантера"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Plantera", "Плантера");
     }
 
     public class Abeemination2IL : ILEdit
@@ -1151,7 +1151,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Queen Bee", TranslationUtils.EncodeToUtf16("Королева пчёл"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Queen Bee", "Королева пчёл");
     }
 
     public class CelestialSigil2IL : ILEdit
@@ -1169,7 +1169,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Moon Lord", TranslationUtils.EncodeToUtf16("Лунный лорд"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Moon Lord", "Лунный лорд");
     }
 
     public class GoreySpineIL : ILEdit
@@ -1187,7 +1187,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Brain of Cthulhu", TranslationUtils.EncodeToUtf16("Мозг Ктулху"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Brain of Cthulhu", "Мозг Ктулху");
     }
 
     public class LihzahrdPowerCell2IL : ILEdit
@@ -1205,7 +1205,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Golem", TranslationUtils.EncodeToUtf16("Голем"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Golem", "Голем");
     }
 
     public class MechSkullIL : ILEdit
@@ -1223,7 +1223,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Skeletron Prime", TranslationUtils.EncodeToUtf16("Скелетрон Прайм"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Skeletron Prime", "Скелетрон Прайм");
     }
 
     public class MechWormIL : ILEdit
@@ -1241,7 +1241,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "The Destroyer", TranslationUtils.EncodeToUtf16("Разрушитель"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "The Destroyer", "Разрушитель");
     }
 
     public class SlimyCrownIL : ILEdit
@@ -1259,7 +1259,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "King Slime", TranslationUtils.EncodeToUtf16("Король слизней"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "King Slime", "Король слизней");
     }
 
     public class SuspiciousEyeIL : ILEdit
@@ -1277,7 +1277,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Eye of Cthulhu", TranslationUtils.EncodeToUtf16("Глаз Ктулху"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Eye of Cthulhu", "Глаз Ктулху");
     }
 
     public class TruffleWorm2IL : ILEdit
@@ -1295,7 +1295,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron", TranslationUtils.EncodeToUtf16("Герцог Рыброн"));
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron", "Герцог Рыброн");
     }
 
     public class StatsFargoIL : ILEdit
@@ -1308,21 +1308,21 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationModifyTooltipsHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Melee Damage: {0}%", TranslationUtils.EncodeToUtf16("Урон ближнего боя: {0}%"));
-            TranslationUtils.ILTranslate(il, "Melee Speed: {0}%", TranslationUtils.EncodeToUtf16("Скорость атаки ближнего боя: {0}%"));
-            TranslationUtils.ILTranslate(il, "Melee Crit: {0}%", TranslationUtils.EncodeToUtf16("Шанс критического удара ближнего боя: {0}%"));
-            TranslationUtils.ILTranslate(il, "Ranged Damage: {0}%", TranslationUtils.EncodeToUtf16("Стрелковый урон: {0}%"));
-            TranslationUtils.ILTranslate(il, "Ranged Crit: {0}%", TranslationUtils.EncodeToUtf16("Стрелковый шанс критического удара: {0}%"));
-            TranslationUtils.ILTranslate(il, "Magic Damage: {0}%", TranslationUtils.EncodeToUtf16("Магический урон: {0}%"));
-            TranslationUtils.ILTranslate(il, "Magic Crit: {0}%", TranslationUtils.EncodeToUtf16("Магический шанс критического удара: {0}%"));
-            TranslationUtils.ILTranslate(il, "Summon Damage: {0}%", TranslationUtils.EncodeToUtf16("Урон миньонов: {0}%"));
-            TranslationUtils.ILTranslate(il, "Max Minions: {0}", TranslationUtils.EncodeToUtf16("Максимальное число миньонов: {0}"));
-            TranslationUtils.ILTranslate(il, "Max Sentries: {0}", TranslationUtils.EncodeToUtf16("Максимальное число турелей: {0}"));
-            TranslationUtils.ILTranslate(il, "Damage Reduction: {0}%", TranslationUtils.EncodeToUtf16("Сопротивление урону: {0}%"));
-            TranslationUtils.ILTranslate(il, "Life Regen: {0} HP/second",TranslationUtils.EncodeToUtf16("Регенерация здоровья: {0} здоровья/сек"));
-            TranslationUtils.ILTranslate(il, "Armor Pen: {0}", TranslationUtils.EncodeToUtf16("Пробивание брони: {0}"));
-            TranslationUtils.ILTranslate(il, "Max Speed: {0} mph", TranslationUtils.EncodeToUtf16("Максимальная скорость: {0} км/ч"));
-            TranslationUtils.ILTranslate(il, "Wing Time: {0} seconds", TranslationUtils.EncodeToUtf16("Время полёта: {0} сек"));
+            TranslationUtils.ILTranslate(il, "Melee Damage: {0}%", "Урон ближнего боя: {0}%");
+            TranslationUtils.ILTranslate(il, "Melee Speed: {0}%", "Скорость атаки ближнего боя: {0}%");
+            TranslationUtils.ILTranslate(il, "Melee Crit: {0}%", "Шанс критического удара ближнего боя: {0}%");
+            TranslationUtils.ILTranslate(il, "Ranged Damage: {0}%", "Стрелковый урон: {0}%");
+            TranslationUtils.ILTranslate(il, "Ranged Crit: {0}%", "Стрелковый шанс критического удара: {0}%");
+            TranslationUtils.ILTranslate(il, "Magic Damage: {0}%", "Магический урон: {0}%");
+            TranslationUtils.ILTranslate(il, "Magic Crit: {0}%", "Магический шанс критического удара: {0}%");
+            TranslationUtils.ILTranslate(il, "Summon Damage: {0}%", "Урон миньонов: {0}%");
+            TranslationUtils.ILTranslate(il, "Max Minions: {0}", "Максимальное число миньонов: {0}");
+            TranslationUtils.ILTranslate(il, "Max Sentries: {0}", "Максимальное число турелей: {0}");
+            TranslationUtils.ILTranslate(il, "Damage Reduction: {0}%", "Сопротивление урону: {0}%");
+            TranslationUtils.ILTranslate(il, "Life Regen: {0} HP/second","Регенерация здоровья: {0} здоровья/сек");
+            TranslationUtils.ILTranslate(il, "Armor Pen: {0}", "Пробивание брони: {0}");
+            TranslationUtils.ILTranslate(il, "Max Speed: {0} mph", "Максимальная скорость: {0} км/ч");
+            TranslationUtils.ILTranslate(il, "Wing Time: {0} seconds", "Время полёта: {0} сек");
         }
     }
 
@@ -1344,16 +1344,16 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationThoriumStatsHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Symphonic Damage: {0}%", TranslationUtils.EncodeToUtf16("Симфонический урон: {0}%"));
-            TranslationUtils.ILTranslate(il, "Symphonic Speed: {0}%", TranslationUtils.EncodeToUtf16("Симфоническая скорость атаки: {0}%"));
-            TranslationUtils.ILTranslate(il, "Symphonic Crit: {0}%", TranslationUtils.EncodeToUtf16("Симфонический шанс критического удара: {0}%"));
-            TranslationUtils.ILTranslate(il, "Inspiration Regen: {0}%", TranslationUtils.EncodeToUtf16("Регенарация вдохновения: {0}%"));
-            TranslationUtils.ILTranslate(il, "Empowerment Duration: {0} seconds", TranslationUtils.EncodeToUtf16("Длительность усиления: {0} сек"));
-            TranslationUtils.ILTranslate(il, "Radiant Damage: {0}%", TranslationUtils.EncodeToUtf16("Лучезарный урон: {0}%"));
-            TranslationUtils.ILTranslate(il, "Radiant Speed: {0}%", TranslationUtils.EncodeToUtf16("Лучезарная скорость атаки: {0}%"));
-            TranslationUtils.ILTranslate(il, "Healing Speed: {0}%", TranslationUtils.EncodeToUtf16("Скорость лечения: {0}%"));
-            TranslationUtils.ILTranslate(il, "Radiant Crit: {0}%", TranslationUtils.EncodeToUtf16("Лучезарный шанс критического удара: {0}%"));
-            TranslationUtils.ILTranslate(il, "Bonus Healing: {0}", TranslationUtils.EncodeToUtf16("Бонусное лечение: {0}"));
+            TranslationUtils.ILTranslate(il, "Symphonic Damage: {0}%", "Симфонический урон: {0}%");
+            TranslationUtils.ILTranslate(il, "Symphonic Speed: {0}%", "Симфоническая скорость атаки: {0}%");
+            TranslationUtils.ILTranslate(il, "Symphonic Crit: {0}%", "Симфонический шанс критического удара: {0}%");
+            TranslationUtils.ILTranslate(il, "Inspiration Regen: {0}%", "Регенарация вдохновения: {0}%");
+            TranslationUtils.ILTranslate(il, "Empowerment Duration: {0} seconds", "Длительность усиления: {0} сек");
+            TranslationUtils.ILTranslate(il, "Radiant Damage: {0}%", "Лучезарный урон: {0}%");
+            TranslationUtils.ILTranslate(il, "Radiant Speed: {0}%", "Лучезарная скорость атаки: {0}%");
+            TranslationUtils.ILTranslate(il, "Healing Speed: {0}%", "Скорость лечения: {0}%");
+            TranslationUtils.ILTranslate(il, "Radiant Crit: {0}%", "Лучезарный шанс критического удара: {0}%");
+            TranslationUtils.ILTranslate(il, "Bonus Healing: {0}", "Бонусное лечение: {0}");
         }
     }
 
@@ -1373,12 +1373,12 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             Abominationn.OnChatButtonClicked -= TranslationOnChatButtonClickedHook;
         }
 
-        private void TranslationSetChatButtonsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Cancel Event", TranslationUtils.EncodeToUtf16("Остановить событие"));
+        private void TranslationSetChatButtonsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Cancel Event", "Остановить событие");
 
         private void TranslationOnChatButtonClickedHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "The event has been cancelled!", TranslationUtils.EncodeToUtf16("Событие было остановлено!"));
-            TranslationUtils.ILTranslate(il, "Hocus pocus, the event is over.", TranslationUtils.EncodeToUtf16("Фокус-покус, событие кончилось."));
+            TranslationUtils.ILTranslate(il, "The event has been cancelled!", "Событие было остановлено!");
+            TranslationUtils.ILTranslate(il, "Hocus pocus, the event is over.", "Фокус-покус, событие кончилось.");
         }
     }
 
@@ -1392,8 +1392,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationSetChatButtonsHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Help", TranslationUtils.EncodeToUtf16("Помощь"));
-            TranslationUtils.ILTranslate(il, "Receive Gift", TranslationUtils.EncodeToUtf16("Получить подарок"));
+            TranslationUtils.ILTranslate(il, "Help", "Помощь");
+            TranslationUtils.ILTranslate(il, "Receive Gift", "Получить подарок");
         }
     }
 
@@ -1420,16 +1420,16 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             SwarmHook -= TranslationSwarmHook;
         }
 
-        private void TranslationCheckDeadHook(ILContext il) => TranslationUtils.ILTranslate(il, "Betsy has been defeated!", TranslationUtils.EncodeToUtf16("Бетси была побеждена!"));
+        private void TranslationCheckDeadHook(ILContext il) => TranslationUtils.ILTranslate(il, "Betsy has been defeated!", "Бетси была побеждена!");
 
         private void TranslationSwarmHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Killed: ", TranslationUtils.EncodeToUtf16("Убито: "));
-            TranslationUtils.ILTranslate(il, "Killed: ", TranslationUtils.EncodeToUtf16("Убито: "), 2);
-            TranslationUtils.ILTranslate(il, "Total: ", TranslationUtils.EncodeToUtf16("Всего: "));
-            TranslationUtils.ILTranslate(il, "Total: ", TranslationUtils.EncodeToUtf16("Всего: "), 2);
-            TranslationUtils.ILTranslate(il, "The swarm has been defeated!", TranslationUtils.EncodeToUtf16("Орда была побеждена!"));
-            TranslationUtils.ILTranslate(il, "The swarm has been defeated!", TranslationUtils.EncodeToUtf16("Орда была побеждена!"), 2);
+            TranslationUtils.ILTranslate(il, "Killed: ", "Убито: ");
+            TranslationUtils.ILTranslate(il, "Killed: ", "Убито: ", 2);
+            TranslationUtils.ILTranslate(il, "Total: ", "Всего: ");
+            TranslationUtils.ILTranslate(il, "Total: ", "Всего: ", 2);
+            TranslationUtils.ILTranslate(il, "The swarm has been defeated!", "Орда была побеждена!");
+            TranslationUtils.ILTranslate(il, "The swarm has been defeated!", "Орда была побеждена!", 2);
         }
     }
 
@@ -1451,15 +1451,15 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationPostSetupContentHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Defeat any rare enemy or... embrace eternity", TranslationUtils.EncodeToUtf16("Одолейте любого редкого врага или... примите вечность"));
-            TranslationUtils.ILTranslate(il, "Defeat any boss or miniboss", TranslationUtils.EncodeToUtf16("Одолейте любого босса или мини-босса"));
-            TranslationUtils.ILTranslate(il, "Chop down enough trees", TranslationUtils.EncodeToUtf16("Срубите достаточно деревьев"));
-            TranslationUtils.ILTranslate(il, "Clear any event", TranslationUtils.EncodeToUtf16("Пройдите любое событие"));
-            TranslationUtils.ILTranslate(il, "Have a Top Hat Squirrel ([i:{0}]) in your inventory", TranslationUtils.EncodeToUtf16("Положите в инвентарь белку в цилиндре ([i:{0}])"));
+            TranslationUtils.ILTranslate(il, "Defeat any rare enemy or... embrace eternity", "Одолейте любого редкого врага или... примите вечность");
+            TranslationUtils.ILTranslate(il, "Defeat any boss or miniboss", "Одолейте любого босса или мини-босса");
+            TranslationUtils.ILTranslate(il, "Chop down enough trees", "Срубите достаточно деревьев");
+            TranslationUtils.ILTranslate(il, "Clear any event", "Пройдите любое событие");
+            TranslationUtils.ILTranslate(il, "Have a Top Hat Squirrel ([i:{0}]) in your inventory", "Положите в инвентарь белку в цилиндре ([i:{0}])");
         }
 
         private void TranslationHandlePacketHook(ILContext il) => TranslationUtils.ILTranslate(il,
-            "The event has been cancelled!", TranslationUtils.EncodeToUtf16("Событие было остановлено!"));
+            "The event has been cancelled!", "Событие было остановлено!");
     }
 
     public class LumberJackIL : ILEdit
@@ -1470,7 +1470,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => LumberJack.SetChatButtons -= TranslationSetChatButtonsHook;
 
-        private void TranslationSetChatButtonsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Tree Treasures", TranslationUtils.EncodeToUtf16("Древесные сокровища"));
+        private void TranslationSetChatButtonsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Tree Treasures", "Древесные сокровища");
     }
 
     public class MutantIL : ILEdit
@@ -1483,10 +1483,10 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationSetChatButtonsHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Pre Hardmode", TranslationUtils.EncodeToUtf16("Прехардмод"));
-            TranslationUtils.ILTranslate(il, "Hardmode", TranslationUtils.EncodeToUtf16("Хардмод"));
-            TranslationUtils.ILTranslate(il, "Post Moon Lord", TranslationUtils.EncodeToUtf16("Пост-Лунный лорд"));
-            TranslationUtils.ILTranslate(il, "Cycle Shop", TranslationUtils.EncodeToUtf16("Переключить магазин"));
+            TranslationUtils.ILTranslate(il, "Pre Hardmode", "Прехардмод");
+            TranslationUtils.ILTranslate(il, "Hardmode", "Хардмод");
+            TranslationUtils.ILTranslate(il, "Post Moon Lord", "Пост-Лунный лорд");
+            TranslationUtils.ILTranslate(il, "Cycle Shop", "Переключить магазин");
         }
     }
 
@@ -1498,7 +1498,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadBee.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "A deafening buzz pierces through you!", TranslationUtils.EncodeToUtf16("Оглушающее жжужание пронзает ваши уши!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "A deafening buzz pierces through you!", "Оглушающее жжужание пронзает ваши уши!");
     }
 
     public class OverloadBetsyIL : ILEdit
@@ -1509,7 +1509,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadBetsy.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The real Old One's Army is attacking!", TranslationUtils.EncodeToUtf16("Истинная армия Древних атакует!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The real Old One's Army is attacking!", "Истинная армия Древних атакует!");
     }
 
     public class OverloadBrainIL : ILEdit
@@ -1520,7 +1520,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadBrain.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "You feel dumb among so many brains!", TranslationUtils.EncodeToUtf16("Количество мозгов вокруг заставляет вас чуствовать себя тупым!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "You feel dumb among so many brains!", "Количество мозгов вокруг заставляет вас чуствовать себя тупым!");
     }
 
     public class OverloadCultistIL : ILEdit
@@ -1531,7 +1531,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadCultist.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "Defeaning chants fill your ears!", TranslationUtils.EncodeToUtf16("Оглушающие песнопения переполняют ваш слух!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "Defeaning chants fill your ears!", "Оглушающие песнопения переполняют ваш слух!");
     }
 
     public class OverloadDestroyerIL : ILEdit
@@ -1542,7 +1542,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadDestroyer.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The planet trembles from the core!", TranslationUtils.EncodeToUtf16("Земля дрожит!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The planet trembles from the core!", "Земля дрожит!");
     }
 
     public class OverloadEyeIL : ILEdit
@@ -1553,7 +1553,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadEye.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "Countless eyes pierce the veil staring in your direction!", TranslationUtils.EncodeToUtf16("Вы ощущаете бесчисленные взгляды на себе!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "Countless eyes pierce the veil staring in your direction!", "Вы ощущаете бесчисленные взгляды на себе!");
     }
 
     public class OverloadFishIL : ILEdit
@@ -1564,7 +1564,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadFish.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The ocean swells with ferocious pigs!", TranslationUtils.EncodeToUtf16("Свирепые свиньи наполняют океан!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The ocean swells with ferocious pigs!", "Свирепые свиньи наполняют океан!");
     }
 
     public class OverloadGolemIL : ILEdit
@@ -1575,7 +1575,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadGolem.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ancient automatons come crashing down!", TranslationUtils.EncodeToUtf16("Древние конструкции обрушиваются на вас!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "Ancient automatons come crashing down!", "Древние конструкции обрушиваются на вас!");
     }
 
     public class OverloadMoonIL : ILEdit
@@ -1586,7 +1586,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadMoon.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The wind whispers of death's approach!", TranslationUtils.EncodeToUtf16("Ветер шепчет о приближающейся смерти!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The wind whispers of death's approach!", "Ветер шепчет о приближающейся смерти!");
     }
 
     public class OverloadPlantIL : ILEdit
@@ -1597,7 +1597,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadPlant.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The jungle beats as one!", TranslationUtils.EncodeToUtf16("Джунгли бьются как одно целое!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The jungle beats as one!", "Джунгли бьются как одно целое!");
     }
 
     public class OverloadPrimeIL : ILEdit
@@ -1608,7 +1608,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadPrime.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "A sickly chill envelops the world!", TranslationUtils.EncodeToUtf16("Мерзкий холод окутывает мир!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "A sickly chill envelops the world!", "Мерзкий холод окутывает мир!");
     }
 
     public class OverloadSkeleIL : ILEdit
@@ -1619,7 +1619,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadSkele.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "A great clammering of bones rises from the dungeon!", TranslationUtils.EncodeToUtf16("Огромные груды костей восстают из темницы!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "A great clammering of bones rises from the dungeon!", "Огромные груды костей восстают из темницы!");
     }
 
     public class OverloadSlimeCrownIL : ILEdit
@@ -1630,7 +1630,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadSlimeCrown.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "Welcome to the true slime rain!", TranslationUtils.EncodeToUtf16("Добро пожаловать в истинный дождь слизней!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "Welcome to the true slime rain!", "Добро пожаловать в истинный дождь слизней!");
     }
 
     public class OverloadTwinsIL : ILEdit
@@ -1641,7 +1641,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadTwins.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "A legion of glowing iris sing a dreadful song!", TranslationUtils.EncodeToUtf16("Полчища светящихся глаз поют зловещую песню!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "A legion of glowing iris sing a dreadful song!", "Полчища светящихся глаз поют зловещую песню!");
     }
 
     public class OverloadWallIL : ILEdit
@@ -1652,7 +1652,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadWall.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "A fortress of flesh arises from the depths!", TranslationUtils.EncodeToUtf16("Крепость плоти возникает из глубин!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "A fortress of flesh arises from the depths!", "Крепость плоти возникает из глубин!");
     }
 
     public class OverloadWormIL : ILEdit
@@ -1663,6 +1663,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Unload() => OverloadWorm.ctor -= TranslationCtorHook;
 
-        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The ground shifts with formulated precision!", TranslationUtils.EncodeToUtf16("Земля под вашими ногами раздвигается с удивительной точностью!"));
+        private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The ground shifts with formulated precision!", "Земля под вашими ногами раздвигается с удивительной точностью!");
     }
 }

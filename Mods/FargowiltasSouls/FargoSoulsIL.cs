@@ -35,24 +35,24 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         private void TranslationOnEnterWorldHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Fargo's Music Mod not found!", TranslationUtils.EncodeToUtf16("Fargo's Music Mod не найден"));
-            TranslationUtils.ILTranslate(il, "Please install Fargo's Music Mod for the full experience!!", TranslationUtils.EncodeToUtf16("Пожалуйста, установите Fargo's Music Mod для полноценного опыта!"));
+            TranslationUtils.ILTranslate(il, "Fargo's Music Mod not found!", "Fargo's Music Mod не найден");
+            TranslationUtils.ILTranslate(il, "Please install Fargo's Music Mod for the full experience!!", "Пожалуйста, установите Fargo's Music Mod для полноценного опыта!");
         }
 
-        private void TranslationPreUpdateHook(ILContext il) => TranslationUtils.ILTranslate(il, " was pricked by a Cactus.", TranslationUtils.EncodeToUtf16(" был проколот кактусом."));
+        private void TranslationPreUpdateHook(ILContext il) => TranslationUtils.ILTranslate(il, " was pricked by a Cactus.", " был проколот кактусом.");
 
         private void TranslationPreKill(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "You've been revived!", TranslationUtils.EncodeToUtf16("Вы возродились!"));
-            TranslationUtils.ILTranslate(il, "You've been revived!", TranslationUtils.EncodeToUtf16("Вы возродились!"), 2);
-            TranslationUtils.ILTranslate(il, "You've been revived!", TranslationUtils.EncodeToUtf16("Вы возродились!"), 3);
-            TranslationUtils.ILTranslate(il, " could not handle the infection.", TranslationUtils.EncodeToUtf16(" не справился с инфекцией."));
-            TranslationUtils.ILTranslate(il, " rotted away.", TranslationUtils.EncodeToUtf16(" сгнил."));
-            TranslationUtils.ILTranslate(il, " was annihilated by divine wrath.", TranslationUtils.EncodeToUtf16(" был истреблён божественным гневом."));
-            TranslationUtils.ILTranslate(il, " was reaped by the cold hand of death.", TranslationUtils.EncodeToUtf16(" был сожжён холодной рукой смерти."));
+            TranslationUtils.ILTranslate(il, "You've been revived!", "Вы возродились!");
+            TranslationUtils.ILTranslate(il, "You've been revived!", "Вы возродились!", 2);
+            TranslationUtils.ILTranslate(il, "You've been revived!", "Вы возродились!", 3);
+            TranslationUtils.ILTranslate(il, " could not handle the infection.", " не справился с инфекцией.");
+            TranslationUtils.ILTranslate(il, " rotted away.", " сгнил.");
+            TranslationUtils.ILTranslate(il, " was annihilated by divine wrath.", " был истреблён божественным гневом.");
+            TranslationUtils.ILTranslate(il, " was reaped by the cold hand of death.", " был сожжён холодной рукой смерти.");
         }
 
-        private void TranslationCatchFishHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX has awoken!", TranslationUtils.EncodeToUtf16("Герцог Рыброн ЕХ пробудился!"));
+        private void TranslationCatchFishHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX has awoken!", "Герцог Рыброн ЕХ пробудился!");
     }
 
     public class FargowiltasIL : ILEdit
@@ -63,26 +63,26 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         public override void Unload() => IL.FargowiltasSouls.Fargowiltas.HandlePacket -= TranslationFargowiltasHook;
 
-        private void TranslationFargowiltasHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX has awoken!", TranslationUtils.EncodeToUtf16("Герцог Рыброн ЕХ пробудился!"));
+        private void TranslationFargowiltasHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX has awoken!", "Герцог Рыброн ЕХ пробудился!");
     }
 
      public class BossChecklistCompatibilityIL : ILEdit
      {
-         private event ILContext.Manipulator InitializeBossesHook
-         {
-             add => HookEndpointManager.Modify(ModsCall.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeBosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
+        private event ILContext.Manipulator InitializeBossesHook
+        {
+            add => HookEndpointManager.Modify(ModsCall.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeBosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
 
-             remove => HookEndpointManager.Unmodify(ModsCall.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeBosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
-         }
+            remove => HookEndpointManager.Unmodify(ModsCall.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeBosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
+        }
 
-         private event ILContext.Manipulator InitializeMinibossesHook
-         {
-             add => HookEndpointManager.Modify(ModsCall.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeMinibosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
+        private event ILContext.Manipulator InitializeMinibossesHook
+        {
+            add => HookEndpointManager.Modify(ModsCall.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeMinibosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
 
-             remove => HookEndpointManager.Unmodify(ModsCall.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeMinibosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
-         }
+            remove => HookEndpointManager.Unmodify(ModsCall.FargoSouls.Code.GetType("FargowiltasSouls.ModCompatibilities.BossChecklistCompatibility").GetMethod("InitializeMinibosses", BindingFlags.NonPublic | BindingFlags.Instance), value);
+        }
 
-         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load()
         {
@@ -96,49 +96,49 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
             InitializeMinibossesHook -= TranslationInitializeMinibossesHook;
         }
 
-         private void TranslationInitializeBossesHook(ILContext il)
-         {
-             TranslationUtils.ILTranslate(il, "Deviantt", TranslationUtils.EncodeToUtf16("Девиантт"));
-             TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}].", TranslationUtils.EncodeToUtf16("Используйте [i:{0}]."));
-             TranslationUtils.ILTranslate(il, "Deviantt is satisfied with its show of love.", TranslationUtils.EncodeToUtf16("Девиантт доволен своим проявлением любви."));
-             TranslationUtils.ILTranslate(il, "Abominationn", TranslationUtils.EncodeToUtf16("Мерзостть"));
-             TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}].", TranslationUtils.EncodeToUtf16("Используйте [i:{0}]."), 2);
-             TranslationUtils.ILTranslate(il, "Abominationn has destroyed everyone.", TranslationUtils.EncodeToUtf16("Мерзостть уничтожил всех."));
-             TranslationUtils.ILTranslate(il, "Mutant", TranslationUtils.EncodeToUtf16("Мутант"));
-             TranslationUtils.ILTranslate(il, "Throw [i:{0}] into a pool of lava while Abominationn is alivem in Mutant's presence.", TranslationUtils.EncodeToUtf16("Бросьте [i:{0}] в лаву, пока Мерзостть жив и в присутствие Мутанта."));
-             TranslationUtils.ILTranslate(il, "Mutant has eviscerated everyone under its hands.", TranslationUtils.EncodeToUtf16("Мутант выпотрошил всех своими руки."));
-         }
+        private void TranslationInitializeBossesHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Deviantt", "Девиантт");
+            TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}].", "Используйте [i:{0}].");
+            TranslationUtils.ILTranslate(il, "Deviantt is satisfied with its show of love.", "Девиантт доволен своим проявлением любви.");
+            TranslationUtils.ILTranslate(il, "Abominationn", "Мерзостть");
+            TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}].", "Используйте [i:{0}].", 2);
+            TranslationUtils.ILTranslate(il, "Abominationn has destroyed everyone.", "Мерзостть уничтожил всех.");
+            TranslationUtils.ILTranslate(il, "Mutant", "Мутант");
+            TranslationUtils.ILTranslate(il, "Throw [i:{0}] into a pool of lava while Abominationn is alivem in Mutant's presence.", "Бросьте [i:{0}] в лаву, пока Мерзостть жив и в присутствие Мутанта.");
+            TranslationUtils.ILTranslate(il, "Mutant has eviscerated everyone under its hands.", "Мутант выпотрошил всех своими руки.");
+        }
 
-         private void TranslationInitializeMinibossesHook(ILContext il)
-         {
-             TranslationUtils.ILTranslate(il, "Champion of Timber", TranslationUtils.EncodeToUtf16("Чемпион леса"));
-             TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] on the surface during the day.", TranslationUtils.EncodeToUtf16("Используйте [i:{0}] днём на поверхности."));
-             TranslationUtils.ILTranslate(il, "Champion of Timber returns to its squirrel clan...", TranslationUtils.EncodeToUtf16("Чемпион леса возвращается в свой белчий клан..."));
-             TranslationUtils.ILTranslate(il, "Champion of Terra", TranslationUtils.EncodeToUtf16("Чемпион земли"));
-             TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] underground.", TranslationUtils.EncodeToUtf16("Используйте [i:{0}] под землёй."));
-             TranslationUtils.ILTranslate(il, "Champion of Terra vanishes into the caverns...", TranslationUtils.EncodeToUtf16("Чемпион земли исчезает в пещерах..."));
-             TranslationUtils.ILTranslate(il, "Champion of Earth", TranslationUtils.EncodeToUtf16("Чемпион планеты"));
-             TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] in the underworld.", TranslationUtils.EncodeToUtf16("Используйте [i:{0}] в аду."));
-             TranslationUtils.ILTranslate(il, "Champion of Earth disappears beneath the magma...", TranslationUtils.EncodeToUtf16("Чемпион планеты исчезает под магмой..."));
-             TranslationUtils.ILTranslate(il, "Champion of Nature", TranslationUtils.EncodeToUtf16("Чемпион природы"));
-             TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] in underground snow.", TranslationUtils.EncodeToUtf16("Используйте [i:{0}] подземных снегах."));
-             TranslationUtils.ILTranslate(il, "Champion of Nature returns to its slumber", TranslationUtils.EncodeToUtf16("Чемпион природы возвращается в свой сон."));
-             TranslationUtils.ILTranslate(il, "Champion of Life", TranslationUtils.EncodeToUtf16("Чемпион жизни"));
-             TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] in the Hallow at day.", TranslationUtils.EncodeToUtf16("Используйте [i:{0}] днём в святых землях."));
-             TranslationUtils.ILTranslate(il, "Champion of Life fades away...", TranslationUtils.EncodeToUtf16("Чемпион жизни исчезает..."));
-             TranslationUtils.ILTranslate(il, "Champion of Shadow", TranslationUtils.EncodeToUtf16("Чемпион тени"));
-             TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] in the Corruption or Crimson at night.", TranslationUtils.EncodeToUtf16("Используйте [i:{0}] ночью в искажении или багрянце."));
-             TranslationUtils.ILTranslate(il, "Champion of Shadow fades away...", TranslationUtils.EncodeToUtf16("Чемпион тени исчезает..."));
-             TranslationUtils.ILTranslate(il, "Champion of Spirit", TranslationUtils.EncodeToUtf16("Чемпион духа"));
-             TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] in the underground desert.", TranslationUtils.EncodeToUtf16("Используйте [i:{0}] в подземной пустыне."));
-             TranslationUtils.ILTranslate(il, "Champion of Spirit vanishes into the desert...", TranslationUtils.EncodeToUtf16("Чемпион духа исчезает в пустыне..."));
-             TranslationUtils.ILTranslate(il, "Champion of Will", TranslationUtils.EncodeToUtf16("Чемпион воли"));
-             TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] at the ocean.", TranslationUtils.EncodeToUtf16("Используйте [i:{0}] в океане."));
-             TranslationUtils.ILTranslate(il, "Champion of Will returns to the depths...", TranslationUtils.EncodeToUtf16("Чемпион воли возвращается в глубины..."));
-             TranslationUtils.ILTranslate(il, "Eridanus, Champion of Cosmos", TranslationUtils.EncodeToUtf16("Эридан, чемпион космоса"));
-             TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] in space.", TranslationUtils.EncodeToUtf16("Используйте [i:{0}] в космосе."));
-             TranslationUtils.ILTranslate(il, "Eridanus, Champion of Cosmos returns to the stars...", TranslationUtils.EncodeToUtf16("Эридан, чемпион космоса возвращается к звёздам..."));
-         }
+        private void TranslationInitializeMinibossesHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Champion of Timber", "Чемпион леса");
+            TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] on the surface during the day.", "Используйте [i:{0}] днём на поверхности.");
+            TranslationUtils.ILTranslate(il, "Champion of Timber returns to its squirrel clan...", "Чемпион леса возвращается в свой белчий клан...");
+            TranslationUtils.ILTranslate(il, "Champion of Terra", "Чемпион земли");
+            TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] underground.", "Используйте [i:{0}] под землёй.");
+            TranslationUtils.ILTranslate(il, "Champion of Terra vanishes into the caverns...", "Чемпион земли исчезает в пещерах...");
+            TranslationUtils.ILTranslate(il, "Champion of Earth", "Чемпион планеты");
+            TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] in the underworld.", "Используйте [i:{0}] в аду.");
+            TranslationUtils.ILTranslate(il, "Champion of Earth disappears beneath the magma...", "Чемпион планеты исчезает под магмой...");
+            TranslationUtils.ILTranslate(il, "Champion of Nature", "Чемпион природы");
+            TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] in underground snow.", "Используйте [i:{0}] подземных снегах.");
+            TranslationUtils.ILTranslate(il, "Champion of Nature returns to its slumber", "Чемпион природы возвращается в свой сон.");
+            TranslationUtils.ILTranslate(il, "Champion of Life", "Чемпион жизни");
+            TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] in the Hallow at day.", "Используйте [i:{0}] днём в святых землях.");
+            TranslationUtils.ILTranslate(il, "Champion of Life fades away...", "Чемпион жизни исчезает...");
+            TranslationUtils.ILTranslate(il, "Champion of Shadow", "Чемпион тени");
+            TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] in the Corruption or Crimson at night.", "Используйте [i:{0}] ночью в искажении или багрянце.");
+            TranslationUtils.ILTranslate(il, "Champion of Shadow fades away...", "Чемпион тени исчезает...");
+            TranslationUtils.ILTranslate(il, "Champion of Spirit", "Чемпион духа");
+            TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] in the underground desert.", "Используйте [i:{0}] в подземной пустыне.");
+            TranslationUtils.ILTranslate(il, "Champion of Spirit vanishes into the desert...", "Чемпион духа исчезает в пустыне...");
+            TranslationUtils.ILTranslate(il, "Champion of Will", "Чемпион воли");
+            TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] at the ocean.", "Используйте [i:{0}] в океане.");
+            TranslationUtils.ILTranslate(il, "Champion of Will returns to the depths...", "Чемпион воли возвращается в глубины...");
+            TranslationUtils.ILTranslate(il, "Eridanus, Champion of Cosmos", "Эридан, чемпион космоса");
+            TranslationUtils.ILTranslate(il, "Spawn by using [i:{0}] in space.", "Используйте [i:{0}] в космосе.");
+            TranslationUtils.ILTranslate(il, "Eridanus, Champion of Cosmos returns to the stars...", "Эридан, чемпион космоса возвращается к звёздам...");
+        }
      }
 
     public class EModeGlobalNPCIL : ILEdit
@@ -169,56 +169,56 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
          private void TranslationKingSlimeAIHook(ILContext il)
          {
-             TranslationUtils.ILTranslate(il, "King Slime has enraged!", TranslationUtils.EncodeToUtf16("Король слизней в ярости!"));
-             TranslationUtils.ILTranslate(il, "King Slime has enraged!", TranslationUtils.EncodeToUtf16("Король слизней в ярости!"), 2);
+             TranslationUtils.ILTranslate(il, "King Slime has enraged!", "Король слизней в ярости!");
+             TranslationUtils.ILTranslate(il, "King Slime has enraged!", "Король слизней в ярости!", 2);
          }
 
          private void TranslationQueenBeeAIHook(ILContext il)
          {
-             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", TranslationUtils.EncodeToUtf16("Королевская особа пробудилась!"));
-             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", TranslationUtils.EncodeToUtf16("Королевская особа пробудилась!"), 2);
-             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", TranslationUtils.EncodeToUtf16("Королевская особа пробудилась!"), 3);
-             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", TranslationUtils.EncodeToUtf16("Королевская особа пробудилась!"), 4);
+             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", "Королевская особа пробудилась!");
+             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", "Королевская особа пробудилась!", 2);
+             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", "Королевская особа пробудилась!", 3);
+             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", "Королевская особа пробудилась!", 4);
          }
 
-         private void TranslationSetDefaultsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX", TranslationUtils.EncodeToUtf16("Герцог Рыброн ЕХ"));
+         private void TranslationSetDefaultsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX", "Герцог Рыброн ЕХ");
 
          private void TranslationPreAIHook(ILContext il)
          {
-             TranslationUtils.ILTranslate(il, " sucked dry.", TranslationUtils.EncodeToUtf16(" выдохся."));
-             TranslationUtils.ILTranslate(il, "A Clown has begun ticking!", TranslationUtils.EncodeToUtf16("Клоун начал тикать!"));
-             TranslationUtils.ILTranslate(il, "A Clown has begun ticking!", TranslationUtils.EncodeToUtf16("Клоун начал тикать!"), 2);
-             TranslationUtils.ILTranslate(il, "A Clown has exploded!", TranslationUtils.EncodeToUtf16("Клоун взорвался!"));
-             TranslationUtils.ILTranslate(il, "A Clown has exploded!", TranslationUtils.EncodeToUtf16("Клоун взорвался!"), 2);
+             TranslationUtils.ILTranslate(il, " sucked dry.", " выдохся.");
+             TranslationUtils.ILTranslate(il, "A Clown has begun ticking!", "Клоун начал тикать!");
+             TranslationUtils.ILTranslate(il, "A Clown has begun ticking!", "Клоун начал тикать!", 2);
+             TranslationUtils.ILTranslate(il, "A Clown has exploded!", "Клоун взорвался!");
+             TranslationUtils.ILTranslate(il, "A Clown has exploded!", "Клоун взорвался!", 2);
          }
 
          private void TranslationOnHitPlayerHook(ILContext il)
          {
-             TranslationUtils.ILTranslate(il, " was eaten alive by a Man Eater.", TranslationUtils.EncodeToUtf16(" был съеден заживо людоедом."));
-             TranslationUtils.ILTranslate(il, " was eaten alive by an Angry Trapper.", TranslationUtils.EncodeToUtf16(" был съеден заживо злым ловцом."));
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"));
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 2);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 3);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 4);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 5);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 6);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 7);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 8);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 9);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 10);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 11);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", TranslationUtils.EncodeToUtf16("У вас украли предмет!"), 12);
+             TranslationUtils.ILTranslate(il, " was eaten alive by a Man Eater.", " был съеден заживо людоедом.");
+             TranslationUtils.ILTranslate(il, " was eaten alive by an Angry Trapper.", " был съеден заживо злым ловцом.");
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!");
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 2);
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 3);
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 4);
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 5);
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 6);
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 7);
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 8);
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 9);
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 10);
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 11);
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 12);
          }
 
          private void TranslationCheckDeadHook(ILContext il)
          {
-             TranslationUtils.ILTranslate(il, "Skeletron has entered Dungeon Guardian form!", TranslationUtils.EncodeToUtf16("Скелетрон принял форму стража темницы!"));
-             TranslationUtils.ILTranslate(il, "Skeletron has entered Dungeon Guardian form!", TranslationUtils.EncodeToUtf16("Скелетрон принял форму стража темницы!"), 2);
-             TranslationUtils.ILTranslate(il, "Duke Fishron EX has been defeated!", TranslationUtils.EncodeToUtf16("Герцог Рыброн ЕХ был побеждён!"));
-             TranslationUtils.ILTranslate(il, "Duke Fishron EX has been defeated!", TranslationUtils.EncodeToUtf16("Герцог Рыброн ЕХ был побеждён!"), 2);
+             TranslationUtils.ILTranslate(il, "Skeletron has entered Dungeon Guardian form!", "Скелетрон принял форму стража темницы!");
+             TranslationUtils.ILTranslate(il, "Skeletron has entered Dungeon Guardian form!", "Скелетрон принял форму стража темницы!", 2);
+             TranslationUtils.ILTranslate(il, "Duke Fishron EX has been defeated!", "Герцог Рыброн ЕХ был побеждён!");
+             TranslationUtils.ILTranslate(il, "Duke Fishron EX has been defeated!", "Герцог Рыброн ЕХ был побеждён!", 2);
          }
 
-         private void TranslationModifyHitByItemHook(ILContext il) => TranslationUtils.ILTranslate(il, " was impaled by a Giant Tortoise.", TranslationUtils.EncodeToUtf16(" был пронзён гигантской черепахой."));
+         private void TranslationModifyHitByItemHook(ILContext il) => TranslationUtils.ILTranslate(il, " was impaled by a Giant Tortoise.", " был пронзён гигантской черепахой.");
      }
 
     public class MutantsFuryIL : ILEdit
@@ -231,8 +231,8 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         private void TranslationMutantsFuryHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Mutant is angered!", TranslationUtils.EncodeToUtf16("Мутант в ярости!"));
-            TranslationUtils.ILTranslate(il, "Mutant is calm.", TranslationUtils.EncodeToUtf16("Мутант спокоен."));
+            TranslationUtils.ILTranslate(il, "Mutant is angered!", "Мутант в ярости!");
+            TranslationUtils.ILTranslate(il, "Mutant is calm.", "Мутант спокоен.");
         }
     }
 
@@ -244,7 +244,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         public override void Unload() => AbominationnVoodooDoll.Update -= TranslationAbominationnVoodooDollHook;
 
-        private void TranslationAbominationnVoodooDollHook(ILContext il) => TranslationUtils.ILTranslate(il, "Mutant has been enraged by the death of his brother!", TranslationUtils.EncodeToUtf16("Мутант в ярости от гибели брата!"));
+        private void TranslationAbominationnVoodooDollHook(ILContext il) => TranslationUtils.ILTranslate(il, "Mutant has been enraged by the death of his brother!", "Мутант в ярости от гибели брата!");
     }
 
     public class AbomsCurseIL : ILEdit
@@ -255,7 +255,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         public override void Unload() => AbomsCurse.UseItem -= TranslationAbomsCurseHook;
 
-        private void TranslationAbomsCurseHook(ILContext il) => TranslationUtils.ILTranslate(il, "Abominationn has awoken!", TranslationUtils.EncodeToUtf16("Мерзостть пробудился!"));
+        private void TranslationAbomsCurseHook(ILContext il) => TranslationUtils.ILTranslate(il, "Abominationn has awoken!", "Мерзостть пробудился!");
     }
 
     public class DevisCurseIL : ILEdit
@@ -268,8 +268,8 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         private void TranslationDevisCurseHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Deviantt has awoken!", TranslationUtils.EncodeToUtf16("Девиантт пробудился!"));
-            TranslationUtils.ILTranslate(il, "Deviantt has awoken!", TranslationUtils.EncodeToUtf16("Девиантт пробудился!"), 2);
+            TranslationUtils.ILTranslate(il, "Deviantt has awoken!", "Девиантт пробудился!");
+            TranslationUtils.ILTranslate(il, "Deviantt has awoken!", "Девиантт пробудился!", 2);
         }
     }
 
@@ -283,8 +283,8 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         private void TranslationMutantsCurseHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Mutant has awoken!", TranslationUtils.EncodeToUtf16("Мутант пробудился!"));
-            TranslationUtils.ILTranslate(il, "Mutant has awoken!", TranslationUtils.EncodeToUtf16("Мутант пробудился!"), 2);
+            TranslationUtils.ILTranslate(il, "Mutant has awoken!", "Мутант пробудился!");
+            TranslationUtils.ILTranslate(il, "Mutant has awoken!", "Мутант пробудился!", 2);
         }
     }
 
@@ -298,16 +298,16 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         private void TranslationSigilOfChampionsHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "A strong spirit stirs...", TranslationUtils.EncodeToUtf16("Сильный дух будоражит..."));
-            TranslationUtils.ILTranslate(il, "The core of the planet rumbles...", TranslationUtils.EncodeToUtf16("Ядро планеты урчит..."));
-            TranslationUtils.ILTranslate(il, "A verdant wind is blowing...", TranslationUtils.EncodeToUtf16("Дует зелёный ветер..."));
-            TranslationUtils.ILTranslate(il, "The stones tremble around you...", TranslationUtils.EncodeToUtf16("Камни дрожат вокруг вас..."));
-            TranslationUtils.ILTranslate(il, "The stars are aligning...", TranslationUtils.EncodeToUtf16("Звезды выравниваются..."));
-            TranslationUtils.ILTranslate(il, "Metallic groans echo from the depths...", TranslationUtils.EncodeToUtf16("Металлические стоны эхом разносятся из глубины..."));
-            TranslationUtils.ILTranslate(il, "A wave of warmth passes over you...", TranslationUtils.EncodeToUtf16("Волна тепла проходит по тебе..."));
-            TranslationUtils.ILTranslate(il, "The darkness of the night feels deeper...", TranslationUtils.EncodeToUtf16("Темнота ночи кажется глубже..."));
-            TranslationUtils.ILTranslate(il, "You are surrounded by the rustling of trees...", TranslationUtils.EncodeToUtf16("Вы окружены шорохом деревьев..."));
-            TranslationUtils.ILTranslate(il, "Nothing seems to answer the call...", TranslationUtils.EncodeToUtf16("Кажется, никто не отвечает на звонок..."));
+            TranslationUtils.ILTranslate(il, "A strong spirit stirs...", "Сильный дух будоражит...");
+            TranslationUtils.ILTranslate(il, "The core of the planet rumbles...", "Ядро планеты урчит...");
+            TranslationUtils.ILTranslate(il, "A verdant wind is blowing...", "Дует зелёный ветер...");
+            TranslationUtils.ILTranslate(il, "The stones tremble around you...", "Камни дрожат вокруг вас...");
+            TranslationUtils.ILTranslate(il, "The stars are aligning...", "Звезды выравниваются...");
+            TranslationUtils.ILTranslate(il, "Metallic groans echo from the depths...", "Металлические стоны эхом разносятся из глубины...");
+            TranslationUtils.ILTranslate(il, "A wave of warmth passes over you...", "Волна тепла проходит по тебе...");
+            TranslationUtils.ILTranslate(il, "The darkness of the night feels deeper...", "Темнота ночи кажется глубже...");
+            TranslationUtils.ILTranslate(il, "You are surrounded by the rustling of trees...", "Вы окружены шорохом деревьев...");
+            TranslationUtils.ILTranslate(il, "Nothing seems to answer the call...", "Кажется, никто не отвечает на звонок...");
         }
     }
 
@@ -321,8 +321,8 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         private void TranslationPiranhaPlantVoodooDollHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "The suffering continues.", TranslationUtils.EncodeToUtf16("Страдания продолжаются."));
-            TranslationUtils.ILTranslate(il, "The suffering wanes.", TranslationUtils.EncodeToUtf16("Страдания ослабевают."));
+            TranslationUtils.ILTranslate(il, "The suffering continues.", "Страдания продолжаются.");
+            TranslationUtils.ILTranslate(il, "The suffering wanes.", "Страдания ослабевают.");
         }
     }
 
@@ -334,7 +334,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         public override void Unload() => PatreonPlayer.OnEnterWorld -= TranslationPatreonPlayerHook;
 
-        private void TranslationPatreonPlayerHook(ILContext il) => TranslationUtils.ILTranslate(il, "Your special patreon effects are active ", TranslationUtils.EncodeToUtf16("Ваш особый эффект патреона - "));
+        private void TranslationPatreonPlayerHook(ILContext il) => TranslationUtils.ILTranslate(il, "Your special patreon effects are active ", "Ваш особый эффект патреона - ");
     }
 
     public class MutantSpawnIL : ILEdit
@@ -347,9 +347,9 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         private void TranslationMutantSpawnHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Mutant has awoken!", TranslationUtils.EncodeToUtf16("Мутант пробудился!"));
-            TranslationUtils.ILTranslate(il, "Mutant has awoken!", TranslationUtils.EncodeToUtf16("Мутант пробудился!"), 2);
-            TranslationUtils.ILTranslate(il, "You think you're safe?", TranslationUtils.EncodeToUtf16("Думаете, вы в безопасности?"));
+            TranslationUtils.ILTranslate(il, "Mutant has awoken!", "Мутант пробудился!");
+            TranslationUtils.ILTranslate(il, "Mutant has awoken!", "Мутант пробудился!", 2);
+            TranslationUtils.ILTranslate(il, "You think you're safe?", "Думаете, вы в безопасности?");
         }
     }
 
@@ -363,10 +363,10 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         private void TranslationUseItemHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Eternity Mode initiated!", TranslationUtils.EncodeToUtf16("Режим Вечности активирован!"));
-            TranslationUtils.ILTranslate(il, "Eternity Mode deactivated!", TranslationUtils.EncodeToUtf16("Режим Вечности деактивирован!"));
-            TranslationUtils.ILTranslate(il, "Deviantt has awoken!", TranslationUtils.EncodeToUtf16("Девиантт пробудился!"));
-            TranslationUtils.ILTranslate(il, "Deviantt has awoken!", TranslationUtils.EncodeToUtf16("Девиантт пробудился!"), 2);
+            TranslationUtils.ILTranslate(il, "Eternity Mode initiated!", "Режим Вечности активирован!");
+            TranslationUtils.ILTranslate(il, "Eternity Mode deactivated!", "Режим Вечности деактивирован!");
+            TranslationUtils.ILTranslate(il, "Deviantt has awoken!", "Девиантт пробудился!");
+            TranslationUtils.ILTranslate(il, "Deviantt has awoken!", "Девиантт пробудился!", 2);
         }
     }
 }
