@@ -11,13 +11,14 @@ namespace CalamityRuTranslate.Mods.CalamityMod
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Damage");
-            if (tooltip != null)
+            foreach (TooltipLine tooltip in tooltips.Where(tooltip => tooltip.Name == "Damage"))
             {
                 if (item.GetGlobalItem<CalamityGlobalItem>().rogue)
                 {
                     tooltip.text = tooltip.text.Replace("rogue урона", "ед. разбойного урона");
-                    tooltip.overrideColor = new Color(255, 184, 108);
+
+                    if (TRuConfig.Instance.ColoredDamageTypes)
+                        tooltip.overrideColor = new Color(255, 184, 108);
                 }
                 else if (item.melee)
                 {
