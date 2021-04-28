@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod
 {
-    public class ModifiedDamageTypes : CalamityCompatItem
+    public class ModifiedDamageTypes : CalamityAutoLoad
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {

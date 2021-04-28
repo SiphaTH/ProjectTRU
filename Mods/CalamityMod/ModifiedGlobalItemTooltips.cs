@@ -11,7 +11,7 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod
 {
-    public class FuckingItems : CalamityCompatItem
+    public class FuckingItems : CalamityAutoLoad
     {
         private static readonly List<ItemTooltipTranslation> ItemTooltipTranslations = new List<ItemTooltipTranslation>
         {

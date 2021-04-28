@@ -3,7 +3,7 @@ using CalamityRuTranslate.Common.Utilities;
 
 namespace CalamityRuTranslate.Mods.CalamityMod
 {
-    public class AnglerQuestTranslation : CalamityCompatItem
+    public class AnglerQuestTranslation : CalamityAutoLoad
     {
         public override void AnglerChat(int type, ref string chat, ref string catchLocation)
         {

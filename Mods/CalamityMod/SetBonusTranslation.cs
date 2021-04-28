@@ -9,7 +9,7 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod
 {
-    public class SetBonusTranslation : CalamityCompatItem
+    public class SetBonusTranslation : CalamityAutoLoad
     {
         private static readonly List<ArmorSetInfo> ArmorSets = new List<ArmorSetInfo>
         {
