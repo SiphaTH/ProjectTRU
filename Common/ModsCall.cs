@@ -17,16 +17,16 @@ namespace CalamityRuTranslate.Common
         internal static bool DeathMode => CalamityWorld.death;
         internal static bool DownedFlag => !CalamityWorld.downedSentinel1 || !CalamityWorld.downedSentinel2 || !CalamityWorld.downedSentinel3;
         internal static bool ProfanedCrystalBuffs => Main.player[Main.myPlayer].Calamity().profanedCrystalBuffs;
-        internal static string AegisHotKey => global::CalamityMod.CalamityMod.AegisHotKey.TooltipHotkeyString();
-        internal static string AstralArcanumUiHotkey => global::CalamityMod.CalamityMod.AstralArcanumUIHotkey.TooltipHotkeyString();
-        internal static string MomentumCapacitatorHotkey => global::CalamityMod.CalamityMod.MomentumCapacitatorHotkey.TooltipHotkeyString();
-        internal static string SandCloakHotkey => global::CalamityMod.CalamityMod.SandCloakHotkey.TooltipHotkeyString();
-        internal static string SpectralVeilHotKey => global::CalamityMod.CalamityMod.SpectralVeilHotKey.TooltipHotkeyString();
-        internal static string NormalityRelocatorHotKey => global::CalamityMod.CalamityMod.NormalityRelocatorHotKey.TooltipHotkeyString();
-        internal static string PlaguePackHotKey => global::CalamityMod.CalamityMod.PlaguePackHotKey.TooltipHotkeyString();
-        internal static string RageHotKey => global::CalamityMod.CalamityMod.RageHotKey.TooltipHotkeyString();
-        internal static string AdrenalineHotKey => global::CalamityMod.CalamityMod.AdrenalineHotKey.TooltipHotkeyString();
-        internal static string ArmorSetHotkey => global::CalamityMod.CalamityMod.TarraHotKey.TooltipHotkeyString();
+        internal static string AegisHotKey => CalamityMod.CalamityMod.AegisHotKey.TooltipHotkeyString();
+        internal static string AstralArcanumUiHotkey => CalamityMod.CalamityMod.AstralArcanumUIHotkey.TooltipHotkeyString();
+        internal static string MomentumCapacitatorHotkey => CalamityMod.CalamityMod.MomentumCapacitatorHotkey.TooltipHotkeyString();
+        internal static string SandCloakHotkey => CalamityMod.CalamityMod.SandCloakHotkey.TooltipHotkeyString();
+        internal static string SpectralVeilHotKey => CalamityMod.CalamityMod.SpectralVeilHotKey.TooltipHotkeyString();
+        internal static string NormalityRelocatorHotKey => CalamityMod.CalamityMod.NormalityRelocatorHotKey.TooltipHotkeyString();
+        internal static string PlaguePackHotKey => CalamityMod.CalamityMod.PlaguePackHotKey.TooltipHotkeyString();
+        internal static string RageHotKey => CalamityMod.CalamityMod.RageHotKey.TooltipHotkeyString();
+        internal static string AdrenalineHotKey => CalamityMod.CalamityMod.AdrenalineHotKey.TooltipHotkeyString();
+        internal static string ArmorSetHotkey => CalamityMod.CalamityMod.TarraHotKey.TooltipHotkeyString();
         internal static string EternityDiscoHex => CalamityMod.Items.Weapons.Magic.Eternity.DisoHex;
         internal static int AncientStorm => (int)(60f * Main.player[Main.myPlayer].manaCost);
     }
