@@ -7,14 +7,16 @@ namespace CalamityRuTranslate.Common.Utilities
 {
     public static class LangUtils
     {
-        internal static Dictionary<string, ModTranslation> Translations;
-        
-        internal static string GetTextValue(string mod, string key) => GetModTextValue($"{mod}.{key}");
+        private static Dictionary<string, ModTranslation> Translations;
 
-        private static string GetModTextValue(string key) => GetModTextValue(CalamityRuTranslate.Instance, key);
+        internal static string GetTextValue(string mod, string key) => GetModTextValue(CalamityRuTranslate.Instance, $"{mod}.{key}");
+
+        internal static string GetTextValue(string mod, string key, params object[] args) => GetModTextValue(CalamityRuTranslate.Instance, $"{mod}.{key}", args);
 
         private static string GetModTextValue(Mod mod, string key) => Language.GetTextValue($"Mods.{mod.Name}.{key}");
-        
+
+        private static string GetModTextValue(Mod mod, string key, params object[] args) => Language.GetTextValue($"Mods.{mod.Name}.{key}", args);
+
         public static string TranslationKey(string key) => Translations[$"Mods.CalamityRuTranslate.{key}"].GetTranslation(Language.ActiveCulture);
 
         public static void Load()

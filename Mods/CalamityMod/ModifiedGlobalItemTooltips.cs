@@ -13,149 +13,54 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 {
     public class FuckingItems : CalamityAutoLoad
     {
-        private static readonly List<ItemTooltipTranslation> ItemTooltipTranslations = new List<ItemTooltipTranslation>
+        public override void ModifyTooltips(Item item, List <TooltipLine> tooltips)
         {
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("AsgardianAegis"), "Tooltip5", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.AsgardianAegis.Tooltip5"), ModsCall.AegisHotKey)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("AstralArcanum"), "Tooltip6", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.AstralArcanum.Tooltip6"), ModsCall.AstralArcanumUiHotkey)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("CelestialJewel"), "Tooltip2", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.CelestialJewel.Tooltip2"), ModsCall.AstralArcanumUiHotkey)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("ElysianAegis"), "Tooltip5", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.ElysianAegis.Tooltip5"), ModsCall.AegisHotKey)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("MomentumCapacitor"), "Tooltip0", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.MomentumCapacitor.Tooltip0"), ModsCall.MomentumCapacitatorHotkey)),
-            
-            // new ItemTooltipTranslation(ModsCall.Calamity.ItemType("Nanotech"), "Tooltip7", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.RaidersTalismanOrNanotech"), tooltip.text.Split(' ')[3])),
-            
-            // new ItemTooltipTranslation(ModsCall.Calamity.ItemType("RaidersTalisman"), "Tooltip3", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.RaidersTalismanOrNanotech"), tooltip.text.Split(' ')[3])),
-            
-            // new ItemTooltipTranslation(ModsCall.Calamity.ItemType("ProfanedSoulCrystal"), "Tooltip1", LangUtils.GetTextValue("Calamity", "ItemTooltip.ProfanedSoulCrystal.Tooltip1")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("SandCloak"), "Tooltip1", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.SandCloak.Tooltip1"), ModsCall.SandCloakHotkey)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("SpectralVeil"), "Tooltip1", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.SpectralVeil.Tooltip1"), ModsCall.SpectralVeilHotKey)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("NormalityRelocator"), "Tooltip1", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.NormalityRelocator.Tooltip1"), ModsCall.NormalityRelocatorHotKey)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("Eternity"), "Tooltip1", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.Eternity.Tooltip1"), ModsCall.EternityDiscoHex)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("PlaguedFuelPack"), "Tooltip2", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.PlaguedFuelPack.Tooltip2"), ModsCall.PlaguePackHotKey)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("Revenge"), new[] {"Tooltip1", "Tooltip3"}, new []{string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.Revenge.Tooltip1"), ModsCall.RageHotKey), string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.Revenge.Tooltip3"), ModsCall.AdrenalineHotKey)}),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("CosmicWorm"), "Tooltip1", LangUtils.GetTextValue("Calamity", "ItemTooltip.CosmicWorm.Tooltip1")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("BlunderBooster"), "Tooltip2", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.BlunderBooster.Tooltip2"), ModsCall.PlaguePackHotKey)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("GrandGelatin"), "Tooltip1", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.GrandGelatin.Tooltip1"), Main.player[Main.myPlayer].autoJump ? 10 : 40)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("VitalJelly"), "Tooltip1", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.VitalJelly.Tooltip1"), Main.player[Main.myPlayer].autoJump ? 6 : 24)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("KnowledgeKingSlime"), "Tooltip2", Main.player[Main.myPlayer].autoJump
-                ? LangUtils.GetTextValue("Calamity", "ItemTooltip.KnowledgeKingSlime.Tooltip2.AutoJump")
-                : LangUtils.GetTextValue("Calamity", "ItemTooltip.KnowledgeKingSlime.Tooltip2")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("AbandonedSlimeStaff"), "Tooltip4", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.AbandonedSlimeStaff.Tooltip4"), Main.player[Main.myPlayer].autoJump ? 5 : 20)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("AeroStone"), "Tooltip1", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.AeroStone.Tooltip1"), Main.player[Main.myPlayer].autoJump ? 5 : 20)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("SunkenStew"), "Tooltip0", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.SunkenStew.Tooltip0"), Main.player[Main.myPlayer].pStone ? 37 : 50)),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("CelestialTracers"), "Tooltip10", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.CelestialTracers.Tooltip10") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("ElysianTracers"), "Tooltip9", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.ElysianWings.Tooltip5") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("ElysianWings"), "Tooltip5", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.ElysianWings.Tooltip5") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("SoulofCryogen"), "Tooltip8", LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.SoulofCryogen.Tooltip8") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("Popo"), "Tooltip1", LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.Popo.Tooltip1") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("AmbrosialAmpoule"), "Tooltip5", LangUtils.GetTextValue("Calamity", "DeathMode.Cold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.AmbrosialAmpoule.Tooltip5") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("AngelTreads"), "Tooltip5", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.AngelTreads.Tooltip5") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("BlazingCore"), "Tooltip5", LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.BlazingCore.Tooltip5") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("FrigidBulwark"), "Tooltip4", LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.FrigidBulwark.Tooltip4") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("FrostBarrier"), "Tooltip1", LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.FrostBarrier.Tooltip1") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("FrostFlare"), "Tooltip5", LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.FrostFlare.Tooltip5") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("InfinityBoots"), "Tooltip9", LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.InfinityBoots.Tooltip9") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("PermafrostsConcoction"), "Tooltip4", LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.PermafrostsConcoction.Tooltip4") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("Sponge"), "Tooltip12", LangUtils.GetTextValue("Calamity", "DeathMode.Cold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.Sponge.Tooltip12") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("TheAmalgam"), "Tooltip8", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.TheAmalgam.Tooltip8") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("TheCamper"), "Tooltip5", LangUtils.GetTextValue("Calamity", "DeathMode.Cold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.TheCamper.Tooltip5") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("VoidofExtinction"), "Tooltip4", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.VoidofExtinction.Tooltip4") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("YharimsInsignia"), "Tooltip6", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.YharimsInsignia.Tooltip6") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("AtaxiaHeadgear"), "Tooltip1", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.AtaxiaHeadgear.Tooltip1") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("AtaxiaHelm"), "Tooltip3", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.AtaxiaHelm.Tooltip3") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("AtaxiaHelmet"), "Tooltip2", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.AtaxiaHelmet.Tooltip2") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("AtaxiaHood"), "Tooltip2", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.AtaxiaHood.Tooltip2") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("AtaxiaMask"), "Tooltip1", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.AtaxiaMask.Tooltip1") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("AuricTeslaBodyArmor"), "Tooltip4", LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.AuricTeslaBodyArmor.Tooltip4") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("BloodflareHelm"), "Tooltip1", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.BloodflareHelm.Tooltip1") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("BloodflareHelmet"), "Tooltip1", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.BloodflareHelmet.Tooltip1") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("BloodflareHornedHelm"), "Tooltip1", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.BloodflareHornedHelm.Tooltip1") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("BloodflareHornedMask"), "Tooltip1", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.BloodflareHornedMask.Tooltip1") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("BloodflareMask"), "Tooltip1", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.BloodflareMask.Tooltip1") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("TarragonHelm"), "Tooltip4", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.TarragonHelm.Tooltip4") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("TarragonHelmet"), "Tooltip3", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.TarragonHelmet.Tooltip3") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("TarragonHornedHelm"), "Tooltip2", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.TarragonHornedHelm.Tooltip2") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("TarragonMask"), "Tooltip3", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.TarragonMask.Tooltip3") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("TarragonVisage"), "Tooltip3", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.TarragonVisage.Tooltip3") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("XerocMask"), "Tooltip2", LangUtils.GetTextValue("Calamity", "DeathMode.Heat") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.XerocMask.Tooltip2") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("ColdDivinity"), "Tooltip6", LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.ColdDivinity.Tooltip6") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("RampartofDeities"), "Tooltip9", LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold2") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "ItemTooltip.RampartofDeities.Tooltip9") : "")),
-            
-            new ItemTooltipTranslation(ModsCall.Calamity.ItemType("PurifiedJam"), "Tooltip0", string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.PurifiedJam.Tooltip0"), ModsCall.DeathMode ? 5 : 10)),
-        };
-        
-        public override void ModifyTooltips(Item item, List < TooltipLine > tooltips)
-        {
-            foreach (ItemTooltipTranslation itemInfo in ItemTooltipTranslations)
+            if (item.type == ModsCall.Calamity.ItemType("AsgardianAegis"))
             {
-                if (item.type == itemInfo.ItemType)
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip5");
+                if (tooltip != null)
                 {
-                    var tooltip = tooltips.Where(x => itemInfo.CheckTooltipName(x));
-                    itemInfo.TranslateTooltip(tooltip);
-                    return;
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.AsgardianAegis.Tooltip5", ModsCall.AegisHotKey);
                 }
             }
-
-            if (item.type == ModsCall.Calamity.ItemType("Nanotech"))
+            else if (item.type == ModsCall.Calamity.ItemType("AstralArcanum"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip6");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.AstralArcanum.Tooltip6", ModsCall.AstralArcanumUiHotkey);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("CelestialJewel"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip2");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.CelestialJewel.Tooltip2", ModsCall.AstralArcanumUiHotkey);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("ElysianAegis"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip5");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.ElysianAegis.Tooltip5", ModsCall.AegisHotKey);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("MomentumCapacitor"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip0");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.MomentumCapacitor.Tooltip0", ModsCall.MomentumCapacitatorHotkey);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("Nanotech"))
             {
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip7");
                 if (tooltip != null)
                 {
-                    tooltip.text = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.RaidersTalismanOrNanotech"), tooltip.text.Split(' ')[3]);
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.RaidersTalismanOrNanotech", tooltip.text.Split(' ')[3]);
                 }
             }
             else if (item.type == ModsCall.Calamity.ItemType("RaidersTalisman"))
@@ -163,7 +68,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip3");
                 if (tooltip != null)
                 {
-                    tooltip.text = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.RaidersTalismanOrNanotech"), tooltip.text.Split(' ')[3]);
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.RaidersTalismanOrNanotech", tooltip.text.Split(' ')[3]);
                 }
             }
             else if (item.type == ModsCall.Calamity.ItemType("ProfanedSoulCrystal"))
@@ -179,11 +84,131 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     TooltipLine tooltip5 = tooltips.FirstOrDefault(x => x.Name == "Tooltip5");
                     if (tooltip5 != null)
                     {
-                        tooltip5.text = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.ProfanedSoulCrystal.Tooltip5"), tooltip5.text.Split(' ')[9]);
+                        tooltip5.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.ProfanedSoulCrystal.Tooltip5", tooltip5.text.Split(' ')[9]);
                     }
                 }
             }
-
+            else if (item.type == ModsCall.Calamity.ItemType("SandCloak"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.SandCloak.Tooltip1", ModsCall.SandCloakHotkey);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("SpectralVeil"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.SpectralVeil.Tooltip1", ModsCall.SpectralVeilHotKey);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("NormalityRelocator"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.NormalityRelocator.Tooltip1", ModsCall.NormalityRelocatorHotKey);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("Eternity"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.Eternity.Tooltip1", ModsCall.EternityDiscoHex);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("PlaguedFuelPack"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip2");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.PlaguedFuelPack.Tooltip2", ModsCall.PlaguePackHotKey);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("Revenge"))
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    switch (tooltip.Name)
+                    {
+                        case "Tooltip1":
+                            tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.Revenge.Tooltip1", ModsCall.RageHotKey);
+                            break;
+                        case "Tooltip3":
+                            tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.Revenge.Tooltip3", ModsCall.AdrenalineHotKey);
+                            break;
+                    }
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("CosmicWorm"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
+                if (tooltip != null && ModsCall.DownedFlag)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.CosmicWorm.Tooltip1");
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("BlunderBooster"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip2");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.BlunderBooster.Tooltip2", ModsCall.PlaguePackHotKey);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("GrandGelatin"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.GrandGelatin.Tooltip1", Main.player[Main.myPlayer].autoJump ? 10 : 40);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("VitalJelly"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.VitalJelly.Tooltip1", Main.player[Main.myPlayer].autoJump ? 6 : 24);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("KnowledgeKingSlime"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip2");
+                if (tooltip != null)
+                {
+                    tooltip.text = Main.player[Main.myPlayer].autoJump
+                        ? LangUtils.GetTextValue("Calamity", "ItemTooltip.KnowledgeKingSlime.Tooltip2.AutoJump")
+                        : LangUtils.GetTextValue("Calamity", "ItemTooltip.KnowledgeKingSlime.Tooltip2");
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("AbandonedSlimeStaff"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip4");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.AbandonedSlimeStaff.Tooltip4", Main.player[Main.myPlayer].autoJump ? 5 : 20);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("AeroStone"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.AeroStone.Tooltip1", Main.player[Main.myPlayer].autoJump ? 5 : 20);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("SunkenStew"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip0");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.SunkenStew.Tooltip0", Main.player[Main.myPlayer].pStone ? 37 : 50);
+                }
+            }
             
             if (ModLoader.GetMod("Fargowiltas") != null)
             {
@@ -215,24 +240,33 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         }
     }
     
-    public class DeathModeItems : CalamityCompatItem
+    public class DeathModeItems : CalamityAutoLoad
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            // foreach (var translation in CalamityTranslationCatalog.DeathModeItem)
-            // {
-            //     TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == translation.Value.TooltipLineNumber);
-            //     
-            //     if (item.type == ModsCall.Calamity.ItemType(translation.Key) && tooltip != null)
-            //     {
-            //         tooltip.text = LangUtils.GetTextValue("Calamity", translation.Value.NormalTextKey) + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", translation.Value.DeathModeTextKey) : "");
-            //         return;
-            //     }
-            // }
+            foreach (var translation in CalamityCatalog.DeathModeItem)
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == translation.Value.TooltipLineNumber);
+                
+                if (item.type == ModsCall.Calamity.ItemType(translation.Key) && tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", translation.Value.NormalTextKey) + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", translation.Value.DeathModeTextKey) : "");
+                    return;
+                }
+            }
+            
+            if (item.type == ModsCall.Calamity.ItemType("PurifiedJam"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip0");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.PurifiedJam.Tooltip0", ModsCall.DeathMode ? 5 : 10);
+                }
+            }
         }
     }
     
-    public class VanillaItems : CalamityCompatItem
+    public class VanillaItems : CalamityAutoLoad
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
@@ -738,7 +772,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         }
     }
     
-    public class VanillaWings : CalamityCompatItem
+    public class VanillaWings : CalamityAutoLoad
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
@@ -888,7 +922,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         }
     }
     
-    public class Meters : CalamityCompatItem
+    public class Meters : CalamityAutoLoad
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
@@ -902,9 +936,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     {
                         if (array[i].Contains("Adrenaline"))
                         {
-                            array[i] = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.RevStats"),
-                                array[i].Split(' ')[3],
-                                array[i].Split(' ')[8],
+                            array[i] = LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.RevStats", 
+                                array[i].Split(' ')[3], 
+                                array[i].Split(' ')[8], 
                                 array[i].Split(' ')[13]);
                         }
                         else if (array[i].Contains("Displays"))
@@ -913,7 +947,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                         }
                         else if (array[i].Contains("Defense: "))
                         {
-                            array[i] = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.DefStats"),
+                            array[i] = LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.DefStats",
                                 array[i].Split(' ')[1],
                                 array[i].Split(' ')[4],
                                 array[i].Split(' ')[8].Split('\n')[0],
@@ -924,7 +958,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                         }
                         else if (array[i].Contains("True Melee Damage: "))
                         {
-                            array[i] = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.MeleeStats"),
+                            array[i] = LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.MeleeStats",
                                 array[i].Split(' ')[2],
                                 array[i].Split(' ')[7],
                                 array[i].Split(' ')[12].Split('\n')[0],
@@ -932,14 +966,14 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                         }
                         else if (array[i].Contains("Ranged Damage: "))
                         {
-                            array[i] = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.RangedStats"),
+                            array[i] = LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.RangedStats",
                                 array[i].Split(' ')[2],
                                 array[i].Split(' ')[7].Split('\n')[0],
                                 array[i].Split(' ')[10]);
                         }
                         else if (array[i].Contains("Magic Damage: "))
                         {
-                            array[i] = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.MagicStats"),
+                            array[i] = LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.MagicStats",
                                 array[i].Split(' ')[2],
                                 array[i].Split(' ')[7].Split('\n')[0],
                                 array[i].Split(' ')[9],
@@ -947,13 +981,13 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                         }
                         else if (array[i].Contains("Minion Damage: "))
                         {
-                            array[i] = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.MinionStats"),
+                            array[i] = LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.MinionStats",
                                 array[i].Split(' ')[2],
                                 array[i].Split(' ')[6]);
                         }
                         else if (array[i].Contains("Rogue Damage: "))
                         {
-                            array[i] = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.RogueStats"),
+                            array[i] = LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.RogueStats",
                                 array[i].Split(' ')[2],
                                 array[i].Split(' ')[7].Split('\n')[0],
                                 array[i].Split(' ')[10],
@@ -965,13 +999,13 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                         else if (array[i].Contains("Light Strength"))
                         {
                             array[i] = ModsCall.DeathMode
-                                ? string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.CaveLightStrength"), array[i].Split(' ')[3])
-                                : string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.AbyssLightStrength"), array[i].Split(' ')[3]);
+                                ? LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.CaveLightStrength", array[i].Split(' ')[3])
+                                : LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.AbyssLightStrength", array[i].Split(' ')[3]);
                         }
                         else if (array[i].Contains("Other Abyss"))
                         {
                             array[i] = ModsCall.CalamityGetInZone
-                                ? string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.AbyssStats"),
+                                ? LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.AbyssStats",
                                     array[i].Split(' ')[6],
                                     array[i].Split(' ')[11].Split('\n')[0],
                                     array[i].Split(' ')[18].Split('\n')[0],
@@ -990,7 +1024,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                 if (tooltip != null)
                 {
                     string[] array = Regex.Split(tooltip.text, "\n");
-                    tooltip.text = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.MeleeLevelMeter"),
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.MeleeLevelMeter",
                         Regex.Split(array[3], ": ")[1],
                         Regex.Split(array[4], ": ")[1],
                         Regex.Split(array[5], ": ")[1],
@@ -1005,7 +1039,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                 if (tooltip != null)
                 {
                     string[] array = Regex.Split(tooltip.text, "\n");
-                    tooltip.text = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.MagicLevelMeter"),
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.MagicLevelMeter",
                         Regex.Split(array[3], ": ")[1],
                         Regex.Split(array[4], ": ")[1],
                         Regex.Split(array[5], ": ")[1],
@@ -1020,7 +1054,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                 if (tooltip != null)
                 {
                     string[] array = Regex.Split(tooltip.text, "\n");
-                    tooltip.text = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.RangedLevelMeter"),
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.RangedLevelMeter",
                         Regex.Split(array[3], ": ")[1],
                         Regex.Split(array[4], ": ")[1],
                         Regex.Split(array[5], ": ")[1],
@@ -1035,7 +1069,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                 if (tooltip != null)
                 {
                     string[] array = Regex.Split(tooltip.text, "\n");
-                    tooltip.text = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.RogueLevelMeter"),
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.RogueLevelMeter",
                         Regex.Split(array[3], ": ")[1],
                         Regex.Split(array[4], ": ")[1],
                         Regex.Split(array[5], ": ")[1],
@@ -1050,7 +1084,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                 if (tooltip != null)
                 {
                     string[] array = Regex.Split(tooltip.text, "\n");
-                    tooltip.text = string.Format(LangUtils.GetTextValue("Calamity", "ItemTooltip.SummonLevelMeter"),
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.SummonLevelMeter",
                         Regex.Split(array[3], ": ")[1],
                         Regex.Split(array[4], ": ")[1],
                         Regex.Split(array[5], ": ")[1], 
