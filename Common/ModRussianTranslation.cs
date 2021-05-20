@@ -93,7 +93,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new ModTypeException(id);
+                    throw new IDTypeException(id);
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(id);
                 }
             }
 
@@ -105,7 +109,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new ModTypeException(id);
+                    throw new IDTypeException(id);
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(id);
                 }
             }
 
@@ -117,7 +125,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new ModTypeException(id);
+                    throw new IDTypeException(id);
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(id);
                 }
             }
 
@@ -129,7 +141,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new ModTypeException(id);
+                    throw new IDTypeException(id);
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(id);
                 }
             }
 
@@ -144,7 +160,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new ModTypeException(id.TileId);
+                    throw new IDTypeException(id.TileId);
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(id.TileId);
                 }
             }
 
@@ -156,7 +176,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new ModTypeException(id);
+                    throw new IDTypeException(id);
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(id);
                 }
             }
 
@@ -168,7 +192,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new ModTypeException(id);
+                    throw new IDTypeException(id);
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(id);
                 }
             }
 
@@ -180,7 +208,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new ModTypeException(id);
+                    throw new IDTypeException(id);
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(id);
                 }
             }
 
@@ -192,7 +224,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new ModTypeException(id);
+                    throw new IDTypeException(id);
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(id);
                 }
             }
 
