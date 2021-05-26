@@ -35,7 +35,9 @@ namespace CalamityRuTranslate
 
         public override void Load()
         {
-            CoreThoriumTranslation.Load();
+            foreach (ModRussianTranslation translation in _translations)
+                translation.TryLoad();
+            
             ILManager.Load();
             LoadFont();
             LoadJSON(TRuConfig.Instance.NewVanillaTranslation);

@@ -30,8 +30,9 @@ namespace CalamityRuTranslate.Common
 
         public static void Unload()
         {
-            foreach (ILEdit ilEdit in _ilEdits)
-                ilEdit.Unload();
+            if(_ilEdits != null)
+                foreach (ILEdit ilEdit in _ilEdits)
+                    ilEdit.Unload();
 
             _ilEdits = null;
         }
