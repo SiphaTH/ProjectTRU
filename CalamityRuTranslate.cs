@@ -27,6 +27,7 @@ namespace CalamityRuTranslate
         private ModRussianTranslation[] _translations =
         {
             new CoreCalamityTranslation(),
+            new CoreThoriumTranslation(),
             new CoreFargowiltasSoulsTranslation(),
             new CoreFargowiltasTranslation()
         };
@@ -77,9 +78,16 @@ namespace CalamityRuTranslate
             foreach (ModRussianTranslation translation in _translations)
                 translation.TrySetupContentTranslation();
             
-            if (TranslationUtils.IsRussianLanguage && !Main.dedServ)
+            if (TranslationUtils.IsRussianLanguage && !Main.dedServ && ModsCall.Thorium != null)
             {
-                CoreThoriumTranslation.LoadCrossContent();
+                BuffTranslation.SetupTranslation();
+                PrefixNames.SetupTranslation();
+                ProjectileNames.SetupTranslation();
+                ThoriumItemName.Setup();
+                ThoriumItemTooltip.Setup();
+                ThoriumNpc.Setup();
+                ThoriumTiles.Setup();
+                ThoriumSupport.ThoriumAddLocalizations();
             }
         }
 

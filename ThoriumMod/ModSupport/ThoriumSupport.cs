@@ -1,4 +1,4 @@
-﻿using CalamityRuTranslate.Mods.ThoriumMod;
+﻿using CalamityRuTranslate.Common;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -138,7 +138,7 @@ namespace CalamityRuTranslate.ThoriumMod.ModSupport
 			Load();
 			foreach (string[] array in _translations)
 			{
-				ModTranslation modTranslation = CoreThoriumTranslation.ThoriumMod.CreateTranslation(array[0]);
+				ModTranslation modTranslation = ModsCall.Thorium.CreateTranslation(array[0]);
 				modTranslation.SetDefault(array[1]);
 				ModLoader.GetMod("ThoriumMod").AddTranslation(modTranslation);
 			}

@@ -1,5 +1,6 @@
 ﻿using System;
 using CalamityRuTranslate.Catalogs;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Exceptions;
 using Terraria.Localization;
 
@@ -13,11 +14,11 @@ namespace CalamityRuTranslate.Mods.ThoriumMod.Projectiles
             {
                 try
                 {
-                    CoreThoriumTranslation.ThoriumMod.GetProjectile(translation.Key).DisplayName.AddTranslation(GameCulture.Russian, translation.Value);
+                    ModsCall.Thorium.GetProjectile(translation.Key).DisplayName.AddTranslation(GameCulture.Russian, translation.Value);
                 }
                 catch (NullReferenceException)
                 {
-                    throw new TranslationException(translation.Key);
+                    throw new IDTypeException(translation.Key);
                 }
             }
         }

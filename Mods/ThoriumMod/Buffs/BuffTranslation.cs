@@ -1,5 +1,6 @@
 ﻿using System;
 using CalamityRuTranslate.Catalogs;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Exceptions;
 using Terraria.Localization;
 
@@ -13,12 +14,12 @@ namespace CalamityRuTranslate.Mods.ThoriumMod.Buffs
             {
                 try
                 {
-                    CoreThoriumTranslation.ThoriumMod.GetBuff(translation.Key).DisplayName.AddTranslation(GameCulture.Russian, translation.Value.Item1);
-                    CoreThoriumTranslation.ThoriumMod.GetBuff(translation.Key).Description.AddTranslation(GameCulture.Russian, translation.Value.Item2);
+                    ModsCall.Thorium.GetBuff(translation.Key).DisplayName.AddTranslation(GameCulture.Russian, translation.Value.Item1);
+                    ModsCall.Thorium.GetBuff(translation.Key).Description.AddTranslation(GameCulture.Russian, translation.Value.Item2);
                 }
                 catch(NullReferenceException)
                 {
-                    throw new TranslationException(translation.Key);
+                    throw new IDTypeException(translation.Key);
                 }
             }
         }

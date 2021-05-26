@@ -474,7 +474,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
             TranslationUtils.ILTranslate(il, " sec(s)\nMax-Use Duration: +", " сек.\nМаксимальная длительность: +");
             TranslationUtils.ILTranslate(il, "%\nBase Inspiration: ", "%\nБазовое вдохновение: ");
             TranslationUtils.ILTranslate(il, "\nBonus Inspiration: ", "\nДополнительное вдохновение: ");
-            TranslationUtils.ILTranslate(il, "\nTimed Hits: ", "\n: ");
+            // TranslationUtils.ILTranslate(il, "\nTimed Hits: ", "\n: ");
         }
     }
 
@@ -1566,6 +1566,45 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
         {
             TranslationUtils.ILTranslate(il, " & ", " и ");
             TranslationUtils.ILTranslate(il, " life", " здоровья");
+        }
+    }
+    
+    public class ThoriumGlobalItemIL : ILEdit
+    {
+        private event ILContext.Manipulator OnConsumeManaHook
+        {
+            add => HookEndpointManager.Modify(typeof(ThoriumGlobalItem).GetMethod("OnConsumeMana", BindingFlags.Public | BindingFlags.Instance), value);
+
+            remove => HookEndpointManager.Unmodify(typeof(ThoriumGlobalItem).GetMethod("OnConsumeMana", BindingFlags.Public | BindingFlags.Instance), value);
+        }
+        
+        private event ILContext.Manipulator ConsumeItemHook
+        {
+            add => HookEndpointManager.Modify(typeof(ThoriumGlobalItem).GetMethod("ConsumeItem", BindingFlags.Public | BindingFlags.Instance), value);
+
+            remove => HookEndpointManager.Unmodify(typeof(ThoriumGlobalItem).GetMethod("ConsumeItem", BindingFlags.Public | BindingFlags.Instance), value);
+        }
+
+        public override bool Autoload() => ModsCall.Thorium != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load()
+        {
+            OnConsumeManaHook += TranslationOnConsumeManaHook;
+            ConsumeItemHook += TranslationConsumeItemHook;
+        }
+
+        public override void Unload()
+        {
+            OnConsumeManaHook -= TranslationOnConsumeManaHook;
+            ConsumeItemHook -= TranslationConsumeItemHook;
+        }
+
+        private void TranslationOnConsumeManaHook(ILContext il) => TranslationUtils.ILTranslate(il, "Freebie!", "Бесплатно!");
+        
+        private void TranslationConsumeItemHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Freebie!", "Бесплатно!");
+            TranslationUtils.ILTranslate(il, "Freebie!", "Бесплатно!", 2);
         }
     }
 }
