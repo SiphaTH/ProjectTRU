@@ -7,8 +7,6 @@ namespace CalamityRuTranslate.Catalogs
         public static Dictionary<string, (string, string)> ThoriumBuffs;
         public static Dictionary<string, string> ThoriumPrefixes;
         public static Dictionary<string, string> ThoriumProjectiles;
-        public static Dictionary<string, string> ThoriumChestName;
-        public static Dictionary<string, string> ThoriumDresserName;
 
         public static void LoadDictionaries()
         {
@@ -452,32 +450,6 @@ namespace CalamityRuTranslate.Catalogs
                 {"VoidPortal2", "Пустотный портал"},
                 {"Whirlpool", "Водоворот"}
             };
-
-            ThoriumChestName = new Dictionary<string, string>
-            {
-                {"AquaticDepthsBiomeChest", "Водный глубинный сундук"},
-                {"DepthChestTile", "Глубинный сундук"},
-                {"DesertBiomeChest", "Пустынный сундук"},
-                {"LodestoneChest", "Магнетитовый сундук"},
-                {"MarineChest", "Морской сундук"},
-                {"PermafrostChest", "Сундук вечной мерзлоты"},
-                {"PlateChest", "Пластинчатый сундук"},
-                {"ScarletChest", "Алый сундук"},
-                {"ThoriumChest", "Ториевый сундук"},
-                {"UnderworldChest", "Адский сундук"},
-                {"YewChest", "Тисовый сундук"},
-                {"OrnateChest", "Изысканный сундук"},
-                {"CursedChest", "Проклятый сундук"},
-                {"NagaChest", "Нага-сундук"},
-                {"ShadyChest", "Теневой сундук"},
-                {"ValadiumChest", "Валадиумовый сундук"},
-                {"BloodstainedChest", "Окровавленный сундук"}
-            };
-
-            ThoriumDresserName = new Dictionary<string, string>
-            {
-                {"FurnitureDresser", "Комод"}
-            };
         }
 
         public static void UnloadDictionaries()
@@ -485,8 +457,6 @@ namespace CalamityRuTranslate.Catalogs
             ThoriumBuffs = null;
             ThoriumPrefixes = null;
             ThoriumProjectiles = null;
-            ThoriumChestName = null;
-            ThoriumDresserName = null;
         }
     }
 }

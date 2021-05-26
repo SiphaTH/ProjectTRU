@@ -10,8 +10,13 @@ using CalamityRuTranslate.Mods.CalamityMod;
 using CalamityRuTranslate.Mods.Fargowiltas;
 using CalamityRuTranslate.Mods.FargowiltasSouls;
 using CalamityRuTranslate.Mods.ThoriumMod;
+using CalamityRuTranslate.Mods.ThoriumMod.Buffs;
+using CalamityRuTranslate.Mods.ThoriumMod.Items;
+using CalamityRuTranslate.Mods.ThoriumMod.Projectiles;
+using CalamityRuTranslate.ThoriumMod.Items;
 using CalamityRuTranslate.ThoriumMod.ModSupport;
-using ReLogic.Graphics;
+using CalamityRuTranslate.ThoriumMod.NPCs;
+using CalamityRuTranslate.ThoriumMod.Tiles;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -20,7 +25,7 @@ using Terraria.UI;
 
 namespace CalamityRuTranslate
 {
-    public class CalamityRuTranslate : Mod
+    public partial class CalamityRuTranslate : Mod
     {
         public static CalamityRuTranslate Instance { get; private set; }
 
@@ -31,7 +36,7 @@ namespace CalamityRuTranslate
             new CoreFargowiltasSoulsTranslation(),
             new CoreFargowiltasTranslation()
         };
-        
+
         public CalamityRuTranslate() => Instance = this;
 
         public override void Load()
@@ -40,12 +45,10 @@ namespace CalamityRuTranslate
                 translation.TryLoad();
             
             ILManager.Load();
-            LoadFont();
-            LoadJSON(TRuConfig.Instance.NewVanillaTranslation);
             LangUtils.Load();
-
-            foreach (ModRussianTranslation translation in _translations)
-                translation.TryLoad();
+            LoadJSON(TRuConfig.Instance.NewVanillaTranslation);
+            LoadFont();
+            LoadCache();
         }
 
         public override void Unload()
@@ -53,10 +56,11 @@ namespace CalamityRuTranslate
             Instance = null;
             TRuConfig.Instance = null;
             LangUtils.Unload();
-            CoreThoriumTranslation.Unload();
             ILManager.Unload();
-            UnloadFont();
             TRuGlowmask.Unload();
+            UnloadFont();
+            UnloadCache();
+            CoreThoriumTranslation.Unload();
         }
 		
         public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
@@ -64,15 +68,12 @@ namespace CalamityRuTranslate
             foreach (ModRussianTranslation translation in _translations)
                 translation.TryDialogueTranslation();
             
-            if (TranslationUtils.IsRussianLanguage)
+            if (TranslationUtils.IsRussianLanguage && !Main.dedServ && ModsCall.Thorium != null)
             {
-                if (TRuConfig.Instance.ThoriumTranslation && ModLoader.GetMod("ThoriumMod") != null)
-                {
-                    ThoriumSupport.ThoriumNpcChat();
-                }
+                ThoriumSupport.ThoriumNpcChat();
             }
         }
-		
+        
         public override void PostSetupContent()
         {
             foreach (ModRussianTranslation translation in _translations)
@@ -93,39 +94,16 @@ namespace CalamityRuTranslate
 
         private void LoadJSON(bool isNewJSONTranslation)
         {
+            if (!TranslationUtils.IsRussianLanguage)
+                return;
+        
             TmodFile tModFile = typeof(CalamityRuTranslate).GetProperty("File", BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(Instance) as TmodFile;
 
-            if (TranslationUtils.IsRussianLanguage)
-            {
-                foreach (TmodFile.FileEntry item in tModFile.Where(entry => Path.GetFileNameWithoutExtension(entry.Name).StartsWith(isNewJSONTranslation ? "Terraria.Localization.Content." : "Terraria.LocalizationOld.Content.")))
-                {
-                    LanguageManager.Instance.LoadLanguageFromFileText(Encoding.UTF8.GetString(GetFileBytes(item.Name)));
-                }
-            }
-        }
-        
-        private void LoadFont()
-        {
-            if (TRuConfig.Instance.NewRussianTerrariaFont && TranslationUtils.IsRussianLanguage && !Main.dedServ)
-            {
-                Main.fontItemStack = Instance.GetFont("Fonts/Item_Stack");
-                Main.fontMouseText = Instance.GetFont("Fonts/Mouse_Text");
-                Main.fontDeathText = Instance.GetFont("Fonts/Death_Text");
-                Main.fontCombatText[0] = Instance.GetFont("Fonts/Combat_Text");
-                Main.fontCombatText[1] = Instance.GetFont("Fonts/Combat_Crit");
-            }
-        }
-
-        private void UnloadFont()
-        {
-            if (!Main.dedServ)
-            {
-                Main.fontItemStack = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Item_Stack");
-                Main.fontMouseText = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Mouse_Text");
-                Main.fontDeathText = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Death_Text");
-                Main.fontCombatText[0] = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Combat_Text");
-                Main.fontCombatText[1] = Main.instance.OurLoad<DynamicSpriteFont>("Fonts" + Path.DirectorySeparatorChar + "Combat_Crit");
-            }
+            foreach (var item in tModFile.Where(entry =>
+                Path.GetFileNameWithoutExtension(entry.Name).StartsWith(isNewJSONTranslation
+                    ? "Terraria.Localization.Content."
+                    : "Terraria.LocalizationOld.Content.")))
+                LanguageManager.Instance.LoadLanguageFromFileText(Encoding.UTF8.GetString(GetFileBytes(item.Name)));
         }
     }
 }

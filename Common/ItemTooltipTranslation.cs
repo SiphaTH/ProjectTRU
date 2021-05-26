@@ -10,14 +10,14 @@ namespace CalamityRuTranslate.Common
         private readonly string[] _itemTooltipNames;
         private readonly string[] _tooltipTranslations;
         public int ItemType { get; }
-        
+
         public ItemTooltipTranslation(int itemType, string tooltipLine, string tooltipTranslation)
         {
             ItemType = itemType;
             _itemTooltipNames = new[] {tooltipLine};
             _tooltipTranslations = new[] {tooltipTranslation};
         }
-        
+
         public ItemTooltipTranslation(int itemType, string[] tooltipLines, string[] tooltipTranslations)
         {
             ItemType = itemType;
@@ -28,7 +28,10 @@ namespace CalamityRuTranslate.Common
                 throw new ArgumentException();
         }
 
-        public bool CheckTooltipName(TooltipLine tooltipLine) => _itemTooltipNames.Any(x => x == tooltipLine.Name);
+        public bool CheckTooltipName(TooltipLine tooltipLine)
+        {
+            return _itemTooltipNames.Any(x => x == tooltipLine.Name);
+        }
 
         public void TranslateTooltip(IEnumerable<TooltipLine> tooltipLines)
         {
@@ -38,12 +41,10 @@ namespace CalamityRuTranslate.Common
                 tooltips[0].text = _tooltipTranslations[0];
                 return;
             }
-            
-            for (var index = 0; index < _itemTooltipNames.Length; index++)
-            {
-                if (tooltips[index].Name == _itemTooltipNames[index])
-                    tooltips[index].text = _tooltipTranslations[index];
-            }
+
+            for (var i = 0; i < _itemTooltipNames.Length; i++)
+                if (tooltips[i].Name == _itemTooltipNames[i])
+                    tooltips[i].text = _tooltipTranslations[i];
         }
     }
 }

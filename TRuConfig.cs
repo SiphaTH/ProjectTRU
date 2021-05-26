@@ -23,11 +23,6 @@ namespace CalamityRuTranslate
         
         [Header("Прочее")]
 
-        [Label("Thorium")]
-        [DefaultValue(true)]
-        [ReloadRequired]
-        public bool ThoriumTranslation;
-
         [Label("Новый ванильный перевод")]
         [Tooltip("Если вам не нравится новый ванильный перевод\nи вы привыкли играть со стандартным, вы можете его отключить")]
         [DefaultValue(true)]
@@ -35,7 +30,7 @@ namespace CalamityRuTranslate
         public bool NewVanillaTranslation;
 
         [Label("Цветной тип урона")]
-        [Tooltip("Если вам не нравится цветные типы урона на оружиях, вы можете это отключить")]
+        [Tooltip("Если вам не нравится цветные типы урона на оружиях, вы можете их отключить")]
         [DefaultValue(true)]
         public bool ColoredDamageTypes;
         

@@ -117,7 +117,6 @@ namespace CalamityRuTranslate.Vanilla
             new [] {"Гудящий", "Гудящая", "Гудящее", "Гудящие"},
             new [] {"Сказочный", "Сказочная", "Сказочное", "Сказочные"}
         };
-        
         //Женский
         private static List<int?> _typeW = new List<int?>
         {
@@ -914,7 +913,7 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("TerrorTalons"),
             ModsCall.Calamity?.ItemType("TotalityBreakers"),
         };
-        
+
         public override bool Autoload(ref string name)
         {
             On.Terraria.Item.AffixName += delegate(On.Terraria.Item.orig_AffixName orig, Item self)
@@ -924,7 +923,7 @@ namespace CalamityRuTranslate.Vanilla
 
                 if (self.prefix >= Lang.prefix.Length)
                     return self.Name;
-                
+
                 string prefix = Lang.prefix[self.prefix].Value;
                 if (prefix == string.Empty)
                     return self.Name;
@@ -937,6 +936,7 @@ namespace CalamityRuTranslate.Vanilla
 
                 return prefix + " " + self.Name;
             };
+
             return base.Autoload(ref name);
         }
 
