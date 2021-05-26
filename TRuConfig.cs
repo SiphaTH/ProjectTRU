@@ -43,5 +43,10 @@ namespace CalamityRuTranslate
         [Tooltip("Показывает текст бонуса скрытности на комплектах брони разбойника")]
         [DefaultValue(true)]
         public bool CalamityStealthDescription;
+        
+        [Label("Предварительный просмотр бонуса комплекта")]
+        [Tooltip("Показывает бонус комплекта на шлемах при зажатой клавише")]
+        [DefaultValue(true)]
+        public bool PreviewArmorSetInfo;
     }
 }

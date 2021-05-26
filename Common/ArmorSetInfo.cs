@@ -17,6 +17,12 @@
 
         public bool CheckArmorSet(int headType, int bodyType, int legsType) => _headType == headType && _bodyType == bodyType && _legsType == legsType;
 
-        public string GetArmorSetName() => _armorSetName;
+        public bool CheckHeadOfArmorSet(int headType, out string armorSetName)
+        {
+            armorSetName = _armorSetName;
+            return _headType == headType;
+        }
+
+        public override string ToString() => _armorSetName;
     }
 }
