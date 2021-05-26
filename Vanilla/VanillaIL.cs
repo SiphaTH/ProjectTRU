@@ -1,7 +1,6 @@
 ﻿using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using IL.Terraria;
-using Mono.Cecil.Cil;
 using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Vanilla
@@ -16,43 +15,10 @@ namespace CalamityRuTranslate.Vanilla
 
         private void ChangeDrawInfoAccs(ILContext il)
         {
-            ILCursor cursor = new ILCursor(il);
-
-            for (int j = 0; j < 1; j++)
-                if (!cursor.TryGotoNext(i => i.MatchLdcI4(12)))
-                    return;
-
-            cursor.Index++;
-            cursor.Emit(OpCodes.Pop);
-            cursor.Emit(OpCodes.Ldc_I4, 1000);
-
-            cursor = new ILCursor(il);
-
-            for (int j = 0; j < 3; j++)
-                if (!cursor.TryGotoNext(i => i.MatchLdcI4(12)))
-                    return;
-
-            cursor.Index++;
-            cursor.Emit(OpCodes.Pop);
-            cursor.Emit(OpCodes.Ldc_I4, 0);
-
-            cursor = new ILCursor(il);
-
-            if (!cursor.TryGotoNext(i => i.MatchLdstr("AM")))
-                return;
-
-            cursor.Index++;
-            cursor.Emit(OpCodes.Pop);
-            cursor.Emit(OpCodes.Ldstr, "");
-
-            cursor = new ILCursor(il);
-
-            if (!cursor.TryGotoNext(i => i.MatchLdstr("PM")))
-                return;
-
-            cursor.Index++;
-            cursor.Emit(OpCodes.Pop);
-            cursor.Emit(OpCodes.Ldstr, "");
+            TranslationUtils.ILTranslate(il, 12, 1000);
+            TranslationUtils.ILTranslate(il, 12, 0, 3);
+            TranslationUtils.ILTranslate(il, "AM", "");
+            TranslationUtils.ILTranslate(il, "PM", "");
         }
     }
 
