@@ -97,7 +97,6 @@ namespace CalamityRuTranslate.Catalogs
             "PortableSundial",
             "ShadowCrate",
             "ShadowLockBox",
-            "Stats",
             "SuperDummy",
             "CorruptRenewal",
             "CorruptRenewalSupreme",
@@ -237,7 +236,9 @@ namespace CalamityRuTranslate.Catalogs
             "MutantBody",
             "MutantMask",
             "MutantPants",
-            "LumberJaxe"
+            "LumberJaxe",
+            "DemonAltar",
+            "CrimsonAltar"
         };
 
         public static List<string> ItemTooltip = new List<string>
@@ -449,7 +450,9 @@ namespace CalamityRuTranslate.Catalogs
             new ModTileTranslation("OmnistationPlusSheet", "", new Color(221, 85, 125)),
             new ModTileTranslation("OmnistationSheet", "", new Color(221, 85, 125)),
             new ModTileTranslation("OmnistationSheet2", "", new Color(102, 116, 130)),
-            new ModTileTranslation("RegalStatueSheet", "", new Color(200, 200, 200))
+            new ModTileTranslation("RegalStatueSheet", "", new Color(200, 200, 200)),
+            new ModTileTranslation("DemonAltarSheet", "", new Color(200, 200, 200)),
+            new ModTileTranslation("CrimsonAltarSheet", "", new Color(200, 200, 200)),
         };
     }
 }

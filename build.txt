@@ -4,5 +4,5 @@ version = 2.1.1.3
 hideCode = true
 hideResources = true
 weakReferences = CalamityMod, ThoriumMod, FargowiltasSouls, Fargowiltas
-dllReferences = MMHOOK_Fargowiltas_v.2.2.7, MMHOOK_FargowiltasSouls_v.1.3.95
+dllReferences = MMHOOK_Fargowiltas_v2.3, MMHOOK_FargowiltasSouls_v.1.3.96
 homepage = https://discord.gg/AmFJFYcq4q

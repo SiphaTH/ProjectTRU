@@ -16,7 +16,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
             TileTranslation = FargoSoulsCatalog.Tile;
         }
 
-        private readonly Version ExpectedFargoSoulsVersion = new Version(1, 3, 95);
+        private readonly Version ExpectedFargoSoulsVersion = new Version(1, 3, 96);
 
         public override void Load()
         {

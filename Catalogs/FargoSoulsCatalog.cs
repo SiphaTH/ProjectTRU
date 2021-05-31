@@ -112,7 +112,10 @@ namespace CalamityRuTranslate.Catalogs
             "DukeFishronBuff",
             "RoombaPetBuff",
             "DoveBuff",
-            "FishMinionBuff"
+            "FishMinionBuff",
+            "ChaosLife",
+            "ObsidianLavaWetBuff",
+            "OriPoison"
         };
 
         public static List<string> ItemName = new List<string>
@@ -363,7 +366,9 @@ namespace CalamityRuTranslate.Catalogs
             "FigBranch",
             "ParadoxWolfSoul",
             "SquidwardDoor",
-            "MissDrakovisFishingPole"
+            "MissDrakovisFishingPole",
+            "DeviousAestheticus",
+            "VortexMagnetRitual"
         };
 
         public static List<string> ItemTooltip = new List<string>
@@ -595,7 +600,9 @@ namespace CalamityRuTranslate.Catalogs
             "FigBranch",
             "ParadoxWolfSoul",
             "SquidwardDoor",
-            "MissDrakovisFishingPole"
+            "MissDrakovisFishingPole",
+            "DeviousAestheticus",
+            "VortexMagnetRitual"
         };
 
         public static List<string> NPC = new List<string>

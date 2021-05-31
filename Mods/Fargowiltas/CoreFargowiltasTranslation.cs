@@ -16,7 +16,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             TileTranslation = FargoCatalog.Tile;
         }
 
-        private readonly Version ExpectedFargoVersion = new Version(2, 2, 7);
+        private readonly Version ExpectedFargoVersion = new Version(2, 3);
 
         public override void Load()
         {

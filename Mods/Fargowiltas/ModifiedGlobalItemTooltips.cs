@@ -14,75 +14,69 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
         
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            TooltipLine line1 = tooltips.FirstOrDefault(x => x.Name == "Altar");
+            TooltipLine line1 = tooltips.FirstOrDefault(x => x.Name == "Tooltip0");
             if (line1 != null)
             {
                 switch (item.type)
                 {
-                    case ItemID.CrystalBall:
-                        line1.text = LangUtils.GetTextValue("Fargo", "ItemName.CrystalBall.Altar");
+                    case ItemID.PureWaterFountain:
+                        line1.text = LangUtils.GetTextValue("Fargo", "ItemName.PureWaterFountain.Tooltip0");
+                        break;
+                    
+                    case ItemID.DesertWaterFountain:
+                        line1.text = LangUtils.GetTextValue("Fargo", "ItemName.DesertWaterFountain.Tooltip0");
+                        break;
+                    
+                    case ItemID.JungleWaterFountain:
+                        line1.text = LangUtils.GetTextValue("Fargo", "ItemName.JungleWaterFountain.Tooltip0");
+                        break;
+                    
+                    case ItemID.IcyWaterFountain:
+                        line1.text = LangUtils.GetTextValue("Fargo", "ItemName.IcyWaterFountain.Tooltip0");
+                        break;
+                    
+                    case ItemID.CorruptWaterFountain:
+                        line1.text = LangUtils.GetTextValue("Fargo", "ItemName.CorruptWaterFountain.Tooltip0");
+                        break;
+                    
+                    case ItemID.BugNet:
+                    case ItemID.GoldenBugNet:
+                        line1.text = LangUtils.GetTextValue("Fargo", "ItemName.BugNetAndGoldenBugNet.Tooltip0");
                         break;
                 }
             }
             
-            TooltipLine line2 = tooltips.FirstOrDefault(x => x.Name == "Tooltip0");
+            TooltipLine line2 = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
             if (line2 != null)
             {
                 switch (item.type)
                 {
-                    case ItemID.PureWaterFountain:
-                        line2.text = LangUtils.GetTextValue("Fargo", "ItemName.PureWaterFountain.Tooltip0");
-                        break;
-                    
-                    case ItemID.DesertWaterFountain:
-                        line2.text = LangUtils.GetTextValue("Fargo", "ItemName.DesertWaterFountain.Tooltip0");
-                        break;
-                    
-                    case ItemID.JungleWaterFountain:
-                        line2.text = LangUtils.GetTextValue("Fargo", "ItemName.JungleWaterFountain.Tooltip0");
-                        break;
-                    
-                    case ItemID.IcyWaterFountain:
-                        line2.text = LangUtils.GetTextValue("Fargo", "ItemName.IcyWaterFountain.Tooltip0");
-                        break;
-                    
-                    case ItemID.CorruptWaterFountain:
-                        line2.text = LangUtils.GetTextValue("Fargo", "ItemName.CorruptWaterFountain.Tooltip0");
-                        break;
-                }
-            }
-            
-            TooltipLine line3 = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
-            if (line3 != null)
-            {
-                switch (item.type)
-                {
                     case ItemID.CrimsonWaterFountain:
-                        line3.text = LangUtils.GetTextValue("Fargo", "ItemName.CrimsonWaterFountain.Tooltip1");
+                        line2.text = LangUtils.GetTextValue("Fargo", "ItemName.CrimsonWaterFountain.Tooltip1");
                         break;
                     
                     case ItemID.HallowedWaterFountain:
-                        line3.text = LangUtils.GetTextValue("Fargo", "ItemName.HallowedWaterFountain.Tooltip1");
+                        line2.text = LangUtils.GetTextValue("Fargo", "ItemName.HallowedWaterFountain.Tooltip1");
                         break;
                     
                     case ItemID.FishingPotion:
-                        line3.text = LangUtils.GetTextValue("Fargo", "ItemName.FishingPotion.Tooltip1");
+                        line2.text = LangUtils.GetTextValue("Fargo", "ItemName.FishingPotion.Tooltip1");
                         break;
                     
                     case ItemID.FiberglassFishingPole:
                     case ItemID.FisherofSouls:
                     case ItemID.Fleshcatcher:
-                        line3.text = LangUtils.GetTextValue("Fargo", "ItemName.FiberglassFishingPole.FisherofSouls.Fleshcatcher.Tooltip1");
+                        line2.text = LangUtils.GetTextValue("Fargo", "ItemName.FiberglassFishingPole.FisherofSouls.Fleshcatcher.Tooltip1");
                         break;
                     
                     case ItemID.MechanicsRod:
                     case ItemID.SittingDucksFishingRod:
-                        line3.text = LangUtils.GetTextValue("Fargo", "ItemName.MechanicsRod.SittingDucksFishingRod.Tooltip1");
+                        line2.text = LangUtils.GetTextValue("Fargo", "ItemName.MechanicsRod.SittingDucksFishingRod.Tooltip1");
                         break;
                     
                     case ItemID.GoldenFishingRod:
                     case ItemID.HotlineFishingHook:
-                        line3.text = LangUtils.GetTextValue("Fargo", "ItemName.GoldenFishingRod.HotlineFishingHook.Tooltip1");
+                        line2.text = LangUtils.GetTextValue("Fargo", "ItemName.GoldenFishingRod.HotlineFishingHook.Tooltip1");
                         break;
                 }
             }

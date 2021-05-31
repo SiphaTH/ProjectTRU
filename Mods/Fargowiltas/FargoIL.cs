@@ -7,6 +7,8 @@ using IL.Fargowiltas.Items.Summons.Mutant;
 using IL.Fargowiltas.Items.Summons.SwarmSummons;
 using IL.Fargowiltas.Items.Summons.SwarmSummons.Thorium;
 using IL.Fargowiltas.NPCs;
+using IL.Fargowiltas.UI;
+using IL.FargowiltasSouls.Items;
 using MonoMod.Cil;
 using MonoMod.RuntimeDetour.HookGen;
 
@@ -1210,38 +1212,46 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
     public class MechSkullIL : ILEdit
     {
-        private event ILContext.Manipulator NPCNameHook
+        private event ILContext.Manipulator ShootHook
         {
-            add => HookEndpointManager.Modify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechSkull").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
+            add => HookEndpointManager.Modify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechSkull").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
 
-            remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechSkull").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
+            remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechSkull").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
         public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
 
-        public override void Load() => NPCNameHook += TranslationNPCNameHook;
+        public override void Load() => ShootHook += TranslationShootHook;
 
-        public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
+        public override void Unload() => ShootHook -= TranslationShootHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Skeletron Prime", "Скелетрон Прайм");
+        private void TranslationShootHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Skeletron Prime has awoken!", "Скелетрон Прайм пробудился!");
+            TranslationUtils.ILTranslate(il, "Skeletron Prime has awoken!", "Скелетрон Прайм пробудился!", 2);
+        }
     }
 
     public class MechWormIL : ILEdit
     {
-        private event ILContext.Manipulator NPCNameHook
+        private event ILContext.Manipulator ShootHook
         {
-            add => HookEndpointManager.Modify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechWorm").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
+            add => HookEndpointManager.Modify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechWorm").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
 
-            remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechWorm").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
+            remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechWorm").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
         public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
 
-        public override void Load() => NPCNameHook += TranslationNPCNameHook;
+        public override void Load() => ShootHook += TranslationShootHook;
 
-        public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
+        public override void Unload() => ShootHook -= TranslationShootHook;
 
-        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "The Destroyer", "Разрушитель");
+        private void TranslationShootHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "The Destroyer has awoken!", "Разрушитель пробудился!");
+            TranslationUtils.ILTranslate(il, "The Destroyer has awoken!", "Разрушитель пробудился!", 2);
+        }
     }
 
     public class SlimyCrownIL : ILEdit
@@ -1298,63 +1308,47 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
         private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron", "Герцог Рыброн");
     }
 
-    public class StatsFargoIL : ILEdit
+    public class StatSheetUIIL : ILEdit
     {
         public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
 
-        public override void Load() => Stats.ModifyTooltips += TranslationModifyTooltipsHook;
+        public override void Load()
+        {
+            StatSheetUI.RebuildStatList += TranslationRebuildStatList;
+            StatSheetUI.AddStat += ChangeAddStatSize;
+        }
 
-        public override void Unload() => Stats.ModifyTooltips -= TranslationModifyTooltipsHook;
+        public override void Unload()
+        {
+            StatSheetUI.RebuildStatList -= TranslationRebuildStatList;
+            StatSheetUI.AddStat -= ChangeAddStatSize;
+        }
 
-        private void TranslationModifyTooltipsHook(ILContext il)
+        private void TranslationRebuildStatList(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Melee Damage: {0}%", "Урон ближнего боя: {0}%");
-            TranslationUtils.ILTranslate(il, "Melee Speed: {0}%", "Скорость атаки ближнего боя: {0}%");
-            TranslationUtils.ILTranslate(il, "Melee Crit: {0}%", "Шанс критического удара ближнего боя: {0}%");
+            TranslationUtils.ILTranslate(il, "Melee Crit: {0}%", "Шанс крит. удара ближ. боя: {0}%");
+            TranslationUtils.ILTranslate(il, "Melee Speed: {0}%", "Скорость атаки ближ. боя: {0}%");
             TranslationUtils.ILTranslate(il, "Ranged Damage: {0}%", "Стрелковый урон: {0}%");
-            TranslationUtils.ILTranslate(il, "Ranged Crit: {0}%", "Стрелковый шанс критического удара: {0}%");
+            TranslationUtils.ILTranslate(il, "Ranged Crit: {0}%", "Стрел. шанс крит. удара: {0}%");
             TranslationUtils.ILTranslate(il, "Magic Damage: {0}%", "Магический урон: {0}%");
-            TranslationUtils.ILTranslate(il, "Magic Crit: {0}%", "Магический шанс критического удара: {0}%");
+            TranslationUtils.ILTranslate(il, "Magic Crit: {0}%", "Маг. шанс крит. удара: {0}%");
             TranslationUtils.ILTranslate(il, "Summon Damage: {0}%", "Урон миньонов: {0}%");
             TranslationUtils.ILTranslate(il, "Max Minions: {0}", "Максимальное число миньонов: {0}");
             TranslationUtils.ILTranslate(il, "Max Sentries: {0}", "Максимальное число турелей: {0}");
+            TranslationUtils.ILTranslate(il, "HP: {0}", "Здоровье: {0}");
+            TranslationUtils.ILTranslate(il, "Defense: {0}", "Защита: {0}");
             TranslationUtils.ILTranslate(il, "Damage Reduction: {0}%", "Сопротивление урону: {0}%");
-            TranslationUtils.ILTranslate(il, "Life Regen: {0} HP/second","Регенерация здоровья: {0} здоровья/сек");
-            TranslationUtils.ILTranslate(il, "Armor Pen: {0}", "Пробивание брони: {0}");
-            TranslationUtils.ILTranslate(il, "Max Speed: {0} mph", "Максимальная скорость: {0} км/ч");
+            TranslationUtils.ILTranslate(il, "Life Regen: {0} HP/second","Реген. здоровья: {0}/сек");
+            TranslationUtils.ILTranslate(il, "Mana: {0}","Мана: {0}");
+            TranslationUtils.ILTranslate(il, "Mana Regen: {0}/second","Регенерация маны: {0}/сек");
+            TranslationUtils.ILTranslate(il, "Armor Penetration: {0}", "Пробивание брони: {0}");
+            TranslationUtils.ILTranslate(il, "Aggro: {0}", "Агрессия: {0}");
+            TranslationUtils.ILTranslate(il, "Max Speed: {0} mph", "Макс. скорость: {0} км/ч");
             TranslationUtils.ILTranslate(il, "Wing Time: {0} seconds", "Время полёта: {0} сек");
         }
-    }
 
-    public class StatsThoriumIL : ILEdit
-    {
-        private event ILContext.Manipulator ThoriumStatsHook
-        {
-            add => HookEndpointManager.Modify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Misc.Stats").GetMethod("ThoriumStats", BindingFlags.NonPublic | BindingFlags.Instance), value);
-
-            remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Misc.Stats").GetMethod("ThoriumStats", BindingFlags.NonPublic | BindingFlags.Instance), value);
-        }
-
-
-        public override bool Autoload() => ModsCall.Fargo != null && ModsCall.Thorium != null && TranslationUtils.IsRussianLanguage;
-
-        public override void Load() => ThoriumStatsHook += TranslationThoriumStatsHook;
-
-        public override void Unload() => ThoriumStatsHook -= TranslationThoriumStatsHook;
-
-        private void TranslationThoriumStatsHook(ILContext il)
-        {
-            TranslationUtils.ILTranslate(il, "Symphonic Damage: {0}%", "Симфонический урон: {0}%");
-            TranslationUtils.ILTranslate(il, "Symphonic Speed: {0}%", "Симфоническая скорость атаки: {0}%");
-            TranslationUtils.ILTranslate(il, "Symphonic Crit: {0}%", "Симфонический шанс критического удара: {0}%");
-            TranslationUtils.ILTranslate(il, "Inspiration Regen: {0}%", "Регенарация вдохновения: {0}%");
-            TranslationUtils.ILTranslate(il, "Empowerment Duration: {0} seconds", "Длительность усиления: {0} сек");
-            TranslationUtils.ILTranslate(il, "Radiant Damage: {0}%", "Лучезарный урон: {0}%");
-            TranslationUtils.ILTranslate(il, "Radiant Speed: {0}%", "Лучезарная скорость атаки: {0}%");
-            TranslationUtils.ILTranslate(il, "Healing Speed: {0}%", "Скорость лечения: {0}%");
-            TranslationUtils.ILTranslate(il, "Radiant Crit: {0}%", "Лучезарный шанс критического удара: {0}%");
-            TranslationUtils.ILTranslate(il, "Bonus Healing: {0}", "Бонусное лечение: {0}");
-        }
+        private void ChangeAddStatSize(ILContext il) => TranslationUtils.ILTranslate(il, 217, 350);
     }
 
     public class AbominationnIL : ILEdit
@@ -1393,7 +1387,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
         private void TranslationSetChatButtonsHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Help", "Помощь");
-            TranslationUtils.ILTranslate(il, "Receive Gift", "Получить подарок");
+            TranslationUtils.ILTranslate(il, ":Receive Gift]", ":Получить подарок]");
         }
     }
 
@@ -1664,5 +1658,38 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
         public override void Unload() => OverloadWorm.ctor -= TranslationCtorHook;
 
         private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The ground shifts with formulated precision!", "Земля под вашими ногами раздвигается с удивительной точностью!");
+    }
+    
+    public class MechEyeIL : ILEdit
+    {
+        private event ILContext.Manipulator ShootHook
+        {
+            add => HookEndpointManager.Modify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechEye").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
+
+            remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Summons.MechEye").GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
+        }
+
+        public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => ShootHook += TranslationShootHook;
+
+        public override void Unload() => ShootHook -= TranslationShootHook;
+
+        private void TranslationShootHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "The Twins have awoken!", "Близнецы пробудились!");
+            TranslationUtils.ILTranslate(il, "The Twins have awoken!", "Близнецы пробудились!", 2);
+        }
+    }
+    
+    public class FargoGlobalItemIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => FargoGlobalItem.ModifyTooltips += TranslationModifyTooltips;
+
+        public override void Unload() => FargoGlobalItem.ModifyTooltips -= TranslationModifyTooltips;
+
+        private void TranslationModifyTooltips(ILContext il) => TranslationUtils.ILTranslate(il, "[c/ff0000:Eternity Mode:] Reduced attack speed by 25%", "[c/ff0000:Режим Вечности:] Скорость атаки снижена на 25%");
     }
 }

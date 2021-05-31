@@ -42,6 +42,7 @@ namespace CalamityRuTranslate.Catalogs
             {"Fargo", "Fargo"},
             {"Grim", "Grim"},
             {"Furgo", "Furgo"},
+            {"Mike", "Mike"},
             {"Fargu", "Fargu"},
             {"Catty N. Pem", "CattyNPem"},
             {"Weirdus", "Weirdus"},
