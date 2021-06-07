@@ -238,7 +238,8 @@ namespace CalamityRuTranslate.Catalogs
             "MutantPants",
             "LumberJaxe",
             "DemonAltar",
-            "CrimsonAltar"
+            "CrimsonAltar",
+            "BrittleBone"
         };
 
         public static List<string> ItemTooltip = new List<string>

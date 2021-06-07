@@ -8,7 +8,6 @@ using IL.Fargowiltas.Items.Summons.SwarmSummons;
 using IL.Fargowiltas.Items.Summons.SwarmSummons.Thorium;
 using IL.Fargowiltas.NPCs;
 using IL.Fargowiltas.UI;
-using IL.FargowiltasSouls.Items;
 using MonoMod.Cil;
 using MonoMod.RuntimeDetour.HookGen;
 
@@ -1452,8 +1451,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             TranslationUtils.ILTranslate(il, "Have a Top Hat Squirrel ([i:{0}]) in your inventory", "Положите в инвентарь белку в цилиндре ([i:{0}])");
         }
 
-        private void TranslationHandlePacketHook(ILContext il) => TranslationUtils.ILTranslate(il,
-            "The event has been cancelled!", "Событие было остановлено!");
+        private void TranslationHandlePacketHook(ILContext il) => TranslationUtils.ILTranslate(il, "The event has been cancelled!", "Событие было остановлено!");
     }
 
     public class LumberJackIL : ILEdit

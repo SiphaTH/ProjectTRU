@@ -378,12 +378,11 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
             }
             else if (item.type == ItemID.DD2BetsyBow || item.type == ItemID.Uzi ||
                      item.type == ItemID.PhoenixBlaster || item.type == ItemID.LastPrism ||
-                     item.type == ItemID.OnyxBlaster || item.type == ItemID.Beenade ||
-                     item.type == ItemID.Handgun || item.type == ItemID.SpikyBall ||
-                     item.type == ItemID.SDMG || item.type == ItemID.Xenopopper ||
-                     item.type == ItemID.NebulaArcanum || item.type == ItemID.LaserMachinegun ||
-                     item.type == ItemID.PainterPaintballGun || item.type == ItemID.MoltenFury ||
-                     item.type == ItemID.BeesKnees || item.type == ItemID.Phantasm)
+                     item.type == ItemID.OnyxBlaster || item.type == ItemID.Handgun ||
+                     item.type == ItemID.SpikyBall || item.type == ItemID.SDMG ||
+                     item.type == ItemID.Xenopopper || item.type == ItemID.NebulaArcanum ||
+                     item.type == ItemID.LaserMachinegun || item.type == ItemID.PainterPaintballGun ||
+                     item.type == ItemID.MoltenFury|| item.type == ItemID.Phantasm)
             {
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
                 if (tooltip != null)
@@ -395,7 +394,9 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                      item.type == ItemID.HellwingBow || item.type == ItemID.DartPistol ||
                      item.type == ItemID.DartRifle || item.type == ItemID.Megashark ||
                      item.type == ItemID.BatScepter || item.type == ItemID.XenoStaff ||
-                     item.type == ItemID.ChainGun || item.type == ItemID.VortexBeater)
+                     item.type == ItemID.ChainGun || item.type == ItemID.VortexBeater ||
+                     item.type == ItemID.SnowmanCannon || item.type == ItemID.RavenStaff ||
+                     item.type == ItemID.XenoStaff)
             {
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
                 if (tooltip != null)
@@ -404,12 +405,33 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                 }
             }
             else if (item.type == ItemID.StarCannon || item.type == ItemID.ElectrosphereLauncher ||
-                     item.type == ItemID.SnowmanCannon || item.type == ItemID.DaedalusStormbow)
+                     item.type == ItemID.BeesKnees || item.type == ItemID.DaedalusStormbow)
             {
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
                 if (tooltip != null)
                 {
                     tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.ComboItems3");
+                }
+            }
+            else if (item.type == ItemID.Beenade)
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
+                TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "masoNerf2");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.Beenade");
+                }
+                if (tooltip2 != null)
+                {
+                    tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf2.Beenade");
+                }
+            }
+            else if (item.type == ItemID.BeeGun)
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf2");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf2.BeeGun");
                 }
             }
             else if (item.type == ItemID.SpectreHood)
@@ -441,37 +463,31 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                     tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.VampireKnives2");
                 }
             }
-            else if (item.type == ItemID.BlizzardStaff)
+            else if (item.type == ItemID.BlizzardStaff || item.type == ItemID.Razorpine)
             {
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
                 TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "masoNerf2");
                 if (tooltip != null)
                 {
-                    tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.BlizzardStaff");
+                    tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.ComboItems5");
                 }
                 if (tooltip2 != null)
                 {
-                    tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf2.BlizzardStaff");
-                }
-            }
-            else if (item.type == ItemID.Razorpine)
-            {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
-                TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "masoNerf2");
-                if (tooltip != null)
-                {
-                    tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.Razorpine");
-                }
-                if (tooltip2 != null)
-                {
-                    tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf2.Razorpine");
+                    tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf2.ComboItems5");
                 }
             }
             else if (item.type == ItemID.DemonScythe)
             {
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
                 TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "masoNerf2");
-                if (!NPC.downedBoss2)
+                if (NPC.downedBoss2)
+                {
+                    if (tooltip != null)
+                    {
+                        tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.DemonScythe1");
+                    }
+                }
+                else
                 {
                     if (tooltip != null)
                     {
@@ -482,19 +498,19 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                         tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf2.DemonScythe");
                     }
                 }
-                else
-                {
-                    if (tooltip != null)
-                    {
-                        tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.DemonScythe1");
-                    }
-                }
             }
             else if (item.type == ItemID.SpaceGun)
             {
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
                 TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "masoNerf2");
-                if (!NPC.downedBoss2)
+                if (NPC.downedBoss2)
+                {
+                    if (tooltip != null)
+                    {
+                        tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.SpaceGun1");
+                    }
+                }
+                else
                 {
                     if (tooltip != null)
                     {
@@ -505,33 +521,34 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                         tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf2.SpaceGun");
                     }
                 }
-                else
-                {
-                    if (tooltip != null)
-                    {
-                        tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.SpaceGun1");
-                    }
-                }
             }
             else if (item.type == ItemID.DD2SquireBetsySword)
             {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
-                TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "masoNerf2");
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoBuff");
+                TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "masoBuff2");
                 if (tooltip != null)
                 {
-                    tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.DD2SquireBetsySword");
+                    tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoBuff.DD2SquireBetsySword");
                 }
                 if (tooltip2 != null)
                 {
-                    tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf2.DD2SquireBetsySword");
+                    tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoBuff2.DD2SquireBetsySword");
                 }
             }
             else if (item.type == ItemID.MonkStaffT3)
             {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoBuff");
                 if (tooltip != null)
                 {
-                    tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.MonkStaffT3");
+                    tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoBuff.MonkStaffT3");
+                }
+            }
+            else if (item.type == ItemID.SlimeStaff)
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoBuff");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoBuff.SlimeStaff");
                 }
             }
             
