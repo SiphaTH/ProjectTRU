@@ -1679,4 +1679,15 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             TranslationUtils.ILTranslate(il, "The Twins have awoken!", "Близнецы пробудились!", 2);
         }
     }
+    
+    public class SquirrelIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.Fargo != null && ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => Squirrel.SetChatButtons += TranslationSetChatButtons;
+
+        public override void Unload() => Squirrel.SetChatButtons += TranslationSetChatButtons;
+
+        private void TranslationSetChatButtons(ILContext il) => TranslationUtils.ILTranslate(il, "Cycle Shop", "Циклический магазин");
+    }
 }

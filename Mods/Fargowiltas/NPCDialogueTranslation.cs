@@ -775,7 +775,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             {
                 switch (npcPhrase)
                 {
-                    case "You will suffer.":
+                    case "[c/ff0000:You will suffer.]":
                         npcPhrase = LangUtils.TranslationKey("Fargo.NpcChatText.Squirrel.1");
                         break;
                     case "*squeak*":

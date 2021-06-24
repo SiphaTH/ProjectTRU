@@ -16,7 +16,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             TileTranslation = FargoCatalog.Tile;
         }
 
-        private readonly Version ExpectedFargoVersion = new Version(2, 3, 1, 2);
+        private readonly Version ExpectedFargoVersion = new Version(2, 3, 2, 0);
 
         public override void Load()
         {
@@ -30,12 +30,16 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             {
                 ItemNameTranslation.Add("InnocuousSkull");
                 ItemTooltipTranslation.Add("InnocuousSkull");
+                ItemNameTranslation.Add("EternityAdvisor");
+                ItemTooltipTranslation.Add("EternityAdvisor");
                 NPCTranslation.Add("Squirrel");
             }
             else
             {
                 ItemNameTranslation.Remove("InnocuousSkull");
                 ItemTooltipTranslation.Remove("InnocuousSkull");
+                ItemNameTranslation.Remove("EternityAdvisor");
+                ItemTooltipTranslation.Remove("EternityAdvisor");
                 NPCTranslation.Remove("Squirrel");
             }
 
