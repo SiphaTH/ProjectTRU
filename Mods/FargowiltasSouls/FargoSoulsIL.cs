@@ -369,15 +369,4 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
             TranslationUtils.ILTranslate(il, "Deviantt has awoken!", "Девиантт пробудился!", 2);
         }
     }
-    
-    public class FargoGlobalItemIL : ILEdit
-    {
-        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
-
-        public override void Load() => FargoGlobalItem.ModifyTooltips += TranslationModifyTooltips;
-
-        public override void Unload() => FargoGlobalItem.ModifyTooltips -= TranslationModifyTooltips;
-
-        private void TranslationModifyTooltips(ILContext il) => TranslationUtils.ILTranslate(il, "[c/ff0000:Eternity Mode:] Reduced attack speed by 25%", "[c/ff0000:Режим Вечности:] Скорость атаки снижена на 25%");
-    }
 }

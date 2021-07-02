@@ -474,15 +474,20 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
             }
             else if (item.type == ItemID.VampireKnives)
             {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf2");
-                TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
+                TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "masoNerf2");
+                TooltipLine tooltip3 = tooltips.FirstOrDefault(x => x.Name == "masoNerf" && x.text == "[c/ff0000:Eternity Mode:] Reduced attack speed by 25%");
                 if (tooltip != null)
                 {
-                    tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf2.VampireKnives");
+                    tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.VampireKnives");
                 }
                 if (tooltip2 != null)
                 {
-                    tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.VampireKnives2");
+                    tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf2.VampireKnives");
+                }
+                if (tooltip3 != null)
+                {
+                    tooltip3.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.VampireKnives1");
                 }
             }
             else if (item.type == ItemID.BlizzardStaff || item.type == ItemID.Razorpine)
@@ -524,23 +529,23 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
             else if (item.type == ItemID.SpaceGun)
             {
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
-                TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "masoNerf2");
+                TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "masoNerf" && x.text == "[c/ff0000:Eternity Mode:] Reduced attack speed by 25% until an evil boss is defeated");
                 if (NPC.downedBoss2)
                 {
                     if (tooltip != null)
                     {
-                        tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.SpaceGun1");
+                        tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.SpaceGun");
                     }
                 }
                 else
                 {
                     if (tooltip != null)
                     {
-                        tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.SpaceGun");
+                        tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.SpaceGun1");
                     }
                     if (tooltip2 != null)
                     {
-                        tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf2.SpaceGun");
+                        tooltip2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.SpaceGun2");
                     }
                 }
             }
