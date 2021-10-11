@@ -1055,6 +1055,15 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     npcPhrase = string.Format(LangUtils.TranslationKey("Calamity.NpcChatText.Bartender.2"), Main.npc[DrunkPrincess].GivenName);
                 }
             }
+            else if (TalkingNpc == Nurse)
+            {
+                switch (npcPhrase)
+                {
+                    case "Now is not the time!":
+                        npcPhrase = LangUtils.TranslationKey("Calamity.NpcChatText.Nurse.1");
+                        break;
+                }
+            }
             Main.npcChatText = npcPhrase;
         }
     }
