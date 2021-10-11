@@ -142,6 +142,7 @@ namespace CalamityRuTranslate.Common
             FargoSoulsArmorSets.Add(new ArmorSetInfo(ModsCall.FargoSouls.ItemType("EridanusHat"), ModsCall.FargoSouls.ItemType("EridanusBattleplate"), ModsCall.FargoSouls.ItemType("EridanusLegwear"), "EridanusHat"));
             FargoSoulsArmorSets.Add(new ArmorSetInfo(ModsCall.FargoSouls.ItemType("GaiaHelmet"), ModsCall.FargoSouls.ItemType("GaiaPlate"), ModsCall.FargoSouls.ItemType("GaiaGreaves"), "GaiaHelmet"));
             FargoSoulsArmorSets.Add(new ArmorSetInfo(ModsCall.FargoSouls.ItemType("MutantMask"), ModsCall.FargoSouls.ItemType("MutantBody"), ModsCall.FargoSouls.ItemType("MutantPants"), "MutantMask"));
+            FargoSoulsArmorSets.Add(new ArmorSetInfo(ModsCall.FargoSouls.ItemType("StyxCrown"), ModsCall.FargoSouls.ItemType("StyxChestplate"), ModsCall.FargoSouls.ItemType("StyxLeggings"), "StyxCrown"));
         }
 
         private static void VanillaArmorSetsInfo()

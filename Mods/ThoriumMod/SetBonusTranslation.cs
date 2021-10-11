@@ -190,11 +190,11 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 				return "TitanMask";
 			}
 
-			if (head.type == ModsCall.Thorium.ItemType("FleshMask") && body.type == ModsCall.Thorium.ItemType("FleshBody") &&
-			    legs.type == ModsCall.Thorium.ItemType("FleshLegs"))
-			{
-				return "Flesh";
-			}
+			// if (head.type == ModsCall.Thorium.ItemType("FleshMask") && body.type == ModsCall.Thorium.ItemType("FleshBody") &&
+			//     legs.type == ModsCall.Thorium.ItemType("FleshLegs"))
+			// {
+			// 	return "Flesh";
+			// }
 
 			if (head.type == ModsCall.Thorium.ItemType("ThoriumHelmet") &&
 			    body.type == ModsCall.Thorium.ItemType("ThoriumMail") && legs.type == ModsCall.Thorium.ItemType("ThoriumGreaves"))
@@ -395,10 +395,10 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 				return "Warlock";
 			}
 
-			if (head.type == ModsCall.Thorium.ItemType("MalignantCap") && body.type == ModsCall.Thorium.ItemType("MalignantRobe"))
-			{
-				return "Malignant";
-			}
+			// if (head.type == ModsCall.Thorium.ItemType("MalignantCap") && body.type == ModsCall.Thorium.ItemType("MalignantRobe"))
+			// {
+			// 	return "Malignant";
+			// }
 
 			if (head.type == ModsCall.Thorium.ItemType("FungusHat") && body.type == ModsCall.Thorium.ItemType("FungusGuard") &&
 			    legs.type == ModsCall.Thorium.ItemType("FungusLeggings"))
@@ -427,12 +427,12 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 				return "WhiteDwarf";
 			}
 
-			if (head.type == ModsCall.Thorium.ItemType("TerrariumHelmet") &&
-			    body.type == ModsCall.Thorium.ItemType("TerrariumBreastPlate") &&
-			    legs.type == ModsCall.Thorium.ItemType("TerrariumGreaves"))
-			{
-				return "Terrarium";
-			}
+			// if (head.type == ModsCall.Thorium.ItemType("TerrariumHelmet") &&
+			//     body.type == ModsCall.Thorium.ItemType("TerrariumBreastPlate") &&
+			//     legs.type == ModsCall.Thorium.ItemType("TerrariumGreaves"))
+			// {
+			// 	return "Terrarium";
+			// }
 
 			if (head.type == ModsCall.Thorium.ItemType("LifeBloomMask") &&
 			    body.type == ModsCall.Thorium.ItemType("LifeBloomMail") &&
@@ -595,7 +595,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 					player.setBonus = "Вы невосприимчивы к сильному жару и отбрасыванию, но ваша скорость передвижения значительно снижена";
 					break;
 				case "Harbinger":
-					player.setBonus = "Максимальный запас маны повышен на 50%\nЕсли у вас более 75% маны, вы становитесь нестабильным";
+					player.setBonus = "Максимальный запас маны повышен на 50% и вы становитесь 'нестабильным', если у вас больше 75% маны\nВ нестабильном состоянии вы получаете значительное увеличение магического урона и шанса критического удара ценой здоровья";
 					break;
 				case "Magma":
 					player.setBonus = "Пламя обволакивает вашу броню и оружие ближнего боя\nУдары по горящему врагу увеличивают силу горения";
@@ -622,7 +622,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 					player.setBonus = "Весь урон призванных существ оставляют продолжительный ожог, который наносит значительный урон с течением времени";
 					break;
 				case "Icy":
-					player.setBonus = "Вас окружает льдистая аура, которая на короткое время замораживает ближайших врагов";
+					player.setBonus = "Вас окружает ледяная аура, замораживая врагов, которые остаются в ней слишком долго";
 					break;
 				case "Durasteel":
 					player.setBonus = "Получаемый урон снижен на 10%";
@@ -639,9 +639,9 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 				case "TitanMask":
 					player.setBonus = "Увеличивает наносимый урон на 18%!";
 					break;
-				case "Flesh":
-					player.setBonus = "Урон по раненным врагам имеет 10% шанс выбить кусок плоти, который при подборе повышает урон и количество здоровья";
-					break;
+				// case "Flesh":
+				// 	player.setBonus = "Урон по раненным врагам имеет 10% шанс выбить кусок плоти, который при подборе повышает урон и количество здоровья";
+				// 	break;
 				case "Thorium":
 					player.setBonus = "Урон повышен на 10%";
 					break;
@@ -661,7 +661,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 					player.setBonus = "Нажатие клавиши 'Armor Ability' затратит 200 маны и прогнет саму ткань реальности\nВраги сильно замедляются и получают на 15% больше урона\nСоюзники получают значительно увеличенную скорость передвижения и атаки";
 					break;
 				case "OmniArablastHood":
-					player.setBonus = "Ваш урон имеет 10% шанс полностью дублировать себя и нанести на 15% больше урона";
+					player.setBonus = "Ваш стрелковый урон имеет 10% шанс полностью дублировать себя и нанести на 15% больше урона";
 					break;
 				case "OmniMarkHead":
 					player.setBonus = "Ваш стрелковый урон имеет 5% шанс уничтожить пораженную цель\nБоссы не подвержены этому эффекту, пока их здоровье более 5% от максимального";
@@ -703,7 +703,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 					player.setBonus = "Критические выстрелы выпускают всплеск пены, замедляющий ближайших врагов";
 					break;
 				case "Celestial":
-					player.setBonus = "Нажмите клавишу 'Armor Ability', назначенную в настройках управления, чтобы создать вокруг вашего курсора невероятно мощную ауру лечения\nСоздание этой ауры стоит 150 маны";
+					player.setBonus = "Нажмите клавишу 'Armor Ability', назначенную в настройках управления, чтобы создать вокруг вашего курсора большую ауру стоимостью 150 маны\nСоюзники, которых коснулась аура, получают увеличенный урон, сопротивление урону, защиту и регенерацию здоровья\nВраги, которых коснулась аура, страдают от священного блеска и получают на 15% больше урона от всех источников";
 					break;
 				case "DewBinder":
 					player.setBonus = "Заклинания исцеления на короткое время увеличивают максимальное здоровье исцеленного игрока на 50";
@@ -730,11 +730,11 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 					player.setBonus = "Если здоровье союзника ниже 50%, вы получаете повышенные способности к исцелению";
 					break;
 				case "Warlock":
-					player.setBonus = "Лучезарные критические удары генерируют до 15 теневых сгустков\nНажатие клавиши 'Armor Ability' высвободит каждый сохраненный теневой сгусток в направлении вашего курсора";
+					player.setBonus = "Лучезарные атаки могут генерировать до 15 теневых сгустков\nНажатие клавиши 'Armor Ability' высвободит каждый сохраненный теневой сгусток в направлении вашего курсора";
 					break;
-				case "Malignant":
-					player.setBonus = "Критические удары магией поджигают врагов пустотным пламенем\nТакже увеличивает скорость чтения заклинаний на 10%";
-					break;
+				// case "Malignant":
+				// 	player.setBonus = "Критические удары магией поджигают врагов пустотным пламенем\nТакже увеличивает скорость чтения заклинаний на 10%";
+				// 	break;
 				case "Fungus":
 					player.setBonus = "Урон, нанесенный врагам зараженным мицелием, повышен на 10%\nНанесение урона врагам, зараженным мицелием, ненадолго увеличивает скорость метания на 10%";
 					break;
@@ -747,9 +747,9 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 				case "WhiteDwarf":
 					player.setBonus = "Критические удары высвобождают вспышки цвета слоновой кости из космоса\nЭти вспышки наносят 0.1% от максимального показателя жизней цели в качестве урона";
 					break;
-				case "Terrarium":
-					player.setBonus = "Энергия Террарии стремится защитить вас";
-					break;
+				// case "Terrarium":
+				// 	player.setBonus = "Энергия Террарии стремится защитить вас";
+				// 	break;
 				case "LifeBloom":
 					player.setBonus = "25% шанс, что атаки ваших прислужников слегка вылечат вас\nВы не можете вылечить более 50 единиц здоровья за 10 секунд";
 					break;
@@ -763,7 +763,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 					player.setBonus = "Увеличивает максимальное количество прислужников на 1\nУбийство врагов или продолжительное нанесение урона боссам, генерирует пучок душ\nПосле генерации 5 таких пучков, они моментально расходуются и лечат вас на 10 здоровья";
 					break;
 				case "Ocean":
-					player.setBonus = "Позволяет дышать под водой";
+					player.setBonus = "Лучезарный урон увеличивает до 20 единиц щита жизни, а щит жизни больше не разрушается на вас\nИсцеление союзника передаёт ему щит жизни";
 					break;
 				case "Conduit":
 					player.setBonus = "Движение по кругу генерирует до 5 статических колец, каждое из которых генерирует защиту здоровья\nКогда кольцо полностью готово, энергетический пузырь защитит вас от 1 удара\nКогда пузырь блокирует атаку, электрический разряд атакует ближайших врагов";
@@ -790,7 +790,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 					player.setBonus = "Магический урон повышен на 7%";
 					break;
 				case "SilkHat":
-					player.setBonus = "Магический урон повышен на 7%";
+					player.setBonus = "Увеличивает магический урон повышен на 12%, пока мана выше 90%";
 					break;
 				case "Dread":
 					player.setBonus = "Ваши ботинки с невообразимой скоростью вибрируют, значительно повышая скорость передвижения\nВо время движения, урон ближнего боя и шанс критического удара возрастают";

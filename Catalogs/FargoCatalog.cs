@@ -69,7 +69,6 @@ namespace CalamityRuTranslate.Catalogs
             "Pirate",
             "SantaClaus",
             "SkeletonMerchant",
-            "Squirrel",
             "Steampunker",
             "Stylist",
             "Tavernkeep",
@@ -239,7 +238,10 @@ namespace CalamityRuTranslate.Catalogs
             "LumberJaxe",
             "DemonAltar",
             "CrimsonAltar",
-            "BrittleBone"
+            "BrittleBone",
+            "Pincushion",
+            "OverloadDarkMage",
+            "EnergizerDarkMage"
         };
 
         public static List<string> ItemTooltip = new List<string>
@@ -278,7 +280,6 @@ namespace CalamityRuTranslate.Catalogs
             "Pirate",
             "SantaClaus",
             "SkeletonMerchant",
-            "Squirrel",
             "Steampunker",
             "Stylist",
             "Tavernkeep",
@@ -431,7 +432,10 @@ namespace CalamityRuTranslate.Catalogs
             "RegalStatue",
             "WalkingRick",
             "WoodenToken",
-            "LumberJaxe"
+            "LumberJaxe",
+            "Pincushion",
+            "OverloadDarkMage",
+            "EnergizerDarkMage"
         };
 
         public static List<string> NPC = new List<string>

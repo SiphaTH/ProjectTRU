@@ -398,7 +398,6 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 
         private void TranslationDoCensusModSupportHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Have any kind of basic mushroom in your inventory ([i/s1:5][i/s1:183][i/s1:60][i/s1:2887])", "Положите в инвентарь любой из этих грибов ([i/s1:5][i/s1:183][i/s1:60][i/s1:2887])");
             TranslationUtils.ILTranslate(il, "Have any kind of non-cobbler boot accessory equipped or in your inventory ([i/s1:285][i/s1:54][i/s1:128][i/s1:863] etc.)", "Экипируйте или положите в инвентарь любой из этих предметов ([i/s1:285][i/s1:54][i/s1:128][i/s1:863] и т.д.)");
             TranslationUtils.ILTranslate(il, "Defeat the [c/4dffb8:Grand Thunder Bird]", "Одолейте [c/4dffb8:Великую гром-птицу]");
             TranslationUtils.ILTranslate(il, "Defeat [c/4dffb8:Patchwerk] during a Blood Moon", "Одолейте [c/4dffb8:Лоскутика] в кровавую луну");
@@ -413,63 +412,39 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 
     public class ThoriumModIL : ILEdit
     {
-        private event ILContext.Manipulator DisplayDRShieldIconHook
+        private event ILContext.Manipulator PostDrawInterfaceHook
         {
-            add => HookEndpointManager.Modify(ModsCall.Thorium.Code.GetType("ThoriumMod.ThoriumMod").GetMethod("DisplayDRShieldIcon", BindingFlags.NonPublic | BindingFlags.Instance), value);
+            add => HookEndpointManager.Modify(ModsCall.Thorium.Code.GetType("ThoriumMod.ThoriumMod").GetMethod("PostDrawInterface", BindingFlags.Public | BindingFlags.Instance), value);
 
-            remove => HookEndpointManager.Unmodify(ModsCall.Thorium.Code.GetType("ThoriumMod.ThoriumMod").GetMethod("DisplayDRShieldIcon", BindingFlags.NonPublic | BindingFlags.Instance), value);
-        }
-
-        private event ILContext.Manipulator DisplayHealerIconHook
-        {
-            add => HookEndpointManager.Modify(ModsCall.Thorium.Code.GetType("ThoriumMod.ThoriumMod").GetMethod("DisplayHealerIcon", BindingFlags.NonPublic | BindingFlags.Instance), value);
-
-            remove => HookEndpointManager.Unmodify(ModsCall.Thorium.Code.GetType("ThoriumMod.ThoriumMod").GetMethod("DisplayHealerIcon", BindingFlags.NonPublic | BindingFlags.Instance), value);
-        }
-        
-        private event ILContext.Manipulator DisplayBardIconHook
-        {
-            add => HookEndpointManager.Modify(ModsCall.Thorium.Code.GetType("ThoriumMod.ThoriumMod").GetMethod("DisplayBardIcon", BindingFlags.NonPublic | BindingFlags.Instance), value);
-
-            remove => HookEndpointManager.Unmodify(ModsCall.Thorium.Code.GetType("ThoriumMod.ThoriumMod").GetMethod("DisplayBardIcon", BindingFlags.NonPublic | BindingFlags.Instance), value);
+            remove => HookEndpointManager.Unmodify(ModsCall.Thorium.Code.GetType("ThoriumMod.ThoriumMod").GetMethod("PostDrawInterface", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
         public override bool Autoload() => ModsCall.Thorium != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load()
         {
-            DisplayDRShieldIconHook += TranslationDisplayDRShieldIconHook;
-            DisplayHealerIconHook += TranslationDisplayHealerIconHook;
-            DisplayBardIconHook += TranslationDisplayBardIconHook;
+            PostDrawInterfaceHook += TranslationPostDrawInterfaceHook;
         }
 
         public override void Unload()
         {
-            DisplayDRShieldIconHook -= TranslationDisplayDRShieldIconHook;
-            DisplayHealerIconHook -= TranslationDisplayHealerIconHook;
-            DisplayBardIconHook -= TranslationDisplayBardIconHook;
+            PostDrawInterfaceHook -= TranslationPostDrawInterfaceHook;
         }
 
-        private void TranslationDisplayDRShieldIconHook(ILContext il)
+        private void TranslationPostDrawInterfaceHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Total: ", "Всего: ");
             TranslationUtils.ILTranslate(il, "% Damage Reduction\nVanilla: ", "% сопротивления урону\nВанилла: ");
             TranslationUtils.ILTranslate(il, "%\nThorium: ", "%\nТориум: ");
             TranslationUtils.ILTranslate(il, "% Before Cap)", "% до предела)");
-        }
 
-        private void TranslationDisplayHealerIconHook(ILContext il)
-        {
             TranslationUtils.ILTranslate(il, ":Healer Stats]\nCurrent Bonus Healing: ", ":Характеристики целителя]\nТекущее бонусное лечение: ");
             TranslationUtils.ILTranslate(il, "\nBest Heal Streak: ", "\nЛучшая серия лечения: ");
             TranslationUtils.ILTranslate(il, "\nHealing done: ", "\nИсцелений: ");
             TranslationUtils.ILTranslate(il, "\nDamage mitigated: ", "\nПредотвращено урона: ");
             TranslationUtils.ILTranslate(il, "\nLives saved: ", "\nЖизней спасено: ");
             TranslationUtils.ILTranslate(il, "\nClose calls: ", "\nНа волоске: ");
-        }
 
-        private void TranslationDisplayBardIconHook(ILContext il)
-        {
             TranslationUtils.ILTranslate(il, ":Bard Stats]\nBonus Duration: ", ":Характеристики барда]\nДополнительная длительность: ");
             TranslationUtils.ILTranslate(il, " sec(s)\nMax-Use Duration: +", " сек.\nМаксимальная длительность: +");
             TranslationUtils.ILTranslate(il, "%\nBase Inspiration: ", "%\nБазовое вдохновение: ");
@@ -1375,8 +1350,8 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
         private void TranslationSetChatButtonsHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Enemy Repellent ", "Репеллент");
-            TranslationUtils.ILTranslate(il, "(1 Gold 60 Silver)", "(1 золотая 60 серебряных)");
-            TranslationUtils.ILTranslate(il, "(2 Gold)", "(2 золотые)");
+            TranslationUtils.ILTranslate(il, "(80 Silver)", "(80 серебряных)");
+            TranslationUtils.ILTranslate(il, "(1 Gold)", "(1 золотая)");
         }
     }
 
@@ -1604,7 +1579,6 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
         private void TranslationConsumeItemHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Freebie!", "Бесплатно!");
-            TranslationUtils.ILTranslate(il, "Freebie!", "Бесплатно!", 2);
         }
     }
 }

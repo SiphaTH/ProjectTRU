@@ -2,10 +2,14 @@
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using IL.FargowiltasSouls;
+using IL.FargowiltasSouls.Buffs.Masomode;
 using IL.FargowiltasSouls.Items;
 using IL.FargowiltasSouls.Items.Misc;
 using IL.FargowiltasSouls.Items.Summons;
 using IL.FargowiltasSouls.NPCs;
+using IL.FargowiltasSouls.NPCs.AbomBoss;
+using IL.FargowiltasSouls.NPCs.DeviBoss;
+using IL.FargowiltasSouls.NPCs.MutantBoss;
 using IL.FargowiltasSouls.Patreon.LaBonez;
 using IL.FargowiltasSouls.Projectiles.Pets;
 using MonoMod.Cil;
@@ -45,7 +49,6 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
         {
             TranslationUtils.ILTranslate(il, "You've been revived!", "Вы возродились!");
             TranslationUtils.ILTranslate(il, "You've been revived!", "Вы возродились!", 2);
-            TranslationUtils.ILTranslate(il, "You've been revived!", "Вы возродились!", 3);
             TranslationUtils.ILTranslate(il, " could not handle the infection.", " не справился с инфекцией.");
             TranslationUtils.ILTranslate(il, " rotted away.", " сгнил.");
             TranslationUtils.ILTranslate(il, " was annihilated by divine wrath.", " был истреблён божественным гневом.");
@@ -147,7 +150,6 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         public override void Load()
         {
-            EModeGlobalNPC.KingSlimeAI += TranslationKingSlimeAIHook;
             EModeGlobalNPC.QueenBeeAI += TranslationQueenBeeAIHook;
             EModeGlobalNPC.SetDefaults += TranslationSetDefaultsHook;
             EModeGlobalNPC.PreAI += TranslationPreAIHook;
@@ -158,7 +160,6 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         public override void Unload()
         {
-            EModeGlobalNPC.KingSlimeAI -= TranslationKingSlimeAIHook;
             EModeGlobalNPC.QueenBeeAI -= TranslationQueenBeeAIHook;
             EModeGlobalNPC.SetDefaults -= TranslationSetDefaultsHook;
             EModeGlobalNPC.PreAI -= TranslationPreAIHook;
@@ -167,13 +168,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
             EModeGlobalNPC.ModifyHitByItem -= TranslationModifyHitByItemHook;
         }
 
-         private void TranslationKingSlimeAIHook(ILContext il)
-         {
-             TranslationUtils.ILTranslate(il, "King Slime has enraged!", "Король слизней в ярости!");
-             TranslationUtils.ILTranslate(il, "King Slime has enraged!", "Король слизней в ярости!", 2);
-         }
-
-         private void TranslationQueenBeeAIHook(ILContext il)
+        private void TranslationQueenBeeAIHook(ILContext il)
          {
              TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", "Королевская особа пробудилась!");
              TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", "Королевская особа пробудилась!", 2);
@@ -186,8 +181,6 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
          private void TranslationPreAIHook(ILContext il)
          {
              TranslationUtils.ILTranslate(il, " sucked dry.", " выдохся.");
-             TranslationUtils.ILTranslate(il, "A Clown has begun ticking!", "Клоун начал тикать!");
-             TranslationUtils.ILTranslate(il, "A Clown has begun ticking!", "Клоун начал тикать!", 2);
              TranslationUtils.ILTranslate(il, "A Clown has exploded!", "Клоун взорвался!");
              TranslationUtils.ILTranslate(il, "A Clown has exploded!", "Клоун взорвался!", 2);
          }
@@ -216,6 +209,12 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
              TranslationUtils.ILTranslate(il, "Skeletron has entered Dungeon Guardian form!", "Скелетрон принял форму стража темницы!", 2);
              TranslationUtils.ILTranslate(il, "Duke Fishron EX has been defeated!", "Герцог Рыброн ЕХ был побеждён!");
              TranslationUtils.ILTranslate(il, "Duke Fishron EX has been defeated!", "Герцог Рыброн ЕХ был побеждён!", 2);
+             TranslationUtils.ILTranslate(il, "Retinazer endured the fatal blow to fight alongside its twin!", "Ретинайзер пережил смертельный удар, чтобы сражаться вместе со своим близнецом!");
+             TranslationUtils.ILTranslate(il, "Retinazer endured the fatal blow to fight alongside its twin!", "Ретинайзер пережил смертельный удар, чтобы сражаться вместе со своим близнецом!", 2);
+             TranslationUtils.ILTranslate(il, "Spazmatism endured the fatal blow to fight alongside its twin!", "Спазматизм пережил смертельный удар, чтобы сражаться вместе со своим близнецом!");
+             TranslationUtils.ILTranslate(il, "Spazmatism endured the fatal blow to fight alongside its twin!", "Спазматизм пережил смертельный удар, чтобы сражаться вместе со своим близнецом!", 2);
+             TranslationUtils.ILTranslate(il, "Skeletron Prime has entered Dungeon Guardian form!", "Скелетрон Прайм принял форму стража темницы!");
+             TranslationUtils.ILTranslate(il, "Skeletron Prime has entered Dungeon Guardian form!", "Скелетрон Прайм принял форму стража темницы!", 2);
          }
 
          private void TranslationModifyHitByItemHook(ILContext il) => TranslationUtils.ILTranslate(il, " was impaled by a Giant Tortoise.", " был пронзён гигантской черепахой.");
@@ -244,7 +243,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
 
         public override void Unload() => AbominationnVoodooDoll.Update -= TranslationAbominationnVoodooDollHook;
 
-        private void TranslationAbominationnVoodooDollHook(ILContext il) => TranslationUtils.ILTranslate(il, "Mutant has been enraged by the death of his brother!", "Мутант в ярости от гибели брата!");
+        private void TranslationAbominationnVoodooDollHook(ILContext il) => TranslationUtils.ILTranslate(il, "Mutant has been enraged by the death of his brother!", "Мутант в ярости от гибели своего брата!");
     }
 
     public class AbomsCurseIL : ILEdit
@@ -367,6 +366,100 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
             TranslationUtils.ILTranslate(il, "Eternity Mode deactivated!", "Режим Вечности деактивирован!");
             TranslationUtils.ILTranslate(il, "Deviantt has awoken!", "Девиантт пробудился!");
             TranslationUtils.ILTranslate(il, "Deviantt has awoken!", "Девиантт пробудился!", 2);
+        }
+    }
+    
+    public class MutantRandomizerIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+    
+        public override void Load() => MutantRandomizer.UseItem += TranslationUseItemHook;
+    
+        public override void Unload() => MutantRandomizer.UseItem -= TranslationUseItemHook;
+    
+        private void TranslationUseItemHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Phantasmal energy wanes...", "Призрачная энергия ослабевает...");
+            TranslationUtils.ILTranslate(il, "Phantasmal energy pulsates.", "Призрачная энергия пульсирует.");
+        }
+    }
+    
+    public class IvyVenomIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+    
+        public override void Load() => IvyVenom.Update += TranslationUpdateHook;
+    
+        public override void Unload() => IvyVenom.Update -= TranslationUpdateHook;
+    
+        private void TranslationUpdateHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Your Ivy Venom has become an Infestation!", "Ваш яд плющей стал заражением!");
+        }
+    }
+    
+    public class DeviBossIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => DeviBoss.AI += TranslationAIHook;
+
+        public override void Unload() => DeviBoss.AI -= TranslationAIHook;
+
+        private void TranslationAIHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Wait a second...", "Секундочку...");
+            TranslationUtils.ILTranslate(il, "You're throwing money at me!", "Ты бросаешь в меня деньги!");
+            TranslationUtils.ILTranslate(il, "Trying to bribe me is pretty gutsy, you know!", "Пытаться подкупить меня - довольно смело, знаешь ли!");
+            TranslationUtils.ILTranslate(il, "Then again, this is a LOT of money...", "Но опять же, это большие деньги...");
+            TranslationUtils.ILTranslate(il, "Show you're tough enough and I won't mind, but not a second before!", "Покажи, что ты достаточно крут, и я не буду возражать, но ни секундой раньше!");
+            TranslationUtils.ILTranslate(il, "But my big bro said not to! What to do, what to do...?", "Но мой старший брат сказал не делать этого! Что делать, что делать..?");
+            TranslationUtils.ILTranslate(il, "Here, you can have this back.", "Вот, ты можешь забрать это обратно.");
+            TranslationUtils.ILTranslate(il, "Aw, what the heck! But this is our little secret, okay?", "О, чёрт возьми! Но это наш маленький секрет, хорошо?");
+            TranslationUtils.ILTranslate(il, "Let's get this show back on the road!", "Ну что, начнём нашу вечеринку!");
+            TranslationUtils.ILTranslate(il, "UH OH, STINKY", "Оо стинки");
+        }
+    }
+    
+    public class AbomBossIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => AbomBoss.AI += TranslationAIHook;
+
+        public override void Unload() => AbomBoss.AI -= TranslationAIHook;
+
+        private void TranslationAIHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "UH OH, STINKY", "Оо стинки");
+        }
+    }
+    
+    public class MutantBossIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => MutantBoss.AI += TranslationAIHook;
+
+        public override void Unload() => MutantBoss.AI -= TranslationAIHook;
+
+        private void TranslationAIHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Mutant tires of the charade...", "Мутант устал от шарады...");
+        }
+    }
+    
+    public class FargoGlobalTileIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => FargoGlobalTile.NearbyEffects += TranslationNearbyEffectsHook;
+
+        public override void Unload() => FargoGlobalTile.NearbyEffects -= TranslationNearbyEffectsHook;
+
+        private void TranslationNearbyEffectsHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "The altar's light shines on you!", "Свет алтаря падает на вас!");
         }
     }
 }

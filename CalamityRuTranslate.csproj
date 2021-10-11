@@ -17,14 +17,17 @@
     <Reference Include="CalamityMod">
       <HintPath>..\..\references\Mods\CalamityMod_v.1.4.5.7.dll</HintPath>
     </Reference>
-    <Reference Include="MMHOOK_Fargowiltas">
-      <HintPath>lib\MMHOOK_Fargowiltas_v.2.3.2.0.dll</HintPath>
+    <Reference Include="MMHOOK_CalamityMod_v.1.4.5.7, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>lib\MMHOOK_CalamityMod_v.1.4.5.7.dll</HintPath>
     </Reference>
-    <Reference Include="MMHOOK_FargowiltasSouls">
-      <HintPath>lib\MMHOOK_FargowiltasSouls_v.1.3.96.2.dll</HintPath>
+    <Reference Include="MMHOOK_FargowiltasSouls_v.1.3.96.6">
+      <HintPath>lib\MMHOOK_FargowiltasSouls_v.1.3.96.6.dll</HintPath>
+    </Reference>
+    <Reference Include="MMHOOK_Fargowiltas_v.2.4.2">
+      <HintPath>lib\MMHOOK_Fargowiltas_v.2.4.2.dll</HintPath>
     </Reference>
     <Reference Include="ThoriumMod">
-      <HintPath>..\..\references\Mods\ThoriumMod_1.6.4.1.dll</HintPath>
+      <HintPath>..\..\references\Mods\ThoriumMod_1.6.5.0.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

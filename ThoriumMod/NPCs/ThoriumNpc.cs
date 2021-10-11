@@ -67,13 +67,13 @@ namespace CalamityRuTranslate.ThoriumMod.NPCs
 			thorium.GetNPC("DissonanceSeer").DisplayName.AddTranslation(GameCulture.Russian, "Провидец диссонанса");
 			thorium.GetNPC("Diverman").DisplayName.AddTranslation(GameCulture.Russian, "Водолаз");
 			thorium.GetNPC("Druid").DisplayName.AddTranslation(GameCulture.Russian, "Друид");
-			thorium.GetNPC("DummyEnemy").DisplayName.AddTranslation(GameCulture.Russian, "Манекен-противник");
+			//thorium.GetNPC("DummyEnemy").DisplayName.AddTranslation(GameCulture.Russian, "Манекен-противник");
 			thorium.GetNPC("EarthenBat").DisplayName.AddTranslation(GameCulture.Russian, "Земляная летучая мышь");
 			thorium.GetNPC("EarthenGolem").DisplayName.AddTranslation(GameCulture.Russian, "Земляной голем");
 			thorium.GetNPC("EpiDermon").DisplayName.AddTranslation(GameCulture.Russian, "Кожный демон");
 			thorium.GetNPC("FesteringSprinter").DisplayName.AddTranslation(GameCulture.Russian, "Гнойный бегун");
 			thorium.GetNPC("FesteringWalker").DisplayName.AddTranslation(GameCulture.Russian, "Гнойный ходок");
-			thorium.GetNPC("FireAnt").DisplayName.AddTranslation(GameCulture.Russian, "Муравей-военный");
+			//thorium.GetNPC("FireAnt").DisplayName.AddTranslation(GameCulture.Russian, "Муравей-военный");
 			thorium.GetNPC("FlamekinCaster").DisplayName.AddTranslation(GameCulture.Russian, "Огнерождённый маг");
 			thorium.GetNPC("FlyingBioMass").DisplayName.AddTranslation(GameCulture.Russian, "Летающая био-масса");
 			thorium.GetNPC("Freezer").DisplayName.AddTranslation(GameCulture.Russian, "Заморозь");

@@ -135,6 +135,8 @@ namespace CalamityRuTranslate.Common
                 case "GaiaHelmet":
                 case "MutantMask":
                     return LangUtils.GetTextValue("FargoSouls", $"SetBonus.{set}");
+                case "StyxCrown":
+                    return LangUtils.GetTextValue("FargoSouls", "SetBonus.StyxCrown", Language.GetTextValue(Main.ReversedUpDownArmorSetBonuses ? "Key.UP" : "Key.DOWN"));
             }
 
             return "";

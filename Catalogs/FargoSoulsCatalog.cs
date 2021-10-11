@@ -115,7 +115,9 @@ namespace CalamityRuTranslate.Catalogs
             "FishMinionBuff",
             "ChaosLife",
             "ObsidianLavaWetBuff",
-            "OriPoison"
+            "OriPoison",
+            "CrystalSkull",
+            "CrimetroidBuff"
         };
 
         public static List<string> ItemName = new List<string>
@@ -281,7 +283,7 @@ namespace CalamityRuTranslate.Catalogs
             "DeviBag",
             "LunarCrystal",
             "MutantBag",
-            "MutantScale",
+            "AbomEnergy",
             "MutantsDiscountCard",
             "MutantsFury",
             "MutantsPact",
@@ -369,7 +371,14 @@ namespace CalamityRuTranslate.Catalogs
             "SquidwardDoor",
             "MissDrakovisFishingPole",
             "DeviousAestheticus",
-            "VortexMagnetRitual"
+            "VortexMagnetRitual",
+            "MutantRandomizer",
+            "StyxChestplate",
+            "StyxCrown",
+            "StyxLeggings",
+            "TwentyTwoPainting",
+            "ScientificRailgun",
+            "CrimetroidEgg"
         };
 
         public static List<string> ItemTooltip = new List<string>
@@ -443,15 +452,6 @@ namespace CalamityRuTranslate.Catalogs
             "BarbariansEssence",
             "OccultistsEssence",
             "SharpshootersEssence",
-            "CosmoForce",
-            "EarthForce",
-            "LifeForce",
-            "NatureForce",
-            "ShadowForce",
-            "SpiritForce",
-            "TerraForce",
-            "TimberForce",
-            "WillForce",
             "AeolusBoots",
             "AgitatingLens",
             "BetsysHeart",
@@ -604,7 +604,14 @@ namespace CalamityRuTranslate.Catalogs
             "SquidwardDoor",
             "MissDrakovisFishingPole",
             "DeviousAestheticus",
-            "VortexMagnetRitual"
+            "VortexMagnetRitual",
+            "MutantRandomizer",
+            "StyxChestplate",
+            "StyxCrown",
+            "StyxLeggings",
+            "TwentyTwoPainting",
+            "ScientificRailgun",
+            "CrimetroidEgg"
         };
 
         public static List<string> NPC = new List<string>

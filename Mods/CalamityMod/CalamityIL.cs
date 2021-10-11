@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using CalamityMod;
 using CalamityMod.CalPlayer;
+using CalamityMod.Events;
 using CalamityMod.Items.Accessories;
 using CalamityMod.Items.Placeables.Furniture.CraftingStations;
 using CalamityMod.Items.Placeables.FurnitureAbyss;
@@ -32,10 +33,14 @@ using CalamityMod.Projectiles.Boss;
 using CalamityMod.Projectiles.Pets;
 using CalamityMod.Tiles.FurniturePlaguedPlate;
 using CalamityMod.UI;
+using CalamityMod.World;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
+using Microsoft.Xna.Framework;
 using MonoMod.Cil;
 using MonoMod.RuntimeDetour.HookGen;
+using On.CalamityMod.Items.DifficultyItems;
+using Terraria;
 
 namespace CalamityRuTranslate.Mods.CalamityMod
 {
@@ -1969,5 +1974,48 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "Necroghast", "Некрогаст");
             TranslationUtils.ILTranslate(il, "Necroplasm", "Некроплазм");
         }
+    }
+
+    public class DeathIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => Death.UseItem += TranslationDeathUseItem;
+
+        private bool TranslationDeathUseItem(Death.orig_UseItem orig, global::CalamityMod.Items.DifficultyItems.Death self, object player)
+        {
+            if (Main.netMode == 1)
+            {
+                return true;
+            }
+            
+            if (CalamityPlayer.areThereAnyDamnBosses || CalamityWorld.DoGSecondStageCountdown > 0 || BossRushEvent.BossRushActive)
+            {
+                string key = "Mods.CalamityMod.ChangingTheRules";
+                Color crimson = Color.Crimson;
+                CalamityUtils.DisplayLocalizedText(key, crimson);
+                return true;
+            }
+            if (!CalamityWorld.death)
+            {
+                CalamityWorld.death = true;
+                string key2 = !Main.dedServ ? "Смерть активирована, наслаждайся весельем." : "Смерть активирована, наслаждайтесь весельем.";
+                Color crimson2 = Color.Crimson;
+                CalamityUtils.DisplayLocalizedText(key2, crimson2);
+            }
+            else
+            {
+                CalamityWorld.death = false;
+                string key3 = !Main.dedServ ? "Смерть деактивирована, недостаточно весело для тебя?" : "Смерть деактивирована, недостаточно весело для вас?";
+                Color crimson3 = Color.Crimson;
+                CalamityUtils.DisplayLocalizedText(key3, crimson3);
+            }
+            CalamityWorld.DoGSecondStageCountdown = 0;
+            CalamityNetcode.SyncWorld();
+            
+            return true;
+        }
+
+        public override void Unload() => Death.UseItem -= TranslationDeathUseItem;
     }
 }

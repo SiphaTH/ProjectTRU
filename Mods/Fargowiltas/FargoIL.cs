@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
+using IL.Fargowiltas.Items;
 using IL.Fargowiltas.Items.Misc;
 using IL.Fargowiltas.Items.Summons.Abom;
 using IL.Fargowiltas.Items.Summons.Mutant;
@@ -214,7 +215,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
     public class OverloadCoznixIL : ILEdit
     {
-        public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Fargo != null && ModsCall.Thorium != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load() => OverloadCoznix.UseItem += TranslationUseItemHook;
 
@@ -226,10 +227,25 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
             TranslationUtils.ILTranslate(il, "The gates of hell have opened wide!", "Врата ада распахнулись!", 2);
         }
     }
+    
+    // public class OverloadGraniteIL : ILEdit
+    // {
+    //     public override bool Autoload() => ModsCall.Fargo != null && ModsCall.Thorium != null && TranslationUtils.IsRussianLanguage;
+    //
+    //     public override void Load() => OverloadGranite.UseItem += TranslationUseItemHook;
+    //
+    //     public override void Unload() => OverloadGranite.UseItem -= TranslationUseItemHook;
+    //
+    //     private void TranslationUseItemHook(ILContext il)
+    //     {
+    //         TranslationUtils.ILTranslate(il, "It is unclear which rocks aren't enemies!", "");
+    //         TranslationUtils.ILTranslate(il, "It is unclear which rocks aren't enemies!", "", 2);
+    //     }
+    // }
 
     public class OverloadJellyIL : ILEdit
     {
-        public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Fargo != null && ModsCall.Thorium != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load() => OverloadJelly.UseItem += TranslationUseItemHook;
 
@@ -244,7 +260,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
     public class OverloadLichIL : ILEdit
     {
-        public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Fargo != null && ModsCall.Thorium != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load() => OverloadLich.UseItem += TranslationUseItemHook;
 
@@ -259,7 +275,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
     public class OverloadSaucerIL : ILEdit
     {
-        public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Fargo != null && ModsCall.Thorium != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load() => OverloadSaucer.UseItem += TranslationUseItemHook;
 
@@ -274,7 +290,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
     public class OverloadStriderIL : ILEdit
     {
-        public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Fargo != null && ModsCall.Thorium != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load() => OverloadStrider.UseItem += TranslationUseItemHook;
 
@@ -289,7 +305,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
     public class OverloadThunderbirdIL : ILEdit
     {
-        public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+        public override bool Autoload() => ModsCall.Fargo != null && ModsCall.Thorium != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load() => OverloadThunderbird.UseItem += TranslationUseItemHook;
 
@@ -1306,48 +1322,82 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron", "Герцог Рыброн");
     }
+    
+    public class PincushionIL : ILEdit
+    {
+        private event ILContext.Manipulator NPCNameHook
+        {
+            add => HookEndpointManager.Modify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.Pincushion").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
+
+            remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.Summons.Deviantt.Pincushion").GetMethod("get_NPCName", BindingFlags.Public | BindingFlags.Instance), value);
+        }
+
+        public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => NPCNameHook += TranslationNPCNameHook;
+
+        public override void Unload() => NPCNameHook -= TranslationNPCNameHook;
+
+        private void TranslationNPCNameHook(ILContext il) => TranslationUtils.ILTranslate(il, "Nailhead", "Гвоздеголов");
+    }
 
     public class StatSheetUIIL : ILEdit
     {
+        private event ILContext.Manipulator ChangeOnInitializeHook
+        {
+            add => HookEndpointManager.Modify(ModsCall.Fargo.Code.GetType("Fargowiltas.UI.StatSheetUI").GetMethod("OnInitialize", BindingFlags.Public | BindingFlags.Instance), value);
+
+            remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.UI.StatSheetUI").GetMethod("OnInitialize", BindingFlags.Public | BindingFlags.Instance), value);
+        }
+        
         public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load()
         {
             StatSheetUI.RebuildStatList += TranslationRebuildStatList;
             StatSheetUI.AddStat += ChangeAddStatSize;
+            ChangeOnInitializeHook += TranslationChangeOnInitializeHook;
         }
 
         public override void Unload()
         {
             StatSheetUI.RebuildStatList -= TranslationRebuildStatList;
             StatSheetUI.AddStat -= ChangeAddStatSize;
+            ChangeOnInitializeHook -= TranslationChangeOnInitializeHook;
+        }
+
+        private void TranslationChangeOnInitializeHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, 660f, 860f);
+            TranslationUtils.ILTranslate(il, 648f, 848f);
+            TranslationUtils.ILTranslate(il, 652, 852);
         }
 
         private void TranslationRebuildStatList(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "Melee Damage: {0}%", "Урон ближнего боя: {0}%");
-            TranslationUtils.ILTranslate(il, "Melee Crit: {0}%", "Шанс крит. удара ближ. боя: {0}%");
-            TranslationUtils.ILTranslate(il, "Melee Speed: {0}%", "Скорость атаки ближ. боя: {0}%");
+            TranslationUtils.ILTranslate(il, "Melee Crit: {0}%", "Шанс критического удара ближнего боя: {0}%");
+            TranslationUtils.ILTranslate(il, "Melee Speed: {0}%", "Скорость атаки ближнего боя: {0}%");
             TranslationUtils.ILTranslate(il, "Ranged Damage: {0}%", "Стрелковый урон: {0}%");
-            TranslationUtils.ILTranslate(il, "Ranged Crit: {0}%", "Стрел. шанс крит. удара: {0}%");
+            TranslationUtils.ILTranslate(il, "Ranged Crit: {0}%", "Стрелковый шанс критического удара: {0}%");
             TranslationUtils.ILTranslate(il, "Magic Damage: {0}%", "Магический урон: {0}%");
-            TranslationUtils.ILTranslate(il, "Magic Crit: {0}%", "Маг. шанс крит. удара: {0}%");
+            TranslationUtils.ILTranslate(il, "Magic Crit: {0}%", "Магический шанс критического удара: {0}%");
             TranslationUtils.ILTranslate(il, "Summon Damage: {0}%", "Урон миньонов: {0}%");
             TranslationUtils.ILTranslate(il, "Max Minions: {0}", "Максимальное число миньонов: {0}");
             TranslationUtils.ILTranslate(il, "Max Sentries: {0}", "Максимальное число турелей: {0}");
             TranslationUtils.ILTranslate(il, "HP: {0}", "Здоровье: {0}");
             TranslationUtils.ILTranslate(il, "Defense: {0}", "Защита: {0}");
             TranslationUtils.ILTranslate(il, "Damage Reduction: {0}%", "Сопротивление урону: {0}%");
-            TranslationUtils.ILTranslate(il, "Life Regen: {0} HP/second","Реген. здоровья: {0}/сек");
+            TranslationUtils.ILTranslate(il, "Life Regen: {0} HP/second","Регенерация здоровья: {0}/сек");
             TranslationUtils.ILTranslate(il, "Mana: {0}","Мана: {0}");
             TranslationUtils.ILTranslate(il, "Mana Regen: {0}/second","Регенерация маны: {0}/сек");
             TranslationUtils.ILTranslate(il, "Armor Penetration: {0}", "Пробивание брони: {0}");
             TranslationUtils.ILTranslate(il, "Aggro: {0}", "Агрессия: {0}");
-            TranslationUtils.ILTranslate(il, "Max Speed: {0} mph", "Макс. скорость: {0} км/ч");
+            TranslationUtils.ILTranslate(il, "Max Speed: {0} mph", "Максимальная скорость: {0} км/ч");
             TranslationUtils.ILTranslate(il, "Wing Time: {0} seconds", "Время полёта: {0} сек");
         }
 
-        private void ChangeAddStatSize(ILContext il) => TranslationUtils.ILTranslate(il, 217, 350);
+        private void ChangeAddStatSize(ILContext il) => TranslationUtils.ILTranslate(il, 217, 475);
     }
 
     public class AbominationnIL : ILEdit
@@ -1398,22 +1448,37 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
             remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.NPCs.FargoGlobalNPC").GetMethod("Swarm", BindingFlags.NonPublic | BindingFlags.Instance), value);
         }
+        
+        private event ILContext.Manipulator NPCLootHook
+        {
+            add => HookEndpointManager.Modify(ModsCall.Fargo.Code.GetType("Fargowiltas.NPCs.FargoGlobalNPC").GetMethod("\u003CNPCLoot\u003Eg__TryDowned\u007C21_0", BindingFlags.NonPublic | BindingFlags.Static), value);
+
+            remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.NPCs.FargoGlobalNPC").GetMethod("\u003CNPCLoot\u003Eg__TryDowned\u007C21_0", BindingFlags.NonPublic | BindingFlags.Static), value);
+        }
 
         public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load()
         {
             FargoGlobalNPC.CheckDead += TranslationCheckDeadHook;
+            NPCLootHook += TranslationNPCLootHook;
             SwarmHook += TranslationSwarmHook;
         }
 
         public override void Unload()
         {
             FargoGlobalNPC.CheckDead -= TranslationCheckDeadHook;
+            NPCLootHook -= TranslationNPCLootHook;
             SwarmHook -= TranslationSwarmHook;
         }
 
         private void TranslationCheckDeadHook(ILContext il) => TranslationUtils.ILTranslate(il, "Betsy has been defeated!", "Бетси была побеждена!");
+        
+        private void TranslationNPCLootHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "A new item has been unlocked in ", "Новый предмет был разблокирован в магазине ");
+            TranslationUtils.ILTranslate(il, "'s shop!", "!");
+        }
 
         private void TranslationSwarmHook(ILContext il)
         {
@@ -1428,18 +1493,35 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
     public class FargowiltasIL : ILEdit
     {
+        private event ILContext.Manipulator ChangeLoadHook
+        {
+            add => HookEndpointManager.Modify(ModsCall.Fargo.Code.GetType("Fargowiltas.Fargowiltas").GetMethod("Load", BindingFlags.Public | BindingFlags.Instance), value);
+
+            remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.Fargowiltas").GetMethod("Load", BindingFlags.Public | BindingFlags.Instance), value);
+        }
+        
         public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load()
         {
             IL.Fargowiltas.Fargowiltas.PostSetupContent += TranslationPostSetupContentHook;
             IL.Fargowiltas.Fargowiltas.HandlePacket += TranslationHandlePacketHook;
+            ChangeLoadHook += TranslationChangeLoadHook;
         }
 
         public override void Unload()
         {
             IL.Fargowiltas.Fargowiltas.PostSetupContent -= TranslationPostSetupContentHook;
             IL.Fargowiltas.Fargowiltas.HandlePacket -= TranslationHandlePacketHook;
+            ChangeLoadHook -= TranslationChangeLoadHook;
+        }
+
+        private void TranslationChangeLoadHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Quick Recall/Mirror", "Быстрый возврат/зеркало");
+            TranslationUtils.ILTranslate(il, "Quick Rod of Discord", "Быстрый жезл раздора");
+            TranslationUtils.ILTranslate(il, "Quick Use Custom (Bottom Left Inventory Slot)", "Быстрое использование предмета (нижний левый слот в инвентаре)");
+            TranslationUtils.ILTranslate(il, "Open Stat Sheet", "Таблица характеристик");
         }
 
         private void TranslationPostSetupContentHook(ILContext il)
@@ -1658,6 +1740,17 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
         private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "The ground shifts with formulated precision!", "Земля под вашими ногами раздвигается с удивительной точностью!");
     }
     
+    // public class OverloadDarkMageIL : ILEdit
+    // {
+    //     public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+    //
+    //     public override void Load() => OverloadDarkMage.ctor += TranslationCtorHook;
+    //
+    //     public override void Unload() => OverloadDarkMage.ctor -= TranslationCtorHook;
+    //
+    //     private void TranslationCtorHook(ILContext il) => TranslationUtils.ILTranslate(il, "You feel like you're in a library!", "");
+    // }
+    
     public class MechEyeIL : ILEdit
     {
         private event ILContext.Manipulator ShootHook
@@ -1686,8 +1779,72 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Load() => Squirrel.SetChatButtons += TranslationSetChatButtons;
 
-        public override void Unload() => Squirrel.SetChatButtons += TranslationSetChatButtons;
+        public override void Unload() => Squirrel.SetChatButtons -= TranslationSetChatButtons;
 
         private void TranslationSetChatButtons(ILContext il) => TranslationUtils.ILTranslate(il, "Cycle Shop", "Циклический магазин");
+    }
+    
+    public class CaughtNPCItemIL : ILEdit
+    {
+        private event ILContext.Manipulator SetStaticDefaultsHook
+        {
+            add => HookEndpointManager.Modify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.CaughtNPCs.CaughtNPCItem").GetMethod("SetStaticDefaults", BindingFlags.Public | BindingFlags.Instance), value);
+
+            remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.Items.CaughtNPCs.CaughtNPCItem").GetMethod("SetStaticDefaults", BindingFlags.Public | BindingFlags.Instance), value);
+        }
+        
+        public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => SetStaticDefaultsHook += TranslationSetStaticDefaultsHook;
+
+        public override void Unload() => SetStaticDefaultsHook -= TranslationSetStaticDefaultsHook;
+
+        private void TranslationSetStaticDefaultsHook(ILContext il) => TranslationUtils.ILTranslate(il, "The Caught ", "Пойманный ");
+    }
+
+    public class FargoGlobalItemIL : ILEdit
+    {
+        public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => FargoGlobalItem.ModifyTooltips += TranslationModifyTooltips;
+
+        public override void Unload() => FargoGlobalItem.ModifyTooltips -= TranslationModifyTooltips;
+
+        private void TranslationModifyTooltips(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Forces surrounding biome state to Ocean upon activation", "Ваше окружение меняется на океан при активации");
+            TranslationUtils.ILTranslate(il, "Forces surrounding biome state to Desert upon activation", "Ваше окружение меняется на пустыню при активации");
+            TranslationUtils.ILTranslate(il, "Forces surrounding biome state to Jungle upon activation", "Ваше окружение меняется на джунгли при активации");
+            TranslationUtils.ILTranslate(il, "Forces surrounding biome state to Snow upon activation", "Ваше окружение меняется на снега при активации");
+            TranslationUtils.ILTranslate(il, "Forces surrounding biome state to Corruption upon activation", "Ваше окружение меняется на искажение при активации");
+            TranslationUtils.ILTranslate(il, "Forces surrounding biome state to Crimson upon activation", "Ваше окружение меняется на багрянец при активации");
+            TranslationUtils.ILTranslate(il, "In hardmode, forces surrounding biome state to Hallow upon activation", "В хардмоде, ваше окружение меняется на святые земли при активации");
+            TranslationUtils.ILTranslate(il, "Can also catch townsfolk", "Также позволяет ловить НИПов");
+            TranslationUtils.ILTranslate(il, "Also grants one extra lure", "Дарует дополнительный поплавок");
+            TranslationUtils.ILTranslate(il, "This rod fires 2 lures", "Запускает 2 поплавка");
+            TranslationUtils.ILTranslate(il, "This rod fires 3 lures", "Запускает 3 поплавка");
+            TranslationUtils.ILTranslate(il, "This rod fires 5 lures", "Запускает 5 поплавков");
+        }
+    }
+    
+    public class StatButtonIL : ILEdit
+    {
+        private event ILContext.Manipulator ChangeOnActivateHook
+        {
+            add => HookEndpointManager.Modify(ModsCall.Fargo.Code.GetType("Fargowiltas.UI.StatButton").GetMethod("OnActivate", BindingFlags.Public | BindingFlags.Instance), value);
+
+            remove => HookEndpointManager.Unmodify(ModsCall.Fargo.Code.GetType("Fargowiltas.UI.StatButton").GetMethod("OnActivate", BindingFlags.Public | BindingFlags.Instance), value);
+        }
+
+        public override bool Autoload() => ModsCall.Fargo != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => ChangeOnActivateHook += TranslationChangeOnActivateHook;
+
+        public override void Unload() => ChangeOnActivateHook -= TranslationChangeOnActivateHook;
+
+        private void TranslationChangeOnActivateHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Stat Sheet", "Таблица характеристик");
+        }
     }
 }
