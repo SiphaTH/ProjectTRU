@@ -695,7 +695,7 @@ namespace CalamityRuTranslate.Catalogs
             {"Salqueeh", "Salqueeh"},
             {"Oarno", "Oarno"},
             {"Cosimo", "Cosimo"},
-            {"Wandering Adventurer", "WanderingAdventurer"},
+            {"Indie", "Indie"},
             {"Magnus Mustafa Thrax III", "MagnusMustafaThraxIII"}
         };
     }
