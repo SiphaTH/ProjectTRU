@@ -1103,7 +1103,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 
         public override void Unload() => ColdDivinityHook -= TranslationColdDivinityHook;
 
-        private void TranslationColdDivinityHook(ILContext il) => TranslationUtils.ILTranslate(il, "Tooltip7", "Tooltip6");
+        private void TranslationColdDivinityHook(ILContext il) => TranslationUtils.ILTranslate(il, "Tooltip7", "Tooltip6"); //!TODO Обязательно проверить после обновления каламити
     }
 
     public class FurnitureOccultIL : ILEdit
@@ -1951,7 +1951,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 
         public override void Unload() => NanotechHook -= TranslationNanotechHook;
 
-        private void TranslationNanotechHook(ILContext il) => TranslationUtils.ILTranslate(il, "Tooltip8", "Tooltip7");
+        private void TranslationNanotechHook(ILContext il) => TranslationUtils.ILTranslate(il, "Tooltip8", "Tooltip7"); //!TODO Обязательно проверить после обновления каламити
     }
 
     public class PolterghastIL : ILEdit

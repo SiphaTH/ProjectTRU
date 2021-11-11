@@ -3,6 +3,9 @@ using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using IL.FargowiltasSouls;
 using IL.FargowiltasSouls.Buffs.Masomode;
+using IL.FargowiltasSouls.EternityMode.Content.Boss.HM;
+using IL.FargowiltasSouls.EternityMode.Content.Boss.PHM;
+using IL.FargowiltasSouls.EternityMode.Content.Enemy;
 using IL.FargowiltasSouls.Items;
 using IL.FargowiltasSouls.Items.Misc;
 using IL.FargowiltasSouls.Items.Summons;
@@ -11,6 +14,7 @@ using IL.FargowiltasSouls.NPCs.AbomBoss;
 using IL.FargowiltasSouls.NPCs.DeviBoss;
 using IL.FargowiltasSouls.NPCs.MutantBoss;
 using IL.FargowiltasSouls.Patreon.LaBonez;
+using IL.FargowiltasSouls.Projectiles.Masomode;
 using IL.FargowiltasSouls.Projectiles.Pets;
 using MonoMod.Cil;
 using MonoMod.RuntimeDetour.HookGen;
@@ -62,11 +66,11 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
     {
         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
 
-        public override void Load() => IL.FargowiltasSouls.Fargowiltas.HandlePacket += TranslationFargowiltasHook;
+        public override void Load() => IL.FargowiltasSouls.Fargowiltas.HandlePacket += TranslationFargowiltasHandlePacketHook;
 
-        public override void Unload() => IL.FargowiltasSouls.Fargowiltas.HandlePacket -= TranslationFargowiltasHook;
+        public override void Unload() => IL.FargowiltasSouls.Fargowiltas.HandlePacket -= TranslationFargowiltasHandlePacketHook;
 
-        private void TranslationFargowiltasHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX has awoken!", "Герцог Рыброн ЕХ пробудился!");
+        private void TranslationFargowiltasHandlePacketHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX has awoken!", "Герцог Рыброн ЕХ пробудился!");
     }
 
      public class BossChecklistCompatibilityIL : ILEdit
@@ -144,39 +148,151 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
         }
      }
 
+     public class QueenBeeIL : ILEdit
+     {
+         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+         public override void Load() => QueenBee.PreAI += TranslationPreAIHook;
+
+         public override void Unload() => QueenBee.PreAI -= TranslationPreAIHook;
+
+         private void TranslationPreAIHook(ILContext il)
+         {
+             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", "Королевская особа пробудилась!");
+             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", "Королевская особа пробудилась!", 2);
+         }
+     }
+
+     public class DukeFishronIL : ILEdit
+     {
+         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+         public override void Load()
+         {
+             DukeFishron.SetDefaults += TranslationSetDefaultsHook;
+             DukeFishron.CheckDead += TranslationCheckDeadHook;
+         }
+
+         public override void Unload()
+         {
+             DukeFishron.SetDefaults -= TranslationSetDefaultsHook;
+             DukeFishron.CheckDead -= TranslationCheckDeadHook;
+         }
+
+         private void TranslationSetDefaultsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX", "Герцог Рыброн ЕХ");
+         
+         private void TranslationCheckDeadHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX has been defeated!", "Герцог Рыброн ЕХ был побеждён!");
+     }
+     
+     public class FishronRitualIL : ILEdit
+     {
+         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+         public override void Load() => FishronRitual.AI += TranslationAIHook;
+
+         public override void Unload() => FishronRitual.AI -= TranslationAIHook;
+         
+         private void TranslationAIHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX", "Герцог Рыброн ЕХ");
+     }
+     
+     public class HarpyIL : ILEdit
+     {
+         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+         public override void Load() => Harpy.OnHitPlayer += TranslationOnHitPlayerHook;
+
+         public override void Unload() => Harpy.OnHitPlayer -= TranslationOnHitPlayerHook;
+         
+         private void TranslationOnHitPlayerHook(ILContext il)
+         {
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!");
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 2);
+         }
+     }
+     
+     public class GoblinsIL : ILEdit
+     {
+         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+         public override void Load() => Goblins.OnHitPlayer += TranslationOnHitPlayerHook;
+
+         public override void Unload() => Goblins.OnHitPlayer -= TranslationOnHitPlayerHook;
+         
+         private void TranslationOnHitPlayerHook(ILContext il)
+         {
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!");
+             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 2);
+         }
+     }
+     
+     public class SkeletronHeadIL : ILEdit
+     {
+         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+         public override void Load() => SkeletronHead.CheckDead += TranslationCheckDeadHook;
+
+         public override void Unload() => SkeletronHead.CheckDead -= TranslationCheckDeadHook;
+         
+         private void TranslationCheckDeadHook(ILContext il) => TranslationUtils.ILTranslate(il, "Skeletron has entered Dungeon Guardian form!", "Скелетрон принял форму стража темницы!");
+     }
+     
+     public class TwinsIL : ILEdit
+     {
+         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+         public override void Load()
+         {
+             Retinazer.CheckDead += TranslationRetinazerCheckDeadHook;
+             Spazmatism.CheckDead += TranslationSpazmatismCheckDeadHook;
+         }
+
+         public override void Unload()
+         {
+             Retinazer.CheckDead -= TranslationRetinazerCheckDeadHook;
+             Spazmatism.CheckDead -= TranslationSpazmatismCheckDeadHook;
+         }
+
+         private void TranslationRetinazerCheckDeadHook(ILContext il)
+         {
+             TranslationUtils.ILTranslate(il, "Retinazer endured the fatal blow to fight alongside its twin!", "Ретинайзер пережил смертельный удар, чтобы сражаться вместе со своим близнецом!");
+             TranslationUtils.ILTranslate(il, "Retinazer endured the fatal blow to fight alongside its twin!", "Ретинайзер пережил смертельный удар, чтобы сражаться вместе со своим близнецом!", 2);
+         }
+         
+         private void TranslationSpazmatismCheckDeadHook(ILContext il)
+         {
+             TranslationUtils.ILTranslate(il, "Spazmatism endured the fatal blow to fight alongside its twin!", "Спазматизм пережил смертельный удар, чтобы сражаться вместе со своим близнецом!");
+             TranslationUtils.ILTranslate(il, "Spazmatism endured the fatal blow to fight alongside its twin!", "Спазматизм пережил смертельный удар, чтобы сражаться вместе со своим близнецом!", 2);
+         }
+     }
+     
+     public class SkeletronPrimeIL : ILEdit
+     {
+         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
+
+         public override void Load() => SkeletronPrime.CheckDead += TranslationCheckDeadHook;
+
+         public override void Unload() => SkeletronPrime.CheckDead -= TranslationCheckDeadHook;
+         
+         private void TranslationCheckDeadHook(ILContext il) => TranslationUtils.ILTranslate(il, "Skeletron Prime has entered Dungeon Guardian form!", "Скелетрон Прайм принял форму стража темницы!");
+     }
+     
     public class EModeGlobalNPCIL : ILEdit
     {
         public override bool Autoload() => ModsCall.FargoSouls != null && TranslationUtils.IsRussianLanguage;
 
         public override void Load()
         {
-            EModeGlobalNPC.QueenBeeAI += TranslationQueenBeeAIHook;
-            EModeGlobalNPC.SetDefaults += TranslationSetDefaultsHook;
             EModeGlobalNPC.PreAI += TranslationPreAIHook;
             EModeGlobalNPC.OnHitPlayer += TranslationOnHitPlayerHook;
-            EModeGlobalNPC.CheckDead += TranslationCheckDeadHook;
             EModeGlobalNPC.ModifyHitByItem += TranslationModifyHitByItemHook;
         }
 
         public override void Unload()
         {
-            EModeGlobalNPC.QueenBeeAI -= TranslationQueenBeeAIHook;
-            EModeGlobalNPC.SetDefaults -= TranslationSetDefaultsHook;
             EModeGlobalNPC.PreAI -= TranslationPreAIHook;
             EModeGlobalNPC.OnHitPlayer -= TranslationOnHitPlayerHook;
-            EModeGlobalNPC.CheckDead -= TranslationCheckDeadHook;
             EModeGlobalNPC.ModifyHitByItem -= TranslationModifyHitByItemHook;
         }
-
-        private void TranslationQueenBeeAIHook(ILContext il)
-         {
-             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", "Королевская особа пробудилась!");
-             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", "Королевская особа пробудилась!", 2);
-             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", "Королевская особа пробудилась!", 3);
-             TranslationUtils.ILTranslate(il, "Royal Subject has awoken!", "Королевская особа пробудилась!", 4);
-         }
-
-         private void TranslationSetDefaultsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Duke Fishron EX", "Герцог Рыброн ЕХ");
 
          private void TranslationPreAIHook(ILContext il)
          {
@@ -197,24 +313,6 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
              TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 6);
              TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 7);
              TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 8);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 9);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 10);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 11);
-             TranslationUtils.ILTranslate(il, "An item was stolen from you!", "У вас украли предмет!", 12);
-         }
-
-         private void TranslationCheckDeadHook(ILContext il)
-         {
-             TranslationUtils.ILTranslate(il, "Skeletron has entered Dungeon Guardian form!", "Скелетрон принял форму стража темницы!");
-             TranslationUtils.ILTranslate(il, "Skeletron has entered Dungeon Guardian form!", "Скелетрон принял форму стража темницы!", 2);
-             TranslationUtils.ILTranslate(il, "Duke Fishron EX has been defeated!", "Герцог Рыброн ЕХ был побеждён!");
-             TranslationUtils.ILTranslate(il, "Duke Fishron EX has been defeated!", "Герцог Рыброн ЕХ был побеждён!", 2);
-             TranslationUtils.ILTranslate(il, "Retinazer endured the fatal blow to fight alongside its twin!", "Ретинайзер пережил смертельный удар, чтобы сражаться вместе со своим близнецом!");
-             TranslationUtils.ILTranslate(il, "Retinazer endured the fatal blow to fight alongside its twin!", "Ретинайзер пережил смертельный удар, чтобы сражаться вместе со своим близнецом!", 2);
-             TranslationUtils.ILTranslate(il, "Spazmatism endured the fatal blow to fight alongside its twin!", "Спазматизм пережил смертельный удар, чтобы сражаться вместе со своим близнецом!");
-             TranslationUtils.ILTranslate(il, "Spazmatism endured the fatal blow to fight alongside its twin!", "Спазматизм пережил смертельный удар, чтобы сражаться вместе со своим близнецом!", 2);
-             TranslationUtils.ILTranslate(il, "Skeletron Prime has entered Dungeon Guardian form!", "Скелетрон Прайм принял форму стража темницы!");
-             TranslationUtils.ILTranslate(il, "Skeletron Prime has entered Dungeon Guardian form!", "Скелетрон Прайм принял форму стража темницы!", 2);
          }
 
          private void TranslationModifyHitByItemHook(ILContext il) => TranslationUtils.ILTranslate(il, " was impaled by a Giant Tortoise.", " был пронзён гигантской черепахой.");

@@ -117,7 +117,9 @@ namespace CalamityRuTranslate.Catalogs
             "ObsidianLavaWetBuff",
             "OriPoison",
             "CrystalSkull",
-            "CrimetroidBuff"
+            "CrimetroidBuff",
+            "Frozen",
+            //"PrimeMinionBuff"
         };
 
         public static List<string> ItemName = new List<string>
@@ -378,7 +380,8 @@ namespace CalamityRuTranslate.Catalogs
             "StyxLeggings",
             "TwentyTwoPainting",
             "ScientificRailgun",
-            "CrimetroidEgg"
+            "CrimetroidEgg",
+            //"PrimeStaff"
         };
 
         public static List<string> ItemTooltip = new List<string>
@@ -611,7 +614,8 @@ namespace CalamityRuTranslate.Catalogs
             "StyxLeggings",
             "TwentyTwoPainting",
             "ScientificRailgun",
-            "CrimetroidEgg"
+            "CrimetroidEgg",
+            //"PrimeStaff"
         };
 
         public static List<string> NPC = new List<string>

@@ -25,6 +25,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
          public override void Load()
          {
+             if (!TRuConfig.Instance.IsEnabledModVersionException)
+                 return;
+
              if (ModInstance.Version != ExpectedCalamityVersion)
              {
                  throw new ModVersionException("Calamity Mod (No Calamity Music)", ModInstance.Version,

@@ -20,10 +20,13 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
 
         public override void Load()
         {
-            if (ModInstance.Version != ExpectedFargoVersion)
+            if (TRuConfig.Instance.IsEnabledModVersionException)
             {
-                throw new ModVersionException("Fargo's Mutant Mod", ModInstance.Version, ExpectedFargoVersion,
-                    ModVersionException.ExceptionType.OutdatedFargo);
+                if (ModInstance.Version != ExpectedFargoVersion)
+                {
+                    throw new ModVersionException("Fargo's Mutant Mod", ModInstance.Version, ExpectedFargoVersion,
+                        ModVersionException.ExceptionType.OutdatedFargo);
+                }
             }
 
             if (ModsCall.FargoSouls != null)

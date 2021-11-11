@@ -324,11 +324,11 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 
     public class WeakReferencesHandlerIL : ILEdit
     {
-        private event ILContext.Manipulator DoBossChecklistSupportHook
+        private event ILContext.Manipulator DoBossChecklistSupport_AddBossHook
         {
-            add => HookEndpointManager.Modify(ModsCall.Thorium.Code.GetType("ThoriumMod.ModSupport.WeakReferencesHandler").GetMethod("DoBossChecklistSupport", BindingFlags.NonPublic | BindingFlags.Static), value);
+            add => HookEndpointManager.Modify(ModsCall.Thorium.Code.GetType("ThoriumMod.ModSupport.WeakReferencesHandler").GetMethod("DoBossChecklistSupport_AddBoss", BindingFlags.NonPublic | BindingFlags.Static), value);
 
-            remove => HookEndpointManager.Unmodify(ModsCall.Thorium.Code.GetType("ThoriumMod.ModSupport.WeakReferencesHandler").GetMethod("DoBossChecklistSupport", BindingFlags.NonPublic | BindingFlags.Static), value);
+            remove => HookEndpointManager.Unmodify(ModsCall.Thorium.Code.GetType("ThoriumMod.ModSupport.WeakReferencesHandler").GetMethod("DoBossChecklistSupport_AddBoss", BindingFlags.NonPublic | BindingFlags.Static), value);
         }
 
         private event ILContext.Manipulator DoCensusModSupportHook
@@ -342,17 +342,17 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
 
         public override void Load()
         {
-            DoBossChecklistSupportHook += TranslationDoBossChecklistSupportHook;
+            DoBossChecklistSupport_AddBossHook += TranslationDoBossChecklistSupport_AddBossHookHook;
             DoCensusModSupportHook += TranslationDoCensusModSupportHook;
         }
 
         public override void Unload()
         {
-            DoBossChecklistSupportHook -= TranslationDoBossChecklistSupportHook;
+            DoBossChecklistSupport_AddBossHook -= TranslationDoBossChecklistSupport_AddBossHookHook;
             DoCensusModSupportHook -= TranslationDoCensusModSupportHook;
         }
 
-        private void TranslationDoBossChecklistSupportHook(ILContext il)
+        private void TranslationDoBossChecklistSupport_AddBossHookHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "The Grand Thunder Bird", "Великая гром-птица");
             TranslationUtils.ILTranslate(il, "Use a [i:", "Используйте [i:");

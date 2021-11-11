@@ -383,7 +383,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                     tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.WaterBolt");
                 }
             }
-            else if (item.type >= 1215 && item.type <= 1219)
+            else if (item.type >= ItemID.TitaniumMask && item.type <= ItemID.TitaniumLeggings)
             {
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
                 if (tooltip != null)
@@ -422,12 +422,10 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                 }
             }
             else if (item.type == ItemID.Tsunami || item.type == ItemID.Flairon || item.type == ItemID.ChlorophyteShotbow ||
-                     item.type == ItemID.HellwingBow || item.type == ItemID.DartPistol ||
-                     item.type == ItemID.DartRifle || item.type == ItemID.Megashark ||
-                     item.type == ItemID.BatScepter || item.type == ItemID.XenoStaff ||
-                     item.type == ItemID.ChainGun || item.type == ItemID.VortexBeater ||
-                     item.type == ItemID.SnowmanCannon || item.type == ItemID.RavenStaff ||
-                     item.type == ItemID.XenoStaff)
+                     item.type == ItemID.HellwingBow || item.type == ItemID.DartPistol || item.type == ItemID.DartRifle ||
+                     item.type == ItemID.Megashark || item.type == ItemID.BatScepter || item.type == ItemID.ChainGun ||
+                     item.type == ItemID.VortexBeater || item.type == ItemID.SnowmanCannon || item.type == ItemID.RavenStaff ||
+                     item.type == ItemID.XenoStaff || item.type == ItemID.StardustDragonStaff)
             {
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
                 if (tooltip != null)
@@ -457,7 +455,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                     masoNerf2.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf2.ComboItems6");
                 }
             }
-            else if (item.type == ItemID.BeeGun || item.type == ItemID.Grenade)
+            else if (item.type == ItemID.BeeGun || item.type == ItemID.Grenade || item.type == ItemID.StickyGrenade || item.type == ItemID.BouncyGrenade)
             {
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf2");
                 if (tooltip != null)
@@ -748,7 +746,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                 if (tooltip5 != null)
                     tooltip5.text = LangUtils.GetTextValue("FargoSouls", "ItemTooltip.SpiritForce.Tooltip5", $"[i:{ModsCall.FargoSouls.ItemType("HallowEnchant")}]");
                 if (tooltip6 != null)
-                    tooltip6.text = LangUtils.GetTextValue("FargoSouls", "ItemTooltip.SpiritForce.Tooltip6", $"[i:{ModsCall.FargoSouls.ItemType("TikiEnchant")}]");
+                    tooltip6.text = LangUtils.GetTextValue("FargoSouls", "ItemTooltip.SpiritForce.Tooltip6", $"[i:{ModsCall.FargoSouls.ItemType("HallowEnchant")}]");
                 if (tooltip7 != null)
                     tooltip7.text = LangUtils.GetTextValue("FargoSouls", "ItemTooltip.SpiritForce.Tooltip7", $"[i:{ModsCall.FargoSouls.ItemType("TikiEnchant")}]");
                 if (tooltip8 != null)
@@ -775,7 +773,11 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                 if (tooltip7 != null)
                     tooltip7.text = LangUtils.GetTextValue("FargoSouls", "ItemTooltip.TerraForce.Tooltip7", $"[i:{ModsCall.FargoSouls.ItemType("TungstenEnchant")}]");
                 if (tooltip8 != null)
-                    tooltip8.text = LangUtils.GetTextValue("FargoSouls", "ItemTooltip.TerraForce.Tooltip8");
+                    tooltip8.text = LangUtils.GetTextValue("FargoSouls", "ItemTooltip.TerraForce.Tooltip8", $"[i:{ModsCall.FargoSouls.ItemType("ObsidianEnchant")}]");
+                if (tooltip9 != null)
+                    tooltip9.text = LangUtils.GetTextValue("FargoSouls", "ItemTooltip.TerraForce.Tooltip9", $"[i:{ModsCall.FargoSouls.ItemType("ObsidianEnchant")}]");
+                if (tooltip10 != null)
+                    tooltip10.text = LangUtils.GetTextValue("FargoSouls", "ItemTooltip.TerraForce.Tooltip10");
             }
             else if (item.type == ModsCall.FargoSouls.ItemType("TimberForce"))
             {
@@ -820,7 +822,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                         tooltip.text = LangUtils.GetTextValue("FargoSouls", "TooltipName.masoNerf.Ammo");
                     }
                 }
-                else if (!(item.type >= 71 && item.type <= 74))
+                else if (!(item.type >= ItemID.CopperCoin && item.type <= ItemID.PlatinumCoin))
                 {
                     TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "masoNerf");
                     if (tooltip != null)

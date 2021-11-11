@@ -93,7 +93,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new IDTypeException(id);
+                    if (!TRuConfig.Instance.IsEnabledModVersionException && !BuffTranslation.Contains(id))
+                        continue;
+                    
+                    if (TRuConfig.Instance.IsEnabledModVersionException)
+                        throw new KeyTypeException(id);
                 }
                 catch (KeyNotFoundException)
                 {
@@ -109,7 +113,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new IDTypeException(id);
+                    if (!TRuConfig.Instance.IsEnabledModVersionException && !ItemNameTranslation.Contains(id))
+                        continue;
+                    
+                    if (TRuConfig.Instance.IsEnabledModVersionException)
+                        throw new KeyTypeException(id);
                 }
                 catch (KeyNotFoundException)
                 {
@@ -125,7 +133,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new IDTypeException(id);
+                    if (!TRuConfig.Instance.IsEnabledModVersionException && !ItemTooltipTranslation.Contains(id))
+                        continue;
+                    
+                    if (TRuConfig.Instance.IsEnabledModVersionException)
+                        throw new KeyTypeException(id);
                 }
                 catch (KeyNotFoundException)
                 {
@@ -141,7 +153,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new IDTypeException(id);
+                    if (!TRuConfig.Instance.IsEnabledModVersionException && !NPCTranslation.Contains(id))
+                        continue;
+                    
+                    if (TRuConfig.Instance.IsEnabledModVersionException)
+                        throw new KeyTypeException(id);
                 }
                 catch (KeyNotFoundException)
                 {
@@ -160,7 +176,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new IDTypeException(id.TileId);
+                    if (!TRuConfig.Instance.IsEnabledModVersionException && !TileTranslation.Contains(id))
+                        continue;
+                    
+                    if (TRuConfig.Instance.IsEnabledModVersionException)
+                        throw new KeyTypeException(id.TileId);
                 }
                 catch (KeyNotFoundException)
                 {
@@ -176,7 +196,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new IDTypeException(id);
+                    if (!TRuConfig.Instance.IsEnabledModVersionException && !ChestTranslation.Contains(id))
+                        continue;
+                    
+                    if (TRuConfig.Instance.IsEnabledModVersionException)
+                        throw new KeyTypeException(id);
                 }
                 catch (KeyNotFoundException)
                 {
@@ -192,7 +216,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new IDTypeException(id);
+                    if (!TRuConfig.Instance.IsEnabledModVersionException && !DresserTranslation.Contains(id))
+                        continue;
+                    
+                    if (TRuConfig.Instance.IsEnabledModVersionException)
+                        throw new KeyTypeException(id);
                 }
                 catch (KeyNotFoundException)
                 {
@@ -208,7 +236,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new IDTypeException(id);
+                    if (!TRuConfig.Instance.IsEnabledModVersionException && !ProjectileTranslation.Contains(id))
+                        continue;
+                    
+                    if (TRuConfig.Instance.IsEnabledModVersionException)
+                        throw new KeyTypeException(id);
                 }
                 catch (KeyNotFoundException)
                 {
@@ -224,7 +256,11 @@ namespace CalamityRuTranslate.Common
                 }
                 catch (NullReferenceException)
                 {
-                    throw new IDTypeException(id);
+                    if (!TRuConfig.Instance.IsEnabledModVersionException && !PrefixTranslation.Contains(id))
+                        continue;
+                    
+                    if (TRuConfig.Instance.IsEnabledModVersionException)
+                        throw new KeyTypeException(id);
                 }
                 catch (KeyNotFoundException)
                 {

@@ -31,8 +31,15 @@ namespace CalamityRuTranslate.Common.Exceptions
                     case ExceptionType.OutdatedThorium:
                     case ExceptionType.OutdatedFargo:
                     case ExceptionType.OutdatedFargoSouls:
-                        return $"Было обнаружено, что ваша версия \"{_modName}\" {_currectModVersion} не соответствует ожидаемой версии {_expectedModVersion}. Русификатор поддерживает только версию {_expectedModVersion}. Вы можете загрузить поддерживаемую версию \"{_modName}\" в браузере модов или по прямой ссылке (нажмите внизу справа \"Открыть веб помощь\")\n";
-                    
+                        return $@"
+Было обнаружено, что ваша версия '{_modName}' {_currectModVersion} не соответствует требуемой версии {_expectedModVersion}, которую переводит русификатор.
+Что бы исправить эту ошибку вам нужно:
+1. Открыть браузер модов и обновить мод. Если обновление не найдено, переходим к пункту 1.1.
+
+1.1. Нажать на кнопку 'Открыть веб помощь'.
+2. Найти на открывшейся ссылке в браузере версию мода {_expectedModVersion}.
+3. Скачать нужную версию мода и открыть его как обычный файл. Мод автоматически переместиться в папку с модами.
+";
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
@@ -46,16 +53,16 @@ namespace CalamityRuTranslate.Common.Exceptions
                 switch (_outdatedType)
                 {
                     case ExceptionType.OutdatedCalamity:
-                        return "https://mirror.sgkoi.dev/tModLoader/download.php?Down=mods/CalamityMod.tmod";
+                        return "https://github.com/MountainDrew8/CalamityMod/releases";
                     
                     case ExceptionType.OutdatedThorium:
-                        return "https://mirror.sgkoi.dev/tModLoader/download.php?Down=mods/ThoriumMod.tmod";
+                        return "https://github.com/SamsonAllen13/ThoriumMod/releases";
                     
                     case ExceptionType.OutdatedFargo:
-                        return "https://mirror.sgkoi.dev/tModLoader/download.php?Down=mods/Fargowiltas.tmod";
+                        return "https://mega.nz/folder/JupwBAzS#TfCEeRTIFxdfVD6vo75tJQ";
                     
                     case ExceptionType.OutdatedFargoSouls:
-                        return "https://mirror.sgkoi.dev/tModLoader/download.php?Down=mods/FargowiltasSouls.tmod";
+                        return "https://mega.nz/folder/Ur4CDQQB#H4pt0k5BcDjxP-Naf6EJeg";
 
                     default:
                         throw new ArgumentOutOfRangeException();

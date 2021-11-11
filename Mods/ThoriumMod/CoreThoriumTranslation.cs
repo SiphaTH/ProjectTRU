@@ -14,7 +14,7 @@ namespace CalamityRuTranslate.Mods.ThoriumMod
             PrefixTranslation = ThoriumCatalog.Prefix;
         }
 
-        private readonly Version ExpectedThoriumVersion = new Version(1, 6, 5, 1);
+        private readonly Version ExpectedThoriumVersion = new Version(1, 6, 5, 2);
 
         public override void Load()
         {

@@ -313,7 +313,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("MagicJungleBag").Tooltip.AddTranslation(GameCulture.Russian, "Создает траву джунглей на грязи");
 			thorium.GetItem("MarshyAstroturf").Tooltip.AddTranslation(GameCulture.Russian, "На ней можно выращивать тисовые деревья");
 			thorium.GetItem("MushroomBag").Tooltip.AddTranslation(GameCulture.Russian, "Создает светящуюся грибную траву на грязи");
-			thorium.GetItem("SoulForge").Tooltip.AddTranslation(GameCulture.Russian, "'Используется для изготовления специализированной экипировки'");
+			thorium.GetItem("SoulForge").Tooltip.AddTranslation(GameCulture.Russian, "Используется для переправки руд и изготовления специализированной экипировки");
 			thorium.GetItem("SpookyAstroturf").Tooltip.AddTranslation(GameCulture.Russian, "На ней можно выращивать осенние травы и жуткие деревья");
 			thorium.GetItem("StrangeDecorativePotion").Tooltip.AddTranslation(GameCulture.Russian, "При размещении выглядит как случайное зелье из Ториума");
 			thorium.GetItem("aSandstonePickaxe").Tooltip.AddTranslation(GameCulture.Russian, "Периодически дарует эффект 'Взрыв ветра', повышающий скорость инструмента");
@@ -430,7 +430,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("CarKey").Tooltip.AddTranslation(GameCulture.Russian, "'Станьте предвестником пустоты'\nПризывает ездового Созерцателя");
 			thorium.GetItem("DemonFireBlastWand").Tooltip.AddTranslation(GameCulture.Russian, "Быстро выпускает расплавленные снаряды");
 			//thorium.GetItem("DevilPauldron").Tooltip.AddTranslation(GameCulture.Russian, "'Переполнен силами зла, недоступными вашему пониманию'\nПолучение смертельного урона воскресит вас с 100 здоровья\nЭтот эффект перезарядится спустя 2 минуты");
-			thorium.GetItem("EyeofBeholder").Tooltip.AddTranslation(GameCulture.Russian, "Когда экипировано, вы подсвечиваете место под позицией вашего курсора");
+			//thorium.GetItem("EyeofBeholder").Tooltip.AddTranslation(GameCulture.Russian, "Когда экипировано, вы подсвечиваете место под позицией вашего курсора");
 			//thorium.GetItem("Obliterator").Tooltip.AddTranslation(GameCulture.Russian, "Выпущенная пуля многократно поражает противников");
 			//thorium.GetItem("ThermogenicImpaler").Tooltip.AddTranslation(GameCulture.Russian, "Нажмите правую клавишу мыши, чтобы сделать выпад, поджигающий пораженных противников");
 			thorium.GetItem("VoidLens").Tooltip.AddTranslation(GameCulture.Russian, "Вызывает потустороннюю сущность из другого измерения\nМожно использовать только в нижнем мире");
