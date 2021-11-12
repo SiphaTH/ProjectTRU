@@ -1103,9 +1103,9 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("MusicPlayerMovementSpeed").DisplayName.AddTranslation(GameCulture.Russian, "Плеер фанк-музыки");
 			thorium.GetItem("MusicPlayerNotActivated").DisplayName.AddTranslation(GameCulture.Russian, "Музыкальный плеер");
 			thorium.GetItem("MusicReplenish").DisplayName.AddTranslation(GameCulture.Russian, "Нота вдохновения");
-			thorium.GetItem("MusicReplenish3").DisplayName.AddTranslation(GameCulture.Russian, "Нота вдохновения");
-			thorium.GetItem("MusicReplenish4").DisplayName.AddTranslation(GameCulture.Russian, "Нота вдохновения");
-			thorium.GetItem("MusicReplenishNoble").DisplayName.AddTranslation(GameCulture.Russian, "Нота вдохновения");
+			//thorium.GetItem("MusicReplenish3").DisplayName.AddTranslation(GameCulture.Russian, "Нота вдохновения");
+			//thorium.GetItem("MusicReplenish4").DisplayName.AddTranslation(GameCulture.Russian, "Нота вдохновения");
+			//thorium.GetItem("MusicReplenishNoble").DisplayName.AddTranslation(GameCulture.Russian, "Нота вдохновения");
 			thorium.GetItem("MythrilMelodica").DisplayName.AddTranslation(GameCulture.Russian, "Мифриловая мелодика");
 			thorium.GetItem("NoblesHat").DisplayName.AddTranslation(GameCulture.Russian, "Шляпа благородного");
 			thorium.GetItem("NoblesJerkin").DisplayName.AddTranslation(GameCulture.Russian, "Камзол благородного");
@@ -1171,7 +1171,7 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("WoodenWhistle").DisplayName.AddTranslation(GameCulture.Russian, "Деревянный свисток");
 			thorium.GetItem("Xylophone").DisplayName.AddTranslation(GameCulture.Russian, "Ксилофон");
 			thorium.GetItem("AbyssalChitin").DisplayName.AddTranslation(GameCulture.Russian, "Глубинный хитин");
-			thorium.GetItem("AnglerBowl").DisplayName.AddTranslation(GameCulture.Russian, "Резервуар удильщика");
+			//thorium.GetItem("AnglerBowl").DisplayName.AddTranslation(GameCulture.Russian, "Резервуар удильщика");
 			thorium.GetItem("AnglerBulb").DisplayName.AddTranslation(GameCulture.Russian, "Глубоководный факел");
 			thorium.GetItem("Aquaite").DisplayName.AddTranslation(GameCulture.Russian, "Аквайт");
 			thorium.GetItem("AquaiteBar").DisplayName.AddTranslation(GameCulture.Russian, "Аквайтовый слиток");
@@ -1217,9 +1217,9 @@ namespace CalamityRuTranslate.ThoriumMod.Items
 			thorium.GetItem("Pearl").DisplayName.AddTranslation(GameCulture.Russian, "Жемчуг");
 			thorium.GetItem("PearlPike").DisplayName.AddTranslation(GameCulture.Russian, "Жемчужная пика");
 			thorium.GetItem("RainStone").DisplayName.AddTranslation(GameCulture.Russian, "Дождевой камень");
-			thorium.GetItem("SeaTurtlesBulwark").DisplayName.AddTranslation(GameCulture.Russian, "Мистический оплот морской черепахи");
+			//thorium.GetItem("SeaTurtlesBulwark").DisplayName.AddTranslation(GameCulture.Russian, "Мистический оплот морской черепахи");
 			thorium.GetItem("SharkStorm").DisplayName.AddTranslation(GameCulture.Russian, "Акулий шквал");
-			thorium.GetItem("SpinyShell").DisplayName.AddTranslation(GameCulture.Russian, "Колючая раковина");
+			//thorium.GetItem("SpinyShell").DisplayName.AddTranslation(GameCulture.Russian, "Колючая раковина");
 			thorium.GetItem("SpringWater").DisplayName.AddTranslation(GameCulture.Russian, "Родниковая вода");
 			thorium.GetItem("StarfishSlicer").DisplayName.AddTranslation(GameCulture.Russian, "Морской сюрикен");
 			thorium.GetItem("TideHunterCap").DisplayName.AddTranslation(GameCulture.Russian, "Шапка ловца приливов");
