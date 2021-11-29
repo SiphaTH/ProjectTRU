@@ -817,6 +817,7 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("SandSharkToothNecklace"),
             ModsCall.Calamity?.ItemType("ShatteredCommunity"),
             ModsCall.Calamity?.ItemType("RemsRevenge"),
+            ModsCall.Calamity?.ItemType("Calamity"),
         };
         //Множественный
         private static List<int?> _typePl = new List<int?>
@@ -945,12 +946,12 @@ namespace CalamityRuTranslate.Vanilla
         {
             On.Terraria.Item.AffixName += delegate(On.Terraria.Item.orig_AffixName orig, Item self)
             {
-                if (!TranslationUtils.IsRussianLanguage)
+                if (!TranslationUtils.IsRussianLanguage || self == null || self.Name == string.Empty)
                     return orig.Invoke(self);
 
                 string calamityEnchantment = "";
                 string goblinPrefix = "";
-
+                CalamityRuTranslate.Instance.Logger.Warn($"'{self.Name}'");
                 for (int i = 0; i < _prefixes.Length; i++)
                 {
                     if (ModsCall.Calamity != null && _prefixes[i][0] == self.Calamity().AppliedEnchantment?.Name)
