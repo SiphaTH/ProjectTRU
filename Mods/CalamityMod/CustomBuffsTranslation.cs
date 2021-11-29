@@ -86,8 +86,19 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     case "You are an emissary of the profaned goddess now!\nThe honey cools your flames, empowering your defensive capabilities\nYour weakened life force fuels your desperate attacks":
                         tip = LangUtils.GetTextValue("Calamity", "BuffDescription.ProfanedCrystalBuff.12");
                         break;
+                    
+                    case "The soul within this crystal has been defiled by overwhelming energy waves from dangerous mechanations":
+                        tip = LangUtils.GetTextValue("Calamity", "BuffDescription.ProfanedCrystalBuff.13");
+                        break;
+                    
+                    case "The profaned soul within has been defiled by the powerful magic of a supreme witch":
+                        tip = LangUtils.GetTextValue("Calamity", "BuffDescription.ProfanedCrystalBuff.14");
+                        break;
                 }
             }
+            
+            if (type == ModsCall.Calamity.BuffType("BossZen")) 
+                tip = LangUtils.GetTextValue("Calamity", "BuffDescription.BossZen");
         }
     }
 }

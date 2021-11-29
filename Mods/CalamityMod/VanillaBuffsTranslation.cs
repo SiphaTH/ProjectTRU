@@ -14,6 +14,26 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         {
             switch (type)
             {
+                case BuffID.Endurance:
+                    tip = LangUtils.GetTextValue("Calamity", "Vanilla.BuffDescription.Endurance");
+                    break;
+                
+                case BuffID.MagicPower:
+                    tip = LangUtils.GetTextValue("Calamity", "Vanilla.BuffDescription.MagicPower");
+                    break;
+                
+                case BuffID.Archery:
+                    tip = LangUtils.GetTextValue("Calamity", "Vanilla.BuffDescription.Archery");
+                    break;
+                
+                case BuffID.Swiftness:
+                    tip = LangUtils.GetTextValue("Calamity", "Vanilla.BuffDescription.Swiftness");
+                    break;
+                
+                case BuffID.SugarRush:
+                    tip = LangUtils.GetTextValue("Calamity", "Vanilla.BuffDescription.SugarRush");
+                    break;
+                
                 case BuffID.NebulaUpDmg1:
                     tip = LangUtils.GetTextValue("Calamity", "Vanilla.BuffDescription.NebulaUpDmg1");
                     break;
@@ -24,6 +44,18 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                 
                 case BuffID.NebulaUpDmg3:
                     tip = LangUtils.GetTextValue("Calamity", "Vanilla.BuffDescription.NebulaUpDmg3");
+                    break;
+                
+                case BuffID.BeetleMight1:
+                    tip = LangUtils.GetTextValue("Calamity", "Vanilla.BuffDescription.BeetleMight1");
+                    break;
+                
+                case BuffID.BeetleMight2:
+                    tip = LangUtils.GetTextValue("Calamity", "Vanilla.BuffDescription.BeetleMight2");
+                    break;
+                
+                case BuffID.BeetleMight3:
+                    tip = LangUtils.GetTextValue("Calamity", "Vanilla.BuffDescription.BeetleMight3");
                     break;
                 
                 case BuffID.BeetleEndurance1:
@@ -79,8 +111,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     break;
                 
                 case BuffID.CursedInferno:
-                    if (ModsCall.Revenge)
-                        tip = LangUtils.GetTextValue("Calamity", "Vanilla.BuffDescription.CursedInferno");
+                    tip = LangUtils.GetTextValue("Calamity", "Vanilla.BuffDescription.CursedInferno");
                     break;
                 
                 case BuffID.Warmth:

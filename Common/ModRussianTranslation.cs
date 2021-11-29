@@ -76,6 +76,12 @@ namespace CalamityRuTranslate.Common
                 DialogueTranslation();
         }
 
+        public void TryCombatTextTranslation()
+        {
+            if (ModInstance != null && TranslationUtils.IsRussianLanguage)
+                CombatTextTranslation();
+        }
+        
         public void TrySetupContentTranslation()
         {
             if (ModInstance != null && TranslationUtils.IsRussianLanguage && !Main.dedServ)
@@ -279,5 +285,7 @@ namespace CalamityRuTranslate.Common
         public virtual void Load() { }
 
         public virtual void DialogueTranslation() { }
+        
+        public virtual void CombatTextTranslation() { }
     }
 }

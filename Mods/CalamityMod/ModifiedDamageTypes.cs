@@ -3,6 +3,7 @@ using System.Linq;
 using CalamityMod.Items;
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod
@@ -15,7 +16,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             {
                 if (item.GetGlobalItem<CalamityGlobalItem>().rogue)
                 {
-                    tooltip.text = tooltip.text.Replace("rogue урона", "ед. разбойного урона");
+                    tooltip.text = tooltip.text.Replace("stealth strike damage", "ед. урона от скрытного удара");
+                    tooltip.text = tooltip.text.Replace(Language.GetTextValue("LegacyTooltip.58"), " ед. разбойного урона");
 
                     if (TRuConfig.Instance.ColoredDamageTypes)
                         tooltip.overrideColor = new Color(255, 184, 108);

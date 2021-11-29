@@ -46,9 +46,10 @@ namespace CalamityRuTranslate
             
             ILManager.Load();
             LangUtils.Load();
-            LoadJSON(TRuConfig.Instance.NewVanillaTranslation);
+            LoadJSON();
             LoadFont();
             LoadCache();
+            CalamityReflections();
         }
 
         public override void Unload()
@@ -61,13 +62,19 @@ namespace CalamityRuTranslate
             UnloadFont();
             UnloadCache();
             CoreThoriumTranslation.Unload();
+            GameCulture currentGameCulture = LanguageManager.Instance.ActiveCulture;
+            LanguageManager.Instance.SetLanguage(GameCulture.English);
+            LanguageManager.Instance.SetLanguage(currentGameCulture);
         }
 		
         public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
         {
             foreach (ModRussianTranslation translation in _translations)
+            {
                 translation.TryDialogueTranslation();
-            
+                translation.TryCombatTextTranslation();
+            }
+
             if (TranslationUtils.IsRussianLanguage && !Main.dedServ && ModsCall.Thorium != null)
             {
                 ThoriumSupport.ThoriumNpcChat();
@@ -92,7 +99,7 @@ namespace CalamityRuTranslate
             }
         }
 
-        private void LoadJSON(bool isNewJSONTranslation)
+        private void LoadJSON()
         {
             if (!TranslationUtils.IsRussianLanguage)
                 return;
@@ -100,9 +107,7 @@ namespace CalamityRuTranslate
             TmodFile tModFile = typeof(CalamityRuTranslate).GetProperty("File", BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(Instance) as TmodFile;
 
             foreach (var item in tModFile.Where(entry =>
-                Path.GetFileNameWithoutExtension(entry.Name).StartsWith(isNewJSONTranslation
-                    ? "Terraria.Localization.Content."
-                    : "Terraria.LocalizationOld.Content.")))
+                Path.GetFileNameWithoutExtension(entry.Name).StartsWith("Terraria.Localization.Content.")))
                 LanguageManager.Instance.LoadLanguageFromFileText(Encoding.UTF8.GetString(GetFileBytes(item.Name)));
         }
     }

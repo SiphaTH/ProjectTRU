@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using CalamityMod;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using Terraria;
@@ -115,7 +116,19 @@ namespace CalamityRuTranslate.Vanilla
             new [] {"Бессвязный", "Бессвязная", "Бессвязное", "Бессвязные"},
             new [] {"Настроенный", "Настроенная", "Настроенное", "Настроенные"},
             new [] {"Гудящий", "Гудящая", "Гудящее", "Гудящие"},
-            new [] {"Сказочный", "Сказочная", "Сказочное", "Сказочные"}
+            new [] {"Сказочный", "Сказочная", "Сказочное", "Сказочные"},
+            new [] {"Негодующий", "Негодующая", "Негодующее", "Негодующие"},
+            new [] {"Горящий", "Горящая", "Горящее", "Горящие"},
+            new [] {"Жертвенный", "Жертвенная", "Жертвенное", "Жертвенные"},
+            new [] {"Злопамятный", "Злопамятная", "Злопамятное", "Злопамятные"},
+            new [] {"Жаждущий", "Жаждущая", "Жаждущее", "Жаждущие"},
+            new [] {"Эфемерный", "Эфемерная", "Эфемерное", "Эфемерные"},
+            new [] {"Адский", "Адская", "Адское", "Адские"},
+            new [] {"Порченный", "Порченная", "Порченное", "Порченные"},
+            new [] {"Предательский", "Предательская", "Предательское", "Предательские"},
+            new [] {"Иссушающий", "Иссушающая", "Иссушающее", "Иссушающие"},
+            new [] {"Гонимый", "Гонимая", "Гонимое", "Гонимые"},
+            new [] {"Блудливый", "Блудливая", "Блудливое", "Блудливые"}
         };
         //Женский
         private static List<int?> _typeW = new List<int?>
@@ -579,6 +592,15 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("MagicalConch"),
             ModsCall.Calamity?.ItemType("ResurrectionButterfly"),
             ModsCall.Calamity?.ItemType("SarosPossession"),
+            ModsCall.Calamity?.ItemType("GruesomeEminence"),
+            ModsCall.Calamity?.ItemType("Heresy"),
+            ModsCall.Calamity?.ItemType("RainbowPartyCannon"),
+            ModsCall.Calamity?.ItemType("Rancor"),
+            ModsCall.Calamity?.ItemType("T1000"),
+            ModsCall.Calamity?.ItemType("PhosphorescentGauntlet"),
+            ModsCall.Calamity?.ItemType("Violence"),
+            ModsCall.Calamity?.ItemType("FleshOfInfidelity"),
+            ModsCall.Calamity?.ItemType("Perdition"),
         };
         //Средний
         private static List<int?> _typeU = new List<int?>
@@ -791,6 +813,10 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("GammaHeart"),
             ModsCall.Calamity?.ItemType("IgneousExaltation"),
             ModsCall.Calamity?.ItemType("PrototypeAndromechaRing"),
+            ModsCall.Calamity?.ItemType("SamuraiBadge"),
+            ModsCall.Calamity?.ItemType("SandSharkToothNecklace"),
+            ModsCall.Calamity?.ItemType("ShatteredCommunity"),
+            ModsCall.Calamity?.ItemType("RemsRevenge"),
         };
         //Множественный
         private static List<int?> _typePl = new List<int?>
@@ -912,29 +938,35 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("SkyfinBombers"),
             ModsCall.Calamity?.ItemType("TerrorTalons"),
             ModsCall.Calamity?.ItemType("TotalityBreakers"),
+            ModsCall.Calamity?.ItemType("FleshOfInfidelity"),
         };
 
         public override bool Autoload(ref string name)
         {
             On.Terraria.Item.AffixName += delegate(On.Terraria.Item.orig_AffixName orig, Item self)
             {
-                if (!TRuConfig.Instance.NewVanillaTranslation || !TranslationUtils.IsRussianLanguage)
+                if (!TranslationUtils.IsRussianLanguage)
                     return orig.Invoke(self);
 
-                if (self.prefix >= Lang.prefix.Length)
-                    return self.Name;
-
-                string prefix = Lang.prefix[self.prefix].Value;
-                if (prefix == string.Empty)
-                    return self.Name;
+                string calamityEnchantment = "";
+                string goblinPrefix = "";
 
                 for (int i = 0; i < _prefixes.Length; i++)
                 {
-                    if(_prefixes[i][0] == prefix)
-                        return GetGenderedPrefix(_prefixes[i], self.type) + " " + self.Name.ToLower();
+                    if (ModsCall.Calamity != null && _prefixes[i][0] == self.Calamity().AppliedEnchantment?.Name)
+                        calamityEnchantment = GetGenderedPrefix(_prefixes[i], self.type) + " ";
+
+                    if (_prefixes[i][0] == Lang.prefix[self.prefix].Value)
+                        goblinPrefix = GetGenderedPrefix(_prefixes[i], self.type) + " ";
                 }
 
-                return prefix + " " + self.Name;
+                if (goblinPrefix == string.Empty && calamityEnchantment == string.Empty)
+                    return orig.Invoke(self);
+
+                if (calamityEnchantment != string.Empty)
+                    goblinPrefix = goblinPrefix.ToLower();
+
+                return calamityEnchantment + goblinPrefix + self.Name.ToLower();
             };
 
             return base.Autoload(ref name);

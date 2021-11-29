@@ -2,6 +2,7 @@
 using CalamityMod;
 using CalamityMod.CalPlayer;
 using CalamityMod.Events;
+using CalamityMod.Items;
 using CalamityMod.Items.Accessories;
 using CalamityMod.Items.Placeables.Furniture.CraftingStations;
 using CalamityMod.Items.Placeables.FurnitureAbyss;
@@ -17,12 +18,9 @@ using CalamityMod.Items.Placeables.FurnitureVoid;
 using CalamityMod.Items.Placeables.Walls;
 using CalamityMod.Items.Potions;
 using CalamityMod.Items.Weapons.Magic;
-using CalamityMod.Items.Weapons.Melee;
 using CalamityMod.Items.Weapons.Ranged;
-using CalamityMod.Items.Weapons.Summon;
 using CalamityMod.NPCs.Bumblebirb;
 using CalamityMod.NPCs.Calamitas;
-using CalamityMod.NPCs.DevourerofGods;
 using CalamityMod.NPCs.NormalNPCs;
 using CalamityMod.NPCs.Perforator;
 using CalamityMod.NPCs.Polterghast;
@@ -31,8 +29,10 @@ using CalamityMod.NPCs.Ravager;
 using CalamityMod.NPCs.TownNPCs;
 using CalamityMod.Projectiles.Boss;
 using CalamityMod.Projectiles.Pets;
+using CalamityMod.TileEntities;
 using CalamityMod.Tiles.FurniturePlaguedPlate;
 using CalamityMod.UI;
+using CalamityMod.UI.CalamitasEnchants;
 using CalamityMod.World;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
@@ -61,8 +61,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 
         private void TranslationRipperUIHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Adrenaline: {0} / {1}", "Адреналин: {0} / {1}");
-            TranslationUtils.ILTranslate(il, "Rage: {0} / {1}", "Ярость: {0} / {1}");
+            TranslationUtils.ILTranslate(il, "Adrenaline: ", "Адреналин: ");
+            TranslationUtils.ILTranslate(il, "Rage: ", "Ярость: ");
         }
     }
 
@@ -117,6 +117,13 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 
             remove => HookEndpointManager.Unmodify(typeof(CalamityPlayer).GetMethod("KillPlayer", BindingFlags.Instance | BindingFlags.Public), value);
         }
+        
+        private event ILContext.Manipulator OnConsumeManaHook
+        {
+            add => HookEndpointManager.Modify(typeof(CalamityPlayer).GetMethod("OnConsumeMana", BindingFlags.Instance | BindingFlags.Public), value);
+
+            remove => HookEndpointManager.Unmodify(typeof(CalamityPlayer).GetMethod("OnConsumeMana", BindingFlags.Instance | BindingFlags.Public), value);
+        }
 
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
 
@@ -124,12 +131,14 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         {
             PreKillHook += TranslationPreKillHook;
             KillPlayerHook += TranslationKillPlayerHook;
+            OnConsumeManaHook += TranslationOnConsumeManaHook;
         }
 
         public override void Unload()
         {
             PreKillHook -= TranslationPreKillHook;
             KillPlayerHook -= TranslationKillPlayerHook;
+            OnConsumeManaHook -= TranslationOnConsumeManaHook;
         }
 
         private void TranslationPreKillHook(ILContext il)
@@ -156,6 +165,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, " vaporized into thin air.", " растворился в воздухе.");
             TranslationUtils.ILTranslate(il, "'s life was completely converted into mana.", " здоровье было полностью преобразовано в ману.");
             TranslationUtils.ILTranslate(il, " succumbed to alcohol sickness.", " поддался алкогольной болезни.");
+            TranslationUtils.ILTranslate(il, " withered away.", " зачах.");
             TranslationUtils.ILTranslate(il, " was summoned too soon.", " был призван слишком рано.");
         }
 
@@ -166,11 +176,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, " from the depths of the Abyss.", " из глубин бездны.");
             TranslationUtils.ILTranslate(il, " was defeated.", " был повержен.");
             TranslationUtils.ILTranslate(il, " was chilled to the bone by the frigid environment.", " промёрз до костей из-за холодной окружающей среды.");
-            TranslationUtils.ILTranslate(il, " was consumed by his inner hatred.", " был поглощён своей внутренней ненавистью.");
-            TranslationUtils.ILTranslate(il, " was consumed by her inner hatred.", " была поглощена своей внутренней ненавистью.");
             TranslationUtils.ILTranslate(il, " failed the challenge at hand.", " не справился с испытанием.");
             TranslationUtils.ILTranslate(il, " was destroyed by a mysterious force.", " был уничтожен таинственной силой.");
         }
+        
+        private void TranslationOnConsumeManaHook(ILContext il) => TranslationUtils.ILTranslate(il, " converted all of their life to mana.", " обернул всю свою жизнь в ману.");
     }
 
     public class CheatTestThingIL : ILEdit
@@ -232,7 +242,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         private void TranslationDraedonLogJungleGUIHook(ILContext il)
         {
             TranslationUtils.ILTranslate(il, "As I record this, it would not be a stretch to call the jungle the hub of this planet. All is centered around it, and none know not of it. It brings me no small amount of unease to see the uncomfortable, raw forms of the living beings who pass through on their journeys above. Fortunately these labs provide everything I need in my research and more. There is no need to ever visit the surface, save for summons on the Lord's orders.", "Поскольку я записываю это, не будет ошибкой назвать джунгли центром этой планеты. Всё сосредоточено вокруг них, но мало кто знает об этом. Я испытываю немалое беспокойство, видя неудобные, грубые формы живых существ, которые живут в них наверху. К счастью, эти лаборатории обеспечивают всё, что мне нужно в моих исследованиях и не только. Нет никакой необходимости когда-либо посещать поверхность, за исключением вызова по приказу Лорда.");
-            TranslationUtils.ILTranslate(il, "Mechanically augmented, the Queen Bee which I had prior experimented on was theoretically a perfect host for the plague virus. When the first sign of the technology bonding with the creature began however, the problems also showed immediately. The mind of the insect fought the control of the nanotechnology, nothing like the simpler creatures I had used as test subjects. It grew increasingly violent, and only once subdued did it receive simple orders. However, if we were to utilize it at all, there is no other way than to let it roam free entirely. I will consider this further.", "Механически усиленная королева пчёл, над которой я ранее экспериментировал, теоретически была идеальным разносчиком чумы. Однако, когда технологии начали менять сущность пчелы, начались проблемы. Разум насекомого противостоял нанотехнологиям, такого раньше не происходило. Она выросла невероятно жестокой и почти не подчинялась приказам. Однако, если мы хотим использовать её, нет другого способа, кроме как позволить ей свободно разгуливать. Я продожлу изучать это дальше.");
+            TranslationUtils.ILTranslate(il, "Mechanically augmented, the Queen Bee which I had prior experimented on was theoretically a perfect host for the plague virus. When the first sign of the technology bonding with the creature began however, the problems also showed immediately. The mind of the insect fought the control of the nanotechnology, nothing like the simpler creatures I had used as test subjects. It grew increasingly violent, and only once subdued did it receive simple orders. However, if we were to utilize it at all, there is no other way than to let it roam free entirely. I will consider this further.", "Механически усиленная королева пчёл, над которой я ранее экспериментировал, теоретически была идеальным разносчиком чумы. Однако, когда технологии начали менять сущность пчелы, начались проблемы. Разум насекомого противостоял нанотехнологиям, такого раньше не происходило. Она выросла невероятно жестокой и почти не подчинялась приказам. Однако, если мы хотим использовать её, нет другого способа, кроме как позволить ей свободно разгуливать. Я продолжу изучать это дальше.");
             TranslationUtils.ILTranslate(il, "A virus, capable of devouring and converting almost anything. And nanotechnology, constructed painstakingly for the sake of control. Development was swift, and every piece fell into place almost eerily, forming an abhorrent existence. I struggle to think of practical applications which would be friendly to common life forms. However, it is not a major concern. Many were hesitant to continue its creation, but I granted them leave if they desired. I would have no need for any who were not entirely as dedicated as my machines.", "Вирус, способный пожирать и превращать практически всё. И тщательно сделанная нанотехнология контроля. Превращение шло пугающе быстро, создавая мерзкую тварь. Я стараюсь сделать так, чтобы она была дружелюбна к обычным формам жизни. Однако это не главная проблема. Многие не решались продолжать создание, но я разрешил уйти, если они пожелают. Я не нуждался ни в ком, кто не был бы так же предан делу, как мои машины.");
         }
     }
@@ -389,7 +399,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "Use an [i:{0}] in the Jungle Biome", "Используйте [i:{0}] в джунглях.");
             TranslationUtils.ILTranslate(il, "HOSTILE SPECIMENS TERMINATED. INITIATE RECALL TO HOME BASE.", "ВРАЖДЕБНЫЕ СУЩНОСТИ УНИЧТОЖЕНЫ. ЗАПУЩЕН ВОЗВРАТ НА БАЗУ.");
             TranslationUtils.ILTranslate(il, "Plaguebringer Goliath", "Разносчица чумы, Голиаф");
-            TranslationUtils.ILTranslate(il, "Use an [i:{0}]", "Используйте [i:{0}].", 2);
+            TranslationUtils.ILTranslate(il, "Use a [i:{0}]", "Используйте [i:{0}].");
             TranslationUtils.ILTranslate(il, "The automaton of misshapen victims went looking for the true perpetrator.", "Машина бесформенных жертв отправилась на поиски истинного нарушителя.");
             TranslationUtils.ILTranslate(il, "Ravager", "Разрушитель", 2);
             TranslationUtils.ILTranslate(il, "Use a [i:{0}] or [i:{1}] as offering at an [i:{2}]", "Используйте [i:{0}] или [i:{1}] в качестве подношения на [i:{2}].");
@@ -401,7 +411,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "Use [i:{0}] in the Jungle Biome", "Используйте [i:{0}] в джунглях.");
             TranslationUtils.ILTranslate(il, "The failed experiment returns to its reproductive routine.", "Неудачный эксперимент вернулся к своему репродуктивному распорядку.");
             TranslationUtils.ILTranslate(il, "Dragonfolly", "Псевдодракон", 2);
-            TranslationUtils.ILTranslate(il, "Use either [i:{0}] or [i:{1}] in the Hallow or Underworld Biomes", "Используйте либо [i:{0}], либо [i:{1}] в святых землях или аду.");
+            TranslationUtils.ILTranslate(il, "Use [i:{0}] in the Hallow or Underworld Biomes", "Используйте [i:{0}] в святых землях или аду.");
             TranslationUtils.ILTranslate(il, "The Profaned Goddess vanishes in a burning blaze.", "Осквернённая богиня исчезает в горящем пламени.");
             TranslationUtils.ILTranslate(il, "Providence", "Провиденс", 2);
             TranslationUtils.ILTranslate(il, "Use a [i:{0}] in the Dungeon", "Используйте [i:{0}] в темнице.");
@@ -419,15 +429,20 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "Defeat the Acid Rain event post-Polterghast or fish using a [i:{0}] in the Sulphurous Sea", "Одолейте событие «Кислотный дождь» после победы над Полтергастом или выловите с помощью [i:{0}] в сернистом море");
             TranslationUtils.ILTranslate(il, "The old duke disappears amidst the acidic downpour.", "Старый герцог исчезает посреди кислотного ливня.");
             TranslationUtils.ILTranslate(il, "Old Duke", "Старый герцог");
-            TranslationUtils.ILTranslate(il, "Use a [i:{0}]", "Используйте [i:{0}].");
+            TranslationUtils.ILTranslate(il, "Use a [i:{0}]", "Используйте [i:{0}].", 2);
             TranslationUtils.ILTranslate(il, "The Devourer of Gods has slain everyone and feasted on their essence.", "Пожиратель богов убил всех и пировал их сущностью.");
             TranslationUtils.ILTranslate(il, "Devourer of Gods", "Пожиратель богов");
             TranslationUtils.ILTranslate(il, "Use a [i:{0}] in the Jungle Biome", "Используйте [i:{0}] в джунглях.");
             TranslationUtils.ILTranslate(il, "Yharon found you too weak to stay near your gravestone.", "Ярон считает вас слишком слабым, чтобы оставаться с вашим надгробием.");
             TranslationUtils.ILTranslate(il, "Yharon", "Ярон", 2);
-            TranslationUtils.ILTranslate(il, "Use an [i:{0}]", "Используйте [i:{0}].", 3);
+            TranslationUtils.ILTranslate(il, "Use an [i:{0}]", "Используйте [i:{0}].", 2);
             TranslationUtils.ILTranslate(il, "Please don't waste my time.", "Пожалуйста, не трать моё время.");
             TranslationUtils.ILTranslate(il, "Supreme Calamitas", "Высшая Каламитас");
+            TranslationUtils.ILTranslate(il, "By using a high-tech computer", "С помощью высокотехнологичного компьютера.");
+            TranslationUtils.ILTranslate(il, "An imperfection after all... what a shame.", "Несовершенство... какой позор.");
+            TranslationUtils.ILTranslate(il, "Exo Mechs", "Экзо-механизмы");
+            TranslationUtils.ILTranslate(il, "While in the Abyss, use an item that inflicts Chaos State", "Находясь в бездне, используйте предмет, который накладывает дебафф «{$BuffName.ChaosState}»");
+            TranslationUtils.ILTranslate(il, "Adult Eidolon Wyrm", "Фантомный змей");
         }
 
         private void TranslationCensusSupportHook(ILContext il)
@@ -438,6 +453,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "Defeat Cryogen", "Одолейте Криогена");
             TranslationUtils.ILTranslate(il, "Have [i:", "Имейте [i:");
             TranslationUtils.ILTranslate(il, "] in your inventory in Hardmode", "] в вашем инвентаре в Хардмоде");
+            TranslationUtils.ILTranslate(il, "Defeat Supreme Calamitas", "Одолейте Высшую Каламитас");
         }
 
         private void TranslationAddCalamityInvasionsHook(ILContext il)
@@ -594,24 +610,6 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         private void TranslationThornBlossomHook(ILContext il) => TranslationUtils.ILTranslate(il, " was violently pricked by a flower.", " был яростно уколот цветком.");
     }
 
-    public class LucreciaIL : ILEdit
-    {
-        private event ILContext.Manipulator LucreciaHook
-        {
-            add => HookEndpointManager.Modify(typeof(Lucrecia).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
-
-            remove => HookEndpointManager.Unmodify(typeof(Lucrecia).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
-        }
-
-        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-
-        public override void Load() => LucreciaHook += TranslationLucreciaHook;
-
-        public override void Unload() => LucreciaHook -= TranslationLucreciaHook;
-
-        private void TranslationLucreciaHook(ILContext il) => TranslationUtils.ILTranslate(il, "'s DNA was destroyed.", " ДНК была уничтожена.");
-    }
-
     public class BloodBoilerIL : ILEdit
     {
         private event ILContext.Manipulator BloodBoilerHook
@@ -632,86 +630,6 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, " suffered from severe anemia.", " страдал тяжёлой анемией.");
             TranslationUtils.ILTranslate(il, " was unable to obtain a blood transfusion.", " не удалось добиться переливания крови.");
         }
-    }
-
-    public class MolecularManipulatorIL : ILEdit
-    {
-        private event ILContext.Manipulator MolecularManipulatorHook
-        {
-            add => HookEndpointManager.Modify(typeof(MolecularManipulator).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
-
-            remove => HookEndpointManager.Unmodify(typeof(MolecularManipulator).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
-        }
-
-        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-
-        public override void Load() => MolecularManipulatorHook += TranslationMolecularManipulatorHook;
-
-        public override void Unload() => MolecularManipulatorHook -= TranslationMolecularManipulatorHook;
-
-        private void TranslationMolecularManipulatorHook(ILContext il)
-        {
-            TranslationUtils.ILTranslate(il, " was vaporized by the imbuement of his life.", " испарился из-за насыщенности своей жизни.");
-            TranslationUtils.ILTranslate(il, " was vaporized by the imbuement of her life.", " испарилась из-за насыщенности своей жизни.");
-        }
-    }
-
-    public class NullificationRifleIL : ILEdit
-    {
-        private event ILContext.Manipulator NullificationRifleHook
-        {
-            add => HookEndpointManager.Modify(typeof(NullificationRifle).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
-
-            remove => HookEndpointManager.Unmodify(typeof(NullificationRifle).GetMethod("Shoot", BindingFlags.Public | BindingFlags.Instance), value);
-        }
-
-        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-
-        public override void Load() => NullificationRifleHook += TranslationNullificationRifleHook;
-
-        public override void Unload() => NullificationRifleHook -= TranslationNullificationRifleHook;
-
-        private void TranslationNullificationRifleHook(ILContext il)
-        {
-            TranslationUtils.ILTranslate(il, " was vaporized by the imbuement of his life.", " испарился из-за насыщенности своей жизни.");
-            TranslationUtils.ILTranslate(il, " was vaporized by the imbuement of her life.", " испарилась из-за насыщенности своей жизни.");
-        }
-    }
-
-    public class DevourerofGodsHeadIL : ILEdit
-    {
-        private event ILContext.Manipulator DevourerofGodsHeadHook
-        {
-            add => HookEndpointManager.Modify(typeof(DevourerofGodsHead).GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
-
-            remove => HookEndpointManager.Unmodify(typeof(DevourerofGodsHead).GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
-        }
-
-        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-
-        public override void Load() => DevourerofGodsHeadHook += TranslationDevourerofGodsHeadHook;
-
-        public override void Unload() => DevourerofGodsHeadHook -= TranslationDevourerofGodsHeadHook;
-
-        private void TranslationDevourerofGodsHeadHook(ILContext il) => TranslationUtils.ILTranslate(il, "'s essence was consumed by the devourer.", " сущность была поглощена пожирателем.");
-    }
-
-    public class DevourerofGodsHeadSIL : ILEdit
-    {
-        private event ILContext.Manipulator DevourerofGodsHeadSHook
-        {
-            add => HookEndpointManager.Modify(typeof(DevourerofGodsHeadS).GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
-
-            remove => HookEndpointManager.Unmodify(typeof(DevourerofGodsHeadS).GetMethod("OnHitPlayer", BindingFlags.Public | BindingFlags.Instance), value);
-        }
-
-        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-
-        public override void Load() => DevourerofGodsHeadSHook += TranslationDevourerofGodsHeadSHook;
-
-        public override void Unload() => DevourerofGodsHeadSHook -= TranslationDevourerofGodsHeadSHook;
-
-        private void TranslationDevourerofGodsHeadSHook(ILContext il) => TranslationUtils.ILTranslate(il, "'s essence was consumed by the devourer.", " сущность была поглощена пожирателем.");
     }
 
     public class FearlessGoldfishWarriorIL : ILEdit
@@ -887,7 +805,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         private void TranslationCalamitasRun3Hook(ILContext il) => TranslationUtils.ILTranslate(il, "The Calamitas Clone", "Клон Каламитас");
     }
 
-    public class BossHPUIIL : ILEdit
+    public class BossHealthBarManagerIL : ILEdit
     {
         private event ILContext.Manipulator DrawHook
         {
@@ -896,51 +814,15 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("Draw", BindingFlags.Public | BindingFlags.Instance), value);
         }
 
-        private event ILContext.Manipulator DrawOpenAnimHook
-        {
-            add => HookEndpointManager.Modify(ModsCall.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("DrawOpenAnim", BindingFlags.Public | BindingFlags.Instance), value);
-
-            remove => HookEndpointManager.Unmodify(ModsCall.Calamity.Code.GetType("CalamityMod.UI.BossHealthBarManager+BossHPUI").GetMethod("DrawOpenAnim", BindingFlags.Public | BindingFlags.Instance), value);
-        }
-
         public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
 
-        public override void Load()
-        {
-            DrawHook += TranslationDrawHook;
-            DrawOpenAnimHook += TranslationDrawOpenAnimHook;
-        }
+        public override void Load() => DrawHook += TranslationDrawHook;
 
-        public override void Unload()
-        {
-            DrawHook -= TranslationDrawHook;
-            DrawOpenAnimHook -= TranslationDrawOpenAnimHook;
-        }
+        public override void Unload() => DrawHook -= TranslationDrawHook;
 
         private void TranslationDrawHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "(Segments left: ", "(Осталось сегментов: ");
-            TranslationUtils.ILTranslate(il, "(Creepers left: ", "(Осталось ползунов: ");
-            TranslationUtils.ILTranslate(il, "(Hands left: ", "(Осталось рук: ");
-            TranslationUtils.ILTranslate(il, "(Arms left: ", "(Осталось оружий: ");
-            TranslationUtils.ILTranslate(il, "(Guns left: ", "(Осталось ружей: ");
-            TranslationUtils.ILTranslate(il, "(Cannons left: ", "(Осталось пушек: ");
-            TranslationUtils.ILTranslate(il, "(Dark Energy left: ", "(Осталось тёмной энергии: ");
-            TranslationUtils.ILTranslate(il, "(Body Parts left: ", "(Осталось частей тела: ");
-            TranslationUtils.ILTranslate(il, "(Large Slimes left: ", "(Осталось больших слизней: ");
-        }
-
-        private void TranslationDrawOpenAnimHook(ILContext il)
-        {
-            TranslationUtils.ILTranslate(il, "(Segments left: ", "(Осталось сегментов: ");
-            TranslationUtils.ILTranslate(il, "(Creepers left: ", "(Осталось ползунов: ");
-            TranslationUtils.ILTranslate(il, "(Hands left: ", "(Осталось рук: ");
-            TranslationUtils.ILTranslate(il, "(Arms left: ", "(Осталось оружий: ");
-            TranslationUtils.ILTranslate(il, "(Guns left: ", "(Осталось ружей: ");
-            TranslationUtils.ILTranslate(il, "(Cannons left: ", "(Осталось пушек: ");
-            TranslationUtils.ILTranslate(il, "(Dark Energy left: ", "(Осталось тёмной энергии: ");
-            TranslationUtils.ILTranslate(il, "(Body Parts left: ", "(Осталось частей тела: ");
-            TranslationUtils.ILTranslate(il, "(Large Slimes left: ", "(Осталось больших слизней: ");
+            TranslationUtils.ILTranslate(il, "({0} left: {1})", "({0} осталось: {1})");
         }
     }
 
@@ -1086,24 +968,6 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         public override void Unload() => BossRushUIHook -= TranslationBossRushUIHook;
 
         private void TranslationBossRushUIHook(ILContext il) => TranslationUtils.ILTranslate(il, "Boss Rush", "Босс-Раш");
-    }
-
-    public class ColdDivinityIL : ILEdit
-    {
-        private event ILContext.Manipulator ColdDivinityHook
-        {
-            add => HookEndpointManager.Modify(typeof(ColdDivinity).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
-
-            remove => HookEndpointManager.Unmodify(typeof(ColdDivinity).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
-        }
-
-        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-
-        public override void Load() => ColdDivinityHook += TranslationColdDivinityHook;
-
-        public override void Unload() => ColdDivinityHook -= TranslationColdDivinityHook;
-
-        private void TranslationColdDivinityHook(ILContext il) => TranslationUtils.ILTranslate(il, "Tooltip7", "Tooltip6"); //!TODO Обязательно проверить после обновления каламити
     }
 
     public class FurnitureOccultIL : ILEdit
@@ -1936,24 +1800,6 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         private void TranslationMonolithWorkBenchHook(ILContext il) => TranslationUtils.ILTranslate(il, "Monolith Work Bench", "Монолитный верстак");
     }
 
-    public class NanotechIL : ILEdit
-    {
-        private event ILContext.Manipulator NanotechHook
-        {
-            add => HookEndpointManager.Modify(typeof(Nanotech).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
-
-            remove => HookEndpointManager.Unmodify(typeof(Nanotech).GetMethod("ModifyTooltips", BindingFlags.Public | BindingFlags.Instance), value);
-        }
-
-        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
-
-        public override void Load() => NanotechHook += TranslationNanotechHook;
-
-        public override void Unload() => NanotechHook -= TranslationNanotechHook;
-
-        private void TranslationNanotechHook(ILContext il) => TranslationUtils.ILTranslate(il, "Tooltip8", "Tooltip7"); //!TODO Обязательно проверить после обновления каламити
-    }
-
     public class PolterghastIL : ILEdit
     {
         private event ILContext.Manipulator PolterghastHook
@@ -1999,14 +1845,14 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             if (!CalamityWorld.death)
             {
                 CalamityWorld.death = true;
-                string key2 = !Main.dedServ ? "Смерть активирована, наслаждайся весельем." : "Смерть активирована, наслаждайтесь весельем.";
+                string key2 = !Main.dedServ ? "Смерть активирована; наслаждайся весельем." : "Смерть активирована; наслаждайтесь весельем.";
                 Color crimson2 = Color.Crimson;
                 CalamityUtils.DisplayLocalizedText(key2, crimson2);
             }
             else
             {
                 CalamityWorld.death = false;
-                string key3 = !Main.dedServ ? "Смерть деактивирована, недостаточно весело для тебя?" : "Смерть деактивирована, недостаточно весело для вас?";
+                string key3 = !Main.dedServ ? "Смерть деактивирована; недостаточно весело для тебя?" : "Смерть деактивирована; недостаточно весело для вас?";
                 Color crimson3 = Color.Crimson;
                 CalamityUtils.DisplayLocalizedText(key3, crimson3);
             }
@@ -2017,5 +1863,262 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         }
 
         public override void Unload() => Death.UseItem -= TranslationDeathUseItem;
+    }
+    
+    public class AstralArcanumUIIL : ILEdit
+    {
+        private event ILContext.Manipulator UpdateAndDrawHook
+        {
+            add => HookEndpointManager.Modify(typeof(AstralArcanumUI).GetMethod("UpdateAndDraw", BindingFlags.Public | BindingFlags.Static), value);
+
+            remove => HookEndpointManager.Unmodify(typeof(AstralArcanumUI).GetMethod("UpdateAndDraw", BindingFlags.Public | BindingFlags.Static), value);
+        }
+
+        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => UpdateAndDrawHook += TranslationUpdateAndDrawHook;
+
+        public override void Unload() => UpdateAndDrawHook -= TranslationUpdateAndDrawHook;
+
+        private void TranslationUpdateAndDrawHook(ILContext il) => TranslationUtils.ILTranslate(il, "Select", "Выбрать");
+    }
+    
+    public class WITCHIL : ILEdit
+    {
+        private event ILContext.Manipulator SetChatButtonsHook
+        {
+            add => HookEndpointManager.Modify(typeof(WITCH).GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
+
+            remove => HookEndpointManager.Unmodify(typeof(WITCH).GetMethod("SetChatButtons", BindingFlags.Public | BindingFlags.Instance), value);
+        }
+
+        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
+
+        public override void Load() => SetChatButtonsHook += TranslationSetChatButtonsHook;
+
+        public override void Unload() => SetChatButtonsHook -= TranslationSetChatButtonsHook;
+
+        private void TranslationSetChatButtonsHook(ILContext il) => TranslationUtils.ILTranslate(il, "Enchant", "Зачарование");
+    }
+
+    public class ExoMechSelectionUIIL : ILEdit
+    {
+        private event ILContext.Manipulator HandleInteractionWithButtonHook
+        {
+            add => HookEndpointManager.Modify(typeof(ExoMechSelectionUI).GetMethod("HandleInteractionWithButton", BindingFlags.Public | BindingFlags.Static), value);
+        
+            remove => HookEndpointManager.Unmodify(typeof(ExoMechSelectionUI).GetMethod("HandleInteractionWithButton", BindingFlags.Public | BindingFlags.Static), value);
+        }
+        
+        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
+        
+        public override void Load() => HandleInteractionWithButtonHook += TranslationHandleInteractionWithButtonHook;
+        
+        public override void Unload() => HandleInteractionWithButtonHook -= TranslationHandleInteractionWithButtonHook;
+        
+        private void TranslationHandleInteractionWithButtonHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Thanatos, a serpentine terror with impervious armor and innumerable laser turrets.", "Танатос - змееподобное создание с непробиваемой броней и несчётными лазерными турелями.");
+            TranslationUtils.ILTranslate(il, "Ares, a heavyweight, diabolical monstrosity with four Exo superweapons.", "Арес - тяжеловесное чудовище с четырьмя экзо-супероружиями.");
+            TranslationUtils.ILTranslate(il, "Artemis and Apollo, a pair of extremely agile destroyers with pulse cannons.", "Артемида и Аполлон - тандем чрезвычайно маневренных уничтожителей, обладающих импульсными пушками.");
+        }
+    }
+    
+    public class CalamitasEnchantUIIL : ILEdit
+    {
+        private event ILContext.Manipulator DrawEnchantmentCostHook
+        {
+            add => HookEndpointManager.Modify(typeof(CalamitasEnchantUI).GetMethod("DrawEnchantmentCost", BindingFlags.Public | BindingFlags.Static), value);
+        
+            remove => HookEndpointManager.Unmodify(typeof(CalamitasEnchantUI).GetMethod("DrawEnchantmentCost", BindingFlags.Public | BindingFlags.Static), value);
+        }
+        
+        private event ILContext.Manipulator InteractWithEnchantIconHook
+        {
+            add => HookEndpointManager.Modify(typeof(CalamitasEnchantUI).GetMethod("InteractWithEnchantIcon", BindingFlags.Public | BindingFlags.Static), value);
+        
+            remove => HookEndpointManager.Unmodify(typeof(CalamitasEnchantUI).GetMethod("InteractWithEnchantIcon", BindingFlags.Public | BindingFlags.Static), value);
+        }
+        
+        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
+        
+        public override void Load()
+        {
+            DrawEnchantmentCostHook += TranslationHandleInteractionWithButtonHook;
+            InteractWithEnchantIconHook += TranslationInteractWithEnchantIconHook;
+        }
+
+        public override void Unload()
+        {
+            DrawEnchantmentCostHook -= TranslationHandleInteractionWithButtonHook;
+            InteractWithEnchantIconHook -= TranslationInteractWithEnchantIconHook;
+        }
+
+        private void TranslationHandleInteractionWithButtonHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Cost: ", "Стоимость: ");
+            TranslationUtils.ILTranslate(il, "Exhume", "Наполнение");
+        }
+        
+        private void TranslationInteractWithEnchantIconHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Exhume", "Наполнение");
+            TranslationUtils.ILTranslate(il, "Exhume", "Наполнение", 2);
+            TranslationUtils.ILTranslate(il, "Exhume", "Наполнение", 3);
+        }
+    }
+    
+    public class ModeIndicatorUIIL : ILEdit
+    {
+        private event ILContext.Manipulator DrawHook
+        {
+            add => HookEndpointManager.Modify(typeof(ModeIndicatorUI).GetMethod("Draw", BindingFlags.Public | BindingFlags.Static), value);
+        
+            remove => HookEndpointManager.Unmodify(typeof(ModeIndicatorUI).GetMethod("Draw", BindingFlags.Public | BindingFlags.Static), value);
+        }
+        
+        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
+        
+        public override void Load() => DrawHook += TranslationDrawHook;
+        
+        public override void Unload() => DrawHook -= TranslationDrawHook;
+        
+        private void TranslationDrawHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Death", "Смерть");
+            TranslationUtils.ILTranslate(il, "Revengeance", "Месть");
+            TranslationUtils.ILTranslate(il, " Mode is ", " ");
+            TranslationUtils.ILTranslate(il, "active", "активирована");
+            TranslationUtils.ILTranslate(il, "not active", "деактивирована");
+            TranslationUtils.ILTranslate(il, "Armageddon is ", "Армагеддон ");
+            TranslationUtils.ILTranslate(il, "active", "активирован", 2);
+            TranslationUtils.ILTranslate(il, "not active", "деактивирован", 2);
+            TranslationUtils.ILTranslate(il, "Malice Mode is ", "Злоба ");
+            TranslationUtils.ILTranslate(il, "active", "активирована", 3);
+            TranslationUtils.ILTranslate(il, "not active", "деактивирована", 3);
+        }
+    }
+    
+    public class CodebreakerUIIL : ILEdit
+    {
+        private event ILContext.Manipulator DisplayCostTextHook
+        {
+            add => HookEndpointManager.Modify(typeof(CodebreakerUI).GetMethod("DisplayCostText", BindingFlags.Public | BindingFlags.Static), value);
+        
+            remove => HookEndpointManager.Unmodify(typeof(CodebreakerUI).GetMethod("DisplayCostText", BindingFlags.Public | BindingFlags.Static), value);
+        }
+        
+        private event ILContext.Manipulator DrawDecryptCancelConfirmationTextHook
+        {
+            add => HookEndpointManager.Modify(typeof(CodebreakerUI).GetMethod("DrawDecryptCancelConfirmationText", BindingFlags.Public | BindingFlags.Static), value);
+        
+            remove => HookEndpointManager.Unmodify(typeof(CodebreakerUI).GetMethod("DrawDecryptCancelConfirmationText", BindingFlags.Public | BindingFlags.Static), value);
+        }
+        
+        private event ILContext.Manipulator HandleDraedonSummonButtonHook
+        {
+            add => HookEndpointManager.Modify(typeof(CodebreakerUI).GetMethod("HandleDraedonSummonButton", BindingFlags.Public | BindingFlags.Static), value);
+        
+            remove => HookEndpointManager.Unmodify(typeof(CodebreakerUI).GetMethod("HandleDraedonSummonButton", BindingFlags.Public | BindingFlags.Static), value);
+        }
+        
+        private event ILContext.Manipulator DisplayNotStrongEnoughErrorTextHook
+        {
+            add => HookEndpointManager.Modify(typeof(CodebreakerUI).GetMethod("DisplayNotStrongEnoughErrorText", BindingFlags.Public | BindingFlags.Static), value);
+        
+            remove => HookEndpointManager.Unmodify(typeof(CodebreakerUI).GetMethod("DisplayNotStrongEnoughErrorText", BindingFlags.Public | BindingFlags.Static), value);
+        }
+        
+        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
+        
+        public override void Load()
+        {
+            DisplayCostTextHook += TranslationDisplayCostTextHook;
+            DrawDecryptCancelConfirmationTextHook += TranslationDrawDecryptCancelConfirmationTextHook;
+            HandleDraedonSummonButtonHook += TranslationHandleDraedonSummonButtonHook;
+            DisplayNotStrongEnoughErrorTextHook += TranslationDisplayNotStrongEnoughErrorTextHook;
+        }
+
+        public override void Unload()
+        {
+            DisplayCostTextHook -= TranslationDisplayCostTextHook;
+            DrawDecryptCancelConfirmationTextHook -= TranslationDrawDecryptCancelConfirmationTextHook;
+            HandleDraedonSummonButtonHook -= TranslationHandleDraedonSummonButtonHook;
+            DisplayNotStrongEnoughErrorTextHook -= TranslationDisplayNotStrongEnoughErrorTextHook;
+        }
+
+        private void TranslationDisplayCostTextHook(ILContext il) => TranslationUtils.ILTranslate(il, "Cost: ", "Стоимость: ");
+        
+        private void TranslationDrawDecryptCancelConfirmationTextHook(ILContext il) => TranslationUtils.ILTranslate(il, "Are you sure?", "Вы уверены?");
+        
+        private void TranslationHandleDraedonSummonButtonHook(ILContext il) => TranslationUtils.ILTranslate(il, "Contact", "Контакт");
+        
+        private void TranslationDisplayNotStrongEnoughErrorTextHook(ILContext il) => TranslationUtils.ILTranslate(il, "Encryption unsolveable: Upgrades required.", "Шифрование нерешаемое: требуются обновления.");
+    }
+    
+    public class ChargeMeterUIIL : ILEdit
+    {
+        private event ILContext.Manipulator DrawHook
+        {
+            add => HookEndpointManager.Modify(typeof(ChargeMeterUI).GetMethod("Draw", BindingFlags.Public | BindingFlags.Static), value);
+        
+            remove => HookEndpointManager.Unmodify(typeof(ChargeMeterUI).GetMethod("Draw", BindingFlags.Public | BindingFlags.Static), value);
+        }
+        
+        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
+        
+        public override void Load() => DrawHook += TranslationDrawHook;
+        
+        public override void Unload() => DrawHook -= TranslationDrawHook;
+        
+        private void TranslationDrawHook(ILContext il) => TranslationUtils.ILTranslate(il, "Current Charge: ", "Текущий заряд: ");
+    }
+    
+    public class TECodebreakerIL : ILEdit
+    {
+        private event ILContext.Manipulator DrawHook
+        {
+            add => HookEndpointManager.Modify(typeof(TECodebreaker).GetMethod("get_UnderlyingSchematicText", BindingFlags.Public | BindingFlags.Instance), value);
+        
+            remove => HookEndpointManager.Unmodify(typeof(TECodebreaker).GetMethod("get_UnderlyingSchematicText", BindingFlags.Public | BindingFlags.Instance), value);
+        }
+        
+        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
+        
+        public override void Load() => DrawHook += TranslationDrawHook;
+        
+        public override void Unload() => DrawHook -= TranslationDrawHook;
+        
+        private void TranslationDrawHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Within an army, as weapons do, the soldiers serve different purposes. That distinction is crucial, as the wrong tool in the wrong hands—no matter how potent—may as well be a wooden club.\nAddendum: Seek out my base of operations closest to the Lihzard’s home. I wish you the best of luck with all sincerity, for it has been a long time since I have had a worthy test subject. ", "В армии солдаты, как и оружие, служат разным целям. Это различие имеет решающее значение, поскольку неправильный инструмент в неправильных руках, каким бы мощным он ни был, с таким же успехом может быть деревянной дубиной.\nДополнение: Найдите мою базу, она недалеко от храма ящщеров. Искренне желаю вам удачи. Прошло много времени с тех пор, как у меня был достойный испытуемый.");
+            TranslationUtils.ILTranslate(il, "As rank progresses, so often does the lethality of equipment. In the hands of competent soldiers, the weapons have the ability to make change. However, competent soldiers take no action but orders from above.\nAddendum: If you read this, you have come far. Do not disappoint. Go now to Hell, for the next component stored in what were once my forges.", "С ростом в звании неизбежен и рост мощности снаряжения. В компетентных руках оружие способно вносить огромные изменения на всём поле боя. Но эти же руки не самостоятельны, лишь выполняют приказы.\nДополнение: Вы далеко продвинулись. Не разочаровывайте. Теперь идите в Ад. Следующий компонент хранится в месте, что некогда были моими кузницами.");
+            TranslationUtils.ILTranslate(il, "Only the highest ranking in the battalions of Yharim’s army held these weapons. However these are still not my most potent tools. Those...characters could not be trusted with them.\nAddendum: The final piece remains. Travel now from the hottest fire this land has to offer, to the most frigid cold. I cannot deny having some sense of poetic symmetry.", "Лишь высшие чины армии Ярима обладали столь смертоносным оружием. Но даже им я не мог доверить мои последние разработки. Этим... лицам не было доверия.\nДополнение: Осталось немного. Теперь же путешествуйте от самого жаркого огня, который может предложить эта земля, до самого лютого мороза. Не могу отрицать, у меня есть некоторое чувство поэтической симметрии.");
+            TranslationUtils.ILTranslate(il, "I have since made progress to even greater weapons than these, but they remain creations to be proud of. No progress can be made without a desire that comes from dissatisfaction.\nAddendum: The time has come. You are ready.", "С тех пор я добился немалого прогресса в создании ещё более смертоносного оружия, но они остаются творениями, которыми можно гордиться. Не может быть достигнуто прогресса без желания, проистекающего из неудовлетворённости.\nДополнение: Время пришло. Ты готов.");
+        }
+    }
+    
+    public class CalamityGlobalItemIL : ILEdit
+    {
+        private event ILContext.Manipulator HookStatsTooltipHook
+        {
+            add => HookEndpointManager.Modify(typeof(CalamityGlobalItem).GetMethod("<ModifyVanillaTooltips>g__HookStatsTooltip|197_104", BindingFlags.NonPublic | BindingFlags.Static), value);
+        
+            remove => HookEndpointManager.Unmodify(typeof(CalamityGlobalItem).GetMethod("<ModifyVanillaTooltips>g__HookStatsTooltip|197_104", BindingFlags.NonPublic | BindingFlags.Static), value);
+        }
+        
+        public override bool Autoload() => ModsCall.Calamity != null && TranslationUtils.IsRussianLanguage;
+        
+        public override void Load() => HookStatsTooltipHook += TranslationHookStatsTooltipHook;
+        
+        public override void Unload() => HookStatsTooltipHook -= TranslationHookStatsTooltipHook;
+        
+        private void TranslationHookStatsTooltipHook(ILContext il)
+        {
+            TranslationUtils.ILTranslate(il, "Reach: {0:N3} tiles\n", "Дальность: {0} блоков\n");
+            TranslationUtils.ILTranslate(il, "Launch Velocity: {0:N2}\n", "Скорость вылета: {0}\n");
+            TranslationUtils.ILTranslate(il, "Reelback Velocity: {0:N2}\n", "Скорость возврата: {0}\n");
+            TranslationUtils.ILTranslate(il, "Pull Velocity: {0:N2}", "Скорость притягивания: {0}");
+        }
     }
 }

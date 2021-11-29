@@ -32,7 +32,6 @@ namespace CalamityRuTranslate.Common
             {
                 case "Obsidian":
                     return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}") + (TRuConfig.Instance.CalamityStealthDescription ? LangUtils.GetTextValue("Calamity", "SetBonus.Stealth") : "") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "DeathMode.Heat") : "");
-
                 case "Fearmonger":
                 case "Eskimo":
                     return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "DeathMode.Cold") : "");
@@ -44,16 +43,13 @@ namespace CalamityRuTranslate.Common
                 case "AuricTeslaRogue":
                 case "BloodflareRogue":
                 case "DaedalusRogue":
-                case "GodSlayerRogue":
                 case "StatigelRogue":
                 case "Xeroc":
-                case "ReaverRogue":
                 case "SnowRuffian":
                 case "TitanHeart":
                 case "Umbraphile":
                 case "WulfrumRogue":
                 case "TarragonRogue":
-                case "SilvaRogue":
                     return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}") + (TRuConfig.Instance.CalamityStealthDescription ? LangUtils.GetTextValue("Calamity", "SetBonus.Stealth") : "");
 
                 case "AncientForbiddenCirclet":
@@ -67,6 +63,13 @@ namespace CalamityRuTranslate.Common
                 case "Prismatic":
                     return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}", ModsCall.ArmorSetHotkey);
 
+                case "GodSlayerMelee":
+                case "GodSlayerRanged":
+                    return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}", ModsCall.GodSlayerDashHotKey);
+                
+                case "GodSlayerRogue":
+                    return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}", ModsCall.GodSlayerDashHotKey) + (TRuConfig.Instance.CalamityStealthDescription ? LangUtils.GetTextValue("Calamity", "SetBonus.Stealth") : "");
+                
                 case "Shroomite":
                 case "AerospecMagic":
                 case "AerospecMelee":
@@ -91,19 +94,12 @@ namespace CalamityRuTranslate.Common
                 case "DaedalusRanged":
                 case "DesertProwler":
                 case "FathomSwarmer":
-                case "GodSlayerMelee":
-                case "GodSlayerRanged":
-                case "GodSlayerSummoner":
-                case "GodSlayerMagic":
                 case "Mollusk":
                 case "Plaguebringer":
-                case "ReaverMelee":
-                case "ReaverSummoner":
-                case "ReaverMagic":
-                case "ReaverRanged":
-                case "SilvaMelee":
+                case "ReaverExplorer":
+                case "ReaverDefenser":
+                case "ReaverSpeeder":
                 case "SilvaSummoner":
-                case "SilvaRanged":
                 case "SilvaMagic":
                 case "StatigelMagic":
                 case "StatigelRanged":

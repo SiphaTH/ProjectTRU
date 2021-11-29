@@ -29,12 +29,6 @@ namespace CalamityRuTranslate
         [ReloadRequired]
         public bool IsEnabledModVersionException;
 
-        [Label("Новый ванильный перевод")]
-        [Tooltip("Если вам не нравится новый ванильный перевод\nи вы привыкли играть со стандартным, вы можете его отключить")]
-        [DefaultValue(true)]
-        [ReloadRequired]
-        public bool NewVanillaTranslation;
-
         [Label("Цветной тип урона")]
         [Tooltip("Если вам не нравится цветные типы урона на оружиях, вы можете их отключить")]
         [DefaultValue(true)]

@@ -16,6 +16,8 @@ namespace CalamityRuTranslate.Common
         internal static bool CalamityGetInZone => (bool) Calamity.Call("GetInZone", Main.player[Main.myPlayer], "abyss");
         internal static bool Revenge => CalamityWorld.revenge;
         internal static bool DeathMode => CalamityWorld.death;
+        internal static bool MaliceMode => CalamityWorld.malice;
+        internal static bool DownedExoMechs => CalamityWorld.downedExoMechs;
         internal static bool DownedFlag => !CalamityWorld.downedSentinel1 || !CalamityWorld.downedSentinel2 || !CalamityWorld.downedSentinel3;
         internal static bool ProfanedCrystalBuffs => Main.player[Main.myPlayer].Calamity().profanedCrystalBuffs;
         internal static string AegisHotKey => CalamityMod.CalamityMod.AegisHotKey.TooltipHotkeyString();
@@ -29,6 +31,9 @@ namespace CalamityRuTranslate.Common
         internal static string AdrenalineHotKey => CalamityMod.CalamityMod.AdrenalineHotKey.TooltipHotkeyString();
         internal static string ArmorSetHotkey => CalamityMod.CalamityMod.TarraHotKey.TooltipHotkeyString();
         internal static string EternityDiscoHex => CalamityMod.Items.Weapons.Magic.Eternity.DisoHex;
+        internal static string AngelicAllianceHotKey => CalamityMod.CalamityMod.AngelicAllianceHotKey.TooltipHotkeyString();
+        internal static string GodSlayerDashHotKey => CalamityMod.CalamityMod.GodSlayerDashHotKey.TooltipHotkeyString();
+        internal static string ExoChairSpeedupHotkey => CalamityMod.CalamityMod.ExoChairSpeedupHotkey.TooltipHotkeyString();
         internal static int AncientStorm => (int)(60f * Main.player[Main.myPlayer].manaCost);
     }
 }

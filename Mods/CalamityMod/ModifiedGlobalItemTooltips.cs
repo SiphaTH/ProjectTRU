@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using CalamityMod;
 using CalamityRuTranslate.Catalogs;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
@@ -25,10 +27,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             }
             else if (item.type == ModsCall.Calamity.ItemType("AstralArcanum"))
             {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip6");
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip7");
                 if (tooltip != null)
                 {
-                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.AstralArcanum.Tooltip6", ModsCall.AstralArcanumUiHotkey);
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.AstralArcanum.Tooltip7", ModsCall.AstralArcanumUiHotkey);
                 }
             }
             else if (item.type == ModsCall.Calamity.ItemType("CelestialJewel"))
@@ -76,7 +78,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                 TooltipLine tooltip1 = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
                 if (tooltip1 != null)
                 {
-                    tooltip1.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.ProfanedSoulCrystal.Tooltip1");
+                    tooltip1.text = ModsCall.DownedExoMechs ?
+                        LangUtils.GetTextValue("Calamity", "ItemTooltip.ProfanedSoulCrystal.Tooltip1") :
+                        LangUtils.GetTextValue("Calamity", "ItemTooltip.ProfanedSoulCrystal.Tooltip1_2");
                 }
             
                 if (ModsCall.ProfanedCrystalBuffs)
@@ -153,52 +157,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             }
             else if (item.type == ModsCall.Calamity.ItemType("BlunderBooster"))
             {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip2");
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip3");
                 if (tooltip != null)
                 {
-                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.BlunderBooster.Tooltip2", ModsCall.PlaguePackHotKey);
-                }
-            }
-            else if (item.type == ModsCall.Calamity.ItemType("GrandGelatin"))
-            {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
-                if (tooltip != null)
-                {
-                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.GrandGelatin.Tooltip1", Main.player[Main.myPlayer].autoJump ? 10 : 40);
-                }
-            }
-            else if (item.type == ModsCall.Calamity.ItemType("VitalJelly"))
-            {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
-                if (tooltip != null)
-                {
-                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.VitalJelly.Tooltip1", Main.player[Main.myPlayer].autoJump ? 6 : 24);
-                }
-            }
-            else if (item.type == ModsCall.Calamity.ItemType("KnowledgeKingSlime"))
-            {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip2");
-                if (tooltip != null)
-                {
-                    tooltip.text = Main.player[Main.myPlayer].autoJump
-                        ? LangUtils.GetTextValue("Calamity", "ItemTooltip.KnowledgeKingSlime.Tooltip2.AutoJump")
-                        : LangUtils.GetTextValue("Calamity", "ItemTooltip.KnowledgeKingSlime.Tooltip2");
-                }
-            }
-            else if (item.type == ModsCall.Calamity.ItemType("AbandonedSlimeStaff"))
-            {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip4");
-                if (tooltip != null)
-                {
-                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.AbandonedSlimeStaff.Tooltip4", Main.player[Main.myPlayer].autoJump ? 5 : 20);
-                }
-            }
-            else if (item.type == ModsCall.Calamity.ItemType("AeroStone"))
-            {
-                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
-                if (tooltip != null)
-                {
-                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.AeroStone.Tooltip1", Main.player[Main.myPlayer].autoJump ? 5 : 20);
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.BlunderBooster.Tooltip3", ModsCall.PlaguePackHotKey);
                 }
             }
             else if (item.type == ModsCall.Calamity.ItemType("SunkenStew"))
@@ -207,6 +169,97 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                 if (tooltip != null)
                 {
                     tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.SunkenStew.Tooltip0", Main.player[Main.myPlayer].pStone ? 37 : 50);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("AngelicAlliance"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip4");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.AngelicAlliance.Tooltip4", ModsCall.AngelicAllianceHotKey);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("ExoThrone"))
+            {
+                TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
+                if (tooltip != null)
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.ExoThrone.Tooltip1", ModsCall.ExoChairSpeedupHotkey);
+                }
+            }
+            else if (item.type == ModsCall.Calamity.ItemType("ShatteredCommunity"))
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    switch (tooltip.Name)
+                    {
+                        case "Tooltip6":
+                            tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.ShatteredCommunity.Tooltip6", tooltip.text.Split(' ')[2], tooltip.text.Split(' ')[3]);
+                            break;
+                        case "Tooltip7":
+                            tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.ShatteredCommunity.Tooltip7", tooltip.text.Split(' ')[4]);
+                            break;
+                        case "Tooltip8":
+                            tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.ShatteredCommunity.Tooltip8", tooltip.text.Split(' ')[4]);
+                            break;
+                    }
+                }
+            }
+            
+            foreach (TooltipLine tooltip in tooltips)
+            {
+                if (tooltip.Name == "SchematicKnowledge1")
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "TooltipName.SchematicKnowledge1");
+                }
+                
+                if (tooltip.Name == "SchematicKnowledge2")
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "TooltipName.SchematicKnowledge2");
+                }
+                
+                if (tooltip.Name == "FireWeapon")
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "TooltipName.FireWeapon");
+                }
+                
+                if (tooltip.Name == "IceWeapon")
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "TooltipName.IceWeapon");
+                }
+                
+                if (tooltip.Name == "NatureWeapon")
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "TooltipName.NatureWeapon");
+                }
+                if (tooltip.Name == "PointBlankShot")
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "TooltipName.PointBlankShot");
+                }
+                if (tooltip.Name == "CalamityCharge")
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "TooltipName.CalamityCharge", tooltip.text.Split(' ')[2]);
+                }
+                if (tooltip.Name == "CalamityDonor")
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "TooltipName.CalamityDonor");
+                    tooltip.overrideColor = new Color(139, 0, 0);
+                }
+                if (tooltip.Name == "CalamityDev")
+                {
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "TooltipName.CalamityDev");
+                    tooltip.overrideColor = new Color(255, 0, 255);
+                }
+                if (tooltip.Name == "CalamityChallengeDrop")
+                {
+                    if (tooltip.text == "- Legendary Challenge Drop -")
+                    {
+                        tooltip.text = LangUtils.GetTextValue("Calamity", "TooltipName.LegendaryChallengeDrop");
+                    }
+                    else if (tooltip.text == "- Challenge Drop -")
+                    {
+                        tooltip.text = LangUtils.GetTextValue("Calamity", "TooltipName.ChallengeDrop");
+                    }
                 }
             }
             
@@ -260,7 +313,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip0");
                 if (tooltip != null)
                 {
-                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.PurifiedJam.Tooltip0", ModsCall.DeathMode ? 5 : 10);
+                    tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.PurifiedJam.Tooltip0", ModsCall.DeathMode || ModsCall.MaliceMode ? 5 : 10);
                 }
             }
         }
@@ -278,15 +331,161 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     tooltip.text = LangUtils.GetTextValue("Calamity", "VanillaItem.LavaWaders");
                 }
             }
-
-            foreach (TooltipLine tooltip in tooltips)
+            else if (item.type == ItemID.CobaltSword)
             {
-                if (tooltip.Name == "Tooltip0")
+                foreach (TooltipLine tooltip in tooltips)
                 {
-                    tooltip.text = tooltip.text.Replace("Current Charge", LangUtils.GetTextValue("Calamity", "VanillaItem.CalamityTip.CurrentCharge"));
+                    tooltip.text = tooltip.text.Replace("Decreases enemy defense by 25% on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.CobaltSword"));
                 }
             }
-					
+            else if (item.type == ItemID.CobaltNaginata)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Decreases enemy defense by 25% on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.CobaltNaginata"));
+                }
+            }
+            else if (item.type == ItemID.PalladiumSword)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Increases life regen on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.PalladiumSword"));
+                }
+            }
+            else if (item.type == ItemID.PalladiumPike)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Increases life regen on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.PalladiumPike"));
+                }
+            }
+            else if (item.type == ItemID.MythrilSword)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Decreases enemy contact damage by 10% on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.MythrilSword"));
+                }
+            }
+            else if (item.type == ItemID.MythrilHalberd)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Decreases enemy contact damage by 10% on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.MythrilHalberd"));
+                }
+            }
+            else if (item.type == ItemID.OrichalcumSword)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Increases how frequently the Orichalcum set bonus triggers on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.OrichalcumSword"));
+                }
+            }
+            else if (item.type == ItemID.OrichalcumHalberd)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Increases how frequently the Orichalcum set bonus triggers on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.OrichalcumHalberd"));
+                }
+            }
+            else if (item.type == ItemID.AdamantiteSword)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Slows enemies on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.AdamantiteSword"));
+                }
+            }
+            else if (item.type == ItemID.AdamantiteGlaive)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Slows enemies on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.AdamantiteGlaive"));
+                }
+            }
+            else if (item.type == ItemID.TitaniumSword)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Deals increased damage to enemies with high knockback resistance", LangUtils.GetTextValue("Calamity", "VanillaItem.TitaniumSword"));
+                }
+            }
+            else if (item.type == ItemID.TitaniumTrident)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Deals increased damage to enemies with high knockback resistance", LangUtils.GetTextValue("Calamity", "VanillaItem.TitaniumTrident"));
+                }
+            }
+            else if (item.type == ItemID.Excalibur)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Inflicts Holy Flames\nDeals double damage to enemies above 75% life", LangUtils.GetTextValue("Calamity", "VanillaItem.Excalibur"));
+                }
+            }
+            else if (item.type == ItemID.Gungnir)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Inflicts Holy Flames\nDeals double damage to enemies above 75% life", LangUtils.GetTextValue("Calamity", "VanillaItem.Gungnir"));
+                }
+            }
+            else if (item.type == ItemID.TrueExcalibur)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Inflicts Holy Flames\nDeals double damage to enemies above 75% life", LangUtils.GetTextValue("Calamity", "VanillaItem.TrueExcalibur"));
+                }
+            }
+            else if (item.type == ItemID.CandyCaneSword)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Heals you on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.CandyCaneSword"));
+                }
+            }
+            else if (item.type == ItemID.FruitcakeChakram)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Heals you on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.FruitcakeChakram"));
+                }
+            }
+            else if (item.type == ItemID.StylistKilLaKillScissorsIWish || (item.type >= ItemID.BluePhaseblade && item.type <= ItemID.YellowPhaseblade) || (item.type >= ItemID.BluePhasesaber && item.type <= ItemID.YellowPhasesaber))
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Ignores 100% of enemy defense", LangUtils.GetTextValue("Calamity", "VanillaItem.FullIgnoreDefense"));
+                }
+            }
+            else if (item.type == ItemID.AntlionClaw || item.type == ItemID.BoneSword || item.type == ItemID.BreakerBlade)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Ignores 50% of enemy defense", LangUtils.GetTextValue("Calamity", "VanillaItem.HalfIgnoreDefense"));
+                }
+            }
+            else if (item.type == ItemID.LightsBane || item.type == ItemID.NightsEdge || item.type == ItemID.TrueNightsEdge || item.type == ItemID.BallOHurt || item.type == ItemID.CorruptYoyo)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Inflicts Shadowflame on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.ShadowflameDebuff"));
+                }
+            }
+            else if (item.type == ItemID.BloodButcherer || item.type == ItemID.TheRottedFork || item.type == ItemID.TheMeatball || item.type == ItemID.CrimsonYoyo)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Inflicts Burning Blood on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.BurningBloodDebuff"));
+                }
+            }
+            else if (item.type == ItemID.SlimeCrown || item.type == ItemID.SuspiciousLookingEye || item.type == ItemID.WormFood || item.type == ItemID.BloodySpine || item.type == ItemID.Abeemination || item.type == ItemID.MechanicalEye || item.type == ItemID.MechanicalWorm || item.type == ItemID.MechanicalSkull || item.type == ItemID.CelestialSigil)
+            {
+                foreach (TooltipLine tooltip in tooltips)
+                {
+                    tooltip.text = tooltip.text.Replace("Not consumable", LangUtils.GetTextValue("Calamity", "VanillaItem.NotConsumable"));
+                }
+            }
+
             if (item.prefix > 0)
             {
                 foreach (TooltipLine tooltip in tooltips)
@@ -307,21 +506,13 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             {
                 switch (item.prefix)
                 {
-                    case 67:
-                    case 68:
-                        TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "PrefixAccCritChance");
-                        if(tooltip != null)
-                            tooltip.text = tooltip.text.Replace("critical strike chance", LangUtils.GetTextValue("Calamity", "VanillaItem.PrefixAccCritChance"));
-                        break;
                     case 62:
                     case 63:
                     case 64:
                     case 65:
                         TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "PrefixAccDefense");
                         if(tooltip2 != null)
-                            tooltip2.text = tooltip2.text
-                                .Replace("defense", LangUtils.GetTextValue("Calamity", "VanillaItem.Defense"))
-                                .Replace("damage reduction", LangUtils.GetTextValue("Calamity", "VanillaItem.PrefixAccDefense"));
+                            tooltip2.text = tooltip2.text.Replace("damage reduction", LangUtils.GetTextValue("Calamity", "VanillaItem.PrefixAccDefense"));
                         break;
                 }
             }
@@ -338,15 +529,20 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                         break;
                     
                     case ItemID.ObsidianSkinPotion:
-                        line1.text = ModsCall.DeathMode
-                            ? LangUtils.GetTextValue("Calamity", "VanillaItem.ObsidianSkinPotion.DeathMode")
-                            : LangUtils.GetTextValue("Calamity", "VanillaItem.ObsidianSkinPotion");
+                        if (CalamityConfig.Instance.LethalLava)
+                        {
+                            line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.ObsidianSkinPotion") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "DeathMode.Heat") : "");
+                        }
+                        else
+                        {
+                            line1.text = Language.GetTextValue("ItemTooltip.ObsidianSkinPotion") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "DeathMode.Heat") : "");
+                        }
                         break;
                     
                     case ItemID.ObsidianRose:
-                        line1.text = ModsCall.DeathMode
-                            ? LangUtils.GetTextValue("Calamity", "VanillaItem.ObsidianRose.DeathMode")
-                            : LangUtils.GetTextValue("Calamity", "VanillaItem.ObsidianRose");
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.ObsidianRose") +
+                                     (CalamityConfig.Instance.LethalLava ? "\nЗначительно снижает урон от ожога лавы" : "") +
+                                     (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "DeathMode.Heat") : "");
                         break;
                     
                     case ItemID.MagmaStone:
@@ -465,12 +661,128 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                         line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SpectreHood");
                         break;
                     
+                    case ItemID.YoyoBag:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.YoyoBag");
+                        break;
+                    
+                    case ItemID.YoYoGlove:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.YoYoGlove");
+                        break;
+                    
                     case ItemID.MagicQuiver:
                         line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MagicQuiver");
                         break;
                     
                     case ItemID.InvisibilityPotion:
                         line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.InvisibilityPotion");
+                        break;
+                    
+                    case ItemID.MagicMirror:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MagicMirror");
+                        break;
+                    
+                    case ItemID.IceMirror:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.IceMirror");
+                        break;
+                    
+                    case ItemID.RecallPotion:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.RecallPotion");
+                        break;
+                    
+                    case ItemID.Pwnhammer:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.Pwnhammer");
+                        break;
+                    
+                    case ItemID.Hammush:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.Hammush");
+                        break;
+                    
+                    case ItemID.ArcheryPotion:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.ArcheryPotion");
+                        break;
+                    
+                    case ItemID.SwiftnessPotion:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SwiftnessPotion");
+                        break;
+                    
+                    case ItemID.EndurancePotion:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.EndurancePotion");
+                        break;
+                    
+                    case ItemID.DD2ElderCrystal:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.DD2ElderCrystal");
+                        break;
+                    
+                    case ItemID.BlackBelt:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.BlackBelt");
+                        break;
+                    
+                    case ItemID.MagicPowerPotion:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MagicPowerPotion");
+                        break;
+                    
+                    case ItemID.MagicHat:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MagicHat");
+                        break;
+                    
+                    case ItemID.WizardHat:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.WizardHat");
+                        break;
+                    
+                    case ItemID.SquirePlating:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SquirePlating");
+                        break;
+                    
+                    case ItemID.SquireGreaves:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SquireGreaves");
+                        break;
+                    
+                    case ItemID.MonkBrows:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MonkBrows");
+                        break;
+                    
+                    case ItemID.MonkShirt:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MonkShirt");
+                        break;
+                    
+                    case ItemID.MonkPants:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MonkPants.1");
+                        break;
+                    
+                    case ItemID.HuntressJerkin:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.HuntressJerkin");
+                        break;
+                    
+                    case ItemID.ApprenticeTrousers:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.ApprenticeTrousers");
+                        break;
+                    
+                    case ItemID.SquireAltShirt:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SquireAltShirt");
+                        break;
+                    
+                    case ItemID.SquireAltPants:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SquireAltPants");
+                        break;
+                    
+                    case ItemID.MonkAltHead:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MonkAltHead");
+                        break;
+                    
+                    case ItemID.MonkAltShirt:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MonkAltShirt");
+                        break;
+                    
+                    case ItemID.MonkAltPants:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MonkAltPants");
+                        break;
+                    
+                    case ItemID.HuntressAltShirt:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.HuntressAltShirt");
+                        break;
+                    
+                    case ItemID.ApprenticeAltPants:
+                        line1.text = LangUtils.GetTextValue("Calamity", "VanillaItem.ApprenticeAltPants");
                         break;
                 }
             }
@@ -543,6 +855,22 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     
                     case ItemID.MechanicalGlove:
                         line3.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MechanicalGlove");
+                        break;
+                    
+                    case ItemID.CellPhone:
+                        line3.text = LangUtils.GetTextValue("Calamity", "VanillaItem.CellPhone");
+                        break;
+                    
+                    case ItemID.AnkhShield:
+                        line3.text = LangUtils.GetTextValue("Calamity", "VanillaItem.AnkhShield");
+                        break;
+                    
+                    case ItemID.MasterNinjaGear:
+                        line3.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MasterNinjaGear");
+                        break;
+                    
+                    case ItemID.MonkPants:
+                        line3.text = LangUtils.GetTextValue("Calamity", "VanillaItem.MonkPants.2");
                         break;
                 }
             }
@@ -626,110 +954,62 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     case ItemID.MoltenHelmet:
                     case ItemID.MoltenBreastplate:
                     case ItemID.MoltenGreaves:
-                        line5.text = ModsCall.DeathMode
-                            ? LangUtils.GetTextValue("Calamity", "VanillaItem.SetBonus.Molten.DeathMode")
-                            : LangUtils.GetTextValue("Calamity", "VanillaItem.SetBonus.Molten");
+                        line5.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SetBonus.Molten") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold") : "");
                         break;
                     
                     case ItemID.FrostHelmet:
                     case ItemID.FrostBreastplate:
                     case ItemID.FrostLeggings:
                         if (ModsCall.DeathMode)
-                            line5.text = LangUtils.GetTextValue("Calamity", "ModifyItemTooltip.SetBonus.Frost.DeathMode");
-                        break;
-                }
-            }
-
-            TooltipLine line6 = tooltips.FirstOrDefault(tooltip => tooltip.mod == "Terraria" && tooltip.Name == "Equipable");
-            if (line6 != null)
-            {
-                switch (item.type)
-                {
-                    case ItemID.GrapplingHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.GrapplingHook");
+                            line5.text = Language.GetTextValue("LegacyTooltip.48") + " " + Language.GetTextValue("ArmorSetBonus.Frost") + LangUtils.GetTextValue("Calamity", "DeathMode.HeatAndCold");
                         break;
                     
-                    case ItemID.AmethystHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.AmethystHook");
-                        break;
-                        
-                    case ItemID.TopazHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.TopazHook");
-                        break;
-                        
-                    case ItemID.SapphireHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SapphireHook");
-                        break;
-                        
-                    case ItemID.EmeraldHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.EmeraldHook");
-                        break;
-                        
-                    case ItemID.RubyHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.RubyHook");
-                        break;
-                        
-                    case ItemID.DiamondHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.DiamondHook");
-                        break;
-                        
-                    case ItemID.WebSlinger:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.WebSlinger");
-                        break;
-                        
-                    case ItemID.SkeletronHand:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SkeletronHand");
-                        break;
-                        
-                    case ItemID.SlimeHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SlimeHook");
-                        break;
-                        
-                    case ItemID.FishHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.FishHook");
+                    case ItemID.MonkBrows:
+                    case ItemID.MonkShirt:
+                    case ItemID.MonkPants:
+                        line5.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SetBonus.MonkTier2");
                         break;
                     
-                    case ItemID.IvyWhip:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.IvyWhip");
+                    case ItemID.SquireGreatHelm:
+                    case ItemID.SquirePlating:
+                    case ItemID.SquireGreaves:
+                        line5.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SetBonus.SquireTier2");
                         break;
                     
-                    case ItemID.BatHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.BatHook");
+                    case ItemID.HuntressWig:
+                    case ItemID.HuntressJerkin:
+                    case ItemID.HuntressPants:
+                        line5.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SetBonus.HuntressTier2");
                         break;
                     
-                    case ItemID.CandyCaneHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.CandyCaneHook");
+                    case ItemID.ApprenticeHat:
+                    case ItemID.ApprenticeRobe:
+                    case ItemID.ApprenticeTrousers:
+                        line5.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SetBonus.ApprenticeTier2");
                         break;
                     
-                    case ItemID.DualHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.DualHook");
+                    case ItemID.MonkAltHead:
+                    case ItemID.MonkAltShirt:
+                    case ItemID.MonkAltPants:
+                        line5.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SetBonus.MonkTier3");
                         break;
                     
-                    case ItemID.TendonHook:
-                    case ItemID.ThornHook:
-                    case ItemID.IlluminantHook:
-                    case ItemID.WormHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.HookMix");
+                    case ItemID.SquireAltHead:
+                    case ItemID.SquireAltShirt:
+                    case ItemID.SquireAltPants:
+                        line5.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SetBonus.SquireTier3");
                         break;
                     
-                    case ItemID.AntiGravityHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.AntiGravityHook");
+                    case ItemID.HuntressAltHead:
+                    case ItemID.HuntressAltShirt:
+                    case ItemID.HuntressAltPants:
+                        line5.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SetBonus.HuntressTier3");
                         break;
                     
-                    case ItemID.SpookyHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SpookyHook");
-                        break;
-                    
-                    case ItemID.ChristmasHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.ChristmasHook");
-                        break;
-                    
-                    case ItemID.LunarHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.LunarHook");
-                        break;
-                    
-                    case ItemID.StaticHook:
-                        line6.text = LangUtils.GetTextValue("Calamity", "VanillaItem.StaticHook");
+                    case ItemID.ApprenticeAltHead:
+                    case ItemID.ApprenticeAltShirt:
+                    case ItemID.ApprenticeAltPants:
+                        line5.text = LangUtils.GetTextValue("Calamity", "VanillaItem.SetBonus.ApprenticeTier3");
                         break;
                 }
             }
@@ -895,16 +1175,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     case ItemID.Jetpack:
                         line1.text = LangUtils.GetTextValue("Calamity", "Vanilla.Wings.Jetpack");
                         break;
-                }
-            }
-
-            TooltipLine line2 = tooltips.FirstOrDefault(tooltip => tooltip.mod == "Terraria" && tooltip.Name == "Tooltip1");
-            if (line2 != null)
-            {
-                switch (item.type)
-                {
+                    
                     case ItemID.Hoverboard:
-                        line2.text = LangUtils.GetTextValue("Calamity", "Vanilla.Wings.Hoverboard");
+                        line1.text = LangUtils.GetTextValue("Calamity", "Vanilla.Wings.Hoverboard");
                         break;
                 }
             }
@@ -937,9 +1210,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                         if (array[i].Contains("Adrenaline"))
                         {
                             array[i] = LangUtils.GetTextValue("Calamity", "ItemTooltip.StatMeter.RevStats", 
-                                array[i].Split(' ')[3], 
-                                array[i].Split(' ')[8], 
-                                array[i].Split(' ')[13]);
+                                array[i].Split(' ')[3],
+                                array[i].Split(' ')[6],
+                                array[i].Split(' ')[11]);
                         }
                         else if (array[i].Contains("Displays"))
                         {
@@ -1014,7 +1287,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                         }
                     }
                     
-                    tooltip.text = string.Join("\n\n", array);
+                    tooltip.text = string.Join("\n\n", array).Replace("Adrenaline", "");
                 }
             }
 
@@ -1087,9 +1360,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.SummonLevelMeter",
                         Regex.Split(array[3], ": ")[1],
                         Regex.Split(array[4], ": ")[1],
-                        Regex.Split(array[5], ": ")[1], 
-                        Regex.Split(array[6], ": ")[1],
-                        Regex.Split(array[7], ": ")[1]);
+                        Regex.Split(array[5], ": ")[1],
+                        Regex.Split(array[6], ": ")[1]);
                 }
             }
         }
