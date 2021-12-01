@@ -6,10 +6,9 @@ using CalamityMod.NPCs.Ravager;
 using CalamityMod.NPCs.SlimeGod;
 using CalamityMod.UI;
 using CalamityMod.UI.CalamitasEnchants;
-using CalamityRuTranslate.Common;
-using CalamityRuTranslate.Common.Utilities;
 using Terraria;
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace CalamityRuTranslate
 {
@@ -17,9 +16,6 @@ namespace CalamityRuTranslate
     {
         private void CalamityReflections()
         {
-            if (!TranslationUtils.IsRussianLanguage || ModsCall.Calamity == null)
-                return;
-            
             List<(string, string)> enchantmentTranslation = new List<(string, string)>
             {
                 ("Наполнение", "Превращает этот предмет в нечто значительно более сильное"),
@@ -75,7 +71,7 @@ namespace CalamityRuTranslate
             {
                 item.Calamity().AppliedEnchantment = null;
                 item.Calamity().DischargeEnchantExhaustion = 0f;
-            }, (Item item) => item.IsEnchantable() && item.shoot >= 0));
+            }, item => item.IsEnchantable() && item.shoot >= ProjectileID.None));
 
             FieldInfo alphanumericCharacters = typeof(CalamityUtils).GetField("AlphanumericCharacters", BindingFlags.NonPublic | BindingFlags.Static);
             alphanumericCharacters?.SetValue(typeof(string), "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ0123456789");

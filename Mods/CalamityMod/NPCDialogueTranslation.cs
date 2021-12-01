@@ -378,9 +378,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     case "Pockets of ore have appeared once more in the land. This will allow you to create the most powerful weaponry and armor imagined!":
                     npcPhrase = LangUtils.TranslationKey("Calamity.NpcChatText.SEAHOE.25");
                         break;
-                    case "Ah, the dragon Yharon is fickle. You may find that he will refuse to use his full power unless you are strong enough to unleash the power of the Dark Sun.":
-                        npcPhrase = LangUtils.TranslationKey("Calamity.NpcChatText.SEAHOE.26");
-                        break;
+                    // case "Ah, the dragon Yharon is fickle. You may find that he will refuse to use his full power unless you are strong enough to unleash the power of the Dark Sun.":
+                    //     npcPhrase = LangUtils.TranslationKey("Calamity.NpcChatText.SEAHOE.26");
+                    //     break;
                     case "The Devourer of Gods is extremely powerful. However, he is young, foolhardy, and very lazy. Perhaps if he had been given time to develop he would have turned into quite the threat.":
                         npcPhrase = LangUtils.TranslationKey("Calamity.NpcChatText.SEAHOE.27");
                         break;
@@ -468,9 +468,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     case "The Corruption used to be easily manageable and controlled by nature. However, the recent wars and pollution have tipped the balance out of favor.":
                         npcPhrase = LangUtils.TranslationKey("Calamity.NpcChatText.SEAHOE.55");
                         break;
-                    case "The dungeon is a dark place. None of us know of its true purpose, however, the ancient Eidolist cultists used it for worship before Lord Yharim took it over.":
-                        npcPhrase = LangUtils.TranslationKey("Calamity.NpcChatText.SEAHOE.56");
-                        break;
+                    // case "The dungeon is a dark place. None of us know of its true purpose, however, the ancient Eidolist cultists used it for worship before Lord Yharim took it over.":
+                    //     npcPhrase = LangUtils.TranslationKey("Calamity.NpcChatText.SEAHOE.56");
+                    //     break;
                     case "I'm assuming you've heard the legends that speak of the ninja, Statis? There are some who say that if you were able to defeat the gods which his clan once worshipped you would be able to harness some of his powers.":
                         npcPhrase = LangUtils.TranslationKey("Calamity.NpcChatText.SEAHOE.57");
                         break;

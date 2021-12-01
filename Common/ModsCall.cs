@@ -34,6 +34,7 @@ namespace CalamityRuTranslate.Common
         internal static string AngelicAllianceHotKey => CalamityMod.CalamityMod.AngelicAllianceHotKey.TooltipHotkeyString();
         internal static string GodSlayerDashHotKey => CalamityMod.CalamityMod.GodSlayerDashHotKey.TooltipHotkeyString();
         internal static string ExoChairSpeedupHotkey => CalamityMod.CalamityMod.ExoChairSpeedupHotkey.TooltipHotkeyString();
+        internal static string ExoChairSlowdownHotkey => CalamityMod.CalamityMod.ExoChairSlowdownHotkey.TooltipHotkeyString();
         internal static int AncientStorm => (int)(60f * Main.player[Main.myPlayer].manaCost);
     }
 }

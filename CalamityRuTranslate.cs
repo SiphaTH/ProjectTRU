@@ -49,7 +49,8 @@ namespace CalamityRuTranslate
             LoadJSON();
             LoadFont();
             LoadCache();
-            CalamityReflections();
+            if (TranslationUtils.IsRussianLanguage && ModsCall.Calamity != null)
+                CalamityReflections();
         }
 
         public override void Unload()
@@ -62,9 +63,6 @@ namespace CalamityRuTranslate
             UnloadFont();
             UnloadCache();
             CoreThoriumTranslation.Unload();
-            GameCulture currentGameCulture = LanguageManager.Instance.ActiveCulture;
-            LanguageManager.Instance.SetLanguage(GameCulture.English);
-            LanguageManager.Instance.SetLanguage(currentGameCulture);
         }
 		
         public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)

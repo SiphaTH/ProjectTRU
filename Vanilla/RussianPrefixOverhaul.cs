@@ -946,12 +946,11 @@ namespace CalamityRuTranslate.Vanilla
         {
             On.Terraria.Item.AffixName += delegate(On.Terraria.Item.orig_AffixName orig, Item self)
             {
-                if (!TranslationUtils.IsRussianLanguage || self == null || self.Name == string.Empty)
+                if (!TranslationUtils.IsRussianLanguage || self == null || self.Name == "")
                     return orig.Invoke(self);
 
                 string calamityEnchantment = "";
                 string goblinPrefix = "";
-                CalamityRuTranslate.Instance.Logger.Warn($"'{self.Name}'");
                 for (int i = 0; i < _prefixes.Length; i++)
                 {
                     if (ModsCall.Calamity != null && _prefixes[i][0] == self.Calamity().AppliedEnchantment?.Name)
@@ -961,10 +960,10 @@ namespace CalamityRuTranslate.Vanilla
                         goblinPrefix = GetGenderedPrefix(_prefixes[i], self.type) + " ";
                 }
 
-                if (goblinPrefix == string.Empty && calamityEnchantment == string.Empty)
+                if (goblinPrefix == "" && calamityEnchantment == "")
                     return orig.Invoke(self);
 
-                if (calamityEnchantment != string.Empty)
+                if (calamityEnchantment != "")
                     goblinPrefix = goblinPrefix.ToLower();
 
                 return calamityEnchantment + goblinPrefix + self.Name.ToLower();

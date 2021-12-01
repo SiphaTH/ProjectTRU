@@ -182,9 +182,15 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             else if (item.type == ModsCall.Calamity.ItemType("ExoThrone"))
             {
                 TooltipLine tooltip = tooltips.FirstOrDefault(x => x.Name == "Tooltip1");
+                TooltipLine tooltip2 = tooltips.FirstOrDefault(x => x.Name == "Tooltip2");
                 if (tooltip != null)
                 {
                     tooltip.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.ExoThrone.Tooltip1", ModsCall.ExoChairSpeedupHotkey);
+                }
+
+                if (tooltip2 != null)
+                {
+                    tooltip2.text = LangUtils.GetTextValue("Calamity", "ItemTooltip.ExoThrone.Tooltip2", ModsCall.ExoChairSlowdownHotkey);
                 }
             }
             else if (item.type == ModsCall.Calamity.ItemType("ShatteredCommunity"))
@@ -471,7 +477,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     tooltip.text = tooltip.text.Replace("Inflicts Shadowflame on hit", LangUtils.GetTextValue("Calamity", "VanillaItem.ShadowflameDebuff"));
                 }
             }
-            else if (item.type == ItemID.BloodButcherer || item.type == ItemID.TheRottedFork || item.type == ItemID.TheMeatball || item.type == ItemID.CrimsonYoyo)
+            else if (item.type == ItemID.BloodButcherer || item.type == ItemID.TheRottedFork || item.type == ItemID.TheMeatball || item.type == ItemID.CrimsonYoyo || item.type == ItemID.CrimsonRod)
             {
                 foreach (TooltipLine tooltip in tooltips)
                 {

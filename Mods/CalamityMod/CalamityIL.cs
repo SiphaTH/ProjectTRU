@@ -41,6 +41,7 @@ using MonoMod.Cil;
 using MonoMod.RuntimeDetour.HookGen;
 using On.CalamityMod.Items.DifficultyItems;
 using Terraria;
+using Terraria.Localization;
 
 namespace CalamityRuTranslate.Mods.CalamityMod
 {
@@ -441,7 +442,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TranslationUtils.ILTranslate(il, "By using a high-tech computer", "С помощью высокотехнологичного компьютера.");
             TranslationUtils.ILTranslate(il, "An imperfection after all... what a shame.", "Несовершенство... какой позор.");
             TranslationUtils.ILTranslate(il, "Exo Mechs", "Экзо-механизмы");
-            TranslationUtils.ILTranslate(il, "While in the Abyss, use an item that inflicts Chaos State", "Находясь в бездне, используйте предмет, который накладывает дебафф «{$BuffName.ChaosState}»");
+            TranslationUtils.ILTranslate(il, "While in the Abyss, use an item that inflicts Chaos State", "Находясь в бездне, используйте предмет, который накладывает дебафф «Хаотичность»");
             TranslationUtils.ILTranslate(il, "Adult Eidolon Wyrm", "Фантомный змей");
         }
 
