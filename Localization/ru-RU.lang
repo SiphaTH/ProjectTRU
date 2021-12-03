@@ -2438,7 +2438,7 @@ Calamity.ItemName.StatigelMask=Маска статиджела
 Calamity.ItemTooltip.StatigelMask=Увеличивает разбойный урон на 10%; 34% шанс не использовать предмет разбойника\nУвеличивает шанс критического удара на 7% и скорость передвижения на 12%
 
 Calamity.ItemName.SulfurBreastplate=Сернистый нагрудник
-Calamity.ItemTooltip.SulfurBreastplate=Увеличивает разбойный урон на 8 и шанс критического удара на 5%
+Calamity.ItemTooltip.SulfurBreastplate=Увеличивает разбойный урон на 8% и шанс критического удара на 5%
 
 Calamity.ItemName.SulfurHelmet=Сернистая каска
 Calamity.ItemTooltip.SulfurHelmet=Увеличивает разбойный урон на 4%\nУвеличивает шанс критического удара на 2%\nДарует подводное дыхание
@@ -3862,15 +3862,19 @@ Calamity.ItemTooltip.CosmicAnvilItem=Потусторонняя наковаль
 Calamity.ItemName.DraedonsForge=Кузня Дрейдона
 Calamity.ItemTooltip.DraedonsForge=Нано-кузница с плазменной решёткой, работающая на бесконечной экзо-энергии\nРаботает как каждая крупная станция изготовления одновременно
 
+Calamity.ItemName.EutrophicCrafting=Эвтрофная полка
 Calamity.ItemTooltip.EutrophicCrafting=Используется для создания особых предметов
 
+Calamity.ItemName.MonolithCrafting=Монолитное слияние
 Calamity.ItemTooltip.MonolithCrafting=Используется для создания особых предметов
 
 Calamity.ItemName.PlagueInfuser=Чумной инфузёр
 Calamity.ItemTooltip.PlagueInfuser=Используется для создания особых предметов
 
+Calamity.ItemName.ProfanedBasin=Осквернённый тигель
 Calamity.ItemTooltip.ProfanedBasin=Используется для создания особых предметов
 
+Calamity.ItemName.SilvaBasin=Лучезарный манипулятор
 Calamity.ItemTooltip.SilvaBasin=Используется для создания особых предметов
 
 Calamity.ItemName.StaticRefiner=Статический рафинёр
@@ -3886,6 +3890,8 @@ Calamity.ItemName.AstralFountainItem=Астральный фонтан воды
 Calamity.ItemName.SulphurousFountainItem=Сернистый фонтан воды
 
 Calamity.ItemName.SunkenSeaFountain=Затерянный фонтан воды
+
+Calamity.ItemName.AbyssBath=Ванна бездны
 
 Calamity.ItemName.AbyssBed=Кровать бездны
 
@@ -3911,6 +3917,8 @@ Calamity.ItemName.AbyssLamp=Лампа бездны
 
 Calamity.ItemName.AbyssLantern=Фонарь бездны
 
+Calamity.ItemName.AbyssPiano=Синтезатор бездны
+
 Calamity.ItemName.AbyssSink=Раковина бездны
 Calamity.ItemTooltip.AbyssSink=Считается источником воды
 
@@ -3921,11 +3929,15 @@ Calamity.ItemName.AbyssTable=Стол бездны
 Calamity.ItemName.AbyssTorch=Факел бездны
 Calamity.ItemTooltip.AbyssTorch=Может быть размещён в воде
 
+Calamity.ItemName.AbyssWorkbench=Верстак бездны
+
 Calamity.ItemName.SmoothAbyssGravel=Гладкий гравий бездны
 
 Calamity.ItemName.SmoothAbyssGravelPlatform=Платформа из гладкого гравия бездны
 
 Calamity.ItemName.AncientBasin=Древний костёр
+
+Calamity.ItemName.AncientBath=Древняя ванна
 
 Calamity.ItemName.AncientBed=Древняя кровать
 
@@ -3945,6 +3957,8 @@ Calamity.ItemName.AncientLantern=Древний фонарь
 
 Calamity.ItemName.AncientMonolith=Древний монолит
 
+Calamity.ItemName.AncientPiano=Древний трубный орган
+
 Calamity.ItemName.AncientSink=Древняя раковина
 Calamity.ItemTooltip.AncientSink=Считается источником лавы
 
@@ -3952,7 +3966,11 @@ Calamity.ItemName.AncientSofa=Древний диван
 
 Calamity.ItemName.AncientTable=Древний стол
 
+Calamity.ItemName.AncientWorkbench=Древний верстак
+
 Calamity.ItemName.AshenBasin=Пепельный костёр
+
+Calamity.ItemName.AshenBath=Пепельная ванна
 
 Calamity.ItemName.AshenBed=Пепельная кровать
 
@@ -3978,6 +3996,8 @@ Calamity.ItemName.AshenLantern=Пепельный фонарь
 
 Calamity.ItemName.AshenMonolith=Пепельный монолит
 
+Calamity.ItemName.AshenPiano=Пепельный трубный орган
+
 Calamity.ItemName.AshenPlatform=Пепельная платформа
 
 Calamity.ItemName.AshenSink=Пепельная раковина
@@ -3991,7 +4011,47 @@ Calamity.ItemName.AshenSofa=Пепельный диван
 
 Calamity.ItemName.AshenTable=Пепельный стол
 
+Calamity.ItemName.AshenWorkbench=Пепельный верстак
+
 Calamity.ItemName.SmoothBrimstoneSlag=Гладкий серный шлак
+
+Calamity.ItemName.MonolithBathtub=Монолитная ванна
+
+Calamity.ItemName.MonolithBed=Монолитная кровать
+
+Calamity.ItemName.MonolithBench=Монолитная скамья
+
+Calamity.ItemName.MonolithBookcase=Монолитный книжный шкаф
+
+Calamity.ItemName.MonolithCandelabra=Монолитный канделябр
+
+Calamity.ItemName.MonolithCandle=Монолитная свеча
+
+Calamity.ItemName.MonolithChair=Монолитный стул
+
+Calamity.ItemName.MonolithChandelier=Монолитная люстра
+
+Calamity.ItemName.MonolithChest=Монолитный сундук
+
+Calamity.ItemName.MonolithClock=Монолитные часы
+
+Calamity.ItemName.MonolithDoor=Монолитная дверь
+
+Calamity.ItemName.MonolithDresser=Монолитный комод
+
+Calamity.ItemName.MonolithLamp=Монолитная лампа
+
+Calamity.ItemName.MonolithLantern=Монолитное пианино
+
+Calamity.ItemName.MonolithPiano=Монолитный фонарь
+
+Calamity.ItemName.MonolithPlatform=Монолитная платформа
+
+Calamity.ItemName.MonolithSink=Монолитная раковина
+
+Calamity.ItemName.MonolithTable=Монолитный стол
+
+Calamity.ItemName.MonolithWorkBench=Монолитный верстак
 
 Calamity.ItemName.BotanicBathtub=Ботаническая ванна
 
@@ -4034,6 +4094,8 @@ Calamity.ItemName.BotanicWorkBench=Ботанический верстак
 
 Calamity.ItemName.CosmiliteBasin=Космилитовый костёр
 
+Calamity.ItemName.CosmiliteBath=Космилитовая ванна
+
 Calamity.ItemName.CosmiliteBed=Космилитовая кровать
 
 Calamity.ItemName.CosmiliteBookcase=Космилитовый книжный шкаф
@@ -4072,6 +4134,8 @@ Calamity.ItemTooltip.CosmiliteSink=Считается источником во�
 Calamity.ItemName.CosmiliteSofa=Космилитовый диван
 
 Calamity.ItemName.CosmiliteTable=Космилитовый стол
+
+Calamity.ItemName.CosmiliteWorkbench=Космилитовый верстак
 
 Calamity.ItemName.EutrophicBathtub=Эвтрофная ванна
 
@@ -4115,6 +4179,48 @@ Calamity.ItemName.EutrophicTable=Эвтрофный стол
 Calamity.ItemName.EutrophicWorkBench=Эвтрофный верстак
 
 Calamity.ItemName.SmoothNavystone=Гладкий морской камень
+
+Calamity.ItemName.OccultBathtub=Потусторонняя ванна
+
+Calamity.ItemName.OccultBed=Потусторонняя кровать
+
+Calamity.ItemName.OccultBookcase=Потусторонний книжный шкаф
+
+Calamity.ItemName.OccultCandelabra=Потусторонний канделябр
+
+Calamity.ItemName.OccultCandle=Потусторонняя свеча
+
+Calamity.ItemName.OccultChair=Потусторонний стул
+
+Calamity.ItemName.OccultChandelier=Потусторонняя люстра
+
+Calamity.ItemName.OccultChest=Потусторонний сундук
+
+Calamity.ItemName.OccultClock=Потусторонние часы
+
+Calamity.ItemName.OccultDoor=Потусторонняя дверь
+
+Calamity.ItemName.OccultDresser=Потусторонний комод
+
+Calamity.ItemName.OccultLamp=Потусторонняя лампа
+
+Calamity.ItemName.OccultLantern=Потусторонний фонарь
+
+Calamity.ItemName.OccultPiano=Потустороннее пианино
+
+Calamity.ItemName.OccultPlatform=Потусторонняя платформа
+
+Calamity.ItemName.OccultSink=Потусторонняя раковина
+
+Calamity.ItemName.OccultSofa=Потусторонний диван
+
+Calamity.ItemName.OccultStone=Потусторонний камень
+
+Calamity.ItemName.OccultTable=Потусторонний стол
+
+Calamity.ItemName.OccultWorkBench=Потусторонний верстак
+
+Calamity.ItemName.OccultStoneWall=Стена из потустороннего камня
 
 Calamity.ItemName.PlaguedPlate=Кирпич для содержания чумы
 
@@ -4160,6 +4266,8 @@ Calamity.ItemName.PlaguedPlateTable=Чумной стол
 
 Calamity.ItemName.PlaguedPlateWorkbench=Чумной верстак
 
+Calamity.ItemName.ProfanedBath=Осквернённая ванна
+
 Calamity.ItemName.ProfanedBed=Осквернённая кровать
 
 Calamity.ItemName.ProfanedBench=Осквернённая скамья
@@ -4200,6 +4308,8 @@ Calamity.ItemTooltip.ProfanedSink=Считается источником вод
 Calamity.ItemName.ProfanedSlab=Осквернённая плита
 
 Calamity.ItemName.ProfanedTable=Осквернённый стол
+
+Calamity.ItemName.ProfanedWorkbench=Осквернённый верстак
 
 Calamity.ItemName.RunicProfanedBrick=Осквернённый рунический кирпич
 
@@ -4244,6 +4354,8 @@ Calamity.ItemName.SilvaTable=Лесной стол
 
 Calamity.ItemName.SilvaWorkBench=Лесной верстак
 
+Calamity.ItemName.StatigelBath=Статиджеловая ванна
+
 Calamity.ItemName.StatigelBed=Статиджеловая кровать
 
 Calamity.ItemName.StatigelBlock=Статиджеловый блок
@@ -4280,6 +4392,8 @@ Calamity.ItemTooltip.StatigelSink=Считается источником вод
 Calamity.ItemName.StatigelSofa=Статиджеловый комод
 
 Calamity.ItemName.StatigelTable=Статиджеловый стол
+
+Calamity.ItemName.StatigelWorkbench=Статиджеловый верстак
 
 Calamity.ItemName.StratusBathtub=Слоистая ванна
 
@@ -4322,9 +4436,13 @@ Calamity.ItemName.StratusStarPlatformItem=Слоистая звёздная пл
 
 Calamity.ItemName.StratusTable=Слоистый стол
 
+Calamity.ItemName.StratusWorkbench=Слоистый верстак
+
 Calamity.ItemName.SmoothVoidstone=Гладкий пустотный камень
 
 Calamity.ItemName.SmoothVoidstonePlatform=Платформа из гладкого пустотного камня
+
+Calamity.ItemName.VoidBath=Пустотная ванна
 
 Calamity.ItemName.VoidBed=Пустотная кровать
 
@@ -4360,6 +4478,8 @@ Calamity.ItemName.VoidSofa=Пустотный диван
 Calamity.ItemName.VoidstoneSlab=Пустотная плита
 
 Calamity.ItemName.VoidTable=Пустотный стол
+
+Calamity.ItemName.VoidWorkbench=Пустотный верстак
 
 Calamity.ItemName.AnahitaTrophy=Трофей Анахиты
 
@@ -4814,7 +4934,7 @@ Calamity.ItemTooltip.DriedSeafood=Песок пустыни шевелится..
 Calamity.ItemName.EidolonTablet=Фантомный кусок
 Calamity.ItemTooltip.EidolonTablet=Не расходуется
 
-Calamity.ItemName.EyeofExtinction=Ceremonial Urn
+Calamity.ItemName.EyeofExtinction=Пепельная урна
 Calamity.ItemTooltip.EyeofExtinction=Используйте на алтаре проклятого, чтобы призвать Высшую Каламитас\nНе расходуется
 
 Calamity.ItemName.NecroplasmicBeacon=Некроплазматический маяк
@@ -7324,7 +7444,7 @@ Calamity.ItemName.AntiTumorOintment=Бальзам 'Анти-опухоль'
 Calamity.ItemTooltip.AntiTumorOintment=Пометьте как избранное, чтобы предотвратить размножение кист улья
 
 Calamity.ItemName.BleachBall=Пляжный мяч
-Calamity.ItemTooltip.BleachBall=Пометьте как избранное, чтобы предотвратить естественное появление Аквитического бича
+Calamity.ItemTooltip.BleachBall=Пометьте как избранное, чтобы предотвратить естественное появление Акватического бича
 
 Calamity.ItemName.BrimstoneLocus=Серный лотос
 Calamity.ItemTooltip.BrimstoneLocus=Я способна не только на усиление снаряжения с помощью могущественной магии, но и на извлечение истинной силы и\nвозвышения некоторого из твоих оружий до совершенно новых форм\nПодобные предметы явят свой истинный облик только пока этот предмет находится в вашем инвентаре

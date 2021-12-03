@@ -1,17 +1,13 @@
 ﻿using System.Collections.Generic;
-using CalamityMod;
 using CalamityRuTranslate.Common;
-using CalamityRuTranslate.Common.Utilities;
-using Terraria;
 using Terraria.ID;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Vanilla
 {
-    public class RussianPrefixOverhaul : GlobalItem
+    public class RussianPrefixOverhaul
     {
         //Мужской, Женский, Средний, Множественный
-        private static string[][] _prefixes = {
+        public static string[][] Prefixes = {
             new [] {"Искусный", "Искусная", "Искусное", "Искусные"},
             new [] {"Проворный", "Проворная", "Проворное", "Проворные"},
             new [] {"Надоедливый", "Надоедливая", "Надоедливое", "Надоедливые"},
@@ -131,7 +127,7 @@ namespace CalamityRuTranslate.Vanilla
             new [] {"Блудливый", "Блудливая", "Блудливое", "Блудливые"}
         };
         //Женский
-        private static List<int?> _typeW = new List<int?>
+        public static List<int?> TypeW = new List<int?>
         {
             ItemID.BoneGlove,
             ItemID.LuckyHorseshoe,
@@ -603,7 +599,7 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("Perdition"),
         };
         //Средний
-        private static List<int?> _typeU = new List<int?>
+        public static List<int?> TypeU = new List<int?>
         {
             ItemID.CloudinaBottle,
             ItemID.PanicNecklace,
@@ -820,7 +816,7 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("Calamity"),
         };
         //Множественный
-        private static List<int?> _typePl = new List<int?>
+        public static List<int?> TypePl = new List<int?>
         {
             ItemID.BrainOfConfusion,
             ItemID.CopperWatch,
@@ -940,47 +936,18 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("TerrorTalons"),
             ModsCall.Calamity?.ItemType("TotalityBreakers"),
             ModsCall.Calamity?.ItemType("FleshOfInfidelity"),
+            ModsCall.Calamity?.ItemType("FlowersOfMortality"),
         };
 
-        public override bool Autoload(ref string name)
+        public static string GetGenderedPrefix(string[] prefix, int id)
         {
-            On.Terraria.Item.AffixName += delegate(On.Terraria.Item.orig_AffixName orig, Item self)
-            {
-                if (!TranslationUtils.IsRussianLanguage || self == null || self.Name == "")
-                    return orig.Invoke(self);
-
-                string calamityEnchantment = "";
-                string goblinPrefix = "";
-                for (int i = 0; i < _prefixes.Length; i++)
-                {
-                    if (ModsCall.Calamity != null && _prefixes[i][0] == self.Calamity().AppliedEnchantment?.Name)
-                        calamityEnchantment = GetGenderedPrefix(_prefixes[i], self.type) + " ";
-
-                    if (_prefixes[i][0] == Lang.prefix[self.prefix].Value)
-                        goblinPrefix = GetGenderedPrefix(_prefixes[i], self.type) + " ";
-                }
-
-                if (goblinPrefix == "" && calamityEnchantment == "")
-                    return orig.Invoke(self);
-
-                if (calamityEnchantment != "")
-                    goblinPrefix = goblinPrefix.ToLower();
-
-                return calamityEnchantment + goblinPrefix + self.Name.ToLower();
-            };
-
-            return base.Autoload(ref name);
-        }
-
-        private string GetGenderedPrefix(string[] prefix, int id)
-        {
-            if (_typeW.Contains(id))
+            if (TypeW.Contains(id))
                 return prefix[1];
 
-            if (_typeU.Contains(id))
+            if (TypeU.Contains(id))
                 return prefix[2];
 
-            if (_typePl.Contains(id))
+            if (TypePl.Contains(id))
                 return prefix[3];
 
             return prefix[0];

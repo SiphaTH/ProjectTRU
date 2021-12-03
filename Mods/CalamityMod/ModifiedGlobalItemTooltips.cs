@@ -15,6 +15,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod
 {
     public class FuckingItems : CalamityAutoLoad
     {
+        public override void SetDefaults(Item item)
+        {
+            item.ClearNameOverride();
+        }
+
         public override void ModifyTooltips(Item item, List <TooltipLine> tooltips)
         {
             if (item.type == ModsCall.Calamity.ItemType("AsgardianAegis"))

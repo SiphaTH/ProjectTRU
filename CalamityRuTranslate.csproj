@@ -17,8 +17,8 @@
     <Reference Include="CalamityMod">
       <HintPath>..\..\references\Mods\CalamityMod_v.1.5.0.3.dll</HintPath>
     </Reference>
-    <Reference Include="MMHOOK_CalamityMod_v.1.4.5.7">
-      <HintPath>lib\MMHOOK_CalamityMod_v.1.4.5.7.dll</HintPath>
+    <Reference Include="MMHOOK_CalamityMod_v.1.5.0.3">
+      <HintPath>lib\MMHOOK_CalamityMod_v.1.5.0.3.dll</HintPath>
     </Reference>
     <Reference Include="MMHOOK_FargowiltasSouls_v.1.3.96.7">
       <HintPath>lib\MMHOOK_FargowiltasSouls_v.1.3.96.7.dll</HintPath>
