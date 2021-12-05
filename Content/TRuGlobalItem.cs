@@ -1,4 +1,5 @@
-﻿using CalamityRuTranslate.Content.Vanity.CCC;
+﻿using CalamityRuTranslate.Content.Vanity.BrotKrip;
+using CalamityRuTranslate.Content.Vanity.CCC;
 using CalamityRuTranslate.Content.Vanity.StepMolchX;
 using CalamityRuTranslate.Content.Vanity.Umbra;
 using CalamityRuTranslate.Content.Vanity.Veystreks;
@@ -57,6 +58,12 @@ namespace CalamityRuTranslate.Content
                             //     player.QuickSpawnItem(ModContent.ItemType<VeystreksChest>());
                             //     player.QuickSpawnItem(ModContent.ItemType<VeystreksBoots>());
                             // }
+                            if (Main.rand.NextBool(20))
+                            {
+                                player.QuickSpawnItem(ModContent.ItemType<MarisaHat>());
+                                player.QuickSpawnItem(ModContent.ItemType<MarisaDress>());
+                                player.QuickSpawnItem(ModContent.ItemType<MarisaSocks>());
+                            }
                             break;
                     }
                     break;
