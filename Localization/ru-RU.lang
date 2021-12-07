@@ -2416,25 +2416,25 @@ Calamity.ItemTooltip.SnowRuffianGreaves=Увеличивает скорость 
 Calamity.ItemName.SnowRuffianMask=Маска снежного бандита
 Calamity.ItemTooltip.SnowRuffianMask=Увеличивает разбойный урон на 2%
 
-Calamity.ItemName.StatigelArmor=Доспех статиджела
+Calamity.ItemName.StatigelArmor=Статиджеловый доспех
 Calamity.ItemTooltip.StatigelArmor=Увеличивает шанс критического удара на 5%
 
-Calamity.ItemName.StatigelCap=Шляпа статиджела
+Calamity.ItemName.StatigelCap=Статиджеловая шляпа
 Calamity.ItemTooltip.StatigelCap=Увеличивает магический урон на 10% и снижает расход маны на 10%\nУвеличивает шанс критического удара на 7% и максимальный запас маны на 30
 
-Calamity.ItemName.StatigelGreaves=Поножи статиджела
+Calamity.ItemName.StatigelGreaves=Статиджеловые поножи
 Calamity.ItemTooltip.StatigelGreaves=Увеличивает урон и скорость передвижения на 5%
 
-Calamity.ItemName.StatigelHeadgear=Головной убор статиджела
+Calamity.ItemName.StatigelHeadgear=Статиджеловый головной убор
 Calamity.ItemTooltip.StatigelHeadgear=Увеличивает стрелковый урон на 10% и шанс критического удара на 7%
 
-Calamity.ItemName.StatigelHelm=Шлем статиджела
+Calamity.ItemName.StatigelHelm=Статиджеловый шлем
 Calamity.ItemTooltip.StatigelHelm=Увеличивает урон и скорость атаки ближнего боя на 10%\nУвеличивает шанс критического удара на 7%
 
-Calamity.ItemName.StatigelHood=Капюшон статиджела
+Calamity.ItemName.StatigelHood=Статиджеловый капюшон
 Calamity.ItemTooltip.StatigelHood=Увеличивает отбрасывание миньонов
 
-Calamity.ItemName.StatigelMask=Маска статиджела
+Calamity.ItemName.StatigelMask=Статиджеловая маска
 Calamity.ItemTooltip.StatigelMask=Увеличивает разбойный урон на 10%; 34% шанс не использовать предмет разбойника\nУвеличивает шанс критического удара на 7% и скорость передвижения на 12%
 
 Calamity.ItemName.SulfurBreastplate=Сернистый нагрудник
@@ -2565,7 +2565,7 @@ Calamity.ItemName.AshenHorns=Пепельные рога
 
 Calamity.ItemName.AstrumDeusMask=Маска Аструм Деуса
 
-Calamity.ItemName.AureusMask=Маска Аструм Ауреса
+Calamity.ItemName.AureusMask=Маска Аструм Ареуса
 
 Calamity.ItemName.BrimstoneWaifuMask=Маска Серного элементаля
 
@@ -2738,7 +2738,7 @@ Calamity.ItemName.BloodflareDye=Краситель кровавой вспышк
 
 Calamity.ItemName.BlueCosmicFlameDye=Краситель голубого космического пламени
 
-Calamity.ItemName.BlueStatigelDye=Голубой краситель Статиджела
+Calamity.ItemName.BlueStatigelDye=Голубой статиджеловый краситель
 
 Calamity.ItemName.BrimflameDye=Серный краситель
 
@@ -2766,7 +2766,7 @@ Calamity.ItemName.PhantoplasmDye=Фантомплазменный красите
 
 Calamity.ItemName.PinkCosmicFlameDye=Краситель розового космического пламени
 
-Calamity.ItemName.PinkStatigelDye=Розовый краситель Статиджела
+Calamity.ItemName.PinkStatigelDye=Розовый статиджеловый краситель
 
 Calamity.ItemName.ProfanedFlameDye=Краситель осквернённого пламени
 
@@ -3519,7 +3519,7 @@ Calamity.ItemName.BlightedEyeBanner=Знамя гибельного глаза
 
 Calamity.ItemName.BlindedAnglerBanner=Знамя слепого удильщика
 
-Calamity.ItemName.BloatfishBanner=Знамя раздутой рыбы
+Calamity.ItemName.BloatfishBanner=Знамя вздуторыбы
 
 Calamity.ItemName.BloomSlimeBanner=Знамя цветущего слизня
 
@@ -3587,7 +3587,7 @@ Calamity.ItemName.FlounderBanner=Знамя камбалы
 
 Calamity.ItemName.FrogfishBanner=Знамя морского чёрта
 
-Calamity.ItemName.FusionFeederBanner=Знамя питателя реакций
+Calamity.ItemName.FusionFeederBanner=Знамя питателя синтеза
 
 Calamity.ItemName.GammaSlimeBanner=Знамя гамма-слизня
 
@@ -3689,7 +3689,7 @@ Calamity.ItemName.SeaUrchinBanner=Знамя морского ежа
 
 Calamity.ItemName.ShockstormShuttleBanner=Знамя шаттла шокового шторма
 
-Calamity.ItemName.SkyfinBanner=Знамя небесного плавника
+Calamity.ItemName.SkyfinBanner=Знамя ураносфина
 
 Calamity.ItemName.SmallSightseerBanner=Знамя малого путешественника
 
@@ -7046,8 +7046,8 @@ Calamity.ItemTooltip.ShatteredSun=Бросает кинжал, который р
 Calamity.ItemName.Shroomerang=Гриборанг
 Calamity.ItemTooltip.Shroomerang=Стреляет медленным, дальнобойным бумерангом\nПри скрытном ударе бумеранг дарует бафф «{$Mods.CalamityRuTranslate.Calamity.BuffName.Mushy}» при попадании во врага и вызывает самонаводящиеся споры
 
-Calamity.ItemName.SkyfinBombers=Бомбардировщики небесного плавника
-Calamity.ItemTooltip.SkyfinBombers=Рыбные бомбардировщики приближаются!\nЗапускает ядерную бомбу небесного плавника, которая наводится на врагов под собой\nПри скрытном ударе бомба стремительно наводится на врагов независимо от их положения
+Calamity.ItemName.SkyfinBombers=Бомбардировщики ураносфина
+Calamity.ItemTooltip.SkyfinBombers=Рыбные бомбардировщики приближаются!\nЗапускает ядерную бомбу ураносфина, которая наводится на врагов под собой\nПри скрытном ударе бомба стремительно наводится на врагов независимо от их положения
 
 Calamity.ItemName.ShinobiBlade=Клинок шиноби
 Calamity.ItemTooltip.ShinobiBlade=Бросает быстрый клинок, который создаёт исцеляющие шары, когда убивает врага\nПри скрытном ударе бросает 3 клинка за раз
@@ -7804,7 +7804,7 @@ Calamity.ProjectileName.SmokeTelegraph=Дым
 
 
 
-Calamity.NpcName.Bloatfish=Раздутая рыба
+Calamity.NpcName.Bloatfish=Вздуторыба
 Calamity.NpcName.BobbitWormHead=Волнистый червь
 Calamity.NpcName.BobbitWormSegment=Волнистый червь
 Calamity.NpcName.BoxJellyfish=Кубомедуза
@@ -7848,10 +7848,10 @@ Calamity.NpcName.NuclearToad=Ядерная жаба
 Calamity.NpcName.Orthocera=Ортоцераса
 Calamity.NpcName.IrradiatedSlime=Облучённый слизень
 Calamity.NpcName.Radiator=Излучатель
-Calamity.NpcName.Skyfin=Небесный плавник
+Calamity.NpcName.Skyfin=Ураносфин
 Calamity.NpcName.SulfurousSkater=Сернистая водомерка
 Calamity.NpcName.Trilobite=Трилобит
-Calamity.NpcName.WaterLeech=Водяная пиявка
+Calamity.NpcName.WaterLeech=Водная пиявка
 Calamity.NpcName.AquaticParasite=Акватический паразит
 Calamity.NpcName.AquaticScourgeBody=Акватический бич
 Calamity.NpcName.AquaticScourgeBodyAlt=Акватический бич
@@ -7870,7 +7870,7 @@ Calamity.NpcName.Atlas=Атлант
 Calamity.NpcName.BigSightseer=Большой путешественник
 Calamity.NpcName.AstralSeekerSpit=Плюющийся искатель
 Calamity.NpcName.EnchantedNightcrawler=Зачарованный ночной ползун
-Calamity.NpcName.FusionFeeder=Питатель реакций
+Calamity.NpcName.FusionFeeder=Питатель синтеза
 Calamity.NpcName.Hadarian=Хадариан
 Calamity.NpcName.Hive=Улей
 Calamity.NpcName.Hiveling=Ульевик
@@ -7887,7 +7887,7 @@ Calamity.NpcName.AstrumDeusTailSpectral=Аструм Деус
 Calamity.NpcName.Brimling=Серняш
 Calamity.NpcName.BrimstoneElemental=Серный элементаль
 Calamity.NpcName.Bumblefuck=Псевдодракон
-Calamity.NpcName.Bumblefuck2=Драконий роевик
+Calamity.NpcName.Bumblefuck2=Драконья поройка
 Calamity.NpcName.CalamitasRun=Катаклизм
 Calamity.NpcName.CalamitasRun2=Катастрофа
 Calamity.NpcName.CalamitasRun3=Каламитас
@@ -7914,8 +7914,8 @@ Calamity.NpcName.DesertNuisanceBody=Пустынный недруг
 Calamity.NpcName.DesertNuisanceHead=Пустынный недруг
 Calamity.NpcName.DesertNuisanceTail=Пустынный недруг
 Calamity.NpcName.DesertScourgeBody=Пустынный бич
-Calamity.NpcName.DesertScourgeHead=Пустынный Бич
-Calamity.NpcName.DesertScourgeTail=Пустынный Бич
+Calamity.NpcName.DesertScourgeHead=Пустынный бич
+Calamity.NpcName.DesertScourgeTail=Пустынный бич
 Calamity.NpcName.DevourerofGodsBody=Пожиратель богов
 Calamity.NpcName.DevourerofGodsHead=Пожиратель богов
 Calamity.NpcName.DevourerofGodsTail=Пожиратель богов
@@ -8082,7 +8082,7 @@ Calamity.NpcName.Clam=Моллюск
 Calamity.NpcName.EutrophicRay=Эвтрофный скат
 Calamity.NpcName.GhostBell=Призрачный колокольчик
 Calamity.NpcName.GhostBellSmall=Маленький призрачный колокольчик
-Calamity.NpcName.GiantClam=Гигантский Моллюск
+Calamity.NpcName.GiantClam=Гигантский моллюск
 Calamity.NpcName.PrismTurtle=Призмоспин
 Calamity.NpcName.SeaFloaty=Морской поплавок
 Calamity.NpcName.SeaMinnow=Морской пескарь
@@ -11157,7 +11157,7 @@ FargoSouls.CustomTooltip.EternitySouls.205=Effects of Air Walkers
 FargoSouls.CustomTooltip.EternitySouls.206=Effects of Survivalist Boots
 FargoSouls.CustomTooltip.EternitySouls.207=Effects of Weighted Winglets
 FargoSouls.CustomTooltip.EternitySouls.208=Эффекты комплекта брони аэроспека
-FargoSouls.CustomTooltip.EternitySouls.209=Эффекты комплекта брони статиджела
+FargoSouls.CustomTooltip.EternitySouls.209=Эффекты комплекта статиджеловой брони
 FargoSouls.CustomTooltip.EternitySouls.210=Эффекты комплекта брони дедала
 FargoSouls.CustomTooltip.EternitySouls.211=Эффекты комплекта брони кровавой вспышки
 FargoSouls.CustomTooltip.EternitySouls.212=Эффекты виктидового комплекта брони
