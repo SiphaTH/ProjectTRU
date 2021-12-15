@@ -1076,7 +1076,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
         
         private void TranslationHandleInteractionWithButtonHook(ILContext il)
         {
-            TranslationUtils.ILTranslate(il, "Thanatos, a serpentine terror with impervious armor and innumerable laser turrets.", "Танатос - змееподобное создание с непробиваемой броней и несчётными лазерными турелями.");
+            TranslationUtils.ILTranslate(il, "Thanatos, a serpentine terror with impervious armor and innumerable laser turrets.", "Танатос - змееподобное создание с непробиваемой броней и бесчисленным количеством лазерных турелей.");
             TranslationUtils.ILTranslate(il, "Ares, a heavyweight, diabolical monstrosity with four Exo superweapons.", "Арес - тяжеловесное чудовище с четырьмя экзо-супероружиями.");
             TranslationUtils.ILTranslate(il, "Artemis and Apollo, a pair of extremely agile destroyers with pulse cannons.", "Артемида и Аполлон - тандем чрезвычайно маневренных уничтожителей, обладающих импульсными пушками.");
         }
