@@ -10,7 +10,7 @@ namespace CalamityRuTranslate.Content
 {
     public class PreviewArmorSetBonus : GlobalItem
     {
-        public override bool Autoload(ref string name) => TranslationUtils.IsRussianLanguage;
+        public override bool Autoload(ref string name) => TranslationHelper.IsRussianLanguage;
 
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
@@ -35,32 +35,33 @@ namespace CalamityRuTranslate.Content
             }
             else if (showDesc && !item.wornArmor)
             {
-                string CalamityArmorSetName = GlobalArmorSetBonus.GetArmorSetName(item.type, ArmorSetBonusLoader.CalamityArmorSets);
-                string FargoSoulsArmorSetName = GlobalArmorSetBonus.GetArmorSetName(item.type, ArmorSetBonusLoader.FargoSoulsArmorSets);
-                string VanillaArmorSetName = GlobalArmorSetBonus.GetArmorSetName(item.type, ArmorSetBonusLoader.VanillaArmorSets);
-                string CalamitySetBonus = GlobalArmorSetBonus.GetCalamityArmorSetBonusByName(CalamityArmorSetName);
-                string FargoSoulsSetBonus = GlobalArmorSetBonus.GetFargoSoulsArmorSetBonusByName(FargoSoulsArmorSetName);
-                string VanillaSetBonus = GlobalArmorSetBonus.GetVanillaArmorSetBonusByName(VanillaArmorSetName);
+                string calamityArmorSetName = GlobalArmorSetBonus.GetArmorSetName(item.type, ArmorSetBonusLoader.CalamityArmorSets);
+                string fargoSoulsArmorSetName = GlobalArmorSetBonus.GetArmorSetName(item.type, ArmorSetBonusLoader.FargoSoulsArmorSets);
+                string vanillaArmorSetName = GlobalArmorSetBonus.GetArmorSetName(item.type, ArmorSetBonusLoader.VanillaArmorSets);
 
-                if (CalamitySetBonus != null)
+                string calamitySetBonus = GlobalArmorSetBonus.GetCalamityArmorSetBonusByName(calamityArmorSetName);
+                string fargoSoulsSetBonus = GlobalArmorSetBonus.GetFargoSoulsArmorSetBonusByName(fargoSoulsArmorSetName);
+                string vanillaSetBonus = GlobalArmorSetBonus.GetVanillaArmorSetBonusByName(vanillaArmorSetName);
+
+                if (calamitySetBonus != null)
                 {
-                    tooltips.Add(new TooltipLine(mod, "ArmorSetBonusInfo", CalamitySetBonus)
+                    tooltips.Add(new TooltipLine(mod, "ArmorSetBonusInfo", calamitySetBonus)
                     {
                         overrideColor = Color.Gray
                     });
                 }
-                
-                if (FargoSoulsSetBonus != null)
+
+                if (fargoSoulsSetBonus != null)
                 {
-                    tooltips.Add(new TooltipLine(mod, "ArmorSetBonusInfo", FargoSoulsSetBonus)
+                    tooltips.Add(new TooltipLine(mod, "ArmorSetBonusInfo", fargoSoulsSetBonus)
                     {
                         overrideColor = Color.Gray
                     });
                 }
-                
-                if (VanillaSetBonus != null)
+
+                if (vanillaSetBonus != null)
                 {
-                    tooltips.Add(new TooltipLine(mod, "ArmorSetBonusInfo", VanillaSetBonus)
+                    tooltips.Add(new TooltipLine(mod, "ArmorSetBonusInfo", vanillaSetBonus)
                     {
                         overrideColor = Color.Gray
                     });

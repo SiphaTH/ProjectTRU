@@ -27,7 +27,7 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
         {
             foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
             {
-                tooltip.overrideColor = ItemNameColorSwap.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
+                tooltip.overrideColor = ItemHelper.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
             }
         }
     }

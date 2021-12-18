@@ -1,55 +1,136 @@
+using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Content;
+using CalamityRuTranslate.Core;
+using CalamityRuTranslate.Core.GlobalModifications;
+using CalamityRuTranslate.Core.ModCompatibility;
+using CalamityRuTranslate.Core.MonoMod;
+using MonoMod.RuntimeDetour;
+using MonoMod.RuntimeDetour.HookGen;
 using CalamityRuTranslate.Mods.CalamityMod;
 using CalamityRuTranslate.Mods.Fargowiltas;
 using CalamityRuTranslate.Mods.FargowiltasSouls;
-using CalamityRuTranslate.Mods.ThoriumMod;
-using CalamityRuTranslate.Mods.ThoriumMod.Buffs;
-using CalamityRuTranslate.Mods.ThoriumMod.Items;
-using CalamityRuTranslate.Mods.ThoriumMod.Projectiles;
-using CalamityRuTranslate.ThoriumMod.Items;
-using CalamityRuTranslate.ThoriumMod.ModSupport;
-using CalamityRuTranslate.ThoriumMod.NPCs;
-using CalamityRuTranslate.ThoriumMod.Tiles;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Terraria.ModLoader.Core;
 using Terraria.UI;
+using Terraria.ID;
 
 namespace CalamityRuTranslate
 {
     public partial class CalamityRuTranslate : Mod
     {
         public static CalamityRuTranslate Instance { get; private set; }
+        public static List<Hook> Hooks { get; private set; }
+        public static List<(MethodInfo, Delegate)> Modifiers { get; private set; }
+        private List<ILoadable> _loadCache;
 
-        private ModRussianTranslation[] _translations =
+        private readonly SetupModTranslation[] _translations =
         {
-            new CoreCalamityTranslation(),
-            new CoreThoriumTranslation(),
-            new CoreFargowiltasSoulsTranslation(),
-            new CoreFargowiltasTranslation()
+            new CalamityTranslation(),
+            new FargowiltasSoulsTranslation(),
+            new FargowiltasTranslation()
         };
-
-        public CalamityRuTranslate() => Instance = this;
 
         public override void Load()
         {
-            foreach (ModRussianTranslation translation in _translations)
-                translation.TryLoad();
+            Instance = this;
+            _loadCache = new List<ILoadable>();
+            Hooks = new List<Hook>();
+            Modifiers = new List<(MethodInfo, Delegate)>();
+
+            foreach (SetupModTranslation mod in _translations)
+                mod.TryLoad();
+
+            foreach (Type type in Code.GetTypes().Where(x => !x.IsAbstract && x.GetInterfaces().Contains(typeof(ILoadable))))
+                _loadCache.Add((ILoadable) Activator.CreateInstance(type));
+
+            _loadCache.Sort((n, t) => n.Priority > t.Priority ? 1 : -1);
+
+            foreach (var cache in _loadCache)
+                cache.Load();
+
+            foreach (Type type in Code.GetTypes().Where(x => !x.IsAbstract && x.GetConstructor(Type.EmptyTypes) != null))
+            {
+                ModDependencyAttribute[] modDependencies = type.GetCustomAttributes<ModDependencyAttribute>().ToArray();
+                CultureDependencyAttribute[] cultureDependencies = type.GetCustomAttributes<CultureDependencyAttribute>().ToArray();
+
+                string contentName = type.Name;
+                object instance = Activator.CreateInstance(type);
+
+                bool missingDependency = false;
+
+                if (modDependencies.Length == 0) continue;
+
+                foreach (CultureDependencyAttribute dependency in cultureDependencies)
+                {
+                    if (Main.netMode == NetmodeID.SinglePlayer && LanguageManager.Instance.ActiveCulture == GameCulture.FromName(dependency.Culture))
+                        continue;
+
+                    if (Main.netMode == NetmodeID.Server && GameCulture.FromName(dependency.Culture) == GameCulture.Russian)
+                        continue;
+
+                    missingDependency = true;
+                }
+                
+                foreach (ModDependencyAttribute dependency in modDependencies)
+                {
+                    if (ModLoader.Mods.Any(x => x.Name.Equals(dependency.Mod)))
+                        continue;
+
+                    missingDependency = true;
+                }
+
+                if (missingDependency) continue;
+
+                switch (instance)
+                {
+                    case ModifyGlobalBuff modifyGlobalBuff:
+                        if (modifyGlobalBuff.Autoload(ref contentName))
+                            continue;
+
+                        if (modifyGlobalBuff.LoadWithValidMods())
+                            AddGlobalBuff(contentName, modifyGlobalBuff);
+                        break;
+
+                    case ModifyGlobalItem modifyGlobalItem:
+                        if (modifyGlobalItem.Autoload(ref contentName))
+                            continue;
+
+                        if (modifyGlobalItem.LoadWithValidMods())
+                            AddGlobalItem(contentName, modifyGlobalItem);
+                        break;
+
+                    case ModifyGlobalNPC modifyGlobalNPC:
+                        if (modifyGlobalNPC.Autoload(ref contentName))
+                            continue;
+
+                        if (modifyGlobalNPC.LoadWithValidMods())
+                            AddGlobalNPC(contentName, modifyGlobalNPC);
+                        break;
+                    
+                    case ModifyGlobalProjectile modifyGlobalProjectile:
+                        if (modifyGlobalProjectile.Autoload(ref contentName))
+                            continue;
+
+                        if (modifyGlobalProjectile.LoadWithValidMods())
+                            AddGlobalProjectile(contentName, modifyGlobalProjectile);
+                        break;
+
+                    case MonoModPatcher<string> monoModPatcher:
+                        monoModPatcher.Apply();
+                        break;
             
-            ILManager.Load();
-            LangUtils.Load();
-            LoadJSON();
-            LoadFont();
-            LoadCache();
-            if (TranslationUtils.IsRussianLanguage && ModsCall.Calamity != null)
+                    case MonoModPatcher<MethodInfo> monoModPatcher:
+                        monoModPatcher.Apply();
+                        break;
+                }
+            }
+
+            if (ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage)
                 CalamityReflections();
         }
 
@@ -57,56 +138,36 @@ namespace CalamityRuTranslate
         {
             Instance = null;
             TRuConfig.Instance = null;
-            LangUtils.Unload();
-            ILManager.Unload();
-            TRuGlowmask.Unload();
-            UnloadFont();
-            UnloadCache();
-            CoreThoriumTranslation.Unload();
+
+            foreach (Hook hook in Hooks)
+                hook.Undo();
+
+            foreach ((MethodInfo method, Delegate @delegate) in Modifiers)
+                HookEndpointManager.Unmodify(method, @delegate);
+
+            Hooks = null;
+            Modifiers = null;
+
+            foreach (var cache in _loadCache)
+                cache.Unload();
+
+            _loadCache = null;
         }
-		
+
         public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
         {
-            foreach (ModRussianTranslation translation in _translations)
+            foreach (SetupModTranslation mod in _translations)
             {
-                translation.TryDialogueTranslation();
-                translation.TryCombatTextTranslation();
+                mod.LoadSetupDialoguesTranslation();
+                mod.LoadSetupCombatTextsTranslation();
             }
 
-            if (TranslationUtils.IsRussianLanguage && !Main.dedServ && ModsCall.Thorium != null)
-            {
-                ThoriumSupport.ThoriumNpcChat();
-            }
         }
-        
+
         public override void PostSetupContent()
         {
-            foreach (ModRussianTranslation translation in _translations)
-                translation.TrySetupContentTranslation();
-            
-            if (TranslationUtils.IsRussianLanguage && !Main.dedServ && ModsCall.Thorium != null)
-            {
-                BuffTranslation.SetupTranslation();
-                PrefixNames.SetupTranslation();
-                ProjectileNames.SetupTranslation();
-                ThoriumItemName.Setup();
-                ThoriumItemTooltip.Setup();
-                ThoriumNpc.Setup();
-                ThoriumTiles.Setup();
-                ThoriumSupport.ThoriumAddLocalizations();
-            }
-        }
-
-        private void LoadJSON()
-        {
-            if (!TranslationUtils.IsRussianLanguage)
-                return;
-        
-            TmodFile tModFile = typeof(CalamityRuTranslate).GetProperty("File", BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(Instance) as TmodFile;
-
-            foreach (var item in tModFile.Where(entry =>
-                Path.GetFileNameWithoutExtension(entry.Name).StartsWith("Terraria.Localization.Content.")))
-                LanguageManager.Instance.LoadLanguageFromFileText(Encoding.UTF8.GetString(GetFileBytes(item.Name)));
+            foreach (SetupModTranslation mod in _translations)
+                mod.LoadSetupContentTranslation();
         }
     }
 }

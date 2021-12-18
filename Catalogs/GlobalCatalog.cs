@@ -4,7 +4,7 @@ namespace CalamityRuTranslate.Catalogs
 {
     public static class GlobalCatalog
     {
-        public static Dictionary<string, string> TownNpcName = new Dictionary<string, string>
+        public static Dictionary<string, string> TownNPCsName = new Dictionary<string, string>
         {
             {"Wilta", "Wilta"},
             {"Reaper", "Reaper"},

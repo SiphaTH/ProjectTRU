@@ -23,14 +23,17 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
             item.rare = 1;
             item.accessory = true;
         }
-        
-        public override void UpdateAccessory(Player player, bool hideVisual) => player.wingTimeMax = 180;
+
+        public override void UpdateAccessory(Player player, bool hideVisual)
+        {
+            player.wingTimeMax = 180;
+        }
 
         public override void ModifyTooltips(List<TooltipLine> list)
         {
             foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
             {
-                tooltip.overrideColor = ItemNameColorSwap.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
+                tooltip.overrideColor = ItemHelper.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
             }
         }
     }

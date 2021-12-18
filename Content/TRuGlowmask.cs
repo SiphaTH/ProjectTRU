@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using CalamityRuTranslate.Core;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -8,15 +9,21 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Content
 {
-    public class TRuGlowmask : ModPlayer
+    public class TRuGlowmask : ModPlayer, ILoadable
     {
-        private static readonly Dictionary<int, Texture2D> ItemGlowMask = new Dictionary<int, Texture2D>();
+        private readonly Dictionary<int, Texture2D> _itemGlowMask = new Dictionary<int, Texture2D>();
 
-        internal static void Unload() => ItemGlowMask.Clear();
+        public float Priority => 1f;
+        public void Load() { }
 
-        public static void AddGlowMask(int itemType, string texturePath)
+        public void Unload()
         {
-            ItemGlowMask[itemType] = ModContent.GetTexture(texturePath);
+	        _itemGlowMask.Clear();
+        }
+
+        public void AddGlowMask(int itemType, string texturePath)
+        {
+            _itemGlowMask[itemType] = ModContent.GetTexture(texturePath);
         }
 
         public override void ModifyDrawLayers(List<PlayerLayer> layers)
@@ -24,7 +31,7 @@ namespace CalamityRuTranslate.Content
 	        Texture2D textureHead;
 	        if (!player.armor[10].IsAir)
 	        {
-		        if (player.armor[10].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[10].type, out textureHead))
+		        if (player.armor[10].type >= ItemID.Count && _itemGlowMask.TryGetValue(player.armor[10].type, out textureHead))
 		        {
 			        InsertAfterVanillaLayer(layers, "Head", new PlayerLayer(mod.Name, "GlowMaskHead", delegate(PlayerDrawInfo info)
 			        {
@@ -32,18 +39,18 @@ namespace CalamityRuTranslate.Content
 			        }));
 		        }
 	        }
-	        else if (player.armor[0].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[0].type, out textureHead))
+	        else if (player.armor[0].type >= ItemID.Count && _itemGlowMask.TryGetValue(player.armor[0].type, out textureHead))
 	        {
 		        InsertAfterVanillaLayer(layers, "Head", new PlayerLayer(mod.Name, "GlowMaskHead", delegate(PlayerDrawInfo info)
 		        {
 			        DrawArmorGlowMask(EquipType.Head, textureHead, info);
 		        }));
 	        }
-	        
+
 	        Texture2D textureBody;
 	        if (!player.armor[11].IsAir)
 	        {
-	        	if (player.armor[11].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[11].type, out textureBody))
+	        	if (player.armor[11].type >= ItemID.Count && _itemGlowMask.TryGetValue(player.armor[11].type, out textureBody))
 	        	{
 	        		InsertAfterVanillaLayer(layers, "Body", new PlayerLayer(mod.Name, "GlowMaskBody", delegate(PlayerDrawInfo info)
 	        		{
@@ -51,7 +58,7 @@ namespace CalamityRuTranslate.Content
 	        		}));
 	        	}
 	        }
-	        else if (player.armor[1].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[1].type, out textureBody))
+	        else if (player.armor[1].type >= ItemID.Count && _itemGlowMask.TryGetValue(player.armor[1].type, out textureBody))
 	        {
 	        	InsertAfterVanillaLayer(layers, "Body", new PlayerLayer(mod.Name, "GlowMaskBody", delegate(PlayerDrawInfo info)
 	        	{
@@ -62,7 +69,7 @@ namespace CalamityRuTranslate.Content
 	        Texture2D textureArms;
 	        if (!player.armor[11].IsAir)
 	        {
-		        if (player.armor[11].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[11].type, out textureArms))
+		        if (player.armor[11].type >= ItemID.Count && _itemGlowMask.TryGetValue(player.armor[11].type, out textureArms))
 		        {
 			        InsertAfterVanillaLayer(layers, "Arms", new PlayerLayer(mod.Name, "GlowMaskBody", delegate(PlayerDrawInfo info)
 			        {
@@ -70,18 +77,18 @@ namespace CalamityRuTranslate.Content
 			        }));
 		        }
 	        }
-	        else if (player.armor[1].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[1].type, out textureArms))
+	        else if (player.armor[1].type >= ItemID.Count && _itemGlowMask.TryGetValue(player.armor[1].type, out textureArms))
 	        {
 		        InsertAfterVanillaLayer(layers, "Arms", new PlayerLayer(mod.Name, "GlowMaskBody", delegate(PlayerDrawInfo info)
 		        {
 			        DrawArmorGlowMask(EquipType.Body, textureArms, info);
 		        }));
 	        }
-	        
+
 	        Texture2D textureLegs;
             if (!player.armor[12].IsAir)
             {
-                if (player.armor[12].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[12].type, out textureLegs))
+                if (player.armor[12].type >= ItemID.Count && _itemGlowMask.TryGetValue(player.armor[12].type, out textureLegs))
                 {
                     InsertAfterVanillaLayer(layers, "Legs", new PlayerLayer(mod.Name, "GlowMaskLegs", delegate(PlayerDrawInfo info)
                     {
@@ -89,7 +96,7 @@ namespace CalamityRuTranslate.Content
                     }));
                 }
             }
-            else if (player.armor[2].type >= ItemID.Count && ItemGlowMask.TryGetValue(player.armor[2].type, out textureLegs))
+            else if (player.armor[2].type >= ItemID.Count && _itemGlowMask.TryGetValue(player.armor[2].type, out textureLegs))
 			{
 				InsertAfterVanillaLayer(layers, "Legs", new PlayerLayer(mod.Name, "GlowMaskLegs", delegate(PlayerDrawInfo info)
 				{
@@ -98,7 +105,7 @@ namespace CalamityRuTranslate.Content
 			}
         }
 
-        public static void InsertAfterVanillaLayer(List<PlayerLayer> layers, string vanillaLayerName, PlayerLayer newPlayerLayer)
+        private void InsertAfterVanillaLayer(List<PlayerLayer> layers, string vanillaLayerName, PlayerLayer newPlayerLayer)
         {
             for (int i = 0; i < layers.Count; i++)
             {
@@ -111,7 +118,7 @@ namespace CalamityRuTranslate.Content
             layers.Add(newPlayerLayer);
         }
 
-        private static void DrawArmorGlowMask(EquipType type, Texture2D texture, PlayerDrawInfo drawInfo)
+        private void DrawArmorGlowMask(EquipType type, Texture2D texture, PlayerDrawInfo drawInfo)
         {
 	        switch (type)
 	        {
@@ -127,7 +134,7 @@ namespace CalamityRuTranslate.Content
 			        Main.playerDrawData.Add(drawData);
 			        break;
 		        }
-		        
+
 		        case EquipType.Body:
 		        {
 			        Player drawPlayer = drawInfo.drawPlayer;

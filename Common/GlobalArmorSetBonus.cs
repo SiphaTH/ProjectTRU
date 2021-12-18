@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using CalamityRuTranslate.Common.DataStructures;
 using CalamityRuTranslate.Common.Utilities;
 using Terraria;
 using Terraria.Localization;
@@ -8,20 +9,18 @@ namespace CalamityRuTranslate.Common
 {
     public static class GlobalArmorSetBonus
     {
-        public static List<ArmorSetInfo> ListOfArmorSet
+        public static List<ArmorSetData> ListOfArmorSet
         {
             get
             {
-                var getArmorSetInfo = new List<ArmorSetInfo>();
-        
-                getArmorSetInfo.AddRange(ArmorSetBonusLoader.VanillaArmorSets);
-                
+                List<ArmorSetData> getArmorSetInfo = new List<ArmorSetData>();
+
                 if (ModsCall.Calamity != null)
                     getArmorSetInfo.AddRange(ArmorSetBonusLoader.CalamityArmorSets);
-        
+
                 if (ModsCall.FargoSouls != null)
                     getArmorSetInfo.AddRange(ArmorSetBonusLoader.FargoSoulsArmorSets);
-                
+
                 return getArmorSetInfo;
             }
         }
@@ -31,10 +30,15 @@ namespace CalamityRuTranslate.Common
             switch (set)
             {
                 case "Obsidian":
-                    return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}") + (TRuConfig.Instance.CalamityStealthDescription ? LangUtils.GetTextValue("Calamity", "SetBonus.Stealth") : "") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "DeathMode.Heat") : "");
+                    return LangHelper.GetTextValue($"Calamity.SetBonus.{set}") +
+                           (TRuConfig.Instance.CalamityStealthDescription
+                               ? LangHelper.GetTextValue("Calamity.SetBonus.RogueStealthDescription") : "") +
+                           (ModsCall.DeathMode ? LangHelper.GetTextValue("Calamity.DeathMode.Heat") : "");
+
                 case "Fearmonger":
                 case "Eskimo":
-                    return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}") + (ModsCall.DeathMode ? LangUtils.GetTextValue("Calamity", "DeathMode.Cold") : "");
+                    return LangHelper.GetTextValue($"Calamity.SetBonus.{set}") +
+                           (ModsCall.DeathMode ? LangHelper.GetTextValue("Calamity.DeathMode.Cold") : "");
 
                 case "AerospecRogue":
                 case "Gladiator":
@@ -50,10 +54,12 @@ namespace CalamityRuTranslate.Common
                 case "Umbraphile":
                 case "WulfrumRogue":
                 case "TarragonRogue":
-                    return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}") + (TRuConfig.Instance.CalamityStealthDescription ? LangUtils.GetTextValue("Calamity", "SetBonus.Stealth") : "");
+                    return LangHelper.GetTextValue($"Calamity.SetBonus.{set}") +
+                           (TRuConfig.Instance.CalamityStealthDescription ? LangHelper.GetTextValue("Calamity.SetBonus.RogueStealthDescription") : "");
 
                 case "AncientForbiddenCirclet":
-                    return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}", ModsCall.ArmorSetHotkey, ModsCall.AncientStorm) + (TRuConfig.Instance.CalamityStealthDescription ? LangUtils.GetTextValue("Calamity", "SetBonus.Stealth") : "");
+                    return LangHelper.GetTextValue($"Calamity.SetBonus.{set}", ModsCall.ArmorSetHotkey, ModsCall.AncientStorm) +
+                           (TRuConfig.Instance.CalamityStealthDescription ? LangHelper.GetTextValue("Calamity.SetBonus.RogueStealthDescription") : "");
 
                 case "TarragonMelee":
                 case "Brimflame":
@@ -61,15 +67,16 @@ namespace CalamityRuTranslate.Common
                 case "OmegaBlue":
                 case "PlagueReaper":
                 case "Prismatic":
-                    return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}", ModsCall.ArmorSetHotkey);
+                    return LangHelper.GetTextValue($"Calamity.SetBonus.{set}", ModsCall.ArmorSetHotkey);
 
                 case "GodSlayerMelee":
                 case "GodSlayerRanged":
-                    return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}", ModsCall.GodSlayerDashHotKey);
-                
+                    return LangHelper.GetTextValue($"Calamity.SetBonus.{set}", ModsCall.GodSlayerDashHotKey);
+
                 case "GodSlayerRogue":
-                    return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}", ModsCall.GodSlayerDashHotKey) + (TRuConfig.Instance.CalamityStealthDescription ? LangUtils.GetTextValue("Calamity", "SetBonus.Stealth") : "");
-                
+                    return LangHelper.GetTextValue($"Calamity.SetBonus.{set}", ModsCall.GodSlayerDashHotKey) +
+                           (TRuConfig.Instance.CalamityStealthDescription ? LangHelper.GetTextValue("Calamity.SetBonus.RogueStealthDescription") : "");
+
                 case "Shroomite":
                 case "AerospecMagic":
                 case "AerospecMelee":
@@ -117,7 +124,7 @@ namespace CalamityRuTranslate.Common
                 case "WulfrumMelee":
                 case "WulfrumSummoner":
                 case "WulfrumMagic":
-                    return LangUtils.GetTextValue("Calamity", $"SetBonus.{set}");
+                    return LangHelper.GetTextValue($"Calamity.SetBonus.{set}");
             }
 
             return "";
@@ -130,9 +137,11 @@ namespace CalamityRuTranslate.Common
                 case "EridanusHat":
                 case "GaiaHelmet":
                 case "MutantMask":
-                    return LangUtils.GetTextValue("FargoSouls", $"SetBonus.{set}");
+                    return LangHelper.GetTextValue($"FargoSouls.SetBonus.{set}");
+
                 case "StyxCrown":
-                    return LangUtils.GetTextValue("FargoSouls", "SetBonus.StyxCrown", Language.GetTextValue(Main.ReversedUpDownArmorSetBonuses ? "Key.UP" : "Key.DOWN"));
+                    return LangHelper.GetTextValue("FargoSouls.SetBonus.StyxCrown",
+                        Language.GetTextValue(Main.ReversedUpDownArmorSetBonuses ? "Key.UP" : "Key.DOWN"));
             }
 
             return "";
@@ -259,9 +268,9 @@ namespace CalamityRuTranslate.Common
             return "";
         }
 
-        public static string GetArmorSetName(int itemType, List<ArmorSetInfo> armorSetInfo)
+        public static string GetArmorSetName(int itemType, List<ArmorSetData> armorSetData)
         {
-            foreach (ArmorSetInfo armorSet in armorSetInfo)
+            foreach (ArmorSetData armorSet in armorSetData)
             {
                 if (armorSet.CheckHeadOfArmorSet(itemType, out string name))
                     return name;
@@ -270,9 +279,9 @@ namespace CalamityRuTranslate.Common
             return default;
         }
 
-        public static bool CheckArmorSetHead(int headType, List<ArmorSetInfo> armorSetInfo)
+        public static bool CheckArmorSetHead(int headType, List<ArmorSetData> armorSetData)
         {
-            return armorSetInfo.Any(armorSet => armorSet.CheckHeadOfArmorSet(headType, out string _));
+            return armorSetData.Any(armorSet => armorSet.CheckHeadOfArmorSet(headType, out string _));
         }
     }
 }

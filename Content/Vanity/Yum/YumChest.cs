@@ -2,6 +2,7 @@
 using System.Linq;
 using Microsoft.Xna.Framework;
 using Terraria.ModLoader;
+using Terraria.ID;
 
 namespace CalamityRuTranslate.Content.Vanity.Yum
 {
@@ -12,14 +13,14 @@ namespace CalamityRuTranslate.Content.Vanity.Yum
         {
             DisplayName.SetDefault("Мантия Yum");
             Tooltip.SetDefault("{$CommonItemTooltip.DevItem}\nМантия старого человека");
-            TRuGlowmask.AddGlowMask(item.type, "CalamityRuTranslate/Content/Glowmasks/YumChest_Glow");
+            ModContent.GetInstance<TRuGlowmask>().AddGlowMask(item.type, "CalamityRuTranslate/Content/Glowmasks/YumChest_Glow");
         }
 
         public override void SetDefaults()
         {
             item.width = 28;
             item.height = 20;
-            item.rare = 1;
+            item.rare = ItemRarityID.Blue;
             item.vanity = true;
         }
 

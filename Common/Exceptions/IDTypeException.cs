@@ -2,15 +2,15 @@
 
 namespace CalamityRuTranslate.Common.Exceptions
 {
-    public class IDTypeException : Exception
+    public class IdTypeException : Exception
     {
-        private string _invalidId { get; }
-        
-        public IDTypeException(string invalidId)
+        private string InvalidId { get; }
+
+        public IdTypeException(string invalidId)
         {
-            _invalidId = invalidId;
+            InvalidId = invalidId;
         }
-        
-        public override string Message => $"ID \"{_invalidId}\" не найден!\n";
+
+        public override string Message => $"ID \"{InvalidId}\" не найден!\n";
     }
 }

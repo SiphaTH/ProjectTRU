@@ -10,17 +10,17 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
     [AutoloadEquip(EquipType.Head)]
     public class UmbraVoidHood : ModItem
     {
-        private static int tooltipIndex;
-        private static int Counter = 10;
+        private static int _tooltipIndex;
+        private static int _counter = 10;
 
-        private readonly string[] tooltipStrings =
+        private readonly string[] _caesarCipher =
         {
             "РПИГПМЭ",
             "РФТУПУЁ",
             "РПДМПУЙУЭ",
             "УЁВА"
         };
-        
+
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Пустотный капюшон Umbra");
@@ -34,23 +34,23 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
             item.rare = 1;
             item.vanity = true;
         }
-        
+
         public override void ModifyTooltips(List<TooltipLine> list)
         {
-            list.Add(new TooltipLine(mod, "tooltip", tooltipStrings[tooltipIndex]));
+            list.Add(new TooltipLine(mod, $"{mod.Name}:Umbra", _caesarCipher[_tooltipIndex]));
 
-            Counter--;
-            
-            if (Counter <= 0)
+            _counter--;
+
+            if (_counter <= 0)
             {
-                tooltipIndex = Main.rand.Next(tooltipStrings.Length);
+                _tooltipIndex = Main.rand.Next(_caesarCipher.Length);
 
-                Counter = 50;
+                _counter = 90;
             }
-            
+
             foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
             {
-                tooltip.overrideColor = ItemNameColorSwap.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
+                tooltip.overrideColor = ItemHelper.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
             }
         }
     }

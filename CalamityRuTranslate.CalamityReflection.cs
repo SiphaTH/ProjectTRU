@@ -6,6 +6,7 @@ using CalamityMod.NPCs.Ravager;
 using CalamityMod.NPCs.SlimeGod;
 using CalamityMod.UI;
 using CalamityMod.UI.CalamitasEnchants;
+using CalamityRuTranslate.Common.Utilities;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
@@ -18,21 +19,21 @@ namespace CalamityRuTranslate
         {
             List<(string, string)> enchantmentTranslation = new List<(string, string)>
             {
-                ("Наполнение", "Превращает этот предмет в нечто значительно более сильное"),
-                ("Негодующий", "При использовании призывает демонов, которые причиняют вам вред, но роняют при смерти лечащие предметы"),
-                ("Горящий", "Поджигает врагов при попадании, но также наносит вам периодический урон, пока вы держите в руках этот предмет"),
-                ("Жертвенный", "Снижает расход маны и значительно увеличивает урон, но иногда этот предмет использует ваше здоровье"),
-                ("Злопамятный", "Урон снарядов меняется в зависимости от расстояние до цели. Чем дальше цель, тем больше урон. Этот эффект обратно пропорционален"),
-                ("Жаждущий", "Урон снарядов меняется в зависимости от расстояние до цели. Чем ближе цель, тем больше урон. Этот эффект обратно пропорционален"),
-                ("Эфемерный", "Урон этого оружия уменьшается при продолжительном использовании.\nУрон возвращается в норму со временем, пока оружие не используется. Изначальный урон оружия выше, чем обычно"),
-                ("Адский", "Призванные миньоны живут 40 секунд.\nПо истечении этого времени, они взрываются со страшной силой\nМиньоны наносят больше урона, чем дольше живут, а также взрываются от бездействия"),
-                ("Порченный", "Лишает предмет возможности стрелять снарядами. Взамен выпускает две скелетные руки, шинкующие врагов"),
-                ("Предательский", "Заставляет предмет иногда выпускать монстра, который причиняет вам и врагам вред, когда у вас меньше 50% маны"),
-                ("Иссушающий", "При ранении, вы восстанавливаете процент от полученного урона исходя из того, сколько накопленного урона вы нанесли до этого, вплоть до 100%.\nПосле этого вы увеличиваете свой урон, пока удерживаете этот предмет в руках, но также получаете увеличивающийся периодический урон, чем дольше его удерживаете"),
-                ("Гонимый", "При ранении, или со временем рядом с вами появляются демонические порталы.\nЕсли они достаточно повреждены, они становятся дружественными, в противном случае нападают на вас. Монстры из демонического портала впадают в ярость, если портал повреждён"),
-                ("Блудливый", "Призывает живучего серного монстра, который постоянно находится между вами и ваши курсором, и препятствует оружию с самонаводящимися снарядами.\nПри смерти он сбрасывает множество сердец")
+                (LangHelper.GetText("Calamity.EnchantmentName.Exhume"), LangHelper.GetText("Calamity.EnchantmentDesc.Exhume")),
+                (LangHelper.GetText("Calamity.EnchantmentName.Indignant"), LangHelper.GetText("Calamity.EnchantmentDesc.Indignant")),
+                (LangHelper.GetText("Calamity.EnchantmentName.Aflame"), LangHelper.GetText("Calamity.EnchantmentDesc.Aflame")),
+                (LangHelper.GetText("Calamity.EnchantmentName.Oblatory"), LangHelper.GetText("Calamity.EnchantmentDesc.Oblatory")),
+                (LangHelper.GetText("Calamity.EnchantmentName.Resentful"), LangHelper.GetText("Calamity.EnchantmentDesc.Resentful")),
+                (LangHelper.GetText("Calamity.EnchantmentName.Bloodthirsty"), LangHelper.GetText("Calamity.EnchantmentDesc.Bloodthirsty")),
+                (LangHelper.GetText("Calamity.EnchantmentName.Ephemeral"), LangHelper.GetText("Calamity.EnchantmentDesc.Ephemeral")),
+                (LangHelper.GetText("Calamity.EnchantmentName.Hellbound"), LangHelper.GetText("Calamity.EnchantmentDesc.Hellbound")),
+                (LangHelper.GetText("Calamity.EnchantmentName.Tainted"), LangHelper.GetText("Calamity.EnchantmentDesc.Tainted")),
+                (LangHelper.GetText("Calamity.EnchantmentName.Traitorous"), LangHelper.GetText("Calamity.EnchantmentDesc.Traitorous")),
+                (LangHelper.GetText("Calamity.EnchantmentName.Withering"), LangHelper.GetText("Calamity.EnchantmentDesc.Withering")),
+                (LangHelper.GetText("Calamity.EnchantmentName.Persecuted"), LangHelper.GetText("Calamity.EnchantmentDesc.Persecuted")),
+                (LangHelper.GetText("Calamity.EnchantmentName.Lecherous"), LangHelper.GetText("Calamity.EnchantmentDesc.Lecherous")),
             };
-            
+
             Dictionary<int, BossHealthBarManager.BossEntityExtension> dictionary = new Dictionary<int, BossHealthBarManager.BossEntityExtension>
             {
                 {13, new BossHealthBarManager.BossEntityExtension("Сегментов", 13, 14, 15)},
@@ -46,15 +47,15 @@ namespace CalamityRuTranslate
             
             };
             BossHealthBarManager.EntityExtensionHandler = dictionary;
-            
+
             if (typeof(AstralArcanumUI).GetField("CircleNames", BindingFlags.Static | BindingFlags.NonPublic)?.GetValue(null) is string[] circleNames)
             {
-                circleNames[0] = "Ад";
-                circleNames[1] = "Темница";
-                circleNames[2] = "Джунгли";
-                circleNames[3] = "Случайное место";
+                circleNames[0] = LangHelper.GetText("Calamity.AstralArcanumUI.CircleNames.Hell");
+                circleNames[1] = LangHelper.GetText("Calamity.AstralArcanumUI.CircleNames.Dungeon");
+                circleNames[2] = LangHelper.GetText("Calamity.AstralArcanumUI.CircleNames.Jungle");
+                circleNames[3] = LangHelper.GetText("Calamity.AstralArcanumUI.CircleNames.Random");
             }
-            
+
             if (typeof(EnchantmentManager).GetProperty("EnchantmentList", BindingFlags.Public | BindingFlags.Static)?.GetValue(null) is List<Enchantment> enchantmentList)
             {
                 for (int i = 0; i < enchantmentList.Count; i++)
@@ -67,7 +68,7 @@ namespace CalamityRuTranslate
             }
 
             PropertyInfo enchantment = typeof(EnchantmentManager).GetProperty("ClearEnchantment", BindingFlags.Public | BindingFlags.Static);
-            enchantment?.SetValue(typeof(Enchantment),  new Enchantment("Снять зачарование", string.Empty, -18591774, null, delegate(Item item)
+            enchantment?.SetValue(typeof(Enchantment), new Enchantment(LangHelper.GetText("Calamity.EnchantmentName.ClearEnchantment"), string.Empty, -18591774, null, delegate(Item item)
             {
                 item.Calamity().AppliedEnchantment = null;
                 item.Calamity().DischargeEnchantExhaustion = 0f;
