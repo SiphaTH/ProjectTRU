@@ -30,6 +30,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
                 }
             }
 
+            //!TODO: Найти нормальный способ взаимодействия с листами
             if (ModsCall.FargoSouls != null)
             {
                 ItemsNameTranslation.Add("Squirrel");
@@ -56,7 +57,12 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
                 ItemsNameTranslation.Add("OmnistationPlus");
                 ItemsTooltipTranslation.Add("OmnistationPlus");
             }
-            else if(ModsCall.Thorium == null && ModsCall.Calamity == null)
+            else if (ModsCall.Thorium == null && ModsCall.Calamity == null)
+            {
+                ItemsNameTranslation.Remove("OmnistationPlus");
+                ItemsTooltipTranslation.Remove("OmnistationPlus");
+            }
+            else if (ModsCall.Thorium == null || ModsCall.Calamity == null)
             {
                 ItemsNameTranslation.Remove("OmnistationPlus");
                 ItemsTooltipTranslation.Remove("OmnistationPlus");

@@ -422,7 +422,7 @@ Calamity.BuffName.Revivify=Возрождение
 Calamity.BuffDescription.Revivify=Вы исцеляетесь на часть урона, который вы получили
 
 Calamity.BuffName.ShadowBuff=Тень
-Calamity.BuffDescription.ShadowBuff=Вы невидимы, некоторые разбойные оружия дают и получают усиления, скорость восстановления скрытности увеличено
+Calamity.BuffDescription.ShadowBuff=Вы невидимы, некоторое разбойное оружие даёт и получает усиление; скорость восстановления скрытности увеличена
 
 Calamity.BuffName.Soaring=Парение
 Calamity.BuffDescription.Soaring=Время полёта крыльев и скорость увеличены\nИстинные удары ближнего боя восстанавливают время полёта крыльев
@@ -440,7 +440,7 @@ Calamity.BuffName.TriumphBuff=Триумф
 Calamity.BuffDescription.TriumphBuff=Контактный урон от врага снижен, чем меньше здоровье врага, тем больше сокращение
 
 Calamity.BuffName.YharimPower=Сила Ярима
-Calamity.BuffDescription.YharimPower=Вы чувствуете, что можете разбить мир пополам... своими голыми руками!
+Calamity.BuffDescription.YharimPower=Вы чувствуете, что можете разбить мир пополам... голыми руками!
 
 Calamity.BuffName.Zen=Дзен
 Calamity.BuffDescription.Zen=Скорость появления врагов снижена
