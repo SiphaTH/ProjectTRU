@@ -381,7 +381,7 @@ namespace CalamityRuTranslate.Catalogs
             "TwentyTwoPainting",
             "ScientificRailgun",
             "CrimetroidEgg",
-            //"PrimeStaff"
+            "PrimeStaff"
         };
 
         public static List<string> ItemsTooltip = new List<string>
@@ -615,7 +615,7 @@ namespace CalamityRuTranslate.Catalogs
             "TwentyTwoPainting",
             "ScientificRailgun",
             "CrimetroidEgg",
-            //"PrimeStaff"
+            "PrimeStaff"
         };
 
         public static List<string> NPCs = new List<string>

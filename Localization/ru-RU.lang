@@ -10450,7 +10450,7 @@ FargoSouls.ItemName.FusedLens=Сросшиеся линзы
 FargoSouls.ItemTooltip.FusedLens=Невосприимчивость к дебаффам «{$BuffName.CursedInferno}» и «{$BuffName.Ichor}»\nВаши атаки накладывают дебаффы «{$BuffName.CursedInferno}» и «{$BuffName.Ichor}»\n'Слишком подплавлено, чтобы улучшать зрение'
 
 FargoSouls.ItemName.GalacticGlobe=Галактический шар
-FargoSouls.ItemTooltip.GalacticGlobe=Невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Flipped}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Unstable}», «{$BuffName.VortexDebuff}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.CurseoftheMoon}»\nПозволяет владельцу управлять гравитацией\nСтабилизирует гравитацию в космосе и в жидкостях\nПризывает истинные глаза Ктулху защищать вас\nУвеличивает время полёта на 100%\n'Всегда наблюдаю'
+FargoSouls.ItemTooltip.GalacticGlobe=Невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Flipped}», «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Unstable}» и «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.CurseoftheMoon}»\nПозволяет владельцу управлять гравитацией\nСтабилизирует гравитацию в космосе и в жидкостях\nПризывает истинные глаза Ктулху защищать вас\nУвеличивает время полёта на 100%\n'Всегда наблюдаю'
 
 FargoSouls.ItemName.GroundStick=Пульт дистанционного управления
 FargoSouls.ItemTooltip.GroundStick=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LightningRod}»\nВаши атаки с небольшим шансом могут наложить дебафф «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.LightningRod}»\nДва дружественных зонда сражаются на вашей стороне\n'Сегмент побеждённого врага с приклеенной антенной'
@@ -10510,7 +10510,7 @@ FargoSouls.ItemName.SandsofTime=Пески времени
 FargoSouls.ItemTooltip.SandsofTime=Работает в инвентаре\nНевосприимчивость к дебаффу «{$BuffName.WindPushed}» и урону от кактуса\nВы возрождаетесь в два раза быстрее, когда ни один босс не жив\nИспользуйте для телепортации на вашу последнюю точку смерти\n'Не ронять ни при каких обстоятельствах'
 
 FargoSouls.ItemName.SaucerControlConsole=Консоль управления марсианской летающей тарелки
-FargoSouls.ItemTooltip.SaucerControlConsole=Невосприимчивость к дебаффу «{$BuffName.Electrified}»\nПризывает дружелюбную маленькую летающею тарелку марсиан\n'Просто держи это в режиме полёта'
+FargoSouls.ItemTooltip.SaucerControlConsole=Невосприимчивость к дебаффу «{$BuffName.Electrified}» и «{$BuffName.VortexDebuff}»\nПризывает дружелюбную маленькую летающею тарелку марсиан\n'Просто держи это в режиме полёта'
 
 FargoSouls.ItemName.SecurityWallet=Защищённый кошелёк
 FargoSouls.ItemTooltip.SecurityWallet=Невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargoSouls.BuffName.Midas}» и врагам, которые воруют предметы\n50% скидка на перековку\n'Не защищён от кражи с трупа'
@@ -10928,8 +10928,8 @@ FargoSouls.ItemTooltip.TwentyTwoPainting='Keuhm E. Dee'
 FargoSouls.ItemName.CrimetroidEgg=Яйцо криметроида
 FargoSouls.ItemTooltip.CrimetroidEgg=Призывает малыша криметроида\nНе путать с андроидами криминалами
 
-# FargoSouls.ItemName.PrimeStaff=Посох Прайма
-# FargoSouls.ItemTooltip.PrimeStaff=Призывает Скелетрона сражаться за вас
+FargoSouls.ItemName.PrimeStaff=Посох Прайма
+FargoSouls.ItemTooltip.PrimeStaff=Призывает Скелетрон Прайма сражаться за вас\n'Используя навыки компьютерного взлома (выключая и включая вновь), вы перепрограммировали ужас ночи!'
 
 
 
