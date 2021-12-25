@@ -59,7 +59,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "Encryption unsolveable: Upgrades required.", "Шифрование нерешаемое: требуются обновления.");
+            TranslationHelper.ILTranslation(il, "Encryption unsolveable: Upgrades required.", "Шифрование нерешаемо: требуются обновления.");
         }
     }
 }

@@ -32,7 +32,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
         public static void Translation(ILContext il)
         {
             TranslationHelper.ILTranslation(il, "It's not over yet, kid!", "Это ещё не конец, малыш!");
-            TranslationHelper.ILTranslation(il, "Don't get cocky, kid!", "Не будь таким самоуверенным, малыш!");
+            TranslationHelper.ILTranslation(il, "Don't get cocky, kid!", "Не зазнавайся, мелкий!");
         }
     }
 }

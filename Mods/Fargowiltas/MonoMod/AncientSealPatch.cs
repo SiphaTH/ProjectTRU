@@ -17,8 +17,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "Every boss has awoken!", "Все боссы пробудились!");
-            TranslationHelper.ILTranslation(il, "Every boss has awoken!", "Все боссы пробудились!", 2);
+            TranslationHelper.ILTranslation(il, "Every boss has awoken!", "Все боссы пробуждаются!");
+            TranslationHelper.ILTranslation(il, "Every boss has awoken!", "Все боссы пробуждаются!", 2);
         }
     }
 

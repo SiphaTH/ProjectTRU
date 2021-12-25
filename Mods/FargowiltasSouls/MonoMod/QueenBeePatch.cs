@@ -17,8 +17,8 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "Royal Subject has awoken!", "Королевская особа пробудилась!");
-            TranslationHelper.ILTranslation(il, "Royal Subject has awoken!", "Королевская особа пробудилась!", 2);
+            TranslationHelper.ILTranslation(il, "Royal Subject has awoken!", "Королевская особа пробуждается!");
+            TranslationHelper.ILTranslation(il, "Royal Subject has awoken!", "Королевская особа пробуждается!", 2);
         }
     }
 }
