@@ -5,70 +5,70 @@ Calamity.BuffName.PopoNoselessBuff=Безносый Попо
 Calamity.BuffDescription.PopoNoselessBuff=Ваш нос украли!
 
 Calamity.BuffName.AlcoholPoisoning=Алкогольное отравление
-Calamity.BuffDescription.AlcoholPoisoning=Вы слишком много выпили и теперь умираете
+Calamity.BuffDescription.AlcoholPoisoning=Вы перепили и теперь умираете
 
 Calamity.BuffName.BloodyMaryBuff=Кровавая Мэри
-Calamity.BuffDescription.BloodyMaryBuff=Урон, шанс критического удара, скорость передвижения и скорость атаки ближнего боя увеличены во время Кровавой луны, регенерация здоровья и защита снижены
+Calamity.BuffDescription.BloodyMaryBuff=Урон, шанс критического удара, скорость передвижения и скорость атаки ближнего боя во время кровавой луны увеличены\nРегенерация здоровья и защита снижены
 
 Calamity.BuffName.CaribbeanRumBuff=Карибский ром
-Calamity.BuffDescription.CaribbeanRumBuff=Регенерация здоровья, скорость передвижения и время полёта крыльев увеличены, вы парящий и защита снижена
+Calamity.BuffDescription.CaribbeanRumBuff=Регенерация здоровья, скорость передвижения и время полёта крыльев увеличены\nВы парите\nЗащита снижена
 
 Calamity.BuffName.CinnamonRollBuff=Коричный ролл
-Calamity.BuffDescription.CinnamonRollBuff=Скорость регенерации маны и урон огненного оружия увеличены, защита снижена
+Calamity.BuffDescription.CinnamonRollBuff=Скорость восстановления маны и урон огненного оружия увеличены\nЗащита снижена
 
 Calamity.BuffName.EverclearBuff=Эверклеар
-Calamity.BuffDescription.EverclearBuff=Урон увеличен, а регенерация здоровья и защита снижены
+Calamity.BuffDescription.EverclearBuff=Урон увеличен\nРегенерация здоровья и защита снижены
 
 Calamity.BuffName.EvergreenGinBuff=Вечнозелёный джин
-Calamity.BuffDescription.EvergreenGinBuff=Урон природного оружия и сопротивление урону увеличены, регенерация здоровья снижена
+Calamity.BuffDescription.EvergreenGinBuff=Урон природного оружия и сопротивление урону увеличены\nРегенерация здоровья снижена
 
 Calamity.BuffName.FabsolVodkaBuff=Потрясение
-Calamity.BuffDescription.FabsolVodkaBuff=Вы чувствуете себя невероятно
+Calamity.BuffDescription.FabsolVodkaBuff=Вы чувствуете себя фабуенно
 
 Calamity.BuffName.FireballBuff=Файерболл
-Calamity.BuffDescription.FireballBuff=Урон огненного оружия увеличен, регенерация здоровья снижена
+Calamity.BuffDescription.FireballBuff=Урон огненного оружия увеличен\nРегенерация здоровья снижена
 
 Calamity.BuffName.GrapeBeerBuff=Виноградное пиво
 Calamity.BuffDescription.GrapeBeerBuff=Защита и скорость передвижения снижены
 
 Calamity.BuffName.MargaritaBuff=Маргарита
-Calamity.BuffDescription.MargaritaBuff=Снижена длительность большинства дебаффов, защита и регенерация здоровья снижены
+Calamity.BuffDescription.MargaritaBuff=Длительность большинства дебаффов снижена\nЗащита и регенерация здоровья снижены
 
 Calamity.BuffName.MoonshineBuff=Самогон
-Calamity.BuffDescription.MoonshineBuff=Защита и сопротивление урону увеличены, регенерация здоровья снижена
+Calamity.BuffDescription.MoonshineBuff=Защита и сопротивление урону увеличены\nРегенерация здоровья снижена
 
 Calamity.BuffName.MoscowMuleBuff=Московский мул
-Calamity.BuffDescription.MoscowMuleBuff=Урон, шанс критического удара и отбрасывание увеличены, регенерация здоровья снижена
+Calamity.BuffDescription.MoscowMuleBuff=Урон, шанс критического удара и отбрасывание увеличены\nРегенерация здоровья снижена
 
 Calamity.BuffName.RedWineBuff=Красное вино
 Calamity.BuffDescription.RedWineBuff=Регенерация здоровья снижена
 
 Calamity.BuffName.RumBuff=Ром
-Calamity.BuffDescription.RumBuff=Скорость передвижения и регенерация здоровья увеличены, защита снижена
+Calamity.BuffDescription.RumBuff=Скорость передвижения и регенерация здоровья увеличены\nЗащита снижена
 
 Calamity.BuffName.ScrewdriverBuff=Отвёртка
-Calamity.BuffDescription.ScrewdriverBuff=Урон пронзающих снарядов увеличен, регенерация здоровья снижена
+Calamity.BuffDescription.ScrewdriverBuff=Урон пронзающих снарядов увеличен\nРегенерация здоровья снижена
 
 Calamity.BuffName.StarBeamRyeBuff=Стар Бим Рай
-Calamity.BuffDescription.StarBeamRyeBuff=Максимальный запас маны и магический урон увеличены. Защита, расход маны и регенерация здоровья снижены
+Calamity.BuffDescription.StarBeamRyeBuff=Максимальный запас маны и магический урон увеличены\nЗащита, расход маны и регенерация здоровья снижены
 
 Calamity.BuffName.TequilaBuff=Текила
-Calamity.BuffDescription.TequilaBuff=Урон, шанс критического удара, сопротивление урону, защита и отбрасывание увеличены в дневное время суток, регенерация здоровья снижена
+Calamity.BuffDescription.TequilaBuff=Урон, шанс критического удара, сопротивление урону, защита и отбрасывание в дневное время суток увеличены\nРегенерация здоровья снижена
 
 Calamity.BuffName.TequilaSunriseBuff=Текила Санрайз
-Calamity.BuffDescription.TequilaSunriseBuff=Урон, шанс критического удара, сопротивление урону, защита и отбрасывание увеличены в дневное время суток, регенерация здоровья снижена
+Calamity.BuffDescription.TequilaSunriseBuff=Урон, шанс критического удара, сопротивление урону, защита и отбрасывание в дневное время суток увеличены\nРегенерация здоровья снижена
 
 Calamity.BuffName.Trippy=Триповый
-Calamity.BuffDescription.Trippy=Вы видите этот мир таким, какой он есть на самом деле... Также ваш урон увеличен на 50%
+Calamity.BuffDescription.Trippy=Вы видите этот мир таким, какой он есть на самом деле... также ваш урон увеличен на 50%
 
 Calamity.BuffName.VodkaBuff=Водка
-Calamity.BuffDescription.VodkaBuff=Шанс критического удара и отбрасывание увеличены, регенерация здоровья и защита снижены
+Calamity.BuffDescription.VodkaBuff=Шанс критического удара и отбрасывание увеличены\nРегенерация здоровья и защита снижены
 
 Calamity.BuffName.WhiskeyBuff=Виски
-Calamity.BuffDescription.WhiskeyBuff=Шанс критического удара и отбрасывание увеличены, защита снижена
+Calamity.BuffDescription.WhiskeyBuff=Шанс критического удара и отбрасывание увеличены\nЗащита снижена
 
 Calamity.BuffName.WhiteWineBuff=Белое вино
-Calamity.BuffDescription.WhiteWineBuff=Магический урон и регенерация здоровья увеличены, но защита снижена
+Calamity.BuffDescription.WhiteWineBuff=Магический урон и регенерация здоровья увеличены\nЗащита снижена
 
 Calamity.BuffName.AbyssalDivingSuitPlatesBroken=Сломанные пластины глубоководного водолазного костюма
 Calamity.BuffDescription.AbyssalDivingSuitPlatesBroken=Пластины восстанавливаются
@@ -133,14 +133,14 @@ Calamity.BuffDescription.SandCloakCooldown=Ваш песчаный плащ пе
 Calamity.BuffName.ScarfCooldown=Перезарядка шарфа
 Calamity.BuffDescription.ScarfCooldown=Ваш уворот перезаряжается
 
-Calamity.BuffName.TarragonCloakCooldown=Перезарядка плаща Таррагона
+Calamity.BuffName.TarragonCloakCooldown=Перезарядка плаща таррагона
 Calamity.BuffDescription.TarragonCloakCooldown=Ваш плащ перезаряжается
 
-Calamity.BuffName.TarragonImmunityCooldown=Перезарядка неуязвимости Таррагона
+Calamity.BuffName.TarragonImmunityCooldown=Перезарядка неуязвимости таррагона
 Calamity.BuffDescription.TarragonImmunityCooldown=Ваша неуязвимость перезаряжается
 
 Calamity.BuffName.UniverseSplitterCooldown=Перезарядка рассекателя вселенной
-Calamity.BuffDescription.UniverseSplitterCooldown=Вы не можете использовать Рассекатель вселенной
+Calamity.BuffDescription.UniverseSplitterCooldown=Вы не можете использовать рассекатель вселенной
 
 Calamity.BuffName.Withered=Иссушенный
 Calamity.BuffDescription.Withered=Использование иссушающих оружий причиняет вам боль, но взамен увеличивает их урон
@@ -577,10 +577,10 @@ Calamity.BuffDescription.SpiritGeneratorDefBuff=Защита увеличена 
 Calamity.BuffName.SpiritGeneratorRegenBuff=Духовная регенерация
 Calamity.BuffDescription.SpiritGeneratorRegenBuff=Регенерация здоровья
 
-Calamity.BuffName.TarragonCloak=Плащ Таррагона
+Calamity.BuffName.TarragonCloak=Плащ таррагона
 Calamity.BuffDescription.TarragonCloak=Контактный урон снижен
 
-Calamity.BuffName.TarragonImmunity=Неуязвимость Таррагона
+Calamity.BuffName.TarragonImmunity=Неуязвимость таррагона
 Calamity.BuffDescription.TarragonImmunity=Вы неуязвимы
 
 Calamity.BuffName.TarraLifeRegen=Тарра-жизнь
