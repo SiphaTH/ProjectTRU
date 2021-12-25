@@ -74,19 +74,19 @@ Calamity.BuffName.AbyssalDivingSuitPlatesBroken=Сломанные пласти�
 Calamity.BuffDescription.AbyssalDivingSuitPlatesBroken=Пластины восстанавливаются
 
 Calamity.BuffName.AbyssalMadnessCooldown=Перезарядка безумия бездны
-Calamity.BuffDescription.AbyssalMadnessCooldown=Ваше безумие бездны перезаряжается
+Calamity.BuffDescription.AbyssalMadnessCooldown=Безумие бездны перезаряжается
 
 Calamity.BuffName.AbyssalMirrorCooldown=Перезарядка уклонения бездны
-Calamity.BuffDescription.AbyssalMirrorCooldown=Уворот зеркала бездны перезаряжается
+Calamity.BuffDescription.AbyssalMirrorCooldown=Уклонение зеркала бездны перезаряжается
 
 Calamity.BuffName.BloodflareBloodFrenzyCooldown=Перезарядка кровавого неистовства
-Calamity.BuffDescription.BloodflareBloodFrenzyCooldown=Ваше кровавое неистовство перезаряжается
+Calamity.BuffDescription.BloodflareBloodFrenzyCooldown=Кровавое неистовство перезаряжается
 
 Calamity.BuffName.BloodflareSoulCooldown=Перезарядка душ кровавой вспышки
-Calamity.BuffDescription.BloodflareSoulCooldown=Ваши души перезаряжаются
+Calamity.BuffDescription.BloodflareSoulCooldown=Души перезаряжаются
 
 Calamity.BuffName.BrimflameFrenzyCooldown=Перезарядка серного неистовства
-Calamity.BuffDescription.BrimflameFrenzyCooldown=Ваше использование серной магии истощило вас
+Calamity.BuffDescription.BrimflameFrenzyCooldown=Использование серной магии истощило вас
 
 Calamity.BuffName.ConcoctionCooldown=Перезарядка варева
 Calamity.BuffDescription.ConcoctionCooldown=Возрождение перезаряжается
@@ -98,13 +98,13 @@ Calamity.BuffName.DraconicSurgeCooldown=Перезарядка драконье�
 Calamity.BuffDescription.DraconicSurgeCooldown=Таинственная сила препятствует поглощению драконической энергии
 
 Calamity.BuffName.EclipseMirrorCooldown=Перезарядка уклонения затмения
-Calamity.BuffDescription.EclipseMirrorCooldown=Уворот зеркала затмения перезаряжается
+Calamity.BuffDescription.EclipseMirrorCooldown=Уклонение зеркала затмения перезаряжается
 
 Calamity.BuffName.EnergyShellCooldown=Перезарядка энергетического панциря
-Calamity.BuffDescription.EnergyShellCooldown=Ваш энергетический панцирь перезаряжается
+Calamity.BuffDescription.EnergyShellCooldown=Энергетический панцирь перезаряжается
 
 Calamity.BuffName.EvasionScarfCooldown=Перезарядка избегающего шарфа
-Calamity.BuffDescription.EvasionScarfCooldown=Ваш уворот перезаряжается
+Calamity.BuffDescription.EvasionScarfCooldown=Уклонение перезаряжается
 
 Calamity.BuffName.FleshTotemCooldown=Перезарядка тотема плоти
 Calamity.BuffDescription.FleshTotemCooldown=Эффект тотема плоти перезаряжается
@@ -116,28 +116,28 @@ Calamity.BuffName.IceShieldBrokenBuff=Перезарядка ледяного щ
 Calamity.BuffDescription.IceShieldBrokenBuff=Щит восстанавливается
 
 Calamity.BuffName.InkBombCooldown=Перезарядка чернильной бомбы
-Calamity.BuffDescription.InkBombCooldown=Ваша чернильная бомба перезаряжается
+Calamity.BuffDescription.InkBombCooldown=Чернильная бомба перезаряжается
 
-Calamity.BuffName.PlagueBlackoutCooldown=Перезарядка чумного отключения
-Calamity.BuffDescription.PlagueBlackoutCooldown=Ваша способность чумного отключения перезаряжается
+Calamity.BuffName.PlagueBlackoutCooldown=Перезарядка чумного ослепления
+Calamity.BuffDescription.PlagueBlackoutCooldown=Способность чумного ослепления перезаряжается
 
 Calamity.BuffName.PrismaticCooldown=Призматическая перезарядка
-Calamity.BuffDescription.PrismaticCooldown=Ваша лазерная атака перезаряжается
+Calamity.BuffDescription.PrismaticCooldown=Лазерная атака перезаряжается
 
 Calamity.BuffName.ResilienceCooldown=Перезарядка устойчивости
 Calamity.BuffDescription.ResilienceCooldown=Вы не можете вновь призвать реликвию устойчивости
 
 Calamity.BuffName.SandCloakCooldown=Перезарядка песчаного плаща
-Calamity.BuffDescription.SandCloakCooldown=Ваш песчаный плащ перезаряжается
+Calamity.BuffDescription.SandCloakCooldown=Песчаный плащ перезаряжается
 
 Calamity.BuffName.ScarfCooldown=Перезарядка шарфа
-Calamity.BuffDescription.ScarfCooldown=Ваш уворот перезаряжается
+Calamity.BuffDescription.ScarfCooldown=Уклонение перезаряжается
 
 Calamity.BuffName.TarragonCloakCooldown=Перезарядка плаща таррагона
-Calamity.BuffDescription.TarragonCloakCooldown=Ваш плащ перезаряжается
+Calamity.BuffDescription.TarragonCloakCooldown=Плащ перезаряжается
 
 Calamity.BuffName.TarragonImmunityCooldown=Перезарядка неуязвимости таррагона
-Calamity.BuffDescription.TarragonImmunityCooldown=Ваша неуязвимость перезаряжается
+Calamity.BuffDescription.TarragonImmunityCooldown=Неуязвимость перезаряжается
 
 Calamity.BuffName.UniverseSplitterCooldown=Перезарядка рассекателя вселенной
 Calamity.BuffDescription.UniverseSplitterCooldown=Вы не можете использовать рассекатель вселенной
@@ -145,7 +145,7 @@ Calamity.BuffDescription.UniverseSplitterCooldown=Вы не можете исп�
 Calamity.BuffName.Withered=Иссушенный
 Calamity.BuffDescription.Withered=Использование иссушающих оружий причиняет вам боль, но взамен увеличивает их урон
 
-Calamity.BuffName.AbyssalFlames=Огонь бездны
+Calamity.BuffName.AbyssalFlames=Огни бездны
 Calamity.BuffDescription.AbyssalFlames=Ваша душа поглощается
 
 Calamity.BuffName.AstralInfectionDebuff=Астральная инфекция
@@ -164,10 +164,10 @@ Calamity.BuffName.CragsLava=Иссушающая лава
 Calamity.BuffDescription.CragsLava=Серная лава иссушает вашу плоть
 
 Calamity.BuffName.CrushDepth=Давление глубин
-Calamity.BuffDescription.CrushDepth=Давление воды
+Calamity.BuffDescription.CrushDepth=Вода давит на вас
 
 Calamity.BuffName.DemonFlames=Демоническое пламя
-Calamity.BuffDescription.DemonFlames=Очередной горящий дебафф
+Calamity.BuffDescription.DemonFlames=Очередной огненный дебафф
 
 Calamity.BuffName.GodSlayerInferno=Пламя богоубийцы
 Calamity.BuffDescription.GodSlayerInferno=Ваша плоть сгорает
@@ -179,7 +179,7 @@ Calamity.BuffName.HolyFlames=Святые огни
 Calamity.BuffDescription.HolyFlames=Растворение от святого света
 
 Calamity.BuffName.HolyInferno=Святое инферно
-Calamity.BuffDescription.HolyInferno=Вы отошли слишком далеко от Осквернённой богини!
+Calamity.BuffDescription.HolyInferno=Вы отошли слишком далеко от осквернённой богини!
 
 Calamity.BuffName.LethalLavaBurn=Смертельный ожог лавы
 Calamity.BuffDescription.LethalLavaBurn=Вы теряете здоровье; скорость передвижения снижена
@@ -4893,7 +4893,7 @@ Calamity.ItemName.MoscowMule=Московский мул
 Calamity.ItemTooltip.MoscowMule=Услышав как-то о том, что медная кружка может быть токсичной, я сказала 'слушай сюда, утырок, да я и без меди отравляю себя'\nУвеличивает урон и отбрасывание на 9%, и шанс критического удара на 3%\nУменьшает регенерацию здоровья на 2
 
 Calamity.ItemName.OddMushroom=Странный гриб
-Calamity.ItemTooltip.OddMushroom=Заставляет вас видеть множество иллюзорных ярких копий всех ближайших объектов\nВНИМАНИЕ: у некоторых данные визуальные эффекты могут вызывают тошноту или хуже\nТриповый
+Calamity.ItemTooltip.OddMushroom=Заставляет вас видеть множество иллюзорных ярких копий всех ближайших объектов\nВНИМАНИЕ: у некоторых данные визуальные эффекты могут вызывать тошноту или хуже\nТриповый
 
 Calamity.ItemName.RedWine=Красное вино
 Calamity.ItemTooltip.RedWine=Слишком, на мой вкус, сухое\nУменьшает регенерацию здоровья на 1
