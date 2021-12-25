@@ -17,8 +17,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "Skeletron Prime has awoken!", "Скелетрон Прайм пробудился!");
-            TranslationHelper.ILTranslation(il, "Skeletron Prime has awoken!", "Скелетрон Прайм пробудился!", 2);
+            TranslationHelper.ILTranslation(il, "Skeletron Prime has awoken!", "Скелетрон Прайм пробуждается!");
+            TranslationHelper.ILTranslation(il, "Skeletron Prime has awoken!", "Скелетрон Прайм пробуждается!", 2);
         }
     }
 }

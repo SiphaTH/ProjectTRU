@@ -65,7 +65,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "Duke Fishron EX has awoken!", "Герцог Рыброн ЕХ пробудился!");
+            TranslationHelper.ILTranslation(il, "Duke Fishron EX has awoken!", "Герцог Рыброн ЕХ пробуждается!");
         }
     }
 }

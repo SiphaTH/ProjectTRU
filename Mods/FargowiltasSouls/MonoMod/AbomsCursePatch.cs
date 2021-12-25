@@ -17,7 +17,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "Abominationn has awoken!", "Мерзостть пробудился!");
+            TranslationHelper.ILTranslation(il, "Abominationn has awoken!", "Мерзостть пробуждается!");
         }
     }
 }

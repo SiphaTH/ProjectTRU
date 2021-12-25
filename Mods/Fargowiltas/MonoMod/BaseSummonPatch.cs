@@ -17,8 +17,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, " has awoken!", " пробудился!");
-            TranslationHelper.ILTranslation(il, " has awoken!", " пробудился!", 2);
+            TranslationHelper.ILTranslation(il, " has awoken!", " пробуждается!");
+            TranslationHelper.ILTranslation(il, " has awoken!", " пробуждается!", 2);
         }
     }
 }
