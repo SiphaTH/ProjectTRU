@@ -48,7 +48,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod
             TranslationHelper.ILTranslation(il, "Damage Reduction: {0}%", "Сопротивление урону: {0}%");
             TranslationHelper.ILTranslation(il, "Life Regen: {0} HP/second","Регенерация здоровья: {0}/сек");
             TranslationHelper.ILTranslation(il, "Mana: {0}","Мана: {0}");
-            TranslationHelper.ILTranslation(il, "Mana Regen: {0}/second","Регенерация маны: {0}/сек");
+            TranslationHelper.ILTranslation(il, "Mana Regen: {0}/second","Восстановление маны: {0}/сек");
             TranslationHelper.ILTranslation(il, "Armor Penetration: {0}", "Пробивание брони: {0}");
             TranslationHelper.ILTranslation(il, "Aggro: {0}", "Агрессия: {0}");
             TranslationHelper.ILTranslation(il, "Max Speed: {0} mph", "Максимальная скорость: {0} км/ч");
