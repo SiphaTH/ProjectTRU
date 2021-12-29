@@ -12,6 +12,7 @@ using FargowiltasSouls.Patreon.GreatestKraken;
 using FargowiltasSouls.Patreon.LaBonez;
 using FargowiltasSouls.Patreon.ManliestDove;
 using FargowiltasSouls.Patreon.ParadoxWolf;
+using FargowiltasSouls.Patreon.Purified;
 using FargowiltasSouls.Patreon.Sam;
 using FargowiltasSouls.Patreon.Sasha;
 using FargowiltasSouls.Patreon.Shucks;
@@ -30,7 +31,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.GlobalModifications
                 item.type == ModContent.ItemType<ParadoxWolfSoul>() || item.type == ModContent.ItemType<SquidwardDoor>() ||
                 item.type == ModContent.ItemType<MissDrakovisFishingPole>() || item.type == ModContent.ItemType<DeviousAestheticus>() ||
                 item.type == ModContent.ItemType<ScientificRailgun>() || item.type == ModContent.ItemType<VortexMagnetRitual>() ||
-                item.type == ModContent.ItemType<CrimetroidEgg>())
+                item.type == ModContent.ItemType<CrimetroidEgg>() || item.type == ModContent.ItemType<PrimeStaff>())
             {
                 ItemHelper.TranslateTooltip(item, tooltips, "tooltip", tooltip =>
                 {

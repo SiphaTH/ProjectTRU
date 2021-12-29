@@ -652,7 +652,8 @@ namespace CalamityRuTranslate.Catalogs
             "DetonatingBubbleEX",
             "RoyalSubject",
             "MutantBoss",
-            "MutantIllusion"
+            "MutantIllusion",
+            "BrainIllusionAttack"
         };
 
         public static List<TileData> Tiles = new List<TileData>
