@@ -307,12 +307,12 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                         npcPhrase = string.Format(LangHelper.GetText("Calamity.NpcChatText.FAP.21"), Main.npc[Stylist].GivenName);
                     }
                 }
-                if (npcPhrase.Contains("...wait, who are you again?"))
+                if (npcPhrase.Contains("You're all pretty good!"))
                 {
                     npcPhrase = npcPhrase
                         .Replace("Hey", "Привет")
                         .Replace(" and ", "и")
-                        .Replace("! You're all pretty good!", "! Вы все очень хороши!");
+                        .Replace("You're all pretty good", "Вы все очень хороши");
                 }
             }
             else if (TalkingNpc == SeaKing)
