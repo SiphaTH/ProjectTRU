@@ -17,8 +17,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "The Celestial Pillars have awoken!", "Небесные башни пробудились!");
-            TranslationHelper.ILTranslation(il, "The Celestial Pillars have awoken!", "Небесные башни пробудились!", 2);
+            TranslationHelper.ILTranslation(il, "The Celestial Pillars have awoken!", "Небесные башни пробуждаются!");
+            TranslationHelper.ILTranslation(il, "The Celestial Pillars have awoken!", "Небесные башни пробуждаются!", 2);
         }
     }
 }

@@ -17,8 +17,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "The Destroyer has awoken!", "Разрушитель пробудился!");
-            TranslationHelper.ILTranslation(il, "The Destroyer has awoken!", "Разрушитель пробудился!", 2);
+            TranslationHelper.ILTranslation(il, "The Destroyer has awoken!", "Разрушитель пробуждается!");
+            TranslationHelper.ILTranslation(il, "The Destroyer has awoken!", "Разрушитель пробуждается!", 2);
         }
     }
 }

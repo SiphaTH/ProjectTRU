@@ -17,7 +17,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "Boss Rush", "Босс-Раш");
+            TranslationHelper.ILTranslation(il, "Boss Rush", "Босс-раш");
         }
     }
 }

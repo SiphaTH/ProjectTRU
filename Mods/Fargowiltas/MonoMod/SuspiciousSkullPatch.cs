@@ -17,10 +17,10 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "Skeletron has awoken!", "Скелетрон пробудился!");
-            TranslationHelper.ILTranslation(il, "Skeletron has awoken!", "Скелетрон пробудился!", 2);
-            TranslationHelper.ILTranslation(il, "Dungeon Guardian has awoken!", "Страж темницы пробудился!");
-            TranslationHelper.ILTranslation(il, "Dungeon Guardian has awoken!", "Страж темницы пробудился!", 2);
+            TranslationHelper.ILTranslation(il, "Skeletron has awoken!", "Скелетрон пробуждается!");
+            TranslationHelper.ILTranslation(il, "Skeletron has awoken!", "Скелетрон пробуждается!", 2);
+            TranslationHelper.ILTranslation(il, "Dungeon Guardian has awoken!", "Страж темницы пробуждается!");
+            TranslationHelper.ILTranslation(il, "Dungeon Guardian has awoken!", "Страж темницы пробуждается!", 2);
         }
     }
 }
