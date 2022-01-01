@@ -20,7 +20,6 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod
             TranslationHelper.ILTranslation(il, "Eternity Mode initiated!", "Режим Вечности активирован!");
             TranslationHelper.ILTranslation(il, "Eternity Mode deactivated!", "Режим Вечности деактивирован!");
             TranslationHelper.ILTranslation(il, "Deviantt has awoken!", "Девиантт пробудился!");
-            TranslationHelper.ILTranslation(il, "Deviantt has awoken!", "Девиантт пробудился!", 2);
         }
     }
 }

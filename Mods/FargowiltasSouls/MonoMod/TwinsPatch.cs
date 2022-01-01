@@ -18,7 +18,6 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod
         public static void Translation(ILContext il)
         {
             TranslationHelper.ILTranslation(il, "Retinazer endured the fatal blow to fight alongside its twin!", "Ретинайзер пережил смертельный удар, чтобы сражаться вместе со своим близнецом!");
-            TranslationHelper.ILTranslation(il, "Retinazer endured the fatal blow to fight alongside its twin!", "Ретинайзер пережил смертельный удар, чтобы сражаться вместе со своим близнецом!", 2);
         }
     }
     
@@ -33,7 +32,6 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod
         public static void Translation(ILContext il)
         {
             TranslationHelper.ILTranslation(il, "Spazmatism endured the fatal blow to fight alongside its twin!", "Спазматизм пережил смертельный удар, чтобы сражаться вместе со своим близнецом!");
-            TranslationHelper.ILTranslation(il, "Spazmatism endured the fatal blow to fight alongside its twin!", "Спазматизм пережил смертельный удар, чтобы сражаться вместе со своим близнецом!", 2);
         }
     }
 }

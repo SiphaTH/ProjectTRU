@@ -16,7 +16,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
             TilesTranslation = FargoSoulsCatalog.Tiles;
         }
 
-        private Version _expectedFargoSoulsVersion = new Version(1, 3, 96, 9);
+        private Version _expectedFargoSoulsVersion = new Version(1, 3, 99, 90);
 
         public override void Load()
         {
@@ -28,6 +28,11 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls
                 throw new ModVersionException("Fargo's Souls Mod", ModInstance.Version, _expectedFargoSoulsVersion,
                     ModVersionException.ExceptionType.OutdatedFargoSouls);
             }
+        }
+        
+        public override void SetupCombatTextsTranslation()
+        {
+            CombatTextsTranslation.SetupTranslation();
         }
     }
 }
