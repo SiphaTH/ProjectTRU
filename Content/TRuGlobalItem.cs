@@ -1,6 +1,7 @@
 ﻿using CalamityRuTranslate.Content.Vanity.BrotKrip;
 using CalamityRuTranslate.Content.Vanity.CCC;
 using CalamityRuTranslate.Content.Vanity.StepMolchX;
+using CalamityRuTranslate.Content.Vanity.Sum;
 using CalamityRuTranslate.Content.Vanity.Umbra;
 using CalamityRuTranslate.Content.Vanity.Veystreks;
 using CalamityRuTranslate.Content.Vanity.Yum;
@@ -63,6 +64,12 @@ namespace CalamityRuTranslate.Content
                                 player.QuickSpawnItem(ModContent.ItemType<MarisaHat>());
                                 player.QuickSpawnItem(ModContent.ItemType<MarisaDress>());
                                 player.QuickSpawnItem(ModContent.ItemType<MarisaSocks>());
+                            }
+                            if (Main.rand.NextBool(20))
+                            {
+                                player.QuickSpawnItem(ModContent.ItemType<PrincessCrown>());
+                                player.QuickSpawnItem(ModContent.ItemType<PrincessDress>());
+                                player.QuickSpawnItem(ModContent.ItemType<PrincessBoots>());
                             }
                             break;
                     }
