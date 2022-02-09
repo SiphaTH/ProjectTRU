@@ -67,6 +67,7 @@ namespace CalamityRuTranslate.Common
                 case "OmegaBlue":
                 case "PlagueReaper":
                 case "Prismatic":
+                case "BloodflareRanged":
                     return LangHelper.GetTextValue($"Calamity.SetBonus.{set}", ModsCall.ArmorSetHotkey);
 
                 case "GodSlayerMelee":
@@ -92,7 +93,6 @@ namespace CalamityRuTranslate.Common
                 case "AuricTeslaSummoner":
                 case "AuricTeslaMagic":
                 case "BloodflareSummoner":
-                case "BloodflareRanged":
                 case "BloodflareMagic":
                 case "BloodflareMelee":
                 case "DaedalusMagic":

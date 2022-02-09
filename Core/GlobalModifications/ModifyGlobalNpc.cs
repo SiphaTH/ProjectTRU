@@ -1,4 +1,3 @@
-using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.ModCompatibility;
 using Terraria.ModLoader;
 
@@ -13,7 +12,7 @@ namespace CalamityRuTranslate.Core.GlobalModifications
         public sealed override bool Autoload(ref string name)
         {
             ModifyContentName(ref name);
-            return !DependsOnMod() && !TranslationHelper.IsRussianLanguage;
+            return !DependsOnMod();
         }
 
         public virtual void ModifyContentName(ref string name) { } 

@@ -1706,7 +1706,7 @@ Calamity.ItemName.GladiatorsLocket=Медальон гладиатора
 Calamity.ItemTooltip.GladiatorsLocket=Призывает два духовных меча защищать вас
 
 Calamity.ItemName.GloveOfPrecision=Перчатка точности
-Calamity.ItemTooltip.GloveOfPrecision=Уменьшает скорость оружия разбойника на 20%\nУвеличивает разбойный урон и шанс критического удара на 12%\n Увеличивает скорость снарядов на 25%
+Calamity.ItemTooltip.GloveOfPrecision=Уменьшает скорость оружия разбойника на 20%\nУвеличивает разбойный урон и шанс критического удара на 12%\nУвеличивает скорость снарядов на 25%
 
 Calamity.ItemName.GloveOfRecklessness=Перчатка безрассудства
 Calamity.ItemTooltip.GloveOfRecklessness=Увеличивает скорость оружия разбойника на 12%, но уменьшает урон на 10%\nДобавляет неточность разбойному оружию
@@ -1932,7 +1932,7 @@ Calamity.ItemTooltip.SirensHeart=Превращает носителя в вод
 
 Calamity.ItemName.SpectralVeil=Спектральная вуаль
 Calamity.ItemTooltip.SpectralVeil=Внутренняя часть полна зубов...\nModifyTooltips\nЕсли вы уворачиваетесь от чего-либо, будучи неуязвимым, вы мгновенно получаете полную скрытность\nТелепортация отключена пока активен дебафф «{$BuffName.ChaosState}»\nУвеличивает скорость передвижения на 10%\nСкрытность восстанавливается на 20% быстрее во время движения
-Calamity.ItemTooltip.SpectralVeil.Tooltip1=Нажатие {0} телепортирует вас на среднее расстояние, деруя мгновение неуязвимости, затрачивая 25% максимальной скрытности
+Calamity.ItemTooltip.SpectralVeil.Tooltip1=Нажатие {0} телепортирует вас на среднее расстояние, даруя мгновение неуязвимости, затрачивая 25% максимальной скрытности
 
 Calamity.ItemName.SpiritGenerator=Знак духа
 Calamity.ItemTooltip.SpiritGenerator=Всякий раз, когда ваши миньоны атакуют врага, вы получаете случайный бафф\nЭти баффы на короткое время увеличивают вашу защиту, урон миньонов или регенерацию здоровья

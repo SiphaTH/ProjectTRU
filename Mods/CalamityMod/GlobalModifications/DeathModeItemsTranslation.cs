@@ -125,7 +125,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                 ItemHelper.TranslateTooltip(item, tooltips, "Tooltip8", tooltip =>
                 {
                     tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.Sponge.Tooltip8") +
-                                   (ModsCall.DeathMode ? LangHelper.GetTextValue("Calamity.DeathMode.Cold") : "");
+                                   (ModsCall.DeathMode ? LangHelper.GetTextValue("Calamity.DeathMode.Cold2") : "");
                 });
             }
             else if (item.type == ModContent.ItemType<TheAmalgam>())
