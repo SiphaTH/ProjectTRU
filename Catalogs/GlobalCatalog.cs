@@ -579,6 +579,7 @@ namespace CalamityRuTranslate.Catalogs
             {"Sarah", "Sarah"},
             {"Sok'ar", "Sokar"},
             {"StreakistYT", "StreakistYT"},
+            {"Necroplasmic", "Necroplasmic"},
             {"Toxin", "Toxin"},
             {"Tyler Van Hook", "TylerVanHook"},
             {"Valerie", "Valerie"},
