@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using CalamityRuTranslate.Catalogs;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core;
@@ -152,6 +153,71 @@ namespace CalamityRuTranslate
                 cache.Unload();
 
             _loadCache = null;
+
+            if (FargoCatalog.ItemsName.Contains("Squirrel") && FargoCatalog.ItemsTooltip.Contains("Squirrel"))
+            {
+                FargoCatalog.ItemsName.Remove("Squirrel");
+                FargoCatalog.ItemsTooltip.Remove("Squirrel");
+            }
+
+            if (FargoCatalog.ItemsName.Contains("InnocuousSkull") && FargoCatalog.ItemsTooltip.Contains("InnocuousSkull"))
+            {
+                FargoCatalog.ItemsName.Remove("InnocuousSkull");
+                FargoCatalog.ItemsTooltip.Remove("InnocuousSkull");
+            }
+
+            if (FargoCatalog.ItemsName.Contains("EternityAdvisor") && FargoCatalog.ItemsTooltip.Contains("EternityAdvisor"))
+            {
+                FargoCatalog.ItemsName.Remove("EternityAdvisor");
+                FargoCatalog.ItemsTooltip.Remove("EternityAdvisor");
+            }
+            
+            if (FargoCatalog.NPCs.Contains("Squirrel"))
+            {
+                FargoCatalog.NPCs.Remove("Squirrel");
+            }
+            
+            if (FargoCatalog.ItemsName.Contains("OmnistationPlus") && FargoCatalog.ItemsTooltip.Contains("OmnistationPlus"))
+            {
+                FargoCatalog.ItemsName.Remove("OmnistationPlus");
+                FargoCatalog.ItemsTooltip.Remove("OmnistationPlus");
+            }
+
+            if (FargoCatalog.ItemsName.Contains("OverloadCoznix") && FargoCatalog.ItemsTooltip.Contains("OverloadCoznix"))
+            {
+                FargoCatalog.ItemsName.Remove("OverloadCoznix");
+                FargoCatalog.ItemsTooltip.Remove("OverloadCoznix");
+            }
+
+            if (FargoCatalog.ItemsName.Contains("OverloadJelly") && FargoCatalog.ItemsTooltip.Contains("OverloadJelly"))
+            {
+                FargoCatalog.ItemsName.Remove("OverloadJelly");
+                FargoCatalog.ItemsTooltip.Remove("OverloadJelly");
+            }
+
+            if (FargoCatalog.ItemsName.Contains("OverloadLich") && FargoCatalog.ItemsTooltip.Contains("OverloadLich"))
+            {
+                FargoCatalog.ItemsName.Remove("OverloadLich");
+                FargoCatalog.ItemsTooltip.Remove("OverloadLich");
+            }
+
+            if (FargoCatalog.ItemsName.Contains("OverloadSaucer") && FargoCatalog.ItemsTooltip.Contains("OverloadSaucer"))
+            {
+                FargoCatalog.ItemsName.Remove("OverloadSaucer");
+                FargoCatalog.ItemsTooltip.Remove("OverloadSaucer");
+            }
+
+            if (FargoCatalog.ItemsName.Contains("OverloadStrider") && FargoCatalog.ItemsTooltip.Contains("OverloadStrider"))
+            {
+                FargoCatalog.ItemsName.Remove("OverloadStrider");
+                FargoCatalog.ItemsTooltip.Remove("OverloadStrider");
+            }
+
+            if (FargoCatalog.ItemsName.Contains("OverloadThunderbird") && FargoCatalog.ItemsTooltip.Contains("OverloadThunderbird"))
+            {
+                FargoCatalog.ItemsName.Remove("OverloadThunderbird");
+                FargoCatalog.ItemsTooltip.Remove("OverloadThunderbird");
+            }
         }
 
         public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)

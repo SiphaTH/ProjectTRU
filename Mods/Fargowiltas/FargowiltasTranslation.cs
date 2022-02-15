@@ -30,7 +30,6 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
                 }
             }
 
-            //!TODO: Найти нормальный способ взаимодействия с листами
             if (ModsCall.FargoSouls != null)
             {
                 ItemsNameTranslation.Add("Squirrel");
@@ -41,42 +40,16 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
                 ItemsTooltipTranslation.Add("EternityAdvisor");
                 NPCsTranslation.Add("Squirrel");
             }
-            else
-            {
-                ItemsNameTranslation.Remove("Squirrel");
-                ItemsTooltipTranslation.Remove("Squirrel");
-                ItemsNameTranslation.Remove("InnocuousSkull");
-                ItemsTooltipTranslation.Remove("InnocuousSkull");
-                ItemsNameTranslation.Remove("EternityAdvisor");
-                ItemsTooltipTranslation.Remove("EternityAdvisor");
-                NPCsTranslation.Remove("Squirrel");
-            }
 
             if (ModsCall.Thorium != null || ModsCall.Calamity != null)
             {
                 ItemsNameTranslation.Add("OmnistationPlus");
                 ItemsTooltipTranslation.Add("OmnistationPlus");
             }
-            else if (ModsCall.Thorium == null && ModsCall.Calamity == null)
-            {
-                ItemsNameTranslation.Remove("OmnistationPlus");
-                ItemsTooltipTranslation.Remove("OmnistationPlus");
-            }
-            else if (ModsCall.Thorium == null || ModsCall.Calamity == null)
-            {
-                ItemsNameTranslation.Remove("OmnistationPlus");
-                ItemsTooltipTranslation.Remove("OmnistationPlus");
-            }
-            else
-            {
-                ItemsNameTranslation.Remove("OmnistationPlus");
-                ItemsTooltipTranslation.Remove("OmnistationPlus");
-            }
 
             if (ModsCall.Thorium != null)
             {
                 ItemsNameTranslation.Add("OverloadCoznix");
-                //ItemNameTranslation.Add("OverloadGranite");
                 ItemsNameTranslation.Add("OverloadJelly");
                 ItemsNameTranslation.Add("OverloadLich");
                 ItemsNameTranslation.Add("OverloadSaucer");
@@ -84,30 +57,11 @@ namespace CalamityRuTranslate.Mods.Fargowiltas
                 ItemsNameTranslation.Add("OverloadThunderbird");
 
                 ItemsTooltipTranslation.Add("OverloadCoznix");
-                //ItemTooltipTranslation.Add("OverloadGranite");
                 ItemsTooltipTranslation.Add("OverloadJelly");
                 ItemsTooltipTranslation.Add("OverloadLich");
                 ItemsTooltipTranslation.Add("OverloadSaucer");
                 ItemsTooltipTranslation.Add("OverloadStrider");
                 ItemsTooltipTranslation.Add("OverloadThunderbird");
-            }
-            else
-            {
-                ItemsNameTranslation.Remove("OverloadCoznix");
-                //ItemNameTranslation.Remove("OverloadGranite");
-                ItemsNameTranslation.Remove("OverloadJelly");
-                ItemsNameTranslation.Remove("OverloadLich");
-                ItemsNameTranslation.Remove("OverloadSaucer");
-                ItemsNameTranslation.Remove("OverloadStrider");
-                ItemsNameTranslation.Remove("OverloadThunderbird");
-
-                ItemsNameTranslation.Remove("OverloadCoznix");
-                //ItemTooltipTranslation.Remove("OverloadGranite");
-                ItemsTooltipTranslation.Remove("OverloadJelly");
-                ItemsTooltipTranslation.Remove("OverloadLich");
-                ItemsTooltipTranslation.Remove("OverloadSaucer");
-                ItemsTooltipTranslation.Remove("OverloadStrider");
-                ItemsTooltipTranslation.Remove("OverloadThunderbird");
             }
         }
 
