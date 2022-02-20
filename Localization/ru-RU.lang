@@ -4869,7 +4869,7 @@ Calamity.ItemName.CinnamonRoll=Коричный ролл
 Calamity.ItemTooltip.CinnamonRoll=Вкусный коричный виски с оттенком крем-соды\nУскоряет скорость регенерации маны и умножает весь урон от огненного оружия на 1.1\nДебаффы «{$BuffName.CursedInferno}», «{$BuffName.ShadowFlame}», «{$Mods.CalamityRuTranslate.Calamity.BuffName.GodSlayerInferno}», «{$Mods.CalamityRuTranslate.Calamity.BuffName.BrimstoneFlames}» и «{$BuffName.Frostburn}» не получат эту прибавку\nОружие должно быть в большей степени связано с огнём, чем с чем-либо ещё\nУменьшает защиту на 10%
 
 Calamity.ItemName.Everclear=Эверклеар
-Calamity.ItemTooltip.Everclear=Самая убойная выпивка, что у меня есть, будь осторожее\nУвеличивает урон на 25%\nУменьшает регенерацию здоровья на 10 и защиту на 30%
+Calamity.ItemTooltip.Everclear=Самая убойная выпивка, что у меня есть, будь осторожнее\nУвеличивает урон на 25%\nУменьшает регенерацию здоровья на 10 и защиту на 30%
 
 Calamity.ItemName.EvergreenGin=Вечнозелёный джин
 Calamity.ItemTooltip.EvergreenGin=На вкус как рождественская ёлка, если можешь представить себе это\nУмножает весь урон от природного оружия на 1.1 и увеличивает сопротивление урону на 5%\nУменьшает регенерацию здоровья на 1
