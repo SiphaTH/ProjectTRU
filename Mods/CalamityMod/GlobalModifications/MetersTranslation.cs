@@ -84,10 +84,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         }
                         else if (array[i].Contains("Light Strength"))
                         {
-                            array[i] = ModsCall.DeathMode
-                                ? LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.CaveLightStrength",
-                                    array[i].Split(' ')[3])
-                                : LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.AbyssLightStrength",
+                            array[i] = LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.AbyssLightStrength",
                                     array[i].Split(' ')[3]);
                         }
                         else if (array[i].Contains("Other Abyss"))

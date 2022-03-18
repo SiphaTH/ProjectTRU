@@ -11,7 +11,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
     [CultureDependency("ru-RU")]
     public class CalamityGlobalItemPatch : MonoModPatcher<string>
     {
-        public override MethodInfo Method => typeof(CalamityGlobalItem).GetCachedMethod("<ModifyVanillaTooltips>g__HookStatsTooltip|197_104");
+        public override MethodInfo Method => typeof(CalamityGlobalItem).GetCachedMethod("<ModifyVanillaTooltips>g__HookStatsTooltip|91_113");
 
         public override string ModderMethod => nameof(Translation);
 

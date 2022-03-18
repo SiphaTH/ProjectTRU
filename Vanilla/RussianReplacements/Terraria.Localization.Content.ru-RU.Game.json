@@ -544,10 +544,6 @@
 		"WaterFountain": "Водяной фонтан",
 		"Web": "Паутина"
 	},
-	"CustomKey":
-	{
-		"VoidKey": ""	
-	},
 	"ChatCommand": 
 	{
 		"Playing_0": "{$LegacyMultiplayer.6}",

@@ -1,4 +1,3 @@
-using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using Terraria.ID;
 using Terraria.Localization;
@@ -112,27 +111,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                     break;
 
                 case BuffID.Warmth:
-                    tip = LangHelper.GetTextValue("Calamity.Vanilla.BuffDescription.Warmth") +
-                          (ModsCall.DeathMode ? LangHelper.GetTextValue("Calamity.DeathMode.Cold") : "");
+                    tip = LangHelper.GetTextValue("Calamity.Vanilla.BuffDescription.Warmth");
                     break;
 
                 case BuffID.Invisibility:
                     tip = LangHelper.GetTextValue("Calamity.Vanilla.BuffDescription.Invisibility");
-                    break;
-
-                case BuffID.ObsidianSkin:
-                    if (ModsCall.DeathMode)
-                        tip = LangHelper.GetTextValue("Calamity.Vanilla.BuffDescription.ObsidianSkin.DeathMode");
-                    break;
-
-                case BuffID.Inferno:
-                    if (ModsCall.DeathMode)
-                        tip = LangHelper.GetTextValue("Calamity.Vanilla.BuffDescription.Inferno.DeathMode");
-                    break;
-
-                case BuffID.Campfire:
-                    if (ModsCall.DeathMode)
-                        tip = LangHelper.GetTextValue("Calamity.Vanilla.BuffDescription.Campfire.DeathMode");
                     break;
 
                 case BuffID.Daybreak:

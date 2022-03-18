@@ -433,7 +433,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     case "The men at the front of the dungeon are performing a ritual to keep the Moon Lord contained in his prison. In order to gain Yharim's attention, however, you may need to defeat them.":
                         npcPhrase = LangHelper.GetText("Calamity.NpcChatText.SEAHOE.43");
                         break;
-                    case "When exploring the jungle temple be careful. You may not wish to disturb the Lihzard's idol, the Golem. It's quite the destructive force.":
+                    case "When exploring the jungle temple be careful. You may not wish to disturb the Lihzahrd's idol, the Golem. It's quite the destructive force.":
                         npcPhrase = LangHelper.GetText("Calamity.NpcChatText.SEAHOE.44");
                         break;
                     case "Be careful when defeating Plantera and the Golem. You might accidentally unleash a new threat in the jungle that needs to be quelled.":
@@ -475,7 +475,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     case "I'm assuming you've heard the legends that speak of the ninja, Statis? There are some who say that if you were able to defeat the gods which his clan once worshipped you would be able to harness some of his powers.":
                         npcPhrase = LangHelper.GetText("Calamity.NpcChatText.SEAHOE.57");
                         break;
-                    case "Scattered across the lands are shrines dedicated to the gods. You can take whatever is in them, but a few items you may not be able to use until much later.":
+                    case "Scattered across the lands are shrines dedicated to the gods. They contain powerful gear that may help you on your adventures.":
                         npcPhrase = LangHelper.GetText("Calamity.NpcChatText.SEAHOE.58");
                         break;
                     case "Be careful what you attack in the Crimson. You might just unveil a greater threat than what was there before.":

@@ -20,4 +20,18 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
             TranslationHelper.ILTranslation(il, "({0} left: {1})", "({0} осталось: {1})");
         }
     }
+    
+    [ModDependency("CalamityMod")]
+    [CultureDependency("ru-RU")]
+    public class AttemptToAddBar : MonoModPatcher<string>
+    {
+        public override MethodInfo Method => typeof(BossHealthBarManager).GetCachedMethod(nameof(BossHealthBarManager.AttemptToAddBar));
+
+        public override string ModderMethod => nameof(Translation);
+
+        public static void Translation(ILContext il)
+        {
+            TranslationHelper.ILTranslation(il, "XS-01 Artemis and XS-03 Apollo", "ВП-01 Артемида и ВП-03 Аполлон");
+        }
+    }
 }

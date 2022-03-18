@@ -31,6 +31,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod
                     {
                         Main.combatText[i].text = LangHelper.GetText("Calamity.CombatText.5");
                     }
+                    if (Main.combatText[i].text == "Parry!")
+                    {
+                        Main.combatText[i].text = LangHelper.GetText("Calamity.CombatText.6");
+                    }
                 }
             }
         }

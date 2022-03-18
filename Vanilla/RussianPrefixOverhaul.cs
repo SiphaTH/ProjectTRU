@@ -410,7 +410,6 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("SigilofCalamitas"),
             ModsCall.Calamity?.ItemType("SpectralVeil"),
             ModsCall.Calamity?.ItemType("Sponge"),
-            ModsCall.Calamity?.ItemType("UnstablePrism"),
             ModsCall.Calamity?.ItemType("VoidofExtinction"),
             ModsCall.Calamity?.ItemType("DiscordianWings"),
             ModsCall.Calamity?.ItemType("SoulofCryogen"),
@@ -597,6 +596,12 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("Violence"),
             ModsCall.Calamity?.ItemType("FleshOfInfidelity"),
             ModsCall.Calamity?.ItemType("Perdition"),
+            ModsCall.Calamity?.ItemType("DuneHopper"),
+            ModsCall.Calamity?.ItemType("SearedPan"),
+            ModsCall.Calamity?.ItemType("OccultSkullCrown"),
+            ModsCall.Calamity?.ItemType("GloriousEnd"),
+            ModsCall.Calamity?.ItemType("ArtAttack"),
+            ModsCall.Calamity?.ItemType("ScorchedEarth"),
         };
         //Средний
         public static List<int?> TypeU = new List<int?>
@@ -786,7 +791,6 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("UrchinSpear"),
             ModsCall.Calamity?.ItemType("Whirlpool"),
             ModsCall.Calamity?.ItemType("AcesHigh"),
-            ModsCall.Calamity?.ItemType("Aeries"),
             ModsCall.Calamity?.ItemType("Alluvion"),
             ModsCall.Calamity?.ItemType("AstrealDefeat"),
             ModsCall.Calamity?.ItemType("BrimstoneFlamesprayer"),
@@ -814,6 +818,8 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("ShatteredCommunity"),
             ModsCall.Calamity?.ItemType("RemsRevenge"),
             ModsCall.Calamity?.ItemType("Calamity"),
+            ModsCall.Calamity?.ItemType("UnstablePrism"),
+            ModsCall.Calamity?.ItemType("UniversalGenesis"),
         };
         //Множественный
         public static List<int?> TypePl = new List<int?>
@@ -912,7 +918,6 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("TarragonWings"),
             ModsCall.Calamity?.ItemType("XerocWings"),
             ModsCall.Calamity?.ItemType("SnakeEyes"),
-            ModsCall.Calamity?.ItemType("DemonicPitchfork"),
             ModsCall.Calamity?.ItemType("Miasma"),
             ModsCall.Calamity?.ItemType("ShiftingSands"),
             ModsCall.Calamity?.ItemType("SlitheringEels"),

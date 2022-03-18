@@ -721,6 +721,8 @@ namespace CalamityRuTranslate.Catalogs
             {"Chris Tallballs", "ChrisTallballs"},
             {"Freakish", "Freakish"},
             {"Barney Calhoun", "BarneyCalhoun"},
+            {"XiaoEn0426", "XiaoEn0426"},
+            {"Xsiana", "Xsiana"},
         };
     }
 }

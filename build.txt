@@ -1,6 +1,6 @@
 displayName = Project tRU
 author = tRU Team
-version = 2.2.1.10
+version = 2.2.2.1
 hideCode = true
 hideResources = true
 weakReferences = CalamityMod, Fargowiltas, FargowiltasSouls

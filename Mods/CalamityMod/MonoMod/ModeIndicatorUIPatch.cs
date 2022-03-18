@@ -17,17 +17,12 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "Death", "Смерть");
             TranslationHelper.ILTranslation(il, "Revengeance", "Месть");
+            TranslationHelper.ILTranslation(il, "Death", "Смерть");
+            TranslationHelper.ILTranslation(il, "Malice", "Злоба");
             TranslationHelper.ILTranslation(il, " Mode is ", " ");
             TranslationHelper.ILTranslation(il, "active", "активирована");
             TranslationHelper.ILTranslation(il, "not active", "деактивирована");
-            TranslationHelper.ILTranslation(il, "Armageddon is ", "Армагеддон ");
-            TranslationHelper.ILTranslation(il, "active", "активирован", 2);
-            TranslationHelper.ILTranslation(il, "not active", "деактивирован", 2);
-            TranslationHelper.ILTranslation(il, "Malice Mode is ", "Злоба ");
-            TranslationHelper.ILTranslation(il, "active", "активирована", 3);
-            TranslationHelper.ILTranslation(il, "not active", "деактивирована", 3);
         }
     }
 }

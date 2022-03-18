@@ -1,5 +1,5 @@
 using System.Reflection;
-using CalamityMod.Projectiles.Boss;
+using CalamityMod.Cooldowns;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
@@ -9,15 +9,15 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
 {
     [ModDependency("CalamityMod")]
     [CultureDependency("ru-RU")]
-    public class HolyBurnOrbPatch : MonoModPatcher<string>
+    public class ChaosStatePatch : MonoModPatcher<string>
     {
-        public override MethodInfo Method => typeof(HolyBurnOrb).GetCachedMethod(nameof(HolyBurnOrb.AI));
+        public override MethodInfo Method => typeof(ChaosState).GetCachedMethod("get_DisplayName");
 
         public override string ModderMethod => nameof(Translation);
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, " burst into sinless ash.", " превратился в безгрешный пепел.");
+            TranslationHelper.ILTranslation(il, "Teleportation Cooldown", "Перезарядка телепортации");
         }
     }
 }

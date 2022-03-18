@@ -134,6 +134,16 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         break;
                 }
             });
+
+            ItemHelper.TranslateTooltip(item, tooltips, "Equipable", tooltip =>
+            {
+                switch (item.type)
+                {
+                    case ItemID.BetsyWings:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.Vanilla.Wings.BetsyWings");
+                        break;
+                }
+            });
         }
     }
 }

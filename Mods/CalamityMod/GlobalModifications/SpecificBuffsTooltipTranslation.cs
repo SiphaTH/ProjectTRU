@@ -10,9 +10,6 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
     {
         public override void ModifyBuffTip(int type, ref string tip, ref int rare)
         {
-            if (type == ModContent.BuffType<Molten>() && ModsCall.DeathMode) 
-                tip = LangHelper.GetTextValue("Calamity.BuffDescription.Molten.DeathMode");
-
             if (type == ModContent.BuffType<ProfanedBabs>())
             {
                 switch (tip)

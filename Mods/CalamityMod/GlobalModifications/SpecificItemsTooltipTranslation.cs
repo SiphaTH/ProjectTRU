@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using CalamityMod.Items;
 using CalamityMod.Items.Accessories;
 using CalamityMod.Items.DifficultyItems;
@@ -8,6 +7,7 @@ using CalamityMod.Items.Placeables.Furniture.Fountains;
 using CalamityMod.Items.Potions;
 using CalamityMod.Items.SummonItems;
 using CalamityMod.Items.Weapons.Magic;
+using CalamityMod.Items.Weapons.Melee;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using Microsoft.Xna.Framework;
@@ -36,9 +36,9 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
             }
             else if (item.type == ModContent.ItemType<AstralArcanum>())
             {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip7", tooltip =>
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
                 {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.AstralArcanum.Tooltip7", ModsCall.AstralArcanumUiHotkey);
+                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.AstralArcanum.Tooltip3", ModsCall.AstralArcanumUiHotkey);
                 });
 
             }
@@ -207,6 +207,50 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         tooltip.text.Split(' ')[4]);
                 });
             }
+            else if (item.type == ModContent.ItemType<ArkoftheAncients>())
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                {
+                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheAncients.Tooltip0");
+                });
+            }
+            else if (item.type == ModContent.ItemType<TrueArkoftheAncients>())
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                {
+                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.TrueArkoftheAncients.Tooltip0");
+                });
+            }
+            else if (item.type == ModContent.ItemType<ArkoftheCosmos>())
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                {
+                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheCosmos.Tooltip0");
+                });
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+                {
+                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheCosmos.Tooltip1");
+                });
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+                {
+                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheCosmos.Tooltip2");
+                });
+            }
+            else if (item.type == ModContent.ItemType<ArkoftheElements>())
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                {
+                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheElements.Tooltip0");
+                });
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+                {
+                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheElements.Tooltip1");
+                });
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+                {
+                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheElements.Tooltip2");
+                });
+            }
 
             ItemHelper.TranslateTooltip(item, tooltips, "SchematicKnowledge1", tooltip =>
             {
@@ -215,18 +259,6 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
             ItemHelper.TranslateTooltip(item, tooltips, "SchematicKnowledge2", tooltip =>
             {
                 tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.SchematicKnowledge2");
-            });
-            ItemHelper.TranslateTooltip(item, tooltips, "FireWeapon", tooltip =>
-            {
-                tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.FireWeapon");
-            });
-            ItemHelper.TranslateTooltip(item, tooltips, "IceWeapon", tooltip =>
-            {
-                tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.IceWeapon");
-            });
-            ItemHelper.TranslateTooltip(item, tooltips, "NatureWeapon", tooltip =>
-            {
-                tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.NatureWeapon");
             });
             ItemHelper.TranslateTooltip(item, tooltips, "PointBlankShot", tooltip =>
             {
@@ -246,39 +278,31 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                 tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.CalamityDev");
                 tooltip.overrideColor = new Color(255, 0, 255);
             });
-            ItemHelper.TranslateTooltip(item, tooltips, "CalamityChallengeDrop", tooltip =>
+
+            if (ModsCall.Fargo != null)
             {
-                if (tooltip.text == "- Legendary Challenge Drop -")
-                    tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.LegendaryChallengeDrop");
-
-                else if (tooltip.text == "- Challenge Drop -")
-                    tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.ChallengeDrop");
-            });
-
-             if (ModsCall.Fargo != null)
-             {
-                 if (item.type == ModContent.ItemType<SunkenSeaFountain>())
-                 {
-                     ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                     {
-                         tooltip.text = LangHelper.GetTextValue("Calamity.ModifyItemTooltip.SunkenSeaFountain");
-                     });
-                 }
-                 else if (item.type == ModContent.ItemType<SulphurousFountainItem>())
-                 {
-                     ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                     {
-                         tooltip.text = LangHelper.GetTextValue("Calamity.ModifyItemTooltip.SulphurousFountainItem");
-                     });
-                 }
-                 else if (item.type == ModContent.ItemType<AstralFountainItem>())
-                 {
-                     ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                     {
-                         tooltip.text = LangHelper.GetTextValue("Calamity.ModifyItemTooltip.AstralFountainItem");
-                     });
-                 }
-             }
+                if (item.type == ModContent.ItemType<SunkenSeaFountain>())
+                {
+                    ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                    {
+                        tooltip.text = LangHelper.GetTextValue("Calamity.ModifyItemTooltip.SunkenSeaFountain");
+                    });
+                }
+                else if (item.type == ModContent.ItemType<SulphurousFountainItem>())
+                {
+                    ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                    {
+                        tooltip.text = LangHelper.GetTextValue("Calamity.ModifyItemTooltip.SulphurousFountainItem");
+                    });
+                }
+                else if (item.type == ModContent.ItemType<AstralFountainItem>())
+                {
+                    ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                    {
+                        tooltip.text = LangHelper.GetTextValue("Calamity.ModifyItemTooltip.AstralFountainItem");
+                    });
+                }
+            }
         }
     }
 }

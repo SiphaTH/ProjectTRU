@@ -29,19 +29,7 @@ namespace CalamityRuTranslate.Common
         {
             switch (set)
             {
-                case "Obsidian":
-                    return LangHelper.GetTextValue($"Calamity.SetBonus.{set}") +
-                           (TRuConfig.Instance.CalamityStealthDescription
-                               ? LangHelper.GetTextValue("Calamity.SetBonus.RogueStealthDescription") : "") +
-                           (ModsCall.DeathMode ? LangHelper.GetTextValue("Calamity.DeathMode.Heat") : "");
-
-                case "Fearmonger":
-                case "Eskimo":
-                    return LangHelper.GetTextValue($"Calamity.SetBonus.{set}") +
-                           (ModsCall.DeathMode ? LangHelper.GetTextValue("Calamity.DeathMode.Cold") : "");
-
                 case "AerospecRogue":
-                case "Gladiator":
                 case "VictideRogue":
                 case "AtaxiaRogue":
                 case "AuricTeslaRogue":
@@ -124,6 +112,8 @@ namespace CalamityRuTranslate.Common
                 case "WulfrumMelee":
                 case "WulfrumSummoner":
                 case "WulfrumMagic":
+                case "Fearmonger":
+                case "GemTech":
                     return LangHelper.GetTextValue($"Calamity.SetBonus.{set}");
             }
 

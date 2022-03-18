@@ -54,10 +54,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
             TranslationHelper.ILTranslation(il, "The aquatic entities sink back beneath the ocean depths.", "Водные существа возвращаются в глубины океана.");
             TranslationHelper.ILTranslation(il, "Leviathan", "Левиафан", 2);
             TranslationHelper.ILTranslation(il, "Use an [i:{0}] at Night in the Astral Biome", "Используйте [i:{0}] ночью в астральном биоме.");
-            TranslationHelper.ILTranslation(il, "Astrum Aureus’ program has been executed. Initiate recall.", "Программа Аструм Ареуса выполнена. Иницинирую возврат.");
+            TranslationHelper.ILTranslation(il, "Astrum Aureus’ program has been executed. Initiate recall.", "Программа Аструм Ареуса выполнена. Инициирую возврат.");
             TranslationHelper.ILTranslation(il, "Astrum Aureus", "Аструм Ареус");
             TranslationHelper.ILTranslation(il, "Use an [i:{0}] in the Jungle Biome", "Используйте [i:{0}] в джунглях.");
-            TranslationHelper.ILTranslation(il, "HOSTILE SPECIMENS TERMINATED. INITIATE RECALL TO HOME BASE.", "ВРАЖДЕБНЫЕ СУЩНОСТИ УНИЧТОЖЕНЫ. ИНИЦИНИРУЮ ВОЗВРАТ НА БАЗУ.");
+            TranslationHelper.ILTranslation(il, "HOSTILE SPECIMENS TERMINATED. INITIATE RECALL TO HOME BASE.", "ВРАЖДЕБНЫЕ СУЩНОСТИ УНИЧТОЖЕНЫ. ИНИЦИИРУЮ ВОЗВРАТ НА БАЗУ.");
             TranslationHelper.ILTranslation(il, "Plaguebringer Goliath", "Разносчица чумы, Голиаф");
             TranslationHelper.ILTranslation(il, "Use a [i:{0}]", "Используйте [i:{0}].");
             TranslationHelper.ILTranslation(il, "The automaton of misshapen victims went looking for the true perpetrator.", "Машина бесформенных жертв отправилась на поиски истинного нарушителя.");
@@ -95,7 +95,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
             TranslationHelper.ILTranslation(il, "Use a [i:{0}] in the Jungle Biome", "Используйте [i:{0}] в джунглях.");
             TranslationHelper.ILTranslation(il, "Yharon found you too weak to stay near your gravestone.", "Ярон считает вас слишком слабым, чтобы оставаться с вашим надгробием.");
             TranslationHelper.ILTranslation(il, "Yharon", "Ярон", 2);
-            TranslationHelper.ILTranslation(il, "Use an [i:{0}]", "Используйте [i:{0}].", 2);
+            TranslationHelper.ILTranslation(il, "Use [i:{0}] or a [i:{1}] as offering at an [i:{2}]", "Используйте [i:{0}] или [i:{1}] в качестве подношения на [i:{2}]");
             TranslationHelper.ILTranslation(il, "Please don't waste my time.", "Пожалуйста, не трать моё время.");
             TranslationHelper.ILTranslation(il, "Supreme Calamitas", "Высшая Каламитас");
             TranslationHelper.ILTranslation(il, "By using a high-tech computer", "С помощью высокотехнологичного компьютера.");
@@ -116,7 +116,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
     
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "Defeat a Giant Clam after defeating the Desert Scourge", "Одолейте Гигантского моллюска после победы над Пустынным бичем");
+            TranslationHelper.ILTranslation(il, "Defeat a Giant Clam after defeating the Desert Scourge", "Одолейте Гигантского моллюска после победы над Пустынным бичом");
             TranslationHelper.ILTranslation(il, "Have a [i:", "Имейте [i:");
             TranslationHelper.ILTranslation(il, "] in your inventory after defeating Skeletron", "] в вашем инвентаре после победы над Скелетроном");
             TranslationHelper.ILTranslation(il, "Defeat Cryogen", "Одолейте Криогена");
@@ -139,10 +139,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
             TranslationHelper.ILTranslation(il, "Use a [i:{0}] or wait for the invasion to occur naturally after the Eye of Cthulhu is defeated.", "Используйте [i:{0}] или дождитесь, пока событие произойдёт естественным образом после победы над глазом Ктулху.");
             TranslationHelper.ILTranslation(il, "The mysterious creatures of the sulphuric sea descended back into the ocean.", "Таинственные существа сернистого моря спустились обратно в океан.");
             TranslationHelper.ILTranslation(il, "Acid Rain", "Кислотный дождь");
-            TranslationHelper.ILTranslation(il, "Use a [i:{0}] or [i:{1}] or wait for the invasion to occur naturally after the Aquatic Scourge is defeated", "Используйте [i:{0}] или, [i:{1}] или дождитесь, пока событие произойдёт естественным образом после победы над акватическим бичом.");
+            TranslationHelper.ILTranslation(il, "Use a [i:{0}] or wait for the invasion to occur naturally after the Aquatic Scourge is defeated", "Используйте [i:{0}] или дождитесь, пока событие произойдёт естественным образом после победы над Акватическим бичом.");
             TranslationHelper.ILTranslation(il, "The mysterious creatures of the sulphuric sea descended back into the deep ocean.", "Таинственные существа сернистого моря спустились обратно в глубины океана.");
             TranslationHelper.ILTranslation(il, "Acid Rain (Post-AS)", "Кислотный дождь (Пост-Аб)");
-            TranslationHelper.ILTranslation(il, "Use a [i:{0}] or [i:{1}] or wait for the invasion to occur naturally after the Polterghast is defeated", "Используйте [i:{0}] или, [i:{1}] или дождитесь, пока событие произойдёт естественным образом после победы над Полтергастом.");
+            TranslationHelper.ILTranslation(il, "Use a [i:{0}] or wait for the invasion to occur naturally after the Polterghast is defeated", "Используйте [i:{0}] или дождитесь, пока событие произойдёт естественным образом после победы над Полтергастом.");
             TranslationHelper.ILTranslation(il, "Acid Rain (Post-Polter)", "Кислотный дождь (Пост-Полтер)");
             TranslationHelper.ILTranslation(il, "The mysterious creatures of the sulphuric sea descended back into the deep ocean.", "Таинственные существа сернистого моря спустились обратно в глубины океана.", 2);
         }

@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using CalamityMod;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using Terraria;
@@ -13,14 +12,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (item.type == ItemID.LavaWaders && ModsCall.DeathMode)
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.LavaWaders");
-                });
-            }
-            else if (item.type == ItemID.CobaltSword)
+            if (item.type == ItemID.CobaltSword)
             {
                 foreach (TooltipLine tooltip in tooltips)
                 {
@@ -195,11 +187,10 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         LangHelper.GetTextValue("Calamity.VanillaItem.BurningBloodDebuff"));
                 }
             }
-            else if (item.type == ItemID.SlimeCrown || item.type == ItemID.SuspiciousLookingEye ||
-                     item.type == ItemID.WormFood || item.type == ItemID.BloodySpine ||
-                     item.type == ItemID.Abeemination || item.type == ItemID.MechanicalEye ||
-                     item.type == ItemID.MechanicalWorm || item.type == ItemID.MechanicalSkull ||
-                     item.type == ItemID.CelestialSigil)
+            else if (item.type == ItemID.SlimeCrown || item.type == ItemID.GoblinBattleStandard ||
+                     item.type == ItemID.PirateMap || item.type == ItemID.SnowGlobe ||
+                     item.type == ItemID.NaughtyPresent || item.type == ItemID.PumpkinMoonMedallion ||
+                     item.type == ItemID.SolarTablet || item.type == ItemID.CelestialSigil)
             {
                 foreach (TooltipLine tooltip in tooltips)
                 {
@@ -244,47 +235,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                 switch (item.type)
                 {
                     case ItemID.WarmthPotion:
-                        tooltip.text = ModsCall.DeathMode
-                            ? LangHelper.GetTextValue("Calamity.VanillaItem.WarmthPotion.DeathMode")
-                            : LangHelper.GetTextValue("Calamity.VanillaItem.WarmthPotion");
-                        break;
-
-                    case ItemID.ObsidianSkinPotion:
-                        if (CalamityConfig.Instance.LethalLava)
-                        {
-                            tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.ObsidianSkinPotion") +
-                                           (ModsCall.DeathMode ? LangHelper.GetTextValue("Calamity.DeathMode.Heat") : "");
-                        }
-                        else
-                        {
-                            tooltip.text = Language.GetTextValue("ItemTooltip.ObsidianSkinPotion") +
-                                           (ModsCall.DeathMode ? LangHelper.GetTextValue("Calamity.DeathMode.Heat") : "");
-                        }
-
-                        break;
-
-                    case ItemID.ObsidianRose:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.ObsidianRose") +
-                                       (CalamityConfig.Instance.LethalLava ? "\nЗначительно снижает урон от ожога лавы" : "") +
-                                       (ModsCall.DeathMode ? LangHelper.GetTextValue("Calamity.DeathMode.Heat") : "");
-                        break;
-
-                    case ItemID.MagmaStone:
-                        if (ModsCall.DeathMode)
-                            tooltip.text = Language.GetTextValue("ItemTooltip.MagmaStone") +
-                                           LangHelper.GetTextValue("Calamity.DeathMode.HeatAndCold");
-                        break;
-
-                    case ItemID.LavaCharm:
-                        if (ModsCall.DeathMode)
-                            tooltip.text = Language.GetTextValue("ItemTooltip.LavaCharm") +
-                                           LangHelper.GetTextValue("Calamity.DeathMode.Heat");
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.WarmthPotion");
                         break;
 
                     case ItemID.HandWarmer:
-                        tooltip.text = ModsCall.DeathMode
-                            ? LangHelper.GetTextValue("Calamity.VanillaItem.HandWarmer.DeathMode")
-                            : LangHelper.GetTextValue("Calamity.VanillaItem.HandWarmer");
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.HandWarmer");
                         break;
 
                     case ItemID.Picksaw:
@@ -510,6 +465,98 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                     case ItemID.ApprenticeAltPants:
                         tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.ApprenticeAltPants");
                         break;
+                    
+                    case ItemID.FleshKnuckles:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.FleshKnuckles");
+                        break;
+                    
+                    case ItemID.DD2BetsyBow:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.DD2BetsyBow");
+                        break;
+                    
+                    case ItemID.Abeemination:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.Abeemination");
+                        break;
+                    
+                    case ItemID.BloodySpine:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.BloodySpine");
+                        break;
+                    
+                    case ItemID.ClothierVoodooDoll:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.ClothierVoodooDoll");
+                        break;
+                    
+                    case ItemID.GuideVoodooDoll:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.GuideVoodooDoll");
+                        break;
+                    
+                    case ItemID.LihzahrdPowerCell:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.LihzahrdPowerCell");
+                        break;
+                    
+                    case ItemID.MechanicalEye:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MechanicalEye");
+                        break;
+                    
+                    case ItemID.MechanicalSkull:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MechanicalSkull");
+                        break;
+                    
+                    case ItemID.MechanicalWorm:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MechanicalWorm");
+                        break;
+                    
+                    case ItemID.SuspiciousLookingEye:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.SuspiciousLookingEye");
+                        break;
+                    
+                    case ItemID.WormFood:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.WormFood");
+                        break;
+                    
+                    case ItemID.DeathSickle:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.DeathSickle");
+                        break;
+                    
+                    case ItemID.CobaltHat:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.CobaltHat");
+                        break;
+                    
+                    case ItemID.PalladiumBreastplate:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.PalladiumBreastplate");
+                        break;
+                    
+                    case ItemID.PalladiumLeggings:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.PalladiumLeggings");
+                        break;
+                    
+                    case ItemID.MythrilHood:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MythrilHood");
+                        break;
+                    
+                    case ItemID.MythrilChainmail:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MythrilChainmail");
+                        break;
+                    
+                    case ItemID.MythrilGreaves:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MythrilGreaves");
+                        break;
+                    
+                    case ItemID.OrichalcumBreastplate:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.OrichalcumBreastplate");
+                        break;
+                    
+                    case ItemID.AdamantiteHeadgear:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.AdamantiteHeadgear");
+                        break;
+                    
+                    case ItemID.ObsidianSkull:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.ObsidianSkull");
+                        break;
+                    
+                    case ItemID.AnkhShield:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.AnkhShield.Tooltip0");
+                        break;
                 }
             });
 
@@ -552,9 +599,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                 switch (item.type)
                 {
                     case ItemID.FireGauntlet:
-                        tooltip.text = ModsCall.DeathMode
-                            ? LangHelper.GetTextValue("Calamity.VanillaItem.FireGauntlet.DeathMode")
-                            : LangHelper.GetTextValue("Calamity.VanillaItem.FireGauntlet");
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.FireGauntlet");
                         break;
 
                     case ItemID.JellyfishDivingGear:
@@ -586,7 +631,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         break;
 
                     case ItemID.AnkhShield:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.AnkhShield");
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.AnkhShield.Tooltip1");
                         break;
 
                     case ItemID.MasterNinjaGear:
@@ -595,6 +640,22 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
 
                     case ItemID.MonkPants:
                         tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MonkPants.2");
+                        break;
+                    
+                    case ItemID.ObsidianHorseshoe:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.ObsidianHorseshoe");
+                        break;
+                    
+                    case ItemID.ObsidianShield:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.ObsidianShield");
+                        break;
+                    
+                    case ItemID.ObsidianWaterWalkingBoots:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.ObsidianWaterWalkingBoots");
+                        break;
+                    
+                    case ItemID.LavaWaders:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.LavaWaders");
                         break;
                 }
             });
@@ -676,19 +737,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                     case ItemID.MoltenHelmet:
                     case ItemID.MoltenBreastplate:
                     case ItemID.MoltenGreaves:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.SetBonus.Molten") +
-                                       (ModsCall.DeathMode
-                                           ? LangHelper.GetTextValue("Calamity.DeathMode.HeatAndCold")
-                                           : "");
-                        break;
-
-                    case ItemID.FrostHelmet:
-                    case ItemID.FrostBreastplate:
-                    case ItemID.FrostLeggings:
-                        if (ModsCall.DeathMode)
-                            tooltip.text = Language.GetTextValue("LegacyTooltip.48") + " " +
-                                           Language.GetTextValue("ArmorSetBonus.Frost") +
-                                           LangHelper.GetTextValue("Calamity.DeathMode.HeatAndCold");
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.SetBonus.Molten");
                         break;
 
                     case ItemID.MonkBrows:
@@ -738,6 +787,20 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                     case ItemID.ApprenticeAltPants:
                         tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.SetBonus.ApprenticeTier3");
                         break;
+                    
+                    case ItemID.GladiatorHelmet:
+                    case ItemID.GladiatorBreastplate:
+                    case ItemID.GladiatorLeggings:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.SetBonus.Gladiator") +
+                                       (TRuConfig.Instance.CalamityStealthDescription ? LangHelper.GetTextValue("Calamity.SetBonus.RogueStealthDescription") : "");
+                        break;
+                    
+                    case ItemID.ObsidianHelm:
+                    case ItemID.ObsidianShirt:
+                    case ItemID.ObsidianPants:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.SetBonus.Obsidian") +
+                                       (TRuConfig.Instance.CalamityStealthDescription ? LangHelper.GetTextValue("Calamity.SetBonus.RogueStealthDescription") : "");
+                        break;
                 }
             });
 
@@ -770,6 +833,26 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                 {
                     case ItemID.BottledHoney:
                         tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.BottledHoney");
+                        break;
+                }
+            });
+            
+            ItemHelper.TranslateTooltip(item, tooltips, "Placeable", tooltip =>
+            {
+                switch (item.type)
+                {
+                    case ItemID.Teleporter:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.Teleporter");
+                        break;
+                }
+            });
+            
+            ItemHelper.TranslateTooltip(item, tooltips, "Consumable", tooltip =>
+            {
+                switch (item.type)
+                {
+                    case ItemID.TruffleWorm:
+                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.TruffleWorm");
                         break;
                 }
             });

@@ -1,5 +1,5 @@
 using System.Reflection;
-using CalamityMod.Items.Accessories;
+using CalamityMod.Cooldowns;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
@@ -9,15 +9,15 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
 {
     [ModDependency("CalamityMod")]
     [CultureDependency("ru-RU")]
-    public class CheatTestThingPatch : MonoModPatcher<string>
+    public class RelicOfResiliencePatch : MonoModPatcher<string>
     {
-        public override MethodInfo Method => typeof(CheatTestThing).GetCachedMethod(nameof(CheatTestThing.UpdateAccessory));
-        
+        public override MethodInfo Method => typeof(RelicOfResilience).GetCachedMethod("get_DisplayName");
+
         public override string ModderMethod => nameof(Translation);
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, " isn't worthy.", " не достоин.");
+            TranslationHelper.ILTranslation(il, "Relic of Resilience Cooldown", "Перезарядка реликвии устойчивости");
         }
     }
 }

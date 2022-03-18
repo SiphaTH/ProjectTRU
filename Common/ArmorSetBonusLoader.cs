@@ -31,11 +31,8 @@ namespace CalamityRuTranslate.Common
         {
             if (ModsCall.Calamity == null)
                 return;
-
-            CalamityArmorSets.Add(new ArmorSetData(ItemID.ObsidianHelm, ItemID.ObsidianShirt, ItemID.ObsidianPants, "Obsidian"));
             CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("ForbiddenCirclet"), ItemID.AncientBattleArmorShirt, ItemID.AncientBattleArmorPants, "AncientForbiddenCirclet"));
             CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("ShroomiteVisage"), ItemID.ShroomiteBreastplate, ItemID.ShroomiteLeggings, "Shroomite"));
-            CalamityArmorSets.Add(new ArmorSetData(ItemID.GladiatorHelmet, ItemID.GladiatorBreastplate, ItemID.GladiatorLeggings, "Gladiator"));
             CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AerospecHat"), ModsCall.Calamity.ItemType("AerospecBreastplate"), ModsCall.Calamity.ItemType("AerospecLeggings"), "AerospecMagic"));
             CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AerospecHeadgear"), ModsCall.Calamity.ItemType("AerospecBreastplate"), ModsCall.Calamity.ItemType("AerospecLeggings"), "AerospecRogue"));
             CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AerospecHelm"), ModsCall.Calamity.ItemType("AerospecBreastplate"), ModsCall.Calamity.ItemType("AerospecLeggings"), "AerospecMelee"));
@@ -105,14 +102,7 @@ namespace CalamityRuTranslate.Common
             CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("WulfrumHood"), ModsCall.Calamity.ItemType("WulfrumArmor"), ModsCall.Calamity.ItemType("WulfrumLeggings"), "WulfrumMagic"));
             CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("WulfrumMask"), ModsCall.Calamity.ItemType("WulfrumArmor"), ModsCall.Calamity.ItemType("WulfrumLeggings"), "WulfrumRogue"));
             CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("XerocMask"), ModsCall.Calamity.ItemType("XerocPlateMail"), ModsCall.Calamity.ItemType("XerocCuisses"), "Xeroc"));
-            CalamityArmorSets.Add(new ArmorSetData(ItemID.EskimoHood, ItemID.EskimoCoat, ItemID.EskimoPants, "Eskimo"));
-            CalamityArmorSets.Add(new ArmorSetData(ItemID.PinkEskimoHood, ItemID.PinkEskimoCoat, ItemID.PinkEskimoPants, "Eskimo"));
-            CalamityArmorSets.Add(new ArmorSetData(ItemID.PinkEskimoHood, ItemID.EskimoCoat, ItemID.EskimoPants, "Eskimo"));
-            CalamityArmorSets.Add(new ArmorSetData(ItemID.PinkEskimoHood, ItemID.PinkEskimoCoat, ItemID.EskimoPants, "Eskimo"));
-            CalamityArmorSets.Add(new ArmorSetData(ItemID.EskimoHood, ItemID.PinkEskimoCoat, ItemID.EskimoPants, "Eskimo"));
-            CalamityArmorSets.Add(new ArmorSetData(ItemID.EskimoHood, ItemID.PinkEskimoCoat, ItemID.PinkEskimoPants, "Eskimo"));
-            CalamityArmorSets.Add(new ArmorSetData(ItemID.EskimoHood, ItemID.EskimoCoat, ItemID.PinkEskimoPants, "Eskimo"));
-            CalamityArmorSets.Add(new ArmorSetData(ItemID.PinkEskimoHood, ItemID.EskimoCoat, ItemID.PinkEskimoPants, "Eskimo"));
+            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("GemTechHeadgear"), ModsCall.Calamity.ItemType("GemTechBodyArmor"), ModsCall.Calamity.ItemType("GemTechSchynbaulds"), "GemTech"));
         }
         
         private static void FargoSoulsArmorSetInfo()

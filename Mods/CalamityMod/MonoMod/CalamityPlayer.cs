@@ -57,8 +57,6 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
             TranslationHelper.ILTranslation(il, " is food for the Wyrms.", " стал пищей для змей.");
             TranslationHelper.ILTranslation(il, "Oxygen failed to reach ", "Не хватило кислорода для ");
             TranslationHelper.ILTranslation(il, " from the depths of the Abyss.", " из глубин бездны.");
-            TranslationHelper.ILTranslation(il, " was defeated.", " был повержен.");
-            TranslationHelper.ILTranslation(il, " was chilled to the bone by the frigid environment.", " промёрз до костей из-за холодной окружающей среды.");
             TranslationHelper.ILTranslation(il, " failed the challenge at hand.", " не справился с испытанием.");
             TranslationHelper.ILTranslation(il, " was destroyed by a mysterious force.", " был уничтожен таинственной силой.");
         }
