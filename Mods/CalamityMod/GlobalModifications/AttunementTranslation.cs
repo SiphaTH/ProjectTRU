@@ -35,7 +35,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
             "An enchanted chain hook floats near you. Striking enemies makes the hook whirl around you, freezing enemies",
             "Heaven's Might",
             "Hold the attack button to swing the sword around you, accelerating over time",
-            "Releasing the attack button hurls the sword towards your cursor. The sword then quickly returns to your hand ",
+            "Releasing the attack button hurls the sword towards your cursor. The sword then quickly returns to your hand",
             "Arid Grandeur",
             "Conjures searing blades in front of you that get larger and stronger the more you hit enemies. The blades can also be used to bounce off tiles when in the air",
             "Gesture for the Drowned",

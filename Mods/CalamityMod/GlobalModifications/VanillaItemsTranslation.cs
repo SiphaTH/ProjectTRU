@@ -330,16 +330,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MoonShell");
                         break;
 
-                    case ItemID.WormScarf:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.WormScarf");
-                        break;
-
                     case ItemID.TitanGlove:
                         tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.TitanGlove");
-                        break;
-
-                    case ItemID.SpectreHood:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.SpectreHood");
                         break;
 
                     case ItemID.YoyoBag:
@@ -351,7 +343,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         break;
 
                     case ItemID.MagicQuiver:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MagicQuiver");
+                        tooltip.text = tooltip.text.Replace("урон", "урон стрел");
                         break;
 
                     case ItemID.InvisibilityPotion:
@@ -383,11 +375,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         break;
 
                     case ItemID.SwiftnessPotion:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.SwiftnessPotion");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.SwiftnessPotion").Replace("25", "15");
                         break;
 
                     case ItemID.EndurancePotion:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.EndurancePotion");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.EndurancePotion").Replace("10", "5");
                         break;
 
                     case ItemID.DD2ElderCrystal:
@@ -399,19 +391,19 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         break;
 
                     case ItemID.MagicPowerPotion:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MagicPowerPotion");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.MagicPowerPotion").Replace("20", "10");
                         break;
 
                     case ItemID.MagicHat:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MagicHat");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.MagicHat").Replace("7", "5");
                         break;
 
                     case ItemID.WizardHat:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.WizardHat");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.WizardHat").Replace("15", "5");
                         break;
 
                     case ItemID.SquirePlating:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.SquirePlating");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.SquirePlating").Replace("15", "10");
                         break;
 
                     case ItemID.SquireGreaves:
@@ -419,11 +411,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         break;
 
                     case ItemID.MonkBrows:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MonkBrows");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.MonkBrows").Replace("20", "10");
                         break;
 
                     case ItemID.MonkShirt:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MonkShirt");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.MonkShirt").Replace("20", "10");
                         break;
 
                     case ItemID.MonkPants:
@@ -431,7 +423,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         break;
 
                     case ItemID.HuntressJerkin:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.HuntressJerkin");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.HuntressJerkin").Replace("20", "10") +
+                                       LangHelper.GetTextValue("Calamity.VanillaItem.HuntressJerkin");
                         break;
 
                     case ItemID.ApprenticeTrousers:
@@ -447,11 +440,12 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         break;
 
                     case ItemID.MonkAltHead:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MonkAltHead");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.MonkAltHead").Replace("20", "10");
                         break;
 
                     case ItemID.MonkAltShirt:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MonkAltShirt");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.MonkAltShirt").Replace("20", "10") +
+                                       LangHelper.GetTextValue("Calamity.VanillaItem.MonkAltShirt");
                         break;
 
                     case ItemID.MonkAltPants:
@@ -459,7 +453,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         break;
 
                     case ItemID.HuntressAltShirt:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.HuntressAltShirt");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.HuntressAltShirt").Replace("25", "15") +
+                                       LangHelper.GetTextValue("Calamity.VanillaItem.HuntressAltShirt");
                         break;
 
                     case ItemID.ApprenticeAltPants:
@@ -535,15 +530,15 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         break;
                     
                     case ItemID.MythrilChainmail:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MythrilChainmail");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.MythrilChainmail").Replace("5", "12");
                         break;
                     
                     case ItemID.MythrilGreaves:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.MythrilGreaves");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.MythrilGreaves").Replace("3", "14");
                         break;
                     
                     case ItemID.OrichalcumBreastplate:
-                        tooltip.text = LangHelper.GetTextValue("Calamity.VanillaItem.OrichalcumBreastplate");
+                        tooltip.text = Language.GetTextValue("ItemTooltip.OrichalcumBreastplate").Replace("6", "10");
                         break;
                     
                     case ItemID.AdamantiteHeadgear:
