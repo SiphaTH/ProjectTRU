@@ -95,7 +95,7 @@ Calamity.BuffName.CragsLava=Иссушающая лава
 Calamity.BuffDescription.CragsLava=Серная лава иссушает вашу плоть
 
 Calamity.BuffName.CrushDepth=Давление глубин
-Calamity.BuffDescription.CrushDepth=Вода давит на вас
+Calamity.BuffDescription.CrushDepth=Водная толща давит на ваше тело
 
 Calamity.BuffName.DemonFlames=Демоническое пламя
 Calamity.BuffDescription.DemonFlames=Очередной огненный дебафф
@@ -116,10 +116,10 @@ Calamity.BuffName.LethalLavaBurn=Драконий огонь
 Calamity.BuffDescription.LethalLavaBurn=Вы теряете здоровье\nСкорость передвижения снижена
 
 Calamity.BuffName.ManaBurn=Сжигание маны
-Calamity.BuffDescription.ManaBurn=Избыток маны опустошает ваше тело и разум
+Calamity.BuffDescription.ManaBurn=Избыток маны опустошает ваши тело и разум
 
 Calamity.BuffName.Nightwither=Ночное иссушение
-Calamity.BuffDescription.Nightwither=Испепелён лунными лучами
+Calamity.BuffDescription.Nightwither=Испепеление лунными лучами
 
 Calamity.BuffName.Plague=Чума
 Calamity.BuffDescription.Plague=Гниение изнутри
@@ -146,13 +146,13 @@ Calamity.BuffName.Vaporfied=Запаренный
 Calamity.BuffDescription.Vaporfied=Пар
 
 Calamity.BuffName.VulnerabilityHex=Проклятье уязвимости
-Calamity.BuffDescription.VulnerabilityHex=Вы слабак
+Calamity.BuffDescription.VulnerabilityHex=Вы слабы
 
 Calamity.BuffName.WeakBrimstoneFlames=Слабые серные огни
 Calamity.BuffDescription.WeakBrimstoneFlames=Потеря здоровья
 
 Calamity.BuffName.AlicornBuff=Аликорн
-Calamity.BuffDescription.AlicornBuff=Вы победили Пожирателя Богов в пьяном виде, вы действительно невероятны!
+Calamity.BuffDescription.AlicornBuff=Вы победили Пожирателя богов в пьяном виде, вы действительно невероятны!
 
 Calamity.BuffName.AndromedaBuff=Андромеда
 Calamity.BuffDescription.AndromedaBuff=Вы управляете частью истории
@@ -163,7 +163,7 @@ Calamity.BuffDescription.AndromedaSmallBuff=Вы управляете малой
 Calamity.BuffName.BrimstoneMount=Ездовая серороза
 Calamity.BuffDescription.BrimstoneMount=Сиденье поджарено. На этом всё
 
-Calamity.BuffName.BumbledogeMount=Бамблдог
+Calamity.BuffName.BumbledogeMount=Бамблпёс
 Calamity.BuffDescription.BumbledogeMount=Подожди секунду. Это неправильно...
 
 Calamity.BuffName.DoGCartBuff=Вагонетка Пожирателя
@@ -5913,7 +5913,7 @@ Calamity.ItemName.ClamCrusher=Крушитель моллюсков
 Calamity.ItemTooltip.ClamCrusher=Запускает огромного моллюска, который оглушает врагов на короткое время\nМоллюск подвержен гравитации и наносит гораздо больший урон после того, как некоторое время находился в воздухе
 
 Calamity.ItemName.Cnidarian=Стрекающий
-Calamity.ItemTooltip.Cnidarian=Стреляет ракушкой когда, враги рядом\nОчень манёвренное йо-йо
+Calamity.ItemTooltip.Cnidarian=Стреляет ракушкой, когда рядом враги\nОчень манёвренное йо-йо
 
 Calamity.ItemName.ColdheartIcicle=Сосулька холодного сердца
 Calamity.ItemTooltip.ColdheartIcicle=Снижает процент здоровья любого врага при попадании\nНе может наносить критические удары
@@ -5921,7 +5921,7 @@ Calamity.ItemTooltip.ColdheartIcicle=Снижает процент здоров�
 Calamity.ItemName.CometQuasher=Кометный крушитель
 Calamity.ItemTooltip.CometQuasher=Призывает с неба скопление метеоров при попадании во врага
 
-Calamity.ItemName.CorruptedCrusherBlade=Порченый клинок разрушения
+Calamity.ItemName.CorruptedCrusherBlade=Искажённый клинок разрушения
 Calamity.ItemTooltip.CorruptedCrusherBlade=Накладывает дебафф «{$BuffName.CursedInferno}»; критические удары снижают защиту врага на 10 единиц
 
 Calamity.ItemName.CosmicDischarge=Космический разряд
@@ -7555,7 +7555,7 @@ Calamity.ItemName.VileFeeder=Гнусный кормилец
 Calamity.ItemTooltip.VileFeeder=Призывает маленького пожирателя душ защищать вас
 
 Calamity.ItemName.ViralSprout=Паразитный росток
-Calamity.ItemTooltip.ViralSprout=Призывает духов мудреца сражаться за вас\nНакладывает дебафф «{$Mods.CalamityRuTranslate.Calamity.BuffName.SagePoison}», который становится сильнее, чем больше духов вы призвали
+Calamity.ItemTooltip.ViralSprout=Призывает духов полыни сражаться за вас\nНакладывает дебафф «{$Mods.CalamityRuTranslate.Calamity.BuffName.SagePoison}», который становится сильнее, чем больше духов вы призвали
 
 Calamity.ItemName.ViridVanguard=Изумрудный авангард
 Calamity.ItemTooltip.ViridVanguard=Призывает 2 клинка, которые вращаются вокруг вас\nКаждая пара клинков занимает три миньон-слота\nНажмите ПКМ, чтобы все клинки взлетели вверх и направились в сторону курсора мыши
