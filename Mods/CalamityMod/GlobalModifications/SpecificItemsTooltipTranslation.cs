@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using CalamityMod.Items;
 using CalamityMod.Items.Accessories;

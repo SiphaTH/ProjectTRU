@@ -12,6 +12,8 @@ namespace CalamityRuTranslate.Common
         internal static Mod Fargo => ModLoader.GetMod("Fargowiltas");
         internal static Mod FargoSouls => ModLoader.GetMod("FargowiltasSouls");
         internal static Mod Spirit => ModLoader.GetMod("SpiritMod");
+        internal static Mod Census => ModLoader.GetMod("Census");
+        internal static Mod BossChecklist => ModLoader.GetMod("BossChecklist");
 
         internal static bool CalamityGetInZone => (bool) Calamity.Call("GetInZone", Main.player[Main.myPlayer], "abyss");
         internal static bool Revenge => CalamityWorld.revenge;

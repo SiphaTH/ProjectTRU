@@ -1,13 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
+using CalamityMod;
+using CalamityMod.Events;
+using CalamityMod.Items.Accessories;
+using CalamityMod.Items.Materials;
+using CalamityMod.Items.Pets;
+using CalamityMod.Items.Potions.Alcohol;
+using CalamityMod.Items.SummonItems.Invasion;
+using CalamityMod.Items.Weapons.Magic;
+using CalamityMod.Items.Weapons.Melee;
+using CalamityMod.Items.Weapons.Ranged;
+using CalamityMod.Items.Weapons.Rogue;
+using CalamityMod.Items.Weapons.Summon;
+using CalamityMod.NPCs.AcidRain;
+using CalamityMod.NPCs.TownNPCs;
+using CalamityMod.World;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
+using Microsoft.Xna.Framework;
 using MonoMod.Cil;
+using MonoMod.RuntimeDetour.HookGen;
+using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
 {
     [ModDependency("CalamityMod")]
+    [ModDependency("BossChecklist")]
     [CultureDependency("ru-RU")]
     public class WeakReferenceSupportAddCalamityBosses : MonoModPatcher<string>
     {
@@ -106,45 +128,170 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
         }
     }
 
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class WeakReferenceSupportCensusSupport : MonoModPatcher<string>
+    public class WeakReferenceSupportCensusSupport : ILEdit
     {
-        public override MethodInfo Method => ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetCachedMethod("CensusSupport");
-    
-        public override string ModderMethod => nameof(Translation);
-    
-        public static void Translation(ILContext il)
+        private readonly MethodInfo _censusSupport = ModsCall.Calamity?.Code.GetType("CalamityMod.WeakReferenceSupport")
+            .GetMethod("CensusSupport", BindingFlags.Static | BindingFlags.NonPublic);
+
+        private delegate void orig_CensusSupport();
+        private delegate void hook_CensusSupport(orig_CensusSupport orig);
+
+        private event hook_CensusSupport OnCensusSupport
         {
-            TranslationHelper.ILTranslation(il, "Defeat a Giant Clam after defeating the Desert Scourge", "Одолейте Гигантского моллюска после победы над Пустынным бичом");
-            TranslationHelper.ILTranslation(il, "Have a [i:", "Имейте [i:");
-            TranslationHelper.ILTranslation(il, "] in your inventory after defeating Skeletron", "] в вашем инвентаре после победы над Скелетроном");
-            TranslationHelper.ILTranslation(il, "Defeat Cryogen", "Одолейте Криогена");
-            TranslationHelper.ILTranslation(il, "Have [i:", "Имейте [i:");
-            TranslationHelper.ILTranslation(il, "] in your inventory in Hardmode", "] в вашем инвентаре в Хардмоде");
-            TranslationHelper.ILTranslation(il, "Defeat Supreme Calamitas", "Одолейте Высшую Каламитас");
+            add => HookEndpointManager.Add<hook_CensusSupport>(_censusSupport, value);
+            remove => HookEndpointManager.Remove<hook_CensusSupport>(_censusSupport, value);
+        }
+
+        public override bool Autoload() => ModsCall.Calamity != null && ModsCall.Census != null && TranslationHelper.IsRussianLanguage;
+    
+        public override void Load()
+        {
+            OnCensusSupport += Translation;
+        }
+    
+        public override void Unload()
+        {
+            OnCensusSupport -= Translation;
+        }
+    
+        private void Translation(orig_CensusSupport orig)
+        {
+            ModsCall.Census.Call(
+                "TownNPCCondition",
+                ModContent.NPCType<SEAHOE>(),
+                "Одолейте Гигантского моллюска после победы над Пустынным бичом"
+            );
+            ModsCall.Census.Call(
+                "TownNPCCondition",
+                ModContent.NPCType<THIEF>(),
+                "Имейте [i:74] в вашем инвентаре после победы над Скелетроном"
+            );
+            ModsCall.Census.Call(
+                "TownNPCCondition",
+                ModContent.NPCType<FAP>(),
+                $"Имейте [i:{ModContent.ItemType<FabsolsVodka>()}] в вашем инвентаре в Хардмоде"
+            );
+            ModsCall.Census.Call(
+                "TownNPCCondition",
+                ModContent.NPCType<DILF>(),
+                "Одолейте Криогена"
+            );
+            ModsCall.Census.Call(
+                "TownNPCCondition",
+                ModContent.NPCType<WITCH>(),
+                "Одолейте Высшую Каламитас"
+            );
         }
     }
 
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class WeakReferenceSupportAddCalamityInvasions : MonoModPatcher<string>
+    public class WeakReferenceSupportAddCalamityInvasions : ILEdit
     {
-        public override MethodInfo Method => ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetCachedMethod("AddCalamityInvasions");
-    
-        public override string ModderMethod => nameof(Translation);
-    
-        public static void Translation(ILContext il)
+        private readonly MethodInfo _addCalamityInvasions = ModsCall.Calamity?.Code.GetType("CalamityMod.WeakReferenceSupport")
+            .GetMethod("AddCalamityInvasions", BindingFlags.Static | BindingFlags.NonPublic);
+
+        private delegate void orig_AddCalamityInvasions(Mod bossChecklist, Mod calamity);
+        private delegate void hook_AddCalamityInvasions(orig_AddCalamityInvasions orig, Mod bossChecklist, Mod calamity);
+
+        private event hook_AddCalamityInvasions OnAddCalamityInvasions
         {
-            TranslationHelper.ILTranslation(il, "Use a [i:{0}] or wait for the invasion to occur naturally after the Eye of Cthulhu is defeated.", "Используйте [i:{0}] или дождитесь, пока событие произойдёт естественным образом после победы над глазом Ктулху.");
-            TranslationHelper.ILTranslation(il, "The mysterious creatures of the sulphuric sea descended back into the ocean.", "Таинственные существа сернистого моря спустились обратно в океан.");
-            TranslationHelper.ILTranslation(il, "Acid Rain", "Кислотный дождь");
-            TranslationHelper.ILTranslation(il, "Use a [i:{0}] or wait for the invasion to occur naturally after the Aquatic Scourge is defeated", "Используйте [i:{0}] или дождитесь, пока событие произойдёт естественным образом после победы над Акватическим бичом.");
-            TranslationHelper.ILTranslation(il, "The mysterious creatures of the sulphuric sea descended back into the deep ocean.", "Таинственные существа сернистого моря спустились обратно в глубины океана.");
-            TranslationHelper.ILTranslation(il, "Acid Rain (Post-AS)", "Кислотный дождь (Пост-Аб)");
-            TranslationHelper.ILTranslation(il, "Use a [i:{0}] or wait for the invasion to occur naturally after the Polterghast is defeated", "Используйте [i:{0}] или дождитесь, пока событие произойдёт естественным образом после победы над Полтергастом.");
-            TranslationHelper.ILTranslation(il, "Acid Rain (Post-Polter)", "Кислотный дождь (Пост-Полтер)");
-            TranslationHelper.ILTranslation(il, "The mysterious creatures of the sulphuric sea descended back into the deep ocean.", "Таинственные существа сернистого моря спустились обратно в глубины океана.", 2);
+            add => HookEndpointManager.Add<hook_AddCalamityInvasions>(_addCalamityInvasions, value);
+            remove => HookEndpointManager.Remove<hook_AddCalamityInvasions>(_addCalamityInvasions, value);
+        }
+
+        public override bool Autoload() => ModsCall.Calamity != null && ModsCall.BossChecklist != null && TranslationHelper.IsRussianLanguage;
+    
+        public override void Load()
+        {
+            OnAddCalamityInvasions += Translation;
+        }
+    
+        public override void Unload()
+        {
+            OnAddCalamityInvasions -= Translation;
+        }
+    
+        private void Translation(orig_AddCalamityInvasions orig, Mod bossChecklist, Mod calamity)
+        {
+            List<int> acidRainPreHardNpc = AcidRainEvent.PossibleEnemiesPreHM.Select(enemy => enemy.Key).ToList();
+
+            ModsCall.BossChecklist.Call(
+                "AddEvent",
+                2.4f,
+                acidRainPreHardNpc,
+                ModsCall.Calamity,
+                "Кислотный дождь",
+                (Func<bool>)(() => CalamityWorld.downedEoCAcidRain),
+                new List<int> { ModContent.ItemType<CausticTear>() },
+                new List<int> { ModContent.ItemType<RadiatingCrystal>() },
+                new List<int>
+                { 
+                    ModContent.ItemType<SulfuricScale>(), ModContent.ItemType<ParasiticSceptor>(),
+                    ModContent.ItemType<CausticCroakerStaff>()
+                },
+                $"Используйте [i:{ModContent.ItemType<CausticTear>()}] или дождитесь, пока событие произойдёт естественным образом после победы над глазом Ктулху.",
+                CalamityUtils.ColorMessage("Таинственные существа сернистого моря спустились обратно в океан.", new Color(146, 183, 116)),
+                "CalamityMod/Events/AcidRainT1_BossChecklist",
+                "CalamityMod/ExtraTextures/UI/AcidRainIcon",
+                null
+            );
+
+            List<int> acidRainPostASNpc = AcidRainEvent.PossibleEnemiesAS.Select(enemy => enemy.Key).ToList();
+            acidRainPostASNpc.Add(ModContent.NPCType<IrradiatedSlime>());
+            acidRainPostASNpc.AddRange(AcidRainEvent.PossibleMinibossesAS.Select(miniboss => miniboss.Key));
+
+            ModsCall.BossChecklist.Call(
+                "AddEvent",
+                7.51f,
+                acidRainPostASNpc,
+                ModsCall.Calamity,
+                "Кислотный дождь (Пост-Аб)",
+                (Func<bool>)(() => CalamityWorld.downedAquaticScourgeAcidRain),
+                new List<int> { ModContent.ItemType<CausticTear>() },
+                new List<int> { ModContent.ItemType<RadiatingCrystal>() },
+                new List<int>
+                { 
+                    ModContent.ItemType<SulfuricScale>(), ModContent.ItemType<CorrodedFossil>(),
+                    ModContent.ItemType<LeadCore>(), ModContent.ItemType<NuclearRod>(),
+                    ModContent.ItemType<ParasiticSceptor>(), ModContent.ItemType<CausticCroakerStaff>(),
+                    ModContent.ItemType<FlakToxicannon>(), ModContent.ItemType<OrthoceraShell>(),
+                    ModContent.ItemType<SkyfinBombers>(), ModContent.ItemType<SlitheringEels>(),
+                    ModContent.ItemType<SpentFuelContainer>(), ModContent.ItemType<SulphurousGrabber>()
+                },
+                $"Используйте [i:{ModContent.ItemType<CausticTear>()}] или дождитесь, пока событие произойдёт естественным образом после победы над Акватическим бичом.",
+                CalamityUtils.ColorMessage("Таинственные существа сернистого моря спустились обратно в глубины океана.", new Color(146, 183, 116)),
+                "CalamityMod/Events/AcidRainT2_BossChecklist",
+                "CalamityMod/ExtraTextures/UI/AcidRainIcon",
+                null
+            );
+
+            List<int> acidRainPostPolterNpc = AcidRainEvent.PossibleEnemiesPolter.Select(enemy => enemy.Key).ToList();
+            acidRainPostPolterNpc.AddRange(AcidRainEvent.PossibleMinibossesPolter.Select(miniboss => miniboss.Key));
+
+            ModsCall.BossChecklist.Call(
+                "AddEvent",
+                16.49f,
+                acidRainPostPolterNpc,
+                ModsCall.Calamity,
+                "Кислотный дождь (Пост-Полтер)",
+                (Func<bool>)(() => CalamityWorld.downedBoomerDuke),
+                new List<int> { ModContent.ItemType<CausticTear>() },
+                new List<int> { ModContent.ItemType<RadiatingCrystal>() },
+                new List<int>
+                { 
+                    ModContent.ItemType<SulfuricScale>(), ModContent.ItemType<CorrodedFossil>(),
+                    ModContent.ItemType<LeadCore>(), ModContent.ItemType<NuclearRod>(),
+                    ModContent.ItemType<ParasiticSceptor>(), ModContent.ItemType<CausticCroakerStaff>(),
+                    ModContent.ItemType<FlakToxicannon>(), ModContent.ItemType<OrthoceraShell>(),
+                    ModContent.ItemType<SkyfinBombers>(), ModContent.ItemType<SlitheringEels>(),
+                    ModContent.ItemType<SpentFuelContainer>(), ModContent.ItemType<SulphurousGrabber>(),
+                    ModContent.ItemType<GammaHeart>(), ModContent.ItemType<PhosphorescentGauntlet>()
+                },
+                $"Используйте [i:{ModContent.ItemType<CausticTear>()}] или дождитесь, пока событие произойдёт естественным образом после победы над Полтергастом.",
+                CalamityUtils.ColorMessage("Таинственные существа сернистого моря спустились обратно в глубины океана.", new Color(146, 183, 116)),
+                "CalamityMod/Events/AcidRainT3_BossChecklist",
+                "CalamityMod/ExtraTextures/UI/AcidRainIcon",
+                null
+            );
         }
     }
 }
