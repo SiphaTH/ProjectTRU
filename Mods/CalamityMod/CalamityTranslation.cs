@@ -21,7 +21,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod
             TilesTranslation = CalamityCatalog.Tiles;
         }
 
-         private Version _expectedCalamityVersion = new Version(1, 5, 1, 2);
+         private Version _expectedCalamityVersion = new Version(1, 5, 1, 3);
 
          public override void Load()
          {

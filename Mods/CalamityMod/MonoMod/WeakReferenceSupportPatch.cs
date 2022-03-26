@@ -24,6 +24,7 @@ using CalamityRuTranslate.Core.MonoMod;
 using Microsoft.Xna.Framework;
 using MonoMod.Cil;
 using MonoMod.RuntimeDetour.HookGen;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
@@ -224,7 +225,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
                 new List<int> { ModContent.ItemType<CausticTear>() },
                 new List<int> { ModContent.ItemType<RadiatingCrystal>() },
                 new List<int>
-                { 
+                {
                     ModContent.ItemType<SulfuricScale>(), ModContent.ItemType<ParasiticSceptor>(),
                     ModContent.ItemType<CausticCroakerStaff>()
                 },
@@ -249,7 +250,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
                 new List<int> { ModContent.ItemType<CausticTear>() },
                 new List<int> { ModContent.ItemType<RadiatingCrystal>() },
                 new List<int>
-                { 
+                {
                     ModContent.ItemType<SulfuricScale>(), ModContent.ItemType<CorrodedFossil>(),
                     ModContent.ItemType<LeadCore>(), ModContent.ItemType<NuclearRod>(),
                     ModContent.ItemType<ParasiticSceptor>(), ModContent.ItemType<CausticCroakerStaff>(),
@@ -277,14 +278,16 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
                 new List<int> { ModContent.ItemType<CausticTear>() },
                 new List<int> { ModContent.ItemType<RadiatingCrystal>() },
                 new List<int>
-                { 
+                {
+                    ItemID.SharkFin,
                     ModContent.ItemType<SulfuricScale>(), ModContent.ItemType<CorrodedFossil>(),
                     ModContent.ItemType<LeadCore>(), ModContent.ItemType<NuclearRod>(),
                     ModContent.ItemType<ParasiticSceptor>(), ModContent.ItemType<CausticCroakerStaff>(),
                     ModContent.ItemType<FlakToxicannon>(), ModContent.ItemType<OrthoceraShell>(),
                     ModContent.ItemType<SkyfinBombers>(), ModContent.ItemType<SlitheringEels>(),
                     ModContent.ItemType<SpentFuelContainer>(), ModContent.ItemType<SulphurousGrabber>(),
-                    ModContent.ItemType<GammaHeart>(), ModContent.ItemType<PhosphorescentGauntlet>()
+                    ModContent.ItemType<GammaHeart>(), ModContent.ItemType<PhosphorescentGauntlet>(),
+                    ModContent.ItemType<SulphuricAcidCannon>()
                 },
                 $"Используйте [i:{ModContent.ItemType<CausticTear>()}] или дождитесь, пока событие произойдёт естественным образом после победы над Полтергастом.",
                 CalamityUtils.ColorMessage("Таинственные существа сернистого моря спустились обратно в глубины океана.", new Color(146, 183, 116)),

@@ -45,15 +45,15 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
             "Hold the attack button to swing Galaxia around you, accelerating over time. The swirling nebula constantly emits homing cosmic bolts",
             "Releasing the attack button hurls the sword towards your cursor alongside a burst of 6 gigantic cosmic bolts. The sword then quickly returns to your hand",
             "Polaris' Gaze",
-            "Hold the attack button to channel the Northern Star's power into a tight vortex of galactic energies, bound by concentric rings of stars. The vortex powers up over time and when hitting enemies",
+            "Hold the attack button to channel the Northern Star's power into a tight vortex of galactic energies, bound by concentric rings of stars.\nThe vortex powers up over time and when hitting enemies",
             "Release the attack button to fire off the charged star. Attacking again immediately thereafter dashes to the star, emitting a nova of cosmic bolts",
             "Mercurial Tides",
-            "Hold the attack button to charge a heaven-shattering lunge, release to unleash the devastating blow. Shock waves are emitted as the sword charges up",
+            "Hold the attack button to charge a heaven-shattering lunge, release to unleash the devastating blow.\nShock waves are emitted as the sword charges up",
             "Striking the earth with the lunge will cause a massive shock wave on impact which raises a flood of monoliths",
             "Periodically emit shock waves while attacking",
             "Sanguine Fury",
-            "Conjures molten blades in front of you that get larger and stronger the more you hit enemies. The blades can also be used to bounce off tiles when in the air",
-            "Releasing the attack button sends the charged blades hurtling forwards like a wheel. Attacking again immediately thereafter dashes to the wheel, shredding anything in the way",
+            "Conjures molten blades in front of you that get larger and stronger the more you hit enemies.\nThe blades can also be used to bounce off tiles when in the air",
+            "Releasing the attack button sends the charged blades hurtling forwards like a wheel.\n Attacking again immediately thereafter dashes to the wheel, shredding anything in the way",
             "Striking enemies rarely steals a small amount of life",
             "Grovetender's Touch",
             "Throw out the blade using a vine whip. Striking enemies with the tip of the whip as it cracks guarantees a critical hit. The whip will also propel you towards struck tiles",
@@ -63,7 +63,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
             "Releasing the attack button after the blades are fully charged sends them hurtling forwards to shred your foes",
             "Spreading vines sprout from critical strikes. These vines can hit up to three targets",
             "Swordsmith's Pride",
-            "Hold the attack button to swing the sword around you, accelerating over time. Sword beams are fired wildly while swinging",
+            "Sword beams are fired wildly while swinging",
             "Releasing the attack button hurls the sword towards your cursor. Sword beams home onto enemies struck by the thrown sword",
             "All attacks have a chance to fire sword beams"
         };
@@ -82,6 +82,90 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
                         tooltip.text = tooltip.text.Replace(_attunementTooltips[i], LangHelper.GetTextValue($"Calamity.AttunementTooltip.{i}"));
                     }
                 }
+            }
+
+            if (item.type == ModContent.ItemType<BiomeBlade>())
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                {
+                    tooltip.text = tooltip.text.Replace("Does nothing..yet", "Ничего не делает... пока");
+                });
+
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
+                {
+                    tooltip.text = tooltip.text
+                        .Replace("Main Attunement", "Основная настройка")
+                        .Replace("None", "Нет");
+                });
+
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
+                {
+                    tooltip.text = tooltip.text
+                        .Replace("Secondary Attunement", "Вторичная настройка")
+                        .Replace("None", "Нет");
+                });
+            }
+
+            if (item.type == ModContent.ItemType<OmegaBiomeBlade>())
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                {
+                    tooltip.text = tooltip.text.Replace("Does nothing..yet\nIt seems that upgrading the blade expanded the scope of the previous attunements", "Ничего не делает... пока\nПохоже, что улучшение клинка расширило возможности предыдущих настроек");
+                });
+
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+                {
+                    tooltip.text = tooltip.text.Replace("Your secondary attunement can now provide passive bonuses", "Ваша вторичная настройка теперь может давать пассивные бонусы");
+                });
+
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
+                {
+                    tooltip.text = tooltip.text
+                        .Replace("Active Attunement", "Активная настройка")
+                        .Replace("None", "Нет");
+                });
+
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
+                {
+                    tooltip.text = tooltip.text
+                        .Replace("Passive Attunement", "Пассивная настройка")
+                        .Replace("None", "Нет");
+                });
+            }
+
+            if (item.type == ModContent.ItemType<TrueBiomeBlade>())
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                {
+                    tooltip.text = tooltip.text.Replace("Does nothing..yet\nRepairing the blade seems to have improved its attuning capacities", "Ничего не делает... пока\nПохоже, что восстановление клинка улучшило его возможности настройки");
+                });
+
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
+                {
+                    tooltip.text = tooltip.text
+                        .Replace("Main Attunement", "Основная настройка")
+                        .Replace("None", "Нет");
+                });
+
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
+                {
+                    tooltip.text = tooltip.text
+                        .Replace("Secondary Attunement", "Вторичная настройка")
+                        .Replace("None", "Нет");
+                });
+            }
+
+            if (item.type == ModContent.ItemType<FourSeasonsGalaxia>())
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
+                {
+                    tooltip.text = tooltip.text.Replace("Active Attunement", "Активная настройка");
+                });
+
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
+                {
+                    tooltip.text = tooltip.text.Replace("Passive Blessing", "Пассивное благословение");
+                });
             }
         }
     }
