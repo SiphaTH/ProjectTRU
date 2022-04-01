@@ -4928,7 +4928,6 @@ namespace CalamityRuTranslate.Catalogs
             "BossRushTierFourEndText",
             "BossRushTierFourEndText2",
             "BossRushTierFiveEndText",
-            "BossSpawnText",
             "MeleeLevelUp",
             "MeleeLevelUpFinal",
             "RangedLevelUp",
