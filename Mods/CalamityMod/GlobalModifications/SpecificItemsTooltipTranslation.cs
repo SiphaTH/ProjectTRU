@@ -152,7 +152,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
             {
                 ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
                 {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.CosmicWorm.Tooltip1");
+                    tooltip.text = ModsCall.DownedFlag ? LangHelper.GetTextValue("Calamity.ItemTooltip.CosmicWorm.Tooltip1") : "";
                 });
             }
             else if (item.type == ModContent.ItemType<BlunderBooster>())
