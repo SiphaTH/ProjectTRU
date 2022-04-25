@@ -514,7 +514,7 @@ namespace CalamityRuTranslate.Vanilla
             ModsCall.Calamity?.ItemType("TitanArm"),
             ModsCall.Calamity?.ItemType("Trinity"),
             ModsCall.Calamity?.ItemType("TrueBloodyEdge"),
-            ModsCall.Calamity?.ItemType("CausticEdge"),
+            ModsCall.Calamity?.ItemType("TrueCausticEdge"),
             ModsCall.Calamity?.ItemType("TyphonsGreed"),
             ModsCall.Calamity?.ItemType("UrchinFlail"),
             ModsCall.Calamity?.ItemType("VirulentKatana"),
