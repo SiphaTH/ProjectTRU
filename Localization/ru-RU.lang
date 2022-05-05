@@ -6841,7 +6841,7 @@ Calamity.ItemName.TitaniumRailgun=Титановый рельсотрон
 Calamity.ItemTooltip.TitaniumRailgun=Стреляет лазером
 
 Calamity.ItemName.Toxibow=Токсилук
-Calamity.ItemTooltip.Toxibow=Превращает деревянные стрелы в медленные стрелами, которые иногда накладывают дебафф «{$Mods.CalamityRuTranslate.Calamity.BuffName.SulphuricPoisoning}»
+Calamity.ItemTooltip.Toxibow=Превращает деревянные стрелы в медленные стрелы, которые иногда накладывают дебафф «{$Mods.CalamityRuTranslate.Calamity.BuffName.SulphuricPoisoning}»
 
 Calamity.ItemName.Triploon=Триплун
 Calamity.ItemTooltip.Triploon=Запускает три гарпуна
