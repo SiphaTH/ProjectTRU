@@ -25,7 +25,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod
             TranslationHelper.ILTranslation(il, "Abominationn has destroyed everyone.", "Мерзостть уничтожил всех.");
             TranslationHelper.ILTranslation(il, "Mutant", "Мутант");
             TranslationHelper.ILTranslation(il, "Throw [i:{0}] into a pool of lava while Abominationn is alive in Mutant's presence.", "Бросьте [i:{0}] в лаву, пока Мерзостть жив и в присутствие Мутанта.");
-            TranslationHelper.ILTranslation(il, "Mutant has eviscerated everyone under its hands.", "Мутант выпотрошил всех своими руки.");
+            TranslationHelper.ILTranslation(il, "Mutant has eviscerated everyone under its hands.", "Мутант выпотрошил всех своими руками");
         }
     }
     
@@ -49,7 +49,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod
             TranslationHelper.ILTranslation(il, "Spawn by using [i:{0}] in the underworld.", "Используйте [i:{0}] в аду.");
             TranslationHelper.ILTranslation(il, "Champion of Earth disappears beneath the magma...", "Чемпион планеты исчезает под магмой...");
             TranslationHelper.ILTranslation(il, "Champion of Nature", "Чемпион природы");
-            TranslationHelper.ILTranslation(il, "Spawn by using [i:{0}] in underground snow.", "Используйте [i:{0}] подземных снегах.");
+            TranslationHelper.ILTranslation(il, "Spawn by using [i:{0}] in underground snow.", "Используйте [i:{0}] в подземных снегах.");
             TranslationHelper.ILTranslation(il, "Champion of Nature returns to its slumber...", "Чемпион природы возвращается в свой сон...");
             TranslationHelper.ILTranslation(il, "Champion of Life", "Чемпион жизни");
             TranslationHelper.ILTranslation(il, "Spawn by using [i:{0}] in the Hallow at day.", "Используйте [i:{0}] днём в святых землях.");

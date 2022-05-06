@@ -17,7 +17,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod
 
         public static void Translation(ILContext il)
         {
-            TranslationHelper.ILTranslation(il, "The altar's light shines on you!", "Свет алтаря падает на вас!");
+            TranslationHelper.ILTranslation(il, "The altar's light shines on you!", "Свет алтаря озаряет вас!");
         }
     }
 }
