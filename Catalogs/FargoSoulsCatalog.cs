@@ -119,7 +119,7 @@ namespace CalamityRuTranslate.Catalogs
             "CrystalSkull",
             "CrimetroidBuff",
             "Frozen",
-            //"PrimeMinionBuff"
+            "PrimeMinionBuff"
         };
 
         public static List<string> ItemsName = new List<string>
