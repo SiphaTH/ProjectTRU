@@ -25,7 +25,7 @@ namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod
             TranslationHelper.ILTranslation(il, "Abominationn has destroyed everyone.", "Мерзостть уничтожил всех.");
             TranslationHelper.ILTranslation(il, "Mutant", "Мутант");
             TranslationHelper.ILTranslation(il, "Throw [i:{0}] into a pool of lava while Abominationn is alive in Mutant's presence.", "Бросьте [i:{0}] в лаву, пока Мерзостть жив и в присутствие Мутанта.");
-            TranslationHelper.ILTranslation(il, "Mutant has eviscerated everyone under its hands.", "Мутант выпотрошил всех своими руками");
+            TranslationHelper.ILTranslation(il, "Mutant has eviscerated everyone under its hands.", "Мутант выпотрошил всех своими руками.");
         }
     }
     
