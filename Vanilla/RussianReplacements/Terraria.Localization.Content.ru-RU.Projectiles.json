@@ -724,7 +724,7 @@
 		"BookStaffShot": "Книга бесконечной мудрости",
 		"DD2Win": "Победа!",
 		"DD2JavelinHostileT3": "{$ProjectileName.DD2JavelinHostile}",
-		"Celeb2Weapon": "«Празднование», обр. №2",
+		"Celeb2Weapon": "«Празднование», обр. №2",
 		"Celeb2Rocket": "{$ProjectileName.Celeb2Weapon}",
 		"Celeb2RocketExplosive": "{$ProjectileName.Celeb2Weapon}",
 		"Celeb2RocketLarge": "{$ProjectileName.Celeb2Weapon}",
