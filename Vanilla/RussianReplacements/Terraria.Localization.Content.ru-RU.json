@@ -150,7 +150,7 @@
 		"GOBLIN_PUNTER_Name": "Спекулянт гоблинов",
 		"GOBLIN_PUNTER_Description": "Остановить нашествие гоблинов — сброд из кучки грубых, неотёсанных воинов с заострёнными ушами и их тёмных магов.",
 		"WALK_THE_PLANK_Name": "Прогулка по доске",
-		"WALK_THE_PLANK_Description": "Остановить нашествие пиратов — кучку грабителей, пришедших за ваших добром… и вашей жизнью!",
+		"WALK_THE_PLANK_Description": "Остановить нашествие пиратов — кучку грабителей, пришедших за ваших добром... и вашей жизнью!",
 		"KILL_THE_SUN_Name": "Погасить солнце",
 		"KILL_THE_SUN_Description": "Пережить солнечное затмение — день темнее ночи, наполненный ужасными созданиями.",
 		"DO_YOU_WANT_TO_SLAY_A_SNOWMAN_Name": "За окном уже бандиты!",
@@ -185,7 +185,7 @@
 		"VEHICULAR_MANSLAUGHTER_Description": "Переехать врага вагонеткой.",
 		"BULLDOZER_Name": "Бульдозер",
 		"BULLDOZER_Description": "Разрушить 10.000 блоков.",
-		"THERE_ARE_SOME_WHO_CALL_HIM_Name": "Существует тот, кого зовут…",
+		"THERE_ARE_SOME_WHO_CALL_HIM_Name": "Существует тот, кого зовут...",
 		"THERE_ARE_SOME_WHO_CALL_HIM_Description": "Убить Тима.",
 		"DECEIVER_OF_FOOLS_Name": "Обманщица глупцов",
 		"DECEIVER_OF_FOOLS_Description": "Убить нимфу.",
@@ -205,7 +205,7 @@
 		"THE_CAVALRY_Description": "Воспользоваться средством передвижения.",
 		"COMPLETELY_AWESOME_Name": "Просто потрясающе",
 		"COMPLETELY_AWESOME_Description": "Заполучить «Мини-акулу».",
-		"TIL_DEATH_Name": "Пока смерть не разлучит нас…",
+		"TIL_DEATH_Name": "Пока смерть не разлучит нас...",
 		"TIL_DEATH_Description": "Убить жениха.",
 		"ARCHAEOLOGIST_Name": "Археолог",
 		"ARCHAEOLOGIST_Description": "Убить доктора Бонса.",
@@ -424,7 +424,7 @@
 		"UnableToLoadWorld": "Не удалось загрузить мир:",
 		"UnableToWritePreferences": "Не удалось записать файл в {0}",
 		"InvalidLobbyFlag": "Флаг -lobby используется без «{1}» или «{2}». Не обращайте внимания.",
-		"CaptureError": "При сохранении записи возникла ошибка. Повторная попытка…"
+		"CaptureError": "При сохранении записи возникла ошибка. Повторная попытка..."
 	},
 	"Game": {
 		"Actuators": "Актуаторы",
@@ -476,7 +476,7 @@
 		"BallBounceResultGolf_Plural": "{0} забивает {1} в лунку с {2} ударов!",
 		"BallBounceResultGolf_Single": "{0} забивает {1} в лунку с {2}-го удара!",
 		"ReservedForNPC": "Забронировано для персонажа {0}",
-		"DarknessDanger": "Здесь так темно… вы чувствуете опасность…",
+		"DarknessDanger": "Здесь так темно... вы чувствуете опасность...",
 		"DarknessSafe": "Опасность тьмы миновала."
 	},
 	"GameUI": {
