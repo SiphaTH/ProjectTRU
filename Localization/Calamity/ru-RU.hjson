@@ -627,7 +627,7 @@
     
             HolyWrathBuff: {
                 Name: Священный гнев
-                Description: "Урон увеличен; все атаки накладывают «{$Mods.CalamityRuTranslate.Buffs.HolyFlames.Name}»"
+                Description: "Урон увеличен; все атаки накладывают дебафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.HolyFlames.Name}»"
             }
 
             Omniscience: {
@@ -798,7 +798,7 @@
     
             DivineBless: {
                 Name: Божественное благословение
-                Description: "Регенерация здоровья увеличена и ваши миньоны накладывают дебафф «{$Mods.CalamityRuTranslate.Buffs.BanishingFire.Name}»"
+                Description: "Регенерация здоровья увеличена и ваши миньоны накладывают дебафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.BanishingFire.Name}»"
             }
     
             ElysianGuard: {
