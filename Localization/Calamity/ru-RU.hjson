@@ -1612,12 +1612,12 @@
         }
         
         Bestiary: {
-            Bloatfish: Heavy, large fish which can easily resist the crushing pressure of the depths and any weapon which might attempt to pierce its tough skin.
-            BobbitWormHead: An immense threat for those who dare venture into the depths. Nearly imperceptible when they choose to be, and lightning-fast when they attack, their jaws can cut through iron plates over half a foot thick.
-            BoxJellyfish: These seemingly inept masses of gelatin are anything but harmless. Let even one of their trailing tentacles brush you, and you will be heavily envenomed.
-            ChaoticPuffer: Anarchistic little devils, they swallow large amounts of water to inflate their bristling bodies. The water within them boils and bursts out in a scalding rush when they are killed.
-            ColossalSquid: With crushing tentacles that stretch out to over twice the length of a grown man, and toxic black ink, these are formidable predators indeed.
-            Cuttlefish: Should you feel something brush your legs in the depths of the abyss, it is likely that this is the culprit, tasting the waters for potential prey.
+            Bloatfish: Крупная рыба, которая может с лёгкостью противостоять как сокрушительному давлению глубин, так и любому оружию, что попытается пробить её жесткую кожу.
+            BobbitWormHead: Огромная угроза для всех, кто осмелится спуститься в глубины. Едва заметные, если они этого захотят, и молниеносные в атаке. Их челюсти способны прогрызть железные пластины толщиной более полуметра.
+            BoxJellyfish: Эти, казалось бы, глупые куски желатина совсем не безвредны. Стоит хоть одному из их щупалец коснуться вас - и вы сильно отравлены.
+            ChaoticPuffer: Маленькие анархичные отродья, глотающие большое количество воды, раздувая этим свои колючие тела. Вода внутри их тел закипает и при смерти вырывается наружу жгучим потоком.
+            ColossalSquid: Сокрушительные щупальца, более чем в два раза превышающие рост взрослого человека, и ядовитые чернила - таков залог успеха этого чудовищного хищника.
+            Cuttlefish: Если в глубинах Бездны вы внезапно почувствовали движение в районе ног, то, вполне вероятно, это и есть виновник, пробующий воду на вкус в поисках потенциальной добычи.
             DevilFish: A sturdy fish, which has spent a long time seething in the Abyss. Males are easily identified by their forward-facing horns, and females by their curled horns.
             DevilFishAlt: A sturdy fish, which has spent a long time seething in the Abyss. Males are easily identified by their forward-facing horns, and females by their curled horns.
             EidolonWyrmHead: Among any creature ever witnessed, it is these that stray furthest from our understanding. Such grand might, such mystery...
@@ -1648,7 +1648,7 @@
             Trilobite: Their shell is of notable hardness, and it carries the same weight as stone. It speaks of their strength, for them to be able to fling themselves about the way they do.
             WaterLeech: It can smell the scent of flesh from far distances and will eagerly squirm its way to the source. Once attached to the host, they rapidly intake blood and discharge venom, both of which heavily disadvantage its prey.
             AdultEidolonWyrmHead: Traces of them appear even in records going back to before the Golden Age of Dragons… They may very well be a glimpse into the full potential of nature.
-            AquaticScourgeHead: A species of scourge which has had its exoskeleton hardened and tempered by years of diving through sulphuric waters for prey. Its own jaws are now imbued with the venom of those seas.
+            AquaticScourgeHead: Вид бича, экзоскелет которого годами укреплялся и закалялся во время плавания в серных водах в вечном поиске пропитания. Сами его челюсти теперь пропитаны ядом этих морей.
             AquaticUrchin: A relative of its brethren in the far ocean, this one’s spines have been hardened by the sulphuric waters. They drip with the venom they inhabit, so it’s better to not be struck by them.
             Aries: Biologically, the creature suffers terribly. Its legs do not allow it to rest, constantly hopping across the infected landscape. It does not care as its mind is far gone. It continues this until death.
             AstralachneaGround: An arachnid taken over by the infection, it has lost its ability to spin webs and hosts a myriad of astral growths on its abdomen.
@@ -1669,9 +1669,9 @@
             Brimling: Fragments of the brimstone elemental which made their way into shells of slag, their eyes stare mindlessly into the distance, for targets to burn.
             BrimstoneElemental: A fallen goddess, past her prime of faithful worshippers. She feels an intense hatred for any being with enough self awareness to pity her.
             Bumblefuck: Known across the land for the swarms that have gathered in the jungle, they are nearly feared above all else in the, as though they may not be quite as dangerous as other forces, they have no master.
-            CalamitasClone: A mysterious burning form which only appears at night, wreathed in brimstone fire. It has a twisted mind and misplaced pride in its abilities.
-            Cataclysm: A shade of itself, the only actions it seems to know are to burn and kill.
-            Catastrophe: A violent, mindless construct. No good can come from raising the dead.
+            CalamitasClone: Загадочная пылающая форма, появляющаяся только ночью, окутанная серным огнем. Обладает извращенным сознанием и неуместной гордостью за свои способности.
+            Cataclysm: Лишь тень самого себя. Единственные действия, что он, кажется, знает - это жечь и убивать.
+            Catastrophe: Жестокий и неразумный конструкт. Воскрешение мертвецов не сулит ничего хорошего.
             CeaselessVoid: When the fabric of the universe is meddled with, especially by inexperienced beings, the risk of irreparable damage is very, very high.
             DarkEnergy: One of the many rifts created in the fabric of space by the Ceaseless Void. Some say you could even see a glimpse of another world if you gaze into it.
             CrabShroom: Mushrooms that grow only on Crabulon’s shell, feasting off the nutrients in the husk. By jolting its body, it flings these off in defense.
@@ -1683,11 +1683,11 @@
             HeatSpirit: A human spirit, its mind lost to the blazing orange fires of its dwelling. It seeks out and attempts to eliminate any source of moisture it can detect entering the hellscape.
             Scryllar: Twisted detritus of those who once came to harvest the remains of the crags. The whispers got to them.
             SoulSlurper: The remnants of a soul which has feasted, been feasted upon, and torn into the souls of others. No one knows how the cycle begins, but you don’t want to find out yourself.
-            Cryogen: A prismatic living ice crystal. Though typically glimpsed only through the harsh sleet of blizzards, on the rare days where it is seen during a sunny day, its body gleams a deadly, beautiful blue.
+            Cryogen: Призматический живой ледяной кристалл. И хоть обычно его можно наблюдать лишь сквозь слякоть метели, в те редкие дни, когда он пролетает в солнечный день, его тело мерцает губительно красивым синим цветом.
             DesertNuisanceHead: The starved spawn of the Desert Scourge. Like piranhas of the desert, they can swarm and tear apart smaller animals within seconds.
             DesertScourgeHead: If ever before you have peered out into the desert and seen entire dunes rise and fall like the waves of the sea, it is not unlikely that this is the culprit, as it bore through the sands below.
             CosmicGuardianHead: An interdimensional creation of the Devourer brought from its home dimension to aid it in battle. Nowhere near the strength of its sentinels.
-            DevourerofGodsHead: Its otherworldly ego is known as well as its overwhelming power across the land, as in battle it boasts constantly. Admittedly it is one of the few able to back up its claims.
+            DevourerofGodsHead: Его невероятное самомнение известно также, как и его подавляющая сила, повсюду, ведь во время боя он постоянно ею хвастается. Стоит признать, он один из немногих, кто может подтвердить свои заявления.
             RepairUnitCritter: Thanks to these little machines, the dusty labs still stand. It appears they're unable to deal with rust, though.
             Draedon: The esteemed scientist himself. His AI is uploaded into a database, far from harm, and thus destroying his recon bodies achieves nothing.
             Apollo: Within it, burns chemicals with the fury of Greek fire. Highly refined from the design of the eye-like twins before, it is now capable of outstanding mid-air movement.
@@ -1771,7 +1771,7 @@
             ProfanedGuardianCommander: When it turns its burning spear towards anything, its simple mind has a clear goal. To entirely eradicate the enemy.
             ProfanedGuardianDefender: The body it has formed boasts of a stone shell hallowed and tempered by the flames of the sun. Very little can fully shatter its defense.
             ProfanedGuardianHealer: Its crystal which is displayed prominently on its body is able to restore damage done to its kin, and it draws that damage into flares which steal your life.
-            Providence: A deity of stone and fire. Her flame burns for one reason alone— to cleanse the world of its sinful existence, and to purify those who live upon it.
+            Providence: Божество огня и камня. Её пламя пылает лишь ради одной цели - очищение мира от его грешного существования вместе со всеми, кто его населяет.
             RavagerBody: Flames roar from what almost appear to be the parapets of a rotting fortress. You will know when it is approaching downwind, from the smell alone.
             CosmicLantern: These lanterns allow their user to see through any darkness. They are not typically used for combat.
             Signus: A figure draped in dark robes and even darker history. No one knows the true form of this creature, though many rumors have been spread.
@@ -1799,15 +1799,15 @@
             SeaSerpent1: These eels are largely passive and drift languidly through the still waters of the sunken sea. Should you provoke them, they can be stubborn attackers.
             SepulcherHead: This might just be the vilest undead abomination in this realm. The Sepulcher itself is completely immune to physical damage, and can only be killed by destroying its many suspended organs.
             SoulSeekerSupreme: Incomplete, ghoulish skulls, their forms are limited but their devotion boundless. It’s likely each yearns for a soul of their own to be complete, whether it’s given by Calamitas or ripped from the foe they kill.
-            SupremeCalamitas: The Brimstone Witch's harsh life can be seen in the magic she casts. Volatile and powerful, yet just barely refined. Her temper is said to be fiery enough to burn down a kingdom.
-            SupremeCataclysm: Despite retaining a humanoid form, it is not capable of any higher thoughts. It only knows violence.
-            SupremeCatastrophe: Calamitas’ necromancy is outmatched by no one, but no one can truly bring the departed back from the dead.
-            DILF: His face shows great age, but also great wisdom. The Archmage once stood against the Jungle Tyrant and paid the price. He sells various frosty wares but of course, keeps the most powerful spells to himself.
-            FAP: No one knows where she came from, but no one minds her either. She’s a good person to share a drink with, given you don’t make her mad.
-            SEAHOE: The Sea King of an ancient civilization long lost to the sands of time— and the desert. He is able to give useful advice on the world around you, having lived for so long. He also used to like clams.
-            THIEF: A kleptomaniac who is a bit of a coward when it comes to face-to-face fights. She’s rather good at getting herself both into and out of dicey situations.
-            WITCH: A most surprising sight to see this powerful foe live along friendly faces. Will history repeat itself or has she finally managed to free herself from the Tyrant’s grasp?
-            Yharon: Perhaps… the last of its kind. It could decimate this Jungle in an instant if it wished, however, it seems to take great care in not doing so.
+            SupremeCalamitas: Суровая жизнь Серной Ведьмы видна по магии, что она плетёт. Изменчивая и мощная, но в то же время утонченная. Её же темперамент, по слухам, настолько вспыльчив, что способен превратить в пепел целое королевство.
+            SupremeCataclysm: Несмотря на сохранение гуманоидной формы, ему не ведомы никакие высшие мысли. Он знает только насилие.
+            SupremeCatastrophe: Никто не способен превзойти Каламитас в мастерстве некромантии, но и никто не способен по-настоящему воскрешать из мёртвых.
+            DILF: На его лице виден как большой возраст, так и великая мудрость. Однажды Архимаг выступил против Тирана Джунглей и поплатился за это. Он продает различные ледяные побрякушки, но самые мощные заклинания, конечно же, держит при себе.
+            FAP: Никто не знает, откуда она появилась, но никто и не против её присутствия. Она хороший человек, с которым можно выпить, ну, если только не вывести её из себя.
+            SEAHOE: Морской король древней цивилизации, ныне затерянной в песках времени (и пустыни). Дожив до этих дней, он способен дать полезные советы об окружающем вас мире. И ещё ему нравятся моллюски.
+            THIEF: Клептоманьячка, немного пасующая, когда дело доходит до драк лицом к лицу. Она мастер попадать в опасные ситуации и выпутываться из них.
+            WITCH: Сколь удивительное зрелище - видеть этого могущественного врага в живых, да ещё и рядом с дружелюбными лицами. Повторится ли история, или же ей наконец удалось вырваться из крепкой хватки Тирана?
+            Yharon: Возможно... последний в своем роде. Он мог бы уничтожить джунгли в одно мгновение, если бы захотел, однако, кажется, он осторожен, чтобы не допустить такого.
         }
         
         Attunements: {
