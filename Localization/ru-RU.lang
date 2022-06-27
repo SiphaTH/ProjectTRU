@@ -3516,7 +3516,7 @@ Calamity.ItemTooltip.ColossalSquidBanner={$CommonItemTooltip.BannerBonus}{$Mods.
 Calamity.ItemName.CosmicElementalBanner=Знамя космического элементаля
 Calamity.ItemTooltip.CosmicElementalBanner={$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.Calamity.NpcName.CosmicElemental}
 
-Calamity.ItemName.CrimulanBlightSlimeBanner=Знамя кримтанового гибельного слизня
+Calamity.ItemName.CrimulanBlightSlimeBanner=Знамя багротанового гибельного слизня
 Calamity.ItemTooltip.CrimulanBlightSlimeBanner={$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.Calamity.NpcName.CrimulanBlightSlime}
 
 Calamity.ItemName.CryonBanner=Знамя криона
@@ -5167,7 +5167,7 @@ Calamity.ItemName.Grax=Гракс
 Calamity.ItemTooltip.Grax=Удар по врагу значительно повысит вашу защиту, урон и шанс критического удара ближнего боя на короткое время\nНажмите ПКМ, чтобы использовать как обычное оружие без разрушения стен или вырубки деревьев
 
 Calamity.ItemName.GreatbayPickaxe=Кирка великого залива
-Calamity.ItemTooltip.GreatbayPickaxe=Может добывать демонит, кримтан и метеорит
+Calamity.ItemTooltip.GreatbayPickaxe=Способна добывать демонит, багротан и метеорит
 
 Calamity.ItemName.InfernaCutter=Резак ада
 Calamity.ItemTooltip.InfernaCutter=Критические удары клинком вызывают небольшие взрывы\nФормирует несколько мелких искр при взмахе
@@ -8190,7 +8190,7 @@ Calamity.NpcName.CrawlerEmerald=Изумрудный ползун
 Calamity.NpcName.CrawlerRuby=Рубиновый ползун
 Calamity.NpcName.CrawlerSapphire=Сапфировый ползун
 Calamity.NpcName.CrawlerTopaz=Топазовый ползун
-Calamity.NpcName.CrimulanBlightSlime=Кримтановый гибельный слизень
+Calamity.NpcName.CrimulanBlightSlime=Багротановый гибельный слизень
 Calamity.NpcName.Cryocore=Криоядро
 Calamity.NpcName.Cryocore2=Криоядро
 Calamity.NpcName.Cryon=Крион
@@ -8285,13 +8285,13 @@ Calamity.NpcName.Signus=Сигнус, Посланник Пожирателя
 Calamity.NpcName.SignusBomb=Космическая мина
 Calamity.NpcName.SlimeGod=Эбонитовый Бог слизней
 Calamity.NpcName.SlimeGodCore=Бог слизней
-Calamity.NpcName.SlimeGodRun=Кримтановый Бог слизней
-Calamity.NpcName.SlimeGodRunSplit=Кримтановый Бог слизней
+Calamity.NpcName.SlimeGodRun=Багротановый Бог слизней
+Calamity.NpcName.SlimeGodRunSplit=Багротановый Бог слизней
 Calamity.NpcName.SlimeGodSplit=Эбонитовый Бог слизней
 Calamity.NpcName.SlimeSpawnCorrupt=Искажённый слизень
 Calamity.NpcName.SlimeSpawnCorrupt2=Искажённый слизень
-Calamity.NpcName.SlimeSpawnCrimson=Багряный слизень
-Calamity.NpcName.SlimeSpawnCrimson2=Багряный слизень
+Calamity.NpcName.SlimeSpawnCrimson=Багровый слизень
+Calamity.NpcName.SlimeSpawnCrimson2=Багровый слизень
 Calamity.NpcName.StormWeaverBody=Штормовой ткач
 Calamity.NpcName.StormWeaverHead=Штормовой ткач
 Calamity.NpcName.StormWeaverTail=Штормовой ткач

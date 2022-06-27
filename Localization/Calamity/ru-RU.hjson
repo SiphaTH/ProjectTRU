@@ -1614,13 +1614,13 @@
         Bestiary: {
             Bloatfish: Крупная рыба, которая может с лёгкостью противостоять как сокрушительному давлению глубин, так и любому оружию, что попытается пробить её жесткую кожу.
             BobbitWormHead: Огромная угроза для всех, кто осмелится спуститься в глубины. Едва заметные, если они этого захотят, и молниеносные в атаке. Их челюсти способны прогрызть железные пластины толщиной более полуметра.
-            BoxJellyfish: Эти, казалось бы, глупые куски желатина совсем не безвредны. Стоит хоть одному из их щупалец коснуться вас - и вы сильно отравлены.
+            BoxJellyfish: Эти, казалось бы, глупые куски желатина совсем не безвредны. Стоит хоть одному из их щупалец коснуться вас - и вы будете сильно отравлены.
             ChaoticPuffer: Маленькие анархичные отродья, глотающие большое количество воды, раздувая этим свои колючие тела. Вода внутри их тел закипает и при смерти вырывается наружу жгучим потоком.
             ColossalSquid: Сокрушительные щупальца, более чем в два раза превышающие рост взрослого человека, и ядовитые чернила - таков залог успеха этого чудовищного хищника.
             Cuttlefish: Если в глубинах Бездны вы внезапно почувствовали движение в районе ног, то, вполне вероятно, это и есть виновник, пробующий воду на вкус в поисках потенциальной добычи.
             DevilFish: A sturdy fish, which has spent a long time seething in the Abyss. Males are easily identified by their forward-facing horns, and females by their curled horns.
             DevilFishAlt: A sturdy fish, which has spent a long time seething in the Abyss. Males are easily identified by their forward-facing horns, and females by their curled horns.
-            EidolonWyrmHead: Among any creature ever witnessed, it is these that stray furthest from our understanding. Such grand might, such mystery...
+            EidolonWyrmHead: Из всех когда-либо виденных существ, именно они наиболее далеки от нашего понимания. Какова же мощь, какова тайна...
             GiantSquid: A massive squid, having gained its size from the abundance of prey and little competition in its habitat. Its eyes are specially adapted to seeking out prey in the darkness.
             GulperEelHead: Massive in length and in breadth, this eel resides in the deeper caverns of the abyss. Its jaws have the curious ability to hyperextend and swallow nearly any prey it sets its eyes upon.
             Laserfish: Its eyes are blinded by bacteria that gather in large sacs on its head. As it swims through the waters, relying on primitive echolocation, the bacteria are able to release concussive blasts to clear its path.
@@ -1647,8 +1647,8 @@
             SulphurousSkater: From below, the tips of their legs barely penetrate the surface of the water, and it is hard to distinguish their movements from the rain on the water’s surface.
             Trilobite: Their shell is of notable hardness, and it carries the same weight as stone. It speaks of their strength, for them to be able to fling themselves about the way they do.
             WaterLeech: It can smell the scent of flesh from far distances and will eagerly squirm its way to the source. Once attached to the host, they rapidly intake blood and discharge venom, both of which heavily disadvantage its prey.
-            AdultEidolonWyrmHead: Traces of them appear even in records going back to before the Golden Age of Dragons… They may very well be a glimpse into the full potential of nature.
-            AquaticScourgeHead: Вид бича, экзоскелет которого годами укреплялся и закалялся во время плавания в серных водах в вечном поиске пропитания. Сами его челюсти теперь пропитаны ядом этих морей.
+            AdultEidolonWyrmHead: Их упоминания в истории прослеживаются даже в записях, относящихся к периоду, предшествующему Золотому веку драконов... Они вполне могут быть проблеском истинного потенциала природы.
+            AquaticScourgeHead: Разновидность бича, экзоскелет которого годами укреплялся и закалялся во время плавания в серных водах для пропитания. Сами его челюсти теперь пропитаны ядом этих морей.
             AquaticUrchin: A relative of its brethren in the far ocean, this one’s spines have been hardened by the sulphuric waters. They drip with the venom they inhabit, so it’s better to not be struck by them.
             Aries: Biologically, the creature suffers terribly. Its legs do not allow it to rest, constantly hopping across the infected landscape. It does not care as its mind is far gone. It continues this until death.
             AstralachneaGround: An arachnid taken over by the infection, it has lost its ability to spin webs and hosts a myriad of astral growths on its abdomen.
@@ -1665,10 +1665,10 @@
             StellarCulex: Many pincers line the face of this mutation. It will attempt to attach itself to other organic creatures, and lower its mouth to their flesh to feed.
             Twinkler: A rare case of the astral infection creating a harmless creature. They flicker rather prettily, and you’re not going to be the only one who thinks so. They make useful bait.
             AstrumAureus: A multi-legged mechanical beast, its very existence speaks of the extent of control the astral virus has. Not even machinery can stand against it.
-            AstrumDeusHead: The fragments of the star god’s corpse still hold some of their former power, and even after succumbing to a dark infection, then being torn apart by an upstart worm, they willfully seek to return to the stars.
+            AstrumDeusHead: Фрагменты трупа звёздного бога ещё хранят в себе частицу былой силы. Даже поддавшись астральной инфекции и будучи разорванными в клочья одним высокомерным червём, они до сей поры стремятся вернуться назад, к звёздам.
             Brimling: Fragments of the brimstone elemental which made their way into shells of slag, their eyes stare mindlessly into the distance, for targets to burn.
             BrimstoneElemental: A fallen goddess, past her prime of faithful worshippers. She feels an intense hatred for any being with enough self awareness to pity her.
-            Bumblefuck: Known across the land for the swarms that have gathered in the jungle, they are nearly feared above all else in the, as though they may not be quite as dangerous as other forces, they have no master.
+            Bumblefuck: Известная во всех землях стая, собравшаяся в джунглях и не имеющая своего хозяина. Хоть их и боятся больше всего на свете, они не так опасны, как другие силы.
             CalamitasClone: Загадочная пылающая форма, появляющаяся только ночью, окутанная серным огнем. Обладает извращенным сознанием и неуместной гордостью за свои способности.
             Cataclysm: Лишь тень самого себя. Единственные действия, что он, кажется, знает - это жечь и убивать.
             Catastrophe: Жестокий и неразумный конструкт. Воскрешение мертвецов не сулит ничего хорошего.
@@ -1684,16 +1684,16 @@
             Scryllar: Twisted detritus of those who once came to harvest the remains of the crags. The whispers got to them.
             SoulSlurper: The remnants of a soul which has feasted, been feasted upon, and torn into the souls of others. No one knows how the cycle begins, but you don’t want to find out yourself.
             Cryogen: Призматический живой ледяной кристалл. И хоть обычно его можно наблюдать лишь сквозь слякоть метели, в те редкие дни, когда он пролетает в солнечный день, его тело мерцает губительно красивым синим цветом.
-            DesertNuisanceHead: The starved spawn of the Desert Scourge. Like piranhas of the desert, they can swarm and tear apart smaller animals within seconds.
+            DesertNuisanceHead: Изголодавшееся порождение Пустынного бича. Словно пустынная пиранья, они роятся и способны всего за несколько секунд разрывать мелких животных.
             DesertScourgeHead: If ever before you have peered out into the desert and seen entire dunes rise and fall like the waves of the sea, it is not unlikely that this is the culprit, as it bore through the sands below.
             CosmicGuardianHead: An interdimensional creation of the Devourer brought from its home dimension to aid it in battle. Nowhere near the strength of its sentinels.
             DevourerofGodsHead: Его невероятное самомнение известно также, как и его подавляющая сила, повсюду, ведь во время боя он постоянно ею хвастается. Стоит признать, он один из немногих, кто может подтвердить свои заявления.
-            RepairUnitCritter: Thanks to these little machines, the dusty labs still stand. It appears they're unable to deal with rust, though.
-            Draedon: The esteemed scientist himself. His AI is uploaded into a database, far from harm, and thus destroying his recon bodies achieves nothing.
-            Apollo: Within it, burns chemicals with the fury of Greek fire. Highly refined from the design of the eye-like twins before, it is now capable of outstanding mid-air movement.
+            RepairUnitCritter: Благодаря этим крохотным машинам лаборатории до сих пор не рассыпались в пыль. Однако, похоже, они не в состоянии справиться с ржавчиной.
+            Draedon: Многоуважаемый учёный собственной персоной. Его ИИ загружен в базу данных, отсекая его от разного рода опасностей. Именно поэтому уничтожение его разведывательных тел ни к чему не приведет.
+            Apollo: Механизм, чьи внутренности полны смеси гнева и греческого огня. Совершённые изменения, в сравнение с прошлой версией себя, позволяют развивать невероятную скорость и манёвренность.
             AresBody: While it is the most flamboyant of Draedon’s machines, it appears to be lacking some finish, though this trait does not compromise its killing potential whatsoever.
-            Artemis: The Exo Twins are the ultimate recon units. Capable of detecting various wavelengths of light unknown to us, nothing can hide.
-            ThanatosHead: Under every armored plate on this machine lies an advanced weapon. This sacrifices the machine’s durability, but it makes it a very effective mass murderer.
+            Artemis: Экзо-Близнецы — совершенные разведывательные единицы, способные обнаруживать различные неизвестные для нас длины волн света. Ничто и никто не способно укрыться от их взора.
+            ThanatosHead: Каждая пластина защитного покрытия скрывает высокотехнологичное оружие. Это делает его достаточно уязвимой, но в то же время смертоносной машиной для убийств.
             GreatSandShark: One wonders if there is a limit to the persistence of sharks in their quest to survive. In the very opposite of their usual climate, they have conquered too. It is a miracle that none yet have grown wings.
             DankCreeper: Though their core is the same as a hive blob, their armored shell of shadow scale prevents them from dying quite as easily. They also carry a noxious gas within them.
             DarkHeart: It pulses with stagnant, stinking waters of corruption, and leaks as it flies overhead. Wherever those drops land, any organic matter nearby slowly corrodes.
@@ -1759,7 +1759,7 @@
             PerforatorHeadMedium: Each equipped with a deadly mouthpiece, the different ones are suited for different tasks. One to pierce, one to tear, and another, simply to devour.
             PerforatorHeadSmall: Each equipped with a deadly mouthpiece, the different ones are suited for different tasks. One to pierce, one to tear, and another, simply to devour.
             PerforatorHive: Though birthed by the crimson, it is unknown whether they fully serve that creator. The worms of the hive frequently carve huge tunnels in the crimson’s flesh.
-            PlaguebringerGoliath: Machinery and nanobots have nearly entirely eaten away at the form of this Queen Bee. One wonders if it would simply be more efficient to create one from the ground up.
+            PlaguebringerGoliath: Механизмы и наномашины почти полностью пожрали Королеву пчёл и приняли близкую к ней форму. Возникает вопрос,  может, проще и гораздо эффективнее было создать её с нуля?
             Melter: Its face is warped and softened by the corrosive effects of the plague nanobots, and it seeks to share that uncomfortable fate with others under both its own will, and the plague’s.
             PestilentSlime: A slime infested by the nanobots of the plague. With no directive the plague can naturally apply to it, it simply continues its life, corroding anything which approaches.
             PlagueCharger: While hornets on their own are known for aggressive defense of their territory, once they have been warped by the plague, their sense of their dominion reaches ever further.
@@ -1767,7 +1767,7 @@
             PlaguebringerMiniboss: Queen Bees are reared upon royal honey, raising them into the matriarchs they are. If during the process, their growth is hijacked by the plague, they are left as only a pathetic reminder of what they could have been.
             Plagueshell: In truth, once a jungle tortoise has been touched by the plague, its original shell disintegrates, and the thorny shield it now wields is constructed entirely of reinforced nanobots.
             Viruling: Overtaken by the plague, derplings immediately lose their legs, as they are seen as only a hindrance. No longer will they gaily spring about.
-            Polterghast: Screaming and crying, a cacophony of spirits in anguish tear through the narrow hallways of the dungeon, searching for more—alive or dead—to add to their numbers.
+            Polterghast: Крик, плач, какофония — эта амальгама духов в тоске проносится по некогда полным жизни коридорам Темницы в поисках живых, или мертвых, пополняя свои ряды.
             ProfanedGuardianCommander: When it turns its burning spear towards anything, its simple mind has a clear goal. To entirely eradicate the enemy.
             ProfanedGuardianDefender: The body it has formed boasts of a stone shell hallowed and tempered by the flames of the sun. Very little can fully shatter its defense.
             ProfanedGuardianHealer: Its crystal which is displayed prominently on its body is able to restore damage done to its kin, and it draws that damage into flares which steal your life.
@@ -2070,7 +2070,7 @@
                 BossRushDashCurse: Рывки
                 BossRushIFrameCurse: Кадры неуязвимости
                 BossRushRegenCurse: Регенерация
-                BossZen: Боссы резко снижают скорость появления врагов
+                BossZen: Боссы сильно снижают скорость появления врагов
                 ChargeMeter: Индикатор заряда
                 ChargeMeterPosX: Позиция по X индикатора заряда
                 ChargeMeterPosY: Позиция по Y индикатора заряда
@@ -2095,8 +2095,8 @@
                 StealthMeter: Индикатор скрытности
                 StealthMeterPosX: Позиция по X индикатора скрытности
                 StealthMeterPosY: Позиция по Y индикатора скрытности
-                TownNPCSpawnRateMultiplier: Множитель прибытия городских нпс
-                TownNPCsSpawnAtNight: Прибытие городских нпс ночью
+                TownNPCSpawnRateMultiplier: Множитель прибытия жителей
+                TownNPCsSpawnAtNight: Прибытие жителей ночью
                 VanillaCooldownDisplay: Отображение ванильных иконок перезарядки
             }
         
@@ -2113,7 +2113,7 @@
                     '''
                 Afterimages:
                     '''
-                    Включает отображение послеобразов для нпс Calamity, снарядов и т.д.
+                    Включает отображение послеобразов для существ Calamity, снарядов и т.д.
                     Отключите для повышения производительности.
                     '''
                 BossHealthBarExtraInfo:
@@ -2147,27 +2147,27 @@
                 ChargeMeterPosX:
                     '''
                     Позиция по X индикатора заряда, измеряется в % от ширины экрана.
-                    Индикатор можно перетаскивать мышью, если отключён параметр Фиксация позиций индикаторов.
+                    Индикатор можно перетаскивать мышью, если отключён параметр «Фиксация позиций индикаторов».
                     '''
                 ChargeMeterPosY:
                     '''
                     Позиция по Y индикатора заряда, измеряется в % от высоты экрана.
-                    Индикатор можно перетаскивать мышью, если отключён параметр Фиксация позиций индикаторов.
+                    Индикатор можно перетаскивать мышью, если отключён параметр «Фиксация позиций индикаторов».
                     '''
-                ChilledWaterRework: Когда этот параметр включён, вода в биомах снега и льда будет быстро истощать дыхание игрока вместо того, чтобы накладывать дебафф «{$BuffName.Chilled}».
+                ChilledWaterRework: Когда этот параметр включён, вода в снегах и льдах будет быстро истощать дыхание игрока вместо того, чтобы накладывать дебафф «{$BuffName.Chilled}».
                 CooldownDisplay:
                     '''
-                    Добавляет шкалу перезарядки, которая отображает все важные перезарядки прямо под баффами и дебаффами.
-                    Установите значение на 1, чтобы отображать шкалу перезарядки в компактном режиме, и 0, чтобы полностью скрыть её.
+                    Добавляет шкалу перезарядки, отображающую все важные перезарядки прямо под баффами и дебаффами.
+                    Установите значение на 1, чтобы отображать шкалу перезарядки в компактном режиме, или 0, чтобы полностью скрыть её.
                     '''
                 DebuffDisplay: Добавляет иконки дебаффов над всеми боссами и минибоссами.
                 EarlyHardmodeProgressionRework:
                     '''
-                    Алтари демонов больше не рождают руду и блоки багрянца/искажения при разрушении.
-                    Стена плоти рождает кобальтовую и палладиевую руду при первом убийстве.
-                    Первый механический босс, с которым вы сражаетесь, имеет на 20% меньше здоровья и урона и при первом убийстве рождает мифриловую и орихалковую руду.
-                    Второй механический босс, с которым вы сражаетесь, имеет на 10% меньше здоровья и урона и при первом убийстве рождает адамантит и титановую руду.
-                    Третий механический босс рождает святую руду при первом убийстве.
+                    Алтари демонов больше не создают руду и блоки Багрянца/Искажения при разрушении.
+                    Стена плоти создаёт кобальтовую и палладиевую руду при первом убийстве.
+                    Первый механический босс, с которым вы сражаетесь, имеет на 20% меньше здоровья и урона, и при своём первом убийстве создаёт мифриловую и орихалковую руду.
+                    Второй механический босс, с которым вы сражаетесь, имеет на 10% меньше здоровья и урона, и при своём первом убийстве создаёт адамантит и титановую руду.
+                    Третий механический босс создаёт святую руду при своём первом убийстве.
                     '''
                 ForceTownSafety:
                     '''
@@ -2177,11 +2177,11 @@
                 MeterPosLock:
                     '''
                     Предотвращает нажатие на индикаторы скрытности, заряда, ярости и адреналина.
-                    Это предотвращает их перетаскивание мышью.
+                    Это отключает их перетаскивание мышью.
                     '''
                 NerfExpertDebuffs:
                     '''
-                    Отключает в режиме Эксперта, двукратную (а режиме Мастера - трёхкратную) длительность дебаффов на игроке.
+                    Отключает в режиме Эксперта двукратную (а режиме Мастера - трёхкратную) длительность дебаффов на игроке.
                     Calamity сбалансирован таким образом, чтобы этот параметр был включён.
                     '''
                 ParticleLimit:
@@ -2192,18 +2192,18 @@
                     '''
                 Proficiency:
                     '''
-                    Включает систему мастерства, которая позволяет игроку получать небольшие бонусы к характеристикам при постоянном использовании определённого класса урона.
+                    Включает систему мастерства, позволяющую игроку получать небольшие бонусы к характеристикам при постоянном использовании определённого класса урона.
                     Отключение системы не убирает уровни, которые уже имеются у игрока, но отключает его бонусы к характеристикам и препятствует получению опыта.
                     '''
                 RageMeterPosX:
                     '''
                     Позиция по X индикатора ярости, измеряется в % от ширины экрана.
-                    Индикатор можно перетаскивать мышью, если отключён параметр Фиксация позиций индикаторов.
+                    Индикатор можно перетаскивать мышью, если отключён параметр «Фиксация позиций индикаторов».
                     '''
                 RageMeterPosY:
                     '''
                     Позиция по Y индикатора ярости, измеряется в % от высоты экрана.
-                    Индикатор можно перетаскивать мышью, если отключён параметр Фиксация позиций индикаторов.
+                    Индикатор можно перетаскивать мышью, если отключён параметр «Фиксация позиций индикаторов».
                     '''
                 RipperMeterShake:
                     '''
@@ -2211,10 +2211,10 @@
                     Установите на 0, чтобы полностью отключить дрожание.
                     '''
                 Screenshake: Включает или выключает все эффекты дрожания экрана.
-                ShopNewAlert: Добавляет иконку, которая появляется над городскими нпс, когда у них в магазине появляются новые предметы.
+                ShopNewAlert: Добавляет иконку, которая появляется над жителями, когда у них в магазине появляются новые предметы.
                 SpeedrunTimer:
                     '''
-                    Включает внутриигровой таймер скоростного прохождения, который показывает внутриигровое время с точностью до миллисекунды.
+                    Включает внутриигровой таймер скоростного прохождения, который отображает внутриигровое время с точностью до миллисекунды.
                     Во второй строке указывается время последнего убийства босса.
                     Время отслеживается для каждого игрока и учитывает время только во время пребывания в мире.
                     '''
@@ -2231,31 +2231,31 @@
                 StealthInvisibility:
                     '''
                     Позволяет игрокам постепенно становиться невидимыми по мере увеличения их скрытности разбойника.
-                    Этот эффект визуально похож на невидимость грибного комплекта брони.
+                    Этот эффект визуально похож на невидимость грибнитового комплекта брони.
                     '''
                 StealthMeter:
                     '''
-                    Включает индикатор скрытности, который показывает текущий уровень скрытности игрока.
-                    Индикатор скрытности всегда скрыт, если не надет любой из комплектов брони разбойника.
+                    Включает индикатор скрытности, который отображает текущий уровень скрытности игрока.
+                    Индикатор скрытности скрыт, если не надет любой из комплектов брони разбойника.
                     '''
                 StealthMeterPosX:
                     '''
                     Позиция по X индикатора скрытности, измеряется в % от ширины экрана.
-                    Индикатор можно перетаскивать мышью, если отключён параметр Фиксация позиций индикаторов.
+                    Индикатор можно перетаскивать мышью, если отключён параметр «Фиксация позиций индикаторов».
                     '''
                 StealthMeterPosY:
                     '''
                     Позиция по Y индикатора скрытности, измеряется в % от высоты экрана.
-                    Индикатор можно перетаскивать мышью, если отключён параметр Фиксация позиций индикаторов.
+                    Индикатор можно перетаскивать мышью, если отключён параметр «Фиксация позиций индикаторов».
                     '''
                 TownNPCSpawnRateMultiplier:
                     '''
-                    Прямое умножение скорости появления и возрождения городских нпс.
-                    Это сокращает время ожидания, если босс или событие убивает всех городских нпс в городе.
+                    Прямое умножение скорости появления и возрождения жителей.
+                    Это сокращает время ожидания, если босс или событие убивает всех жителей в городе.
                     '''
                 TownNPCsSpawnAtNight:
                     '''
-                    Если этот параметр включён, городские нпс могут появляться и возрождаться ночью.
+                    Если этот параметр включён, жители могут появляться и возрождаться ночью.
                     Это относится и к Старику.
                     '''
                 VanillaCooldownDisplay:
