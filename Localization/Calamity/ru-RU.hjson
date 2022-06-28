@@ -1618,10 +1618,10 @@
             ChaoticPuffer: Маленькие анархичные отродья, глотающие большое количество воды, раздувая этим свои колючие тела. Вода внутри их тел закипает и при смерти вырывается наружу жгучим потоком.
             ColossalSquid: Сокрушительные щупальца, более чем в два раза превышающие рост взрослого человека, и ядовитые чернила - таков залог успеха этого чудовищного хищника.
             Cuttlefish: Если в глубинах Бездны вы внезапно почувствовали движение в районе ног, то, вполне вероятно, это и есть виновник, пробующий воду на вкус в поисках потенциальной добычи.
-            DevilFish: A sturdy fish, which has spent a long time seething in the Abyss. Males are easily identified by their forward-facing horns, and females by their curled horns.
-            DevilFishAlt: A sturdy fish, which has spent a long time seething in the Abyss. Males are easily identified by their forward-facing horns, and females by their curled horns.
+            DevilFish: Сильная рыба, уже долгое время бороздящая тёмные воды Бездны. Самцов легко узнать по их выступающим рогам, а самок - по закрученным.
+            DevilFishAlt: Сильная рыба, уже долгое время бороздящая тёмные воды Бездны. Самцов легко узнать по их выступающим рогам, а самок - по закрученным.
             EidolonWyrmHead: Из всех когда-либо виденных существ, именно они наиболее далеки от нашего понимания. Какова же мощь, какова тайна...
-            GiantSquid: A massive squid, having gained its size from the abundance of prey and little competition in its habitat. Its eyes are specially adapted to seeking out prey in the darkness.
+            GiantSquid: Массивный кальмар, отъевшийся до своих размеров благодаря обильной добыче и слабой конкуренции. Его глаза специально приспособлены для поиска добычи в темноте.
             GulperEelHead: Massive in length and in breadth, this eel resides in the deeper caverns of the abyss. Its jaws have the curious ability to hyperextend and swallow nearly any prey it sets its eyes upon.
             Laserfish: Its eyes are blinded by bacteria that gather in large sacs on its head. As it swims through the waters, relying on primitive echolocation, the bacteria are able to release concussive blasts to clear its path.
             LuminousCorvina: This fish has a peculiar defense mechanism. When a threat such as yourself enters its field of view, it releases a shrill pulse alerting others to not its presence— but yours.
@@ -1648,7 +1648,7 @@
             Trilobite: Their shell is of notable hardness, and it carries the same weight as stone. It speaks of their strength, for them to be able to fling themselves about the way they do.
             WaterLeech: It can smell the scent of flesh from far distances and will eagerly squirm its way to the source. Once attached to the host, they rapidly intake blood and discharge venom, both of which heavily disadvantage its prey.
             AdultEidolonWyrmHead: Их упоминания в истории прослеживаются даже в записях, относящихся к периоду, предшествующему Золотому веку драконов... Они вполне могут быть проблеском истинного потенциала природы.
-            AquaticScourgeHead: Разновидность бича, экзоскелет которого годами укреплялся и закалялся во время плавания в серных водах для пропитания. Сами его челюсти теперь пропитаны ядом этих морей.
+            AquaticScourgeHead: Разновидность бича, экзоскелет которого укреплялся и закалялся годами плавания в серных водах для пропитания. Сами его челюсти теперь пропитаны ядом этих морей.
             AquaticUrchin: A relative of its brethren in the far ocean, this one’s spines have been hardened by the sulphuric waters. They drip with the venom they inhabit, so it’s better to not be struck by them.
             Aries: Biologically, the creature suffers terribly. Its legs do not allow it to rest, constantly hopping across the infected landscape. It does not care as its mind is far gone. It continues this until death.
             AstralachneaGround: An arachnid taken over by the infection, it has lost its ability to spin webs and hosts a myriad of astral growths on its abdomen.
@@ -1683,13 +1683,13 @@
             HeatSpirit: A human spirit, its mind lost to the blazing orange fires of its dwelling. It seeks out and attempts to eliminate any source of moisture it can detect entering the hellscape.
             Scryllar: Twisted detritus of those who once came to harvest the remains of the crags. The whispers got to them.
             SoulSlurper: The remnants of a soul which has feasted, been feasted upon, and torn into the souls of others. No one knows how the cycle begins, but you don’t want to find out yourself.
-            Cryogen: Призматический живой ледяной кристалл. И хоть обычно его можно наблюдать лишь сквозь слякоть метели, в те редкие дни, когда он пролетает в солнечный день, его тело мерцает губительно красивым синим цветом.
+            Cryogen: Призматический живой ледяной кристалл. И хотя обычно его можно наблюдать лишь сквозь слякоть метели, в те редкие дни, когда он пролетает в солнечный день, его тело мерцает губительно красивым синим цветом.
             DesertNuisanceHead: Изголодавшееся порождение Пустынного бича. Словно пустынная пиранья, они роятся и способны всего за несколько секунд разрывать мелких животных.
-            DesertScourgeHead: If ever before you have peered out into the desert and seen entire dunes rise and fall like the waves of the sea, it is not unlikely that this is the culprit, as it bore through the sands below.
-            CosmicGuardianHead: An interdimensional creation of the Devourer brought from its home dimension to aid it in battle. Nowhere near the strength of its sentinels.
-            DevourerofGodsHead: Его невероятное самомнение известно также, как и его подавляющая сила, повсюду, ведь во время боя он постоянно ею хвастается. Стоит признать, он один из немногих, кто может подтвердить свои заявления.
+            DesertScourgeHead: Если вы когда-то вглядывались в бескрайние барханы пустынь и наблюдали, как подобно морским волнам колеблются дюны, то вполне вероятно, что это проделки существа, скрывающегося в глубинах.
+            CosmicGuardianHead: Межпространственное творение Пожирателя, взятое из его родного измерения, дабы помочь ему в битве. Хотя никто их них даже близко не сравнится с силой его Стражей.
+            DevourerofGodsHead: Его невероятное самомнение известно также, как и подавляющая сила, повсюду, ведь во время боя он постоянно ею хвастается. Стоит признать, он один из немногих, кто может подтвердить свои заявления.
             RepairUnitCritter: Благодаря этим крохотным машинам лаборатории до сих пор не рассыпались в пыль. Однако, похоже, они не в состоянии справиться с ржавчиной.
-            Draedon: Многоуважаемый учёный собственной персоной. Его ИИ загружен в базу данных, отсекая его от разного рода опасностей. Именно поэтому уничтожение его разведывательных тел ни к чему не приведет.
+            Draedon: Многоуважаемый учёный собственной персоной. Его ИИ загружен в базу данных, отсекая от разного рода опасностей. Именно поэтому уничтожение его разведывательных тел ни к чему не приведет.
             Apollo: Механизм, чьи внутренности полны смеси гнева и греческого огня. Совершённые изменения, в сравнение с прошлой версией себя, позволяют развивать невероятную скорость и манёвренность.
             AresBody: While it is the most flamboyant of Draedon’s machines, it appears to be lacking some finish, though this trait does not compromise its killing potential whatsoever.
             Artemis: Экзо-Близнецы — совершенные разведывательные единицы, способные обнаруживать различные неизвестные для нас длины волн света. Ничто и никто не способно укрыться от их взора.
@@ -1710,7 +1710,7 @@
             AuroraSpirit: The souls of those who passed on in the heart of a blizzard. They now seek out others to freeze to death, to die as they did.
             BloomSlime: With the solar energy released from the profaned goddess’ destruction, uelibloom has sprouted in the jungle’s mud, and in the slimes which inhabit the biome.
             Bohldohr: A distant relative to the gem-covered lizards found within the caverns. This species instead covers itself with the smooth bricks of the Temple and curls into a ball for locomotion.
-            Cnidrion: Странные создания. Они обладают абсолютно теми же качествами, что и другие пустынные существа, но, кажется, способны накапливать в своих телах огромное количество воды.
+            Cnidrion: Странные создания. Они обладают абсолютно теми же качествами, что и остальные пустынные существа, но, кажется, способны накапливать в своих телах огромное количество воды.
             CosmicElemental: A curious construct, and though its origins are unknown, it has been decidedly proven that the core of its body leads to somewhere not of our world.
             CrawlerAmber: Ящерица, чья спина покрытна кристаллами. И хотя кристаллы обеспечивают защиту, самих существ можно с лёгкостью напугать, а затем собрать с них редкие самоцветы.
             CrawlerAmethyst: Ящерица, чья спина покрытна кристаллами. И хотя кристаллы обеспечивают защиту, самих существ можно с лёгкостью напугать, а затем собрать с них редкие самоцветы.
@@ -1721,13 +1721,13 @@
             CrawlerSapphire: Ящерица, чья спина покрытна кристаллами. И хотя кристаллы обеспечивают защиту, самих существ можно с лёгкостью напугать, а затем собрать с них редкие самоцветы.
             CrawlerTopaz: Ящерица, чья спина покрытна кристаллами. И хотя кристаллы обеспечивают защиту, самих существ можно с лёгкостью напугать, а затем собрать с них редкие самоцветы.
             CrimulanBlightSlime: Seemingly, these are slimes which have been given the blessing of a higher being, They seek out and devour but not for themselves, which is a rarity among slimes.
-            Cryon: Within the octahedron, one can find ancient runes engraved into ice that does not melt. Who could have created these?
+            Cryon: Внутри октаэдра можно обнаружить древние руны, выгравированные на льду, что не тает. Кто мог их создать?
             CryoSlime: When the release of Cryogen’s magic slightly thawed the frozen metal which rested underground, the resulting meltwater formed these. Remnants of the ore still reside within them.
             EbonianBlightSlime: Seemingly, these are slimes which have been given the blessing of a higher being, They seek out and devour but not for themselves, which is a rarity among slimes.
             Eidolist: Highly skilled in the art of spellcasting, these mysterious creatures seem to stand guard like sentinels in watch over something. Approach one close enough and you may be able to make out garbled whispers.
             FearlessGoldfishWarrior: With its tin hat upon its head and a dagger that gleams as gold as it does, it marches out into the rain, ready for battle.
             Frogfish: Ambush predators that lay in wait for their prey. They are not particularly strong, and if you come across one, are dispatched with ease.
-            Horse: It is civilization’s goal to wrest nature under its control. This is the result of one such conquest, an artificial elemental, run by clockwork gears.
+            Horse: Цель цивилизации - покорить природу своей воле. Это результат одного из подобных покорений - искусственный элементаль, управляемый заводными механизмами.
             IceClasper: An enemy which knows no bounds in hunting its prey. In blizzards where visibility is low, they have been known to glaciate and capture travelers. What happens to the victims is unknown.
             ImpiousImmolator: A burning spirit, with no regard or acknowledgment for its surroundings. Anyone who intrudes upon the Profaned Goddess’ holy grounds will be turned to ash.
             MantisShrimp: Should it land a blow with its rounded front claws, it will tear your flesh and shatter your bones. Needless to say, avoid this at all costs.
@@ -1767,7 +1767,7 @@
             PlaguebringerMiniboss: Queen Bees are reared upon royal honey, raising them into the matriarchs they are. If during the process, their growth is hijacked by the plague, they are left as only a pathetic reminder of what they could have been.
             Plagueshell: In truth, once a jungle tortoise has been touched by the plague, its original shell disintegrates, and the thorny shield it now wields is constructed entirely of reinforced nanobots.
             Viruling: Overtaken by the plague, derplings immediately lose their legs, as they are seen as only a hindrance. No longer will they gaily spring about.
-            Polterghast: Крик, плач, какофония — эта амальгама духов в тоске проносится по некогда полным жизни коридорам Темницы в поисках живых, или мертвых, пополняя свои ряды.
+            Polterghast: Крик, плач, какофония — эта амальгама духов в тоске проносится по некогда полным жизни коридорам Темницы в поисках живых или мертвых, пополняя свои ряды.
             ProfanedGuardianCommander: When it turns its burning spear towards anything, its simple mind has a clear goal. To entirely eradicate the enemy.
             ProfanedGuardianDefender: The body it has formed boasts of a stone shell hallowed and tempered by the flames of the sun. Very little can fully shatter its defense.
             ProfanedGuardianHealer: Its crystal which is displayed prominently on its body is able to restore damage done to its kin, and it draws that damage into flares which steal your life.
@@ -1778,9 +1778,9 @@
             CorruptSlimeSpawn: They rapidly flap their wings, created from membranes of gel and spines of hardened slime. They will incessantly hunt you down.
             CrimsonSlimeSpawn: Irritant globs of gel, which can rob you of your vision if they get on your eyes. Avoid these at all costs, as they can spell death against the Slime God.
             CrimsonSlimeSpawn2: Embedded in these slime’s bodies are shards of crimulan stone, which drip with a toxin meant to impair your vision.
-            SlimeGodCore: This creature could easily be confused for a giant amoeba. It seems to be developing past the limitations of an usual slime, thanks to all the compacted biomass it contains.
-            SplitCrimulanSlimeGod: Flanking their creator and serving as its body, these are concentrated, swirling masses of the world’s evils, each utilizing the rot and corrosion to eat away and assimilate those who oppose it.
-            SplitEbonianSlimeGod: Flanking their creator and serving as its body, these are concentrated, swirling masses of the world’s evils, each utilizing the rot and corrosion to eat away and assimilate those who oppose it.
+            SlimeGodCore: Cущество, которое можно запросто спутать с огромной амёбой. За счёт скопившейся плотной биомассы оно развивается, намного превосходя пределы обычных слизней.
+            SplitCrimulanSlimeGod: Защита, и в то же время тело своего создателя. Эти концентрированные массы мировых зол пользуются коррозией и гнилью, превращая в биомассу любого, кто встанет на их пути.
+            SplitEbonianSlimeGod: Защита, и в то же время тело своего создателя. Эти концентрированные массы мировых зол пользуются коррозией и гнилью, превращая в биомассу любого, кто встанет на их пути.
             StormWeaverHead: It resides high up in the stratosphere, feasting on wyverns and storm swimmers alike, which give it powerful electrokinesis.
             AnthozoanCrab: A crab that has placed upon its back, a sturdy structure of stone. It is quite strong and displays this extraordinary strength by hurling boulders at those who encroach on its territory.
             BelchingCoral: A rare species of coral, one which is able to process and draw nutrients from the waters of the sulphurous sea. During this process, a large amount of volatile gas is formed.
@@ -1792,21 +1792,21 @@
             Clam: Sluggish mollusks filter what they can from the brackish water. Their shells are as hard as stone but contain delicate, succulent flesh.
             EutrophicRay: A stingray that spends much of its time docile on the rocky floors of the sunken sea’s pools. It stores its energy, and when endangered, can release it in short bursts of speed.
             GhostBell: Ethereal jellyfish that drift in the still water of the sunken sea. Their bodies are curiously charged with an electric current.
-            GiantClam: This oversized clam is large enough to entrap a person or two whole. Thankfully, it has only taken turf in the lowest regions of the sunken sea.
+            GiantClam: Этот огромный моллюск настолько велик, что способен поместить в себя целого человека, а может даже двух. К счастью, его территория находится лишь в самых глубоких областях затерянного моря.
             PrismBack: Rather slow swimmers, they are one of the few creatures that need to breach. They periodically swim to the upper layer of their habitat to lay their eggs.
             SeaFloaty: Strange but mesmerizing creatures, they hide immediately at the sight of any predator. They do not seem to be fully developed.
             SeaMinnow: While they are at the bottom of the food chain, they also make up eighty percent of the biomass in this sea. They nibble away at corpses that fall from the underground desert above.
             SeaSerpent1: These eels are largely passive and drift languidly through the still waters of the sunken sea. Should you provoke them, they can be stubborn attackers.
-            SepulcherHead: This might just be the vilest undead abomination in this realm. The Sepulcher itself is completely immune to physical damage, and can only be killed by destroying its many suspended organs.
-            SoulSeekerSupreme: Incomplete, ghoulish skulls, their forms are limited but their devotion boundless. It’s likely each yearns for a soul of their own to be complete, whether it’s given by Calamitas or ripped from the foe they kill.
-            SupremeCalamitas: Суровая жизнь Серной Ведьмы видна по магии, что она плетёт. Изменчивая и мощная, но в то же время утонченная. Её же темперамент, по слухам, настолько вспыльчив, что способен превратить в пепел целое королевство.
+            SepulcherHead: Наимерзейшая немёртвая мерзость этой реальности. Сам Могильщик полностью невосприимчив к физическим повреждениям, и его можно убить, только уничтожив многочисленные отделённые от тела органы.
+            SoulSeekerSupreme: Неполноценные омерзительные черепа, чьи формы ограничены, но преданность безгранична. Каждый из них жаждет душу, дабы ощутить себя завершённым, и им неважно, даст её Каламитас или они сами выгрызут ту из убитого врага.
+            SupremeCalamitas: Суровая жизнь Серной Ведьмы видна по магии, что она плетёт. Изменчивая и мощная, но в то же время утонченная. Её темперамент, по слухам, настолько вспыльчив, что способен превратить в пепел целое королевство.
             SupremeCataclysm: Несмотря на сохранение гуманоидной формы, ему не ведомы никакие высшие мысли. Он знает только насилие.
             SupremeCatastrophe: Никто не способен превзойти Каламитас в мастерстве некромантии, но и никто не способен по-настоящему воскрешать из мёртвых.
             DILF: На его лице виден как большой возраст, так и великая мудрость. Однажды Архимаг выступил против Тирана Джунглей и поплатился за это. Он продает различные ледяные побрякушки, но самые мощные заклинания, конечно же, держит при себе.
-            FAP: Никто не знает, откуда она появилась, но никто и не против её присутствия. Она хороший человек, с которым можно выпить, ну, если только не вывести её из себя.
+            FAP: Никто не знает, откуда она появилась, но никто и не против её присутствия. Она хороший человек, с которым можно выпить. Ну, если только не вывести её из себя.
             SEAHOE: Морской король древней цивилизации, ныне затерянной в песках времени (и пустыни). Дожив до этих дней, он способен дать полезные советы об окружающем вас мире. И ещё ему нравятся моллюски.
             THIEF: Клептоманьячка, немного пасующая, когда дело доходит до драк лицом к лицу. Она мастер попадать в опасные ситуации и выпутываться из них.
-            WITCH: Сколь удивительное зрелище - видеть этого могущественного врага в живых, так ещё и рядом с дружелюбными лицами. Повторится ли история, или же ей наконец удалось вырваться из крепкой хватки Тирана?
+            WITCH: Сколь удивительное зрелище - видеть этого могущественного врага в живых, так ещё и рядом с дружелюбными лицами. Повторится ли история или же ей, наконец, удалось вырваться из крепкой хватки Тирана?
             Yharon: Возможно... последний в своем роде. Он мог бы уничтожить джунгли в одно мгновение, если бы захотел, однако, кажется, он осторожен, чтобы не допустить такого.
         }
         
