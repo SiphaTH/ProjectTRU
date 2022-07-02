@@ -11,7 +11,7 @@ namespace CalamityRuTranslate.Content.Vanity.BrotKrip
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Многомерная шляпа BrotKrip");
-            Tooltip.SetDefault("Аналитическая и алгебраическая топология евклидовой метризации бесконечно дифференцируемого риманова многообразия\nБОЖЕ МОЙ!\n{$CommonItemTooltip.DevItem}");
+            Tooltip.SetDefault("Отлично подходит для подражания переводчикам!\n'Аналитическая и алгебраическая топология евклидовой метризации бесконечно дифференцируемого риманова многообразия'\n'БОЖЕ МОЙ!'");
         }
         
         public override void SetDefaults()

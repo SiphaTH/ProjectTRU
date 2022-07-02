@@ -11,7 +11,7 @@ namespace CalamityRuTranslate.Content.Vanity.BrotKrip
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Фетишистские чулки BrotKrip");
-            Tooltip.SetDefault("В чулочках сила!\n{$CommonItemTooltip.DevItem}");
+            Tooltip.SetDefault("Отлично подходит для подражания переводчикам!\n'В чулочках сила!'");
         }
         
         public override void SetDefaults()

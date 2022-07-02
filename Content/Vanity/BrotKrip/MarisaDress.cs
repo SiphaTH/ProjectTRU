@@ -11,7 +11,7 @@ namespace CalamityRuTranslate.Content.Vanity.BrotKrip
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Бронированное платье BrotKrip");
-            Tooltip.SetDefault("Перчатки - канон?\n{$CommonItemTooltip.DevItem}");
+            Tooltip.SetDefault("Отлично подходит для подражания переводчикам!\n'Перчатки - канон?'");
         }
         
         public override void SetDefaults()
