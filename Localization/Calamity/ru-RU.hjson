@@ -25,7 +25,7 @@
                 Name: Кровавая Мэри
                 Description:
                     '''
-                    Урон, шанс критического удара, скорость передвижения и скорость атаки ближнего боя во время кровавой луны увеличены
+                    Урон, шанс критического удара, скорость передвижения и атаки ближнего боя во время кровавой луны увеличены
                     Регенерация здоровья и защита снижены
                     '''
             }
@@ -1251,8 +1251,8 @@
             }
     
             Crimslime: {
-                Name: Багровый слизень
-                Description: Вас защищает багровый слизень
+                Name: Багряный слизень
+                Description: Вас защищает багряный слизень
             }
     
             DaedalusGolemBuff: {
@@ -1875,7 +1875,7 @@
                 Tooltip:
                     '''
                     Одна из древних реликвий
-                    Увеличивает время полёта, скорость передвижения и скорость прыжка на 10%
+                    Увеличивает время полёта, скорость передвижения и прыжка на 10%
                     '''
             }
             
@@ -2291,7 +2291,7 @@
                 Tooltip:
                     '''
                     Истинные атаки ближнего боя наносят на 10% больше урона
-                    Дарует способность совершать рывок; совершая рывок на атаку врага, заставит вас уклониться от неё
+                    Даёт способность совершать рывок; совершая рывок на атаку врага, заставит вас уклониться от неё
                     После успешного уклонения вы должны подождать 30 секунд, прежде чем сможете уклониться снова
                     '''
             }
@@ -2302,11 +2302,11 @@
             }
             
             CrimsonFlask: {
-                Name: Багровая колба
+                Name: Багряная колба
                 Tooltip:
                     '''
-                    Увеличивает сопротивление урону на 4% и защиту на 6, находясь в Багрянце
-                    Дарует невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.BurningBlood.Name}»
+                    Находясь в Багрянце, увеличивает сопротивление урону на 4% и защиту на 6
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.BurningBlood.Name}»
                     '''
             }
             
@@ -8657,7 +8657,7 @@
             }
             
             AshenCandelabra: {
-                Name: Пепельный канделябр
+                Name: Пепельный подсвечник
                 Tooltip: ""
             }
             
@@ -8816,7 +8816,7 @@
             }
             
             BotanicCandelabra: {
-                Name: Ботанический канделябр
+                Name: Ботанический подсвечник
  				Tooltip: ""
             }
             
@@ -8994,7 +8994,7 @@
             }
             
             CosmiliteCandelabra: {
-                Name: Космилитовый канделябр
+                Name: Космилитовый подсвечник
  				Tooltip: ""
             }
             
@@ -9187,7 +9187,7 @@
             }
             
             EutrophicCandelabra: {
-                Name: Эвтрофный канделябр
+                Name: Эвтрофный подсвечник
                 Tooltip: ""
             }
             
@@ -9282,7 +9282,7 @@
             }
             
             ExoCandelabra: {
-                Name: Экзо-канделябр
+                Name: Экзо-подсвечник
  				Tooltip: ""
             }
             
@@ -9467,7 +9467,7 @@
             }
             
             MonolithCandelabra: {
-                Name: Монолитный канделябр
+                Name: Монолитный подсвечник
                 Tooltip: ""
             }
             
@@ -9572,7 +9572,7 @@
             }
             
             OtherworldlyCandelabra: {
-                Name: Потусторонний канделябр
+                Name: Потусторонний подсвечник
                 Tooltip: ""
             }
             
@@ -9702,7 +9702,7 @@
             }
             
             PlaguedPlateCandelabra: {
-                Name: Чумной канделябр
+                Name: Чумной подсвечник
  				Tooltip: ""
             }
             
@@ -9817,7 +9817,7 @@
             }
             
             ProfanedCandelabra: {
-                Name: Осквернённый канделябр
+                Name: Осквернённый подсвечник
                 Tooltip: ""
             }
             
@@ -10001,7 +10001,7 @@
             }
             
             SilvaCandelabra: {
-                Name: Лесной канделябр
+                Name: Лесной подсвечник
                 Tooltip: ""
             }
             
@@ -10156,7 +10156,7 @@
             }
             
             StatigelCandelabra: {
-                Name: Статиджеловый канделябр
+                Name: Статиджеловый подсвечник
                 Tooltip: ""
             }
             
@@ -10261,7 +10261,7 @@
             }
             
             StratusCandelabra: {
-                Name: Слоистый канделябр
+                Name: Слоистый подсвечник
                 Tooltip: ""
             }
             
@@ -10416,7 +10416,7 @@
             }
             
             VoidCandelabra: {
-                Name: Пустотный канделябр
+                Name: Пустотный подсвечник
                 Tooltip: ""
             }
             
@@ -17321,8 +17321,8 @@
             }
             
             CrimslimeStaff: {
-                Name: Посох багрового слизня
-                Tooltip: Призывает багрового слизня сражаться за вас
+                Name: Посох багряного слизня
+                Tooltip: Призывает багряного слизня сражаться за вас
             }
             
             CryogenicStaff: {
@@ -18620,11 +18620,11 @@
                 }
                 
                 Ale: {
-                    Tooltip: Увеличивает урон и скорость атаки ближнего боя на 10%, а так же снижает на 10%
+                    Tooltip: Увеличивает урон и скорость атаки ближнего боя на 10%, но снижает защиту на 10%
                 }
                 
                 Sake: {
-                    Tooltip: Увеличивает урон и скорость атаки ближнего боя на 10%, а так же снижает на 10%
+                    Tooltip: Увеличивает урон и скорость атаки ближнего боя на 10%, но снижает защиту на 10%
                 }
                 
                 HellfireTreads: {
@@ -18768,7 +18768,7 @@
                 }
                 
                 FalconBlade: {
-                    Tooltip: Держа в руках, этот предмет увеличивает скорость передвижения на 20%
+                    Tooltip: Держа в руках этот предмет, увеличивает скорость передвижения на 20%
                 }
                 
                 CopperHelmet: {
@@ -19004,7 +19004,7 @@
                 EmpressFlightBooster: {
                     Tooltip: {
                         0: Увеличивает время полёта крыльев на 50%
-                        1: Увеличивает скорость передвижения и скорость прыжка на 10%, и ускорение на 10%
+                        1: Увеличивает скорость передвижения и прыжка на 10%, и ускорение на 10%
                     }
                 }
                 
@@ -19030,7 +19030,7 @@
                     Tooltip:
                         '''
                         скорость регенерации здоровья, защиту, скорость добычи и отбрасывание миньонов
-                        Дарует невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Nightwither.Name}»
+                        Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Nightwither.Name}»
                         '''
                 }
                 
@@ -19038,7 +19038,7 @@
                     Tooltip:
                         '''
                         регенерацию здоровья, защиту, скорость добычи и отбрасывание миньонов
-                        Дарует невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.HolyFlames.Name}»
+                        Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.HolyFlames.Name}»
                         '''
                 }
                 
@@ -19046,7 +19046,7 @@
                     Tooltip:
                         '''
                         скорость регенерации здоровья, защиту, скорость добычи и отбрасывание миньонов
-                        Дарует невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Nightwither.Name}» и «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.HolyFlames.Name}»
+                        Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Nightwither.Name}» и «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.HolyFlames.Name}»
                         '''
                 }
                 
@@ -19755,7 +19755,7 @@
                     Tooltip:
                         '''
                         Восстанавливает 80 ед. здоровья
-                        Дарует бафф «{$BuffName.Honey}» на 2 минуты
+                        Даёт бафф «{$BuffName.Honey}» на 2 минуты
                         '''
                 }
                 
@@ -20004,7 +20004,7 @@
                 FathomSwarmer:
                     '''
                     Увеличивает урон миньонов на 10% и максимальное число миньонов на 2
-                    Дарует способность лазить по стенам
+                    Даёт способность лазить по стенам
                     Находясь в жидкостях, увеличивает урон миньонов на 30%
                     Обеспечивает умеренным количеством света в Бездне и умеренно снижает потерю дыхания в Бездне
                     '''
@@ -20026,13 +20026,13 @@
                     Если самоцвет был уже потерян, вместо него теряется базовый самоцвет
                     Когда самоцвет потерян, он отделяется и летит в сторону ближайшего врага или босса, если таковой присутствует, нанося 40000 базового урона
                     Самоцветы имеют 30 секундную перезарядку перед повторным появлением
-                    Красный самоцвет дарует 130 максимальной скрытности, увеличивает разбойные характеристики и с ним скрытность расходуется только на разбойные оружия
+                    Красный самоцвет даёт 130 максимальной скрытности, увеличивает разбойные характеристики и с ним скрытность расходуется только на разбойные оружия
                     Жёлтый самоцвет увеличивает характеристики ближнего боя и заставляет атаки ближнего боя выпускать осколки при попадании во врага с перезарядкой
                     Эта перезарядка короче для истинных атак ближнего боя
                     Зелёный самоцвет увеличивает стрелковые характеристики и выпускает стремительные самонаводящиеся дротики во врага, когда они поражены стрелковым снарядом
-                    Синий самоцвет дарует дополнительные 4 миньон-слота, увеличивает урон миньонов и снижает штраф на урон миньонов, пока вы держите оружие другого класса
+                    Синий самоцвет даёт дополнительные 4 миньон-слота, увеличивает урон миньонов и снижает штраф на урон миньонов, пока вы держите оружие другого класса
                     Фиолетовый самоцвет увеличивает максимальный запас маны на 100, магические характеристики и значительно ускоряет восстановление маны, пока вы держите немагическое оружие
-                    Розовый самоцвет дарует 75 защиты, сопротивление урону, увеличивает скорость передвижения и прыжка, и регенерацию здоровья на 2
+                    Розовый самоцвет даёт 75 защиты, сопротивление урону, увеличивает скорость передвижения и прыжка, и регенерацию здоровья на 2
                     Когда все самоцветы одновременно присутствуют, попадание во врага любым оружием увеличивает регенерацию здоровья на 2 на 8 секунд
                     Этот показатель увеличивается до 3 на 2.5 секунды, если использовать оружие другого класса в течение этих 8 секунд
                     '''
@@ -20068,7 +20068,7 @@
                     Во время рывка вы невосприимчивы к большинству дебаффов
                     Рывок имеет 35 секунд перезарядки
                     При полном здоровье все ваши разбойные характеристики увеличены на 10%
-                    При получении более 80 единиц урона за один удар, дарует дополнительные кадры неуязвимости
+                    При получении более 80 единиц урона за один удар, даёт дополнительные кадры неуязвимости
                     '''
                     
                 HydrothermicRanged:
@@ -20131,7 +20131,7 @@
                     
                 Plaguebringer:
                     '''
-                    Дарует чумной рывок, чтобы таранить врагов и накладывать на них дебафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Plague.Name}»
+                    Даёт чумной рывок, чтобы таранить врагов и накладывать на них дебафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Plague.Name}»
                     Призывает маленькую разносчицу чумы защищать вас и наделяет силой ближайших миньонов
                     Увеличивает максимальное число миньонов на 3
                     '''
@@ -20882,8 +20882,8 @@
             SplitEbonianSlimeGod.Name: Эбонитовый бог слизней
             CorruptSlimeSpawn.Name: Искажённый слизень
             CorruptSlimeSpawn2.Name: Искажённый слизень
-            CrimsonSlimeSpawn.Name: Багровый слизень
-            CrimsonSlimeSpawn2.Name: Багровый слизень
+            CrimsonSlimeSpawn.Name: Багряный слизень
+            CrimsonSlimeSpawn2.Name: Багряный слизень
             StormWeaverBody.Name: Штормовой ткач
             StormWeaverHead.Name: Штормовой ткач
             StormWeaverTail.Name: Штормовой ткач
@@ -21249,7 +21249,7 @@
                 }
                 
                 Stylist: {
-                    1: Пожалуйста, не ловите космических вшей. Или багровых вшей. Или вообще вшей.
+                    1: Пожалуйста, не ловите космических вшей. Или багряных вшей. Или вообще вшей.
                     2: Пожалуйста, не ловите космических вшей. Или искажённых вшей. Или вообще вшей.
                     3: "Иногда я замечаю, как сзади подкрадывается {0}."
                     4: "{0} всегда пытается поднять мне настроение... даже если в глубине души ей грустно."
@@ -22353,7 +22353,7 @@
             }
             
             AbyssCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             AbyssCandle: {
@@ -22443,7 +22443,7 @@
             }
             
             AcidwoodCandelabraTile: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             AcidwoodCandleTile: {
@@ -22596,7 +22596,7 @@
             }
             
             AshenCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             AshenCandle: {
@@ -22682,7 +22682,7 @@
             }
             
             BotanicCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             BotanicCandle: {
@@ -22764,7 +22764,7 @@
             }
             
             CosmiliteCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             CosmiliteCandle: {
@@ -22854,7 +22854,7 @@
             }
             
             EutrophicCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             EutrophicCandle: {
@@ -22932,7 +22932,7 @@
             }
             
             ExoCandelabraTile: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             ExoCandleTile: {
@@ -23042,7 +23042,7 @@
             }
             
             MonolithCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             MonolithCandle: {
@@ -23120,7 +23120,7 @@
             }
             
             OtherworldlyCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             OtherworldlyCandle: {
@@ -23206,7 +23206,7 @@
             }
             
             PlaguedPlateCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             PlaguedPlateCandle: {
@@ -23292,7 +23292,7 @@
             }
             
             ProfanedCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             ProfanedCandle: {
@@ -23374,7 +23374,7 @@
             }
             
             SilvaCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             SilvaCandle: {
@@ -23452,7 +23452,7 @@
             }
             
             StatigelCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             StatigelCandle: {
@@ -23534,7 +23534,7 @@
             }
             
             StratusCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             StratusCandle: {
@@ -23616,7 +23616,7 @@
             }
             
             VoidCandelabra: {
-                Name: Канделябр
+                Name: Подсвечник
             }
             
             VoidCandle: {
@@ -24064,14 +24064,14 @@
         
         TownNPCMood: {
             DILF: {
-                Content: The weather is cool today.
+                Content: Заледенецкая сегодня погодка.
                 NoHome: Without a place to rest, my studies cannot proceed. Could you procure me a living space? I no longer like to make my homes using ice magic.
                 LoveSpace: Too many people can disrupt the flow of mana. I much prefer the breathing room here.
                 FarFromHome: My sense of direction is…subpar. I loathe to admit it, but I have a tendency to not venture outside too often.
                 DislikeCrowded: My spells are precise, and cannot be interrupted. I would like some more room to practice with them.
                 HateCrowded: I’d hate for one of your associates to be caught up in my magic. Alas, there are too many here to mitigate that risk.
                 LikeBiome: The temperature here allows me to save my magic power, as my creations can sustain their shape without melting in the cold.
-                DislikeBiome: The sun here is too unfriendly for my ice! Please, allow me lodgings elsewhere at once!
+                DislikeBiome: Здешнее солнце слишком уж неприветливо к моему льду! Please, allow me lodgings elsewhere at once!
                 HateBiome: Dark forces are strong here. This is not ideal.
                 LikeNPC: "{NPCName} is well learned, and quite a respectable mage himself!"
                 DislikeNPC: "I dislike {NPCName}’s blatant disregard of magic. I cannot blame his functions, but he is quite ignorant."
@@ -24101,7 +24101,7 @@
             }
         
             SEAHOE: {
-                Content: I am satisfied.
+                Content: Я удовлетворён.
                 NoHome: Thank you for your service, but I am afraid I am without a home now.
                 LoveSpace: Ah, the quiet of solitude is something I much enjoy.
                 FarFromHome: My scales will dry away from shelter. I am too far from my home.
@@ -24113,7 +24113,7 @@
                 LikeNPC: "The way {NPCName} acts is a bit too coarse for me, but his love of the ocean is something I can quite appreciate!"
                 DislikeNPC: "I’ve had quite enough carnage for one lifetime thank you! {NPCName}'s destructive tendencies are a bit insensitive."
                 HateNPC: "{NPCName} is just a child, but his attitude towards marine life is unacceptable! Absolutely unacceptable!"
-                LikeNPC_Princess: "That child, {NPCName}. She is an innocent soul. Let us hope the horrors of war never reach her."
+                LikeNPC_Princess: "Это дитя, {NPCName}. Она - невинная душа. Давай же понадеемся, что она никогда не познаёт все ужасы войны."
             }
         
             THIEF: {
@@ -24132,14 +24132,14 @@
             }
         
             WITCH: {
-                Content: I can’t complain really.
-                NoHome: Anywhere would be better than a cave with no bed or lighting.
-                LoveSpace: The quieter, the better. This is good.
+                Content: Мне нечем возмущаться.
+                NoHome: Да где угодно будет лучше, чем в пещере без кровати или освещения.
+                LoveSpace: Тише дом, лучше жизнь. Неплохо.
                 FarFromHome: After being used to having people around for a bit, I miss it again.
                 DislikeCrowded: I really don’t like how familiar some of these people are getting with me.
                 HateCrowded: I’m getting a headache from the pressure of having so many people around.
                 LikeBiome: I’ve never had the chance to live somewhere like this before. The trees and the songbirds… I quite like it.
-                DislikeBiome: Is this a sick joke? I can’t bear to be here any longer, I’ve already tried to atone for my sins.
+                DislikeBiome: Это что, идиотская шутка? I can’t bear to be here any longer, I’ve already tried to atone for my sins.
                 HateBiome: The spirits are unrestful here. It’s really not a good feeling.
                 LikeNPC: "{NPCName} is someone who’s had a terrible experience being cursed. He’s put up with it quite well all that time, it’s quite impressive honestly."
                 DislikeNPC: "Such a racket! All {NPCName} does is make noise, day in and day out! I can’t stand her!"
