@@ -5653,7 +5653,7 @@
             }
             
             EncryptedSchematicIce: {
-                Name: Зашифрованная схема (Льда)
+                Name: Зашифрованная схема (Льды)
                 Tooltip: Для расшифровки требуется Дешифратор со сложной системой регулировки напряжения
             }
             
@@ -7657,7 +7657,7 @@
             }
             
             BohldohrBanner: {
-                Name: Знамя бурхыжнека
+                Name: Знамя бурлыжнека
                 Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.CalamityMod.NPCs.Bohldohr.Name}"
             }
             
@@ -7667,7 +7667,7 @@
             }
             
             CalamityEyeBanner: {
-                Name: Знамя глаза бедствия
+                Name: Знамя бедственного глаза
                 Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.CalamityMod.NPCs.CalamityEye.Name}"
             }
             
@@ -7762,7 +7762,7 @@
             }
             
             EbonianBlightSlimeBanner: {
-                Name: Знамя эбонитового гибельного слизня
+                Name: Знамя эбенового гибельного слизня
                 Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.CalamityMod.NPCs.EbonianBlightSlime.Name}"
             }
             
@@ -8112,7 +8112,7 @@
             }
             
             VirulingBanner: {
-                Name: Знамя чумной блохи
+                Name: Знамя чумного крикуна
                 Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.CalamityMod.NPCs.Viruling.Name}"
             }
             
@@ -18316,7 +18316,7 @@
                 WillsWings: {
                     Tooltip:
                         '''
-                        {$CommonItemTooltip.DevItem}!
+                        {$CommonItemTooltip.DevItem}
                         Горизонтальная скорость: 7
                         Множитель ускорения: 1
                         Средняя вертикальная скорость
@@ -20697,7 +20697,7 @@
             Atlas.Name: Атлант
             BigSightseer.Name: Большой путешественник
             AstralSeekerSpit.Name: Плюющийся искатель
-            EnchantedNightcrawler.Name: Зачарованный ночной ползун
+            EnchantedNightcrawler.Name: Звёздный червяк
             FusionFeeder.Name: Питатель синтеза
             Hadarian.Name: Хадариан
             Hive.Name: Улей
@@ -20724,7 +20724,7 @@
             DarkEnergy.Name: Тёмная энергия
             CrabShroom.Name: Крабовый гриб
             Crabulon.Name: Крабулон
-            CalamityEye.Name: Глаз бедствия
+            CalamityEye.Name: Бедственный глаз
             CharredSlime.Name: Обугленный слизень
             CultistAssassin.Name: Культист-ассасин
             DespairStone.Name: Камень отчаяния
@@ -20777,7 +20777,7 @@
             ArmoredDiggerHead.Name: Бронированный копатель
             ArmoredDiggerTail.Name: Бронированный копатель
             BloomSlime.Name: Цветущий слизень
-            Bohldohr.Name: Бурхыжнек
+            Bohldohr.Name: Бурлыжнек
             Cnidrion.Name: Гидроид
             CosmicElemental.Name: Космический элементаль
             CrawlerAmber.Name: Янтарный ползун
@@ -20791,7 +20791,7 @@
             CrimulanBlightSlime.Name: Багротановый гибельный слизень
             Cryon.Name: Крион
             CryoSlime.Name: Криослизень
-            EbonianBlightSlime.Name: Эбонитовый гибельный слизень
+            EbonianBlightSlime.Name: Эбеновый гибельный слизень
             Eidolist.Name: Фантолист
             FearlessGoldfishWarrior.Name: Бесстрашная золотая рыбка-воин
             Frogfish.Name: Морской чёрт
@@ -20810,7 +20810,7 @@
             Piggy.Name: Поросёнок
             PlagueCharger.Name: Чумной крушитель
             PlagueChargerLarge.Name: Чумной крушитель
-            Viruling.Name: Чумная блоха
+            Viruling.Name: Чумной крикун
             Melter.Name: Плавитель
             PestilentSlime.Name: Ядовитый слизень
             Plagueshell.Name: Чумной панцирь
@@ -20873,13 +20873,13 @@
             RavagerLegRight.Name: Разрушитель
             RockPillar.Name: Каменный столб
             CosmicLantern.Name: Космический фонарь
-            Signus.Name: Сигнус, Посланник Пожирателя
+            Signus.Name: Сигнус, посланник Пожирателя
             CosmicMine.Name: Космическая мина
-            EbonianSlimeGod.Name: Эбонитовый бог слизней
+            EbonianSlimeGod.Name: Эбеновый бог слизней
             SlimeGodCore.Name: Бог слизней
             CrimulanSlimeGod.Name: Багротановый бог слизней
             SplitCrimulanSlimeGod.Name: Багротановый бог слизней
-            SplitEbonianSlimeGod.Name: Эбонитовый бог слизней
+            SplitEbonianSlimeGod.Name: Эбеновый бог слизней
             CorruptSlimeSpawn.Name: Искажённый слизень
             CorruptSlimeSpawn2.Name: Искажённый слизень
             CrimsonSlimeSpawn.Name: Багряный слизень
@@ -20919,7 +20919,7 @@
             SupremeCalamitas.Name: Высшая Каламитас
             SupremeCataclysm.Name: Высший Катаклизм
             SupremeCatastrophe.Name: Высший Катастроф
-            Yharon.Name: Дракон Джунглей, Ярон
+            Yharon.Name: Дракон джунглей, Ярон
             DILF.Name: Архимаг
             FAP.Name: Пьяная принцесса
             SEAHOE.Name: Морской король
@@ -21146,15 +21146,15 @@
                     2: Болезнь звёзд заразила эти земли. Может ли быть, что в иных мирах существуют более отвратительные силы Искажения, чем в нашем?
                     3: "{0} меня подставила."
                     4: Давным-давно здесь погиб мой предок. Я должна отдать ей своё почтение.
-                    5: Вы не то подумали! Просто собираю грибы для последующего, эм, использования.
+                    5: Не выдумывай себе всякого бреда! Просто собираю грибы для последующего, эм, использования.
                 }
                 
                 Guide: {
                    1: Могу я попросить, эм... сходить в Ад?.. Я оставил там кое-кого, кто мне небезразличен.
-                   2: У меня вдруг по спине пробежала дрожь, как будто только что упал метеорит и тысячи невинных созданий превратились в монстров со звёзд.
+                   2: У меня вдруг по спине пробежала дрожь, словно только что упал метеорит и тысячи невинных созданий превратились в монстров со звёзд.
                    3: Темница кажется ещё более беспокойной, чем обычно. Аккуратнее с мощными тварями, кажется их гнездо разворошили.
                    4: Уничтожение той бабочки, кажется, заставило её жизненную силу просочиться в освящённые области. Попробуй заглянуть туда и посмотреть, что сможешь найти!
-                   5: Я слышал, что в темнице существует портал антиматерии, поглощающий всё что только можно. Попробуй использовать руну Кос там!
+                   5: Я слышал, что в Темнице существует портал антиматерии, поглощающий всё что только можно. Попробуй использовать руну Кос там!
                 }
                 
                 Demolitionist: {
@@ -21163,14 +21163,14 @@
                 
                 Clothier: {
                     1: Связь плохая, это, может, мёртвый говорить не может!
-                    2: Эти крики... Я не уверен почему, но чувствую, как непонятный страх пробуждается в моём сердце.
-                    3: Я могу слышать тихие призрачные крики, доносящиеся из Темницы... и совсем не те, которые слышал ранее. Что там происходит?
+                    2: Эти крики... Не уверен почему, но чувствую, как непонятный страх пробуждается в моём сердце.
+                    3: Я могу слышать тихие призрачные крики, доносящиеся из Темницы... и совсем не те, что слышал раньше. Что там происходит?
                     4: Что бы это ни было, я рад, что оно сгинуло.
                     5: Хьюстон, у нас проблема.
                 }
                 
                 GoblinTinkerer: {
-                    1: "Мне кажется или мои карманы стали легче с тех пор, как прибыла {0}?"
+                    1: "Мне кажется или мои карманы стали легче с тех пор, как у нас поселилась {0}?"
                     2: Знаешь... у нас так давно не было нашествий...
                 }
                 
@@ -21192,19 +21192,19 @@
                 
                 Steampunk: {
                     1: Что это за штуковина? Она же уничтожает весь смысл моих телепортов!
-                    2: Угусь! Теперь я тоже думаю о том, чтобы стать космическим пиратом.
-                    3: Из-за астральной инфекции мои машины выходят из строя. Кажется тут не лучшее место для их конструирования.
+                    2: Ага! Теперь я тоже думаю о том, чтобы стать космическим пиратом.
+                    3: Из-за астральной инфекции мои машины выходят из строя. Кажется, тут не лучшее место для их конструирования.
                     4: Мне очень жаль, но у меня нет никакой технологии защиты от единорогов. Да прибудет с тобой Сила.
                 }
                 
                 DyeTrader: {
-                    1: Ты видел этих существ из драгоценностей в пещерах? Их цвета просто, вай, дух захватывают!
+                    1: Видел этих существ из драгоценностей в пещерах? Их цвета просто, вай, дух захватывают!
                     2: Как думаешь, Пермафрост знает, как отпустить и забыть?
                 }
                 
                 PartyGirl: {
                     1: "У меня такое чувство, что {0} устроит нам фантастические вечеринки!"
-                    2: Кажется мой дисплей превращается в электрическую ловушку для насекомых. Ну, хотя бы они этим наслаждаются.
+                    2: Кажется, мой дисплей превращается в электрическую ловушку для насекомых. Ну, хотя бы они этим наслаждаются.
                     3: О! Обожаю вечеринки в жутких костюмах!
                 }
                 
@@ -21212,7 +21212,7 @@
                     1: Все эти мгновения затеряются во времени. Как слёзы... в дожде.
                     2: Всегда стреляйте на луну! Очевидно, что раньше это работало.
                     3: Дрэйдон? Он... слишком 'высокооктановый', если понимаешь, о чём я.
-                    4: Эти огромные жуки, терроризирующие джунгли... Конечно только ты можешь их уничтожить!
+                    4: Эти огромные жуки, терроризирующие джунгли... Конечно же только ты можешь их уничтожить!
                 }
                 
                 Painter: {
@@ -21234,16 +21234,16 @@
                 
                 WitchDoctor: {
                     1: Здешний мой дом имеет обширную историю и таинственное прошлое. Ты быстро узнаёшь, насколько она обширна...
-                    2: Я смогу продать уникальные предметы, если ты покажешь, что способен справиться с хранителем этих джунглей.
+                    2: Я смогу продать уникальные предметы, если ты докажешь способность справиться с хранителем этих джунглей.
                     3: Идеальное время для сбора лучших ингредиентов для зелий.
                 }
                 
                 Pirate: {
                     1: Да, я слышал о мифическом существе океана, что поёт манящим голосом. Осторожнее, когда рыбачишь там.
-                    2: Благодарю, что разобрался с тем морским змеем. Или, может, всё же не с тем...
+                    2: Спасибо, что разобрался с тем морским змеем. Или, может, всё же не с тем...
                     3: "Я помню легенды о {0}е. Хотя он не совсем такой, каким его изображают в рассказах."
                     4: Двадцать девять бутылок пива на стене...
-                    5: Вот он, вид, которым я могу восхищаться в любое время! Хотя теперь такое чувство, будто что-то наблюдает за мной.
+                    5: Вот он, вид, которым я могу восхищаться в любое время! Хотя теперь такое чувство, словно что-то наблюдает за мной.
                     6: Не очень красивое зрелище, но в этих водах всё ещё есть жизнь.
                     7: Мой корабль может затонуть из-за одной лишь кислоты.
                 }
@@ -21280,7 +21280,7 @@
                 
                 Bartender: {
                     1: Самогончику?
-                    2: "Воу, {0} немного жестокая, тебе так не кажется? Я никогда не утверждал, что разбираюсь в чем-то, кроме эля!"
+                    2: "Воу, {0} немного жестокая, тебе так не кажется? Я никогда не утверждал, что разбираюсь в чем-то, помимо эля!"
                 }
                 
                 Nurse: {
@@ -21481,8 +21481,8 @@
             MorayEel: Их глаза блестят голодом. Отдыхая, они населяют скалы подводных сооружений, и лишь изредка выплывают в открытые воды океана.
             OarfishHead: Необычная костистая рыба, которую многие наблюдали лишь в виде трупов, выброшенных на берег. Но в естественной среде обитания, их красные плавники развеваются позади них, пока они плавают в водной толще.
             ReaperShark: Эволюция - странная судья, особенно в глубинах Бездны. Некоторым она дарует прямую дорогу к выживанию, другим даёт руки.
-            ToxicMinnow: It spends much of its time finding the most repulsive and disagreeable vegetation for animals to feast upon. Their bellies glow green as they process the chemicals to use in self-defense.
-            Viperfish: Обычно спокойное животное, большую часть своего времени блуждающее по скалистым выступам Бездны. Хотя, при приближении к ней, может стать достаточно агрессивным.
+            ToxicMinnow: Он тратит большую часть своего времени на поиск самой отвратительной и неприятной для животных растительности, которой сами они полакомиться не прочь. Их животы светятся зеленым, когда они вырабатывают химикаты для самообороны.
+            Viperfish: Обычно спокойное животное, большую часть своего времени блуждающее по скалистым выступам Бездны. Хотя, при приближении к ней, может стать достаточно агрессивной.
             AcidEel: Along its spine runs an undulating dorsal fin which they can put to great use for their streamlined form, as they rush at prey underwater.
             BabyFlakCrab: Curiously, these seem to be intelligent enough to imprint a sort of parent figure if captured at a young enough age. They will stick with you forever!
             BloodwormNormal: A ripe-looking worm large enough to curl around your arm. A fish would have to be either mad enough or wise enough, to go after one of these.
@@ -21533,7 +21533,7 @@
             CultistAssassin: Фанатики, чей разум проиграл ненавидящему серному пламени. Никто не видел, что скрывается под их накидкой, да и проверять лучше не стоит.
             DespairStone: Конденсированный летающий камень серного шлака. Согласно рассказам, борющиеся за свободу души внутри него являются причиной, из-за которой он разлетается по земле.
             HeatSpirit: Дух человека, чей разум был затерян в очаге алого пламени. Он скитается по Аду в целях испарения любого источника влаги, что найдет.
-            Scryllar: Twisted detritus of those who once came to harvest the remains of the crags. The whispers got to them.
+            Scryllar: Искорёженные останки тех, кто некогда приходил собирать остатки скал. Шепот дошел до них.
             SoulSlurper: Остатки души, которая поглощала, была поглощена, а затем истерзана другими душами. С чего начинается этот цикл, никому не ведомо, но лучше это и не выяснять.
             Cryogen: Призматический живой ледяной кристалл. И хотя обычно его можно наблюдать лишь сквозь слякоть метели, в те редкие дни, когда он пролетает в солнечный день, его тело мерцает губительно красивым синим цветом.
             DesertNuisanceHead: Изголодавшееся порождение Пустынного бича. Словно пустынная пиранья, они роятся и способны всего за несколько секунд разрывать мелких животных.
@@ -21602,8 +21602,8 @@
             WulfrumDrone: Rotating their small frames, they swoop at potential intruders into a predefined territory that no longer exists. They wander without purpose.
             WulfrumGyrator: Сфера из вульфрумового металла. Как она перемещается, остается загадкой, хотя, вероятно, это как-то связано с её гироскопическим вращением. Они бросаются всем своим телом на врага, чтобы атаковать.
             WulfrumHovercraft: Traveling with propulsion that carries them over the ground with ease, they seek out trespassers, though their analysis likely has grown imperceptive with age.
-            WulfrumPylon: A stationary foe, though its function is far from harmless. Within its influence, other wulfrum creations become notably empowered, the curious energy within them, overflowing.
-            WulfrumRover: An aged automaton of unknown origins. With an incessant sense of duty and worn frame, they scour the land. Their lamps shine with curious energy.
+            WulfrumPylon: Неподвижный враг, однако его функция отнюдь не безобидна. Под его влиянием остальные вульфрумовые творения приобретают особую силу, удивительная энергия переполняет их изнутри.
+            WulfrumRover: Старый автомат неизвестного происхождения. С непрестанным чувством долга и изношенным телом они рыщут по земле, а их лампы сияют с удивительной энергией.
             OldDuke: Хоть выглядит старым и дряхлым, он цепляется за жизнь. Загрязнённое море не похоже на его родное место обитания, но всё же он занял здесь своё место, как высший хищник.
             SulphurousSharkron: Гниющие, словно труп, существа, похожие на отпрысков Старого герцога. С самого рождения в сернистом море они выглядят сморщенными и дряхлыми.
             PerforatorCyst: Хаотическая и пульсирующая масса глаз и зубов. Это венец плоти Багрянца, что следует избегать любой ценой.
@@ -21612,13 +21612,13 @@
             PerforatorHeadSmall: Каждый из них оснащен смертоносным ртом, и каждый из ртов подходит для своей задачи. Один, чтобы проткнуть, второй, чтобы разорвать, а третий, чтобы просто сожрать.
             PerforatorHive: Несмотря на то, что оно было порождено Багрянцем, неизвестно, полностью ли оно служит своему создателю. Черви улья часто вырывают огромные куски плоти Багрянца, создавая в нём туннелли.
             PlaguebringerGoliath: Механизмы и наномашины почти полностью пожрали Королеву пчёл и приняли близкую к ней форму. Возникает вопрос,  может, проще и гораздо эффективнее было создать её с нуля?
-            Melter: Its face is warped and softened by the corrosive effects of the plague nanobots, and it seeks to share that uncomfortable fate with others under both its own will, and the plague’s.
-            PestilentSlime: A slime infested by the nanobots of the plague. With no directive the plague can naturally apply to it, it simply continues its life, corroding anything which approaches.
+            Melter: Его лицо искажено и смягчено разъедающим воздействием чумных наноботов, и он стремится разделить эту неприятную судьбу с другими как по своей собственной воле, так и по воле чумы.
+            PestilentSlime: Слизень, зараженный чумными наноботами. Без каких-либо директив, которые чума может образом применить к нему, он просто продолжает свою жизнь, разъедая всё, что приближается.
             PlagueCharger: While hornets on their own are known for aggressive defense of their territory, once they have been warped by the plague, their sense of their dominion reaches ever further.
             PlagueChargerLarge: While hornets on their own are known for aggressive defense of their territory, once they have been warped by the plague, their sense of their dominion reaches ever further.
             PlaguebringerMiniboss: Queen Bees are reared upon royal honey, raising them into the matriarchs they are. If during the process, their growth is hijacked by the plague, they are left as only a pathetic reminder of what they could have been.
             Plagueshell: In truth, once a jungle tortoise has been touched by the plague, its original shell disintegrates, and the thorny shield it now wields is constructed entirely of reinforced nanobots.
-            Viruling: Overtaken by the plague, derplings immediately lose their legs, as they are seen as only a hindrance. No longer will they gaily spring about.
+            Viruling: Заболевая чумой, крикуны сразу же теряют ноги, так как сама чума видит в них лишь помеху. Больше они не могут весело прыгать.
             Polterghast: Крик, плач, какофония — эта амальгама духов в тоске проносится по некогда полным жизни коридорам Темницы в поисках живых или мертвых, пополняя свои ряды.
             ProfanedGuardianCommander: When it turns its burning spear towards anything, its simple mind has a clear goal. To entirely eradicate the enemy.
             ProfanedGuardianDefender: The body it has formed boasts of a stone shell hallowed and tempered by the flames of the sun. Very little can fully shatter its defense.
@@ -21627,26 +21627,26 @@
             RavagerBody: С рёвом пламя вырывается из того, что кажется парапетами крепости из гнили. Вы узнаете его по одному запаху, стоит ему начать плиближаться с подветренной стороны. 
             CosmicLantern: Эти фонари позволяют владельцу видеть в любой темноте и, обычно, в бою их не используют.
             Signus: Фигура, облачённая в тёмные одежды, и обладающая ещё более тёмной историей. Никто не знает истинного облика этого существа, хотя ходит много слухов.
-            CorruptSlimeSpawn: They rapidly flap their wings, created from membranes of gel and spines of hardened slime. They will incessantly hunt you down.
+            CorruptSlimeSpawn: Они быстро машут крыльями, мембраны которых состоят из геля и шипов затвердевшей слизи. Они будут постоянно охотиться за вами.
             CrimsonSlimeSpawn: Irritant globs of gel, which can rob you of your vision if they get on your eyes. Avoid these at all costs, as they can spell death against the Slime God.
-            CrimsonSlimeSpawn2: Embedded in these slime’s bodies are shards of crimulan stone, which drip with a toxin meant to impair your vision.
+            CrimsonSlimeSpawn2: В телах этих слизней есть осколки багротанового камня, с которых капает токсин, предназначенный для ухудшения вашего зрения.
             SlimeGodCore: Cущество, которое можно запросто спутать с огромной амёбой. За счёт скопившейся плотной биомассы оно развивается, намного превосходя пределы обычных слизней.
             SplitCrimulanSlimeGod: Защита, и в то же время тело своего создателя. Эти концентрированные массы мировых зол пользуются коррозией и гнилью, превращая в биомассу любого, кто встанет на их пути.
             SplitEbonianSlimeGod: Защита, и в то же время тело своего создателя. Эти концентрированные массы мировых зол пользуются коррозией и гнилью, превращая в биомассу любого, кто встанет на их пути.
             StormWeaverHead: It resides high up in the stratosphere, feasting on wyverns and storm swimmers alike, which give it powerful electrokinesis.
-            AnthozoanCrab: A crab that has placed upon its back, a sturdy structure of stone. It is quite strong and displays this extraordinary strength by hurling boulders at those who encroach on its territory.
-            BelchingCoral: A rare species of coral, one which is able to process and draw nutrients from the waters of the sulphurous sea. During this process, a large amount of volatile gas is formed.
-            Catfish: An animal which adapted to the toxic waters quite naturally. It uses its whiskers to find its way, and its prey in the murky depths.
-            Flounder: These creatures do not seek out their food, but rather wait for their meals to come to them. Watch your step if you venture down into the sulphurous sea.
+            AnthozoanCrab: Краб, который возложил себе на спину прочное сооружение из камня. Он довольно силён и демонстрирует эту необычайную силу, швыряя валуны во всех, кто вторгается на его территорию.
+            BelchingCoral: Редкая разновидность кораллов, которая способна перерабатывать и извлекать питательные вещества из вод сернистого моря. Во время этого процесса образуется большое количество летучего газа.
+            Catfish: Животное, которое довольно естественно приспособилось к токсичным водам. Он использует свои усы для прокладывания пути и обнаружения добычи в тёмных глубинах.
+            Flounder: Эти существа не ищут себе пищу, а скорее ждут, когда еда сама придёт к ним. Смотрите под ноги, если рискнете спуститься в сернистое море.
             Gnasher: A turtle that has had its shell encrusted by the filth of the sulphurous sea. For an animal of its size, its jaws have a nearly unmatched biting strength.
-            Trasher: A huge alligator adapted to a life of scavenging in the sulphurous sea. They scrape morsels of food from the bottom with their massive jaws. But do not be mistaken. They will also prey on weak and feeble creatures.
-            BlindedAngler: A species of angler which has lost any distinguishing feature on its head. Using primitive electroreception similar to sharks, it slowly and methodically hunts its prey.
+            Trasher: Огромный аллигатор, приспособившийся к жизни в мусоре сернистом море. Они соскребают кусочки пищи со дна своими массивными челюстями, но не заблуждайтесь. Они также и любители съесть слабых и немощных существ.
+            BlindedAngler: Вид удильщика, который потерял какую-либо отличительную черту на своей голове. Используя примитивную электрорецепцию, подобную акульей, он медленно и методично выслеживает свою добычу.
             Clam: Sluggish mollusks filter what they can from the brackish water. Their shells are as hard as stone but contain delicate, succulent flesh.
             EutrophicRay: A stingray that spends much of its time docile on the rocky floors of the sunken sea’s pools. It stores its energy, and when endangered, can release it in short bursts of speed.
-            GhostBell: Ethereal jellyfish that drift in the still water of the sunken sea. Their bodies are curiously charged with an electric current.
+            GhostBell: Призрачные медузы, дрейфующие в стылых водах затерянного моря. Их тела странным образом заряжены электрическим током.
             GiantClam: Этот огромный моллюск настолько велик, что способен вместить в себя целого человека, а может даже двух. К счастью, его территория находится лишь в самых глубоких областях затерянного моря.
             PrismBack: Rather slow swimmers, they are one of the few creatures that need to breach. They periodically swim to the upper layer of their habitat to lay their eggs.
-            SeaFloaty: Strange but mesmerizing creatures, they hide immediately at the sight of any predator. They do not seem to be fully developed.
+            SeaFloaty: Странные, но завораживающие создания, которые сразу прячутся при виде любого хищника. Они кажутся не полностью развитыми.
             SeaMinnow: Хоть и располагаются в самом низу пищевой цепочки, они составляют восемьдесят процентов биомассы этого моря. Они питаются трупами, что падают из подземной пустыни сверху.
             SeaSerpent1: Эти угри в большинстве своём пассивны и лишь лениво плавают по спокойным водам затерянного моря. Но, если их спровоцировать, они могут стать неостановимыми нападающими.
             SepulcherHead: Наимерзейшая немёртвая мерзость этой реальности. Сам Могильщик полностью невосприимчив к физическим повреждениям, и его можно убить, только уничтожив многочисленные отделённые от тела органы.
