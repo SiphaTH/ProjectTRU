@@ -12494,7 +12494,7 @@
                 Tooltip:
                     '''
                     'Сила древнего культиста резонирует в этом посохе'
-                    Стреляет скоплением древнего света и имеет шанс запустить вращающееся ледяное скопление
+                    Стреляет скоплением древнего света и может запустить вращающееся ледяное скопление
                     '''
             }
             
@@ -13355,7 +13355,7 @@
                 Name: Кровавая грань
                 Tooltip:
                     '''
-                    Имеет шанс исцелить игрока при попадании во врага
+                    Может исцелить игрока при попадании во врага
                     Накладывает дебафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.BurningBlood.Name}»
                     '''
             }
@@ -14277,7 +14277,7 @@
             
             TeardropCleaver: {
                 Name: Клинок слёз
-                Tooltip: 'Заставляет ваших врагов плакать'
+                Tooltip: Заставляет ваших врагов плакать
             }
             
             TenebreusTides: {
@@ -24230,25 +24230,25 @@
             }
         
             FAP: {
-                Content: It's 5 o'clock somewhere.
-                NoHome: I need a place to crash! My drinks need to be properly cooled before they can be served!
-                LoveSpace: Finally, some peace and quiet. Large quantities of people tend to piss me off.
-                FarFromHome: I'm used to running away from home, but this is a little ridculous.
-                DislikeCrowded: If one more person tells me ‘it’s happy hour somewhere’ to try and get a discount, I’m going to snap!
-                HateCrowded: No amount of alcohol can drown out the noise these people make!
-                LoveBiome: Other unicorns? Never thought I’d see the day! This place is incredible!
-                LikeBiome: A good breeze to cool some heads, that's the way to deal with customers who've had a few too many drinks!
-                DislikeBiome: This dry air and heat isn’t good for my hair, or my drinks.
-                HateBiome: Это место ужасно! The musty air spoils the taste and aroma of everything I’m selling!
-                LoveNPC_Stylist: "{NPCName} works wonders for my hair... among other things, hehe."
-                LoveNPC_BestiaryGirl: "{NCPName} is so fluffy and squishy! She also says my alicorn form is 'mega rad'."
-                LikeNPC_Truffle: "{NCPName} makes me so hungry... I wonder how great of a trip he'd give..."
-                LikeNPC_PartyGirl: "{NCPName} would make for a great bartender some day. She really knows how to liven the mood!"
-                DislikeNPC_DD2Bartender: "{NCPName} is so bald. Maybe if he'd stop trying to date me he'd finally grow some hair."
-                DislikeNPC_TaxCollector: "{NCPName} had best keep his distance... he wouldn't want to wake up one morning with a pipe bomb in his mailbox."
-                HateNPC_GoblinTinkerer: "{NCPName} was so terrible that I had to FORCE him to have a better reforge system. Why would you house me next to him? Do you enjoy watching me relive the stress he gave me!?"
-                HateNPC_Angler: "{NCPName} never stops blabbering about his inane fishing quests. Get me away from him before I stomp him into the ground!"
-                LikeNPC_Princess: "You think I’d dislike {NPCName} because we’re too different? Quite the contrary, there's a lot we like to talk about, over non-alcoholic drinks of course."
+                Content: Пиво, пиво, водочка, плывёт по морю лодочка...
+                NoHome: Мне нужно место для отдыха! Мои напитки должны должным образом охлаждаться перед подачей!
+                LoveSpace: Наконец-то, тишина и покой. Не люблю большие скопления людей.
+                FarFromHome: Я привыкла сбегать из дома, но это немного перебор.
+                DislikeCrowded: Если ещё хоть кто-то скажет ‘счастливые часы’ в попытке получить скидку, я закачу истерику!
+                HateCrowded: Во всём мире нет столько алкоголя, чтобы заставить людей заткнуться!
+                LoveBiome: Другие единороги? Не думала, что настанет день, когда смогу их увидеть! Это место невероятно!
+                LikeBiome: А здешний ветерок неплохо остужает некоторые головы. Вот как нужно обращаться с клиентами, которые выпили слишком много!
+                DislikeBiome: Этот сухой воздух плохо влияет и на кожу, и на напитки.
+                HateBiome: Это место ужасно! Его тухлый запашок портит вкус и пристаёт ко всему моему товару!
+                LoveNPC_Stylist: "Работа {NPCName} словно услада для моих волос... и не только для волос, хех."
+                LoveNPC_BestiaryGirl: "{NCPName} такая мягкая и пушистая! А ещё она говорит, что моя форма аликорна 'мега крут'."
+                LikeNPC_Truffle: "{NCPName} заставляет чувствовать голод... Интересно, какой будет от него трип..."
+                LikeNPC_PartyGirl: "{NCPName} когда-нибудь станет отличным барменом. У неё талант оживлять атмосферу."
+                DislikeNPC_DD2Bartender: "{NCPName} лысый. Думаю, если бы он бросил набиваться мне в бойфренды, вероятно, отрастил бы хоть чуточку волос."
+                DislikeNPC_TaxCollector: "Лучше бы {NCPName} держался подальше... Не думаю, что он хочет однажды проснуться под взрыв бомбы в почтвом ящике."
+                HateNPC_GoblinTinkerer: "{NCPName} был настолько ужасен, что я ЗАСТАВИЛА его изменить свою систему перековки на более хорошую. Зачем ты сделал нас соседями? Наслаждаешься моими мучениями?!"
+                HateNPC_Angler: "{NCPName} всё время бредит своими заданиями о рыбалке. Отсели меня подальше, пока я его в грязь не втоптала!"
+                LikeNPC_Princess: "Думаешь, что мне не нравится {NPCName}, потому что мы слишком разные? На самом деле, у нас есть множество тем для разговора, даже без алкоголя."
             }
         
             SEAHOE: {
@@ -24258,12 +24258,12 @@
                 FarFromHome: Мои чешуйки сохнут и выпадают... Я слишком далеко от дома.
                 DislikeCrowded: Тесновато здесь, не находишь?
                 HateCrowded: Ненавижу использовать свой статус, но, когда я был королём, я предпочитал куда более просторные пространства.
-                LikeBiome: So close to the ocean. It is bittersweet, though I cannot help but like it.
-                DislikeBiome: The sun is too harsh on me. I dislike the arid climate here.
-                HateBiome: This is simply no place to live. Let us depart immediately.
-                LikeNPC: "The way {NPCName} acts is a bit too coarse for me, but his love of the ocean is something I can quite appreciate!"
-                DislikeNPC: "I’ve had quite enough carnage for one lifetime thank you! {NPCName}'s destructive tendencies are a bit insensitive."
-                HateNPC: "{NPCName} is just a child, but his attitude towards marine life is unacceptable! Absolutely unacceptable!"
+                LikeBiome: Как же близко к океану. Этот солоноватый прикус в воздухе... мне это не может не нравится.
+                DislikeBiome: Здешнее солнце слишком сурово для меня, ещё и климат засушливый...
+                HateBiome: Здесь просто нет места для жизни. Уходим отсюда, немедленно.
+                LikeNPC: "{NPCName} ведёт себя достаточно грубо, если спросишь, но его любовь к океану я вполне могу оценить!"
+                DislikeNPC: "С меня хватит резни на всю жизнь, спасибо! {NPCName} со своими разрушительными наклонностями абсолютно бестактен."
+                HateNPC: "{NPCName} лишь ребенок, но его отношение к морским обитателям неприемлемо! Абсолютно неприемлемо!"
                 LikeNPC_Princess: "Это дитя, {NPCName}. Она - невинная душа. Давай же понадеемся, что она никогда не познаёт все ужасы войны."
             }
         
@@ -24286,15 +24286,15 @@
                 Content: Мне нечем возмущаться.
                 NoHome: Да где угодно будет лучше, чем в пещере без кровати или освещения.
                 LoveSpace: Тише дом, лучше жизнь. Неплохо.
-                FarFromHome: After being used to having people around for a bit, I miss it again.
-                DislikeCrowded: I really don’t like how familiar some of these people are getting with me.
-                HateCrowded: I’m getting a headache from the pressure of having so many people around.
-                LikeBiome: I’ve never had the chance to live somewhere like this before. The trees and the songbirds… I quite like it.
-                DislikeBiome: Это что, идиотская шутка? I can’t bear to be here any longer, I’ve already tried to atone for my sins.
-                HateBiome: The spirits are unrestful here. It’s really not a good feeling.
-                LikeNPC: "{NPCName} is someone who’s had a terrible experience being cursed. He’s put up with it quite well all that time, it’s quite impressive honestly."
-                DislikeNPC: "Such a racket! All {NPCName} does is make noise, day in and day out! I can’t stand her!"
-                LikeNPC_Princess: "What a strangely pleasant kid, {NPCName} is to be around."
+                FarFromHome: Привыкнув к людям вокруг, я даже начала скучать по ним.
+                DislikeCrowded: Мне правда не нравится, как формально некоторые из этих людей обращаются со мной.
+                HateCrowded: От всего этого количества народа у меня уже голова болит.
+                LikeBiome: Мне никогда не доводилось жить в подобном месте. Деревья и пение птиц... Мне нравится.
+                DislikeBiome: Это что, идиотская шутка? Не могу здесь больше находится, я уже пыталась искупить свои грехи.
+                HateBiome: Духи здесь беспокойны. Ощущения от этого ужасны, поверь.
+                LikeNPC: "{NPCName} кто-то, кто испытал отвратительную ношу проклятья. Всё это время он довольно хорошо с этим справлялся, довольно впечатляет."
+                DislikeNPC: "Какой же шум! А {NPCName} издаёт весь этот шум, день за днём! Я её терпеть не могу!"
+                LikeNPC_Princess: "{NPCName} очень приятный ребёнок, я не против её присутствия."
             }
         }
         
@@ -24362,7 +24362,7 @@
         EdgyBossText9: Из всех моих сегментов... удариться именно об этот...
         EdgyBossText10: Это ещё не конец, малыш!
         EdgyBossText11: БОГ НЕ БОИТСЯ СМЕРТИ!
-        EdgyBossText12: Ты не бог... но я буду пировать твоей сущностью несмотря ни на что!
+        EdgyBossText12: Ты не бог... но я буду пировать твоей сущностью, несмотря ни на что!
         DoGBossText: Холодная луна ярко мерцает!
         DoGBossText2: Урожайная луна жутко сияет.
         AstralText: Звезда упала с небес!
