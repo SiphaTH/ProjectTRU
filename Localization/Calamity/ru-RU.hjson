@@ -3854,8 +3854,8 @@
                     Сердце (большинства) членов сообщества Террарии
                     Начинает со слабого баффа всех ваших характеристик
                     Характеристики становятся более мощными по мере убийства боссов
-                    Уменьшает урон, наносимый вам дебаффами, наносящего постепенный урон
-                    Спасибо всем вам, тем, кто поддерживал меня и помог воплотить этот мод в реальность
+                    Снижает урон, наносимый вам дебаффами, наносящими постепенный урон
+                    'Спасибо всем вам, тем, кто поддерживал меня и помог воплотить этот мод в реальность'
                     '''
             }
             
@@ -20141,7 +20141,7 @@
                     '''
                     Увеличивает защиту на 10 и регенерацию здоровья на 3
                     Враги чаще выбирают вас в качестве цели
-                    Уменьшает потерю здоровья от дебаффов, наносящие постепенный урон на 20%
+                    Уменьшает потерю здоровья от дебаффов, наносящих постепенный урон, на 20%
                     Все атаки, включая миньонов, с небольшим шансом обладают вампиризмом и ускоряют регенерацию здоровья
                     Снижает скорость передвижения и время полёта на 20%
                     Отражает вражеский урон и вызывает колючий шип
@@ -21308,7 +21308,7 @@
             ArtemisChargeTelegraph.Name: Бросок Артемиды
             ArtemisDeathrayTelegraph.Name: Экзотермический луч Артемиды
             ArtemisLaser.Name: Импульсный экзо-лазер
-            ArtemisSpinLaserbeam.Name: Ohio Beam
+            ArtemisSpinLaserbeam.Name: Огайо-луч
             AstralFlame.Name: Астральное преследующее пламя
             AstralGodRay.Name: Астральный луч бога
             AstralLaser.Name: Залп астральных лазеров
@@ -21438,14 +21438,14 @@
             LavaChunk.Name: Лавовый кусок
             LightningMark.Name: Отметка молнии
             SmokeTelegraph.Name: Дым
-            SCalBrimstoneFireblast.Name: Brimstone Fireblast
-            SCalBrimstoneGigablast.Name: Brimstone Gigablast
-            StormWeaverFrostWaveTelegraph.Name: Frost Wave Telegraph
-            UnstableCrimulanGlob.Name: Unstable Crimulan Glob
-            UnstableEbonianGlob.Name: Unstable Ebonian Glob
-            YharonBulletHellVortex.Name: Bullet Hell Vortex
-            AstralMeteorProj.Name: Astral Meteor
-            LightningCloud.Name: Cloud
+            SCalBrimstoneFireblast.Name: Серный огненный взрыв
+            SCalBrimstoneGigablast.Name: Серный гигавзрыв
+            StormWeaverFrostWaveTelegraph.Name: Ледяной волновой телеграф
+            UnstableCrimulanGlob.Name: Нестабильный багротановый шар
+            UnstableEbonianGlob.Name: Нестабильный эбонитовый шар
+            YharonBulletHellVortex.Name: Вихрь пуль
+            AstralMeteorProj.Name: Астральный метеор
+            LightningCloud.Name: Облако
         }
         
         Prefixes: {
@@ -21642,38 +21642,38 @@
             ReaperShark: Эволюция - странная судья, особенно в глубинах Бездны. Некоторым она дарует прямую дорогу к выживанию, другим даёт руки.
             ToxicMinnow: Он тратит большую часть своего времени на поиск самой отвратительной и неприятной для животных растительности, которой сами они полакомиться не прочь. Их животы светятся зелёным, когда они вырабатывают химикаты для самообороны.
             Viperfish: Обычно спокойное животное, большую часть своего времени блуждающее по скалистым выступам Бездны. Хотя, при приближении к ней, может стать достаточно агрессивной.
-            AcidEel: Along its spine runs an undulating dorsal fin which they can put to great use for their streamlined form, as they rush at prey underwater.
-            BabyFlakCrab: Curiously, these seem to be intelligent enough to imprint a sort of parent figure if captured at a young enough age. They will stick with you forever!
-            BloodwormNormal: A ripe-looking worm large enough to curl around your arm. A fish would have to be either mad enough or wise enough, to go after one of these.
-            CragmawMire: Within its calcified shell which has formed against all logic in the sulphurous sea, a gelatinous body stirs. It is also host to a long grappling creature, which helps it grab prey in exchange for protection.
-            FlakCrab: A normal crab by all means, except for its shell. It has learned to gather the water around it to expel forcefully through its funnel after treatment. It is a dangerous concoction.
-            GammaSlime: As the toxins in the water of the sulphurous sea worsen, and the clouds which draw from it grow more hazardous, the slimes become ever more potent.
-            IrradiatedSlime: Encrusted with gunk that evaporates slowly from the sulphurous sea, these slimes actually form in the upper atmosphere’s acidic rain, before falling back to the earth.
+            AcidEel: Вдоль его позвоночника идёт волнистый спинной плавник, который сильно помогает, когда они бросаются на добычу под водой.
+            BabyFlakCrab: Любопытно, что они, судя по всему, достаточно умны, чтобы запомнить своего рода родительскую фигуру. Если они запомнят вас, будучи совсем молодыми, то останутся с вами навсегда!
+            BloodwormNormal: Спелый на вид червяк, достаточно большой, чтобы обвиться вокруг руки. Рыба должна быть либо невероятно безумной, либо невероятно мудрой, чтобы отправиться за одним из них.
+            CragmawMire: Внутри его кальцинированной оболочки, которая вопреки всякой логике образовалась в сернистом море, шевелится студенистое тело. Он также является носителем длинного существа, которое помогает ему хватать добычу в обмен на защиту.
+            FlakCrab: Обычный во всех отношениях краб, за исключением панциря. Он научился собирать вокруг него воду, чтобы после обработки с силой выдавливать её через воронку трубы. Выделяемая смесь очень опасна.
+            GammaSlime: Ухудшаются токсины сернистого моря, а облака, что образуются из него, становятся опаснее. Слизни в подобном окружении начинают представлять всё большую угрозу.
+            IrradiatedSlime: Покрытые слоем грязи, которая медленно испаряется из сернистого моря, эти слизни фактически образуются в результате кислотного дождя в верхних слоях атмосферы, прежде чем упасть обратно на землю.
             Mauler: Акулы, возможно, являются самыми живучими существами в истории нашей планеты, способными адаптироваться почти любым условиям. Неудивительно, что один из этих высших хищников стал господствовать даже в этом море.
-            NuclearTerror: Perhaps it was once just a simple crab or perhaps there are plenty of others like it, lurking in the depths. Any answer is sure to make you want to never set foot in the sulphurous sea again.
-            NuclearToad: When threatened underwater they rapidly inflate and bob to the surface. As a last resort, they forcefully burst themselves. Their selfless goal is the prolonged survival of their kin.
-            Orthocera: Within the muck of the sulphurous sea, it is not uncommon to find creatures from ages past, their bodies entirely preserved. It seems that not all simply passed away.
-            Radiator: Like many other sea slugs, it ingests toxins from its environments and displays them along its back in a flashy display. The toxins in the sulphurous sea however, are a bit more potent than others.
-            Skyfin: Their fins are highly adapted to both water and air, and should one of their reckless charges leave them briefly stranded on land, within a few moments, they will take to the air.
-            SulphurousSkater: From below, the tips of their legs barely penetrate the surface of the water, and it is hard to distinguish their movements from the rain on the water’s surface.
-            Trilobite: Their shell is of notable hardness, and it carries the same weight as stone. It speaks of their strength, for them to be able to fling themselves about the way they do.
-            WaterLeech: It can smell the scent of flesh from far distances and will eagerly squirm its way to the source. Once attached to the host, they rapidly intake blood and discharge venom, both of which heavily disadvantage its prey.
+            NuclearTerror: Возможно, когда-то это был простой краб, а может быть, в глубинах скрывается множество подобных ему. Любой ответ обязательно вызовет у вас желание никогда больше не ступать в сернистое море.
+            NuclearToad: Когда на глубине стало слишком опасно, они быстро перебрались на поверхность. Когда им что-то угрожает и нет иного выбора, они вынуждены взрываться, дабы позволить своему роду прожить дольше.
+            Orthocera: В тине сернистого моря нередко можно найти существ прошлых веков с полностью сохранившимися телами. Видимо, не все просто так ушли из жизни.
+            Radiator: Как и многие другие морские слизни, он поглощает токсины из окружающей среды и отращивает их на своей спине. Однако токсины в сернистом море немного сильнее, чем другие.
+            Skyfin: Их плавники хорошо приспособлены как к воде, так и к воздуху. Даже если они по своей глупости попадут на сушу, через мгновение они вновь окажутся в воздухе.
+            SulphurousSkater: Кончики их лап еле проникают в воду, так что из глубины их невозможно отличить от падения капель дождя.
+            Trilobite: Их панцирь очень прочен и тяжёл, словно камень. Однако их способность запускать себя во врага с невиданной скоростью свидетельствует о немалой силе.
+            WaterLeech: Учуя запах плоти, они будут отчаянно преследовать его источник. Присосавшись, они начинают питаться кровью, параллельно выпуская яд, обессиливающий жертву.
             AdultEidolonWyrmHead: Их упоминания в истории прослеживаются даже в записях, относящихся к периоду, предшествующему Золотому веку драконов... Они вполне могут быть проблеском истинного потенциала природы.
             AquaticScourgeHead: Разновидность бича, экзоскелет которого укреплялся и закалялся годами плавания в серных водах для пропитания. Сами его челюсти теперь пропитаны ядом этих морей.
-            AquaticUrchin: A relative of its brethren in the far ocean, this one’s spines have been hardened by the sulphuric waters. They drip with the venom they inhabit, so it’s better to not be struck by them.
-            Aries: Biologically, the creature suffers terribly. Its legs do not allow it to rest, constantly hopping across the infected landscape. It does not care as its mind is far gone. It continues this until death.
-            AstralachneaGround: An arachnid taken over by the infection, it has lost its ability to spin webs and hosts a myriad of astral growths on its abdomen.
-            AstralProbe: A small animal devoured by the astral infection. The virus retains and shares its experience with itself of devouring other, similar creatures and so, all form identical shells.
-            AstralSlime: It does not show behavior different from any of its gelatinous folk, so this adaptive creature may have been the only one to fight the infection in its own way.
-            Atlas: In its uncontrolled growth, one appendage wrested nutrients and materials from the other and brought it to the extremes of muscular strength. One blow is enough to pulverize a monolith.
-            BigSightseer: Within their shells, the virus brews a potent chemical. When the seer approaches a foe, it spits this chemical out of its mandibles, hoping to melt the intruder’s flesh.
-            Hadarian: The membrane of their wings is particularly tough, for material so thin. It has been known to guard them against burns and projectiles as they mercilessly tear at their foes.
-            Hive: These seem to erupt from the caverns of the astral itself. The flesh of their hosts twists into a spiral and countless bodies make up the pulsing flesh of the hive.
-            Hiveling: A small creature, one entirely original to the astral infection, save for a tiny core of organic material it takes from the host Hive. They are easily squashed but swarm if endangered.
-            Mantis: A nimble mutation of the astral infection, its many legs allow it to quickly traverse nearly any terrain the infection devours. By swinging its front claws at high speeds, it releases harmful blades of energy.
-            Nova: The process of forced biological mutation is potent with the astral virus, and the byproducts are volatile. Most creatures discharge this chemical gradually and lose that liability— but a Nova stores it.
+            AquaticUrchin: Биологический родственник своих собратьев из дальнего океана. Шипы этого вида были закалены серными водами и истекают ядом, в котором сами существа обитают, так что лучше не попадаться им на глаза.
+            Aries: Биологически это существо очень страдает. Его ноги не дают ему покоя, постоянно прыгая по зараженному ландшафту. Ему все равно, поскольку разум давно его покинул. Это продолжается до самой смерти.
+            AstralachneaGround: Паукообразное, пораженное инфекцией, потеряло способность плести паутину, а на его брюшке появилось множество астральных наростов.
+            AstralProbe: Мелкое животное, поражённое астральной инфекцией. Вирус сохраняет и делится с самим собой опытом пожирания других подобных существ, и поэтому все они образуют идентичные оболочки.
+            AstralSlime: Его поведение не отличается от поведения любого из его желатиновых собратьев, так что это адаптивное существо, возможно, было единственным, кто боролся с инфекцией по-своему.
+            Atlas: В своем неконтролируемом росте одна конечность отбирала питательные вещества и материалы у остальных и доводила себя до предела мышечной силы. Одного удара Атланта достаточно, чтобы стереть в порошок монолитную стену.
+            BigSightseer: Внутри их оболочек вирус вырабатывает мощное химическое вещество. Когда путешественник приближается к врагу, он выплевывает это химическое вещество из своей челюсти, надеясь расплавить плоть незваного гостя.
+            Hadarian: Перепонка их крыльев особенно прочная для столь тонкого материала. Известно, что она защищает их от ожогов и снарядов, пока они безжалостно терзают своих врагов.
+            Hive: Они, кажется, извергаются из самих астральных пещер. Плоть их носителей закручивается в спираль, а бесчисленные тела составляют пульсирующую плоть улья.
+            Hiveling: Маленькое существо, совершенно не подверженное астральной инфекции, за исключением крошечного ядра из органического материала, которое оно берет из Улья-носителя. Их легко раздавить, но они образуют рой, если находятся под угрозой исчезновения.
+            Mantis: Шустрая мутация астральной инфекции. Многочисленные ноги позволяют ему быстро пересекать практически любую местность, которую пожирает инфекция. Размахивая передними когтями на высокой скорости, он высвобождает опасные энергетические лезвия.
+            Nova: Процесс принудительной биологической мутации и есть предмет деятельности астральной инфекции, а выделяемые вещества являются летучими. Большинство существ выделяют эти химические вещества постепенно и теряют эту способность, но Нова накапливает их.
             SmallSightseer: Внутри их оболочек инфекция вырабатывает мощное химическое вещество. Когда путешественник приближается к врагу, он выплёвывает это химическое вещество из своей челюсти, надеясь расплавить плоть незваного гостя.
-            StellarCulex: Many pincers line the face of this mutation. It will attempt to attach itself to other organic creatures, and lower its mouth to their flesh to feed.
+            StellarCulex: Многие клещи сталкиваются с подобной мутацией. Они прикрепляются к живым существам, дабы насытиться их плотью.
             Twinkler: Редкий случай, когда астральная инфекция создала безобидное существо. Они довольно красиво мерцают, и вы будете не единственным, кто так думает. Из них получается полезная приманка.
             AstrumAureus: Многоногий механический зверь, чьё само существование говорит о степени контроля, которым обладает астральная инфекция. От неё нет спасения даже машинам.
             AstrumDeusHead: Осколки трупа звёздного бога ещё хранят в себе частицу былой силы. Даже поддавшись астральной инфекции и будучи разорванными в клочья одним высокомерным червём, они до сей поры стремятся вернуться назад, к звёздам.
@@ -21708,14 +21708,14 @@
             GreatSandShark: Интересно, существует ли предел стойкости акул в своём стремлении выжить? В этих условиях, совершенно противоположных обычному, процветает их господство. Даже странно, что ни у кого ещё не выросли крылья.
             DankCreeper: Хотя их ядро схоже с таковым у шара улья, их бронированный панцирь из теневой чешуи не даст им умереть также легко. Кроме того, они содержат в себе ядовитый газ.
             DarkHeart: Оно пульсирует стылыми мерзкопахнущими водами Искажения и источает их, пролетая над головой. Любые органические вещества, оказавшиеся рядом с упавшей каплей, подвергаются коррозии.
-            HiveBlob: A ball of flesh and rotting matter, it is flung out by the hive mind towards its enemies as fodder, to wear down any who stand in their way.
-            HiveCyst: The blemish of a colonial superorganism, the mass of organic matter pulses like a heart. The growth is the result of the corruption’s beings forming together.
-            HiveMind: In the deep trenches of the corruption, infected creatures gather to manifest their own deity. Unlike other cases where smaller beings gather for protection, this is an entirely offensive maneuver.
+            HiveBlob: Шар, состоящий из плоти и гниющей материи. Он выбрасывается разумом Улья с целью измотать того, кто встал на его пути.
+            HiveCyst: Пятно на теле колониального суперорганизма, масса органического вещества, пульсирующая подобно сердцу. Её рост - результат совместного формирования существ Искажения.
+            HiveMind: Глубоко в пещерах Искажения заражённые существа собираются, дабы явить в свет своё божество. В отличие от ситуаций, когда более мелкие существа объединялись с целью защиты, эти объединяются для атаки.
             Anahita: Обладая превосходным владением водной магии, эта элементаль была известна почти безграничной силой, если находилась на своей территории. Однако, прошли уже те времена.
-            AquaticAberration: All head and stomach, they will gorge and guzzle upon vast schools of fish on their own.
+            AquaticAberration: От головы до желудка, вся их цель - поглощать огромные косяки рыб.
             Leviathan: Огромная морская рептилия, скрывающаяся в глубинах океана почти тысячелетие. Неизвестно, является ли она последней в своём роде, и, как бы презренно это ни было, будем надеяться, что так оно и есть.
-            LeviathanStart: It seems to call out in an alluring voice, and tugs on comforting memories of the sea you never actually had.
-            AeroSlime: Slimes take on the qualities of their environments and after feasting on aerialite ore, this slime has grown wings.
+            LeviathanStart: Она словно зовёт манящим голосом, навевая приятные воспоминания о море, которых у вас на самом деле не было.
+            AeroSlime: Слизни приобретают свойства из окружающей среды, таким образом, когда эти полакомились аэролитовой рудой, у них отрасли крылья.
             Rimehound: Крупная и неуклюжая гончая, чей мех покрыт инеем до такой степени, что почти образует сосульки. Болезненный опыт тех, кого они схватили.
             ArmoredDiggerHead: Некогда эти автоматические механические черви использовались для выкапывания пещер, пригодных для строительства лабораторий. К счастью, они уже давно не получают техническое обслуживание, оттого их состояние оставляет желать лучшего.
             AuroraSpirit: Души, что нашли свой конец в сердце снежной бури. И теперь они ищут других, дабы умертвить их так же, как умертвили себя - заморозить до смерти.
@@ -21737,30 +21737,30 @@
             EbonianBlightSlime: Кажется, этим слизням было дано благословение свыше. Они ищут и поглощают жертв, но не для себя, что само по себе редкость среди слизней.
             Eidolist: Искусные в мастерстве плетения чар существа, стоящие на страже, подобно часовым, наблюдающим за чем-то. Если подойти к одному из них достаточно близко, возможно, вы разберёте искажённый шёпот.
             FearlessGoldfishWarrior: С оловянным шлемом и кинжалом, блестящим также, как она сама, она выходит в дождь, готовая к битве.
-            Frogfish: Ambush predators that lay in wait for their prey. They are not particularly strong, and if you come across one, are dispatched with ease.
+            Frogfish: Эти существа - хищники, устраивающие засады, подстерегая свою добычу. Они не очень сильны, а потому справиться с ними не составит труда.
             Horse: Цель цивилизации - покорить природу своей воле. Это результат одного из подобных покорений - искусственный элементаль, управляемый заводными механизмами.
-            IceClasper: An enemy which knows no bounds in hunting its prey. In blizzards where visibility is low, they have been known to glaciate and capture travelers. What happens to the victims is unknown.
+            IceClasper: Опасный противник, не знающих границ в охоте свою добычу. Известно, что во время метелей, когда видимость низкая, они покрываются льдом и захватывают путешественников. Происходящее с пропавшими неизвестно.
             ImpiousImmolator: Огненный дух, не обращающий внимания на своё окружение, готовый обратить в пепел любого, кто посмеет вторгнуться в святые земли Осквернённой богини.
             MantisShrimp: Если он нанесёт удар своими закруглёнными передними когтями, то разорвёт вашу плоть и раздробит кости. Излишне говорить, но избегать этого следует любой ценой.
-            OverloadedSoldier: Phantoplasm bulges through the corroded armor in the place of rotting flesh, as this creature reanimated by vengeful spirits treks the caverns of the world.
-            PerennialSlime: Slimes, from their time spent wobbling about the undergrowth, are full of nutrients, which would well support plant life. Many accept these growths and have been seen to carry blossoms.
+            OverloadedSoldier: Фантоплазма проступает сквозь проржавевшую броню на местах гниющей плоти, когда это существо, оживленное мстительными духами, бродит по пещерам мира.
+            PerennialSlime: Слизни, проведшие много времени в зарослях, переполнились питательными веществами, хорошо поддерживающими жизнь растений. Многие из них переносят эти вещества, а на некоторых даже растут цветы.
             PhantomSpirit: Духи, которые нападали друг на друга, пожирая других в своём бессмысленном отчаянии. В прошлом был случай, когда духи, поглотившие достаточно много других, поразительно набирали в силе.
             PhantomSpiritL: Духи, которые нападали друг на друга, пожирая других в своём бессмысленном отчаянии. В прошлом был случай, когда духи, поглотившие достаточно много других, поразительно набирали в силе.
             PhantomSpiritM: Духи, которые нападали друг на друга, пожирая других в своём бессмысленном отчаянии. В прошлом был случай, когда духи, поглотившие достаточно много других, поразительно набирали в силе.
             PhantomSpiritS: Духи, которые нападали друг на друга, пожирая других в своём бессмысленном отчаянии. В прошлом был случай, когда духи, поглотившие достаточно много других, поразительно набирали в силе.
             Piggy: Нет более жадного животного на свете, чем свинья. Если она наткнётся на хоть что-то, что в здравом рассудке даже за еду не примешь, она съест это в мгновение ока.
             ProfanedEnergyBody: Живой алтарь, близкий к сердцу Осквернённой богини. Из кристалла в подставке пламя вырывается в мир, дабы сжечь неверных.
-            Rotdog: Malicious animals, which attack with tough claws and strong jaws. Any wound from these will bleed heavily. Address the cut quickly.
-            ScornEater: The brute force of the Profaned Goddess’ creations and devotees. Their jaws are filled to the brim with razor-sharp crystals and scorching holy flames.
-            SeaUrchin: A spiny animal that flings itself about in defense of its territory. If they fling themselves onto land—though relatively helpless—they can make their way back to the ocean.
-            ShockstormShuttle: Proof of life in the stars, these were likely once weapons of war, now primitive to their original civilization. They continue to scour the cosmos for hospitable planets, which they attack.
+            Rotdog: Злобные животные, которые нападают с помощью жёстких когтей и сильных челюстей. Любая рана от них будет сильно кровоточить, так что следует вылечить её как можно скорее.
+            ScornEater: Грубая сила творений и служителей Осквернённой богини. Их челюсти до краев полны острыми как бритва кристаллами и обжигающим священным пламенем.
+            SeaUrchin: Колючее животное, защищающее свою территорию. Если они выбираются на сушу (хотя и относительно беспомощные) они способны вернуться обратно в океан.
+            ShockstormShuttle: Доказательство жизни на звёздах. Вероятно, когда-то это было боевое оружие, теперь примитивное по сравнению с их оригинальной цивилизацией. Они продолжают бродить по космосу в поисках гостеприимных планет, на которые нападают.
             Stormlion: Источник их пропитания это, скорее всего, электрические бури, бушующие над пустынями. Когда темнеет небо, они тянутся вверх обеими своими челюстями, что действуют как громоотводы.
-            Sunskater: Some creatures which skirt the edges of our atmosphere tend to absorb and channel the sun’s rays better than others. At any rate, this is a passive creature that means you no harm. You should return the favor.
-            ThiccWaifu: Once, outposts were created in the sky, for ease of worship towards the forces that occupied the clouds in order to please them. Now they lay abandoned and their deity angered.
+            Sunskater: Некоторые существа, которые окружают границы нашей атмосферы, поглощают и направляют солнечные лучи лучше, чем другие. В любом случае, это пассивные существа, которые не причинят вам вреда. Отплати им тем же.
+            ThiccWaifu: Когда-то на небесах были созданы аванпосты, чтобы облегчить поклонение силам, населяющим облака, угождая им. Теперь же они заброшены, а божество разгневано.
             WildBumblefuck: Хотя эти существа выглядят очаровательно, они являются злобным и агрессивным видом. Если с ними быстро не разобраться, они могут привести к вымиранию всей близлежащей фауны.
-            WulfrumDrone: Rotating their small frames, they swoop at potential intruders into a predefined territory that no longer exists. They wander without purpose.
+            WulfrumDrone: Вращая своими маленькими рамами, они нападают на потенциальных нарушителей границы территории, которой больше не существует. Их скитания бесцельны.
             WulfrumGyrator: Сфера из вульфрумового металла. Как она перемещается, остаётся загадкой, хотя, вероятно, это как-то связано с её гироскопическим вращением. Они бросаются всем своим телом на врага, чтобы атаковать.
-            WulfrumHovercraft: Traveling with propulsion that carries them over the ground with ease, they seek out trespassers, though their analysis likely has grown imperceptive with age.
+            WulfrumHovercraft: Путешествуя с помощью реактивного привода, который с легкостью переносит их по земле, они выискивают нарушителей границы, хотя их анализ, вероятно, ввиду возраста почти ничего не замечает.
             WulfrumPylon: Неподвижный враг, однако его функция отнюдь не безобидна. Под его влиянием остальные вульфрумовые творения приобретают особую силу, удивительная энергия переполняет их изнутри.
             WulfrumRover: Старый автомат неизвестного происхождения. С непрестанным чувством долга и изношенным телом они рыщут по земле, а их лампы сияют с удивительной энергией.
             OldDuke: Хоть выглядит старым и дряхлым, он цепляется за жизнь. Загрязнённое море не похоже на его родное место обитания, но всё же он занял здесь своё место, как высший хищник.
@@ -21772,39 +21772,39 @@
             PerforatorHive: Несмотря на то, что оно было порождено Багрянцем, неизвестно, полностью ли оно служит своему создателю. Черви улья часто вырывают огромные куски плоти Багрянца, создавая в нём туннели.
             PlaguebringerGoliath: Механизмы и наномашины почти полностью пожрали Королеву пчёл и приняли близкую к ней форму. Возникает вопрос,  может, проще и гораздо эффективнее было создать её с нуля?
             Melter: Его лицо искажено и смягчено разъедающим воздействием чумных наноботов, и он стремится разделить эту неприятную судьбу с другими как по своей собственной воле, так и по воле чумы.
-            PestilentSlime: Слизень, заражённый чумными наноботами. Без каких-либо директив, которые чума может образом применить к нему, он просто продолжает свою жизнь, разъедая всё, что приближается.
-            PlagueCharger: While hornets on their own are known for aggressive defense of their territory, once they have been warped by the plague, their sense of their dominion reaches ever further.
-            PlagueChargerLarge: While hornets on their own are known for aggressive defense of their territory, once they have been warped by the plague, their sense of their dominion reaches ever further.
-            PlaguebringerMiniboss: Queen Bees are reared upon royal honey, raising them into the matriarchs they are. If during the process, their growth is hijacked by the plague, they are left as only a pathetic reminder of what they could have been.
-            Plagueshell: In truth, once a jungle tortoise has been touched by the plague, its original shell disintegrates, and the thorny shield it now wields is constructed entirely of reinforced nanobots.
+            PestilentSlime: Слизень, заражённый чумными наноботами. Без каких-либо указаний чумы, он просто продолжает свою жизнь, разъедая всё, что приближается.
+            PlagueCharger: Шершни сами по себе известны агрессивной защитой своей территории, но теперь, когда они были заражены чумой, их чувство собственной территории начало простираться ещё дальше.
+            PlagueChargerLarge: Шершни сами по себе известны агрессивной защитой своей территории, но теперь, когда они были заражены чумой, их чувство собственной территории начало простираться ещё дальше.
+            PlaguebringerMiniboss: Королевы пчёл выращиваются на королевском меде, превращающем их в матриархов, которыми они и являются. Если во время процесса их рост будет захвачен чумой, они останутся лишь жалким напоминанием о том, какими они могли бы быть.
+            Plagueshell: Если говорить честно, то, как только чума коснулась черепахи джунглей, её первоначальный панцирь распался, а колючий щит, которым она теперь владеет, полностью состоит из усиленных нанороботов.
             Viruling: Заболевая чумой, крикуны сразу же теряют ноги, так как сама чума видит в них лишь помеху. Больше они не могут весело прыгать.
             Polterghast: Крик, плач, какофония — эта амальгама духов в тоске проносится по некогда полным жизни коридорам Темницы в поисках живых или мёртвых, пополняя свои ряды.
-            ProfanedGuardianCommander: When it turns its burning spear towards anything, its simple mind has a clear goal. To entirely eradicate the enemy.
-            ProfanedGuardianDefender: The body it has formed boasts of a stone shell hallowed and tempered by the flames of the sun. Very little can fully shatter its defense.
-            ProfanedGuardianHealer: Its crystal which is displayed prominently on its body is able to restore damage done to its kin, and it draws that damage into flares which steal your life.
+            ProfanedGuardianCommander: Когда он направляет своё пылающее копье на что-либо, его недалёкий разум имеет чёткую цель - полностью уничтожить врага.
+            ProfanedGuardianDefender: Сформированное им тело может похвастаться каменной оболочкой, освящённой и закалённой пламенем Солнца. Далеко не каждое оружие может полностью разрушить его защиту.
+            ProfanedGuardianHealer: Кристалл, который виден на его теле, способен поглощать урон, нанесенный телу, и он превращает этот урон во вспышки, крадущие вашу жизнь.
             Providence: Божество огня и камня. Её пламя пылает лишь ради одной цели - очищение мира от его грешного существования вместе со всеми, кто его населяет.
             RavagerBody: С рёвом пламя вырывается из того, что кажется парапетами крепости из гнили. Вы узнаете его по одному запаху, стоит ему начать приближаться с подветренной стороны. 
             CosmicLantern: Эти фонари позволяют владельцу видеть в любой темноте и, обычно, в бою их не используют.
             Signus: Фигура, облачённая в тёмные одежды, и обладающая ещё более тёмной историей. Никто не знает истинного облика этого существа, хотя ходит много слухов.
             CorruptSlimeSpawn: Они быстро машут крыльями, мембраны которых состоят из геля и шипов затвердевшей слизи. Они будут постоянно охотиться за вами.
-            CrimsonSlimeSpawn: Irritant globs of gel, which can rob you of your vision if they get on your eyes. Avoid these at all costs, as they can spell death against the Slime God.
+            CrimsonSlimeSpawn: Раздражающие шарики геля, которые могут лишить вас зрения, если попадут на глаза. Избегайте их любой ценой, так как в битве с Богом слизней они могут принести смерть.
             CrimsonSlimeSpawn2: В телах этих слизней есть осколки багротанового камня, с которых капает токсин, предназначенный для ухудшения вашего зрения.
             SlimeGodCore: Существо, которое можно запросто спутать с огромной амёбой. За счёт скопившейся плотной биомассы оно развивается, намного превосходя пределы обычных слизней.
             SplitCrimulanSlimeGod: Защита, и в то же время тело своего создателя. Эти концентрированные массы мировых зол пользуются коррозией и гнилью, превращая в биомассу любого, кто встанет на их пути.
             SplitEbonianSlimeGod: Защита, и в то же время тело своего создателя. Эти концентрированные массы мировых зол пользуются коррозией и гнилью, превращая в биомассу любого, кто встанет на их пути.
-            StormWeaverHead: It resides high up in the stratosphere, feasting on wyverns and storm swimmers alike, which give it powerful electrokinesis.
+            StormWeaverHead: Он обитает высоко в стратосфере, питаясь как вивернами, так и штормовыми пловцами, которые наделяют его мощным электрокинезом.
             AnthozoanCrab: Краб, который возложил себе на спину прочное сооружение из камня. Он довольно силён и демонстрирует эту необычайную силу, швыряя валуны во всех, кто вторгается на его территорию.
             BelchingCoral: Редкая разновидность кораллов, которая способна перерабатывать и извлекать питательные вещества из вод сернистого моря. Во время этого процесса образуется большое количество летучего газа.
             Catfish: Животное, которое довольно естественно приспособилось к токсичным водам. Он использует свои усы для прокладывания пути и обнаружения добычи в тёмных глубинах.
             Flounder: Эти существа не ищут себе пищу, а скорее ждут, когда еда сама придёт к ним. Смотрите под ноги, если рискнёте спуститься в сернистое море.
-            Gnasher: A turtle that has had its shell encrusted by the filth of the sulphurous sea. For an animal of its size, its jaws have a nearly unmatched biting strength.
+            Gnasher: Черепаха, панцирь которой покрылся коркой грязи сернистого моря. Для животного такого размера, её челюсти обладают почти непревзойденной силой укуса.
             Trasher: Огромный аллигатор, приспособившийся к жизни в мусоре сернистом море. Они соскребают кусочки пищи со дна своими массивными челюстями, но не заблуждайтесь. Они также и любители съесть слабых и немощных существ.
             BlindedAngler: Вид удильщика, который потерял какую-либо отличительную черту на своей голове. Используя примитивную электрорецепцию, подобную акульей, он медленно и методично выслеживает свою добычу.
-            Clam: Sluggish mollusks filter what they can from the brackish water. Their shells are as hard as stone but contain delicate, succulent flesh.
-            EutrophicRay: A stingray that spends much of its time docile on the rocky floors of the sunken sea’s pools. It stores its energy, and when endangered, can release it in short bursts of speed.
+            Clam: Вялые моллюски отфильтровывают из солоноватой воды всё, что могут. Их панцирь твердый, как камень, но содержит нежную, сочную мякоть.
+            EutrophicRay: Скат, который проводит большую часть своего времени смиренно на каменистом дне озёр затерянного моря. Он накапливает свою энергию и, когда ему угрожают, может высвобождать её короткими всплесками скорости.
             GhostBell: Призрачные медузы, дрейфующие в стылых водах затерянного моря. Их тела странным образом заряжены электрическим током.
             GiantClam: Этот огромный моллюск настолько велик, что способен вместить в себя целого человека, а может даже двух. К счастью, его территория находится лишь в самых глубоких областях затерянного моря.
-            PrismBack: Rather slow swimmers, they are one of the few creatures that need to breach. They periodically swim to the upper layer of their habitat to lay their eggs.
+            PrismBack: Довольно медленные пловцы, одни из немногих существ, которым нужно выныривать из воды. Они периодически подплывают к верхнему слою своего обитания, чтобы отложить яйца.
             SeaFloaty: Странные, но завораживающие создания, которые сразу прячутся при виде любого хищника. Они кажутся не полностью развитыми.
             SeaMinnow: Хоть и располагаются в самом низу пищевой цепочки, они составляют восемьдесят процентов биомассы этого моря. Они питаются трупами, что падают из подземной пустыни сверху.
             SeaSerpent1: Эти угри в большинстве своём пассивны и лишь лениво плавают по спокойным водам затерянного моря. Но, если их спровоцировать, они могут стать неостановимыми нападающими.
