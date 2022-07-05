@@ -6063,7 +6063,7 @@
                 Name: Удочка-поглотитель
                 Tooltip:
                     '''
-                    Может рыбачить в лаве
+                    Позволяет рыбачить в лаве
                     'Это горящая лава души, внутри которой есть печь - вулкан горя и печали'
                     '''
             }
@@ -6072,7 +6072,7 @@
                 Name: Пожиратель трески
                 Tooltip:
                     '''
-                    Запускает десять поплавков за раз, леска никогда не порвётся и может рыбачить в лаве
+                    Запускает десять поплавков за раз, леска никогда не порвётся и позволяет рыбачить в лаве
                     'Пожиратель когда-то был всего лишь Поедателем кораллов'
                     '''
             }
@@ -7340,7 +7340,7 @@
             }
             
             TheEtomer: {
-                Name: Триболюминесцентный тьлуп
+                Name: Тьлуп
                 Tooltip:
                     '''
                     Призывает электрического создателя проблем
@@ -24215,18 +24215,18 @@
         
         TownNPCMood: {
             DILF: {
-                Content: Заледенецкая сегодня погодка.
-                NoHome: Without a place to rest, my studies cannot proceed. Could you procure me a living space? I no longer like to make my homes using ice magic.
-                LoveSpace: Too many people can disrupt the flow of mana. I much prefer the breathing room here.
-                FarFromHome: My sense of direction is…subpar. I loathe to admit it, but I have a tendency to not venture outside too often.
-                DislikeCrowded: My spells are precise, and cannot be interrupted. I would like some more room to practice with them.
-                HateCrowded: I’d hate for one of your associates to be caught up in my magic. Alas, there are too many here to mitigate that risk.
-                LikeBiome: The temperature here allows me to save my magic power, as my creations can sustain their shape without melting in the cold.
-                DislikeBiome: Здешнее солнце слишком уж неприветливо к моему льду! Please, allow me lodgings elsewhere at once!
-                HateBiome: Dark forces are strong here. This is not ideal.
-                LikeNPC: "{NPCName} is well learned, and quite a respectable mage himself!"
-                DislikeNPC: "I dislike {NPCName}’s blatant disregard of magic. I cannot blame his functions, but he is quite ignorant."
-                LikeNPC_Princess: "{NPCName} has some very quaint spells. I’m quite impressed, for someone of her age."
+                Content: Нет ничего лучше освежающего бурана по утру!
+                NoHome: Я не могу продолжать исследования без места для отдыха. Можешь мне его предоставить? Думаю, я уже не буду создавать жилище магией льда.
+                LoveSpace: Большая толпа нарушает потоки маны, так что меньше народу - больше жидкого азота.
+                FarFromHome: Честно говоря, у меня немного топографический кретинизм. Не люблю признавать это, но я определенно не имею склонностей к прогулкам.
+                DislikeCrowded: Мои заклинания мощные, и я не могу их прерывать. Для работы мне определённо нужна комнатка побольше.
+                HateCrowded: Мне не нравится то, что я могу задеть твоих союзников при колдовстве. Их здесь слишком много, чтобы исключить этот риск.
+                LikeBiome: Прохлада здесь позволяет мне как сохранить часть магических сил, так и моим творенияем сохранять форму.
+                DislikeBiome: Здешнее солнце слишком уж неприветливо к моему льду! Умоляю, посели меня в другом месте!
+                HateBiome: Здесь чувствуется мощь тёмных сил. Это ужасно.
+                LikeNPC: "{NPCName} имеет неплохие познания в магии, да и сам по себе маг довольно уважаемый"
+                DislikeNPC: "Мне не нравится это вопиющее неуважение к магии у {NPCName}. Надеюсь, этот человек преодолеет невежественность."
+                LikeNPC_Princess: "{NPCName} владеет весьма необычными заклинаниями. Я весьма удивлён, для её-то возраста."
             }
         
             FAP: {
@@ -24268,18 +24268,18 @@
             }
         
             THIEF: {
-                Content: It’s been going well!
-                NoHome: You have a place to bunk? Sleeping on the ground makes me stiff and sore.
-                LoveSpace: Less people makes getting away with certain things easier.
-                FarFromHome: I need to get back to my secret cache! What if someone got their hands on it while I was away!?
-                DislikeCrowded: I don’t like this, too many possible eyewitnesses.
-                HateCrowded: Being around this many people makes me think I’M going to be robbed.
-                LikeBiome: I know that a lot of wealthy traders come through the desert at times. Makes it a great spot to nick their goods.
-                DislikeBiome: Too stifling, too humid. I get sluggish in these conditions, no good.
-                HateBiome: No one lives here, and why would they?! This place is a dump!
-                LikeNPC: "{NPCName} doesn’t only keep spiky balls in his pockets, he keeps a ton of cash! He’s too absentminded to notice I’m stealing from him too! I like that a lot!"
-                DislikeNPC: "What a goody two shoes, {NPCName} is! I dislike her out of principle! …And because she has almost no material goods."
-                LikeNPC_Princess: I couldn’t bear to steal anything from {NPCName}, she’s so cute!
+                Content: Всё идёт хорошо!
+                NoHome: У тебя есть, где переночевать? От сна на земле у меня всё болит и коченеет.
+                LoveSpace: Чем меньше людей, тем проще некоторые вещи.
+                FarFromHome: Мне нужно вернуться к моему тайнику! А если, пока меня не было, кто-то прибрал его к рукам?!
+                DislikeCrowded: Мне тут не нравится, слишком много потенциальных свидетелей.
+                HateCrowded: Нахождение рядом с таким количеством людей заставляет меня думать, что МЕНЯ собираются ограбить.
+                LikeBiome: Знаю, что многие богатые торговцы время от времени проезжают через пустыню. Это делает её отличным местом для кражи их товаров.
+                DislikeBiome: Здесь слишком душно и слишком влажно. В таких условиях я становлюсь вялой, а это никуда не годится.
+                HateBiome: Здесь никто не живет, да и зачем кому-то это?! Это место - остой!
+                LikeNPC: "{NPCName} имеет в карманах не только колючие шары, но и кучу денег! Он слишком рассеяный, чтобы заметить, что я у него ворую! Мне это очень нравится!"
+                DislikeNPC: "Нет, ну посмотри-ка на эту паиньку, {NPCName}! Она мне не нравится просто из принципа!.. И потому что у неё почти ничего нет."
+                LikeNPC_Princess: Я бы не смогла заставить себя ничего украсть у {NPCName}, она такая милая!
             }
         
             WITCH: {
