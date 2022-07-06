@@ -16,17 +16,17 @@ namespace CalamityRuTranslate.Content.Vanity.BrotKrip
         
         public override void SetDefaults()
         {
-            item.width = 34;
-            item.height = 20;
-            item.rare = 1;
-            item.vanity = true;
+            Item.width = 34;
+            Item.height = 20;
+            Item.rare = 1;
+            Item.vanity = true;
         }
         
         public override void ModifyTooltips(List<TooltipLine> list)
         {
-            foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
+            foreach (TooltipLine tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
             {
-                tooltip.overrideColor = new Color(219, 255, 0);
+                tooltip.OverrideColor = new Color(219, 255, 0);
             }
         }
     }

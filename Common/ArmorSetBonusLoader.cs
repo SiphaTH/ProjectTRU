@@ -1,206 +1,459 @@
 ﻿using System.Collections.Generic;
 using CalamityRuTranslate.Common.DataStructures;
-using CalamityRuTranslate.Core;
 using Terraria.ID;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Common
+namespace CalamityRuTranslate.Common;
+
+public class ArmorSetBonusLoader : ILoadable
 {
-    public class ArmorSetBonusLoader : ILoadable
+    public static List<ArmorSetData> CalamityArmorSets = new();
+
+    public void Load(Mod mod)
     {
-        public static List<ArmorSetData> CalamityArmorSets = new List<ArmorSetData>();
-        public static List<ArmorSetData> FargoSoulsArmorSets = new List<ArmorSetData>();
-        public static List<ArmorSetData> VanillaArmorSets = new List<ArmorSetData>();
-
-        public float Priority => 1f;
-
-        public void Load()
+        if (ModsCall.TryGetCalamity)
         {
-            VanillaArmorSetsInfo();
             CalamityArmorSetInfo();
-            FargoSoulsArmorSetInfo();
         }
+    }
 
-        public void Unload()
-        {
-            CalamityArmorSets.Clear();
-            FargoSoulsArmorSets.Clear();
-            VanillaArmorSets.Clear();
-        }
-
-        private static void CalamityArmorSetInfo()
-        {
-            if (ModsCall.Calamity == null)
-                return;
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("ForbiddenCirclet"), ItemID.AncientBattleArmorShirt, ItemID.AncientBattleArmorPants, "AncientForbiddenCirclet"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("ShroomiteVisage"), ItemID.ShroomiteBreastplate, ItemID.ShroomiteLeggings, "Shroomite"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AerospecHat"), ModsCall.Calamity.ItemType("AerospecBreastplate"), ModsCall.Calamity.ItemType("AerospecLeggings"), "AerospecMagic"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AerospecHeadgear"), ModsCall.Calamity.ItemType("AerospecBreastplate"), ModsCall.Calamity.ItemType("AerospecLeggings"), "AerospecRogue"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AerospecHelm"), ModsCall.Calamity.ItemType("AerospecBreastplate"), ModsCall.Calamity.ItemType("AerospecLeggings"), "AerospecMelee"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AerospecHelmet"), ModsCall.Calamity.ItemType("AerospecBreastplate"), ModsCall.Calamity.ItemType("AerospecLeggings"), "AerospecSummoner"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AerospecHood"), ModsCall.Calamity.ItemType("AerospecBreastplate"), ModsCall.Calamity.ItemType("AerospecLeggings"), "AerospecRanged"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AstralHelm"), ModsCall.Calamity.ItemType("AstralBreastplate"), ModsCall.Calamity.ItemType("AstralLeggings"), "Astral"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AtaxiaHeadgear"), ModsCall.Calamity.ItemType("AtaxiaArmor"), ModsCall.Calamity.ItemType("AtaxiaSubligar"), "AtaxiaRanged"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AtaxiaHelm"), ModsCall.Calamity.ItemType("AtaxiaArmor"), ModsCall.Calamity.ItemType("AtaxiaSubligar"), "AtaxiaMelee"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AtaxiaHelmet"), ModsCall.Calamity.ItemType("AtaxiaArmor"), ModsCall.Calamity.ItemType("AtaxiaSubligar"), "AtaxiaSummoner"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AtaxiaHood"), ModsCall.Calamity.ItemType("AtaxiaArmor"), ModsCall.Calamity.ItemType("AtaxiaSubligar"), "AtaxiaRogue"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AtaxiaMask"), ModsCall.Calamity.ItemType("AtaxiaArmor"), ModsCall.Calamity.ItemType("AtaxiaSubligar"), "AtaxiaMagic"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AuricTeslaHelm"), ModsCall.Calamity.ItemType("AuricTeslaBodyArmor"), ModsCall.Calamity.ItemType("AuricTeslaCuisses"), "AuricTeslaMelee"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AuricTeslaHoodedFacemask"), ModsCall.Calamity.ItemType("AuricTeslaBodyArmor"), ModsCall.Calamity.ItemType("AuricTeslaCuisses"), "AuricTeslaRanged"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AuricTeslaPlumedHelm"), ModsCall.Calamity.ItemType("AuricTeslaBodyArmor"), ModsCall.Calamity.ItemType("AuricTeslaCuisses"), "AuricTeslaRogue"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AuricTeslaSpaceHelmet"), ModsCall.Calamity.ItemType("AuricTeslaBodyArmor"), ModsCall.Calamity.ItemType("AuricTeslaCuisses"), "AuricTeslaSummoner"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("AuricTeslaWireHemmedVisage"), ModsCall.Calamity.ItemType("AuricTeslaBodyArmor"), ModsCall.Calamity.ItemType("AuricTeslaCuisses"), "AuricTeslaMagic"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("BloodflareHelm"), ModsCall.Calamity.ItemType("BloodflareBodyArmor"), ModsCall.Calamity.ItemType("BloodflareCuisses"), "BloodflareRogue"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("BloodflareHelmet"), ModsCall.Calamity.ItemType("BloodflareBodyArmor"), ModsCall.Calamity.ItemType("BloodflareCuisses"), "BloodflareSummoner"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("BloodflareHornedHelm"), ModsCall.Calamity.ItemType("BloodflareBodyArmor"), ModsCall.Calamity.ItemType("BloodflareCuisses"), "BloodflareRanged"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("BloodflareHornedMask"), ModsCall.Calamity.ItemType("BloodflareBodyArmor"), ModsCall.Calamity.ItemType("BloodflareCuisses"), "BloodflareMagic"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("BloodflareMask"), ModsCall.Calamity.ItemType("BloodflareBodyArmor"), ModsCall.Calamity.ItemType("BloodflareCuisses"), "BloodflareMelee"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("BrimflameScowl"), ModsCall.Calamity.ItemType("BrimflameRobes"), ModsCall.Calamity.ItemType("BrimflameBoots"), "Brimflame"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("DaedalusHat"), ModsCall.Calamity.ItemType("DaedalusBreastplate"), ModsCall.Calamity.ItemType("DaedalusLeggings"), "DaedalusMagic"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("DaedalusHeadgear"), ModsCall.Calamity.ItemType("DaedalusBreastplate"), ModsCall.Calamity.ItemType("DaedalusLeggings"), "DaedalusSummoner"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("DaedalusHelm"), ModsCall.Calamity.ItemType("DaedalusBreastplate"), ModsCall.Calamity.ItemType("DaedalusLeggings"), "DaedalusMelee"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("DaedalusHelmet"), ModsCall.Calamity.ItemType("DaedalusBreastplate"), ModsCall.Calamity.ItemType("DaedalusLeggings"), "DaedalusRanged"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("DaedalusVisor"), ModsCall.Calamity.ItemType("DaedalusBreastplate"), ModsCall.Calamity.ItemType("DaedalusLeggings"), "DaedalusRogue"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("DemonshadeHelm"), ModsCall.Calamity.ItemType("DemonshadeBreastplate"), ModsCall.Calamity.ItemType("DemonshadeGreaves"), "Demonshade"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("DesertProwlerHat"), ModsCall.Calamity.ItemType("DesertProwlerShirt"), ModsCall.Calamity.ItemType("DesertProwlerPants"), "DesertProwler"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("FearmongerGreathelm"), ModsCall.Calamity.ItemType("FearmongerPlateMail"), ModsCall.Calamity.ItemType("FearmongerGreaves"), "Fearmonger"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("FathomSwarmerVisage"), ModsCall.Calamity.ItemType("FathomSwarmerBreastplate"), ModsCall.Calamity.ItemType("FathomSwarmerBoots"), "FathomSwarmer"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("GodSlayerHelm"), ModsCall.Calamity.ItemType("GodSlayerChestplate"), ModsCall.Calamity.ItemType("GodSlayerLeggings"), "GodSlayerMelee"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("GodSlayerHelmet"), ModsCall.Calamity.ItemType("GodSlayerChestplate"), ModsCall.Calamity.ItemType("GodSlayerLeggings"), "GodSlayerRanged"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("GodSlayerMask"), ModsCall.Calamity.ItemType("GodSlayerChestplate"), ModsCall.Calamity.ItemType("GodSlayerLeggings"), "GodSlayerRogue"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("MolluskShellmet"), ModsCall.Calamity.ItemType("MolluskShellplate"), ModsCall.Calamity.ItemType("MolluskShelleggings"), "Mollusk"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("OmegaBlueHelmet"), ModsCall.Calamity.ItemType("OmegaBlueChestplate"), ModsCall.Calamity.ItemType("OmegaBlueLeggings"), "OmegaBlue"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("PlagueReaperMask"), ModsCall.Calamity.ItemType("PlagueReaperVest"), ModsCall.Calamity.ItemType("PlagueReaperStriders"), "PlagueReaper"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("PrismaticHelmet"), ModsCall.Calamity.ItemType("PrismaticRegalia"), ModsCall.Calamity.ItemType("PrismaticGreaves"), "Prismatic"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("PlaguebringerVisor"), ModsCall.Calamity.ItemType("PlaguebringerCarapace"), ModsCall.Calamity.ItemType("PlaguebringerPistons"), "Plaguebringer"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("ReaverHeadgear"), ModsCall.Calamity.ItemType("ReaverScaleMail"), ModsCall.Calamity.ItemType("ReaverCuisses"), "ReaverExplorer"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("ReaverHelm"), ModsCall.Calamity.ItemType("ReaverScaleMail"), ModsCall.Calamity.ItemType("ReaverCuisses"), "ReaverDefenser"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("ReaverVisage"), ModsCall.Calamity.ItemType("ReaverScaleMail"), ModsCall.Calamity.ItemType("ReaverCuisses"), "ReaverSpeeder"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("SilvaHelmet"), ModsCall.Calamity.ItemType("SilvaArmor"), ModsCall.Calamity.ItemType("SilvaLeggings"), "SilvaSummoner"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("SilvaMaskedCap"), ModsCall.Calamity.ItemType("SilvaArmor"), ModsCall.Calamity.ItemType("SilvaLeggings"), "SilvaMagic"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("SnowRuffianMask"), ModsCall.Calamity.ItemType("SnowRuffianChestplate"), ModsCall.Calamity.ItemType("SnowRuffianGreaves"), "SnowRuffian"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("StatigelCap"), ModsCall.Calamity.ItemType("StatigelArmor"), ModsCall.Calamity.ItemType("StatigelGreaves"), "StatigelMagic"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("StatigelHeadgear"), ModsCall.Calamity.ItemType("StatigelArmor"), ModsCall.Calamity.ItemType("StatigelGreaves"), "StatigelRanged"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("StatigelHelm"), ModsCall.Calamity.ItemType("StatigelArmor"), ModsCall.Calamity.ItemType("StatigelGreaves"), "StatigelMelee"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("StatigelHood"), ModsCall.Calamity.ItemType("StatigelArmor"), ModsCall.Calamity.ItemType("StatigelGreaves"), "StatigelSummoner"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("StatigelMask"), ModsCall.Calamity.ItemType("StatigelArmor"), ModsCall.Calamity.ItemType("StatigelGreaves"), "StatigelRogue"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("SulfurHelmet"), ModsCall.Calamity.ItemType("SulfurBreastplate"), ModsCall.Calamity.ItemType("SulfurLeggings"), "Sulfur"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("TarragonHelm"), ModsCall.Calamity.ItemType("TarragonBreastplate"), ModsCall.Calamity.ItemType("TarragonLeggings"), "TarragonMelee"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("TarragonHelmet"), ModsCall.Calamity.ItemType("TarragonBreastplate"), ModsCall.Calamity.ItemType("TarragonLeggings"), "TarragonRogue"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("TarragonHornedHelm"), ModsCall.Calamity.ItemType("TarragonBreastplate"), ModsCall.Calamity.ItemType("TarragonLeggings"), "TarragonSummoner"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("TarragonMask"), ModsCall.Calamity.ItemType("TarragonBreastplate"), ModsCall.Calamity.ItemType("TarragonLeggings"), "TarragonMagic"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("TarragonVisage"), ModsCall.Calamity.ItemType("TarragonBreastplate"), ModsCall.Calamity.ItemType("TarragonLeggings"), "TarragonRanged"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("TitanHeartMask"), ModsCall.Calamity.ItemType("TitanHeartMantle"), ModsCall.Calamity.ItemType("TitanHeartBoots"), "TitanHeart"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("UmbraphileHood"), ModsCall.Calamity.ItemType("UmbraphileRegalia"), ModsCall.Calamity.ItemType("UmbraphileBoots"), "Umbraphile"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("VictideHeadgear"), ModsCall.Calamity.ItemType("VictideBreastplate"), ModsCall.Calamity.ItemType("VictideLeggings"), "VictideRogue"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("VictideHelm"), ModsCall.Calamity.ItemType("VictideBreastplate"), ModsCall.Calamity.ItemType("VictideLeggings"), "VictideMelee"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("VictideHelmet"), ModsCall.Calamity.ItemType("VictideBreastplate"), ModsCall.Calamity.ItemType("VictideLeggings"), "VictideSummoner"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("VictideMask"), ModsCall.Calamity.ItemType("VictideBreastplate"), ModsCall.Calamity.ItemType("VictideLeggings"), "VictideMagic"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("VictideVisage"), ModsCall.Calamity.ItemType("VictideBreastplate"), ModsCall.Calamity.ItemType("VictideLeggings"), "VictideRanged"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("WulfrumHeadgear"), ModsCall.Calamity.ItemType("WulfrumArmor"), ModsCall.Calamity.ItemType("WulfrumLeggings"), "WulfrumRanged"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("WulfrumHelm"), ModsCall.Calamity.ItemType("WulfrumArmor"), ModsCall.Calamity.ItemType("WulfrumLeggings"), "WulfrumMelee"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("WulfrumHelmet"), ModsCall.Calamity.ItemType("WulfrumArmor"), ModsCall.Calamity.ItemType("WulfrumLeggings"), "WulfrumSummoner"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("WulfrumHood"), ModsCall.Calamity.ItemType("WulfrumArmor"), ModsCall.Calamity.ItemType("WulfrumLeggings"), "WulfrumMagic"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("WulfrumMask"), ModsCall.Calamity.ItemType("WulfrumArmor"), ModsCall.Calamity.ItemType("WulfrumLeggings"), "WulfrumRogue"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("XerocMask"), ModsCall.Calamity.ItemType("XerocPlateMail"), ModsCall.Calamity.ItemType("XerocCuisses"), "Xeroc"));
-            CalamityArmorSets.Add(new ArmorSetData(ModsCall.Calamity.ItemType("GemTechHeadgear"), ModsCall.Calamity.ItemType("GemTechBodyArmor"), ModsCall.Calamity.ItemType("GemTechSchynbaulds"), "GemTech"));
-        }
+    public void Unload()
+    {
+        CalamityArmorSets.Clear();
+    }
         
-        private static void FargoSoulsArmorSetInfo()
-        {
-            if (ModsCall.FargoSouls == null)
-                return;
-
-            FargoSoulsArmorSets.Add(new ArmorSetData(ModsCall.FargoSouls.ItemType("EridanusHat"), ModsCall.FargoSouls.ItemType("EridanusBattleplate"), ModsCall.FargoSouls.ItemType("EridanusLegwear"), "EridanusHat"));
-            FargoSoulsArmorSets.Add(new ArmorSetData(ModsCall.FargoSouls.ItemType("GaiaHelmet"), ModsCall.FargoSouls.ItemType("GaiaPlate"), ModsCall.FargoSouls.ItemType("GaiaGreaves"), "GaiaHelmet"));
-            FargoSoulsArmorSets.Add(new ArmorSetData(ModsCall.FargoSouls.ItemType("MutantMask"), ModsCall.FargoSouls.ItemType("MutantBody"), ModsCall.FargoSouls.ItemType("MutantPants"), "MutantMask"));
-            FargoSoulsArmorSets.Add(new ArmorSetData(ModsCall.FargoSouls.ItemType("StyxCrown"), ModsCall.FargoSouls.ItemType("StyxChestplate"), ModsCall.FargoSouls.ItemType("StyxLeggings"), "StyxCrown"));
-        }
-
-        private static void VanillaArmorSetsInfo()
-        {
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.CopperHelmet, ItemID.None, ItemID.None, "Vanilla:MetalTier1"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.IronHelmet, ItemID.None, ItemID.None, "Vanilla:MetalTier1"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.AncientIronHelmet, ItemID.None, ItemID.None, "Vanilla:MetalTier1"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.TinHelmet, ItemID.None, ItemID.None, "Vanilla:MetalTier1"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.SilverHelmet, ItemID.None, ItemID.None, "Vanilla:MetalTier2"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.AncientGoldHelmet, ItemID.None, ItemID.None, "Vanilla:MetalTier2"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.GoldHelmet, ItemID.None, ItemID.None, "Vanilla:MetalTier2"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.LeadHelmet, ItemID.None, ItemID.None, "Vanilla:MetalTier2"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.TungstenHelmet, ItemID.None, ItemID.None, "Vanilla:MetalTier2"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.CobaltMask, ItemID.None, ItemID.None, "Vanilla:CobaltRanged"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.MythrilHood, ItemID.None, ItemID.None, "Vanilla:MythrilCaster"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.MythrilHelmet, ItemID.None, ItemID.None, "Vanilla:MythrilMelee"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.MythrilHat, ItemID.None, ItemID.None, "Vanilla:MythrilRanged"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.AdamantiteHeadgear, ItemID.None, ItemID.None, "Vanilla:AdamantiteCaster"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.AdamantiteHelmet, ItemID.None, ItemID.None, "Vanilla:AdamantiteMelee"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.AdamantiteMask, ItemID.None, ItemID.None, "Vanilla:AdamantiteRanged"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.HallowedHeadgear, ItemID.None, ItemID.None, "Vanilla:HallowCaster"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.HallowedMask, ItemID.None, ItemID.None, "Vanilla:HallowMelee"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.HallowedHelmet, ItemID.None, ItemID.None, "Vanilla:HallowRanged"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.ShadowHelmet, ItemID.None, ItemID.None, "Vanilla:ShadowScale"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.AncientShadowHelmet, ItemID.None, ItemID.None, "Vanilla:ShadowScale"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.WoodHelmet, ItemID.None, ItemID.None, "Vanilla:Wood"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.EbonwoodHelmet, ItemID.None, ItemID.None, "Vanilla:Wood"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.RichMahoganyHelmet, ItemID.None, ItemID.None, "Vanilla:Wood"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.PearlwoodHelmet, ItemID.None, ItemID.None, "Vanilla:Wood"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.CactusHelmet, ItemID.None, ItemID.None, "Vanilla:Wood"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.ShadewoodHelmet, ItemID.None, ItemID.None, "Vanilla:Wood"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.BorealWoodHelmet, ItemID.None, ItemID.None, "Vanilla:Wood"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.PalmWoodHelmet, ItemID.None, ItemID.None, "Vanilla:Wood"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.CrimsonHelmet, ItemID.None, ItemID.None, "Vanilla:Crimson"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.FrostHelmet, ItemID.None, ItemID.None, "Vanilla:Frost"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.TikiMask, ItemID.None, ItemID.None, "Vanilla:Tiki"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.PalladiumMask, ItemID.None, ItemID.None, "Vanilla:Palladium"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.PalladiumHelmet, ItemID.None, ItemID.None, "Vanilla:Palladium"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.PalladiumHeadgear, ItemID.None, ItemID.None, "Vanilla:Palladium"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.OrichalcumMask, ItemID.None, ItemID.None, "Vanilla:Orichalcum"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.OrichalcumHelmet, ItemID.None, ItemID.None, "Vanilla:Orichalcum"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.OrichalcumHeadgear, ItemID.None, ItemID.None, "Vanilla:Orichalcum"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.TitaniumMask, ItemID.None, ItemID.None, "Vanilla:Titanium"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.TitaniumHelmet, ItemID.None, ItemID.None, "Vanilla:Titanium"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.TitaniumHeadgear, ItemID.None, ItemID.None, "Vanilla:Titanium"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.ChlorophyteMask, ItemID.None, ItemID.None, "Vanilla:Chlorophyte"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.ChlorophyteHelmet, ItemID.None, ItemID.None, "Vanilla:Chlorophyte"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.ChlorophyteHeadgear, ItemID.None, ItemID.None, "Vanilla:Chlorophyte"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.WizardHat, ItemID.None, ItemID.None, "Vanilla:Wizard"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.TurtleHelmet, ItemID.None, ItemID.None, "Vanilla:Turtle"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.MeteorHelmet, ItemID.None, ItemID.None, "Vanilla:Meteor"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.SpectreHood, ItemID.None, ItemID.None, "Vanilla:SpectreHealing"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.ShroomiteHeadgear, ItemID.None, ItemID.None, "Vanilla:Shroomite"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.ShroomiteMask, ItemID.None, ItemID.None, "Vanilla:Shroomite"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.ShroomiteHelmet, ItemID.None, ItemID.None, "Vanilla:Shroomite"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.PlatinumHelmet, ItemID.None, ItemID.None, "Vanilla:Platinum"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.PumpkinHelmet, ItemID.None, ItemID.None, "Vanilla:Pumpkin"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.SpookyHelmet, ItemID.None, ItemID.None, "Vanilla:Spooky"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.SpectreMask, ItemID.None, ItemID.None, "Vanilla:SpectreDamage"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.MagicHat, ItemID.None, ItemID.None, "Vanilla:MagicHat"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.BeetleShell, ItemID.None, ItemID.None, "Vanilla:BeetleDefense"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.BeetleScaleMail, ItemID.None, ItemID.None, "Vanilla:BeetleDamage"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.BeeHeadgear, ItemID.None, ItemID.None, "Vanilla:Bee"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.NecroHelmet, ItemID.None, ItemID.None, "Vanilla:Bone"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.AncientNecroHelmet, ItemID.None, ItemID.None, "Vanilla:Bone"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.SpiderMask, ItemID.None, ItemID.None, "Vanilla:Spider"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.NinjaHood, ItemID.None, ItemID.None, "Vanilla:Ninja"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.FossilHelm, ItemID.None, ItemID.None, "Vanilla:Fossil"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.SolarFlareHelmet, ItemID.None, ItemID.None, "Vanilla:Solar"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.VortexHelmet, ItemID.None, ItemID.None, "Vanilla:Vortex"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.NebulaHelmet, ItemID.None, ItemID.None, "Vanilla:Nebula"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.StardustHelmet, ItemID.None, ItemID.None, "Vanilla:Stardust"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.AncientBattleArmorHat, ItemID.None, ItemID.None, "Vanilla:Forbidden"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.AncientCobaltHelmet, ItemID.None, ItemID.None, "Vanilla:Jungle"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.JungleHat, ItemID.None, ItemID.None, "Vanilla:Jungle"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.MoltenHelmet, ItemID.None, ItemID.None, "Vanilla:Molten"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.MiningHelmet, ItemID.None, ItemID.None, "Vanilla:Mining"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.CobaltHat, ItemID.None, ItemID.None, "Vanilla:CobaltCaster"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.CobaltHelmet, ItemID.None, ItemID.None, "Vanilla:CobaltMelee"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.ApprenticeHat, ItemID.None, ItemID.None, "Vanilla:ApprenticeTier2"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.ApprenticeAltHead, ItemID.None, ItemID.None, "Vanilla:ApprenticeTier3"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.HuntressWig, ItemID.None, ItemID.None, "Vanilla:HuntressTier2"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.HuntressAltHead, ItemID.None, ItemID.None, "Vanilla:HuntressTier3"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.MonkBrows, ItemID.None, ItemID.None, "Vanilla:MonkTier2"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.MonkAltHead, ItemID.None, ItemID.None, "Vanilla:MonkTier3"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.SquireGreatHelm, ItemID.None, ItemID.None, "Vanilla:SquireTier2"));
-            VanillaArmorSets.Add(new ArmorSetData(ItemID.SquireAltHead, ItemID.None, ItemID.None, "Vanilla:SquireTier3"));
-        }
+    private static void CalamityArmorSetInfo()
+    {
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod","ForbiddenCirclet").Type,
+            ItemID.AncientBattleArmorShirt,
+            ItemID.AncientBattleArmorPants,
+            "AncientForbiddenCirclet")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "ShroomiteVisage").Type,
+            ItemID.ShroomiteBreastplate,
+            ItemID.ShroomiteLeggings,
+            "ShroomiteVisage")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "AerospecHat").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AerospecBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AerospecLeggings").Type,
+            "AerospecMagic"));
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "AerospecHeadgear").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AerospecBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AerospecLeggings").Type,
+            "AerospecRogue")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "AerospecHelm").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AerospecBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AerospecLeggings").Type,
+            "AerospecMelee")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "AerospecHelmet").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AerospecBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AerospecLeggings").Type,
+            "AerospecSummoner")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "AerospecHood").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AerospecBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AerospecLeggings").Type,
+            "AerospecRanged")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "AstralHelm").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AstralBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AstralLeggings").Type,
+            "Astral")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaRoyalHelm").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaBodyArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaCuisses").Type,
+            "AuricTeslaMelee")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaHoodedFacemask").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaBodyArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaCuisses").Type,
+            "AuricTeslaRanged")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaPlumedHelm").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaBodyArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaCuisses").Type,
+            "AuricTeslaRogue")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaSpaceHelmet").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaBodyArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaCuisses").Type,
+            "AuricTeslaSummoner")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaWireHemmedVisage").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaBodyArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "AuricTeslaCuisses").Type,
+            "AuricTeslaMagic")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareHeadRogue").Type,
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareBodyArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareCuisses").Type,
+            "BloodflareRogue")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareHeadSummon").Type,
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareBodyArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareCuisses").Type,
+            "BloodflareSummoner")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareHeadRanged").Type,
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareBodyArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareCuisses").Type,
+            "BloodflareRanged")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareHeadMagic").Type,
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareBodyArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareCuisses").Type,
+            "BloodflareMagic")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareHeadMelee").Type,
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareBodyArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "BloodflareCuisses").Type,
+            "BloodflareMelee")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "BrimflameScowl").Type,
+            ModContent.Find<ModItem>("CalamityMod", "BrimflameRobes").Type,
+            ModContent.Find<ModItem>("CalamityMod", "BrimflameBoots").Type,
+            "Brimflame")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadMagic").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusLeggings").Type,
+            "DaedalusMagic")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadSummon").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusLeggings").Type,
+            "DaedalusSummoner")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadMelee").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusLeggings").Type,
+            "DaedalusMelee")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadRanged").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusLeggings").Type,
+            "DaedalusRanged")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadRogue").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DaedalusLeggings").Type,
+            "DaedalusRogue")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "DemonshadeHelm").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DemonshadeBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DemonshadeGreaves").Type,
+            "Demonshade")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "DesertProwlerHat").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DesertProwlerShirt").Type,
+            ModContent.Find<ModItem>("CalamityMod", "DesertProwlerPants").Type,
+            "DesertProwler")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "EmpyreanMask").Type,
+            ModContent.Find<ModItem>("CalamityMod", "EmpyreanCloak").Type,
+            ModContent.Find<ModItem>("CalamityMod", "EmpyreanCuisses").Type,
+            "Empyrean")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "FathomSwarmerVisage").Type,
+            ModContent.Find<ModItem>("CalamityMod", "FathomSwarmerBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "FathomSwarmerBoots").Type,
+            "FathomSwarmer")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "FearmongerGreathelm").Type,
+            ModContent.Find<ModItem>("CalamityMod", "FearmongerPlateMail").Type,
+            ModContent.Find<ModItem>("CalamityMod", "FearmongerGreaves").Type,
+            "Fearmonger")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "GemTechHeadgear").Type,
+            ModContent.Find<ModItem>("CalamityMod", "GemTechBodyArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "GemTechSchynbaulds").Type,
+            "GemTech")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "GodSlayerHeadMelee").Type,
+            ModContent.Find<ModItem>("CalamityMod", "GodSlayerChestplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "GodSlayerLeggings").Type,
+            "GodSlayerMelee")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "GodSlayerHeadRanged").Type,
+            ModContent.Find<ModItem>("CalamityMod", "GodSlayerChestplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "GodSlayerLeggings").Type,
+            "GodSlayerRanged")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "GodSlayerHeadRogue").Type,
+            ModContent.Find<ModItem>("CalamityMod", "GodSlayerChestplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "GodSlayerLeggings").Type,
+            "GodSlayerRogue")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicHeadRanged").Type,
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicSubligar").Type,
+            "HydrothermicRanged")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicHeadMelee").Type,
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicSubligar").Type,
+            "HydrothermicMelee")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicHeadSummon").Type,
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicSubligar").Type,
+            "HydrothermicSummoner")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicHeadRogue").Type,
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicSubligar").Type,
+            "HydrothermicRogue")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicHeadMagic").Type,
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "HydrothermicSubligar").Type,
+            "HydrothermicMagic")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "MolluskShellmet").Type,
+            ModContent.Find<ModItem>("CalamityMod", "MolluskShellplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "MolluskShelleggings").Type,
+            "Mollusk")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "OmegaBlueHelmet").Type,
+            ModContent.Find<ModItem>("CalamityMod", "OmegaBlueChestplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "OmegaBlueLeggings").Type,
+            "OmegaBlue")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "PlaguebringerVisor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "PlaguebringerCarapace").Type,
+            ModContent.Find<ModItem>("CalamityMod", "PlaguebringerPistons").Type,
+            "Plaguebringer")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "PlagueReaperMask").Type,
+            ModContent.Find<ModItem>("CalamityMod", "PlagueReaperVest").Type,
+            ModContent.Find<ModItem>("CalamityMod", "PlagueReaperStriders").Type,
+            "PlagueReaper")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "PrismaticHelmet").Type,
+            ModContent.Find<ModItem>("CalamityMod", "PrismaticRegalia").Type,
+            ModContent.Find<ModItem>("CalamityMod", "PrismaticGreaves").Type,
+            "Prismatic")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "ReaverHeadExplore").Type,
+            ModContent.Find<ModItem>("CalamityMod", "ReaverScaleMail").Type,
+            ModContent.Find<ModItem>("CalamityMod", "ReaverCuisses").Type,
+            "ReaverExplore")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "ReaverHeadMobility").Type,
+            ModContent.Find<ModItem>("CalamityMod", "ReaverScaleMail").Type,
+            ModContent.Find<ModItem>("CalamityMod", "ReaverCuisses").Type,
+            "ReaverMobility")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "ReaverHeadTank").Type,
+            ModContent.Find<ModItem>("CalamityMod", "ReaverScaleMail").Type,
+            ModContent.Find<ModItem>("CalamityMod", "ReaverCuisses").Type,
+            "ReaverTank")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "SilvaHeadMagic").Type,
+            ModContent.Find<ModItem>("CalamityMod", "SilvaArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "SilvaLeggings").Type,
+            "SilvaMagic")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "SilvaHelmet").Type,
+            ModContent.Find<ModItem>("CalamityMod", "SilvaArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "SilvaLeggings").Type,
+            "SilvaSummoner")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "SnowRuffianMask").Type,
+            ModContent.Find<ModItem>("CalamityMod", "SnowRuffianChestplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "SnowRuffianGreaves").Type,
+            "SnowRuffian")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "StatigelHeadMagic").Type,
+            ModContent.Find<ModItem>("CalamityMod", "StatigelArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "StatigelGreaves").Type,
+            "StatigelMagic")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "StatigelHeadMelee").Type,
+            ModContent.Find<ModItem>("CalamityMod", "StatigelArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "StatigelGreaves").Type,
+            "StatigelMelee")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "StatigelHeadRanged").Type,
+            ModContent.Find<ModItem>("CalamityMod", "StatigelArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "StatigelGreaves").Type,
+            "StatigelRanged")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "StatigelHeadRogue").Type,
+            ModContent.Find<ModItem>("CalamityMod", "StatigelArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "StatigelGreaves").Type,
+            "StatigelRogue")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "StatigelHeadSummon").Type,
+            ModContent.Find<ModItem>("CalamityMod", "StatigelArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "StatigelGreaves").Type,
+            "StatigelSummoner")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "SulphurousHelmet").Type,
+            ModContent.Find<ModItem>("CalamityMod", "SulfurBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "SulfurLeggings").Type,
+            "Sulphurous")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "TarragonHeadMagic").Type,
+            ModContent.Find<ModItem>("CalamityMod", "TarragonBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "TarragonLeggings").Type,
+            "TarragonMagic")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "TarragonHelm").Type,
+            ModContent.Find<ModItem>("CalamityMod", "TarragonBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "TarragonLeggings").Type,
+            "TarragonMelee")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "TarragonHeadRanged").Type,
+            ModContent.Find<ModItem>("CalamityMod", "TarragonBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "TarragonLeggings").Type,
+            "TarragonRanged")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "TarragonHeadRogue").Type,
+            ModContent.Find<ModItem>("CalamityMod", "TarragonBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "TarragonLeggings").Type,
+            "TarragonRogue")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "TarragonHeadSummon").Type,
+            ModContent.Find<ModItem>("CalamityMod", "TarragonBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "TarragonLeggings").Type,
+            "TarragonSummoner")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "TitanHeartMask").Type,
+            ModContent.Find<ModItem>("CalamityMod", "TitanHeartMantle").Type,
+            ModContent.Find<ModItem>("CalamityMod", "TitanHeartBoots").Type,
+            "TitanHeart")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "UmbraphileHood").Type,
+            ModContent.Find<ModItem>("CalamityMod", "UmbraphileRegalia").Type,
+            ModContent.Find<ModItem>("CalamityMod", "UmbraphileBoots").Type,
+            "Umbraphile")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "VictideHeadMagic").Type,
+            ModContent.Find<ModItem>("CalamityMod", "VictideBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "VictideLeggings").Type,
+            "VictideMagic")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "VictideHeadMelee").Type,
+            ModContent.Find<ModItem>("CalamityMod", "VictideBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "VictideLeggings").Type,
+            "VictideMelee")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "VictideHeadRanged").Type,
+            ModContent.Find<ModItem>("CalamityMod", "VictideBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "VictideLeggings").Type,
+            "VictideRanged")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "VictideHeadRogue").Type,
+            ModContent.Find<ModItem>("CalamityMod", "VictideBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "VictideLeggings").Type,
+            "VictideRogue")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "VictideHeadSummon").Type,
+            ModContent.Find<ModItem>("CalamityMod", "VictideBreastplate").Type,
+            ModContent.Find<ModItem>("CalamityMod", "VictideLeggings").Type,
+            "VictideSummoner")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumHeadMagic").Type,
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumLeggings").Type,
+            "WulfrumMagic")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumHeadMelee").Type,
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumLeggings").Type,
+            "WulfrumMelee")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumHeadRanged").Type,
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumLeggings").Type,
+            "WulfrumRanged")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumHeadRogue").Type,
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumLeggings").Type,
+            "WulfrumRogue")
+        );
+        CalamityArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumHeadSummon").Type,
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumArmor").Type,
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumLeggings").Type,
+            "WulfrumSummoner")
+        );
     }
 }

@@ -1,23 +1,20 @@
+using System.Reflection;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria;
 
-namespace CalamityRuTranslate.Vanilla.MonoMod
+namespace CalamityRuTranslate.Vanilla.MonoMod;
+
+public class DrawInfoAccsPatch : Patch<ILContext.Manipulator>
 {
-    public class DrawInfoAccsIL : ILEdit
+    public override bool AutoLoad => TranslationHelper.IsRussianLanguage;
+
+    public override MethodInfo ModifiedMethod => typeof(Main).GetCachedMethod("DrawInfoAccs");
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override bool Autoload() => TranslationHelper.IsRussianLanguage;
-
-        public override void Load() => IL.Terraria.Main.DrawInfoAccs += ChangeDrawInfoAccs;
-
-        public override void Unload() => IL.Terraria.Main.DrawInfoAccs -= ChangeDrawInfoAccs;
-
-        private void ChangeDrawInfoAccs(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, 12, 24);
-            TranslationHelper.ILTranslation(il, 12, 0, 3);
-            TranslationHelper.ILTranslation(il, "AM", "");
-            TranslationHelper.ILTranslation(il, "PM", "");
-        }
-    }
+        TranslationHelper.ModifyIL(il, 12, 24);
+        TranslationHelper.ModifyIL(il, 12, 0, 3);
+    };
 }

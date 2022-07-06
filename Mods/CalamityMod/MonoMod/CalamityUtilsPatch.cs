@@ -1,24 +1,44 @@
+﻿using System.Linq;
 using System.Reflection;
 using CalamityMod;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
-using MonoMod.Cil;
+using MonoMod.RuntimeDetour.HookGen;
+using Terraria;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class CalamityUtilsPatch : ILEdit
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class CalamityUtilsPatch : MonoModPatcher<string>
-    {
-        public override MethodInfo Method => typeof(CalamityUtils).GetCachedMethod(nameof(CalamityUtils.BedRightClick));
+    private MethodInfo _generateRandomAlphanumericString => typeof(CalamityUtils).GetCachedMethod(nameof(CalamityUtils.GenerateRandomAlphanumericString));
 
-        public override string ModderMethod => nameof(Translation);
+     private delegate string orig_GenerateRandomAlphanumericString(int length);
+     private delegate string hook_GenerateRandomAlphanumericString(orig_GenerateRandomAlphanumericString orig, int length);
 
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Spawn point removed!", "Точка воскрешения удалена!");
-            TranslationHelper.ILTranslation(il, "Spawn point set!", "Точка воскрешения задана!");
-        }
-    }
+     private event hook_GenerateRandomAlphanumericString GenerateRandomAlphanumericString
+     {
+         add => HookEndpointManager.Add<hook_GenerateRandomAlphanumericString>(_generateRandomAlphanumericString, value);
+         remove => HookEndpointManager.Remove<hook_GenerateRandomAlphanumericString>(_generateRandomAlphanumericString, value);
+     }
+
+     public override bool Autoload() => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+
+     public override void Load()
+     {
+         GenerateRandomAlphanumericString += Translation;
+     }
+     
+     public override void Unload()
+     {
+         GenerateRandomAlphanumericString -= Translation;
+     }
+     
+     private string Translation(orig_GenerateRandomAlphanumericString orig, int length)
+     {
+         string alphanumericCharacters = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ0123456789";
+         return new string(Enumerable.Repeat(alphanumericCharacters, length).Select(s => s[Main.rand.Next(s.Length)]).ToArray());
+     }
 }

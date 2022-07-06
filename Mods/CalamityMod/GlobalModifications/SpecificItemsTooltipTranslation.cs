@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using CalamityMod.Items;
 using CalamityMod.Items.Accessories;
 using CalamityMod.Items.DifficultyItems;
@@ -15,294 +15,436 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
+namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class SpecificItemsTooltipTranslation : GlobalItem
 {
-    public class SpecificItemsTooltipTranslation : CalamityGlobalItemBase
+    public override bool IsLoadingEnabled(Mod mod)
     {
-        // Удаляет SetNameOverride со ВСЕХ предметов в игре включая модовые. Влияет на производительность. С ней убирается IL перевода фурнитуры.
-        //!TODO: Найти способ сделать условие которое удаляет SetNameOverride только в ModItem в Каламити
-        public override void SetDefaults(Item item)
-         {
-             item.ClearNameOverride();
-         }
+        return ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    }
 
-        public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
+     //Удаляет SetNameOverride со ВСЕХ предметов в игре включая модовые. Влияет на производительность.
+     //!TODO: Найти способ сделать условие которое удаляет SetNameOverride только в ModItem в Каламити
+     public override void SetDefaults(Item item)
+     {
+         item.ClearNameOverride();
+     }
+
+    public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
+    {
+        if (item.type == ModContent.ItemType<AsgardianAegis>())
         {
-            if (item.type == ModContent.ItemType<AsgardianAegis>())
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
             {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.AsgardianAegis.Tooltip.5", ModsCall.AegisHotKey);
+            });
+        }
+        else if (item.type == ModContent.ItemType<AstralArcanum>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.AstralArcanum.Tooltip.3", ModsCall.AstralArcanumUiHotkey);
+            });
+        
+        }
+        else if (item.type == ModContent.ItemType<CelestialJewel>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.CelestialJewel.Tooltip.2", ModsCall.AstralTeleportHotKey);
+            });
+        }
+        else if (item.type == ModContent.ItemType<ElysianAegis>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ElysianAegis.Tooltip.5", ModsCall.AegisHotKey);
+            });
+        }
+        else if (item.type == ModContent.ItemType<MomentumCapacitor>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.MomentumCapacitor.Tooltip.0", ModsCall.MomentumCapacitatorHotkey);
+            });
+        }
+        else if (item.type == ModContent.ItemType<Nanotech>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip7", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.Nanotech.Tooltip.7", tooltip.Text.Split(' ')[3]);
+            });
+        }
+        else if (item.type == ModContent.ItemType<RaidersTalisman>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RaidersTalisman.Tooltip.3", tooltip.Text.Split(' ')[3]);
+            });
+        }
+        else if (item.type == ModContent.ItemType<ProfanedSoulCrystal>())
+        {
+            if (!ModsCall.DownedSCal || ModsCall.DownedExoMechs)
+            {
+                ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "Tooltip1" && l.Text == "[c/f05a5a:The soul within this crystal has been defiled by overwhelming energy waves from dangerous mechanations]\nMerchants will reject a defiled soul such as this.", tooltip =>
                 {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.AsgardianAegis.Tooltip5", ModsCall.AegisHotKey);
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.NoDownedCondition.1");
+                });
+                ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "Tooltip1" && l.Text == "[c/f05a5a:The soul within this crystal has been defiled by the powerful magic of a supreme witch]\nMerchants will reject a defiled soul such as this.", tooltip =>
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.NoDownedCondition.2");
                 });
             }
-            else if (item.type == ModContent.ItemType<AstralArcanum>())
+            else
             {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.1", (int)(100f * Main.player[Main.myPlayer].manaCost));
+                });
+            }
+        }
+        else if (item.type == ModContent.ItemType<SandCloak>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SandCloak.Tooltip.1", ModsCall.SandCloakHotkey);
+            });
+        }
+        else if (item.type == ModContent.ItemType<SpectralVeil>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SpectralVeil.Tooltip.1", ModsCall.SpectralVeilHotKey);
+            });
+        }
+        if (item.type == ModContent.ItemType<NormalityRelocator>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.NormalityRelocator.Tooltip.1",
+                    ModsCall.NormalityRelocatorHotKey);
+            });
+        }
+        else if (item.type == ModContent.ItemType<Eternity>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.Eternity.Tooltip.1", ModsCall.EternityDiscoHex);
+            });
+        }
+        else if (item.type == ModContent.ItemType<PlaguedFuelPack>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.PlaguedFuelPack.Tooltip.2", ModsCall.PlaguePackHotKey);
+            });
+        }
+        else if (item.type == ModContent.ItemType<RevengeanceModeItem>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RevengeanceModeItem.Tooltip.1", ModsCall.RageHotKey);
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RevengeanceModeItem.Tooltip.3", ModsCall.AdrenalineHotKey);
+            });
+        }
+        else if (item.type == ModContent.ItemType<BlunderBooster>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.BlunderBooster.Tooltip.3", ModsCall.PlaguePackHotKey);
+            });
+        }
+        else if (item.type == ModContent.ItemType<HadalStew>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.HadalStew.Tooltip.0",
+                    Main.player[Main.myPlayer].pStone ? 37 : 50);
+            });
+        }
+        else if (item.type == ModContent.ItemType<AngelicAlliance>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.AngelicAlliance.Tooltip.4", ModsCall.AngelicAllianceHotKey);
+            });
+        }
+        else if (item.type == ModContent.ItemType<ExoThrone>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ExoThrone.Tooltip.1",
+                    ModsCall.ExoChairSpeedupHotkey);
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ExoThrone.Tooltip.2",
+                    ModsCall.ExoChairSlowdownHotkey);
+            });
+        }
+        else if (item.type == ModContent.ItemType<ShatteredCommunity>())
+        {
+            if (!ModsCall.Revenge)
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ShatteredCommunity.Tooltip.NotRevenge.1");
+                });
+            }
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip6", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ShatteredCommunity.Tooltip.6",
+                    tooltip.Text.Split(' ')[2], tooltip.Text.Split(' ')[3]);
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip7", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ShatteredCommunity.Tooltip.7",
+                    tooltip.Text.Split(' ')[4]);
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip8", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ShatteredCommunity.Tooltip.8",
+                    tooltip.Text.Split(' ')[4]);
+            });
+        }
+        else if (item.type == ModContent.ItemType<FracturedArk>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.FracturedArk.Tooltip.0");
+            });
+        }
+        else if (item.type == ModContent.ItemType<TrueArkoftheAncients>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.TrueArkoftheAncients.Tooltip.0");
+            });
+        }
+        else if (item.type == ModContent.ItemType<ArkoftheCosmos>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ArkoftheCosmos.Tooltip.0");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ArkoftheCosmos.Tooltip.1");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ArkoftheCosmos.Tooltip.2");
+            });
+        }
+        else if (item.type == ModContent.ItemType<ArkoftheElements>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ArkoftheElements.Tooltip.0");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ArkoftheElements.Tooltip.1");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ArkoftheElements.Tooltip.2");
+            });
+        }
+        else if (item.type == ModContent.ItemType<DraedonsHeart>())
+        {
+            if (!ModsCall.Revenge)
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.DraedonsHeart.Tooltip.NotRevenge.2");
+                });
                 ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
                 {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.AstralArcanum.Tooltip3", ModsCall.AstralArcanumUiHotkey);
-                });
-
-            }
-            else if (item.type == ModContent.ItemType<CelestialJewel>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.CelestialJewel.Tooltip2", ModsCall.AstralArcanumUiHotkey);
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.DraedonsHeart.Tooltip.NotRevenge.3");
                 });
             }
-            else if (item.type == ModContent.ItemType<ElysianAegis>())
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
             {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ElysianAegis.Tooltip5", ModsCall.AegisHotKey);
-                });
-            }
-            else if (item.type == ModContent.ItemType<MomentumCapacitor>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.MomentumCapacitor.Tooltip0",
-                        ModsCall.MomentumCapacitatorHotkey);
-                });
-            }
-            else if (item.type == ModContent.ItemType<Nanotech>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip7", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.Nanotech.Tooltip7",
-                        tooltip.text.Split(' ')[3]);
-                });
-            }
-            else if (item.type == ModContent.ItemType<RaidersTalisman>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.RaidersTalisman.Tooltip3",
-                        tooltip.text.Split(' ')[3]);
-                });
-            }
-            else if (item.type == ModContent.ItemType<ProfanedSoulCrystal>())
-            {
-                ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "Tooltip1" && l.text == "[c/f05a5a:The soul within this crystal has been defiled by overwhelming energy waves from dangerous mechanations]\nMerchants will reject a defiled soul such as this.", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ProfanedSoulCrystal.Tooltip1_2");
-                });
-                ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "Tooltip1" && l.text == "[c/f05a5a:The soul within this crystal has been defiled by the powerful magic of a supreme witch]\nMerchants will reject a defiled soul such as this.", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ProfanedSoulCrystal.Tooltip1");
-                });
-
-                if (ModsCall.ProfanedCrystalBuffs)
-                {
-                    ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
-                    {
-                        tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ProfanedSoulCrystal.Tooltip5",
-                            tooltip.text.Split(' ')[9]);
-                    });
-                }
-            }
-            else if (item.type == ModContent.ItemType<SandCloak>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.SandCloak.Tooltip1", ModsCall.SandCloakHotkey);
-                });
-            }
-            else if (item.type == ModContent.ItemType<SpectralVeil>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.SpectralVeil.Tooltip1", ModsCall.SpectralVeilHotKey);
-                });
-            }
-            else if (item.type == ModContent.ItemType<NormalityRelocator>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.NormalityRelocator.Tooltip1",
-                        ModsCall.NormalityRelocatorHotKey);
-                });
-            }
-            else if (item.type == ModContent.ItemType<Eternity>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.Eternity.Tooltip1", ModsCall.EternityDiscoHex);
-                });
-            }
-            else if (item.type == ModContent.ItemType<PlaguedFuelPack>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.PlaguedFuelPack.Tooltip2", ModsCall.PlaguePackHotKey);
-                });
-            }
-            else if (item.type == ModContent.ItemType<Revenge>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.Revenge.Tooltip1", ModsCall.RageHotKey);
-                });
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.Revenge.Tooltip3", ModsCall.AdrenalineHotKey);
-                });
-            }
-            else if (item.type == ModContent.ItemType<CosmicWorm>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
-                {
-                    tooltip.text = ModsCall.DownedFlag ? LangHelper.GetTextValue("Calamity.ItemTooltip.CosmicWorm.Tooltip1") : "";
-                });
-            }
-            else if (item.type == ModContent.ItemType<BlunderBooster>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.BlunderBooster.Tooltip3", ModsCall.PlaguePackHotKey);
-                });
-            }
-            else if (item.type == ModContent.ItemType<SunkenStew>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.SunkenStew.Tooltip0",
-                        Main.player[Main.myPlayer].pStone ? 37 : 50);
-                });
-            }
-            else if (item.type == ModContent.ItemType<AngelicAlliance>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.AngelicAlliance.Tooltip4", ModsCall.AngelicAllianceHotKey);
-                });
-            }
-            else if (item.type == ModContent.ItemType<ExoThrone>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ExoThrone.Tooltip1",
-                        ModsCall.ExoChairSpeedupHotkey);
-                });
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ExoThrone.Tooltip2",
-                        ModsCall.ExoChairSlowdownHotkey);
-                });
-            }
-            else if (item.type == ModContent.ItemType<ShatteredCommunity>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip6", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ShatteredCommunity.Tooltip6",
-                        tooltip.text.Split(' ')[2], tooltip.text.Split(' ')[3]);
-                });
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip7", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ShatteredCommunity.Tooltip7",
-                        tooltip.text.Split(' ')[4]);
-                });
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip8", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ShatteredCommunity.Tooltip8",
-                        tooltip.text.Split(' ')[4]);
-                });
-            }
-            else if (item.type == ModContent.ItemType<ArkoftheAncients>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheAncients.Tooltip0");
-                });
-            }
-            else if (item.type == ModContent.ItemType<TrueArkoftheAncients>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.TrueArkoftheAncients.Tooltip0");
-                });
-            }
-            else if (item.type == ModContent.ItemType<ArkoftheCosmos>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheCosmos.Tooltip0");
-                });
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheCosmos.Tooltip1");
-                });
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheCosmos.Tooltip2");
-                });
-            }
-            else if (item.type == ModContent.ItemType<ArkoftheElements>())
-            {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheElements.Tooltip0");
-                });
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheElements.Tooltip1");
-                });
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
-                {
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.ArkoftheElements.Tooltip2");
-                });
-            }
-
-            ItemHelper.TranslateTooltip(item, tooltips, "SchematicKnowledge1", tooltip =>
-            {
-                tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.SchematicKnowledge1");
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.DraedonsHeart.Tooltip.5");
             });
-            ItemHelper.TranslateTooltip(item, tooltips, "SchematicKnowledge2", tooltip =>
+        }
+        else if (item.type == ModContent.ItemType<BrokenBiomeBlade>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.SchematicKnowledge2");
-            });
-            ItemHelper.TranslateTooltip(item, tooltips, "PointBlankShot", tooltip =>
-            {
-                tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.PointBlankShot");
-            });
-            ItemHelper.TranslateTooltip(item, tooltips, "CalamityCharge", tooltip =>
-            {
-                tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.CalamityCharge", tooltip.text.Split(' ')[2]);
-            });
-            ItemHelper.TranslateTooltip(item, tooltips, "CalamityDonor", tooltip =>
-            {
-                tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.CalamityDonor");
-                tooltip.overrideColor = new Color(139, 0, 0);
-            });
-            ItemHelper.TranslateTooltip(item, tooltips, "CalamityDev", tooltip =>
-            {
-                tooltip.text = LangHelper.GetTextValue("Calamity.TooltipName.CalamityDev");
-                tooltip.overrideColor = new Color(255, 0, 255);
+                tooltip.Text = tooltip.Text.Replace("Does nothing..yet", "Ничего не делает... пока");
             });
 
-            if (ModsCall.Fargo != null)
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
             {
-                if (item.type == ModContent.ItemType<SunkenSeaFountain>())
+                tooltip.Text = tooltip.Text
+                    .Replace("Main Attunement", "Основная настройка")
+                    .Replace("None", "Нет");
+            });
+
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
+            {
+                tooltip.Text = tooltip.Text
+                    .Replace("Secondary Attunement", "Вторичная настройка")
+                    .Replace("None", "Нет");
+            });
+        }
+        else if (item.type == ModContent.ItemType<FourSeasonsGalaxia>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Active Attunement", "Активная настройка");
+            });
+
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Passive Blessing", "Пассивное благословение");
+            });
+        }
+        else if (item.type == ModContent.ItemType<OmegaBiomeBlade>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Does nothing..yet\nIt seems that upgrading the blade expanded the scope of the previous attunements", "Ничего не делает... пока\nПохоже, что улучшение клинка расширило возможности предыдущих настроек");
+            });
+
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Your secondary attunement can now provide passive bonuses", "Ваша вторичная настройка теперь может давать пассивные бонусы");
+            });
+
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
+            {
+                tooltip.Text = tooltip.Text
+                    .Replace("Active Attunement", "Активная настройка")
+                    .Replace("None", "Нет");
+            });
+
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
+            {
+                tooltip.Text = tooltip.Text
+                    .Replace("Passive Attunement", "Пассивная настройка")
+                    .Replace("None", "Нет");
+            });
+        }
+        else if (item.type == ModContent.ItemType<TrueBiomeBlade>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Does nothing..yet\nRepairing the blade seems to have improved its attuning capacities", "Ничего не делает... пока\nПохоже, что восстановление клинка улучшило его возможности настройки");
+            });
+
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
+            {
+                tooltip.Text = tooltip.Text
+                    .Replace("Main Attunement", "Основная настройка")
+                    .Replace("None", "Нет");
+            });
+
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
+            {
+                tooltip.Text = tooltip.Text
+                    .Replace("Secondary Attunement", "Вторичная настройка")
+                    .Replace("None", "Нет");
+            });
+        }
+        else if (item.type == ModContent.ItemType<RuneofKos>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                if (Main.LocalPlayer.ZoneDungeon)
                 {
-                    ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                    {
-                        tooltip.text = LangHelper.GetTextValue("Calamity.ModifyItemTooltip.SunkenSeaFountain");
-                    });
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RuneofKos.Tooltip.ZoneDungeon");
                 }
-                else if (item.type == ModContent.ItemType<SulphurousFountainItem>())
+                else if (Main.LocalPlayer.ZoneSkyHeight)
                 {
-                    ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                    {
-                        tooltip.text = LangHelper.GetTextValue("Calamity.ModifyItemTooltip.SulphurousFountainItem");
-                    });
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RuneofKos.Tooltip.ZoneSkyHeight");
                 }
-                else if (item.type == ModContent.ItemType<AstralFountainItem>())
+                else if (Main.LocalPlayer.ZoneUnderworldHeight)
                 {
-                    ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                    {
-                        tooltip.text = LangHelper.GetTextValue("Calamity.ModifyItemTooltip.AstralFountainItem");
-                    });
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RuneofKos.Tooltip.ZoneUnderworldHeight");
                 }
+            });
+        }
+        else if (item.type == ModContent.ItemType<TheCommunity>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
+            {
+                tooltip.Text = tooltip.Text
+                    .Replace("Max health increased by", "Увеличивает максимальный запас здоровья на")
+                    .Replace("Melee speed increased by", "Увеличивает скорость атаки ближнего боя на")
+                    .Replace("Life regeneration increased by", "Увеличивает регенерацию здоровья на")
+                    .Replace("Critical strike chance increased by", "Увеличивает шанс критического удара на")
+                    .Replace("Damage increased by", "Увеличивает урон на")
+                    .Replace("Damage reduction increased by", "Увеличивает сопротивление урону на")
+                    .Replace("Defense increased by", "Увеличивает защиту на")
+                    .Replace("Minion knockback increased by", "Увеличивает отбрасывание призывателя на")
+                    .Replace("Movement speed increased by", "Увеличивает скорость передвижения на")
+                    .Replace("Flight time increased by", "Увеличивает время полёта на");
+            });
+        }
+        
+        ItemHelper.TranslateTooltip(item, tooltips, "SchematicKnowledge1", tooltip =>
+        {
+            tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.TooltipTags.SchematicKnowledge1");
+        });
+        ItemHelper.TranslateTooltip(item, tooltips, "SchematicKnowledge2", tooltip =>
+        {
+            tooltip.Text = 
+                tooltip.Text.Replace("A specific schematic must be deciphered first", "Сначала необходимо расшифровать конкретную схему")
+                .Replace("The Sunken Sea schematic must be deciphered first", "Сначала необходимо расшифровать схему затерянного моря")
+                .Replace("The Planetoid schematic must be deciphered first", "Сначала необходимо расшифровать схему планетоида")
+                .Replace("The Jungle schematic must be deciphered first", "Сначала необходимо расшифровать схему джунглей")
+                .Replace("The Underworld schematic must be deciphered first", "Сначала необходимо расшифровать схему Ада")
+                .Replace("The Ice biome schematic must be deciphered first", "Сначала необходимо расшифровать схему льдов");
+        });
+        ItemHelper.TranslateTooltip(item, tooltips, "PointBlankShot", tooltip =>
+        {
+            tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.TooltipTags.PointBlankShot");
+        });
+        ItemHelper.TranslateTooltip(item, tooltips, "CalamityCharge", tooltip =>
+        {
+            tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.TooltipTags.CalamityCharge", tooltip.Text.Split(' ')[2]);
+        });
+        ItemHelper.TranslateTooltip(item, tooltips, "CalamityDonor", tooltip =>
+        {
+            tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.TooltipTags.CalamityDonor");
+            tooltip.OverrideColor = new Color(139, 0, 0);
+        });
+        ItemHelper.TranslateTooltip(item, tooltips, "CalamityDev", tooltip =>
+        {
+            tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.TooltipTags.CalamityDev");
+            tooltip.OverrideColor = new Color(255, 0, 255);
+        });
+        
+        if (ModsCall.TryGetFargo)
+        {
+            if (item.type == ModContent.ItemType<SunkenSeaFountain>())
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SunkenSeaFountain.Tooltip");
+                });
+            }
+            else if (item.type == ModContent.ItemType<SulphurousFountainItem>())
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SulphurousFountainItem.Tooltip");
+                });
+            }
+            else if (item.type == ModContent.ItemType<AstralFountainItem>())
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.AstralFountainItem.Tooltip");
+                });
             }
         }
     }

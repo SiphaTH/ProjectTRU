@@ -1,23 +1,22 @@
 using System.Reflection;
 using CalamityMod.Cooldowns;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class DivineBlessPatch : Patch<ILContext.Manipulator>
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class DivineBlessPatch : MonoModPatcher<string>
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        
+    public override MethodInfo ModifiedMethod => typeof(DivineBless).GetCachedMethod("get_DisplayName");
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(DivineBless).GetCachedMethod("get_DisplayName");
-
-        public override string ModderMethod => nameof(Translation);
-
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Divine Bless Cooldown", "Перезарядка божественности");
-        }
-    }
+        TranslationHelper.ModifyIL(il, "Divine Bless Cooldown", "Перезарядка божественности");
+    };
 }

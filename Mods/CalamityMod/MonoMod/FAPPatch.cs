@@ -1,37 +1,35 @@
 using System.Reflection;
 using CalamityMod.NPCs.TownNPCs;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class FAPSetChatButtons : Patch<ILContext.Manipulator>
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class FAPSetChatButtons : MonoModPatcher<string>
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        
+    public override MethodInfo ModifiedMethod => typeof(FAP).GetCachedMethod(nameof(FAP.SetChatButtons));
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(FAP).GetCachedMethod(nameof(FAP.SetChatButtons));
+        TranslationHelper.ModifyIL(il, "Death Count", "Количество смертей");
+    };
+}
 
-        public override string ModderMethod => nameof(Translation);
+[JITWhenModsEnabled("CalamityMod")]
+public class FAPGetChat : Patch<ILContext.Manipulator>
+{
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        
+    public override MethodInfo ModifiedMethod => typeof(FAP).GetCachedMethod(nameof(FAP.GetChat));
 
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Death Count", "Количество смертей");
-        }
-    }
-
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class FAPGetChat : MonoModPatcher<string>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(FAP).GetCachedMethod(nameof(FAP.GetChat));
-
-        public override string ModderMethod => nameof(Translation);
-
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, " was slapped too hard.", " получил слишком сильную пощечину.");
-        }
-    }
+        TranslationHelper.ModifyIL(il, " was slapped too hard.", " получил слишком сильную пощечину.");
+    };
 }

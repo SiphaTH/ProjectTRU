@@ -1,78 +1,75 @@
 using System.Reflection;
 using CalamityMod.CalPlayer;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class CalamityPlayerPreKill : Patch<ILContext.Manipulator>
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class CalamityPlayerPreKill : MonoModPatcher<string>
-    {
-        public override MethodInfo Method => typeof(CalamityPlayer).GetCachedMethod(nameof(CalamityPlayer.PreKill));
-
-        public override string ModderMethod => nameof(Translation);
-
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, " downed too many shots.", " выпивает слишком много напитков.");
-            TranslationHelper.ILTranslation(il, "'s liver failed.", " отказывает печень.");
-            TranslationHelper.ILTranslation(il, " was charred by the brimstone inferno.", " обугливается серным пламенем.");
-            TranslationHelper.ILTranslation(il, "'s soul was released by the lava.", " душа освобождается лавой.");
-            TranslationHelper.ILTranslation(il, "'s soul was extinguished.", " душа гаснет.");
-            TranslationHelper.ILTranslation(il, " was melted by the toxic waste.", " расплавляется токсичными отходами.");
-            TranslationHelper.ILTranslation(il, " disintegrated into ashes.", " рассыпается в прах.");
-            TranslationHelper.ILTranslation(il, " was turned to ashes by the Profaned Goddess.", " обращается Осквернённой богиней в пепел.");
-            TranslationHelper.ILTranslation(il, " fell prey to their sins.", " становится жертвой своих грехов.");
-            TranslationHelper.ILTranslation(il, "'s spirit was turned to ash.", " дух вревращается в пепел.");
-            TranslationHelper.ILTranslation(il, " became a blood geyser.", " становится кровавым гейзером.");
-            TranslationHelper.ILTranslation(il, " was crushed by the pressure.", " расплющивается давлением.");
-            TranslationHelper.ILTranslation(il, "'s lungs collapsed.", " отказывают лёгкие.");
-            TranslationHelper.ILTranslation(il, " was consumed by the black flames.", " поглощается чёрным пламенем.");
-            TranslationHelper.ILTranslation(il, "'s flesh was melted by the plague.", " плоть расплавляется чумой.");
-            TranslationHelper.ILTranslation(il, " didn't vaccinate.", " не делает прививку.");
-            TranslationHelper.ILTranslation(il, "'s infection spread too far.", " инфекция распространяется слишком сильно.");
-            TranslationHelper.ILTranslation(il, "'s skin was replaced by the astral virus.", " кожа заменяется астральным вирусом.");
-            TranslationHelper.ILTranslation(il, " was incinerated by lunar rays.", " испепеляется лунными лучами.");
-            TranslationHelper.ILTranslation(il, " vaporized into thin air.", " испаряется в воздухе.");
-            TranslationHelper.ILTranslation(il, "'s life was completely converted into mana.", " здоровье полностью преобразуется в ману.");
-            TranslationHelper.ILTranslation(il, " succumbed to alcohol sickness.", " поддаётся алкогольной болезни.");
-            TranslationHelper.ILTranslation(il, " withered away.", " иссушается.");
-            TranslationHelper.ILTranslation(il, " was summoned too soon.", " призывается слишком рано.");
-        }
-    }
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
     
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class CalamityPlayerKillPlayer : MonoModPatcher<string>
-    {
-        public override MethodInfo Method => typeof(CalamityPlayer).GetCachedMethod(nameof(CalamityPlayer.KillPlayer));
-        
-        public override string ModderMethod => nameof(Translation);
+    public override MethodInfo ModifiedMethod => typeof(CalamityPlayer).GetCachedMethod(nameof(CalamityPlayer.PreKill));
 
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, " is food for the Wyrms.", " становится пищей для змей.");
-            TranslationHelper.ILTranslation(il, "Oxygen failed to reach ", "Не хватило кислорода для ");
-            TranslationHelper.ILTranslation(il, " from the depths of the Abyss.", " из глубин бездны.");
-            TranslationHelper.ILTranslation(il, " failed the challenge at hand.", " не справляется с испытанием.");
-            TranslationHelper.ILTranslation(il, " was destroyed by a mysterious force.", " уничтожается таинственной силой.");
-        }
-    }
-    
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class CalamityPlayerOnConsumeMana : MonoModPatcher<string>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(CalamityPlayer).GetCachedMethod(nameof(CalamityPlayer.OnConsumeMana));
-        
-        public override string ModderMethod => nameof(Translation);
+        TranslationHelper.ModifyIL(il, " downed too many shots.", " выпивает слишком много напитков.");
+        TranslationHelper.ModifyIL(il, "'s liver failed.", " отказывает печень.");
+        TranslationHelper.ModifyIL(il, " was charred by the brimstone inferno.", " обугливается серным пламенем.");
+        TranslationHelper.ModifyIL(il, "'s soul was released by the lava.", " душа освобождается лавой.");
+        TranslationHelper.ModifyIL(il, "'s soul was extinguished.", " душа гаснет.");
+        TranslationHelper.ModifyIL(il, " was melted by the toxic waste.", " расплавляется токсичными отходами.");
+        TranslationHelper.ModifyIL(il, " disintegrated into ashes.", " рассыпается в прах.");
+        TranslationHelper.ModifyIL(il, " was turned to ashes by the Profaned Goddess.", " обращается Осквернённой богиней в пепел.");
+        TranslationHelper.ModifyIL(il, " fell prey to their sins.", " становится жертвой своих грехов.");
+        TranslationHelper.ModifyIL(il, "'s spirit was turned to ash.", " дух вревращается в пепел.");
+        TranslationHelper.ModifyIL(il, " became a blood geyser.", " становится кровавым гейзером.");
+        TranslationHelper.ModifyIL(il, " was crushed by the pressure.", " расплющивается давлением.");
+        TranslationHelper.ModifyIL(il, "'s lungs collapsed.", " отказывают лёгкие.");
+        TranslationHelper.ModifyIL(il, " was consumed by the black flames.", " поглощается чёрным пламенем.");
+        TranslationHelper.ModifyIL(il, "'s flesh was melted by the plague.", " плоть расплавляется чумой.");
+        TranslationHelper.ModifyIL(il, " didn't vaccinate.", " не делает прививку.");
+        TranslationHelper.ModifyIL(il, "'s infection spread too far.", " инфекция распространяется слишком сильно.");
+        TranslationHelper.ModifyIL(il, "'s skin was replaced by the astral virus.", " кожа заменяется астральным вирусом.");
+        TranslationHelper.ModifyIL(il, " was incinerated by lunar rays.", " испепеляется лунными лучами.");
+        TranslationHelper.ModifyIL(il, " vaporized into thin air.", " испаряется в воздухе.");
+        TranslationHelper.ModifyIL(il, "'s life was completely converted into mana.", " здоровье полностью преобразуется в ману.");
+        TranslationHelper.ModifyIL(il, " succumbed to alcohol sickness.", " поддаётся алкогольной болезни.");
+        TranslationHelper.ModifyIL(il, " withered away.", " иссушается.");
+        TranslationHelper.ModifyIL(il, " was summoned too soon.", " призывается слишком рано.");
+    };
+}
 
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, " converted all of their life to mana.", " оборачивает всю свою жизнь в ману.");
-        }
-    }
+[JITWhenModsEnabled("CalamityMod")]
+public class CalamityPlayerKillPlayer : Patch<ILContext.Manipulator>
+{
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+
+    public override MethodInfo ModifiedMethod => typeof(CalamityPlayer).GetCachedMethod(nameof(CalamityPlayer.KillPlayer));
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    {
+        TranslationHelper.ModifyIL(il, " is food for the Wyrms.", " становится пищей для змей.");
+        TranslationHelper.ModifyIL(il, "Oxygen failed to reach ", "Не хватило кислорода для ");
+        TranslationHelper.ModifyIL(il, " from the depths of the Abyss.", " из глубин бездны.");
+        TranslationHelper.ModifyIL(il, " failed the challenge at hand.", " не справляется с испытанием.");
+        TranslationHelper.ModifyIL(il, " was destroyed by a mysterious force.", " уничтожается таинственной силой.");
+    };
+}
+
+[JITWhenModsEnabled("CalamityMod")] 
+public class CalamityPlayerOnConsumeMana : Patch<ILContext.Manipulator>
+{
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+
+    public override MethodInfo ModifiedMethod => typeof(CalamityPlayer).GetCachedMethod(nameof(CalamityPlayer.OnConsumeMana));
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    {
+        TranslationHelper.ModifyIL(il, " converted all of their life to mana.", " обернул всю свою жизнь в ману.");
+    };
 }

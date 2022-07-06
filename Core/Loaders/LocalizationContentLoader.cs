@@ -4,32 +4,30 @@ using System.Reflection;
 using System.Text;
 using CalamityRuTranslate.Common.Utilities;
 using Terraria.Localization;
+using Terraria.ModLoader;
 using Terraria.ModLoader.Core;
 
-namespace CalamityRuTranslate.Core.Loaders
+namespace CalamityRuTranslate.Core.Loaders;
+
+public class LocalizationContentLoader : ILoadable
 {
-    public class LocalizationContentLoader : ILoadable
+    public bool IsLoadingEnabled(Mod mod)
     {
-        public float Priority => 1f;
+        return TranslationHelper.IsRussianLanguage;
+    }
 
-        public void Load()
+    public void Load(Mod mod)
+    {
+        if (typeof(CalamityRuTranslate).GetProperty("File", BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(CalamityRuTranslate.Instance) is TmodFile tModFile)
         {
-            if (!TranslationHelper.IsRussianLanguage)
-                return;
-
-            TmodFile tModFile = typeof(CalamityRuTranslate).GetProperty("File", BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(CalamityRuTranslate.Instance) as TmodFile;
-
-            if (tModFile != null)
+            foreach (TmodFile.FileEntry item in tModFile.Where(entry => Path.GetFileNameWithoutExtension(entry.Name)!.StartsWith("Terraria.Localization.Content.")))
             {
-                foreach (TmodFile.FileEntry item in tModFile.Where(entry => Path.GetFileNameWithoutExtension(entry.Name).StartsWith("Terraria.Localization.Content.")))
-                {
-                    LanguageManager.Instance.LoadLanguageFromFileText(Encoding.UTF8.GetString(CalamityRuTranslate.Instance.GetFileBytes(item.Name)));
-                }
+                LanguageManager.Instance.LoadLanguageFromFileTextJson(Encoding.UTF8.GetString(CalamityRuTranslate.Instance.GetFileBytes(item.Name)), false);
             }
         }
+    }
 
-        public void Unload()
-        {
-        }
+    public void Unload()
+    {
     }
 }

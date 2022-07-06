@@ -1,37 +1,35 @@
 using System.Reflection;
 using CalamityMod.UI;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class BossHealthBarManagerPatch : Patch<ILContext.Manipulator>
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class BossHealthBarManagerPatch : MonoModPatcher<string>
-    {
-        public override MethodInfo Method => typeof(BossHealthBarManager.BossHPUI).GetCachedMethod(nameof(BossHealthBarManager.BossHPUI.Draw));
-
-        public override string ModderMethod => nameof(Translation);
-
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "({0} left: {1})", "({0} осталось: {1})");
-        }
-    }
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
     
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class AttemptToAddBar : MonoModPatcher<string>
+    public override MethodInfo ModifiedMethod => typeof(BossHealthBarManager.BossHPUI).GetCachedMethod(nameof(BossHealthBarManager.BossHPUI.Draw));
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(BossHealthBarManager).GetCachedMethod(nameof(BossHealthBarManager.AttemptToAddBar));
+        TranslationHelper.ModifyIL(il, " left: ", " осталось: ");
+    };
+}
 
-        public override string ModderMethod => nameof(Translation);
+[JITWhenModsEnabled("CalamityMod")]
+public class AttemptToAddBar : Patch<ILContext.Manipulator>
+{
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    
+    public override MethodInfo ModifiedMethod => typeof(BossHealthBarManager).GetCachedMethod(nameof(BossHealthBarManager.AttemptToAddBar));
 
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "XS-01 Artemis and XS-03 Apollo", "ВП-01 Артемида и ВП-03 Аполлон");
-        }
-    }
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    {
+        TranslationHelper.ModifyIL(il, "XS-01 Artemis and XS-03 Apollo", "ВП-01 Артемида и ВП-03 Аполлон");
+    };
 }

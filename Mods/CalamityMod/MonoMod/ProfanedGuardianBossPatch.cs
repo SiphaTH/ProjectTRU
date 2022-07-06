@@ -1,23 +1,48 @@
 using System.Reflection;
 using CalamityMod.NPCs.ProfanedGuardians;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class ProfanedGuardianCommanderPatch : Patch<ILContext.Manipulator>
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class ProfanedGuardianBossPatch : MonoModPatcher<string>
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    
+    public override MethodInfo ModifiedMethod => typeof(ProfanedGuardianCommander).GetCachedMethod(nameof(ProfanedGuardianCommander.BossLoot));
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(ProfanedGuardianBoss).GetCachedMethod(nameof(ProfanedGuardianBoss.BossLoot));
+        TranslationHelper.ModifyIL(il, "A Profaned Guardian", "Осквернённый страж");
+    };
+}
 
-        public override string ModderMethod => nameof(Translation);
+[JITWhenModsEnabled("CalamityMod")]
+public class ProfanedGuardianDefenderPacth : Patch<ILContext.Manipulator>
+{
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    
+    public override MethodInfo ModifiedMethod => typeof(ProfanedGuardianDefender).GetCachedMethod(nameof(ProfanedGuardianDefender.BossLoot));
 
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "A Profaned Guardian", "Осквернённый страж");
-        }
-    }
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    {
+        TranslationHelper.ModifyIL(il, "A Profaned Guardian", "Осквернённый страж");
+    };
+}
+
+[JITWhenModsEnabled("CalamityMod")]
+public class ProfanedGuardianHealerPacth : Patch<ILContext.Manipulator>
+{
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    
+    public override MethodInfo ModifiedMethod => typeof(ProfanedGuardianHealer).GetCachedMethod(nameof(ProfanedGuardianHealer.BossLoot));
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    {
+        TranslationHelper.ModifyIL(il, "A Profaned Guardian", "Осквернённый страж");
+    };
 }

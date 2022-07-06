@@ -1,23 +1,22 @@
 using System.Reflection;
 using CalamityMod.Cooldowns;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class CounterScarfPatch : Patch<ILContext.Manipulator>
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class CounterScarfPatch : MonoModPatcher<string>
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        
+    public override MethodInfo ModifiedMethod => typeof(CounterScarf).GetCachedMethod("get_DisplayName");
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(CounterScarf).GetCachedMethod("get_DisplayName");
-
-        public override string ModderMethod => nameof(Translation);
-
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Scarf Cooldown", "Перезарядка шарфа");
-        }
-    }
+        TranslationHelper.ModifyIL(il, "Scarf Cooldown", "Перезарядка шарфа");
+    };
 }

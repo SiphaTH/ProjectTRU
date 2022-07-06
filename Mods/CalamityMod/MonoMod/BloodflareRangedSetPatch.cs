@@ -1,23 +1,22 @@
 using System.Reflection;
 using CalamityMod.Cooldowns;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class BloodflareRangedSetPatch : Patch<ILContext.Manipulator>
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class BloodflareRangedSetPatch : MonoModPatcher<string>
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    
+    public override MethodInfo ModifiedMethod => typeof(BloodflareRangedSet).GetCachedMethod("get_DisplayName");
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(BloodflareRangedSet).GetCachedMethod("get_DisplayName");
-
-        public override string ModderMethod => nameof(Translation);
-
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Bloodflare Soul Cooldown", "Перезарядка душ кровавой вспышки");
-        }
-    }
+        TranslationHelper.ModifyIL(il, "Bloodflare Soul Cooldown", "Перезарядка душ кровавой вспышки");
+    };
 }

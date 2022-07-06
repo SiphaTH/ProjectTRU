@@ -1,86 +1,83 @@
 using System.Threading.Tasks;
 using CalamityRuTranslate.Common.Utilities;
 using Microsoft.Xna.Framework;
+using ReLogic.Content;
 using ReLogic.Graphics;
 using Terraria;
+using Terraria.GameContent;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Core.Loaders
+namespace CalamityRuTranslate.Core.Loaders;
+
+public class FontLoader : ILoadable
 {
-    public class FontLoader : ILoadable
+    private TaskCompletionSource<bool> _unloadTCS;
+    private bool _hasBackups;
+    private Asset<DynamicSpriteFont>[] _combatTextBackup;
+    private Asset<DynamicSpriteFont> _deathTextBackup;
+    private Asset<DynamicSpriteFont> _itemStackBackup;
+    private Asset<DynamicSpriteFont> _mouseTextBackup;
+    public bool IsLoadingEnabled(Mod mod)
     {
-        private TaskCompletionSource<bool> _unloadTCS;
-        private bool _hasBackups;
-        private DynamicSpriteFont[] _combatTextBackup;
-        private DynamicSpriteFont _deathTextBackup;
-        private DynamicSpriteFont _itemStackBackup;
-        private DynamicSpriteFont _mouseTextBackup;
+        return TRuConfig.Instance.NewRussianTerrariaFont && TranslationHelper.IsRussianLanguage;
+    }
 
-        public float Priority => 1f;
+    public void Load(Mod mod)
+    {
+        if (Main.dedServ)
+            return;
 
-        public void Load()
+        _combatTextBackup = FontAssets.CombatText;
+        _deathTextBackup = FontAssets.DeathText;
+        _itemStackBackup = FontAssets.ItemStack;
+        _mouseTextBackup = FontAssets.MouseText;
+        _hasBackups = true;
+
+        FontAssets.ItemStack = ModContent.Request<DynamicSpriteFont>("CalamityRuTranslate/Fonts/Item_Stack", AssetRequestMode.ImmediateLoad);
+        FontAssets.MouseText = ModContent.Request<DynamicSpriteFont>("CalamityRuTranslate/Fonts/Mouse_Text", AssetRequestMode.ImmediateLoad);
+        FontAssets.DeathText = ModContent.Request<DynamicSpriteFont>("CalamityRuTranslate/Fonts/Death_Text", AssetRequestMode.ImmediateLoad);
+        FontAssets.CombatText = new[]
         {
-            if (Main.dedServ)
-                 return;
+            ModContent.Request<DynamicSpriteFont>("CalamityRuTranslate/Fonts/Combat_Text", AssetRequestMode.ImmediateLoad),
+            ModContent.Request<DynamicSpriteFont>("CalamityRuTranslate/Fonts/Combat_Crit", AssetRequestMode.ImmediateLoad)
+        };
 
-            if (TRuConfig.Instance.NewRussianTerrariaFont && TranslationHelper.IsRussianLanguage)
-            {
-                _combatTextBackup = Main.fontCombatText;
-                _deathTextBackup = Main.fontDeathText;
-                _itemStackBackup = Main.fontItemStack;
-                _mouseTextBackup = Main.fontMouseText;
-                _hasBackups = true;
+        Main.OnPreDraw += PreDraw;
+    }
 
-                Main.fontItemStack = CalamityRuTranslate.Instance.GetFont("Fonts/Item_Stack");
-                Main.fontMouseText = CalamityRuTranslate.Instance.GetFont("Fonts/Mouse_Text");
-                Main.fontDeathText = CalamityRuTranslate.Instance.GetFont("Fonts/Death_Text");
-                Main.fontCombatText = new[]
-                {
-                    CalamityRuTranslate.Instance.GetFont("Fonts/Combat_Text"),
-                    CalamityRuTranslate.Instance.GetFont("Fonts/Combat_Crit")
-                };
-            }
-
-            Main.OnPreDraw += PreDraw;
+    public void Unload()
+    {
+        if (!Main.dedServ)
+        {
+            _unloadTCS = new TaskCompletionSource<bool>();
+            _unloadTCS.Task.Wait();
+            Main.OnPreDraw -= PreDraw;
         }
+    }
 
-        public void Unload()
+    private void PreDraw(GameTime obj)
+    {
+        if (_unloadTCS != null)
         {
-            if (!Main.dedServ)
-            {
-                _unloadTCS = new TaskCompletionSource<bool>();
-                _unloadTCS.Task.Wait();
-
-                Main.OnPreDraw -= PreDraw;
-            }
+            UnloadFonts();
+            _unloadTCS.SetResult(true);
+            _unloadTCS = null;
         }
-        
-        private void PreDraw(GameTime obj)
+    }
+
+    private void UnloadFonts()
+    {
+        if (_hasBackups)
         {
-            if (_unloadTCS != null)
-            {
-                UnloadFonts();
-
-                _unloadTCS.SetResult(true);
-                _unloadTCS = null;
-            }
-        }
-        
-        private void UnloadFonts()
-        {
-            if (_hasBackups)
-            {
-                Main.fontCombatText = _combatTextBackup;
-                Main.fontDeathText = _deathTextBackup;
-                Main.fontItemStack = _itemStackBackup;
-                Main.fontMouseText = _mouseTextBackup;
-
-                _combatTextBackup = null;
-                _deathTextBackup = null;
-                _itemStackBackup = null;
-                _mouseTextBackup = null;
-
-                _hasBackups = false;
-            }
+            FontAssets.CombatText = _combatTextBackup;
+            FontAssets.DeathText = _deathTextBackup;
+            FontAssets.ItemStack = _itemStackBackup;
+            FontAssets.MouseText = _mouseTextBackup;
+            _combatTextBackup = null;
+            _deathTextBackup = null;
+            _itemStackBackup = null;
+            _mouseTextBackup = null;
+            _hasBackups = false;
         }
     }
 }

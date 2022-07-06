@@ -13,10 +13,10 @@ namespace CalamityRuTranslate.Content.Vanity.Veystreks
 
         public override void SetDefaults()
         {
-            item.width = 24;
-            item.height = 20;
-            item.rare = 1;
-            item.vanity = true;
+            Item.width = 24;
+            Item.height = 20;
+            Item.rare = 1;
+            Item.vanity = true;
         }
     }
 }

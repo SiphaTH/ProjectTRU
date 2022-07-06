@@ -6,60 +6,57 @@ namespace CalamityRuTranslate.Common.Utilities
 {
     public static class TranslationHelper
     {
-        public static bool IsRussianLanguage => LanguageManager.Instance.ActiveCulture == GameCulture.Russian;
+        public static bool IsRussianLanguage => LanguageManager.Instance.ActiveCulture == GameCulture.FromCultureName(GameCulture.CultureName.Russian);
 
-        public static void ILTranslation(ILContext il, string original, string translation, int iterations = 1)
+        public static void ModifyIL(ILContext il, string orig, string replace, int iterations = 1)
         {
-            var cursor = new ILCursor(il);
-        
-            for (int j = 0; j < iterations; j++)
+            ILCursor cursor = new ILCursor(il);
+
+            for (int i = 0; i < iterations; i++)
             {
-                if (!cursor.TryGotoNext(i => i.MatchLdstr(original)))
+                if (!cursor.TryGotoNext(MoveType.After,x => x.MatchLdstr(orig)))
                 {
-                    CalamityRuTranslate.Instance.Logger.Warn($"[IL] Не удалось заменить \"{original}\" на \"{translation}\"");
+                    CalamityRuTranslate.Instance.Logger.Warn($"[IL] Не удалось заменить \"{orig}\" на \"{replace}\"");
                     return;
                 }
             }
 
-            cursor.Index++;
             cursor.Emit(OpCodes.Pop);
-            cursor.Emit(OpCodes.Ldstr, translation);
+            cursor.Emit(OpCodes.Ldstr, replace);
         }
 
-        public static void ILTranslation(ILContext il, int original, int newValue, int iterations = 1)
+        public static void ModifyIL(ILContext il, int orig, int replace, int iterations = 1)
         {
-            var cursor = new ILCursor(il);
-        
-            for (int j = 0; j < iterations; j++)
+            ILCursor cursor = new ILCursor(il);
+
+            for (int i = 0; i < iterations; i++)
             {
-                if (!cursor.TryGotoNext(i => i.MatchLdcI4(original)))
+                if (!cursor.TryGotoNext(MoveType.After, x => x.MatchLdcI4(orig)))
                 {
-                    CalamityRuTranslate.Instance.Logger.Warn($"[IL] Не удалось заменить \"{original.ToString()}\" на \"{newValue.ToString()}\"");
+                    CalamityRuTranslate.Instance.Logger.Warn($"[IL] Не удалось заменить \"{orig}\" на \"{replace}\"");
                     return;
                 }
             }
-        
-            cursor.Index++;
+
             cursor.Emit(OpCodes.Pop);
-            cursor.Emit(OpCodes.Ldc_I4, newValue);
+            cursor.Emit(OpCodes.Ldc_I4, replace);
         }
-
-        public static void ILTranslation(ILContext il, float original, float newValue, int iterations = 1)
-        {
-            var cursor = new ILCursor(il);
         
-            for (int j = 0; j < iterations; j++)
+        public static void ModifyIL(ILContext il, float orig, float replace, int iterations = 1)
+        {
+            ILCursor cursor = new ILCursor(il);
+
+            for (int i = 0; i < iterations; i++)
             {
-                if (!cursor.TryGotoNext(i => i.MatchLdcR4(original)))
+                if (!cursor.TryGotoNext(MoveType.After, x => x.MatchLdcR4(orig)))
                 {
-                    CalamityRuTranslate.Instance.Logger.Warn($"[IL] Не удалось заменить \"{original.ToString()}\" на \"{newValue.ToString()}\"");
+                    CalamityRuTranslate.Instance.Logger.Warn($"[IL] Не удалось заменить \"{orig}\" на \"{replace}\"");
                     return;
                 }
             }
 
-            cursor.Index++;
             cursor.Emit(OpCodes.Pop);
-            cursor.Emit(OpCodes.Ldc_R4, newValue);
+            cursor.Emit(OpCodes.Ldc_R4, replace);
         }
     }
 }

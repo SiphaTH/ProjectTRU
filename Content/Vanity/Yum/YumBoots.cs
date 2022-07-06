@@ -17,21 +17,21 @@ namespace CalamityRuTranslate.Content.Vanity.Yum
 
         public override void SetDefaults()
         {
-            item.width = 16;
-            item.height = 22;
-            item.rare = 1;
-            item.vanity = true;
+            Item.width = 16;
+            Item.height = 22;
+            Item.rare = 1;
+            Item.vanity = true;
         }
 
         public override void ModifyTooltips(List<TooltipLine> list)
         {
             foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
             {
-                tooltip.overrideColor = new Color(252, 255, 166);
+                tooltip.OverrideColor = new Color(252, 255, 166);
             }
         }
 
-        public override void UpdateVanity(Player player, EquipType type)
+        public override void UpdateVanity(Player player)
         {
             if (player.velocity.X != 0f)
             {

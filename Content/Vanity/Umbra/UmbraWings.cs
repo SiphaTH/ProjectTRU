@@ -18,10 +18,10 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
 
         public override void SetDefaults()
         {
-            item.width = 36;
-            item.height = 34;
-            item.rare = 1;
-            item.accessory = true;
+            Item.width = 36;
+            Item.height = 34;
+            Item.rare = 1;
+            Item.accessory = true;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
@@ -33,7 +33,7 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
         {
             foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
             {
-                tooltip.overrideColor = ItemHelper.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
+                tooltip.OverrideColor = ItemHelper.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
             }
         }
     }

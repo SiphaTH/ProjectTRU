@@ -13,10 +13,10 @@ namespace CalamityRuTranslate.Content.Vanity.Sum
 
         public override void SetDefaults()
         {
-            item.width = 30;
-            item.height = 26;
-            item.rare = 1;
-            item.vanity = true;
+            Item.width = 30;
+            Item.height = 26;
+            Item.rare = 1;
+            Item.vanity = true;
         }
     }
 }

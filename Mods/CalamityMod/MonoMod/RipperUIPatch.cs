@@ -1,24 +1,24 @@
 using System.Reflection;
 using CalamityMod.UI;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class RipperUIPatch : Patch<ILContext.Manipulator>
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class RipperUIPatch : MonoModPatcher<string>
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    
+    public override MethodInfo ModifiedMethod => typeof(RipperUI).GetCachedMethod(nameof(RipperUI.Draw));
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(RipperUI).GetCachedMethod("HandleMouseInteraction");
-
-        public override string ModderMethod => nameof(Translation);
-
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Adrenaline: ", "Адреналин: ");
-            TranslationHelper.ILTranslation(il, "Rage: ", "Ярость: ");
-        }
-    }
+        TranslationHelper.ModifyIL(il, "Rage: ", "Ярость: ");
+        TranslationHelper.ModifyIL(il, "Adrenaline", "Адреналин");
+        TranslationHelper.ModifyIL(il, "Nanomachines", "Наномашины");
+    };
 }

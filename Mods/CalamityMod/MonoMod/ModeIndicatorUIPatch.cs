@@ -1,28 +1,27 @@
 using System.Reflection;
 using CalamityMod.UI;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class ModeIndicatorUIPatch : Patch<ILContext.Manipulator>
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class ModeIndicatorUIPatch : MonoModPatcher<string>
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    
+    public override MethodInfo ModifiedMethod => typeof(ModeIndicatorUI).GetCachedMethod(nameof(ModeIndicatorUI.Draw));
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(ModeIndicatorUI).GetCachedMethod(nameof(ModeIndicatorUI.Draw));
-
-        public override string ModderMethod => nameof(Translation);
-
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Revengeance", "Месть");
-            TranslationHelper.ILTranslation(il, "Death", "Смерть");
-            TranslationHelper.ILTranslation(il, "Malice", "Злоба");
-            TranslationHelper.ILTranslation(il, " Mode is ", " ");
-            TranslationHelper.ILTranslation(il, "active", "активирована");
-            TranslationHelper.ILTranslation(il, "not active", "деактивирована");
-        }
-    }
+        TranslationHelper.ModifyIL(il, "Revengeance", "Месть");
+        TranslationHelper.ModifyIL(il, "Death", "Смерть");
+        TranslationHelper.ModifyIL(il, "Malice", "Злоба");
+        TranslationHelper.ModifyIL(il, " Mode is ", " ");
+        TranslationHelper.ModifyIL(il, "active", "активирована");
+        TranslationHelper.ModifyIL(il, "not active", "деактивирована");
+    };
 }

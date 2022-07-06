@@ -1,23 +1,22 @@
 using System.Reflection;
 using CalamityMod.Cooldowns;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class AquaticHeartIceShieldPatch : Patch<ILContext.Manipulator>
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class AquaticHeartIceShieldPatch : MonoModPatcher<string>
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        
+    public override MethodInfo ModifiedMethod => typeof(AquaticHeartIceShield).GetCachedMethod("get_DisplayName");
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(AquaticHeartIceShield).GetCachedMethod("get_DisplayName");
-
-        public override string ModderMethod => nameof(Translation);
-
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Ice Shield Cooldown", "Перезарядка ледяного щита");
-        }
-    }
+        TranslationHelper.ModifyIL(il, "Ice Shield Cooldown", "Перезарядка ледяного щита");
+    };
 }

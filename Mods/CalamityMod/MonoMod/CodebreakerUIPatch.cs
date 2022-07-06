@@ -1,65 +1,61 @@
 using System.Reflection;
 using CalamityMod.UI;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class CodebreakerUIDisplayCostText : Patch<ILContext.Manipulator>
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class CodebreakerUIDisplayCostText : MonoModPatcher<string>
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        
+    public override MethodInfo ModifiedMethod => typeof(CodebreakerUI).GetCachedMethod(nameof(CodebreakerUI.DisplayCostText));
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(CodebreakerUI).GetCachedMethod(nameof(CodebreakerUI.DisplayCostText));
+        TranslationHelper.ModifyIL(il, "Cost: ", "Стоимость: ");
+    };
+}
 
-        public override string ModderMethod => nameof(Translation);
+[JITWhenModsEnabled("CalamityMod")]
+public class CodebreakerUIDrawDecryptCancelConfirmationText : Patch<ILContext.Manipulator>
+{
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        
+    public override MethodInfo ModifiedMethod => typeof(CodebreakerUI).GetCachedMethod(nameof(CodebreakerUI.DrawDecryptCancelConfirmationText));
 
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Cost: ", "Стоимость: ");
-        }
-    }
-
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class CodebreakerUIDrawDecryptCancelConfirmationText : MonoModPatcher<string>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(CodebreakerUI).GetCachedMethod(nameof(CodebreakerUI.DrawDecryptCancelConfirmationText));
+        TranslationHelper.ModifyIL(il, "Are you sure?", "Вы уверены?");
+    };
+}
 
-        public override string ModderMethod => nameof(Translation);
+[JITWhenModsEnabled("CalamityMod")]
+public class CodebreakerUIHandleDraedonSummonButton : Patch<ILContext.Manipulator>
+{
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        
+    public override MethodInfo ModifiedMethod => typeof(CodebreakerUI).GetCachedMethod(nameof(CodebreakerUI.HandleDraedonSummonButton));
 
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Are you sure?", "Вы уверены?");
-        }
-    }
-
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class CodebreakerUIHandleDraedonSummonButton : MonoModPatcher<string>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(CodebreakerUI).GetCachedMethod(nameof(CodebreakerUI.HandleDraedonSummonButton));
+        TranslationHelper.ModifyIL(il, "Contact", "Контакт");
+    };
+}
 
-        public override string ModderMethod => nameof(Translation);
+[JITWhenModsEnabled("CalamityMod")]
+public class CodebreakerUIDisplayNotStrongEnoughErrorText : Patch<ILContext.Manipulator>
+{
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        
+    public override MethodInfo ModifiedMethod => typeof(CodebreakerUI).GetCachedMethod(nameof(CodebreakerUI.DisplayNotStrongEnoughErrorText));
 
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Contact", "Контакт");
-        }
-    }
-
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class CodebreakerUIDisplayNotStrongEnoughErrorText : MonoModPatcher<string>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(CodebreakerUI).GetCachedMethod(nameof(CodebreakerUI.DisplayNotStrongEnoughErrorText));
-
-        public override string ModderMethod => nameof(Translation);
-
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Encryption unsolveable: Upgrades required.", "Шифрование нерешаемо: требуются обновления.");
-        }
-    }
+        TranslationHelper.ModifyIL(il, "Encryption unsolveable: Upgrades required.", "Шифрование нерешаемо: требуются обновления.");
+    };
 }

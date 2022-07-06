@@ -11,6 +11,6 @@ namespace CalamityRuTranslate.Common.Exceptions
             KeyText = keyText;
         }
 
-        public override string Message => $"Ключ перевода {KeyText} не найден";
+        public override string Message => $"Ключ перевода '{KeyText}' не найден!";
     }
 }

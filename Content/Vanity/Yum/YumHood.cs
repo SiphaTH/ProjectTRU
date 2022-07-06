@@ -13,22 +13,22 @@ namespace CalamityRuTranslate.Content.Vanity.Yum
         {
             DisplayName.SetDefault("Капюшон Yum");
             Tooltip.SetDefault("{$CommonItemTooltip.DevItem}\nКапюшон старого человека");
-            ModContent.GetInstance<TRuGlowmask>().AddGlowMask(item.type, "CalamityRuTranslate/Content/Glowmasks/YumHood_Glow");
+            //ModContent.GetInstance<TRuGlowmask>().AddGlowMask(Item.type, "CalamityRuTranslate/Content/Glowmasks/YumHood_Glow");
         }
 
         public override void SetDefaults()
         {
-            item.width = 22;
-            item.height = 30;
-            item.rare = ItemRarityID.Blue;
-            item.vanity = true;
+            Item.width = 22;
+            Item.height = 30;
+            Item.rare = ItemRarityID.Blue;
+            Item.vanity = true;
         }
 
         public override void ModifyTooltips(List<TooltipLine> list)
         {
             foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
             {
-                tooltip.overrideColor = new Color(252, 255, 166);
+                tooltip.OverrideColor = new Color(252, 255, 166);
             }
         }
     }

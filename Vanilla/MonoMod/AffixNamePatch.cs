@@ -3,70 +3,71 @@ using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using Terraria;
+using Terraria.ModLoader;
 using Item = On.Terraria.Item;
 
-namespace CalamityRuTranslate.Vanilla.MonoMod
+namespace CalamityRuTranslate.Vanilla.MonoMod;
+
+public class AffixName : ILEdit
 {
-    public class AffixName : ILEdit
+    public override bool Autoload() => TranslationHelper.IsRussianLanguage && !ModsCall.TryGetCalamity;
+
+    public override void Load() => Item.AffixName += ItemOnAffixName;
+
+    public override void Unload() => Item.AffixName -= ItemOnAffixName;
+
+    private string ItemOnAffixName(Item.orig_AffixName orig, Terraria.Item self)
     {
-        public override bool Autoload() => TranslationHelper.IsRussianLanguage && ModsCall.Calamity == null;
+        if (self.prefix < 0 && self.prefix >= Lang.prefix.Length)
+            return self.Name;
 
-        public override void Load() => Item.AffixName += ItemOnAffixName;
+        string prefix = Lang.prefix[self.prefix].Value;
+        if (prefix == string.Empty)
+            return self.Name;
 
-        public override void Unload() => Item.AffixName -= ItemOnAffixName;
-
-        private string ItemOnAffixName(Item.orig_AffixName orig, Terraria.Item self)
+        for (int i = 0; i < RussianPrefixOverhaul.Prefixes.Length; i++)
         {
-            if (self.prefix >= Lang.prefix.Length)
-                return self.Name;
-
-            string prefix = Lang.prefix[self.prefix].Value;
-            if (prefix == string.Empty)
-                return self.Name;
-
-            for (int i = 0; i < RussianPrefixOverhaul.Prefixes.Length; i++)
-            {
-                if (RussianPrefixOverhaul.Prefixes[i][0] == prefix)
-                    return RussianPrefixOverhaul.GetGenderedPrefix(RussianPrefixOverhaul.Prefixes[i], self.type) + " " +
-                           self.Name.ToLower();
-            }
-
-            return prefix + " " + self.Name;
+            if (RussianPrefixOverhaul.Prefixes[i][0] == prefix)
+                return RussianPrefixOverhaul.GetGenderedPrefix(RussianPrefixOverhaul.Prefixes[i], self.type) + " " +
+                       self.Name.ToLower();
         }
+
+        return prefix + " " + self.Name;
     }
+}
 
-    public class AffixNameWithCalamity : ILEdit
+[JITWhenModsEnabled("CalamityMod")]
+public class AffixNameWithCalamity : ILEdit
+{
+    public override bool Autoload() => TranslationHelper.IsRussianLanguage && ModsCall.TryGetCalamity;
+
+    public override void Load() => Item.AffixName += ItemOnAffixName;
+
+    public override void Unload() => Item.AffixName -= ItemOnAffixName;
+
+    private string ItemOnAffixName(Item.orig_AffixName orig, Terraria.Item self)
     {
-        public override bool Autoload() => TranslationHelper.IsRussianLanguage && ModsCall.Calamity != null;
+        string calamityEnchantment = string.Empty;
+        string goblinPrefix = string.Empty;
 
-        public override void Load() => Item.AffixName += ItemOnAffixName;
-
-        public override void Unload() => Item.AffixName -= ItemOnAffixName;
-
-        private string ItemOnAffixName(Item.orig_AffixName orig, Terraria.Item self)
+        for (int i = 0; i < RussianPrefixOverhaul.Prefixes.Length; i++)
         {
-            string calamityEnchantment = string.Empty;
-            string goblinPrefix = string.Empty;
-
-            for (int i = 0; i < RussianPrefixOverhaul.Prefixes.Length; i++)
+            if (!self.IsAir && self.Calamity().AppliedEnchantment != null)
             {
-                if (!self.IsAir && self.Calamity().AppliedEnchantment != null)
-                {
-                    if (RussianPrefixOverhaul.Prefixes[i][0] == self.Calamity().AppliedEnchantment?.Name)
-                        calamityEnchantment = RussianPrefixOverhaul.GetGenderedPrefix(RussianPrefixOverhaul.Prefixes[i], self.type) + " ";
+                if (RussianPrefixOverhaul.Prefixes[i][0] == self.Calamity().AppliedEnchantment?.Name)
+                    calamityEnchantment = RussianPrefixOverhaul.GetGenderedPrefix(RussianPrefixOverhaul.Prefixes[i], self.type) + " ";
 
-                    if (calamityEnchantment != string.Empty)
-                        goblinPrefix = goblinPrefix.ToLower();
-                }
-
-                if (RussianPrefixOverhaul.Prefixes[i][0] == Lang.prefix[self.prefix].Value)
-                    goblinPrefix = RussianPrefixOverhaul.GetGenderedPrefix(RussianPrefixOverhaul.Prefixes[i], self.type) + " ";
+                if (calamityEnchantment != string.Empty)
+                    goblinPrefix = goblinPrefix.ToLower();
             }
 
-            if (goblinPrefix == string.Empty && calamityEnchantment == string.Empty)
-                return self.Name;
-
-            return calamityEnchantment + goblinPrefix + self.Name.ToLower();
+            if (RussianPrefixOverhaul.Prefixes[i][0] == Lang.prefix[self.prefix].Value)
+                goblinPrefix = RussianPrefixOverhaul.GetGenderedPrefix(RussianPrefixOverhaul.Prefixes[i], self.type) + " ";
         }
+
+        if (goblinPrefix == string.Empty && calamityEnchantment == string.Empty)
+            return self.Name;
+
+        return calamityEnchantment + goblinPrefix + self.Name.ToLower();
     }
 }

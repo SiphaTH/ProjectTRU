@@ -6,176 +6,184 @@ using CalamityRuTranslate.Common.Utilities;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications
+namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class MetersTranslation : GlobalItem
 {
-    public class MetersTranslation : CalamityGlobalItemBase
+    public override bool IsLoadingEnabled(Mod mod)
     {
-        public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
+        return ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    }
+
+    public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
+    {
+        if (item.type == ModContent.ItemType<StatMeter>())
         {
-            if (item.type == ModContent.ItemType<StatMeter>())
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                {
-                    string[] array = Regex.Split(tooltip.text, "\n\n");
+                tooltip.Text = tooltip.Text
+                    .Replace("Displays almost all player stats\nOffensive stats displayed vary with held item",
+                        "Отображает почти все характеристики игрока\nХарактеристики меняются в зависимости от удерживаемого предмета")
+                    .Replace("Rage Damage Boost", "Бонус урона ярости")
+                    .Replace("Adrenaline Damage Boost", "Бонус урона адреналина")
+                    .Replace("Adrenaline DR Boost", "Бонус сопротивления урону адреналина")
+                    
+                    .Replace("True Melee Damage", "Истинный урон ближнего боя")
+                    .Replace("Melee Damage", "Урон ближнего боя")
+                    .Replace("Melee Crit Chance", "Шанс критического удара ближнего боя")
+                    .Replace("Melee Attack Speed", "Скорость атаки ближнего боя")
+                    .Replace("Melee Armor Penetration", "Пробивание брони ближнего боя")
+                    
+                    .Replace("Rogue Damage", "Разбойный урон")
+                    .Replace("Rogue Crit Chance", "Разбойный шанс критического удара")
+                    .Replace("Rogue Attack Speed", "Разбойная скорость атаки")
+                    .Replace("Rogue Armor Penetration", "Разбойное пробивание брони")
+                    .Replace("Rogue Velocity Boost", "Увеличение скорости снарядов разбойника")
+                    .Replace("Rogue Weapon Consumption Chance", "Вероятность потребления разбойного оружия")
+                    .Replace("Max Stealth", "Максимальная скрытность")
+                    .Replace("Standing Regen", "Стоячая регенерация")
+                    .Replace("Moving Regen", "Подвижная регенерация")
+                    
+                    .Replace("Ranged Damage", "Стрелковый урон")
+                    .Replace("Ranged Crit Chance", "Стрелковый шанс критического удара")
+                    .Replace("Ranged Attack Speed", "Стрелковая скорость атаки")
+                    .Replace("Ranged Armor Penetration", "Стрелковое пробивание брони")
+                    .Replace("Ammo Consumption Chance", "Шанс использовать боеприпасы")
+                    
+                    .Replace("Magic Damage", "Магический урон")
+                    .Replace("Magic Crit Chance", "Магический шанс критического удара")
+                    .Replace("Magic Attack Speed", "Магическая скорость атаки")
+                    .Replace("Magic Armor Penetration", "Магическое пробивание брони")
+                    .Replace("Mana Usage", "Потребление маны")
+                    .Replace("Mana Regen", "Регенерация маны")
 
-                    for (int i = 0; i < array.Length; i++)
-                    {
-                        if (array[i].Contains("Adrenaline"))
-                        {
-                            array[i] = LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.RevStats", 
-                                array[i].Split(' ')[3],
-                                array[i].Split(' ')[6],
-                                array[i].Split(' ')[11]);
-                        }
-                        else if (array[i].Contains("Displays"))
-                        {
-                            array[i] = LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter");
-                        }
-                        else if (array[i].Contains("Defense: "))
-                        {
-                            array[i] = LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.DefStats",
-                                array[i].Split(' ')[1],
-                                array[i].Split(' ')[4],
-                                array[i].Split(' ')[8].Split('\n')[0],
-                                array[i].Split(' ')[10],
-                                array[i].Split(' ')[15],
-                                array[i].Split(' ')[19],
-                                array[i].Split(' ')[24]);
-                        }
-                        else if (array[i].Contains("True Melee Damage: "))
-                        {
-                            array[i] = LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.MeleeStats",
-                                array[i].Split(' ')[2],
-                                array[i].Split(' ')[7],
-                                array[i].Split(' ')[12].Split('\n')[0],
-                                array[i].Split(' ')[15]);
-                        }
-                        else if (array[i].Contains("Ranged Damage: "))
-                        {
-                            array[i] = LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.RangedStats",
-                                array[i].Split(' ')[2],
-                                array[i].Split(' ')[7].Split('\n')[0],
-                                array[i].Split(' ')[10]);
-                        }
-                        else if (array[i].Contains("Magic Damage: "))
-                        {
-                            array[i] = LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.MagicStats",
-                                array[i].Split(' ')[2],
-                                array[i].Split(' ')[7].Split('\n')[0],
-                                array[i].Split(' ')[9],
-                                array[i].Split(' ')[13]);
-                        }
-                        else if (array[i].Contains("Minion Damage: "))
-                        {
-                            array[i] = LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.MinionStats",
-                                array[i].Split(' ')[2],
-                                array[i].Split(' ')[6]);
-                        }
-                        else if (array[i].Contains("Rogue Damage: "))
-                        {
-                            array[i] = LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.RogueStats",
-                                array[i].Split(' ')[2],
-                                array[i].Split(' ')[7].Split('\n')[0],
-                                array[i].Split(' ')[10],
-                                array[i].Split(' ')[16].Split('\n')[0],
-                                array[i].Split(' ')[18],
-                                array[i].Split(' ')[22],
-                                array[i].Split(' ')[28]);
-                        }
-                        else if (array[i].Contains("Light Strength"))
-                        {
-                            array[i] = LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.AbyssLightStrength",
-                                    array[i].Split(' ')[3]);
-                        }
-                        else if (array[i].Contains("Other Abyss"))
-                        {
-                            array[i] = ModsCall.CalamityGetInZone
-                                ? LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.AbyssStats",
-                                    array[i].Split(' ')[6],
-                                    array[i].Split(' ')[11].Split('\n')[0],
-                                    array[i].Split(' ')[18].Split('\n')[0],
-                                    array[i].Split(' ')[20])
-                                : LangHelper.GetTextValue("Calamity.ItemTooltip.StatMeter.AbyssZone");
-                        }
-                    }
+                    .Replace("Minion Damage", "Урон призывателя")
+                    .Replace("Minion Crit Chance", "Шанс критического удара призывателя")
+                    .Replace("Minion Armor Penetration", "Пробивание брони призывателя")
+                    .Replace("Minion Slots", "Слотов призываемых миньонов")
+                    
+                    .Replace("Whip Damage", "Урон хлыстов")
+                    .Replace("Whip Crit Chance", "Шанс критического удара хлыстов")
+                    .Replace("Whip Attack Speed", "Скорость атаки хлыстов")
+                    .Replace("Whip Armor Penetration", "Пробивание брони хлыстов")
+                    .Replace("from melee", "от ближнего боя")
+                    
+                    .Replace("True (No Scaling) Damage", "Истинный (без скалирования) урон")
+                    .Replace("True (No Scaling) Crit Chance", "Истинный (без скалирования) шанс критического удара")
+                    .Replace("True (No Scaling) Attack Speed", "Истинная (без скалирования) скорость атаки")
+                    .Replace("True (No Scaling) Armor Penetration", "Истинное (без скалирования) пробивание брони")
+                    
+                    .Replace("Classless Damage", "Бесклассовый урон")
+                    .Replace("Classless Crit Chance", "Бесклассовый шанс критического удара")
+                    .Replace("Classless Attack Speed", "Бесклассовая скорость атаки")
+                    .Replace("Classless Armor Penetration", "Бесклассовое пробивание брони")
+                    
+                    .Replace("Averaged Damage", "Общий урон")
+                    .Replace("Averaged Crit Chance", "Общий шанс критического удара")
+                    .Replace("Averaged Attack Speed", "Общая скорость атаки")
+                    .Replace("Averaged Armor Penetration", "Общее пробивание брони")
+                    
+                    .Replace("Magic+Summon Damage", "Магический+Призывателя урон")
+                    .Replace("Magic+Summon Crit Chance", "Магический+Призывателя шанс критического удара")
+                    .Replace("Magic+Summon Attack Speed", "Магическая+Призывателя скорость атаки")
+                    .Replace("Magic+Summon Armor Penetration", "Магическое+Призывателя пробивание брони")
+                    
+                    .Replace("Throwing Damage", "Метательный урон")
+                    .Replace("Throwing Crit Chance", "Метательный шанс критического удара")
+                    .Replace("Throwing Attack Speed", "Метательная скорость атаки")
+                    .Replace("Throwing Armor Penetration", "Метательное пробивание брони")
 
-                    tooltip.text = string.Join("\n\n", array).Replace("Adrenaline", "");
-                });
-            }
+                    .Replace("Defense Lost From Pressure", "Потерянная защита от давления")
+                    .Replace("Defense", "Защита")
+                    .Replace("DR", "Сопротивление урону")
+                    .Replace("Life Regen", "Регенерация здоровья")
+                    .Replace("Move Speed", "Увеличение скорости передвижения")
+                    .Replace("Jump Boost", "Увеличение скорости прыжка")
+                    .Replace("Wing Flight Time", "Время полёта крыльев")
+                    .Replace("seconds", "секунд")
+                    .Replace("Abyss Light Strength", "Сила света в бездне")
+                    .Replace("Other Abyss Stats", "Другие характеристики бездны")
+                    .Replace("Breath Lost Per Tick", "Потеря дыхания за тик")
+                    .Replace("Breath Loss Rate", " Скорость потери дыхания")
+                    .Replace("Life Lost Per Tick at Zero Breath", "Потеря здоровья за тик при нулевом дыхании")
+                    .Replace("Other Abyss stats are only displayed while in the Abyss", "Другие характеристики бездны отображаются только во время нахождения в бездне")
+                    .Replace("sec", "сек");
 
-            else if (item.type == ModContent.ItemType<MeleeLevelMeter>())
+            });
+        }
+        else if (item.type == ModContent.ItemType<MeleeLevelMeter>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                {
-                    string[] array = Regex.Split(tooltip.text, "\n");
+                string[] array = Regex.Split(tooltip.Text, "\n");
 
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.MeleeLevelMeter",
-                        Regex.Split(array[3], ": ")[1],
-                        Regex.Split(array[4], ": ")[1],
-                        Regex.Split(array[5], ": ")[1],
-                        Regex.Split(array[6], ": ")[1],
-                        Regex.Split(array[7], ": ")[1]);
-                });
-            }
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.MeleeLevelMeter.Tooltip.0",
+                    Regex.Split(array[3], ": ")[1],
+                    Regex.Split(array[4], ": ")[1],
+                    Regex.Split(array[5], ": ")[1],
+                    Regex.Split(array[6], ": ")[1],
+                    Regex.Split(array[7], ": ")[1]);
+            });
+        }
 
-            else if (item.type == ModContent.ItemType<MagicLevelMeter>())
+        else if (item.type == ModContent.ItemType<MagicLevelMeter>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                {
-                    string[] array = Regex.Split(tooltip.text, "\n");
+                string[] array = Regex.Split(tooltip.Text, "\n");
 
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.MagicLevelMeter",
-                        Regex.Split(array[3], ": ")[1],
-                        Regex.Split(array[4], ": ")[1],
-                        Regex.Split(array[5], ": ")[1],
-                        Regex.Split(array[6], ": ")[1],
-                        Regex.Split(array[7], ": ")[1]);
-                });
-            }
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.MagicLevelMeter.Tooltip.0",
+                    Regex.Split(array[3], ": ")[1],
+                    Regex.Split(array[4], ": ")[1],
+                    Regex.Split(array[5], ": ")[1],
+                    Regex.Split(array[6], ": ")[1],
+                    Regex.Split(array[7], ": ")[1]);
+            });
+        }
 
-            else if (item.type == ModContent.ItemType<RangedLevelMeter>())
+        else if (item.type == ModContent.ItemType<RangedLevelMeter>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                {
-                    string[] array = Regex.Split(tooltip.text, "\n");
+                string[] array = Regex.Split(tooltip.Text, "\n");
 
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.RangedLevelMeter",
-                        Regex.Split(array[3], ": ")[1],
-                        Regex.Split(array[4], ": ")[1],
-                        Regex.Split(array[5], ": ")[1],
-                        Regex.Split(array[6], ": ")[1],
-                        Regex.Split(array[7], ": ")[1]);
-                });
-            }
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RangedLevelMeter.Tooltip.0",
+                    Regex.Split(array[3], ": ")[1],
+                    Regex.Split(array[4], ": ")[1],
+                    Regex.Split(array[5], ": ")[1],
+                    Regex.Split(array[6], ": ")[1],
+                    Regex.Split(array[7], ": ")[1]);
+            });
+        }
 
-            else if (item.type == ModContent.ItemType<RogueLevelMeter>())
+        else if (item.type == ModContent.ItemType<RogueLevelMeter>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                {
-                    string[] array = Regex.Split(tooltip.text, "\n");
+                string[] array = Regex.Split(tooltip.Text, "\n");
 
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.RogueLevelMeter",
-                        Regex.Split(array[3], ": ")[1],
-                        Regex.Split(array[4], ": ")[1],
-                        Regex.Split(array[5], ": ")[1],
-                        Regex.Split(array[6], ": ")[1],
-                        Regex.Split(array[7], ": ")[1]);
-                });
-            }
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RogueLevelMeter.Tooltip.0",
+                    Regex.Split(array[3], ": ")[1],
+                    Regex.Split(array[4], ": ")[1],
+                    Regex.Split(array[5], ": ")[1],
+                    Regex.Split(array[6], ": ")[1],
+                    Regex.Split(array[7], ": ")[1]);
+            });
+        }
 
-            else if (item.type == ModContent.ItemType<SummonLevelMeter>())
+        else if (item.type == ModContent.ItemType<SummonLevelMeter>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-                {
-                    string[] array = Regex.Split(tooltip.text, "\n");
+                string[] array = Regex.Split(tooltip.Text, "\n");
 
-                    tooltip.text = LangHelper.GetTextValue("Calamity.ItemTooltip.SummonLevelMeter",
-                        Regex.Split(array[3], ": ")[1],
-                        Regex.Split(array[4], ": ")[1],
-                        Regex.Split(array[5], ": ")[1],
-                        Regex.Split(array[6], ": ")[1]);
-                });
-            }
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SummonLevelMeter.Tooltip.0",
+                    Regex.Split(array[3], ": ")[1],
+                    Regex.Split(array[4], ": ")[1],
+                    Regex.Split(array[5], ": ")[1],
+                    Regex.Split(array[6], ": ")[1]);
+            });
         }
     }
 }

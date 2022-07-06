@@ -1,28 +1,27 @@
 ﻿using Microsoft.Xna.Framework;
 
-namespace CalamityRuTranslate.Common.DataStructures
+namespace CalamityRuTranslate.Common.DataStructures;
+
+public readonly struct TileData
 {
-    public readonly struct TileData
+    public string Id { get; }
+    public string MapEntryName { get; }
+    public string TranslationKey { get; }
+    public Color Color { get; }
+
+    public TileData(string id, string mapEntryName, Color color, string translationKey)
     {
-        public string TileId { get; }
-        public string MapEntryName { get; }
-        public string TranslationKey { get; }
-        public Color TileColor { get; }
+        Id = id;
+        MapEntryName = mapEntryName;
+        TranslationKey = translationKey;
+        Color = color;
+    }
 
-        public TileData(string tileId, string mapEntryName, Color tileColor, string translationKey)
-        {
-            TileId = tileId;
-            MapEntryName = mapEntryName;
-            TranslationKey = translationKey;
-            TileColor = tileColor;
-        }
-
-        public TileData(string tileId, string mapEntryName, Color tileColor)
-        {
-            TileId = tileId;
-            MapEntryName = mapEntryName;
-            TranslationKey = tileId;
-            TileColor = tileColor;
-        }
+    public TileData(string id, string mapEntryName, Color color)
+    {
+        Id = id;
+        MapEntryName = mapEntryName;
+        TranslationKey = id;
+        Color = color;
     }
 }

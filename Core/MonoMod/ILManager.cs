@@ -1,41 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Core.MonoMod
+namespace CalamityRuTranslate.Core.MonoMod;
+
+public static class ILManager
 {
-    public class ILManager : ILoadable
+    private static List<ILEdit> _ilEdits;
+
+    public static void Load()
     {
-        private List<ILEdit> _ilEdits;
+        _ilEdits = new List<ILEdit>();
 
-        public float Priority => 1f;
-
-        public void Load()
+        foreach (Type type in CalamityRuTranslate.Instance.Code.GetTypes())
         {
-            _ilEdits = new List<ILEdit>();
+            if (type.IsAbstract || type.GetConstructor(new Type[] { }) == null)
+                continue;
 
-            foreach (Type type in CalamityRuTranslate.Instance.Code.GetTypes())
-            {
-                if (type.IsAbstract || type.GetConstructor(new Type[] { }) == null)
-                    continue;
+            if (!type.IsSubclassOf(typeof(ILEdit)))
+                continue;
 
-                if (!type.IsSubclassOf(typeof(ILEdit)))
-                    continue;
+            if (Activator.CreateInstance(type) is ILEdit ilEdit && ilEdit.Autoload())
+                _ilEdits.Add(ilEdit);
+        }
 
-                if (Activator.CreateInstance(type) is ILEdit ilEdit && ilEdit.Autoload())
-                    _ilEdits.Add(ilEdit);
-            }
+        foreach (ILEdit ilEdit in _ilEdits)
+            ilEdit.Load();
+    }
 
+    public static void Unload()
+    {
+        if (_ilEdits != null)
             foreach (ILEdit ilEdit in _ilEdits)
-                ilEdit.Load();
-        }
+                ilEdit.Unload();
 
-        public void Unload()
-        {
-            if(_ilEdits != null)
-                foreach (ILEdit ilEdit in _ilEdits)
-                    ilEdit.Unload();
-
-            _ilEdits = null;
-        }
+        _ilEdits = null;
     }
 }

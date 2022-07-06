@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 using CalamityMod;
+using CalamityMod.DataStructures;
 using CalamityMod.NPCs.CeaselessVoid;
 using CalamityMod.NPCs.Ravager;
 using CalamityMod.NPCs.SlimeGod;
@@ -8,74 +9,145 @@ using CalamityMod.UI;
 using CalamityMod.UI.CalamitasEnchants;
 using CalamityRuTranslate.Common.Utilities;
 using Terraria;
-using Terraria.ModLoader;
 using Terraria.ID;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate
+namespace CalamityRuTranslate;
+
+[JITWhenModsEnabled("CalamityMod")]
+public static class CalamityReflection
 {
-    public partial class CalamityRuTranslate
+    public static void Load()
     {
-        private void CalamityReflections()
+        List<(string, string)> enchantmentTranslation = new List<(string, string)>
         {
-            List<(string, string)> enchantmentTranslation = new List<(string, string)>
-            {
-                (LangHelper.GetText("Calamity.EnchantmentName.Exhume"), LangHelper.GetText("Calamity.EnchantmentDesc.Exhume")),
-                (LangHelper.GetText("Calamity.EnchantmentName.Indignant"), LangHelper.GetText("Calamity.EnchantmentDesc.Indignant")),
-                (LangHelper.GetText("Calamity.EnchantmentName.Aflame"), LangHelper.GetText("Calamity.EnchantmentDesc.Aflame")),
-                (LangHelper.GetText("Calamity.EnchantmentName.Oblatory"), LangHelper.GetText("Calamity.EnchantmentDesc.Oblatory")),
-                (LangHelper.GetText("Calamity.EnchantmentName.Resentful"), LangHelper.GetText("Calamity.EnchantmentDesc.Resentful")),
-                (LangHelper.GetText("Calamity.EnchantmentName.Bloodthirsty"), LangHelper.GetText("Calamity.EnchantmentDesc.Bloodthirsty")),
-                (LangHelper.GetText("Calamity.EnchantmentName.Ephemeral"), LangHelper.GetText("Calamity.EnchantmentDesc.Ephemeral")),
-                (LangHelper.GetText("Calamity.EnchantmentName.Hellbound"), LangHelper.GetText("Calamity.EnchantmentDesc.Hellbound")),
-                (LangHelper.GetText("Calamity.EnchantmentName.Tainted"), LangHelper.GetText("Calamity.EnchantmentDesc.Tainted")),
-                (LangHelper.GetText("Calamity.EnchantmentName.Traitorous"), LangHelper.GetText("Calamity.EnchantmentDesc.Traitorous")),
-                (LangHelper.GetText("Calamity.EnchantmentName.Withering"), LangHelper.GetText("Calamity.EnchantmentDesc.Withering")),
-                (LangHelper.GetText("Calamity.EnchantmentName.Persecuted"), LangHelper.GetText("Calamity.EnchantmentDesc.Persecuted")),
-                (LangHelper.GetText("Calamity.EnchantmentName.Lecherous"), LangHelper.GetText("Calamity.EnchantmentDesc.Lecherous")),
-            };
-
-            Dictionary<int, BossHealthBarManager.BossEntityExtension> dictionary = new Dictionary<int, BossHealthBarManager.BossEntityExtension>
-            {
-                {13, new BossHealthBarManager.BossEntityExtension("Сегментов", 13, 14, 15)},
-                {266, new BossHealthBarManager.BossEntityExtension("Ползунов", 267)},
-                {35, new BossHealthBarManager.BossEntityExtension("Рук", 36)},
-                {127, new BossHealthBarManager.BossEntityExtension("Оружий", 128, 129, 130, 131)},
-                {395, new BossHealthBarManager.BossEntityExtension("Ружий", 393, 394)},
-                {ModContent.NPCType<CeaselessVoid>(), new BossHealthBarManager.BossEntityExtension("Тёмной энергии", ModContent.NPCType<DarkEnergy>())},
-                {ModContent.NPCType<RavagerBody>(), new BossHealthBarManager.BossEntityExtension("Частей тела", ModContent.NPCType<RavagerClawLeft>(), ModContent.NPCType<RavagerClawRight>(), ModContent.NPCType<RavagerLegLeft>(), ModContent.NPCType<RavagerLegRight>())},
-                {ModContent.NPCType<SlimeGodCore>(), new BossHealthBarManager.BossEntityExtension("Больших слизней", ModContent.NPCType<SlimeGod>(), ModContent.NPCType<SlimeGodSplit>(), ModContent.NPCType<SlimeGodRun>(), ModContent.NPCType<SlimeGodRunSplit>())},
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Exhume.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Exhume.Description")),
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Indignant.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Indignant.Description")),
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Aflame.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Aflame.Description")),
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Oblatory.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Oblatory.Description")),
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Resentful.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Resentful.Description")),
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Bloodthirsty.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Bloodthirsty.Description")),
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Ephemeral.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Ephemeral.Description")),
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Hellbound.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Hellbound.Description")),
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Tainted.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Tainted.Description")),
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Traitorous.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Traitorous.Description")),
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Withering.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Withering.Description")),
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Persecuted.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Persecuted.Description")),
+            (LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Lecherous.Name"), LangHelper.GetText("CalamityMod.Prefixes.Enchantments.Lecherous.Description"))
+        };
+        
+        Dictionary<int, BossHealthBarManager.BossEntityExtension> dictionary = new Dictionary<int, BossHealthBarManager.BossEntityExtension>
+        {
+            {13, new BossHealthBarManager.BossEntityExtension("Сегментов", 13, 14, 15)},
+            {266, new BossHealthBarManager.BossEntityExtension("Ползунов", 267)},
+            {35, new BossHealthBarManager.BossEntityExtension("Рук", 36)},
+            {127, new BossHealthBarManager.BossEntityExtension("Вооружений", 128, 129, 130, 131)},
+            {395, new BossHealthBarManager.BossEntityExtension("Ружий", 393, 394)},
+            {491, new BossHealthBarManager.BossEntityExtension("Пушек", 492)},
+            {ModContent.NPCType<CeaselessVoid>(), new BossHealthBarManager.BossEntityExtension("Тёмной энергии", ModContent.NPCType<DarkEnergy>())},
+            {ModContent.NPCType<RavagerBody>(), new BossHealthBarManager.BossEntityExtension("Частей тела", ModContent.NPCType<RavagerClawLeft>(), ModContent.NPCType<RavagerClawRight>(), ModContent.NPCType<RavagerLegLeft>(), ModContent.NPCType<RavagerLegRight>())},
+            {ModContent.NPCType<SlimeGodCore>(), new BossHealthBarManager.BossEntityExtension("Больших слизней", ModContent.NPCType<EbonianSlimeGod>(), ModContent.NPCType<SplitEbonianSlimeGod>(), ModContent.NPCType<CrimulanSlimeGod>(), ModContent.NPCType<SplitCrimulanSlimeGod>())},
             
-            };
-            BossHealthBarManager.EntityExtensionHandler = dictionary;
-
-            if (typeof(AstralArcanumUI).GetField("CircleNames", BindingFlags.Static | BindingFlags.NonPublic)?.GetValue(null) is string[] circleNames)
-            {
-                circleNames[0] = LangHelper.GetText("Calamity.AstralArcanumUI.CircleNames.Hell");
-                circleNames[1] = LangHelper.GetText("Calamity.AstralArcanumUI.CircleNames.Dungeon");
-                circleNames[2] = LangHelper.GetText("Calamity.AstralArcanumUI.CircleNames.Jungle");
-                circleNames[3] = LangHelper.GetText("Calamity.AstralArcanumUI.CircleNames.Random");
-            }
-
-            if (typeof(EnchantmentManager).GetProperty("EnchantmentList", BindingFlags.Public | BindingFlags.Static)?.GetValue(null) is List<Enchantment> enchantmentList)
-            {
-                for (int i = 0; i < enchantmentList.Count; i++)
-                {
-                    Enchantment currentEnchantment = enchantmentList[i];
-                    currentEnchantment.Name = enchantmentTranslation[i].Item1;
-                    currentEnchantment.Description = enchantmentTranslation[i].Item2;
-                    enchantmentList[i] = currentEnchantment;
-                }
-            }
-
-            PropertyInfo enchantment = typeof(EnchantmentManager).GetProperty("ClearEnchantment", BindingFlags.Public | BindingFlags.Static);
-            enchantment?.SetValue(typeof(Enchantment), new Enchantment(LangHelper.GetText("Calamity.EnchantmentName.ClearEnchantment"), string.Empty, -18591774, null, delegate(Item item)
-            {
-                item.Calamity().AppliedEnchantment = null;
-                item.Calamity().DischargeEnchantExhaustion = 0f;
-            }, item => item.IsEnchantable() && item.shoot >= ProjectileID.None));
-
-            FieldInfo alphanumericCharacters = typeof(CalamityUtils).GetField("AlphanumericCharacters", BindingFlags.NonPublic | BindingFlags.Static);
-            alphanumericCharacters?.SetValue(typeof(string), "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ0123456789");
+        };
+        BossHealthBarManager.EntityExtensionHandler = dictionary;
+        
+        if (typeof(AstralArcanumUI).GetField("CircleNames", BindingFlags.Static | BindingFlags.NonPublic)?.GetValue(null) is string[] circleNames)
+        {
+            circleNames[0] = LangHelper.GetText("CalamityMod.Items.AstralArcanum.CircleNames.Hell");
+            circleNames[1] = LangHelper.GetText("CalamityMod.Items.AstralArcanum.CircleNames.Dungeon");
+            circleNames[2] = LangHelper.GetText("CalamityMod.Items.AstralArcanum.CircleNames.Jungle");
+            circleNames[3] = LangHelper.GetText("CalamityMod.Items.AstralArcanum.CircleNames.Random");
         }
+        
+        if (typeof(EnchantmentManager).GetProperty("EnchantmentList", BindingFlags.Public | BindingFlags.Static)?.GetValue(null) is List<Enchantment> enchantmentList)
+        {
+            for (int i = 0; i < enchantmentList.Count; i++)
+            {
+                Enchantment currentEnchantment = enchantmentList[i];
+                currentEnchantment.Name = enchantmentTranslation[i].Item1;
+                currentEnchantment.Description = enchantmentTranslation[i].Item2;
+                enchantmentList[i] = currentEnchantment;
+            }
+        }
+
+        PropertyInfo enchantment = typeof(EnchantmentManager).GetProperty("ClearEnchantment", BindingFlags.Public | BindingFlags.Static);
+        enchantment?.SetValue(typeof(Enchantment), new Enchantment(LangHelper.GetText("CalamityMod.Prefixes.Enchantments.ClearEnchantment.Name"), string.Empty, -18591774, null, CreationEffect, item => !item.IsAir && item.maxStack <= 1 && item.ammo == AmmoID.None && item.shoot >= 0));
+
+        Attunement.attunementArray[0].name = LangHelper.GetText("CalamityMod.Attunements.DefaultAttunement.Name");
+        Attunement.attunementArray[0].function_description = LangHelper.GetText("CalamityMod.Attunements.DefaultAttunement.Function_Description");
+        Attunement.attunementArray[1].name = LangHelper.GetText("CalamityMod.Attunements.HotAttunement.Name");
+        Attunement.attunementArray[1].function_description = LangHelper.GetText("CalamityMod.Attunements.HotAttunement.Function_Description");
+        Attunement.attunementArray[2].name = LangHelper.GetText("CalamityMod.Attunements.ColdAttunement.Name");
+        Attunement.attunementArray[2].function_description = LangHelper.GetText("CalamityMod.Attunements.ColdAttunement.Function_Description");
+        Attunement.attunementArray[3].name = LangHelper.GetText("CalamityMod.Attunements.TropicalAttunement.Name");
+        Attunement.attunementArray[3].function_description = LangHelper.GetText("CalamityMod.Attunements.TropicalAttunement.Function_Description");
+        Attunement.attunementArray[4].name = LangHelper.GetText("CalamityMod.Attunements.EvilAttunement.Name");
+        Attunement.attunementArray[4].function_description = LangHelper.GetText("CalamityMod.Attunements.EvilAttunement.Function_Description");
+        Attunement.attunementArray[5].name = LangHelper.GetText("CalamityMod.Attunements.TrueDefaultAttunement.Name");
+        Attunement.attunementArray[5].function_description = LangHelper.GetText("CalamityMod.Attunements.TrueDefaultAttunement.Function_Description");
+        Attunement.attunementArray[5].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.TrueDefaultAttunement.Function_Description_Extra");
+        Attunement.attunementArray[6].name = LangHelper.GetText("CalamityMod.Attunements.TrueHotAttunement.Name");
+        Attunement.attunementArray[6].function_description = LangHelper.GetText("CalamityMod.Attunements.TrueHotAttunement.Function_Description");
+        Attunement.attunementArray[6].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.TrueHotAttunement.Function_Description_Extra");
+        Attunement.attunementArray[7].name = LangHelper.GetText("CalamityMod.Attunements.TrueColdAttunement.Name");
+        Attunement.attunementArray[7].function_description = LangHelper.GetText("CalamityMod.Attunements.TrueColdAttunement.Function_Description");
+        Attunement.attunementArray[7].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.TrueColdAttunement.Function_Description_Extra");
+        Attunement.attunementArray[8].name = LangHelper.GetText("CalamityMod.Attunements.TrueTropicalAttunement.Name");
+        Attunement.attunementArray[8].function_description = LangHelper.GetText("CalamityMod.Attunements.TrueTropicalAttunement.Function_Description");
+        Attunement.attunementArray[8].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.TrueTropicalAttunement.Function_Description_Extra");
+        Attunement.attunementArray[9].name = LangHelper.GetText("CalamityMod.Attunements.TrueEvilAttunement.Name");
+        Attunement.attunementArray[9].function_description = LangHelper.GetText("CalamityMod.Attunements.TrueEvilAttunement.Function_Description");
+        Attunement.attunementArray[9].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.TrueEvilAttunement.Function_Description_Extra");
+        Attunement.attunementArray[10].name = LangHelper.GetText("CalamityMod.Attunements.HolyAttunement.Name");
+        Attunement.attunementArray[10].function_description = LangHelper.GetText("CalamityMod.Attunements.HolyAttunement.Function_Description");
+        Attunement.attunementArray[10].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.HolyAttunement.Function_Description_Extra");
+        Attunement.attunementArray[11].name = LangHelper.GetText("CalamityMod.Attunements.AstralAttunement.Name");
+        Attunement.attunementArray[11].function_description = LangHelper.GetText("CalamityMod.Attunements.AstralAttunement.Function_Description");
+        Attunement.attunementArray[11].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.AstralAttunement.Function_Description_Extra");
+        Attunement.attunementArray[12].name = LangHelper.GetText("CalamityMod.Attunements.MarineAttunement.Name");
+        Attunement.attunementArray[12].function_description = LangHelper.GetText("CalamityMod.Attunements.MarineAttunement.Function_Description");
+        Attunement.attunementArray[12].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.MarineAttunement.Function_Description_Extra");
+        Attunement.attunementArray[13].name = LangHelper.GetText("CalamityMod.Attunements.WhirlwindAttunement.Name");
+        Attunement.attunementArray[13].function_description = LangHelper.GetText("CalamityMod.Attunements.WhirlwindAttunement.Function_Description");
+        Attunement.attunementArray[13].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.WhirlwindAttunement.Function_Description_Extra");
+        Attunement.attunementArray[13].passive_description = LangHelper.GetText("CalamityMod.Attunements.WhirlwindAttunement.Passive_Description");
+        Attunement.attunementArray[14].name = LangHelper.GetText("CalamityMod.Attunements.FlailBladeAttunement.Name");
+        Attunement.attunementArray[14].function_description = LangHelper.GetText("CalamityMod.Attunements.FlailBladeAttunement.Function_Description");
+        Attunement.attunementArray[14].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.FlailBladeAttunement.Function_Description_Extra");
+        Attunement.attunementArray[14].passive_description = LangHelper.GetText("CalamityMod.Attunements.FlailBladeAttunement.Passive_Description");
+        Attunement.attunementArray[15].name = LangHelper.GetText("CalamityMod.Attunements.SuperPogoAttunement.Name");
+        Attunement.attunementArray[15].function_description = LangHelper.GetText("CalamityMod.Attunements.SuperPogoAttunement.Function_Description");
+        Attunement.attunementArray[15].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.SuperPogoAttunement.Function_Description_Extra");
+        Attunement.attunementArray[15].passive_description = LangHelper.GetText("CalamityMod.Attunements.SuperPogoAttunement.Passive_Description");
+        Attunement.attunementArray[16].name = LangHelper.GetText("CalamityMod.Attunements.ShockwaveAttunement.Name");
+        Attunement.attunementArray[16].function_description = LangHelper.GetText("CalamityMod.Attunements.ShockwaveAttunement.Function_Description");
+        Attunement.attunementArray[16].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.ShockwaveAttunement.Function_Description_Extra");
+        Attunement.attunementArray[16].passive_description = LangHelper.GetText("CalamityMod.Attunements.ShockwaveAttunement.Passive_Description");
+        Attunement.attunementArray[17].name = LangHelper.GetText("CalamityMod.Attunements.PhoenixAttunement.Name");
+        Attunement.attunementArray[17].function_description = LangHelper.GetText("CalamityMod.Attunements.PhoenixAttunement.Function_Description");
+        Attunement.attunementArray[17].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.PhoenixAttunement.Function_Description_Extra");
+        Attunement.attunementArray[17].passive_name = LangHelper.GetText("CalamityMod.Attunements.PhoenixAttunement.Passive_Name");
+        Attunement.attunementArray[17].passive_description = LangHelper.GetText("CalamityMod.Attunements.PhoenixAttunement.Passive_Description");
+        Attunement.attunementArray[18].name = LangHelper.GetText("CalamityMod.Attunements.AriesAttunement.Name");
+        Attunement.attunementArray[18].function_description = LangHelper.GetText("CalamityMod.Attunements.AriesAttunement.Function_Description");
+        Attunement.attunementArray[18].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.AriesAttunement.Function_Description_Extra");
+        Attunement.attunementArray[18].passive_name = LangHelper.GetText("CalamityMod.Attunements.AriesAttunement.Passive_Name");
+        Attunement.attunementArray[18].passive_description = LangHelper.GetText("CalamityMod.Attunements.AriesAttunement.Passive_Description");
+        Attunement.attunementArray[19].name = LangHelper.GetText("CalamityMod.Attunements.PolarisAttunement.Name");
+        Attunement.attunementArray[19].function_description = LangHelper.GetText("CalamityMod.Attunements.PolarisAttunement.Function_Description");
+        Attunement.attunementArray[19].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.PolarisAttunement.Function_Description_Extra");
+        Attunement.attunementArray[19].passive_name = LangHelper.GetText("CalamityMod.Attunements.PolarisAttunement.Passive_Name");
+        Attunement.attunementArray[19].passive_description = LangHelper.GetText("CalamityMod.Attunements.PolarisAttunement.Passive_Description");
+        Attunement.attunementArray[20].name = LangHelper.GetText("CalamityMod.Attunements.AndromedaAttunement.Name");
+        Attunement.attunementArray[20].function_description = LangHelper.GetText("CalamityMod.Attunements.AndromedaAttunement.Function_Description");
+        Attunement.attunementArray[20].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.AndromedaAttunement.Function_Description_Extra");
+        Attunement.attunementArray[20].passive_name = LangHelper.GetText("CalamityMod.Attunements.AndromedaAttunement.Passive_Name");
+        Attunement.attunementArray[20].passive_description = LangHelper.GetText("CalamityMod.Attunements.AndromedaAttunement.Passive_Description");
+    }
+
+    private static void CreationEffect(Item item)
+    {
+        item.Calamity().AppliedEnchantment = new Enchantment?();
+        item.Calamity().DischargeEnchantExhaustion = 0.0f;
     }
 }

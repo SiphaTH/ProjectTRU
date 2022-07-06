@@ -7,34 +7,39 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod
+namespace CalamityRuTranslate.Mods.CalamityMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class SetBonusTranslation : GlobalItem
 {
-    public class SetBonusTranslation : CalamityGlobalItemBase
+    public override bool IsLoadingEnabled(Mod mod)
     {
-        public override string IsArmorSet(Item head, Item body, Item legs)
-        {
-            return ArmorSetBonusLoader.CalamityArmorSets
-                .Where(set => set.CheckArmorSet(head.type, body.type, legs.type))
-                .Select(info => info.ToString())
-                .FirstOrDefault();
-        }
+        return ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    }
 
-        public override void UpdateArmorSet(Player player, string set)
-        {
-            player.setBonus = GlobalArmorSetBonus.GetCalamityArmorSetBonusByName(set);
-        }
+    public override string IsArmorSet(Item head, Item body, Item legs)
+    {
+        return ArmorSetBonusLoader.CalamityArmorSets
+            .Where(set => set.CheckArmorSet(head.type, body.type, legs.type))
+            .Select(info => info.ToString())
+            .FirstOrDefault();
+    }
 
-        public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
+    public override void UpdateArmorSet(Player player, string set)
+    {
+        player.setBonus = GlobalArmorSetBonus.GetCalamityArmorSetBonusByName(set);
+    }
+
+    public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
+    {
+        if (item.type == ItemID.AncientBattleArmorHat || item.type == ItemID.AncientBattleArmorShirt ||
+            item.type == ItemID.AncientBattleArmorPants && !Main.player[Main.myPlayer].Calamity().forbiddenCirclet)
         {
-            if (item.type == ItemID.AncientBattleArmorHat || item.type == ItemID.AncientBattleArmorShirt ||
-                item.type == ItemID.AncientBattleArmorPants && !Main.player[Main.myPlayer].Calamity().forbiddenCirclet)
+            ItemHelper.TranslateTooltip(item, tooltips, "SetBonus", tooltip =>
             {
-                ItemHelper.TranslateTooltip(item, tooltips, "SetBonus", tooltip =>
-                {
-                    tooltip.text = tooltip.text.Replace("The minion damage nerf is reduced while wielding magic weapons",
-                            LangHelper.GetTextValue("Calamity.SetBonus.Forbidden"));
-                });
-            }
+                tooltip.Text = tooltip.Text.Replace("The minion damage nerf is reduced while wielding magic weapons",
+                    LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Forbidden"));
+            });
         }
     }
 }

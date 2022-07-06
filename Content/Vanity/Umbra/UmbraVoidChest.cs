@@ -17,17 +17,17 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
 
         public override void SetDefaults()
         {
-            item.width = 44;
-            item.height = 32;
-            item.rare = 1;
-            item.vanity = true;
+            Item.width = 44;
+            Item.height = 32;
+            Item.rare = 1;
+            Item.vanity = true;
         }
 
         public override void ModifyTooltips(List<TooltipLine> list)
         {
             foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
             {
-                tooltip.overrideColor = ItemHelper.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
+                tooltip.OverrideColor = ItemHelper.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
             }
         }
     }

@@ -16,17 +16,17 @@ namespace CalamityRuTranslate.Content.Vanity.CCC
 
         public override void SetDefaults()
         {
-            item.width = 26;
-            item.height = 10;
-            item.rare = 1;
-            item.vanity = true;
+            Item.width = 26;
+            Item.height = 10;
+            Item.rare = 1;
+            Item.vanity = true;
         }
         
         public override void ModifyTooltips(List<TooltipLine> list)
         {
             foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
             {
-                tooltip.overrideColor = new Color(58, 187, 75);
+                tooltip.OverrideColor = new Color(58, 187, 75);
             }
         }
     }

@@ -13,7 +13,7 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
         private static int _tooltipIndex;
         private static int _counter = 10;
 
-        private readonly string[] _caesarCipher =
+        private static string[] _caesarCipher =
         {
             "РПИГПМЭ",
             "РФТУПУЁ",
@@ -29,15 +29,15 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
 
         public override void SetDefaults()
         {
-            item.width = 26;
-            item.height = 34;
-            item.rare = 1;
-            item.vanity = true;
+            Item.width = 26;
+            Item.height = 34;
+            Item.rare = 1;
+            Item.vanity = true;
         }
 
         public override void ModifyTooltips(List<TooltipLine> list)
         {
-            list.Add(new TooltipLine(mod, $"{mod.Name}:Umbra", _caesarCipher[_tooltipIndex]));
+            list.Add(new TooltipLine(Mod, $"{Mod.Name}:Umbra", _caesarCipher[_tooltipIndex]));
 
             _counter--;
 
@@ -50,7 +50,7 @@ namespace CalamityRuTranslate.Content.Vanity.Umbra
 
             foreach (var tooltip in list.Where(tooltip => tooltip.Name == "ItemName"))
             {
-                tooltip.overrideColor = ItemHelper.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
+                tooltip.OverrideColor = ItemHelper.ColorSwap(new Color(209, 77, 253), new Color(83, 2, 218), 2f);
             }
         }
     }

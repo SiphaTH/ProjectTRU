@@ -1,42 +1,47 @@
 ﻿using CalamityMod;
+using CalamityMod.Items.Weapons.Magic;
 using CalamityMod.World;
-using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Common
-{
-    public static class ModsCall
-    {
-        internal static Mod Calamity => ModLoader.GetMod("CalamityMod");
-        internal static Mod Thorium => ModLoader.GetMod("ThoriumMod");
-        internal static Mod Fargo => ModLoader.GetMod("Fargowiltas");
-        internal static Mod FargoSouls => ModLoader.GetMod("FargowiltasSouls");
-        internal static Mod Spirit => ModLoader.GetMod("SpiritMod");
-        internal static Mod Census => ModLoader.GetMod("Census");
-        internal static Mod BossChecklist => ModLoader.GetMod("BossChecklist");
+namespace CalamityRuTranslate.Common;
 
-        internal static bool CalamityGetInZone => (bool) Calamity.Call("GetInZone", Main.player[Main.myPlayer], "abyss");
-        internal static bool Revenge => CalamityWorld.revenge;
-        internal static bool DeathMode => CalamityWorld.death;
-        internal static bool MaliceMode => CalamityWorld.malice;
-        internal static bool DownedExoMechs => CalamityWorld.downedExoMechs;
-        internal static bool DownedFlag => !CalamityWorld.downedSentinel1 || !CalamityWorld.downedSentinel2 || !CalamityWorld.downedSentinel3;
-        internal static bool ProfanedCrystalBuffs => Main.player[Main.myPlayer].Calamity().profanedCrystalBuffs;
-        internal static string AegisHotKey => CalamityMod.CalamityMod.AegisHotKey.TooltipHotkeyString();
-        internal static string AstralArcanumUiHotkey => CalamityMod.CalamityMod.AstralArcanumUIHotkey.TooltipHotkeyString();
-        internal static string MomentumCapacitatorHotkey => CalamityMod.CalamityMod.MomentumCapacitatorHotkey.TooltipHotkeyString();
-        internal static string SandCloakHotkey => CalamityMod.CalamityMod.SandCloakHotkey.TooltipHotkeyString();
-        internal static string SpectralVeilHotKey => CalamityMod.CalamityMod.SpectralVeilHotKey.TooltipHotkeyString();
-        internal static string NormalityRelocatorHotKey => CalamityMod.CalamityMod.NormalityRelocatorHotKey.TooltipHotkeyString();
-        internal static string PlaguePackHotKey => CalamityMod.CalamityMod.PlaguePackHotKey.TooltipHotkeyString();
-        internal static string RageHotKey => CalamityMod.CalamityMod.RageHotKey.TooltipHotkeyString();
-        internal static string AdrenalineHotKey => CalamityMod.CalamityMod.AdrenalineHotKey.TooltipHotkeyString();
-        internal static string ArmorSetHotkey => CalamityMod.CalamityMod.TarraHotKey.TooltipHotkeyString();
-        internal static string EternityDiscoHex => CalamityMod.Items.Weapons.Magic.Eternity.DisoHex;
-        internal static string AngelicAllianceHotKey => CalamityMod.CalamityMod.AngelicAllianceHotKey.TooltipHotkeyString();
-        internal static string GodSlayerDashHotKey => CalamityMod.CalamityMod.GodSlayerDashHotKey.TooltipHotkeyString();
-        internal static string ExoChairSpeedupHotkey => CalamityMod.CalamityMod.ExoChairSpeedupHotkey.TooltipHotkeyString();
-        internal static string ExoChairSlowdownHotkey => CalamityMod.CalamityMod.ExoChairSlowdownHotkey.TooltipHotkeyString();
-        internal static int AncientStorm => (int)(60f * Main.player[Main.myPlayer].manaCost);
-    }
+public static class ModsCall
+{
+    public static Mod Calamity => ModLoader.GetMod("CalamityMod");
+    public static bool TryGetCalamity => ModLoader.TryGetMod("CalamityMod", out Mod calamity);
+    public static Mod Thorium => ModLoader.GetMod("ThoriumMod");
+    public static bool TryGetThorium => ModLoader.TryGetMod("ThoriumMod", out Mod thorium);
+    public static Mod Fargo => ModLoader.GetMod("Fargowiltas");
+    public static bool TryGetFargo => ModLoader.TryGetMod("Fargowiltas", out Mod fargo);
+    public static Mod FargoSouls => ModLoader.GetMod("FargowiltasSouls");
+    public static bool TryGetFargoSouls => ModLoader.TryGetMod("FargowiltasSouls", out Mod fargoSouls);
+    public static Mod Spirit => ModLoader.GetMod("SpiritMod");
+    public static bool TryGetSpirit => ModLoader.TryGetMod("SpiritMod", out Mod spirit);
+    public static Mod Census => ModLoader.GetMod("Census");
+    public static bool TryGetCensus => ModLoader.TryGetMod("Census", out Mod census);
+    public static Mod BossChecklist => ModLoader.GetMod("BossChecklist");
+    public static bool TryGetBossChecklist => ModLoader.TryGetMod("BossChecklist", out Mod bossChecklist);
+    public static Mod StarsAbove => ModLoader.GetMod("StarsAbove");
+    public static bool TryGetStarsAbove => ModLoader.TryGetMod("StarsAbove", out Mod starsAbove);
+        
+    internal static bool Revenge => CalamityWorld.revenge;
+    internal static bool DownedSCal => DownedBossSystem.downedSCal;
+    internal static bool DownedExoMechs => DownedBossSystem.downedExoMechs;
+    internal static string AegisHotKey => CalamityKeybinds.AegisHotKey.TooltipHotkeyString();
+    internal static string AstralArcanumUiHotkey => CalamityKeybinds.AstralArcanumUIHotkey.TooltipHotkeyString();
+    internal static string AstralTeleportHotKey => CalamityKeybinds.AstralTeleportHotKey.TooltipHotkeyString();
+    internal static string MomentumCapacitatorHotkey => CalamityKeybinds.MomentumCapacitatorHotkey.TooltipHotkeyString();
+    internal static string SandCloakHotkey => CalamityKeybinds.SandCloakHotkey.TooltipHotkeyString();
+    internal static string SpectralVeilHotKey => CalamityKeybinds.SpectralVeilHotKey.TooltipHotkeyString();
+    internal static string NormalityRelocatorHotKey => CalamityKeybinds.NormalityRelocatorHotKey.TooltipHotkeyString();
+    internal static string PlaguePackHotKey => CalamityKeybinds.PlaguePackHotKey.TooltipHotkeyString();
+    internal static string RageHotKey => CalamityKeybinds.RageHotKey.TooltipHotkeyString();
+    internal static string AdrenalineHotKey => CalamityKeybinds.AdrenalineHotKey.TooltipHotkeyString();
+    internal static string SetBonusHotKey => CalamityKeybinds.SetBonusHotKey.TooltipHotkeyString();
+    internal static string EternityDiscoHex => Eternity.DisoHex;
+    internal static string AngelicAllianceHotKey => CalamityKeybinds.AngelicAllianceHotKey.TooltipHotkeyString();
+    internal static string GodSlayerDashHotKey => CalamityKeybinds.GodSlayerDashHotKey.TooltipHotkeyString();
+    internal static string ExoChairSpeedupHotkey => CalamityKeybinds.ExoChairSpeedupHotkey.TooltipHotkeyString();
+    internal static string ExoChairSlowdownHotkey => CalamityKeybinds.ExoChairSlowdownHotkey.TooltipHotkeyString();
+    internal static bool EarlyHardmodeProgressionRework => CalamityConfig.Instance.EarlyHardmodeProgressionRework;
 }

@@ -11,6 +11,6 @@ namespace CalamityRuTranslate.Common.Exceptions
             InvalidId = invalidId;
         }
 
-        public override string Message => $"ID \"{InvalidId}\" не найден!\n";
+        public override string Message => $"InternalName '{InvalidId}' не найден!\n";
     }
 }

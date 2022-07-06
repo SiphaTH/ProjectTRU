@@ -1,26 +1,26 @@
 using System.Reflection;
 using CalamityMod.Items;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.ModCompatibility;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
+using Terraria.ModLoader;
 
-namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod
+namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
+
+[JITWhenModsEnabled("CalamityMod")]
+public class CalamityGlobalItemPatch : Patch<ILContext.Manipulator>
 {
-    [ModDependency("CalamityMod")]
-    [CultureDependency("ru-RU")]
-    public class CalamityGlobalItemPatch : MonoModPatcher<string>
+    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    
+    public override MethodInfo ModifiedMethod => typeof(CalamityGlobalItem).GetCachedMethod("<ModifyVanillaTooltips>g__HookStatsTooltip|87_141");
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        public override MethodInfo Method => typeof(CalamityGlobalItem).GetCachedMethod("<ModifyVanillaTooltips>g__HookStatsTooltip|91_113");
-
-        public override string ModderMethod => nameof(Translation);
-
-        public static void Translation(ILContext il)
-        {
-            TranslationHelper.ILTranslation(il, "Reach: {0:N3} tiles\n", "Дальность: {0} блоков\n");
-            TranslationHelper.ILTranslation(il, "Launch Velocity: {0:N2}\n", "Скорость вылета: {0}\n");
-            TranslationHelper.ILTranslation(il, "Reelback Velocity: {0:N2}\n", "Скорость возврата: {0}\n");
-            TranslationHelper.ILTranslation(il, "Pull Velocity: {0:N2}", "Скорость притягивания: {0}");
-        }
-    }
+        TranslationHelper.ModifyIL(il, "Reach: ", "Дальность: ");
+        TranslationHelper.ModifyIL(il, " tiles\n", " блоков\n");
+        TranslationHelper.ModifyIL(il, "Launch Velocity: ", "Скорость вылета: ");
+        TranslationHelper.ModifyIL(il, "Reelback Velocity: ", "Скорость возврата: ");
+        TranslationHelper.ModifyIL(il, "Pull Velocity: ", "Скорость притягивания: ");
+    };
 }
