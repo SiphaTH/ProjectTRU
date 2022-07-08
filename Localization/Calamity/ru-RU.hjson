@@ -2016,7 +2016,7 @@
             
             ArchaicPowder: {
                 Name: Старый порошок
-                Tooltip: Находясь под землёй или в Аду, увеличивает скорость добычи на 20%, сопротивление урону на 5% и защиту на 10
+                Tooltip: Находясь под землёй или в аду, увеличивает скорость добычи на 20%, сопротивление урону на 5% и защиту на 10
             }
             
             AsgardianAegis: {
@@ -3325,7 +3325,6 @@
                         '''
                     1:
                         '''
-                        Превращает вас в эмиссара осквернённой богини
                         Требуется 10 слотов призываемых миньонов для использования следующих эффектов
                         Всё оружие не призывателя преобразуется в мощные вариации призыва
                         Показатель здоровья ниже 50% усилит эти атаки
@@ -3872,7 +3871,7 @@
                 Tooltip:
                     '''
                     'Говорят, что в прошлом Прометей спустился с небес, даровав людям огонь'
-                    'Если это было правдой, то, несомненно, сами демоны Ада восстали, чтобы сделать то же самое'
+                    'Если это было правдой, то, несомненно, сами демоны ада восстали, чтобы сделать то же самое'
                     Увеличивает призываемое число миньонов на 1 и миньоны накладывают дебафф «{$BuffName.ShadowFlame}»
                     Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Shadowflame.Name}»
                     '''
@@ -4207,17 +4206,17 @@
             
             ExplosiveShells: {
                 Name: Разрывной патрон для дробовика
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             GrenadeRounds: {
                 Name: Гранатная гильза
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             MagnumRounds: {
                 Name: Патрон для магнума
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CirrusDress: {
@@ -5152,227 +5151,227 @@
             
             AnahitaMask: {
                 Name: Маска Анахиты
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientGodSlayerChestplate: {
                 Name: Древний нагрудник богоубийцы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientGodSlayerHelm: {
                 Name: Древний шлем богоубийцы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientGodSlayerLeggings: {
                 Name: Древние поножи богоубийцы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ApolloMask: {
                 Name: Маска Аполлона
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AquaticScourgeMask: {
                 Name: Маска акватического бича
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AresMask: {
                 Name: Маска Ареса
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ArtemisMask: {
                 Name: Маска Артемиды
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AshenHorns: {
                 Name: Пепельные рога
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstrumAureusMask: {
                 Name: Маска Аструм Ареуса
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstrumDeusMask: {
                 Name: Маска Аструм Деуса
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BrimstoneWaifuMask: {
                 Name: Маска серного элементаля
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BumblefuckMask: {
                 Name: Маска псевдодракона
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CalamitasMask: {
                 Name: Маска Каламитас
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CeaselessVoidMask: {
                 Name: Маска нескончаемой Пустоты
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CrabulonMask: {
                 Name: Маска Крабулона
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CryogenMask: {
                 Name: Маска Криогена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             DesertScourgeMask: {
                 Name: Маска пустынного бича
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             DevourerofGodsMask: {
                 Name: Маска Пожирателя богов
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             DraedonMask: {
                 Name: Маска Дрэйдона
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             GodSlayerHornedHelm: {
                 Name: Рогатый шлем богоубийцы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             GodSlayerVisage: {
                 Name: Налицовник богоубийцы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             HiveMindMask: {
                 Name: Маска разума Улья
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             HoodOfCalamity: {
                 Name: Бедственный капюшон
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LeviathanMask: {
                 Name: Маска Левиафана
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             OldDukeMask: {
                 Name: Маска старого Герцога
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PerforatorMask: {
                 Name: Маска Перфораторов
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguebringerGoliathMask: {
                 Name: Маска разносчицы чумы, Голиаф
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PolterghastMask: {
                 Name: Маска Полтергаста
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ProfanedGuardianMask: {
                 Name: Маска осквернённого стража
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ProvidenceMask: {
                 Name: Маска Провиденс
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             RavagerMask: {
                 Name: Маска Разрушителя
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             RobesOfCalamity: {
                 Name: Бедственная мантия
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SCalBoots: {
                 Name: Бедственные сапоги
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SCalMask: {
                 Name: Бедственный капюшон
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SCalRobes: {
                 Name: Бедственная мантия
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SignusMask: {
                 Name: Маска Сигнуса
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SilvaHelm: {
                 Name: Шлем Сильвы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SilvaHornedHelm: {
                 Name: Рогатый шлем Сильвы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SilvaMask: {
                 Name: Маска Сильвы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SlimeGodMask: {
                 Name: Маска бога слизней
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SlimeGodMask2: {
                 Name: Маска бога слизней
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             StormWeaverMask: {
                 Name: Маска штормового Ткача
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ThanatosMask: {
                 Name: Маска Танатоса
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             YharonMask: {
                 Name: Маска Ярона
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             VictideBreastplate: {
@@ -5455,27 +5454,27 @@
             
             BabyFlakCrabItem: {
                 Name: Маленький зенитный краб
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BabyGhostBellItem: {
                 Name: Маленький призрачный колокольчик
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PiggyItem: {
                 Name: Поросёнок
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SeaMinnowItem: {
                 Name: Морской пескарь
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             TwinklerItem: {
                 Name: Мерцатель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BallAndChain: {
@@ -5546,7 +5545,7 @@
                 Tooltip:
                     '''
                     Может быть установлено на Дешифратор
-                    Разблокирует дешифровку схемы Ада
+                    Разблокирует дешифровку схемы ада
                     '''
             }
             
@@ -5562,7 +5561,7 @@
             
             CodebreakerBase: {
                 Name: Основа дешифратора
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             DecryptionComputer: {
@@ -5662,172 +5661,172 @@
             
             AerialiteDye: {
                 Name: Аэриалитовый краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralBlueDye: {
                 Name: Астрально-голубой краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralDye: {
                 Name: Краситель астральной плоти
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralOrangeDye: {
                 Name: Астрально-оранжевый краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralSwirlDye: {
                 Name: Краситель астрального вихря
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AuricDye: {
                 Name: Золотосодержащий краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BloodflareDye: {
                 Name: Краситель кровавой вспышки
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BlueCosmicFlameDye: {
                 Name: Краситель голубого космического пламени
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BlueStatigelDye: {
                 Name: Голубой статиджеловый краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BrimflameDye: {
                 Name: Серный краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CalamitousDye: {
                 Name: Бедственный краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CeaselessDye: {
                 Name: Краситель нескончаемости
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteDye: {
                 Name: Космилитовый краситель
- 				Tooltip: ""
+                 Tooltip: ""
             }
             
             CryonicDye: {
                 Name: Крионический краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             DefiledFlameDye: {
                 Name: Краситель развращённого пламени
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             DragonSoulDye: {
                 Name: Краситель души дракона
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ElementalDye: {
                 Name: Элементальный краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             EndothermicDye: {
                 Name: Эндотермический краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoDye: {
                 Name: Экзо-краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             NightmareDye: {
                 Name: Кошмарный краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PhantoplasmDye: {
                 Name: Фантоплазменный краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PinkCosmicFlameDye: {
                 Name: Краситель розового космического пламени
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PinkStatigelDye: {
                 Name: Розовый статиджеловый краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ProfanedFlameDye: {
                 Name: Краситель осквернённого пламени
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ProfanedMoonlightDye: {
                 Name: Краситель осквернённого лунного света
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ReaverDye: {
                 Name: Краситель разорителя
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ShadowspecDye: {
                 Name: Краситель шэдоуспека
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SlimeGodDye: {
                 Name: Краситель бога слизней
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             StratusDye: {
                 Name: Слоистый краситель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SwirlingCosmicFlameDye: {
                 Name: Краситель спирального космического огня
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AdrenalineHairDye: {
                 Name: Краска для волос «Адреналин»
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             RageHairDye: {
                 Name: Краска для волос «Ярость»
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             StealthHairDye: {
                 Name: Краска для волос «Скрытность»
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             WingTimeHairDye: {
                 Name: Краска для волос «Время полёта»
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             EnchantedStarfish: {
@@ -5881,7 +5880,7 @@
             
             Xerocodile: {
                 Name: Ксерокодил
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AldebaranAlewife: {
@@ -5896,7 +5895,7 @@
             
             AstralCrate: {
                 Name: Астральный ящик
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstrophageItem: {
@@ -5955,12 +5954,12 @@
             
             Brimlish: {
                 Name: Бримлиш
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BrimstoneCrate: {
                 Name: Серный ящик
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BrimstoneFish: {
@@ -6009,7 +6008,7 @@
             
             Slurpfish: {
                 Name: Рыба-поглотитель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             EarlyBloomRod: {
@@ -6093,7 +6092,7 @@
             
             AbyssalCrate: {
                 Name: Ящик бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CoralskinFoolfish: {
@@ -6103,7 +6102,7 @@
             
             EutrophicSandfish: {
                 Name: Эвтрофный волосозуб
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             GreenwaveLoach: {
@@ -6143,7 +6142,7 @@
             
             Serpentuna: {
                 Name: Серпентуна
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SparklingEmpress: {
@@ -6157,7 +6156,7 @@
             
             SunkenCrate: {
                 Name: Затерянный ящик
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SunkenSailfish: {
@@ -6167,7 +6166,7 @@
             
             SurfClam: {
                 Name: Прибойный моллюск
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CyanSeekingMechanism: {
@@ -6192,7 +6191,7 @@
             
             RedSeekingMechanism: {
                 Name: Красный поисковой механизм
-                Tooltip: Стремительно направляется к лаборатории, расположенной в Аду
+                Tooltip: Стремительно направляется к лаборатории, расположенной в аду
             }
             
             YellowSeekingMechanism: {
@@ -6639,17 +6638,17 @@
             
             AerialiteBar: {
                 Name: Аэриалитовый слиток
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientBoneDust: {
                 Name: Древняя костяная пыль
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ArmoredShell: {
                 Name: Бронированный панцирь
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AscendantSpiritEssence: {
@@ -6664,7 +6663,7 @@
             
             AshesofCalamity: {
                 Name: Пепел бедствия
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AuricBar: {
@@ -6674,52 +6673,52 @@
             
             BeetleJuice: {
                 Name: Жучий сок
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BlightedGel: {
                 Name: Гибельный гель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BloodOrb: {
                 Name: Кровавая сфера
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BloodSample: {
                 Name: Образец крови
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             Bloodstone: {
                 Name: Кровавый камень
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BloodstoneCore: {
                 Name: Ядро кровавого камня
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CoreofCalamity: {
                 Name: Ядро бедствия
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CoreofChaos: {
                 Name: Ядро хаоса
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CoreofEleum: {
                 Name: Ядро элеума
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CoreofSunlight: {
                 Name: Ядро солнечного света
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CorrodedFossil: {
@@ -6734,12 +6733,12 @@
             
             CryonicBar: {
                 Name: Крионический слиток
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             DarkPlasma: {
                 Name: Тёмная плазма
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             DarksunFragment: {
@@ -6749,7 +6748,7 @@
             
             DemonicBoneAsh: {
                 Name: Демонический костяной пепел
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             DepthCells: {
@@ -6759,7 +6758,7 @@
             
             DesertFeather: {
                 Name: Пустынное перо
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             DivineGeode: {
@@ -6769,7 +6768,7 @@
             
             DubiousPlating: {
                 Name: Сомнительное покрытие
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             EffulgentFeather: {
@@ -6824,17 +6823,17 @@
             
             InfectedArmorPlating: {
                 Name: Заражённая защитная пластина
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LifeAlloy: {
                 Name: Сплав жизни
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LivingShard: {
                 Name: Живой осколок
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             Lumenyl: {
@@ -6844,12 +6843,12 @@
             
             MeldBlob: {
                 Name: Литое пятно
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             MeldConstruct: {
                 Name: Литая конструкция
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             MiracleMatter: {
@@ -6868,12 +6867,12 @@
             
             MurkyPaste: {
                 Name: Мрачная масса
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             MysteriousCircuitry: {
                 Name: Загадочная схема
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             NightmareFuel: {
@@ -6883,7 +6882,7 @@
             
             PerennialBar: {
                 Name: Многолетний слиток
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             Phantoplasm: {
@@ -6893,7 +6892,7 @@
             
             PlagueCellCanister: {
                 Name: Чумная канистра
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlasmaDriveCore: {
@@ -6903,7 +6902,7 @@
             
             PurifiedGel: {
                 Name: Очищенный гель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ReaperTooth: {
@@ -6913,7 +6912,7 @@
             
             RottenMatter: {
                 Name: Гнилая материя
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             RuinousSoul: {
@@ -6928,7 +6927,7 @@
             
             SeaRemains: {
                 Name: Морские останки 
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ShadowspecBar: {
@@ -6943,17 +6942,17 @@
             
             Stardust: {
                 Name: Звёздная пыль
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             StormlionMandible: {
                 Name: Челюсть штормового льва
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SulphuricScale: {
                 Name: Сернистая чешуя
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SuspiciousScrap: {
@@ -6968,22 +6967,22 @@
             
             TrapperBulb: {
                 Name: Луковица охотника
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             TwistingNether: {
                 Name: Искривлённая пустота
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             UelibloomBar: {
                 Name: Слиток буйного цветения
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             UnholyCore: {
                 Name: Нечестивое ядро
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             UnholyEssence: {
@@ -6993,12 +6992,12 @@
             
             VictoryShard: {
                 Name: Осколок победы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             WulfrumShard: {
                 Name: Вульфрумовый металлолом
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             Brimrose: {
@@ -7062,7 +7061,7 @@
             
             TheCartofGods: {
                 Name: Вагонетка богов
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BloodOrange: {
@@ -7356,157 +7355,157 @@
             
             AbyssGravel: {
                 Name: Гравий бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             Acidwood: {
                 Name: Кислотная древесина
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AerialiteBrick: {
                 Name: Аэриалитовый кирпич
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralBar: {
                 Name: Астральный слиток
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralBrick: {
                 Name: Астральный кирпич
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralClay: {
                 Name: Астральная глина
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralDirt: {
                 Name: Астральная земля
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralIce: {
                 Name: Астральный лёд
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralMonolith: {
                 Name: Астральный монолит
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralSand: {
                 Name: Астральный песок
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralSandstone: {
                 Name: Астральный песчаник
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralSnow: {
                 Name: Астральный снег
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralStone: {
                 Name: Астральный камень
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BrimstoneSlag: {
                 Name: Серный шлак
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CelestialRemains: {
                 Name: Небесные останки
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ChaoticBrick: {
                 Name: Хаотический кирпич
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CryonicBrick: {
                 Name: Крионический кирпич
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             EutrophicSand: {
                 Name: Эвтрофный песок
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             HardenedAstralSand: {
                 Name: Затвердевший астральный песок
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             HardenedSulphurousSandstone: {
                 Name: Затвердевший сернистый песчаник
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             Navystone: {
                 Name: Морской камень
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             NovaeSlag: {
                 Name: Звёздный шлак
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PerennialBrick: {
                 Name: Многолетний кирпич
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlantyMush: {
                 Name: Мох
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PrismShard: {
                 Name: Осколок призмы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SeaPrism: {
                 Name: Морская призма
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SulphurousSand: {
                 Name: Сернистый песок
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SulphurousSandstone: {
                 Name: Сернистый песчаник
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             Tenebris: {
                 Name: Тенебрис
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             UelibloomBrick: {
                 Name: Кирпич буйного цветения
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             Voidstone: {
                 Name: Пустотный камень
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidEelBanner: {
@@ -8106,52 +8105,52 @@
             
             AgedLaboratoryConsoleItem: {
                 Name: Старая консоль лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AgedLaboratoryContainmentBoxItem: {
                 Name: Старая коробка лаборатории для хранения
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AgedLaboratoryDisplayItem: {
                 Name: Старый дисплей лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AgedLaboratoryDoorItem: {
                 Name: Старая дверь лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AgedLaboratoryElectricPanelItem: {
                 Name: Старая электрическая панель лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AgedLaboratoryScreenItem: {
                 Name: Старый экран лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AgedLaboratoryServerItem: {
                 Name: Старый сервер лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AgedLaboratoryTerminalItem: {
                 Name: Старый терминал лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AgedReinforcedCrateItem: {
                 Name: Старый укреплённый ящик
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AgedSecurityChest: {
                 Name: Старый охранный сундук
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ChargingStationItem: {
@@ -8165,72 +8164,72 @@
             
             HazardChevronPanels: {
                 Name: Предупредительная панель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LabHologramProjectorItem: {
                 Name: Голограммный проектор лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryConsoleItem: {
                 Name: Консоль лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryContainmentBoxItem: {
                 Name: Коробка лаборатории для хранения
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryDisplayItem: {
                 Name: Дисплей лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryDoorItem: {
                 Name: Дверь лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryElectricPanelItem: {
                 Name: Электрический щит лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryPanels: {
                 Name: Панели лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryPipePlating: {
                 Name: Покрытая труба лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryPlating: {
                 Name: Покрытие лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryScreenItem: {
                 Name: Экран лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryServerItem: {
                 Name: Сервер лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryShelf: {
                 Name: Полка лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryTerminalItem: {
                 Name: Терминал лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PowerCellFactoryItem: {
@@ -8244,118 +8243,117 @@
             
             ReinforcedCrateItem: {
                 Name: Укреплённый ящик
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             RustedPipes: {
                 Name: Ржавые трубы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             RustedPlating: {
                 Name: Ржавое покрытие
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             RustedShelf: {
                 Name: Ржавая полка
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SecurityChest: {
                 Name: Охранный сундук
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssBathtub: {
                 Name: Ванна бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssBed: {
                 Name: Кровать бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssBookcase: {
                 Name: Книжный шкаф бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssCandelabra: {
                 Name: Подсвечник бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssCandle: {
                 Name: Свеча бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssChair: {
                 Name: Стул бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssChandelier: {
                 Name: Люстра бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssChest: {
                 Name: Сундук бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssClock: {
                 Name: Напольные часы бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssDoor: {
                 Name: Дверь бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssDresser: {
                 Name: Комод бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssFountainItem: {
                 Name: Фонтан воды бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssLamp: {
                 Name: Лампа бездны
- 				Tooltip: ""
+                 Tooltip: ""
             }
             
             AbyssLantern: {
                 Name: Фонарь бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssSink: {
                 Name: Раковина бездны
- 				Tooltip: ""
                 Tooltip: Считается источником воды
             }
             
             AbyssSofa: {
                 Name: Диван бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssSynth: {
                 Name: Синтезатор бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssTable: {
                 Name: Стол бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AbyssTorch: {
@@ -8365,87 +8363,87 @@
             
             AbyssWorkBench: {
                 Name: Верстак бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodBathtub: {
                 Name: Ванна из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodBed: {
                 Name: Кровать из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodBench: {
                 Name: Скамья из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodBookcase: {
                 Name: Книжный шкаф из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodCandelabra: {
                 Name: Подсвечник из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodCandle: {
                 Name: Свеча из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodChair: {
                 Name: Стул из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodChandelier: {
                 Name: Люстра из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodChest: {
                 Name: Сундук из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodClock: {
                 Name: Напольные часы из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodDoor: {
                 Name: Дверь из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodDresser: {
                 Name: Комод из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodLamp: {
                 Name: Лампа из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodLantern: {
                 Name: Фонарь из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodPiano: {
                 Name: Пианино из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodPlatform: {
                 Name: Платформа из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodSink: {
@@ -8455,12 +8453,12 @@
             
             AcidwoodTable: {
                 Name: Стол из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AcidwoodWorkBench: {
                 Name: Верстак из кислотного дерева
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AltarOfTheAccursedItem: {
@@ -8486,62 +8484,62 @@
             
             AncientBasin: {
                 Name: Древний костёр
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientBathtub: {
                 Name: Древняя ванна
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientBed: {
                 Name: Древняя кровать
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientBookcase: {
                 Name: Древний книжный шкаф
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientChair: {
                 Name: Древний стул
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientChandelier: {
                 Name: Древняя люстра
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientDoor: {
                 Name: Древняя дверь
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientDresser: {
                 Name: Древний комод
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientLamp: {
                 Name: Древняя лампа
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientLantern: {
                 Name: Древний фонарь
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientMonolith: {
                 Name: Древний монолит
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientPipeOrgan: {
                 Name: Древний трубный орган
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientSink: {
@@ -8551,42 +8549,42 @@
             
             AncientSofa: {
                 Name: Древний диван
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientTable: {
                 Name: Древний стол
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AncientWorkBench: {
                 Name: Древний верстак
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ApolloTrophy: {
                 Name: Трофей Аполлона
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AquaticScourgeRelic: {
                 Name: Реликвия акватического бича
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AquaticScourgeTrophy: {
                 Name: Трофей акватического бича
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AresTrophy: {
                 Name: Трофей Ареса
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ArtemisTrophy: {
                 Name: Трофей Артемиды
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AshenAltar: {
@@ -8596,7 +8594,7 @@
             
             AshenBasin: {
                 Name: Пепельный костёр
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AshenBathtub: {
@@ -8755,77 +8753,77 @@
             
             BotanicBathtub: {
                 Name: Ботаническая ванна
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicBed: {
                 Name: Ботаническая кровать
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicBench: {
                 Name: Ботаническая скамья
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicBookcase: {
                 Name: Ботанический книжный шкаф
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicCandelabra: {
                 Name: Ботанический подсвечник
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicCandle: {
                 Name: Ботаническая свеча
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicChair: {
                 Name: Ботанический стул
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicChandelier: {
                 Name: Ботаническая люстра
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicChest: {
                 Name: Ботанический сундук
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicClock: {
                 Name: Ботанические часы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicDoor: {
                 Name: Ботаническая дверь
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicDresser: {
                 Name: Ботанический комод
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicLamp: {
                 Name: Ботаническая лампа
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicLantern: {
                 Name: Ботанический фонарь
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicPiano: {
                 Name: Ботаническое пианино
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicPlanter: {
@@ -8835,7 +8833,7 @@
             
             BotanicPlatform: {
                 Name: Ботаническая платформа
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicSink: {
@@ -8845,12 +8843,12 @@
             
             BotanicTable: {
                 Name: Ботанический стол
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BotanicWorkBench: {
                 Name: Ботанический верстак
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BrimstoneElementalRelic: {
@@ -8938,82 +8936,82 @@
             
             CosmiliteBed: {
                 Name: Космилитовая кровать
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteBookcase: {
                 Name: Космилитовый книжный шкаф
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteBrick: {
                 Name: Космилитовый кирпич
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteCandelabra: {
                 Name: Космилитовый подсвечник
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteCandle: {
                 Name: Космилитовая свеча
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteChair: {
                 Name: Космилитовый стул
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteChandelier: {
                 Name: Космилитовая люстра
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteChest: {
                 Name: Космилитовый сундук
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteClock: {
                 Name: Космилитовые часы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteDoor: {
                 Name: Космилитовая дверь
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteDresser: {
                 Name: Космилитовый комод
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteLamp: {
                 Name: Космилитовая лампа
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteLantern: {
                 Name: Космилитовый фонарь
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmilitePiano: {
                 Name: Космилитовое пианино
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmilitePlatform: {
                 Name: Космилитовая платформа
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteSconce: {
                 Name: Космилитовый подсвечник
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteSink: {
@@ -9023,17 +9021,17 @@
             
             CosmiliteSofa: {
                 Name: Космилитовый диван
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteTable: {
                 Name: Космилитовый стол
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteWorkBench: {
                 Name: Космилитовый верстак
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CrabulonRelic: {
@@ -9226,112 +9224,112 @@
             
             ExoBathtub: {
                 Name: Экзо-ванна
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoBed: {
                 Name: Экзо-кровать
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoBookcase: {
                 Name: Экзо-книжный шкаф
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoCandelabra: {
                 Name: Экзо-подсвечник
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoCandle: {
                 Name: Экзо-свеча
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoChair: {
                 Name: Экзо-стул
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoChandelier: {
                 Name: Экзо-люстра
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoChest: {
                 Name: Экзо-сундук
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoClock: {
                 Name: Экзо-часы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoConsole: {
                 Name: Экзо-консоль
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoDisplay: {
                 Name: Экзо-дисплей
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoDoor: {
                 Name: Экзо-дверь
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoDresser: {
                 Name: Экзо-комод
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoKeyboard: {
                 Name: Экзо-синтезатор
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoLamp: {
                 Name: Экзо-лампа
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoLantern: {
                 Name: Экзо-фонарь
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoPlatform: {
                 Name: Экзо-платформа
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoPlating: {
                 Name: Экзо-пластина
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoPrismPanel: {
                 Name: Призменная экзо-панель
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoPrismPlatform: {
                 Name: Призменная экзо-платформа
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoScreen: {
                 Name: Экзо-экран
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoServer: {
                 Name: Экзо-сервер
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoSink: {
@@ -9341,27 +9339,27 @@
             
             ExoSofa: {
                 Name: Экзо-диван
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoTable: {
                 Name: Экзо-стол
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoTerminal: {
                 Name: Экзо-терминал
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoToilet: {
                 Name: Экзо-унитаз
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoWorkbench: {
                 Name: Экзо-верстак
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             GiantClamRelic: {
@@ -9646,7 +9644,7 @@
             
             PlaguedPlateBathtub: {
                 Name: Чумная ванна
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateBed: {
@@ -9656,67 +9654,67 @@
             
             PlaguedPlateBookcase: {
                 Name: Чумной книжный шкаф
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateCandelabra: {
                 Name: Чумной подсвечник
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateCandle: {
                 Name: Чумная свеча
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateChair: {
                 Name: Чумной стул
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateChandelier: {
                 Name: Чумная люстра
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateChest: {
                 Name: Чумной сундук
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateClock: {
                 Name: Чумные часы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateDoor: {
                 Name: Чумная дверь
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateDresser: {
                 Name: Чумной комод
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateLamp: {
                 Name: Чумная лампа
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateLantern: {
                 Name: Чумной фонарь
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlatePiano: {
                 Name: Чумное пианино
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlatePlatform: {
                 Name: Чумная платформа
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateSink: {
@@ -9726,17 +9724,17 @@
             
             PlaguedPlateSofa: {
                 Name: Чумной диван
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateTable: {
                 Name: Чумной стол
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedWorkBench: {
                 Name: Чумной верстак
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlagueInfuser: {
@@ -10574,327 +10572,327 @@
             
             AbyssGravelWallItem: {
                 Name: Стена из гравия бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AerialiteBrickWall: {
                 Name: Аэриалитовая кирпичная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AshenSlabWall: {
                 Name: Стена из пепельной плитки
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralBrickWall: {
                 Name: Астральная кирпичная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralDirtWall: {
                 Name: Астральная земляная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralGrassWall: {
                 Name: Астральная травяная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralIceWall: {
                 Name: Астральная ледяная стена
- 				Tooltip: ""
+                 Tooltip: ""
             }
             
             AstralMonolithWall: {
                 Name: Стена из астрального монолита
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralSandstoneWall: {
                 Name: Астральная песчаниковая стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralSnowWall: {
                 Name: Астральная снежная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AstralStoneWall: {
                 Name: Астральная каменная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BlueBrickWallUnsafe: {
                 Name: Опасная синяя кирпичная стена Темницы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BlueSlabWallUnsafe: {
                 Name: Опасная стена из синей плитки Темницы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BlueTiledWallUnsafe: {
                 Name: Опасная синяя облицовка Темницы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             BrimstoneSlagWall: {
                 Name: Стена из серного шлака
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CelestialRemainsWall: {
                 Name: Стена из небесных останков
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ChaosplateWall: {
                 Name: Хаосопластинчатая стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ChaoticBrickWall: {
                 Name: Хаотическая кирпичная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CinderplateWall: {
                 Name: Пеплопластинчатая стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CosmiliteBrickWall: {
                 Name: Космилитовая кирпичная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             CryonicBrickWall: {
                 Name: Крионическая кирпичная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ElumplateWall: {
                 Name: Хладнопластинчатая кирпичная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             EutrophicSandWall: {
                 Name: Опасная эвтрофная песчаная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             EutrophicSandWallSafe: {
                 Name: Эвтрофная песчаная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoPlatingWallItem: {
                 Name: Экзо-пластинчатая стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ExoPrismPanelWallItem: {
                 Name: Экзо-пластинчатая призменная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             GreenBrickWallUnsafe: {
                 Name: Опасная зелёная кирпичная стена Темницы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             GreenSlabWallUnsafe: {
                 Name: Опасная стена из зелёной плитки Темницы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             GreenTiledWallUnsafe: {
                 Name: Опасная зелёная облицовка Темницы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             HardenedAstralSandWall: {
                 Name: Стена из затвердевшего астрального песка
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             HardenedSulphurousSandstoneWall: {
                 Name: Стена из затвердевшего сернистого песчаника
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             HazardChevronWall: {
                 Name: Предупредительная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryPanelWall: {
                 Name: Стена из панелей лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryPlateBeam: {
                 Name: Балка из пластин лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryPlatePillar: {
                 Name: Колонна из пластин лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             LaboratoryPlatingWall: {
                 Name: Стена из покрытия лаборатории
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             NavyplateWall: {
                 Name: Морепластинчатая стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             NavystoneWall: {
                 Name: Опасная стена из морского камня
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             NavystoneWallSafe: {
                 Name: Стена из морского камня
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             OtherworldlyStoneWall: {
                 Name: Потусторонняя каменная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PerennialBrickWall: {
                 Name: Стена из многолетнего кирпича
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PinkBrickWallUnsafe: {
                 Name: Опасная розовая кирпичная стена Темницы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PinkSlabWallUnsafe: {
                 Name: Опасная стена из розовой плитки Темницы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PinkTiledWallUnsafe: {
                 Name: Опасная розовая облицовка Темницы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlagueContainmentCellsWall: {
                 Name: Чумопластинчатая стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             PlaguedPlateWall: {
                 Name: Стена из кирпича для содержания чумы
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ProfanedCrystalWall: {
                 Name: Стена из осквернённого кристалла
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ProfanedRockWall: {
                 Name: Стена из осквернённого камня
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             ProfanedSlabWall: {
                 Name: Стена из осквернённой плитки
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             RunicProfanedBrickWall: {
                 Name: Стена из осквернённого рунического кирпича
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             RustedPlateBeam: {
                 Name: Балка из ржавой пластины
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             RustedPlatePillar: {
                 Name: Колонна из ржавой пластины
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             RustedPlatingWall: {
                 Name: Стена из ржавого покрытия
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SilvaWall: {
                 Name: Лесная стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SmoothAbyssGravelWall: {
                 Name: Стена из гладкого гравия бездны
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SmoothBrimstoneSlagWall: {
                 Name: Стена из гладкого серного шлака
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SmoothNavystoneWall: {
                 Name: Стена из гладкого морского камня
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SmoothVoidstoneWall: {
                 Name: Стена из гладкого пустотного камня
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             StatigelWall: {
                 Name: Статиджеловая стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             StratusWall: {
                 Name: Слоистая стена
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SulphurousSandstoneWall: {
                 Name: Стена из сернистого песчаника
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             SulphurousSandWall: {
                 Name: Стена из сернистого песка
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             UelibloomBrickWall: {
                 Name: Стена из кирпича буйного цветения
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             VoidstoneSlabWall: {
                 Name: Стена из пустотной плитки
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             VoidstoneWall: {
                 Name: Стена из пустотного камня
- 				Tooltip: ""
+                Tooltip: ""
             }
             
             AnechoicCoating: {
@@ -11575,9 +11573,9 @@
                 Tooltip:
                     '''
                     'Ядро нечестивого пламени'
-                    Призывает Провиденс, Осквернённую богиню, при использовании в освящении или Аду
+                    Призывает Провиденс, Осквернённую богиню, при использовании в освящении или аду
                     Следует использовать в дневное время
-                    Входит в ярость во время дня, или за пределами освящения или Ада
+                    Входит в ярость ночью, или за пределами освящения или ада
                     Не расходуется
                     '''
             }
@@ -11587,8 +11585,8 @@
                 Tooltip:
                     '''
                     'Осколок нечестивого пламени'
-                    Призывает осквернённых стражей при использовании в освящении или Аду в дневное время
-                    Входит в ярость за пределами освящения или Ада
+                    Призывает осквернённых стражей при использовании в освящении или аду в дневное время
+                    Входит в ярость за пределами освящения или ада
                     Не расходуется
                     '''
             }
@@ -12122,7 +12120,7 @@
                     '''
                     Каждая граната содержит сильно конденсированный и нагретый блок плазмы
                     При скрытном ударе граната при столкновении яростно разрывается испаряющимся зарядом
-					'Используйте с осторожностью'
+                    'Используйте с осторожностью'
                     '''
             }
             
@@ -12776,7 +12774,7 @@
             
             ParasiticSceptor: {
                 Name: Паразитический скипетр
-                Tooltip: Стреляет скоплением водяных пиявок, которые цепляются за врагов, нанося наростающий постепенный урон
+                Tooltip: Стреляет скоплением водяных пиявок, которые цепляются за врагов, нанося нарастающий постепенный урон
             }
             
             PhantasmalFury: {
@@ -14155,7 +14153,7 @@
                 Name: Искатель пекла
                 Tooltip:
                     '''
-                    'Пусть ваши враги сгорят в Аду за совершённые ими грехи'
+                    'Пусть ваши враги сгорят в аду за совершённые ими грехи'
                     Бросает святой бумеранг, который ищет до трёх врагов, прежде чем вернуться к игроку
                     '''
             }
@@ -18360,6 +18358,18 @@
                         '''
                 }
                 
+                SpookyWings: {
+                    Tooltip:
+                        '''
+                        {$CommonItemTooltip.FlightAndSlowfall}
+                        Горизонтальная скорость: 7.5
+                        Множитель ускорения: 1
+                        Средняя вертикальная скорость
+                        Время полёта: 180
+                        Увеличивает отбрасывание призывателя, а также урон призывателя на 5% пока на вас надет жуткий комплект
+                        '''
+                }
+                
                 Hoverboard: {
                     Tooltip:
                         '''
@@ -18956,7 +18966,10 @@
                 }
                 
                 MoltenQuiver: {
-                    Tooltip: "Поджигает деревянные стрелы и все стрелы накладывают дебафф «{$BuffName.OnFire3}»"
+                    Tooltip: {
+                        0: Увеличивает урон от стрел на 5% и значительно увеличивает скорость стрел
+                        2: "Поджигает деревянные стрелы и все стрелы накладывают дебафф «{$BuffName.OnFire3}»"
+                    }
                 }
                 
                 EmpressFlightBooster: {
@@ -18964,6 +18977,14 @@
                         0: Увеличивает время полёта крыльев на 50%
                         1: Увеличивает скорость передвижения и прыжка на 10%, и ускорение на 10%
                     }
+                }
+                
+                SniperScope: {
+                    Tooltip: Увеличивает стрелковый урон и шанс критического удара на 7%
+                }
+                
+                MagicQuiver: {
+                    Tooltip: Увеличивает урон от стрел на 5% и значительно увеличивает скорость стрел
                 }
                 
                 FairyBoots: {
@@ -18982,6 +19003,14 @@
                 
                 ArmorBracing: {
                     Tooltip: "{$ItemTooltip.ArmorBracing}, и дебаффу «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.ArmorCrunch.Name}»"
+                }
+                
+                ArcaneFlower: {
+                    Tooltip: Снижает расход маны на 20%
+                }
+                
+                MagnetFlower: {
+                    Tooltip: Снижает расход маны на 20%
                 }
                 
                 MoonStone: {
@@ -19500,7 +19529,7 @@
                     Tooltip:
                         '''
                         {$ItemTooltip.GuideVoodooDoll}
-                        Призывает стену плоти, если бросить её в лаву в Аду, пока Гид жив
+                        Призывает стену плоти, если бросить её в лаву в аду, пока Гид жив
                         '''
                 }
                 
@@ -19607,7 +19636,7 @@
                 BloodMoonStarter: {
                     Tooltip:
                         '''
-                        {$ItemTooltip.BloodMoonStarter}
+                        Вызывает кровавую луну
                         Не расходуется
                         '''
                 }
@@ -21002,7 +21031,7 @@
                     36: Провиденс настолько богиня солнца, насколько Лунный лорд — бог луны. Они — две стороны одной монеты, предпочитающие занимать нейтральную позицию в наших мелких ссорах.
                     37: Прикоснуться к подношениям Провиденс - явный признак самоубийцы. Жаль, что Ярим не додумался просто потрогать их, чтобы выманить её из укрытия.
                     38: Осквернённые стражи сделают всё ради защиты своей богини. И неудивительно, что они погибают за неё - их можно в кратчайшие сроки воскресить.
-                    39: В Аду и освящении теперь скрываются осквернённые существа. Убийства и сбор в одном месте большого количества их эссенции может привлечь внимание осквернённых стражей.
+                    39: В аду и освящении теперь скрываются осквернённые существа. Убийства и сбор в одном месте большого количества их эссенции может привлечь внимание осквернённых стражей.
                     40: Кажется, твоё приключение сосредотачивается на джунглях. Уничтожь псевдодракона и его отпрысков, пока их количество не вышло из-под контроля.
                     41: Чума - всего лишь один из экспериментов Ярима по стиранию городов с лица земли. Этот эксперимент — один из немногих, отложенных Лордом в долгий ящик, потому что он был слишком ужасен.
                     42: Бездна стала гораздо более активной, чем раньше. Возможно тебе удастся добыть часть вулканических обломков, находящихся внутри.
@@ -21072,7 +21101,7 @@
                     1: Такими темпами я перееду обратно в свою пещеру.
                     2: Раз я не могу вернуться в жилища Тирана, мне нужен новый дом. У тебя найдётся место?
                     3: Я не могу платить за аренду, но если у тебя есть ближний, которого надо... Что? У тебя таких нет?
-                    4: Пару дней назад я думала сделать свой сад с цветами из столицы Ада. Нравится мне запах серы поутру.
+                    4: Пару дней назад я думала сделать свой сад с цветами из столицы ада. Нравится мне запах серы поутру.
                     5: Думаю, я тут хорошо устроилась, огромное спасибо.
                     6: Много лет прошло с момента моей первой встречи с Тираном, но только сейчас мне удалось выбраться. Мне надо было быть сильнее...
                     7: Какой неестественный оттенок красного. Совсем не похоже на адское пламя.
@@ -21108,7 +21137,7 @@
                 }
                 
                 Guide: {
-                   1: Могу я попросить, эм... сходить в Ад?.. Я оставил там кое-кого, кто мне небезразличен.
+                   1: Могу я попросить, эм... сходить в ад?.. Я оставил там кое-кого, кто мне небезразличен.
                    2: У меня вдруг по спине пробежала дрожь, словно только что упал метеорит и тысячи невинных созданий превратились в монстров со звёзд.
                    3: Темница кажется ещё более беспокойной, чем обычно. Аккуратнее с мощными тварями, кажется их гнездо разворошили.
                    4: Уничтожение той бабочки, кажется, заставило её жизненную силу просочиться в освящённые области. Попробуй заглянуть туда и посмотреть, что сможешь найти!
@@ -21684,7 +21713,7 @@
             CharredSlime: Лавовые слизни единственные, кто смог выжить в адской жаре, предпочтя расплавленные породы внутренней влаге. Однако их поведение ничуть не отличается, они абсолютно также пожирают всё, что только способны.
             CultistAssassin: Фанатики, чей разум проиграл ненавидящему серному пламени. Никто не видел, что скрывается под их накидкой, да и проверять лучше не стоит.
             DespairStone: Конденсированный летающий камень серного шлака. Согласно рассказам, борющиеся за свободу души внутри него являются причиной, из-за которой он разлетается по земле.
-            HeatSpirit: Дух человека, чей разум был затерян в очаге алого пламени. Он скитается по Аду в целях испарения любого источника влаги, что найдёт.
+            HeatSpirit: Дух человека, чей разум был затерян в очаге алого пламени. Он скитается по аду в целях испарения любого источника влаги, что найдёт.
             Scryllar: Искорёженные останки тех, кто некогда приходил собирать остатки скал. Шёпот дошёл до них.
             SoulSlurper: Остатки души, которая поглощала, была поглощена, а затем истерзана другими душами. С чего начинается этот цикл, никому не ведомо, но лучше это и не выяснять.
             Cryogen: Призматический живой ледяной кристалл. И хотя обычно его можно наблюдать лишь сквозь слякоть метели, в те редкие дни, когда он пролетает в солнечный день, его тело мерцает губительно красивым синим цветом.
@@ -23950,7 +23979,7 @@
             }
             
             Slurpfish: {
-                Chat: Знаешь, это было бы абсолютным бедствием, если бы я отправил тебя в древние руины в глубине Ада ловить рыбу. И я планирую сделать именно это. А теперь проваливай! Рыба сама себя не поймает.
+                Chat: Знаешь, это было бы абсолютным бедствием, если бы я отправил тебя в древние руины в глубине ада ловить рыбу. И я планирую сделать именно это. А теперь проваливай! Рыба сама себя не поймает.
                 CatchLocation: Можно поймать у серной скалы
             }
         }
@@ -24324,7 +24353,7 @@
         GhostBossText2: Крики эхом разносятся по полуразрушенным залам Темницы...
         GhostBossText3: Давно умершие заключённые жаждут ревностной мести...
         GhostBossText4: Души вызывают кислотные бури...
-        SCalSummonText: Так нравится проходить сквозь Ад?
+        SCalSummonText: Так нравится проходить сквозь ад?
         SCalStartText: Умри уже...
         SCalBH2Text: А ведь недавно ты кое-как с моим клоном справлялся. Неудачная поделка, да?
         SCalBH3Text: Ты обладаешь огромной силой, но используешь её лишь себя любимого ради.
@@ -24460,12 +24489,12 @@
         Tier1ArsenalRecipeCondition: Просмотрите незашифрованную схему из лаборатории, расположенной недалеко от затерянного моря
         Tier2ArsenalRecipeCondition: Дешифруйте схему из лаборатории, расположенной внутри огромного планетоида в небе
         Tier3ArsenalRecipeCondition: Дешифруйте схему из лаборатории, расположенной глубоко в джунглях
-        Tier4ArsenalRecipeCondition: Дешифруйте схему из лаборатории, расположенной вблизи границ Ада
+        Tier4ArsenalRecipeCondition: Дешифруйте схему из лаборатории, расположенной вблизи границ ада
         Tier5ArsenalRecipeCondition: Дешифруйте схему из лаборатории, расположенной в глубине ледяных пещер
         SunkenSeaSchematicRecipeCondition: Поместите схему из лаборатории затерянного моря в инвентарь хотя бы один раз
         PlanetoidSchematicRecipeCondition: Поместите схему из лаборатории планетоида в инвентарь хотя бы один раз
         JungleSchematicRecipeCondition: Поместите схему из лаборатории джунглей в инвентарь хотя бы один раз
-        UnderworldSchematicRecipeCondition: Поместите схему из лаборатории Ада в инвентарь хотя бы один раз
+        UnderworldSchematicRecipeCondition: Поместите схему из лаборатории ада в инвентарь хотя бы один раз
         IceSchematicRecipeCondition: Поместите схему из лаборатории ледяных пещер в инвентарь хотя бы один раз
     }
 }
