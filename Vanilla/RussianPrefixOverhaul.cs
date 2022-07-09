@@ -426,7 +426,6 @@ public static class RussianPrefixOverhaul
 		ItemID.FalconBlade,
 		ItemID.Tsunami,
 		ItemID.PainterPaintballGun,
-		ItemID.StylistKilLaKillScissorsIWish,
 		ItemID.FireworksLauncher,
 		ItemID.SpiritFlame,
 		ItemID.DD2SquireDemonSword,
@@ -519,6 +518,7 @@ public static class RussianPrefixOverhaul
 		ItemID.GlassSlipper,
 		ItemID.CursedFlames,
 		ItemID.ShroomiteDiggingClaw,
+		ItemID.StylistKilLaKillScissorsIWish,
 	};
 
 	private static List<int> CalamityTypeW()
