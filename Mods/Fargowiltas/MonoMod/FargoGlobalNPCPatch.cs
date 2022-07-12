@@ -17,7 +17,7 @@ public class FargoGlobalNPCCheckDead : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Betsy has been defeated!", "Бетси была побеждена!");
+        TranslationHelper.ModifyIL(il, "Betsy has been defeated!", "Бэтси побеждена!");
     };
 }
 
@@ -34,7 +34,7 @@ public class FargoGlobalNPCSwarm : Patch<ILContext.Manipulator>
         TranslationHelper.ModifyIL(il, "Killed: ", "Убито: ", 2);
         TranslationHelper.ModifyIL(il, "Total: ", "Всего: ");
         TranslationHelper.ModifyIL(il, "Total: ", "Всего: ", 2);
-        TranslationHelper.ModifyIL(il, "The swarm has been defeated!", "Орда была побеждена!");
-        TranslationHelper.ModifyIL(il, "The swarm has been defeated!", "Орда была побеждена!", 2);
+        TranslationHelper.ModifyIL(il, "The swarm has been defeated!", "Орда побеждена!");
+        TranslationHelper.ModifyIL(il, "The swarm has been defeated!", "Орда побеждена!", 2);
     };
 }

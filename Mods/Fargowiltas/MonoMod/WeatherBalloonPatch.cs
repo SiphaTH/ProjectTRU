@@ -17,6 +17,6 @@ public class WeatherBalloonPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Rain clouds cover the sky.", "Тучи закрывают небо.");
+        TranslationHelper.ModifyIL(il, "Rain clouds cover the sky.", "Небо закрывают тучи.");
     };
 }

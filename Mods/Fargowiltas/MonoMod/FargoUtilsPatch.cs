@@ -18,7 +18,7 @@ public class FargoUtilsPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "A new item has been unlocked in ", "Новый предмет был разблокирован в магазине ");
-        TranslationHelper.ModifyIL(il, "'s shop!", "!");
+        TranslationHelper.ModifyIL(il, "A new item has been unlocked in ", "");
+        TranslationHelper.ModifyIL(il, "'s shop!", " разблокировывает новый предмет для продажи!");
     };
 }

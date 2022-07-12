@@ -17,6 +17,6 @@ public class SquirrelPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Cycle Shop", "Циклический магазин");
+        TranslationHelper.ModifyIL(il, "Cycle Shop", "Переключить магазин");
     };
 }

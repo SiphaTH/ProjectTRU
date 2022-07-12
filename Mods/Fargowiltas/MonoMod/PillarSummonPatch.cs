@@ -17,6 +17,6 @@ public class PillarSummonPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The Celestial Pillars have awoken!", "Небесные башни пробуждаются!");
+        TranslationHelper.ModifyIL(il, "The Celestial Pillars have awoken!", "Неземные башни пробуждаются!");
     };
 }

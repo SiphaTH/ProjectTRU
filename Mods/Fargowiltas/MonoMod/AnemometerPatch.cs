@@ -17,6 +17,6 @@ public class AnemometerPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The wind begins howling.", "Ветер завывает.");
+        TranslationHelper.ModifyIL(il, "The wind begins howling.", "Начинает завывать ветер.");
     };
 }

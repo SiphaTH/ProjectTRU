@@ -17,7 +17,7 @@ public class OverloadGoblinsPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The goblins have calmed down!", "Гоблины успокоились!");
-        TranslationHelper.ModifyIL(il, "The goblins have calmed down!", "Гоблины успокоились!", 2);
+        TranslationHelper.ModifyIL(il, "The goblins have calmed down!", "Гоблины успокаиваются!");
+        TranslationHelper.ModifyIL(il, "The goblins have calmed down!", "Гоблины успокаиваются!", 2);
     };
 }

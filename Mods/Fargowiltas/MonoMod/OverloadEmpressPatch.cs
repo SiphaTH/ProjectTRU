@@ -23,6 +23,6 @@ public class OverloadEmpressPatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "Bullet heaven is descending!", "");
+        TranslationHelper.ModifyIL(il, "Bullet heaven is descending!", "Пулевой рай снисходит!");
     }
 }

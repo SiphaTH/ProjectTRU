@@ -17,6 +17,6 @@ public class SpentLanternPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Lantern Night rate restored to default.", "");
+        TranslationHelper.ModifyIL(il, "Lantern Night rate restored to default.", "Шанс на ночь фонарей сброшен к изначальному.");
     };
 }

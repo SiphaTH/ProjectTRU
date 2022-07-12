@@ -23,6 +23,6 @@ public class OverloadPlantPatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "The jungle beats as one!", "Джунгли бьются как одно целое!");
+        TranslationHelper.ModifyIL(il, "The jungle beats as one!", "Джунгли бьются как единое целое!");
     }
 }

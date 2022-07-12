@@ -23,6 +23,6 @@ public class OverloadCultistPatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "Defeaning chants fill your ears!", "Оглушающие песнопения переполняют ваш слух!");
+        TranslationHelper.ModifyIL(il, "Defeaning chants fill your ears!", "Оглушающие песнопения заполняют ваши уши!");
     }
 }

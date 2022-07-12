@@ -23,6 +23,6 @@ public class OverloadPrimePatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "A sickly chill envelops the world!", "Мерзкий холод окутывает мир!");
+        TranslationHelper.ModifyIL(il, "A sickly chill envelops the world!", "Мир окутывает мерзкий холод!");
     }
 }

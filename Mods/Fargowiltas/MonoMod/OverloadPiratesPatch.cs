@@ -17,7 +17,7 @@ public class OverloadPiratesPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The pirates have calmed down!", "Пираты успокоились!");
-        TranslationHelper.ModifyIL(il, "The pirates have calmed down!", "Пираты успокоились!", 2);
+        TranslationHelper.ModifyIL(il, "The pirates have calmed down!", "Пираты успокаиваются!");
+        TranslationHelper.ModifyIL(il, "The pirates have calmed down!", "Пираты успокаиваются!", 2);
     };
 }

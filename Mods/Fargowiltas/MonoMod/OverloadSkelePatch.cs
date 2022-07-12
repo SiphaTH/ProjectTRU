@@ -23,6 +23,6 @@ public class OverloadSkelePatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "A great clammering of bones rises from the dungeon!", "Огромные груды костей восстают из темницы!");
+        TranslationHelper.ModifyIL(il, "A great clammering of bones rises from the dungeon!", "Огромные груды костей восстают из Темницы!");
     }
 }

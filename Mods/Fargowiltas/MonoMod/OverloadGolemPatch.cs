@@ -23,6 +23,6 @@ public class OverloadGolemPatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "Ancient automatons come crashing down!", "Древние конструкции обрушиваются на вас!");
+        TranslationHelper.ModifyIL(il, "Ancient automatons come crashing down!", "На вас обрушиваются древние автоматоны!");
     }
 }

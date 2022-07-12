@@ -30,8 +30,8 @@ public class AbominationnOnChatButtonClicked : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Hocus pocus, the event is over", "Фокус-покус, событие кончилось.");
-        TranslationHelper.ModifyIL(il, "I'm not feeling it right now, come back in ", "Не думаю, что смогу это сделать сейчас, возвращайся через ");
+        TranslationHelper.ModifyIL(il, "Hocus pocus, the event is over", "Вжух, и событие кончилось.");
+        TranslationHelper.ModifyIL(il, "I'm not feeling it right now, come back in ", "Я не в настроении, возвращайся через ");
         TranslationHelper.ModifyIL(il, " seconds.", " секунд.");
     };
 }

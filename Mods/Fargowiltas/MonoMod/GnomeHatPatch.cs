@@ -17,6 +17,6 @@ public class GnomeHatPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Gnome", "Садовый гном");
+        TranslationHelper.ModifyIL(il, "Gnome", "Гном");
     };
 }

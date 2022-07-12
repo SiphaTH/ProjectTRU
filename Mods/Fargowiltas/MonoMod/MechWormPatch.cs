@@ -17,6 +17,6 @@ public class MechWormPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The Destroyer", "Разрушитель");
+        TranslationHelper.ModifyIL(il, "The Destroyer", "Уничтожитель");
     };
 }

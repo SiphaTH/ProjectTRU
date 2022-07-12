@@ -23,6 +23,6 @@ public class OverloadDeerPatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "The Constant takes over!", "");
+        TranslationHelper.ModifyIL(il, "The Constant takes over!", "Константа берёт своё!");
     }
 }

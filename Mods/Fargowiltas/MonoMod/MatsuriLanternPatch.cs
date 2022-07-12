@@ -17,6 +17,6 @@ public class MatsuriLanternPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Lantern Night rate increased!", "");
+        TranslationHelper.ModifyIL(il, "Lantern Night rate increased!", "Шанс на ночь фонарей увеличен!");
     };
 }

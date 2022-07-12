@@ -17,9 +17,9 @@ public class ModeTogglePatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Expert mode is now enabled!", "Режим эксперта теперь включён!");
-        TranslationHelper.ModifyIL(il, "Master mode is now enabled!", "Режим мастера теперь включён!");
-        TranslationHelper.ModifyIL(il, "Journey mode is now enabled!", "Режим путешествия теперь включён!");
-        TranslationHelper.ModifyIL(il, "Normal mode is now enabled!", "Нормальный режим теперь включён!");
+        TranslationHelper.ModifyIL(il, "Expert mode is now enabled!", "Мир переключен в режим эксперта!");
+        TranslationHelper.ModifyIL(il, "Master mode is now enabled!", "Мир переключен в режим мастера!");
+        TranslationHelper.ModifyIL(il, "Journey mode is now enabled!", "Мир переключен в режим путешествия!");
+        TranslationHelper.ModifyIL(il, "Normal mode is now enabled!", "Мир переключен в обычный режим!");
     };
 }

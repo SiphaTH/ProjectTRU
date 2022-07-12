@@ -23,6 +23,6 @@ public class OverloadEyePatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "Countless eyes pierce the veil staring in your direction!", "Вы ощущаете бесчисленные взгляды на себе!");
+        TranslationHelper.ModifyIL(il, "Countless eyes pierce the veil staring in your direction!", "Вы ощущаете на себе бесчисленные взгляды!");
     }
 }

@@ -17,7 +17,7 @@ public class PinkSlimeCrownPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Pinky has awoken!", "Пинки пробудился!");
-        TranslationHelper.ModifyIL(il, "Pinky has awoken!", "Пинки пробудился!", 2);
+        TranslationHelper.ModifyIL(il, "Pinky has awoken!", "Пинки пробуждается!");
+        TranslationHelper.ModifyIL(il, "Pinky has awoken!", "Пинки пробуждается!", 2);
     };
 }

@@ -23,6 +23,6 @@ public class OverloadDarkMagePatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "You feel like you're in a library!", "Вы чувствуете, будто находитесь в библиотеке!");
+        TranslationHelper.ModifyIL(il, "You feel like you're in a library!", "Вы чувствуете, словно находитесь в библиотеке!");
     }
 }

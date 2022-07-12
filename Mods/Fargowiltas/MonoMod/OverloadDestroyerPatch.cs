@@ -23,6 +23,6 @@ public class OverloadDestroyerPatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "The planet trembles from the core!", "Земля дрожит!");
+        TranslationHelper.ModifyIL(il, "The planet trembles from the core!", "Вся планета дрожит!");
     }
 }

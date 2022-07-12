@@ -123,9 +123,6 @@ public static class RussianPrefixOverhaul
 	//Женский
 	public static List<int> TypeW = new()
 	{
-		ItemID.CopperWatch,
-		ItemID.SilverWatch,
-		ItemID.GoldWatch,
 		ItemID.LuckyHorseshoe,
 		ItemID.GuideVoodooDoll,
 		ItemID.ObsidianHorseshoe,
@@ -148,10 +145,6 @@ public static class RussianPrefixOverhaul
 		ItemID.MusicBoxUndergroundHallow,
 		ItemID.MusicBoxBoss3,
 		ItemID.MusicBox,
-		ItemID.RedsWings,
-		ItemID.TinWatch,
-		ItemID.TungstenWatch,
-		ItemID.PlatinumWatch,
 		ItemID.DiscountCard,
 		ItemID.LuckyCoin,
 		ItemID.SandstorminaBottle,
@@ -519,6 +512,7 @@ public static class RussianPrefixOverhaul
 		ItemID.CursedFlames,
 		ItemID.ShroomiteDiggingClaw,
 		ItemID.StylistKilLaKillScissorsIWish,
+		ItemID.RedsWings,
 	};
 
 	private static List<int> CalamityTypeW()

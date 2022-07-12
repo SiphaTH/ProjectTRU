@@ -17,7 +17,7 @@ public class OverloadMartiansPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The martians have calmed down!", "Марсиане успокоились!");
-        TranslationHelper.ModifyIL(il, "The martians have calmed down!", "Марсиане успокоились!", 2);
+        TranslationHelper.ModifyIL(il, "The martians have calmed down!", "Марсиане успокаиваются!");
+        TranslationHelper.ModifyIL(il, "The martians have calmed down!", "Марсиане успокаиваются!", 2);
     };
 }

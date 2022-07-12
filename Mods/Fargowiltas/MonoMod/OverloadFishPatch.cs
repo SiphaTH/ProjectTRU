@@ -23,6 +23,6 @@ public class OverloadFishPatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "The ocean swells with ferocious pigs!", "Свирепые свиньи наполняют океан!");
+        TranslationHelper.ModifyIL(il, "The ocean swells with ferocious pigs!", "Океан наполняется свирепыми свиньями!");
     }
 }
