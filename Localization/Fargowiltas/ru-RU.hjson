@@ -435,7 +435,7 @@
             
             AutoHouse: {
                 Name: Автодом
-                Tooltip: Размещает дом подходящий горожанам
+                Tooltip: Размещает дом, подходящий жителям
             }
             
             BoomShuriken: {
@@ -2146,74 +2146,74 @@
         
         TownNPCMood: {
             Deviantt: {
-                Content: I'm feeling good!
-                NoHome: Do you have any spare housing? Please? Anything? Even a jail cell is fine with me!
-                LoveSpace: Peace and quiet means I get to live it up!
-                FarFromHome: I think my house was that way... unless you're taking me somewhere?
-                DislikeCrowded: The more the merrier and all, but I'm starting to feel a lil' overcrowded.
-                HateCrowded: I can't kick my legs out and relax without hitting someone...
-                LikeBiome: "Ha ha ha, something about {BiomeName} just makes me laugh uncontrollably for some reason!"
-                LoveBiome: The stars above are so pretty, I love watching them go by so much!
-                DislikeBiome: Can we go somewhere warmer than this?
-                HateBiome: I wanna live elsewhere! This is awful, I'm sweating up a storm!
-                LikeNPC: "{NPCName} is my big-but-not-biggest bro. He's pretty cool!"
-                LikeNPC_Princess: "I gotta visit {NPCName} again sometime, there's a girl who gets me!"
-                LoveNPC: "{NPCName} is here! That's my big bro, isn't he just the coolest?!"
-                DislikeNPC: "I can't stand girls like {NPCName}, feels like she's just here for a certain audience."
-                HateNPC: "Just between us. Have you ever considered throwing {NPCName} back where you found him?"
+                Content: Мне хорошо!
+                NoHome: Есть свободный домишко? Пожалуйста? Ну, хоть комната какая? Сойдёт даже тюремная камера!
+                LoveSpace: Мир и покой - вот наслаждение!
+                FarFromHome: Мой дом только что был тут... если только ты меня не утащил куда-то?
+                DislikeCrowded: Больше - веселее, и всё такое, но по ощущениям тут уже слишком тесновато.
+                HateCrowded: Я ногу не могу вытянуть, чтобы не задеть кого-то...
+                LikeBiome: "Пхахаха, {BiomeName} - нечто здесь вызывает у меня просто некотролируемый смех!"
+                LoveBiome: Звезды над головой такие красивые! Я люблю смотреть, как они иногда пролетают мимо!
+                DislikeBiome: Можно переселить меня куда-нибудь, где теплее?
+                HateBiome: Хочу жить где угодно, но не тут! Здесь ужасно, я уже вся от пота промокла!
+                LikeNPC: "{NPCName} - мой-старший-но-не-самый-старший брат. Он довольно крут!"
+                LikeNPC_Princess: "Наконец-то, {NPCName}, девушка, которая меня понимает! Скоро посещу её ещё раз."
+                LoveNPC: "{NPCName} здесь! Это мой старший братишка, ну разве он не крутейший?!"
+                DislikeNPC: "Не выношу девушек наподобие {NPCName}, она здесь словно для определённой аудитории."
+                HateNPC: "{NPCName} бесит меня. Между нами, не думал выкинуть его туда, где нашёл?"
             }
             
             Abominationn: {
-                Content: I am content.
-                NoHome: Give me a home and I'll lower my prices.
-                LoveSpace: Not being crowded around is good.
-                FarFromHome: I'd fly back to my house, but I don't really feel like being watched.
-                DislikeCrowded: There's too many humans around, they keep poking at my face.
-                HateCrowded: Do you know how hard it is to carry a scythe and not cut anyone with this many people around?
-                LikeBiome: "I like {BiomeName}, it's home to a fine opponent with my brother's wings."
-                LoveBiome: "I like Space a lot, we came here first before landing."
-                DislikeBiome: "Too many weak enemies live in {BiomeName}."
-                HateBiome: "I dislike {BiomeName} a lot."
-                LikeNPC: "{NPCName} is my sister... I've defeated more events than her, but she's okay."
-                LikeNPC_Princess: "{NPCName} is okay."
-                LoveNPC: "{NPCName} is my brother... I've fought more bosses than him, but he's strong."
-                DislikeNPC: "I do not like {NPCName}."
-                HateNPC: "{NPCName} ruins the glory of battle, I don't want her near me."
+                Content: Я доволен.
+                NoHome: Ты мне дом, я тебе - меньшие цены.
+                LoveSpace: Без толпы лишнего народа тут неплохо.
+                FarFromHome: Я бы полетел обратно домой, но не хочется, чтобы это видели.
+                DislikeCrowded: Вокруг слишком много народа, они постоянно тыкают мне в лицо.
+                HateCrowded: Хоть представляешь насколько трудно держать косу и никого не порезать, когда вокруг столько народа?
+                LikeBiome: "Мне нравится {BiomeName}, это дом прекрасного оппонента с крыльями моего брата."
+                LoveBiome: "Мне очень нравится Космос, перед приземлением мы прибыли сюда."
+                DislikeBiome: "{BiomeName}, тут слишком много слабых врагов."
+                HateBiome: "Мне сильно не нравится {BiomeName}."
+                LikeNPC: "{NPCName} - моя сестра... Я справлялся с нашествиями куда больше неё, но она тоже ничего."
+                LikeNPC_Princess: "{NPCName} ничего так."
+                LoveNPC: "{NPCName} - мой брат... Я сражался с боссами куда больше него, но он силён."
+                DislikeNPC: "Мне не нравится {NPCName}."
+                HateNPC: "{NPCName} убивает всё величие сражения, не желаю видеть её вблизи себя."
             }
             
             Mutant: {
-                Content: Thanks for the house, I guess.
-                NoHome: A house wouldn't hurt, but I don't mind either way.
-                LoveSpace: Downtime between boss fights is nice. I don't get that with lots of humans around.
-                FarFromHome: I'll eat slimes and zombies, but eating human food at home would be good too.
-                DislikeCrowded: There's too many people here. And they seem upset I keep winning our staring contests.
-                HateCrowded: If one more human in this cramped town bumps into my brain again... never mind.
-                LikeBiome: "We all start in {BiomeName}, it's a good place."
-                LoveBiome: "Living up here is comfortable, but when are you going to find my temple?"
-                DislikeBiome: "Is {BiomeName} supposed to impress me? The big fairy doesn't, that's for sure."
-                HateBiome: "Do you want pricier summons? Making me live in {BiomeName} means pricier summons."
-                LikeNPC: "I forget when {NPCName} joined the family, but she's earned her place."
-                LikeNPC_Princess: "{NPCName} seems friendly."
-                LoveNPC: "{NPCName} and I fought through many battles, too bad there's no opportunity to do it again."
-                DislikeNPC: "Why is {NPCName} here? It's okay, me, just don't look him in the eye and he can't scare you..."
-                HateNPC: "{NPCName} needs to leave before my Penetrator makes it happen."
+                Content: Спасибо за жилище, полагаю.
+                NoHome: Наличие дома не повредит, но мне и так сойдёт.
+                LoveSpace: Тишина между сражениями с боссами приятна. Тяжело это понять, когда вокруг куча народа.
+                FarFromHome: Я ем слизней и зомби, но полакомиться человеческой пищей у себя дома тоже было бы неплохо.
+                DislikeCrowded: Здесь слишком много людей. И, кажется, их бесит, что я постоянно побеждаю в гляделках.
+                HateCrowded: Если хоть ещё один человек в этом тесном городке ещё раз наступит на мой мозг... неважно.
+                LikeBiome: "{BiomeName}, все мы здесь начинаем. Хорошее место."
+                LoveBiome: "Жить здесь, наверху, здорово, но когда ты собираешься найти мой храм?"
+                DislikeBiome: "{BiomeName} должно впечатлить меня? Большая фея этого не сделает, это точно."
+                HateBiome: "Хочешь более дорогие предметы призыва? Потому что {BiomeName}, а точнее жизнь тут, обозначает дорогие предметы призыва."
+                LikeNPC: "Я забыл, когда {NPCName} присоединилась к семье, но своё место она заслужила"
+                LikeNPC_Princess: "{NPCName} выглядит дружелюбной."
+                LoveNPC: "{NPCName} и я прошли через множество битв. Даже жаль, что подобной возможности больше не предвидится."
+                DislikeNPC: "За что {NPCName} вообще здесь? Ах, нужно успокоится, просто не смотри ему в глаза и он не сможет тебя напугать..."
+                HateNPC: "Пусть {NPCName} покинет нас прежде, чем это за него сделает мой Проникновитель."
             }
             
             LumberJack: {
-                Content: I'm happy as long as the world has wood that needs chopping.
-                NoHome: No lumberjack is complete without a log cabin to call home!
-                LoveSpace: Fewer people around means I can swing my axe all I want with nobody in the way.
-                FarFromHome: This is too far from my cabin. I should get back and sharpen my axe.
-                DislikeCrowded: I think it's getting crowded around here.
-                HateCrowded: Too many people around. Nothing ruins a good chopping session more than chopping down someone.
-                LikeBiome: "Plenty of trees to chop in {BiomeName} makes for a happy lumberjack."
-                LoveBiome: "There's nothing like good old fashioned woodchopping in {BiomeName}!"
-                DislikeBiome: "There's nothing to chop in {BiomeName}!"
-                HateBiome: "There's nothing to chop in {BiomeName}!"
-                LikeNPC: "I chop down trees, {NPCName} plants more, we're the perfect duo."
-                LikeNPC_Princess: "{NPCName} is better with an axe than I expected!"
-                LoveNPC: "I'm glad {NPCName} understands the beauty of felling a big tree."
-                DislikeNPC: "{NPCName} told me to start hugging trees... so I taught my axe to hug trees for me."
+                Content: Я счастлив, пока в мире есть лес, который нужно рубить.
+                NoHome: Не бывает лесоруба без бревенчатой хижины, которую можно назвать домом!
+                LoveSpace: Меньше людей вокруг означает, что я могу размахивать топором сколько угодно, и никто мне не помешает.
+                FarFromHome: Я слишком далеко от моей хижины. Мне нужно вернуться и наточить топор.
+                DislikeCrowded: Думаю, здесь становится довольно тесно.
+                HateCrowded: Слишком много людей вокруг. Ничто так не портит хорошую рубку, как рубка кого-то.
+                LikeBiome: "{BiomeName}, полный деревьев, делает лесоруба счастливым."
+                LoveBiome: "Нет ничего лучше старой доброй рубки деревьев в {BiomeName}у!"
+                DislikeBiome: "{BiomeName} - здесь нечего рубить!"
+                HateBiome: "{BiomeName} - здесь нечего рубить!"
+                LikeNPC: "Я рублю деревья, {NPCName} их сажает, мы идеальный дуэт."
+                LikeNPC_Princess: "{NPCName} не так плоха в обращении топором, как я думал!"
+                LoveNPC: "Я рад, что {NPCName} понимает красоту падения большого бревна."
+                DislikeNPC: "{NPCName} сказала мне начать обнимать деревья... и я научил свой топор обнимать деревья за меня."
                 HateNPC: "{NPCName} абсолютно не понимает меня. Подрыв деревьев - не рубка!"
             }
             
@@ -2239,10 +2239,10 @@
         Config: {
             CanSpawn: может заселиться
 
-            TownNPCsHeader: Горожане
-            CatchNPCs: "[i:267] Возможность ловить горожан"
-            NPCSales: "[i:267] Дополнительные товары горожан"
-            SaferBoundNPCs: "[i:1274] Горожане, которых нужно спасать, не получают контактного урона"
+            TownNPCsHeader: Жители
+            CatchNPCs: "[i:267] Возможность ловить жителей"
+            NPCSales: "[i:267] Дополнительные товары жителей"
+            SaferBoundNPCs: "[i:1274] Жители, которых нужно спасать, не получают контактного урона"
             SquirrelTooltips: "[i:239] Пометка предметов, продаваемых Белкой"
 
             SeasonsHeader: Сезоны
