@@ -424,6 +424,7 @@ public static class RussianPrefixOverhaul
 		ItemID.DD2SquireDemonSword,
 		ItemID.FairyQueenMagicItem,
 		ItemID.TentacleSpike,
+		ItemID.FlowerPow,
 	};
 
 	//Множественный
