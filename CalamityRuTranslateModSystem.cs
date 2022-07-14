@@ -16,5 +16,10 @@ public class CalamityRuTranslateModSystem : ModSystem
             NpcDialoguesTranslation.SetupTranslation();
             CombatTextsTranslation.SetupTranslation();
         }
+
+        if (ModsCall.TryGetFargo && TranslationHelper.IsRussianLanguage)
+        {
+            Mods.Fargowiltas.NpcDialoguesTranslation.SetupTranslation();
+        }
     }
 }

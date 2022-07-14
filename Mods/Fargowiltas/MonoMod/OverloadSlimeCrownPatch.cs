@@ -23,6 +23,6 @@ public class OverloadSlimeCrownPatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "Welcome to the true slime rain!", "Добро пожаловать в истинный дождь слизней!");
+        TranslationHelper.ModifyIL(il, "Welcome to the true slime rain!", "Добро пожаловать в истинный слизнепад!");
     }
 }

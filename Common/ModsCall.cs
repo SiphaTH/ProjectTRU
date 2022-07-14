@@ -23,6 +23,8 @@ public static class ModsCall
     public static bool TryGetBossChecklist => ModLoader.TryGetMod("BossChecklist", out Mod bossChecklist);
     public static Mod StarsAbove => ModLoader.GetMod("StarsAbove");
     public static bool TryGetStarsAbove => ModLoader.TryGetMod("StarsAbove", out Mod starsAbove);
+    public static Mod Wikithis => ModLoader.GetMod("Wikithis");
+    public static bool TryGetWikithis => ModLoader.TryGetMod("Wikithis", out Mod wikithis);
         
     internal static bool Revenge => CalamityWorld.revenge;
     internal static bool DownedSCal => DownedBossSystem.downedSCal;

@@ -336,7 +336,7 @@ public class VanillaItemsTranslation : GlobalItem
             foreach (TooltipLine tooltip in tooltips)
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Shadowflame on hit",
-                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CorruptYoyoа.Tooltip"));
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CorruptYoyo.Tooltip"));
             }
         }
         else if (item.type == ItemID.BloodButcherer)
@@ -558,12 +558,12 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.Sake => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Sake.Tooltip"),
                 ItemID.ArmorPolish => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.ArmorPolish.Tooltip"),
                 ItemID.ArmorBracing => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.ArmorBracing.Tooltip"),
-                ItemID.ArcaneFlower => Language.GetTextValue("ItemTooltip.ArcaneFlower").Replace("8", "20"),
-                ItemID.MagnetFlower => Language.GetTextValue("ItemTooltip.ArcaneFlower").Replace("8", "20"),
+                ItemID.ArcaneFlower => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.ArcaneFlower.Tooltip"),
+                ItemID.MagnetFlower => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MagnetFlower.Tooltip"),
                 ItemID.Magiluminescence => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Magiluminescence.Tooltip"),
                 ItemID.EmpressFlightBooster => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.EmpressFlightBooster.Tooltip.0"),
-                ItemID.MagicQuiver => Language.GetTextValue("ItemTooltip.MagicQuiver").Replace("10", "5"),
-                ItemID.MoltenQuiver => Language.GetTextValue("ItemTooltip.MoltenQuiver").Replace("10", "5"),
+                ItemID.MagicQuiver => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MagicQuiver.Tooltip"),
+                ItemID.MoltenQuiver => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MoltenQuiver.Tooltip.0"),
                 ItemID.FireGauntlet => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FireGauntlet.Tooltip.0"),
                 ItemID.MagmaStone => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MagmaStone.Tooltip"),
                 ItemID.LavaSkull => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.LavaSkull.Tooltip.0"),
@@ -642,7 +642,7 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.HellfireTreads => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.HellfireTreads.Tooltip.1"),
                 ItemID.CelestialStone => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CelestialStone.Tooltip"),
                 ItemID.EmpressFlightBooster => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.EmpressFlightBooster.Tooltip.1"),
-                ItemID.SniperScope => Language.GetTextValue("ItemTooltip.SniperScope").Replace("10", "7"),
+                ItemID.SniperScope => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.SniperScope.Tooltip"),
                 ItemID.MoonStone => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MoonStone.Tooltip"),
                 ItemID.SunStone => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.SunStone.Tooltip"),
                 _ => tooltip.Text
@@ -714,6 +714,10 @@ public class VanillaItemsTranslation : GlobalItem
             {
                 tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Vanilla.Chlorophyte");
             }
+            if (player.armor[0].type == ItemID.SpectreHood && player.armor[1].type == ItemID.SpectreRobe && player.armor[2].type == ItemID.SpectrePants)
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Vanilla.SpectreHealing");
+            }
 
             switch (item.type)
             {
@@ -757,7 +761,7 @@ public class VanillaItemsTranslation : GlobalItem
                 case ItemID.TungstenHelmet:
                 case ItemID.TungstenChainmail:
                 case ItemID.TungstenGreaves:
-                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Vanilla.Tungsten", tooltip.Text.Split(' ')[41], tooltip.Text.Split(' ')[46]);
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Vanilla.Tungsten", tooltip.Text.Split(' ')[42], tooltip.Text.Split(' ')[47]);
                     break;
 
                 case ItemID.GoldGreaves:
@@ -844,12 +848,6 @@ public class VanillaItemsTranslation : GlobalItem
                 case ItemID.CrystalNinjaLeggings:
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Vanilla.CrystalNinja");
                     break;
-                
-                case ItemID.SpectreHood:
-                case ItemID.SpectreRobe:
-                case ItemID.SpectrePants:
-                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Vanilla.SpectreHealing");
-                    break;
             }
         });
 
@@ -895,7 +893,7 @@ public class VanillaItemsTranslation : GlobalItem
             {
                 ItemID.CelestialShell => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CelestialShell.Tooltip"),
                 ItemID.FairyBoots => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FairyBoots.Tooltip"),
-                ItemID.MoltenQuiver => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MoltenQuiver.Tooltip"),
+                ItemID.MoltenQuiver => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MoltenQuiver.Tooltip.2"),
                 _ => tooltip.Text
             };
         });

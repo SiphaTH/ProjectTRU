@@ -56,6 +56,6 @@ public class CodebreakerUIDisplayNotStrongEnoughErrorText : Patch<ILContext.Mani
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Encryption unsolveable: Upgrades required.", "Шифрование нерешаемо: требуются обновления.");
+        TranslationHelper.ModifyIL(il, "Encryption unsolveable: Upgrades required.", "Шифрование нерешаемое: требуются обновления.");
     };
 }

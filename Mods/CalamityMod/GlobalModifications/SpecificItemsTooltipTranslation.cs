@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using CalamityMod.Items;
 using CalamityMod.Items.Accessories;
 using CalamityMod.Items.DifficultyItems;
@@ -34,6 +33,26 @@ public class SpecificItemsTooltipTranslation : GlobalItem
 
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
     {
+        CalamityGlobalItem calamityGlobalItem = item.GetGlobalItem<CalamityGlobalItem>();
+        if (calamityGlobalItem.canFirePointBlankShots)
+        {
+            int pointBlankShotIndex = tooltips.FindLastIndex(x => x.Mod.Equals("CalamityMod") && x.Name.Equals("PointBlankShot"));
+            int tooltipIndex = tooltips.FindLastIndex(x => x.Mod.Equals("Terraria") && x.Name.StartsWith("Tooltip"));
+            int knockbackIndex = tooltips.FindLastIndex(x => x.Mod.Equals("Terraria") && x.Name.StartsWith("Knockback"));
+            if (pointBlankShotIndex != -1)
+            {
+                tooltips.RemoveAt(pointBlankShotIndex);
+            }
+            if (tooltipIndex != -1)
+            {
+                tooltips.Insert(++tooltipIndex, new TooltipLine(ModsCall.Calamity, "PointBlankShot", LangHelper.GetTextValue("CalamityMod.Items.TooltipTags.PointBlankShot")));
+            }
+            else
+            {
+                tooltips.Insert(++knockbackIndex, new TooltipLine(ModsCall.Calamity, "PointBlankShot", LangHelper.GetTextValue("CalamityMod.Items.TooltipTags.PointBlankShot")));
+            }
+        }
+
         if (item.type == ModContent.ItemType<AsgardianAegis>())
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
@@ -86,7 +105,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         }
         else if (item.type == ModContent.ItemType<ProfanedSoulCrystal>())
         {
-            if (!ModsCall.DownedSCal || ModsCall.DownedExoMechs)
+            if (!ModsCall.DownedSCal || !ModsCall.DownedExoMechs)
             {
                 ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "Tooltip1" && l.Text == "[c/f05a5a:The soul within this crystal has been defiled by overwhelming energy waves from dangerous mechanations]\nMerchants will reject a defiled soul such as this.", tooltip =>
                 {
@@ -401,12 +420,8 @@ public class SpecificItemsTooltipTranslation : GlobalItem
                 .Replace("The Sunken Sea schematic must be deciphered first", "Сначала необходимо расшифровать схему затерянного моря")
                 .Replace("The Planetoid schematic must be deciphered first", "Сначала необходимо расшифровать схему планетоида")
                 .Replace("The Jungle schematic must be deciphered first", "Сначала необходимо расшифровать схему джунглей")
-                .Replace("The Underworld schematic must be deciphered first", "Сначала необходимо расшифровать схему Ада")
+                .Replace("The Underworld schematic must be deciphered first", "Сначала необходимо расшифровать схему ада")
                 .Replace("The Ice biome schematic must be deciphered first", "Сначала необходимо расшифровать схему льдов");
-        });
-        ItemHelper.TranslateTooltip(item, tooltips, "PointBlankShot", tooltip =>
-        {
-            tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.TooltipTags.PointBlankShot");
         });
         ItemHelper.TranslateTooltip(item, tooltips, "CalamityCharge", tooltip =>
         {

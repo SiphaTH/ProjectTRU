@@ -7,6 +7,8 @@ namespace CalamityRuTranslate.Vanilla;
 
 public static class RussianPrefixOverhaul
 {
+	private static bool _isFirstTime = false;
+	
 	//Мужской, Женский, Средний, Множественный
 	public static string[][] Prefixes =
 	{
@@ -751,6 +753,7 @@ public static class RussianPrefixOverhaul
 				ModContent.Find<ModItem>("CalamityMod", "ScorchedEarth").Type,
 				ModContent.Find<ModItem>("CalamityMod", "UrchinMace").Type,
 				ModContent.Find<ModItem>("CalamityMod", "FaultLine").Type,
+				ModContent.Find<ModItem>("CalamityMod", "GenesisPickaxe").Type,
 			};
 		}
 
@@ -805,7 +808,6 @@ public static class RussianPrefixOverhaul
 				ModContent.Find<ModItem>("CalamityMod", "RougeSlash").Type,
 				ModContent.Find<ModItem>("CalamityMod", "AnahitasArpeggio").Type,
 				ModContent.Find<ModItem>("CalamityMod", "UndinesRetribution").Type,
-				ModContent.Find<ModItem>("CalamityMod", "Aftershock").Type,
 				ModContent.Find<ModItem>("CalamityMod", "Brimlance").Type,
 				ModContent.Find<ModItem>("CalamityMod", "Devastation").Type,
 				ModContent.Find<ModItem>("CalamityMod", "DevilsDevastation").Type,
@@ -913,11 +915,12 @@ public static class RussianPrefixOverhaul
 	
 	public static string GetGenderedPrefix(string[] prefix, int id)
 	{
-		if (ModsCall.TryGetCalamity)
+		if (ModsCall.TryGetCalamity && !_isFirstTime)
 		{
 			TypeW.AddRange(CalamityTypeW());
 			TypeU.AddRange(CalamityTypeU());
 			TypePl.AddRange(CalamityTypePl());
+			_isFirstTime = true;
 		}
 
 		if (TypeW.Contains(id))

@@ -26,7 +26,7 @@ public class CalamityPlayerPreKill : Patch<ILContext.Manipulator>
         TranslationHelper.ModifyIL(il, " disintegrated into ashes.", " рассыпается в прах.");
         TranslationHelper.ModifyIL(il, " was turned to ashes by the Profaned Goddess.", " обращается Осквернённой богиней в пепел.");
         TranslationHelper.ModifyIL(il, " fell prey to their sins.", " становится жертвой своих грехов.");
-        TranslationHelper.ModifyIL(il, "'s spirit was turned to ash.", " дух вревращается в пепел.");
+        TranslationHelper.ModifyIL(il, "'s spirit was turned to ash.", " дух превращается в пепел.");
         TranslationHelper.ModifyIL(il, " became a blood geyser.", " становится кровавым гейзером.");
         TranslationHelper.ModifyIL(il, " was crushed by the pressure.", " расплющивается давлением.");
         TranslationHelper.ModifyIL(il, "'s lungs collapsed.", " отказывают лёгкие.");

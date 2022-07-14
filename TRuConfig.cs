@@ -38,4 +38,10 @@ public class TRuConfig : ModConfig
     [Tooltip("Показывает бонус комплекта брони на шлемах при зажатой клавише.")]
     [DefaultValue(true)]
     public bool PreviewArmorSetBonus;
+    
+    [Label("Wikipedia предметов")]
+    [Tooltip("Позволяет быстро перейти из игры на статью предмета в русской вики\nПлохо работает с ванильными предметами.")]
+    [DefaultValue(true)]
+    [ReloadRequired]
+    public bool WikithisInfo;
 }

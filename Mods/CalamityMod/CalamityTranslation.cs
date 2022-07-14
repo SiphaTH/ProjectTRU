@@ -14,6 +14,7 @@ public class CalamityTranslation : SetupTranslation
         Items = CalamityCatalog.Items;
         NPCs = CalamityCatalog.NPCs;
         Containers = CalamityCatalog.Containers;
+        Projectiles = CalamityCatalog.Projectiles;
         Prefixes = CalamityCatalog.Prefixes;
         Tiles = CalamityCatalog.Tiles;
     }

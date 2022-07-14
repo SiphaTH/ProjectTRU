@@ -23,6 +23,6 @@ public class OverloadBeePatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "A deafening buzz pierces through you!", "Оглушающее жжужание пронзает ваши уши!");
+        TranslationHelper.ModifyIL(il, "A deafening buzz pierces through you!", "Оглушающее жужжание пронзает ваши уши!");
     }
 }

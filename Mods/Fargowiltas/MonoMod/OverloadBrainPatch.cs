@@ -23,6 +23,6 @@ public class OverloadBrainPatch : ILEdit
 
     private void Translation(ILContext il)
     {
-        TranslationHelper.ModifyIL(il, "You feel dumb among so many brains!", "Количество мозгов вокруг заставляет вас чуствовать себя тупым!");
+        TranslationHelper.ModifyIL(il, "You feel dumb among so many brains!", "Количество мозгов вокруг заставляет вас чувствовать себя тупым!");
     }
 }

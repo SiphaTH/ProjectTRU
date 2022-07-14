@@ -18,13 +18,6 @@ public class TownNpcNames : GlobalNPC
 
     public override void ModifyNPCNameList(NPC npc, List<string> nameList)
     {
-        if (npc.type == NPCID.Guide)
-        {
-            foreach (var VARIABLE in nameList)
-            {
-                CalamityRuTranslate.Instance.Logger.Info(VARIABLE);
-            }
-        }
         if (npc.type == ModContent.NPCType<DILF>())
         {
             nameList.Clear();
