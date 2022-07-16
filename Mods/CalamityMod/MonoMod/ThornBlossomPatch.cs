@@ -17,6 +17,6 @@ public class ThornBlossomPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, " was violently pricked by a flower.", " был яростно уколот цветком.");
+        TranslationHelper.ModifyIL(il, " was violently pricked by a flower.", " яростно укалывается цветком.");
     };
 }

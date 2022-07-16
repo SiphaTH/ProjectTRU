@@ -17,6 +17,6 @@ public class PotionSicknessPatch : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Healing Cooldown", "Перезарядка лечебных зелий");
+        TranslationHelper.ModifyIL(il, "Healing Cooldown", "Перезарядка зелий лечения");
     };
 }

@@ -25,7 +25,7 @@ public class CalamityPlayerPreKill : Patch<ILContext.Manipulator>
         TranslationHelper.ModifyIL(il, " was melted by the toxic waste.", " расплавляется токсичными отходами.");
         TranslationHelper.ModifyIL(il, " disintegrated into ashes.", " рассыпается в прах.");
         TranslationHelper.ModifyIL(il, " was turned to ashes by the Profaned Goddess.", " обращается Осквернённой богиней в пепел.");
-        TranslationHelper.ModifyIL(il, " fell prey to their sins.", " становится жертвой своих грехов.");
+        TranslationHelper.ModifyIL(il, " fell prey to their sins.", " становится жертвой собственных грехов.");
         TranslationHelper.ModifyIL(il, "'s spirit was turned to ash.", " дух превращается в пепел.");
         TranslationHelper.ModifyIL(il, " became a blood geyser.", " становится кровавым гейзером.");
         TranslationHelper.ModifyIL(il, " was crushed by the pressure.", " расплющивается давлением.");
@@ -70,6 +70,6 @@ public class CalamityPlayerOnConsumeMana : Patch<ILContext.Manipulator>
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, " converted all of their life to mana.", " обернул всю свою жизнь в ману.");
+        TranslationHelper.ModifyIL(il, " converted all of their life to mana.", " оборачивает всю свою жизнь в ману.");
     };
 }

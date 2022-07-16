@@ -11004,7 +11004,7 @@
             }
             
             OmegaHealingPotion: {
-                Name: Омега лечебное зелье
+                Name: Омега зелье лечения
                 Tooltip: ""
             }
             
@@ -11080,7 +11080,7 @@
             }
             
             SupremeHealingPotion: {
-                Name: Высшее лечебное зелье
+                Name: Высшее зелье лечения
                 Tooltip: ""
             }
             
