@@ -1,0 +1,4405 @@
+{
+    Mods.CalamityRuTranslate.FargowiltasSouls: {
+        Buffs: {
+            AbomFang: {
+                Name: Мерзкий клык
+                Description: Сила режима Вечности принуждает вас
+            }
+
+            AbomPresence: {
+                Name: Присутствие Мерзостти
+                Description: "Защита, сопротивление урону и регенерация здоровья снижены; эффект от дебаффа «{$BuffName.MoonLeech}»"
+            }
+
+            DeviPresence: {
+                Name: Присутствие Девиантт
+                Description: Дружественные НИПы получают сумасшедший урон
+            }
+
+            Grabbed: {
+                Name: Схваченный
+                Description: Нажимайте клавиши движения, чтобы выбраться!
+            }
+
+            MutantFang: {
+                Name: Клык Мутанта
+                Description: Сила режима Вечности подчиняет вас
+            }
+
+            MutantPresence: {
+                Name: Присутствие Мутанта
+                Description:
+                    '''
+                    Защита, сопротивление урону и регенерация здоровья снижены
+                    Все специальные способности душ выключены
+                    Снижает радиус, который считается как уклонение вблизи снаряда
+                    '''
+            }
+
+            AbomCooldown: {
+                Name: Мерзкая перезарядка
+                Description: Вы не вынесете ещё одного удара
+            }
+
+            AbomRebirth: {
+                Name: Мерзкое возрождение
+                Description: Вы не можете умереть, пока не получите удар
+            }
+
+            Anticoagulation: {
+                Name: Anticoagulation
+                Description: Losing life, shed blood when hurt, enemies will drink it and grow stronger
+            }
+
+            Antisocial: {
+                Name: Асоциальность
+                Description: У вас нет друзей и урона призывателя
+            }
+
+            Atrophied: {
+                Name: Атрофия
+                Description: Ваши мышцы деградировали
+            }
+
+            Berserked: {
+                Name: Разъярённый
+                Description: Урон и скорость передвижения увеличены на 10%, но вы не можете держать себя в руках
+            }
+
+            BloodDrinker: {
+                Name: Blood Drinker
+                Description: 30% increased damage
+            }
+
+            Bloodthirsty: {
+                Name: Жажда крови
+                Description: Скорость появления врагов значительно увеличена
+            }
+
+            BrainOfConfusionDebuff: {
+                Name: Cerebral Mindbreak
+                Description: 30% decreased damage dealt
+            }
+
+            ClippedWings: {
+                Name: Подрезанные крылья
+                Description: Вы не можете летать или использовать реактивные сапоги
+            }
+
+            Crippled: {
+                Name: Искалеченный
+                Description: Вы не можете бегать
+            }
+
+            CurseoftheMoon: {
+                Name: Проклятие луны
+                Description: Ярость луны поглощает вас
+            }
+
+            Defenseless: {
+                Name: Беззащитный
+                Description: Защита полностью сломлена
+            }
+
+            FlamesoftheUniverse: {
+                Name: Пламя Вселенной
+                Description: Сами небеса покарали вас
+            }
+
+            Flipped: {
+                Name: Перевёрнутый
+                Description: Гравитация инвертирована
+            }
+
+            FlippedHallow: {
+                Name: Перевёрнутый
+                Description: Гравитация инвертирована
+            }
+
+            Fused: {
+                Name: Запал
+                Description: Взрывной выход
+            }
+
+            GodEater: {
+                Name: Пожиратель богов
+                Description: Ваша душа проклята божественным гневом
+            }
+
+            Guilty: {
+                Name: Виновный
+                Description: Оружие притуплено чувством вины за убийство невинных животных
+            }
+
+            Hexed: {
+                Name: Заколдован
+                Description: Ваши атаки исцеляют врагов
+            }
+
+            HolyPrice: {
+                Name: Святая цена
+                Description: Скороость атаки снижена на 30%
+            }
+
+            Hypothermia: {
+                Name: Гипотермия
+                Description: Получаемый урон от морозных атак увеличен
+            }
+
+            Infested: {
+                Name: Заражённый
+                Description: Всё может стать только хуже
+            }
+
+            IvyVenom: {
+                Name: Яд плюща
+                Description: 
+                    '''
+                    Потеря здоровья превратилась в дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Neurotoxin.Name}» на 20 секунд
+                    '''
+            }
+
+            Jammed: {
+                Name: Заклиненный
+                Description: Ваше стрелковое оружие неисправно
+            }
+
+            Lethargic: {
+                Name: Летаргия
+                Description: Ваше оружие замедленно
+            }
+
+            LightningRod: {
+                Name: Громоотвод
+                Description: Вы привлекаете молнии
+            }
+
+            LihzahrdBlessing: {
+                Name: Благословение яхщеров
+                Description: Возможность использовать провода и скорость появления врагов в Храме джунглей снижена
+            }
+
+            LihzahrdCurse: {
+                Name: Проклятие яхщеров
+                Description: Возможность использовать провода в Храме джунглей отключена
+            }
+
+            LivingWasteland: {
+                Name: Живая пустошь
+                Description: Всё вокруг вас гниёт
+            }
+
+            Lovestruck: {
+                Name: Влюблённость
+                Description: Вы влюблены!
+            }
+
+            LowGround: {
+                Name: Заземлённость
+                Description: Вы не можете стоять на платформах или жидкостях
+            }
+
+            MarkedforDeath: {
+                Name: Отмеченный смертью
+                Description: Просто не попадись
+            }
+
+            Midas: {
+                Name: "{$BuffName.Midas}"
+                Description: Вы теряете монеты при ударе
+            }
+
+            MutantNibble: {
+                Name: Укус Мутанта
+                Description: Восстановление здоровья невозможно
+            }
+
+            NanoInjection: {
+                Name: Нано-инъекция
+                Description: Регенерация здоровья и характеристики снижены
+            }
+
+            Neurotoxin: {
+                Name: Neurotoxin
+                Description: Your body is shutting down
+            }
+
+            NullificationCurse: {
+                Name: Проклятие недействительности
+                Description: Moon Lord has cycling damage type immunities!
+            }
+
+            OceanicMaul: {
+                Name: Океаническое истязание
+                Description: Защитные характеристики и максимальный запас здоровья снижены
+            }
+
+            OceanicSeal: {
+                Name: Океаническая печать
+                Description: Нет уклонений, нет кражи здоровья, нет сверхскорости, нет спасения
+            }
+
+            Oiled: {
+                Name: "{$BuffName.Oiled}"
+                Description: "{$BuffDescription.Oiled}"
+            }
+
+            PungentGaze: {
+                Name: Pungent Gaze
+                Description: ""
+            }
+
+            Purged: {
+                Name: Purged
+                Description: "Dodge effects don't work"
+            }
+
+            Purified: {
+                Name: Очищенный
+                Description: Вы чисты
+            }
+
+            ReverseManaFlow: {
+                Name: Обратный поток маны
+                Description: Магические оружия используют здоровье вместо маны
+            }
+
+            Rotting: {
+                Name: Гниение
+                Description: Ваше тело гниёт
+            }
+
+            RushJob: {
+                Name: Rush Job
+                Description: The Nurse cannot heal you again yet
+            }
+
+            Sadism: {
+                Name: Вечность
+                Description: Сила режима Вечности с вами
+            }
+
+            Shadowflame: {
+                Name: "{$BuffName.ShadowFlame}"
+                Description: "{$BuffDescription.ShadowFlame}"
+            }
+
+            Smite: {
+                Name: Smite
+                Description: Life regen reduced and 10% more damage taken
+            }
+
+            SqueakyToy: {
+                Name: Игрушка-пищалка
+                Description: Ваши атаки — игрушки-пищалки
+            }
+
+            Stunned: {
+                Name: Оглушение
+                Description: У вас слишком кружится голова, чтобы двигаться
+            }
+
+            Swarming: {
+                Name: Роение
+                Description: Шершни атакуют со всех сторон!
+            }
+
+            ThiefCD: {
+                Name: Перезарядка вора
+                Description: Ваши предметы не могут быть украдены
+            }
+
+            Unstable: {
+                Name: Неустойчивость
+                Description: Вы не вписываетесь в реальность
+            }
+
+            BigBrainMinion: {
+                Name: Большой мозг Ктулху
+                Description: За вас сражается большой мозг Ктулху
+            }
+
+            BrainMinion: {
+                Name: Мозг Ктулху
+                Description: За вас сражается маленький мозг Ктулху
+            }
+
+            CrystalSkull: {
+                Name: Кристальный череп
+                Description: Вас защищает едкое глазное яблоко
+            }
+
+            EaterMinion: {
+                Name: Пожиратель миров
+                Description: За вас сражается маленький пожиратель миров
+            }
+
+            JungleMimicSummonBuff: {
+                Name: Мимик джунглей
+                Description: За вас сражается мимик джунглей
+            }
+
+            LunarCultist: {
+                Name: Лунный культист
+                Description: Вас защищает лунный культист
+            }
+
+            MutantPower: {
+                Name: Сила Мутанта
+                Description: Сила Мутанта с вами
+            }
+
+            PlanterasChild: {
+                Name: Дитя Плантеры
+                Description: Вас защищает дитя Плантеры
+            }
+
+            Probes: {
+                Name: Зонды
+                Description: Вас защищают зонды
+            }
+
+            PungentEyeball: {
+                Name: Смердящее глазное яблоко
+                Description: Вас защищает смердящее глазное яблоко
+            }
+
+            RainbowSlime: {
+                Name: Радужный слизень
+                Description: Вас защищает радужный слизень
+            }
+
+            SaucerMinion: {
+                Name: Маленькая марсианская тарелка
+                Description: Вас защищает маленькая марсианская тарелка
+            }
+
+            SkeletronArms: {
+                Name: Руки Скелетрона
+                Description: Вас защищают руки Скелетрона
+            }
+
+            SouloftheMasochist: {
+                Name: Душа родни
+                Description: Сила режима Вечности с вами
+            }
+
+            SuperFlocko: {
+                Name: Супер Снежинко
+                Description: Вас защищает супер Снежинко
+            }
+
+            TrueEyes: {
+                Name: Истинные глаза Ктулху
+                Description: Вас защищают глаза Ктулху
+            }
+
+            TwinsEX: {
+                Name: Близнецы ЕХ
+                Description: За вас сражаются истинные Близнецы
+            }
+
+            AccursedSarcophagusBuff: {
+                Name: Accursed Sarcophagus
+                Description: It'll keep its hands off
+            }
+
+            BabyAbomBuff: {
+                Name: Маленькая Мерзостть
+                Description: Делает кикфлип на косе
+            }
+
+            BabySilhouetteBuff: {
+                Name: Baby Silhouette
+                Description: Won't see the light until it's already grown up
+            }
+
+            BiteSizeBaronBuff: {
+                Name: Bite-size Baron
+                Description: EX form not included
+            }
+
+            ChibiDeviBuff: {
+                Name: Чиби Деви
+                Description: "Она заинтересована в 'тебе'"
+            }
+
+            MutantSpawnBuff: {
+                Name: Отродье Мутанта
+                Description: Отродье Мутанта
+            }
+
+            SeekerOfTreasuresBuff: {
+                Name: Seeker of Treasures
+                Description: Give it a few thousand years to grow up
+            }
+
+            BrokenShell: {
+                Name: Сломанный панцирь
+                Description: Вы не можете облачиться в панцирь
+            }
+
+            CrimsonRegen: {
+                Name: Багряная регенерация
+                Description: Ваша последняя рана заживляется
+            }
+
+            FirstStrike: {
+                Name: Первый удар
+                Description: Ваша следующая атака будет усилена
+            }
+
+            FossilReviveCD: {
+                Name: Revived
+                Description: You cannot revive again
+            }
+
+            Frozen: {
+                Name: Заморозка
+                Description: Вы не можете двигаться
+            }
+
+            GoldenStasis: {
+                Name: Золотой стазис
+                Description: Вы неуязвимы ко всему урону, но не можете двигаться
+            }
+
+            GoldenStasisCD: {
+                Name: Перезарядка золотого стазиса
+                Description: You cannot turn gold yet
+            }
+
+            HallowCooldown: {
+                Name: Перезарядка святого щита
+                Description: Ваш щит не может отражать снаряды
+            }
+
+            HuntressBleed: {
+                Name: Huntress Bleed
+                Description: ""
+            }
+
+            HuntressCD: {
+                Name: Перезарядка дождя из стрел
+                Description: Вы не можете повторно активировать дождь из стрел
+            }
+
+            LeadPoison: {
+                Name: Свинцовый яд
+                Description: ""
+            }
+
+            MonkBuff: {
+                Name: Медитация
+                Description: Ваш рывок монаха готов
+            }
+
+            ObsidianLavaWetBuff: {
+                Name: Обмокший в лаве
+                Description: С вас стекает лава
+            }
+
+            OriPoison: {
+                Name: Орихалковый яд
+                Description: ""
+            }
+
+            ShellHide: {
+                Name: Под панцирем
+                Description: Все снаряды поглощаются
+            }
+
+            SnowstormCD: {
+                Name: Snowstorm Cooldown
+                Description: You cannot chill yet
+            }
+
+            SolarFlare: {
+                Name: Солнечная вспышка
+                Description: ""
+            }
+
+            SuperBleed: {
+                Name: Кровавый гейзер
+                Description: ""
+            }
+
+            TimeFrozen: {
+                Name: Заморозка времени
+                Description: Вы остановились во времени
+            }
+
+            TimeStopCD: {
+                Name: Перезарядка заморозки времени
+                Description: Вы не можете остановить время
+            }
+
+            VortexCD: {
+                Name: Перезарядка вихря
+                Description: Вы не можете вызвать вихрь
+            }
+
+            BetsyDash: {
+                Name: Fireball Dash
+                Description: Impervious to attack
+            }
+
+            HellFire: {
+                Name: Адский огонь
+                Description: ""
+            }
+
+            MutantRebirth: {
+                Name: Возрождение мутанта
+                Description: Воскрешение смертельным лучом перезаряжается
+            }
+
+            KingSlimeMinionBuff: {
+                Name: Маленький король слизней
+                Description: За вас сражается маленький король слизней
+            }
+
+            DukeFishronBuff: {
+                Name: Герцог Рыброн
+                Description: За вас сражается герцог Рыброн
+            }
+
+            RoombaPetBuff: {
+                Name: Робот-пылесос
+                Description: За вами следует робот-пылесос
+            }
+
+            DoveBuff: {
+                Name: Голубь
+                Description: За вами следует голубь
+            }
+
+            ChibiiRemiiBuff: {
+                Name: Chibii Remii
+                Description: "Devil 'Remilia Stretch'"
+            }
+
+            PrimeMinionBuff: {
+                Name: Маленький Прайм
+                Description: За вас сражается Скелетрон Прайм
+            }
+
+            FishMinionBuff: {
+                Name: Рыба
+                Description: За вас сражается рыба
+            }
+
+            CrimetroidBuff: {
+                Name: Малыш криметроид
+                Description: Малыш следует за вами
+            }
+        }
+
+        Items: {
+            AdamantiteEnchant: {
+                Name: Адамантитовое усиление
+                Tooltip:
+                    '''
+                    Every weapon shot will split into 2
+                    All weapon shots deal 50% damage
+                    They hit twice as fast and gain armor penetration equal to 50% damage
+                    'Chaos'
+                    '''
+            }
+
+            AncientCobaltEnchant: {
+                Name: Древне-кобальтовое усиление
+                Tooltip:
+                    '''
+                    Позволяет делать взрывной прыжок
+                    'Ancient Kobold'
+                    '''
+            }
+
+            AncientHallowEnchant: {
+                Name: Ancient Hallowed Enchantment
+                Tooltip:
+                    '''
+                    Вы получаете щит, который может отражать снаряды
+                    Summons a Terraprisma familiar that scales with minion damage
+                    Значительно увеличивает скорость миньонов
+                    'Да освятится твой меч и щит'
+                    '''
+            }
+
+            AncientShadowEnchant: {
+                Name: Древне-теневое усиление
+                Tooltip:
+                    '''
+                    Ваши атаки могут наложить дебафф «{$BuffName.Darkness}»
+                    Враги, поражённые этим дебаффом, выпускают в других врагов теневые щупальца
+                    Вокруг вас кружатся три теневые сферы
+                    'Архаичное, но функциональное'
+                    '''
+            }
+
+            AnglerEnchant: {
+                Name: Рыбацкое усиление
+                Tooltip:
+                    '''
+                    Увеличивает навык рыбной ловли
+                    Вы ловите рыбу почти мгновенно
+                    Эффекты от предмета «{$ItemName.AnglerTackleBag}»
+                    'Пока твой улов — не ботинок, можешь быть счастлив'
+                    '''
+            }
+
+            ApprenticeEnchant: {
+                Name: Усиление ученика
+                Tooltip:
+                    '''
+                    Атакуя врагов в течение 2 секунд окутывает вас пламенем
+                    Смена оружия увеличит урон следующей атаки на 50% и создаст инферно
+                    Значительно увеличивает радиус действия огнеплюя
+                    'Долгий путь к совершенству'
+                    '''
+            }
+
+            BeeEnchant: {
+                Name: Пчелиное усиление
+                Tooltip:
+                    '''
+                    Увеличивает силу дружелюбных пчёл
+                    Удары ближнего боя и большинство пронзающих атак создают пчёл
+                    'Согласно всем известным законам авиации, пчела не должна летать'
+                    '''
+            }
+
+            BeetleEnchant: {
+                Name: Жучье усиление
+                Tooltip:
+                    '''
+                    Beetles increase your damage and melee speed
+                    When hit, beetles instead protect you from damage for 10 seconds
+                    Beetle buffs capped at level two
+                    'Незаметная навозная жизнь течёт по вашим венам'
+                    '''
+            }
+
+            BorealWoodEnchant: {
+                Name: Усиление заснеженной древесины
+                Tooltip:
+                    '''
+                    Атаки будут периодически сопровождаться несколькими снежками
+                    'Охлаждённая древесина'
+                    '''
+            }
+
+            CactusEnchant: {
+                Name: Кактусовое усиление
+                Tooltip:
+                    '''
+                    While attacking you release a spray of needles
+                    Enemies will explode into needles on death if they are struck with your needles
+                    'Отлично утоляет жажду!'
+                    '''
+            }
+
+            ChlorophyteEnchant: {
+                Name: Хлорофитовое усиление
+                Tooltip:
+                    '''
+                    Призывает кольцо кристальных листьев, стреляющее в ближайших врагов
+                    Позволяет делать двойной споровой прыжок
+                    При использовании крыльев вокруг вас появляются споры
+                    Позволяет делать лёгкий рывок
+                    Дважды нажмите в сторону направления для рывка
+                    'Эссенция джунглей кристаллизируется вокруг вас'
+                    '''
+            }
+
+            CobaltEnchant: {
+                Name: Кобальтовое усиление
+                Tooltip:
+                    '''
+                    Позволяет делать взрывной прыжок
+                    Когда вас ранят, вы взрываетесь, нанося урон ближайшим врагам
+                    'Не могу поверить, что это не палладий'
+                    '''
+            }
+
+            CopperEnchant: {
+                Name: Медное усиление
+                Tooltip:
+                    '''
+                    Атаки могут поразить врагов цепной молнией
+                    'Узрите'
+                    '''
+            }
+
+            CrimsonEnchant: {
+                Name: Багряное усиление
+                Tooltip:
+                    '''
+                    После получения удара значительно увеличивает регенерацию здоровья до тех пор, пока половина полученного удара не будет исцелена
+                    Если вы получите ещё один удар до исцеления, исцеление закончится раньше
+                    Это не влияет на удары, наносящие менее 10 урона
+                    'Кровь ваших врагов - ваше возрождение'
+                    '''
+            }
+
+            CrystalAssassinEnchant: {
+                Name: Crystal Assassin Enchantment
+                Tooltip:
+                    '''
+                    Allows the ability to dash
+                    Use Ninja hotkey to throw a smoke bomb, use it again to teleport to it and gain the First Strike Buff
+                    Using the Rod of Discord will also grant this buff
+                    Effects of Volatile Gel
+                    'Deceptively fragile'
+                    '''
+            }
+
+            DarkArtistEnchant: {
+                Name: Усиление тёмного мага
+                Tooltip:
+                    '''
+                    Призывает огнеплюя, который последует за курсором, зажав ЛКМ на пару секунд
+                    Является турелью
+                    Атакуя врагов в течение 2 секунд окутывает вас пламенем
+                    Смена оружия увеличит урон следующей атаки на 50% и создаст инферно
+                    Значительно усиливает эффективность огнеплюя
+                    'Тени хранят больше, чем кажется'
+                    '''
+            }
+
+            EbonwoodEnchant: {
+                Name: Усиление чёрной древесины
+                Tooltip:
+                    '''
+                    Вы получаете ауру теневого пламени
+                    'Нераскрытый потенциал'
+                    '''
+            }
+
+            ForbiddenEnchant: {
+                Name: Запретное усиление
+                Tooltip:
+                    '''
+                    Двойное нажатие ВНИЗ вызовет древнюю бурю в место расположения курсора
+                    Любые снаряды, пролетевшие через бурю, получат 30% прибавку к урону
+                    'Походка по-египетски'
+                    '''
+            }
+
+            FossilEnchant: {
+                Name: Ископаемое усиление
+                Tooltip:
+                    '''
+                    Если ваше здоровье опустится до нуля, вы возродитесь с 50 здоровья и создадите несколько костей
+                    Также вы создаёте несколько костей после каждого удара
+                    Подберите кости, восстанавливая 20 здоровья за каждую
+                    'За пределами забытых лет'
+                    '''
+            }
+
+            FrostEnchant: {
+                Name: Морозное усиление
+                Tooltip:
+                    '''
+                    Вокруг вас начнут появляться сосульки
+                    Атаки запускают их в направление курсора
+                    При попадании во врага они мгновенно замерзают
+                    Press the Freeze Key to chill everything for 15 seconds
+                    Этот эффект имеет 60 секунд перезарядки
+                    'Давайте погрузим мир в глубокую заморозку'
+                    '''
+            }
+
+            GladiatorEnchant: {
+                Name: Гладиаторское усиление
+                Tooltip:
+                    '''
+                    Обрушивает копья на поражённых врагов
+                    'Разве вам не весело?'
+                    '''
+            }
+
+            GoldEnchant: {
+                Name: Золотое усиление
+                Tooltip:
+                    '''
+                    Ваши атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Midas.Name}»
+                    При подборе монет автоматически отправляет их в копилку
+                    Нажмите клавишу Turn Gold, чтобы окружить себя золотым панцирем
+                    Вы не сможете двигаться или атаковать, но будете неуязвимы ко всему урону
+                    Нажмите повторно, чтобы закончить эффект раньше
+                    Эффекты от предмета «{$ItemName.GreedyRing}»
+                    'Золото вскружит мир'
+                    '''
+            }
+
+            HallowEnchant: {
+                Name: Святое усиление
+                Tooltip:
+                    '''
+                    Become immune after striking an enemy
+                    'Hit me with your best shot'
+                    '''
+            }
+
+            HuntressEnchant: {
+                Name: Усиление охотницы
+                Tooltip:
+                    '''
+                    Attacks ignore 10 enemy defense and deal 5 flat extra damage
+                    Each successive attack ignores an additional 10 defense and deals 5 more damage
+                    This stacks up to 10 times
+                    Homing and minion attacks do not increase these bonuses
+                    Missing any attack will reset these bonuses
+                    'Accuracy brings power'
+                    '''
+            }
+
+            IronEnchant: {
+                Name: Железное усиление
+                Tooltip:
+                    '''
+                    Нажмите ПКМ, чтобы защитится щитом
+                    Вы можете полностью заблокировать атаку, если используете щит вовремя
+                    Вы притягиваете предметы на большем расстоянии
+                    'Куй железо пока оно горячо'
+                    '''
+            }
+
+            JungleEnchant: {
+                Name: Джунглевое усиление
+                Tooltip:
+                    '''
+                    Позволяет делать двойной споровой прыжок
+                    Позволяет делать лёгкий рывок
+                    Дважды нажмите в сторону направления для рывка
+                    'Гнев джунглей идёт изнутри'
+                    '''
+            }
+
+            LeadEnchant: {
+                Name: Свинцовое усиление
+                Tooltip:
+                    '''
+                    Атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LeadPoison.Name}»
+                    «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LeadPoison.Name}» наносит постепенный урон и распространяется на ближайших врагов
+                    'Не для употребления в пищу'
+                    '''
+            }
+
+            MeteorEnchant: {
+                Name: Метеоритовое усиление
+                Tooltip:
+                    '''
+                    Во время атаки каждые несколько секунд начинается метеоритный дождь
+                    'Drop a draco on "em"'
+                    '''
+            }
+
+            MinerEnchant: {
+                Name: Усиление шахтёра
+                Tooltip:
+                    '''
+                    Увеличивает скорость добычи на 50%
+                    Показывает расположение врагов, ловушек и сокровищ
+                    Effects of Night Owl, Spelunker, Hunter, Shine, and Dangersense Potions
+                    'Планета дрожит с каждым взмахом вашей кирки'
+                    '''
+            }
+
+            MoltenEnchant: {
+                Name: Раскалённое усиление
+                Tooltip:
+                    '''
+                    Ближайшие враги воспламеняются
+                    Враги получают на 25% больше урона урон, находясь в пределах кольца инферно
+                    'Они должны познать ярость Ада'
+                    '''
+            }
+
+            MonkEnchant: {
+                Name: Усиление монаха
+                Tooltip:
+                    '''
+                    Позволяет делать лёгкий рывок
+                    Дважды нажмите в сторону направления для рывка
+                    Вы неуязвимы к урону и дебаффам на полсекунды после рывка
+                    Время перезарядки рывка в два раза дольше, чем у обычных рывков
+                    Аура молний теперь наносит критический удар и бьёт быстрее
+                    'Возвращение к монаху'
+                    '''
+            }
+
+            MythrilEnchant: {
+                Name: Мифриловое усиление
+                Tooltip:
+                    '''
+                    Временно увеличивает скорость атаки, если вы не атаковали некоторое время
+                    'Вы чувствуете, как знания о вашем оружии закрадываются в разум'
+                    '''
+            }
+
+            NebulaEnchant: {
+                Name: Усиление туманности
+                Tooltip:
+                    '''
+                    При нанесении урона создаются усилители
+                    Усилители могут складываться до 2
+                    'Столпы творения осветили вас'
+                    '''
+            }
+
+            NecroEnchant: {
+                Name: Некротическое усиление
+                Tooltip:
+                    '''
+                    Убитые враги могут выронить груду костей
+                    Прикоснитесь к груде костей для вызова дружелюбного стража Темницы
+                    Урон зависит от максимального запаса здоровья побеждённого врага
+                    Боссы роняют кости каждые 10% потерянного здоровья
+                    Effects of Bone Glove
+                    'Добро пожаловать в зону костей'
+                    '''
+            }
+
+            NinjaEnchant: {
+                Name: Усиление ниндзя
+                Tooltip:
+                    '''
+                    Нажмите клавишу Throw Smoke Bomb, чтобы бросить дымовую бомбу
+                    Нажмите повторно, чтобы телепортироваться к ней и получить бафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FirstStrike.Name}»
+                    «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FirstStrike.Name}» гарантирует, что ваша следующая атака поразит слабое место, нанося трёхкратный урон и снижая защиту на 10
+                    'Вижу — не вижу'
+                    '''
+            }
+
+            ObsidianEnchant: {
+                Name: Обсидиановое усиление
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к огню и лаве
+                    Вы можете нормально двигаться и плавать в лаве
+                    Находясь в лаве или под баффом «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.ObsidianLavaWetBuff.Name}», ваши атаки вызывают взрывы
+                    'Земля зовёт'
+                    '''
+            }
+
+            OrichalcumEnchant: {
+                Name: Орихалковое усиление
+                Tooltip:
+                    '''
+                    Лепестки цветов наносят дополнительный урон и накладывают дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.OriPoison.Name}»
+                    Наносящие урон дебаффы наносят в 3 раза больше урона
+                    'Природа благословляет тебя'
+                    '''
+            }
+
+            PalladiumEnchant: {
+                Name: Палладиевое усиление
+                Tooltip:
+                    '''
+                    На мгновение увеличивает регенерацию здоровья при попадании во врага
+                    Вы вызываете сферу разрушительной жизненной энергии каждые 80 восстановленного здоровья
+                    'Вы чувствуете, как ваши раны медленно заживают'
+                    '''
+            }
+
+            PalmWoodEnchant: {
+                Name: Усиление пальмовой древесины
+                Tooltip:
+                    '''
+                    Дважды нажмите ВНИЗ, чтобы вызвать пальмовое дерево, бросающее кокосы во врагов
+                    'Подозрительно спокойно'
+                    '''
+            }
+
+            PearlwoodEnchant: {
+                Name: Усиление жемчужной древесины
+                Tooltip:
+                    '''
+                    Снаряды могут вызвать самонаводящуюся звезду при попадании во что-либо
+                    'Слишком мало, слишком поздно'
+                    '''
+            }
+
+            PlatinumEnchant: {
+                Name: Платиновое усиление
+                Tooltip:
+                    '''
+                    Враги с 20% шансом роняют в 5 раз больше предметов
+                    'Его ценность неоценима'
+                    '''
+            }
+
+            PumpkinEnchant: {
+                Name: Тыквенное усиление
+                Tooltip:
+                    '''
+                    Вы будете выращивать тыквы, ходя по земле
+                    Когда они полностью вырастут, они восстановят 25 здоровья и создадут непогасшие угли
+                    Коснувшиеся тыкв враги уничтожат их и получат урон
+                    'Вы никогда не удовлетворите свою жажду к тыквам'
+                    '''
+            }
+
+            RainEnchant: {
+                Name: Дождевое усиление
+                Tooltip:
+                    '''
+                    Невосприимчивость к дебаффу «{$BuffName.Wet}»
+                    Создаёт небольшую бурю, следующую за курсором
+                    It only attacks if there is a clear line of sight between you
+                    Effects of Inner Tube
+                    'Приходите после дождичка в четверг'
+                    '''
+            }
+
+            RedRidingEnchant: {
+                Name: Усиление красного наездника
+                Tooltip:
+                    '''
+                    Attacks ignore 10 enemy defense and deal 5 flat extra damage
+                    Each successive attack ignores an additional 10 defense and deals 5 more damage
+                    Upon reaching 10 stacks, spawn a rain of arrows
+                    The arrow type defaults to Venom or whatever is first in your inventory
+                    Homing and minion attacks do not increase these bonuses
+                    Missing any attack will reset these bonuses
+                    'Большой плохой красный наездник'
+                    '''
+            }
+
+            RichMahoganyEnchant: {
+                Name: Усиление красной древесины
+                Tooltip:
+                    '''
+                    Все крюки притягивают в 1.5 раза быстрее, выпускаются в 2 раза быстрее и возвращаются в 3 раза быстрее
+                    While grappling you gain 10 defense and a 50% thorns effect
+                    'Гарантированно удержит вас на крючке'
+                    '''
+            }
+
+            ShadewoodEnchant: {
+                Name: Усиление мрачной древесины
+                Tooltip:
+                    '''
+                    Вы получаете ауру кровотечения
+                    Враги, получающие урон в ауре кровотечения, изрыгают наносящую урон кровь
+                    'Удивительно чисто'
+                    '''
+            }
+
+            ShadowEnchant: {
+                Name: Теневое усиление
+                Tooltip:
+                    '''
+                    Вокруг вас кружатся две теневые сферы
+                    Атаки врагов по сферам взорвут их, высвобождая самонаводящеюся теневую энергию
+                    'Вы чувствуете, как ваше тело погружается в глубочайшие из теней'
+                    '''
+            }
+
+            ShinobiEnchant: {
+                Name: Усиление шиноби-лазутчика
+                Tooltip:
+                    '''
+                    Сделайте рывок в стену, чтобы телепортироваться сквозь неё
+                    Позволяет делатьрывок
+                    Дважды нажмите в сторону направления для рывка
+                    Значительно усиливает эффективность ауры молний
+                    'Деревня, скрытая в стене'
+                    '''
+            }
+
+            ShroomiteEnchant: {
+                Name: Грибное усиление
+                Tooltip:
+                    '''
+                    Все атаки оставляют след грибов
+                    Не двигаясь, вы входите в невидимость
+                    Находясь в невидимости появляются больше грибов
+                    'Сделано из настоящих грибов!'
+                    '''
+            }
+
+            SilverEnchant: {
+                Name: Серебряное усиление
+                Tooltip:
+                    '''
+                    Призывает меч, усиливающийся от урона призывателя
+                    Значительно увеличивает скорость миньонов
+                    Атаки миньонов наносят сниженный урон, но компенсируют это увеличенной скоростью атаки
+                    'Достаточно ли у тебя силы, чтобы владеть мной?'
+                    '''
+            }
+
+            SnowEnchant: {
+                Name: Снежное усиление
+                Tooltip:
+                    '''
+                    Press the Freeze Key to chill everything for 10 seconds
+                    There is a 60 second cooldown for this effect
+                    'Снаружи обжигающий холод'
+                    '''
+            }
+
+            SolarEnchant: {
+                Name: Солнечное усиление
+                Tooltip:
+                    '''
+                    Солнечный щит позволяет вам делать рывок сквозь врагов
+                    Солнечный щит не пропадает при ударе, но снижает сопротивление урону
+                    Атаки могут наложить дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.SolarFlare.Name}»
+                    'Слишком горячее чтобы держать'
+                    '''
+            }
+
+            SpectreEnchant: {
+                Name: Спектральное усиление
+                Tooltip:
+                    '''
+                    Нанося урон, вы можете создать наносящие урон сферы
+                    При нанесении критического удара, вы также можете получить исцеляющую сферу
+                    'Их жизненная сила станет их же погибелью'
+                    '''
+            }
+
+            SpiderEnchant: {
+                Name: Паучье усиление
+                Tooltip:
+                    '''
+                    Ваши миньоны и турели могут нанести критический удар
+                    Критические удары призывателя наносят 1.5х урона вместо 2х
+                    'Арахнофобия наказуема смертоносными арахнидами'
+                    '''
+            }
+
+            SpookyEnchant: {
+                Name: Жуткое усиление
+                Tooltip:
+                    '''
+                    Все ваши миньоны получают дополнительную атаку в виде косы
+                    'Плавим души с 1902 года'
+                    '''
+            }
+
+            SquireEnchant: {
+                Name: Усиление оруженосца
+                Tooltip:
+                    '''
+                    Увеличивает эффективность любого лечения на 25%
+                    Баллиста пронзает больше врагов и накладывает бафф «{$BuffName.BallistaPanic}» когда получаете урон
+                    'Оруженосец, ты поторопишься?'
+                    '''
+            }
+
+            StardustEnchant: {
+                Name: Усиление звёздной пыли
+                Tooltip:
+                    '''
+                    A stardust guardian will protect you from nearby enemies
+                    Нажмите клавишу Freeze Time, чтобы заморозить время на 5 секунд
+                    Пока время заморожено, ваши миньоны будут продолжать атаковать
+                    Этот эффект имеет 60 секунд перезарядки
+                    'Сила Станда теперь твоя'
+                    '''
+            }
+
+            TikiEnchant: {
+                Name: Усиление тики
+                Tooltip:
+                    '''
+                    Вы можете продолжать призывать временных миньонов и турели после максимального количества доступного числа призывов
+                    Снижает скорость призыва новых миньонов при активации этого эффекта
+                    'Аку-аку!'
+                    '''
+            }
+
+            TinEnchant: {
+                Name: Оловянное усиление
+                Tooltip:
+                    '''
+                    Шанс критического удара начинается с 5%
+                    Каждый критический удар увеличивает его шанс на 5% до удвоенного текущего шанса критического удара или 15%
+                    Получение удара сбросит шанс критического удара до 5%
+                    'Возвращение критического удара'
+                    '''
+            }
+
+            TitaniumEnchant: {
+                Name: Титановое усиление
+                Tooltip:
+                    '''
+                    Attacking generates a defensive barrier of titanium shards
+                    'The power of titanium in the palm of your hand'
+                    '''
+            }
+
+            TungstenEnchant: {
+                Name: Вольфрамовое усиление
+                Tooltip:
+                    '''
+                    150% increased weapon size but reduces melee speed
+                    Каждые полсекунды увеличивает размер снаряда вдвое
+                    Увеличенные снаряды наносят на 10% больше урона и получают дополнительный шанс критического удара
+                    'Больше — всегда лучше'
+                    '''
+            }
+
+            TurtleEnchant: {
+                Name: Черепашье усиление
+                Tooltip:
+                    '''
+                    Отражает 100% контактного урона
+                    Стоя на месте и не атакуя, вы окружаетесь панцирем
+                    Окружаясь панцирем, вы получаете 90% сопротивление урону
+                    Кроме того, вы будете уничтожать все приближающиеся снаряды и наносить в 10 раз больше контактного урона
+                    Панцирь действует не менее 1 секунды и блокирует до 25 атак
+                    Враги будут взрываться иглами после смерти, если их поразить иглами панциря
+                    'У вас внезапно появилось желание спрятаться в панцире'
+                    '''
+            }
+
+            ValhallaKnightEnchant: {
+                Name: Усиление рыцаря Вальхаллы
+                Tooltip:
+                    '''
+                    Увеличивает эффективность любого лечения на 33%
+                    Значительно усиливает эффективность баллисты
+                    'Вальхалла зовёт'
+                    '''
+            }
+
+            VortexEnchant: {
+                Name: Вихревое усиление
+                Tooltip:
+                    '''
+                    Дважды нажмите ВНИЗ, чтобы переключить невидимость, снижая шанс врагов выбрать вас в качестве цели, но замедляет передвижение
+                    При входе в невидимость создаёт вихрь, притягивающий врагов и снаряды
+                    Пока вы невидимы ваши собственные снаряды не будут всасываться
+                    'Ворвись в реальность'
+                    '''
+            }
+
+            WizardEnchant: {
+                Name: Усиление волшебника
+                Tooltip:
+                    '''
+                    Улучшает эффекты всех других Усилений до их Сил
+                    'Я кто?'
+                    '''
+            }
+
+            WoodEnchant: {
+                Name: Деревянное усиление
+                Tooltip:
+                    '''
+                    Bestiary entries complete twice as fast
+                    You gain a shop discount based on bestiary completion
+                    '''
+            }
+
+            ApprenticesEssence: {
+                Name: Эссенция ученика
+                Tooltip:
+                    '''
+                    Увеличивает магический урон на 18%
+                    Увеличивает магический шанс критического удара на 5%
+                    Увеличивает максимальный запас маны на 50
+                    'Это только начало...'
+                    '''
+            }
+
+            BarbariansEssence: {
+                Name: Эссенция варвара
+                Tooltip:
+                    '''
+                    Увеличивает урон ближнего боя на 18%
+                    Увеличивает скорость атаки ближнего боя на 10%
+                    Увеличивает шанс критического удара ближнего боя на 5%
+                    'Это только начало...'
+                    '''
+            }
+
+            OccultistsEssence: {
+                Name: Эссенция оккультиста
+                Tooltip:
+                    '''
+                    Увеличивает урон призывателя на 18%
+                    Увеличивает призываемое число миньонов на 1
+                    Увеличивает призываемое число турелей на 1
+                    'Это только начало...'
+                    '''
+            }
+
+            SharpshootersEssence: {
+                Name: Эссенция стрелка
+                Tooltip:
+                    '''
+                    Увеличивает стрелковый урон на 18%
+                    Даёт 10% шанс не использовать боеприпасы
+                    Увеличивает стрелковый шанс критического удара на 5%
+                    'Это только начало...'
+                    '''
+            }
+
+            BoxofGizmos: {
+                Name: Box of Gizmos
+                Tooltip:
+                    '''
+                    Works in your inventory
+                    Grants autofire to all items
+                    Slightly reduces use speed of affected items
+                    '''
+            }
+
+            UniverseCore: {
+                Name: Universe Core
+                Tooltip:
+                    '''
+                    Crits deal 4x instead of 2x
+                    All attacks inflict Flames of the Universe
+                    'Bursting with ultra-high-energy cosmic rays'
+                    '''
+            }
+
+            CosmoForce: {
+                Name: Сила Космоса
+                Tooltip:
+                    '''
+                    [i:FargowiltasSouls/MeteorEnchant] Во время атаки каждые несколько секунд начинается метеоритный дождь
+                    [i:FargowiltasSouls/SolarEnchant] Солнечный щит позволяет вам делать рывок сквозь врагов
+                    [i:FargowiltasSouls/SolarEnchant] Атаки могут наложить дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.SolarFlare.Name}»
+                    [i:FargowiltasSouls/VortexEnchant] Дважды нажмите ВНИЗ, чтобы переключить невидимость и создать вихрь
+                    [i:FargowiltasSouls/NebulaEnchant] Удары по врагам могут создать усилители
+                    [i:FargowiltasSouls/StardustEnchant] A stardust guardian will protect you from nearby enemies
+                    [i:FargowiltasSouls/StardustEnchant] Нажмите клавишу Freeze Time, чтобы заморозить время на 9 секунд; перезарядка 60 секунд
+                    'Существует со времён Большого взрыва'
+                    '''
+            }
+
+            EarthForce: {
+                Name: Сила Земли
+                Tooltip:
+                    '''
+                    [i:FargowiltasSouls/CobaltEnchant] Позволяет делать взрывной прыжок и при ударе вы взрываетесь
+                    [i:FargowiltasSouls/MythrilEnchant] Временно увеличивает скорость атаки, если вы не атаковали некоторое время
+                    [i:FargowiltasSouls/PalladiumEnchant] Значительно увеличивает регенерацию здоровья при попадании во врага
+                    [i:FargowiltasSouls/PalladiumEnchant] Вы вызываете сферу разрушительной жизненной энергии каждые 80 восстановленного здоровья
+                    [i:FargowiltasSouls/OrichalcumEnchant] Лепестки цветов наносят дополнительный урон
+                    [i:FargowiltasSouls/OrichalcumEnchant] Наносящие урон дебаффы наносят в 5 раза больше урона
+                    [i:FargowiltasSouls/AdamantiteEnchant] Every weapon shot will split into 2, deal 50% damage and have 50% less iframes
+                    [i:FargowiltasSouls/TitaniumEnchant] Attacking generates a defensive barrier of titanium shards
+                    'Благословение Гайи озаряет вас'
+                    '''
+            }
+
+            LifeForce: {
+                Name: Сила Жизни
+                Tooltip:
+                    '''
+                    [i:FargowiltasSouls/PumpkinEnchant] Вы будете выращивать тыквы, ходя по земле
+                    [i:FargowiltasSouls/CactusEnchant] Враги могут взорваться иглами после смерти
+                    [i:FargowiltasSouls/BeeEnchant] Удары ближнего боя и большинство пронзающих атак создают пчёл
+                    [i:FargowiltasSouls/SpiderEnchant] Даёт 30% шанс для миньонов и турелей нанести критический удар на 1.5х урона вместо 2х
+                    [i:FargowiltasSouls/TurtleEnchant] Стоя на месте и не атакуя, вы окружаетесь панцирем
+                    [i:FargowiltasSouls/BeetleEnchant] Жуки помогают вам как в атаке, так и в защите
+                    'Редко живое существо, что осмелится не подчиниться вашей воле'
+                    '''
+            }
+
+            NatureForce: {
+                Name: Сила Природы
+                Tooltip:
+                    '''
+                    [i:FargowiltasSouls/CrimsonEnchant] После получения удара значительно увеличивает регенерацию здоровья до тех пор, пока полученный удар не будет исцелён
+                    [i:FargowiltasSouls/MoltenEnchant] Ближайшие враги воспламеняются
+                    [i:FargowiltasSouls/MoltenEnchant] Когда вас ранят, вы взрываетесь, нанося урон ближайшим врагам
+                    [i:FargowiltasSouls/RainEnchant] Создаёт небольшую бурю, следующую за вами
+                    [i:FargowiltasSouls/FrostEnchant] Вокруг вас начнут появляться сосульки
+                    [i:FargowiltasSouls/SnowEnchant] Press the Freeze Key to chill everything for 15 seconds
+                    [i:FargowiltasSouls/ChlorophyteEnchant] Призывает кольцо кристальных листьев, стреляющее в ближайших врагов
+                    [i:FargowiltasSouls/JungleEnchant] Позволяет делать двойной споровой прыжок
+                    [i:FargowiltasSouls/ShroomiteEnchant] Не двигаясь, вы входите в невидимость
+                    [i:FargowiltasSouls/ShroomiteEnchant] Все атаки оставляют след грибов
+                    'Все секреты природы стали явны'
+                    '''
+            }
+
+            ShadowForce: {
+                Name: Сила Тени
+                Tooltip:
+                    '''
+                    [i:FargowiltasSouls/ShadowEnchant] Вокруг вас кружатся четыре теневые сферы
+                    [i:FargowiltasSouls/AncientShadowEnchant] Ваши атаки могут наложить дебафф «{$BuffName.Darkness}»
+                    [i:FargowiltasSouls/NecroEnchant] Убитые враги могут выронить груду костей
+                    [i:FargowiltasSouls/NinjaEnchant] Бросьте дымовую бомбу, чтобы телепортироваться к ней и получить бафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FirstStrike.Name}»
+                    [i:FargowiltasSouls/CrystalAssassinEnchant] Effects of Volatile Gel
+                    [i:FargowiltasSouls/SpookyEnchant] Все ваши миньоны получают дополнительную атаку в виде косы
+                    [i:FargowiltasSouls/MonkEnchant] Вы получите одноразовый рывок монаха, если не атакуете
+                    [i:FargowiltasSouls/ShinobiEnchant] Сделайте рывок в стену, чтобы телепортироваться сквозь неё
+                    [i:FargowiltasSouls/ApprenticeEnchant] Атакуя врагов в течение 2 секунд окутывает вас пламенем
+                    [i:FargowiltasSouls/ApprenticeEnchant] Смена оружия увеличит урон следующей атаки на 150%
+                    [i:FargowiltasSouls/DarkArtistEnchant] Призывает огнеплюя, который последует за курсором, зажав ЛКМ на пару секунд
+                    'Темно, темнее, ещё темнее'
+                    '''
+            }
+
+            SpiritForce: {
+                Name: Сила Духа
+                Tooltip:
+                    '''
+                    [i:FargowiltasSouls/FossilEnchant] Если ваше здоровье опустится до нуля, вы возродитесь с 50 здоровья и создадите несколько костей
+                    [i:FargowiltasSouls/FossilEnchant] Подберите кости, как только они перестанут двигаться, восстанавливая 15 здоровья за каждую
+                    [i:FargowiltasSouls/ForbiddenEnchant] Двойное нажатие ВНИЗ вызовет древнюю бурю в место расположения курсора
+                    [i:FargowiltasSouls/ForbiddenEnchant] Любые снаряды, пролетевшие через бурю, получат 60% прибавку к урону
+                    [i:FargowiltasSouls/AncientHallowEnchant] Вы получаете щит, который может отражать снаряды
+                    [i:FargowiltasSouls/AncientHallowEnchant] Summons an Terraprisma familiar
+                    [i:FargowiltasSouls/AncientHallowEnchant] Значительно увеличивает скорость миньонов
+                    [i:FargowiltasSouls/HallowEnchant] Become immune after striking an enemy
+                    [i:FargowiltasSouls/TikiEnchant] Вы можете продолжать призывать временных миньонов и турели после максимального количества доступного числа призывов
+                    [i:FargowiltasSouls/SpectreEnchant] Нанося урон, вы можете создать наносящие урон и исцеляющие сферы
+                    'Вознеситесь из царства смертных'
+                    '''
+            }
+
+            TerraForce: {
+                Name: Сила Терры
+                Tooltip:
+                    '''
+                    [i:FargowiltasSouls/CopperEnchant] Атаки могут поразить врагов молнией и взрывом
+                    [i:FargowiltasSouls/TinEnchant] Шанс критического удара начинается с 10%
+                    [i:FargowiltasSouls/TinEnchant] Каждый критический удар увеличивает его шанс на 5% до удвоенного текущего шанса критического удара
+                    [i:FargowiltasSouls/IronEnchant] Нажмите ПКМ, чтобы защитится щитом
+                    [i:FargowiltasSouls/IronEnchant] Вы можете полностью заблокировать атаку, если используете щит вовремя
+                    [i:FargowiltasSouls/IronEnchant] Вы притягиваете предметы на большем расстоянии
+                    [i:FargowiltasSouls/LeadEnchant] Атаки могут наложить дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LeadPoison.Name}»
+                    [i:FargowiltasSouls/TungstenEnchant] Увеличивает размер меча на 300%
+                    [i:FargowiltasSouls/TungstenEnchant] Каждую четверть секунды увеличивает размер снаряда втрое
+                    [i:FargowiltasSouls/ObsidianEnchant] Даёт невосприимчивость к огню и лаве
+                    [i:FargowiltasSouls/ObsidianEnchant] Ваши атаки вызывают взрывы
+                    'Земля придаёт вам силу'
+                    '''
+            }
+
+            TimberForce: {
+                Name: Сила леса
+                Tooltip:
+                    '''
+                    [i:FargowiltasSouls/WoodEnchant] You gain a shop discount based on bestiary completion
+                    [i:FargowiltasSouls/BorealWoodEnchant] Атаки будут периодически сопровождаться несколькими снежками
+                    [i:FargowiltasSouls/RichMahoganyEnchant] Все крюки выпускаются, притягивают и возвращаются в 2.5 раза быстрее
+                    [i:FargowiltasSouls/EbonwoodEnchant] Вы получаете ауру теневого пламени, проклятого пекла и кровотечения
+                    [i:FargowiltasSouls/PalmWoodEnchant] Дважды нажмите ВНИЗ, чтобы вызвать пальмовое дерево, бросающее кокосы во врагов
+                    [i:FargowiltasSouls/PearlwoodEnchant] Снаряды могут вызвать звезду при попадании во что-либо
+                    'Чрезвычайно жёсткий'
+                    '''
+            }
+
+            WillForce: {
+                Name: Сила воли
+                Tooltip:
+                    '''
+                    [i:FargowiltasSouls/GoldEnchant] Нажмите клавишу Turn Gold, чтобы окружить себя золотым панцирем
+                    [i:FargowiltasSouls/GoldEnchant] При подборе монет автоматически отправляет их в копилку
+                    [i:FargowiltasSouls/PlatinumEnchant] Враги с 20% шансом роняют в 5 раз больше предметов
+                    [i:FargowiltasSouls/GladiatorEnchant] Обрушивает копья на поражённых врагов
+                    [i:FargowiltasSouls/RedRidingEnchant] Последовательные атаки наносят дополнительный урон
+                    [i:FargowiltasSouls/ValhallaKnightEnchant] Увеличивает эффективность любого лечения на 50%
+                    'Разум неразрушимой решимости'
+                    '''
+            }
+
+            AbominableWand: {
+                Name: Abominable Wand
+                Tooltip:
+                    '''
+                    Grants immunity to Abominable Fang and Abominable Presence
+                    Increased critical damage gained per Sparkling Adoration graze and halves heart cooldown
+                    Spectral Abominationn periodically manifests to support your critical hits
+                    With Styx armor, charges energy when graze is maxed
+                    You can endure any attack and survive with 1 life
+                    Endurance recovers when you reach full life again
+                    'Seems like something's missing'
+                    '''
+            }
+
+            AeolusBoots: {
+                Name: Ботинки Эола
+                Tooltip:
+                    '''
+                    Позволяет супер быстро бегать и летать, и даёт дополнительную подвижность на льду
+                    The wearer can run even faster on sand
+                    Увеличивает скорость передвижения на 8%
+                    Увеличивает скорость прыжка и даёт авто-прыжок
+                    Вы выращиваете цветы на траве под вами
+                    Позволяет владельцу совершать двойной прыжок
+                    Увеличивает высоту прыжка и защищает от урона при падении
+                    'Беги как ветер'
+                    '''
+            }
+
+            AgitatingLens: {
+                Name: Волнующая линза
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Berserked.Name}»
+                    Когда здоровье ниже 50%, увеличивает урон, скорость передвижения и атаки на 10%
+                    Во время рывка или при быстром беге вы создадите след демонических кос
+                    'Раздражающие останки побеждённого врага'
+                    '''
+            }
+
+            BetsysHeart: {
+                Name: Сердце Бетси
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$BuffName.OgreSpit}», «{$BuffName.WitheredWeapon}», «{$BuffName.WitheredArmor}»
+                    Ваши критические удары накладывают дебафф «{$BuffName.BetsysCurse}»
+                    Нажмите клавишу Fireball Dash, чтобы выполнить короткий неуязвимый рывок
+                    'Слегка пригоревшее, средней прожарки'
+                    '''
+            }
+
+            BionomicCluster: {
+                Name: Биономный кластер
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$BuffName.Frostburn}», «{$BuffName.ShadowFlame}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.SqueakyToy.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Guilty.Name}»
+                    Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FlamesoftheUniverse.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.ClippedWings.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Crippled.Name}», «{$BuffName.Webbed}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Purified.Name}»
+                    Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Lovestruck.Name}», «{$BuffName.Stinky}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Midas.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Hexed.Name}», урону от кактуса и врагам, которые воруют предметы
+                    Используйте для телепортации на вашу последнюю точку смерти
+                    Ваши атаки могут наложить дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.ClippedWings.Name}», вызвать морозные шары и создать сердца
+                    Атаки по вам могут пискнуть и нанести 1 единицу урона
+                    Щупальца теневого пламени поражают ближайших врагов и призывает дружелюбного радужного слизня
+                    С некоторых врагов после смерти выпадают зелья
+                    [c/00FFFF:Следующие эффекты пассивно работают в инвентаре или в слотах украшений:]
+                    Даёт невосприимчивость к дебаффам «{$BuffName.WindPushed}», «{$BuffName.Suffocation}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Guilty.Name}»
+                    Вы получаете авто-атаку на все предметы и улучшает ночное зрение
+                    Автоматически использует зелье маны при необходимости и увеличивает дальность подбора звёзд маны
+                    Вы возрождаетесь с большим количеством здоровья и когда босс жив, возрождаетесь быстрее
+                    Нажмите ПКМ, чтобы отдалить и значительно улучшает перековку
+                    'Слияние тысяч мелких врагов'
+                    '''
+            }
+
+            CelestialRune: {
+                Name: Небесная руна
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.MarkedforDeath.Name}»
+                    Вы можете периодически совершать дополнительные атаки в зависимости от типа оружия
+                    Получив урон, создаёт дружелюбное древнее пророчество, атакующее врагов
+                    'Заклинание побеждённого врага, получившее новое предназначение'
+                    '''
+            }
+
+            ChaliceoftheMoon: {
+                Name: Чаша Луны
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$BuffName.Venom}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.IvyVenom.Name}», «{$BuffName.Burning}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Fused.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LowGround.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.MarkedforDeath.Name}»
+                    Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Swarming.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Atrophied.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Jammed.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.ReverseManaFlow.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Antisocial.Name}»
+                    Увеличивает регенерацию здоровья
+                    Дважды нажмите ВНИЗ в воздухе, чтобы быстро падать
+                    Быстрое падение создаст огненное извержение при ударе после падения с определённой высоты
+                    Когда вы приземляетесь после прыжка, вы создаёте взрыв валунов
+                    Вы совершаете дополнительные атаки в зависимости от типа оружия и извергаетесь древними пророчествами при получении урона
+                    Призывает на помощь дружелюбного культиста и растение
+                    'Используйте это'
+                    '''
+            }
+
+            ConcentratedRainbowMatter: {
+                Name: Концентрированное радужное вещество
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FlamesoftheUniverse.Name}»
+                    Призывает на помощь маленького радужного слизня
+                    'Попробуй радугу'
+                    '''
+            }
+
+            DarkenedHeart: {
+                Name: Darkened Heart
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Rotting.Name}»
+                    Увеличивает скорость передвижения на 10% and increased turnaround traction
+                    Вы вызываете маленьких пожирателей, которые ищут врагов каждые несколько атак
+                    'Мухи отказываются к нему приближаться'
+                    '''
+            }
+
+            Deerclawps: {
+                Name: Deerclawps
+                Tooltip:
+                    '''
+                    Grants immunity to Slow and Frozen
+                    Dashing leaves a trail of ice spikes
+                    'The trimmed nails of a defeated foe'
+                    '''
+            }
+
+            DreadShell: {
+                Name: Dread Shell
+                Tooltip:
+                    '''
+                    Grants immunity to Anticoagulation
+                    Даёт невосприимчивость к отбрасыванию
+                    Right Click to guard with your shield
+                    Defense and damage reduction drastically decreased while and shortly after guarding
+                    Guard exactly as an attack touches you to counter it on a very long cooldown
+                    Counterattack deals massive damage and inflicts Anticoagulation
+                    'It was a mistake to chum here'
+                    '''
+            }
+
+            DubiousCircuitry: {
+                Name: Неясная схема
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$BuffName.CursedInferno}», «{$BuffName.Ichor}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LightningRod.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Defenseless.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.NanoInjection.Name}» и отбрасыванию
+                    Ваши атаки накладывают дебаффы «{$BuffName.CursedInferno}» и «{$BuffName.Ichor}»
+                    Ваши атаки с небольшим шансом могут наложить дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LightningRod.Name}»
+                    Два дружелюбных зонда сражаются за вас
+                    Снижает получаемый урон на 5%
+                    'Может даже без вирусов...'
+                    '''
+            }
+
+            EurusSock: {
+                Name: Носки Афелия
+                Tooltip: "{$ItemTooltip.HermesBoots}"
+            }
+
+            FrigidGemstone: {
+                Name: Холодный самоцвет
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$BuffName.Frostburn}»
+                    Ваши атаки вызывают морозные шары, которые атакуют ваших врагов
+                    'Осколок древнего магического льда'
+                    '''
+            }
+
+            FusedLens: {
+                Name: Сросшиеся линзы
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$BuffName.CursedInferno}» и «{$BuffName.Ichor}»
+                    Ваши атаки накладывают дебаффы «{$BuffName.CursedInferno}» и «{$BuffName.Ichor}»
+                    'Слишком подплавлено, чтобы улучшать зрение'
+                    '''
+            }
+
+            GalacticGlobe: {
+                Name: Галактический шар
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Flipped.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Unstable.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.CurseoftheMoon.Name}»
+                    Позволяет контролировать гравитацию
+                    Стабилизирует гравитацию в космосе и жидкостях
+                    Призывает на помощь истинные глаза Ктулху
+                    Увеличивает время полёта на 100%
+                    'Всегда наблюдаю'
+                    '''
+            }
+
+            GelicWings: {
+                Name: Gelic Wings
+                Tooltip:
+                    '''
+                    Grants immunity to Flipped caused by the Underground Hallow
+                    Allows the wearer to double jump
+                    When you land after a jump, slime spikes shoot out to your sides
+                    'Step on me'
+                    '''
+            }
+
+            GroundStick: {
+                Name: Пульт дистанционного управления
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LightningRod.Name}»
+                    Ваши атаки с небольшим шансом могут наложить дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LightningRod.Name}»
+                    Два дружелюбных зонда сражаются за вас
+                    'Сегмент побеждённого врага с приклеенной антенной'
+                    '''
+            }
+
+            GuttedHeart: {
+                Name: Выпотрошенное сердце
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Bloodthirsty.Name}»
+                    Увеличивает максимальный запас здоровья на 10%
+                    Ползуны парят вокруг вас блокируя немного урона
+                    Новый ползун появляется каждые 15 секунд и за раз может существовать 5 ползунов
+                    Увеличивает скорость появления ползуна, когда вы не двигаетесь
+                    'Однажды бившийся в разуме побеждённого врага'
+                    '''
+            }
+
+            HeartoftheMasochist: {
+                Name: Heart of the Master
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LivingWasteland.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Hypothermia.Name}», «{$BuffName.OgreSpit}», «{$BuffName.WitheredWeapon}», «{$BuffName.WitheredArmor}»
+                    Даёт невосприимчивость к дебаффам «{$BuffName.Rabies}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.MutantNibble.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Flipped.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Unstable.Name}», «{$BuffName.VortexDebuff}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.CurseoftheMoon.Name}»
+                    Даёт невосприимчивость к дебаффам «{$BuffName.Wet}», «{$BuffName.Electrified}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.OceanicMaul.Name}», «{$BuffName.MoonLeech}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.NullificationCurse.Name}» и водным дебаффам
+                    Увеличивает урон и шанс критического удара на 10%, и сопротивление урону на 5%
+                    Увеличивает время полёта на 100%
+                    Вы можете периодически совершать дополнительные атаки в зависимости от типа оружия
+                    Ваши критические удары накладывают дебаффы «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Rotting.Name}» и «{$BuffName.BetsysCurse}»
+                    Нажмите клавишу Fireball Dash, чтобы выполнить короткий неуязвимый рывок
+                    Дарует эффекты от дебаффа «{$BuffName.Wet}» во время езды на рыброн-милашке и контроля гравитации
+                    Замораживает ближайших врагов при ранении
+                    Reduces your hurtbox size for projectiles
+                    Hold the Precision Seal key to disable dashes and double jumps
+                    Призывает дружелюбных снежинко, маленькую марсианскую тарелку и истинные глаза Ктулху
+                    'Тёплое, бьющееся, не требует тела'
+                    '''
+            }
+
+            IceQueensCrown: {
+                Name: Корона снежной королевы
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Hypothermia.Name}»
+                    Увеличивает сопротивление урону на 5%
+                    Замораживает ближайших врагов при ранении
+                    Призывает дружелюбного снежинко
+                    'Королевский символ побеждённого врага'
+                    '''
+            }
+
+            LihzahrdTreasureBox: {
+                Name: Сундук с сокровищами яхщеров
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$BuffName.Burning}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Fused.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LowGround.Name}»
+                    Дважды нажмите ВНИЗ в воздухе, чтобы быстро падать
+                    Быстрое падение создаст огненное извержение при ударе после падения с определённой высоты
+                    Когда вы приземляетесь после прыжка, вы создаёте взрыв валунов
+                    'Слишком много ловушек, чтобы открыть'
+                    '''
+            }
+
+            LumpOfFlesh: {
+                Name: Кусок плоти
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к отбрасыванию и дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Anticoagulation.Name}», «{$BuffName.Blackout}», «{$BuffName.Obstructed}», «{$BuffName.Dazed}», «{$BuffName.Slow}», «{$BuffName.Frozen}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Stunned.Name}»
+                    Increases damage dealt by 15%
+                    Your cursor causes nearby enemies to take increased damage
+                    Effect intensifies the longer you track them
+                    Right Click to parry attacks with extremely tight timing
+                    Defense and damage reduction drastically decreased while and shortly after guarding
+                    Dashing leaves a trail of blood spikes
+                    Когда вы атакуете, смердящее глазное яблоко заряжает выстрел лазером
+                    Враги реже выбирают вас в качестве цели
+                    'Оно растёт'
+                    '''
+            }
+
+            MagicalBulb: {
+                Name: Магический бутон
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$BuffName.Venom}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.IvyVenom.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Swarming.Name}»
+                    Увеличивает регенерацию здоровья
+                    Привлекает потомка легендарного растения, который цветёт в бою
+                    'Матереубийство?'
+                    '''
+            }
+
+            MutantAntibodies: {
+                Name: Антитела Мутанта
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$BuffName.Wet}», «{$BuffName.Rabies}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.MutantNibble.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.OceanicMaul.Name}»
+                    Даёт невосприимчивость к большинству дебаффов, вызванных погружением в воду
+                    Дарует эффекты от дебаффа «{$BuffName.Wet}» во время езды на рыброн-милашке
+                    Увеличивает урон оружия текущего класса на 20%, но снижает регенерацию здоровья
+                    'Отличный препарат, 0 из 10 врачей рекомендуют'
+                    '''
+            }
+
+            MutantEye: {
+                Name: Глаз Мутанта
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.MutantFang.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.MutantPresence.Name}»
+                    Увеличивает предел критического урона на 25%, если вы уворачиваетесь вблизи снаряда
+                    Улучшает сердца предмета «{$Mods.CalamityRuTranslate.FargowiltasSouls.Items.SparklingAdoration.Name}» до лучей любви
+                    Увеличивает критический урон за каждое уклонение вблизи снаряда
+                    Увеличивает частоту возрождения и урон спектрального Мерзостть
+                    Снижает длительность дебаффа «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.AbomRebirth.Name}»
+                    Нажмите клавишу Mutant Bomb, чтобы высвободить волну сфер и уничтожить большинство вражеских снарядов
+                    Mutant Bomb имеет 60 перезарядки
+                    'Всего лишь чуть-чуть подозрительно'
+                    '''
+            }
+
+            MysticSkull: {
+                Name: Мистический череп
+                Tooltip:
+                    '''
+                    Работает в инвентаре
+                    Даёт невосприимчивость к дебаффу «{$BuffName.Suffocation}»
+                    Снижает магический урон на 10%
+                    Автоматически использует зелье маны при необходимости
+                    Увеличивает дальность подбора звёзд маны
+                    'Тихо бормочущая голова побеждённого врага'
+                    '''
+            }
+
+            NecromanticBrew: {
+                Name: Некромантическое варево
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Lethargic.Name}»
+                    Призывает 2 руки Скелетрона, атакующие врагов
+                    'Средство для роста костей побеждённого врага'
+
+                    '''
+            }
+
+            NymphsPerfume: {
+                Name: Духи нимфы
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$BuffName.Lovestruck}», «{$BuffName.Stinky}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Hexed.Name}»
+                    Вы возрождаетесь с большим количеством здоровья
+                    Ваши атаки иногда создают сердца
+                    'Несколько подавляющий аромат'
+                    '''
+            }
+
+            PrecisionSeal: {
+                Name: Precision Seal
+                Tooltip:
+                    '''
+                    Grants immunity to Smite
+                    Reduces your hurtbox size for projectiles
+                    Hold the Precision Seal key to disable dashes and double jumps
+                    'Dodge so close you can almost taste it'
+                    '''
+            }
+
+            PuffInABottle: {
+                Name: Дымок в бутылке
+                Tooltip: Позволяет владельцу совершать двойной прыжок
+            }
+
+            PumpkingsCape: {
+                Name: Накидка тыквенного короля
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LivingWasteland.Name}»
+                    Увеличивает урон и шанс критического удара на 5%
+                    Ваши критические удары накладывают дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Rotting.Name}»
+                    Вы можете периодически совершать дополнительные атаки в зависимости от типа оружия
+                    'Каким-то образом это правильный размер'
+                    '''
+            }
+
+            PungentEyeball: {
+                Name: Смердящее глазное яблоко
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$BuffName.Blackout}» и «{$BuffName.Obstructed}»
+                    Your cursor causes nearby enemies to take increased damage
+                    Effect intensifies the longer you track them
+                    'Оно бродит'
+                    '''
+            }
+
+            PureHeart: {
+                Name: Чистое сердце
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Rotting.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Bloodthirsty.Name}»
+                    Даёт невосприимчивость к дебаффам биома
+                    Увеличивает скорость передвижения и максимальный запас здоровья на 10%, increased turnaround traction
+                    Вы вызываете маленьких пожирателей, которые ищут врагов каждые несколько атак
+                    Ползуны парят вокруг вас блокируя немного урона
+                    Новый ползун появляется каждые 15 секунд и за раз может существовать 5 ползунов
+                    Увеличивает скорость появления ползуна, когда вы не двигаетесь
+                    'Пульсирует жизненной силой'
+                    '''
+            }
+
+            QueenStinger: {
+                Name: Жало королевы
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Infested.Name}»
+                    Ваши атаки накладывают дебафф «{$BuffName.Poisoned}» и распыляют мёд, который увеличивает регенерацию здоровья
+                    Бафф «{$BuffName.Honey}» увеличивает пробивание брони на 10
+                    Пчёлы и слабые шершни становятся дружелюбными
+                    'Вырванный прямо из побеждённого врага'
+                    '''
+            }
+
+            ReinforcedPlating: {
+                Name: Усиленная обшивка
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Defenseless.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.NanoInjection.Name}» и отбрасыванию
+                    Снижает получаемый урон на 5%
+                    'Самый прочный кусок побеждённого врага'
+                    '''
+            }
+
+            SandsofTime: {
+                Name: Пески времени
+                Tooltip:
+                    '''
+                    Работает в инвентаре
+                    Даёт невосприимчивость к дебаффу «{$BuffName.WindPushed}»
+                    Вы возрождаетесь в два раза быстрее, когда нет живих боссов
+                    Используйте для телепортации на вашу последнюю точку смерти
+                    'Не ронять ни при каких обстоятельствах'
+                    '''
+            }
+
+            SaucerControlConsole: {
+                Name: Консоль управления марсианской тарелкой
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$BuffName.Electrified}» и «{$BuffName.VortexDebuff}»
+                    Призывает дружелюбную маленькую марсианскую тарелку
+                    Притягивающий луч марсианской тарелки замедляет врагов, попавших под него
+                    'Просто держи это в режиме полёта'
+                    '''
+            }
+
+            SecurityWallet: {
+                Name: Защищённый кошелёк
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Midas.Name}» и врагам, которые воруют предметы
+                    Значительно улучшает перековку
+                    'Не защищён от кражи с трупа'
+                    '''
+            }
+
+            SinisterIcon: {
+                Name: Зловещая икона
+                Tooltip:
+                    '''
+                    Предотвращает естественное появление боссов, вызванное режимом Вечности
+                    Увеличивает скорость появления врагов
+                    Враги с максимальным здоровьем 2000 или менее роняют вдвое больше предметов после смерти
+                    'Определённо не жив'
+                    '''
+            }
+
+            SkullCharm: {
+                Name: Амулет с черепом
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$BuffName.Dazed}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Stunned.Name}»
+                    Увеличивает наносимый урон на 15% и получаемый на 10%
+                    Враги реже выбирают вас в качестве цели
+                    Кристальный череп заряжает энергию для атаки, когда вы атакуете
+                    'Больше не в своей тарелке'
+                    '''
+            }
+
+            SlimyShield: {
+                Name: Склизкий щит
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$BuffName.Slimed}»
+                    Увеличивает скорость падения
+                    Когда вы приземляетесь после прыжка, на курсор с неба падает слизь
+                    'Вырвано из внутренностей побеждённого врага'
+                    '''
+            }
+
+            SparklingAdoration: {
+                Name: Искрящееся обожание
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Lovestruck.Name}» и ложным сердцам
+                    Увеличивает критический урон до 25%, если вы уворачиваетесь вблизи снаряда
+                    Бонус критического урона со временем уменьшается и полностью пропадает при получении урона
+                    Ваши атаки периодически вызывают крадущие здоровье сердца
+                    'С чувством!'
+                    '''
+            }
+
+            SqueakyToy: {
+                Name: Игрушка-пищалка
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.SqueakyToy.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Guilty.Name}»
+                    Атаки по вам могут пискнуть и нанести 1 единицу урона
+                    'Любимая игрушка побеждённого врага..?'
+                    '''
+            }
+
+            SupremeDeathbringerFairy: {
+                Name: Превосходная смертоносная фея
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$BuffName.Slimed}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Berserked.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Lethargic.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Infested.Name}»
+                    Когда здоровье ниже 50%, увеличивает урон, скорость передвижения и атаки на 10%
+                    Бафф «{$BuffName.Honey}» увеличивает пробивание брони на 10
+                    Увеличивает скорость падения
+                    Когда вы приземляетесь после прыжка, на курсор с неба падает слизь
+                    Во время рывка или при быстром беге вы создадите след кровавых кос
+                    Ваши атаки накладывают дебафф «{$BuffName.Poisoned}» и распыляют мёд, который увеличивает регенерацию здоровья
+                    Пчёлы и слабые шершни становятся дружелюбными
+                    Призывает 2 руки Скелетрона, атакующие врагов
+                    'Превосходство не гарантируется'
+                    '''
+            }
+
+            TimsConcoction: {
+                Name: Варево Тима
+                Tooltip:
+                    '''
+                    С некоторых врагов после смерти выпадают зелья
+                    'Забавный запах'
+                    '''
+            }
+
+            TribalCharm: {
+                Name: Племенной талисман
+                Tooltip:
+                    '''
+                    Работает в инвентаре
+                    Даёт невосприимчивость к дебаффам «{$BuffName.Webbed}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Purified.Name}»
+                    Даёт авто-атаку всем оружиям
+                    'Идол древних обитателей джунглей...'
+                    '''
+            }
+
+            WretchedPouch: {
+                Name: Проклятый мешочек
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффу «{$BuffName.ShadowFlame}»
+                    Щупальца теневого пламени поражают ближайших врагов
+                    'Проклятое теневое снадобье побеждённого врага'
+                    '''
+            }
+
+            WyvernFeather: {
+                Name: Перо виверны
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.ClippedWings.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Crippled.Name}»
+                    Ваши атаки с 10% шансом могут наложить дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.ClippedWings.Name}» на обычных врагов
+                    'Тёплый на ощупь'
+                    '''
+            }
+
+            ZephyrBoots: {
+                Name: Zephyr Boots
+                Tooltip:
+                    '''
+                    Позволяет летать и очень быстро бегать
+                    Увеличивает скорость передвижения на 8%
+                    Позволяет владельцу совершать двойной прыжок
+                    Увеличивает высоту прыжка и защищает от урона при падении
+                    'Run like the wind'
+                    '''
+            }
+
+            ArchWizardsSoul: {
+                Name: Душа архимага
+                Tooltip:
+                    '''
+                    Увеличивает магический урон на 30%
+                    Увеличивает скорость чтения заклинаний на 20%
+                    Увеличивает магический шанс критического удара на 15%
+                    Увеличивает максимальный запас маны на 200
+                    Эффекты от предметов «{$ItemName.CelestialCuffs}» и «{$ItemName.ManaFlower}»
+                    'Магический до мозга костей'
+                    '''
+            }
+
+            BerserkerSoul: {
+                Name: Berserker's Soul
+                Tooltip:
+                    '''
+                    Увеличивает урон ближнего боя на 30%
+                    Увеличивает скорость атаки ближнего боя на 20%
+                    Увеличивает шанс критического удара ближнего боя на 15%
+                    Увеличивает отбрасывание ближнего боя
+                    Эффекты от предметов «{$ItemName.FireGauntlet}», «{$ItemName.YoyoBag}» и «{$ItemName.CelestialShell}»
+                    'None shall live to tell the tale'
+                    '''
+            }
+
+            ColossusSoul: {
+                Name: Душа титана
+                Tooltip:
+                    '''
+                    Увеличивает максимальный запас здоровья на 100
+                    Увеличивает сопротивление урону на 15%
+                    Увеличивает регенерацию здоровья на 5
+                    Даёт невосприимчивость к отбрасыванию, нескольким дебаффам и урону от падения
+                    Враги чаще выбирают вас в качестве цели
+                    Эффекты от предметов «{$ItemName.BrainOfConfusion}», «{$ItemName.StarVeil}» и «{$ItemName.BeeCloak}»
+                    Эффекты от предметов «{$ItemName.ShinyStone}», «{$ItemName.PaladinsShield}» и «{$ItemName.FrozenTurtleShell}»
+                    'Ничто не может остановить тебя'
+                    '''
+            }
+
+            ConjuristsSoul: {
+                Name: Душа призывателя
+                Tooltip:
+                    '''
+                    Увеличивает урон призывателя на 30%
+                    Увеличивает призываемое число миньонов на 3
+                    Увеличивает призываемое число турелей на 3
+                    Увеличивает отбрасывание призывателя
+                    'Армия в вашем распоряжении'
+                    '''
+            }
+
+            DimensionSoul: {
+                Name: Душа измерений
+                Tooltip:
+                    '''
+                    Увеличивает максимальный запас здоровья на 300
+                    Увеличивает сопротивление урону на 20%
+                    Увеличивает регенерацию здоровья на 8
+                    Даёт невосприимчивость к отбрасыванию и нескольким дебаффам
+                    Враги чаще выбирают вас в качестве цели
+                    Позволяет бегать со скоростью звука и бесконечно летать
+                    Значительно увеличивает навык рыбной ловли и все удочки имеют 10 дополнительных поплавков
+                    Увеличивает скорость размещения блоков и стен на 50%
+                    Почти бесконечный радиус установки блоков и добычи
+                    Увеличивает скорость добычи в 3 раза
+                    Эффекты от баффов «{$BuffName.Shine}», «{$BuffName.Spelunker}», «{$BuffName.Hunter}» и «{$BuffName.Dangersense}»
+                    Автоматическая покраска и установка активаторов
+                    Даёт доступ к режиму строителя
+                    Эффекты от предметов «{$ItemName.BrainOfConfusion}», «{$ItemName.StarVeil}», «{$ItemName.SweetheartNecklace}», «{$ItemName.BeeCloak}», «{$ItemName.SporeSac}» и «{$ItemName.ShinyStone}»
+                    Эффекты от предметов «{$ItemName.PaladinsShield}», «{$ItemName.FrozenTurtleShell}», «{$ItemName.ArcticDivingGear}», «{$ItemName.FrogLeg}» и «{$ItemName.FlyingCarpet}»
+                    Эффекты от предметов «{$ItemName.LavaWaders}», «{$ItemName.AnglerTackleBag}», «{$ItemName.PaintSprayer}», «{$ItemName.ActuationAccessory}», «{$ItemName.CellPhone}», «{$ItemName.GravityGlobe}»
+                    Эффекты от предметов «{$ItemName.EoCShield}» и «{$ItemName.MasterNinjaGear}»
+                    'Вселенная Террарии в ваших руках'
+                    '''
+            }
+
+            EternitySoul: {
+                Name: Душа вечности
+                Tooltip:
+                    '''
+                    'Никто не смеет оспорить вашу божественность'
+                    Шанс критического удара начинается с 50%
+                    Нанесите критический удар, чтобы увеличить его на 10%
+                    На 100% ваши атаки получают 10% кражу здоровья
+                    Также увеличивает урон на 5% и защиту на 5
+                    Складывается до 950 раз, пока вы не получите удар
+                    '''
+            }
+
+            FlightMasterySoul: {
+                Name: Душа мастера полёта
+                Tooltip:
+                    '''
+                    Позволяет бесконечно летать
+                    Зажмите ВНИЗ и ПРЫЖОК, чтобы парить
+                    Увеличивает гравитацию
+                    Позволяет контролировать гравитацию
+                    'Вознесение'
+                    '''
+            }
+
+            MasochistSoul: {
+                Name: Soul of the Master
+                Tooltip:
+                    '''
+                    Увеличивает время полёта на 200%, пробивание брони на 50 и скорость передвижения на 20%
+                    Увеличивает максимальный запас здоровья на 100%, урон оружия текущего класса на 50% и сопротивление урону на 10%
+                    Значительно увеличивает регенерацию здоровья, your cursor causes nearby enemies to take increased damage
+                    Позволяет контролировать гравитацию и быстро падать, даёт невосприимчивость к отбрасыванию, почти всем дебаффам режима Вечности и другое
+                    Даёт авто-атаку всем оружиям и вы автоматически используете зелья маны при необходимости
+                    Ваши атаки создают дополнительные атаки, сердца и накладывают множество дебаффов режима Вечности
+                    Нажмите клавишу Fireball Dash, чтобы выполнить короткий неуязвимый рывок; нажмите ПКМ, чтобы отдалить
+                    С некоторых врагов после смерти выпадают зелья, значительно улучшает перековку и возрождаетесь с большим количеством здоровья
+                    Вы возрождаетесь в два раза быстрее, атаки создают мёд, улучшает ночное зрение, а при ранении извергаете различные атаки
+                    Предотвращает появление боссов, увеличивает скорость появление врагов, с врагов выпадает больше предметов, а атаки по вам могут пискнуть и нанести 1 единицу урон
+                    Reduces hurtbox size, hold the Precision Seal key to disable dashes and double jumps
+                    Right Click to parry attacks with extremely tight timing
+                    Используйте для телепортации на вашу последнюю точку смерти
+                    Призывает на помощь всех боссов режима Вечности
+                    'Прими вечность'
+                    '''
+            }
+
+            SnipersSoul: {
+                Name: Душа снайпера
+                Tooltip:
+                    '''
+                    Увеличивает стрелковый урон на 30%
+                    Даёт 20% шанс не использовать боеприпасы
+                    Увеличивает стрелковый шанс критического удара на 15%
+                    Эффекты от предмета «{$ItemName.SniperScope}»
+                    'Приготовься, прицелься, стреляй'
+                    '''
+            }
+
+            SupersonicSoul: {
+                Name: Душа сверхскорости
+                Tooltip:
+                    '''
+                    Позволяет бегать и летать со скоростью звука и даёт дополнительную подвижность на льду
+                    Позволяет владельцу совершать пятикратный прыжок, если отсутствуют крылья
+                    Увеличивает высоту прыжка, скорость прыжка и даёт авто-прыжок
+                    Вы выращиваете цветы на траве под вами
+                    Позволяет плавать и значительно расширяет дыхание под водой
+                    Позволяет ходить по воде и лаве
+                    Даёт невосприимчивость к лаве и урону от падения
+                    Эффекты от предметов «{$ItemName.FlyingCarpet}», «{$ItemName.EoCShield}» и «{$ItemName.MasterNinjaGear}»
+                    Эффекты от предметов «{$ItemName.SweetheartNecklace}» и «{$ItemName.BalloonHorseshoeHoney}»
+                    'Я — скорость'
+                    '''
+            }
+
+            TerrariaSoul: {
+                Name: Душа Террарии
+                Tooltip:
+                    '''
+                    Призывает огненные шары, теневые сферы, сосульки, лиственные кристаллы, огнеплюя, святой меч и щит, и жуков
+                    Нажмите ПКМ, чтобы защитится щитом
+                    Дважды нажмите ВНИЗ, чтобы призвать турель и портал, вызвать бурю и дождь из стрел, переключить невидимость и направить вашего усиленного стража
+                    Клавиша Turn Gold покроет вас золотом, Freeze Time заморозит время; миньоны извергают косы
+                    Солнечный щит позволяет вам делать рывок; сделайте рывок в стену, чтобы телепортироваться сквозь неё
+                    Бросьте дымовую бомбу, чтобы телепортироваться к ней и получить бафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FirstStrike.Name}»
+                    Атаки могут призвать молнию, грозовую тучу, лепестки цветов, спектральные сферы, стража Темницы, снежки, копья или усилители
+                    Атаки вызывают усиленную регенерацию здоровья, теневое уклонение, выстрелы огнеплюя, метеоритный дождь и снижают количество кадров неуязвимости врага
+                    Шанс критического удара начинается с 25%. Нанесите критический удар, чтобы увеличить его на 5%. На 100% каждая 10 атака получает 4% кражи здоровья
+                    Получение удара сбросит шанс критического удара, вызывает кровавый гейзер и отражает урон
+                    Снаряды могут разделиться или разбиться и вызвать звездопад; увеличивает размеры снарядов и предметов; вы притягиваете предметы издалека
+                    Поджигает ближайших врагов; вы оставляете за собой след из огней; при прыжке происходит взрыв спор
+                    Даёт багряную регенерацию, невосприимчивость к огню, урону от падения и лаве, и удваивает сбор растений
+                    Даёт 50% шанс мега-пчелы, 15% шанс критического удара призывателя, 20% шанс удвоенного выпадения предметов
+                    Увеличивают защиту невинных животных и их души помогут вам; вы можете призвать временных миньонов
+                    Все крюки более эффективны и выстреливают самонаводящиеся снаряды; значительно усиливает все турели из DD2
+                    Ваши атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Midas.Name}»; враги взрываются иглами
+                    Вы взрываетесь при получении урона, нанося урон врагам и возрождаетесь с 200 здоровья после смерти
+                    Эффекты от предметов «{$ItemName.FlowerBoots}» и «{$ItemName.GreedyRing}»
+                    'Истинный мастер Террарии'
+                    '''
+            }
+
+            TrawlerSoul: {
+                Name: Душа рыбака
+                Tooltip:
+                    '''
+                    Значительно увеличивает навык рыбной ловли
+                    Все удочки имеют 10 дополнительных поплавков
+                    Вы ловите рыбу почти мгновенно
+                    Эффекты от баффов «{$BuffName.Sonar}» и «{$BuffName.Crate}»
+                    Эффекты от предметов «{$ItemName.AnglerTackleBag}» и «{$ItemName.SporeSac}»
+                    Эффекты от предметов «{$ItemName.BalloonHorseshoeSharkron}» и «{$ItemName.ArcticDivingGear}»
+                    'Рыба ловит сама себя'
+                    '''
+            }
+
+            UniverseSoul: {
+                Name: Душа вселенной
+                Tooltip:
+                    '''
+                    Увеличивает урон оружия текущего класса на 66%
+                    Увеличивает шанс критического удара оружия текущего класса на 25%
+                    Увеличивает скорость атаки всего оружия на 50%
+                    Увеличивает скорость стрельбы на 50%
+                    Критические удары наносят в 4 раза больше урона
+                    Всё оружие имеет двойное отбрасывание
+                    Увеличивает максимальный запас мана на 300
+                    Увеличивает призываемое число миньонов на 4
+                    Увеличивает призываемое число турелей на 4
+                    Все атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FlamesoftheUniverse.Name}»
+                    Эффекты от предметов «{$ItemName.FireGauntlet}», «{$ItemName.YoyoBag}» и «{$ItemName.CelestialShell}»
+                    Эффекты от предметов «{$ItemName.SniperScope}», «{$ItemName.CelestialCuffs}» и «{$ItemName.ManaFlower}»
+                    'Небеса преклоняются перед тобой'
+                    '''
+            }
+
+            VoidSoul: {
+                Name: Душа пустоты
+                Tooltip: Призывает ЧТО-ТО
+            }
+
+            WorldShaperSoul: {
+                Name: Душа архитектора
+                Tooltip:
+                    '''
+                    Увеличивает скорость размещения блоков и стен на 50%
+                    Почти бесконечный радиус установки блоков и добычи
+                    Увеличивает скорость добычи в 3 раза
+                    Показывает расположение врагов, ловушек и сокровищ
+                    Автоматическая покраска и установка активаторов
+                    Излучает свет и позволяет контролировать гравитацию
+                    Даёт доступ к режиму строителя:
+                    Всё, что размещает блоки, не расходуется и используется намного быстрее
+                    Враги не могут появляться
+                    Эффект можно отключить в Настройках эффектов аксессуаров
+                    Эффекты от предметов «{$ItemName.CellPhone}» и «{$ItemName.RoyalGel}»
+                    Призывает магический светильник
+                    'Безграничные возможности'
+                    '''
+            }
+
+            FargoArrow: {
+                Name: Слившийся колчан
+                Tooltip:
+                    '''
+                    Стрелы отскакивают несколько раз
+                    При столкновении стрелы взрываются, вызывают звездопад и стреляют лазерами
+                    Накладывает несколько дебаффов
+                    '''
+            }
+
+            FargoBullet: {
+                Name: Слившийся мешок пуль
+                Tooltip:
+                    '''
+                    Пули самонаводятся
+                    Пули отскакивают несколько раз
+                    При столкновении пули разрываются кристаллами
+                    Накладывает несколько дебаффов
+                    '''
+            }
+
+            EridanusBattleplate: {
+                Name: Боевой нагрудник Эридана
+                Tooltip:
+                    '''
+                    Увеличивает урон на 10%
+                    Увеличивает шанс критического удара на 10%
+                    Снижает получаемый урон на 10%
+                    Даёт регенерацию здоровья
+                    '''
+            }
+
+            EridanusHat: {
+                Name: Шляпа Эридана
+                Tooltip:
+                    '''
+                    Увеличивает урон на 5%
+                    Увеличивает шанс критического удара на 5%
+                    Увеличивает призываемое число миньонов на 4
+                    Увеличивает призываемое число турелей на 4
+                    '''
+            }
+
+            EridanusLegwear: {
+                Name: Чулки Эридана
+                Tooltip:
+                    '''
+                    Увеличивает урон на 5%
+                    Увеличивает шанс критического удара на 5%
+                    Увеличивает скорость передвижения на 10%
+                    '''
+            }
+
+            GaiaGreaves: {
+                Name: Поножи Гайя
+                Tooltip:
+                    '''
+                    Увеличивает урон оружия текущего класса на 10%
+                    Увеличивает шанс критического удара на 5%
+                    Увеличивает скорость передвижения на 10%
+                    '''
+            }
+
+            GaiaHelmet: {
+                Name: Каска Гайя
+                Tooltip:
+                    '''
+                    Увеличивает урон на 10%
+                    Увеличивает шанс критического удара на 5%
+                    Увеличивает призываемое число миньонов и турелей на 1
+                    '''
+            }
+
+            GaiaPlate: {
+                Name: Латы Гайя
+                Tooltip:
+                    '''
+                    Увеличивает урон на 10%
+                    Увеличивает шанс критического удара на 5%
+                    Снижает получаемый урон на 10%
+                    Увеличивает регенерацию здоровья
+                    '''
+            }
+
+            MutantBody: {
+                Name: Истинное тело Мутанта
+                Tooltip:
+                    '''
+                    Увеличивает урон на 70% и шанс критического удара на 30%
+                    Увеличивает максимальный запас здоровья и маны на 200
+                    Увеличивает сопротивление урону на 30%
+                    Значительно увеличивает регенерацию здоровья
+                    '''
+            }
+
+            MutantMask: {
+                Name: Истинная маска Мутанта
+                Tooltip:
+                    '''
+                    Увеличивает урон на 50% и шанс критического удара на 20%
+                    Увеличивает призываемое число миньонов и турелей на 10
+                    Снижает расход маны на 25%
+                    Даёт 25% шанс не использовать боеприпасы
+                    '''
+            }
+
+            MutantPants: {
+                Name: Истинные штаны Мутанта
+                Tooltip:
+                    '''
+                    Увеличивает урон на 50% и шанс критического удара на 20%
+                    Увеличивает скорость передвижения и атаки ближнего боя на 40%
+                    '''
+            }
+
+            NekomiHood: {
+                Name: Nekomi Hood
+                Tooltip: Увеличивает призываемое число миньонов и турелей на 1
+            }
+
+            NekomiHoodie: {
+                Name: Nekomi Hoodie
+                Tooltip:
+                    '''
+                    Немного увеличивает регенерацию здоровья
+                    Снижает получаемый урон на 5%
+                    '''
+            }
+
+            NekomiLeggings: {
+                Name: Nekomi Leggings
+                Tooltip: Увеличивает скорость передвижения на 10%
+            }
+
+            StyxChestplate: {
+                Name: Нагрудник Стикса
+                Tooltip:
+                    '''
+                    Увеличивает урон на 15%
+                    Увеличивает шанс критического удара на 10%
+                    Снижает получаемый урон на 10%
+                    Увеличивает регенерацию здоровья
+                    '''
+            }
+
+            StyxCrown: {
+                Name: Корона Стикса
+                Tooltip:
+                    '''
+                    Увеличивает урон на 10%
+                    Увеличивает шанс критического удара на 10%
+                    Увеличивает призываемое число миньонов и турелей на 3
+                    '''
+            }
+            
+            StyxLeggings: {
+                Name: Поножи Стикса
+                Tooltip:
+                    '''
+                    Увеличивает урон на 10%
+                    Увеличивает шанс критического удара на 10%
+                    Увеличивает скорость передвижения на 20%
+                    '''
+            }
+            
+            AbomBag: {
+                Name: Мешок с сокровищами
+                Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+            }
+            
+            CosmosBag: {
+                Name: Мешок с сокровищами
+                Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+            }
+            
+            DeviBag: {
+                Name: Мешок с сокровищами
+                Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+            }
+            
+            MutantBag: {
+                Name: Мешок с сокровищами
+                Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+            }
+            
+            TrojanSquirrelBag: {
+                Name: Мешок с сокровищами
+                Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+            }
+            
+            DeerSinew: {
+                Name: Deer Sinew
+                Tooltip:
+                    '''
+                    Allows the ability to dash
+                    Double tap a direction
+                    Taking damage may briefly freeze you
+                    Crit damage multiplier ranges from x2 to x1.5, decreasing with your speed
+                    All effects negated if toggled off or another dash is already in use
+                    'Cold but twitching'
+                    '''
+            }
+            
+            MutantsCreditCard: {
+                Name: Mutant's Credit Card
+                Tooltip:
+                    '''
+                    Навсегда снижает цены у Мутанта на 30%
+                    'Wait, how did you get this?'
+                    '''
+            }
+            
+            MutantsDiscountCard: {
+                Name: Дисконтная карта Мутанта
+                Tooltip:
+                    '''
+                    Навсегда снижает цены у Мутанта на 20%
+                    'It's not used how you think'
+                    '''
+            }
+            
+            MutantsPact: {
+                Name: Договор Мутанта
+                Tooltip: "{$ItemTooltip.DemonHeart}"
+            }
+            
+            OrdinaryCarrot: {
+                Name: Обыкновенная морковь
+                Tooltip:
+                    '''
+                    Улучшает ночное зрение
+                    Немного увеличивает все характеристики
+                    Длительность 1 минута
+                    Нажмите ПКМ в инвентаре, чтобы отдалить
+                    'Сорванный с лица побеждённого врага'
+                    '''
+            }
+            
+            RabiesShot: {
+                Name: Укол от бешенства
+                Tooltip: Исцеляет от дебаффа «{$BuffName.Rabies}»
+            }
+            
+            RabiesVaccine: {
+                Name: Вакцина против бешенства
+                Tooltip: Навсегда даёт невосприимчивость к дебаффу «{$BuffName.Rabies}»
+            }
+            
+            LifeDye: {
+                Name: Райский краситель
+                Tooltip: ""
+            }
+            
+            WillDye: {
+                Name: Волевой краситель
+                Tooltip: ""
+            }
+            
+            GaiaDye: {
+                Name: Краситель Гайя
+                Tooltip: ""
+            }
+            
+            AbomEnergy: {
+                Name: Мерзкая энергия
+                Tooltip: ""
+            }
+            
+            BrokenBlade: {
+                Name: Сломанный клинок
+                Tooltip: ""
+            }
+            
+            BrokenHilt: {
+                Name: Сломанная рукоять
+                Tooltip: ""
+            }
+            
+            DeviatingEnergy: {
+                Name: Девиантная энергия
+                Tooltip: ""
+            }
+            
+            Eridanium: {
+                Name: Eridanium
+                Tooltip: A shard of cosmic power
+            }
+            
+            EternalEnergy: {
+                Name: Энергия Вечности
+                Tooltip:
+                    '''
+                    Даёт невосприимчивость почти ко всем дебаффам из режима Вечности
+                    'Доказательство принятия Вечности'
+                    '''
+            }
+            
+            PhantasmalEnergy: {
+                Name: Призрачная энергия
+                Tooltip: ""
+            }
+            
+            EternityAdvisor: {
+                Name: Eternity Advisor
+                Tooltip: Предлагает варианты снаряжения для режима Вечности исходя из вашей прогрессии
+            }
+            
+            GalacticReformer: {
+                Name: Galactic Reformer
+                Tooltip:
+                    '''
+                    Уничтожает невероятно большую область
+                    Используйте на ваш страх и риск
+                    '''
+            }
+            
+            MutantsFury: {
+                Name: Ярость Мутанта
+                Tooltip: "'Бросает Мутанта в гнев... или нет'"
+            }
+            
+            TopHatSquirrelCaught: {
+                Name: Белка в цилиндре
+                Tooltip: ""
+            }
+            
+            UniversalCollapse: {
+                Name: Universal Collapse
+                Tooltip: Destroys the Universe
+            }
+            
+            AccursedRags: {
+                Name: Accursed Rags
+                Tooltip:
+                    '''
+                    Summons a small accursed sarcophagus
+                    'That's why yo' rags cursed-y'
+                    '''
+            }
+            
+            BabyScythe: {
+                Name: Маленькая коса
+                Tooltip:
+                    '''
+                    Призывает маленького Мерзостть
+                    'Не волнуйся, коса притуплена'
+                    '''
+            }
+            
+            ChibiHat: {
+                Name: Чиби-шляпа
+                Tooltip:
+                    '''
+                    Призывает Чиби Деви
+                    Она следует за вашей мышью
+                    'Мило! Мило! Мило!'
+                    '''
+            }
+            
+            EnerGear: {
+                Name: Ener-Gear
+                Tooltip:
+                    '''
+                    Summons a bite-size baron
+                    '100% rust-proof or your money back'
+                    '''
+            }
+            
+            MostlyOrdinaryRock: {
+                Name: Mostly Ordinary Rock
+                Tooltip:
+                    '''
+                    Summons a seeker of treasures
+                    'Freshly hatched from a... rock?'
+                    '''
+            }
+            
+            PortableFogMachine: {
+                Name: Portable Fog Machine
+                Tooltip:
+                    '''
+                    Summons a baby shadow creature
+                    'Born in the darkness, molded by it'
+                    '''
+            }
+            
+            SpawnSack: {
+                Name: Мешочек отродья
+                Tooltip:
+                    '''
+                    Призывает отродье Мутанта
+                    'Думаешь, ты в безопасности?'
+                    '''
+            }
+            
+            AbomRelic: {
+                Name: Реликвия Мерзостти
+                Tooltip: ""
+            }
+            
+            DeviRelic: {
+                Name: Реликвия Девиантт
+                Tooltip: ""
+            }
+            
+            EarthChampionRelic: {
+                Name: Реликвия чемпиона планеты
+                Tooltip: ""
+            }
+            
+            EridanusRelic: {
+                Name: Реликвия Эридана
+                Tooltip: ""
+            }
+            
+            LifeChampionRelic: {
+                Name: Реликвия чемпиона жизни
+                Tooltip: ""
+            }
+            
+            MutantRelic: {
+                Name: Реликвия Мутанта
+                Tooltip: ""
+            }
+            
+            NatureChampionRelic: {
+                Name: Реликвия чемпиона природы
+                Tooltip: ""
+            }
+            
+            ShadowChampionRelic: {
+                Name: Реликвия чемпиона тени
+                Tooltip: ""
+            }
+            
+            SpiritChampionRelic: {
+                Name: Реликвия чемпиона духа
+                Tooltip: ""
+            }
+            
+            TerraChampionRelic: {
+                Name: Реликвия чемпиона земли
+                Tooltip: ""
+            }
+            
+            TimberChampionRelic: {
+                Name: Реликвия чемпиона леса
+                Tooltip: ""
+            }
+            
+            TrojanSquirrelRelic: {
+                Name: Trojan Squirrel Relic
+                Tooltip: ""
+            }
+            
+            WillChampionRelic: {
+                Name: Реликвия чемпиона воли
+                Tooltip: ""
+            }
+            
+            AbomTrophy: {
+                Name: Трофей Мерзостти
+                Tooltip: ""
+            }
+            
+            DeviTrophy: {
+                Name: Трофей Девиантт
+                Tooltip: ""
+            }
+            
+            EridanusTrophy: {
+                Name: Трофей Эридана
+                Tooltip: ""
+            }
+            
+            MutantTrophy: {
+                Name: Трофей Мутанта
+                Tooltip: ""
+            }
+            
+            TrojanSquirrelTrophy: {
+                Name: Trojan Squirrel Trophy
+                Tooltip: ""
+            }
+            
+            MutantStatue: {
+                Name: Статуя Мутанта
+                Tooltip: ""
+            }
+            
+            MutantStatueGift: {
+                Name: Статуя Мутанта (Подарок)
+                Tooltip: ""
+            }
+            
+            ScremPainting: {
+                Name: Картина Screm
+                Tooltip: "'Merry N. Tuse'"
+            }
+            
+            TophatSquirrelBanner: {
+                Name: Знамя белки в цилиндре
+                Tooltip: ""
+            }
+            
+            TwentyTwoPainting: {
+                Name: 22 картина
+                Tooltip: "'Keuhm E. Dee'"
+            }
+            
+            AbominationnVoodooDoll: {
+                Name: Куклу вуду Мерзостти
+                Tooltip:
+                    '''
+                    Призывает Мерзостть к вам в город
+                    'Ты ужасный человек'
+                    '''
+            }
+            
+            AbomsCurse: {
+                Name: Проклятие Мерзостти
+                Tooltip: ""
+            }
+            
+            ChampionySigil: {
+                Name: Championy Sigil
+                Tooltip: Summons the Champions
+            }
+            
+            DevisCurse: {
+                Name: Проклятие Девиантт
+                Tooltip: ""
+            }
+            
+            MutantsCurse: {
+                Name: Проклятие Мутанта
+                Tooltip: "'По крайней мере, вам не нужна эта кукла'"
+            }
+            
+            SigilOfChampions: {
+                Name: Печать Чемпионов
+                Tooltip:
+                    '''
+                    Призывает Чемпионов
+                    Призыв зависит от времени суток и биома
+                    Нажмите ПКМ для проверки возможных призывов
+                    Не расходуется
+                    '''
+            }
+            
+            SquirrelCoatofArms: {
+                Name: Squirrel Coat of Arms
+                Tooltip: Summons squirrelly wrath
+            }
+            
+            BoneZone: {
+                Name: Костная зона
+                Tooltip:
+                    '''
+                    Использует кости как боеприпасы
+                    33% шанс не использовать боеприпасы
+                    'Растрескавшиеся останки побеждённого врага...'
+                    '''
+            }
+            
+            BrainStaff: {
+                Name: Подчинение
+                Tooltip: "'Старый враг, вынужденный подчиниться...'"
+            }
+            
+            DestroyerGun: {
+                Name: Пушка Разрушителя
+                Tooltip:
+                    '''
+                    Становится длиннее и быстрее за каждый 3 пустой слот призываемых миньонов
+                    'Старый враг, вынужденный подчиниться...'
+                    '''
+            }
+            
+            Dicer: {
+                Name: Нарезатель
+                Tooltip: "'Атака побеждённого врага, теперь на нитке...'"
+            }
+            
+            DragonBreath: {
+                Name: Дыхание дракона
+                Tooltip:
+                    '''
+                    Использует гель как боеприпасы
+                    33% шанс не использовать боеприпасы
+                    'Сжатое тело побеждённого врага...'
+                    '''
+            }
+            
+            EaterStaff: {
+                Name: Посох пожирателя миров
+                Tooltip:
+                    '''
+                    Призывает 4 сегмента за каждый слот призываемых миньонов
+                    'Старый враг, вынужденный подчиниться...'
+                    '''
+            }
+            
+            FishStick: {
+                Name: Рыбная палочка
+                Tooltip: "'Труп побеждённого врага, насаженный на палку...'"
+            }
+            
+            FleshHand: {
+                Name: Мясная рука
+                Tooltip: "'Порабощённые миньоны побеждённого врага...'"
+            }
+            
+            LeashOfCthulhu: {
+                Name: Поводок Ктулху
+                Tooltip: "'Изуродованный труп побеждённого врага...'"
+            }
+            
+            RefractorBlaster: {
+                Name: Преломляющий бластер
+                Tooltip: "'Модифицированная рука побеждённого врага...'"
+            }
+            
+            RockSlide: {
+                Name: Камнепад
+                Tooltip: "'Рушащиеся останки побеждённого врага...'"
+            }
+            
+            SlimeKingsSlasher: {
+                Name: Рассекатель короля слизней
+                Tooltip: "'Вырван из побеждённого врага...'"
+            }
+            
+            TheSmallSting: {
+                Name: Маленькое жало
+                Tooltip:
+                    '''
+                    Использует дротики как боеприпасы
+                    50% шанс не использовать боеприпасы
+                    Жала прилипают к врагам; повторное попадание в одно и то же место наносит дополнительный урон
+                    'Внутренность побеждённого врага получили новое предназначение...'
+                    '''
+            }
+            
+            TwinRangs: {
+                Name: Бумеранги-близнецы
+                Tooltip:
+                    '''
+                    Стреляет разными бумерангами-близнеца в зависимости от нажатия мыши
+                    'Сжатые останки побеждённых врагов...'
+                    '''
+            }
+            
+            KamikazeSquirrelStaff: {
+                Name: Kamikaze Squirrel Staff
+                Tooltip:
+                    '''
+                    Призывает дружелюбных белок, обнимающих ваших врагов
+                    Нажмите ПКМ, чтобы взорвать их
+                    '''
+            }
+            
+            MountedAcornGun: {
+                Name: Mounted Acorn Gun
+                Tooltip:
+                    '''
+                    Использует жёлуди как боеприпасы
+                    50% шанс не использовать боеприпасы
+                    Стреляет жёлудями, прорастающими на врагов
+                    '''
+            }
+            
+            SnowballStaff: {
+                Name: Snowball Staff
+                Tooltip:
+                    '''
+                    Creates a snowball that grows as you roll it
+                    Must use continuously to sustain snowball
+                    Right click to recall the snowball to yourself
+                    '''
+            }
+            
+            TheLightningRod: {
+                Name: Громоотвод
+                Tooltip:
+                    '''
+                    Накапливает силу при вращении
+                    Урон снижается при каждом броске
+                    '''
+            }
+            
+            TreeSword: {
+                Name: Tree Sword
+                Tooltip: Shoots an acorn
+            }
+            
+            HentaiSpear: {
+                Name: Проникатель
+                Tooltip:
+                    '''
+                    Имеет разные атаки при использовании левой или правой клавиши мыши
+                    Имеет разные атаки если удерживаете клавишу вверх, вниз или движения
+                    'Награда за принятие вечности...'
+                    '''
+            }
+            
+            PhantasmalLeashOfCthulhu: {
+                Name: Призрачный поводок Ктулху
+                Tooltip: "'Душа истинного глаза заперта навеки...'"
+            }
+            
+            SlimeRain: {
+                Name: Слизнепад
+                Tooltip: "'Внутренности короля разбрасываются по всей земле...'"
+            }
+            
+            SparklingLove: {
+                Name: Искрящаяся любовь
+                Tooltip:
+                    '''
+                    Нажатие ПКМ призовёт душу Девиантт
+                    Душа Девиантт становится сильнее с каждым пустым слотом призываемых миньонов, максимум до 12 слотов
+                    'Поглощающий душу демонический топор любви и справедливости, оставленный сражённым врагом...'
+                    '''
+            }
+            
+            StyxGazer: {
+                Name: Созерцатель Стикса
+                Tooltip:
+                    '''
+                    Нажмите ПКМ, чтобы использовать клинок адской магии
+                    'Пылающая коса-посох-меч-луч разрушения побеждённого врага'
+                    '''
+            }
+            
+            Mahoguny: {
+                Name: Пушка из красной древесины
+                Tooltip:
+                    '''
+                    Использует жёлуди как боеприпасы
+                    Стреляет листьями и желудями
+                    '''
+            }
+            
+            OvergrownKey: {
+                Name: Заросший ключ
+                Tooltip:
+                    '''
+                    Призывает мимика джунглей, сражающегося за вас
+                    Использует 2 слота призываемых миньонов
+                    '''
+            }
+            
+            TophatSquirrelWeapon: {
+                Name: Белка в цилиндре
+                Tooltip: "'Кто мог знать, что эта белка владеет феноменальной космической мощью?'"
+            }
+            
+            Vineslinger: {
+                Name: Хвататель лоз
+                Tooltip: При попадании во врага стреляет листьями
+            }
+            
+            BigBrainBuster: {
+                Name: Подавитель больших мозгов
+                Tooltip:
+                    '''
+                    Повторные призывы увеличивают размер и урон миньона
+                    Ограничивается 11 слотами призываемых миньонов
+                    'Награда за кровавую резню...'
+                    '''
+            }
+            
+            Blender: {
+                Name: Блендер
+                Tooltip: "'Награда за кровавую резню...'"
+            }
+            
+            DestroyerGun2: {
+                Name: Пушка разрушения
+                Tooltip:
+                    '''
+                    Становится длиннее и быстрее за каждый 5 пустой слот призываемых миньонов
+                    'Награда за кровавую резню...'
+                    '''
+            }
+            
+            DragonBreath2: {
+                Name: Смерть дракона
+                Tooltip:
+                    '''
+                    Использует гель как боеприпасы
+                    66% шанс не использовать боеприпасы
+                    'Награда за кровавую резню...'
+                    '''
+            }
+            
+            EaterLauncher: {
+                Name: Ракетомёт-пожиратель
+                Tooltip:
+                    '''
+                    Использует ракеты как боеприпасы
+                    50% шанс не использовать боеприпасы
+                    Увеличивает урон по врагам в определённом радиусе
+                    'Награда за кровавую резню...'
+                    '''
+            }
+            
+            FleshCannon: {
+                Name: Отрыжкинатор
+                Tooltip: "'Порабощённое лицо побеждённого врага...'"
+            }
+            
+            GeminiGlaives: {
+                Name: Бумеранги зодиака
+                Tooltip:
+                    '''
+                    Стреляет разными бумерангами в зависимости от нажатия мыши
+                    Чередующиеся нажатия усиливают атаки
+                    'Сжатие останки побеждённых врагов...'
+                    '''
+            }
+            
+            GolemTome2: {
+                Name: Оползень
+                Tooltip: "'Награда за кровавую резню...'"
+            }
+            
+            GuardianTome: {
+                Name: Страж
+                Tooltip: "'Пора и им побегать'"
+            }
+            
+            HellZone: {
+                Name: Адская зона
+                Tooltip:
+                    '''
+                    Использует кости как боеприпасы
+                    80% шанс не использовать боеприпасы
+                    'Награда за кровавую резню...'
+                    '''
+            }
+            
+            MechanicalLeashOfCthulhu: {
+                Name: Механический поводок Ктулху
+                Tooltip: "'Награда за кровавую резню...'"
+            }
+            
+            NukeFishron: {
+                Name: Ядерный Рыброн
+                Tooltip:
+                    '''
+                    Использует ракеты как боеприпасы
+                    'Тяжело вооружённые останки поверженного врага...'
+                    '''
+            }
+            
+            OpticStaffEX: {
+                Name: Посох всеведения
+                Tooltip:
+                    '''
+                    Призывает истинных Близнецов, сражающиеся за вас
+                    Требуется 3 слота призываемых миньонов
+                    'Награда за кровавую резню...'
+                    '''
+            }
+            
+            RefractorBlaster2: {
+                Name: Бластер преломления
+                Tooltip: "'Награда за кровавую резню...'"
+            }
+            
+            SlimeSlingingSlasher: {
+                Name: Slime Slinging Slasher
+                Tooltip: "'Награда за кровавую резню...'"
+            }
+            
+            TheBigSting: {
+                Name: Большое жало
+                Tooltip:
+                    '''
+                    Использует дротики как боеприпасы
+                    66% шанс не использовать боеприпасы
+                    'Награда за кровавую резню...'
+                    '''
+            }
+            
+            Masochist: {
+                Name: Подарок Мутанта
+                Tooltip:
+                    '''
+                    Мир должен быть в режиме Эксперта
+                    Включает/выключает режим Вечности, имеющий следующие функции:
+                    Девиантт даёт стартовый набор и оказывает помощь, основываясь на вашем прогрессе
+                    Improves base stats
+                    Дебаффы снимаются быстрее, если вы не атакуете
+                    Нельзя использовать, пока босс жив
+                    [i:1612][c/00ff00:Рекомендуется использовать Debuff Display (в конфиге мода)]
+                    [c/ff0000:НЕ ПРЕДНАЗНАЧЕН ДЛЯ ИСПОЛЬЗОВАНИЯ С ДРУГИМИ БОЛЬШИМИ МОДАМИ И УСЛОЖНЕНИЯМИ ИЗ НИХ]
+                    '''
+            }
+            
+            MedallionoftheFallenKing: {
+                Name: Медальон павшего короля
+                Tooltip: Призывает миньона короля слизней, урон которого зависит от урона призывателя
+            }
+            
+            ComputationOrb: {
+                Name: Вычислительная сфера
+                Tooltip:
+                    '''
+                    Немагические атаки/атаки миньонов наносят на 25% больше урона, но действует дебафф «{$BuffName.ManaSickness}»
+                    Немагическое оружие/оружие призывателя требует 10 маны для использования
+                    'Ядро хранит искру надежды'
+                    '''
+            }
+            
+            StaffOfUnleashedOcean: {
+                Name: Посох необузданного океана
+                Tooltip:
+                    '''
+                    Призывает герцога Рыброна, сражающегося за вас
+                    Требуется 2 слота призываемых миньонов
+                    'Направьте вашу злость против них!'
+                    '''
+            }
+            
+            DeviousAestheticus: {
+                Name: Коварный эстетикус
+                Tooltip:
+                    '''
+                    Разброс выстрелов увеличивается при наличии до 6 неиспользованных слотов призываемых миньонов
+                    'Если ты видишь это, то ты был в коме 20 лет; я не знаю, где будет это сообщение, но пожалуйста проснись'
+                    '''
+            }
+            
+            ScientificRailgun: {
+                Name: Научный рельсотрон
+                Tooltip:
+                    '''
+                    Использует монеты как боеприпасы
+                    Более ценные монеты наносят больше урона
+                    'Особый и специфический'
+                    '''
+            }
+            
+            RoombaPet: {
+                Name: Робот-пылесос
+                Tooltip: Призывает робота-пылесоса, который будет следовать за вами в надежде очистить весь мир
+            }
+            
+            VortexMagnetRitual: {
+                Name: Вихревой ритуал
+                Tooltip: "'Сила пульсирует в ваших руках'"
+            }
+            
+            PiranhaPlantVoodooDoll: {
+                Name: Кукла вуду растения-пираньи
+                Tooltip:
+                    '''
+                    Переключение этого предмета позволяет вам накладывать случайные дебаффы на врагов
+                    'Светлая память режиму Мазохиста ЕХ. Я всегда тебя ненавидел'
+                    '''
+            }
+            
+            FigBranch: {
+                Name: Фиговая ветка
+                Tooltip: Призывает голубя-спутника
+            }
+            
+            ParadoxWolfSoul: {
+                Name: Душа Paradox Wolf
+                Tooltip:
+                    '''
+                    Дважды нажмите в сторону направления для рывка сквозь врагов и нанесения им урона
+                    Имеет 3 секунды перезарядки перед повторным использованием
+                    '''
+            }
+            
+            VermillionTopHat: {
+                Name: Vermillion Top Hat
+                Tooltip:
+                    '''
+                    Summons a dead princess
+                    'Duck, Duck, Bat'
+                    '''
+            }
+            
+            PrimeStaff: {
+                Name: Посох Прайма
+                Tooltip:
+                    '''
+                    Призывает Скелетрона Прайма, сражающегося за вас
+                    'Используя навыки компьютерного взлома (выключая и включая вновь), вы перепрограммировали ужас ночи!'
+                    '''
+            }
+            
+            MissDrakovisFishingPole: {
+                Name: Удочка мисс Drakovi
+                Tooltip:
+                    '''
+                    Нажатие ПКМ сменит тип атаки
+                    У каждого типа урона есть своя атака
+                    '''
+            }
+            
+            CrimetroidEgg: {
+                Name: Яйцо криметроида
+                Tooltip:
+                    '''
+                    Призывает малыша криметроида
+                    Не путать с андроидами криминалами
+                    '''
+            }
+        }
+
+        NPCs: {
+            Dialogues: {
+                Nurse: {
+                    1: I've done all I can in the time I have!
+                }
+            }
+            
+            AbomBoss.Name: Мерзостть
+            AbomSaucer.Name: Маленькая марсианская тарелка
+            TrojanSquirrel.Name: Trojan Squirrel
+            TrojanSquirrelArms.Name: Trojan Squirrel
+            TrojanSquirrelHead.Name: Trojan Squirrel
+            CosmosChampion.Name: Эридан, чемпион космоса
+            EarthChampion.Name: Чемпион планеты
+            EarthChampionHand.Name: Чемпион планеты
+            LesserFairy.Name: Маленькая фея
+            LesserSquirrel.Name: Маленькая белка
+            LifeChampion.Name: Чемпион жизни
+            NatureChampion.Name: Чемпион природы
+            NatureChampionHead.Name: Чемпион природы
+            ShadowChampion.Name: Чемпион тени
+            ShadowOrb.Name: Теневая сфера
+            SpiritChampion.Name: Чемпион духа
+            SpiritChampionHand.Name: Чемпион духа
+            TerraChampion.Name: Чемпион земли
+            TerraChampionBody.Name: Чемпион земли
+            TerraChampionTail.Name: Чемпион земли
+            TimberChampion.Name: Чемпион леса
+            TimberChampionHead.Name: Чемпион леса
+            WillChampion.Name: Чемпион воли
+            TophatSquirrelCritter.Name: Белка в цилиндре
+            DeviBoss.Name: Девиантт
+            BrainClone.Name: Мозг Ктулху
+            BrainIllusion.Name: Мозг Ктулху
+            BrainIllusion2.Name: Мозг Ктулху
+            BrainIllusionAttack.Name: Мозг Ктулху
+            CreeperGutted.Name: Ползун
+            CrystalLeaf.Name: Кристальный лист
+            DetonatingBubble.Name: Взрывающийся пузырь
+            DetonatingBubbleEX.Name: Взрывающийся пузырь
+            GelatinSlime.Name: Кристальный слизень
+            GelatinSubject.Name: Gelatin Subject
+            RoyalSubject.Name: Королевская особа
+            MutantBoss.Name: Мутант
+            MutantIllusion.Name: Мутант
+        }
+        
+        Tiles: {
+            FMMBanner: {
+                Name: Знамя
+            }
+            
+            MutantStatue: {
+                Name: Статуя Мутанта
+            }
+            
+            MutantStatueGift: {
+                Name: Статуя Мутанта
+            }
+            
+            SquidwardDoorClosed: {
+                Name: Дверь Сквидварда
+            }
+            
+            SquidwardDoorOpen: {
+                Name: Дверь Сквидварда
+            }
+        }
+        
+        CombatTexts: {
+            1: КРИНЖАНУЛ
+            2: НЕ POGGERS
+            3: MONKAS
+            4: SHOW WINGS
+            5: ЛОЛ, ВОЗДУШНАЯ КАРА
+            6: И ГДЕ БОСС?
+            7: "#ЭТОНЕМОЙМАЗОРЕЖИМ"
+            8: АРМИЯ ДРЕВНИХ ВСЁ РАВНО СОСАТТ
+            9: СМИРИСЬ
+            10: Сложность вышла погулять
+            11: Сложность загнали домой
+            12: POGGERS
+            13: ResidentSleeper
+            14: если читаешь это, то скажи 22
+            15: GuraSit
+            16: сыграй в каламити
+            17: сыграй в ториум
+            18: когда хардкор с 1хп?
+            19: а теперь сделай это медным мечом
+            20: Йо-йо-Зенит?
+            21: люди, с чем идти на мунлорда
+            22: ЧУВАКИ, МНЕ ТЕРРАПРИЗМА ВЫПАЛА
+            23: а где найти обновление мода
+            24: Здаров, Ютуб!
+            25: <Сообщение удалено модерацией>
+        }
+    }
+
+    Mods.FargowiltasSouls: {
+        SetBonus: {
+            Nekomi:
+                '''
+                7% increased damage and critical strike chance for your current weapon class
+                Increases Sparkling Adoration graze radius
+                Graze attacks to temporarily charge energy
+                Increases life regeneration when damaged at the cost of some energy
+                Double tap {0} to release energy as life-draining hearts
+                Wield a demon axe of love and justice when fully charged
+                '''
+
+            Gaia:
+                '''
+                10% increased melee speed
+                Reduces mana usage by 10%
+                10% chance to not consume ammo
+                Increases max number of minions and sentries by 4
+                Double tap {0} to toggle offensive mode, which has the following effects:
+                30% increased damage and 15% increased critical strike chance for your current weapon class
+                Increases armor penetration by 20
+                Reduces defense by 20, max life by 10%, and damage reduction by 15%
+                '''
+
+            Eridanus:
+                '''
+                The blessing of Eridanus empowers your attacks
+                The empowered class changes every 10 seconds
+                Eridanus fights alongside you when you use the empowered class
+                75% increased damage, 30% increased attack speed, and 20% increased critical strike chance for the empowered class
+                '''
+
+            Styx:
+                '''
+                20% increased damage for your current weapon class
+                Attack enemies to charge energy
+                Reduces damage taken at the cost of some energy
+                Double tap {0} to release energy as homing shots
+                Brandish a blade of infernal magic when fully charged
+                '''
+
+            Mutant:
+                '''
+                Phantasmal Spheres shoot deathrays at nearby enemies
+                Abominationn's Visage fights alongside you
+                Your attacks inflict God Eater and Hellfire
+                You erupt into a massive deathray whenever revived
+                20% increased weapon use speed
+                '''
+        }
+
+        Bestiary: {
+            TophatSquirrelCritter: This squirrel found itself a dapper hat! What will it do with this newfound power? Probably not much, honestly.
+            GuttedCreeper: Continues to defend the heart of the Crimson even when it's stuffed in someone's pocket. They were bad, but now they're good!
+            RoyalSubject: The growth of these would-be queens has been stunted. The pheromones emitted by their liege have summoned them to her aid.
+            GelatinSubject: Elite guardians of the queen. They erect a magical barrier and give their lives to defend their liege.
+            AbomSaucer: The cockpit is filled with machine parts. Abominationn commands these remote control turrets using a chip in his blaster cannon.
+            LesserFairy: Drawn to the Champion of Life's radiance, these pixies care for nothing but fulfilling its commands.
+            LesserSquirrel: These little critters helped build the Trojan Squirrel. Not aware of the small explosives attached to them.
+            ShadowOrb: Clusters of darkness that focus its power. They keep the curtain of night drawn low in service of their master.
+            TrojanSquirrel: Built by squirrels, for squirrels! Made of woods collected from numerous lands. It fits a lot more squirrels than it appears.
+            GuardianOfAncientTreasures: Lurks deep underground, jealously guarding its horde of jewels and precious metals. Its scales are as hard as stone.
+            CursedCoffin: A mindless fusion of over a hundred wicked souls. It feeds on the bodies of lost travellers and adds their spirits to itself.
+            Lifelights: The brilliance emitting from its core is soothing but hypnotic. Holds sway over lesser organisms, which happily follow its bidding.
+            Silhouette: An elusive being that always travels under cover of a black fog in the night. It feels sensitive when its true form is exposed.
+            FrigidHydrangaea: This draconic beast hibernates in the frozen caverns, only waking when provoked. Should it really be living in the cold?
+            BanishedBaron: Cast out from the hierarchy, it hid itself while it tried to repair itself. Imperfect work left its strength and speed hindered.
+            MagmaConstruct: Overseer of the planet's core. It has taken over the underworld in the absence of the land's former master. It has no organic parts.
+            TimberChampion: Channeling a Force has granted this wooden contraption fantastic power. But doesn't that squirrel in the cockpit look familiar?
+            TerraChampion: Only the brain of this colossal serpent is still organic. Transformed into enchanted rock and metal, its body is impervious to attack.
+            SpiritChampion: These lost souls regained higher intelligence by absorbing a Force. Not that it's going to stop eating humans any time soon.
+            LifeChampion: Its feathers are said to be blessed relics that ward off nightmares. Has a low opinion of other lifeforms and is very territorial.
+            ShadowChampion: Feeds on the negative emotions of other creatures. Breathing its fog is said to inflict an endless sleep fraught with nightmares.
+            NatureChampion: This creature was driven from its home by a giant plant. Sometimes it thinks about going back, but the cold doesn't bother it anymore.
+            WillChampion: Overflowing with rage. Strikes with great power and withstands attacks through sheer force of anger alone. Just who is this nameless exile?
+            EarthChampion: Merging with a Force has given it a power high. This Champion erupts from the magma and rampages through all who cross its path.
+            CosmosChampion: This noble warrior once travelled the stars in search of worthy opponents. It settled nearby after encountering a certain mutated trio.
+            DeviBoss: Casts spells of light and love using a living axe made of evil. She must be very lax about death, given she never fights that hard to protect a town.
+            AbomBoss: His blade divides the soul itself. All supernatural phenomena are his domain, but he doesn't use celestial attacks out of respect for Mutant.
+            MutantBoss: The keeper of eternity. Ultimate power incarnate. Master of all with dominion over every aspect of combat. Perhaps it came from a world beyond that dimensional rift...
+        }
+
+        BossChecklist: {
+            DeviBossDespawn: Deviantt bores of the battle...
+            DeviBossKilledAll: Deviantt is satisfied with its show of love.
+
+            AbomBossDespawn: Abominationn sees no worthy opponent...
+            AbomBossKilledAll: Мерзостть уничтожил всех.
+
+            MutantBossDespawn: Mutant seals its power once more...
+            MutantBossKilledAll: Мутант выпотрошил всех своими руками.
+
+            TimberChampionDespawn: Чемпион леса возвращается в свой белчий клан...
+            TerraChampionDespawn: Чемпион земли исчезает в пещерах...
+            EarthChampionDespawn: Чемпион планеты исчезает под магмой...
+            NatureChampionDespawn: Чемпион природы возвращается в свой сон...
+            LifeChampionDespawn: Чемпион жизни исчезает...
+            ShadowChampionDespawn: Чемпион тени исчезает...
+            SpiritChampionDespawn: Чемпион духа исчезает в пустыне...
+            WillChampionDespawn: Чемпион воли возвращается в глубины...
+
+            CosmosChampionDespawn: Эридан, чемпион космоса возвращается к звёздам...
+            CosmosChampionKilledAll: Eridanus, Champion of Cosmos has slain every foe.
+
+            TrojanSquirrelDespawn: Trojan Squirrel returns to its squirrel clan...
+        }
+
+        Message: {
+            HasAwoken: пробуждается!
+            SquirrelCoatofArms: "{$Mods.FargowiltasSouls.NPCName.TrojanSquirrel} {$Mods.FargowiltasSouls.Message.HasAwoken}"
+            DevisCurse: "{$Mods.FargowiltasSouls.NPCName.DeviBoss} {$Mods.FargowiltasSouls.Message.HasAwoken}"
+            AbomsCurse: "{$Mods.FargowiltasSouls.NPCName.AbomBoss} {$Mods.FargowiltasSouls.Message.HasAwoken}"
+            MutantsCurse: "{$Mods.FargowiltasSouls.NPCName.MutantBoss} {$Mods.FargowiltasSouls.Message.HasAwoken}"
+
+            AbominationnVoodooDoll: Мутант в ярости от гибели своего брата!
+
+            SigilOfChampions: {
+                Timber: Вы окружены шорохом деревьев...
+                Terra: Камни дрожат вокруг вас...
+                Spirit: Сильный дух будоражит...
+                Life: Волна тепла проходит по тебе...
+                Shadow: Темнота ночи кажется глубже...
+                Nature: Дует зелёный ветер...
+                Will: Металлические стоны эхом разносятся из глубины...
+                Earth: Ядро планеты урчит...
+                Cosmos: Звёзды выравниваются...
+                Nothing: Кажется, никто не отвечает на звонок...
+            }
+
+            MutantsFuryOn: Mutant is angered!
+            MutantsFuryOff: Mutant is calm.
+
+            PiranhaPlantVoodooDollOn: The suffering continues...
+            PiranhaPlantVoodooDollOff: The suffering wanes...
+
+            MasochistSpawnDevi: Deviantt has awoken!
+            MasochistWrongDifficulty: World must be Expert difficulty or harder!
+            MasochistModeUnlocked: "{$Mods.FargowiltasSouls.ItemName.Masochist} surges with new power...!"
+            MasochistPreTooltip: Enables Masochist Mode when used in Master Mode
+
+            FargoSoulsWorld: {
+                EternityOn: Режим Вечности активирован!
+                EternityOff: Eternity Mode деактивирован.
+                EternityWrongDifficulty: Difficulty too low, Eternity Mode deactivated...
+                MasochistOn: Master and Eternity combined: Masochist Mode activated!!
+                MasochistOff: Masochist Mode deactivated.
+                BloodMoonCancel: The Blood Moon changed its mind and left...
+            }
+
+            MutantSkipP1: Мутант устал от шарады...
+
+            MutantSpawnMutantBoss: "{$Mods.FargowiltasSouls.Message.MutantsCurse}"
+            MutantSpawnNotSafe: Думаете, вы в безопасности?
+
+            OceanicMaulLifeUp: +5 max life
+            OceanicMaulLifeDown: -5 max life
+
+            ItemStolen: У вас украли предмет!
+
+            Revived: Вы возродились!
+
+            NoMusic1: Fargo's Music Mod не найден
+            NoMusic2: Пожалуйста, установите Fargo's Music Mod для полноценного опыта!
+
+            DeviBribe: {
+                Line1: Секундочку...
+                Line2: Ты бросаешь в меня деньги!
+                Line3: Пытаться подкупить меня - довольно смело, знаешь ли!
+                Accept1: Но опять же, это большие деньги...
+                Accept2: Но мой старший брат сказал не делать этого! Что делать, что делать..?
+                Accept3: О, чёрт возьми! Но это наш маленький секрет, хорошо?
+                Reject1: Покажи, что ты достаточно крут, и я не буду возражать, но ни секундой раньше!
+                Reject2: Вот, ты можешь забрать это обратно.
+                Reject3: Ну что, начнём нашу вечеринку!
+            }
+
+            IvyVenomTransform: Your Ivy Venom has become Neurotoxin!!
+
+            LihzahrdBlessing: Свет алтаря озаряет вас!
+
+            EternityItem: Вечность
+            PatreonItem: ">> Предмет патрона <<"
+            PatreonNameEffect: Ваш особый эффект патрона -
+
+            SkeletronRegrow: has regrown its arms!
+            SkeletronGuardian: принял форму стража Темницы!
+            TwinsEndure: пережил смертельный удар, чтобы сражаться вместе со своим близнецом!
+            TwinsRevive: has been revived!
+            GelatinSubjects: Gelatin Subjects have awoken!
+
+            MoonsDeathPenalty: The wave progress has regressed!
+        }
+
+        DeathMessage: {
+            Rotting: сгнил.
+            Infested: не справился с инфекцией.
+            Anticoagulation: bled out.
+            DivineWrath: был истреблён божественным гневом.
+            Shadowflame: burned up in shadowy flames.
+            NanoInjection: was consumed from within by nanites.
+        }
+
+        DeviChatter: {
+            Spawn1: Heya! Mind if I come with?
+            Spawn2: I'll light your way!
+            Spawn3: Onwards to the next big adventure!
+            Spawn4: I'll be in your care!
+            Spawn5: Hello world!
+            Spawn6: Chibi Devi is on the case!
+            Spawn7: Lead the way!
+
+            Respawn1: We won't let it end the same way again!
+            Respawn2: Time to run it back!
+            Respawn3: Take a deep breath. We'll get this eventually!
+            Respawn4: Gotta do more than that to keep us down!
+            Respawn5: Let's see what we can do to change it up!
+            Respawn6: We can do this!
+            Respawn7: How about a minute to rest and refresh? Couldn't hurt!
+
+            Idle1: We'll collect everything there is to collect!
+            Idle2: Battle, blood, money - nothing beats, am I right?
+            Idle3: Just remember, I'm not an emergency ration.
+            Idle4: Ever tried mining with Boom Shurikens? Heh heh...
+            Idle5: We should take over the world. Kidding! Mostly.
+            Idle6: I wanna see you kill more things!
+            Idle7: Still feels weird to be called a light pet...
+            Idle8: Nothing to do? Murder something!
+            Idle9: Bet you there's a quality of life trick we could try out.
+            Idle10: Mind if I play with those accessory toggles of yours?
+            Idle11: Fun fact: my real name is... a secret! Gotcha!
+            Idle12: Wherever you go, I'll follow!
+
+            Sleep1: I feel asleep...
+            Sleep2: Good night...
+            Sleep3: Gonna squeeze in a quick nap...
+            Sleep4: Gotta recharge...
+            Sleep5: Wake me up when there's violence...
+
+            Wake1: What did I miss?
+            Wake2: Morning!
+            Wake3: Go time? Go time!
+            Wake4: Rise and shine!
+            Wake5: Devi has awoken! Hand over the money!
+
+            ProjDeath1: No! Don't put me back in the hat!
+            ProjDeath2: But I have so much to explore!
+            ProjDeath3: Hello darkness, my old friend...
+            ProjDeath4: Please don't put me away, I'll do anything!
+
+            PlayerDeath1: You can do it! You can - oh.
+            PlayerDeath2: We'll make you pay for this!
+            PlayerDeath3: Noooo!!
+            PlayerDeath4: Where did that come from?! That wasn't fair!
+            PlayerDeath5: Dang! We'll get them next time.
+            PlayerDeath6: What?! No way!
+            PlayerDeath7: That wasn't very cash money...
+
+            BossAlmostDead1: Almost there!
+            BossAlmostDead2: You got this!
+            BossAlmostDead3: In the home stretch now!
+            BossAlmostDead4: Just a little bit more!
+            BossAlmostDead5: Finish them off!
+            BossAlmostDead6: This is our chance!
+
+            KillBoss1: What a fun beatdown! Who's next?
+            KillBoss2: Nothing like the feeling of victory!
+            KillBoss3: Again! Again! Again!
+            KillBoss4: Blood for the blood gods! And by that I mean us.
+            KillBoss5: Devi gaming.
+            KillBoss6: YATTA! Uh, you didn't hear that.
+            KillBoss7: Yeah! That's what I've been waiting for! That's what it's all about!
+
+            BossSpawn1: You can do it!
+            BossSpawn2: Here they come!
+            BossSpawn3: I'm cheering you on! Go!
+            BossSpawn4: Bring it on!
+            BossSpawn5: We can take them!
+            BossSpawn6: Do your best!
+            BossSpawn7: Wipe the floor with them!
+            BossSpawn8: Let's do this!
+
+            Count1: Psst... can you hear me? This is a secret message! Hi!
+        }
+
+        Config: {
+            HideToggler: Only show effect toggler when inventory is open
+            HideTogglerDescription: If true, the effect toggler is automatically hidden when your inventory is closed.
+            DeviChatter: Chibi Devi can talk
+            MasoHeader: Eternity Mode
+            MasoBossRecolors: Bosses use alternative sprites
+            OncomingMutantX: Eternity Mode inventory icon X position
+            OncomingMutantY: Eternity Mode inventory icon Y position
+            Precision: Precision Seal Key must be held
+            PrecisionTooltip: If false, precision mode is instead toggled with the key.
+        }
+
+        Toggler: {
+            WoodHeader: "{$Mods.FargowiltasSouls.ItemName.TimberForce}"
+            BorealConfig: Boreal Snowballs
+            MahoganyConfig: Mahogany Hook Speed
+            EbonConfig: Ebonwood Shadowflame
+            ShadeConfig: Blood Geyser On Hit
+            ShadeOnHitConfig: Proximity Triggers On Hit Effects
+            PalmConfig: Palmwood Sentry
+            PearlConfig: Pearlwood Rain
+
+            EarthHeader: "{$Mods.FargowiltasSouls.ItemName.EarthForce}"
+            AdamantiteConfig: Adamantite Projectile Splitting
+            CobaltConfig: Cobalt Shards
+            AncientCobaltConfig: Ancient Cobalt Stingers
+            MythrilConfig: Mythril Weapon Speed
+            OrichalcumConfig: Orichalcum Petals
+            PalladiumConfig: Palladium Healing
+            PalladiumOrbConfig: Palladium Orbs
+            TitaniumConfig: Titanium Shards
+
+            TerraHeader: "{$Mods.FargowiltasSouls.ItemName.TerraForce}"
+            CopperConfig: Copper Lightning
+            IronMConfig: Iron Magnet
+            IronSConfig: Iron Parry
+            TinConfig: Tin Crits
+            TungstenConfig: Tungsten Item Effect
+            TungstenProjConfig: Tungsten Projectile Effect
+            ObsidianConfig: Obsidian Explosions
+
+            WillHeader: "{$Mods.FargowiltasSouls.ItemName.WillForce}"
+            GladiatorConfig: Gladiator Rain
+            GoldConfig: Gold Lucky Coin
+            GoldToPiggyConfig: Gold To Piggy Bank
+            HuntressConfig: Huntress Ability
+            RedRidingRainConfig: Red Riding Arrow Rain
+            ValhallaConfig: Squire/Valhalla Healing
+            SquirePanicConfig: Ballista Panic On Hit
+
+            LifeHeader: "{$Mods.FargowiltasSouls.ItemName.LifeForce}"
+            BeeConfig: Bees
+            BeetleConfig: Beetles
+            CactusConfig: Cactus Needles
+            PumpkinConfig: Grow Pumpkins
+            SpiderConfig: Spider Crits
+            TurtleConfig: Turtle Shell Buff
+
+            NatureHeader: "{$Mods.FargowiltasSouls.ItemName.NatureForce}"
+            ChlorophyteConfig: Chlorophyte Leaf Crystal
+            CrimsonConfig: Crimson Regen
+            RainConfig: Rain Clouds
+            RainInnerTubeConfig: Inner Tube
+            FrostConfig: Frost Icicles
+            JungleConfig: Jungle Spores
+            JungleDashConfig: Jungle Dash
+            MoltenConfig: Molten Inferno Buff
+            MoltenEConfig: Molten Explosion On Hit
+            ShroomiteConfig: Shroomite Stealth
+            ShroomiteShroomConfig: Shroomite Mushrooms
+
+            ShadowHeader: "{$Mods.FargowiltasSouls.ItemName.ShadowForce}"
+            DarkArtConfig: Flameburst Minion
+            ApprenticeConfig: Apprentice Effect
+            NecroConfig: Necro Graves
+            NecroGloveConfig: Necro Bone Glove
+            ShadowConfig: Shadow Orbs
+            AncientShadowConfig: Ancient Shadow Darkness
+            MonkConfig: Monk Dash
+            ShinobiDashConfig: Shinobi Teleport Dash
+            ShinobiConfig: Shinobi Through Walls
+            SpookyConfig: Spooky Scythes
+            CrystalDashConfig: Crystal Assassin Dash
+            CrystalGelatinConfig: Volatile Gelatin
+
+            SpiritHeader: "{$Mods.FargowiltasSouls.ItemName.SpiritForce}"
+            FossilConfig: Fossil Bones On Hit
+            ForbiddenConfig: Forbidden Storm
+            HallowDodgeConfig: Hallowed Dodge
+            HallowedConfig: Ancient Hallowed Terraprisma familiar
+            HallowSConfig: Ancient Hallowed Shield
+            SilverConfig: Silver Sword Familiar
+            SilverSpeedConfig: Silver Minion Speed
+            SpectreConfig: Spectre Orbs
+            TikiConfig: Tiki Minions
+
+            CosmoHeader: "{$Mods.FargowiltasSouls.ItemName.CosmoForce}"
+            MeteorConfig: Meteor Shower
+            NebulaConfig: Nebula Boosters
+            SolarConfig: Solar Shield
+            SolarFlareConfig: Inflict Solar Flare
+            StardustConfig: Stardust Guardian
+            VortexSConfig: Vortex Stealth
+            VortexVConfig: Vortex Voids
+
+
+            MasoHeader: Eternity Mode
+            MasoBossRecolors: Boss Recolors
+            MasoCanPlay: Masochist Mode Available
+
+            MasoHeader2: Eternity Mode Accessories
+            DeerSinewDashConfig: Deer Sinew Dash
+            MasoAeolusConfig: Aeolus Jump
+            MasoAeolusFlowerConfig: Flower Boots
+            MasoIconConfig: Sinister Icon Spawn Rates
+            MasoIconDropsConfig: Sinister Icon Drops
+            MasoGrazeConfig: Graze
+            MasoGrazeRingConfig: Graze Radius Visual
+            MasoDevianttHeartsConfig: Homing Hearts On Hit
+            PrecisionSealHurtboxConfig: Reduced Hurtbox Size
+
+            SupremeFairyHeader: "{$Mods.FargowiltasSouls.ItemName.SupremeDeathbringerFairy}"
+            MasoSlimeConfig: Slimy Balls
+            SlimeFallingConfig: Увеличивает скорость падения
+            MasoEyeConfig: Scythes When Dashing
+            MasoHoneyConfig: Honey When Hitting Enemies
+            MasoSkeleConfig: Skeletron Arms Minion
+
+            BionomicHeader: "{$Mods.FargowiltasSouls.ItemName.BionomicCluster}"
+            MasoConcoctionConfig: Tim's Concoction
+            MasoCarrotConfig: Carrot Zoom
+            MasoRainbowConfig: Rainbow Slime Minion
+            MasoFrigidConfig: Frostfireballs
+            MasoNymphConfig: Attacks Spawn Hearts
+            MasoSqueakConfig: Squeaky Toy On Hit
+            MasoPouchConfig: Shadowflame Tentacles
+            MasoClippedConfig: Inflict Clipped Wings
+            TribalCharmConfig: Tribal Charm Auto Swing
+
+            DubiousHeader: "{$Mods.FargowiltasSouls.ItemName.DubiousCircuitry}"
+            MasoLightningConfig: Inflict Lightning Rod
+            MasoProbeConfig: Probes Minion
+
+            PureHeartHeader: "{$Mods.FargowiltasSouls.ItemName.PureHeart}"
+            MasoEaterConfig: Tiny Eaters
+            MasoBrainConfig: Creeper Shield
+
+            LumpofFleshHeader: "{$Mods.FargowiltasSouls.ItemName.LumpOfFlesh}"
+            MasoPungentCursorConfig: Pungent Eye Cursor
+            MasoPugentConfig: Lump of Flesh Minion
+            DeerclawpsConfig: Deerclawps Spike Dash Trail
+            DreadShellParryConfig: Dread Shell Parry
+
+            ChaliceHeader: "{$Mods.FargowiltasSouls.ItemName.ChaliceoftheMoon}"
+            MasoCultistConfig: Cultist Minion
+            MasoPlantConfig: Plantera Minion
+            MasoGolemConfig: Lihzahrd Ground Pound
+            MasoBoulderConfig: Boulder Spray
+            MasoCelestConfig: Celestial Rune Support
+            MasoVisionConfig: Ancient Visions On Hit
+
+            HeartHeader: "{$Mods.FargowiltasSouls.ItemName.HeartoftheMasochist}"
+            MasoPumpConfig: Pumpking's Cape Support
+            IceQueensCrownConfig: Freeze On Hit
+            MasoFlockoConfig: Flocko Minion
+            MasoUfoConfig: Saucer Minion
+            MasoGravConfig: Gravity Control
+            MasoGrav2Config: Stabilized Gravity
+            MasoTrueEyeConfig: True Eyes Minion
+
+            CyclonicHeader: "{$Mods.FargowiltasSouls.ItemName.AbominableWand}"
+            MasoFishronConfig: Spectral Abominationn
+
+            MutantArmorHeader: True Mutant Armor
+            MasoAbomConfig: Abominationn Minion
+            MasoRingConfig: Phantasmal Ring Minion
+            MasoReviveDeathrayConfig: Deathray When Revived
+
+
+            UniverseHeader: "{$Mods.FargowiltasSouls.ItemName.UniverseSoul}"
+            MeleeConfig: Melee Speed
+            MagmaStoneConfig: Magma Stone
+            YoyoBagConfig: Yoyo Bag
+            MoonCharmConfig: Moon Charm
+            NeptuneShellConfig: Neptune's Shell
+            SniperConfig: Sniper Scope
+            ManaFlowerConfig: Mana Flower
+            UniverseConfig: Universe Attack Speed
+
+            WorldShaperHeader: "{$Mods.FargowiltasSouls.ItemName.WorldShaperSoul}"
+            MiningHuntConfig: Mining Hunter Buff
+            MiningDangerConfig: Mining Dangersense Buff
+            MiningSpelunkConfig: Mining Spelunker Buff
+            MiningShineConfig: Mining Shine Buff
+            BuilderConfig: Builder Mode
+
+            ColossusHeader: "{$Mods.FargowiltasSouls.ItemName.ColossusSoul}"
+            DefenseStarConfig: Stars On Hit
+            DefenseBrainConfig: Brain of Confusion
+            DefenseBeeConfig: Bees On Hit
+            DefensePanicConfig: Panic On Hit
+            DefenseFleshKnuckleConfig: Flesh Knuckles Aggro
+            DefensePaladinConfig: Paladin's Shield
+            DefenseFrozenConfig: Frozen Turtle Shell
+
+            FlightMasteryHeader: "{$Mods.FargowiltasSouls.ItemName.FlightMasterySoul}"
+            FlightMasteryInsigniaConfig: Soaring Insignia Acceleration
+            FlightMasteryGravityConfig: Amplified Gravity
+
+            SupersonicHeader: "{$Mods.FargowiltasSouls.ItemName.SupersonicSoul}"
+            RunSpeedConfig: Higher Base Run Speed
+            MomentumConfig: No Momentum
+            SupersonicTabiConfig: Tabi Dash
+            SupersonicClimbingConfig: Tiger Climbing Gear
+            SupersonicConfig: Supersonic Speed Boosts
+            SupersonicJumpsConfig: Supersonic Jumps
+            SupersonicRocketBootsConfig: Supersonic Rocket Boots
+            SupersonicCarpetConfig: Supersonic Carpet
+            SupersonicFlowerConfig: Supersonic Flower Boots
+            CthulhuShieldConfig: Shield of Cthulhu
+            BlackBeltConfig: Black Belt
+
+            TrawlerHeader: "{$Mods.FargowiltasSouls.ItemName.TrawlerSoul}"
+            TrawlerSporeConfig: Spore Sac
+            TrawlerConfig: Trawler Extra Lures
+            TrawlerJumpConfig: Trawler Jump
+
+            EternityHeader: "{$Mods.FargowiltasSouls.ItemName.EternitySoul}"
+            EternityConfig: Eternity Stacking
+
+
+            PetHeader: Pets
+            PetBlackCatConfig: Black Cat Pet
+            PetCompanionCubeConfig: Companion Cube Pet
+            PetCursedSaplingConfig: Cursed Sapling Pet
+            PetDinoConfig: Dino Pet
+            PetDragonConfig: Dragon Pet
+            PetEaterConfig: Eater Pet
+            PetEyeSpringConfig: Eye Spring Pet
+            PetFaceMonsterConfig: Face Monster Pet
+            PetGatoConfig: Gato Pet
+            PetHornetConfig: Hornet Pet
+            PetLizardConfig: Lizard Pet
+            PetMinitaurConfig: Mini Minotaur Pet
+            PetParrotConfig: Parrot Pet
+            PetPenguinConfig: Penguin Pet
+            PetPupConfig: Puppy Pet
+            PetSeedConfig: Seedling Pet
+            PetDGConfig: Skeletron Pet
+            PetSnowmanConfig: Snowman Pet
+            PetGrinchConfig: Grinch Pet
+            PetSpiderConfig: Spider Pet
+            PetSquashConfig: Squashling Pet
+            PetTikiConfig: Tiki Pet
+            PetShroomConfig: Truffle Pet
+            PetTurtleConfig: Turtle Pet
+            PetZephyrConfig: Zephyr Fish Pet
+            PetHeartConfig: Crimson Heart Pet
+            PetNaviConfig: Fairy Pet
+            PetFlickerConfig: Flickerwick Pet
+            PetLanternConfig: Magic Lantern Pet
+            PetOrbConfig: Shadow Orb Pet
+            PetSuspEyeConfig: Suspicious Eye Pet
+            PetWispConfig: Wisp Pet
+
+
+            PatreonHeader: Patreon Items
+            PatreonRoomba: Roomba
+            PatreonOrb: Computation Orb
+            PatreonFishingRod: Miss Drakovi's Fishing Pole
+            PatreonDoor: Squidward Door
+            PatreonWolf: Paradox Wolf Soul
+            PatreonDove: Fig Branch
+            PatreonKingSlime: Medallion of the Fallen King
+            PatreonFishron: Staff Of Unleashed Ocean
+            PatreonPlant: Piranha Plant Voodoo Doll
+            PatreonDevious: Devious Aestheticus
+            PatreonVortex: Vortex Ritual
+            PatreonPrime: Prime Staff
+            PatreonCrimetroid: Crimetroid
+        }
+
+        UI: {
+            SoulTogglerButton: Configure Accessory Effects
+            EternityEnabled: Eternity Mode is enabled
+            MasochistEnabled: Masochist Mode is enabled
+        }
+
+        ItemExtra: {
+            WoodenDiscount: Текущая скидка: {0}%
+            WoodenTooltip: 'Humble beginnings…'
+
+            TinCritUp: +5% шанс критического удара
+            TinCritReset: -{0}% шанс критического удара
+
+            EternitySoul: {
+                Additional: Дополнительно даёт:
+
+                Vanilla:
+                    '''
+                    Увеличивает урон на 250%
+                    Увеличивает скорость атаки на 250%
+                    Увеличивает скорость стрельбы на 100%
+                    Увеличивает отбрасывание на 100%
+                    Увеличивает пробивание брони на 50
+                    Критические удары наносят в 10 раз больше урона
+                    Значительно увеличивает регенерацию здоровья
+                    Увеличивает максимальный запас маны на 999
+                    Увеличивает призываемое число миньонов на 30
+                    Увеличивает призываемое число турелей на 20
+                    Увеличивает максимальный запас здоровья на 50%
+                    Снижает расход маны на 50%
+                    Все атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FlamesoftheUniverse.Name}»
+                    Все атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Sadism.Name}»
+                    Все атаки накладывают дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Midas.Name}»
+                    Все атаки снижают кадры неуязвимости врага
+                    Призывает вокруг вас огненные шары
+                    Призывает вокруг вас 2 теневые сферы
+                    Призывает вокруг вас сосульки
+                    Призывает вокруг вас кристальные листья
+                    Призывает святой меч и щит
+                    Призывает жуков защищать вас
+                    Призывает огнеплюя
+                    Призывает множество питомцев
+                    Призывает на помощь всех боссов режима Вечности
+                    Атаки могут создать молнии
+                    Атаки могут создать лепестки цветов
+                    Атаки могут создать спектральные сферы
+                    Атаки могут создать стража Темницы
+                    Атаки могут создать снежки
+                    Атаки могут создать копья
+                    Атаки могут создать сердца
+                    Атаки могут создать миниатюрный шторм
+                    Атаки могут создать усилители
+                    Атаки провоцируют усиленную регенерации здоровья
+                    Атаки провоцируют теневой уворот
+                    Атаки провоцируют выстрелы огнеплюя
+                    Атаки провоцируют тыквенные атаки
+                    Атаки провоцируют заклинания культиста-лунатика
+                    Атаки провоцируют метеоритный дождь
+                    Все снаряды могут разделиться
+                    Снаряды могут разбиться
+                    Снаряды создают звёзды
+                    Увеличивает размер предметов и снарядов
+                    Вы оставляете за собой след из огней
+                    Ближайшие враги воспламеняются
+                    Миньоны периодически извергают косы
+                    Вы можете призывать временных миньонов
+                    Увеличивают защиту невинных животных
+                    Души невинных животных помогают вам
+                    Враги взрываются иглами
+                    Значительно усиливает все турели из DD2
+                    Дважды нажмите ВНИЗ, чтобы вызвать пальмовое дерево
+                    Дважды нажмите ВНИЗ, чтобы вызвать древнюю бурю
+                    Дважды нажмите ВНИЗ, чтобы вызвать дождь из стрел
+                    Дважды нажмите ВНИЗ, чтобы переключить невидимость
+                    Дважды нажмите ВНИЗ, чтобы призвать портал
+                    Дважды нажмите ВНИЗ, чтобы направить вашего усиленного стража в нужное место
+                    Нажмите ПКМ, чтобы защитится щитом
+                    Клавиша Turn Gold покроет вас золотом
+                    Клавиша Freeze Time заморозит время на 5 секунд
+                    Солнечный щит позволяет вам делать рывок
+                    Сделайте рывок в стену, чтобы телепортироваться сквозь неё
+                    Бросьте дымовую бомбу, чтобы телепортироваться к ней и получить бафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FirstStrike.Name}»
+                    При прыжке происходит взрыв спор
+                    Враги, подошедшие слишком близко активируют все эффекты при ударе
+                    Получение удара отражает урон
+                    Получение удара вызывает кровавый гейзер
+                    Атаки по вам могут пискнуть
+                    При ударе вы извергаетесь шипастыми шарами
+                    При ударе вы извергаетесь древними пророчествами
+                    Даёт багряную регенерацию
+                    Даёт невосприимчивость к огню
+                    Даёт невосприимчивость к урону от падения
+                    Даёт невосприимчивость к лаве
+                    Даёт невосприимчивость к отбрасыванию
+                    Даёт невосприимчивость практически ко всем дебаффам
+                    Даёт удвоенный сбор растений
+                    Даёт 50% шанс мега-пчелы
+                    Даёт 15% для миньонов нанести критический удар
+                    Даёт 20% шанс получить дополнительную добычу
+                    Позволяет бегать со скоростью звука
+                    Позволяет бесконечно летать
+                    Значительно увеличивает навык рыбной ловли
+                    Все удочки имеют 10 дополнительных поплавков
+                    Вы возрождаетесь в 10 раз быстрее
+                    Предотвращает появление боссов
+                    Увеличивает скорость появления врагов
+                    Снижает враждебность скелетов вне Темницы
+                    Усиливает рыброн-милашку
+                    Даёт авто-атаку
+                    Даёт защиту от модификаторов
+                    Позволяет контролировать гравитацию
+                    Даёт быстрое падение
+                    Усиливает крюки
+                    Вы притягиваете предметы издалека
+                    Увеличивает скорость размещения блоков и стен на 50%
+                    Почти бесконечный радиус установки блоков
+                    Почти бесконечный радиус добычи
+                    Значительно увеличивает скорость добычи
+                    Вы отражаете все снаряды
+                    Когда вас ранят, вы взрываетесь, нанося урон ближайшим врагам
+                    После смерти, вы возрождаетесь с полным здоровьем
+                    Эффекты от предмета «{$ItemName.FireGauntlet}»
+                    Эффекты от предмета «{$ItemName.YoyoBag}»
+                    Эффекты от предмета «{$ItemName.SniperScope}»
+                    Эффекты от предмета «{$ItemName.CelestialCuffs}»
+                    Эффекты от предмета «{$ItemName.ManaFlower}»
+                    Эффекты от предмета «{$ItemName.BrainOfConfusion}»
+                    Эффекты от предмета «{$ItemName.StarVeil}»
+                    Эффекты от предмета «{$ItemName.SweetheartNecklace}»
+                    Эффекты от предмета «{$ItemName.BeeCloak}»
+                    Эффекты от предмета «{$ItemName.SporeSac}»
+                    Эффекты от предмета «{$ItemName.PaladinsShield}»
+                    Эффекты от предмета «{$ItemName.FrozenTurtleShell}»
+                    Эффекты от предмета «{$ItemName.ArcticDivingGear}»
+                    Эффекты от предмета «{$ItemName.FrogLeg}»
+                    Эффекты от предмета «{$ItemName.FlyingCarpet}»
+                    Эффекты от предмета «{$ItemName.LavaWaders}»
+                    Эффекты от предмета «{$ItemName.AnglerTackleBag}»
+                    Эффекты от предмета «{$ItemName.PaintSprayer}»
+                    Эффекты от предмета «{$ItemName.ActuationAccessory}»
+                    Эффекты от предмета «{$ItemName.CellPhone}»
+                    Эффекты от предмета «{$ItemName.FlowerBoots}»
+                    Эффекты от предмета «{$ItemName.MasterNinjaGear}»
+                    Эффекты от предмета «{$ItemName.GreedyRing}»
+                    Эффекты от предмета «{$ItemName.CelestialShell}»
+                    Эффекты от предмета «{$ItemName.ShinyStone}»
+                    Эффекты от предмета «{$ItemName.SpelunkerPotion}»
+                    Эффекты от предмета «{$ItemName.TrapsightPotion}»
+                    Эффекты от предмета «{$ItemName.HunterPotion}»
+                    Эффекты от предмета «{$ItemName.ShinePotion}»
+                    Эффекты режима строителя
+                    '''
+
+                Thorium:
+                    '''
+                    Armor bonuses from Living Wood
+                    Armor bonuses from Life Bloom
+                    Armor bonuses from Yew Wood
+                    Armor bonuses from Tide Hunter
+                    Armor bonuses from Icy
+                    Armor bonuses from Cryo Magus
+                    Armor bonuses from Whispering
+                    Armor bonuses from Sacred
+                    Armor bonuses from Warlock
+                    Armor bonuses from Biotech
+                    Armor bonuses from Cyber Punk
+                    Armor bonuses from Maestro
+                    Armor bonuses from Bronze
+                    Armor bonuses from Darksteel
+                    Armor bonuses from Durasteel
+                    Armor bonuses from Conduit
+                    Armor bonuses from Lodestone
+                    Armor bonuses from Illumite
+                    Armor bonuses from Jester
+                    Armor bonuses from Thorium
+                    Armor bonuses from Terrarium
+                    Armor bonuses from Malignant
+                    Armor bonuses from Folv
+                    Armor bonuses from White Dwarf
+                    Armor bonuses from Celestial
+                    Armor bonuses from Spirit Trapper
+                    Armor bonuses from Dragon
+                    Armor bonuses from Dread
+                    Armor bonuses from Flesh
+                    Armor bonuses from Demon Blood
+                    Armor bonuses from Tide Turner
+                    Armor bonuses from Assassin
+                    Armor bonuses from Pyromancer
+                    Armor bonuses from Dream Weaver
+                    Effects of Flawless Chrysalis
+                    Effects of Bubble Magnet
+                    Effects of Agnor's Bowl
+                    Effects of Ice Bound Strider Hide
+                    Effects of Ring of Unity
+                    Effects of Mix Tape
+                    Effects of Eye of the Storm
+                    Effects of Champion's Rebuttal
+                    Effects of Incandescent Spark
+                    Effects of Greedy Magnet
+                    Effects of Abyssal Shell
+                    Effects of Astro-Beetle Husk
+                    Effects of Eye of the Beholder
+                    Effects of Crietz
+                    Effects of Mana-Charged Rocketeers
+                    Effects of Inner Flame
+                    Effects of Crash Boots
+                    Effects of Vampire Gland
+                    Effects of Demon Blood Badge
+                    Effects of Lich's Gaze
+                    Effects of Plague Lord's Flask
+                    Effects of Phylactery
+                    Effects of Crystal Scorpion
+                    Effects of Guide to Expert Throwing - Volume III
+                    Effects of Mermaid's Canteen
+                    Effects of Deadman's Patch
+                    Effects of Support Sash
+                    Effects of Saving Grace
+                    Effects of Soul Guard
+                    Effects of Archdemon's Curse
+                    Effects of Archangel's Heart
+                    Effects of Medical Bag
+                    Effects of Epic Mouthpiece
+                    Effects of Straight Mute
+                    Effects of Digital Tuner
+                    Effects of Guitar Pick Claw
+                    Effects of Ocean's Retaliation
+                    Effects of Terrarium Defender
+                    Effects of Air Walkers
+                    Effects of Survivalist Boots
+                    Effects of Weighted Winglets
+                    '''
+
+                Calamity:
+                    '''
+                    Эффекты комплекта брони аэроспека
+                    Эффекты комплекта статиджеловой брони
+                    Эффекты комплекта брони Дедала
+                    Эффекты комплекта брони кровавой вспышки
+                    Эффекты виктидового комплекта брони
+                    Эффекты неземного комплекта брони
+                    Эффекты омега-лазурного комплекта брони
+                    Эффекты комплекта брони богоубийцы
+                    Эффекты комплекта брони Сильвы
+                    Эффекты золотосодержащего комплекта брони теслы
+                    Эффекты комплекта брони моллюска
+                    Эффекты комплекта брони разорителя
+                    Эффекты гидротермического комплекта брони
+                    Эффекты астрального комплекта брони
+                    Эффекты комплекта брони таррагона
+                    Эффекты тенедемонического комплекта брони
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.SpiritGlyph.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.RaidersTalisman.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.TrinketofChi.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.GladiatorsLocket.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.UnstableGraniteCore.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.CounterScarf.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.FungalSymbiote.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.PermafrostsConcoction.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.Regenator.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.CoreOfTheBloodGod.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.Affliction.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.DeepDiver.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.TheTransformer.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.LuxorsGift.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.TheCommunity.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.AbyssalDivingSuit.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.LumenousAmulet.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.AquaticEmblem.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.NebulousCore.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.DraedonsHeart.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.TheAmalgam.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.GodlySoulArtifact.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.YharimsGift.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.HeartoftheElements.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.TheSponge.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.GiantPearl.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.AmidiasPendant.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.FlameLickedShell.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.PlagueHive.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.AstralArcanum.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.HideofAstrumDeus.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.ProfanedSoulArtifact.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.DarkSunRing.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.ElementalGauntlet.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.ElementalQuiver.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.EtherealTalisman.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.StatisVoidSash.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.Nanotech.Name}»
+                    Эффекты от предмета «{$Mods.CalamityRuTranslate.CalamityMod.Items.AsgardianAegis.Name}»
+                    '''
+
+                SOA:
+                    '''
+                    Armor bonuses from Bismuth
+                    Armor bonuses from Frosthunter
+                    Armor bonuses from Blightbone
+                    Armor bonuses from Dreadfire
+                    Armor bonuses from Space Junk
+                    Armor bonuses from Marstech
+                    Armor bonuses from Blazing Brute
+                    Armor bonuses from Cosmic Commander
+                    Armor bonuses from Nebulous Apprentic
+                    Armor bonuses from Stellar Priest
+                    Armor bonuses from Fallen Prince
+                    Armor bonuses from Void Warden
+                    Armor bonuses from Vulcan Reaper
+                    Armor bonuses from Flarium
+                    Armor bonuses from Asthraltite
+                    Effects of Dreadflame Emblem
+                    Effects of Lapis Pendant
+                    Effects of Frigid Pendant
+                    Effects of Pumpkin Amulet
+                    Effects of Nuba's Blessing
+                    Effects of Novaniel's Resolve
+                    Effects of Celestial Ring
+                    Effects of Ring of the Fallen
+                    Effects of Memento Mori
+                    Effects of Arcanum of the Caster
+                    '''
+
+                DBT:
+                    '''
+                    Effects of Zenkai Charm
+                    Effects of Aspera Crystallite
+                    '''
+            }
+        }
+
+        RecipeGroups: {
+            Or: or
+            BonesBanner: Angry or Armored Bones Banner
+            Phasesaber: Phasesaber
+            Butterfly: Butterfly
+            CommonFish: Common Fish
+            FishingTrash: Fishing Trash
+        }
+
+        EModeBalance: {
+            Nerf: '[c/ff0000:Режим Вечности:]'
+            Buff: '[c/00ff00:Режим Вечности:]'
+            Neutral: '[c/ffff00:Режим Вечности:]'
+
+            Damage: Урон снижен на {0}%
+            Speed: Скорость атаки снижена на {0}%
+
+            RodofDiscord: Во время битвы с боссами каждое использование отнимает здоровье
+            Split: Reduced split frequency
+            ChlorophyteBullet: Скорость и длительность снижены
+            WaterBolt: Нельзя использовать, пока не побеждён Скелетрон
+            HolyDodge: Holy Dodge activation will temporarily reduce your attack speed
+            SpectreHood: Исцеляющие сферы движутся медленнее и быстро исчезают
+            FrozenTurtleShell: Ледяная преграда немного снижает наносимый вами урон
+            BrainOfConfusion: Lowers your damage output on successful dodge
+
+            ZenithNone: Без изменений
+            ZenithHitRate: "Vastly reduced hit rate, improves by defeating:"
+
+            VampireKnives: Сила кражи здоровья снижена, когда здоровье больше 33%
+            Zapinator: Не может складывать множители урона
+
+            OOASet: Set bonus increases minimum summon damage when you attack using other classes
+            MiningHelmet: Increases Undead Miner spawn rates
+            MoonsDrops: Bosses and minibosses drop no items until late waves
+            MoonsWaves: Смерть снижает прогресс волны
+
+            WhipSpeed: Не получает бонусов от скорости атаки ближнего боя
+            WhipStack: Баффы/дебаффы хлыста не могут складываться
+            MinionStack: Damage of minions diminishes when summoning over 3 copies (effect caps at 12)
+            SummonMulticlass: Summon damage decreases when you attack using other classes (except in OOA)
+        }
+    }
+}
