@@ -19,8 +19,8 @@ public class BattleCryPatch : Patch<ILContext.Manipulator>
     {
         TranslationHelper.ModifyIL(il, "Battle", "Боевой");
         TranslationHelper.ModifyIL(il, "Calming", "Успокаивающий");
-        TranslationHelper.ModifyIL(il, "activated", " активирован");
-        TranslationHelper.ModifyIL(il, "deactivated", " деактивирован");
+        TranslationHelper.ModifyIL(il, "activated", "активирован");
+        TranslationHelper.ModifyIL(il, "deactivated", "деактивирован");
         TranslationHelper.ModifyIL(il, " Cry ", " клич ");
         TranslationHelper.ModifyIL(il, " for ", " для ");
     };

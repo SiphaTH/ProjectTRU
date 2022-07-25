@@ -39,7 +39,7 @@ public static class CalamityReflection
         Dictionary<int, BossHealthBarManager.BossEntityExtension> dictionary = new Dictionary<int, BossHealthBarManager.BossEntityExtension>
         {
             {13, new BossHealthBarManager.BossEntityExtension("Сегментов", 13, 14, 15)},
-            {266, new BossHealthBarManager.BossEntityExtension("Ползунов", 267)},
+            {266, new BossHealthBarManager.BossEntityExtension("Проныр", 267)},
             {35, new BossHealthBarManager.BossEntityExtension("Рук", 36)},
             {127, new BossHealthBarManager.BossEntityExtension("Вооружений", 128, 129, 130, 131)},
             {395, new BossHealthBarManager.BossEntityExtension("Ружий", 393, 394)},
