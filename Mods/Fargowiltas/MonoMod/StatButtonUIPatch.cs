@@ -70,7 +70,7 @@
 //         }
 //
 //         self.AddStat($"Максимальное число миньонов: {player.maxMinions}", ItemID.SlimeStaff);
-//         self.AddStat($"Максимальное число турелей: {player.maxTurrets}", ItemID.SlimeStaff);
+//         self.AddStat($"Максимальное число стражей: {player.maxTurrets}", ItemID.SlimeStaff);
 //
 //         self.AddStat($"Пробивание брони: {player.GetArmorPenetration(DamageClass.Generic)}", ItemID.SharkToothNecklace);
 //         self.AddStat($"Агрессия: {player.aggro}", ItemID.FleshKnuckles);
