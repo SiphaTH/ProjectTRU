@@ -1838,7 +1838,7 @@
                     Снижает длительность дебаффа «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.AbomRebirth.Name}»
                     Нажмите клавишу Mutant Bomb, чтобы высвободить волну сфер и уничтожить большинство вражеских снарядов
                     Mutant Bomb имеет 60 перезарядки
-                    'Всего лишь чуть-чуть подозрительно'
+                    'Всего лишь чуть-чуть подозрительный'
                     '''
             }
 
@@ -1871,7 +1871,7 @@
                 Tooltip:
                     '''
                     Даёт невосприимчивость к дебаффам «{$BuffName.Lovestruck}», «{$BuffName.Stinky}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Hexed.Name}»
-                    Вы возрождаетесь с большим количеством здоровья
+                    Владелец возрождается с большим количеством здоровья
                     Атаки иногда создают сердца
                     'Несколько подавляющий аромат'
                     '''
@@ -2379,7 +2379,7 @@
                     Увеличивает урон на 10%
                     Увеличивает шанс критического удара на 10%
                     Снижает получаемый урон на 10%
-                    Обеспечивает регенерацией здоровья
+                    Увеличивает регенерацию здоровья
                     '''
             }
 
@@ -2405,7 +2405,7 @@
             }
 
             GaiaGreaves: {
-                Name: Поножи Гайя
+                Name: Поножи Гайи
                 Tooltip:
                     '''
                     Увеличивает урон оружия текущего класса на 10%
@@ -2415,7 +2415,7 @@
             }
 
             GaiaHelmet: {
-                Name: Каска Гайя
+                Name: Каска Гайи
                 Tooltip:
                     '''
                     Увеличивает урон на 10%
@@ -2425,7 +2425,7 @@
             }
 
             GaiaPlate: {
-                Name: Латы Гайя
+                Name: Латы Гайи
                 Tooltip:
                     '''
                     Увеличивает урон на 10%
@@ -2507,7 +2507,7 @@
             }
             
             StyxLeggings: {
-                Name: Поножи Стикса
+                Name: Штаны Стикса
                 Tooltip:
                     '''
                     Увеличивает урон на 10%
@@ -2550,7 +2550,7 @@
                     Получение урона может ненадолго заморозить вас
                     Критические удары наносят урон от двух до полутора раз больше, урон снижается в зависимости от вашей скорости
                     Эффекты игнорируются, если выключены, или если уже используется другой рывок
-                    'Cold but twitching'
+                    'Холодные, но все ещё дёргающиеся'
                     '''
             }
             
@@ -2583,9 +2583,9 @@
                     '''
                     Улучшает ночное зрение
                     Немного увеличивает все характеристики
-                    Длительность 1 минута
+                    Длительность действия: 1 минута
                     Нажмите ПКМ в инвентаре, чтобы отдалить
-                    'Сорванный с лица побеждённого врага'
+                    'Сорванная с лица побеждённого врага'
                     '''
             }
             
@@ -2643,7 +2643,7 @@
                 Name: Энергия Вечности
                 Tooltip:
                     '''
-                    Даёт невосприимчивость почти ко всем дебаффам из режима Вечности
+                    Даёт невосприимчивость почти ко всем дебаффам режима Вечности
                     'Доказательство принятия Вечности'
                     '''
             }
@@ -2655,7 +2655,7 @@
             
             EternityAdvisor: {
                 Name: Советник Вечности
-                Tooltip: Предлагает варианты снаряжения для режима Вечности исходя из вашей прогрессии
+                Tooltip: Предлагает варианты снаряжения для режима Вечности, исходя из вашей прогрессии
             }
             
             GalacticReformer: {
@@ -2669,7 +2669,7 @@
             
             MutantsFury: {
                 Name: Ярость Мутанта
-                Tooltip: "'Бросает Мутанта в гнев... или нет'"
+                Tooltip: "'Приводит Мутанта в ярость... или нет'"
             }
             
             TopHatSquirrelCaught: {
@@ -2683,11 +2683,11 @@
             }
             
             AccursedRags: {
-                Name: Злополучные останки
+                Name: Злополучный мусор
                 Tooltip:
                     '''
                     Призывает маленький злополучный саркофаг
-                    'That's why yo' rags cursed-y'
+                    'Вот почему твой мусор проклят'
                     '''
             }
             
@@ -2729,11 +2729,11 @@
             }
             
             PortableFogMachine: {
-                Name: Portable Fog Machine
+                Name: Карманный генератор тумана
                 Tooltip:
                     '''
-                    Summons a baby shadow creature
-                    'Born in the darkness, molded by it'
+                    Призывает маленькое теневое существо
+                    'Во тьме рождённый, ею сформированный'
                     '''
             }
             
@@ -2832,7 +2832,7 @@
             }
             
             TrojanSquirrelTrophy: {
-                Name: Trojan Squirrel Trophy
+                Name: Трофей трояской белки
                 Tooltip: ""
             }
             
@@ -2842,13 +2842,13 @@
             }
             
             MutantStatueGift: {
-                Name: Статуя Мутанта (Подарок)
+                Name: Статуя Мутанта (подарок)
                 Tooltip: ""
             }
             
             ScremPainting: {
-                Name: Картина Screm
-                Tooltip: "'Merry N. Tuse'"
+                Name: Картина «Криак»
+                Tooltip: "'Мерри Н. Тьюз'"
             }
             
             TophatSquirrelBanner: {
@@ -2857,8 +2857,8 @@
             }
             
             TwentyTwoPainting: {
-                Name: 22 картина
-                Tooltip: "'Keuhm E. Dee'"
+                Name: Картина «Двадцать два»
+                Tooltip: "'Кох Э. Ди'"
             }
             
             AbominationnVoodooDoll: {
@@ -2902,8 +2902,8 @@
             }
             
             SquirrelCoatofArms: {
-                Name: Squirrel Coat of Arms
-                Tooltip: Summons squirrelly wrath
+                Name: Беличий гербовый щит
+                Tooltip: Призывает беличий гнев
             }
             
             BoneZone: {
@@ -2922,7 +2922,7 @@
             }
             
             DestroyerGun: {
-                Name: Пушка Разрушителя
+                Name: Пушка Уничтожителя
                 Tooltip:
                     '''
                     Становится длиннее и быстрее за каждый 3 пустой слот призываемых миньонов
@@ -2991,7 +2991,7 @@
                     Использует дротики в качестве боеприпасов
                     50% шанс не использовать боеприпасы
                     Жала прилипают к врагам; повторное попадание в одно и то же место наносит дополнительный урон
-                    'Внутренность побеждённого врага получили новое предназначение...'
+                    'Внутренности побеждённого врага получили новое предназначение...'
                     '''
             }
             
@@ -2999,7 +2999,7 @@
                 Name: Бумеранги-близнецы
                 Tooltip:
                     '''
-                    Стреляет разными бумерангами-близнеца в зависимости от нажатия мыши
+                    Стреляет разными бумерангами-близнецами в зависимости от нажатия мыши
                     'Сжатые останки побеждённых врагов...'
                     '''
             }
@@ -3059,7 +3059,7 @@
             
             PhantasmalLeashOfCthulhu: {
                 Name: Призрачный поводок Ктулху
-                Tooltip: "'Душа истинного глаза заперта навеки...'"
+                Tooltip: "'Душа истинного глаза, запертая навеки...'"
             }
             
             SlimeRain: {
@@ -3071,7 +3071,7 @@
                 Name: Сверкающая любовь
                 Tooltip:
                     '''
-                    Нажатие ПКМ призовёт душу Девиантт
+                    Нажмите ПКМ, чтобы призвать душу Девиантт
                     Душа Девиантт становится сильнее с каждым пустым слотом призываемых миньонов, максимум до 12 слотов
                     'Поглощающий душу демонический топор любви и справедливости, оставленный сражённым врагом...'
                     '''
@@ -3110,7 +3110,7 @@
             }
             
             Vineslinger: {
-                Name: Хвататель лоз
+                Name: Пускатель лоз
                 Tooltip: При попадании во врага стреляет листьями
             }
             
@@ -3130,7 +3130,7 @@
             }
             
             DestroyerGun2: {
-                Name: Пушка разрушения
+                Name: Пушка уничтожения
                 Tooltip:
                     '''
                     Становится длиннее и быстрее за каждый 5 пустой слот призываемых миньонов
@@ -3362,7 +3362,7 @@
                 Tooltip:
                     '''
                     Призывает малыша криметроида
-                    Не путать с андроидами криминалами
+                    Не путать с андроидами-преступниками
                     '''
             }
         }
@@ -3523,13 +3523,13 @@
             GelatinSubject: Elite guardians of the queen. They erect a magical barrier and give their lives to defend their liege.
             AbomSaucer: The cockpit is filled with machine parts. Abominationn commands these remote control turrets using a chip in his blaster cannon.
             LesserFairy: Drawn to the Champion of Life's radiance, these pixies care for nothing but fulfilling its commands.
-            LesserSquirrel: These little critters helped build the Trojan Squirrel. Not aware of the small explosives attached to them.
+            LesserSquirrel: Маленькие зверушки, помогавшие в постройке троянской белки. Не осознавая о небольшой взрывчатке, прикрепленной к ним.
             ShadowOrb: Clusters of darkness that focus its power. They keep the curtain of night drawn low in service of their master.
-            TrojanSquirrel: Built by squirrels, for squirrels! Made of woods collected from numerous lands. It fits a lot more squirrels than it appears.
+            TrojanSquirrel: Созданная белками, для белок! Изготовленная из древесины, собранной по многим землям. Внутри вмещается намного больше белок, чем выглядит.
             GuardianOfAncientTreasures: Lurks deep underground, jealously guarding its horde of jewels and precious metals. Its scales are as hard as stone.
             CursedCoffin: A mindless fusion of over a hundred wicked souls. It feeds on the bodies of lost travellers and adds their spirits to itself.
             Lifelights: The brilliance emitting from its core is soothing but hypnotic. Holds sway over lesser organisms, which happily follow its bidding.
-            Silhouette: An elusive being that always travels under cover of a black fog in the night. It feels sensitive when its true form is exposed.
+            Silhouette: Неуловимое существо, которое всегда путешествует ночью, под покровом чёрного тумана. Оно очень чувствительно к раскрытию своей истинной формы.
             FrigidHydrangaea: This draconic beast hibernates in the frozen caverns, only waking when provoked. Should it really be living in the cold?
             BanishedBaron: Cast out from the hierarchy, it hid itself while it tried to repair itself. Imperfect work left its strength and speed hindered.
             MagmaConstruct: Overseer of the planet's core. It has taken over the underworld in the absence of the land's former master. It has no organic parts.
@@ -3537,13 +3537,13 @@
             TerraChampion: Only the brain of this colossal serpent is still organic. Transformed into enchanted rock and metal, its body is impervious to attack.
             SpiritChampion: These lost souls regained higher intelligence by absorbing a Force. Not that it's going to stop eating humans any time soon.
             LifeChampion: Its feathers are said to be blessed relics that ward off nightmares. Has a low opinion of other lifeforms and is very territorial.
-            ShadowChampion: Feeds on the negative emotions of other creatures. Breathing its fog is said to inflict an endless sleep fraught with nightmares.
+            ShadowChampion: Существо, чья еда - негативные эмоции остальных. Один вдох его тумана, по слухам, приводит к погружению в вечный сон, енаполненный кошмарами.
             NatureChampion: This creature was driven from its home by a giant plant. Sometimes it thinks about going back, but the cold doesn't bother it anymore.
             WillChampion: Overflowing with rage. Strikes with great power and withstands attacks through sheer force of anger alone. Just who is this nameless exile?
             EarthChampion: Merging with a Force has given it a power high. This Champion erupts from the magma and rampages through all who cross its path.
-            CosmosChampion: This noble warrior once travelled the stars in search of worthy opponents. It settled nearby after encountering a certain mutated trio.
-            DeviBoss: Casts spells of light and love using a living axe made of evil. She must be very lax about death, given she never fights that hard to protect a town.
-            AbomBoss: His blade divides the soul itself. All supernatural phenomena are his domain, but he doesn't use celestial attacks out of respect for Mutant.
+            CosmosChampion: Благородный воин, некогда путешествовавший по звёздам в поисках достойных противников. Он осел неподалеку после встречи с некой мутировавшей троицей.
+            DeviBoss: Сотворяет заклинания света и любви, используя живой топор зла. Кажется, к смерти она относится достаточно небрежно, учитывая, что город она никогда не защищает.
+            AbomBoss: Владыка всех сверхъестественных явлений, чьё лезвие рассекает саму душу. Но он не использует неземные атаки из уважения к Мутанту.
             MutantBoss: Хранитель вечности. Воплощённая высшая сила. Мастер всего, достигший мастерства в каждом аспекте боя. Возможно, он пришел из мира за пределами этого пространственного разлома...
         }
 
@@ -3557,7 +3557,7 @@
             MutantBossDespawn: Мутант вновь запечатывает свою силу...
             MutantBossKilledAll: Мутант выпотрошил всех своими руками.
 
-            TimberChampionDespawn: Чемпион леса возвращается в свой белчий клан...
+            TimberChampionDespawn: Чемпион леса возвращается в свой беличий клан...
             TerraChampionDespawn: Чемпион земли исчезает в пещерах...
             EarthChampionDespawn: Чемпион планеты исчезает под магмой...
             NatureChampionDespawn: Чемпион природы возвращается в свой сон...
@@ -3569,7 +3569,7 @@
             CosmosChampionDespawn: Эридан, чемпион космоса, возвращается к звёздам...
             CosmosChampionKilledAll: Эридан, чемпион космоса, убивает каждого противника.
 
-            TrojanSquirrelDespawn: Троянская белка возвращается в клан белок...
+            TrojanSquirrelDespawn: Троянская белка возвращается в свой беличий клан...
         }
 
         Message: {
@@ -3582,11 +3582,11 @@
             AbominationnVoodooDoll: Мутант в ярости от гибели своего брата!
 
             SigilOfChampions: {
-                Timber: Вы окружены шорохом деревьев...
+                Timber: Вокруг шуршат листья...
                 Terra: Вокруг дрожат камни...
                 Spirit: Сильный дух будоражит...
-                Life: Волна тепла проходит по тебе...
-                Shadow: Темнота ночи кажется глубже...
+                Life: Волна тепла проходит по телу...
+                Shadow: Ночная тьма кажется глубже...
                 Nature: Дует зелёный ветер...
                 Will: Металлические стоны эхом разносятся из глубины...
                 Earth: Ядро планеты урчит...
@@ -3611,7 +3611,7 @@
                 EternityWrongDifficulty: Сложность слишком низкая, режим Вечности деактивирован...
                 MasochistOn: Соединяются режимы Мастера и Вечности: РЕЖИМ МАЗОХИСТА АКТИВИРОВАН!!
                 MasochistOff: Режим Мазохиста деактивирован.
-                BloodMoonCancel: Кровавая луна изменяет своё решение и уходит...
+                BloodMoonCancel: Кровавая луна передумывает и уходит...
             }
 
             MutantSkipP1: Мутант устал от шарад...
@@ -3636,7 +3636,7 @@
                 Accept1: Но, опять же, это большие деньги...
                 Accept2: Но мой старший брат сказал не делать этого! Что делать, что делать..?
                 Accept3: Ай, чёрт с тобой! Но это наш маленький секрет, хорошо?
-                Reject1: Покажи, что ты достаточно крут, и я не буду возражать, но ни секундой раньше!
+                Reject1: Докажи свою крутость и я не буду возражать, но ни секундой раньше!
                 Reject2: Вот, можешь забрать это обратно.
                 Reject3: Ну что, начнём нашу вечеринку!
             }
@@ -3763,7 +3763,7 @@
 
         Toggler: {
             WoodHeader: "{$Mods.FargowiltasSouls.ItemName.TimberForce}"
-            BorealConfig: Boreal Snowballs
+            BorealConfig: Северные снежки
             MahoganyConfig: Mahogany Hook Speed
             EbonConfig: Ebonwood Shadowflame
             ShadeConfig: Blood Geyser On Hit
@@ -3808,12 +3808,12 @@
             TurtleConfig: Turtle Shell Buff
 
             NatureHeader: "{$Mods.FargowiltasSouls.ItemName.NatureForce}"
-            ChlorophyteConfig: Chlorophyte Leaf Crystal
-            CrimsonConfig: Crimson Regen
-            RainConfig: Rain Clouds
+            ChlorophyteConfig: Хлорофитовый лиственный кристалл
+            CrimsonConfig: Багряная регенерация
+            RainConfig: Дождевые облака
             RainInnerTubeConfig: Плавательный круг
             FrostConfig: Морозные сосульки
-            JungleConfig: Jungle Spores
+            JungleConfig: Споры джунглей
             JungleDashConfig: Jungle Dash
             MoltenConfig: Molten Inferno Buff
             MoltenEConfig: Molten Explosion On Hit
@@ -3878,7 +3878,7 @@
             MasoSkeleConfig: Skeletron Arms Minion
 
             BionomicHeader: "{$Mods.FargowiltasSouls.ItemName.BionomicCluster}"
-            MasoConcoctionConfig: Tim's Concoction
+            MasoConcoctionConfig: Смесь Тима
             MasoCarrotConfig: Carrot Zoom
             MasoRainbowConfig: Rainbow Slime Minion
             MasoFrigidConfig: Frostfireballs
@@ -3955,24 +3955,24 @@
             DefenseFrozenConfig: Frozen Turtle Shell
 
             FlightMasteryHeader: "{$Mods.FargowiltasSouls.ItemName.FlightMasterySoul}"
-            FlightMasteryInsigniaConfig: Soaring Insignia Acceleration
-            FlightMasteryGravityConfig: Amplified Gravity
+            FlightMasteryInsigniaConfig: Ускорение парящей инсигнии
+            FlightMasteryGravityConfig: Увеличенная гравитация
 
             SupersonicHeader: "{$Mods.FargowiltasSouls.ItemName.SupersonicSoul}"
-            RunSpeedConfig: Higher Base Run Speed
-            MomentumConfig: No Momentum
-            SupersonicTabiConfig: Tabi Dash
-            SupersonicClimbingConfig: Tiger Climbing Gear
-            SupersonicConfig: Supersonic Speed Boosts
-            SupersonicJumpsConfig: Supersonic Jumps
-            SupersonicRocketBootsConfig: Supersonic Rocket Boots
-            SupersonicCarpetConfig: Supersonic Carpet
-            SupersonicFlowerConfig: Supersonic Flower Boots
-            CthulhuShieldConfig: Shield of Cthulhu
-            BlackBeltConfig: Black Belt
+            RunSpeedConfig: Увеличенная базовая скорость бега
+            MomentumConfig: Нет сохранения импульса
+            SupersonicTabiConfig: Рывок таби
+            SupersonicClimbingConfig: Альпинистское снаряжение тигра
+            SupersonicConfig: Сверхзвуковое увеличение скорости
+            SupersonicJumpsConfig: Сверхзвуковые пражки
+            SupersonicRocketBootsConfig: Сверхзвуковые реактивные сапоги
+            SupersonicCarpetConfig: Сверхзвуковой ковёр
+            SupersonicFlowerConfig: Сверхзвуковые цветочные сапоги
+            CthulhuShieldConfig: Щит Ктулху
+            BlackBeltConfig: Чёрный пояс
 
             TrawlerHeader: "{$Mods.FargowiltasSouls.ItemName.TrawlerSoul}"
-            TrawlerSporeConfig: Spore Sac
+            TrawlerSporeConfig: Споровый мешок
             TrawlerConfig: Trawler Extra Lures
             TrawlerJumpConfig: Trawler Jump
 
@@ -3980,7 +3980,7 @@
             EternityConfig: Eternity Stacking
 
 
-            PetHeader: Pets
+            PetHeader: Питомцы
             PetBlackCatConfig: Black Cat Pet
             PetCompanionCubeConfig: Companion Cube Pet
             PetCursedSaplingConfig: Cursed Sapling Pet
@@ -4015,26 +4015,26 @@
             PetWispConfig: Wisp Pet
 
 
-            PatreonHeader: Patreon Items
-            PatreonRoomba: Roomba
-            PatreonOrb: Computation Orb
-            PatreonFishingRod: Miss Drakovi's Fishing Pole
-            PatreonDoor: Squidward Door
-            PatreonWolf: Paradox Wolf Soul
-            PatreonDove: Fig Branch
-            PatreonKingSlime: Medallion of the Fallen King
-            PatreonFishron: Staff Of Unleashed Ocean
-            PatreonPlant: Piranha Plant Voodoo Doll
-            PatreonDevious: Devious Aestheticus
-            PatreonVortex: Vortex Ritual
-            PatreonPrime: Prime Staff
-            PatreonCrimetroid: Crimetroid
+            PatreonHeader: Предметы патрона
+            PatreonRoomba: Робот-пылесос
+            PatreonOrb: Вычислительная сфера
+            PatreonFishingRod: Удочка мисс Дракови
+            PatreonDoor: Дверь Сквидварда
+            PatreonWolf: Душа парадоксального волка
+            PatreonDove: Фиговая ветка
+            PatreonKingSlime: Медальон павшего короля
+            PatreonFishron: Посох необузданного океана
+            PatreonPlant: Кукла вуду растения-пираньи
+            PatreonDevious: Коварный эстетикус
+            PatreonVortex: Вихревой ритуал
+            PatreonPrime: Прайм-посох
+            PatreonCrimetroid: Криметроид
         }
 
         UI: {
-            SoulTogglerButton: Configure Accessory Effects
-            EternityEnabled: Eternity Mode is enabled
-            MasochistEnabled: Masochist Mode is enabled
+            SoulTogglerButton: Настройка эффектов аксессуаров
+            EternityEnabled: Вечность включена
+            MasochistEnabled: Режим Мазохиста включен
         }
 
         ItemExtra: {
@@ -4377,10 +4377,10 @@
             Speed: Скорость атаки снижена на {0}%
 
             RodofDiscord: Во время битвы с боссами каждое использование отнимает здоровье
-            Split: Reduced split frequency
+            Split: Сниженная частота разделения
             ChlorophyteBullet: Скорость и длительность снижены
             WaterBolt: Нельзя использовать, пока не побеждён Скелетрон
-            HolyDodge: Holy Dodge activation will temporarily reduce your attack speed
+            HolyDodge: Активация святого рывка временно снижает скорость атаки
             SpectreHood: Исцеляющие сферы движутся медленнее и быстро исчезают
             FrozenTurtleShell: Ледяная преграда немного снижает наносимый вами урон
             BrainOfConfusion: Снижает наносимый вами урон при успешном уклонении
@@ -4391,7 +4391,7 @@
             VampireKnives: Сила кражи здоровья снижена, если здоровье больше 33%
             Zapinator: Не может складывать множители урона
 
-            OOASet: Set bonus increases minimum summon damage when you attack using other classes
+            OOASet: Бонус комплекта увеличивает минимальный урон призывателя, если вы атакуете, используя оружие другого класса
             MiningHelmet: Увеличивает скорость появления скелетов-шахтёров
             MoonsDrops: С боссов и минибоссов не выпадает предметов, до более поздних волн
             MoonsWaves: Смерть снижает прогресс волны
@@ -4399,7 +4399,7 @@
             WhipSpeed: Не получает бонусов от скорости атаки ближнего боя
             WhipStack: Баффы/дебаффы хлыста не могут складываться
             MinionStack: Урон миньонов снижается, если вызваны 3 одинаковых (максимум эффекта: 12)
-            SummonMulticlass: Summon damage decreases when you attack using other classes (except in OOA)
+            SummonMulticlass: Урон призывателя снижен, если вы атакуете, используя оружие другого класса (кроме OOA)
         }
     }
 }
