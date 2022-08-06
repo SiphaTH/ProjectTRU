@@ -3469,78 +3469,78 @@
         SetBonus: {
             Nekomi:
                 '''
-                7% increased damage and critical strike chance for your current weapon class
+                Увеличивает урон и шанс критического удара оружия текущего класса на 7%
                 Увеличивает предел критического урона от предмета «{$Mods.CalamityRuTranslate.FargowiltasSouls.Items.SparklingAdoration.Name}» на 25%, если вы уворачиваетесь вблизи снаряда
-                Graze attacks to temporarily charge energy
-                Increases life regeneration when damaged at the cost of some energy
-                Double tap {0} to release energy as life-draining hearts
-                Wield a demon axe of love and justice when fully charged
+                Уклонение вблизи снаряда временно заряжает энергию
+                Увеличивает регенерацию здоровья при получении урона ценой части энергии
+                Дважды нажмите {0}, чтобы выпустить энергию в виде похищающих здоровье сердец
+                Вызывает демонический топор любви и справедливости, если заряд полон
                 '''
 
             Gaia:
                 '''
-                10% increased melee speed
-                Reduces mana usage by 10%
-                10% chance to not consume ammo
-                Increases max number of minions and sentries by 4
-                Double tap {0} to toggle offensive mode, which has the following effects:
-                30% increased damage and 15% increased critical strike chance for your current weapon class
-                Increases armor penetration by 20
-                Reduces defense by 20, max life by 10%, and damage reduction by 15%
+                Увеличивает скорость атаки ближнего боя на 10%
+                Снижает расход маны на 10%
+                Даёт 20% шанс не использовать боеприпасы
+                Увеличивает призываемое число миньонов и стражей на 4
+                Дважды нажмите {0}, чтобы переключить режим наступления, имеющий следующие эффекты:
+                Увеличивает урон на 30% и шанс критического удара оружия текущего класса на 15%
+                Увеличивает пробивание брони 20
+                Снижает защиту на 20, максимальный запас здоровья на 10% и сопротивление урону на 15%
                 '''
 
             Eridanus:
                 '''
-                The blessing of Eridanus empowers your attacks
-                The empowered class changes every 10 seconds
-                Eridanus fights alongside you when you use the empowered class
-                75% increased damage, 30% increased attack speed, and 20% increased critical strike chance for the empowered class
+                Благословение Эридана усиливает ваши атаки
+                Класс усиления меняется каждые 10 секунд
+                Эридан сражается за вам, если вы используете оружие усиленного класса
+                Увеличивает урон на 75%, скорость атаки на 30% и шанс критического удара на 20% для усиленного класса
                 '''
 
             Styx:
                 '''
-                20% increased damage for your current weapon class
-                Attack enemies to charge energy
-                Reduces damage taken at the cost of some energy
-                Double tap {0} to release energy as homing shots
-                Brandish a blade of infernal magic when fully charged
+                Увеличивает урон оружия текущего класса на 20%
+                Атаки по врагам заряжают энергию
+                Снижает получаемый урон ценой части энергии
+                Дважды нажмите {0}, чтобы выпустить энергию в виде самонаводящихся выстрелов
+                Вызывает клинком адской магии, если заряд полон
                 '''
 
             Mutant:
                 '''
-                Phantasmal Spheres shoot deathrays at nearby enemies
-                Abominationn's Visage fights alongside you
-                Your attacks inflict God Eater and Hellfire
-                You erupt into a massive deathray whenever revived
-                20% increased weapon use speed
+                Призрачные сферы стреляют лучами смерти в ближайших врагов
+                Проекция Мерзостти сражается за вас
+                Атаки накладывают дебаффы «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.GodEater.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Hellfire.Name}»
+                Возрождаясь, вы выпускаете большое количество лучей смерти
+                Увеличивает скорость использования оружия на 20%
                 '''
         }
 
         Bestiary: {
-            TophatSquirrelCritter: This squirrel found itself a dapper hat! What will it do with this newfound power? Probably not much, honestly.
-            GuttedCreeper: Continues to defend the heart of the Crimson even when it's stuffed in someone's pocket. They were bad, but now they're good!
-            RoyalSubject: The growth of these would-be queens has been stunted. The pheromones emitted by their liege have summoned them to her aid.
-            GelatinSubject: Elite guardians of the queen. They erect a magical barrier and give their lives to defend their liege.
-            AbomSaucer: The cockpit is filled with machine parts. Abominationn commands these remote control turrets using a chip in his blaster cannon.
-            LesserFairy: Drawn to the Champion of Life's radiance, these pixies care for nothing but fulfilling its commands.
+            TophatSquirrelCritter: Эта белка нашла себе элегантную шляпу! И теперь, обладая подобной силой, что же она будет делать?.. немногое, честно говоря.
+            GuttedCreeper: Продолжает защищать сердце багрянца, даже когда оно у кого-то в кармане. Были плохими, но теперь они хорошие!
+            RoyalSubject: Потенциальные королевы, чей рост был замедлен. Феромоны, испускаемые владычицей, призвали их к ней на помощь.
+            GelatinSubject: Элитные стражи королевы. Они воздвигают магический барьер и отдают свои жизни, защищая свою госпожу.
+            AbomSaucer: Кабина пилота заполнена механическими деталями. Мерзостть управляет этими турелями дистанционно, используя чип в своей бластерной пушке.
+            LesserFairy: Пикси, привлечённые сиянием Чемпиона жизни. Они не заботятся ни о чём, кроме выполнения его приказов.
             LesserSquirrel: Маленькие зверушки, помогавшие в постройке троянской белки. Не осознавая о небольшой взрывчатке, прикрепленной к ним.
-            ShadowOrb: Clusters of darkness that focus its power. They keep the curtain of night drawn low in service of their master.
+            ShadowOrb: Сгустки тьмы, фокусирующие силу. Они держат занавес ночи низко опущенным, служа своему хозяину.
             TrojanSquirrel: Созданная белками, для белок! Изготовленная из древесины, собранной по многим землям. Внутри вмещается намного больше белок, чем выглядит.
-            GuardianOfAncientTreasures: Lurks deep underground, jealously guarding its horde of jewels and precious metals. Its scales are as hard as stone.
-            CursedCoffin: A mindless fusion of over a hundred wicked souls. It feeds on the bodies of lost travellers and adds their spirits to itself.
-            Lifelights: The brilliance emitting from its core is soothing but hypnotic. Holds sway over lesser organisms, which happily follow its bidding.
+            GuardianOfAncientTreasures: Скрывается глубоко под землей, ревниво охраняя свою груду самоцветов и драгоценных металлов. Его чешуя тверда, словно камень.
+            CursedCoffin: Бездумное слияние более сотен злых душ. Оно питается телами заблудившихся странников и присоединяет к себе их души.
+            Lifelights: Сияние, исходящее из его ядра, успокаивает, но гипнотизирует. Имеет власть над низшими организмами, которые с радостью следуют его указаниям.
             Silhouette: Неуловимое существо, которое всегда путешествует ночью, под покровом чёрного тумана. Оно очень чувствительно к раскрытию своей истинной формы.
-            FrigidHydrangaea: This draconic beast hibernates in the frozen caverns, only waking when provoked. Should it really be living in the cold?
-            BanishedBaron: Cast out from the hierarchy, it hid itself while it tried to repair itself. Imperfect work left its strength and speed hindered.
-            MagmaConstruct: Overseer of the planet's core. It has taken over the underworld in the absence of the land's former master. It has no organic parts.
-            TimberChampion: Channeling a Force has granted this wooden contraption fantastic power. But doesn't that squirrel in the cockpit look familiar?
-            TerraChampion: Only the brain of this colossal serpent is still organic. Transformed into enchanted rock and metal, its body is impervious to attack.
-            SpiritChampion: These lost souls regained higher intelligence by absorbing a Force. Not that it's going to stop eating humans any time soon.
-            LifeChampion: Its feathers are said to be blessed relics that ward off nightmares. Has a low opinion of other lifeforms and is very territorial.
+            FrigidHydrangaea: Драконий зверь, впадающий в спячку в замерзших пещерах, просыпаясь, когда его провоцируют. Действительно ли это значит жить на холоде?
+            BanishedBaron: Изгнанный из власти, он скрылся, пытаясь восстановить себя. Несовершенная работа препятствовала его силе и скорости.
+            MagmaConstruct: Смотритель ядра планеты, в отсутствие бывшей хозяйки захвативший власть в Аду. В нём нет органических частей.
+            TimberChampion: Поток Силы наделил это деревянное устройство фантастической мощью. Эй, а эта белка в кабине не кажется знакомой?
+            TerraChampion: Лишь мозг этого колоссального змея остался органическим, остальное же было превращено в зачарованные камень и металл, давая неуязвимость от атак.
+            SpiritChampion: Эти заблудшие души восстановили мыслительную деятельность, поглотив Силу. Но, даже начав мыслить, они не прекратят пожирать людей.
+            LifeChampion: Говорят, его перья - реликвии, отгоняющие кошмары. Низкого мнения о других формах жизни и очень оберегает свою территорию.
             ShadowChampion: Существо, чья еда - негативные эмоции остальных. Один вдох его тумана, по слухам, приводит к погружению в вечный сон, енаполненный кошмарами.
-            NatureChampion: This creature was driven from its home by a giant plant. Sometimes it thinks about going back, but the cold doesn't bother it anymore.
-            WillChampion: Overflowing with rage. Strikes with great power and withstands attacks through sheer force of anger alone. Just who is this nameless exile?
-            EarthChampion: Merging with a Force has given it a power high. This Champion erupts from the magma and rampages through all who cross its path.
+            NatureChampion: Это существо было изгнано из своего обиталища гигантским растением. Иногда оно размышляет над возвращением, но ему уже никак не мешает холод.
+            WillChampion: Полный ярости Чемпион, что наносит удары огромной силы и выдерживает атаки благодаря чистой силе своего гнева. Кто же этот безымянный изгнанник?
+            EarthChampion: Слияние с Силой даровало ему высшую мощь. Этот Чемпион извергается из магмы и нападает на каждого, кого встречает.
             CosmosChampion: Благородный воин, некогда путешествовавший по звёздам в поисках достойных противников. Он осел неподалеку после встречи с некой мутировавшей троицей.
             DeviBoss: Сотворяет заклинания света и любви, используя живой топор зла. Кажется, к смерти она относится достаточно небрежно, учитывая, что город она никогда не защищает.
             AbomBoss: Владыка всех сверхъестественных явлений, чьё лезвие рассекает саму душу. Но он не использует неземные атаки из уважения к Мутанту.
