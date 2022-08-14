@@ -25,7 +25,7 @@
     "Completed": "Достижение выполнено! {0}",
     "COMPLETELY_AWESOME_Description": "Заполучить «Мини-акулу».",
     "COMPLETELY_AWESOME_Name": "Просто потрясающе",
-    "DAVY_JONES_LOCKER_Description": "Одержать победу над «Летучим голландцем», плавающим под небесами.",
+    "DAVY_JONES_LOCKER_Description": "Одержать победу над «Летучим голландцем» плавающим под небесами.",
     "DAVY_JONES_LOCKER_Name": "Сундук Дэйви Джонса",
     "DECEIVER_OF_FOOLS_Description": "Убить нимфу.",
     "DECEIVER_OF_FOOLS_Name": "Обманщица глупцов",
@@ -316,7 +316,7 @@
     "Projectile": "{1} {0}."
   },
   "DeathText": {
-    "Burned": "{0} не может потушить огонь.",
+    "Burned": "{0} не смог потушить огонь.",
     "Default": "{0}.",
     "Drowned_1": "{0} забывает, как дышать.",
     "Drowned_2": "{0} засыпает на дне.",
