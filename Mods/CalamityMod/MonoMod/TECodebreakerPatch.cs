@@ -24,7 +24,7 @@ public class TECodebreakerPatch : ILEdit
         remove => HookEndpointManager.Remove<hook_UnderlyingSchematicText>(_underlyingSchematicText, value);
     }
 
-    public override bool Autoload() => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    public override bool Autoload() => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
     public override void Load()
     {
@@ -45,7 +45,7 @@ public class TECodebreakerPatch : ILEdit
         int num = CalamityLists.EncryptedSchematicIDRelationship[self.HeldSchematicID];
         if (num == ModContent.ItemType<EncryptedSchematicPlanetoid>())
         {
-            return "В армии солдаты, как и оружие, служат разным целям. Это различие имеет решающее значение, поскольку неправильный инструмент в неправильных руках, каким бы мощным он ни был, с таким же успехом может быть деревянной дубиной.\nДополнение: Найдите мою базу, она недалеко от храма яхщеров. Искренне желаю вам удачи. Прошло много времени с тех пор, как у меня был достойный испытуемый.";
+            return "В армии солдаты, как и оружие, служат разным целям. Это различие имеет решающее значение, поскольку неправильный инструмент в неправильных руках, каким бы мощным он ни был, с таким же успехом может быть деревянной дубиной.\nДополнение: Найдите мою базу, она недалеко от Храма яхщеров. Искренне желаю вам удачи. Прошло много времени с тех пор, как у меня был достойный испытуемый.";
         }
         if (num == ModContent.ItemType<EncryptedSchematicJungle>())
         {

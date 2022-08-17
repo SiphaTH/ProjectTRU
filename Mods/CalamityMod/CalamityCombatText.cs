@@ -1,45 +1,49 @@
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
+using CalamityRuTranslate.Core;
 using Terraria;
 
 namespace CalamityRuTranslate.Mods.CalamityMod;
 
-public static class CombatTextsTranslation
+public class CalamityCombatText : ContentTranslation
 {
-    internal static void SetupTranslation()
+    public override bool IsTranslationEnabled => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+    
+    public override void LoadTranslation()
     {
         for (int i = 0; i < 100; i++)
         {
             if (Main.combatText[i].active)
             {
-                if (Main.combatText[i].text == "No decryption computer installed")
+                if (Main.combatText[i].text.Equals("No decryption computer installed"))
                 {
                     Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.1");
                 }
-                if (Main.combatText[i].text == "The Community cracks...")
+                if (Main.combatText[i].text.Equals("The Community cracks..."))
                 {
                     Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.2");
                 }
-                if (Main.combatText[i].text == "The invasion hastens!")
+                if (Main.combatText[i].text.Equals("The invasion hastens!"))
                 {
                     Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.3");
                 }
-                if (Main.combatText[i].text == "The ethereal invaders march ever-faster!")
+                if (Main.combatText[i].text.Equals("The ethereal invaders march ever-faster!"))
                 {
                     Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.4");
                 }
-                if (Main.combatText[i].text == "You learned how to create new things!")
+                if (Main.combatText[i].text.Equals("You learned how to create new things!"))
                 {
                     Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.5");
                 }
-                if (Main.combatText[i].text == "Parry!")
+                if (Main.combatText[i].text.Equals("Parry!"))
                 {
                     Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.6");
                 }
-                if (Main.combatText[i].text == "Tock")
+                if (Main.combatText[i].text.Equals("Tock"))
                 {
                     Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.7");
                 }
-                if (Main.combatText[i].text == "Tick")
+                if (Main.combatText[i].text.Equals("Tick"))
                 {
                     Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.8");
                 }

@@ -11,7 +11,7 @@ public class AnglerQuestTranslation : GlobalItem
 {
     public override bool IsLoadingEnabled(Mod mod)
     {
-        return ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     }
 
     public override void AnglerChat(int type, ref string chat, ref string catchLocation)

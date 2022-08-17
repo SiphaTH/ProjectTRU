@@ -12,11 +12,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 [JITWhenModsEnabled("CalamityMod")]
 public class HealOrbProvPatch : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(HealOrbProv).GetCachedMethod(nameof(HealOrbProv.AI));
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " burst into sinless ash.", " превратился в безгрешный пепел.");
     };

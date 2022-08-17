@@ -8,6 +8,7 @@ using CalamityRuTranslate.Core.Loaders;
 using CalamityRuTranslate.Core.MonoMod;
 using CalamityRuTranslate.Mods.CalamityMod;
 using CalamityRuTranslate.Mods.Fargowiltas;
+using CalamityRuTranslate.Mods.FargowiltasSouls;
 using Terraria;
 using Terraria.GameContent.UI.States;
 using Terraria.Localization;
@@ -19,10 +20,12 @@ public class CalamityRuTranslate : Mod, IPatchRepository
 {
     public static CalamityRuTranslate Instance;
     public List<IMonoModPatch> Patches { get; } = new();
+
     public readonly SetupTranslation[] Mods =
     {
         new CalamityTranslation(),
         new FargowiltasTranslation(),
+        new FargowiltasSoulsTranslation()
     };
 
     public CalamityRuTranslate()
@@ -36,8 +39,14 @@ public class CalamityRuTranslate : Mod, IPatchRepository
         LangLoader.Load();
         ILManager.Load();
 
-        if (ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage)
+        if (ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage)
             CalamityReflection.Load();
+
+        if (!Main.dedServ && ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage)
+            FargowiltasSoulsReflection.Load();
+        
+        if (!Main.dedServ && ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage)
+            FargowiltasReflection.Load();
 
         if (!Main.dedServ && TranslationHelper.IsRussianLanguage)
         {
@@ -64,9 +73,9 @@ public class CalamityRuTranslate : Mod, IPatchRepository
         foreach (SetupTranslation mod in Mods)
             mod.LoadSetupContentTranslation();
 
-        if (TRuConfig.Instance.WikithisInfo && ModsCall.TryGetWikithis && !Main.dedServ)
+        if (TRuConfig.Instance.WikithisInfo && ModsCall.Wikithis != null && !Main.dedServ)
         {
-            if (ModsCall.TryGetCalamity)
+            if (ModsCall.Calamity != null)
             {
                 ModsCall.Wikithis.Call(0, ModsCall.Calamity, "calamitymod.wiki.gg");
                 ModsCall.Wikithis.Call(0, ModsCall.Calamity, "terraria-calamity-mod.fandom.com/ru", GameCulture.CultureName.Russian);

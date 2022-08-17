@@ -40,7 +40,7 @@ public class TRuConfig : ModConfig
     public bool PreviewArmorSetBonus;
     
     [Label("Wikipedia предметов")]
-    [Tooltip("Позволяет быстро перейти из игры на статью предмета в русской вики\nПлохо работает с ванильными предметами.")]
+    [Tooltip("Для работы требуется мод Wikithis\nПозволяет быстро перейти из игры на статью предмета в русской вики\nПлохо работает с ванильными предметами.")]
     [DefaultValue(true)]
     [ReloadRequired]
     public bool WikithisInfo;

@@ -9,11 +9,11 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class TownNpcNames : GlobalNPC
+public class CalamityTownNpcNames : GlobalNPC
 {
     public override bool IsLoadingEnabled(Mod mod)
     {
-        return ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     }
 
     public override void ModifyNPCNameList(NPC npc, List<string> nameList)

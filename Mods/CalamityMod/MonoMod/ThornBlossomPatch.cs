@@ -11,11 +11,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 [JITWhenModsEnabled("CalamityMod")]
 public class ThornBlossomPatch : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(ThornBlossom).GetCachedMethod(nameof(ThornBlossom.Shoot));
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " was violently pricked by a flower.", " яростно укалывается цветком.");
     };

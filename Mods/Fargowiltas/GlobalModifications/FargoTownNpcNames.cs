@@ -12,7 +12,7 @@ public class FargoTownNpcNames : GlobalNPC
 {
     public override bool IsLoadingEnabled(Mod mod)
     {
-        return ModsCall.TryGetFargo && TranslationHelper.IsRussianLanguage;
+        return ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
     }
 
     public override void ModifyNPCNameList(NPC npc, List<string> nameList)

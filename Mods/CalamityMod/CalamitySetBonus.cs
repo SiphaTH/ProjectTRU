@@ -10,11 +10,11 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class SetBonusTranslation : GlobalItem
+public class CalamitySetBonus : GlobalItem
 {
     public override bool IsLoadingEnabled(Mod mod)
     {
-        return ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     }
 
     public override string IsArmorSet(Item head, Item body, Item legs)

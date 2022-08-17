@@ -12,12 +12,12 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityRuTranslate;
+namespace CalamityRuTranslate.Mods.CalamityMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public static class CalamityReflection
+internal static class CalamityReflection
 {
-    public static void Load()
+    internal static void Load()
     {
         List<(string, string)> enchantmentTranslation = new List<(string, string)>
         {

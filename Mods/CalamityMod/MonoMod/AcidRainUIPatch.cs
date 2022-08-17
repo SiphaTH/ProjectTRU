@@ -11,11 +11,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 [JITWhenModsEnabled("CalamityMod")]
 public class AcidRainUIPatch : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(AcidRainUI).GetCachedMethod("get_InvasionName");
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Acid Rain", "Кислотный дождь");
     };

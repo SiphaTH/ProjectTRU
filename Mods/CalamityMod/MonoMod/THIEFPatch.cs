@@ -11,11 +11,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 [JITWhenModsEnabled("CalamityMod")]
 public class THIEFPatch : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(THIEF).GetCachedMethod(nameof(THIEF.SetChatButtons));
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Refund", "Возврат");
     };

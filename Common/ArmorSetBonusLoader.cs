@@ -7,22 +7,29 @@ namespace CalamityRuTranslate.Common;
 
 public class ArmorSetBonusLoader : ILoadable
 {
-    public static List<ArmorSetData> CalamityArmorSets = new();
+    internal static readonly List<ArmorSetData> CalamityArmorSets = new();
+    internal static readonly List<ArmorSetData> FargowiltasSoulsArmorSets = new();
 
     public void Load(Mod mod)
     {
-        if (ModsCall.TryGetCalamity)
+        if (ModsCall.Calamity != null)
         {
             CalamityArmorSetInfo();
+        }
+
+        if (ModsCall.FargoSouls != null)
+        {
+            FargowiltasSoulsArmorSetInfo();
         }
     }
 
     public void Unload()
     {
         CalamityArmorSets.Clear();
+        FargowiltasSoulsArmorSets.Clear();
     }
         
-    private static void CalamityArmorSetInfo()
+    private void CalamityArmorSetInfo()
     {
         CalamityArmorSets.Add(new ArmorSetData(
             ModContent.Find<ModItem>("CalamityMod","ForbiddenCirclet").Type,
@@ -454,6 +461,40 @@ public class ArmorSetBonusLoader : ILoadable
             ModContent.Find<ModItem>("CalamityMod", "WulfrumArmor").Type,
             ModContent.Find<ModItem>("CalamityMod", "WulfrumLeggings").Type,
             "WulfrumSummoner")
+        );
+    }
+
+    private void FargowiltasSoulsArmorSetInfo()
+    {
+        FargowiltasSoulsArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("FargowiltasSouls","EridanusHat").Type,
+            ModContent.Find<ModItem>("FargowiltasSouls","EridanusBattleplate").Type,
+            ModContent.Find<ModItem>("FargowiltasSouls","EridanusLegwear").Type,
+            "Eridanus")
+        );
+        FargowiltasSoulsArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("FargowiltasSouls","GaiaHelmet").Type,
+            ModContent.Find<ModItem>("FargowiltasSouls","GaiaPlate").Type,
+            ModContent.Find<ModItem>("FargowiltasSouls","GaiaGreaves").Type,
+            "Gaia")
+        );
+        FargowiltasSoulsArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("FargowiltasSouls","MutantMask").Type,
+            ModContent.Find<ModItem>("FargowiltasSouls","MutantBody").Type,
+            ModContent.Find<ModItem>("FargowiltasSouls","MutantPants").Type,
+            "Mutant")
+        );
+        FargowiltasSoulsArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("FargowiltasSouls","NekomiHood").Type,
+            ModContent.Find<ModItem>("FargowiltasSouls","NekomiHoodie").Type,
+            ModContent.Find<ModItem>("FargowiltasSouls","NekomiLeggings").Type,
+            "Nekomi")
+        );
+        FargowiltasSoulsArmorSets.Add(new ArmorSetData(
+            ModContent.Find<ModItem>("FargowiltasSouls","StyxCrown").Type,
+            ModContent.Find<ModItem>("FargowiltasSouls","StyxChestplate").Type,
+            ModContent.Find<ModItem>("FargowiltasSouls","StyxLeggings").Type,
+            "Styx")
         );
     }
 }

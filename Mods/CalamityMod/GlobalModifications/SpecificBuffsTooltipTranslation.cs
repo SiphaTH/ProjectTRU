@@ -12,7 +12,7 @@ public class SpecificBuffsTooltipTranslation : GlobalBuff
 {
     public override bool IsLoadingEnabled(Mod mod)
     {
-        return ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     }
 
     public override void ModifyBuffTip(int type, ref string tip, ref int rare)

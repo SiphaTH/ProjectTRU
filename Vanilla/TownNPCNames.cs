@@ -5,9 +5,11 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Vanilla;
 
-public class TownNPCNames : GlobalNPC
+public class TownNpcNames : GlobalNPC
 {
-    private static readonly Dictionary<string, string> TownNPCsNames = new()
+    public override bool InstancePerEntity => true;
+
+    private readonly Dictionary<string, string> _townNpcNames = new()
     {
         {"Dazren", "Дазрен"},
         {"Drifter", "Дрифтер"},
@@ -90,9 +92,9 @@ public class TownNPCNames : GlobalNPC
 
     public override void AI(NPC npc)
     {
-        if (TownNPCsNames.ContainsKey(npc.GivenName))
+        if (_townNpcNames.ContainsKey(npc.GivenName))
         {
-            npc.GivenName = TownNPCsNames[npc.GivenName];
+            npc.GivenName = _townNpcNames[npc.GivenName];
         }
     }
 }

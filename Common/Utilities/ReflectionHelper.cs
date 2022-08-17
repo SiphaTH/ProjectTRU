@@ -4,9 +4,9 @@ using System.Reflection;
 
 namespace CalamityRuTranslate.Common.Utilities;
 
-public static class ReflectionHelper
+internal static class ReflectionHelper
 {
-    public enum ReflectionType
+    private enum ReflectionType
     {
         Field,
         Property,
@@ -24,13 +24,13 @@ public static class ReflectionHelper
         {ReflectionType.Method, new Dictionary<string, object>()}
     };
 
-    public static BindingFlags UniversalFlags => BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static;
+    private static BindingFlags UniversalFlags => BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static;
 
-    public static MethodInfo GetCachedMethod(this Type type, string methodName) => RetrieveFromCache(
+    internal static MethodInfo GetCachedMethod(this Type type, string methodName) => RetrieveFromCache(
         ReflectionType.Method, GetMethodNameForCache(type, methodName),
         () => type.GetMethod(methodName, UniversalFlags));
 
-    public static string GetMethodNameForCache(Type type, string method)
+    private static string GetMethodNameForCache(Type type, string method)
     {
         string assemblyName = type.Assembly.GetName().Name;
         string typeName = type.Name;

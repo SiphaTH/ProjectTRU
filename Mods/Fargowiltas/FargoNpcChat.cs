@@ -1,5 +1,6 @@
 ﻿using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
+using CalamityRuTranslate.Core;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -7,34 +8,36 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.Fargowiltas;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public static class NpcDialoguesTranslation
+public class FargoNpcChat : ContentTranslation
 {
+    public override bool IsTranslationEnabled => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
+    
     #region Properties
-    private static int Abominationn => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Abominationn").Type);
-    private static int Mutant => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Mutant").Type);
-    private static int Deviantt => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Deviantt").Type);
-    private static int LumberJack => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("LumberJack").Type);
-    private static int Squirrel => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Squirrel").Type);
-    private static int Mechanic => NPC.FindFirstNPC(NPCID.Mechanic);
-    private static int Angler => NPC.FindFirstNPC(NPCID.Angler);
-    private static int Dryad => NPC.FindFirstNPC(NPCID.Dryad);
-    private static int Nurse => NPC.FindFirstNPC(NPCID.Nurse);
-    private static int PartyGirl => NPC.FindFirstNPC(NPCID.PartyGirl);
-    private static int WitchDoctor => NPC.FindFirstNPC(NPCID.WitchDoctor);
-    private static int Stylist => NPC.FindFirstNPC(NPCID.Stylist);
-    private static int Truffle => NPC.FindFirstNPC(NPCID.Truffle);
-    private static int TaxCollector => NPC.FindFirstNPC(NPCID.TaxCollector);
-    private static int Guide => NPC.FindFirstNPC(NPCID.Guide);
-    private static int Cyborg => NPC.FindFirstNPC(NPCID.Cyborg);
-    private static int Demolitionist => NPC.FindFirstNPC(NPCID.Demolitionist);
-    private static int DD2Bartender => NPC.FindFirstNPC(NPCID.DD2Bartender);
-    private static int DyeTrader => NPC.FindFirstNPC(NPCID.DyeTrader);
-    private static bool IsTalking => Main.LocalPlayer.talkNPC >= 0;
-    private static int TalkingNpc => Main.player[Main.myPlayer].talkNPC;
+    private int Abominationn => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Abominationn").Type);
+    private int Mutant => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Mutant").Type);
+    private int Deviantt => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Deviantt").Type);
+    private int LumberJack => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("LumberJack").Type);
+    private int Squirrel => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Squirrel").Type);
+    private int Mechanic => NPC.FindFirstNPC(NPCID.Mechanic);
+    private int Angler => NPC.FindFirstNPC(NPCID.Angler);
+    private int Dryad => NPC.FindFirstNPC(NPCID.Dryad);
+    private int Nurse => NPC.FindFirstNPC(NPCID.Nurse);
+    private int PartyGirl => NPC.FindFirstNPC(NPCID.PartyGirl);
+    private int WitchDoctor => NPC.FindFirstNPC(NPCID.WitchDoctor);
+    private int Stylist => NPC.FindFirstNPC(NPCID.Stylist);
+    private int Truffle => NPC.FindFirstNPC(NPCID.Truffle);
+    private int TaxCollector => NPC.FindFirstNPC(NPCID.TaxCollector);
+    private int Guide => NPC.FindFirstNPC(NPCID.Guide);
+    private int Cyborg => NPC.FindFirstNPC(NPCID.Cyborg);
+    private int Demolitionist => NPC.FindFirstNPC(NPCID.Demolitionist);
+    private int DD2Bartender => NPC.FindFirstNPC(NPCID.DD2Bartender);
+    private int DyeTrader => NPC.FindFirstNPC(NPCID.DyeTrader);
+    private bool IsTalking => Main.LocalPlayer.talkNPC >= 0;
+    private int TalkingNpc => Main.player[Main.myPlayer].talkNPC;
     #endregion
-    private static bool IsExistingNPC(this int npcType) => npcType >= 0;
-
-    internal static void SetupTranslation()
+    private bool IsExistingNPC(int npcType) => npcType >= 0;
+    
+    public override void LoadTranslation()
     {
         if (!IsTalking)
             return;
@@ -75,17 +78,17 @@ public static class NpcDialoguesTranslation
                 _ => npcPhrase
             };
 
-            if (Mutant.IsExistingNPC() && npcPhrase == $"That one guy, {Main.npc[Mutant].GivenName}, he is my brother... I've fought more bosses than him.")
+            if (IsExistingNPC(Mutant) && npcPhrase == $"That one guy, {Main.npc[Mutant].GivenName}, he is my brother... I've fought more bosses than him.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.25"), Main.npc[Mutant].GivenName);
             }
 
-            if (Deviantt.IsExistingNPC() && npcPhrase == $"That one girl, {Main.npc[Deviantt].GivenName}, she is my sister... I've defeated more events than her.")
+            if (IsExistingNPC(Deviantt) && npcPhrase == $"That one girl, {Main.npc[Deviantt].GivenName}, she is my sister... I've defeated more events than her.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.26"), Main.npc[Deviantt].GivenName);
             }
 
-            if (Mechanic.IsExistingNPC() && npcPhrase == $"Can you please ask {Main.npc[Mechanic].GivenName} to stop touching my laser arm please.")
+            if (IsExistingNPC(Mechanic) && npcPhrase == $"Can you please ask {Main.npc[Mechanic].GivenName} to stop touching my laser arm please.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.27"), Main.npc[Mechanic].GivenName);
             }
@@ -136,7 +139,7 @@ public static class NpcDialoguesTranslation
                 "Did you beat that fish pig dragon yet? He reduces your maximum life a little on every hit. He's also strong enough to break defenses in one hit. Too bad you don't have any reinforced plating to prevent that, right?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.46"),
                 "That temple? Reach the altar to regain wire control! The golem gets upset when you leave, so fighting in there is best. Platforms won't work, but a Lihzahrd Instactuation Bomb can help clear space!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.47"),
                 "That overgrown plant inflicts a special venom that works her into an enraged frenzy if she stacks enough hits on you. She also has a ring of crystal leaves, but minions go through it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.48"),
-                // "Good work getting one over on me! Hope I didn't make you sweat too much. Keep at the grind - I wanna see how far you can go!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.49"),
+                "Good work getting one over on me! Hope I didn't make you sweat too much. Keep at the grind - I wanna see how far you can go!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.49"),
                 "That metal worm has a few upgrades, but its probes were downgraded to compensate. It'll start shooting homing dark stars and flying. When it coils around you, don't try to escape!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.50"),
                 "I saw that metal eye spinning while firing a huge laser the other day. Also, even if you kill them, they won't die until they're both killed!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.51"),
                 "Focus on taking down that metal skull, not its limbs. Don't try to outrun its spinning limbs! Keep your eyes open and learn to recognize what's doing what." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.52"),
@@ -181,7 +184,7 @@ public static class NpcDialoguesTranslation
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.34"), Main.LocalPlayer.name);
             }
 
-            if (Mutant.IsExistingNPC())
+            if (IsExistingNPC(Mutant))
             {
                 if (npcPhrase == $"Can you tell {Main.npc[Mutant].GivenName} to put some clothes on?")
                 {
@@ -197,17 +200,17 @@ public static class NpcDialoguesTranslation
                 }
             }
 
-            if (Abominationn.IsExistingNPC() && npcPhrase == $"{Main.npc[Abominationn].GivenName} is here! That's my big-but-not-biggest brother!")
+            if (IsExistingNPC(Abominationn) && npcPhrase == $"{Main.npc[Abominationn].GivenName} is here! That's my big-but-not-biggest brother!")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.38"), Main.npc[Abominationn].GivenName);
             }
 
-            if (LumberJack.IsExistingNPC() && npcPhrase == $"What's that? You want to fight {Main.npc[LumberJack].GivenName}? ...even I know better than to try.")
+            if (IsExistingNPC(LumberJack) && npcPhrase == $"What's that? You want to fight {Main.npc[LumberJack].GivenName}? ...even I know better than to try.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.39"), Main.npc[LumberJack].GivenName);
             }
 
-            if (Angler.IsExistingNPC() && npcPhrase == $"Have you ever considered throwing {Main.npc[Angler].GivenName} back where you found him?")
+            if (IsExistingNPC(Angler) && npcPhrase == $"Have you ever considered throwing {Main.npc[Angler].GivenName} back where you found him?")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.40"), Main.npc[Angler].GivenName);
             }
@@ -256,12 +259,12 @@ public static class NpcDialoguesTranslation
                 _ => npcPhrase
             };
 
-            if (Dryad.IsExistingNPC() && npcPhrase == $"{Main.npc[Dryad].GivenName} told me to start hugging trees... I hug trees with my chainsaw.")
+            if (IsExistingNPC(Dryad) && npcPhrase == $"{Main.npc[Dryad].GivenName} told me to start hugging trees... I hug trees with my chainsaw.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.33"), Main.npc[Dryad].GivenName);
             }
 
-            if (Nurse.IsExistingNPC() && npcPhrase == $"I always see {Main.npc[Nurse].GivenName} looking at my biceps when I'm working. Wonder if she wants some of my wood.")
+            if (IsExistingNPC(Nurse) && npcPhrase == $"I always see {Main.npc[Nurse].GivenName} looking at my biceps when I'm working. Wonder if she wants some of my wood.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.34"), Main.npc[Nurse].GivenName);
             }
@@ -335,72 +338,72 @@ public static class NpcDialoguesTranslation
                 _ => npcPhrase
             };
 
-            if (PartyGirl.IsExistingNPC() && npcPhrase == $"{Main.npc[PartyGirl].GivenName} is the one who invited me, I don't understand why though.")
+            if (IsExistingNPC(PartyGirl) && npcPhrase == $"{Main.npc[PartyGirl].GivenName} is the one who invited me, I don't understand why though.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.60"), Main.npc[PartyGirl].GivenName);
             }
 
-            if (LumberJack.IsExistingNPC() && npcPhrase == $"It's okay {Main.npc[Mutant].GivenName}, just don't look straight into {Main.npc[LumberJack].GivenName}'s eyes. He can't scare you that way...")
+            if (IsExistingNPC(LumberJack) && npcPhrase == $"It's okay {Main.npc[Mutant].GivenName}, just don't look straight into {Main.npc[LumberJack].GivenName}'s eyes. He can't scare you that way...")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.61"), Main.npc[Mutant].GivenName, Main.npc[LumberJack].GivenName);
             }
 
-            if (Nurse.IsExistingNPC() && npcPhrase == $"Whenever we're alone, {Main.npc[Nurse].GivenName} keeps throwing syringes at me, no matter how many times I tell her to stop!")
+            if (IsExistingNPC(Nurse) && npcPhrase == $"Whenever we're alone, {Main.npc[Nurse].GivenName} keeps throwing syringes at me, no matter how many times I tell her to stop!")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.62"), Main.npc[Nurse].GivenName);
             }
 
-            if (WitchDoctor.IsExistingNPC() && npcPhrase == $"Please go tell {Main.npc[WitchDoctor].GivenName} to drop the 'mystical' shtick, I mean, come on! I get it, you make tainted water or something.")
+            if (IsExistingNPC(WitchDoctor) && npcPhrase == $"Please go tell {Main.npc[WitchDoctor].GivenName} to drop the 'mystical' shtick, I mean, come on! I get it, you make tainted water or something.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.63"), Main.npc[WitchDoctor].GivenName);
             }
 
-            if (Dryad.IsExistingNPC() && npcPhrase == $"Why does {Main.npc[Dryad].GivenName}'s outfit make my wings flutter?")
+            if (IsExistingNPC(Dryad) && npcPhrase == $"Why does {Main.npc[Dryad].GivenName}'s outfit make my wings flutter?")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.64"), Main.npc[Dryad].GivenName);
             }
 
-            if (Stylist.IsExistingNPC() && npcPhrase == $"{Main.npc[Stylist].GivenName} once gave me a wig... I look hideous with long hair.")
+            if (IsExistingNPC(Stylist) && npcPhrase == $"{Main.npc[Stylist].GivenName} once gave me a wig... I look hideous with long hair.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.65"), Main.npc[Stylist].GivenName);
             }
 
-            if (Truffle.IsExistingNPC() && npcPhrase == "That mutated mushroom seems like my type of fella.")
+            if (IsExistingNPC(Truffle) && npcPhrase == "That mutated mushroom seems like my type of fella.")
             {
                 npcPhrase = LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.66");
             }
 
-            if (TaxCollector.IsExistingNPC() && npcPhrase == $"{Main.npc[TaxCollector].GivenName} keeps asking me for money, but he won't accept my spawners!")
+            if (IsExistingNPC(TaxCollector) && npcPhrase == $"{Main.npc[TaxCollector].GivenName} keeps asking me for money, but he won't accept my spawners!")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.67"), Main.npc[TaxCollector].GivenName);
             }
 
-            if (Guide.IsExistingNPC() && npcPhrase == $"Any idea why {Main.npc[Guide].GivenName} is always cowering in fear when I get near him?")
+            if (IsExistingNPC(Guide) && npcPhrase == $"Any idea why {Main.npc[Guide].GivenName} is always cowering in fear when I get near him?")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.68"), Main.npc[Guide].GivenName);
             }
 
-            if (Truffle.IsExistingNPC() && WitchDoctor.IsExistingNPC() && Cyborg.IsExistingNPC() && npcPhrase == $"If any of us could play instruments, I'd totally start a band with {Main.npc[WitchDoctor].GivenName}, {Main.npc[Truffle].GivenName}, and {Main.npc[Cyborg].GivenName}.")
+            if (IsExistingNPC(Truffle) && IsExistingNPC(WitchDoctor) && IsExistingNPC(Cyborg) && npcPhrase == $"If any of us could play instruments, I'd totally start a band with {Main.npc[WitchDoctor].GivenName}, {Main.npc[Truffle].GivenName}, and {Main.npc[Cyborg].GivenName}.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.69"), Main.npc[WitchDoctor].GivenName, Main.npc[Truffle].GivenName, Main.npc[Cyborg].GivenName);
             }
 
-            if (PartyGirl.IsExistingNPC() && npcPhrase == $"Man, {Main.npc[PartyGirl].GivenName}'s confetti keeps getting stuck to my wings")
+            if (IsExistingNPC(PartyGirl) && npcPhrase == $"Man, {Main.npc[PartyGirl].GivenName}'s confetti keeps getting stuck to my wings")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.70"), Main.npc[PartyGirl].GivenName);
             }
 
-            if (Demolitionist.IsExistingNPC() && npcPhrase == $"I'm surprised {Main.npc[Demolitionist].GivenName} hasn't blown a hole in the floor yet, on second thought that sounds fun.")
+            if (IsExistingNPC(Demolitionist) && npcPhrase == $"I'm surprised {Main.npc[Demolitionist].GivenName} hasn't blown a hole in the floor yet, on second thought that sounds fun.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.71"), Main.npc[Demolitionist].GivenName);
             }
 
-            if (DD2Bartender.IsExistingNPC() && npcPhrase == $"{Main.npc[DD2Bartender].GivenName} keeps suggesting I drink some beer, something tells me he wouldn't like me when I'm drunk though.")
+            if (IsExistingNPC(DD2Bartender) && npcPhrase == $"{Main.npc[DD2Bartender].GivenName} keeps suggesting I drink some beer, something tells me he wouldn't like me when I'm drunk though.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.72"), Main.npc[DD2Bartender].GivenName);
             }
 
-            if (DyeTrader.IsExistingNPC() && npcPhrase == $"{Main.npc[DyeTrader].GivenName} wants to see what I would look like in blue... I don't know how to feel.")
+            if (IsExistingNPC(DyeTrader) && npcPhrase == $"{Main.npc[DyeTrader].GivenName} wants to see what I would look like in blue... I don't know how to feel.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.73"), Main.npc[DyeTrader].GivenName);
             }
@@ -409,7 +412,7 @@ public static class NpcDialoguesTranslation
         {
             npcPhrase = npcPhrase switch
             {
-                "[c/ff0000:You will suffer.]" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Squirrel.1"),
+                "[c/FF0000:You will suffer.]" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Squirrel.1"),
                 "*squeak*" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Squirrel.2"),
                 "*chitter*" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Squirrel.3"),
                 "*crunch crunch*" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Squirrel.4"),

@@ -11,11 +11,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 [JITWhenModsEnabled("CalamityMod")]
 public class AstralInjectionPatch : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(AstralInjection).GetCachedMethod(nameof(AstralInjection.OnConsumeItem));
-    
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "'s blood vessels burst from drug overdose.", " кровеносные сосуды лопаются от передозировки наркотиков.");
     };

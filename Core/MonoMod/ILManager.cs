@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Core.MonoMod;
 

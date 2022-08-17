@@ -2,6 +2,7 @@
 using CalamityMod;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
+using CalamityRuTranslate.Core;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -9,44 +10,47 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public static class NpcDialoguesTranslation
+public class CalamityNpcChat : ContentTranslation
 {
+    public override bool IsTranslationEnabled => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+    
     #region Properties
-    private static int Dryad => NPC.FindFirstNPC(NPCID.Dryad);
-    private static int Bartender => NPC.FindFirstNPC(NPCID.DD2Bartender);
-    private static int Stylist => NPC.FindFirstNPC(NPCID.Stylist);
-    private static int PartyGirl => NPC.FindFirstNPC(NPCID.PartyGirl);
-    private static int Angler => NPC.FindFirstNPC(NPCID.Angler);
-    private static int Merchant => NPC.FindFirstNPC(NPCID.Merchant);
-    private static int ArmsDealer => NPC.FindFirstNPC(NPCID.ArmsDealer);
-    private static int Nurse => NPC.FindFirstNPC(NPCID.Nurse);
-    private static int GoblinTinkerer => NPC.FindFirstNPC(NPCID.GoblinTinkerer);
-    private static int Guide => NPC.FindFirstNPC(NPCID.Guide);
-    private static int Demolitionist => NPC.FindFirstNPC(NPCID.Demolitionist);
-    private static int Clothier => NPC.FindFirstNPC(NPCID.Clothier);
-    private static int Wizard => NPC.FindFirstNPC(NPCID.Wizard);
-    private static int Mechanic => NPC.FindFirstNPC(NPCID.Mechanic);
-    private static int Truffle => NPC.FindFirstNPC(NPCID.Truffle);
-    private static int Steampunk => NPC.FindFirstNPC(NPCID.Steampunker);
-    private static int DyeTrader => NPC.FindFirstNPC(NPCID.DyeTrader);
-    private static int Cyborg => NPC.FindFirstNPC(NPCID.Cyborg);
-    private static int Painter => NPC.FindFirstNPC(NPCID.Painter);
-    private static int WitchDoctor => NPC.FindFirstNPC(NPCID.WitchDoctor);
-    private static int Pirate => NPC.FindFirstNPC(NPCID.Pirate);
-    private static int TravellingMerchant => NPC.FindFirstNPC(NPCID.TravellingMerchant);
-    private static int TaxCollector => NPC.FindFirstNPC(NPCID.TaxCollector);
-    private static int SkeletonMerchant => NPC.FindFirstNPC(NPCID.SkeletonMerchant);
-    private static int Archmage => NPC.FindFirstNPC(ModsCall.Calamity.Find<ModNPC>("DILF").Type);
-    private static int DrunkPrincess => NPC.FindFirstNPC(ModsCall.Calamity.Find<ModNPC>("FAP").Type);
-    private static int SeaKing => NPC.FindFirstNPC(ModsCall.Calamity.Find<ModNPC>("SEAHOE").Type);
-    private static int Bandit => NPC.FindFirstNPC(ModsCall.Calamity.Find<ModNPC>("THIEF").Type);
-    private static int Witch => NPC.FindFirstNPC(ModsCall.Calamity.Find<ModNPC>("WITCH").Type);
-    private static bool IsTalking => Main.LocalPlayer.talkNPC >= 0;
-    private static int TalkingNpc => Main.player[Main.myPlayer].talkNPC;
+    private int Dryad => NPC.FindFirstNPC(NPCID.Dryad);
+    private int Bartender => NPC.FindFirstNPC(NPCID.DD2Bartender);
+    private int Stylist => NPC.FindFirstNPC(NPCID.Stylist);
+    private int PartyGirl => NPC.FindFirstNPC(NPCID.PartyGirl);
+    private int Angler => NPC.FindFirstNPC(NPCID.Angler);
+    private int Merchant => NPC.FindFirstNPC(NPCID.Merchant);
+    private int ArmsDealer => NPC.FindFirstNPC(NPCID.ArmsDealer);
+    private int Nurse => NPC.FindFirstNPC(NPCID.Nurse);
+    private int GoblinTinkerer => NPC.FindFirstNPC(NPCID.GoblinTinkerer);
+    private int Guide => NPC.FindFirstNPC(NPCID.Guide);
+    private int Demolitionist => NPC.FindFirstNPC(NPCID.Demolitionist);
+    private int Clothier => NPC.FindFirstNPC(NPCID.Clothier);
+    private int Wizard => NPC.FindFirstNPC(NPCID.Wizard);
+    private int Mechanic => NPC.FindFirstNPC(NPCID.Mechanic);
+    private int Truffle => NPC.FindFirstNPC(NPCID.Truffle);
+    private int Steampunk => NPC.FindFirstNPC(NPCID.Steampunker);
+    private int DyeTrader => NPC.FindFirstNPC(NPCID.DyeTrader);
+    private int Cyborg => NPC.FindFirstNPC(NPCID.Cyborg);
+    private int Painter => NPC.FindFirstNPC(NPCID.Painter);
+    private int WitchDoctor => NPC.FindFirstNPC(NPCID.WitchDoctor);
+    private int Pirate => NPC.FindFirstNPC(NPCID.Pirate);
+    private int TravellingMerchant => NPC.FindFirstNPC(NPCID.TravellingMerchant);
+    private int TaxCollector => NPC.FindFirstNPC(NPCID.TaxCollector);
+    private int SkeletonMerchant => NPC.FindFirstNPC(NPCID.SkeletonMerchant);
+    private int Archmage => NPC.FindFirstNPC(ModsCall.Calamity.Find<ModNPC>("DILF").Type);
+    private int DrunkPrincess => NPC.FindFirstNPC(ModsCall.Calamity.Find<ModNPC>("FAP").Type);
+    private int SeaKing => NPC.FindFirstNPC(ModsCall.Calamity.Find<ModNPC>("SEAHOE").Type);
+    private int Bandit => NPC.FindFirstNPC(ModsCall.Calamity.Find<ModNPC>("THIEF").Type);
+    private int Witch => NPC.FindFirstNPC(ModsCall.Calamity.Find<ModNPC>("WITCH").Type);
+    private bool IsTalking => Main.LocalPlayer.talkNPC >= 0;
+    private int TalkingNpc => Main.player[Main.myPlayer].talkNPC;
     #endregion
-    private static bool IsExistingNPC(this int npcType) => npcType >= 0;
-
-    internal static void SetupTranslation()
+    
+    private bool IsExistingNPC(int npcType) => npcType >= 0;
+    
+    public override void LoadTranslation()
     {
         if (!IsTalking)
             return;
@@ -153,7 +157,7 @@ public static class NpcDialoguesTranslation
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.DrunkPrincess.57"), npcPhrase.Split(' ')[3]);
             }
-            if (Bartender.IsExistingNPC())
+            if (IsExistingNPC(Bartender))
             {
                 if (npcPhrase == "I've had to tell baldie where my eyes are so many times that I've lost count.")
                 {
@@ -168,15 +172,15 @@ public static class NpcDialoguesTranslation
                     npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.DrunkPrincess.36"), Main.npc[Bartender].GivenName);
                 }
             }
-            if (Archmage.IsExistingNPC() && npcPhrase == $"I never realized how well-endowed {Main.npc[Archmage].GivenName} was. It had to be the largest icicle I'd ever seen.")
+            if (IsExistingNPC(Archmage) && npcPhrase == $"I never realized how well-endowed {Main.npc[Archmage].GivenName} was. It had to be the largest icicle I'd ever seen.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.DrunkPrincess.37"), Main.npc[Archmage].GivenName);
             }
-            if (Witch.IsExistingNPC() && npcPhrase == $"The abuse {Main.npc[Witch].GivenName} went through is something I can hardly comprehend. I'd offer her a drink, but I don't think she'd enjoy it.")
+            if (IsExistingNPC(Witch) && npcPhrase == $"The abuse {Main.npc[Witch].GivenName} went through is something I can hardly comprehend. I'd offer her a drink, but I don't think she'd enjoy it.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.DrunkPrincess.38"), Main.npc[Witch].GivenName);
             }
-            if (Stylist.IsExistingNPC())
+            if (IsExistingNPC(Stylist))
             {
                 if (npcPhrase == $"You can't stop me from trying to move in with {Main.npc[Stylist].GivenName}.")
                 {
@@ -285,11 +289,11 @@ public static class NpcDialoguesTranslation
                 "There are rumors of ores that lay in latency. When you defeat certain bosses you will undo the ancient magic which conceals those materials." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.65"),
                 _ => npcPhrase
             };
-            if (PartyGirl.IsExistingNPC() && npcPhrase == $"{Main.npc[PartyGirl].GivenName} asked if my nose could be used as a vuvuzela. What is a vuvuzela?")
+            if (IsExistingNPC(PartyGirl) && npcPhrase == $"{Main.npc[PartyGirl].GivenName} asked if my nose could be used as a vuvuzela. What is a vuvuzela?")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.8"), Main.npc[PartyGirl].GivenName);
             }
-            if (Angler.IsExistingNPC())
+            if (IsExistingNPC(Angler))
             {
                 if (npcPhrase == $"Meet me at {Main.npc[Angler].GivenName}'s house at night. We will throw him to the Trashers.")
                 {
@@ -300,11 +304,11 @@ public static class NpcDialoguesTranslation
                     npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.10"), Main.npc[Angler].GivenName);
                 }
             }
-            if (DrunkPrincess.IsExistingNPC() && npcPhrase == $"Rumor has it {Main.npc[DrunkPrincess].GivenName} drinks to forget her troubled past.")
+            if (IsExistingNPC(DrunkPrincess) && npcPhrase == $"Rumor has it {Main.npc[DrunkPrincess].GivenName} drinks to forget her troubled past.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.11"), Main.npc[DrunkPrincess].GivenName);
             }
-            if (Witch.IsExistingNPC() && npcPhrase == "I must admit, the Witch's presence is unsettling to me. But so many years have passed, and she too has suffered much.")
+            if (IsExistingNPC(Witch) && npcPhrase == "I must admit, the Witch's presence is unsettling to me. But so many years have passed, and she too has suffered much.")
             {
                 npcPhrase = LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.12");
             }
@@ -344,23 +348,23 @@ public static class NpcDialoguesTranslation
                 "Sorry, I got nothing. Perhaps you could reforge something and come back later..." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.34"),
                 _ => npcPhrase
             };
-            if (Merchant.IsExistingNPC() && npcPhrase == $"Don't tell {Main.npc[Merchant].GivenName}, but I took some of his stuff and replaced it with Angel Statues.")
+            if (IsExistingNPC(Merchant) && npcPhrase == $"Don't tell {Main.npc[Merchant].GivenName}, but I took some of his stuff and replaced it with Angel Statues.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.28"), Main.npc[Merchant].GivenName);
             }
-            if (Witch.IsExistingNPC() && npcPhrase == "Hey, hey, has Calamitas seriously moved in here with us? Why???")
+            if (IsExistingNPC(Witch) && npcPhrase == "Hey, hey, has Calamitas seriously moved in here with us? Why???")
             {
                 npcPhrase = LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.29");
             }
-            if (DrunkPrincess.IsExistingNPC() && npcPhrase == $"I learned never to steal {Main.npc[DrunkPrincess].GivenName}'s drinks. She doesn't appreciate me right now, so I'll go back to hiding.")
+            if (IsExistingNPC(DrunkPrincess) && npcPhrase == $"I learned never to steal {Main.npc[DrunkPrincess].GivenName}'s drinks. She doesn't appreciate me right now, so I'll go back to hiding.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.30"), Main.npc[DrunkPrincess].GivenName);
             }
-            if (ArmsDealer.IsExistingNPC() && Nurse.IsExistingNPC() && npcPhrase == $"Don't tell {Main.npc[Nurse].GivenName} that I was responsible for {Main.npc[ArmsDealer].GivenName}'s injuries.")
+            if (IsExistingNPC(ArmsDealer) && IsExistingNPC(Nurse) && npcPhrase == $"Don't tell {Main.npc[Nurse].GivenName} that I was responsible for {Main.npc[ArmsDealer].GivenName}'s injuries.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.31"), Main.npc[Nurse].GivenName, Main.npc[ArmsDealer].GivenName);
             }
-            if (GoblinTinkerer.IsExistingNPC() && npcPhrase == $"Want in on a little secret? Since {Main.npc[GoblinTinkerer].GivenName} always gets so much cash from you, I've been stealing some of it as we go. I need you to keep quiet about it, so here.")
+            if (IsExistingNPC(GoblinTinkerer) && npcPhrase == $"Want in on a little secret? Since {Main.npc[GoblinTinkerer].GivenName} always gets so much cash from you, I've been stealing some of it as we go. I need you to keep quiet about it, so here.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.32"), Main.npc[GoblinTinkerer].GivenName);
             }
@@ -385,15 +389,15 @@ public static class NpcDialoguesTranslation
                 _ => npcPhrase
             };
 
-            if (SeaKing.IsExistingNPC() && npcPhrase == "I cannot understand the Sea King. He does not seem to want me dead. That amount of compassion I just can't understand.")
+            if (IsExistingNPC(SeaKing) && npcPhrase == "I cannot understand the Sea King. He does not seem to want me dead. That amount of compassion I just can't understand.")
             {
                 npcPhrase = LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.12");
             }
-            if (Archmage.IsExistingNPC() && npcPhrase == "That frosty old man... even if you ignore our brands of magic and our old alliances, I doubt I'd ever get along with him.")
+            if (IsExistingNPC(Archmage) && npcPhrase == "That frosty old man... even if you ignore our brands of magic and our old alliances, I doubt I'd ever get along with him.")
             {
                 npcPhrase = LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.13");
             }
-            if (DrunkPrincess.IsExistingNPC() && npcPhrase == $"I wonder if {Main.npc[DrunkPrincess].GivenName} ever feels cold given how revealing her dress is. Perhaps she should cover up a bit more.")
+            if (IsExistingNPC(DrunkPrincess) && npcPhrase == $"I wonder if {Main.npc[DrunkPrincess].GivenName} ever feels cold given how revealing her dress is. Perhaps she should cover up a bit more.")
             {
                 npcPhrase = String.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.14"), Main.npc[DrunkPrincess].GivenName);
             }
@@ -429,7 +433,7 @@ public static class NpcDialoguesTranslation
                 "\u0093I'm not here for any reason! Just picking up mushrooms for uh, later use." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Dryad.5"),
                 _ => npcPhrase
             };
-            if (DrunkPrincess.IsExistingNPC() && npcPhrase == $"{Main.npc[DrunkPrincess].GivenName} put me up to this.")
+            if (IsExistingNPC(DrunkPrincess) && npcPhrase == $"{Main.npc[DrunkPrincess].GivenName} put me up to this.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.Dryad.3"), Main.npc[DrunkPrincess].GivenName);
             }
@@ -472,7 +476,7 @@ public static class NpcDialoguesTranslation
                 "You know... we haven't had an invasion in a while..." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.GoblinTinkerer.2"),
                 _ => npcPhrase
             };
-            if (Bandit.IsExistingNPC() && npcPhrase == $"Hey, is it just me or have my pockets gotten lighter ever since {Main.npc[Bandit].GivenName} arrived?")
+            if (IsExistingNPC(Bandit) && npcPhrase == $"Hey, is it just me or have my pockets gotten lighter ever since {Main.npc[Bandit].GivenName} arrived?")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.GoblinTinkerer.1"), Main.npc[Bandit].GivenName);
             }
@@ -494,7 +498,7 @@ public static class NpcDialoguesTranslation
                 "Maybe I should've waterproofed my gadgets... They're starting to corrode." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Mechanic.4"),
                 _ => npcPhrase
             };
-            if (DrunkPrincess.IsExistingNPC())
+            if (IsExistingNPC(DrunkPrincess))
             {
                 if (npcPhrase == $"Well, I like {Main.npc[DrunkPrincess].GivenName}, but I, ah... I have my eyes on someone else.")
                     npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.Mechanic.3"), Main.npc[DrunkPrincess].GivenName);
@@ -507,7 +511,7 @@ public static class NpcDialoguesTranslation
                 "I don't feel very safe; I think there's pigs following me around and it frightens me." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Truffle.1"),
                 _ => npcPhrase
             };
-            if (DrunkPrincess.IsExistingNPC())
+            if (IsExistingNPC(DrunkPrincess))
             {
                 if (npcPhrase == $"Sometimes, {Main.npc[DrunkPrincess].GivenName} just looks at me funny and I'm not sure how I feel about that.")
                     npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.Mechanic.2"), Main.npc[DrunkPrincess].GivenName);
@@ -531,7 +535,7 @@ public static class NpcDialoguesTranslation
                 "Have you seen those gemstone creatures in the caverns? Their colors are simply breathtaking!" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.DyeTrader.1"),
                 _ => npcPhrase
             };
-            if (Archmage.IsExistingNPC() && npcPhrase == $"Do you think {Main.npc[Archmage].GivenName} knows how to 'let it go?'")
+            if (IsExistingNPC(Archmage) && npcPhrase == $"Do you think {Main.npc[Archmage].GivenName} knows how to 'let it go?'")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.DyeTrader.2"), Main.npc[Archmage].GivenName);
             }
@@ -606,7 +610,7 @@ public static class NpcDialoguesTranslation
                 "Me ship might just sink from the acid alone." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Pirate.7"),
                 _ => npcPhrase
             };
-            if (SeaKing.IsExistingNPC() && npcPhrase == $"I remember legends about that {Main.npc[SeaKing].GivenName}. He ain't quite how the stories make him out to be though.")
+            if (IsExistingNPC(SeaKing) && npcPhrase == $"I remember legends about that {Main.npc[SeaKing].GivenName}. He ain't quite how the stories make him out to be though.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.Pirate.3"), Main.npc[SeaKing].GivenName);
             }
@@ -622,7 +626,7 @@ public static class NpcDialoguesTranslation
                 "Aww, they're so cute, do they have names?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Stylist.7"),
                 _ => npcPhrase
             };
-            if (DrunkPrincess.IsExistingNPC())
+            if (IsExistingNPC(DrunkPrincess))
             {
                 if (npcPhrase == $"Sometimes I catch {Main.npc[DrunkPrincess].GivenName} sneaking up from behind me.")
                     npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.Stylist.3"), Main.npc[DrunkPrincess].GivenName);
@@ -632,14 +636,14 @@ public static class NpcDialoguesTranslation
         }
         else if (TalkingNpc == TravellingMerchant)
         {
-            if (DrunkPrincess.IsExistingNPC() && Merchant.IsExistingNPC() && npcPhrase == $"Tell {Main.npc[DrunkPrincess].GivenName} I'll take up her offer and meet with her at the back of {Main.npc[Merchant].GivenName}'s house.")
+            if (IsExistingNPC(DrunkPrincess) && IsExistingNPC(Merchant) && npcPhrase == $"Tell {Main.npc[DrunkPrincess].GivenName} I'll take up her offer and meet with her at the back of {Main.npc[Merchant].GivenName}'s house.")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.TravellingMerchant.1"), Main.npc[DrunkPrincess].GivenName, Main.npc[Merchant].GivenName);
             }
         }
         else if (TalkingNpc == Angler)
         {
-            if (SeaKing.IsExistingNPC())
+            if (IsExistingNPC(SeaKing))
             {
                 if (npcPhrase == $"Someone tell {Main.npc[SeaKing].GivenName} to quit trying to throw me out of town, it's not going to work.")
                 {
@@ -674,7 +678,7 @@ public static class NpcDialoguesTranslation
                 "Care for a little Moonshine?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bartender.1"),
                 _ => npcPhrase
             };
-            if (DrunkPrincess.IsExistingNPC() && npcPhrase == $"Sheesh, {Main.npc[DrunkPrincess].GivenName} is a little cruel, isn't she? I never claimed to be an expert on anything but ale!")
+            if (IsExistingNPC(DrunkPrincess) && npcPhrase == $"Sheesh, {Main.npc[DrunkPrincess].GivenName} is a little cruel, isn't she? I never claimed to be an expert on anything but ale!")
             {
                 npcPhrase = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bartender.2"), Main.npc[DrunkPrincess].GivenName);
             }

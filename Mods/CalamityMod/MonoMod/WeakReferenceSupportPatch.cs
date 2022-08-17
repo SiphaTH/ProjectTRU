@@ -27,7 +27,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 // [JITWhenModsEnabled("CalamityMod")]
 // public class WeakReferenceSupportAddCalamityBosses : Patch<ILContext.Manipulator>
 // {
-//     public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+//     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 //     
 //     public override MethodInfo ModifiedMethod => ModsCall.Calamity.Code.GetType("CalamityMod.WeakReferenceSupport").GetCachedMethod("AddCalamityBosses");
 //
@@ -161,7 +161,7 @@ public class WeakReferenceSupportCensusSupport : ILEdit
         remove => HookEndpointManager.Remove<hook_CensusSupport>(_censusSupport, value);
     }
 
-    public override bool Autoload() => ModsCall.TryGetCalamity && ModsCall.TryGetCensus && TranslationHelper.IsRussianLanguage;
+    public override bool Autoload() => ModsCall.Calamity != null && ModsCall.Census != null && TranslationHelper.IsRussianLanguage;
 
     public override void Load()
     {
@@ -220,7 +220,7 @@ public class WeakReferenceSupportCensusSupport : ILEdit
 //         remove => HookEndpointManager.Remove<hook_AddCalamityInvasions>(_addCalamityInvasions, value);
 //     }
 //
-//     public override bool Autoload() => ModsCall.TryGetCalamity && ModsCall.TryGetBossChecklist && TranslationHelper.IsRussianLanguage;
+//     public override bool Autoload() => ModsCall.Calamity != null && ModsCall.TryGetBossChecklist && TranslationHelper.IsRussianLanguage;
 //
 //     public override void Load()
 //     {

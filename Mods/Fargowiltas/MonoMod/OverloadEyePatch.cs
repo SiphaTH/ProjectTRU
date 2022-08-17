@@ -9,7 +9,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 [JITWhenModsEnabled("Fargowiltas")]
 public class OverloadEyePatch : ILEdit
 {
-    public override bool Autoload() => ModsCall.TryGetFargo && TranslationHelper.IsRussianLanguage;
+    public override bool Autoload() => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override void Load()
     {

@@ -5,7 +5,7 @@ namespace CalamityRuTranslate.Core.MonoMod;
 
 public interface IPatch : ILoadable
 {
-    Mod? Mod { get; }
+    Mod Mod { get; }
 
     MethodInfo ModifiedMethod { get; }
 

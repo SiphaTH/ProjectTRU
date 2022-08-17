@@ -7,7 +7,7 @@ namespace CalamityRuTranslate.Core.MonoMod;
 
 public abstract class Patch<T> : IPatch where T : Delegate
 {
-    public Mod? Mod { get; protected set; }
+    public Mod Mod { get; private set; }
 
     public abstract MethodInfo ModifiedMethod { get; }
 
@@ -15,7 +15,7 @@ public abstract class Patch<T> : IPatch where T : Delegate
 
     object IPatch.PatchMethod => PatchMethod;
 
-    public abstract T PatchMethod { get; }
+    protected abstract T PatchMethod { get; }
 
     public virtual bool AutoLoad => true;
 
@@ -23,7 +23,7 @@ public abstract class Patch<T> : IPatch where T : Delegate
     {
         if (PatchMethod is ILContext.Manipulator manipulator)
         {
-            ILPatch patch = new(ModifiedMethod, manipulator);
+            ILPatch patch = new (ModifiedMethod, manipulator);
             patchRepository.Patches.Add(patch);
             patch.Apply();
         }

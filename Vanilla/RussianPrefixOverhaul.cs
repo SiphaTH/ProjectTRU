@@ -5,12 +5,12 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Vanilla;
 
-public static class RussianPrefixOverhaul
+internal static class RussianPrefixOverhaul
 {
 	private static bool _isFirstTime = false;
 	
 	//Мужской, Женский, Средний, Множественный
-	public static string[][] Prefixes =
+	internal static string[][] Prefixes =
 	{
 		new [] {"Тупой", "Тупая", "Тупое", "Тупые"},
 		new [] {"Несчастный", "Несчастная", "Несчастное", "Несчастные"},
@@ -123,7 +123,7 @@ public static class RussianPrefixOverhaul
 	};
 
 	//Женский
-	public static List<int> TypeW = new()
+	private static List<int> TypeW = new()
 	{
 		ItemID.LuckyHorseshoe,
 		ItemID.GuideVoodooDoll,
@@ -386,10 +386,11 @@ public static class RussianPrefixOverhaul
 		ItemID.BatBat,
 		ItemID.ScytheWhip,
 		ItemID.MaceWhip,
+		ItemID.Mace,
 	};
 
 	//Средний
-	public static List<int> TypeU = new()
+	private static List<int> TypeU = new()
 	{
 		ItemID.CloudinaBottle,
 		ItemID.DivingGear,
@@ -427,10 +428,11 @@ public static class RussianPrefixOverhaul
 		ItemID.FairyQueenMagicItem,
 		ItemID.TentacleSpike,
 		ItemID.FlowerPow,
+		ItemID.DarkLance,
 	};
 
 	//Множественный
-	public static List<int> TypePl = new()
+	private static List<int> TypePl = new()
 	{
 		ItemID.CopperWatch,
 		ItemID.SilverWatch,
@@ -520,7 +522,7 @@ public static class RussianPrefixOverhaul
 
 	private static List<int> CalamityTypeW()
 	{
-		if (ModsCall.TryGetCalamity)
+		if (ModsCall.Calamity != null)
 		{
 			return new List<int>
 			{
@@ -754,6 +756,7 @@ public static class RussianPrefixOverhaul
 				ModContent.Find<ModItem>("CalamityMod", "UrchinMace").Type,
 				ModContent.Find<ModItem>("CalamityMod", "FaultLine").Type,
 				ModContent.Find<ModItem>("CalamityMod", "GenesisPickaxe").Type,
+				ModContent.Find<ModItem>("CalamityMod", "ReedBlowgun").Type,
 			};
 		}
 
@@ -762,7 +765,7 @@ public static class RussianPrefixOverhaul
 
 	private static List<int> CalamityTypeU()
 	{
-		if (ModsCall.TryGetCalamity)
+		if (ModsCall.Calamity != null)
 		{
 			return new List<int>
 			{
@@ -865,7 +868,7 @@ public static class RussianPrefixOverhaul
 
 	private static List<int> CalamityTypePl()
 	{
-		if (ModsCall.TryGetCalamity)
+		if (ModsCall.Calamity != null)
 		{
 			return new List<int>
 			{
@@ -912,14 +915,208 @@ public static class RussianPrefixOverhaul
 		
 		return new List<int>();
 	}
-	
-	public static string GetGenderedPrefix(string[] prefix, int id)
+
+	private static List<int> FargoSoulsTypeW()
 	{
-		if (ModsCall.TryGetCalamity && !_isFirstTime)
+		if (ModsCall.FargoSouls != null)
+		{
+			return new List<int>
+			{
+				ModContent.Find<ModItem>("FargowiltasSouls", "ApprenticesEssence").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "BarbariansEssence").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "OccultistsEssence").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SharpshootersEssence").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "CosmoForce").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "EarthForce").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "LifeForce").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "NatureForce").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ShadowForce").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SpiritForce").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TerraForce").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TimberForce").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "WillForce").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "AbominableWand").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "AgitatingLens").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "CelestialRune").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ChaliceoftheMoon").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ConcentratedRainbowMatter").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "Deerclawps").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "DreadShell").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "DubiousCircuitry").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "IceQueensCrown").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "PrecisionSeal").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "PumpkingsCape").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ReinforcedPlating").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SaucerControlConsole").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SinisterIcon").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SqueakyToy").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SupremeDeathbringerFairy").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TimsConcoction").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ArchWizardsSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "BerserkerSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ColossusSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ConjuristsSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "DimensionSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "EternitySoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "FlightMasterySoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "MasochistSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SnipersSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SupersonicSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TerrariaSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TrawlerSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "UniverseSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "VoidSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "WorldShaperSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "BoneZone").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "DestroyerGun").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "FishStick").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "FleshHand").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "MountedAcornGun").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SparklingLove").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "Mahoguny").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TophatSquirrelWeapon").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "DestroyerGun2").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "DragonBreath2").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "HellZone").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ComputationOrb").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ParadoxWolfSoul").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "MissDrakovisFishingPole").Type,
+			};
+		}
+
+		return new List<int>();
+	}
+	
+	private static List<int> FargoSoulsTypeU()
+	{
+		if (ModsCall.FargoSouls != null)
+		{
+			return new List<int>
+			{
+				ModContent.Find<ModItem>("FargowiltasSouls", "AdamantiteEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "AncientCobaltEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "AncientHallowEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "AncientShadowEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "AnglerEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ApprenticeEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "BeeEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "BeetleEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "BorealWoodEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "CactusEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ChlorophyteEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "CobaltEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "CopperEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "CrimsonEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "CrystalAssassinEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "DarkArtistEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "EbonwoodEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ForbiddenEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "FossilEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "FrostEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "GladiatorEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "GoldEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "HallowEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "HuntressEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "IronEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "JungleEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "LeadEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "MeteorEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "MinerEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "MoltenEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "MonkEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "MythrilEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "NebulaEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "NecroEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "NinjaEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ObsidianEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "OrichalcumEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "PalladiumEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "PalmWoodEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "PearlwoodEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "PlatinumEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "PumpkinEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "RainEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "RedRidingEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "RichMahoganyEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ShadewoodEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ShadowEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ShinobiEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ShroomiteEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SilverEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SnowEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SolarEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SpectreEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SpiderEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SpookyEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SquireEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "StardustEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TikiEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TinEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TitaniumEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TungstenEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TurtleEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ValhallaKnightEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "VortexEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "WizardEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "WoodEnchant").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "UniverseCore").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "BetsysHeart").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "DarkenedHeart").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "GuttedHeart").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "HeartoftheMasochist").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "NecromanticBrew").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "PungentEyeball").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "PureHeart").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "QueenStinger").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SparklingAdoration").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "WyvernFeather").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "BrainStaff").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "DragonBreath").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TheSmallSting").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TheBigSting").Type,
+			};
+		}
+
+		return new List<int>();
+	}
+	
+	private static List<int> FargoSoulsTypePl()
+	{
+		if (ModsCall.FargoSouls != null)
+		{
+			return new List<int>
+			{
+				ModContent.Find<ModItem>("FargowiltasSouls", "AeolusBoots").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "EurusSock").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "FusedLens").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "GelicWings").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "MutantAntibodies").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "NymphsPerfume").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "SandsofTime").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "ZephyrBoots").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "TwinRangs").Type,
+				ModContent.Find<ModItem>("FargowiltasSouls", "GeminiGlaives").Type,
+			};
+		}
+
+		return new List<int>();
+	}
+
+	internal static string GetGenderedPrefix(string[] prefix, int id)
+	{
+		if (ModsCall.Calamity != null && !_isFirstTime)
 		{
 			TypeW.AddRange(CalamityTypeW());
 			TypeU.AddRange(CalamityTypeU());
 			TypePl.AddRange(CalamityTypePl());
+			_isFirstTime = true;
+		}
+
+		if (ModsCall.FargoSouls != null && !_isFirstTime)
+		{
+			TypeW.AddRange(FargoSoulsTypeW());
+			TypeU.AddRange(FargoSoulsTypeU());
+			TypePl.AddRange(FargoSoulsTypePl());
 			_isFirstTime = true;
 		}
 

@@ -11,11 +11,11 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 [JITWhenModsEnabled("CalamityMod")]
 public class ProfanedGuardianCommanderPatch : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(ProfanedGuardianCommander).GetCachedMethod(nameof(ProfanedGuardianCommander.BossLoot));
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "A Profaned Guardian", "Осквернённый страж");
     };
@@ -24,11 +24,11 @@ public class ProfanedGuardianCommanderPatch : Patch<ILContext.Manipulator>
 [JITWhenModsEnabled("CalamityMod")]
 public class ProfanedGuardianDefenderPacth : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(ProfanedGuardianDefender).GetCachedMethod(nameof(ProfanedGuardianDefender.BossLoot));
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "A Profaned Guardian", "Осквернённый страж");
     };
@@ -37,11 +37,11 @@ public class ProfanedGuardianDefenderPacth : Patch<ILContext.Manipulator>
 [JITWhenModsEnabled("CalamityMod")]
 public class ProfanedGuardianHealerPacth : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(ProfanedGuardianHealer).GetCachedMethod(nameof(ProfanedGuardianHealer.BossLoot));
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "A Profaned Guardian", "Осквернённый страж");
     };

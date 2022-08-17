@@ -4,15 +4,15 @@ using Microsoft.Xna.Framework;
 
 namespace CalamityRuTranslate.Catalogs;
 
-public static class FargowiltasCatalog
+internal static class FargowiltasCatalog
 {
-    public static readonly List<string> Buffs = new()
+    internal static readonly List<string> Buffs = new()
     {
         "Omnistation",
         "WoodDrop",
     };
 
-    public static readonly List<string> Items = new()
+    internal static readonly List<string> Items = new()
     {
         "BoneQuiver",
         "ChlorophyteQuiver",
@@ -302,7 +302,7 @@ public static class FargowiltasCatalog
         "Golfer",
     };
 
-    public static readonly List<string> NPCs = new()
+    internal static readonly List<string> NPCs = new()
     {
         "Abominationn",
         "Deviantt",
@@ -312,7 +312,7 @@ public static class FargowiltasCatalog
         "SuperDummy"
     };
     
-    public static List<TileData> Tiles = new()
+    internal static List<TileData> Tiles = new()
     {
         new TileData("CrucibleCosmosSheet", "", new Color(200, 200, 200)),
         new TileData("DemonAltarSheet", "", new Color(200, 200, 200)),

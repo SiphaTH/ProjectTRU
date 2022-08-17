@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
-using CalamityRuTranslate.Common;
-using CalamityRuTranslate.Common.Utilities;
+using System.Linq;
+using CalamityRuTranslate.Core;
 using CalamityRuTranslate.Mods.CalamityMod;
+using CalamityRuTranslate.Mods.Fargowiltas;
+using CalamityRuTranslate.Mods.FargowiltasSouls;
 using Terraria.ModLoader;
 using Terraria.UI;
 
@@ -9,17 +11,20 @@ namespace CalamityRuTranslate;
 
 public class CalamityRuTranslateModSystem : ModSystem
 {
+    private readonly List<IContentTranslation> _contents = new()
+    {
+        new CalamityCombatText(),
+        new CalamityNpcChat(),
+        new FargoNpcChat(),
+        new FargowiltasSoulsCombatText(),
+        new FargowiltasSoulsNpcChat()
+    };
+    
     public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
     {
-        if (ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage)
+        foreach (var content in _contents.Where(content => content.IsTranslationEnabled))
         {
-            NpcDialoguesTranslation.SetupTranslation();
-            CombatTextsTranslation.SetupTranslation();
-        }
-
-        if (ModsCall.TryGetFargo && TranslationHelper.IsRussianLanguage)
-        {
-            Mods.Fargowiltas.NpcDialoguesTranslation.SetupTranslation();
+            content.LoadTranslation();
         }
     }
 }

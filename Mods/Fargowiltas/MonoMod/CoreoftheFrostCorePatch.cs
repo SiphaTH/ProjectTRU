@@ -11,11 +11,11 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 [JITWhenModsEnabled("Fargowiltas")]
 public class CoreoftheFrostCorePatch : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetFargo && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(CoreoftheFrostCore).GetCachedMethod("get_NPCName");
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Ice Golem", "Ледяной голем");
     };

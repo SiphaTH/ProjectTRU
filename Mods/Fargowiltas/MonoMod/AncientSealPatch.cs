@@ -11,11 +11,11 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 [JITWhenModsEnabled("Fargowiltas")]
 public class AncientSealShoot : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetFargo && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(AncientSeal).GetCachedMethod(nameof(AncientSeal.Shoot));
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Every boss has awoken!", "Все боссы пробуждаются!");
         TranslationHelper.ModifyIL(il, "Every boss has awoken!", "Все боссы пробуждаются!", 2);
@@ -25,11 +25,11 @@ public class AncientSealShoot : Patch<ILContext.Manipulator>
 [JITWhenModsEnabled("Fargowiltas")]
 public class AncientSealSpawnBoss : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetFargo && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(AncientSeal).GetCachedMethod(nameof(AncientSeal.SpawnBoss));
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " has awoken!", " пробуждается!");
     };

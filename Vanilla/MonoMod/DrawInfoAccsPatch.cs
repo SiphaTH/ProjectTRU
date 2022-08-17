@@ -12,7 +12,7 @@ public class DrawInfoAccsPatch : Patch<ILContext.Manipulator>
 
     public override MethodInfo ModifiedMethod => typeof(Main).GetCachedMethod("DrawInfoAccs");
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, 12, 24);
         TranslationHelper.ModifyIL(il, 12, 0, 3);

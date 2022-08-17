@@ -11,7 +11,7 @@ public class VanillaWingsTranslation : GlobalItem
 {
     public override bool IsLoadingEnabled(Mod mod)
     {
-        return ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     }
 
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)

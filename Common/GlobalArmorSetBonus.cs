@@ -4,26 +4,27 @@ using CalamityRuTranslate.Common.DataStructures;
 using CalamityRuTranslate.Common.Utilities;
 using Terraria;
 using Terraria.Localization;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Common;
 
-public static class GlobalArmorSetBonus
+internal static class GlobalArmorSetBonus
 {
-    public static List<ArmorSetData> ListOfArmorSet
+    internal static List<ArmorSetData> ListOfArmorSet
     {
         get
         {
             List<ArmorSetData> getArmorSetInfo = new List<ArmorSetData>();
 
-            if (ModsCall.TryGetCalamity)
+            if (ModsCall.Calamity != null)
                 getArmorSetInfo.AddRange(ArmorSetBonusLoader.CalamityArmorSets);
+            if (ModsCall.FargoSouls != null)
+                getArmorSetInfo.AddRange(ArmorSetBonusLoader.FargowiltasSoulsArmorSets);
 
             return getArmorSetInfo;
         }
     }
 
-    public static string GetCalamityArmorSetBonusByName(string set)
+    internal static string GetCalamityArmorSetBonusByName(string set)
     {
         switch (set)
         {
@@ -116,7 +117,24 @@ public static class GlobalArmorSetBonus
         return "";
     }
 
-    public static string GetArmorSetName(int itemType, List<ArmorSetData> armorSetData)
+    internal static string GetFargowiltasSoulsArmorSetBonusByName(string set)
+    {
+        switch (set)
+        {
+            case "Nekomi":
+            case "Gaia":
+            case "Styx":
+                return LangHelper.GetTextValue($"FargowiltasSouls.Items.SetBonus.{set}", Language.GetTextValue(Main.ReversedUpDownArmorSetBonuses ? "Key.UP" : "Key.DOWN"));
+            
+            case "Eridanus":
+            case "Mutant":
+                return LangHelper.GetTextValue($"FargowiltasSouls.Items.SetBonus.{set}");
+        }
+        
+        return "";
+    }
+
+    internal static string GetArmorSetName(int itemType, List<ArmorSetData> armorSetData)
     {
         foreach (ArmorSetData armorSet in armorSetData)
         {
@@ -127,7 +145,7 @@ public static class GlobalArmorSetBonus
         return default;
     }
 
-    public static bool CheckArmorSetHead(int headType, List<ArmorSetData> armorSetData)
+    internal static bool CheckArmorSetHead(int headType, List<ArmorSetData> armorSetData)
     {
         return armorSetData.Any(armorSet => armorSet.CheckHeadOfArmorSet(headType, out string _));
     }

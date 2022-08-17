@@ -11,11 +11,11 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 [JITWhenModsEnabled("Fargowiltas")]
 public class PillarSummonPatch : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetFargo && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(PillarSummon).GetCachedMethod(nameof(PillarSummon.Shoot));
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "The Celestial Pillars have awoken!", "Неземные башни пробуждаются!");
     };

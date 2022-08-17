@@ -1,5 +1,6 @@
 ﻿using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
+using IL.Terraria.GameContent.UI.States;
 using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
@@ -10,12 +11,12 @@ public class UIManageControlsPatch : ILEdit
 
     public override void Load()
     {
-        IL.Terraria.GameContent.UI.States.UIManageControls.OnInitialize += UIManageControlsOnOnInitialize;
+        UIManageControls.OnInitialize += UIManageControlsOnOnInitialize;
     }
     
     public override void Unload()
     {
-        IL.Terraria.GameContent.UI.States.UIManageControls.OnInitialize -= UIManageControlsOnOnInitialize;
+        UIManageControls.OnInitialize -= UIManageControlsOnOnInitialize;
     }
 
     private void UIManageControlsOnOnInitialize(ILContext il)

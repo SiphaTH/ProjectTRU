@@ -80,8 +80,13 @@ public abstract class SetupTranslation : IModSetup
 
     public void LoadSetupContentTranslation()
     {
-        if (ModLoader.TryGetMod(InternalName, out Mod mod) && TranslationHelper.IsRussianLanguage)
-            PostSetupContentTranslation();
+        if (ModLoader.TryGetMod(InternalName, out Mod modInstance) && TranslationHelper.IsRussianLanguage)
+        {
+            if (modInstance != null)
+            {
+                PostSetupContentTranslation();
+            }
+        }
     }
 
     private void PostSetupContentTranslation()

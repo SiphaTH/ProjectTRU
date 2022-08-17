@@ -5,27 +5,18 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Common;
 
-public static class ModsCall
+internal static class ModsCall
 {
-    public static Mod Calamity => ModLoader.GetMod("CalamityMod");
-    public static bool TryGetCalamity => ModLoader.TryGetMod("CalamityMod", out Mod calamity);
-    public static Mod Thorium => ModLoader.GetMod("ThoriumMod");
-    public static bool TryGetThorium => ModLoader.TryGetMod("ThoriumMod", out Mod thorium);
-    public static Mod Fargo => ModLoader.GetMod("Fargowiltas");
-    public static bool TryGetFargo => ModLoader.TryGetMod("Fargowiltas", out Mod fargo);
-    public static Mod FargoSouls => ModLoader.GetMod("FargowiltasSouls");
-    public static bool TryGetFargoSouls => ModLoader.TryGetMod("FargowiltasSouls", out Mod fargoSouls);
-    public static Mod Spirit => ModLoader.GetMod("SpiritMod");
-    public static bool TryGetSpirit => ModLoader.TryGetMod("SpiritMod", out Mod spirit);
-    public static Mod Census => ModLoader.GetMod("Census");
-    public static bool TryGetCensus => ModLoader.TryGetMod("Census", out Mod census);
-    public static Mod BossChecklist => ModLoader.GetMod("BossChecklist");
-    public static bool TryGetBossChecklist => ModLoader.TryGetMod("BossChecklist", out Mod bossChecklist);
-    public static Mod StarsAbove => ModLoader.GetMod("StarsAbove");
-    public static bool TryGetStarsAbove => ModLoader.TryGetMod("StarsAbove", out Mod starsAbove);
-    public static Mod Wikithis => ModLoader.GetMod("Wikithis");
-    public static bool TryGetWikithis => ModLoader.TryGetMod("Wikithis", out Mod wikithis);
-        
+    internal static Mod Calamity => ModLoader.TryGetMod("CalamityMod", out Mod calamity) ? calamity : null;
+    internal static Mod Thorium => ModLoader.TryGetMod("ThoriumMod", out Mod thorium) ? thorium : null;
+    internal static Mod Fargo => ModLoader.TryGetMod("Fargowiltas", out Mod fargowiltas) ? fargowiltas : null;
+    internal static Mod FargoSouls => ModLoader.TryGetMod("FargowiltasSouls", out Mod fargowiltasSouls) ? fargowiltasSouls : null;
+    internal static Mod Spirit => ModLoader.TryGetMod("SpiritMod", out Mod spirit) ? spirit : null;
+    internal static Mod Census => ModLoader.TryGetMod("Census", out Mod census) ? census : null;
+    internal static Mod BossChecklist => ModLoader.TryGetMod("BossChecklist", out Mod bossChecklist) ? bossChecklist : null;
+    internal static Mod StarsAbove => ModLoader.TryGetMod("StarsAbove", out Mod starsAbove) ? starsAbove : null;
+    internal static Mod Wikithis => ModLoader.TryGetMod("Wikithis", out Mod wikithis) ? wikithis : null;
+
     internal static bool Revenge => CalamityWorld.revenge;
     internal static bool DownedSCal => DownedBossSystem.downedSCal;
     internal static bool DownedExoMechs => DownedBossSystem.downedExoMechs;

@@ -11,11 +11,11 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 [JITWhenModsEnabled("Fargowiltas")]
 public class TruffleWorm2Patch : Patch<ILContext.Manipulator>
 {
-    public override bool AutoLoad => ModsCall.TryGetFargo && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(TruffleWorm2).GetCachedMethod("get_NPCName");
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Duke Fishron", "Герцог Рыброн");
     };

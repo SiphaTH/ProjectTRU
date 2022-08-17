@@ -7,21 +7,17 @@ namespace CalamityRuTranslate.Core.MonoMod;
 
 public readonly struct ILPatch : IMonoModPatch
 {
-    public readonly MethodInfo BaseMethod;
+    private readonly MethodInfo _baseMethod;
 
-    public readonly ILContext.Manipulator PatchMethod;
-
-    public readonly Delegate PatchDelegate;
+    private readonly Delegate _patchDelegate;
 
     public ILPatch(MethodInfo baseMethod, ILContext.Manipulator patchMethod)
     {
-        BaseMethod = baseMethod;
-        PatchMethod = patchMethod;
-            
-        PatchDelegate = new ILContext.Manipulator(PatchMethod);
+        _baseMethod = baseMethod;
+        _patchDelegate = new ILContext.Manipulator(patchMethod);
     }
 
-    public void Apply() => HookEndpointManager.Modify(BaseMethod, PatchDelegate);
+    public void Apply() => HookEndpointManager.Modify(_baseMethod, _patchDelegate);
 
-    public void Unapply() => HookEndpointManager.Unmodify(BaseMethod, PatchDelegate);
+    public void Unapply() => HookEndpointManager.Unmodify(_baseMethod, _patchDelegate);
 }

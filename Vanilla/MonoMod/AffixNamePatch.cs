@@ -10,7 +10,7 @@ namespace CalamityRuTranslate.Vanilla.MonoMod;
 
 public class AffixName : ILEdit
 {
-    public override bool Autoload() => TranslationHelper.IsRussianLanguage && !ModsCall.TryGetCalamity;
+    public override bool Autoload() => ModsCall.Calamity == null && TranslationHelper.IsRussianLanguage;
 
     public override void Load() => Item.AffixName += ItemOnAffixName;
 
@@ -39,7 +39,7 @@ public class AffixName : ILEdit
 [JITWhenModsEnabled("CalamityMod")]
 public class AffixNameWithCalamity : ILEdit
 {
-    public override bool Autoload() => TranslationHelper.IsRussianLanguage && ModsCall.TryGetCalamity;
+    public override bool Autoload() => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
     public override void Load() => Item.AffixName += ItemOnAffixName;
 

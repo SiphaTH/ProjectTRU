@@ -4,9 +4,9 @@ using Microsoft.Xna.Framework;
 
 namespace CalamityRuTranslate.Catalogs;
 
-public static class CalamityCatalog
+internal static class CalamityCatalog
 {
-    public static readonly List<string> Buffs = new()
+    internal static readonly List<string> Buffs = new()
     {
         "PopoBuff",
         "PopoNoselessBuff",
@@ -196,7 +196,6 @@ public static class CalamityCatalog
         "TemporalSadness",
         "TeslaFreeze",
         "TimeDistortion",
-        "WarCleave",
         "Warped",
         "WeakPetrification",
         "WhisperingDeath",
@@ -296,7 +295,7 @@ public static class CalamityCatalog
         "FieryDraconidBuff"
     };
 
-    public static readonly List<string> Items = new()
+    internal static readonly List<string> Items = new()
     {
          "BrokenWaterFilter",
          "NormalityRelocator",
@@ -2576,7 +2575,7 @@ public static class CalamityCatalog
          "Magnum"
     };
     
-    public static readonly List<string> NPCs = new()
+    internal static readonly List<string> NPCs = new()
     {
         "Bloatfish",
         "BobbitWormHead",
@@ -2869,7 +2868,7 @@ public static class CalamityCatalog
         "WITCH"
     };
     
-    public static readonly List<string> Prefixes = new()
+    internal static readonly List<string> Prefixes = new()
     {
         "Pointy",
         "Sharp",
@@ -2893,7 +2892,7 @@ public static class CalamityCatalog
         "Silent"
     };
     
-    public static readonly List<string> Containers = new()
+    internal static readonly List<string> Containers = new()
     {
         "AstralChestLocked",
         "AbyssChest",
@@ -2932,7 +2931,7 @@ public static class CalamityCatalog
         "VoidDresser"
     };
 
-    public static readonly List<string> Projectiles = new()
+    internal static readonly List<string> Projectiles = new()
     {
         "BelchingCoralSpike",
         "CrabBoulder",
@@ -3126,7 +3125,7 @@ public static class CalamityCatalog
         "LightningCloud",
     };
 
-    public static readonly List<TileData> Tiles = new()
+    internal static readonly List<TileData> Tiles = new()
     {
         new TileData("ArenaTile", "", new Color(128, 0, 0)),
         new TileData("AgedSecurityChestTile", "", new Color(130, 119, 115)),

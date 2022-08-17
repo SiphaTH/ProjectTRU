@@ -9,12 +9,11 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications;
 
-[JITWhenModsEnabled("CalamityMod")]
 public class VanillaItemsTranslation : GlobalItem
 {
     public override bool IsLoadingEnabled(Mod mod)
     {
-        return ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     }
 
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
@@ -588,6 +587,7 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.TungstenChainmail => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TungstenChainmail.Tooltip"),
                 ItemID.TungstenGreaves => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TungstenGreaves.Tooltip"),
                 ItemID.GoldHelmet => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.GoldHelmet.Tooltip"),
+                ItemID.AncientGoldHelmet => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.AncientGoldHelmet.Tooltip"),
                 ItemID.GoldChainmail => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.GoldChainmail.Tooltip"),
                 ItemID.GoldGreaves => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.GoldGreaves.Tooltip"),
                 ItemID.PlatinumHelmet => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PlatinumHelmet.Tooltip"),

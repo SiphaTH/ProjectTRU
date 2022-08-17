@@ -17,14 +17,14 @@ public class PreviewArmorSetBonus : GlobalItem
 
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
     {
-        if(!TRuConfig.Instance.PreviewArmorSetBonus || !GlobalArmorSetBonus.CheckArmorSetHead(item.type, GlobalArmorSetBonus.ListOfArmorSet))
+        if (!TRuConfig.Instance.PreviewArmorSetBonus || !GlobalArmorSetBonus.CheckArmorSetHead(item.type, GlobalArmorSetBonus.ListOfArmorSet))
             return;
 
         List<string> keys = PlayerInput.CurrentProfile.InputModes[InputMode.Keyboard].KeyStatus[TriggerNames.SmartSelect];
         string key = keys.Count == 0 ? null : keys[0];
         bool showDesc = key == null || PlayerInput.Triggers.Current.SmartSelect;
         int index = tooltips.FindLastIndex(x => x.Mod.Equals("Terraria") && x.Name.StartsWith("Tooltip"));
-        TooltipLine tooltipLine = new TooltipLine(Mod, "ForMoreInfo", $"Зажмите кнопку ({key}) без автоматической паузы для предосмотра бонуса комплекта")
+        TooltipLine tooltipLine = new TooltipLine(Mod, "ForMoreInfo", $"Зажмите клавишу ({key}) без автоматической паузы для предосмотра бонуса комплекта")
         {
             OverrideColor = Color.Gray
         };
@@ -40,10 +40,19 @@ public class PreviewArmorSetBonus : GlobalItem
         {
             string calamityArmorSetName = GlobalArmorSetBonus.GetArmorSetName(item.type, ArmorSetBonusLoader.CalamityArmorSets);
             string calamitySetBonus = GlobalArmorSetBonus.GetCalamityArmorSetBonusByName(calamityArmorSetName);
+            string fargoSoulsArmorSetName = GlobalArmorSetBonus.GetArmorSetName(item.type, ArmorSetBonusLoader.FargowiltasSoulsArmorSets);
+            string fargoSoulsSetBonus = GlobalArmorSetBonus.GetFargowiltasSoulsArmorSetBonusByName(fargoSoulsArmorSetName);
 
             if (calamitySetBonus != null)
             {
                 tooltips.Add(new TooltipLine(Mod, "ArmorSetBonusInfo", calamitySetBonus)
+                {
+                    OverrideColor = Color.Gray
+                });
+            }
+            if (fargoSoulsSetBonus != null)
+            {
+                tooltips.Add(new TooltipLine(Mod, "ArmorSetBonusInfo", fargoSoulsSetBonus)
                 {
                     OverrideColor = Color.Gray
                 });

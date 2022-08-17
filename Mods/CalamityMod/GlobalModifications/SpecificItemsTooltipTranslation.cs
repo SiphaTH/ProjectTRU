@@ -21,7 +21,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
 {
     public override bool IsLoadingEnabled(Mod mod)
     {
-        return ModsCall.TryGetCalamity && TranslationHelper.IsRussianLanguage;
+        return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     }
 
      //Удаляет SetNameOverride со ВСЕХ предметов в игре включая модовые. Влияет на производительность.
@@ -438,7 +438,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
             tooltip.OverrideColor = new Color(255, 0, 255);
         });
         
-        if (ModsCall.TryGetFargo)
+        if (ModsCall.Fargo != null)
         {
             if (item.type == ModContent.ItemType<SunkenSeaFountain>())
             {
