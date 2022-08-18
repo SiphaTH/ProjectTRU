@@ -4689,7 +4689,7 @@
                 Tooltip:
                     '''
                     Увеличивает разбойный урон на 12% и шанс критического удара на 10%
-                    50% шанс не использовать предмет разбойника; увеличивает скорость передвижения на 5%
+                    Даёт 50% шанс не использовать предмет разбойника; увеличивает скорость передвижения на 5%
                     Даёт временную невосприимчивость к лаве и невосприимчивость к урону от огня
                     '''
             }
@@ -4773,7 +4773,7 @@
                     '''
                     Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Plague.Name}»
                     Увеличивает урон призывателя на 12%
-                    Дружественные пчёлы накладывают дебафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Plague.Name}»
+                    Дружелюбные пчёлы накладывают дебафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Plague.Name}»
                     '''
             }
             
@@ -4977,7 +4977,7 @@
                 Name: Статиджеловая маска
                 Tooltip:
                     '''
-                    Увеличивает разбойный урон на 10%; 34% шанс не использовать предмет разбойника
+                    Увеличивает разбойный урон на 10%; Даёт 34% шанс не использовать предмет разбойника
                     Увеличивает шанс критического удара на 7% и скорость передвижения на 5%
                     '''
             }
@@ -5095,7 +5095,7 @@
                 Name: Покров из сердца титана
                 Tooltip:
                     '''
-                    45% шанс не использовать предмет разбойника
+                    Даёт 45% шанс не использовать предмет разбойника
                     Усиливает разбойное отбрасывание на 5%, но снижает скорость атаки на 15%
                     '''
             }
@@ -5519,8 +5519,8 @@
                         Увеличивает здоровье и урон всех боссов
                         '''
             
-                    1: Активирует механику ярости. Когда шкала ярости заполнена, нажмите {0}, для активации ярости
-                    3: Активирует механику адреналина. Когда шкала адреналина заполнена, нажмите {0}, для активации адреналина
+                    1: Активирует механику ярости. Когда шкала ярости заполнена, нажмите {0} для активации ярости
+                    3: Активирует механику адреналина. Когда шкала адреналина заполнена, нажмите {0} для активации адреналина
                 }
             }
             
@@ -6009,7 +6009,7 @@
                 Tooltip:
                     '''
                     Запускает два поплавка за раз
-                    Как вы приручили монстра в джунглях, так же теперь вы можете приручить рыбу в море
+                    Так же, как вы приручили монстра в джунглях, теперь вы можете приручить рыбу в море
                     '''
             }
             
@@ -6861,7 +6861,7 @@
             
             NightmareFuel: {
                 Name: Кошмарное топливо
-                Tooltip: ожет истощить ваш рассудок
+                Tooltip: Может истощить ваш рассудок
             }
             
             PerennialBar: {
@@ -6916,7 +6916,7 @@
             
             ShadowspecBar: {
                 Name: Слиток шэдоуспека
-                Tooltip: ерзкий чёрный металл, настолько ужасающий и мощный, что не поддаётся объяснению
+                Tooltip: Мерзкий чёрный металл, настолько ужасающий и мощный, что не поддаётся объяснению
             }
             
             SolarVeil: {
@@ -8726,7 +8726,7 @@
             }
             
             BabyFlakCrabCage: {
-                Name: Террариум с маленьким зенитный крабом
+                Name: Террариум с маленьким зенитным крабом
                 Tooltip: ""
             }
             
@@ -8994,7 +8994,7 @@
             }
             
             CosmiliteSconce: {
-                Name: Космилитовый подсвечник
+                Name: Космилитовая бра
                 Tooltip: ""
             }
             
@@ -9808,7 +9808,7 @@
             
             ProfanedGuardiansRelic: {
                 Name: Реликвия осквернённых стражей
-                Tooltip: имолётный взгляд на то, что будет...
+                Tooltip: Мимолётный взгляд на то, что будет...
             }
             
             ProfanedGuardianTrophy: {
@@ -10161,7 +10161,7 @@
             }
             
             StatigelSofa: {
-                Name: Статиджеловый комод
+                Name: Статиджеловый диван
                 Tooltip: ""
             }
             
@@ -11506,7 +11506,7 @@
                 Name: Марсианский аварийный маячок
                 Tooltip:
                     '''
-                    Вызывает марсианское нашествие
+                    Вызывает событие «Марсианское безумие»
                     Не расходуется
                     '''
             }
@@ -11559,7 +11559,7 @@
                     Ядро нечестивого пламени
                     Призывает Провиденс, Осквернённую богиню, при использовании в освящении или аду
                     Следует использовать в дневное время
-                    Входит в ярость ночью, или за пределами освящения или ада
+                    Входит в ярость ночью или за пределами освящения или ада
                     Не расходуется
                     '''
             }
@@ -13490,7 +13490,7 @@
             
             Devastation: {
                 Name: Опустошение
-                Tooltip: Выпускпет взрывающиеся галактические взрывы
+                Tooltip: Выпускает взрывающиеся галактические взрывы
             }
             
             DevilsDevastation: {
@@ -13576,7 +13576,7 @@
                 Name: Элементальное копьё
                 Tooltip:
                     '''
-                    Разорвать космос на части!
+                    Разорвите космос на части!
                     Выпускает луч копья, который во время полёта разделяется несколько раз
                     '''
             }
@@ -13722,7 +13722,7 @@
                     Второй взмах выпускает огромный, мощный череп
                     Третий взмах не имеет снарядов
                     Постоянно генерирует ярость при использовании
-                    Взмахи оставляют за собой взрывающиеся кровавые следы, когда здоровье ниже 50%
+                    Взмахи оставляют за собой взрывающиеся кровавые следы, если здоровье ниже 50%
                     Заменяет режим Ярости на огромный шквал черепов
                     '''
             }
@@ -13849,7 +13849,7 @@
                 Name: Протыкатель
                 Tooltip:
                     '''
-                    Враги, в которых попадает йойо, теряют здоровье
+                    Враги, в которых попадает йо-йо, теряют здоровье
                     Очень манёвренное йо-йо
                     Кто-то в один момент подумал, что это будет хорошим оружием против ПБ, лол
                     '''
@@ -14256,7 +14256,7 @@
                 Tooltip:
                     '''
                     Периодически выпускает кольцо разноцветных пузырей
-                    После прикосновения к зелёному пузырю й-йо усиливается
+                    После прикосновения к зелёному пузырю йо-йо усиливается
                     Очень манёвренное йо-йо
                     '''
             }
@@ -14447,7 +14447,7 @@
             
             Tumbleweed: {
                 Name: Перекати-поле
-                Tooltip: При нанесении удара ыыпускает перекати-поле
+                Tooltip: При нанесении удара выпускает перекати-поле
             }
             
             TyphonsGreed: {
@@ -20963,7 +20963,7 @@
                     30: Задумывался ли ты когда-нибудь зачем лунному лорду столько тентаклей?.. хотя знаешь... иногда незнание - благо.
                     31: Я сейчас расплавлюсь! Немедленно положи конец этой ужасной погоде, пока она мою причёску не испортила!
                     32: Однажды я видела привидение у старых железнодорожных путей на моей родине, дико размахивающее кувшинками. Страшные были деньки.
-                    33: Я слышала, что это потрясающе, когда знаменитый Пожиратель Богов с камертоном появляется на мгновение на скале Харакири. Мне нужны ножницы! 61!
+                    33: Я слышала, что это потрясающе, когда знаменитый Пожиратель богов с камертоном появляется на мгновение на скале Харакири. Мне нужны ножницы! 61!
                     34: Я столько раз говорила Лысику, где мои глаза, что уже сбилась со счёта.
                     35: "Скажи {0} перестать звать меня. Ему здесь не рады."
                     36: "Моё бухлишко всегда будет лучше, чем у {0}. Попробуй измени моё мнение."
@@ -22086,15 +22086,15 @@
             }
             
             RoxTile: {
-                Name: Рокскалибур
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.Roxcalibur.Name}"
             }
             
             AbyssalCrateTile: {
-                Name: Ящик бездны
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AbyssalCrate.Name}"
             }
             
             AbyssalPots: {
-                Name: Горшок
+                Name: "{$ItemName.Pot}"
             }
             
             AcidWoodTreeSapling: {
@@ -22102,34 +22102,34 @@
             }
             
             LumenylCrystals: {
-                Name: Люменил
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.Lumenyl.Name}"
             }
             
             PlantyMush: {
-                Name: Мох
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.PlantyMush.Name}"
             }
             
             RustyChestTile: {
-                Name: Ржавый сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.RustyChest.Name}"
                 Container: {
                     Name: Ржавый сундук
                 }
             }
             
             SteamGeyser: {
-                Name: Гейзер
+                Name: "{$MapObject.GeyserTrap}"
             }
             
             SulphuricFossil1: {
-                Name: Ископаемое
+                Name: "{$MapObject.Fossil}"
             }
             
             SulphuricFossil2: {
-                Name: Ископаемое
+                Name: "{$MapObject.Fossil}"
             }
             
             SulphuricFossil3: {
-                Name: Ископаемое
+                Name: "{$MapObject.Fossil}"
             }
             
             SulphurousColumn: {
@@ -22137,7 +22137,7 @@
             }
             
             SulphurousPots: {
-                Name: Горшок
+                Name: "{$MapObject.Pot}"
             }
             
             SulphurousRib1: {
@@ -22165,7 +22165,7 @@
             }
             
             Tenebris: {
-                Name: Тенебрис
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.Tenebris.Name}"
             }
             
             ViperVines: {
@@ -22221,11 +22221,11 @@
             }
             
             AstralBeacon: {
-                Name: Астральный маяк
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AstralBeaconItem.Name}"
             }
             
             AstralChestLocked: {
-                Name: Астральный сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AstralChest.Name}"
                 Container: {
                     Name: Астральный сундук
                 }
@@ -22236,31 +22236,31 @@
             }
             
             AstralCrateTile: {
-                Name: Астральный ящик
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AstralCrate.Name}"
             }
             
             AstralTreeSapling: {
-                Name: Саженец
+                Name: "{$MapObject.Sapling}"
             }
             
             NovaeSlag: {
-                Name: Звёздный шлак
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.NovaeSlag.Name}"
             }
             
             AstralPalmSapling: {
-                Name: Саженец
+                Name: "{$MapObject.Sapling}"
             }
             
             CelestialRemains: {
-                Name: Небесные останки
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.CelestialRemains.Name}"
             }
             
             AstralSnowTreeSapling: {
-                Name: Саженец
+                Name: "{$MapObject.Sapling}"
             }
             
             BrimstoneCrateTile: {
-                Name: Серный ящик
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.BrimstoneCrate.Name}"
             }
             
             AgedLaboratoryConsole: {
@@ -22268,7 +22268,7 @@
             }
             
             AgedLaboratoryContainmentBox: {
-                Name: Старая коробка лаборатории для хранения
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AgedLaboratoryContainmentBoxItem.Name}"
             }
             
             AgedLaboratoryDisplay: {
@@ -22276,11 +22276,11 @@
             }
             
             AgedLaboratoryDoorClosed: {
-                Name: Дверь лаборатории
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.LaboratoryDoorItem.Name}"
             }
             
             AgedLaboratoryDoorOpen: {
-                Name: Дверь лаборатории
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.LaboratoryDoorItem.Name}"
             }
             
             AgedLaboratoryElectricPanel: {
@@ -22300,18 +22300,18 @@
             }
             
             AgedReinforcedCrate: {
-                Name: Старый укреплённый ящик
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AgedReinforcedCrateItem.Name}"
             }
             
             AgedSecurityChestTile: {
-                Name: Старый охранный сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AgedSecurityChest.Name}"
                 Container: {
                     Name: Старый охранный сундук
                 }
             }
             
             ChargingStation: {
-                Name: Зарядное устройство
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ChargingStationItem.Name}"
             }
 
             DraedonLabTurret: {
@@ -22323,7 +22323,7 @@
             }
             
             LabHologramProjector: {
-                Name: Голограммный проектор лаборатории
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.LabHologramProjectorItem.Name}"
             }
             
             LaboratoryConsole: {
@@ -22331,7 +22331,7 @@
             }
             
             LaboratoryContainmentBox: {
-                Name: Коробка лаборатории для хранения
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.LaboratoryContainmentBoxItem.Name}"
             }
             
             LaboratoryDisplay: {
@@ -22339,11 +22339,11 @@
             }
             
             LaboratoryDoorClosed: {
-                Name: Дверь лаборатории
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.LaboratoryDoorItem.Name}"
             }
             
             LaboratoryDoorOpen: {
-                Name: Дверь лаборатории
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.LaboratoryDoorItem.Name}"
             }
             
             LaboratoryElectricPanel: {
@@ -22363,15 +22363,15 @@
             }
             
             PowerCellFactory: {
-                Name: Фабрика по производству силовых ячеек
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.PowerCellFactoryItem.Name}"
             }
             
             ReinforcedCrate: {
-                Name: Укреплённый ящик
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ReinforcedCrateItem.Name}"
             }
             
             SecurityChestTile: {
-                Name: Охранный сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.SecurityChest.Name}"
                 Container: {
                     Name: Охранный сундук
                 }
@@ -22382,55 +22382,55 @@
             }
             
             MonsterBanner: {
-                Name: Знамя
+                Name: "{$MapObject.Banner}"
             }
             
             AuricToiletTile: {
-                Name: Золотосодержащий унитаз
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AuricToilet.Name}"
             }
             
             BabyFlakCrabCageTile: {
-                Name: Террариум с маленьким зенитным крабом
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.BabyFlakCrabCage.Name}"
             }
             
             BabyGhostBellJarTile: {
-                Name: Аквариум с маленьким призрачным колокольчиком
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.BabyGhostBellJar.Name}"
             }
             
             BlueCandle: {
-                Name: Невесомая свеча
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.WeightlessCandle.Name}"
             }
             
             BossTrophy: {
-                Name: Трофей
+                Name: "{$MapObject.Trophy}"
             }
             
             ChaosCandle: {
-                Name: Свеча хаоса
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ChaosCandle.Name}"
             }
             
             CorruptionEffigy: {
-                Name: Чучело искажения
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.CorruptionEffigy.Name}"
             }
             
             CrimsonEffigy: {
-                Name: Чучело багрянца
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.CrimsonEffigy.Name}"
             }
             
             EffigyOfDecayPlaceable: {
-                Name: Чучело разложения
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.EffigyOfDecay.Name}"
             }
             
             PiggyCageTile: {
-                Name: Террариум с поросёнком
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.PiggyCage.Name}"
             }
             
             PinkCandle: {
-                Name: Энергичная свеча
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.VigorousCandle.Name}"
             }
             
             PurpleCandle: {
-                Name: Устойчивая свеча
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ResilientCandle.Name}"
             }
             
             SCalAltar: {
@@ -22438,119 +22438,119 @@
             }
             
             SeaMinnowJarTile: {
-                Name: Аквариум с морским пескарём
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.SeaMinnowJar.Name}"
             }
             
             ThaumaticChairTile: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             TranquilityCandle: {
-                Name: Свеча успокоения
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.TranquilityCandle.Name}"
             }
             
             TwinklerInABottleTile: {
-                Name: Мерцатель в банке
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.TwinklerInABottle.Name}"
             }
             
             YellowCandle: {
-                Name: Злорадная свеча
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.SpitefulCandle.Name}"
             }
             
             AncientAltar: {
-                Name: Древний алтарь
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AncientAltar.Name}"
             }
             
             AshenAltar: {
-                Name: Пепельный алтарь
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AshenAltar.Name}"
             }
             
             BotanicPlanter: {
-                Name: Ботаническая сеялка
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.BotanicPlanter.Name}"
             }
             
             CosmicAnvil: {
-                Name: Космическая наковальня
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.CosmicAnvilItem.Name}"
             }
             
             DraedonsForge: {
-                Name: Кузня Дрэйдона
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.DraedonsForge.Name}"
             }
             
             EutrophicShelf: {
-                Name: Эвтрофная полка
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.EutrophicShelf.Name}"
             }
             
             MonolithAmalgam: {
-                Name: Монолитное слияние
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.MonolithAmalgam.Name}"
             }
             
             PlagueInfuser: {
-                Name: Чумной инфузёр
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.PlagueInfuser.Name}"
             }
             
             ProfanedCrucible: {
-                Name: Осквернённый тигель
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ProfanedCrucible.Name}"
             }
             
             SilvaBasin: {
-                Name: Лучезарный манипулятор
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.SilvaBasin.Name}"
             }
             
             StaticRefiner: {
-                Name: Статический рафинёр
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.StaticRefiner.Name}"
             }
             
             VoidCondenser: {
-                Name: Конденсатор пустоты
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.VoidCondenser.Name}"
             }
             
             AbyssFountainTile: {
-                Name: Фонтан воды
+                Name: "{$MapObject.WaterFountain}"
             }
             
             AstralFountainTile: {
-                Name: Фонтан воды
+                Name: "{$MapObject.WaterFountain}"
             }
             
             SulphurousFountainTile: {
-                Name: Фонтан воды
+                Name: "{$MapObject.WaterFountain}"
             }
             
             SunkenSeaFountainTile: {
-                Name: Фонтан воды
+                Name: "{$MapObject.WaterFountain}"
             }
             
             AbyssBathtub: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             AbyssBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             AbyssBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             AbyssCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             AbyssCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             AbyssChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             AbyssChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             AbyssChest: {
-                Name: Сундук бездны
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AbyssChest.Name}"
                 Container: {
                     Name: Сундук бездны
                 }
@@ -22561,86 +22561,86 @@
             }
             
             AbyssDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             AbyssDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             AbyssDresser: {
-                Name: Комод бездны
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AbyssDresser.Name}"
                 Container: {
                     Name: Комод бездны
                 }
             }
             
             AbyssLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             AbyssLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             AbyssSynth: {
-                Name: Синтезатор бездны
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AbyssSynth.Name}"
             }
             
             AbyssSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             AbyssSofa: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             AbyssTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             AbyssTorch: {
-                Name: Факел
+                Name: "{$ItemName.Torch}"
             }
             
             AbyssWorkBench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             AcidwoodBathTile: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             AcidwoodBedTile: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             AcidwoodBenchTile: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             AcidwoodBookcaseTile: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             AcidwoodCandelabraTile: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             AcidwoodCandleTile: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             AcidwoodChairTile: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             AcidwoodChandelierTile: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             AcidwoodChestTile: {
-                Name: Сундук из кислотного дерева
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AcidwoodChest.Name}"
                 Container: {
                     Name: Сундук из кислотного дерева
                 }
@@ -22651,235 +22651,235 @@
             }
             
             AcidwoodDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             AcidwoodDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             AcidwoodDresserTile: {
-                Name: Комод из кислотного дерева
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AcidwoodDresser.Name}"
                 Container: {
                     Name: Комод из кислотного дерева
                 }
             }
             
             AcidwoodLampTile: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             AcidwoodLanternTile: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             AcidwoodPianoTile: {
-                Name: Пианино
+                Name: "{$ItemName.Piano}"
             }
             
             AcidwoodSinkTile: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             AcidwoodTableTile: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             AcidwoodWorkBenchTile: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             AncientBasin: {
-                Name: Древний костёр
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AncientBasin.Name}"
             }
             
             AncientBathtub: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             AncientBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             AncientBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             AncientChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             AncientChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             AncientDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             AncientDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             AncientDresser: {
-                Name: Древний комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AncientDresser.Name}"
                 Container: {
                     Name: Древний комод
                 }
             }
             
             AncientLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             AncientLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             AncientMonolith: {
-                Name: Древний монолит
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AncientMonolith.Name}"
             }
             
             AncientPipeOrgan: {
-                Name: Древний трубный орган
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AncientPipeOrgan.Name}"
             }
             
             AncientSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             AncientSofa: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             AncientTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             AncientWorkBench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             AshenBasin: {
-                Name: Пепельный костёр
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AshenBasin.Name}"
             }
             
             AshenBathtub: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             AshenBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             AshenBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             AshenCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             AshenCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             AshenChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             AshenChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             AshenChest: {
-                Name: Пепельный сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AshenChest.Name}"
                 Container: {
                     Name: Пепельный сундук
                 }
             }
             
             AshenDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             AshenDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             AshenDresser: {
-                Name: Пепельный комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AshenDresser.Name}"
                 Container: {
                     Name: Пепельный комод
                 }
             }
             
             AshenLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             AshenLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             AshenMonolith: {
-                Name: Пепельный монолит
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AshenMonolith.Name}"
             }
             
             AshenPipeOrgan: {
-                Name: Пепельный трубный орган
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AshenPipeOrgan.Name}"
             }
             
             AshenSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             AshenSofa: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             AshenTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             AshenWorkBench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             BotanicBathtub: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             BotanicBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             BotanicBench: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             BotanicBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             BotanicCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             BotanicCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             BotanicChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             BotanicChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             BotanicChest: {
-                Name: Ботанический сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.BotanicChest.Name}"
                 Container: {
                     Name: Ботанический сундук
                 }
@@ -22890,78 +22890,78 @@
             }
             
             BotanicDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             BotanicDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             BotanicDresser: {
-                Name: Ботанический комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.BotanicDresser.Name}"
                 Container: {
                     Name: Ботанический комод
                 }
             }
             
             BotanicLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             BotanicLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             BotanicPiano: {
-                Name: Пианино
+                Name: "{$ItemName.Piano}"
             }
             
             BotanicSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             BotanicTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             BotanicWorkBench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             CosmiliteBasinTile: {
-                Name: Космилитовый костёр
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.CosmiliteBasin.Name}"
             }
             
             CosmiliteBathtub: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             CosmiliteBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             CosmiliteBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             CosmiliteCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             CosmiliteCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             CosmiliteChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             CosmiliteChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             CosmiliteChest: {
-                Name: Космилитовый сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.CosmiliteChest.Name}"
                 Container: {
                     Name: Космилитовый сундук
                 }
@@ -22972,86 +22972,86 @@
             }
             
             CosmiliteDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             CosmiliteDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             CosmiliteDresser: {
-                Name: Космилитовый комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.CosmiliteDresser.Name}"
                 Container: {
                     Name: Космилитовый комод
                 }
             }
             
             CosmiliteLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             CosmiliteLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             CosmilitePiano: {
-                Name: Пианино
+                Name: "{$ItemName.Piano}"
             }
             
             CosmiliteSconce: {
-                Name: Космилитовая бра
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.CosmiliteSconce.Name}"
             }
             
             CosmiliteSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             CosmiliteSofa: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             CosmiliteTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             CosmiliteWorkBench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             EutrophicBathtub: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             EutrophicBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             EutrophicBench: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             EutrophicBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             EutrophicCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             EutrophicCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             EutrophicChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             EutrophicChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             EutrophicChest: {
-                Name: Эвтрофный сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.EutrophicChest.Name}"
                 Container: {
                     Name: Эвтрофный сундук
                 }
@@ -23062,74 +23062,74 @@
             }
             
             EutrophicDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             EutrophicDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             EutrophicDresser: {
-                Name: Эвтрофный комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.EutrophicDresser.Name}"
                 Container: {
                     Name: Эвтрофный комод
                 }
             }
             
             EutrophicLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             EutrophicLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             EutrophicPiano: {
-                Name: Пианино
+                Name: "{$ItemName.Piano}"
             }
             
             EutrophicSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             EutrophicTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             EutrophicWorkBench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             ExoBathtubTile: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             ExoBedTile: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             ExoBookcaseTile: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             ExoCandelabraTile: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             ExoCandleTile: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             ExoChairTile: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             ExoChandelierTile: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             ExoChestTile: {
-                Name: Экзо-сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ExoChest.Name}"
                 Container: {
                     Name: Экзо-сундук
                 }
@@ -23148,30 +23148,30 @@
             }
             
             ExoDoorClosed: {
-                Name: Экзо-дверь
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ExoDoor.Name}"
             }
             
             ExoDoorOpen: {
-                Name: Экзо-дверь
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ExoDoor.Name}"
             }
             
             ExoDresserTile: {
-                Name: Экзо-комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ExoDresser.Name}"
                 Container: {
                     Name: Экзо-комод
                 }
             }
             
             ExoKeyboardTile: {
-                Name: Экзо-синтезатор
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ExoKeyboard.Name}"
             }
             
             ExoLampTile: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             ExoLanternTile: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             ExoScreenTile: {
@@ -23183,15 +23183,15 @@
             }
             
             ExoSinkTile: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             ExoSofaTile: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             ExoTableTile: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             ExoTerminalTile: {
@@ -23199,47 +23199,47 @@
             }
             
             ExoToiletTile: {
-                Name: Экзо-унитаз
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ExoToilet.Name}"
             }
             
             ExoWorkbenchTile: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             MonolithBathtub: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             MonolithBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             MonolithBench: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             MonolithBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             MonolithCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             MonolithCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             MonolithChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             MonolithChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             MonolithChest: {
-                Name: Монолитный сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.MonolithChest.Name}"
                 Container: {
                     Name: Монолитный сундук
                 }
@@ -23250,74 +23250,74 @@
             }
             
             MonolithDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             MonolithDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             MonolithDresser: {
-                Name: Монолитный комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.MonolithDresser.Name}"
                 Container: {
                     Name: Монолитный комод
                 }
             }
             
             MonolithLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             MonolithLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             MonolithPiano: {
-                Name: Пианино
+                Name: "{$ItemName.Piano}"
             }
             
             MonolithSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             MonolithTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             MonolithWorkBench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             OtherworldlyBathtub: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             OtherworldlyBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             OtherworldlyBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             OtherworldlyCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             OtherworldlyCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             OtherworldlyChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             OtherworldlyChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             OtherworldlyChest: {
-                Name: Потусторонний сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.OtherworldlyChest.Name}"
                 Container: {
                     Name: Потусторонний сундук
                 }
@@ -23328,82 +23328,82 @@
             }
             
             OtherworldlyDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             OtherworldlyDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             OtherworldlyDresser: {
-                Name: Потусторонний комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.OtherworldlyDresser.Name}"
                 Container: {
                     Name: Потусторонний комод
                 }
             }
             
             OtherworldlyLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             OtherworldlyLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             OtherworldlyPiano: {
-                Name: Пианино
+                Name: "{$ItemName.Piano}"
             }
             
             OtherworldlySink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             OtherworldlySofa: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             OtherworldlyTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             OtherworldlyWorkBench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             PlaguedPlateBasin: {
-                Name: "Сломанная чумная 'кровать'"
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.BrokenPlaguedBed.Name}"
             }
             
             PlaguedPlateBathtub: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             PlaguedPlateBed: {
-                Name: "Кровать"
+                Name: "'{$ItemName.Bed}'"
             }
             
             PlaguedPlateBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             PlaguedPlateCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             PlaguedPlateCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             PlaguedPlateChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             PlaguedPlateChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             PlaguedPlateChest: {
-                Name: Чумной сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.PlaguedPlateChest.Name}"
                 Container: {
                     Name: Чумной сундук
                 }
@@ -23414,82 +23414,82 @@
             }
             
             PlaguedPlateDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             PlaguedPlateDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             PlaguedPlateDresser: {
-                Name: Чумной комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.PlaguedPlateDresser.Name}"
                 Container: {
                     Name: Чумной комод
                 }
             }
             
             PlaguedPlateLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             PlaguedPlateLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             PlaguedPlatePiano: {
-                Name: Пианино
+                Name: "{$ItemName.Piano}"
             }
             
             PlaguedPlateSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             PlaguedPlateSofa: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             PlaguedPlateTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             PlaguedPlateWorkbench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             ProfanedBath: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             ProfanedBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             ProfanedBench: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             ProfanedBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             ProfanedCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             ProfanedCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             ProfanedChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             ProfanedChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             ProfanedChest: {
-                Name: Осквернённый сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ProfanedChest.Name}"
                 Container: {
                     Name: Осквернённый сундук
                 }
@@ -23500,78 +23500,78 @@
             }
             
             ProfanedDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             ProfanedDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             ProfanedDresser: {
-                Name: Осквернённый комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ProfanedDresser.Name}"
                 Container: {
                     Name: Осквернённый комод
                 }
             }
             
             ProfanedLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             ProfanedLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             ProfanedPiano: {
-                Name: Пианино
+                Name: "{$ItemName.Piano}"
             }
             
             ProfanedSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             ProfanedTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             ProfanedWorkbench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             SilvaBathtub: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             SilvaBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             SilvaBench: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             SilvaBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             SilvaCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             SilvaCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             SilvaChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             SilvaChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             SilvaChest: {
-                Name: Лесной сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.SilvaChest.Name}"
                 Container: {
                     Name: Лесной сундук
                 }
@@ -23582,74 +23582,74 @@
             }
             
             SilvaDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             SilvaDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             SilvaDresser: {
-                Name: Лесной комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.SilvaDresser.Name}"
                 Container: {
                     Name: Лесной комод
                 }
             }
             
             SilvaLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             SilvaLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             SilvaPiano: {
-                Name: Пианино
+                Name: "{$ItemName.Piano}"
             }
             
             SilvaSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             SilvaTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             SilvaWorkBench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             StatigelBath: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             StatigelBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             StatigelBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             StatigelCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             StatigelCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             StatigelChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             StatigelChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             StatigelChest: {
-                Name: Статиджеловый сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.StatigelChest.Name}"
                 Container: {
                     Name: Статиджеловый сундук
                 }
@@ -23660,78 +23660,78 @@
             }
             
             StatigelDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             StatigelDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             StatigelDresser: {
-                Name: Статиджеловый комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.StatigelSofa.Name}"
                 Container: {
                     Name: Статиджеловый комод
                 }
             }
             
             StatigelLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             StatigelLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             StatigelPiano: {
-                Name: Пианино
+                Name: "{$ItemName.Piano}"
             }
             
             StatigelSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             StatigelSofa: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             StatigelTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             StatigelWorkbench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             StratusBathtub: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             StratusBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             StratusBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             StratusCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             StratusCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             StratusChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             StratusChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             StratusChest: {
-                Name: Слоистый сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.StratusChest.Name}"
                 Container: {
                     Name: Слоистый сундук
                 }
@@ -23742,128 +23742,128 @@
             }
             
             StratusDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             StratusDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             StratusDresser: {
-                Name: Слоистый комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.StratusDresser.Name}"
                 Container: {
                     Name: Слоистый комод
                 }
             }
             
             StratusLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             StratusLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             StratusPiano: {
-                Name: Пианино
+                Name: "{$ItemName.Piano}"
             }
             
             StratusSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             StratusSofa: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             StratusTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             StratusWorkbench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             VoidBath: {
-                Name: Ванна
+                Name: "{$ItemName.Bathtub}"
             }
             
             VoidBed: {
-                Name: Кровать
+                Name: "{$ItemName.Bed}"
             }
             
             VoidBookcase: {
-                Name: Книжный шкаф
+                Name: "{$ItemName.Bookcase}"
             }
             
             VoidCandelabra: {
-                Name: Подсвечник
+                Name: "{$ItemName.Candelabra}"
             }
             
             VoidCandle: {
-                Name: Свеча
+                Name: "{$ItemName.Candle}"
             }
             
             VoidChair: {
-                Name: Стул
+                Name: "{$MapObject.Chair}"
             }
             
             VoidChandelier: {
-                Name: Люстра
+                Name: "{$MapObject.Chandelier}"
             }
             
             VoidChest: {
-                Name: Пустотный сундук
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.VoidChest.Name}"
                 Container: {
                     Name: Пустотный сундук
                 }
             }
             
             VoidClock: {
-                Name: Пустотный обелиск
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.VoidObelisk.Name}"
             }
             
             VoidDoorClosed: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             VoidDoorOpen: {
-                Name: Дверь
+                Name: "{$MapObject.Door}"
             }
             
             VoidDresser: {
-                Name: Пустотный комод
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.VoidDresser.Name}"
                 Container: {
                     Name: Пустотный комод
                 }
             }
             
             VoidLamp: {
-                Name: Лампа
+                Name: "{$MapObject.FloorLamp}"
             }
             
             VoidLantern: {
-                Name: Фонарь
+                Name: "{$MapObject.Lantern}"
             }
             
             VoidPiano: {
-                Name: Пианино
+                Name: "{$ItemName.Piano}"
             }
             
             VoidSink: {
-                Name: Раковина
+                Name: "{$MapObject.Sink}"
             }
             
             VoidSofa: {
-                Name: Скамья
+                Name: "{$ItemName.Bench}"
             }
             
             VoidTable: {
-                Name: Стол
+                Name: "{$ItemName.Table}"
             }
             
             VoidWorkbench: {
-                Name: Верстак
+                Name: "{$ItemName.WorkBench}"
             }
             
             AerialiteOre: {
@@ -23871,11 +23871,11 @@
             }
             
             AstralOre: {
-                Name: Астральная руда
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AstralOre.Name}"
             }
             
             AuricOre: {
-                Name: Золотосодержащая руда
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AuricOre.Name}"
             }
             
             ChaoticOre: {
@@ -23883,7 +23883,7 @@
             }
             
             CharredOre: {
-                Name: Обугленная руда
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.CharredOre.Name}"
             }
             
             CryonicOre: {
@@ -23895,11 +23895,11 @@
             }
             
             HallowedOre: {
-                Name: Освящённая руда
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.HallowedOre.Name}"
             }
             
             PerennialOre: {
-                Name: Многолетняя руда
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.PerennialOre.Name}"
             }
             
             UelibloomOre: {
@@ -23911,7 +23911,7 @@
             }
             
             EutrophicSand: {
-                Name: Эвтрофный песок
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.EutrophicSand.Name}"
             }
             
             FanCoral: {
@@ -23919,7 +23919,7 @@
             }
             
             Navystone: {
-                Name: Морской камень
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.Navystone.Name}"
             }
             
             SeaAnemone: {
@@ -23927,7 +23927,7 @@
             }
             
             SeaPrism: {
-                Name: Морская призма
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.SeaPrism.Name}"
             }
             
             SeaPrismCrystals: {
@@ -23943,7 +23943,7 @@
             }
             
             SunkenCrateTile: {
-                Name: Затерянный ящик
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.SunkenCrate.Name}"
             }
             
             TableCoral: {
@@ -24002,6 +24002,8 @@
             6: Парирование!
             7: Так
             8: Тик
+            9: Не хватает места!
+            10: Развёртывание недоступно
         }
     }
     

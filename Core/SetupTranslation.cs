@@ -19,7 +19,6 @@ public abstract class SetupTranslation : IModSetup
     protected List<string> Buffs;
     protected List<string> Items;
     protected List<string> NPCs;
-    protected List<string> Containers;
     protected List<string> Projectiles;
     protected List<string> Prefixes;
     protected List<string> LocalizationKeys;
@@ -30,7 +29,6 @@ public abstract class SetupTranslation : IModSetup
         Buffs = new();
         Items = new();
         NPCs = new();
-        Containers = new();
         Projectiles = new ();
         Prefixes = new();
         LocalizationKeys = new();
@@ -194,6 +192,11 @@ public abstract class SetupTranslation : IModSetup
                     ModTranslation modTranslation = tile.CreateMapEntryName(tileData.MapEntryName);
                     modTranslation.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Tiles.{tileData.TranslationKey}.Name"));
                     tile.AddMapEntry(tileData.Color, modTranslation);
+
+                    if (tileData.ContainerName)
+                    {
+                        tile.ContainerName.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Tiles.{tileData.TranslationKey}.Container.Name"));
+                    }
                 }
             }
             catch (NullReferenceException)
@@ -209,30 +212,7 @@ public abstract class SetupTranslation : IModSetup
                 throw new KeyTypeException(tileData.Id);
             }
         }
-        
-        foreach (string id in Containers)
-        {
-            try
-            {
-                if (ModContent.TryFind(InternalName, id, out ModTile tile))
-                {
-                    tile.ContainerName.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Tiles.{id}.Container.Name"));
-                }
-            }
-            catch (NullReferenceException)
-            {
-                if (!TRuConfig.Instance.ModVersionException && !Containers.Contains(id))
-                    continue;
-                    
-                if (TRuConfig.Instance.ModVersionException)
-                    throw new IdTypeException(id);
-            }
-            catch (KeyNotFoundException)
-            {
-                throw new KeyTypeException(id);
-            }
-        }
-        
+
         foreach (string id in Prefixes)
         {
             try

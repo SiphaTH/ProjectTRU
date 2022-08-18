@@ -454,7 +454,7 @@
                     '''
                     Разрушает большую площадь
                     Не разрушает стены
-                    Используйте на свой страх и риск
+                    Используйте на ваш страх и риск
                     '''
             }
             
@@ -735,7 +735,7 @@
     
             RunawayProbe: {
                 Name: Убегающий зонд
-                Tooltip: Вызывает марсианское нашествие
+                Tooltip: Вызывает событие «Марсианское безумие»
             }
     
             SlimyBarometer: {
@@ -1046,7 +1046,7 @@
                 Tooltip:
                     '''
                     Призывает ВСЕХ боссов, даже модовых
-                    Используйте на свой страх и риск
+                    Используйте на ваш страх и риск
                     '''
             }
 
@@ -1442,7 +1442,7 @@
                 Name: Перегруженный убегающий зонд
                 Tooltip:
                     '''
-                    Вызывает перегруженное марсианское нашествие
+                    Вызывает перегруженное событие «Марсианское безумие»
                     Используйте повторно, чтобы закончить событие
                     '''
             }
@@ -2111,7 +2111,7 @@
         
         Tiles: {
             CrucibleCosmosSheet: {
-                Name: Горнило вселенной
+                Name: "{$Mods.CalamityRuTranslate.Fargowiltas.Items.CrucibleCosmos.Name}"
             }
 
             DemonAltarSheet: {
@@ -2123,27 +2123,27 @@
             }
 
             ElementalAssemblerSheet: {
-                Name: Элементальный сборщик
+                Name: "{$Mods.CalamityRuTranslate.Fargowiltas.Items.ElementalAssembler.Name}"
             }
 
             GoldenDippingVatSheet: {
-                Name: Чан с золотой краской
+                Name: "{$Mods.CalamityRuTranslate.Fargowiltas.Items.GoldenDippingVat.Name}"
             }
 
             MultitaskCenterSheet: {
-                Name: Мультифункциональный центр
+                Name: "{$Mods.CalamityRuTranslate.Fargowiltas.Items.MultitaskCenter.Name}"
             }
 
             OmnistationSheet: {
-                Name: Омнистанция
+                Name: "{$Mods.CalamityRuTranslate.Fargowiltas.Items.Omnistation.Name}"
             }
 
             OmnistationSheet2: {
-                Name: Омнистанция
+                Name: "{$Mods.CalamityRuTranslate.Fargowiltas.Items.Omnistation.Name}"
             }
 
             RegalStatueSheet: {
-                Name: Королевская статуя
+                Name: "{$Mods.CalamityRuTranslate.Fargowiltas.Items.RegalStatue.Name}"
             }
         }
     }

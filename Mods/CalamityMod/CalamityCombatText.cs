@@ -47,6 +47,14 @@ public class CalamityCombatText : ContentTranslation
                 {
                     Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.8");
                 }
+                if (Main.combatText[i].text.Equals("Insufficient space!"))
+                {
+                    Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.9");
+                }
+                if (Main.combatText[i].text.Equals("Cannot Deploy"))
+                {
+                    Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.10");
+                }
             }
         }
     }

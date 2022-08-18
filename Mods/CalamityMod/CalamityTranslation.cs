@@ -13,7 +13,6 @@ public class CalamityTranslation : SetupTranslation
         Buffs = CalamityCatalog.Buffs;
         Items = CalamityCatalog.Items;
         NPCs = CalamityCatalog.NPCs;
-        Containers = CalamityCatalog.Containers;
         Projectiles = CalamityCatalog.Projectiles;
         Prefixes = CalamityCatalog.Prefixes;
         Tiles = CalamityCatalog.Tiles;

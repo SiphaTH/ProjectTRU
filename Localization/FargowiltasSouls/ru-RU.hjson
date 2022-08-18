@@ -13,7 +13,7 @@
 
             DeviPresence: {
                 Name: Присутствие Девиантт
-                Description: Дружественные НИПы получают сумасшедший урон
+                Description: Дружелюбные НИПы получают сумасшедший урон
             }
 
             Grabbed: {
@@ -3473,23 +3473,23 @@
         
         Tiles: {
             FMMBanner: {
-                Name: Знамя
+                Name: "{$MapObject.Banner}"
             }
             
             MutantStatue: {
-                Name: Статуя Мутанта
+                Name: "{$Mods.CalamityRuTranslate.FargowiltasSouls.Items.MutantStatue.Name}"
             }
             
             MutantStatueGift: {
-                Name: Статуя Мутанта
+                Name: "{$Mods.CalamityRuTranslate.FargowiltasSouls.Items.MutantStatue.Name}"
             }
             
             SquidwardDoorClosed: {
-                Name: Дверь Сквидварда
+                Name: "{$Mods.CalamityRuTranslate.FargowiltasSouls.Items.SquidwardDoor.Name}"
             }
             
             SquidwardDoorOpen: {
-                Name: Дверь Сквидварда
+                Name: "{$Mods.CalamityRuTranslate.FargowiltasSouls.Items.SquidwardDoor.Name}"
             }
         }
         
