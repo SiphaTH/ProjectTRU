@@ -5,6 +5,7 @@ using CalamityMod.DataStructures;
 using CalamityMod.NPCs.CeaselessVoid;
 using CalamityMod.NPCs.Ravager;
 using CalamityMod.NPCs.SlimeGod;
+using CalamityMod.Systems;
 using CalamityMod.UI;
 using CalamityMod.UI.CalamitasEnchants;
 using CalamityRuTranslate.Common.Utilities;
@@ -143,6 +144,15 @@ internal static class CalamityReflection
         Attunement.attunementArray[20].function_description_extra = LangHelper.GetText("CalamityMod.Attunements.AndromedaAttunement.Function_Description_Extra");
         Attunement.attunementArray[20].passive_name = LangHelper.GetText("CalamityMod.Attunements.AndromedaAttunement.Passive_Name");
         Attunement.attunementArray[20].passive_description = LangHelper.GetText("CalamityMod.Attunements.AndromedaAttunement.Passive_Description");
+
+        DifficultyModeSystem.Difficulties[0].Name = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.None.Name");
+        DifficultyModeSystem.Difficulties[0].ShortDescription = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.None.ShortDescription");
+        DifficultyModeSystem.Difficulties[1].Name = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.Revengeance.Name");
+        DifficultyModeSystem.Difficulties[1].ShortDescription = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.Revengeance.ShortDescription");
+        DifficultyModeSystem.Difficulties[2].Name = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.Death.Name");
+        DifficultyModeSystem.Difficulties[2].ShortDescription = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.Death.ShortDescription");
+        DifficultyModeSystem.Difficulties[3].Name = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.Malice.Name");
+        DifficultyModeSystem.Difficulties[3].ShortDescription = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.Malice.ShortDescription");
     }
 
     private static void CreationEffect(Item item)

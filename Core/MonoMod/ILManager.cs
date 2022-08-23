@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CalamityRuTranslate.Core.MonoMod;
 
-public static class ILManager
+internal static class ILManager
 {
     private static List<ILEdit> _ilEdits;
 

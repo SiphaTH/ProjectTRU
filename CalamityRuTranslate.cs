@@ -18,7 +18,7 @@ namespace CalamityRuTranslate;
 
 public class CalamityRuTranslate : Mod, IPatchRepository
 {
-    public static CalamityRuTranslate Instance;
+    internal static CalamityRuTranslate Instance;
     public List<IMonoModPatch> Patches { get; } = new();
 
     public readonly SetupTranslation[] Mods =
@@ -50,10 +50,16 @@ public class CalamityRuTranslate : Mod, IPatchRepository
 
         if (!Main.dedServ && TranslationHelper.IsRussianLanguage)
         {
-            ConstructorInfo uiManageControlsConstructor = typeof(UIManageControls).GetConstructor(Type.EmptyTypes);
-            object uiManageControlsObject = uiManageControlsConstructor?.Invoke(new object[]{});
+            ConstructorInfo constructor = typeof(UIManageControls).GetConstructor(Type.EmptyTypes);
+            object controlsObject = constructor?.Invoke(Array.Empty<object>());
             MethodInfo onInitialize = typeof(UIManageControls).GetMethod("OnInitialize", BindingFlags.Instance | BindingFlags.Public);
-            onInitialize?.Invoke(uiManageControlsObject, null);
+            onInitialize?.Invoke(controlsObject, null);
+        }
+
+        foreach (Type type in ModsCall.Calamity.Code.GetTypes())
+        {
+            if (type.IsAssignableFrom(typeof(ModItem)))
+                Logger.Info(type.Name);
         }
     }
     

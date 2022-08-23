@@ -328,7 +328,7 @@ public class BestiaryTranslation : GlobalNPC
             bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.Hadarian")));
         }
         
-        if (npc.type == ModContent.NPCType<Hive>())
+        if (npc.type == ModContent.NPCType<HiveEnemy>())
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
             bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.Hive")));

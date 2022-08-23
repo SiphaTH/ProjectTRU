@@ -13,6 +13,7 @@ public class ModifiedDamageTypes : GlobalItem
 {
     public DamageClass Rogue => ModContent.GetInstance<RogueDamageClass>();
     public DamageClass Average => ModContent.GetInstance<AverageDamageClass>();
+    public DamageClass TrueMelee => ModContent.GetInstance<TrueMeleeDamageClass>();
     
     public override bool IsLoadingEnabled(Mod mod)
     {
@@ -30,7 +31,7 @@ public class ModifiedDamageTypes : GlobalItem
                 if (TRuConfig.Instance.ColoredDamageTypes)
                     tooltip.OverrideColor = new Color(255, 184, 108);
             }
-            else if (item.CountsAsClass(DamageClass.Melee))
+            else if (item.CountsAsClass(TrueMelee))
             {
                 tooltip.Text = tooltip.Text.Replace("true melee damage", "ед. истинного урона ближнего боя");
             }

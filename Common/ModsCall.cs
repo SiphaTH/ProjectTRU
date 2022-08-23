@@ -23,13 +23,10 @@ internal static class ModsCall
     internal static string AegisHotKey => CalamityKeybinds.AegisHotKey.TooltipHotkeyString();
     internal static string AstralArcanumUiHotkey => CalamityKeybinds.AstralArcanumUIHotkey.TooltipHotkeyString();
     internal static string AstralTeleportHotKey => CalamityKeybinds.AstralTeleportHotKey.TooltipHotkeyString();
-    internal static string MomentumCapacitatorHotkey => CalamityKeybinds.MomentumCapacitatorHotkey.TooltipHotkeyString();
     internal static string SandCloakHotkey => CalamityKeybinds.SandCloakHotkey.TooltipHotkeyString();
     internal static string SpectralVeilHotKey => CalamityKeybinds.SpectralVeilHotKey.TooltipHotkeyString();
     internal static string NormalityRelocatorHotKey => CalamityKeybinds.NormalityRelocatorHotKey.TooltipHotkeyString();
     internal static string PlaguePackHotKey => CalamityKeybinds.PlaguePackHotKey.TooltipHotkeyString();
-    internal static string RageHotKey => CalamityKeybinds.RageHotKey.TooltipHotkeyString();
-    internal static string AdrenalineHotKey => CalamityKeybinds.AdrenalineHotKey.TooltipHotkeyString();
     internal static string SetBonusHotKey => CalamityKeybinds.SetBonusHotKey.TooltipHotkeyString();
     internal static string EternityDiscoHex => Eternity.DisoHex;
     internal static string AngelicAllianceHotKey => CalamityKeybinds.AngelicAllianceHotKey.TooltipHotkeyString();

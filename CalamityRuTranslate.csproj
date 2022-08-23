@@ -12,7 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CalamityMod">
-      <HintPath>..\Mod Libraries\CalamityMod_v2.0.0.3.dll</HintPath>
+      <HintPath>..\Mod Libraries\CalamityMod_v2.0.1.1.dll</HintPath>
     </Reference>
     <Reference Include="Fargowiltas">
       <HintPath>..\Mod Libraries\Fargowiltas_v2.8.2.dll</HintPath>

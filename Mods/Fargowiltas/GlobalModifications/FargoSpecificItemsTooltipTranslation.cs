@@ -99,7 +99,7 @@ public class FargowiltasSpecificItemsTooltipTranslation : GlobalItem
             });
         }
         
-        if (item.type is ItemID.BugNet or ItemID.GoldenBugNet)
+        if (item.type is ItemID.BugNet or ItemID.GoldenBugNet or ItemID.FireproofBugNet)
         {
             ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "[i:1991] [c/AAAAAA:Can also catch townsfolk]", tooltip =>
             {

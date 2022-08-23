@@ -24,7 +24,7 @@ public abstract class SetupTranslation : IModSetup
     protected List<string> LocalizationKeys;
     protected List<TileData> Tiles;
 
-    public SetupTranslation()
+    protected SetupTranslation()
     {
         Buffs = new();
         Items = new();

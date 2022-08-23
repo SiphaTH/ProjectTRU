@@ -23,7 +23,7 @@ public class CalamityPlayerPreKill : Patch<ILContext.Manipulator>
         TranslationHelper.ModifyIL(il, "'s soul was released by the lava.", " душа освобождается лавой.");
         TranslationHelper.ModifyIL(il, "'s soul was extinguished.", " душа гаснет.");
         TranslationHelper.ModifyIL(il, " was melted by the toxic waste.", " расплавляется токсичными отходами.");
-        TranslationHelper.ModifyIL(il, " disintegrated into ashes.", " рассыпается в прах.");
+        TranslationHelper.ModifyIL(il, "'s ashes scatter in the wind.", " развеивает свой прах по ветру.");
         TranslationHelper.ModifyIL(il, " was turned to ashes by the Profaned Goddess.", " обращается Осквернённой богиней в пепел.");
         TranslationHelper.ModifyIL(il, " fell prey to their sins.", " становится жертвой собственных грехов.");
         TranslationHelper.ModifyIL(il, "'s spirit was turned to ash.", " дух превращается в пепел.");
@@ -71,5 +71,18 @@ public class CalamityPlayerOnConsumeMana : Patch<ILContext.Manipulator>
     protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " converted all of their life to mana.", " оборачивает всю свою жизнь в ману.");
+    };
+}
+
+[JITWhenModsEnabled("CalamityMod")] 
+public class CalamityPlayerOnEnterWorld : Patch<ILContext.Manipulator>
+{
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+
+    public override MethodInfo ModifiedMethod => typeof(CalamityPlayer).GetCachedMethod(nameof(CalamityPlayer.OnEnterWorld));
+
+    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    {
+        TranslationHelper.ModifyIL(il, " [c/EE4939:Be sure to check out the Official Calamity Mod Wiki at ][c/3989FF:calamitymod.wiki.gg][c/EE4939:!] ", " [c/EE4939:Актуальную информацию вы можете посмотреть на официальной вики Каламити] [c/3989FF:calamitymod.wiki.gg][c/EE4939:!]");
     };
 }

@@ -412,10 +412,27 @@ public class VanillaItemsTranslation : GlobalItem
         }
         else if (item.type == ItemID.FalconBlade)
         {
-            int index = tooltips.FindLastIndex(x => x.Mod.Equals("Terraria") && x.Name.StartsWith("Knockback"));
-            TooltipLine tooltipLine = new TooltipLine(Mod, "Tooltip0", LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FalconBlade.Tooltip"));
-            
-            tooltips.Insert(++index, tooltipLine);
+            foreach (TooltipLine tooltip in tooltips)
+            {
+                tooltip.Text = tooltip.Text.Replace("Holding this item grants +20% increased movement speed",
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FalconBlade.Tooltip"));
+            }
+        }
+        else if (item.type == ItemID.FetidBaghnakhs)
+        {
+            foreach (TooltipLine tooltip in tooltips)
+            {
+                tooltip.Text = tooltip.Text.Replace("Receives 25% benefit from melee speed bonuses",
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FetidBaghnakhs.Tooltip"));
+            }
+        }
+        else if (item.type == ItemID.BladedGlove)
+        {
+            foreach (TooltipLine tooltip in tooltips)
+            {
+                tooltip.Text = tooltip.Text.Replace("Receives 50% benefit from melee speed bonuses",
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BladedGlove.Tooltip"));
+            }
         }
 
         if (item.prefix > 0)
@@ -423,6 +440,11 @@ public class VanillaItemsTranslation : GlobalItem
             ItemHelper.TranslateTooltip(item, tooltips, "PrefixStealthGenBoost", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("stealth generation", LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TooltipTags.PrefixStealthGenBoost"));
+            });
+            
+            ItemHelper.TranslateTooltip(item, tooltips, "PrefixStealthDamageBoost", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("stealth strike damage", LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TooltipTags.PrefixStealthDamageBoost"));
             });
         }
         
@@ -493,9 +515,6 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.YoyoBag => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.YoyoBag.Tooltip"),
                 ItemID.YoYoGlove => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.YoYoGlove.Tooltip"),
                 ItemID.InvisibilityPotion => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.InvisibilityPotion.Tooltip"),
-                ItemID.MagicMirror => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MagicMirror.Tooltip"),
-                ItemID.IceMirror => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.IceMirror.Tooltip"),
-                ItemID.RecallPotion => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.RecallPotion.Tooltip"),
                 ItemID.ArcheryPotion => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.ArcheryPotion.Tooltip"),
                 ItemID.SwiftnessPotion => Language.GetTextValue("ItemTooltip.SwiftnessPotion").Replace("25", "15"),
                 ItemID.EndurancePotion => Language.GetTextValue("ItemTooltip.EndurancePotion").Replace("10", "5"),
@@ -602,6 +621,9 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.CrimsonHelmet => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CrimsonHelmet.Tooltip"),
                 ItemID.CrimsonScalemail => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CrimsonScalemail.Tooltip"),
                 ItemID.CrimsonGreaves => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CrimsonGreaves.Tooltip"),
+                ItemID.StarWrath => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.StarWrath.Tooltip"),
+                ItemID.NorthPole => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.NorthPole.Tooltip"),
+                ItemID.PsychoKnife => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PsychoKnife.Tooltip"),
                 _ => tooltip.Text
             };
         });
@@ -628,7 +650,6 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.SuspiciousLookingTentacle => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.SuspiciousLookingTentacle.Tooltip"),
                 ItemID.PowerGlove => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PowerGlove.Tooltip"),
                 ItemID.MechanicalGlove => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MechanicalGlove.Tooltip"),
-                ItemID.CellPhone => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CellPhone.Tooltip"),
                 ItemID.AnkhShield => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.AnkhShield.Tooltip.1"),
                 ItemID.MasterNinjaGear => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MasterNinjaGear.Tooltip"),
                 ItemID.BerserkerGlove => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BerserkerGlove.Tooltip.1"),
@@ -834,7 +855,7 @@ public class VanillaItemsTranslation : GlobalItem
                 case ItemID.GladiatorHelmet:
                 case ItemID.GladiatorBreastplate:
                 case ItemID.GladiatorLeggings:
-                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Vanilla.Gladiator") + (TRuConfig.Instance.CalamityArmorStealthDescription ? LangHelper.GetTextValue("CalamityMod.Misc.ArmorRogueStealthDescription") : "");
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Vanilla.Gladiator");
                     break;
                 
                 case ItemID.ObsidianHelm:
@@ -862,22 +883,17 @@ public class VanillaItemsTranslation : GlobalItem
 
         ItemHelper.TranslateTooltip(item, tooltips, "HealLife", tooltip =>
         {
+            tooltip.Text = tooltip.Text
+                .Replace("Restores", "Восстанавливает")
+                .Replace("life", "ед. здоровья");
+            
             tooltip.Text = item.type switch
             {
                 ItemID.BottledHoney => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BottledHoney.Tooltip"),
                 _ => tooltip.Text
             };
         });
-        
-        ItemHelper.TranslateTooltip(item, tooltips, "Placeable", tooltip =>
-        {
-            tooltip.Text = item.type switch
-            {
-                ItemID.Teleporter => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Teleporter.Tooltip"),
-                _ => tooltip.Text
-            };
-        });
-        
+
         ItemHelper.TranslateTooltip(item, tooltips, "Consumable", tooltip =>
         {
             tooltip.Text = item.type switch
@@ -903,6 +919,16 @@ public class VanillaItemsTranslation : GlobalItem
             tooltip.Text = item.type switch
             {
                 ItemID.HellfireTreads => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.HellfireTreads.Tooltip.3"),
+                ItemID.TerrasparkBoots => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TerrasparkBoots.Tooltip"),
+                _ => tooltip.Text
+            };
+        });
+        
+        ItemHelper.TranslateTooltip(item, tooltips, "UseMana", tooltip =>
+        {
+            tooltip.Text = item.type switch
+            {
+                ItemID.SpaceGun => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.SpaceGun.Tooltip", (int)(item.mana * Main.LocalPlayer.manaCost * 0.5f)),
                 _ => tooltip.Text
             };
         });

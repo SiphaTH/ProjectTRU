@@ -427,7 +427,7 @@ public class CalamityNpcChat : ContentTranslation
         {
             npcPhrase = npcPhrase switch
             {
-                "There's a dark solar energy emanating from the moths that appear during this time. Ah, the moths as you progress further get more powerful... hmm... what power was Yharon holding back?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Dryad.1"),
+                "There's a dark solar energy emanating from the moths that appear during this time. Ah, as you progress further the moths get more powerful..." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Dryad.1"),
                 "That starborne illness sits upon this land like a blister. Do even more vile forces of corruption exist in worlds beyond?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Dryad.2"),
                 "My ancestor was lost here long ago. I must pay my respects to her." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Dryad.4"),
                 "\u0093I'm not here for any reason! Just picking up mushrooms for uh, later use." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Dryad.5"),

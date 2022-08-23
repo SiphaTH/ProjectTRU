@@ -30,6 +30,10 @@ public class MetersTranslation : GlobalItem
                     .Replace("Adrenaline DR Boost", "Бонус сопротивления урону адреналина")
                     
                     .Replace("True Melee Damage", "Истинный урон ближнего боя")
+                    .Replace("True Melee Crit Chance", "Истинный шанс критического удара ближнего боя")
+                    .Replace("True Melee Attack Speed", "Истинная скорость атаки ближнего боя")
+                    .Replace("True Melee Armor Penetration", "Истинное пробивание брони ближнего боя")
+
                     .Replace("Melee Damage", "Урон ближнего боя")
                     .Replace("Melee Crit Chance", "Шанс критического удара ближнего боя")
                     .Replace("Melee Attack Speed", "Скорость атаки ближнего боя")
@@ -101,6 +105,7 @@ public class MetersTranslation : GlobalItem
                     .Replace("Move Speed", "Увеличение скорости передвижения")
                     .Replace("Jump Boost", "Увеличение скорости прыжка")
                     .Replace("Wing Flight Time", "Время полёта крыльев")
+                    .Replace("Luck", "Удача")
                     .Replace("seconds", "секунд")
                     .Replace("Abyss Light Strength", "Сила света в бездне")
                     .Replace("Other Abyss Stats", "Другие характеристики бездны")

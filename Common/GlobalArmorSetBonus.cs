@@ -28,24 +28,8 @@ internal static class GlobalArmorSetBonus
     {
         switch (set)
         {
-            case "AerospecRogue":
-            case "AuricTeslaRogue":
-            case "BloodflareRogue":
-            case "Empyrean":
-            case "DaedalusRogue":
-            case "HydrothermicRogue":
-            case "SnowRuffian":
-            case "StatigelRogue":
-            case "Sulphurous":
-            case "TarragonRogue":
-            case "TitanHeart":
-            case "Umbraphile":
-            case "VictideRogue":
-            case "WulfrumRogue":
-                return LangHelper.GetTextValue($"CalamityMod.Items.SetBonus.{set}") + (TRuConfig.Instance.CalamityArmorStealthDescription ? LangHelper.GetTextValue("CalamityMod.Misc.ArmorRogueStealthDescription") : "");
-
             case "AncientForbiddenCirclet":
-                return LangHelper.GetTextValue($"CalamityMod.Items.SetBonus.{set}", ModsCall.SetBonusHotKey, (int)(60f * Main.player[Main.myPlayer].manaCost)) + (TRuConfig.Instance.CalamityArmorStealthDescription ? LangHelper.GetTextValue("CalamityMod.Misc.ArmorRogueStealthDescription") : "");
+                return LangHelper.GetTextValue($"CalamityMod.Items.SetBonus.{set}", ModsCall.SetBonusHotKey, (int)(60f * Main.player[Main.myPlayer].manaCost));
 
             case "BloodflareRanged":
             case "Brimflame":
@@ -58,30 +42,32 @@ internal static class GlobalArmorSetBonus
             
             case "GodSlayerMelee":
             case "GodSlayerRanged":
+            case "GodSlayerRogue":
                  return LangHelper.GetTextValue($"CalamityMod.Items.SetBonus.{set}", ModsCall.GodSlayerDashHotKey);
 
-            case "GodSlayerRogue":
-                return LangHelper.GetTextValue($"CalamityMod.Items.SetBonus.{set}", ModsCall.GodSlayerDashHotKey) +
-                       (TRuConfig.Instance.CalamityArmorStealthDescription ? LangHelper.GetTextValue("CalamityMod.Misc.ArmorRogueStealthDescription") : "");
-            
             case "ShroomiteVisage":
             case "AerospecMagic":
             case "AerospecMelee":
             case "AerospecSummoner":
             case "AerospecRanged":
+            case "AerospecRogue":
             case "Astral":
             case "AuricTeslaMelee":
             case "AuricTeslaRanged":
             case "AuricTeslaSummoner":
             case "AuricTeslaMagic":
+            case "AuricTeslaRogue":
             case "BloodflareSummoner":
             case "BloodflareMagic":
             case "BloodflareMelee":
+            case "BloodflareRogue":
             case "DaedalusMagic":
             case "DaedalusSummoner":
             case "DaedalusMelee":
             case "DaedalusRanged":
+            case "DaedalusRogue":
             case "DesertProwler":
+            case "Empyrean":
             case "FathomSwarmer":
             case "Fearmonger":
             case "GemTech":
@@ -89,6 +75,8 @@ internal static class GlobalArmorSetBonus
             case "HydrothermicMelee":
             case "HydrothermicSummoner":
             case "HydrothermicMagic":
+            case "HydrothermicRogue":
+            case "MarniteArchitect":
             case "Mollusk":
             case "Plaguebringer":
             case "ReaverExplore":
@@ -96,21 +84,25 @@ internal static class GlobalArmorSetBonus
             case "ReaverTank":
             case "SilvaMagic":
             case "SilvaSummoner":
+            case "SnowRuffian":
             case "StatigelMagic":
             case "StatigelMelee":
             case "StatigelRanged":
             case "StatigelSummoner":
+            case "StatigelRogue":
+            case "Sulphurous":
             case "TarragonMagic":
             case "TarragonRanged":
             case "TarragonSummoner":
+            case "TarragonRogue":
+            case "TitanHeart":
+            case "Umbraphile":
             case "VictideMagic":
             case "VictideMelee":
             case "VictideRanged":
             case "VictideSummoner":
-            case "WulfrumMagic":
-            case "WulfrumMelee":
-            case "WulfrumRanged":
-            case "WulfrumSummoner":
+            case "VictideRogue":
+            case "Wulfrum":
                 return LangHelper.GetTextValue($"CalamityMod.Items.SetBonus.{set}");
         }
 

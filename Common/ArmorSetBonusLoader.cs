@@ -433,34 +433,16 @@ public class ArmorSetBonusLoader : ILoadable
             "VictideSummoner")
         );
         CalamityArmorSets.Add(new ArmorSetData(
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumHeadMagic").Type,
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumArmor").Type,
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumLeggings").Type,
-            "WulfrumMagic")
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumHat").Type,
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumJacket").Type,
+            ModContent.Find<ModItem>("CalamityMod", "WulfrumOveralls").Type,
+            "Wulfrum")
         );
         CalamityArmorSets.Add(new ArmorSetData(
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumHeadMelee").Type,
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumArmor").Type,
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumLeggings").Type,
-            "WulfrumMelee")
-        );
-        CalamityArmorSets.Add(new ArmorSetData(
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumHeadRanged").Type,
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumArmor").Type,
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumLeggings").Type,
-            "WulfrumRanged")
-        );
-        CalamityArmorSets.Add(new ArmorSetData(
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumHeadRogue").Type,
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumArmor").Type,
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumLeggings").Type,
-            "WulfrumRogue")
-        );
-        CalamityArmorSets.Add(new ArmorSetData(
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumHeadSummon").Type,
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumArmor").Type,
-            ModContent.Find<ModItem>("CalamityMod", "WulfrumLeggings").Type,
-            "WulfrumSummoner")
+            ModContent.Find<ModItem>("CalamityMod", "MarniteArchitectHeadgear").Type,
+            ModContent.Find<ModItem>("CalamityMod", "MarniteArchitectToga").Type,
+            ItemID.None,
+            "MarniteArchitect")
         );
     }
 

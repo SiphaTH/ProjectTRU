@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using CalamityRuTranslate.Core;
-using CalamityRuTranslate.Mods.CalamityMod;
-using CalamityRuTranslate.Mods.Fargowiltas;
-using CalamityRuTranslate.Mods.FargowiltasSouls;
 using Terraria.ModLoader;
 using Terraria.UI;
 
@@ -11,14 +9,20 @@ namespace CalamityRuTranslate;
 
 public class CalamityRuTranslateModSystem : ModSystem
 {
-    private readonly List<IContentTranslation> _contents = new()
+    private List<IContentTranslation> _contents;
+    
+    public override void Load()
     {
-        new CalamityCombatText(),
-        new CalamityNpcChat(),
-        new FargoNpcChat(),
-        new FargowiltasSoulsCombatText(),
-        new FargowiltasSoulsNpcChat()
-    };
+        _contents = new List<IContentTranslation>();
+
+        foreach (Type type in CalamityRuTranslate.Instance.Code.GetTypes())
+        {
+            if (type.IsSubclassOf(typeof(ContentTranslation)) && Activator.CreateInstance(type) is ContentTranslation contentTranslation)
+            {
+                _contents.Add(contentTranslation);
+            }
+        }
+    }
     
     public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
     {

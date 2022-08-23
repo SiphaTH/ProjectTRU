@@ -55,6 +55,22 @@ public class CalamityCombatText : ContentTranslation
                 {
                     Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.10");
                 }
+                if (Main.combatText[i].text.Equals("Jackpot!!!"))
+                {
+                    Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.11");
+                }
+                if (Main.combatText[i].text.Equals("Triples!"))
+                {
+                    Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.12");
+                }
+                if (Main.combatText[i].text.Equals("Doubles!"))
+                {
+                    Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.13");
+                }
+                if (Main.combatText[i].text.Equals("Bust!"))
+                {
+                    Main.combatText[i].text = LangHelper.GetText("CalamityMod.CombatTexts.14");
+                }
             }
         }
     }

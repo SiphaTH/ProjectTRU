@@ -1,13 +1,18 @@
 using System.Collections.Generic;
+using CalamityMod.CalPlayer;
+using CalamityMod.CustomRecipes;
 using CalamityMod.Items;
 using CalamityMod.Items.Accessories;
-using CalamityMod.Items.DifficultyItems;
+using CalamityMod.Items.Accessories.Wings;
+using CalamityMod.Items.DraedonMisc;
 using CalamityMod.Items.Mounts;
+using CalamityMod.Items.PermanentBoosters;
 using CalamityMod.Items.Placeables.Furniture.Fountains;
 using CalamityMod.Items.Potions;
 using CalamityMod.Items.SummonItems;
 using CalamityMod.Items.Weapons.Magic;
 using CalamityMod.Items.Weapons.Melee;
+using CalamityMod.Items.Weapons.Ranged;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using Microsoft.Xna.Framework;
@@ -19,6 +24,8 @@ namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications;
 [JITWhenModsEnabled("CalamityMod")]
 public class SpecificItemsTooltipTranslation : GlobalItem
 {
+    CalamityPlayer CalamityPlayer => Main.LocalPlayer.GetModPlayer<CalamityPlayer>();
+    
     public override bool IsLoadingEnabled(Mod mod)
     {
         return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
@@ -34,6 +41,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
     {
         CalamityGlobalItem calamityGlobalItem = item.GetGlobalItem<CalamityGlobalItem>();
+
         if (calamityGlobalItem.canFirePointBlankShots)
         {
             int pointBlankShotIndex = tooltips.FindLastIndex(x => x.Mod.Equals("CalamityMod") && x.Name.Equals("PointBlankShot"));
@@ -80,13 +88,6 @@ public class SpecificItemsTooltipTranslation : GlobalItem
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ElysianAegis.Tooltip.5", ModsCall.AegisHotKey);
-            });
-        }
-        else if (item.type == ModContent.ItemType<MomentumCapacitor>())
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-            {
-                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.MomentumCapacitor.Tooltip.0", ModsCall.MomentumCapacitatorHotkey);
             });
         }
         else if (item.type == ModContent.ItemType<Nanotech>())
@@ -158,17 +159,6 @@ public class SpecificItemsTooltipTranslation : GlobalItem
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.PlaguedFuelPack.Tooltip.2", ModsCall.PlaguePackHotKey);
-            });
-        }
-        else if (item.type == ModContent.ItemType<RevengeanceModeItem>())
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
-            {
-                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RevengeanceModeItem.Tooltip.1", ModsCall.RageHotKey);
-            });
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
-            {
-                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RevengeanceModeItem.Tooltip.3", ModsCall.AdrenalineHotKey);
             });
         }
         else if (item.type == ModContent.ItemType<BlunderBooster>())
@@ -406,6 +396,126 @@ public class SpecificItemsTooltipTranslation : GlobalItem
                     .Replace("Minion knockback increased by", "Увеличивает отбрасывание призывателя на")
                     .Replace("Movement speed increased by", "Увеличивает скорость передвижения на")
                     .Replace("Flight time increased by", "Увеличивает время полёта на");
+            });
+        }
+        else if (item.type == ModContent.ItemType<BloodOrange>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                if (CalamityPlayer.bOrange)
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.BloodOrange.Tooltip.Consumed");
+                }
+            });
+        }
+        else if (item.type == ModContent.ItemType<CometShard>())
+        {
+            int tooltipIndex = tooltips.FindLastIndex(x => x.Mod.Equals("Terraria") && x.Name.StartsWith("Tooltip"));
+            if (tooltipIndex != -1 && CalamityPlayer.cShard)
+            {
+                tooltips.Insert(++tooltipIndex, new TooltipLine(Mod, $"{Mod.Name}:Tooltip1", LangHelper.GetTextValue("CalamityMod.Items.CometShard.Tooltip.Consumed")));
+            }
+        }
+        else if (item.type == ModContent.ItemType<Dragonfruit>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                if (CalamityPlayer.dFruit)
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.Dragonfruit.Tooltip.Consumed");
+                }
+            });
+        }
+        else if (item.type == ModContent.ItemType<Elderberry>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                if (CalamityPlayer.eBerry)
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.Elderberry.Tooltip.Consumed");
+                }
+            });
+        }
+        else if (item.type == ModContent.ItemType<EtherealCore>())
+        {
+            int tooltipIndex = tooltips.FindLastIndex(x => x.Mod.Equals("Terraria") && x.Name.StartsWith("Tooltip"));
+            if (tooltipIndex != -1 && CalamityPlayer.eCore)
+            {
+                tooltips.Insert(++tooltipIndex, new TooltipLine(Mod, $"{Mod.Name}:Tooltip1", LangHelper.GetTextValue("CalamityMod.Items.EtherealCore.Tooltip.Consumed")));
+            }
+        }
+        else if (item.type == ModContent.ItemType<MiracleFruit>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                if (CalamityPlayer.mFruit)
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.MiracleFruit.Tooltip.Consumed");
+                }
+            });
+        }
+        else if (item.type == ModContent.ItemType<PhantomHeart>())
+        {
+            int tooltipIndex = tooltips.FindLastIndex(x => x.Mod.Equals("Terraria") && x.Name.StartsWith("Tooltip"));
+            if (tooltipIndex != -1 && CalamityPlayer.pHeart)
+            {
+                tooltips.Insert(++tooltipIndex, new TooltipLine(Mod, $"{Mod.Name}:Tooltip1", LangHelper.GetTextValue("CalamityMod.Items.PhantomHeart.Tooltip.Consumed")));
+            }
+        }
+        else if (item.type == ModContent.ItemType<HadarianWings>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue(Player.Settings.HoverControl == 0
+                    ? "CalamityMod.Items.HadarianWings.Tooltip.1.HoverControl"
+                    : "CalamityMod.Items.HadarianWings.Tooltip.1.NotHoverControl");
+            });
+        }
+        else if (item.type == ModContent.ItemType<MidasPrime>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:HiddenTooltip", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.MidasPrime.Tooltip.HiddenTooltip");
+            });
+        }
+        else if (item.type == ModContent.ItemType<EncryptedSchematicHell>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                if (RecipeUnlockHandler.HasUnlockedT4ArsenalRecipes)
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicHell.Tooltip.Unlocked");
+                }
+            });
+        }
+        else if (item.type == ModContent.ItemType<EncryptedSchematicIce>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                if (RecipeUnlockHandler.HasUnlockedT5ArsenalRecipes)
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicIce.Tooltip.Unlocked");
+                }
+            });
+        }
+        else if (item.type == ModContent.ItemType<EncryptedSchematicJungle>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                if (RecipeUnlockHandler.HasUnlockedT3ArsenalRecipes)
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicJungle.Tooltip.Unlocked");
+                }
+            });
+        }
+        else if (item.type == ModContent.ItemType<EncryptedSchematicPlanetoid>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                if (RecipeUnlockHandler.HasUnlockedT2ArsenalRecipes)
+                {
+                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicPlanetoid.Tooltip.Unlocked");
+                }
             });
         }
         

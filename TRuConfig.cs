@@ -28,12 +28,7 @@ public class TRuConfig : ModConfig
     [Tooltip("Если вам не нравится цветные типы урона на оружиях, вы можете их отключить.")]
     [DefaultValue(true)]
     public bool ColoredDamageTypes;
-        
-    [Label("Описание механики скрытности Каламити")]
-    [Tooltip("Показывает текст бонуса скрытности на комплектах брони разбойника.")]
-    [DefaultValue(true)]
-    public bool CalamityArmorStealthDescription;
-        
+
     [Label("Предварительный просмотр бонуса комплекта брони")]
     [Tooltip("Показывает бонус комплекта брони на шлемах при зажатой клавише.")]
     [DefaultValue(true)]
