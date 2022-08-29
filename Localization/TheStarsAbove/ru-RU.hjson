@@ -1,0 +1,1490 @@
+﻿{
+    Mods.CalamityRuTranslate.StarsAbove: {
+        Buffs: {
+            Afterburner: {
+                Name: Дожигатель
+                Description: Все ваши удары критические
+            }
+            
+            AfterburnerCooldown: {
+                Name: Перезарядка дожигателя
+                Description: Дожигатель не активируется, пока активен этот дебафф
+            }
+            
+            AmmoRecycle: {
+                Name: Циклический охотник
+                Description: Вы двигаетесь намного быстре, а также урон увеличен на 10%
+            }
+            
+            AncientBulwark: {
+                Name: Ancient Bulwark
+                Description: Gain 80 defense, but damage is reduced by 40%
+            }
+            
+            ArchitectLuminanceBuff: {
+                Name: Ясность Архитектора
+                Description: Власть над мощью Архитектора
+            }
+            
+            ArtificeSirenBuff: {
+                Name: Артифис Сирена активирован
+                Description: Сверхмощный механический союзник аннигилирует ваших врагов
+            }
+            
+            ArtificeSirenCooldown: {
+                Name: Перезарядка Артифис Сирены
+                Description: Артифис Сирена не активируется, пока активен этот дебафф
+            }
+            
+            AsphodeneBlessing: {
+                Name: "[c/5DC5DE:Астральный резонанс]"
+                Description: ""
+            }
+            
+            AstarteDriver: {
+                Name: Форсаж Астарты
+                Description: Звёзды даруют вам силу
+            }
+            
+            AstarteDriverEnemyCooldown: {
+                Name: Перезарядка форсажа Астарты (Враг)
+                Description: Дебафф распространяется только на врагов
+            }
+            
+            AstarteDriverPrep: {
+                Name: Подготовка форсажа Астарты
+                Description: Звёзды даруют вам силу... всего на секунду
+            }
+            
+            AstralAspect: {
+                Name: Астральное сопряжение
+                Description: Аспект Астрала даёт 10 защиты и наделяет атаки способностью высасывать ману из врагов ценой половины вашего урона
+            }
+            
+            AstralAspectBow: {
+                Name: Астральное сопряжение
+                Description: Аспект Астрала даёт здоровье при стрельбе, значительную регенерацию здоровья после заряда и усиливает Аспект Пустоты ценой половины вашего урона
+            }
+            
+            AstralRapture: {
+                Name: Астральный восторг
+                Description: Даёт здоровье и неуязвимость на блоках Асфодены
+            }
+            
+            BerserkerMode: {
+                Name: Режим берсерка
+                Description: Все атаки наносят больше урона
+            }
+            
+            BerserkerModeCooldown: {
+                Name: Перезарядка режима берсерка
+                Description: Режим берсерка не активируется, пока активен этот дебафф
+            }
+            
+            BinaryMagnitude: {
+                Name: Бинарная магнитуда
+                Description: Излучение двойных звёзд усилено
+            }
+            
+            BiyomonPetBuff: {
+                Name: Цифровой питомец
+                Description: Цифровой питомец следует за вами
+            }
+            
+            BladeWillCooldown: {
+                Name: Перезарядка воли клинка
+                Description: Воля клинка не активируется, пока активен этот дебафф
+            }
+            
+            BlastingChargeCooldownBuff: {
+                Name: Перезарядка взрывного заряда
+                Description: Взрывной заряд не активируется, пока активен этот дебафф
+            }
+            
+            BloodOfTheDragon: {
+                Name: Кровь дракона
+                Description: Взгляд первого поколения дарует господство над небесами, увеличивая урон и скорость передвижения
+            }
+            
+            BloopPetBuff: {
+                Name: Запузыренная акула
+                Description: "'а'"
+            }
+            
+            BlueOrb: {
+                Name: Голубая сфера
+                Description: "Подготовка 'Молниеносного удара'"
+            }
+            
+            BluePaint: {
+                Name: Синяя краска
+                Description: Вы покрыты синей краской
+            }
+            
+            BossCooldown: {
+                Name: Перезарядка босса
+                Description: Босс Погибающей Цитадели не появится, пока активен этот дебафф
+            }
+            
+            BossEnemySpawnMod: {
+                Name: Overwhelming Presence
+                Description: The powerful foe before you prevents natural enemy spawns
+            }
+            
+            BubbaPetBuff: {
+                Name: Собака-детектив
+                Description: Умная собака следует за вами
+            }
+            
+            Burnout: {
+                Name: Выгорание
+                Description: Характеристики снижены вдвое
+            }
+            
+            ButchersDozen: {
+                Name: Мясницкая дюжина
+                Description: Урон и скорость взмахов увеличены
+            }
+            
+            ButterflyTrance: {
+                Name: Транс бабочек
+                Description: Очарованный бабочками; получаемый вами урон снижен на 50%, вы парите, а {$Mods.CalamityRuTranslate.StarsAbove.ItemName.VenerationOfButterflies} не расходует маны
+            }
+            
+            CastFinished: {
+                Name: Cast Finished
+                Description: ""
+            }
+            
+            CelestialCacophony: {
+                Name: Неземная какофония
+                Description: Мир застывает в ожидании звёздного удара
+            }
+            
+            ClawsOfNyx: {
+                Name: Когти Никс
+                Description: Урон и шанс критического удара увеличены
+            }
+            
+            ComboCooldown: {
+                Name: Combo Cooldown
+                Description: ""
+            }
+            
+            CoreOfFlames: {
+                Name: Ядро огней
+                Description: Освобождающий огонь на пике своей мощи
+            }
+            
+            CoreOfFlamesCooldown: {
+                Name: Перезарядка ядра огней
+                Description: Освобождающий огонь не активирует «{$Mods.CalamityRuTranslate.StarsAbove.BuffName.CoreOfFlames}», пока активен этот дебафф
+            }
+            
+            CosmicConception: {
+                Name: Космическая Концепция
+                Description: Пространственная масса сливается в сингулярность
+            }
+            
+            CosmicConceptionCooldown: {
+                Name: Перезарядка космической концепции
+                Description: Космическая Концепция не активируется, пока активен этот дебафф
+            }
+            
+            CosmicIre: {
+                Name: Космический гнев
+                Description: Пространственная энергия наполняет ваше окружение
+            }
+            
+            CosmicRecoil: {
+                Name: Космическая отдача
+                Description: Безграничная мощь имеет свою цену
+            }
+            
+            CounterSurge: {
+                Name: Контрскачок
+                Description: Заряженная атака Ксеноклинка значительно усилена
+            }
+            
+            CrimsonDragonetPetBuff: {
+                Name: Багровый дракончик
+                Description: За вами ухаживает багровый дракончик
+            }
+            
+            DashInvincibility: {
+                Name: Неуязвимость рывка
+                Description: Вы не получите урон
+            }
+            
+            DeathDefianceCooldown: {
+                Name: Перезарядка отрицания смерти
+                Description: Отрицание смерти не активируется, пока активен этот дебафф
+            }
+            
+            DeepFreeze: {
+                Name: Глубокая заморозка
+                Description: Если вы стоите на месте, когда действие этого баффа закончится, вы будете заморожены и получите урон
+            }
+            
+            Determination: {
+                Name: Тененосец
+                Description: Мечты нынешнего о тёмном завтрашнем дне... урон и защита значительно увеличены
+            }
+            
+            DownForTheCount: {
+                Name: Отчаяние
+                Description: Враг перед вами вселяет страх в самые потаённые уголки вашего сердца, обездвиживая вас
+            }
+            
+            DreamlikeCharisma: {
+                Name: Сказочная харизма
+                Description: Урон увеличивается, и ещё больше увеличивается при максимальном запасе маны
+            }
+            
+            DuckHuntBirdPetBuff: {
+                Name: Утка-дичь
+                Description: Кажется название устарело
+            }
+            
+            DuckHuntDogPetBuff: {
+                Name: Охотник на уток
+                Description: Кажется название устарело
+            }
+            
+            Ebb: {
+                Name: Угасание
+                Description: Межмировой разлом высасывает всю вашу ману
+            }
+            
+            EreshkigalPetBuff: {
+                Name: Принцесса Иркалла
+                Description: Чтоб ты знал, я настоящая богиня!
+            }
+            
+            EridaniBlessing: {
+                Name: [c/9F5DDE:Пустотный резонанс]
+                Description:
+            }
+            
+            EspeonPetBuff: {
+                Name: Загадочные гончие
+                Description: Пара загадочных гончих следует за вами
+            }
+            
+            EverlastingLight: {
+                Name: Бесконечный Свет
+                Description: Бесконечный Свет застилает небо... Враги усилены и периодически переполняются Светом
+            }
+            
+            EyeOfEuthymiaBuff: {
+                Name: Око Эвтюмии
+                Description: С вами глаз молнии
+            }
+            
+            FerryPetBuff: {
+                Name: Дымящий паром
+                Description: За вами следует таинственный паром
+            }
+            
+            FlashOfEternity: {
+                Name: Вспышка Вечности
+                Description: Следующее получение урона будет аннулировано
+            }
+            
+            FlashOfEternityCooldown: {
+                Name: Перезарядка вспышки Вечности
+                Description: Вспышка Вечности не активируется, пока активен этот дебафф
+            }
+            
+            Flow: {
+                Name: Поток
+                Description: Межмировой разлом даёт бесконечную ману, урон увеличен на 40%, а скорость атаки на 20%
+            }
+            
+            ForceOfNatureReloadBuff: {
+                Name: Перезарядка
+                Description: ""
+            }
+            
+            GardenOfAvalon: {
+                Name: Сад Авалона
+                Description: Периодически восстанавливает здоровье и ману силой Сверхновой
+            }
+            
+            GatewayBuff: {
+                Name: Врата открыты
+                Description: Готовы пересечь космос
+            }
+            
+            GenocideBuff: {
+                Name: Праздник крови
+                Description: Скорость и шанс критического удара увеличены
+            }
+            
+            GenocideReloadBuff: {
+                Name: Перезарядка
+                Description: ""
+            }
+            
+            GhostPet: {
+                Name: Футуристический призрак
+                Description: Он обращается к вам как к 'Стражу'
+            }
+            
+            Glitterglued: {
+                Name: Клей с блёстками
+                Description: Вы покрыты блестящим клеем
+            }
+            
+            GoingSupercriticalCooldown: {
+                Name: Перезарядка сверхкритической жизни
+                Description: Сверхкритическая жизнь не активируется, пока активен этот дебафф
+            }
+            
+            GreenPaint: {
+                Name: Зелёная краска
+                Description: Вы покрыты зелёной краской
+            }
+            
+            GuilmonPetBuff: {
+                Name: Цифровой монстр
+                Description: Цифровой монстр следует за вами
+            }
+            
+            HanakoPetBuff: {
+                Name: Загадочный призрак
+                Description: Загадочное привидение следует за вами
+            }
+            
+            HonedEdge: {
+                Name: Заточенная грань
+                Description: При перезарядке грани Идзанаги следующий выстрел станет необычайно мощным
+            }
+            
+            HonedEdgeCooldown: {
+                Name: Перезарядка заточенной грани
+                Description: Заточенная грань не активируется, пока активен этот дебафф
+            }
+            
+            HopesBrillianceBuff: {
+                Name: Hope's Brilliance
+                Description: ""
+            }
+            
+            HuTaoPetBuff: {
+                Name: Похоронный директор
+                Description: Миниатюрный похоронный директор следует за вами
+            }
+            
+            Ignited: {
+                Name: Воспламенение
+                Description: Бестеневая лазурь устремляется вперёд
+            }
+            
+            InfernalBleed: {
+                Name: Infernal Hemorrhage
+                Description: Taking lethal damage over time
+            }
+            
+            InfernalEnd: {
+                Name: Infernal End
+                Description: Anger after taking damage has temporarily granted 50% increased damage
+            }
+            
+            InkCooldown: {
+                Name: Перезарядка смены цвета
+                Description: Смена мистических окрасов не активируется, пока активен этот дебафф
+            }
+            
+            InnerAlchemy: {
+                Name: Inner Alchemy
+                Description: Inner balance has been found, granting 10% increased damage, 25 defense, knockback resistance, and Health Regeneration
+            }
+            
+            Invincibility: {
+                Name: Неуязвимость
+                Description: Вы не можете получать входящий урон
+            }
+            
+            Invisibility: {
+                Name: Невидимость
+                Description: И не увидать
+            }
+            
+            IrysBuff: {
+                Name: Фея-нефелим
+                Description: Форма тела изменена
+            }
+            
+            IrysGaze: {
+                Name: Взгляд Айрис
+                Description: Миньоны могут нанести критический удар
+            }
+            
+            JumpCooldown: {
+                Name: Перезарядка прыжка
+                Description: Прыжок не активируется, пока активен этот дебафф
+            }
+            
+            KasumiPetBuff: {
+                Name: Айдол со звёздными глазами
+                Description: Айдол со звёздными глазами следует за вами
+            }
+            
+            KeyOfChronologyCooldown: {
+                Name: Перезарядка ключа хронологии
+                Description: Ключ Хронологии не активируется, пока активен этот дебафф
+            }
+            
+            KiwamiRyuken: {
+                Name: Кивами Рюкен
+                Description: Вы подготавливаете смертоносную контратаку
+            }
+            
+            KiwamiRyukenConfirm: {
+                Name: Кивами Рюкен активирован!
+                Description: Ща солью как лалку!
+            }
+            
+            KroniicPrincipality: {
+                Name: Кронический принцип
+                Description: Вы владеете двумя клинками Времени
+            }
+            
+            KroniicPrincipalityCooldown: {
+                Name: Перезарядка временного скачка
+                Description: Временной скачок Кронического принципа не активируется, если активен этот дебафф
+            }
+            
+            LatchedOn: {
+                Name: Latched On
+                Description: Spider is on you
+            }
+            
+            LeftDebuff: {
+                Name: Левый Хаос
+                Description: По окончании дебаффа вас дёрнет влево
+            }
+            
+            LifeOfTheDragon: {
+                Name: Здоровье дракона
+                Description: Взгляд первого поколения дарует господство над небесами, увеличивая урон, шанс критического удара, кражу здоровья и скорость передвижения
+            }
+            
+            Lightblessed: {
+                Name: Благословение Света
+                Description: Нескончаемый Свет дарует вам защиту
+            }
+            
+            LightbreakStrike: {
+                Name: Молниеносный удар
+                Description: Атаки в ближнем бою всегда будут наносить критические удары
+            }
+            
+            LimitBreak: {
+                Name: Крушение лимитов
+                Description: Превышаются все лимиты, напрямую превращая здоровье в ману и сильно увеличивая силу магических атак
+            }
+            
+            LimitBreakCooldown: {
+                Name: Перезарядка крушения лимитов
+                Description: Крушение лимитов не активируется, пока активен этот дебафф
+            }
+            
+            LivingDead: {
+                Name: Живой мертвец
+                Description: Тёмные искусства не дают вам умереть: если вы не восстановите 150 здоровья до окончания баффа, то умрёте
+            }
+            
+            LivingDeadCooldown: {
+                Name: Перезарядка живого мертвеца
+                Description: Живой мертвец не активируется, пока активен этот дебафф
+            }
+            
+            MajimaPetBuff: {
+                Name: Щенок Шимано
+                Description: Кирью-чан!!
+            }
+            
+            MantisCatPetBuff: {
+                Name: Кот?..
+                Description: Он привёл друга
+            }
+            
+            MechanicalPrismBuff: {
+                Name: Mechanical Prism
+                Description: ""
+            }
+            
+            MortalWounds: {
+                Name: Раны смертного
+                Description: Потеря здоровья
+            }
+            
+            NanitePlague: {
+                Name: Нанитная чума
+                Description: Потеря здоровья
+            }
+            
+            NascentAria: {
+                Name: Nascent Aria
+                Description: Resolve at world's demise is drastically improving maximum health
+            }
+            
+            NullRadiance: {
+                Name: Нулевое сияние
+                Description: Ваш свет потускнел, снижая наносимый урон вдвое
+            }
+            
+            OceanCulling: {
+                Name: Выбор океана
+                Description: Ослабление
+            }
+            
+            OmoriPetBuff: {
+                Name: Монохромная игрушка
+                Description: Монохромная игрушка следует за вами
+            }
+            
+            OrangePaint: {
+                Name: Оранжевая краска
+                Description: Вы покрыты оранжевой краской
+            }
+            
+            PekoraPetBuff: {
+                Name: Подозрительно выглядящая девочка-кролик
+                Description: ХА ^ ХА v ХА ^ ХА v ХА
+            }
+            
+            Petrified: {
+                Name: Окаменение
+                Description: Не пошевелиться
+            }
+            
+            PhymPetBuff: {
+                Name: Фим
+                Description: Фим следует за вами
+            }
+            
+            PlasmaGrenadeCooldownBuff: {
+                Name: Перезарядка плазменной гранаты
+                Description: Плазменная граната не активируется, пока активен этот дебафф
+            }
+            
+            PortalReady: {
+                Name: "[c/DE5D5D:Близость Врат]"
+                Description: Используйте Биврёст, чтобы вернуться туда, откуда прибыли
+            }
+            
+            PurplePaint: {
+                Name: Пурпурная краска
+                Description: Вы покрыты пурпурной краской
+            }
+            
+            PyraPetBuff: {
+                Name: Эгида
+                Description: Продолжай в том же духе, мы обязательно победим!
+            }
+            
+            Pyretic: {
+                Name: Горячка
+                Description: Если во время окончания этого дебаффа вы двигаетесь, то загоритесь и получите урон
+            }
+            
+            RagingTidesStance: {
+                Name: Стойка бушующих волн
+                Description: Атаки Тартальи были изменены на атаки ближнего боя
+            }
+            
+            RedOrb: {
+                Name: Красная сфера
+                Description: Подготовка 'Внезапного удара'
+            }
+            
+            RedPaint: {
+                Name: Красная краска
+                Description: Вы покрыты красной краской
+            }
+            
+            RemoveStationarySpiders: {
+                Name: Remove Stationary Spiders!
+                Description: ""
+            }
+            
+            RightDebuff: {
+                Name: Правый Хаос
+                Description: По окончании дебаффа вас дёрнет вправо
+            }
+            
+            Riptide: {
+                Name: Отлив
+                Description: Ослабление
+            }
+            
+            RobotSpiderBuff: {
+                Name: Mechanical Arachnids
+                Description: The mechanical arachnids aid you
+            }
+            
+            Ruination: {
+                Name: Свержение
+                Description: Сколь же ты жалок!
+            }
+            
+            RyukenStun: {
+                Name: Оглушение Рюкена
+                Description: Ауч
+            }
+            
+            Satanael: {
+                Name: Сатанаил
+                Description: "'Ты собираешься уничтожать богов во имя справедливости, в которую ты веришь...'"
+            }
+            
+            SatedAnguish: {
+                Name: Sated Anguish
+                Description: The detriments of Lucifer's Bargain have been negated... for now
+            }
+            
+            SeabornCooldown: {
+                Name: Перезарядка рождённого морем гнева
+                Description: Рождённый морем гнев не активируется, пока активен этот дебафф
+            }
+            
+            SeabornWrath: {
+                Name: Рождённый морем гнев
+                Description: Океанические течения увеличивают урон ваших миньонов, а ваше оружие усиливается
+            }
+            
+            SolemnAegis: {
+                Name: Священная Эгида
+                Description: Следующее получение урона будет аннулировано
+            }
+            
+            SoulSapping: {
+                Name: Истощение души
+                Description: Налхан высасывает вашу душу; если индикатор Души понизится до нуля, вы умрёте
+            }
+            
+            SoulUnbound: {
+                Name: Освобождённая душа
+                Description: Вы покидаете свою смертную форму, увеличивая скорость передвижения
+            }
+            
+            SoulUnboundCooldown: {
+                Name: Перезарядка освобождённой души
+                Description: Освобождённая душа не активируется, пока активен этот дебафф
+            }
+            
+            SovereignDominion: {
+                Name: Царство владыки
+                Description: Сколь же ты жалок!
+            }
+            
+            SpatialBurn: {
+                Name: Дезинтеграция
+                Description: Касание космического вакуума
+            }
+            
+            Starblight: {
+                Name: Звёздная болезнь
+                Description: Получение сильного постепенного урона
+            }
+            
+            StarshieldBuff: {
+                Name: Звёздный щит
+                Description: A stellar barrier protects you, granting 10% of Max HP as defense as well as 20% increased damage
+            }
+            
+            StarshieldCooldown: {
+                Name: Перезарядка звёздного щита
+                Description: Звёздный щит не активируется, пока активен этот дебафф
+            }
+            
+            StellarListener: {
+                Name: Звёздный слушатель
+                Description: Близость выступления бодрит вас, увеличивая урон, восстановление маны и регенерацию здоровья
+            }
+            
+            StellarOverload: {
+                Name: Stellar Overload
+                Description: The Stellar Array is above capacity, reducing damage by half and defense to 0
+            }
+            
+            StellarPerformance: {
+                Name: Звёздное выступление
+                Description: Ваше выступление бодрит вас, значительно увеличивая урон и скорость передвижения
+            }
+            
+            StellarPerformanceCooldown: {
+                Name: Перезарядка звёздного выступления
+                Description: Звёздное выступление не активируется, пока активен этот дебафф
+            }
+            
+            StellarSickness: {
+                Name: Звёздная болезнь
+                Description: Атака и защита снижены вдвое, пока вы адаптируетесь к своей новой силе
+            }
+            
+            Stun: {
+                Name: Оглушение
+                Description: Не двинуться...
+            }
+            
+            Subduced: {
+                Name: Подчинение
+                Description: Атакующие и защитные характеристики снижены вдвое
+            }
+            
+            Superimposed: {
+                Name: "[c/3B9FE4:Космический странник]"
+                Description:
+                    '''
+                    Материальное тело переносится в море звёзд
+                    Следующие действия были ограничены:
+                    Строительство, добыча, ездовые животные, взрывчатка, полёты и жезл Раздора
+                    Способности, масштабирующиеся с развитием мира, вернулись к первоначальным значениям
+                    '''
+            }
+            
+            SurtrTwilight: {
+                Name: Сумерки Сурта
+                Description: Все атаки поджигают врагов
+            }
+            
+            TakodachiBuff: {
+                Name: Пустотная осьминожка
+                Description: Пустотная осьминожка кружится вокруг вас
+            }
+            
+            TakodachiLaserBuff: {
+                Name: Луч аннигиляции Такономикона
+                Description: ""
+            }
+            
+            TakodachiLaserBuffCooldown: {
+                Name: Перезарядка лазера Такономикона
+                Description: Лазер Такономикона не активируется, пока активен этот дебафф
+            }
+            
+            TheofaniaDualcast: {
+                Name: Двойная Теофаниа
+                Description: Вы можете повторно использовать Теофаниа Инанис без затрат энергии
+            }
+            
+            TheofaniaTricast: {
+                Name: Тройная Теофаниа
+                Description: Вы можете повторно использовать Теофаниа Инанис без затрат энергии, но с ограниченной силой
+            }
+            
+            TwinStarsBuff: {
+                Name: Двойные звёзды
+                Description: Двойные звёзды сияют вокруг вас
+            }
+            
+            TyphoonPrismCooldown: {
+                Name: Typhoon Prism Cooldown
+                Description: Typhoon Prism's ability will not activate when this debuff is active
+            }
+            
+            Ultima: {
+                Name: Граница вселенной
+                Description: Клинок в руке, предначертанный в судьбе
+            }
+            
+            UmbralAspect: {
+                Name: Пустотное сопряжение
+                Description: Аспект Пустоты дарует увеличенный урон и скорость передвижения, а также позволяет разрушать астрал за счёт постоянного истощения маны
+            }
+            
+            UmbralAspectBow: {
+                Name: Пустотное сопряжение
+                Description: Аспект Пустоты дарует увеличенный урон и шанс критического удара, основанный на зарядах Астрального сопряжения, и позволяет разрушать астрал ценой постоянного истощения здоровья и маны
+            }
+            
+            UmbralAspectDepleted: {
+                Name: Пустотное истощение
+                Description: Аспект Пустоты истощил вашу энергию; переключитесь на Аспект Астрала, чтобы восстановиться
+            }
+            
+            UmbralAspectDepletedBow: {
+                Name: Пустотное истощение
+                Description: Аспект Пустоты истощил вашу энергию; переключитесь на Аспект Астрала, чтобы восстановиться
+            }
+            
+            UmbralRapture: {
+                Name: Пустотный восторг
+                Description: Даёт здоровье и неуязвимость на блоках Эридани
+            }
+            
+            UmbreonPetBuff: {
+                Name: Загадочная гончая
+                Description: За вами следует пара загадочных гончих
+            }
+            
+            UniversalManipulation: {
+                Name: Вселенская манипуляция
+                Description: Космос в движении
+            }
+            
+            VitchPetBuff: {
+                Name: Злобная лисица
+                Description: Мало того что убьёт вас, так ещё и возьмёт за это дополнительную плату
+            }
+            
+            VoidAtrophy1: {
+                Name: Пустотная атрофия (1)
+                Description: Ослабление
+            }
+            
+            VoidAtrophy2: {
+                Name: пустотная атрофия (2)
+                Description: Ослабление
+            }
+            
+            Voidform: {
+                Name: Суперпозиция
+                Description: Телесная форма превосходит концепцию измерений, даруя неуязвимость и значительно ускоряя регенерацию здоровья, но препятствуя передвижению
+            }
+            
+            VoidStrength: {
+                Name: Сила пустоты
+                Description: Урон значительно увеличен
+            }
+            
+            VoyageCooldown: {
+                Name: Перезарядка космического странствия
+                Description:
+                    '''
+                    Вы не можете начать космическое странствие, пока активен этот дебафф
+                    Но можете попросить сделать это друга
+                    '''
+            }
+            
+            Vulnerable: {
+                Name: Высокая уязвимость
+                Description: Ваша защита значительно снижена
+            }
+            
+            WarriorEnd: {
+                Name: Warrior End
+                Description: ""
+            }
+            
+            WarriorPetBuff: {
+                Name: Жалкая копия Воина Света
+                Description: Я превзойду вас!
+            }
+            
+            Wormhole: {
+                Name: Червоточина
+                Description: ""
+            }
+            
+            WrathfulCeruleanFlame: {
+                Name: Пламя лазурной ярости
+                Description: Атаки Бестеневой лазури пробивают защиту и наносят критические удары
+            }
+            
+            YellowOrb: {
+                Name: Жёлтая сфера
+                Description: Подготовка 'Ослепительного удара'
+            }
+            
+            YellowPaint: {
+                Name: Жёлтая краска
+                Description: Вы покрыты жёлтой краской
+            }
+            
+            WebOfNeedles: {
+                Name: Web of Needles
+                Description: Summon damage is increased by 30%
+            }
+            
+            AshenAmbitionActive: {
+                Name: Пепельная амбиция
+                Description: ""
+            }
+            
+            AshenAmbitionCooldown: {
+                Name: Перезарядка пепельной амбиции
+                Description: Пепельная амбиция не активируется, пока активен этот дебафф
+            }
+            
+            AshenAmbitionEnd: {
+                Name: Пепельная амбиция
+                Description: ""
+            }
+            
+            AshenAmbitionPrep: {
+                Name: Пепельная амбиция
+                Description: ""
+            }
+            
+            AshenStrength: {
+                Name: Пепельная сила
+                Description: Регенерация здоровья значительно увеличена
+            }
+            
+            CallOfTheVoid1: {
+                Name: Зов Пустоты
+                Description: ""
+            }
+            
+            CallOfTheVoid2: {
+                Name: Зов Пустоты
+                Description: ""
+            }
+            
+            CallOfTheVoid3: {
+                Name: Зов Пустоты
+                Description: ""
+            }
+            
+            CallOfTheVoid4: {
+                Name: Зов Пустоты
+                Description: ""
+            }
+            
+            BladeArtDragonCooldown: {
+                Name: Blade Art: Dragon Cooldown
+                Description: Blade Art: Dragon will fail to activate if this debuff is present
+            }
+            
+            BladeArtDragonPrepBuff: {
+                Name: Blade Art: Dragon
+                Description: ""
+            }
+            
+            BloodBladeBuff: {
+                Name: Bloodthirsting Blade
+                Description: Gain powerful buffs based on missing HP, but life regeneration is disabled
+            }
+            
+            MoonlitCooldown: {
+                Name: Перезарядка большого лунного меча
+                Description: Большой лунный меч нельзя использовать, пока активен этот дебафф
+            }
+            
+            MoonlitGreatblade: {
+                Name: Большой лунный меч
+                Description: Иноземная лунная энергия дарует вам силы, но препятствует восстановлению маны
+            }
+            
+            PrepDarkmoon: {
+                Name: Большой лунный меч
+                Description: Иноземная лунная энергия дарует вам силы
+            }
+            
+            Chemtank1: {
+                Name: Dreadnought Chemtank Active
+                Description: ""
+            }
+            
+            Chemtank2: {
+                Name: Dreadnought Chemtank Active
+                Description: ""
+            }
+            
+            Chemtank3: {
+                Name: Dreadnought Chemtank Active
+                Description: ""
+            }
+            
+            Chemtank4: {
+                Name: Dreadnought Chemtank Active
+                Description: ""
+            }
+            
+            Chemtank5: {
+                Name: Dreadnought Chemtank Active
+                Description: ""
+            }
+            
+            Chemtank6: {
+                Name: Dreadnought Chemtank Active
+                Description: ""
+            }
+            
+            ChemtankBuff: {
+                Name: Dreadnought Chemtank
+                Description: ""
+            }
+            
+            ChemtankDashCooldown: {
+                Name: Disdain Cooldown
+                Description: Disdain will fail to activate if this debuff is present
+            }
+            
+            ChemtankDefenseBuff: {
+                Name: Disdain Defense
+                Description: Gain 20 defense
+            }
+            
+            MagitonOverheat: {
+                Name: Перегрев Магитона
+                Description: Космический уничтожитель наполнен переполненяющей силой
+            }
+            
+            Overheated: {
+                Name: Перегрев
+                Description: ""
+            }
+            
+            AmethystBuff: {
+                Name: Amethyst Fragment
+                Description: Gain 5% increased damage
+            }
+            
+            CeruleanBuff: {
+                Name: Cerulean Fragment
+                Description: Gain 5% increased damage
+            }
+            
+            CitrineBuff: {
+                Name: Citrine Fragment
+                Description: Gain 20 defense and 5% increased damage
+            }
+            
+            ImmemorialSupernova: {
+                Name: Immemorial Supernova
+                Description: ""
+            }
+            
+            MalachiteBuff: {
+                Name: Malachite Fragment
+                Description: Gain 10% increased critical strike chance and 5% increased damage
+            }
+            
+            VermillionBuff: {
+                Name: Vermillion Fragment
+                Description: Gain 50 armor penetration and 5% increased damage
+            }
+            
+            BracingSong: {
+                Name: Bracing Song
+                Description: Powerful melodies grant 12 Defense and Knockback Resistance
+            }
+            
+            ChallengerSong: {
+                Name: Challenger Song
+                Description: Powerful melodies grant 14% increased damage
+            }
+            
+            ExpertiseSong: {
+                Name: Expertise Song
+                Description: Powerful melodies grant 8% increased critical strike chance
+            }
+            
+            HunterSymphonyCooldown: {
+                Name: Hunter's Symphony Cooldown
+                Description: Directional songs will fail to activate if this debuff is present
+            }
+            
+            InfernalMelody: {
+                Name: Infernal Melody
+                Description: Powerful melodies grant 20% increased damage
+            }
+            
+            InfernalMelody1: {
+                Name: Infernal Melody (1/3)
+                Description: ""
+            }
+            
+            InfernalMelody2: {
+                Name: Infernal Melody (2/3)
+                Description: ""
+            }
+            
+            InfernalMelody3: {
+                Name: Infernal Melody (3/3)
+                Description: Right click with the Hunter's Symphony to activate Infernal Melody
+            }
+            
+            VitalitySong: {
+                Name: Vitality Song
+                Description: Vitality Song
+            }
+            
+            AmaterasuGrace: {
+                Name: Милость Аматерасу
+                Description: Мистические энергии увеличивают урон против врагов, на которых наложен дебафф «{$BuffName.Frostburn}»
+            }
+            
+            AmaterasuWinter: {
+                Name: Зима Аматерасу
+                Description: Мистические энергии усиливают снежные лисьи огни
+            }
+            
+            AmaterasuWinterCooldown: {
+                Name: Перезарядка зимы Аматерасу
+                Description: Зима Аматерасу перезаряжается
+            }
+            
+            KifrosseBuff1: {
+                Name: Кифросс (1 хвост)
+                Description: Мистическая энергия охлаждает окружающий вас воздух
+            }
+            
+            KifrosseBuff2: {
+                Name: Кифросс (2 хвоста)
+                Description: Мистическая энергия охлаждает окружающий вас воздух
+            }
+            
+            KifrosseBuff3: {
+                Name: Кифросс (3 хвоста)
+                Description: Мистическая энергия охлаждает окружающий вас воздух
+            }
+            
+            KifrosseBuff4: {
+                Name: Кифросс (4 хвоста)
+                Description: Мистическая энергия охлаждает окружающий вас воздух
+            }
+            
+            KifrosseBuff5: {
+                Name: Кифросс (5 хвостов)
+                Description: Мистическая энергия охлаждает окружающий вас воздух
+            }
+            
+            KifrosseBuff6: {
+                Name: Кифросс (6 хвостов)
+                Description: Мистическая энергия охлаждает окружающий вас воздух
+            }
+            
+            KifrosseBuff7: {
+                Name: Кифросс (7 хвостов)
+                Description: Мистическая энергия охлаждает окружающий вас воздух
+            }
+            
+            KifrosseBuff8: {
+                Name: Кифросс (8 хвостов)
+                Description: Мистическая энергия охлаждает окружающий вас воздух
+            }
+            
+            KifrosseBuff9: {
+                Name: Кифросс (9 хвостов)
+                Description: Мистическая энергия охлаждает окружающий вас воздух
+            }
+            
+            StalwartSnow: {
+                Name: Ледник
+                Description: Близость к Снежной лисице увеличивает защиту
+            }
+            
+            EdgeOfAnguish: {
+                Name: Edge of Anguish
+                Description: ""
+            }
+            
+            EdgeOfAnguishCooldown: {
+                Name: Edge of Anguish Cooldown
+                Description: When this debuff ends, you can use Edge of Anguish again
+            }
+            
+            AlucardSwordBuff1: {
+                Name: Alucard's Sword
+                Description: A powerful blade is aiding you
+            }
+            
+            AlucardSwordBuff2: {
+                Name: Alucard's Sword
+                Description: A powerful blade is aiding you
+            }
+            
+            AlucardSwordBuff3: {
+                Name: Alucard's Sword
+                Description: A powerful blade is aiding you
+            }
+            
+            ArcaneArtCooldown: {
+                Name: Arcane Art Cooldown
+                Description: Arcane Art will fail to activate if this debuff is present
+            }
+            
+            MorningStarHeld: {
+                Name: Morning Star
+                Description: ""
+            }
+            
+            MorningStarHit: {
+                Name: Morning Star
+                Description: ""
+            }
+            
+            AnnihilationState: {
+                Name: Annihilation State
+                Description: ""
+            }
+            
+            FinaleDescendsCooldown: {
+                Name: Finale Descends Cooldown
+                Description: Finale Descends will fail to activate if this debuff is present
+            }
+            
+            OzmaAttack: {
+                Name: Ascendant Array's Attacks
+                Description: ""
+            }
+            
+            OzmaBuff: {
+                Name: Ozma Ascendant
+                Description: ""
+            }
+            
+            BladeWolfPetBuff: {
+                Name: Blade Wolf
+                Description: The blade wolf attends you
+            }
+            
+            GrahaPetBuff: {
+                Name: Exarchic Mystel
+                Description: He wants to go on an adventure together
+            }
+            
+            LukaPetBuff: {
+                Name: Electronic Vocalist
+                Description: An electronic vocalist is following you
+            }
+            
+            MumeiPetBuff: {
+                Name: Guardian of Civilization
+                Description: She forgor
+            }
+            
+            NecoArcPetBuff: {
+                Name: Chaotic Cat-Figure
+                Description: ???
+            }
+            
+            SanaPetBuff: {
+                Name: Astrogirl
+                Description: Without the limiter, she'd cover the whole screen
+            }
+            
+            SuiseiPetBuff: {
+                Name: Diamond in the Rough
+                Description: Don't ask about the axe
+            }
+            
+            BulwarkOfJade: {
+                Name: Bulwark of Jade
+                Description: Gain 30 defense
+            }
+            
+            ElementalChaos: {
+                Name: Elemental Chaos
+                Description: ""
+            }
+            
+            SakuraCoolingBuff: {
+                Name: Cooling Haze
+                Description: ""
+            }
+            
+            SakuraEarthBuff: {
+                Name: Earthsplitter
+                Description: ""
+            }
+            
+            SakuraHeavenBuff: {
+                Name: Heavenly Volley
+                Description: ""
+            }
+            
+            SakuraVolcanoBuff: {
+                Name: Volcanic Wrath
+                Description: ""
+            }
+            
+            BloodstainedBelone: {
+                Name: Bloodstained Belone
+                Description: Damage has been increased by 10%
+            }
+            
+            SkofnungBuff: {
+                Name: Blade of Grudges
+                Description: Blade of Grudges
+            }
+            
+            Shielded: {
+                Name: Защищён
+                Description: Союзник дарует вам увеличенную защиту
+            }
+            
+            StrikerAttackBuff: {
+                Name: Воздушная форма: Аннигиляция
+                Description: ""
+            }
+            
+            StrikerMeleeBuff: {
+                Name: Воздушная форма: Ближний бой
+                Description: ""
+            }
+            
+            StrikerShieldBuff: {
+                Name: Воздушная форма: Защитник
+                Description: ""
+            }
+            
+            StrikerSniperBuff: {
+                Name: Воздушная форма: Рельсотронщик
+                Description: ""
+            }
+            
+            FleetingSparkBuff: {
+                Name: Fleeting Spark
+                Description: Static electricity arcs from your minions
+            }
+            
+            LucentBliss: {
+                Name: Lucent Bliss
+                Description: Faerie luck has blessed you, increasing maximum Luck and granting Luck
+            }
+            
+            BifrostCooldown: {
+                Name: "[c/EFB43E:Bifrost Cooldown]"
+                Description: ""
+            }
+            
+            BleachedWorldTurmoil: {
+                Name: "[c/EFB43E:Окружающая обстановка]"
+                Description:
+                    '''
+                    Исследуя планету, очищенную от фоновой энергии:
+                    Естественная регенерация здоровья отключена
+                    Вы замедляетесь, когда здоровье ниже 100
+                    '''
+            }
+            
+            CityTurmoil: {
+                Name: "[c/EFB43E:Окружающая обстановка]"
+                Description:
+                    '''
+                    Исследуя оживлённый город будущего:
+                    Защита увеличена на 10
+                    Защита увеличена на 10, когда здоровье выше 400
+                    Невосприимчивость к урону при падении
+                    '''
+            }
+            
+            DeadPlanetTurmoil: {
+                Name: "[c/EFB43E:Окружающая обстановка]"
+                Description:
+                    '''
+                    Исследуя затерянную в древности планету:
+                    Максимальный запас здоровье снижен на 80
+                    Естественное восстановление маны отключено
+                    Защита увеличена на 25
+                    '''
+            }
+            
+            DefaultTurmoil: {
+                Name: "[c/EFB43E:Окружающая обстановка]"
+                Description:
+                    '''
+                    Исследуя руины, плавающие в великом ничто:
+                    Нет активных бонусов
+                    '''
+            }
+            
+            MoonTurmoil: {
+                Name: "[c/EFB43E:Environmental Turmoil]"
+                Description:
+                    '''
+                    Temporarily transposed to an orbiting celestial body
+                    Defenses have been reduced by 50
+                    Outgoing damage is reduced by 20%
+                    '''
+            }
+            
+            ObservatoryTurmoil: {
+                Name: "[c/EFB43E:Окружающая обстановка]"
+                Description:
+                    '''
+                    Исследуя строение, имеющее огромное значение для Астр:
+                    Оружия Аспекта наносят двойной урон
+                    '''
+            }
+            
+            RuinedSpaceshipTurmoil: {
+                Name: "[c/EFB43E:Окружающая обстановка]"
+                Description:
+                    '''
+                    Исследуя заброшенные, неизвестные руины:
+                    Защита снижена на 50
+                    Восстановление маны значительно ускорено
+                    '''
+            }
+            
+            GuntriggerParry: {
+                Name: Guntrigger Parry
+                Description: ""
+            }
+            
+            GuntriggerParryCooldown: {
+                Name: Guntrigger Parry Cooldown
+                Description: Guntrigger Parry will fail to activate if this debuff is present
+            }
+            
+            ImpactRecoil: {
+                Name: Impact Recoil
+                Description: Guntrigger Execution has halved damage
+            }
+            
+            JetstreamBloodshed: {
+                Name: Jetstream Bloodshed
+                Description: Damage is increased by 30% until damage is taken\nIncreased to 50% at 100 HP or below
+            }
+            
+            PerfectGuntrigger: {
+                Name: Perfect Guntrigger
+                Description: ""
+            }
+            
+            CrimsonMark: {
+                Name: Crimson Mark
+                Description: ""
+            }
+            
+            Retribution: {
+                Name: Retribution
+                Description: Firing a barrage of spectral weapons
+            }
+            
+            SpectralArsenal1: {
+                Name: Spectral Arsenal
+                Description: ""
+            }
+            
+            SpectralArsenal2: {
+                Name: Spectral Arsenal
+                Description: ""
+            }
+            
+            SpectralArsenal3: {
+                Name: Spectral Arsenal
+                Description: ""
+            }
+            
+            CelestialVoidBuff: {
+                Name: Celestial Void
+                Description: You have torn a rift in spacetime!
+            }
+            
+            DeathsDance: {
+                Name: Танец Смерти
+                Description: Близость смерти дарует вам силы
+            }
+            
+            PhantomMinion: {
+                Name: Призрачный дух
+                Description: Призрачный дух атакует врагов
+            }
+            
+            YoumuCooldown: {
+                Name: Перезарядка призрачного разреза
+                Description: Призрачный разрез не активируется, пока активен этот дебафф
+            }
+        }
+    }
+}
