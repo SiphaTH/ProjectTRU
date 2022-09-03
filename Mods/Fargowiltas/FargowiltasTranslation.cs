@@ -7,13 +7,13 @@ namespace CalamityRuTranslate.Mods.Fargowiltas;
 public class FargowiltasTranslation : SetupTranslation
 {
     public override string InternalName => "Fargowiltas";
-    public override Version ExpectedVersion => new(2, 8, 3);
+    public override Version ExpectedVersion => new(2, 8, 4);
 
     public FargowiltasTranslation()
     {
-        Buffs = FargowiltasCatalog.Buffs;
-        Items = FargowiltasCatalog.Items;
-        NPCs = FargowiltasCatalog.NPCs;
+        IsBuffsEndabled = true;
+        IsItemsEnabled = true;
+        IsNPCsEnabled = true;
         Tiles = FargowiltasCatalog.Tiles;
     }
 }

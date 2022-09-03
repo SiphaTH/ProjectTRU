@@ -10,11 +10,11 @@ public class CalamityTranslation : SetupTranslation
     public override Version ExpectedVersion => new(2, 0, 1, 1);
     public CalamityTranslation()
     {
-        Buffs = CalamityCatalog.Buffs;
-        Items = CalamityCatalog.Items;
-        NPCs = CalamityCatalog.NPCs;
+        IsBuffsEndabled = true;
+        IsItemsEnabled = true;
+        IsNPCsEnabled = true;
+        IsPrefixesEnabled = true;
         Projectiles = CalamityCatalog.Projectiles;
-        Prefixes = CalamityCatalog.Prefixes;
         Tiles = CalamityCatalog.Tiles;
     }
 }

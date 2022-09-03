@@ -139,7 +139,7 @@ public class FargowiltasSpecificItemsTooltipTranslation : GlobalItem
             });
         }
         
-        ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "TooltipUnlim" && l.Text == "[i:87] [c/AAAAAA:Unlimited buff at thirty stack in inventory, Piggy Bank, or Safe]", tooltip =>
+        ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "TooltipUnlim" && l.Text == "[i:87] [c/AAAAAA:Unlimited buff at 15 stack in inventory, Piggy Bank, or Safe]", tooltip =>
         {
             tooltip.Text = LangHelper.GetTextValue("Fargowiltas.Items.TooltipTags.TooltipUnlim.ItemBuff");
         });

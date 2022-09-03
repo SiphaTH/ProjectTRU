@@ -51,15 +51,9 @@ public class CalamityRuTranslate : Mod, IPatchRepository
         if (!Main.dedServ && TranslationHelper.IsRussianLanguage)
         {
             ConstructorInfo constructor = typeof(UIManageControls).GetConstructor(Type.EmptyTypes);
-            object controlsObject = constructor?.Invoke(Array.Empty<object>());
+            object controlsObject = constructor?.Invoke(new object[]{});
             MethodInfo onInitialize = typeof(UIManageControls).GetMethod("OnInitialize", BindingFlags.Instance | BindingFlags.Public);
             onInitialize?.Invoke(controlsObject, null);
-        }
-
-        foreach (Type type in ModsCall.Calamity.Code.GetTypes())
-        {
-            if (type.IsAssignableFrom(typeof(ModItem)))
-                Logger.Info(type.Name);
         }
     }
     

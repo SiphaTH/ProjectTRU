@@ -165,9 +165,7 @@ public class FargoNpcChat : ContentTranslation
                 "The underworld has gotten a lot hotter since the last time I visited. I hear an obsidian skull is a good luck charm against burning alive, though!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.72"),
                 "Want to have a breath-holding contest? The empty vacuum of space would be perfect. No, I won't cheat by breathing water instead of air!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.73"),
                 "UWAH! Please don't hurt... wait, it's just you. Don't scare me like that! And why is that THING following you?!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.74"),
-                // case "Why not go hunting for some rare monsters every once in a while? Plenty of treasure to be looted and all that.":
-                //     npcPhrase = LangUtils.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.75");
-                //     break;
+                "Why not go hunting for some rare monsters every once in a while? Plenty of treasure to be looted and all that." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.75"),
                 // case "Why're you so sad? Has the underground hallow been disorientating? Try turning that frown upside-down, I hear that gravity potions can help!":
                 //     npcPhrase = LangUtils.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.76");
                 //     break;

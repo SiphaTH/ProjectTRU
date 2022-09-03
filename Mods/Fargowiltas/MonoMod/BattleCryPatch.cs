@@ -13,7 +13,7 @@ public class BattleCryPatch : Patch<ILContext.Manipulator>
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
-    public override MethodInfo ModifiedMethod => typeof(BattleCry).GetCachedMethod("ToggleCry");
+    public override MethodInfo ModifiedMethod => typeof(BattleCry).GetCachedMethod("GenerateText");
 
     protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {

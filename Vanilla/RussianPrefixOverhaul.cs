@@ -690,7 +690,6 @@ internal static class RussianPrefixOverhaul
 				ModContent.Find<ModItem>("CalamityMod", "Infinity").Type,
 				ModContent.Find<ModItem>("CalamityMod", "Karasawa").Type,
 				ModContent.Find<ModItem>("CalamityMod", "MagnomalyCannon").Type,
-				ModContent.Find<ModItem>("CalamityMod", "Malevolence").Type,
 				ModContent.Find<ModItem>("CalamityMod", "MineralMortar").Type,
 				ModContent.Find<ModItem>("CalamityMod", "Onyxia").Type,
 				ModContent.Find<ModItem>("CalamityMod", "PristineFury").Type,
@@ -862,6 +861,7 @@ internal static class RussianPrefixOverhaul
 				ModContent.Find<ModItem>("CalamityMod", "RedtideSpear").Type,
 				ModContent.Find<ModItem>("CalamityMod", "HeartoftheElements").Type,
 				ModContent.Find<ModItem>("CalamityMod", "DeathsAscension").Type,
+				ModContent.Find<ModItem>("CalamityMod", "Malevolence").Type,
 			};
 		}
 

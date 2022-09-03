@@ -23,5 +23,6 @@ internal static class FargowiltasSoulsReflection
         soulToggler.OffButton.Text = "Выключить все эффекты";
         soulToggler.OnButton.Text = "Включить все эффекты";
         soulToggler.MinimalButton.Text = "Предустановленные настройки минимума эффектов";
+        soulToggler.SomeEffectsButton.Text = "Предустановленные настройки некоторых эффектов";
     }
 }

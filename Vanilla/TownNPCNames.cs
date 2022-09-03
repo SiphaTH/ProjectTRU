@@ -34,7 +34,7 @@ public class TownNpcNames : GlobalNPC
         {"Katto", "Катто"},
         {"Lapp", "Лапп"},
         {"Ben Shapiro", "Бен Шапиро"},
-        {"StreakistYT", "СтрикистYT"},
+        {"Streakist", "Стрикист"},
         {"Necroplasmic", "Некроплазмик"},
         {"Devin", "Девин"},
         {"Woffle", "Воффл"},
@@ -83,6 +83,13 @@ public class TownNpcNames : GlobalNPC
         {"Yoshi", "Йоши"},
         {"Smoogle", "Смоугл"},
         {"The Meowurer of Gods", "Мяукающий бог"},
+        {"Outlaw", "Изгой"},
+        {"Jade", "Джейд"},
+        {"Nyapano", "Няпано"},
+        {"Kendra", "Кендра"},
+        {"Bear", "Бир"},
+        {"Felix", "Феликс"},
+        {"Katsafaros", "Катсафарос"},
     };
 
     public override bool IsLoadingEnabled(Mod mod)

@@ -116,9 +116,9 @@ internal static class GlobalArmorSetBonus
             case "Nekomi":
             case "Gaia":
             case "Styx":
+            case "Eridanus":
                 return LangHelper.GetTextValue($"FargowiltasSouls.Items.SetBonus.{set}", Language.GetTextValue(Main.ReversedUpDownArmorSetBonuses ? "Key.UP" : "Key.DOWN"));
             
-            case "Eridanus":
             case "Mutant":
                 return LangHelper.GetTextValue($"FargowiltasSouls.Items.SetBonus.{set}");
         }

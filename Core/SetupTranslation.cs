@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using CalamityRuTranslate.Common.DataStructures;
 using CalamityRuTranslate.Common.Exceptions;
 using CalamityRuTranslate.Common.Utilities;
@@ -16,21 +17,21 @@ public abstract class SetupTranslation : IModSetup
     private readonly ModVersionException.ExceptionType _outdatedType;
     private readonly GameCulture _russian = GameCulture.FromCultureName(GameCulture.CultureName.Russian);
 
-    protected List<string> Buffs;
-    protected List<string> Items;
-    protected List<string> NPCs;
+    protected bool IsBuffsEndabled;
+    protected bool IsItemsEnabled;
+    protected bool IsNPCsEnabled;
+    protected bool IsPrefixesEnabled;
     protected List<string> Projectiles;
-    protected List<string> Prefixes;
     protected List<string> LocalizationKeys;
     protected List<TileData> Tiles;
 
     protected SetupTranslation()
     {
-        Buffs = new();
-        Items = new();
-        NPCs = new();
+        IsBuffsEndabled = new();
+        IsItemsEnabled = new();
+        IsNPCsEnabled = new();
+        IsPrefixesEnabled = new();
         Projectiles = new ();
-        Prefixes = new();
         LocalizationKeys = new();
         Tiles = new();
 
@@ -89,74 +90,110 @@ public abstract class SetupTranslation : IModSetup
 
     private void PostSetupContentTranslation()
     {
-        foreach (string id in Buffs)
+        foreach (ModBuff buffs in ModLoader.GetMod(InternalName).GetContent<ModBuff>())
         {
-            try
+            if (IsBuffsEndabled)
             {
-                if (ModContent.TryFind(InternalName, id, out ModBuff buff))
+                try
                 {
-                    buff.DisplayName.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Buffs.{id}.Name"));
-                    buff.Description.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Buffs.{id}.Description"));
+                    if (ModContent.TryFind(InternalName, buffs.Name, out ModBuff buff))
+                    {
+                        buff.DisplayName.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Buffs.{buffs.Name}.Name"));
+                        buff.Description.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Buffs.{buffs.Name}.Description"));
+                    }
                 }
-            }
-            catch (NullReferenceException)
-            {
-                if (!TRuConfig.Instance.ModVersionException && !Buffs.Contains(id))
-                    continue;
-        
-                if (TRuConfig.Instance.ModVersionException)
-                    throw new IdTypeException(id);
-            }
-            catch (KeyNotFoundException)
-            {
-                throw new KeyTypeException(id);
+                catch (NullReferenceException)
+                {
+                    switch (TRuConfig.Instance.ModVersionException)
+                    {
+                        case false:
+                            continue;
+                        case true:
+                            throw new IdTypeException(buffs.Name);
+                    }
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(buffs.Name);
+                }
             }
         }
         
-        foreach (string id in Items)
+        string[] excludedItems = {"InstantResearch", "ForgorGift", "MasochistReal", "Astral", "Spatial", "Umbral", "DebugCompass", "DebugDisk", "DebugPosition", "DebugVNPreview", "TestDummySpawner"};
+        foreach (ModItem items in ModLoader.GetMod(InternalName).GetContent<ModItem>().Where(x => !excludedItems.Contains(x.Name)))
         {
-            try
+            if (IsItemsEnabled)
             {
-                if (ModContent.TryFind(InternalName, id, out ModItem item))
+                try
                 {
-                    item.DisplayName.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Items.{id}.Name"));
-                    item.Tooltip.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Items.{id}.Tooltip"));
+                    if (ModContent.TryFind(InternalName, items.Name, out ModItem item))
+                    {
+                        item.DisplayName.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Items.{items.Name}.Name"));
+                        item.Tooltip.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Items.{items.Name}.Tooltip"));
+                    }
                 }
-            }
-            catch (NullReferenceException)
-            {
-                if (!TRuConfig.Instance.ModVersionException && !Items.Contains(id))
-                    continue;
+                catch (NullReferenceException)
+                {
+                    if (!TRuConfig.Instance.ModVersionException)
+                        continue;
                     
-                if (TRuConfig.Instance.ModVersionException)
-                    throw new IdTypeException(id);
-            }
-            catch (KeyNotFoundException)
-            {
-                throw new KeyTypeException(id);
+                    throw new IdTypeException(items.Name);
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(items.Name);
+                }
             }
         }
 
-        foreach (string id in NPCs)
+        foreach (ModNPC npcs in ModLoader.GetMod(InternalName).GetContent<ModNPC>())
         {
-            try
+            if (IsNPCsEnabled)
             {
-                if (ModContent.TryFind(InternalName, id, out ModNPC npc))
+                try
                 {
-                    npc.DisplayName.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.NPCs.{id}.Name"));
+                    if (ModContent.TryFind(InternalName, npcs.Name, out ModNPC npc))
+                    {
+                        npc.DisplayName.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.NPCs.{npcs.Name}.Name"));
+                    }
+                }
+                catch (NullReferenceException)
+                {
+                    if (!TRuConfig.Instance.ModVersionException)
+                        continue;
+
+                    throw new IdTypeException(npcs.Name);
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(npcs.Name);
                 }
             }
-            catch (NullReferenceException)
+        }
+        
+        string[] excludedPrefixes = {"RogueAccessoryPrefix", "RogueWeaponPrefix"};
+        foreach (ModPrefix prefixes in ModLoader.GetMod(InternalName).GetContent<ModPrefix>().Where(x => !excludedPrefixes.Contains(x.Name)))
+        {
+            if (IsPrefixesEnabled)
             {
-                if (!TRuConfig.Instance.ModVersionException && !NPCs.Contains(id))
-                    continue;
-    
-                if (TRuConfig.Instance.ModVersionException)
-                    throw new IdTypeException(id);
-            }
-            catch (KeyNotFoundException)
-            {
-                throw new KeyTypeException(id);
+                try
+                {
+                    if (ModContent.TryFind(InternalName, prefixes.Name, out ModPrefix prefix))
+                    {
+                        prefix.DisplayName.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Prefixes.{prefixes.Name}.Name"));
+                    }
+                }
+                catch (NullReferenceException)
+                {
+                    if (!TRuConfig.Instance.ModVersionException)
+                        continue;
+                    
+                    throw new IdTypeException(prefixes.Name);
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new KeyTypeException(prefixes.Name);
+                }
             }
         }
         
@@ -171,7 +208,7 @@ public abstract class SetupTranslation : IModSetup
             }
             catch (NullReferenceException)
             {
-                if (!TRuConfig.Instance.ModVersionException && !NPCs.Contains(id))
+                if (!TRuConfig.Instance.ModVersionException && !Projectiles.Contains(id))
                     continue;
     
                 if (TRuConfig.Instance.ModVersionException)
@@ -213,29 +250,6 @@ public abstract class SetupTranslation : IModSetup
             }
         }
 
-        foreach (string id in Prefixes)
-        {
-            try
-            {
-                if (ModContent.TryFind(InternalName, id, out ModPrefix prefix))
-                {
-                    prefix.DisplayName.AddTranslation(_russian, LangHelper.GetText($"{InternalName}.Prefixes.{id}.Name"));
-                }
-            }
-            catch (NullReferenceException)
-            {
-                if (!TRuConfig.Instance.ModVersionException && !Prefixes.Contains(id))
-                    continue;
-                    
-                if (TRuConfig.Instance.ModVersionException)
-                    throw new IdTypeException(id);
-            }
-            catch (KeyNotFoundException)
-            {
-                throw new KeyTypeException(id);
-            }
-        }
-        
         foreach (string id in LocalizationKeys)
         {
             ModTranslation modTranslation = LocalizationLoader.CreateTranslation(ModLoader.GetMod(InternalName), id);
