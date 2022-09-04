@@ -5676,8 +5676,8 @@
 #                }
 #                
 #                UnlockConditions: {
-#                    1: Defeat King Slime.
-#                    2: Defeat Eye of Cthulhu.
+#                    1: Одолейте Короля слизней.
+#                    2: Одолейте Глаз Ктулху.
 #                    3: Defeat the world's Corruption/Crimson boss.
 #                    4: Defeat Queen Bee.
 #                    5: Defeat Skeletron.
@@ -5721,76 +5721,113 @@
 #            
 #            AbilitySubName: {
 #                1: Ни одна Сверхновая не была выбрана.
-#                2: "[c/C2BDFF:Limitless Starry Void]"
-#                3: "[c/F19559:Shine True, O Burning Bright Star]"
-#                4: "[c/36BDEC:Unbridled Essence of the Dragon's Fist]"
-#                5: "[c/ECB3FC:The Forever-Sealed Utopia]"
-#                6: "[c/00FF93:The Moment a Planet is Born]"
+#                2: "[c/C2BDFF:Безграничная звёздная Пустота]"
+#                3: "[c/F19559:Воссияй же, о яркая пылающая звезда]"
+#                4: "[c/36BDEC:Необузданная сущность кулака дракона]"
+#                5: "[c/ECB3FC:Навеки запечатанная утопия]"
+#                6: "[c/00FF93:Момент рождения планеты]"
 #            }
 #            
 #            AbilityName: {
-#                1: Theofania Inanis
-#                2: Ars Laevateinn
-#                3: Kiwami Ryuken
-#                4: Garden of Avalon
-#                5: Edin Genesis Quasar
+#                1: Теофаниа Инанис
+#                2: Арс Леватейн
+#                3: Кивами Рюкен
+#                4: Сад Авалона
+#                5: Эдин Квазарнез
 #            }
 #            
 #            AbilityDescription: {
 #                1:
 #                    '''
-#                    Conjure a colossal blade to cleave foes in twain. After casting, you will be able to re-cast\nTheofania Inanis for 10 seconds at no additional cost. Striking foes with Theofania Inanis\nwill inflict Void Atrophy, dealing powerful damage over time. The second cast of\nTheofania Inanis will double the potency of Void Atrophy, if applicable.\nThis debuff lasts for 30 seconds. If the attack crits, refund a portion of consumed \nStellar Nova Energy. Each cast does 50% of Stellar Nova damage.
+#                    Сотворяет колоссальный клинок, рассекающий врагов надвое. После запуска
+#                    вы можете повторно использовать Теофаниа Инанис в течение 10 секунд без
+#                    дополнительных затрат. Удары Теофании Инанис накладывают дебафф
+#                    «Пустотная атрофия» нанося огромный постепенный урон. Второй запуск
+#                    Теофании Инанис удвоит мощность «Пустотной атрофии» если возможно. Этот
+#                    дебафф длится 30 секунд. Если удар критический - возвращает часть
+#                    затраченной энергии Сверхновой. Каждый запуск наносит 50% урона Сверхновой.
 #                    '''
 #                2:
 #                    '''
-#                    Wield a blazing greatsword to return foes to ashes. Casting Ars Laevataeinn will mark\na colossal region around you with infernal flames. Ars Laevateinn will pulse damage\nfive times in the specified region, dealing 1/5th of the total damage with each hit.\nDuring this time, you will be granted 'Surtr's Twilight.' While this buff is active,\nall attacks will Burn foes for 8 seconds. If Burned foes are struck by Ars Laevateinn,\nthey will take a small portion of Stellar Nova damage as extra damage.
+#                    Вооружитесь пылающим большим мечом, превращая врагов в прах. При
+#                    использовании Арс Леватейна покрывает колоссальную область вокруг вас
+#                    адским пламенем. Арс Леватейн пульсирует 5 раз в этой области, нанося
+#                    1/5 от общего урона с каждым ударом. В это время вы получаете бафф
+#                    «Сумерки Сурта». Пока этот бафф активен, все атаки будут поджигать
+#                    врагов на 8 секунд. Если горящие враги попадают под удар Арс Леватейна,
+#                    они дополнительно получают небольшую часть урона Сверхновой.
 #                    '''
 #                3:
 #                    '''
-#                    Upon activation of Kiwami Ryuken, you will have a one-second window to take\ndamage from a foe, becoming invincible in the process. If hit, a counterattack will\ntrigger, dealing incredible damage in close proximity, aimed at your cursor.\nYou will be unable to execute the counterattack if the foe is further than melee\nrange, but damage will still be negated. You will be refunded 50% of the Stellar Nova\nenergy cost if you are not hit during Kiwami Ryuken.
+#                    При активации Кивами Рюкена вы получите секундное окно для получения
+#                    урона от врага, становясь при этом неуязвимым. При получении урона
+#                    срабатывает контратака, наносящая вблизи невероятный урон в направление
+#                    курсора. Вы не сможете выполнить контратаку, если враг слишком далеко,
+#                    но урон всё равно будет аннулирован. Вам возвращается 50% энергии
+#                    Сверхновой, если во время Кивами Рюкена вас не ударили.
 #                    '''
 #                4:
 #                    '''
-#                    Call forth the Garden of Avalon, infusing the world with radiant energy.\nGrant powerful Health and Mana regeneration periodically for 8 seconds,\nscaling with Stellar Nova Damage. Gain Invincibility for 2 seconds.\nIf the cast would be critical, gain Health, modified by Stellar Nova crit modifiers.\nAdditionally, upon a critical cast, gain the buff 'Solemn Aegis' for 15 seconds,\nwhich negates one hit of damage independently of Invincibility.
+#                    Взывает к Саду Авалона, наполняя мир сияющей энергией. Периодически
+#                    дарует мощную регенерацию здоровья и маны в течение 8 секунд, зависящую
+#                    от урона Сверхновой. Даёт неуязвимость на 2 секунды. При критическом
+#                    срабатывании восстанавливает здоровье, модифицированное критическими
+#                    показателями Сверхновой. Также при критическом срабатывании даёт бафф
+#                    «Священная Эгида» на 15 секунд, который аннулирует урон от одного удара
+#                    независимо от неуязвимости.
 #                    '''
 #                5:
 #                    '''
-#                    Upon cast, become immobile and invincible temporarily. Gain 'Astarte Driver' for 25\nseconds. Astarte Driver grants infinite flight and three Cosmic Charges. ALL attacks\nwhile Astarte Driver is active will inherit the stats of the Stellar Nova.\nPressing the Starfarer Action Key with a Cosmic Charge available will launch a \nbarrage of spatial projectiles (2 second use cooldown.) After activating Astarte\nDriver's stat-changing effect, the target will be immune for a very short period.
+#                    После применения вы временно становитесь неподвижным и неуязвимым. Даёт
+#                    бафф «Форсаж Астарты» на 25 секунд. Он даёт бесконечный полёт и три
+#                    Космических заряда. Все атаки пока активен «Форсаж Астарты» наследуют
+#                    характеристики Сверхновой. Нажатие клавиши действия Астры при наличии
+#                    Космического заряда пускает шквал пространственных снарядов (2 секунды
+#                    перезарядки). При активации изменяющего характеристики эффекта «Форсажа
+#                    Астарты» цель получает неуязвимость на очень короткий период времени.
 #                    '''
 #            }
 #            
 #            StarfarerBonus: {
 #                1:
 #                    '''
-#                    You may re-cast Theofania Inanis again to a total of 3 times, dealing 25% damage.\nThis cast does not inflict Void Atrophy, nor does it strengthen it.
+#                    Вы можете использовать Теофаниа Инанис в 3 раз, нанося 25% урона.
+#                    Этот запуск не накладывает «Пустотную атрофию» и не усиливает её.
 #                    '''
 #                2:
 #                    '''
-#                    The second hit of Theofania Inanis does not strengthen Void Atrophy, but increases self\ndamage output by 400% for 5 seconds.
+#                    Второе попадание Теофании Инанис не усиливает «Пустотную атрофию», но
+#                    увеличивает свой исходящий урон на 400% на 5 секунд.
 #                    '''
 #                3:
 #                    '''
-#                    Burning foes take extra damage. If the attack was a critical hit,\nburning foes take even more damage.
+#                    Горящие враги получают дополнительный урон. Если удар был критическим,
+#                    горящие враги получат ещё больше урона.
 #                    '''
 #                4:
 #                    '''
-#                    Surtr's Twilight will additionally grant a 10% attack buff.\nGain Mana Regeneration while Surtr's Twilight is active.\n
+#                    «{$Mods.CalamityRuTranslate.StarsAbove.Buffs.SurtrTwilight.Name}» дополнительно увеличивает урон на 10%.
+#                    Вы получаете бафф «{$BuffName.ManaRegeneration}» пока активен «{$Mods.CalamityRuTranslate.StarsAbove.Buffs.SurtrTwilight.Name}».
 #                    '''
 #                5:
 #                    '''
-#                    The counterattack will always deal critical damage below half health.\nRestore 5 Stellar Nova Energy upon triggering the counterattack.
+#                    Контратака всегда наносит критический удар, когда здоровье ниже половины.
+#                    Восстанавливает 5 единиц энергии Сверхновой при срабатывании контратаки.
 #                    '''
 #                6:
 #                    '''
-#                    Heal 40 health and mana upon triggering the counterattack.\n10 extra Stellar Nova energy will be refunded on failure.\n
+#                    Восстанавливает 40 здоровья и маны при срабатывании контратаки.
+#                    В случае неудачи возвращает 10 дополнительных единиц энергии Сверхновой.
 #                    '''
 #                7:
 #                    '''
-#                    Invincibility lasts for 4 seconds instead of 2.\nInstantly heal 100 HP upon casting Garden of Avalon.
+#                    Неуязвимость длится 4 секунды, вместо 2.
+#                    Мгновенно восстанавливает 100 здоровья после использования Сада Авалона.
 #                    '''
 #                8:
 #                    '''
-#                    Gain an extra buff on cast: Dreamlike Charisma. (Can not stack.)\nDreamlike Charisma increases damage by 16%, doubled above 100 Mana.\n
+#                    Даёт дополнительный бафф: «{$Mods.CalamityRuTranslate.StarsAbove.Buffs.DreamlikeCharisma.Name}» (не суммируется).
+#                    Он увеличивает урон на 16%. И на 32% если маны больше 100.
 #                    '''
 #                9:
 #                    '''

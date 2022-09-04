@@ -17,9 +17,9 @@
 //
 //     protected override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
-//         TranslationHelper.ModifyIL(il, "You have been judged...", "");
-//         TranslationHelper.ModifyIL(il, "You've been colored with ink!", "");
-//         TranslationHelper.ModifyIL(il, "Time and space begin to crumble, their laws forsaken!", "");
+//         TranslationHelper.ModifyIL(il, "You have been judged...", "Вы были осуждены...");
+//         TranslationHelper.ModifyIL(il, "You've been colored with ink!", "Вас раскрасили чернилами!");
+//         TranslationHelper.ModifyIL(il, "Time and space begin to crumble, their laws forsaken!", "Время и пространство начинают распадаться, их законы забыты!");
 //         TranslationHelper.ModifyIL(il, "Threads of Fate", "Нити судьбы");
 //         TranslationHelper.ModifyIL(il, "Threads of Fate", "Нити судьбы", 2);
 //         TranslationHelper.ModifyIL(il, "Threads of Fate", "Нити судьбы", 3);

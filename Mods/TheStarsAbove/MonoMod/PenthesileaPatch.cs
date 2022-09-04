@@ -17,7 +17,7 @@
 //
 //     protected override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
-//         TranslationHelper.ModifyIL(il, "You fall to the Witch of Ink...", "");
+//         TranslationHelper.ModifyIL(il, "You fall to the Witch of Ink...", "Вы пали перед Ведьмой чернил...");
 //         TranslationHelper.ModifyIL(il, "You've been colored with ink!", "Вас раскрасили чернилами!");
 //         TranslationHelper.ModifyIL(il, "The Garden of Avalon stifles your healing!", "Сад Авалона подавляет ваше исцеление!");
 //         TranslationHelper.ModifyIL(il, "Penth is protected by a shield of frost!", "Пентесилея защищена щитом мороза!");

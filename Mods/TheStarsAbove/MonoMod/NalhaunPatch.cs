@@ -17,9 +17,9 @@
 //
 //     protected override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
-//         TranslationHelper.ModifyIL(il, "You fall to the Burnished King...", "");
-//         TranslationHelper.ModifyIL(il, "Ars Laevateinn prepares to strike!", "");
-//         TranslationHelper.ModifyIL(il, "Nalhaun is protected by a shield of frost!", "");
+//         TranslationHelper.ModifyIL(il, "You fall to the Burnished King...", "Вы пали перед Воронёным королём...");
+//         TranslationHelper.ModifyIL(il, "Ars Laevateinn prepares to strike!", "Арс Леватейн готовится к удару!");
+//         TranslationHelper.ModifyIL(il, "Nalhaun is protected by a shield of frost!", "Налхан защищён щитом мороза!");
 //         TranslationHelper.ModifyIL(il, "Transplacement", "Перенос");
 //         TranslationHelper.ModifyIL(il, "Transplacement", "Перенос", 2);
 //         TranslationHelper.ModifyIL(il, "Transplacement", "Перенос", 3);

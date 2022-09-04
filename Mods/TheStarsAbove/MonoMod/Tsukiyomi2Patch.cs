@@ -105,12 +105,12 @@
 //         TranslationHelper.ModifyIL(il, "Gravitational Anomaly", "Гравитационная аномалия", 2);
 //         TranslationHelper.ModifyIL(il, "Gravitational Anomaly", "Гравитационная аномалия", 3);
 //         TranslationHelper.ModifyIL(il, "Ars Laevateinn", "Арс Леватейн");
-//         TranslationHelper.ModifyIL(il, "Blade of the End", "");
-//         TranslationHelper.ModifyIL(il, "Blade of the End", "", 2);
-//         TranslationHelper.ModifyIL(il, "Blade of the End", "", 3);
-//         TranslationHelper.ModifyIL(il, "Blade of the End", "", 4);
-//         TranslationHelper.ModifyIL(il, "Blade of the End", "", 5);
-//         TranslationHelper.ModifyIL(il, "Blade of the End", "", 6);
+//         TranslationHelper.ModifyIL(il, "Blade of the End", "Клинок конца");
+//         TranslationHelper.ModifyIL(il, "Blade of the End", "Клинок конца", 2);
+//         TranslationHelper.ModifyIL(il, "Blade of the End", "Клинок конца", 3);
+//         TranslationHelper.ModifyIL(il, "Blade of the End", "Клинок конца", 4);
+//         TranslationHelper.ModifyIL(il, "Blade of the End", "Клинок конца", 5);
+//         TranslationHelper.ModifyIL(il, "Blade of the End", "Клинок конца", 6);
 //         TranslationHelper.ModifyIL(il, "Painted Attendants", "Нарисованные слуги");
 //         TranslationHelper.ModifyIL(il, "Painted Attendants", "Нарисованные слуги", 2);
 //         TranslationHelper.ModifyIL(il, "Painted Attendants", "Нарисованные слуги", 3);

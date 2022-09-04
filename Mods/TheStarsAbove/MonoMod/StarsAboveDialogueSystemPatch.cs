@@ -17,12 +17,12 @@
 //
 //     protected override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
-//         TranslationHelper.ModifyIL(il, "Greetings! I am Asphodene- a Starfarer, and in turn, that makes you my Starbearer.", "");
-//         TranslationHelper.ModifyIL(il, "I will lend you my strength so that we may defeat the threats to this world together.", "");
-//         TranslationHelper.ModifyIL(il, "You can use the Spatial Disk I've given you to access the Stellar Array, which provides you with powerful abilities after defeating bosses. Nice, right?", "");
-//         TranslationHelper.ModifyIL(il, "I've added the 'Bifrost' to your inventory. There's a lot to go over, but in short, it'll let you traverse the galaxy when used. We can talk more about it later.", "");
-//         TranslationHelper.ModifyIL(il, "Also, I'll supply you with Essences when I can. Think of them as memories of other worlds. You can combine them with materials to create powerful Aspected Weapons.", "");
-//         TranslationHelper.ModifyIL(il, "Right. My power is yours. Let's show this world what we can do.", "");
+//         TranslationHelper.ModifyIL(il, "Greetings! I am Asphodene- a Starfarer, and in turn, that makes you my Starbearer.", "Приветствую! Я Асфодена - Астра, а значит ты - мой Звездоносец.");
+//         TranslationHelper.ModifyIL(il, "I will lend you my strength so that we may defeat the threats to this world together.", "Я одолжу тебе свою силу и вместе мы одолеем угрозы этому миру.");
+//         TranslationHelper.ModifyIL(il, "You can use the Spatial Disk I've given you to access the Stellar Array, which provides you with powerful abilities after defeating bosses. Nice, right?", "Ты можешь использовать Пространственный диск, который я дала тебе для доступа к Созвездиям, дающим мощные способности после победы над боссами. Неплохо, верно?");
+//         TranslationHelper.ModifyIL(il, "I've added the 'Bifrost' to your inventory. There's a lot to go over, but in short, it'll let you traverse the galaxy when used. We can talk more about it later.", "Я добавила в твой инвентарь Биврёст. Чтобы не томить тебя разговорами, то кратко - при использовании он позволяет путешествовать по галактике. О нём мы поговорим позже.");
+//         TranslationHelper.ModifyIL(il, "Also, I'll supply you with Essences when I can. Think of them as memories of other worlds. You can combine them with materials to create powerful Aspected Weapons.", "Также, когда смогу, я буду снабжать тебя Эссенциями. Думай о них, как о воспоминаниях иных миров. Ты можешь соединить их с материалами и создать мощные оружия Астр.");
+//         TranslationHelper.ModifyIL(il, "Right. My power is yours. Let's show this world what we can do.", "Верно. Моя сила - твоя. Давай покажем этому миру, на что мы способны.");
 //         TranslationHelper.ModifyIL(il, "It's nice to meet you. My name is Eridani.. a Starfarer. You, in turn, are my Starbearer.", "");
 //         TranslationHelper.ModifyIL(il, "Through this contract, we must work together to bring justice to those willing to harm this world.", "");
 //         TranslationHelper.ModifyIL(il, "You can use the Spatial Disk I've given you to access the Stellar Array. It will become stronger after defeating bosses, and will grant you strength in return.", "");

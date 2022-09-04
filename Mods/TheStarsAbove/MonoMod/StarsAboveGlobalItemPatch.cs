@@ -17,7 +17,7 @@
 //  
 //     protected override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
-//         TranslationHelper.ModifyIL(il, "The weapon fails to react to your Aspect, rendering it unusable.", "");
-//         TranslationHelper.ModifyIL(il, "The weapon fails to react to your Aspect, rendering it unusable.", "");
+//         TranslationHelper.ModifyIL(il, "The weapon fails to react to your Aspect, rendering it unusable.", "Оружие не реагирует на ваш Аспект, делая его недоступным для использования.");
+//         TranslationHelper.ModifyIL(il, "The weapon fails to react to your Aspect, rendering it unusable.", "Оружие не реагирует на ваш Аспект, делая его недоступным для использования.");
 //     };
 // }
