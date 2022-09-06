@@ -897,7 +897,7 @@
 #            }
 #            
 #            WebOfNeedles: {
-#                Name: Паутина гвоздей
+#                Name: Сеть крючков
 #                Description: Урон призывателя увеличен на 30%
 #            }
 #            
@@ -1103,7 +1103,7 @@
 #            
 #            VitalitySong: {
 #                Name: Песнь бодрости
-#                Description: Powerful melodies grant 15% increased movement speed
+#                Description: Мощные мотивы увеличивают скорость передвижения на 15%
 #            }
 #            
 #            AmaterasuGrace: {
@@ -1303,7 +1303,7 @@
 #            
 #            SkofnungBuff: {
 #                Name: Клинок проклятий
-#                Description: The Blade of Grudges serves you
+#                Description: Вам служит клинок проклятий
 #            }
 #            
 #            Shielded: {
@@ -1557,17 +1557,17 @@
 #            }
 #            
 #            ArachnidNeedlepoint: {
-#                Name: Arachnid Needlepoint
+#                Name: Крючковорот арахнидов
 #                Tooltip:
 #                    '''
-#                    Attacks with this weapon whip in a wide arc while ignoring terrain, targetting foes struck
-#                    Right click to deploy a [c/83CAEB:Mechanical Arachnid], which will hover and latch onto targets
-#                    Only one [c/83CAEB:Mechanical Arachnid] can latch onto a target at a time
-#                    [c/83CAEB:Mechanical Arachnids] will tether to each other when latched on, inflicting damage on foes between them rapidly
-#                    Double tap DOWN to deploy a stationary [c/83CAEB:Mechanical Arachnid] after at least one non-stationary [c/83CAEB:Mechanical Arachnid] has been summoned
-#                    Stationary [c/83CAEB:Mechanical Arachnids] deal no damage but non-stationary [c/83CAEB:Mechanical Arachnids] can tether to them to deal damage
-#                    Striking foes that [c/83CAEB:Mechanical Arachnids] have latched on to with the whip deals critical damage and grants [c/3A8BF3:Web of Needles] for 4 seconds
-#                    [c/3A8BF3:Web of Needles] increases all minion damage by 30%
+#                    Атаки этим оружием совершаются по размашистой дуге, игнорируя поверхности и сосредотачивают миньонов на врага
+#                    Нажмите <right>, чтобы выпустить парящего [c/83CAEB:Механического арахнида], атакующего врагов
+#                    Одновременно может существовать только один движущийся [c/83CAEB:Механический арахнид]
+#                    [c/83CAEB:Механические арахниды] связываются друг с другом, быстро нанося урон врагам между ними
+#                    Дважды нажмите ВНИЗ, чтобы выпустить стационарного [c/83CAEB:Механического арахнида] после призыва хотя бы одного движущегося [c/83CAEB:Механического арахнида]
+#                    Стационарные [c/83CAEB:Механические арахниды] не наносят урон, но движущиеся [c/83CAEB:Механические арахниды] могут связываться с ними для нанесения урона
+#                    Удары по врагам, на которых сосредоточены [c/83CAEB:Механические арахниды], хлыстом наносят критический урон и накладывают [c/3A8BF3:Сеть крючков] на 4 секунды
+#                    [c/3A8BF3:Сеть крючков] увеличивает весь урон призывателя на 30%
 #                    '''
 #            }
 #            
@@ -1606,7 +1606,7 @@
 #            }
 #            
 #            BloodBlade: {
-#                Name: The Blood Blade
+#                Name: Кровавый клинок
 #                Tooltip:
 #                    '''
 #                    Attacks with this weapon will rapidly sweep in an arc
@@ -1668,7 +1668,7 @@
 #                    '''
 #                    Держа в руках это оружие, превращает вас в [c/E03166:Фею-нефелима]
 #                    Атаки будут пронзать врагов и наносить урон миньонов
-#                    Бесконечное время полёта пока вы [c/E03166:Фея-нефелим]
+#                    Бесконечное время полёта, пока вы [c/E03166:Фея-нефелим]
 #                    Кроме того, вас будут окружать три [c/D36F6F:Осколка нефелима] и [c/D36F9C:Айрис]
 #                    [c/D36F6F:Осколки нефелима] будут самостоятельно находить и атаковать ближайших врагов
 #                    [c/D36F9C:Айрис] накладывает дебафф [c/D7367F:Взгляд Айрис] на одного ближайшего врага, игнорируя прицеливание игрока
@@ -1818,7 +1818,7 @@
 #            }
 #            
 #            DreadnoughtChemtank: {
-#                Name: Dreadnought Chemtank
+#                Name: Химдоспех Дредноута
 #                Tooltip:
 #                    '''
 #                    Attacks with this weapon quickly fire close-ranged shotgun blasts
@@ -1832,7 +1832,7 @@
 #            }
 #            
 #            EternalStar: {
-#                Name: Eternal Star
+#                Name: Вечная звезда
 #                Tooltip:
 #                    '''
 #                    Holding this weapon causes the [c/C2A4AA:Eternal Gauge] to appear
@@ -1979,7 +1979,7 @@
 #            }
 #            
 #            HunterSymphony: {
-#                Name: Hunter's Symphony
+#                Name: Симфония охотника
 #                Tooltip:
 #                    '''
 #                    Attacks with this weapon will sweep in an arc
@@ -2052,7 +2052,7 @@
 #                Name: Серафим Казимежа
 #                Tooltip:
 #                    '''
-#                    Attacks with this weapons wing in a wide arc
+#                    Атаки этим оружием совершаются по размашистой дуге
 #                    Держа в руках это оружие, призывает парящий вокруг вас [c/FF8B00:Brilliant Spark], наносящий урон при контакте
 #                    Удары по врагам этим оружием даруют стаки [c/F1AF42:Лучезарности] (до 10)
 #                    Критические удары даруют два стака [c/F1AF42:Лучезарности]
@@ -2192,7 +2192,7 @@
 #            }
 #            
 #            Mercy: {
-#                Name: Mercy
+#                Name: Милость
 #                Tooltip:
 #                    '''
 #                    Attacks with this weapon will rapidly sweep in a short-ranged arc
@@ -2205,7 +2205,7 @@
 #                    Critical strikes with this weapon's basic attacks instantly cleanse the cooldown of [c/DC3961:Edge of Anguish]
 #                    Allies striking foes under the influence of [c/FF3200:Infernal Hemorrhage] with projectiles grants Rage for 8 seconds
 #                    Additionally, these attacks deal 2% of the foe's missing HP as bonus true damage (Up to 250)
-#                    'From the Depths of Noxian Streets'
+#                    'Из тёмных переулков улиц Ноксуса'
 #                    '''
 #            }
 #            
@@ -2273,7 +2273,7 @@
 #            }
 #            
 #            Ozma: {
-#                Name: Ozma Ascendant
+#                Name: Возвышенная Озма
 #                Tooltip:
 #                    '''
 #                    Holding this weapon conjures the [c/6A6A6A:Ascendant Array] to follow you
@@ -2293,7 +2293,7 @@
 #                    Within [c/AD0000:Annihilation State], right click to unleash [c/B98080:Finale Descends] (2 minute cooldown)
 #                    Foes caught between [c/B98080:Finale Descends] will take powerful damage over time until the attack resolves
 #                    Additionally, [c/B98080:Finale Descends] inflicts Stun for 1 second per hit
-#                    'I am.. a monster..'
+#                    'Я.. чудовище..'
 #                    '''
 #            }
 #            
@@ -2390,7 +2390,7 @@
 #            }
 #            
 #            RupturedHeaven: {
-#                Name: Ruptured Heaven
+#                Name: Разорванные небеса
 #                Tooltip:
 #                    '''
 #                    WORK IN PROGRESS WEAPONAttacks with this weapon swing in an arc, granting Rage on hit for 2 seconds
@@ -2400,15 +2400,15 @@
 #                    [c/8EE7E4:Lion's Lecture] increases Melee Damage by 18% and attack speed by 10%
 #                    [c/B4E93A:Eagle's Lecture] increases Magic Damage by 18% and grants Mana Regeneration
 #                    [c/F3E63E:Deer's Lecture] increases Ranged Damage by 18% and critical strike chance by 8%
-#                    'Let the lesson begin!'
+#                    'Начнём урок!'
 #                    '''
 #            }
 #            
 #            SakuraVengeance: {
-#                Name: Sakura's Vengeance
+#                Name: Месть сакуры
 #                Tooltip:
 #                    '''
-#                    Attacks with this weapon swing in a wide arc
+#                    Атаки этим оружием совершаются по размашистой дуге
 #                    Every 30 seconds, the weapon cycles through 4 [c/FF71D8:Elemental Arts]
 #                    [c/55B168:Earthsplitter] increases defense by 10 and grants 25% damage resistance
 #                    Attacks stun enemies for 1 second (Critical strikes stun enemies for 4 seconds and grant Invincibility briefly)
@@ -2423,7 +2423,7 @@
 #                    Right click to consume the [c/CE8EBD:Vengeance Gauge] and gain the buff [c/DF2AAE:Elemental Chaos] for 14 seconds
 #                    [c/DF2AAE:Elemental Chaos] grants all [c/FF71D8:Elemental Arts] buffs and the weapon will inflict all [c/FF71D8:Elemental Arts] debuffs on foes
 #                    [c/DF2AAE:Elemental Chaos] does not grant the unique abilities of each [c/FF71D8:Elemental Art]
-#                    'Remember those who have passed, and they will forever live on'
+#                    'Помни всех, кто покинул нас, и они будут жить вечно'
 #                    '''
 #            }
 #            
@@ -2481,7 +2481,7 @@
 #            }
 #            
 #            SparkblossomBeacon: {
-#                Name: Sparkblossom's Beacon
+#                Name: Маяк цветущей искры
 #                Tooltip:
 #                    '''
 #                    Summons [c/49EAFA:Fleeting Sparks] to assail foes with homing electricity
@@ -2546,7 +2546,7 @@
 #            }
 #            
 #            TheOnlyThingIKnowForReal: {
-#                Name: The Only Thing I Know For Real
+#                Name: И точно я знаю одно
 #                Tooltip:
 #                    '''
 #                    [c/F7D76A:Hold left click to charge the weapon; the longer the weapon is charged, the stronger the resulting attack will become]
@@ -2563,7 +2563,7 @@
 #                    [c/EC2B65:Jetstream Bloodshed] grants 30% increased damage and lasts until damage is taken or the weapon is not held
 #                    At 100 HP or below, [c/FF7B7B:Guntrigger Parry] cooldown is doubled, but successful parries remove the cooldown
 #                    Additionally, [c/EC2B65:Jetstream Bloodshed]'s damage buff is increased to 50%
-#                    'Let's dance'
+#                    'Потанцуем'
 #                    '''
 #            }
 #            
@@ -2635,7 +2635,7 @@
 #            }
 #            
 #            VermillionDaemon: {
-#                Name: Vermilion Daemon
+#                Name: Алый демон
 #                Tooltip:
 #                    '''
 #                    Holding this weapon prevents natural Mana Regeneration
@@ -2650,15 +2650,15 @@
 #                    Each stack of [c/F48080:Spectral Arsenal] will cause a follow up blade to attack nearby foes for a short duration when executing normal attacks
 #                    With 3 stacks of [c/F48080:Spectral Arsenal], right click will instead activate [c/C80000:Retribution], costing no Mana
 #                    [c/C80000:Retribution] consumes all [c/F48080:Spectral Arsenal] stacks to summon a barrage of spectral blades towards your cursor for 3 seconds
-#                    'I'm afraid you're out of luck'
+#                    'Боюсь, что вам не повезло'
 #                    '''
 #            }
 #            
 #            VirtuesEdge: {
-#                Name: Virtue's Edge
+#                Name: Грань добродетели
 #                Tooltip:
 #                    '''
-#                    Attacks with this weapon swing in a wide arc
+#                    Атаки этим оружием совершаются по размашистой дуге
 #                    Holding this weapon will cause the [c/4C3BB6:Virtue Gauge] to appear
 #                    Attacks with this weapon will fill the [c/4C3BB6:Virtue Gauge] with [c/49C7EC:Astral Flux]
 #                    Critical strikes will fill the [c/4C3BB6:Virtue Gauge] faster
@@ -2667,7 +2667,7 @@
 #                    Attacks with this weapon during this time will fill the [c/4C3BB6:Virtue Gauge] with [c/6C38E3:Umbral Flux]
 #                    If the [c/4C3BB6:Virtue Gauge] is full once the [c/495DEC:Celestial Void] ends, it will collapse in a massive explosion, dealing 5x base damage
 #                    There is a 45 cooldown between the re-activation of [c/495DEC:Celestial Void]
-#                    'Pierce through all matter!'
+#                    'Режет всю материю, словно масло!'
 #                    '''
 #            }
 #            
@@ -2790,7 +2790,7 @@
 #                Name: Сделка Дьявола
 #                Tooltip:
 #                    '''
-#                    Defense is reduced by 30
+#                    Снижает защиту на 30
 #                    Upon killing an enemy, gain the buff 'Sated Anguish' for 15 seconds
 #                    During this time, gain 20% increased damage, powerful life regeneration, and defense is restored
 #                    'Смесь механитов из передовых миров, или как там его'
@@ -2807,7 +2807,7 @@
 #            }
 #            
 #            ToMurder: {
-#                Name: "'Убивать'"
+#                Name: "Убивать"
 #                Tooltip:
 #                    '''
 #                    Активируется только когда защита ниже 40
@@ -2833,93 +2833,93 @@
 #            }
 #            
 #            UrgotLegs: {
-#                Name: Dreadnought Chemtank Legs
-#                Tooltip: You shouldn't be able to read this!
+#                Name: Ноги химдоспеха Дредноута
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            AfterburnerBottom: {
 #                Name: Броня небесного воина
-#                Tooltip: Ты не должен это читать!
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            AfterburnerTop: {
 #                Name: Броня небесного воина
-#                Tooltip: Ты не должен это читать!
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            AfterburnerWings: {
 #                Name: Крылья дожигателя
-#                Tooltip: Ты не должен это читать!
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            MeleeBottom: {
 #                Name: Броня небесного воина
-#                Tooltip: Ты не должен это читать!
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            MeleeTop: {
 #                Name: Броня небесного воина
-#                Tooltip: Ты не должен это читать!
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            MeleeWings: {
 #                Name: Крылья ближнего боя
-#                Tooltip: Ты не должен это читать!
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            ShieldBottom: {
 #                Name: Броня небесного воина
-#                Tooltip: Ты не должен это читать!
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            ShieldTop: {
 #                Name: Броня небесного воина
-#                Tooltip: Ты не должен это читать!
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            ShieldWings: {
 #                Name: Защитные крылья
-#                Tooltip: Ты не должен это читать!
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            SniperBottom: {
 #                Name: Броня небесного воина
-#                Tooltip: Ты не должен это читать!
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            SniperTop: {
 #                Name: Броня небесного воина
-#                Tooltip: Ты не должен это читать!
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            SniperWings: {
 #                Name: Крылья снайпера
-#                Tooltip: Ты не должен это читать!
+#                Tooltip: Вы не должны это читать!
 #            }
 #            
 #            AegisOfHopesLegacy: {
-#                Name: Aegis of Hope's Legacy
+#                Name: Эгида наследия надежды
 #                Tooltip:
 #                    '''
-#                    One of the storied garbs from legends past
-#                    Equip to your Starfarer to gain the following:
-#                    [c/FFCA5A:Shining Journey]
-#                    Attacking and taking damage will grant stacks of Hope's Brilliance (Max 100 stacks)
-#                    Every 10 stacks of Hope's Brilliance increases damage by 2%
-#                    Striking a foe with the Stellar Nova will consume all stacks of Hope's Brilliance
-#                    [c/87E3DE:Passage of Arms]
-#                    Enemies are more likely to target you
-#                    Taking damage grants Ironskin, Regeneration, and Endurance for 8 seconds
-#                    Additionally, gain the buff Nascent Aria for 3 seconds, increasing maximum health by 500
-#                    [c/F94135:Proof of a Hero]
-#                    Attacks will deal 40% less damage to foes not targetting you
-#                    [c/8BB9F8:The Echo of Hope]
-#                    Tier 3 Stellar Array Abilities gain bonus effects
-#                    Beyond Infinity: Damage is increased by a further 30%
-#                    Key of Chronology: Cleanse Potion Sickness and gain Heartreach for 30 seconds upon activation
-#                    Between the Boundary: Gain 40 defense during Flow, and lose 20 defense during Ebb
-#                    Unbridled Radiance: Stellar Nova Energy can not drop below 10
-#                    'Stand tall- my friend / May all of the dark deep inside you / Find Light again' 
+#                    Одна из историй, собранная из легенд минувшего
+#                    Наденьте на Астру, чтобы получить следующее:
+#                    [c/FFCA5A:Сияющее приключение]
+#                    Атаки и получение урона дают стаки Сияния надежды (максимум: 100 стаков)
+#                    Каждые 10 стаков Сияния надежды увеличивают урон на 2%
+#                    Удар по врагу Сверхновой использует все стаки Сияния надежды
+#                    [c/87E3DE:Пассаж рук]
+#                    Враги чаще выбирают вас в качестве цели
+#                    Получение урона накладывает баффы «{$BuffName.Ironskin}», «{$BuffName.Regeneration}» и «{$BuffName.Endurance}» на 8 секунд
+#                    Кроме того, накладывает бафф «{$Mods.CalamityRuTranslate.StarsAbove.Buffs.NascentAria.Name}» на 3 секунды, увеличивающий максимальный запас здоровья на 500
+#                    [c/F94135:Доказательство героя]
+#                    Атаки наносят на 40% меньше урона врагам, которые не выбрали вас целью
+#                    [c/8BB9F8:Эхо надежды]
+#                    Созвездия 3-го ранга получают дополнительные способности
+#                    «Бесконечность не предел»: урон дополнительно увеличивает на 30%
+#                    «Ключ хронологии»: рассеивает дебафф «{$BuffName.PotionSickness}» и накладывает «{$BuffName.Heartreach}» на 30 секунд при активации
+#                    «Меж двух огней»: Gain 40 defense during Flow, and lose 20 defense during Ebb
+#                    «Неукротимое сияние»: Stellar Nova Energy can not drop below 10
+#                    'Встань, мой друг / И пусть вся тьма внутри тебя / Вновь Свет найдёт' 
 #                    '''
 #            }
 #            
@@ -5426,7 +5426,7 @@
 #                14: "[c/C2BDFF:Ранг 1] [c/FFEED1:«Хикари»]"
 #                15: "[c/C2BDFF:Ранг 1] [c/FFEED1:«Хрупкость неземного мгновения»]"
 #                16: "[c/9C4FFF:Ранг 2] [c/FFD792:«Здравая вера»]"
-#                17: "[c/9C4FFF:Ранг 2] [c/FFD792:«Дьявольская концовка»]"
+#                17: "[c/9C4FFF:Ранг 2] [c/FFD792:«Лицом к лицу со Смертью»]"
 #                18: "[c/9C4FFF:Ранг 2] [c/FFD792:«Воплощение Света»]"
 #                19: "[c/9C4FFF:Ранг 2] [c/FFD792:«Астральная мантия»]"
 #                20: "[c/9C4FFF:Ранг 2] [c/FFD792:«Дожигатель»]"
