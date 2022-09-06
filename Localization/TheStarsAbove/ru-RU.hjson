@@ -2221,19 +2221,19 @@
 #            }
 #            
 #            MorningStar: {
-#                Name: The Morning Star
+#                Name: Утренняя звезда
 #                Tooltip:
 #                    '''
-#                    Attacks with this weapon whip in a wide arc, exploding foes hit for 1/4 base damage and burning them for 4 seconds
-#                    Press the Weapon Action key to summon [c/CBA09A:Alucard's Sword], consuming minion slots (up to 3) to summon a blade to attack foes
-#                    Additional minion slots empower [c/CBA09A:Alucard's Sword], and at 3 slots, the blade hits much faster and has a 10% chance to deal critical strikes
-#                    [c/CBA09A:Alucard's Sword] deals 10% more damage from after striking foes with this weapon for 4 seconds
-#                    [c/CBA09A:Alucard's Sword] deals 30% more damage instead at 3 minion slots consumed
-#                    Right click to consume 20 Mana, casting a random [c/3E7299:Arcane Art] (3 second cooldown)
-#                    [c/8EE7E4:Frozen Crystals]: Unleash a spread of icy shards, inflicting Frostburn on foes for 3 seconds
-#                    [c/B4E93A:Accursed Flames]: Unleash a burst of flame around you that inflicts Cursed Inferno for 3 seconds
-#                    [c/F3E63E:Chain Lightning]: Unleash a concentrated lightning jolt, inflicting Ichor for 3 seconds and chaining to 5 nearby foes
-#                    'A vampire, a hunter, and a scholar'
+#                    Атаки этим оружием хлещут по размашистой дуге, взрывая пораженных врагов, нанося 1/4 базового урона и поджигая их в течение 4 секунд
+#                    Нажмите клавишу Weapon Action, чтобы призвать [c/CBA09A:Меч Алукарда], расходуя слоты призываемых миньонов (до 3) для призыва клинка, атакующего врагов
+#                    Дополнительные слоты призываемых миньонов усиливают [c/CBA09A:Меч Алукарда], а при 3 слотах клинок бьёт гораздо быстрее и наносит с 10% шансом критический удар
+#                    [c/CBA09A:Меч Алукарда] наносит на 10% больше урона после нанесения удара по врагу этим оружием в течение 4 секунд
+#                    [c/CBA09A:Меч Алукарда] наносит на 30% больше урона, вместо этого расходуя 3 слота призываемых миньонов
+#                    Нажмите <right>, потратив 20 маны, применяя случайное [c/3E7299:Чародейное искусство] (3 секунды перезарядки)
+#                    [c/8EE7E4:Леденящие кристаллы]: Высвобождает разброс ледяных осколков, накладывая на врагов дебафф «{$BuffName.Frostburn}» на 3 секунды
+#                    [c/B4E93A:Проклятое пламя]: Высвобождает вокруг себя извержение пламени, накладывая на врагов дебафф «{$BuffName.CursedInferno}» на 3 секунды
+#                    [c/F3E63E:Цепная молния]: Высвобождает концентрированный разряд молнии, накладывая на врагов дебафф «{$BuffName.Ichor}» на 3 секунды и по цепи распространяется на 5 ближайших врагов
+#                    'Вампир, охотник и учёный'
 #                    '''
 #            }
 #            
@@ -4520,13 +4520,13 @@
 #            }
 #            
 #            EmpressPrism: {
-#                Name: Empress Prism
+#                Name: Призма императрицы
 #                Tooltip:
 #                    '''
-#                    [c/FF5934:Tier 2 Stellar Prism]
-#                    Affix to a Stellar Nova to gain the following ability:
+#                    [c/FF5934:Звёздная призма - Ранг 2]
+#                    Установите на Сверхновую, чтобы получить следующую способность:
 #                    [c/E516A0:Envoy of the Hallowed]
-#                    After damage calculation, all Stellar Nova hits become critical, but damage is reduced by 70%
+#                    После подсчёта урона все удары Сверхновой становятся критическими, но снижает урон на 70%
 #                    '''
 #            }
 #            
@@ -4556,14 +4556,14 @@
 #            }
 #            
 #            LihzahrdPrism: {
-#                Name: Lihzahrd Prism
+#                Name: Призма яхщера
 #                Tooltip:
 #                    '''
-#                    [c/FF5934:Tier 2 Stellar Prism]
-#                    Affix to a Stellar Nova to gain the following ability:
-#                    [c/EE8D31:Monument of the Past]
-#                    Upon cast of the Stellar Nova, gain 'Ancient Bulwark' for 8 seconds
-#                    During this time, gain 80 Defense, but outgoing damage is reduced by 40%
+#                    [c/FF5934:Звёздная призма - Ранг 2]
+#                    Установите на Сверхновую, чтобы получить следующую способность:
+#                    [c/EE8D31:Мемориал минувшего]
+#                    После использования Сверхновой даёт бафф «{$Mods.CalamityRuTranslate.StarsAbove.Buffs.AncientBulwark.Name}» на 8 секунд
+#                    В течение этого времени увеличивает защиту на 80, но снижает наносимый урон на 40%
 #                    '''
 #            }
 #            
@@ -4581,14 +4581,14 @@
 #            }
 #            
 #            LuminitePrism: {
-#                Name: Luminite Prism
+#                Name: Люминитовая призма
 #                Tooltip:
 #                    '''
-#                    [c/FF5934:Tier 2 Stellar Prism]
-#                    Affix to a Stellar Nova to gain the following ability:
-#                    [c/6DE169:Wrath of the Moon Lord]
-#                    If the Stellar Nova costs over 200 Stellar Nova Energy, damage is increased by 50%
-#                    This damage increase is added after normal damage calculation
+#                    [c/FF5934:Звёздная призма - Ранг 2]
+#                    Установите на Сверхновую, чтобы получить следующую способность:
+#                    [c/6DE169:Гнев Лунного лорда]
+#                    Если затраты Сверхновой превышают 200 энергии, увеличивает урон на 50%
+#                    Увеличение урона добавляется после подсчёта обычного урона
 #                    '''
 #            }
 #            
