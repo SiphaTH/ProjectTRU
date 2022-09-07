@@ -16,6 +16,7 @@ internal static class ModsCall
     internal static Mod BossChecklist => ModLoader.TryGetMod("BossChecklist", out Mod bossChecklist) ? bossChecklist : null;
     internal static Mod StarsAbove => ModLoader.TryGetMod("StarsAbove", out Mod starsAbove) ? starsAbove : null;
     internal static Mod Wikithis => ModLoader.TryGetMod("Wikithis", out Mod wikithis) ? wikithis : null;
+    internal static Mod Infernum => ModLoader.TryGetMod("InfernumMode", out Mod infernum) ? infernum : null;
 
     internal static bool Revenge => CalamityWorld.revenge;
     internal static bool DownedSCal => DownedBossSystem.downedSCal;

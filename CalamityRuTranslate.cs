@@ -9,6 +9,9 @@ using CalamityRuTranslate.Core.MonoMod;
 using CalamityRuTranslate.Mods.CalamityMod;
 using CalamityRuTranslate.Mods.Fargowiltas;
 using CalamityRuTranslate.Mods.FargowiltasSouls;
+using CalamityRuTranslate.Mods.InfernumMode;
+using ReLogic.Content;
+using ReLogic.Graphics;
 using Terraria;
 using Terraria.GameContent.UI.States;
 using Terraria.Localization;
@@ -20,12 +23,14 @@ public class CalamityRuTranslate : Mod, IPatchRepository
 {
     internal static CalamityRuTranslate Instance;
     public List<IMonoModPatch> Patches { get; } = new();
+    public DynamicSpriteFont BossIntroScreensFont;
 
     public readonly SetupTranslation[] Mods =
     {
         new CalamityTranslation(),
         new FargowiltasTranslation(),
-        new FargowiltasSoulsTranslation()
+        new FargowiltasSoulsTranslation(),
+        new InfernumModeTranslation()
     };
 
     public CalamityRuTranslate()
@@ -40,7 +45,15 @@ public class CalamityRuTranslate : Mod, IPatchRepository
         ILManager.Load();
 
         if (ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage)
+        {
+            if (ModsCall.Infernum != null)
+            {
+                BossIntroScreensFont = ModContent.Request<DynamicSpriteFont>("CalamityRuTranslate/Fonts/BossIntroScreensFont", AssetRequestMode.ImmediateLoad).Value;
+                InfernumReflection.Load();
+            }
+
             CalamityReflection.Load();
+        }
 
         if (!Main.dedServ && ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage)
             FargowiltasSoulsReflection.Load();

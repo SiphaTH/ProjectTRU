@@ -1,0 +1,460 @@
+﻿{
+    Mods.CalamityRuTranslate.InfernumMode: {
+        Buffs: {
+             DarkFlames: {
+                Name: Тёмные огни
+                Description: Ваше тело поглотило проклятое инферно; защита снижена
+            }
+            
+            ElysianGrace: {
+                Name: Элизийская грация
+                Description: Бесконечное время полёта
+            }
+            
+            HatGirlBuff: {
+                Name: Шляподевочка
+                Description: Поджог
+            }
+            
+            Madness: {
+                Name: Безумие
+                Description: Вы сходите с ума...
+            }
+            
+            RedSurge: {
+                Name: Красный скачок
+                Description: Вы не можете двигаться
+            }
+            
+            ShadowflameInferno: {
+                Name: Инферно теневого пламени
+                Description: Быстрая потеря здоровья
+            }
+        }
+        
+        Items: {
+            DemonicChaliceOfInfernum: {
+                Name: Демоническая чаша Инфернума
+                Tooltip: Вы ещё увидите это
+            }
+            
+            BloodwormPlatter: {
+                Name: Тарелка с кровавыми червяками
+                Tooltip:
+                    '''
+                    Призывает старого герцога
+                    Можно использовать только в сернистом море
+                    Не расходуется
+                    '''
+            }
+            
+            DungeonsCurse: {
+                Name: Проклятие Темницы
+                Tooltip:
+                    '''
+                    Призывает Скелетрона
+                    Скелетрон входит в ярость во время дня
+                    Можно использовать только ночью
+                    Не расходуется
+                    '''
+            }
+            
+            FleshChunk: {
+                Name: Кусок плоти
+                Tooltip:
+                    '''
+                    Призывает стену плоти
+                    Можно использовать только в Аду
+                    Не расходуется
+                    '''
+            }
+            
+            KnowledgeGreatSandShark: {
+                Name: Великая песчаная акула
+                Tooltip:
+                    '''
+                    Эволюция вновь доказала, что она - странная судья
+                    Даже в столь диких условиях эта акула не приблизилась к пределу своей стойкости
+                    '''
+            }
+            
+            ProfanedFountainItem: {
+                Name: Осквернённый фонтан лавы
+                Tooltip: ""
+            }
+            
+            RadiantCrystal: {
+                Name: Сияющий кристалл
+                Tooltip:
+                    '''
+                    Призывает императрицу света
+                    Не обязательно использовать в освящении
+                    Императрица входит в ярость во время дня
+                    Не расходуется
+                    '''
+            }
+            
+            SparklingTunaCan: {
+                Name: Сверкающая банка с моллюсками
+                Tooltip:
+                    '''
+                    Призывает гигантского моллюска
+                    Можно использовать только в затерянном море
+                    Не расходуется
+                    '''
+            }
+            
+            AquaticScourgeRelic: {
+                Name: Реликвия инфернального акватического бича
+                Tooltip: ModifyTooltips
+            }
+            
+            AstrumAureusRelic: {
+                Name: Реликвия инфернального Аструм Ареуса
+                Tooltip: ModifyTooltips
+            }
+            
+            AstrumDeusRelic: {
+                Name: Реликвия инфернального Аструм Деуса
+                Tooltip: ModifyTooltips
+            }
+            
+            BetsyRelic: {
+                Name: Реликвия инфернальной Бэтси
+                Tooltip: ModifyTooltips
+            }
+            
+            BrainOfCthulhuRelic: {
+                Name: Реликвия инфернального мозга Ктулху
+                Tooltip: ModifyTooltips
+            }
+            
+            BrimstoneElementalRelic: {
+                Name: Реликвия инфернального серного элементаля
+                Tooltip: ModifyTooltips
+            }
+            
+            CalamitasCloneRelic: {
+                Name: Реликвия инфернального клона Каламитас
+                Tooltip: ModifyTooltips
+            }
+            
+            CeaselessVoidRelic: {
+                Name: Реликвия инфернальной нескончаемой Пустоты
+                Tooltip: ModifyTooltips
+            }
+            
+            CrabulonRelic: {
+                Name: Реликвия инфернального Крабулона
+                Tooltip: ModifyTooltips
+            }
+            
+            CryogenRelic: {
+                Name: Реликвия инфернального Криогена
+                Tooltip: ModifyTooltips
+            }
+            
+            DarkMageRelic: {
+                Name: Реликвия инфернального тёмного мага
+                Tooltip: ModifyTooltips
+            }
+            
+            DeerclopsRelic: {
+                Name: Реликвия инфернального циклоп-оленя
+                Tooltip: ModifyTooltips
+            }
+            
+            DesertScourgeRelic: {
+                Name: Реликвия инфернального пустынного бича
+                Tooltip: ModifyTooltips
+            }
+            
+            DestroyerRelic: {
+                Name: Реликвия инфернального Разрушителя
+                Tooltip: ModifyTooltips
+            }
+            
+            DragonfollyRelic: {
+                Name: Реликвия инфернального псевдодракона
+                Tooltip: ModifyTooltips
+            }
+            
+            DreadnautilusRelic: {
+                Name: Реликвия инфернального Дреднаутилуса
+                Tooltip: ModifyTooltips
+            }
+            
+            DukeFishronRelic: {
+                Name: Реликвия инфернального герцога Рыброна
+                Tooltip: ModifyTooltips
+            }
+            
+            EaterOfWorldsRelic: {
+                Name: Реликвия инфернального пожирателя миров
+                Tooltip: ModifyTooltips
+            }
+            
+            EmpressOfLightRelic: {
+                Name: Реликвия инфернальной императрицы света
+                Tooltip: {
+                    $parentVal: ModifyTooltips
+                    0: Порой необязательные враги могут быть сами грозными. Однако именно они дают величайшие награды
+                }
+            }
+            
+            EyeOfCthulhuRelic: {
+                Name: Реликвия инфернального глаза Ктулху
+                Tooltip: {
+                    $parentVal: ModifyTooltips
+                    0:
+                        '''
+                        Не следует рвать себе жилы в погоне за победой. Остановись и сделай перерыв, если нужно
+                        Самое главное - веселье
+                        '''
+                }
+            }
+            
+            GiantClamRelic: {
+                Name: Реликвия инфернального гигантского моллюска
+                Tooltip: ModifyTooltips
+            }
+            
+            GolemRelic: {
+                Name: Реликвия инфернального Голема
+                Tooltip: {
+                    $parentVal: ModifyTooltips
+                    0: Простое поэтапное планирование поможет тебе в достижении цели. Оно будет бесценным в преодолении будущих препятствий
+                }
+            }
+            
+            GreatSandSharkRelic: {
+                Name: Реликвия инфернальной великой песчаной акулы
+                Tooltip: ModifyTooltips
+            }
+            
+            HiveMindRelic: {
+                Name: Реликвия инфернального разума Улья
+                Tooltip: ModifyTooltips
+            }
+            
+            KingSlimeRelic: {
+                Name: Реликвия инфернального короля слизней
+                Tooltip: {
+                    $parentVal: ModifyTooltips
+                    0: Даже опытные игроки могут испытывать некоторые трудности, сталкиваясь с чем-то новым и незнакомым. Адаптивность - вот ключ к успеху
+                }
+            }
+            
+            LeviathanRelic: {
+                Name: Реликвия инфернального Левиафана
+                Tooltip: ModifyTooltips
+            }
+            
+            LunaticCultistRelic: {
+                Name: Реликвия инфернального культиста-лунатика
+                Tooltip: ModifyTooltips
+            }
+            
+            MoonLordRelic: {
+                Name: Реликвия инфернального лунного лорда
+                Tooltip: {
+                    $parentVal: ModifyTooltips
+                    0:
+                        '''
+                        До сей поры ты прекрасно справлялся
+                        Надеюсь ваше упорство преодолеет все остающиеся трудности
+                        '''
+                }
+            }
+            
+            OgreRelic: {
+                Name: Реликвия инфернального огра
+                Tooltip: ModifyTooltips
+            }
+            
+            OldDukeRelic: {
+                Name: Реликвия инфернального старого герцога
+                Tooltip: {
+                    $parentVal: ModifyTooltips
+                    0:
+                        '''
+                        Какой бы трудной ни была битва, тобой была показана мудрость, выдержав и преодолев брошенный вызов
+                        Скоро узнаешь, что механика, которую он использовал, будет вновь актуальна
+                        '''
+                }
+            }
+            
+            PerforatorsRelic: {
+                Name: Реликвия инфернальных Перфораторов
+                Tooltip: ModifyTooltips
+            }
+            
+            PlaguebringerGoliathRelic: {
+                Name: Реликвия инфернальной разносчицы чумы, Голиаф
+                Tooltip: ModifyTooltips
+            }
+            
+            PlanteraRelic: {
+                Name: Реликвия инфернальной Плантеры
+                Tooltip: {
+                    $parentVal: ModifyTooltips
+                    0:
+                        '''
+                        Количество смертей - не повод унывать, гордись им!
+                        Падение - мать учения. Ты растёшь над собой. Давай, продолжай в том же духе!
+                        '''
+                }
+            }
+            
+            PolterghastRelic: {
+                Name: Реликвия инфернального Полтергаста
+                Tooltip: ModifyTooltips
+            }
+            
+            ProfanedGuardiansRelic: {
+                Name: Реликвия инфернальных осквернённых стражей
+                Tooltip: ModifyTooltips
+            }
+            
+            ProvidenceRelic: {
+                Name: Реликвия инфернальной Провиденс
+                Tooltip: {
+                    $parentVal: ModifyTooltips
+                    0:
+                        '''
+                        Первое серьёзное препятствие после победы над Лунным лордом. Победа над ней была отнюдь не маленьким подвигом
+                        Может попробуешь сразиться с ней ещё раз ночью для дополнительного испытания?
+                        '''
+                    HasBeatedInfernumNightProvBeforeDay:
+                        '''
+                        Чё? Что за фигня? Саня ты в порядке?
+                        Ты должен был сначала победить её днём, а уже ПОСЛЕ сражаться с ней ночью!
+                        '''
+                }
+            }
+            
+            QueenBeeRelic: {
+                Name: Реликвия инфернальной королевы пчёл
+                Tooltip: ModifyTooltips
+            }
+            
+            QueenSlimeRelic: {
+                Name: Реликвия инфернальной королевы слизней
+                Tooltip: ModifyTooltips
+            }
+            
+            RavagerRelic: {
+                Name: Реликвия инфернального Разрушителя
+                Tooltip: ModifyTooltips
+            }
+            
+            SignusRelic: {
+                Name: Реликвия инфернального Сигнуса
+                Tooltip: ModifyTooltips
+            }
+            
+            SkeletronPrimeRelic: {
+                Name: Реликвия инфернального Скелетрона Прайма
+                Tooltip: ModifyTooltips
+            }
+            
+            SkeletronRelic: {
+                Name: Реликвия инфернального Скелетрона
+                Tooltip: {
+                    $parentVal: ModifyTooltips
+                    0: Вот и первое серьёзнейшее препятствие. Сейчас ты лучше, чем был до него. Надеюсь, весело было учить паттерны?
+                }
+            }
+            
+            SlimeGodRelic: {
+                Name: Реликвия инфернального бога слизней
+                Tooltip: ModifyTooltips
+            }
+            
+            StormWeaverRelic: {
+                Name: Реликвия инфернального штормового Ткача
+                Tooltip: ModifyTooltips
+            }
+            
+            TwinsRelic: {
+                Name: Реликвия инфернальных Близнецов
+                Tooltip: ModifyTooltips
+            }
+            
+            WallOfFleshRelic: {
+                Name: Реликвия инфернальной стены плоти
+                Tooltip: ModifyTooltips
+            }
+            
+             ProfanedShard: {
+                Tooltip: {
+                    $parentVal: Призывает осквернённых стражей при использовании в осквернённом саду, находящимся далеко справа в аду
+                    Warning:
+                        '''
+                        На данный момент в вашем мире нет сада. Убейте Лунного лорда повторно, чтобы сгенерировать его
+                        Но сперва возьмите в лаборатории схему Ада, поскольку генерация сада может её разрушить
+                        '''
+                }
+            }
+            
+            ProfanedCore: {
+                Tooltip: Призывает Провиденс при использовании в осквернённом храме, находящимся далеко справа в аду
+            }
+            
+            Vanilla: {
+                CelestialSigil: {
+                    Tooltip:
+                        '''
+                        Моментально призывает лунного лорда
+                        Создаёт арену на месте игрока
+                        Не расходуется
+                        '''
+                }
+                
+                LihzahrdPowerCell: {
+                    Tooltip: Создаёт прямоугольную арену вокруг алтаря. Если алтарь находится внутри храма, блоки внутри арены разрушаются
+                }
+            }
+        }
+        
+        NPCs:{
+            Dialogues: {
+                Nurse: {
+                    1: Я не могу тебе помочь. Удачи.
+                }
+            }
+        }
+        
+        Tiles: {
+            GolemArena: {
+                Name: Арена
+            }
+            
+            MoonlordArena: {
+                Name: Арена
+            }
+        }
+        
+        DifficultyModeSystem: {
+            Difficulties: {
+                Infernum: {
+                    Name: Инфернум
+                    ShortDescription:
+                        '''
+                        [c/B32E81:Настоящий вызов для тех, кто ищет нечто отличающееся, но в то же время более требовательное, чем режим Смерти.]
+                        [c/B32E81:Данная сложность не работает с режимами Мастера из стандартной игры, Вечности из Fargo и с генерацией мира «Для достойных».]
+                        '''
+                }
+            }
+        }
+    }
+    
+    Mods.InfernumMode: {
+        InfernumText: Удачи.
+        InfernumText2: Что ж, замечательно.
+        
+        ModBiome: {
+            ProfanedTempleBiome: Осквернённый храм
+        }
+    }
+}

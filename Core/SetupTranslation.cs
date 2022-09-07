@@ -13,6 +13,7 @@ public abstract class SetupTranslation : IModSetup
 {
     public abstract string InternalName { get; }
     public abstract Version ExpectedVersion { get; }
+    public virtual bool CheckModVersion => true;
     private readonly string _modNameException;
     private readonly ModVersionException.ExceptionType _outdatedType;
     private readonly GameCulture _russian = GameCulture.FromCultureName(GameCulture.CultureName.Russian);
@@ -57,6 +58,8 @@ public abstract class SetupTranslation : IModSetup
                 _modNameException = "The Stars Above";
                 _outdatedType = ModVersionException.ExceptionType.OutdatedStarsAbove;
                 break;
+            case "InfernumMode":
+                break;
             default:
                 throw new ArgumentException(nameof(InternalName));
         }
@@ -68,7 +71,7 @@ public abstract class SetupTranslation : IModSetup
         {
             if (ModLoader.TryGetMod(InternalName, out Mod modInstance))
             {
-                if (modInstance.Version != ExpectedVersion)
+                if (CheckModVersion && modInstance.Version != ExpectedVersion)
                 {
                     throw new ModVersionException(_modNameException, modInstance.Version, ExpectedVersion,
                         _outdatedType);
