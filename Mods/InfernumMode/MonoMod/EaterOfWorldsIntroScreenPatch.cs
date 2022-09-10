@@ -17,6 +17,6 @@ public class EaterOfWorldsIntroScreenPatch : Patch<ILContext.Manipulator>
 
     protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Terror of the Corruption\nThe Eater of Worlds", "УЖАС ИСКАЖЕНИЯ\nПОЖИРАТЕЛЬ МИРОВ");
+        TranslationHelper.ModifyIL(il, "Terror of the Corruption\nThe Eater of Worlds", "ГРОЗА ИСКАЖЕНИЯ\nПОЖИРАТЕЛЬ МИРОВ");
     };
 }

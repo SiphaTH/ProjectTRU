@@ -17,6 +17,6 @@ public class EyeOfCthulhuIntroScreenPatch : Patch<ILContext.Manipulator>
 
     protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Demonic Seer\nThe Eye of Cthulhu", "ДЕМОНИЧЕСКИЙ НАБЛЮДАТЕЛЬ\nГЛАЗ КТУЛХУ");
+        TranslationHelper.ModifyIL(il, "Demonic Seer\nThe Eye of Cthulhu", "ДЕМОНИЧЕСКИЙ ВЗОР\nГЛАЗ КТУЛХУ");
     };
 }
