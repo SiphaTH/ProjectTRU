@@ -131,5 +131,12 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
                 tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.SkeletronRelic.Tooltip.0");
             });
         }
+        else if (item.type == ModContent.ItemType<DevourerOfGodsRelic>())
+        {
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Sometimes pure reaction skill is the most valuable thing to cultivate.\nYou are in the final stretch. Your determination has proven invaluable up to this point.\nMay it guide you through the last challenges.", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.DevourerOfGodsRelic.Tooltip.0");
+            });
+        }
     }
 }

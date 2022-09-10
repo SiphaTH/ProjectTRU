@@ -32,6 +32,6 @@ public class PoDPlayerPostUpdateMiscEffects : Patch<ILContext.Manipulator>
 
     protected override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Infernum is not allowed in Master Mode, For the Worthy, or Eternity Mode", "Инфернум недоступен с режимами Мастера из стандартной игры, Вечности из Fargo и с генерацией мира «Для достойных»");
+        TranslationHelper.ModifyIL(il, "Infernum is not allowed in Master Mode, For the Worthy, or Eternity Mode", "Инфернум недоступен с режимами Мастера из стандартной игры, Вечности из Fargo и с генерацией мира «Для достойных».");
     };
 }

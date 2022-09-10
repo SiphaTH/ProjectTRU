@@ -20,6 +20,7 @@ public static class LangLoader
 
     public static void Unload()
     {
+        Translations.Clear();
         Translations = null;
     }
 }

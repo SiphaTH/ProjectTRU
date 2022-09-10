@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using CalamityRuTranslate.Core;
+using CalamityRuTranslate.Core.MonoMod;
 using Terraria.ModLoader;
 using Terraria.UI;
 
@@ -26,7 +27,7 @@ public class CalamityRuTranslateModSystem : ModSystem
     
     public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
     {
-        foreach (var content in _contents.Where(content => content.IsTranslationEnabled))
+        foreach (IContentTranslation content in _contents.Where(content => content.IsTranslationEnabled))
         {
             content.LoadTranslation();
         }
