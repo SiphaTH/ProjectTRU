@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class DivingPlatesBrokenPatch : Patch<ILContext.Manipulator>
+public class DivingPlatesBrokenPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
         
     public override MethodInfo ModifiedMethod => typeof(DivingPlatesBroken).GetCachedMethod("get_DisplayName");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Abyssal Diving Suit Broken Plates", "Сломанные пластины глубоководного водолазного костюма");
     };

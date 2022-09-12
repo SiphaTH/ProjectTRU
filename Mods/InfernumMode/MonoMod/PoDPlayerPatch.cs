@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
 [JITWhenModsEnabled("InfernumMode", "CalamityMod")]
-public class PoDPlayerPreKill : Patch<ILContext.Manipulator>
+public class PoDPlayerPreKill : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(PoDPlayer).GetCachedMethod(nameof(PoDPlayer.PreKill));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " could not withstand the red lightning.", " не выдерживает красной молнии.");
         TranslationHelper.ModifyIL(il, " was incinerated by ungodly fire.", " сгорает осквернённым огнём.");
@@ -24,14 +24,14 @@ public class PoDPlayerPreKill : Patch<ILContext.Manipulator>
 }
 
 [JITWhenModsEnabled("InfernumMode", "CalamityMod")]
-public class PoDPlayerPostUpdateMiscEffects : Patch<ILContext.Manipulator>
+public class PoDPlayerPostUpdateMiscEffects : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(PoDPlayer).GetCachedMethod(nameof(PoDPlayer.PostUpdateMiscEffects));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Infernum is not allowed in Master Mode, For the Worthy, or Eternity Mode", "Инфернум недоступен с режимами Мастера из стандартной игры, Вечности из Fargo и с генерацией мира «Для достойных».");
+        TranslationHelper.ModifyIL(il, "Infernum is not allowed in Master Mode, For the Worthy, or Eternity Mode.", "Инфернум недоступен с режимами Мастера из стандартной игры, Вечности из Fargo и с генерацией мира «Для достойных».");
     };
 }

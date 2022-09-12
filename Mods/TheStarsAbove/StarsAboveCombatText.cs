@@ -9,7 +9,7 @@
 // {
 //     public override bool IsTranslationEnabled => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
-//     public override void LoadTranslation()
+//     public override void ModifyModCombatText()
 //     {
 //         for (int i = 0; i < 100; i++)
 //         {

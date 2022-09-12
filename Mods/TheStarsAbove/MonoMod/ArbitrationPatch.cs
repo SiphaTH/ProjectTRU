@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class ArbitrationPatch : Patch<ILContext.Manipulator>
+// public class ArbitrationPatch : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(Arbitration).GetCachedMethod(nameof(Arbitration.AI));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "You have been judged...", "Вы были осуждены...");
 //         TranslationHelper.ModifyIL(il, "You've been colored with ink!", "Вас раскрасили чернилами!");

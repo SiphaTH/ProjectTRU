@@ -1,8 +1,7 @@
 displayName = Project tRU
 author = tRU Team
-version = 3.0.1.1
+version = 3.0.1.3
 hideCode = true
 hideResources = true
 weakReferences = CalamityMod, Fargowiltas, FargowiltasSouls, InfernumMode
-dllReferences = MMHOOK_Fargowiltas_v2.8.2
 homepage = https://discord.gg/zxMHFFpqCX

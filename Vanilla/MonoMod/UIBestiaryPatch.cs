@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.MonoMod;
+using CalamityRuTranslate.Core;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoMod.Cil;
@@ -16,10 +16,13 @@ using UIBestiaryNPCEntryPortrait = On.Terraria.GameContent.UI.Elements.UIBestiar
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
 
-public class UIBestiaryPatch : ILEdit
+public class UIBestiaryPatch : ContentTranslation
 {
-    public override bool Autoload() => TranslationHelper.IsRussianLanguage;
-    public override void Load()
+    public override bool IsTranslationEnabled => TranslationHelper.IsRussianLanguage;
+
+    public override float Priority => 1f;
+    
+    public override void LoadContent()
     {
         IL.Terraria.GameContent.UI.Elements.UIBestiaryEntryInfoPage.ctor += UIBestiaryEntryInfoPage;
         IL.Terraria.GameContent.UI.Elements.UIBestiaryNPCEntryPortrait.ctor += UIBestiaryNPCEntryPortrait;
@@ -31,7 +34,7 @@ public class UIBestiaryPatch : ILEdit
     }
 
 
-    public override void Unload()
+    public override void UnloadContent()
     {
         IL.Terraria.GameContent.UI.Elements.UIBestiaryEntryInfoPage.ctor -= UIBestiaryEntryInfoPage;
         IL.Terraria.GameContent.UI.Elements.UIBestiaryNPCEntryPortrait.ctor -= UIBestiaryNPCEntryPortrait;

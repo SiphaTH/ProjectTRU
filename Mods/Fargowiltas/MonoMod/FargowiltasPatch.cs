@@ -10,13 +10,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class FargowiltasTryClearEvents : Patch<ILContext.Manipulator>
+public class FargowiltasTryClearEvents : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(global::Fargowiltas.Fargowiltas).GetCachedMethod("TryClearEvents");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "The invaders have left!", "Вторженцы уходят!");
         TranslationHelper.ModifyIL(il, "The Pumpkin Moon is lowering...", "Заходит тыквенная луна...");
@@ -32,13 +32,13 @@ public class FargowiltasTryClearEvents : Patch<ILContext.Manipulator>
 }
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class FargowiltasSpawnBoss : Patch<ILContext.Manipulator>
+public class FargowiltasSpawnBoss : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(global::Fargowiltas.Fargowiltas).GetMethod("SpawnBoss", BindingFlags.Static | BindingFlags.NonPublic, new []{typeof(Player), typeof(int), typeof(bool), typeof(Vector2), typeof(string), typeof(bool)});
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " have awoken!", " пробуждается!");
         TranslationHelper.ModifyIL(il, " have awoken!", " пробуждается!", 2);

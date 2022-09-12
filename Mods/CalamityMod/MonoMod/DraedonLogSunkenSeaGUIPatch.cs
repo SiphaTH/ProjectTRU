@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class DraedonLogSunkenSeaGUIPatch : Patch<ILContext.Manipulator>
+public class DraedonLogSunkenSeaGUIPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
         
     public override MethodInfo ModifiedMethod => typeof(DraedonLogSunkenSeaGUI).GetCachedMethod(nameof(DraedonLogSunkenSeaGUI.GetTextByPage));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Preserved for millennia, a paradise for the living beings who sought shelter in prehistoric seas. They remain untouched by evolution, save for their adaptations to the oxygen starved waters and dim crystals, continuing to thrive. One mystery which continues to escape my understanding however, is how large some of the creatures have become. There is a blatant lack of nutrition and oxygen in the caves, and yet...", "Сохранившийся на протяжении тысячелетий рай для живых существ, искавших убежища в доисторических морях. Они остаются не тронутыми эволюцией, за исключением их адаптации к необогащённой воздухом воде и тусклым кристаллам, продолжая процветать. Однако одна загадка, которая продолжает ускользать от моего понимания, заключается в том, насколько большими стали некоторые из этих существ. В пещерах явно не хватает питания и кислорода. И всё же...");
         TranslationHelper.ModifyIL(il, "A specimen which has developed a grand size, and inexplicably, impressive psychic abilities. What is most curious is its strong connection to its lesser kin. Without any noticeable communication, when it comes under threat, other mollusks rally to its aggressor and begin attacking. Is this perhaps the very first signs of a higher life form, the evolutionary link hidden away in the sunken sea? Or a self sacrificial fluke, which would lead to their destruction if they inhabited any area other than these pacified caverns.", "Образец, который развил грандиозные размеры и необъяснимо-впечатляющие телепатические способности. Что самое любопытное, так это его сильная связь со своими меньшими родственниками. Когда он оказывается под угрозой, другие моллюски окружают своего агрессора и начинают атаковать. Может быть, это самые первые признаки высшей формы жизни, эволюционное звено, скрытое в затерянном море? Или самоотверженная случайность, которая привела бы к уничтожению, если они населяли любую область, кроме этих умиротворённых пещер.");

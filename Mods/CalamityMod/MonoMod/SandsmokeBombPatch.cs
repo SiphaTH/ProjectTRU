@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class SandsmokeBombPatch : Patch<ILContext.Manipulator>
+public class SandsmokeBombPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(SandsmokeBomb).GetCachedMethod("get_DisplayName");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Sandsmoke Bomb Cooldown", "Перезарядка бомбы песчаной завесы");
         TranslationHelper.ModifyIL(il, "Sandsmoke Bomb Duration", "Длительность бомбы песчаной завесы");

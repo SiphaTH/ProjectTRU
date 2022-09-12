@@ -1,28 +1,23 @@
-﻿using CalamityRuTranslate.Common;
+﻿using System;
+using System.Reflection;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
+using Fargowiltas.Items.Summons.SwarmSummons;
 using MonoMod.Cil;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class OverloadBrainPatch : ILEdit
+public class OverloadBrainPatch : ILPatcher
 {
-    public override bool Autoload() => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
-    public override void Load()
-    {
-        IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadBrain.ctor += Translation;
-    }
+    public override MethodBase ModifiedMethod => typeof(OverloadBrain).GetConstructor(Type.EmptyTypes);
 
-    public override void Unload()
-    {
-        IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadBrain.ctor -= Translation;
-    }
-
-    private void Translation(ILContext il)
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "You feel dumb among so many brains!", "Количество мозгов вокруг заставляет вас чувствовать себя тупым!");
-    }
+    };
 }

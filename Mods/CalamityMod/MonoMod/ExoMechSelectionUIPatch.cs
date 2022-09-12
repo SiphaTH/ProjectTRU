@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class ExoMechSelectionUIPatch : Patch<ILContext.Manipulator>
+public class ExoMechSelectionUIPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
         
     public override MethodInfo ModifiedMethod => typeof(ExoMechSelectionUI).GetCachedMethod(nameof(ExoMechSelectionUI.HandleInteractionWithButton));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Thanatos, a serpentine terror with impervious armor and innumerable laser turrets.", "Танатос - змееподобное создание с непробиваемой броней и бесчисленным количеством лазерных турелей.");
         TranslationHelper.ModifyIL(il, "Ares, a heavyweight, diabolical monstrosity with four Exo superweapons.", "Арес - тяжеловесное чудовище с четырьмя экзо-супероружиями.");

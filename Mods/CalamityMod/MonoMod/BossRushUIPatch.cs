@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class BossRushUIPatch : Patch<ILContext.Manipulator>
+public class BossRushUIPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
         
     public override MethodInfo ModifiedMethod => typeof(BossRushUI).GetCachedMethod("get_InvasionName");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Boss Rush", "Босс-раш");
     };

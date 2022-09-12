@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class GoreySpinePatch : Patch<ILContext.Manipulator>
+public class GoreySpinePatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(GoreySpine).GetCachedMethod("get_NPCName");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Brain of Cthulhu", "Мозг Ктулху");
     };

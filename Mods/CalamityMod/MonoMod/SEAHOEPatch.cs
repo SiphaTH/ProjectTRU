@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class SEAHOEPatch : Patch<ILContext.Manipulator>
+public class SEAHOEPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
         
     public override MethodInfo ModifiedMethod => typeof(SEAHOE).GetCachedMethod(nameof(SEAHOE.SetChatButtons));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Help", "Помощь");
     };

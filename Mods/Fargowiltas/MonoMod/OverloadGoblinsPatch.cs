@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class OverloadGoblinsPatch : Patch<ILContext.Manipulator>
+public class OverloadGoblinsPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(OverloadGoblins).GetCachedMethod(nameof(OverloadGoblins.UseItem));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "The goblins have calmed down!", "Гоблины успокаиваются!");
         TranslationHelper.ModifyIL(il, "The goblins have calmed down!", "Гоблины успокаиваются!", 2);

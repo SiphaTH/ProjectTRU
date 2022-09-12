@@ -23,9 +23,6 @@
     <Reference Include="InfernumMode">
       <HintPath>..\Mod Libraries\InfernumMode_V1.6.0.dll</HintPath>
     </Reference>
-    <Reference Include="MMHOOK_Fargowiltas_v2.8.2">
-      <HintPath>lib\MMHOOK_Fargowiltas_v2.8.2.dll</HintPath>
-    </Reference>
     <Reference Include="StarsAbove">
       <HintPath>..\Mod Libraries\StarsAbove_v1.2.2.1.dll</HintPath>
     </Reference>

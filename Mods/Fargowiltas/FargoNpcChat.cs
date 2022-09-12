@@ -12,6 +12,8 @@ public class FargoNpcChat : ContentTranslation
 {
     public override bool IsTranslationEnabled => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
     
+    public override float Priority => 1f;
+    
     #region Properties
     private int Abominationn => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Abominationn").Type);
     private int Mutant => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Mutant").Type);
@@ -37,7 +39,7 @@ public class FargoNpcChat : ContentTranslation
     #endregion
     private bool IsExistingNPC(int npcType) => npcType >= 0;
     
-    public override void LoadTranslation()
+    public override void ModifyNpcChatText()
     {
         if (!IsTalking)
             return;

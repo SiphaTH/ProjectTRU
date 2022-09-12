@@ -1,3 +1,4 @@
+using System;
 using System.Reflection;
 using CalamityMod;
 using CalamityMod.Items.DraedonMisc;
@@ -5,38 +6,22 @@ using CalamityMod.TileEntities;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
-using MonoMod.RuntimeDetour.HookGen;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class TECodebreakerPatch : ILEdit
+public class TECodebreakerPatch : OnPatcher
 {
-    private MethodInfo _underlyingSchematicText => typeof(TECodebreaker).GetCachedMethod("get_UnderlyingSchematicText");
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
-    private delegate string orig_UnderlyingSchematicText(TECodebreaker self);
-    private delegate string hook_UnderlyingSchematicText(orig_UnderlyingSchematicText orig, TECodebreaker self);
+    public override MethodInfo ModifiedMethod => typeof(TECodebreaker).GetCachedMethod("get_UnderlyingSchematicText");
 
-    private event hook_UnderlyingSchematicText UnderlyingSchematicText
-    {
-        add => HookEndpointManager.Add<hook_UnderlyingSchematicText>(_underlyingSchematicText, value);
-        remove => HookEndpointManager.Remove<hook_UnderlyingSchematicText>(_underlyingSchematicText, value);
-    }
+    private delegate string UnderlyingSchematicTextDelegate(TECodebreaker self);
 
-    public override bool Autoload() => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+    public override Delegate Delegate => Translation;
 
-    public override void Load()
-    {
-        UnderlyingSchematicText += Translation;
-    }
-     
-    public override void Unload()
-    {
-        UnderlyingSchematicText -= Translation;
-    }
-     
-    private string Translation(orig_UnderlyingSchematicText orig, TECodebreaker self)
+    private string Translation(UnderlyingSchematicTextDelegate orig, TECodebreaker self)
     {
         if (self.HeldSchematicID == 0 || !CalamityLists.EncryptedSchematicIDRelationship.ContainsKey(self.HeldSchematicID))
         {

@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class CorruptChestPatch : Patch<ILContext.Manipulator>
+public class CorruptChestPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(CorruptChest).GetCachedMethod("get_NPCName");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Corrupt Mimic", "Искажённый мимик");
     };

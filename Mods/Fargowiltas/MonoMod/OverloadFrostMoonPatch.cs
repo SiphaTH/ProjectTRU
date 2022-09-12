@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class OverloadFrostMoonPatch : Patch<ILContext.Manipulator>
+public class OverloadFrostMoonPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(OverloadFrostMoon).GetCachedMethod(nameof(OverloadFrostMoon.UseItem));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "The Frost Moon fades away!", "Морозная луна исчезает!");
         TranslationHelper.ModifyIL(il, "The Frost Moon fades away!", "Морозная луна исчезает!", 2);

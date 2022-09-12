@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
 [JITWhenModsEnabled("InfernumMode", "CalamityMod")]
-public class TwinsAttackSynchronizerPatch : Patch<ILContext.Manipulator>
+public class TwinsAttackSynchronizerPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(TwinsAttackSynchronizer).GetCachedMethod(nameof(TwinsAttackSynchronizer.DoAI));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "SPA-MK1", "СПА-МК1");
         TranslationHelper.ModifyIL(il, "SPA-MK1", "СПА-МК1", 2);

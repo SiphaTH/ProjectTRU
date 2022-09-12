@@ -15,34 +15,20 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class StatButtonUIRebuildStatList : ILEdit
+public class StatButtonUIRebuildStatList : OnPatcher
 {
-    private MethodInfo _rebuildStatList => typeof(StatSheetUI).GetCachedMethod(nameof(StatSheetUI.RebuildStatList));
     private FieldInfo _BattleCry => typeof(FargoPlayer).GetField("BattleCry", BindingFlags.Instance | BindingFlags.NonPublic);
     private FieldInfo _CalmingCry => typeof(FargoPlayer).GetField("CalmingCry", BindingFlags.Instance | BindingFlags.NonPublic);
 
-    private delegate void orig_RebuildStatList(StatSheetUI self);
-    private delegate void hook_RebuildStatList(orig_RebuildStatList orig, StatSheetUI self);
-
-    private event hook_RebuildStatList OnRebuildStatList
-    {
-        add => HookEndpointManager.Add<hook_RebuildStatList>(_rebuildStatList, value);
-        remove => HookEndpointManager.Remove<hook_RebuildStatList>(_rebuildStatList, value);
-    }
+    public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
     
-    public override bool Autoload() => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
-
-    public override void Load()
-    {
-        OnRebuildStatList += Translation;
-    }
+    public override MethodInfo ModifiedMethod => typeof(StatSheetUI).GetCachedMethod(nameof(StatSheetUI.RebuildStatList));
     
-    public override void Unload()
-    {
-        OnRebuildStatList -= Translation;
-    }
+    private delegate void RebuildStatListDelegate(StatSheetUI self);
 
-    private void Translation(orig_RebuildStatList orig, StatSheetUI self)
+    public override Delegate Delegate => Translation;
+    
+    private void Translation(RebuildStatListDelegate orig, StatSheetUI self)
     {
         Player player = Main.LocalPlayer;
         FargoPlayer modPlayer = player.GetModPlayer<FargoPlayer>();
@@ -98,13 +84,13 @@ public class StatButtonUIRebuildStatList : ILEdit
 }
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class StatButtonAddStat : Patch<ILContext.Manipulator>
+public class StatButtonAddStat : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(StatSheetUI).GetCachedMethod(nameof(StatSheetUI.AddStat));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, 296, 390);
     };

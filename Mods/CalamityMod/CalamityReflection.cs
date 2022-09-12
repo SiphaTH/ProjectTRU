@@ -8,7 +8,9 @@ using CalamityMod.NPCs.SlimeGod;
 using CalamityMod.Systems;
 using CalamityMod.UI;
 using CalamityMod.UI.CalamitasEnchants;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
+using CalamityRuTranslate.Core;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -16,9 +18,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-internal static class CalamityReflection
+public class CalamityReflection : ContentTranslation
 {
-    internal static void Load()
+    public override bool IsTranslationEnabled => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+    
+    public override float Priority => 1f;
+    
+    public override void LoadContent()
     {
         List<(string, string)> enchantmentTranslation = new List<(string, string)>
         {
@@ -155,7 +161,7 @@ internal static class CalamityReflection
         DifficultyModeSystem.Difficulties[3].ShortDescription = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.Malice.ShortDescription");
     }
 
-    private static void CreationEffect(Item item)
+    private void CreationEffect(Item item)
     {
         item.Calamity().AppliedEnchantment = new Enchantment?();
         item.Calamity().DischargeEnchantExhaustion = 0.0f;

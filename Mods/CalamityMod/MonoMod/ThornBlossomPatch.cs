@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class ThornBlossomPatch : Patch<ILContext.Manipulator>
+public class ThornBlossomPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(ThornBlossom).GetCachedMethod(nameof(ThornBlossom.Shoot));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " was violently pricked by a flower.", " яростно укалывается цветком.");
     };

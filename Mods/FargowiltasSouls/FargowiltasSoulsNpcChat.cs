@@ -10,6 +10,8 @@ public class FargowiltasSoulsNpcChat : ContentTranslation
 {
     public override bool IsTranslationEnabled => ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage;
     
+    public override float Priority => 1f;
+    
     #region Properties
     private int Nurse => NPC.FindFirstNPC(NPCID.Nurse);
     private bool IsTalking => Main.LocalPlayer.talkNPC >= 0;
@@ -18,7 +20,7 @@ public class FargowiltasSoulsNpcChat : ContentTranslation
 
     private bool IsExistingNPC(int npcType) => npcType >= 0;
 
-    public override void LoadTranslation()
+    public override void ModifyNpcChatText()
     {
         if (!IsTalking)
             return;

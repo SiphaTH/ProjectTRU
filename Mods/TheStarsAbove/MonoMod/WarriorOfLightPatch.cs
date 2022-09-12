@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class WarriorOfLightPatch : Patch<ILContext.Manipulator>
+// public class WarriorOfLightPatch : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(WarriorOfLight).GetCachedMethod(nameof(WarriorOfLight.AI));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "The Warrior Of Light has won...", "Воин Света побеждает...");
 //         TranslationHelper.ModifyIL(il, "The Warrior of Light is transcending his limits!", "Воин Света выходит за свои лимиты!");

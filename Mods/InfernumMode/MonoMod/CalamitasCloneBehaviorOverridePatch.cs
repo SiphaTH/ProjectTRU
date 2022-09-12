@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
 [JITWhenModsEnabled("InfernumMode", "CalamityMod")]
-public class CalamitasCloneBehaviorOverridePatch : Patch<ILContext.Manipulator>
+public class CalamitasCloneBehaviorOverridePatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(CalamitasCloneBehaviorOverride).GetCachedMethod(nameof(CalamitasCloneBehaviorOverride.PreAI));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Destroy ", "Уничтожьте ");
         TranslationHelper.ModifyIL(il, "him", "его");

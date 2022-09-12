@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class CalamityPlayerPreKill : Patch<ILContext.Manipulator>
+public class CalamityPlayerPreKill : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(CalamityPlayer).GetCachedMethod(nameof(CalamityPlayer.PreKill));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " downed too many shots.", " выпивает слишком много напитков.");
         TranslationHelper.ModifyIL(il, "'s liver failed.", " отказывает печень.");
@@ -45,13 +45,13 @@ public class CalamityPlayerPreKill : Patch<ILContext.Manipulator>
 }
 
 [JITWhenModsEnabled("CalamityMod")]
-public class CalamityPlayerKillPlayer : Patch<ILContext.Manipulator>
+public class CalamityPlayerKillPlayer : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(CalamityPlayer).GetCachedMethod(nameof(CalamityPlayer.KillPlayer));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " is food for the Wyrms.", " становится пищей для змей.");
         TranslationHelper.ModifyIL(il, "Oxygen failed to reach ", "Не хватило кислорода для ");
@@ -62,26 +62,26 @@ public class CalamityPlayerKillPlayer : Patch<ILContext.Manipulator>
 }
 
 [JITWhenModsEnabled("CalamityMod")] 
-public class CalamityPlayerOnConsumeMana : Patch<ILContext.Manipulator>
+public class CalamityPlayerOnConsumeMana : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(CalamityPlayer).GetCachedMethod(nameof(CalamityPlayer.OnConsumeMana));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " converted all of their life to mana.", " оборачивает всю свою жизнь в ману.");
     };
 }
 
 [JITWhenModsEnabled("CalamityMod")] 
-public class CalamityPlayerOnEnterWorld : Patch<ILContext.Manipulator>
+public class CalamityPlayerOnEnterWorld : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(CalamityPlayer).GetCachedMethod(nameof(CalamityPlayer.OnEnterWorld));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " [c/EE4939:Be sure to check out the Official Calamity Mod Wiki at ][c/3989FF:calamitymod.wiki.gg][c/EE4939:!] ", " [c/EE4939:Актуальную информацию вы можете посмотреть на официальной вики Каламити] [c/3989FF:calamitymod.wiki.gg][c/EE4939:!]");
     };

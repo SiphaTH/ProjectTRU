@@ -9,52 +9,52 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class CodebreakerUIDisplayCostText : Patch<ILContext.Manipulator>
+public class CodebreakerUIDisplayCostText : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
         
     public override MethodInfo ModifiedMethod => typeof(CodebreakerUI).GetCachedMethod(nameof(CodebreakerUI.DisplayCostText));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Cost: ", "Стоимость: ");
     };
 }
 
 [JITWhenModsEnabled("CalamityMod")]
-public class CodebreakerUIDrawDecryptCancelConfirmationText : Patch<ILContext.Manipulator>
+public class CodebreakerUIDrawDecryptCancelConfirmationText : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
         
     public override MethodInfo ModifiedMethod => typeof(CodebreakerUI).GetCachedMethod(nameof(CodebreakerUI.DrawDecryptCancelConfirmationText));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Are you sure?", "Вы уверены?");
     };
 }
 
 [JITWhenModsEnabled("CalamityMod")]
-public class CodebreakerUIHandleDraedonSummonButton : Patch<ILContext.Manipulator>
+public class CodebreakerUIHandleDraedonSummonButton : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
         
     public override MethodInfo ModifiedMethod => typeof(CodebreakerUI).GetCachedMethod(nameof(CodebreakerUI.HandleDraedonSummonButton));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Contact", "Контакт");
     };
 }
 
 [JITWhenModsEnabled("CalamityMod")]
-public class CodebreakerUIDisplayNotStrongEnoughErrorText : Patch<ILContext.Manipulator>
+public class CodebreakerUIDisplayNotStrongEnoughErrorText : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
         
     public override MethodInfo ModifiedMethod => typeof(CodebreakerUI).GetCachedMethod(nameof(CodebreakerUI.DisplayNotStrongEnoughErrorText));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Encryption unsolveable: Upgrades required.", "Шифрование нерешаемое: требуются обновления.");
     };

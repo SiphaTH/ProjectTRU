@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class WulfrumRoverDriveRechargePatch : Patch<ILContext.Manipulator>
+public class WulfrumRoverDriveRechargePatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(WulfrumRoverDriveRecharge).GetCachedMethod("get_DisplayName");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Protective Matrix Recharge", "Перезарядка защитной матрицы");
     };

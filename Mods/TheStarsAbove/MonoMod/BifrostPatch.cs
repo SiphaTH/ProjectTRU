@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class BifrostPatch : Patch<ILContext.Manipulator>
+// public class BifrostPatch : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(Bifrost).GetCachedMethod(nameof(Bifrost.CanUseItem));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "Subworlds have issues in Multiplayer currently. Please wait until further notice.", "В настоящее время в мультиплеере Subworlds наблюдаются проблемы. Пожалуйста, подождите дальнейших уведомлений.");
 //         TranslationHelper.ModifyIL(il, "Cosmic Voyages are still on cooldown!", "Космическое странствие всё ещё перезаряжается!");

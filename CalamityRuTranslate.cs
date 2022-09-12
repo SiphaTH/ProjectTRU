@@ -1,16 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core;
-using CalamityRuTranslate.Core.Loaders;
 using CalamityRuTranslate.Core.MonoMod;
 using CalamityRuTranslate.Mods.CalamityMod;
 using CalamityRuTranslate.Mods.Fargowiltas;
 using CalamityRuTranslate.Mods.FargowiltasSouls;
 using CalamityRuTranslate.Mods.InfernumMode;
-using ReLogic.Content;
+using MonoMod.RuntimeDetour;
 using ReLogic.Graphics;
 using Terraria;
 using Terraria.GameContent.UI.States;
@@ -19,12 +19,11 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate;
 
-public class CalamityRuTranslate : Mod, IPatchRepository
+public class CalamityRuTranslate : Mod
 {
     internal static CalamityRuTranslate Instance;
-    public List<IMonoModPatch> Patches { get; } = new();
+    public List<ContentTranslation> Contents;
     public DynamicSpriteFont BossIntroScreensFont;
-
     public readonly SetupTranslation[] Mods =
     {
         new CalamityTranslation(),
@@ -32,34 +31,46 @@ public class CalamityRuTranslate : Mod, IPatchRepository
         new FargowiltasSoulsTranslation(),
         new InfernumModeTranslation()
     };
+    private List<ILHook> _ilHooks;
+    private List<Hook> _onHooks;
 
     public CalamityRuTranslate()
     {
         Instance = this;
-        MonoModHooks.RequestNativeAccess();
     }
 
     public override void Load()
     {
-        LangLoader.Load();
-        ILManager.Load();
-
-        if (ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage)
+        MonoModHooks.RequestNativeAccess();
+        Contents = new List<ContentTranslation>();
+        _ilHooks = new List<ILHook>();
+        _onHooks = new List<Hook>();
+        
+        foreach (Type type in Instance.Code.GetTypes())
         {
-            if (ModsCall.Infernum != null)
-            {
-                BossIntroScreensFont = ModContent.Request<DynamicSpriteFont>("CalamityRuTranslate/Fonts/BossIntroScreensFont", AssetRequestMode.ImmediateLoad).Value;
-                InfernumReflection.Load();
-            }
+            if (type.IsSubclassOf(typeof(ContentTranslation)) && Activator.CreateInstance(type) is ContentTranslation contentTranslation)
+                Contents.Add(contentTranslation);
+            
+            if (type.IsSubclassOf(typeof(ILPatcher)) && Activator.CreateInstance(type) is ILPatcher {AutoLoad: true} ilPatcher)
+                _ilHooks.Add(new ILHook(ilPatcher.ModifiedMethod, ilPatcher.PatchMethod, new ILHookConfig {ManualApply = false}));
 
-            CalamityReflection.Load();
+            if (type.IsSubclassOf(typeof(OnPatcher)) && Activator.CreateInstance(type) is OnPatcher {AutoLoad: true} onPatcher)
+                _onHooks.Add(new Hook(onPatcher.ModifiedMethod, onPatcher.Delegate));
+            
+            Contents.Sort((n, t) => n.Priority.CompareTo(t.Priority));
         }
 
-        if (!Main.dedServ && ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage)
-            FargowiltasSoulsReflection.Load();
+        if (_ilHooks.Count > 0)
+            foreach (ILHook hook in _ilHooks)
+                hook?.Apply();
         
-        if (!Main.dedServ && ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage)
-            FargowiltasReflection.Load();
+        if (_onHooks.Count > 0)
+            foreach (Hook hook in _onHooks)
+                hook?.Apply();
+
+        if (Contents.Count > 0)
+            foreach (ContentTranslation content in Contents.Where(x => x.IsTranslationEnabled))
+                content.LoadContent();
 
         if (!Main.dedServ && TranslationHelper.IsRussianLanguage)
         {
@@ -74,11 +85,40 @@ public class CalamityRuTranslate : Mod, IPatchRepository
     {
         Instance = null;
         TRuConfig.Instance = null;
-        LangLoader.Unload();
-        ILManager.Unload();
+        
+        if (Contents != null)
+            foreach (ContentTranslation content in Contents)
+                content.UnloadContent();
 
-        foreach (IMonoModPatch patch in Patches)
-            patch.Unapply();
+        if (_ilHooks != null)
+            foreach (ILHook hook in _ilHooks)
+                hook?.Dispose();
+        
+        if (_onHooks != null)
+            foreach (Hook hook in _onHooks)
+                hook?.Dispose();
+
+        Contents = null;
+        _ilHooks = null;
+        _onHooks = null;
+
+        Dictionary<string, WeakReference> cache = (Dictionary<string, WeakReference>)typeof(MonoMod.Utils.ReflectionHelper).GetField("AssemblyCache", BindingFlags.Static | BindingFlags.NonPublic)?.GetValue(null);
+        string[] list = cache?.Keys.Where(k => k.Contains("CalamityRuTranslate") || k.Contains("tModLoader")).ToArray();
+        
+        foreach (var key in list)
+            cache?.Remove(key);
+
+        Dictionary<string, WeakReference[]> caches = (Dictionary<string, WeakReference[]>)typeof(MonoMod.Utils.ReflectionHelper).GetField("AssembliesCache", BindingFlags.Static | BindingFlags.NonPublic)?.GetValue(null);
+        list = caches?.Keys.Where(k => k.Contains("CalamityRuTranslate") || k.Contains("tModLoader")).ToArray();
+        
+        foreach (var key in list)
+            cache?.Remove(key);
+
+        cache = (Dictionary<string, WeakReference>)typeof(MonoMod.Utils.ReflectionHelper).GetField("ResolveReflectionCache", BindingFlags.Static | BindingFlags.NonPublic)?.GetValue(null);
+        list = cache?.Keys.Where(k => k.Contains("CalamityRuTranslate") || k.Contains("tModLoader")).ToArray();
+        
+        foreach (var key in list)
+            cache?.Remove(key);
     }
 
     public override void PostSetupContent()

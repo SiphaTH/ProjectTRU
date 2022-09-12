@@ -10,13 +10,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
 [JITWhenModsEnabled("InfernumMode", "CalamityMod")]
-public class UtilitiesPatch : Patch<ILContext.Manipulator>
+public class UtilitiesPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(Utilities).GetCachedMethod("get_InfernalRelicText");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Imbued with the infernal flames of a defeated foe", "Окружено инфернальными огнями поверженного врага");
     };

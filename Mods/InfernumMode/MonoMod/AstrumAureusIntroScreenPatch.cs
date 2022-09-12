@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
 [JITWhenModsEnabled("InfernumMode", "CalamityMod")]
-public class AstrumAureusIntroScreenPatch : Patch<ILContext.Manipulator>
+public class AstrumAureusIntroScreenPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(AstrumAureusIntroScreen).GetCachedMethod("get_TextToDisplay");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "The Infected Stomper\nAstrum Aureus", "ИНФИЦИРОВАННЫЙ ДАВИТЕЛЬ\nАСТРУМ АРЕУС");
     };

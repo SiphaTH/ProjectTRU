@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod;
 
 [JITWhenModsEnabled("FargowiltasSouls")]
-public class BetsyPatchPatch : Patch<ILContext.Manipulator>
+public class BetsyPatchPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(Betsy).GetCachedMethod(nameof(Betsy.PreAI));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "<User ", "<Пользователь ");
         TranslationHelper.ModifyIL(il, "<User ", "<Пользователь ", 2);

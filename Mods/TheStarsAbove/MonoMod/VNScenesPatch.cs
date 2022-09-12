@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class VNScenesPatch : Patch<ILContext.Manipulator>
+// public class VNScenesPatch : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(VNScenes).GetCachedMethod(nameof(VNScenes.SetupVNSystem));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "Asphodene", "Асфодена", 4);
 //         TranslationHelper.ModifyIL(il, "Asphodene", "Асфодена", 6);

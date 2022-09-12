@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class NalhaunPatch : Patch<ILContext.Manipulator>
+// public class NalhaunPatch : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(Nalhaun).GetCachedMethod(nameof(Nalhaun.AI));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "You fall to the Burnished King...", "Вы пали перед Воронёным королём...");
 //         TranslationHelper.ModifyIL(il, "Ars Laevateinn prepares to strike!", "Арс Леватейн готовится к удару!");

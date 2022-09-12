@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class FargoGlobalNPCCheckDead : Patch<ILContext.Manipulator>
+public class FargoGlobalNPCCheckDead : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(FargoGlobalNPC).GetCachedMethod(nameof(FargoGlobalNPC.CheckDead));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Deviantt", "Девиантт");
         TranslationHelper.ModifyIL(il, "Deviantt", "Девиантт", 2);
@@ -63,13 +63,13 @@ public class FargoGlobalNPCCheckDead : Patch<ILContext.Manipulator>
 }
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class FargoGlobalNPCSwarm : Patch<ILContext.Manipulator>
+public class FargoGlobalNPCSwarm : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(FargoGlobalNPC).GetCachedMethod("Swarm");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Killed: ", "Убито: ");
         TranslationHelper.ModifyIL(il, "Killed: ", "Убито: ", 2);

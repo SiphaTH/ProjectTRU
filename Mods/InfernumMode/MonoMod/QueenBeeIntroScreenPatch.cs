@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
 [JITWhenModsEnabled("InfernumMode", "CalamityMod")]
-public class QueenBeeIntroScreenPatch : Patch<ILContext.Manipulator>
+public class QueenBeeIntroScreenPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(QueenBeeIntroScreen).GetCachedMethod("get_TextToDisplay");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Oversized Insect\nQueen Bee", "ОГРОМНОЕ НАСЕКОМОЕ\nКОРОЛЕВА ПЧЁЛ");
     };

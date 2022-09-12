@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class RevengeanceDifficultyPatch : Patch<ILContext.Manipulator>
+public class RevengeanceDifficultyPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(RevengeanceDifficulty).GetCachedMethod("get_ExpandedDescription");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, ":Enables the][c/85FFE9: Adrenaline] [c/", ":Активирует механику] [c/85FFE9:Адреналина][c/");
         TranslationHelper.ModifyIL(il, ":mechanic. You gain Adrenaline while fighting bosses. Getting hit drops Adrenaline back to 0] \n[c/", ":. Вы получаете адреналин, сражаясь с боссами. Получение урона опускает шкалу адреналина до 0]\n[c/");

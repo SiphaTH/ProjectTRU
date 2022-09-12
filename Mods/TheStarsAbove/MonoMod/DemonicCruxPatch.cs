@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class DemonicCruxPatch : Patch<ILContext.Manipulator>
+// public class DemonicCruxPatch : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(DemonicCrux).GetCachedMethod(nameof(DemonicCrux.UseItem));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "The world shudders in anticipation...", "Мир содрогается в ожидании...");
 //         TranslationHelper.ModifyIL(il, "Arbitration descends!", "Арбитраж снизошёл!");

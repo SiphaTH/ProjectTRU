@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class ModeIndicatorUIGetDifficultyStatus : Patch<ILContext.Manipulator>
+public class ModeIndicatorUIGetDifficultyStatus : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(ModeIndicatorUI).GetCachedMethod(nameof(ModeIndicatorUI.GetDifficultyStatus));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " Mode is ", " ");
         TranslationHelper.ModifyIL(il, "active", "активирована");
@@ -24,13 +24,13 @@ public class ModeIndicatorUIGetDifficultyStatus : Patch<ILContext.Manipulator>
 }
 
 [JITWhenModsEnabled("CalamityMod")]
-public class ModeIndicatorUIGetLockStatus : Patch<ILContext.Manipulator>
+public class ModeIndicatorUIGetLockStatus : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(ModeIndicatorUI).GetCachedMethod(nameof(ModeIndicatorUI.GetLockStatus));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "[c/919191:Click to select a difficulty mode]", "[c/919191:Нажмите для выбора режима сложности]");
         TranslationHelper.ModifyIL(il, "[c/919191:Higher difficulty modes can only be toggled in Expert Mode or above]", "[c/919191:Режимы повышенной сложности можно переключать только в режиме Эксперта или выше]");
@@ -38,13 +38,13 @@ public class ModeIndicatorUIGetLockStatus : Patch<ILContext.Manipulator>
 }
 
 [JITWhenModsEnabled("CalamityMod")]
-public class ModeIndicatorUIGetDifficultyText : Patch<ILContext.Manipulator>
+public class ModeIndicatorUIGetDifficultyText : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(ModeIndicatorUI).GetCachedMethod(nameof(ModeIndicatorUI.GetDifficultyText));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Currently Selected : ", "Текущая сложность : ");
         TranslationHelper.ModifyIL(il, "\n[c/737373:Hold the 'Shift' key for more information]", "\nУдерживайте 'Shift' для получения дополнительной информации");

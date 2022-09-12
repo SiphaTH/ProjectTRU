@@ -1,12 +1,20 @@
-﻿using FargowiltasSouls.UI;
+﻿using CalamityRuTranslate.Common;
+using CalamityRuTranslate.Common.Utilities;
+using CalamityRuTranslate.Core;
+using FargowiltasSouls.UI;
+using Terraria;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.FargowiltasSouls;
 
 [JITWhenModsEnabled("FargowitlasSouls")]
-internal static class FargowiltasSoulsReflection
+public class FargowiltasSoulsReflection : ContentTranslation
 {
-    internal static void Load()
+    public override bool IsTranslationEnabled => !Main.dedServ && ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage;
+    
+    public override float Priority => 1f;
+
+    public override void LoadContent()
     {
         const float backWidth = 540f;
         SoulToggler soulToggler = global::FargowiltasSouls.FargowiltasSouls.UserInterfaceManager.SoulToggler;

@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
 [JITWhenModsEnabled("InfernumMode", "CalamityMod")]
-public class PoDItemsPatch : Patch<ILContext.Manipulator>
+public class PoDItemsPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(PoDItems).GetCachedMethod("DoGTeleportDenialText");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "YOU CANNOT EVADE ME SO EASILY!", "ТЫ НЕ СМОЖЕШЬ ТАК ЛЕГКО ОТ МЕНЯ УСКОЛЬЗНУТЬ!");
         TranslationHelper.ModifyIL(il, "YOU CANNOT HOPE TO OUTSMART A MASTER OF DIMENSIONS!", "НЕ НАДЕЙСЯ ПЕРЕХИТРИТЬ МАСТЕРА ИЗМЕРЕНИЙ!");

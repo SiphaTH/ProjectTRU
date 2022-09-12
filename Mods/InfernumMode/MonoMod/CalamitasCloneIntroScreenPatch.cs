@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
 [JITWhenModsEnabled("InfernumMode", "CalamityMod")]
-public class CalamitasCloneIntroScreenPatch : Patch<ILContext.Manipulator>
+public class CalamitasCloneIntroScreenPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(CalamitasCloneIntroScreen).GetCachedMethod("get_TextToDisplay");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "False Witch\nCalamitas' Clone", "ЛОЖНАЯ ВЕДЬМА\nКЛОН КАЛАМИТАС");
     };

@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class PlaguedPlateBedPatch : Patch<ILContext.Manipulator>
+public class PlaguedPlateBedPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
         
     public override MethodInfo ModifiedMethod => typeof(PlaguedPlateBed).GetCachedMethod(nameof(PlaguedPlateBed.RightClick));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Spawn point removed!", "Точка воскрешения удалена!");
         TranslationHelper.ModifyIL(il, "Spawn point set!", "Точка воскрешения задана!");

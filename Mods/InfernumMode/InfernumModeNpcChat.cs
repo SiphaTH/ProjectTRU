@@ -10,11 +10,13 @@ public class InfernumModeNpcChat : ContentTranslation
 {
     public override bool IsTranslationEnabled => ModsCall.Calamity != null && ModsCall.Infernum != null && TranslationHelper.IsRussianLanguage;
     
+    public override float Priority => 1f;
+    
     private int Nurse => NPC.FindFirstNPC(NPCID.Nurse);
     private bool IsTalking => Main.LocalPlayer.talkNPC >= 0;
     private int TalkingNpc => Main.player[Main.myPlayer].talkNPC;
 
-    public override void LoadTranslation()
+    public override void ModifyNpcChatText()
     {
         if (!IsTalking)
             return;

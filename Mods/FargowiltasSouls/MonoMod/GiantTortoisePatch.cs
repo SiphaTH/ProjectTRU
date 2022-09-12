@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod;
 
 [JITWhenModsEnabled("FargowiltasSouls")]
-public class GiantTortoisePatch : Patch<ILContext.Manipulator>
+public class GiantTortoisePatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(GiantTortoise).GetCachedMethod(nameof(GiantTortoise.OnHitByItem));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " was impaled by a Giant Tortoise.", "");
     };

@@ -1,28 +1,23 @@
-﻿using CalamityRuTranslate.Common;
+﻿using System;
+using System.Reflection;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
+using Fargowiltas.Items.Summons.SwarmSummons;
 using MonoMod.Cil;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class OverloadTwinsPatch : ILEdit
+public class OverloadTwinsPatch : ILPatcher
 {
-    public override bool Autoload() => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
-    public override void Load()
-    {
-        IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadTwins.ctor += Translation;
-    }
+    public override MethodBase ModifiedMethod => typeof(OverloadTwins).GetConstructor(Type.EmptyTypes);
 
-    public override void Unload()
-    {
-        IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadTwins.ctor -= Translation;
-    }
-
-    private void Translation(ILContext il)
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "A legion of glowing iris sing a dreadful song!", "Полчища светящихся глаз поют зловещую песню!");
-    }
+    };
 }

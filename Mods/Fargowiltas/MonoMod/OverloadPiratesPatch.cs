@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class OverloadPiratesPatch : Patch<ILContext.Manipulator>
+public class OverloadPiratesPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(OverloadPirates).GetCachedMethod(nameof(OverloadPirates.UseItem));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "The pirates have calmed down!", "Пираты успокаиваются!");
         TranslationHelper.ModifyIL(il, "The pirates have calmed down!", "Пираты успокаиваются!", 2);

@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class PenthesileaPatch : Patch<ILContext.Manipulator>
+// public class PenthesileaPatch : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(Penthesilea).GetCachedMethod(nameof(Penthesilea.AI));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "You fall to the Witch of Ink...", "Вы пали перед Ведьмой чернил...");
 //         TranslationHelper.ModifyIL(il, "You've been colored with ink!", "Вас раскрасили чернилами!");

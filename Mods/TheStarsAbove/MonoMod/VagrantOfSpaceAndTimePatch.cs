@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class VagrantOfSpaceAndTimePatch : Patch<ILContext.Manipulator>
+// public class VagrantOfSpaceAndTimePatch : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(VagrantOfSpaceAndTime).GetCachedMethod(nameof(VagrantOfSpaceAndTime.AI));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "You fall to the Vagrant of Space and Time...", "Вы пали перед Ходящим между пространством и временем...");
 //         TranslationHelper.ModifyIL(il, "Ars Laevateinn prepares to strike!", "Арс Леватейн готовится к удару!");

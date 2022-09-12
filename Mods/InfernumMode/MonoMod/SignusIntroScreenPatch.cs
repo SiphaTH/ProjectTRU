@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
 [JITWhenModsEnabled("InfernumMode", "CalamityMod")]
-public class SignusIntroScreenPatch : Patch<ILContext.Manipulator>
+public class SignusIntroScreenPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(SignusIntroScreen).GetCachedMethod("get_TextToDisplay");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "The Fathomless Assassin\nSignus", "НЕПОСТИЖИМЫЙ УБИЙЦА\nСИГНУС");
     };

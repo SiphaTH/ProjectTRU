@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class MnemonicSigilPatch : Patch<ILContext.Manipulator>
+// public class MnemonicSigilPatch : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(MnemonicSigil).GetCachedMethod(nameof(MnemonicSigil.UseItem));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "The expanse around you begins to contract...", "Окружающее пространство начинает сжиматься...");
 //         TranslationHelper.ModifyIL(il, "Tsukiyomi appears before you!", "Цукиёми появляется перед вами!");

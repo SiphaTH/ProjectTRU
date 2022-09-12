@@ -1,20 +1,22 @@
 using CalamityMod;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.MonoMod;
+using CalamityRuTranslate.Core;
 using Terraria;
 using Terraria.ModLoader;
 using Item = On.Terraria.Item;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
 
-public class AffixName : ILEdit
+public class AffixName : ContentTranslation
 {
-    public override bool Autoload() => ModsCall.Calamity == null && TranslationHelper.IsRussianLanguage;
+    public override bool IsTranslationEnabled => ModsCall.Calamity == null && TranslationHelper.IsRussianLanguage;
 
-    public override void Load() => Item.AffixName += ItemOnAffixName;
+    public override float Priority => 1f;
 
-    public override void Unload() => Item.AffixName -= ItemOnAffixName;
+    public override void LoadContent() => Item.AffixName += ItemOnAffixName;
+
+    public override void UnloadContent() => Item.AffixName -= ItemOnAffixName;
 
     private string ItemOnAffixName(Item.orig_AffixName orig, Terraria.Item self)
     {
@@ -37,13 +39,15 @@ public class AffixName : ILEdit
 }
 
 [JITWhenModsEnabled("CalamityMod")]
-public class AffixNameWithCalamity : ILEdit
+public class AffixNameWithCalamity : ContentTranslation
 {
-    public override bool Autoload() => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+    public override bool IsTranslationEnabled => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
-    public override void Load() => Item.AffixName += ItemOnAffixName;
+    public override float Priority => 1f;
 
-    public override void Unload() => Item.AffixName -= ItemOnAffixName;
+    public override void LoadContent() => Item.AffixName += ItemOnAffixName;
+
+    public override void UnloadContent() => Item.AffixName -= ItemOnAffixName;
 
     private string ItemOnAffixName(Item.orig_AffixName orig, Terraria.Item self)
     {

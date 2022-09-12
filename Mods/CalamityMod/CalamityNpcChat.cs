@@ -14,6 +14,8 @@ public class CalamityNpcChat : ContentTranslation
 {
     public override bool IsTranslationEnabled => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
+    public override float Priority => 1f;
+    
     #region Properties
     private int Dryad => NPC.FindFirstNPC(NPCID.Dryad);
     private int Bartender => NPC.FindFirstNPC(NPCID.DD2Bartender);
@@ -50,7 +52,7 @@ public class CalamityNpcChat : ContentTranslation
     
     private bool IsExistingNPC(int npcType) => npcType >= 0;
     
-    public override void LoadTranslation()
+    public override void ModifyNpcChatText()
     {
         if (!IsTalking)
             return;

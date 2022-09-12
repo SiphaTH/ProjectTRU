@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class TsukiyomiPatch : Patch<ILContext.Manipulator>
+// public class TsukiyomiPatch : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(Tsukiyomi).GetCachedMethod(nameof(Tsukiyomi.AI));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "The galaxy stands still once more...", "");
 //         TranslationHelper.ModifyIL(il, "You've been colored with ink!", "Вас раскрасили чернилами!");

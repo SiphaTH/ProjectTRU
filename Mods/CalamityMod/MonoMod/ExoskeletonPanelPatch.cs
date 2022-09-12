@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class ExoskeletonPanelPatch : Patch<ILContext.Manipulator>
+public class ExoskeletonPanelPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
-    public override MethodInfo ModifiedMethod => typeof(ExoskeletonPanel).GetCachedMethod(nameof(ExoskeletonPanel.PreDraw));
+    public override MethodBase ModifiedMethod => typeof(ExoskeletonPanel).GetCachedMethod(nameof(ExoskeletonPanel.PreDraw));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Insufficient minion slots!", "Недостаточно слотов призываемых миньонов!");
     };

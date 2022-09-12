@@ -50,17 +50,14 @@ using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using MonoMod.RuntimeDetour.HookGen;
 using ReLogic.Content;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class WeakReferenceSupportAddCalamityBosses : ILEdit
+public class WeakReferenceSupportAddCalamityBosses : OnPatcher
 {
-    private MethodInfo _addCalamityBosses => ModsCall.Calamity?.Code.GetType("CalamityMod.WeakReferenceSupport")
-         ?.GetMethod("AddCalamityBosses", BindingFlags.Static | BindingFlags.NonPublic);
     private bool DownedDesertScourge => DownedBossSystem.downedDesertScourge;
     private bool DownedGiantClam => DownedBossSystem.downedCLAM;
     private bool DownedCrabulon => DownedBossSystem.downedCrabulon;
@@ -90,28 +87,17 @@ public class WeakReferenceSupportAddCalamityBosses : ILEdit
     private bool DownedExoMechs => DownedBossSystem.downedExoMechs;
     private bool DownedSCal => DownedBossSystem.downedSCal;
     private bool DownedAdultEidolonWyrm => DownedBossSystem.downedAdultEidolonWyrm;
-    private delegate void orig_AddCalamityBosses(Mod bossChecklist, Mod calamity);
-    private delegate void hook_AddCalamityBosses(orig_AddCalamityBosses orig, Mod bossChecklist, Mod calamity);
 
-    private event hook_AddCalamityBosses OnAddCalamityBosses
-    {
-        add => HookEndpointManager.Add<hook_AddCalamityBosses>(_addCalamityBosses, value);
-        remove => HookEndpointManager.Remove<hook_AddCalamityBosses>(_addCalamityBosses, value);
-    }
+     public override bool AutoLoad => ModsCall.Calamity != null && ModsCall.BossChecklist != null && TranslationHelper.IsRussianLanguage;
 
-     public override bool Autoload() => ModsCall.Calamity != null && ModsCall.BossChecklist != null && TranslationHelper.IsRussianLanguage;
+     public override MethodInfo ModifiedMethod => ModsCall.Calamity?.Code.GetType("CalamityMod.WeakReferenceSupport")
+         ?.GetMethod("AddCalamityBosses", BindingFlags.Static | BindingFlags.NonPublic);
      
-     public override void Load()
-     {
-         OnAddCalamityBosses += Translation;
-     }
+     private delegate void AddCalamityBossesDelegate(Mod bossChecklist, Mod calamity);
      
-     public override void Unload()
-     {
-         OnAddCalamityBosses -= Translation;
-     }
+     public override Delegate Delegate => Translation;
      
-     private void Translation(orig_AddCalamityBosses orig, Mod bosschecklist, Mod calamity)
+     private void Translation(AddCalamityBossesDelegate orig, Mod bosschecklist, Mod calamity)
      {
          AddBoss(
              bosschecklist,
@@ -861,33 +847,18 @@ public class WeakReferenceSupportAddCalamityBosses : ILEdit
 }
 
 [JITWhenModsEnabled("CalamityMod")]
-public class WeakReferenceSupportCensusSupport : ILEdit
+public class WeakReferenceSupportCensusSupport : OnPatcher
 {
-    private MethodInfo _censusSupport => ModsCall.Calamity?.Code.GetType("CalamityMod.WeakReferenceSupport")
+    public override bool AutoLoad => ModsCall.Calamity != null && ModsCall.Census != null && TranslationHelper.IsRussianLanguage;
+
+    public override MethodInfo ModifiedMethod => ModsCall.Calamity?.Code.GetType("CalamityMod.WeakReferenceSupport")
         ?.GetMethod("CensusSupport", BindingFlags.Static | BindingFlags.NonPublic);
 
-    private delegate void orig_CensusSupport();
-    private delegate void hook_CensusSupport(orig_CensusSupport orig);
+    private delegate void CensusSupportDelegate();
 
-    private event hook_CensusSupport OnCensusSupport
-    {
-        add => HookEndpointManager.Add<hook_CensusSupport>(_censusSupport, value);
-        remove => HookEndpointManager.Remove<hook_CensusSupport>(_censusSupport, value);
-    }
+    public override Delegate Delegate => Translation;
 
-    public override bool Autoload() => ModsCall.Calamity != null && ModsCall.Census != null && TranslationHelper.IsRussianLanguage;
-
-    public override void Load()
-    {
-        OnCensusSupport += Translation;
-    }
-
-    public override void Unload()
-    {
-        OnCensusSupport -= Translation;
-    }
-
-    private void Translation(orig_CensusSupport orig)
+    private void Translation(CensusSupportDelegate orig)
     {
         ModsCall.Census.Call(
             "TownNPCCondition",
@@ -918,35 +889,22 @@ public class WeakReferenceSupportCensusSupport : ILEdit
 }
 
 [JITWhenModsEnabled("CalamityMod")]
-public class WeakReferenceSupportAddCalamityInvasions : ILEdit
+public class WeakReferenceSupportAddCalamityInvasions : OnPatcher
 {
-    private MethodInfo _addCalamityInvasions => ModsCall.Calamity?.Code.GetType("CalamityMod.WeakReferenceSupport")
-        ?.GetMethod("AddCalamityInvasions", BindingFlags.Static | BindingFlags.NonPublic);
     private bool DownedEoCAcidRain => DownedBossSystem.downedEoCAcidRain;
     private bool  DownedAquaticScourgeAcidRain => DownedBossSystem.downedAquaticScourgeAcidRain;
     private bool  DownedBoomerDuke => DownedBossSystem.downedBoomerDuke;
-    private delegate void orig_AddCalamityInvasions(Mod bossChecklist, Mod calamity);
-    private delegate void hook_AddCalamityInvasions(orig_AddCalamityInvasions orig, Mod bossChecklist, Mod calamity);
 
-    private event hook_AddCalamityInvasions OnAddCalamityInvasions
-    {
-        add => HookEndpointManager.Add<hook_AddCalamityInvasions>(_addCalamityInvasions, value);
-        remove => HookEndpointManager.Remove<hook_AddCalamityInvasions>(_addCalamityInvasions, value);
-    }
+    public override bool AutoLoad => ModsCall.Calamity != null && ModsCall.BossChecklist != null && TranslationHelper.IsRussianLanguage;
 
-    public override bool Autoload() => ModsCall.Calamity != null && ModsCall.BossChecklist != null && TranslationHelper.IsRussianLanguage;
-
-    public override void Load()
-    {
-        OnAddCalamityInvasions += Translation;
-    }
-
-    public override void Unload()
-    {
-        OnAddCalamityInvasions -= Translation;
-    }
+    public override MethodInfo ModifiedMethod => ModsCall.Calamity?.Code.GetType("CalamityMod.WeakReferenceSupport")
+        ?.GetMethod("AddCalamityInvasions", BindingFlags.Static | BindingFlags.NonPublic);
     
-    private void Translation(orig_AddCalamityInvasions orig, Mod bossChecklist, Mod calamity)
+    private delegate void AddCalamityInvasionsDelegate(Mod bossChecklist, Mod calamity);
+
+    public override Delegate Delegate => Translation;
+
+    private void Translation(AddCalamityInvasionsDelegate orig, Mod bossChecklist, Mod calamity)
     {
         AddInvasion(
             bossChecklist,

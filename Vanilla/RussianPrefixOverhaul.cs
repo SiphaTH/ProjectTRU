@@ -387,7 +387,6 @@ internal static class RussianPrefixOverhaul
 		ItemID.ScytheWhip,
 		ItemID.MaceWhip,
 		ItemID.Mace,
-		ItemID.Spear,
 	};
 
 	//Средний
@@ -430,6 +429,7 @@ internal static class RussianPrefixOverhaul
 		ItemID.TentacleSpike,
 		ItemID.FlowerPow,
 		ItemID.DarkLance,
+		ItemID.Spear,
 	};
 
 	//Множественный

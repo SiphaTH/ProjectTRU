@@ -1,28 +1,23 @@
-﻿using CalamityRuTranslate.Common;
+﻿using System;
+using System.Reflection;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
+using Fargowiltas.Items.Summons.SwarmSummons;
 using MonoMod.Cil;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class OverloadBetsyPatch : ILEdit
+public class OverloadBetsyPatch : ILPatcher
 {
-    public override bool Autoload() => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
 
-    public override void Load()
-    {
-        IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadBetsy.ctor += Translation;
-    }
+    public override MethodBase ModifiedMethod => typeof(OverloadBetsy).GetConstructor(Type.EmptyTypes);
 
-    public override void Unload()
-    {
-        IL.Fargowiltas.Items.Summons.SwarmSummons.OverloadBetsy.ctor -= Translation;
-    }
-
-    private void Translation(ILContext il)
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "The real Old One's Army is attacking!", "Истинная армия Древних атакует!");
-    }
+    };
 }

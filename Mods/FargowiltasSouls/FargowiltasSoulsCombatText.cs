@@ -9,7 +9,9 @@ public class FargowiltasSoulsCombatText : ContentTranslation
 {
     public override bool IsTranslationEnabled => ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage;
     
-    public override void LoadTranslation()
+    public override float Priority => 1f;
+    
+    public override void ModifyModCombatText()
     {
         for (int i = 0; i < 100; i++)
         {

@@ -9,13 +9,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod;
 
 [JITWhenModsEnabled("FargowiltasSouls")]
-public class DerplingPatch : Patch<ILContext.Manipulator>
+public class DerplingPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(Derpling).GetCachedMethod(nameof(Derpling.AI));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, " was sucked dry.", " выдохся.");
     };

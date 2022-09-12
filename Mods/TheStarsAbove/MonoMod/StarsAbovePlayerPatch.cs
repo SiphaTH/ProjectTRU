@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class StarsAbovePlayerOnEnterWorld : Patch<ILContext.Manipulator>
+// public class StarsAbovePlayerOnEnterWorld : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(StarsAbovePlayer).GetCachedMethod(nameof(StarsAbovePlayer.OnEnterWorld));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, " has been binded to ", " был связан с миром: ");
 //         TranslationHelper.ModifyIL(il, "The Stars Above progression will only occur on this world. (Check Mod Settings if necessary)", "");
@@ -28,13 +28,13 @@
 // }
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class StarsAbovePlayerPreUpdate : Patch<ILContext.Manipulator>
+// public class StarsAbovePlayerPreUpdate : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(StarsAbovePlayer).GetCachedMethod(nameof(StarsAbovePlayer.PreUpdate));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "Refulgent Prism", "Сверкающая призма");
 //         TranslationHelper.ModifyIL(il, "Refulgent Prism", "Сверкающая призма", 2);
@@ -240,13 +240,13 @@
 // }
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class StarsAbovePlayerPreKill : Patch<ILContext.Manipulator>
+// public class StarsAbovePlayerPreKill : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(StarsAbovePlayer).GetCachedMethod(nameof(StarsAbovePlayer.PreKill));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, " died beyond their world.", "");
 //         TranslationHelper.ModifyIL(il, " was lost in space.", "");

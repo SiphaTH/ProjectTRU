@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class StarsAboveDialogueSystemPatch : Patch<ILContext.Manipulator>
+// public class StarsAboveDialogueSystemPatch : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(StarsAboveDialogueSystem).GetCachedMethod(nameof(StarsAboveDialogueSystem.SetupDialogueSystem));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "Greetings! I am Asphodene- a Starfarer, and in turn, that makes you my Starbearer.", "Приветствую! Я Асфодена - Астра, а значит ты - мой Звездоносец.");
 //         TranslationHelper.ModifyIL(il, "I will lend you my strength so that we may defeat the threats to this world together.", "Я одолжу тебе свою силу и вместе мы одолеем угрозы этому миру.");

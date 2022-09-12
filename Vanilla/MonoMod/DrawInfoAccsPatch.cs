@@ -6,13 +6,13 @@ using Terraria;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
 
-public class DrawInfoAccsPatch : Patch<ILContext.Manipulator>
+public class DrawInfoAccsPatch : ILPatcher
 {
     public override bool AutoLoad => TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(Main).GetCachedMethod("DrawInfoAccs");
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, 12, 24);
         TranslationHelper.ModifyIL(il, 12, 0, 3);

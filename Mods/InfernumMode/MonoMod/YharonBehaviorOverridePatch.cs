@@ -3,23 +3,34 @@ using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using InfernumMode.BehaviorOverrides.BossAIs.Yharon;
-using InfernumMode.BossIntroScreens;
 using MonoMod.Cil;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
 [JITWhenModsEnabled("InfernumMode", "CalamityMod")]
-public class YharonBehaviorOverridePatch : Patch<ILContext.Manipulator>
+public class YharonBehaviorOverridePreAI : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(YharonBehaviorOverride).GetCachedMethod(nameof(YharonBehaviorOverride.PreAI));
 
-    protected override ILContext.Manipulator PatchMethod { get; } = il =>
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The air is scorching your skin...", "");
-        TranslationHelper.ModifyIL(il, "The heat is surging...", "");
-        TranslationHelper.ModifyIL(il, "The heat is surging...", "", 2);
+        TranslationHelper.ModifyIL(il, "The air is scorching your skin...", "Воздух обжигает вашу кожу...");
+    };
+}
+
+[JITWhenModsEnabled("InfernumMode", "CalamityMod")]
+public class YharonBehaviorOverrideDoBehavior_FinalDyingRoar : ILPatcher
+{
+    public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+    
+    public override MethodInfo ModifiedMethod => typeof(YharonBehaviorOverride).GetCachedMethod(nameof(YharonBehaviorOverride.DoBehavior_FinalDyingRoar));
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    {
+        TranslationHelper.ModifyIL(il, "The heat is surging...", "Жара нарастает...");
+        TranslationHelper.ModifyIL(il, "The heat is surging...", "Жара нарастает...", 2);
     };
 }

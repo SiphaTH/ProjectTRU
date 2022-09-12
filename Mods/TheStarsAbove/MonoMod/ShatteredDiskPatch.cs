@@ -9,13 +9,13 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.MonoMod;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class ShatteredDiskPatch : Patch<ILContext.Manipulator>
+// public class ShatteredDiskPatch : ILPatcher
 // {
 //     public override bool AutoLoad => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
 //
 //     public override MethodInfo ModifiedMethod => typeof(ShatteredDisk).GetCachedMethod(nameof(ShatteredDisk.UseItem));
 //
-//     protected override ILContext.Manipulator PatchMethod { get; } = il =>
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "Reality's fabric gives way to a mysterious being...", "Ткань реальности уступает таинственному существу...");
 //         TranslationHelper.ModifyIL(il, "The Vagrant of Space and Time descends!", "Ходящий между пространством и временем снизошёл!");
