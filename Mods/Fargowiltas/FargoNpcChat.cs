@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.Fargowiltas;
 
 [JITWhenModsEnabled("Fargowiltas")]
-public class FargoNpcChat : ContentTranslation
+public class FargoNpcChat : ContentTranslation, INpcChatText
 {
     public override bool IsTranslationEnabled => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
     
@@ -39,7 +39,7 @@ public class FargoNpcChat : ContentTranslation
     #endregion
     private bool IsExistingNPC(int npcType) => npcType >= 0;
     
-    public override void ModifyNpcChatText()
+    public void NpcChatTextTranslation()
     {
         if (!IsTalking)
             return;

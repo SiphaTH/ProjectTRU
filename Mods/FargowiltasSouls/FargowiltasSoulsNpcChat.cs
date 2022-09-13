@@ -6,7 +6,7 @@ using Terraria.ID;
 
 namespace CalamityRuTranslate.Mods.FargowiltasSouls;
 
-public class FargowiltasSoulsNpcChat : ContentTranslation
+public class FargowiltasSoulsNpcChat : ContentTranslation, INpcChatText
 {
     public override bool IsTranslationEnabled => ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage;
     
@@ -20,7 +20,7 @@ public class FargowiltasSoulsNpcChat : ContentTranslation
 
     private bool IsExistingNPC(int npcType) => npcType >= 0;
 
-    public override void ModifyNpcChatText()
+    public void NpcChatTextTranslation()
     {
         if (!IsTalking)
             return;

@@ -8,13 +8,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.Fargowiltas;
 
 [JITWhenModsEnabled("Fargowitlas")]
-public class FargowiltasReflection : ContentTranslation
+public class FargowiltasReflection : ContentTranslation, ILoadableContent
 {
     public override bool IsTranslationEnabled => !Main.dedServ && ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
     
     public override float Priority => 1f;
     
-    public override void LoadContent()
+    public void LoadContent()
     {
         StatButton statButton = global::Fargowiltas.Fargowiltas.UserInterfaceManager.StatButton;
         StatSheetUI statSheet = global::Fargowiltas.Fargowiltas.UserInterfaceManager.StatSheet;
@@ -24,4 +24,6 @@ public class FargowiltasReflection : ContentTranslation
         statSheet.BackPanel.Width.Set(backWidth, 0f);
         statSheet.InnerPanel.Width.Set(backWidth - 12f, 0f);
     }
+
+    public void UnloadContent() { }
 }

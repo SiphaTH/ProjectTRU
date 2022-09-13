@@ -5,18 +5,18 @@ using On.Terraria.GameContent.UI.Elements;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
 
-public class UIKeybindingListItemPatch : ContentTranslation
+public class UIKeybindingListItemPatch : ContentTranslation, ILoadableContent
 {
     public override bool IsTranslationEnabled => TranslationHelper.IsRussianLanguage;
 
     public override float Priority => 1f;
     
-    public override void LoadContent()
+    public void LoadContent()
     {
         UIKeybindingListItem.GetFriendlyName += UIKeybindingListItemOnGetFriendlyName;
     }
 
-    public override void UnloadContent()
+    public void UnloadContent()
     {
         UIKeybindingListItem.GetFriendlyName -= UIKeybindingListItemOnGetFriendlyName;
     }

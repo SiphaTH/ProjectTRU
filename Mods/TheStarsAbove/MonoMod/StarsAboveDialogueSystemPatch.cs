@@ -534,7 +534,7 @@
 //         TranslationHelper.ModifyIL(il, "Okay, I have another Essence for your battles. It summons a mystical fox that burns your enemies with icy energy. They might even deserve it, too.", "");
 //         TranslationHelper.ModifyIL(il, "Whoa, this is a powerful Essence. It's potential seems to be magnified based on your Aspected Damage Type. How about giving it a go?", "");
 //         TranslationHelper.ModifyIL(il, "It looks like this next Essence is a strong one. Aspected Damage Type seems to empower the weapon further... ", "");
-//         TranslationHelper.ModifyIL(il, "Okay..! Time for another Essence! This looks to be a Ranged weapon with high damange output at close range. ", "");
+//         TranslationHelper.ModifyIL(il, "Okay..! Time for another Essence! This looks to be a Ranged weapon with high damage output at close range. ", "");
 //         TranslationHelper.ModifyIL(il, "I've located another Essence for your use. It seems this Ranged-type weapon is hyperfocused on movement. How about pairing it with some mobility tools..?", "");
 //         TranslationHelper.ModifyIL(il, "This new Essence is great! It's a Ranged weapon with crazy high explosive potential. Just point it towards the bad guys.", "");
 //         TranslationHelper.ModifyIL(il, "Another Essence is yours. It's a strong Ranged weapon with incredibly good room-clearing power. How about that?", "");
@@ -586,6 +586,10 @@
 //         TranslationHelper.ModifyIL(il, "This Essence leads to a truly powerful weapon. It bears remnants of an ancient, advanced civilization. ", "");
 //         TranslationHelper.ModifyIL(il, "Evidently, they bore proficiency in spatial manipulation. I'd like you to give it a try, but it might reject the unworthy. ", "");
 //         TranslationHelper.ModifyIL(il, "At this point, I wonder if there was a weapon you weren't worthy to wield. Yes, I'm praising you. ", "");
+//         TranslationHelper.ModifyIL(il, "Look here, another Essence..! It's going to be Magic-type. It seems to revolve around balancing Black and White Mana to attack. ", "");
+//         TranslationHelper.ModifyIL(il, "It seems that they were opposites, at least where this thing came from. Makes you wonder... ", "");
+//         TranslationHelper.ModifyIL(il, "This Magic-type Essence balances attack and healing through the dual-use of Black and White mana. ", "");
+//         TranslationHelper.ModifyIL(il, "Two opposite schools of learning, at least in this Essence's original world. Now isn't that thought-provoking. ", "");
 //         TranslationHelper.ModifyIL(il, "We meet again, ", "");
 //         TranslationHelper.ModifyIL(il, "We meet again, ", "", 2);
 //         TranslationHelper.ModifyIL(il, "We meet again, ", "", 3);

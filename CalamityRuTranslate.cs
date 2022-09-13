@@ -70,7 +70,7 @@ public class CalamityRuTranslate : Mod
 
         if (Contents.Count > 0)
             foreach (ContentTranslation content in Contents.Where(x => x.IsTranslationEnabled))
-                content.LoadContent();
+                (content as ILoadableContent)?.LoadContent();
 
         if (!Main.dedServ && TranslationHelper.IsRussianLanguage)
         {
@@ -88,7 +88,7 @@ public class CalamityRuTranslate : Mod
         
         if (Contents != null)
             foreach (ContentTranslation content in Contents)
-                content.UnloadContent();
+                (content as ILoadableContent)?.UnloadContent();
 
         if (_ilHooks != null)
             foreach (ILHook hook in _ilHooks)

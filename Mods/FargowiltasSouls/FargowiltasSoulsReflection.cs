@@ -8,13 +8,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.FargowiltasSouls;
 
 [JITWhenModsEnabled("FargowitlasSouls")]
-public class FargowiltasSoulsReflection : ContentTranslation
+public class FargowiltasSoulsReflection : ContentTranslation, ILoadableContent
 {
     public override bool IsTranslationEnabled => !Main.dedServ && ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage;
     
     public override float Priority => 1f;
 
-    public override void LoadContent()
+    public void LoadContent()
     {
         const float backWidth = 540f;
         SoulToggler soulToggler = global::FargowiltasSouls.FargowiltasSouls.UserInterfaceManager.SoulToggler;
@@ -33,4 +33,6 @@ public class FargowiltasSoulsReflection : ContentTranslation
         soulToggler.MinimalButton.Text = "Предустановленные настройки минимума эффектов";
         soulToggler.SomeEffectsButton.Text = "Предустановленные настройки некоторых эффектов";
     }
+
+    public void UnloadContent() { }
 }

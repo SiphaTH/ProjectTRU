@@ -202,6 +202,7 @@
 //         TranslationHelper.ModifyIL(il, "The Spatial Disk begins to resonate. Left click to interact.", "Простраственный диск резонирует. Нажмите ЛКМ для взаимодействия.", 92);
 //         TranslationHelper.ModifyIL(il, "The Spatial Disk begins to resonate. Left click to interact.", "Простраственный диск резонирует. Нажмите ЛКМ для взаимодействия.", 93);
 //         TranslationHelper.ModifyIL(il, "The Spatial Disk begins to resonate. Left click to interact.", "Простраственный диск резонирует. Нажмите ЛКМ для взаимодействия.", 94);
+//         TranslationHelper.ModifyIL(il, "The Spatial Disk begins to resonate. Left click to interact.", "Простраственный диск резонирует. Нажмите ЛКМ для взаимодействия.", 95);
 //         TranslationHelper.ModifyIL(il, "The Stellar Array has gained a new ability!", "Открывается новое Созвездие!");
 //         TranslationHelper.ModifyIL(il, "The Stellar Array has gained a new ability!", "Открывается новое Созвездие!", 2);
 //         TranslationHelper.ModifyIL(il, "The Stellar Array has gained a new ability!", "Открывается новое Созвездие!", 3);

@@ -6,7 +6,7 @@ using Terraria.ID;
 
 namespace CalamityRuTranslate.Mods.InfernumMode;
 
-public class InfernumModeNpcChat : ContentTranslation
+public class InfernumModeNpcChat : ContentTranslation, INpcChatText
 {
     public override bool IsTranslationEnabled => ModsCall.Calamity != null && ModsCall.Infernum != null && TranslationHelper.IsRussianLanguage;
     
@@ -16,7 +16,7 @@ public class InfernumModeNpcChat : ContentTranslation
     private bool IsTalking => Main.LocalPlayer.talkNPC >= 0;
     private int TalkingNpc => Main.player[Main.myPlayer].talkNPC;
 
-    public override void ModifyNpcChatText()
+    public void NpcChatTextTranslation()
     {
         if (!IsTalking)
             return;

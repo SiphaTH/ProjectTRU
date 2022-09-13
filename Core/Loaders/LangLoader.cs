@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Core.Loaders;
 
-public class LangLoader : ContentTranslation
+public class LangLoader : ContentTranslation, ILoadableContent
 {
     public static Dictionary<string, ModTranslation> Translations;
 
@@ -13,13 +13,13 @@ public class LangLoader : ContentTranslation
 
     public override float Priority => 0.9f;
 
-    public override void LoadContent()
+    public void LoadContent()
     {
         FieldInfo translationsField = typeof(LocalizationLoader).GetField("translations", BindingFlags.Static | BindingFlags.NonPublic);
         Translations = (Dictionary<string, ModTranslation>) translationsField?.GetValue(CalamityRuTranslate.Instance);
     }
 
-    public override void UnloadContent()
+    public void UnloadContent()
     {
         Translations.Clear();
         Translations = null;

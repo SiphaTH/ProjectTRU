@@ -18,13 +18,13 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class CalamityReflection : ContentTranslation
+public class CalamityReflection : ContentTranslation, ILoadableContent
 {
     public override bool IsTranslationEnabled => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override float Priority => 1f;
     
-    public override void LoadContent()
+    public void LoadContent()
     {
         List<(string, string)> enchantmentTranslation = new List<(string, string)>
         {
@@ -161,6 +161,8 @@ public class CalamityReflection : ContentTranslation
         DifficultyModeSystem.Difficulties[3].ShortDescription = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.Malice.ShortDescription");
     }
 
+    public void UnloadContent() { }
+    
     private void CreationEffect(Item item)
     {
         item.Calamity().AppliedEnchantment = new Enchantment?();

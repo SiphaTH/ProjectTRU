@@ -5,15 +5,15 @@ using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
 
-public class UIManageControlsPatch : ContentTranslation
+public class UIManageControlsPatch : ContentTranslation, ILoadableContent
 {
     public override bool IsTranslationEnabled => TranslationHelper.IsRussianLanguage;
 
     public override float Priority => 1f;
     
-    public override void LoadContent() => UIManageControls.OnInitialize += UIManageControlsOnOnInitialize;
+    public void LoadContent() => UIManageControls.OnInitialize += UIManageControlsOnOnInitialize;
 
-    public override void UnloadContent() => UIManageControls.OnInitialize -= UIManageControlsOnOnInitialize;
+    public void UnloadContent() => UIManageControls.OnInitialize -= UIManageControlsOnOnInitialize;
 
     private void UIManageControlsOnOnInitialize(ILContext il)
     {

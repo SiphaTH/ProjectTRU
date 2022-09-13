@@ -923,7 +923,7 @@
 #            
 #            AshenStrength: {
 #                Name: Пепельная сила
-#                Description: Регенерация здоровья значительно увеличена
+#                Description: Long-lost ashes are granting massive buffs to health regeneration and damage
 #            }
 #            
 #            CallOfTheVoid1: {
@@ -1265,6 +1265,46 @@
 #                Name: Неогранённый алмаз
 #                Description: Не спрашивайте о топоре
 #            }
+#
+#            BlackEnchantment: {
+#                Name: Black Enchantment
+#                Description: Attacks are changed, cast instantly, and consume Mana Stacks
+#            }
+#            
+#            Dualcast: {
+#                Name: Dualcast
+#                Description: Next attack will be executed without delay
+#            }
+#            
+#            RedMageCastDelay: {
+#                Name: Cast Delay
+#                Description: ""
+#            }
+#            
+#            RedMageHeldBuff: {
+#                Name: Duelist's Crimson
+#                Description: Exhibiting proficiency in maiming and mending
+#            }
+#            
+#            RedMageStabbing: {
+#                Name: Redoublement
+#                Description: ""
+#            }
+#            
+#            VerfireCasting: {
+#                Name: Verfire Casting
+#                Description: ""
+#            }
+#            
+#            VerstoneCasting: {
+#                Name: Verstone Casting
+#                Description: ""
+#            }
+#            
+#            WhiteEnchantment: {
+#                Name: White Enchantment
+#                Description: Attacks are changed, cast instantly, and consume Mana Stacks
+#            }
 #            
 #            BulwarkOfJade: {
 #                Name: Бастион нефрита
@@ -1415,6 +1455,26 @@
 #                    Восстановление маны значительно ускорено
 #                    '''
 #            }
+#
+#            ApalistikTagDamage: {
+#                Name: Apalistik Tag Damage
+#                Description: ""
+#            }
+#            
+#            KingTagDamage: {
+#                Name: King Tag Damage
+#                Description: ""
+#            }
+#            
+#             PhantomTagDamage: {
+#                Name: Phantom Tag Damage
+#                Description: ""
+#            }
+#            
+#            SeabornApalistikTagDamage: {
+#                Name: Seaborn Apalistik Tag Damage
+#                Description: ""
+#            }
 #            
 #            GuntriggerParry: {
 #                Name: Спусковое парирование
@@ -1528,6 +1588,7 @@
 #                Name: Апалистик
 #                Tooltip:
 #                    '''
+#                    5 summon tag damage
 #                    Удары по врагам накладывают дебафф [c/4A91FF:Отлив] на 4 секунды
 #                    Когда миньон поражает врага, на котором наложен дебафф [c/4A91FF:Отлив], он получает на 30% больше урона, и снимает с него [c/4A91FF:Отлив]
 #                    Кроме того, держа в руках это оружие, миньоны с шансом 10% могут наложить дебафф [c/4776A7:Выбор океана] на 5 секунд
@@ -1542,6 +1603,7 @@
 #                Name: Рождённый морем Апалистик
 #                Tooltip:
 #                    '''
+#                    18 summon tag damage
 #                    Удары по врагам накладывают дебафф [c/4A91FF:Отлив] на 4 секунды
 #                    Когда миньон поражает врага, на котором наложен дебафф [c/4A91FF:Отлив], он получает на 30% больше урона, и снимает с него [c/4A91FF:Отлив]
 #                    Кроме того, держа в руках это оружие, миньоны с шансом 10% могут наложить дебафф [c/4776A7:Выбор океана] на 5 секунд
@@ -1560,6 +1622,7 @@
 #                Name: Крючковорот арахнидов
 #                Tooltip:
 #                    '''
+#                    3 summon tag damage
 #                    Атаки этим оружием совершаются по размашистой дуге, игнорируя поверхности и сосредотачивают миньонов на врага
 #                    Нажмите <right>, чтобы выпустить парящего [c/83CAEB:Механического арахнида], атакующего врагов
 #                    Одновременно может существовать только один движущийся [c/83CAEB:Механический арахнид]
@@ -1599,7 +1662,7 @@
 #                    Убийство таким образом врагов мгновенно перезаряжает [c/926AD9:Пепельную казнь] (минимум 2 секунды) и даёт один стак [c/812ABA:Зова Пустоты]
 #                    Каждый стак [c/812ABA:Зова Пустоты] увеличивает скорость передвижения на 5%
 #                    На 5 стаках [c/812ABA:Зов Пустоты] сбрасывается, а [c/926AD9:Пепельная казнь] имеет 10 секунд перезарядки
-#                    Дополнительно, накладывает бафф [c/FF7EF3:Пепельная сила] на 2 секунды, значительно восстанавливая здоровье
+#                    Дополнительно, накладывает бафф [c/FF7EF3:Пепельная сила] на 2 секунды, значительно восстанавливая здоровье и увеличивает урон на 20%
 #                    Не сумев казнить врага, возвращает вас в начальную позицию и сбрасывает все стаки [c/812ABA:Зова Пустоты]
 #                    'Отринь свои глупые амбиции'
 #                    '''
@@ -1744,7 +1807,6 @@
 #                    Враги, на которых наложен дебафф [c/C70039:Нанитная чума] получают постепенный урон и больше урона от этого оружия
 #                    [c/C70039:Нанитная чума] складывается с каждым выстрелом и ещё больше увеличивает урон, наносимый пулями (максимум 20 стаков)
 #                    Критические удары наносят тройной урон врагам, на которых наложен дебафф [c/C70039:Нанитная чума]
-#                    Потребляет ману, но наносит стрелковый урон
 #                    '~директива = УБИТЬ пока они враги = ЗАПРОС: начать выполнение (директивы)~'
 #                    '''
 #            }
@@ -1950,7 +2012,7 @@
 #                    Заряженные атаки устремляют вас вперёд, совершая большой круговой взмах вокруг вас, нанося двойной урон
 #                    [c/FF7C00:Стрелковая форма] фокусируется на медленных, мощных стрелковых атаках
 #                    Незаряженные атаки не работают
-#                    Заряженные атаки готовятся гораздо дольше, зато выпускают мощный снаряд, который обездвиживает врагов на 2 секунды
+#                    Заряженные атаки готовятся гораздо дольше, зато выпускают мощный снаряд, that stuns foes for 1/3rd second on a critical strike
 #                    Удерживание заряженной атаки усиливает атаку каждые 1/2 секунды, максимум 10 раз
 #                    Если заряженная атака была усилена 5 или более раз, она всегда будет критической
 #                    '''
@@ -1967,7 +2029,7 @@
 #                    Заряженные атаки устремляют вас вперёд, совершая большой круговой взмах вокруг вас, нанося двойной урон
 #                    [c/FF7C00:Стрелковая форма] фокусируется на медленных, мощных стрелковых атаках
 #                    Незаряженные атаки не работают
-#                    Заряженные атаки готовятся гораздо дольше, зато выпускают мощный снаряд, который обездвиживает врагов на 2 секунды
+#                    Заряженные атаки готовятся гораздо дольше, зато выпускают мощный снаряд, that stuns foes for 1/3rd second on a critical strike
 #                    Удерживание заряженной атаки усиливает атаку каждые 1/2 секунды, максимум 10 раз
 #                    Если заряженная атака была усилена 5 или более раз, она всегда будет критической
 #                    [c/BE5CC8:Мистическая форма] фокусируется на взрывных магический атаках, расходующих 20 маны за выстрел
@@ -2056,10 +2118,9 @@
 #                    Держа в руках это оружие, призывает парящий вокруг вас [c/FF8B00:Brilliant Spark], наносящий урон при контакте
 #                    Удары по врагам этим оружием даруют стаки [c/F1AF42:Лучезарности] (до 10)
 #                    Критические удары даруют два стака [c/F1AF42:Лучезарности]
-#                    Когда парящий клинок поражает врага, он расходует все стаки [c/F1AF42:Лучезарности]
+#                    Когда [c/FF8B00:Brilliant Spark] поражает врага, он расходует все стаки [c/F1AF42:Лучезарности]
 #                    За каждый стак [c/F1AF42:Лучезарности] клинок наносит дополнительные 5 единиц урона
 #                    При 5 и более стаков атака всегда будет критической
-#                    Урон этого оружия считается как урон от миньонов
 #                    'Свет здесь непоколебим!'
 #                    '''
 #            }
@@ -2068,10 +2129,11 @@
 #                Name: Ключ королевской власти
 #                Tooltip:
 #                    '''
-#                    Призывает из великой сокровищницы клинки, карающие врагов
+#                    22 summon tag damage
+#                    Rapidly summon piercing blades towards your cursor
+#                    When a minion deals tag damage, additionally inflict a random debuff on the foe for 2 seconds
 #                    Использование оружия накладывает на вас случайный боевой бафф на 2 секунды
-#                    Снаряды считаются как урон от миньонов
-#                    'Сокровища всего мира в ваших руках'
+#                    'I see your luck has run out, mongrel!'
 #                    '''
 #            }
 #            
@@ -2327,6 +2389,7 @@
 #                Name: Фантом в зеркале
 #                Tooltip:
 #                    '''
+#                    8 summon tag damage
 #                    Накладывает дебафф «{$BuffName.Frostburn}» на 2 секунды
 #                    Нажмите ПКМ, призвав [c/67B6D3:Призрачный кинжал] с запасом 100 маны; это не будет расходовать ману
 #                    Когда [c/67B6D3:Призрачный кинжал] присутствует в мире, ваша мана истощается и не восстанавливается
@@ -2334,7 +2397,6 @@
 #                    Когда вы меняетесь с [c/67B6D3:Призрачным кинжалом], активируйте [c/AC5454:Окровавленный полумесяц]
 #                    [c/AC5454:Окровавленный полумесяц] поражает небольшую область как на вашей позиции, так и на позиции [c/67B6D3:Призрачного кинжала]
 #                    [c/AC5454:Окровавленный полумесяц] наносит дополнительно 200 урона врагам, на которых наложен дебафф «{$BuffName.Frostburn}», снимает «{$BuffName.Frostburn}» и восстанавливает 90 маны
-#                    Это оружие наносит урон миньонов
 #                    'Для меня - Пой! Пой! Пой для меня!!'
 #                    '''
 #            }
@@ -2362,6 +2424,29 @@
 #                    'А ты достаточно плохой мальчик?'
 #                    '''
 #            }
+#
+#            RedMage: {
+#            Name: Vermilion Riposte
+#            Tooltip:
+#                '''
+#                This weapon attacks after a short delay and varies between left and right click
+#                Left click: [c/4E01FF:Verfire] inflicts On Fire for 4 seconds on impact and increases [c/4E01FF:Black Mana] by 5
+#                Right click: [c/FFE7BA:Verstone] heals 12 HP on a critical strike and increases [c/FFE7BA:White Mana] by 5
+#                After attacking, there is a 50% chance to gain the buff [c/FF74EC:Dualcast] for 4 seconds
+#                [c/FF74EC:Dualcast] removes attack delay and strengthens attacks
+#                Left click ([c/FF74EC:Dualcast]): [c/4E01FF:Verthunder] is always a critical strike and increases [c/4E01FF:Black Mana] by 
+#                Right click ([c/FF74EC:Dualcast]): [c/FFE7BA:Veraero] pierces foes and increases [c/FFE7BA:White Mana] by 6
+#                Once both [c/4E01FF:Black Mana] and [c/FFE7BA:White Mana] are at 50, press the Weapon Action Key to gain a unique buff for 20 seconds and 3 [c/C36BD5:Mana Stacks]
+#                Gain [c/4E01FF:Black Enchantment] or [c/FFE7BA:White Enchantment] depending on which is higher (Gain a random enchantment and 1 less [c/C36BD5:Mana Stack] when balanced)
+#                Enchanted attacks are changed, cast instantly, and consumes [c/C36BD5:Mana Stacks] instead of Mana (Both left and right click use enchanted attacks)
+#                [c/4E01FF:Black Enchantment] uses the following attacks in succession: [c/FF1515:Redoublement], [c/FF1515:Verflare], [c/FF1515:Scorch]
+#                [c/FF1515:Redoublement] deals damage multiple times in a frontal cone; [c/FF1515:Verflare] casts a large AoE centered on your cursor
+#                [c/FF1515:Scorch] deals 5x base damage and increases [c/4E01FF:Black Mana] by 11
+#                [c/FFE7BA:White Enchantment] uses the following attacks in succession: [c/FF1515:Reprise], [c/FF1515:Verholy], [c/FF1515:Resolution]
+#                [c/FF1515:Reprise] charges towards the cursor, granting Invincibility for 2 seconds; [c/FF1515:Verholy] casts a large AoE centered on your cursor
+#                [c/FF1515:Resolution] pierces, heals 5 HP per foe struck, and increases [c/FFE7BA:White Mana] by 11
+#                '''
+#            }
 #            
 #            RexLapis: {
 #                Name: Рекс Ляпис
@@ -2383,7 +2468,6 @@
 #                Tooltip:
 #                    '''
 #                    Распыляет шквал мощных пуль
-#                    Потребляет ману, но наносит стрелковый урон
 #                    Убийство врага восполняет ману и накладывает на вас бафф «{$BuffName.Wrath}»
 #                    'Бесперебойная стрельба'
 #                    '''
@@ -2677,7 +2761,7 @@
 #                    '''
 #                    Используйте, чтобы призвать на 40 секунд [c/C341E9:Око эвтюмии]
 #                    Можно использовать повторно, чтобы продлить длительность [c/C341E9:Ока эвтюмии]
-#                    При поражении врагов снарядами [c/C341E9:Око эвтюмии] будет следовать за ними, нанося 1\5 от нанесённого урона, максимум 300
+#                    При поражении врагов снарядами [c/C341E9:Око эвтюмии] будет следовать за ними, нанося 1\5 от нанесённого урона, максимум 500
 #                    Эта атака имеет 2 секунды перезарядки
 #                    При потреблении маны, пока присутствует [c/C341E9:Око эвтюмии], заряжает [c/8A71D6:Индикатор Вечности], с пределом в 1000
 #                    [c/8A71D6:Индикатор Вечности] постепенно заряжается до 500
@@ -3329,6 +3413,15 @@
 #                    '''
 #                    Подарок вашей Астры
 #                    Используется для создания «{$Mods.CalamityRuTranslate.StarsAbove.Items.Unforgotten.Name}»
+#                    '''
+#            }
+#
+#            EssenceOfBalance: {
+#                Name: Essence of Balance
+#                Tooltip:
+#                    '''
+#                    Подарок вашей Астры
+#                    Используется для создания «{$Mods.CalamityRuTranslate.StarsAbove.Items.RedMage.Name}»
 #                    '''
 #            }
 #            
@@ -5197,7 +5290,7 @@
 #                27: "[c/9D9D9D:Закрыто: Одолейте Культиста-лунатика в режиме Эксперта]"
 #                28:
 #                    '''
-#                    Critical strike rate is increased based on Current Mana divided by 20. (Max 20%)
+#                    Critical strike rate is increased based on current Mana divided by 20.
 #                    Landing a critical strike grants 5% of the damage dealt as Mana. (Max 5 per hit)
 #                    '''
 #                29: "[c/9D9D9D:Закрыто: Одолейте Стену плоти]"

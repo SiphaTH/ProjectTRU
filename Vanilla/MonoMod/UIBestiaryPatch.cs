@@ -16,13 +16,13 @@ using UIBestiaryNPCEntryPortrait = On.Terraria.GameContent.UI.Elements.UIBestiar
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
 
-public class UIBestiaryPatch : ContentTranslation
+public class UIBestiaryPatch : ContentTranslation, ILoadableContent
 {
     public override bool IsTranslationEnabled => TranslationHelper.IsRussianLanguage;
 
     public override float Priority => 1f;
     
-    public override void LoadContent()
+    public void LoadContent()
     {
         IL.Terraria.GameContent.UI.Elements.UIBestiaryEntryInfoPage.ctor += UIBestiaryEntryInfoPage;
         IL.Terraria.GameContent.UI.Elements.UIBestiaryNPCEntryPortrait.ctor += UIBestiaryNPCEntryPortrait;
@@ -34,7 +34,7 @@ public class UIBestiaryPatch : ContentTranslation
     }
 
 
-    public override void UnloadContent()
+    public void UnloadContent()
     {
         IL.Terraria.GameContent.UI.Elements.UIBestiaryEntryInfoPage.ctor -= UIBestiaryEntryInfoPage;
         IL.Terraria.GameContent.UI.Elements.UIBestiaryNPCEntryPortrait.ctor -= UIBestiaryNPCEntryPortrait;

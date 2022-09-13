@@ -8,15 +8,15 @@ using Item = On.Terraria.Item;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
 
-public class AffixName : ContentTranslation
+public class AffixName : ContentTranslation, ILoadableContent
 {
     public override bool IsTranslationEnabled => ModsCall.Calamity == null && TranslationHelper.IsRussianLanguage;
 
     public override float Priority => 1f;
 
-    public override void LoadContent() => Item.AffixName += ItemOnAffixName;
+    public void LoadContent() => Item.AffixName += ItemOnAffixName;
 
-    public override void UnloadContent() => Item.AffixName -= ItemOnAffixName;
+    public void UnloadContent() => Item.AffixName -= ItemOnAffixName;
 
     private string ItemOnAffixName(Item.orig_AffixName orig, Terraria.Item self)
     {
@@ -39,15 +39,15 @@ public class AffixName : ContentTranslation
 }
 
 [JITWhenModsEnabled("CalamityMod")]
-public class AffixNameWithCalamity : ContentTranslation
+public class AffixNameWithCalamity : ContentTranslation, ILoadableContent
 {
     public override bool IsTranslationEnabled => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
     public override float Priority => 1f;
 
-    public override void LoadContent() => Item.AffixName += ItemOnAffixName;
+    public void LoadContent() => Item.AffixName += ItemOnAffixName;
 
-    public override void UnloadContent() => Item.AffixName -= ItemOnAffixName;
+    public void UnloadContent() => Item.AffixName -= ItemOnAffixName;
 
     private string ItemOnAffixName(Item.orig_AffixName orig, Terraria.Item self)
     {

@@ -9,9 +9,11 @@
 // namespace CalamityRuTranslate.Mods.TheStarsAbove;
 //
 // [JITWhenModsEnabled("StarsAbove")]
-// public class UIDialoguesTranslation : ContentTranslation
+// public class UIDialoguesTranslation : ContentTranslation, ILoadableContent
 // {
 //     public override bool IsTranslationEnabled => ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
+//
+//     public override float Priority => 1f;
 //
 //     private static StarsAbovePlayer StarsAbovePlayer => Main.LocalPlayer.GetModPlayer<StarsAbovePlayer>();
 //
@@ -69,7 +71,7 @@
 //         set => Main.LocalPlayer.GetModPlayer<StarsAbovePlayer>().promptDialogue = value;
 //     }
 //
-//     public override void LoadTranslation()
+//     public void LoadContent()
 //     {
 //         if (StarfarerMenuDialogue is "What's up? Need something?")
 //             StarfarerMenuDialogue = LangHelper.GetText("StarsAbove.UI.StarfarerMenuDialogue.1");
@@ -258,7 +260,7 @@
 //         if (Description is "[c/9D9D9D:Locked: Defeat the Lunatic Cultist in Expert Mode]")
 //             Description = LangHelper.GetText("StarsAbove.UI.Description.27");
 //         if (Description is
-//             "Critical strike rate is increased based on Current Mana divided by 20. (Max 20%)\nLanding a critical strike grants 5% of the damage dealt as Mana. (Max 5 per hit)")
+//             "Critical strike rate is increased based on current Mana divided by 20.\nLanding a critical strike grants 5% of the damage dealt as Mana. (Max 5 per hit)")
 //             Description = LangHelper.GetText("StarsAbove.UI.Description.28");
 //         if (Description is "[c/9D9D9D:Locked: Defeat the Wall of Flesh]")
 //             Description = LangHelper.GetText("StarsAbove.UI.Description.29");
@@ -1674,4 +1676,6 @@
 //         if (PromptDialogue is "She was here the whole time...?\nWell.. I'm ready when you are. Use the Sigil in the middle.")
 //             PromptDialogue = LangHelper.GetText("StarsAbove.UI.PromptDialogue.358");
 //     }
+//
+//     public void UnloadContent() { }
 // }
