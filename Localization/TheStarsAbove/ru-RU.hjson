@@ -5722,93 +5722,93 @@
 #                }
 #                
 #                ListInformation: {
-#                    1: Unlocked after defeating King Slime.
-#                    2: Unlocked after defeating Eye of Cthulhu.
-#                    3: Unlocked after defeating the Corruption/Crimson boss.
-#                    4: Unlocked after defeating Queen Bee.
-#                    5: Unlocked after defeating Skeletron.
-#                    6: Unlocked after defeating Deerclops.
-#                    7: Unlocked after defeating the Wall of Flesh.
-#                    8: Unlocked after defeating Queen Slime
-#                    9: Unlocked after defeating the Twins.
-#                    10: Unlocked after defeating the Destroyer.
-#                    11: Unlocked after defeating Skeletron Prime.
-#                    12: Unlocked after defeating all of the Mechanical Bosses.
-#                    13: Unlocked after defeating Plantera.
-#                    14: Unlocked after defeating Golem.
-#                    15: Unlocked after defeating Duke Fishron.
-#                    16: Unlocked after defeating the Empress of Light.
-#                    17: Unlocked after defeating the Lunatic Cultist.
-#                    18: Unlocked after defeating the Moon Lord.
-#                    19: Unlocked after defeating all vanilla Terraria bosses. Grants an Essence.
+#                    1: Открывается после победы над Королём слизней.
+#                    2: Открывается после победы над Глазом Ктулху.
+#                    3: Открывается после победы над боссом искажения/багрянца.
+#                    4: Открывается после победы над Королевой пчёл.
+#                    5: Открывается после победы над Скелетроном.
+#                    6: Открывается после победы над Циклоп-оленем.
+#                    7: Открывается после победы над Стеной плоти.
+#                    8: Открывается после победы над Королевой слизней.
+#                    9: Открывается после победы над Близнецами.
+#                    10: Открывается после победы над Уничтожителем.
+#                    11: Открывается после победы над Скелетроном Праймом.
+#                    12: Открывается после победы над всем механическими боссами.
+#                    13: Открывается после победы над Плантерой.
+#                    14: Открывается после победы над Големом.
+#                    15: Открывается после победы над Герцогом Рыброном.
+#                    16: Открывается после победы над Императрицей света.
+#                    17: Открывается после победы над Культистом-лунатиком.
+#                    18: Открывается после победы над Лунным лордом.
+#                    19: Открывается после победы над ванильными боссами Террарии. Даёт Эссенцию.
 #                    20: Unlocked after defeating all vanilla Terraria bosses, and cleansing the world of Light Everlasting. Grants an Essence.
-#                    21: Grants the item to summon the Burnished King.
-#                    22: Grants the item to summon the Witch of Ink
-#                    23: Grants the item to summon Arbitration.
-#                    24: Grants the item to summon the Warrior of Light.
-#                    25: Unlocked after 'defeating' the Vagrant of Space and Time.
-#                    26: Unlocked after defeating Nalhaun, the Burnished King. Grants a material needed for confronting the final boss.
-#                    27: Unlocked after defeating Penthesilea, the Witch of Ink. Grants a material needed for confronting the final boss.
-#                    28: Unlocked after defeating Arbitration. Grants a material needed for confronting the final boss.
-#                    29: Unlocked after defeating the Warrior of Light. Grants a material needed for confronting the final boss.
-#                    30: Unlocked after defeating Tsukiyomi, the First Starfarer. Grants an item used for crafting.
-#                    31: Unlocked after defeating the Desert Scourge
-#                    32: Unlocked after defeating Crabulon
-#                    33: Unlocked after defeating the Hive Mind
-#                    34: Unlocked after defeating the Perforators
-#                    35: Unlocked after defeating the Slime God
-#                    36: Unlocked after defeating Cryogen
-#                    37: Unlocked after defeating the Aquatic Scourge
-#                    38: Unlocked after defeating the Brimstone Elemental
-#                    39: Unlocked after defeating Calamitas's Clone
-#                    40: Unlocked after defeating the Leviathan
-#                    41: Unlocked after defeating Astrum Aureus
-#                    42: Unlocked after defeating the Plaguebringer Goliath
-#                    43: Unlocked after defeating the Ravager
-#                    44: Unlocked after defeating Astrum Deus
+#                    21: Даёт предмет для призыва Воронённого короля.
+#                    22: Даёт предмет для призыва Ведьмы чернил.
+#                    23: Даёт предмет для призыва Арбитраж.
+#                    24: Даёт предмет для призыва Воина Света.
+#                    25: Открывается после победы над Ходящии между пространством и временем.
+#                    26: Открывается после победы над Налханом, Воронённым королём. Даёт материал, необходимый для противостояния с финальным боссом.
+#                    27: Открывается после победы над Пентесилеей, Ведьмой чернил. GДаёт материал, необходимый для противостояния с финальным боссом.
+#                    28: Открывается после победы над Арбитраж. Даёт материал, необходимый для противостояния с финальным боссом.
+#                    29: Открывается после победы над Воином Света. Даёт материал, необходимый для противостояния с финальным боссом.
+#                    30: Открывается после победы над Цукиёми, Первой Астрой. Даёт предмет, используемый для создания.
+#                    31: Открывается после победы над Пустынным бичём.
+#                    32: Открывается после победы над Крабулоном.
+#                    33: Открывается после победы над Разумом Улья.
+#                    34: Открывается после победы над Перфораторами.
+#                    35: Открывается после победы над Богом слизней.
+#                    36: Открывается после победы над Криогеном.
+#                    37: Открывается после победы над Акватический бичём.
+#                    38: Открывается после победы над Серным элементалём.
+#                    39: Открывается после победы над клоном Каламитас.
+#                    40: Открывается после победы над Левиафаном.
+#                    41: Открывается после победы над Аструм Ауресом.
+#                    42: Открывается после победы над Разносчицей чумы, Голиаф.
+#                    43: Открывается после победы над Разрушителем.
+#                    44: Открывается после победы над Аструм Деусом.
 #                }
 #                
 #                UnlockConditions: {
 #                    1: Одолейте Короля слизней.
 #                    2: Одолейте Глаз Ктулху.
-#                    3: Defeat the world's Corruption/Crimson boss.
-#                    4: Defeat Queen Bee.
-#                    5: Defeat Skeletron.
-#                    6: Defeat Deerclops.
-#                    7: Defeat the Wall of Flesh.
-#                    8: Defeat Queen Slime
-#                    9: Defeat the Twins.
-#                    10: Defeat the Destroyer.
-#                    11: Defeat Skeletron Prime.
-#                    12: Defeat all of the Mechanical Bosses.
-#                    13: Defeat Plantera.
-#                    14: Defeat Golem.
-#                    15: Defeat Duke Fishron.
-#                    16: Defeat the Empress of Light.
-#                    17: Defeat the Lunatic Cultist.
-#                    18: Defeat the Moon Lord.
-#                    19: Defeat all vanilla bosses.
-#                    20: Defeat all vanilla bosses and the Warrior of Light in Expert Mode.
-#                    21: Defeat the Vagrant of Space and Time.
-#                    22: Defeat Nalhaun, the Burnished King.
-#                    23: Defeat Penthesilea, the Witch of Ink.
-#                    24: Defeat Arbitration.
-#                    25: Defeat the Warrior of Light.
-#                    26: Defeat ???
-#                    27: Defeat the Desert Scourge
-#                    28: Defeat Crabulon
-#                    29: Defeat the Hive Mind
-#                    30: Defeat the Perforators
-#                    31: Defeat the Slime God
-#                    32: Defeat Cryogen
-#                    33: Defeat the Aquatic Scourge
-#                    34: Defeat the Brimstone Elemental
-#                    35: Defeat Calamitas
-#                    36: Defeat the Leviathan
-#                    37: Defeat Astrum Aureus
-#                    38: Defeat the Plaguebringer Goliath
-#                    39: Defeat the Ravager
-#                    40: Defeat Astrum Deus
+#                    3: Одолейте босса искажения/баргрянца.
+#                    4: Одолейте Королеву пчёл.
+#                    5: Одолейте Скелетрона.
+#                    6: Одолейте Циклоп-оленя.
+#                    7: Одолейте Стену плоти.
+#                    8: Одолейте Королеву слизней.
+#                    9: Одолейте Близнецов.
+#                    10: Одолейте Уничтожителя.
+#                    11: Одолейте Скелетрона Прайма.
+#                    12: Одолейте всех механических боссов.
+#                    13: Одолейте Плантеру.
+#                    14: Одолейте Голема.
+#                    15: Одолейте Герцога Рыброна.
+#                    16: Одолейте Императрицу света.
+#                    17: Одолейте Культиста-лунатика.
+#                    18: Одолейте Лунного лорда.
+#                    19: Одолейте всех ванильных боссов.
+#                    20: Одолейте всех ванильных боссов и Воина Света в режиме Эксперта.
+#                    21: Одолейте Ходящего между пространством и временем.
+#                    22: Одолейте Налхана, Воронённого короля.
+#                    23: Одолейте Пентесилею, Ведьму чернил.
+#                    24: Одолейте Арбитраж.
+#                    25: Одолейте Воина Света.
+#                    26: Одолейте ???
+#                    27: Одолейте Пустынного бича.
+#                    28: Одолейте Крабулона.
+#                    29: Одолейте Разум Улья.
+#                    30: Одолейте Перфораторов.
+#                    31: Одолейте Бога слизней.
+#                    32: Одолейте Криогена.
+#                    33: Одолейте Акватического бича.
+#                    34: Одолейте Серного элементаля.
+#                    35: Одолейте Каламитас.
+#                    36: Одолейте Левиафана.
+#                    37: Одолейте Аструм Ареуса.
+#                    38: Одолейте Разносчицу чумы, Голиаф.
+#                    39: Одолейте Разрушителя.
+#                    40: Одолейте Аструм Деуса.
 #                }
 #            }
 #            
