@@ -17,7 +17,7 @@ public class DoGPhase2HeadBehaviorOverridePhase2AI : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "A GOD DOES NOT FEAR DEATH!", "БОГ НЕ СТРАШИТСЯ СМЕРТИ!");
+        TranslationHelper.ModifyIL(il, "A GOD DOES NOT FEAR DEATH!", "БОГ НЕ БОИТСЯ СМЕРТИ!");
     };
 }
 
@@ -30,10 +30,10 @@ public class DoGPhase2HeadBehaviorOverrideDoDeathEffects : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "I WILL NOT BE DESTROYED!!!", "МЕНЯ НЕ УНИЧТОЖИТЬ!!!");
-        TranslationHelper.ModifyIL(il, "I WILL NOT BE DESTROYED!!!", "МЕНЯ НЕ УНИЧТОЖИТЬ!!!", 2);
-        TranslationHelper.ModifyIL(il, "I WILL NOT BE DESTROYED!!!", "МЕНЯ НЕ УНИЧТОЖИТЬ!!!", 3);
-        TranslationHelper.ModifyIL(il, "I WILL NOT...", "Я НЕ...");
+        TranslationHelper.ModifyIL(il, "I WILL NOT BE DESTROYED!!!", "Я НЕ МОГУ ПОГИБНУТЬ!!!");
+        TranslationHelper.ModifyIL(il, "I WILL NOT BE DESTROYED!!!", "Я НЕ МОГУ ПОГИБНУТЬ!!!", 2);
+        TranslationHelper.ModifyIL(il, "I WILL NOT BE DESTROYED!!!", "Я НЕ МОГУ ПОГИБНУТЬ!!!", 3);
+        TranslationHelper.ModifyIL(il, "I WILL NOT...", "Я НЕ МОГУ...");
         TranslationHelper.ModifyIL(il, "I...", "Я...");
     };
 }

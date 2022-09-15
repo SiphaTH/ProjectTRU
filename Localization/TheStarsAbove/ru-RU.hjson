@@ -1563,7 +1563,7 @@
 #                    Усиленные атаки этого оружия заряжают [c/FF5858:Индикатор Эгиды]
 #                    Как только [c/FF5858:Индикатор Эгиды] будет заряжен, следующая атака взорвёт врага, нанося огромный критический урон, расходуя весь заряд [c/FF5858:Индикатора Эгиды]
 #                    [c/FF5858:Индикатор Эгиды] также будет медленно заряжаться с течением времени, пока вы держите в руках это оружие
-#                    'Так вот в чём мощь Эгиды!'
+#                    'Вот в чём мощь Эгиды!'
 #                    '''
 #            }
 #            
@@ -1588,7 +1588,7 @@
 #                Name: Апалистик
 #                Tooltip:
 #                    '''
-#                    5 summon tag damage
+#                    5 ед. дополнительного урона призывателя
 #                    Удары по врагам накладывают дебафф [c/4A91FF:Отлив] на 4 секунды
 #                    Когда миньон поражает врага, на котором наложен дебафф [c/4A91FF:Отлив], он получает на 30% больше урона, и снимает с него [c/4A91FF:Отлив]
 #                    Кроме того, держа в руках это оружие, миньоны с шансом 10% могут наложить дебафф [c/4776A7:Выбор океана] на 5 секунд
@@ -1603,7 +1603,7 @@
 #                Name: Рождённый морем Апалистик
 #                Tooltip:
 #                    '''
-#                    18 summon tag damage
+#                    18 ед. дополнительного урона призывателя
 #                    Удары по врагам накладывают дебафф [c/4A91FF:Отлив] на 4 секунды
 #                    Когда миньон поражает врага, на котором наложен дебафф [c/4A91FF:Отлив], он получает на 30% больше урона, и снимает с него [c/4A91FF:Отлив]
 #                    Кроме того, держа в руках это оружие, миньоны с шансом 10% могут наложить дебафф [c/4776A7:Выбор океана] на 5 секунд
@@ -1622,7 +1622,7 @@
 #                Name: Крючковорот арахнидов
 #                Tooltip:
 #                    '''
-#                    3 summon tag damage
+#                    3 ед. дополнительного урона призывателя
 #                    Атаки этим оружием совершаются по размашистой дуге, игнорируя поверхности и сосредотачивают миньонов на врага
 #                    Нажмите <right>, чтобы выпустить парящего [c/83CAEB:Механического арахнида], атакующего врагов
 #                    Одновременно может существовать только один движущийся [c/83CAEB:Механический арахнид]
@@ -2058,7 +2058,7 @@
 #            }
 #            
 #            IgnitionAstra: {
-#                Name: Горящая звезда
+#                Name: Игницион Астра
 #                Tooltip:
 #                    '''
 #                    Обладая этим клинком, он наполнит ваше окружение силой аспекта Астрала или Пустоты
@@ -2069,7 +2069,7 @@
 #                    Во время [c/b03fed:Аспекта Пустоты] каждая атака совершает двойной взмах по размашистой дуге и дополнительно призывает множество астральных снарядов, спускающихся с небес
 #                    Во время [c/b03fed:Аспекта Пустоты] враги, поражённые клинком, будут постоянно прокляты дебаффом «{$Mods.CalamityRuTranslate.StarsAbove.Buffs.Starblight.Name}», пока не будут повержены
 #                    Во время [c/b03fed:Аспекта Пустоты] постоянно расходуется мана, а её восстановление отключено, но увеличивается урон
-#                    'Вселенная стоит на грани гибели. Виной всему - Горящая звезда'
+#                    'Вселенная стоит на грани гибели. Виной всему - Игницион Астра'
 #                    '''
 #            }
 #            
@@ -2129,11 +2129,11 @@
 #                Name: Ключ королевской власти
 #                Tooltip:
 #                    '''
-#                    22 summon tag damage
+#                    22 ед. дополнительного урона призывателя
 #                    Rapidly summon piercing blades towards your cursor
 #                    When a minion deals tag damage, additionally inflict a random debuff on the foe for 2 seconds
 #                    Использование оружия накладывает на вас случайный боевой бафф на 2 секунды
-#                    'I see your luck has run out, mongrel!'
+#                    'Ты истратил всю свою удачу, шавка!'
 #                    '''
 #            }
 #            
@@ -2267,7 +2267,7 @@
 #                    Critical strikes with this weapon's basic attacks instantly cleanse the cooldown of [c/DC3961:Edge of Anguish]
 #                    Allies striking foes under the influence of [c/FF3200:Infernal Hemorrhage] with projectiles grants Rage for 8 seconds
 #                    Additionally, these attacks deal 2% of the foe's missing HP as bonus true damage (Up to 250)
-#                    'Из тёмных переулков улиц Ноксуса'
+#                    'Из тёмных переулков Ноксуса'
 #                    '''
 #            }
 #            
@@ -2327,8 +2327,8 @@
 #                    Атаки этим оружием стреляют маленькими шариками, которые накладывают дебафф «{$BuffName.Midas}» на 20 секунд при критических ударах
 #                    Заряженные атаки вместо обычных стреляют [c/FBD63E:БОЛЬШИМ ВЫСТРЕЛОМ]
 #                    [c/FBD63E:БОЛЬШОЙ ВЫСТРЕЛ] пронзает до 8 врагов и игнорирует блоки
-#                    Additionally, enemies inflicted with Midas take 15% more damage from the [c/FBD63E:BIG SHOT]
-#                    Critical strikes increase this modifier to 25%
+#                    Кроме того, враги, подверженные Мидасу, получают на 15% больше урона от [c/FBD63E:БОЛЬШОГО ВЫСТРЕЛА]
+#                    Критические удары увеличивают этот бонус до 25%
 #                    Одолев врага [c/FBD63E:БОЛЬШИМ ВЫСТРЕЛОМ], из него гарантированно выпадает 5 серебра
 #                    'Теперь у тебя есть шанс стать...'
 #                    '''
@@ -2389,7 +2389,7 @@
 #                Name: Фантом в зеркале
 #                Tooltip:
 #                    '''
-#                    8 summon tag damage
+#                    8 ед. дополнительного урона призывателя
 #                    Накладывает дебафф «{$BuffName.Frostburn}» на 2 секунды
 #                    Нажмите ПКМ, призвав [c/67B6D3:Призрачный кинжал] с запасом 100 маны; это не будет расходовать ману
 #                    Когда [c/67B6D3:Призрачный кинжал] присутствует в мире, ваша мана истощается и не восстанавливается
@@ -5024,8 +5024,8 @@
 #                    '''
 #                4:
 #                    '''
-#                    You need my help, right?
-#                    Of course- anything you need.
+#                    Нужна моя помощь, верно?
+#                    Конечно, всё что захочешь.
 #                    '''
 #                5:
 #                    '''
@@ -5044,7 +5044,7 @@
 #                9:
 #                    '''
 #                    {0}...
-#                    Предполагаю тебе требуется
+#                    Предполагаю, тебе требуется
 #                    моя помощь?
 #                    '''
 #                10:
@@ -5076,11 +5076,11 @@
 #                    какой из вариантов хочешь просмотреть.
 #                    '''
 #                17: Передумал?
-#                18: У тебя имеются другие планы?
+#                18: Другие планы появились?
 #                19: Это всё?
 #                20: Закончил с тем, что хотел?
 #                21: Ну что, закончил?
-#                22: Ты закончил?
+#                22: Закончил?
 #                23: Уже сделал?
 #                24: На этом всё?
 #                25:
@@ -5535,7 +5535,7 @@
 #            }
 #
 #            NovaDialogue: {
-#                1: Теперь моя очередь!
+#                1: Моя очередь!
 #                2:
 #                    '''
 #                    Я займу место
@@ -5648,77 +5648,77 @@
 #                    17: Общение: отдых 16
 #                    18: Общение: отдых 17
 #                    19: Общение: отдых 18
-#                    20: "'A World Shrouded in Light'"
-#                    21: Entering the Observatory
-#                    22: Explaining Cosmic Voyages
-#                    23: Idle in the Observatory
-#                    24: Idle in Space
+#                    20: "'Мир окутан Светом'"
+#                    21: Вход в Обсерваторию
+#                    22: Объяснение космических странствий
+#                    23: Отдых: Обсерватория
+#                    24: Отдых: космос
 #                }
 #                
 #                ListInformation: {
 #                    1: Диалог повляется, если вы уже видели обычный диалог отдыха.
-#                    2: Pre Hardmode idle dialogue.
-#                    3: Hardmode idle dialogue.
-#                    4: Idle dialogue during Light Everlasting.
-#                    5: Dialogue on the Observatory Hyperborea.
-#                    6: An explanation of the mechanics of Cosmic Voyages.
-#                    7: Neutral dialogue within the Observatory Hyperborea.
-#                    8: Neutral dialogue when on a normal-type Cosmic Voyage. Unused.
+#                    2: Пре-Хардмодный диалог отдыха.
+#                    3: Хардмодный диалог отдыха.
+#                    4: Диалог отдыха во время нескончаемого Света.
+#                    5: Диалог о Северной обсерватории.
+#                    6: Объяснение механики космических странствий.
+#                    7: Нейтральный диалог о Северной обсерватории.
+#                    8: Нейтральный диалог в обычном космическом странствии. Не используется.
 #                }
 #                
 #                UnlockConditions: {
 #                    1: Перейдите в хардмод
-#                    2: Unlocked after witnessing Light Everlasting for the first time.
-#                    3: Unlocked after entering the Observatory Hyperborea for the first time.
+#                    2: Открывается после наблюдения за нескончаемым Светом в первый раз.
+#                    3: Открывается после входа в Северную обсерваторию в первый раз.
 #                }
 #            }
 #            
 #            BossArchiveList: {
 #                Name: {
-#                    1: Slime King Dethroned
-#                    2: Eye of Cthulhu Pierced
-#                    3: Worldly Evil Sanctified
-#                    4: Queen Bee Exterminated
-#                    5: Skeletron Buried
-#                    6: Deerclops Extinct
-#                    7: Wall of Flesh Purged
-#                    8: Queen Slime Overthrown
-#                    9: The Twins Scrapped
-#                    10: The Destroyer Deleted
-#                    11: Skeletron Prime Erased
-#                    12: All Mechanical Bosses Rended
-#                    13: Plantera Uprooted
-#                    14: Golem Deactivated
-#                    15: Duke Fishron Hunted
-#                    16: Empress of Light Dimmed
-#                    17: Lunatic Cultist Crucified
-#                    18: Moon Lord Defeated
-#                    19: Terraria's Hero
-#                    20: Hero of the Realm
-#                    21: Perseus's Appeal: The Burnished King
-#                    22: Perseus's Appeal: The Witch of Ink
-#                    23: Perseus's Appeal: The Arbiter
-#                    24: Perseus's Appeal: The Warrior of Light
-#                    25: Vagrant of Space and Time Challenged
-#                    26: Nalhaun Kneeled
-#                    27: Penthesilea Washed
-#                    28: Arbitration Purified
-#                    29: Warrior of Light Vanquished
-#                    30: The First Starfarer Defeated
-#                    31: Desert Scourge Defeated
-#                    32: Crabulon Defeated
-#                    33: Hive Mind Defeated
-#                    34: Perforators Defeated
-#                    35: Slime God Defeated
-#                    36: Cryogen Defeated
-#                    37: Aquatic Scourge Defeated
-#                    38: Brimstone Elemental Defeated
-#                    39: Calamitas's Clone Defeated
-#                    40: Leviathan Defeated
-#                    41: Astrum Aureus Defeated
-#                    42: Plaguebringer Goliath
-#                    43: Ravager Defeated
-#                    44: Astrum Deus Defeated
+#                    1: Король слизней свержен
+#                    2: Глаз Ктулху пронзён
+#                    3: Мировое зло освящено
+#                    4: Королева пчёл истреблена
+#                    5: Скелетрон похоронен
+#                    6: Циклоп-олень вымер
+#                    7: Стена плоти очищенна
+#                    8: Королева слизней низвергнута
+#                    9: Близнены утилизированны
+#                    10: Уничтожитель удалён
+#                    11: Скелетрон Прайм стёрт
+#                    12: Все механичееские боссы разобраны
+#                    13: Плантера вырвана
+#                    14: Голем деактивирован
+#                    15: Герцог Рыброн выловлен
+#                    16: Исператрица света потушена
+#                    17: Культист-лунатик распят
+#                    18: Лунный лорд побеждён
+#                    19: Герой Террарии
+#                    20: Герой реальности
+#                    21: Появление Персея: Воронённый король
+#                    22: Появление Персея: Ведьма чернил
+#                    23: Появление Персея: Арбитраж
+#                    24: Появление Персея: Воин Света
+#                    25: Ходящий между пространством и временем сражён
+#                    26: Налхан преклоняется
+#                    27: Пентесилея промыта
+#                    28: Арбитраж очищен
+#                    29: Воин Света повержен
+#                    30: Первая Астра побеждена
+#                    31: Пустынный бич побеждён
+#                    32: Крабулон побеждён
+#                    33: Разум Улья побеждён
+#                    34: Первораторы побеждены
+#                    35: Бог слизней побеждён
+#                    36: Криоген побеждён
+#                    37: Акватический бич побеждён
+#                    38: Серный элементаль побеждён
+#                    39: Клон Каламитас побеждён
+#                    40: Левиафан побеждена
+#                    41: Аструм Ареус побеждён
+#                    42: Разносчица чумы, Голиаф
+#                    43: Разрушитель побеждён
+#                    44: Аструм Деус побеждён
 #                }
 #                
 #                ListInformation: {
@@ -5733,7 +5733,7 @@
 #                    9: Открывается после победы над Близнецами.
 #                    10: Открывается после победы над Уничтожителем.
 #                    11: Открывается после победы над Скелетроном Праймом.
-#                    12: Открывается после победы над всем механическими боссами.
+#                    12: Открывается после победы над всеми механическими боссами.
 #                    13: Открывается после победы над Плантерой.
 #                    14: Открывается после победы над Големом.
 #                    15: Открывается после победы над Герцогом Рыброном.
@@ -5741,28 +5741,28 @@
 #                    17: Открывается после победы над Культистом-лунатиком.
 #                    18: Открывается после победы над Лунным лордом.
 #                    19: Открывается после победы над ванильными боссами Террарии. Даёт Эссенцию.
-#                    20: Unlocked after defeating all vanilla Terraria bosses, and cleansing the world of Light Everlasting. Grants an Essence.
+#                    20: Открывается после победы над ванильными боссами Террарии и очистки мира от нескончаемого Света. Даёт Эссенцию.
 #                    21: Даёт предмет для призыва Воронённого короля.
 #                    22: Даёт предмет для призыва Ведьмы чернил.
-#                    23: Даёт предмет для призыва Арбитраж.
+#                    23: Даёт предмет для призыва Арбитража.
 #                    24: Даёт предмет для призыва Воина Света.
-#                    25: Открывается после победы над Ходящии между пространством и временем.
+#                    25: Открывается после победы над Ходящим между пространством и временем.
 #                    26: Открывается после победы над Налханом, Воронённым королём. Даёт материал, необходимый для противостояния с финальным боссом.
-#                    27: Открывается после победы над Пентесилеей, Ведьмой чернил. GДаёт материал, необходимый для противостояния с финальным боссом.
-#                    28: Открывается после победы над Арбитраж. Даёт материал, необходимый для противостояния с финальным боссом.
+#                    27: Открывается после победы над Пентесилеей, Ведьмой чернил. Даёт материал, необходимый для противостояния с финальным боссом.
+#                    28: Открывается после победы над Арбитражем. Даёт материал, необходимый для противостояния с финальным боссом.
 #                    29: Открывается после победы над Воином Света. Даёт материал, необходимый для противостояния с финальным боссом.
 #                    30: Открывается после победы над Цукиёми, Первой Астрой. Даёт предмет, используемый для создания.
-#                    31: Открывается после победы над Пустынным бичём.
+#                    31: Открывается после победы над Пустынным бичом.
 #                    32: Открывается после победы над Крабулоном.
 #                    33: Открывается после победы над Разумом Улья.
 #                    34: Открывается после победы над Перфораторами.
-#                    35: Открывается после победы над Богом слизней.
+#                    35: Открывается после победы над богом слизней.
 #                    36: Открывается после победы над Криогеном.
-#                    37: Открывается после победы над Акватический бичём.
+#                    37: Открывается после победы над Акватический бичом.
 #                    38: Открывается после победы над Серным элементалём.
-#                    39: Открывается после победы над клоном Каламитас.
-#                    40: Открывается после победы над Левиафаном.
-#                    41: Открывается после победы над Аструм Ауресом.
+#                    39: Открывается после победы над Клоном Каламитас.
+#                    40: Открывается после победы над Левиафан.
+#                    41: Открывается после победы над Аструм Ареусом.
 #                    42: Открывается после победы над Разносчицей чумы, Голиаф.
 #                    43: Открывается после победы над Разрушителем.
 #                    44: Открывается после победы над Аструм Деусом.
@@ -5899,8 +5899,8 @@
 #                    '''
 #                4:
 #                    '''
-#                    «{$Mods.CalamityRuTranslate.StarsAbove.Buffs.SurtrTwilight.Name}» дополнительно увеличивает урон на 10%.
-#                    Вы получаете бафф «{$BuffName.ManaRegeneration}» пока активен «{$Mods.CalamityRuTranslate.StarsAbove.Buffs.SurtrTwilight.Name}».
+#                    «Сумерки Сурта» дополнительно увеличивают урон на 10%.
+#                    Вы получаете бафф «Восстановление маны», пока активны «Сумерки Сурта».
 #                    '''
 #                5:
 #                    '''
@@ -5919,8 +5919,8 @@
 #                    '''
 #                8:
 #                    '''
-#                    Даёт дополнительный бафф: «{$Mods.CalamityRuTranslate.StarsAbove.Buffs.DreamlikeCharisma.Name}» (не суммируется).
-#                    Он увеличивает урон на 16%. И на 32% если маны больше 100.
+#                    Даёт дополнительный бафф: «Сказочная харизма» (не суммируется).
+#                    Он увеличивает урон на 16%. И на 32%, если маны больше 100.
 #                    '''
 #                9:
 #                    '''
@@ -5993,71 +5993,71 @@
 #            }
 #            
 #            PromptDialogue: {
-#                1: "You've come to defeat me. Isn't that right?\nYou can't even notice your own hypocrisy."
-#                2: "The only reason you fight is to get\nstronger."
-#                3: "Your mission was to save people.\nI don't even think you care."
-#                4: "Do you really call yourself a hero?\nI think it's time to fix that."
-#                5: "She's lost her mind completely...!\nI can feel immense power.. prepare yourself!"
-#                6: "Quickly, to me! Stand on the blue\ntiles and I'll shield you!"
-#                7: "{0}, come to me quickly!\nI'll shield you on the purple tiles!"
-#                8: "Yeah.. That's poison. I'll send you a get well card."
-#                9: "It looks like your defenses are lowered! Be careful."
-#                10: "You've been silenced! Magic is out of the question."
-#                11: "I think you've been cursed. That's.. not good.\nYou aren't able to use anything for now."
-#                12: "You've been frozen!\n"
-#                13: "You're burning up! Or freezing? \n..It hurts regardless!\n"
-#                14: "Ew. It looks like you're covered in webs..\n"
-#                15: "You've been petrified! How does that even work?\n"
-#                16: "You're standing on something REALLY hot.\n"
-#                17: "You're dying- and quickly. Get out of there!\n"
-#                18: "That's probably not good."
-#                19: "I think you're about to drown.."
-#                20: "You're losing a LOT of blood. Yikes.\nYou can't regenerate health any more."
-#                21: "[You can't make out the words.]\n"
-#                22: "Whoops.."
-#                23: "Sorry, little guy."
-#                24: "Oops."
-#                25: "That's one down."
-#                26: "One more defeated!"
-#                27: "That takes care of that."
-#                28: "Another one down."
-#                29: "You're great at this!"
-#                30: "Nice work. That's one down."
-#                31: "There it goes!"
-#                32: "That'll teach em!"
-#                33: "That'll show them!"
-#                34: "Don't mess with us!"
-#                35: "Easy!"
-#                36: "Didn't even break a sweat."
-#                37: "That was so easy!"
-#                38: "Enough of that one."
-#                39: "An easy victory."
-#                40: "Right, that's that."
-#                41: "How could we ever lose?"
-#                42: "It's over."
-#                43: "No more of that."
-#                44: "A good encounter."
-#                45: "That was close.."
-#                46: "That was almost really bad."
-#                47: "Thank goodness we killed it in time."
-#                48: "Finally. You got it!"
-#                49: "And that takes care of that one."
-#                50: "That was a strong one."
-#                51: "A decisive crit!"
-#                52: "They felt that one!"
-#                53: "A perfectly-timed attack."
-#                54: "Nice, you hit their weak spot."
-#                55: "A critical hit..!"
-#                56: "Well struck. That was definitely critical."
-#                57: "Wow. I felt that one.."
-#                58: "That's.. not good."
-#                59: "Ouch..."
-#                60: "That wasn't good at all.."
-#                61: "You should probably heal after that one."
-#                62: "Barely a scratch.. right?"
-#                63: "That wasn't supposed to happen.."
-#                64: "I don't think you can walk that one off."
-#                65: "....Ouch."
+#                1: "Пришёл одолеть меня, да?\nДаже не замечая собственного лицемерия."
+#                2: "Всё, зачем ты сражаешься -\nстать сильнее."
+#                3: "Твоя миссия была в спасении людей.\nНо тебе, видимо, просто плевать."
+#                4: "Ещё и называешь себя героем?\nКажется, пора исправить это недоразумение."
+#                5: "Она окончательно сошла с ума!..\nЯ чувствую огромную силу... приготовься!"
+#                6: "Быстрее, сюда! Вставай на синие\nблоки, я защищу тебя!"
+#                7: "{0}, быстро ко мне!\nЯ защищу тебя на пурпурных блоках!"
+#                8: "Мда... это яд. Я пришлю тебе открытку."
+#                9: "Кажется, твою защиту снизили!\nБудь осторожен."
+#                10: "На тебя наложили безмолвие!\nМагия выбывает из игры."
+#                11: "Кажется, тебя прокляли. Это... не хорошо.\nСейчас ты не можешь ничего использовать."
+#                12: "Тебя заморозили!"
+#                13: "Ты горишь! Или замерзаешь?\n...Да неважно, это очень больно!"
+#                14: "Гадость... тебя покрыли паутиной..."
+#                15: "Ты окаменел!\nДа как это вообще работает?"
+#                16: "Ты стоишь на чём-то ОЧЕНЬ горячем."
+#                17: "Ты умираешь, причём быстро. Выбирайся отсюда!"
+#                18: "Это явно не к добру."
+#                19: "Кажется ты вот-вот утонешь..."
+#                20: "Ты теряешь МНОГО крови. Гадко.\nБольше ты не можешь регенерировать."
+#                21: "[Вы не можете разобрать слов]\n"
+#                22: "Ой..."
+#                23: "Прости, малыш."
+#                24: "Упс."
+#                25: "Минус один."
+#                26: "Ещё один повержен!"
+#                27: "Ещё одна победа!"
+#                28: "Минус ещё один."
+#                29: "А ты хорош!"
+#                30: "Хорошая работа. С этим всё."
+#                31: "Поехали!"
+#                32: "Это их научит!"
+#                33: "Это задаст им жару!"
+#                34: "Не связывайтесь с нами!"
+#                35: "Легкотня!"
+#                36: "Даже не вспотела."
+#                37: "С лёгкостью!"
+#                38: "С этого хватит."
+#                39: "Лёгкая победа."
+#                40: "Вот, вот так."
+#                41: "Да как мы можем проиграть?"
+#                42: "Всё кончено."
+#                43: "С этого хватит."
+#                44: "Хорошая битва."
+#                45: "Было близко..."
+#                46: "Было почти очень плохо."
+#                47: "Боже, спасибо что успели."
+#                48: "Наконец, ты сделал это!"
+#                49: "И вот так минус ещё один."
+#                50: "Было мощно."
+#                51: "Решительный крит!"
+#                52: "Они почувствовали этот удар!"
+#                53: "Идеально своевременная атака."
+#                54: "Отлично, ты ударил в слабое место."
+#                55: "Критический удар!.."
+#                56: "Отличный удар, определённо критический."
+#                57: "Вау, даже я почувствовала..."
+#                58: "Это.. не хорошо."
+#                59: "Ауч..."
+#                60: "Это определённо не хорошо..."
+#                61: "После этого следует полечиться."
+#                62: "Даже не царапина... верно?"
+#                63: "Этого не должно было произойти..."
+#                64: "После такого ходить будет трудновато..."
+#                65: "...ауч."
 #                66: "A powerful foe approaches!\nWe aren't going to lose this."
 #                67: "An incredibly strong foe draws near!\nLet's give them a fight to remember!"
 #                68: "A strong foe draws near.\nIt's time to fight."
@@ -6076,7 +6076,7 @@
 #                81: "A Hallow-aspected foe has appeared!\nMaybe leave the butterfly alone next time...?"
 #                82: "A giant mechanical worm.. What can we do..?\nHow about trying to attack multiple parts of it at once?"
 #                83: "It's a more advanced version of Skeletron..\nTry going for the arms first, instead of the head."
-#                84: "Plantera is awake! Be mindful of its vines.\nIt would be great to have a huge arena to fight it in."
+#                84: "Плантера пробудилась! Be mindful of its vines.\nIt would be great to have a huge arena to fight it in."
 #                85: "An ancient mechanical monster..\nWatch out for the traps in the temple while fighting it."
 #                86: "You reeled in something crazy!\nSomething tells me you should stay near the sea!"
 #                87: "It's one of those Lunatic Cultists..\nStop them before they unleash a calamity..!"
@@ -6159,31 +6159,31 @@
 #                164: "Looks like it started raining.\nHopefully this doesn't put a damper on things.. heh."
 #                165: "It's a blizzard!\nDon't get frostbite, now. That'd be embarassing."
 #                166: "A sandstorm has kicked up.\nIt gets everywhere, so be careful."
-#                167: "Time and space bend to my will!"
-#                168: "Not on my watch!"
-#                169: "Turn back the clock..!"
-#                170: "By your undying rage..!"
-#                171: "It's just a flesh wound."
-#                172: "Embrace the abyss! Set yourself free!"
-#                173: "No one will escape!"
-#                174: "Like lambs to slaughter!"
-#                175: "Butcher them!"
-#                176: "Let's show them our power."
-#                177: "I'm ready to unleash my power!"
-#                178: "I'm ready to use the Stellar Nova!"
-#                179: "OK. Done charging- let's go."
-#                180: "Just tell me when."
-#                181: "Here we go."
-#                182: "You've made it to the Observatory!\nSo, what do you think?"
-#                183: "Looks like you've arrived. \nThese are asteroids of interest- let's do some exploring."
-#                184: "We've made it. This planet is strange..\nThe surface has been wiped clean... What happened?"
-#                185: "She was so close all along...\nUse the Mnemonic Sigil on the arena's center to begin."
-#                186: "It looks like we can't explore this yet...\nMaybe next time."
-#                187: "You've come to defeat me. Isn't that right?\nYou can't even notice your own hypocrisy."
-#                188: "The only reason you fight is to get\nstronger."
-#                189: "Your mission was to save people.\nI don't even think you care."
-#                190: "Do you really call yourself a hero?\nI think it's time to fix that."
-#                191: "This isn't right.. She isn't herself!\nPrepare yourself... she's not done yet..!"
+#                167: ""Пространство и время, подчиняйтесь моей воле!"
+#                168: "Не в мою смену!"
+#                169: "Обернуть время вспять!.."
+#                170: "Твоей неугасающей яростью!.."
+#                171: "Всего лишь царапина."
+#                172: "Прими Бездну! Освободи себя!"
+#                173: "Никто не сбежит!"
+#                174: "Как ягнята на бойне!"
+#                175: "Разделаем их!"
+#                176: "Покажем им нашу мощь!"
+#                177: "Я готова высвободить свою силу!"
+#                178: "Я готова использовать Сверхновую!"
+#                179: "Давай, заряд закончен, погнали!"
+#                180: "Просто скажи когда.."
+#                181: "Поехали."
+#                182: "Ты добрался до Обсерватории!\nНу... и как тебе?"
+#                183: "Кажется, мы на месте.\nЭти астероиды интересны, давай исследуем окружение."
+#                184: "Мы сделали это. Эта планета странная...\nПоверхность будто стёрли... Что случилось?"
+#                185: "Всё это время она была так близко...\nИспользуй печать в центре арены, чтобы начать."
+#                186: "Кажется, сейчас мы не можем это исследовать...\nМожет в следующий раз."
+#                187: "Пришёл одолеть меня, да?\nДаже не замечая собственного лицемерия."
+#                188: "Всё, зачем ты сражаешься -\nстать сильнее."
+#                189: "Твоя миссия была в спасении людей.\nНо тебе, видимо, просто плевать."
+#                190: "Ещё и называешь себя героем?\nКажется, пора исправить это недоразумение."
+#                191: "Это неправильно... Она не в себе!\nГотовься, она ещё не закончила!.."
 #                192: "Quickly, {0}! I'll shield you\nwhen you stand on the blue tiles..!"
 #                193: "Quickly, stand on the purple tiles!\nI'll protect you from this attack!"
 #                194: "Uhh.. you're looking a little sick."
@@ -6199,18 +6199,18 @@
 #                204: "Ouch. That's probably not good."
 #                205: "You need some air, quick."
 #                206: "That's a lot of blood..\nYou aren't regenerating health now, that's for sure."
-#                207: "Whoops."
+#                207: "Упс."
 #                208: "Did you mean to do that?"
-#                209: "Sorry, little one."
-#                210: "Good work."
-#                211: "That's another one down."
-#                212: "Well fought."
-#                213: "You're pretty good at this."
-#                214: "Nice work."
-#                215: "They'll never beat us."
+#                209: "Извини, малыш."
+#                210: "Хорошая работа."
+#                211: "Минус ещё один."
+#                212: "Молодец, хорошо сражался."
+#                213: "А ты неплох в этом."
+#                214: "Отличная работа."
+#                215: "Им никогда не победить нас."
 #                216: "You've defeated it."
 #                217: "That'll show them."
-#                218: "A good fight."
+#                218: "Хорошая битва."
 #                219: "Easy."
 #                220: "No sweat."
 #                221: "Wasn't even a problem."
@@ -6221,21 +6221,21 @@
 #                226: "That was close."
 #                227: "Finally. It's defeated."
 #                228: "You bested it, finally. Good job."
-#                229: "What a powerful foe..."
-#                230: "Perfect attack!"
-#                231: "A critical hit!"
+#                229: "Какой сильный враг..."
+#                230: "Идеальная атака!"
+#                231: "Критическое попадание!"
 #                232: "Expertly done."
 #                233: "That was great!"
 #                234: "A decisive blow."
 #                235: "Ouch. That looked like it hurt."
-#                236: "Are you alright?"
-#                237: "That doesn't look good."
-#                238: "This could be going better.."
-#                239: "Oww.."
-#                240: "Yikes."
-#                241: "This is.. bad.."
-#                242: "That is.. not good."
-#                243: "They'll pay for that.."
+#                236: "С тобой всё в порядке?"
+#                237: "Выглядит не очень."
+#                238: "Всё могло бы пойти лучше..."
+#                239: "Уф..."
+#                240: "Ай-яй."
+#                241: "Это... плохо..."
+#                242: "Это... нехорошо."
+#                243: "Они заплатят за это..."
 #                244: "A powerful foe approaches.\nLet's send it back to where it belongs."
 #                245: "I can sense powerful energy approaching.\nReady or not, it's time for a fight."
 #                246: "A strong opponent draws near.\nPrepare yourself."
@@ -6343,11 +6343,11 @@
 #                348: "They'll all fall before us."
 #                349: "We'll finish them all off!"
 #                350: "I'm ready when you are."
-#                351: "The Stellar Nova is ready!"
-#                352: "I'm ready. Are you?"
-#                353: "Let's do this."
+#                351: "Сверхновая готова!"
+#                352: "Я готова. А ты?"
+#                353: "Сделаем это."
 #                354: "Let's find an opening."
-#                355: "Celestial coordinates established.\nWelcome to the Observatory Hyperborea."
+#                355: "Celestial coordinates established.\nДобро пожаловать в Северную обсерваторию."
 #                356: "We've made it.\nThese are asteroids of interest. Let's look around."
 #                357: "This is it. An entire planet that's devoid of color?\nThe surface looks like it was wiped away somehow..."
 #                358: "She was here the whole time...?\nWell.. I'm ready when you are. Use the Sigil in the middle."
