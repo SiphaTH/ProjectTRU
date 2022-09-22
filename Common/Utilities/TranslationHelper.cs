@@ -1,4 +1,5 @@
-﻿using Mono.Cecil.Cil;
+﻿using System;
+using Mono.Cecil.Cil;
 using MonoMod.Cil;
 using Terraria.Localization;
 
@@ -16,8 +17,7 @@ internal static class TranslationHelper
         {
             if (!cursor.TryGotoNext(MoveType.After,x => x.MatchLdstr(orig)))
             {
-                CalamityRuTranslate.Instance.Logger.Warn($"[IL] Не удалось заменить \"{orig}\" на \"{replace}\"");
-                return;
+                throw new Exception($"[IL] Не удалось заменить '{orig}' на '{replace}' в методе [c/70FF8D:{il.Method.Name}]!");
             }
         }
 
@@ -33,8 +33,7 @@ internal static class TranslationHelper
         {
             if (!cursor.TryGotoNext(MoveType.After, x => x.MatchLdcI4(orig)))
             {
-                CalamityRuTranslate.Instance.Logger.Warn($"[IL] Не удалось заменить \"{orig}\" на \"{replace}\"");
-                return;
+                throw new Exception($"[IL] Не удалось заменить '{orig}' на '{replace}' в методе [c/70FF8D:{il.Method.Name}]");
             }
         }
 
@@ -50,8 +49,7 @@ internal static class TranslationHelper
         {
             if (!cursor.TryGotoNext(MoveType.After, x => x.MatchLdcR4(orig)))
             {
-                CalamityRuTranslate.Instance.Logger.Warn($"[IL] Не удалось заменить \"{orig}\" на \"{replace}\"");
-                return;
+                throw new Exception($"[IL] Не удалось заменить '{orig}' на '{replace}' в методе [c/70FF8D:{il.Method.Name}]");
             }
         }
 

@@ -32,7 +32,7 @@ public class DoGPhase2HeadBehaviorOverrideDoDeathEffects : ILPatcher
     {
         TranslationHelper.ModifyIL(il, "I WILL NOT BE DESTROYED!!!", "Я НЕ МОГУ ПОГИБНУТЬ!!!");
         TranslationHelper.ModifyIL(il, "I WILL NOT BE DESTROYED!!!", "Я НЕ МОГУ ПОГИБНУТЬ!!!", 2);
-        TranslationHelper.ModifyIL(il, "I WILL NOT BE DESTROYED!!!", "Я НЕ МОГУ ПОГИБНУТЬ!!!", 3);
+        TranslationHelper.ModifyIL(il, "I WILL NOT BE DESTROYED!!!!", "Я НЕ МОГУ ПОГИБНУТЬ!!!!");
         TranslationHelper.ModifyIL(il, "I WILL NOT...", "Я НЕ МОГУ...");
         TranslationHelper.ModifyIL(il, "I...", "Я...");
     };

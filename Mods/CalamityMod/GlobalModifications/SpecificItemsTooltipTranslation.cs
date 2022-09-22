@@ -35,11 +35,12 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     }
 
-     //Удаляет SetNameOverride со ВСЕХ предметов в игре включая модовые. Влияет на производительность.
-     //!TODO: Найти способ сделать условие которое удаляет SetNameOverride только в ModItem в Каламити
      public override void SetDefaults(Item item)
      {
-         item.ClearNameOverride();
+         if (item.ModItem?.Mod == ModsCall.Calamity)
+         {
+             item.ClearNameOverride();
+         }
      }
 
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)

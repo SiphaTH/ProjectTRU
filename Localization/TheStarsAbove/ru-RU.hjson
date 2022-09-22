@@ -1947,7 +1947,7 @@
 #                    Атаки стреляют мощными взрывными гранатами с сильным отбрасыванием
 #                    При ударах по врагу увеличивает скорость передвижения и шанс критического удара на 25% на 4 секунды
 #                    Автоматически перезаряжается после 6 выстрелов
-#                    Последний выстрел перед перезарядкой обладает увеличенным радиусом взрыва и наносит 2х базового урона
+#                    Последний выстрел перед перезарядкой обладает увеличенным радиусом взрыва и наносит двукратный базовый урон
 #                    Дополнительно оружие выстреливает в цель артиллерийский снаряд (3 секунды перезарядки)
 #                    Достигнув цели или попав в блок, артиллерийский снаряд взрывается, нанося 3х базового урона
 #                    Нажмите ПКМ, чтобы выстрелить [c/4BF0DE:Плазменной гранатой] (8 секунд перезарядки)
@@ -2327,7 +2327,7 @@
 #                    Атаки этим оружием стреляют маленькими шариками, которые накладывают дебафф «{$BuffName.Midas}» на 20 секунд при критических ударах
 #                    Заряженные атаки вместо обычных стреляют [c/FBD63E:БОЛЬШИМ ВЫСТРЕЛОМ]
 #                    [c/FBD63E:БОЛЬШОЙ ВЫСТРЕЛ] пронзает до 8 врагов и игнорирует блоки
-#                    Кроме того, враги, подверженные Мидасу, получают на 15% больше урона от [c/FBD63E:БОЛЬШОГО ВЫСТРЕЛА]
+#                    Кроме того, враги, на которых наложен дебафф «{$BuffName.Midas}», получают на 15% больше урона от [c/FBD63E:БОЛЬШОГО ВЫСТРЕЛА]
 #                    Критические удары увеличивают этот бонус до 25%
 #                    Одолев врага [c/FBD63E:БОЛЬШИМ ВЫСТРЕЛОМ], из него гарантированно выпадает 5 серебра
 #                    'Теперь у тебя есть шанс стать...'
@@ -2454,7 +2454,7 @@
 #                    '''
 #                    Attacks with this weapon execute rapid stabs
 #                    Each attack grants [c/F8D496:Bulwark of Jade] for 2 seconds on hit, increasing defenses by 30
-#                    Нажмите ПКМ, чтобы потратить 150 маны и обрушить с небес огромную земляную комету, наносящую 2х базового урона
+#                    Нажмите ПКМ, чтобы потратить 150 маны и обрушить с небес огромную земляную комету, наносящую двукратный базовый урон
 #                    Комета накладывает дебафф [c/CB8952:Окаменение] на поражённых врагов, значительно замедляя их
 #                    Атаки этим оружием врагов, на которых наложен дебафф [c/CB8952:Окаменение], наносят дополнительный урон
 #                    Критические удары [c/F1D078:Крошат] врагов, на которых наложен дебафф [c/CB8952:Окаменение]
@@ -2722,18 +2722,18 @@
 #                Name: Алый демон
 #                Tooltip:
 #                    '''
-#                    Holding this weapon prevents natural Mana Regeneration
-#                    Attacks with this weapon will execute a three-hit combo attack
-#                    Striking foes with the final swing of the combo attack will grant 15 Mana and inflict [c/B81E1E:Crimson Mark] for 12 seconds
-#                    Right click to activate [c/F13791:Warp Strike] with 30 Mana, throwing the weapon towards your cursor while disabling normal attacks
-#                    Striking a tile with [c/F13791:Warp Strike] will teleport you to the tile
-#                    Striking a foe with [c/F13791:Warp Strike] will teleport you to their position and execute an attack, dealing 2x base damage
-#                    Additionally, this grants 1 second of Invincibility
-#                    Striking a foe with [c/B81E1E:Crimson Mark] with the [c/F13791:Warp Strike] will grant one stack of [c/F48080:Spectral Arsenal], up to 3
-#                    Additionally, this removes the [c/B81E1E:Crimson Mark]
-#                    Each stack of [c/F48080:Spectral Arsenal] will cause a follow up blade to attack nearby foes for a short duration when executing normal attacks
-#                    With 3 stacks of [c/F48080:Spectral Arsenal], right click will instead activate [c/C80000:Retribution], costing no Mana
-#                    [c/C80000:Retribution] consumes all [c/F48080:Spectral Arsenal] stacks to summon a barrage of spectral blades towards your cursor for 3 seconds
+#                    Держа в руках это оружие предотвращает естественное восстановление маны
+#                    При атаках этим оружием выполняется комбо-атака из трёх ударов
+#                    Удар по врагу последним взмахом комбо-атаки даёт 15 маны и накладывает [c/B81E1E:Багровую метку] на 12 секунд
+#                    Нажмите <right>, чтобы активировать [c/F13791:Warp Strike] потратив 30 маны и бросив оружие в сторону курсора отключив обычные удары
+#                    Удар по блоку [c/F13791:Warp Strike] телепортирует вас к блоку
+#                    Ударив врага [c/F13791:Warp Strike], вы телепортируетесь на его место и выполните атаку, нанося двукратный базовый урон
+#                    Также, даёт 1 секунду неуязвимости
+#                    Удар по врагу [c/F13791:Warp Strike] на которого наложена [c/B81E1E:Багровая метка] даёт один стак [c/F48080:Spectral Arsenal], до 3
+#                    Также, снимает [c/B81E1E:Багровую метку]
+#                    Каждый стак [c/F48080:Spectral Arsenal] will cause a follow up blade to attack nearby foes for a short duration when executing normal attacks
+#                    При 3 стаках [c/F48080:Spectral Arsenal], нажатие <right> активирует [c/C80000:Воздаяние], не расходуя ману
+#                    [c/C80000:Воздаяние] расходует все стаки [c/F48080:Spectral Arsenal] для призыва шквала спектральных клинков в сторону курсора на 3 секунды
 #                    'Боюсь, что вам не повезло'
 #                    '''
 #            }
@@ -2875,8 +2875,8 @@
 #                Tooltip:
 #                    '''
 #                    Снижает защиту на 30
-#                    Upon killing an enemy, gain the buff 'Sated Anguish' for 15 seconds
-#                    During this time, gain 20% increased damage, powerful life regeneration, and defense is restored
+#                    После убийства врага даёт бафф «{$Mods.CalamityRuTranslate.StarsAbove.Buffs.SatedAnguish.Name}» на 15 секунд
+#                    В течение этого времени увеличивает урона 20%, значительно усиливает регенерацию и восстанавливает защиту
 #                    'Смесь механитов из передовых миров, или как там его'
 #                    '''
 #            }
@@ -6159,7 +6159,7 @@
 #                164: "Looks like it started raining.\nHopefully this doesn't put a damper on things.. heh."
 #                165: "It's a blizzard!\nDon't get frostbite, now. That'd be embarassing."
 #                166: "A sandstorm has kicked up.\nIt gets everywhere, so be careful."
-#                167: ""Пространство и время, подчиняйтесь моей воле!"
+#                167: "Пространство и время, подчиняйтесь моей воле!"
 #                168: "Не в мою смену!"
 #                169: "Обернуть время вспять!.."
 #                170: "Твоей неугасающей яростью!.."

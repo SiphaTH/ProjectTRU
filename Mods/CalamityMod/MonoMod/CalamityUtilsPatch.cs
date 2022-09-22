@@ -13,7 +13,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 [JITWhenModsEnabled("CalamityMod")]
 public class CalamityUtilsPatch : OnPatcher
 {
-    public override bool AutoLoad =>ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
 
     public override MethodInfo ModifiedMethod => typeof(CalamityUtils).GetCachedMethod(nameof(CalamityUtils.GenerateRandomAlphanumericString));
 

@@ -52,7 +52,16 @@ public class CalamityRuTranslate : Mod
                 Contents.Add(contentTranslation);
             
             if (type.IsSubclassOf(typeof(ILPatcher)) && Activator.CreateInstance(type) is ILPatcher {AutoLoad: true} ilPatcher)
-                _ilHooks.Add(new ILHook(ilPatcher.ModifiedMethod, ilPatcher.PatchMethod, new ILHookConfig {ManualApply = false}));
+            {
+                try
+                {
+                    _ilHooks.Add(new ILHook(ilPatcher.ModifiedMethod, ilPatcher.PatchMethod, new ILHookConfig {ManualApply = false}));
+                }
+                catch (NullReferenceException)
+                {
+                    throw new Exception($"[IL] Экземпляр типа '{type.Name}' не создан!");
+                }
+            }
 
             if (type.IsSubclassOf(typeof(OnPatcher)) && Activator.CreateInstance(type) is OnPatcher {AutoLoad: true} onPatcher)
                 _onHooks.Add(new Hook(onPatcher.ModifiedMethod, onPatcher.Delegate));

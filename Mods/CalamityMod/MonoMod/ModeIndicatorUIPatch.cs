@@ -1,4 +1,6 @@
+using System;
 using System.Reflection;
+using CalamityMod.Systems;
 using CalamityMod.UI;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
@@ -9,18 +11,38 @@ using Terraria.ModLoader;
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
 [JITWhenModsEnabled("CalamityMod")]
-public class ModeIndicatorUIGetDifficultyStatus : ILPatcher
+public class ModeIndicatorUIGetDifficultyStatus : OnPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
     public override MethodInfo ModifiedMethod => typeof(ModeIndicatorUI).GetCachedMethod(nameof(ModeIndicatorUI.GetDifficultyStatus));
 
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    private delegate void GetDifficultyStatusDelegate(out string text);
+    
+    public override Delegate Delegate => Translation;
+
+    private void Translation(GetDifficultyStatusDelegate orig, out string text)
     {
-        TranslationHelper.ModifyIL(il, " Mode is ", " ");
-        TranslationHelper.ModifyIL(il, "active", "активирована");
-        TranslationHelper.ModifyIL(il, "not active", "деактивирована");
-    };
+        text = "";
+        
+        if (ModeIndicatorUI.MouseScreenArea.Intersects(ModeIndicatorUI.MainClickArea))
+        {
+            string name = DifficultyModeSystem.Difficulties[1].Name;
+            bool flag = false;
+            for (int index = 1; index < DifficultyModeSystem.Difficulties.Length; ++index)
+            {
+                if (DifficultyModeSystem.GetCurrentDifficulty == DifficultyModeSystem.Difficulties[index])
+                {
+                    name = DifficultyModeSystem.Difficulties[index].Name;
+                    flag = true;
+                }
+            }
+
+            text = name is "Месть" or "Смерть"
+                ? $"{name} {(flag ? "активирована" : "деактивирована")}."
+                : $"{name} {(flag ? "активирован" : "деактивирован")}.";
+        }
+    }
 }
 
 [JITWhenModsEnabled("CalamityMod")]

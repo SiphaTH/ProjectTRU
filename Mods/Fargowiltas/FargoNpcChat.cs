@@ -1,6 +1,8 @@
-﻿using CalamityRuTranslate.Common;
+﻿using System.Reflection;
+using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core;
+using Fargowiltas;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -38,6 +40,8 @@ public class FargoNpcChat : ContentTranslation, INpcChatText
     private int TalkingNpc => Main.player[Main.myPlayer].talkNPC;
     #endregion
     private bool IsExistingNPC(int npcType) => npcType >= 0;
+
+    private int AbomClearCD => (int)typeof(FargoWorld).GetField("AbomClearCD", BindingFlags.Static | BindingFlags.NonPublic)?.GetValue(null)!;
     
     public void NpcChatTextTranslation()
     {
@@ -77,6 +81,7 @@ public class FargoNpcChat : ContentTranslation, INpcChatText
                 "I don't think there's an event right now." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.28"),
                 "You really defeated me... not bad. Now do it again without getting hit. Oh, and Copper Shortsword only." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.29"),
                 "I hope all these graves lying around don't belong to you." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.30"),
+                "Hocus pocus, the event is over" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.31"),
                 _ => npcPhrase
             };
 

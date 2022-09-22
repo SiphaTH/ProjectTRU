@@ -3,7 +3,6 @@ using CalamityMod.NPCs.TownNPCs;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications;
