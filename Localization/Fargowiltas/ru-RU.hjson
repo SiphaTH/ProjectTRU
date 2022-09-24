@@ -437,6 +437,11 @@
                 Name: "{$NPCName.TownBunny}"
                 Tooltip: "'*Звуки кролика*'"
             }
+            
+            AltarExterminator: {
+                Name: Altar Exterminator
+                Tooltip: Destroys all natural Demon Altars and Crimson Altars
+            }
 
             AutoHouse: {
                 Name: Автодом
@@ -580,9 +585,19 @@
                 Name: Карманные солнечные часы
                 Tooltip:
                     '''
-                    Нажмите <left>, чтобы моментально сменить день или ночь
+                    Нажмите <left>, чтобы мгновенно сменить время
+                    Time cycles between dawn, noon, dusk, and midnight
                     Нажатие <right> активирует эффект зачарованных солнечных часов
-                    Кроме того, обновляет магазин странствующего торговца
+                    Cycling to dawn обновляет магазин странствующего торговца
+                    '''
+            }
+            
+            PylonCleaner: {
+                Name: Pylon Cleaner
+                Tooltip:
+                    '''
+                    Purifies the area around every pylon
+                    Will use Blue Solution on Hallow Pylon and Green Solution on others
                     '''
             }
 
@@ -1412,7 +1427,7 @@
             }
 
             OverloadFrostMoon: {
-                Name: Перегруженный подарок для непослушных
+                Name: Naughty Present Sack
                 Tooltip:
                     '''
                     Вызывает перегруженную морозную луну
@@ -1439,7 +1454,7 @@
             }
 
             OverloadMartians: {
-                Name: Перегруженный убегающий зонд
+                Name: Martian Communications Satellite
                 Tooltip:
                     '''
                     Вызывает перегруженное событие «Марсианское безумие»
@@ -1826,12 +1841,23 @@
                 Name: Ноги Мутанта
                 Tooltip: ""
             }
+            
+            SiblingPylon: {
+                Name: Sibling Pylon
+                Tooltip:
+                    '''
+                    Teleport to another pylon when Mutant, Abominationn, and Deviantt are nearby
+                    You can only place one per type
+                    '''
+            }
 
             TooltipTags: {
                 TooltipUnlim: {
                     ItemBuff: "[i:87] [c/AAAAAA:Бесконечный бафф при стаке в 15 в инвентаре, свинье-копилке или сейфе]"
                     PiggyBankAcc: "[i:87] [c/AAAAAA:Работает из свиньи-копилки и сейфа]"
                     StationBuff: "[i:87] [c/AAAAAA:Бесконечный бафф при стаке в 30 в инвентаре, свинье-копилке или сейфе]"
+                    TooltipTorchGod1: "[i:5043] [c/AAAAAA:Automatically swaps placed torches to boost luck]"
+                    TooltipTorchGod2: "[i:5043] [c/AAAAAA:Obeys true torch luck when replacing torches, which may differ from default choices]"
                 }
             }
         }
@@ -1894,6 +1920,7 @@
                     29: Действительно победил меня... неплохо. А теперь сделай это снова без получения урона. О, и только медным кинжалом.
                     30: Надеюсь, все эти надгробия, стоящие в округе, не твои.
                     31: Вжух, и событие кончилось.
+                    32: What nostalgic armor you're wearing... No, it doesn't fit on me anymore. And its battery takes too long to charge.
                 }
 
                 Deviantt: {
@@ -2099,6 +2126,7 @@
                     74: Поздравляю. Ты и в правду ужился с Вечностью... по крайней мере, я так думаю?.. И что дальше? Перейдёшь на высший уровень бытия? Сразишься с непостижимой кошачьей сущностью? Уничтожишь мир? Вся мощь отныне в твоих руках.
                     75: Неплохо, неплохо. Одолеть меня не каждому дано. Но я всё ещё чувствую желание расправить крылья... Почему бы нам не повторить?
                     76: Ходят слухи про нерасходуемые предметы призыва боссов. Ну и гадость...
+                    77: Nice armor you have, very realistic skin. As a matter of fact, mind if I borrow it? Your skin, that is.
                 }
 
                 Squirrel: {
@@ -2289,6 +2317,8 @@
             BossZen: "[i:3117] Во время битвы с боссами не появляются враги"
             PiggyBankAcc: "[i:87] Работа информационных и строительных аксессуаров в свинье-копилке"
             FasterLavaFishing: "[i:4881] Быстрая рыбалка в лаве"
+            TorchGodEX: "[i:5043] Torch God's Favor Automatically Swaps Placed Torches"
+            TorchGodEXTooltip: Obeys true torch luck, which may differ from Torch God's Favor
             DebuffOpacity: "[i:1612] Максимальная прозрачность иконок дебаффов"
             DebuffFaderRatio: "[i:1612] Прозрачность затухания длительности иконок дебаффов"
             TransparentFriendlyProjectiles: "[i:1309] Прозрачность дружелюбных снарядов"
@@ -2304,6 +2334,11 @@
             Banner: Знамя
             ArmoredBones: Знамя бронированного скелета
             PirateBanner: Знамя пирата
+        }
+        
+        MessageInfo: {
+            SiblingPylonNotNearSiblings: That pylon needs the mutated siblings to function.
+            NearbySiblingPylonNotNearSiblings: The nearby pylon needs the mutated siblings to function.
         }
     }
 }

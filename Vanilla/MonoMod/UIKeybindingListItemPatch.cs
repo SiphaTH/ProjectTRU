@@ -48,10 +48,13 @@ public class UIKeybindingListItemPatch : ContentTranslation, ILoadableContent
             "FargowiltasSouls: Freeze" => "FargowiltasSouls: Заморозка",
             "FargowiltasSouls: Turn Gold" => "FargowiltasSouls: Превращение в золото",
             "FargowiltasSouls: Throw Smoke Bomb" => "FargowiltasSouls: Дымовая бомба",
-            "FargowiltasSouls: Fireball Dash" => "FargowiltasSouls: Рывок огненного шара",
+            "FargowiltasSouls: Special Dash" => "FargowiltasSouls: Special Dash",
             "FargowiltasSouls: Mutant Bomb" => "FargowiltasSouls: Бомба Мутанта",
             "FargowiltasSouls: Open Soul Toggler" => "FargowiltasSouls: Открыть настройки эффектов душ",
             "FargowiltasSouls: Precision Movement" => "FargowiltasSouls: Точное передвижение",
+            "FargowiltasSouls: Magical Cleanse" => "FargowiltasSouls: Magical Cleanse",
+            "FargowiltasSouls: Frigid Spell" => "FargowiltasSouls: Frigid Spell",
+            "FargowiltasSouls: Debuff Install" => "FargowiltasSouls: Debuff Install",
             _ => orig.Invoke(self)
         };
     }

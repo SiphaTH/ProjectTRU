@@ -148,6 +148,16 @@ public class FargowiltasSpecificItemsTooltipTranslation : GlobalItem
         {
             tooltip.Text = LangHelper.GetTextValue("Fargowiltas.Items.TooltipTags.TooltipUnlim.PiggyBankAcc");
         });
+        
+        ItemHelper.TranslateTooltip(item, tooltips, "TooltipTorchGod1", tooltip =>
+        {
+            tooltip.Text = LangHelper.GetTextValue("Fargowiltas.Items.TooltipTags.TooltipTorchGod1");
+        });
+        
+        ItemHelper.TranslateTooltip(item, tooltips, "TooltipTorchGod2", tooltip =>
+        {
+            tooltip.Text = LangHelper.GetTextValue("Fargowiltas.Items.TooltipTags.TooltipTorchGod2");
+        });
 
         if (item.type is ItemID.SharpeningStation or ItemID.AmmoBox or ItemID.CrystalBall or ItemID.BewitchingTable
             or ItemID.SliceOfCake)

@@ -82,6 +82,7 @@ public class FargoNpcChat : ContentTranslation, INpcChatText
                 "You really defeated me... not bad. Now do it again without getting hit. Oh, and Copper Shortsword only." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.29"),
                 "I hope all these graves lying around don't belong to you." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.30"),
                 "Hocus pocus, the event is over" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.31"),
+                "What nostalgic armor you're wearing... No, it doesn't fit on me anymore. And its battery takes too long to charge." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.32"),
                 _ => npcPhrase
             };
 
@@ -340,6 +341,7 @@ public class FargoNpcChat : ContentTranslation, INpcChatText
                 "Congratulations. You truly embraced eternity... at least, I think you did? So what happens next? Ascend from this plane of existence? Fight a transcendant cat-like entity? Destroy the world? All the power's in your hands now." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.74"),
                 "Good work beating me, I guess. I still feel like stretching my wings... Why don't we go at it for real next time?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.75"),
                 "I heard of a rumor of infinite use boss summons. Makes me sick.." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.76"),
+                "Nice armor you have, very realistic skin. As a matter of fact, mind if I borrow it? Your skin, that is." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.77"),
                 _ => npcPhrase
             };
 
