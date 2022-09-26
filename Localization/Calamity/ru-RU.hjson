@@ -10627,10 +10627,7 @@
             
             AstralPylon: {
                 Name: Пилон астрала
-                Tooltip:
-                    '''
-                    {$CommonItemTooltip.TeleportationPylon}
-                    '''
+                Tooltip: "{$CommonItemTooltip.TeleportationPylon}"
             }
             
             Chaosplate: {
@@ -10670,18 +10667,12 @@
             
             SulphurPylon: {
                 Name: Сернистый пилон
-                Tooltip:
-                    '''
-                    {$CommonItemTooltip.TeleportationPylon}
-                    '''
+                Tooltip: "{$CommonItemTooltip.TeleportationPylon}"
             }
             
             SunkenPylon: {
                 Name: Затерянный пилон
-                Tooltip:
-                    '''
-                    {$CommonItemTooltip.TeleportationPylon}
-                    '''
+                Tooltip: "{$CommonItemTooltip.TeleportationPylon}"
             }
             
             AbyssGravelWallItem: {

@@ -107,7 +107,7 @@ public class PlayerDeathReasonPatch : ContentTranslation, ILoadableContent
             reasoninenglish = $"{name} обезглавливается гигантской черепахой.";
         if (reasoninenglish == $"{name} was swallowed whole.")
 			reasoninenglish = $"{name} полностью проглатывается.";
-        if (reasoninenglish = $"{name} became a man eaten by Man Eater.";
+        if (reasoninenglish == $"{name} became a man eaten by Man Eater.")
 		    reasoninenglish = $"{name} становится человеком, съеденым людоедом.";
         if (reasoninenglish == $"{name} had his nuts cracked.")
             reasoninenglish = $"{name} раскалывает свои орешки.";
