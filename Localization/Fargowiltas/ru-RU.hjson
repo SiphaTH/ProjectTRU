@@ -440,7 +440,7 @@
             
             AltarExterminator: {
                 Name: Altar Exterminator
-                Tooltip: Destroys all natural Demon Altars and Crimson Altars
+                Tooltip: Уничтожает все существующие демонические и багровые алтари
             }
 
             AutoHouse: {
@@ -586,9 +586,9 @@
                 Tooltip:
                     '''
                     Нажмите <left>, чтобы мгновенно сменить время
-                    Time cycles between dawn, noon, dusk, and midnight
+                    Время сменяется между рассветом, полуднем, сумерками и полночью
                     Нажатие <right> активирует эффект зачарованных солнечных часов
-                    Cycling to dawn обновляет магазин странствующего торговца
+                    Смена времени на рассвет обновляет магазин странствующего торговца
                     '''
             }
             
@@ -596,8 +596,8 @@
                 Name: Pylon Cleaner
                 Tooltip:
                     '''
-                    Purifies the area around every pylon
-                    Will use Blue Solution on Hallow Pylon and Green Solution on others
+                    Очищает область вокруг каждого пилона
+                    Использует синий раствор для пилона освящения, а зелёный - для остальных
                     '''
             }
 
@@ -1846,8 +1846,8 @@
                 Name: Sibling Pylon
                 Tooltip:
                     '''
-                    Teleport to another pylon when Mutant, Abominationn, and Deviantt are nearby
-                    You can only place one per type
+                    Телепортирует к другому пилону, если рядом находятся Мутант, Мерзостть и Девиантт
+                    Вы можете разместить только один пилон каждого типа
                     '''
             }
 
@@ -1856,7 +1856,7 @@
                     ItemBuff: "[i:87] [c/AAAAAA:Бесконечный бафф при стаке в 15 в инвентаре, свинье-копилке или сейфе]"
                     PiggyBankAcc: "[i:87] [c/AAAAAA:Работает из свиньи-копилки и сейфа]"
                     StationBuff: "[i:87] [c/AAAAAA:Бесконечный бафф при стаке в 30 в инвентаре, свинье-копилке или сейфе]"
-                    TooltipTorchGod1: "[i:5043] [c/AAAAAA:Automatically swaps placed torches to boost luck]"
+                    TooltipTorchGod1: "[i:5043] [c/AAAAAA:Автоматически меняет местами расставленные факелы, увеличивая удачу]"
                     TooltipTorchGod2: "[i:5043] [c/AAAAAA:Obeys true torch luck when replacing torches, which may differ from default choices]"
                 }
             }
@@ -2337,8 +2337,8 @@
         }
         
         MessageInfo: {
-            SiblingPylonNotNearSiblings: That pylon needs the mutated siblings to function.
-            NearbySiblingPylonNotNearSiblings: The nearby pylon needs the mutated siblings to function.
+            SiblingPylonNotNearSiblings: Для функционирования этого пилона нужны мутировавшие братья и сестры.
+            NearbySiblingPylonNotNearSiblings: Для функционирования ближайшего пилона нужны мутировавшие братья и сестры.
         }
     }
 }

@@ -215,8 +215,8 @@
             }
 
             MagicalCleanseCD: {
-                Name: Magical Cleanse Cooldown
-                Description: You cannot cleanse debuffs yet
+                Name: Перезарядка магического очищения
+                Description: Вы пока не можете снять дебаффы
             }
             
             TwinsInstall: {
@@ -236,7 +236,7 @@
             
             Supercharged: {
                 Name: Supercharged
-                Description: 20% increased move speed, 10% increased attack speed, your attacks electrify
+                Description: Скорость передвижения увеличена на 20%, атаки на 10% и атаки накладывают дебаффы «{$BuffName.Electrified}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LightningRod.Name}»
             }
 
             NanoInjection: {
@@ -566,7 +566,7 @@
 
             BetsyDash: {
                 Name: Рывок
-                Description: You're moving at high speed!
+                Description: Вы передвигаетесь с большой скоростью!
             }
 
             HellFire: {
@@ -1279,7 +1279,7 @@
                     '''
                     Увеличивает размер оружия на 150%, но снижает скорость атаки ближнего боя
                     Каждые полсекунды увеличивает размер снаряда вдвое
-                    Увеличенные projectiles and non-projectile swords наносят на 10% больше урона и получают дополнительный шанс критического удара
+                    Увеличенные снаряды и мечи наносят на 10% больше урона и получают дополнительный шанс критического удара
                     'Больше — всегда лучше'
                     '''
             }
@@ -1386,7 +1386,7 @@
                 Tooltip:
                     '''
                     Работает в инвентаре
-                    Stand still to expose nearby treasure
+                    Стоя на месте обнаруживает ближайшие сокровища
                     Включает автоатаку для всего оружия
                     Немного снижает время использования затронутых предметов
                     '''
@@ -1586,9 +1586,9 @@
                     '''
                     Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Berserked.Name}»
                     Во время рывка или при быстром беге, создаёт след демонических кос
-                    Press the Debuff Install key to go berserk
-                    When berserk, massively increased offenses, massively lowered defenses, and you cannot stop attacking or moving
-                    Berserk state lasts for 6 seconds and you are stunned for 3 seconds afterwards
+                    Нажмите клавишу «Debuff Install», чтобы стать берсерком
+                    Режим берсерка значительно усиливает атаку, значительно снижает защиту, и вы не можете перестать атаковать или передвигаться
+                    Режим берсерка длится 6 секунд, после чего вы оглушаетесь на 3 секунды
                     'Раздражающие останки побеждённого врага'
                     '''
             }
@@ -1599,7 +1599,7 @@
                     '''
                     Даёт невосприимчивость к дебаффам «{$BuffName.OgreSpit}», «{$BuffName.WitheredWeapon}», «{$BuffName.WitheredArmor}»
                     Критические удары накладывают дебафф «{$BuffName.BetsysCurse}»
-                    Нажмите клавишу «Special Dash» для короткого неуязвимого рывка огненного шара
+                    Нажмите клавишу «Особый рывок» для короткого неуязвимого рывка огненного шара
                     'Слегка пригоревшее, средней прожарки'
                     '''
             }
@@ -1615,7 +1615,7 @@
                     Атаки могут наложить дебафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.ClippedWings.Name}» и создать сердца
                     Атаки по вам могут пискнуть и нанести 1 единицу урона
                     While attacking, gain massively increased damage and shadowflame, but less move and attack speed bonuses
-                    Summons a friendly rainbow slime
+                    Призывает дружелюбного радужного слизня
                     С некоторых врагов после смерти выпадают зелья
                     When attacking by manually clicking, increases non-summon damage by 30%
                     [c/00FFFF:Следующие эффекты пассивно работают в инвентаре или в слотах украшений:]
@@ -1646,7 +1646,7 @@
                     '''
                     Даёт невосприимчивость к дебаффам «{$BuffName.Venom}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.IvyVenom.Name}», «{$BuffName.Burning}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Fused.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LowGround.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.MarkedforDeath.Name}»
                     Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Swarming.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Atrophied.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Jammed.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.ReverseManaFlow.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Antisocial.Name}»
-                    Press the Magical Cleanse key to cure yourself of most debuffs
+                    Нажмите клавишу «Магическое очищение», чтобы избавиться от большинства дебаффов
                     Increases life regeneration based on how much light you receive
                     Дважды нажмите ВНИЗ в воздухе, чтобы быстро падать
                     Быстрое падение создаст огненное извержение при ударе после падения с определённой высоты
@@ -1810,8 +1810,8 @@
                     Увеличивает урон и шанс критического удара на 10%, и сопротивление урону на 5%
                     Увеличивает время полёта на 100%
                     Критические удары накладывают дебафф «{$BuffName.BetsysCurse}»
-                    Right Click to guard with your cape
-                    Нажмите клавишу «Special Dash» для короткого неуязвимого рывка огненного шара
+                    Нажмите <right>, чтобы защититься плащом
+                    Нажмите клавишу «Особый рывок» для короткого неуязвимого рывка огненного шара
                     Даёт эффекты от дебаффа «{$BuffName.Wet}» во время езды на Рыброне-милашке и контроля гравитации
                     Замораживает ближайших врагов при ранении
                     Вы замораживаете всё вокруг при ранении, но последовательные удары суммируют штраф на сопротивление урону
@@ -1867,7 +1867,7 @@
                 Tooltip:
                     '''
                     Даёт невосприимчивость к дебаффам «{$BuffName.Venom}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.IvyVenom.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Swarming.Name}»
-                    Press the Magical Cleanse key to cure yourself of most debuffs
+                    Нажмите клавишу «Магическое очищение», чтобы избавиться от большинства дебаффов
                     Увеличивает регенерацию здоровья based on how much light you receive
                     Привлекает потомка легендарного растения, который цветёт в бою
                     'Матереубийство?'
@@ -1920,7 +1920,7 @@
                 Tooltip:
                     '''
                     Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Lethargic.Name}»
-                    When dashing, take 75% less contact damage and reflect 100% of contact damage on attacker
+                    Во время рывка вы получаете на 75% меньше контактного урона и отражаете 100% контактного урона в атакующего.
                     Призывает две руки Скелетрона, атакующие врагов
                     'Средство для роста костей побеждённого врага'
 
@@ -1960,7 +1960,7 @@
                     '''
                     Даёт невосприимчивость к дебаффу «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.LivingWasteland.Name}»
                     Увеличивает урон и шанс критического удара на 5%
-                    Right Click to guard with your cape
+                    Нажмите <right>, чтобы защититься плащом
                     You have an aura of Rotting while guarding
                     Guard exactly as an attack touches you to counter it on a very long cooldown
                     Counter an attack to gain life based on the blocked damage
@@ -2115,9 +2115,9 @@
                     Увеличивает скорость падения
                     Когда вы приземляетесь после прыжка, на курсор с неба падает слизь
                     Во время рывка или при быстром беге, создаёт след кровавых кос
-                    Press the Debuff Install key to go berserk
+                    Нажмите клавишу «Debuff Install», чтобы стать берсерком
                     Press the Special Dash key to perform a short quick bee dash
-                    When dashing, take 75% less contact damage and reflect 100% of contact damage on attacker
+                    Во время рывка вы получаете на 75% меньше контактного урона и отражаете 100% контактного урона в атакующего
                     Пчёлы и слабые шершни становятся дружелюбными
                     Призывает две руки Скелетрона, атакующие врагов
                     'Превосходство не гарантируется'
@@ -2139,7 +2139,7 @@
                     '''
                     When attacking by manually clicking, increases non-summon damage by 30%
                     Даёт невосприимчивость к дебаффам «{$BuffName.Webbed}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Purified.Name}»
-                    Даёт автоатаку всем оружиям (this effect also works in your inventory)
+                    Даёт автоатаку всем оружиям (этот эффект также работает в инвентаре)
                     'Идол древних обитателей джунглей...'
                     '''
             }
@@ -2149,8 +2149,8 @@
                 Tooltip:
                     '''
                     Даёт невосприимчивость к дебаффу «{$BuffName.ShadowFlame}»
-                    While attacking, gain massively increased damage but massively decreased movement
-                    While attacking, shadowflame tentacles lash out at nearby enemies
+                    Во время атаки значительно увеличивает урон, но также значительно снижает скорость передвижения
+                    Во время атаки щупальца теневого пламени поражают ближайших врагов
                     Attack speed bonuses are half as effective
                     'Проклятое теневое снадобье побеждённого врага'
                     '''
@@ -2293,7 +2293,7 @@
                     Атаки создают дополнительные атаки, сердца и накладывают множество дебаффов режима Вечности
                     Increased stats when inflicted with Cursed Inferno or Ichor
                     Press the Debuff Install key to debuff and buff yourself
-                    Нажмите клавишу «Special Dash» для короткого неуязвимого рывка огненного шара; нажмите <right>, чтобы отдалить
+                    Нажмите клавишу «Особый рывок» для короткого неуязвимого рывка огненного шара; нажмите <right>, чтобы отдалить
                     С некоторых врагов после смерти выпадают зелья, значительно улучшает перековку и возрождаетесь с большим количеством здоровья
                     Вы возрождаетесь в два раза быстрее, улучшает ночное зрение, and supercharge а при ранении извергаете различные атаки
                     Предотвращает появление боссов, увеличивает скорость появление врагов, с врагов выпадает больше предметов, а атаки по вам могут пискнуть и нанести 1 единицу урона
@@ -2539,7 +2539,7 @@
                 Name: Капюшон Некоми
                 Tooltip:
                     '''
-                    7% increased damage
+                    Увеличивает урон на 7%
                     Увеличивает призываемое число миньонов и стражей на 2
                     '''
             }
@@ -2557,7 +2557,7 @@
                 Name: Штаны Некоми
                 Tooltip:
                     '''
-                    7% increased critical strike chance
+                    Увеличивает шанс критического удара на 7%
                     Увеличивает скорость передвижения на 10%
                     '''
             }
