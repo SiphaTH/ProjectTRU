@@ -1812,6 +1812,7 @@
                     Критические удары накладывают дебафф «{$BuffName.BetsysCurse}»
                     Нажмите <right> для защиты своей накидкой
                     Нажмите клавишу «Особый рывок» для короткого неуязвимого рывка огненного шара
+                    Press the Ammo Cycle key to cycle ammos (this effect works passively from inventory)
                     Даёт эффекты от дебаффа «{$BuffName.Wet}» во время езды на Рыброне-милашке и контроля гравитации
                     Замораживает ближайших врагов при ранении
                     Вы замораживаете всё вокруг при ранении, но последовательные удары суммируют штраф на сопротивление урону
@@ -2033,6 +2034,7 @@
                 Tooltip:
                     '''
                     Даёт невосприимчивость к дебаффу «{$BuffName.Electrified}» и «{$BuffName.VortexDebuff}»
+                    Press the Ammo Cycle key to cycle ammos (this effect works passively from inventory)
                     Призывает дружелюбную маленькую марсианскую тарелку
                     Притягивающий луч марсианской тарелки замедляет врагов, попавших под него
                     'Просто держи это в режиме полёта'
@@ -3770,7 +3772,8 @@
             TwinsEndure: переживает смертельный удар, чтобы сражаться вместе со своим близнецом!
             TwinsRevive: возрождается!
             GelatinSubjects: Желатиновый объект пробуждается!
-
+            RoyalSubject: Royal Subject has awoken!
+            QueenBeeEnrage: "{$NPCName.QueenBee} has enraged outside the underground jungle!"
             MoonsDeathPenalty: Прогресс волны откатился!
         }
 
