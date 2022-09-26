@@ -53,8 +53,8 @@ public class UIKeybindingListItemPatch : ContentTranslation, ILoadableContent
             "FargowiltasSouls: Open Soul Toggler" => "FargowiltasSouls: Открыть настройки эффектов душ",
             "FargowiltasSouls: Precision Movement" => "FargowiltasSouls: Точное передвижение",
             "FargowiltasSouls: Magical Cleanse" => "FargowiltasSouls: Магическое очищение",
-            "FargowiltasSouls: Frigid Spell" => "FargowiltasSouls: Frigid Spell",
-            "FargowiltasSouls: Debuff Install" => "FargowiltasSouls: Debuff Install",
+            "FargowiltasSouls: Frigid Spell" => "FargowiltasSouls: Холодное заклинание",
+            "FargowiltasSouls: Debuff Install" => "FargowiltasSouls: Инсталляция дебаффа",
             _ => orig.Invoke(self)
         };
     }
