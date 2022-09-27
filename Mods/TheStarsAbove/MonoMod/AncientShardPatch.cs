@@ -18,6 +18,6 @@
 //     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "A mysterious throne descends from the heavens...", "С небес снисходит загадочный трон...");
-//         TranslationHelper.ModifyIL(il, "Nalhaun, the Burnished King appears!", "Налхан, Воронёный король появился!");
+//         TranslationHelper.ModifyIL(il, "Nalhaun, the Burnished King appears!", "Налхан, Воронёный король появляется!");
 //     };
 // }

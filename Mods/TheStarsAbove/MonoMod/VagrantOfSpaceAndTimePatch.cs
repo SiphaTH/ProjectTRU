@@ -42,8 +42,8 @@
 //         TranslationHelper.ModifyIL(il, "Surpassing Infinity", "За пределами бесконечности", 2);
 //         TranslationHelper.ModifyIL(il, "Ascendance", "Вознесение");
 //         TranslationHelper.ModifyIL(il, "Ascendance", "Вознесение", 2);
-//         TranslationHelper.ModifyIL(il, "The Flood Of Light", "Поток света");
-//         TranslationHelper.ModifyIL(il, "The Flood Of Light", "Поток света", 2);
+//         TranslationHelper.ModifyIL(il, "The Flood Of Light", "Поток Света");
+//         TranslationHelper.ModifyIL(il, "The Flood Of Light", "Поток Света", 2);
 //         TranslationHelper.ModifyIL(il, "Coruscant Saber", "Корусантская сабля");
 //         TranslationHelper.ModifyIL(il, "Coruscant Saber II", "Корусантская сабля II");
 //         TranslationHelper.ModifyIL(il, "Coruscant Saber II", "Корусантская сабля II", 2);
@@ -99,11 +99,11 @@
 //         TranslationHelper.ModifyIL(il, "Terror Unleashed", "Освобождённый ужас");
 //         TranslationHelper.ModifyIL(il, "Terror Unleashed", "Освобождённый ужас", 2);
 //         TranslationHelper.ModifyIL(il, "Terror Unleashed", "Освобождённый ужас", 3);
-//         TranslationHelper.ModifyIL(il, "Brain Drain", "Утечка мозгов");
-//         TranslationHelper.ModifyIL(il, "Brain Drain", "Утечка мозгов", 2);
-//         TranslationHelper.ModifyIL(il, "Brain Drain", "Утечка мозгов", 3);
-//         TranslationHelper.ModifyIL(il, "Brain Drain", "Утечка мозгов", 4);
-//         TranslationHelper.ModifyIL(il, "Brain Drain", "Утечка мозгов", 5);
+//         TranslationHelper.ModifyIL(il, "Brain Drain", "Заумь");
+//         TranslationHelper.ModifyIL(il, "Brain Drain", "Заумь", 2);
+//         TranslationHelper.ModifyIL(il, "Brain Drain", "Заумь", 3);
+//         TranslationHelper.ModifyIL(il, "Brain Drain", "Заумь", 4);
+//         TranslationHelper.ModifyIL(il, "Brain Drain", "Заумь", 5);
 //         TranslationHelper.ModifyIL(il, "Gravitational Anomaly", "Гравитационная аномалия");
 //         TranslationHelper.ModifyIL(il, "Gravitational Anomaly", "Гравитационная аномалия", 2);
 //         TranslationHelper.ModifyIL(il, "Gravitational Anomaly", "Гравитационная аномалия", 3);

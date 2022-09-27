@@ -18,7 +18,7 @@
 //     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "Reality's fabric gives way to a mysterious being...", "Ткань реальности уступает таинственному существу...");
-//         TranslationHelper.ModifyIL(il, "The Vagrant of Space and Time descends!", "Ходящий между пространством и временем снизошёл!");
-//         TranslationHelper.ModifyIL(il, "Your weapons seem to be powerless...", "Ваше оружие, похоже, бесполезно...");
+//         TranslationHelper.ModifyIL(il, "The Vagrant of Space and Time descends!", "Ходящий между пространством и временем снисходит!");
+//         TranslationHelper.ModifyIL(il, "Your weapons seem to be powerless...", "Ваше оружие кажется бессильным...");
 //     };
 // }

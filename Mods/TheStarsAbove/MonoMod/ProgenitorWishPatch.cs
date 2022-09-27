@@ -18,6 +18,6 @@
 //     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "The echoes of past eons begins to ebb and flow...", "Эхо прошлых эпох начинает свои отливы и приливы...");
-//         TranslationHelper.ModifyIL(il, "The Warrior of Light descends!", "Воин Света снизошёл!");
+//         TranslationHelper.ModifyIL(il, "The Warrior of Light descends!", "Воин Света снисходит!");
 //     };
 // }

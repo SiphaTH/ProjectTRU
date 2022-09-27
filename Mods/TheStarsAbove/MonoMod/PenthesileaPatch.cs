@@ -22,7 +22,7 @@
 //         TranslationHelper.ModifyIL(il, "The Garden of Avalon stifles your healing!", "Сад Авалона подавляет ваше исцеление!");
 //         TranslationHelper.ModifyIL(il, "Penth is protected by a shield of frost!", "Пентесилея защищена щитом мороза!");
 //         TranslationHelper.ModifyIL(il, "Overwhelming power surrounds you...", "Вокруг вас кипит сила...");
-//         TranslationHelper.ModifyIL(il, "You feel the next attack is truly unsurvivable!", "");
+//         TranslationHelper.ModifyIL(il, "You feel the next attack is truly unsurvivable!", "Вы чуствуете, следующую атаку невозможно пережить!");
 //         TranslationHelper.ModifyIL(il, "Concentrativity", "Концентративность");
 //         TranslationHelper.ModifyIL(il, "Heavensfall", "Небесный водопад");
 //         TranslationHelper.ModifyIL(il, "Heavensfall", "Небесный водопад", 2);
@@ -37,7 +37,7 @@
 //         TranslationHelper.ModifyIL(il, "Surpassing Infinity", "За пределами бесконечности");
 //         TranslationHelper.ModifyIL(il, "Ascendance", "Вознесение");
 //         TranslationHelper.ModifyIL(il, "Ascendance", "Вознесение", 2);
-//         TranslationHelper.ModifyIL(il, "The Flood Of Light", "Поток света");
+//         TranslationHelper.ModifyIL(il, "The Flood Of Light", "Поток Света");
 //         TranslationHelper.ModifyIL(il, "Coruscant Saber", "Корусантская сабля");
 //         TranslationHelper.ModifyIL(il, "Coruscant Saber II", "Корусантская сабля II");
 //         TranslationHelper.ModifyIL(il, "Coruscant Saber II", "Корусантская сабля II", 2);

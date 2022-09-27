@@ -18,6 +18,6 @@
 //     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
 //         TranslationHelper.ModifyIL(il, "The world shudders in anticipation...", "Мир содрогается в ожидании...");
-//         TranslationHelper.ModifyIL(il, "Arbitration descends!", "Арбитраж снизошёл!");
+//         TranslationHelper.ModifyIL(il, "Arbitration descends!", "Арбитраж снисходит!");
 //     };
 // }

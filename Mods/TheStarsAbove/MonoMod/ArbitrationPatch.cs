@@ -17,7 +17,7 @@
 //
 //     public override ILContext.Manipulator PatchMethod { get; } = il =>
 //     {
-//         TranslationHelper.ModifyIL(il, "You have been judged...", "Вы были осуждены...");
+//         TranslationHelper.ModifyIL(il, "You have been judged...", "Вас осудили...");
 //         TranslationHelper.ModifyIL(il, "You've been colored with ink!", "Вас раскрасили чернилами!");
 //         TranslationHelper.ModifyIL(il, "Time and space begin to crumble, their laws forsaken!", "Время и пространство начинают распадаться, их законы забыты!");
 //         TranslationHelper.ModifyIL(il, "Threads of Fate", "Нити судьбы");
@@ -66,7 +66,7 @@
 //         TranslationHelper.ModifyIL(il, "Surpassing Infinity", "За пределами бесконечности", 2);
 //         TranslationHelper.ModifyIL(il, "Ascendance", "Вознесение");
 //         TranslationHelper.ModifyIL(il, "Ascendance", "Вознесение", 2);
-//         TranslationHelper.ModifyIL(il, "The Flood Of Light", "Поток света");
+//         TranslationHelper.ModifyIL(il, "The Flood Of Light", "Поток Света");
 //         TranslationHelper.ModifyIL(il, "Beneath a Bleak Sky", "Под мрачным небом");
 //         TranslationHelper.ModifyIL(il, "Beneath a Bleak Sky", "Под мрачным небом", 2);
 //         TranslationHelper.ModifyIL(il, "Beneath a Bleak Sky", "Под мрачным небом", 3);
@@ -261,22 +261,22 @@
 //         TranslationHelper.ModifyIL(il, "Relinquish", "Отказ", 3);
 //         TranslationHelper.ModifyIL(il, "Relinquish", "Отказ", 4);
 //         TranslationHelper.ModifyIL(il, "Relinquish", "Отказ", 5);
-//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через хаос");
-//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через хаос", 2);
-//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через хаос", 3);
-//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через хаос", 4);
-//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через хаос", 5);
-//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через хаос", 6);
-//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через хаос", 7);
-//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через хаос", 8);
-//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через порядок");
-//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через порядок", 2);
-//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через порядок", 3);
-//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через порядок", 4);
-//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через порядок", 5);
-//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через порядок", 6);
-//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через порядок", 7);
-//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через порядок", 8);
+//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через Хаос");
+//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через Хаос", 2);
+//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через Хаос", 3);
+//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через Хаос", 4);
+//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через Хаос", 5);
+//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через Хаос", 6);
+//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через Хаос", 7);
+//         TranslationHelper.ModifyIL(il, "Order through Chaos", "Порядок через Хаос", 8);
+//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через Порядок");
+//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через Порядок", 2);
+//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через Порядок", 3);
+//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через Порядок", 4);
+//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через Порядок", 5);
+//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через Порядок", 6);
+//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через Порядок", 7);
+//         TranslationHelper.ModifyIL(il, "Chaos through Order", "Хаос через Порядок", 8);
 //         TranslationHelper.ModifyIL(il, "Starlit Channeling", "Звёздный канал");
 //         TranslationHelper.ModifyIL(il, "Starlit Channeling", "Звёздный канал", 2);
 //         TranslationHelper.ModifyIL(il, "Starlit Channeling", "Звёздный канал", 3);
