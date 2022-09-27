@@ -20,419 +20,419 @@ public class VanillaItemsTranslation : GlobalItem
     {
         if (item.type == ItemID.CobaltSword)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Decreases enemy defense by 25% on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CobaltSword.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.CobaltNaginata)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Decreases enemy defense by 25% on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CobaltNaginata.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.PalladiumSword)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Increases life regen on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PalladiumSword.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.PalladiumPike)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Increases life regen on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PalladiumPike.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.MythrilSword)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Decreases enemy contact damage by 10% on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MythrilSword.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.MythrilHalberd)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Decreases enemy contact damage by 10% on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MythrilHalberd.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.OrichalcumSword)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Increases how frequently the Orichalcum set bonus triggers on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.OrichalcumSword.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.OrichalcumHalberd)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Increases how frequently the Orichalcum set bonus triggers on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.OrichalcumHalberd.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.AdamantiteSword)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Slows enemies on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.AdamantiteSword.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.AdamantiteGlaive)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Slows enemies on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.AdamantiteGlaive.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.TitaniumSword)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Deals increased damage to enemies with high knockback resistance",
-                        LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TitaniumSword.Tooltip"));
-            }
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TitaniumSword.Tooltip"));
+            });
         }
         else if (item.type == ItemID.TitaniumTrident)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Deals increased damage to enemies with high knockback resistance",
-                        LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TitaniumTrident.Tooltip"));
-            }
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TitaniumTrident.Tooltip"));
+            });
         }
         else if (item.type == ItemID.Excalibur)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Holy Flames\nDeals double damage to enemies above 75% life",
-                        LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Excalibur.Tooltip"));
-            }
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Excalibur.Tooltip"));
+            });
         }
         else if (item.type == ItemID.Gungnir)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Holy Flames\nDeals double damage to enemies above 75% life",
-                        LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Gungnir.Tooltip"));
-            }
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Gungnir.Tooltip"));
+            });
         }
         else if (item.type == ItemID.TrueExcalibur)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Holy Flames\nDeals double damage to enemies above 75% life",
-                        LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TrueExcalibur.Tooltip"));
-            }
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TrueExcalibur.Tooltip"));
+            });
         }
         else if (item.type == ItemID.CandyCaneSword)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Heals you on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CandyCaneSword.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.FruitcakeChakram)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Heals you on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FruitcakeChakram.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.StylistKilLaKillScissorsIWish)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.StylistKilLaKillScissorsIWish.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.BluePhaseblade)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BluePhaseblade.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.RedPhaseblade)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.RedPhaseblade.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.GreenPhaseblade)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.GreenPhaseblade.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.PurplePhaseblade)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PurplePhaseblade.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.WhitePhaseblade)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.WhitePhaseblade.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.YellowPhaseblade)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.YellowPhaseblade.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.BluePhasesaber)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BluePhasesaber.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.RedPhasesaber)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.RedPhasesaber.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.GreenPhasesaber)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.GreenPhasesaber.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.PurplePhasesaber)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PurplePhasesaber.Tooltip"));
-            }
+            });
         }
-        else if (item.type == ItemID.PurplePhasesaber)
+        else if (item.type == ItemID.WhitePhasesaber)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.WhitePhasesaber.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.YellowPhasesaber)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.YellowPhasesaber.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.OrangePhaseblade)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.OrangePhaseblade.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.OrangePhasesaber)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 100% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.OrangePhasesaber.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.AntlionClaw)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 50% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.AntlionClaw.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.BoneSword)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 50% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BoneSword.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.BreakerBlade)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Ignores 50% of enemy defense",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BreakerBlade.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.LightsBane)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Shadowflame on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.LightsBane.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.NightsEdge)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Shadowflame on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.NightsEdge.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.TrueNightsEdge)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Shadowflame on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TrueNightsEdge.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.BallOHurt)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Shadowflame on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BallOHurt.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.CorruptYoyo)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Shadowflame on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CorruptYoyo.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.BloodButcherer)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BloodButcherer.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.TheRottedFork)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TheRottedFork.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.TheMeatball)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TheMeatball.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.CrimsonYoyo)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CrimsonYoyo.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.CrimsonRod)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CrimsonRod.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.SolarFlarePickaxe)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Can mine Uelibloom Ore",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.SolarFlarePickaxe.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.VortexPickaxe)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Can mine Uelibloom Ore",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.VortexPickaxe.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.NebulaPickaxe)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Can mine Uelibloom Ore",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.NebulaPickaxe.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.StardustPickaxe)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Can mine Uelibloom Ore",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.StardustPickaxe.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.FalconBlade)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Holding this item grants +20% increased movement speed",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FalconBlade.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.FetidBaghnakhs)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Receives 25% benefit from melee speed bonuses",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FetidBaghnakhs.Tooltip"));
-            }
+            });
         }
         else if (item.type == ItemID.BladedGlove)
         {
-            foreach (TooltipLine tooltip in tooltips)
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
                 tooltip.Text = tooltip.Text.Replace("Receives 50% benefit from melee speed bonuses",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BladedGlove.Tooltip"));
-            }
+            });
         }
 
         if (item.prefix > 0)
