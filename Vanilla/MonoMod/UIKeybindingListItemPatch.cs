@@ -55,7 +55,7 @@ public class UIKeybindingListItemPatch : ContentTranslation, ILoadableContent
             "FargowiltasSouls: Magical Cleanse" => "FargowiltasSouls: Магическое очищение",
             "FargowiltasSouls: Frigid Spell" => "FargowiltasSouls: Холодное заклинание",
             "FargowiltasSouls: Debuff Install" => "FargowiltasSouls: Инсталляция дебаффа",
-            "FargowiltasSouls: Ammo Cycle" => "FargowiltasSouls: Ammo Cycle",
+            "FargowiltasSouls: Ammo Cycle" => "FargowiltasSouls: Смена боеприпаса",
             _ => orig.Invoke(self)
         };
     }
