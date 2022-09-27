@@ -7785,12 +7785,12 @@
             }
             
             EidolistBanner: {
-                Name: Знамя фантолиста
+                Name: Знамя эйдолиста
                 Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.CalamityMod.NPCs.Eidolist.Name}"
             }
             
             EidolonWyrmJuvenileBanner: {
-                Name: Знамя фантомного змея
+                Name: Знамя эйдолонского змея
                 Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.CalamityMod.NPCs.EidolonWyrmHead.Name}"
             }
             
@@ -11593,7 +11593,7 @@
             }
             
             EidolonTablet: {
-                Name: Фантомный кусок
+                Name: Эйдолонская табличка
                 Tooltip:
                     '''
                     Призывает культиста-лунатика
@@ -12619,7 +12619,7 @@
             }
             
             EidolicWail: {
-                Name: Фантомный крик
+                Name: Эйдолонский крик
                 Tooltip:
                     '''
                     Какофония
@@ -12628,7 +12628,7 @@
             }
             
             EidolonStaff: {
-                Name: Фантомный посох
+                Name: Эйдолонский посох
                 Tooltip:
                     '''
                     В этом посохе резонирует сила древнего культиста
@@ -20978,14 +20978,14 @@
             Cuttlefish.Name: Каракатица
             DevilFish.Name: Рыба-дьявол
             DevilFishAlt.Name: Рыба-дьявол
-            EidolonWyrmBody.Name: Фантомный змей
-            EidolonWyrmBodyAlt.Name: Фантомный змей
-            AdultEidolonWyrmBodyAlt.Name: Фантомный змей
-            AdultEidolonWyrmBody.Name: Фантомный змей
-            EidolonWyrmHead.Name: Фантомный змей
-            AdultEidolonWyrmHead.Name: Фантомный змей
-            EidolonWyrmTail.Name: Фантомный змей
-            AdultEidolonWyrmTail.Name: Фантомный змей
+            EidolonWyrmBody.Name: Эйдолонский змей
+            EidolonWyrmBodyAlt.Name: Эйдолонский змей
+            AdultEidolonWyrmBodyAlt.Name: Эйдолонский змей
+            AdultEidolonWyrmBody.Name: Эйдолонский змей
+            EidolonWyrmHead.Name: Эйдолонский змей
+            AdultEidolonWyrmHead.Name: Эйдолонский змей
+            EidolonWyrmTail.Name: Эйдолонский змей
+            AdultEidolonWyrmTail.Name: Эйдолонский змей
             GiantSquid.Name: Гигантский кальмар
             GulperEelBody.Name: Большеротый угорь
             GulperEelBodyAlt.Name: Большеротый угорь
@@ -21125,7 +21125,7 @@
             Cryon.Name: Крион
             CryoSlime.Name: Криослизень
             EbonianBlightSlime.Name: Эбонитовый гибельный слизень
-            Eidolist.Name: Фантолист
+            Eidolist.Name: Эйдолист
             FearlessGoldfishWarrior.Name: Бесстрашная золотая рыбка-воин
             Frogfish.Name: Морской чёрт
             Horse.Name: Земляной элементаль
@@ -21394,7 +21394,7 @@
                     53: По всему миру расположены различные сооружения, оставленные Дрэйдоном. Архаичная система обороны, скорее всего, осталась, но находящиеся внутри предметы могут стоить потраченных усилий.
                     54: Багрянец раньше легко управлялся природой. Однако недавние войны и загрязнение окружающей среды пошатнули баланс.
                     55: Искажение раньше легко управлялось природой. Однако недавние войны и загрязнение окружающей среды пошатнули баланс.
-                    56: Темница — мрачное место. Никто из нас не знает истинной цели постройки, однако древние фантомные культисты использовали её для поклонения до того, как ей завладел лорд Ярим.
+                    56: Темница — мрачное место. Никто из нас не знает истинной цели постройки, однако древние эйдолонские культисты использовали её для поклонения до того, как ей завладел лорд Ярим.
                     57: Полагаю ты слышал легенды о ниндзя по имени Статис? Некоторые говорят, что если бы ты смог победить богов, которым когда-то поклонялся его клан, то смог бы использовать некоторые из его сил.
                     58: По всей земле разбросаны святыни, посвящённые богам. Они могу таить в себе могущественные артефакты, что могут пригодиться в ваших приключениях.
                     59: Будь осторожен, когда атакуешь что-то в багрянце. Не всё безобидно, даже если таким кажется.
