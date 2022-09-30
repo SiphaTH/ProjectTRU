@@ -49,8 +49,8 @@
             }
             
             BlastedTophat: {
-                Name: Blasted Tophat
-                Tooltip: Summons a small hat girl that gives you advice about bosses that you fight
+                Name: Проклятый цилиндр
+                Tooltip: Призывает маленькую девушку в шляпе, которая дает вам советы о боссах, с которыми вы сражаетесь
             }
             
             DungeonsCurse: {
@@ -59,7 +59,7 @@
                     '''
                     Призывает Скелетрона
                     Скелетрон входит в ярость во время дня
-                    It becomes nighttime if this item is used during daytime
+                    Если этот предмет использован днём, начинается ночь
                     Не расходуется
                     '''
             }
@@ -75,11 +75,11 @@
             }
             
             LeviathanDetector: {
-                Name: Leviathan Detector
+                Name: Детектор Левиафан
                 Tooltip:
                     '''
-                    Summons Anahita
-                    Does not need to be used at the ocean
+                    Призывает Анахиту
+                    Можно использовать не только в океане
                     Не расходуется
                     '''
             }
@@ -194,14 +194,14 @@
             }
             
             DraedonRelic: {
-                Name: Infernal Draedon Relic
+                Name: Инфернальная реликвия Дрэйдона
                 Tooltip: {
                     $parentVal: ModifyTooltips
-                    0: You have done phenomenally. There is only one challenge left now- Face the Witch.
+                    0: Вы просто невероятны. Осталось последнее испытание - сражение с Ведьмой.
                     DownedSCal:
                         '''
-                        Spectacular work. You have conquered all of the major obstacles.
-                        Take pride in this accomplishment, for you are considerably stronger than you were when you began.
+                        Впечатляющее зрелище. Тобой преодолены все крупные препятствия.
+                        Гордись этим достижением, потому что ты значительно сильнее, чем в начале пути.
                         '''
                 }
             }
@@ -404,14 +404,14 @@
             }
             
             SupremeCalamitasRelic: {
-                Name: Infernal Supreme Calamitas Relic
+                Name: Инфернальная реликвия высшей Каламитас
                 Tooltip: {
                     $parentVal: ModifyTooltips
-                    0: You have done phenomenally. There is only one challenge left now-Face the Cosmic Engineer.
+                    0: Вы просто невероятны. Осталось последнее испытание - сражение с космическим инженером.
                     DownedExoMechs:
                         '''
-                        Spectacular work. You have conquered all of the major obstacles.
-                        Take pride in this accomplishment, for you are considerably stronger than you were when you began.
+                        Впечатляющее зрелище. Тобой преодолены все крупные препятствия.
+                        Гордись этим достижением, потому что ты значительно сильнее, чем в начале пути.
                         '''
                 }
             }
@@ -504,11 +504,11 @@
             8: That serpent is really fast! Good mobility will be important to defeat it!
             9: Stay away from those energy fields! Being too close to them will hurt you!
             10: Going in a tight circular pattern helps with the attacker guardian's spears!
-            11: The Brain of Cthulhu uses a lot of prediction and deception in its attacks, so play extra smart!
-            12: The Brain is going to try to decieve you with various mind games, keep your eyes on the real one!
+            11: Мозг Ктулху использует в своих атаках много предсказаний и хитростей, так что не тупи!
+            12: Мозг собирается попробовать запутать тебя различными играми с разумом, но ты должен следить за настоящим!
             13: Try not to move too much at the start of the battle. Finding a good spot and staying near it helps a lot!
             14: Most of the Void's attacks require fast maneuvering to evade. Be sure to pay attention to any projectiles on-screen!
-            15: Crabulon will only launch spores every 3rd jump, better keep count!
+            15: Крабулон запускает свои споры каждый третий прыжок, следи за счётом!
             16: Try focusing on those Crab Shrooms. They'll overwhelm you if you leave them alone!
             17: There isnt Mushroom for the three of us, and I can tell who won the roullete.
             18: Move as little as possible while it's above you. That should calm down its spastic jittering!
@@ -516,23 +516,23 @@
             20: That guy was quite a lunatic, You might want extra mobility!
             21: Deerclops' are Myopic, so they will force you to stay close, dont let them corner you!
             22: The Deerclops will follow a set pattern, learn it to gain the upper hand!
-            23: Deer god...
+            23: Божечки оленёшечки...
             24: The Scourge usually roars when it's about to whip up a sandstorm, get to high grounds!
             25: A Hook may prove useful to quickly get out of the Scourge's mandibles!
-            26: I loath sand, its grainy and itchy and sticks to every part of my feet.
+            26: Я не люблю песок, он грубый, жёсткий, неприятный и проникает в каждую часть моих ног.
             27: You better have dessert for me after this...
             28: The more you hurt it, the more probes it will spawn. Don't bite off more than you can chew!
-            29: A dashing accessory would be reeaaaally helpful here...
+            29: Знаешь, аксессуар, дающий рывки, был тут пипец полезен...
             30: Being able to face it head on with a ram sounds like a good idea, don't you think?
             31: The fight against the Dragonfolly is very chaotic and fast paced. Good mobility and reaction time help a lot!
             32: Those large red lightning pillars can be negated by flying below them!
             33: Many layered platforms can help greatly to avoid the exploding Cursed Flames!
             34: A dash and a hook can greatly help with reacting to the Eaters bursts of speed!
-            35: I guess it eats more than just worlds.
+            35: Думаю он жрёт нечто большее, чем просто миры.
             36: Watch out for those teeth bombs! The teeth spew away from the bomb's landing, try staying close!
             37: Investing in a hook or high mobility could prove great to dodge the Eye of Cthulhu's Charges!
-            38: Eye can't believe you died to that.
-            39: Golem's eye color will change depending on it's attack. Keep your own eyes peeled!
+            38: Глазам не могу поверить, ты умер.
+            39: Цвет глаз Голема меняется в зависимости от атак. Смотри в оба своими!
             40: This is the time you would want to learn the opponents moves, use their tells to get the upper hand!
             41: Try to push his Rain Charge away by running towards the Hive Mind, this can help keep your arena clean!
             42: The Hive Mind begins its next attack early if you attack it; wait until it's on cooldown before you shoot!
@@ -544,11 +544,11 @@
             48: Those eyeballs perform attacks that require a lot of weaving! Make sure to not panic when they happen!
             49: Squib emoji
             50: Be sure to remember if any sharkrons or tooth balls appear, so that their remains don't surprise you later!
-            51: Movement speed is gonna matter a lot against that fish!
-            52: Try to keep a counter in the last phase. The Old Duke will teleport, charge seven times, and then repeat.
-            53: Are you really sure you don't want to use a dash for that fish?
-            54: A dashing accessory would be reeaaally helpful here...
-            55: Perhaps a long platform or two could help avoid some of the attacks?
+            51: Против этой рыбы понадобится неплохая такая скорость передвижения!
+            52: Старайся считать на последней фазе. Старый герцог телепортируется и делает семь раз рывок, затем просто повторяет.
+            53: Эм, ты точно уверен, что не хочешь использовать рывки против этой рыбины?
+            54: Знаешь, аксессуар, дающий рывки, был тут пипец полезен...
+            55: Может одна-две платформы помогут избежать некоторых атак?
             56: The Hive spews out a ton of lingering ichor, so space management is key!
             57: A dash of sorts helps a lot with the spinning ring attack, since it lets you quickly reach the opening!
             58: If one of the Polterghast's legs turn red, quickly back away; it's going to swipe at you and release accelerating projectiles!
@@ -562,17 +562,17 @@
             66: Some of Ravager's attacks reward you for staying close. Try not to run away!
             67: Contrary to what you may think, running into the shadowflame walls will not work, take it slow!
             68: Don't panic when Skeletron does his barrages of hand fireballs! Just jump and stay calm!
-            69: Geeettttttt DUNKED ON!!!
+            69: Иии... СЛИЛСЯ!!!
             70: They dont seem very intelligent, maybe you could trick them to jump higher if you do aswell?
             71: Dont let all the projectiles intimidate you, be very cautious with your movement!
             72: Having trouble dodging during the spin? Three can play at that game, Spin!
             73: Try to not move too far away when the Weaver spins in place, so you can see the bolts before they accelerate too much!
             74: Do you want my Witch's hat? Matching her atire could be fun...
-            75: Oh my, so many lasers... better keep on the move!
-            76: Be sure to run the opposite direction!
-            77: AND IF I SHOULD DIE BEFORE YOU CONTINUEE, YOU SHALL HAV-... Wait, you died? Come on, I was on a roll here!
+            75: Ох ё, как много лазеров... лучше тебе не останавливаться!
+            76: Обязательно беги в противоположном направлении!
+            77: НО ЕСЛИ МОЙ ДОЛГ ПРИНЕСТИ СЕБЯ В ЖЕРТВУ, УСЛЫШЬ ЖЕ ТЫ МОЙ-... Стой, ты умер? Да блин, я почти добралась до самой крутой строчки!
             78: It seems as if it is manipulating telelocational magic, your Rod of Discord is of no use here!
-            79: Home stretch! Do the same as you did before!
+            79: Ну, уже почти! Давай, делай то же самое, что делал раньше!
             80: The Scourge will stop at nothing to snack on you! Stay on the move!
             81: Those meteorites fall ahead of you. Try baiting them for a little more breathing room!
             82: That thing seems to have shed its outer shell. Brace yourself, it's going to be a lot faster now!
@@ -611,7 +611,7 @@
             115: Pay attention to where you move. Try to stay in one spot so that those bombs aren't all over the arena!
             116: Don't move around too quickly! Small but quick horizontal movements are important for evading those crystals!
             117: Pay attention to where you move. You don't want Providence to fire her lasers when near a wall!
-            118: Watch out, he might try to trick you at the end!
+            118: Смотри, будь аккуратнее, в конце он может попробовать тебя одурачить!
             119: Those bombs will explode into kunai that fly towards you. Be careful!
             120: The Weaver has shed its exterior. It will now move far faster!
             121: The Weaver seems to be creating a bunch of clouds above you! Try to weave through the resulting bolts as they fall!
@@ -622,15 +622,15 @@
             126: Don't fret, face fear in the eyes and dash directly into Thanatos' face-plates!
             127: Watch out, that last twin is gonna hit you with everything it's got! Don't let up!
             128: Better stay near the edges of the arena during those carpet bomb flames, That should keep them out of the way!
-            129: This speed is crazy! Make sure you know when it starts; you might get jumpscared!
+            129: Вот это скорость! Make sure you know when it starts; you might get jumpscared!
             130: Don't let the flashbang faze you! Keep your eyes peeled for where the embers are!
-            131: Yharon's burning some serious energy now! Stay focused!
+            131: Ярон сейчас пылает просто невероятной энергией! Не отвлекайся!
         }
     }
     
     Mods.InfernumMode: {
         InfernumText: Удачи.
-        InfernumText2: Что ж, замечательно.
+        InfernumText2: Ну что же, замечательно.
         
         UI: {
             NotExpertWarning: "[c/ff00000:ИНФЕРНУМ МОЖНО ВКЛЮЧИТЬ ТОЛЬКО В РЕЖИМЕ ЭКСПЕРТА]"
