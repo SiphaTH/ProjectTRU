@@ -9,7 +9,6 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod;
 
-[JITWhenModsEnabled("CalamityMod")]
 public class CalamityNpcChat : ContentTranslation, INpcChatText
 {
     public override bool IsTranslationEnabled => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;

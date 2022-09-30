@@ -4,11 +4,9 @@ using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using InfernumMode;
 using MonoMod.Cil;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
-[JITWhenModsEnabled("InfernumMode", "CalamityMod")]
 public class PoDPlayerPreKill : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
@@ -23,7 +21,6 @@ public class PoDPlayerPreKill : ILPatcher
     };
 }
 
-[JITWhenModsEnabled("InfernumMode", "CalamityMod")]
 public class PoDPlayerPostUpdateMiscEffects : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;

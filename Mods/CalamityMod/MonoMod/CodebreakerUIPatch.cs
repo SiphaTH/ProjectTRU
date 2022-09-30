@@ -4,11 +4,9 @@ using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
-[JITWhenModsEnabled("CalamityMod")]
 public class CodebreakerUIDisplayCostText : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
@@ -21,7 +19,6 @@ public class CodebreakerUIDisplayCostText : ILPatcher
     };
 }
 
-[JITWhenModsEnabled("CalamityMod")]
 public class CodebreakerUIDrawDecryptCancelConfirmationText : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
@@ -34,7 +31,6 @@ public class CodebreakerUIDrawDecryptCancelConfirmationText : ILPatcher
     };
 }
 
-[JITWhenModsEnabled("CalamityMod")]
 public class CodebreakerUIHandleDraedonSummonButton : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
@@ -47,7 +43,6 @@ public class CodebreakerUIHandleDraedonSummonButton : ILPatcher
     };
 }
 
-[JITWhenModsEnabled("CalamityMod")]
 public class CodebreakerUIDisplayNotStrongEnoughErrorText : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;

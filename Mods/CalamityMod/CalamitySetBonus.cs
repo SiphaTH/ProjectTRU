@@ -14,7 +14,6 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod;
 
-[JITWhenModsEnabled("CalamityMod")]
 public class CalamitySetBonus : GlobalItem
 {
     public override bool IsLoadingEnabled(Mod mod)

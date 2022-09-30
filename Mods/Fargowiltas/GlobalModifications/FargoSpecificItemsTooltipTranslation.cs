@@ -8,7 +8,6 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.Fargowiltas.GlobalModifications;
 
-[JITWhenModsEnabled("Fargowiltas")]
 public class FargowiltasSpecificItemsTooltipTranslation : GlobalItem
 {
     public override bool IsLoadingEnabled(Mod mod)

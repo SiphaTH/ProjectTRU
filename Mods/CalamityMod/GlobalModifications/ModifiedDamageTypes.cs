@@ -8,13 +8,8 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications;
 
-[JITWhenModsEnabled("CalamityMod")]
 public class ModifiedDamageTypes : GlobalItem
 {
-    public DamageClass Rogue => ModContent.GetInstance<RogueDamageClass>();
-    public DamageClass Average => ModContent.GetInstance<AverageDamageClass>();
-    public DamageClass TrueMelee => ModContent.GetInstance<TrueMeleeDamageClass>();
-    
     public override bool IsLoadingEnabled(Mod mod)
     {
         return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
@@ -24,18 +19,18 @@ public class ModifiedDamageTypes : GlobalItem
     {
         ItemHelper.TranslateTooltip(item, tooltips, "Damage", tooltip =>
         {
-            if (item.CountsAsClass(Rogue))
+            if (item.CountsAsClass<RogueDamageClass>())
             {
                 tooltip.Text = tooltip.Text.Replace("rogue damage", "ед. разбойного урона");
             
                 if (TRuConfig.Instance.ColoredDamageTypes)
                     tooltip.OverrideColor = new Color(255, 184, 108);
             }
-            else if (item.CountsAsClass(TrueMelee))
+            else if (item.CountsAsClass<TrueMeleeDamageClass>())
             {
                 tooltip.Text = tooltip.Text.Replace("true melee damage", "ед. истинного урона ближнего боя");
             }
-            else if (item.CountsAsClass(Average))
+            else if (item.CountsAsClass<AverageDamageClass>())
             {
                 tooltip.Text = tooltip.Text.Replace("average damage", "ед. общего урона");
             }

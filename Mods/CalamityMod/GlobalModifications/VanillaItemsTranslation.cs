@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using CalamityMod;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using Terraria;

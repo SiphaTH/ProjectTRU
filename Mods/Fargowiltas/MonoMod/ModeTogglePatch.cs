@@ -4,11 +4,9 @@ using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using Fargowiltas.Items.Misc;
 using MonoMod.Cil;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
-[JITWhenModsEnabled("Fargowiltas")]
 public class ModeTogglePatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;

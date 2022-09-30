@@ -3,7 +3,6 @@ using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core;
 using Terraria;
-using Terraria.ModLoader;
 using Item = On.Terraria.Item;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
@@ -38,7 +37,6 @@ public class AffixName : ContentTranslation, ILoadableContent
     }
 }
 
-[JITWhenModsEnabled("CalamityMod")]
 public class AffixNameWithCalamity : ContentTranslation, ILoadableContent
 {
     public override bool IsTranslationEnabled => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;

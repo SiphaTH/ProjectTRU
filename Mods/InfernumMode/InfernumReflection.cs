@@ -8,7 +8,6 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.InfernumMode;
 
-[JITWhenModsEnabled("InfernumMode", "CalamityMod")]
 public class InfernumReflection : ContentTranslation, ILoadableContent
 {
     public override bool IsTranslationEnabled => ModsCall.Calamity != null && ModsCall.Infernum != null && TranslationHelper.IsRussianLanguage;

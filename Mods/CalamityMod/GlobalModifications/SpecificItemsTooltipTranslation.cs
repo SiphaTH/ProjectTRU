@@ -21,15 +21,8 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications;
 
-[JITWhenModsEnabled("CalamityMod")]
 public class SpecificItemsTooltipTranslation : GlobalItem
 {
-    CalamityPlayer CalamityPlayer => Main.LocalPlayer.GetModPlayer<CalamityPlayer>();
-    bool HasUnlockedT4ArsenalRecipes => RecipeUnlockHandler.HasUnlockedT4ArsenalRecipes;
-    bool HasUnlockedT5ArsenalRecipess => RecipeUnlockHandler.HasUnlockedT5ArsenalRecipes;
-    bool HasUnlockedT3ArsenalRecipes => RecipeUnlockHandler.HasUnlockedT3ArsenalRecipes;
-    bool HasUnlockedT2ArsenalRecipes => RecipeUnlockHandler.HasUnlockedT2ArsenalRecipes;
-    
     public override bool IsLoadingEnabled(Mod mod)
     {
         return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
@@ -46,6 +39,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
     {
         CalamityGlobalItem calamityGlobalItem = item.GetGlobalItem<CalamityGlobalItem>();
+        CalamityPlayer calamityPlayer = Main.LocalPlayer.GetModPlayer<CalamityPlayer>();
 
         if (calamityGlobalItem.canFirePointBlankShots)
         {
@@ -407,7 +401,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
             {
-                if (CalamityPlayer.bOrange)
+                if (calamityPlayer.bOrange)
                 {
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.BloodOrange.Tooltip.Consumed");
                 }
@@ -416,7 +410,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         else if (item.type == ModContent.ItemType<CometShard>())
         {
             int tooltipIndex = tooltips.FindLastIndex(x => x.Mod.Equals("Terraria") && x.Name.StartsWith("Tooltip"));
-            if (tooltipIndex != -1 && CalamityPlayer.cShard)
+            if (tooltipIndex != -1 && calamityPlayer.cShard)
             {
                 tooltips.Insert(++tooltipIndex, new TooltipLine(Mod, $"{Mod.Name}:Tooltip1", LangHelper.GetTextValue("CalamityMod.Items.CometShard.Tooltip.Consumed")));
             }
@@ -425,7 +419,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
             {
-                if (CalamityPlayer.dFruit)
+                if (calamityPlayer.dFruit)
                 {
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.Dragonfruit.Tooltip.Consumed");
                 }
@@ -435,7 +429,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
             {
-                if (CalamityPlayer.eBerry)
+                if (calamityPlayer.eBerry)
                 {
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.Elderberry.Tooltip.Consumed");
                 }
@@ -444,7 +438,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         else if (item.type == ModContent.ItemType<EtherealCore>())
         {
             int tooltipIndex = tooltips.FindLastIndex(x => x.Mod.Equals("Terraria") && x.Name.StartsWith("Tooltip"));
-            if (tooltipIndex != -1 && CalamityPlayer.eCore)
+            if (tooltipIndex != -1 && calamityPlayer.eCore)
             {
                 tooltips.Insert(++tooltipIndex, new TooltipLine(Mod, $"{Mod.Name}:Tooltip1", LangHelper.GetTextValue("CalamityMod.Items.EtherealCore.Tooltip.Consumed")));
             }
@@ -453,7 +447,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
             {
-                if (CalamityPlayer.mFruit)
+                if (calamityPlayer.mFruit)
                 {
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.MiracleFruit.Tooltip.Consumed");
                 }
@@ -462,7 +456,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         else if (item.type == ModContent.ItemType<PhantomHeart>())
         {
             int tooltipIndex = tooltips.FindLastIndex(x => x.Mod.Equals("Terraria") && x.Name.StartsWith("Tooltip"));
-            if (tooltipIndex != -1 && CalamityPlayer.pHeart)
+            if (tooltipIndex != -1 && calamityPlayer.pHeart)
             {
                 tooltips.Insert(++tooltipIndex, new TooltipLine(Mod, $"{Mod.Name}:Tooltip1", LangHelper.GetTextValue("CalamityMod.Items.PhantomHeart.Tooltip.Consumed")));
             }
@@ -487,7 +481,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                if (HasUnlockedT4ArsenalRecipes)
+                if (RecipeUnlockHandler.HasUnlockedT4ArsenalRecipes)
                 {
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicHell.Tooltip.Unlocked");
                 }
@@ -497,7 +491,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                if (HasUnlockedT5ArsenalRecipess)
+                if (RecipeUnlockHandler.HasUnlockedT5ArsenalRecipes)
                 {
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicIce.Tooltip.Unlocked");
                 }
@@ -507,7 +501,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                if (HasUnlockedT3ArsenalRecipes)
+                if (RecipeUnlockHandler.HasUnlockedT3ArsenalRecipes)
                 {
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicJungle.Tooltip.Unlocked");
                 }
@@ -517,7 +511,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                if (HasUnlockedT2ArsenalRecipes)
+                if (RecipeUnlockHandler.HasUnlockedT2ArsenalRecipes)
                 {
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicPlanetoid.Tooltip.Unlocked");
                 }

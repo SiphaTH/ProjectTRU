@@ -3,11 +3,9 @@ using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core;
 using FargowiltasSouls.UI;
 using Terraria;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.FargowiltasSouls;
 
-[JITWhenModsEnabled("FargowitlasSouls")]
 public class FargowiltasSoulsReflection : ContentTranslation, ILoadableContent
 {
     public override bool IsTranslationEnabled => !Main.dedServ && ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage;

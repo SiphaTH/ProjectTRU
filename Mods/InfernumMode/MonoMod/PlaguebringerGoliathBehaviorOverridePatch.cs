@@ -4,11 +4,9 @@ using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using InfernumMode.BehaviorOverrides.BossAIs.PlaguebringerGoliath;
 using MonoMod.Cil;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
-[JITWhenModsEnabled("InfernumMode", "CalamityMod")]
 public class PlaguebringerGoliathBehaviorOverridePatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;

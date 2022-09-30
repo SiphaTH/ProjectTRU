@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Reflection;
 using CalamityMod;
-using CalamityMod.CalPlayer;
 using CalamityMod.DataStructures;
 using CalamityMod.NPCs.CeaselessVoid;
 using CalamityMod.NPCs.Ravager;
@@ -12,12 +11,10 @@ using CalamityMod.UI.CalamitasEnchants;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core;
-using Terraria;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod;
 
-[JITWhenModsEnabled("CalamityMod")]
 public class CalamityReflection : ContentTranslation, ILoadableContent
 {
     public override bool IsTranslationEnabled => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
@@ -78,7 +75,11 @@ public class CalamityReflection : ContentTranslation, ILoadableContent
         }
 
         PropertyInfo enchantment = typeof(EnchantmentManager).GetProperty("ClearEnchantment", BindingFlags.Public | BindingFlags.Static);
-        enchantment?.SetValue(typeof(Enchantment), new Enchantment(LangHelper.GetText("CalamityMod.Prefixes.Enchantments.ClearEnchantment.Name"), string.Empty, -18591774, null, CreationEffect, item => IsEnchantable(item) && item.shoot >= 0));
+        enchantment?.SetValue(typeof(Enchantment), new Enchantment(LangHelper.GetText("CalamityMod.Prefixes.Enchantments.ClearEnchantment.Name"), string.Empty, -18591774, null, item => 
+        {
+            item.Calamity().AppliedEnchantment = new Enchantment?();
+            item.Calamity().DischargeEnchantExhaustion = 0.0f;
+        }, item => item.IsEnchantable() && item.shoot >= 0));
 
         Attunement.attunementArray[0].name = LangHelper.GetText("CalamityMod.Attunements.DefaultAttunement.Name");
         Attunement.attunementArray[0].function_description = LangHelper.GetText("CalamityMod.Attunements.DefaultAttunement.Function_Description");
@@ -162,12 +163,4 @@ public class CalamityReflection : ContentTranslation, ILoadableContent
     }
 
     public void UnloadContent() { }
-    
-    private void CreationEffect(Item item)
-    {
-        item.Calamity().AppliedEnchantment = new Enchantment?();
-        item.Calamity().DischargeEnchantExhaustion = 0.0f;
-    }
-
-    private bool IsEnchantable(Item item) => item.IsEnchantable();
 }

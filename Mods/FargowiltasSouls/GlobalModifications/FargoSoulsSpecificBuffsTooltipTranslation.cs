@@ -5,7 +5,6 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.FargowiltasSouls.GlobalModifications;
 
-[JITWhenModsEnabled("FargowiltasSouls")]
 public class FargoSoulsSpecificBuffsTooltipTranslation : GlobalBuff
 {
     public override bool IsLoadingEnabled(Mod mod)

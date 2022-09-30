@@ -4,11 +4,9 @@ using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using InfernumMode.BehaviorOverrides.BossAIs.DoG;
 using MonoMod.Cil;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
-[JITWhenModsEnabled("InfernumMode", "CalamityMod")]
 public class DoGPhase2HeadBehaviorOverridePhase2AI : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
@@ -21,7 +19,6 @@ public class DoGPhase2HeadBehaviorOverridePhase2AI : ILPatcher
     };
 }
 
-[JITWhenModsEnabled("InfernumMode", "CalamityMod")]
 public class DoGPhase2HeadBehaviorOverrideDoDeathEffects : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;

@@ -5,11 +5,9 @@ using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using InfernumMode.BossIntroScreens;
 using ReLogic.Graphics;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
-[JITWhenModsEnabled("InfernumMode", "CalamityMod")]
 public class BaseIntroScreenPatch : OnPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;

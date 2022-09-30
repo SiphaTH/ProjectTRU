@@ -8,7 +8,6 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.GlobalModifications;
 
-[JITWhenModsEnabled("CalamityMod")]
 public class MetersTranslation : GlobalItem
 {
     public override bool IsLoadingEnabled(Mod mod)

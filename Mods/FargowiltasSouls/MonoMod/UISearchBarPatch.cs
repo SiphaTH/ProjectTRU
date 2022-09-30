@@ -4,11 +4,9 @@ using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using FargowiltasSouls.UI;
 using MonoMod.Cil;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.FargowiltasSouls.MonoMod;
 
-[JITWhenModsEnabled("FargowiltasSouls")]
 public class UISearchBarPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage;

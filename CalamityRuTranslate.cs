@@ -37,6 +37,7 @@ public class CalamityRuTranslate : Mod
     public CalamityRuTranslate()
     {
         Instance = this;
+        PreJITFilter = new DisableJIT();
     }
 
     public override void Load()

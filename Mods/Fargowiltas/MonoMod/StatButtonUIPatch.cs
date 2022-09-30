@@ -7,14 +7,12 @@ using Fargowiltas;
 using Fargowiltas.Items.Misc;
 using Fargowiltas.UI;
 using MonoMod.Cil;
-using MonoMod.RuntimeDetour.HookGen;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
-[JITWhenModsEnabled("Fargowiltas")]
 public class StatButtonUIRebuildStatList : OnPatcher
 {
     private FieldInfo _BattleCry => typeof(FargoPlayer).GetField("BattleCry", BindingFlags.Instance | BindingFlags.NonPublic);
@@ -83,7 +81,6 @@ public class StatButtonUIRebuildStatList : OnPatcher
     }
 }
 
-[JITWhenModsEnabled("Fargowiltas")]
 public class StatButtonAddStat : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;

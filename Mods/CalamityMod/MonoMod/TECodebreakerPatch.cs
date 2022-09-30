@@ -10,7 +10,6 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
-[JITWhenModsEnabled("CalamityMod")]
 public class TECodebreakerPatch : OnPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;

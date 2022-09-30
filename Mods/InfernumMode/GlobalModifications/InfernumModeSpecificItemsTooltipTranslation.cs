@@ -11,7 +11,6 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.GlobalModifications;
 
-[JITWhenModsEnabled("InfernumMode", "CalamityMod")]
 public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
 {
     public override bool IsLoadingEnabled(Mod mod)

@@ -4,11 +4,9 @@ using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
-[JITWhenModsEnabled("CalamityMod")]
 public class CalamitasEnchantUIDrawEnchantmentCost : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
@@ -22,7 +20,6 @@ public class CalamitasEnchantUIDrawEnchantmentCost : ILPatcher
     };
 }
 
-[JITWhenModsEnabled("CalamityMod")]
 public class CalamitasEnchantUIInteractWithEnchantIcon : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;

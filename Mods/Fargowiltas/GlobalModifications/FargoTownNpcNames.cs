@@ -7,7 +7,6 @@ using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.Fargowiltas.GlobalModifications;
 
-[JITWhenModsEnabled("Fargowiltas")]
 public class FargoTownNpcNames : GlobalNPC
 {
     public override bool IsLoadingEnabled(Mod mod)

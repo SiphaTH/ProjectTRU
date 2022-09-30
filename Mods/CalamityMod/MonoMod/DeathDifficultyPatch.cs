@@ -4,11 +4,9 @@ using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using MonoMod.Cil;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
-[JITWhenModsEnabled("CalamityMod")]
 public class DeathDifficultyExpandedDescription : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
@@ -21,7 +19,6 @@ public class DeathDifficultyExpandedDescription : ILPatcher
     };
 }
 
-[JITWhenModsEnabled("CalamityMod")]
 public class DeathDifficultyFavoredDifficultyAtTier : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
