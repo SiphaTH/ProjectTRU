@@ -758,6 +758,7 @@ internal static class RussianPrefixOverhaul
 				ModContent.Find<ModItem>("CalamityMod", "ReedBlowgun").Type,
 				ModContent.Find<ModItem>("CalamityMod", "HadalUrn").Type,
 				ModContent.Find<ModItem>("CalamityMod", "WulfrumScrewdriver").Type,
+				ModContent.Find<ModItem>("CalamityMod", "Effervescence").Type,
 			};
 		}
 
@@ -802,7 +803,6 @@ internal static class RussianPrefixOverhaul
 				ModContent.Find<ModItem>("CalamityMod", "VoltaicJelly").Type,
 				ModContent.Find<ModItem>("CalamityMod", "BurningSea").Type,
 				ModContent.Find<ModItem>("CalamityMod", "DivineRetribution").Type,
-				ModContent.Find<ModItem>("CalamityMod", "Effervescence").Type,
 				ModContent.Find<ModItem>("CalamityMod", "EyeofMagnus").Type,
 				ModContent.Find<ModItem>("CalamityMod", "FatesReveal").Type,
 				ModContent.Find<ModItem>("CalamityMod", "ForbiddenSun").Type,

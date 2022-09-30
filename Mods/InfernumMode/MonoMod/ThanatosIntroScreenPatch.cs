@@ -4,19 +4,17 @@ using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
 using InfernumMode.BossIntroScreens;
 using MonoMod.Cil;
-using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
-[JITWhenModsEnabled("InfernumMode", "CalamityMod")]
-public class GreatSandSharkIntroScreenPatch : ILPatcher
+public class ThanatosIntroScreenPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
-    public override MethodInfo ModifiedMethod => typeof(GreatSandSharkIntroScreen).GetCachedMethod("get_TextToDisplay");
+    public override MethodInfo ModifiedMethod => typeof(ThanatosIntroScreen).GetCachedMethod("get_TextToDisplay");
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Apex Predator\nThe Great Sand Shark", "ВЫСШИЙ ХИЩНИК\nВЕЛИКАЯ ПЕСЧАНАЯ АКУЛА");
+        TranslationHelper.ModifyIL(il, "The Perfect Annihilator\nThanatos", "");
     };
 }

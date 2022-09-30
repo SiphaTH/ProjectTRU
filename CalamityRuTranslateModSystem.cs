@@ -20,7 +20,7 @@ public class CalamityRuTranslateModSystem : ModSystem
 
     public override void PostAddRecipes()
     {
-        foreach (var recipeGroupName in RecipeGroup.recipeGroups)
+        foreach (KeyValuePair<int, RecipeGroup> recipeGroupName in RecipeGroup.recipeGroups)
         {
             recipeGroupName.Value.GetText = recipeGroupName.Value.GetText.Invoke() switch
             {
@@ -44,7 +44,7 @@ public class CalamityRuTranslateModSystem : ModSystem
                 "Any Stone Block" => () => "Любой камень",
                 "Any Snow Block" => () => "Любой снег",
                 "Any Ice Block" => () => "Любой лёд",
-                "Any Silt" => () => "Любой ил",
+                "Any Silt" => () => "Ил или слякоть",
                 "Any Evil Block" => () => "Блок мирового зла",
                 "Any Good Block" => () => "Блок мирового добра",
                 "Any Wooden Sword" => () => "Любой деревянный меч",

@@ -28,7 +28,6 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
                 tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.Vanilla.CelestialSigil.Tooltip");
             });
         }
-        
         else if (item.type == ModContent.ItemType<ProvidenceRelic>())
         {
             ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "The first major hurdle following the defeat of the Moon Lord. Your triumph over her was by no means a small feat.\nPerhaps consider fighting her again during the night for a special challenge?", tooltip =>
@@ -38,6 +37,28 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
             ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Bruh? What the heck? Are you OK?\nYou were supposed to fight her at night AFTER beating her during the day first!", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.ProvidenceRelic.Tooltip.HasBeatedInfernumNightProvBeforeDay");
+            });
+        }
+        else if (item.type == ModContent.ItemType<DraedonRelic>())
+        {
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "You have done phenomenally. There is only one challenge left now-\nFace the Witch.", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.DraedonRelic.Tooltip.0");
+            });
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Spectacular work. You have conquered all of the major obstacles.\nTake pride in this accomplishment, for you are considerably stronger than you were when you began.", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.DraedonRelic.Tooltip.DownedSCal");
+            });
+        }
+        else if (item.type == ModContent.ItemType<SupremeCalamitasRelic>())
+        {
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "You have done phenomenally. There is only one challenge left now-\nFace the Cosmic Engineer.", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.SupremeCalamitasRelic.Tooltip.0");
+            });
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Spectacular work. You have conquered all of the major obstacles.\nTake pride in this accomplishment, for you are considerably stronger than you were when you began.", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.SupremeCalamitasRelic.Tooltip.DownedExoMechs");
             });
         }
         else if (item.type == ModContent.ItemType<ProfanedShard>())

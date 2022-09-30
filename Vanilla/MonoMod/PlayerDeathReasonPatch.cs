@@ -111,6 +111,16 @@ public class PlayerDeathReasonPatch : ContentTranslation, ILoadableContent
 		    reasoninenglish = $"{name} становится человеком, съеденым людоедом.";
         if (reasoninenglish == $"{name} had his nuts cracked.")
             reasoninenglish = $"{name} раскалывает свои орешки.";
+        if (reasoninenglish == $"{name} could not withstand the red lightning.")
+            reasoninenglish = $"{name} could not withstand the red lightning.";
+        if (reasoninenglish == $"{name} was incinerated by ungodly fire.")
+            reasoninenglish = $"{name} was incinerated by ungodly fire.";
+        if (reasoninenglish == $"{name} went mad.")
+            reasoninenglish = $"{name} went mad.";
+        if (reasoninenglish == $"{name} was violently pricked by roses.")
+            reasoninenglish = $"{name} was violently pricked by roses.";
+        if (reasoninenglish == $"{name} was somehow impaled by a pillar of crystals.")
+            reasoninenglish = $"{name} was somehow impaled by a pillar of crystals.";
 
         return orig.Invoke(reasoninenglish);
     }
