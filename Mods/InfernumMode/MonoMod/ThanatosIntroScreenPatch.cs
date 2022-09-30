@@ -15,6 +15,6 @@ public class ThanatosIntroScreenPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The Perfect Annihilator\nThanatos", "");
+        TranslationHelper.ModifyIL(il, "The Perfect Annihilator\nThanatos", "ИДЕАЛЬНЫЙ АННИГИЛЯТОР\nТАНАТОС");
     };
 }

@@ -15,6 +15,6 @@ public class SCalIntroScreenPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The Brimstone Witch\nCalamitas", "");
+        TranslationHelper.ModifyIL(il, "The Brimstone Witch\nCalamitas", "СЕРНАЯ ВЕДЬМА\nКАЛАМИТАС");
     };
 }

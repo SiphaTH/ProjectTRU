@@ -15,6 +15,6 @@ public class SupremeCalamitasBehaviorOverridePatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "... Congratulations.", "");
+        TranslationHelper.ModifyIL(il, "... Congratulations.", "... Поздравляю.");
     };
 }

@@ -15,6 +15,6 @@ public class ArtemisAndApolloIntroScreenPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The Supreme Hunters\nArtemis and Apollo", "");
+        TranslationHelper.ModifyIL(il, "The Supreme Hunters\nArtemis and Apollo", "ВЕРХОВНЫЕ ОХОТНИКИ\nАРТЕМИДА И АПОЛЛОН");
     };
 }

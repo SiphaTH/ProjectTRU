@@ -15,7 +15,7 @@ public class AresIntroScreenPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Prediction Game Master\nAres", "");
-        TranslationHelper.ModifyIL(il, "The Ultimate War Machine\nAres", "");
+        TranslationHelper.ModifyIL(il, "Prediction Game Master\nAres", "МАСТЕР ПРОГНОЗОВ\nАРЕС");
+        TranslationHelper.ModifyIL(il, "The Ultimate War Machine\nAres", "АБСОЛЮТНАЯ МАШИНА ВОЙНЫ\nАРЕС");
     };
 }

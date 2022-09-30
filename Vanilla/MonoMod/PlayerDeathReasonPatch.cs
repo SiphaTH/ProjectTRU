@@ -84,7 +84,7 @@ public class PlayerDeathReasonPatch : ContentTranslation, ILoadableContent
         if (reasoninenglish == $"{name} was summoned too soon.")
             reasoninenglish = $"{name} призывается слишком рано.";
         if (reasoninenglish == $"Oxygen failed to reach {name} from the depths of the Abyss.")
-            reasoninenglish = $"{name} не хватает кислорода в глубинах бездны.";
+            reasoninenglish = $"Кислород в глубинах бездны не достигает игрока {name}.";
         if (reasoninenglish == $"{name} is food for the Wyrms.")
             reasoninenglish = $"{name} становится пищей для змей.";
         if (reasoninenglish == $"{name} failed the challenge at hand.")
@@ -112,15 +112,15 @@ public class PlayerDeathReasonPatch : ContentTranslation, ILoadableContent
         if (reasoninenglish == $"{name} had his nuts cracked.")
             reasoninenglish = $"{name} раскалывает свои орешки.";
         if (reasoninenglish == $"{name} could not withstand the red lightning.")
-            reasoninenglish = $"{name} could not withstand the red lightning.";
+            reasoninenglish = $"{name} не выдерживает красной молнии.";
         if (reasoninenglish == $"{name} was incinerated by ungodly fire.")
-            reasoninenglish = $"{name} was incinerated by ungodly fire.";
+            reasoninenglish = $"{name} сгорает осквернённым огнём.";
         if (reasoninenglish == $"{name} went mad.")
-            reasoninenglish = $"{name} went mad.";
+            reasoninenglish = $"{name} сходит с ума.";
         if (reasoninenglish == $"{name} was violently pricked by roses.")
-            reasoninenglish = $"{name} was violently pricked by roses.";
+            reasoninenglish = $"{name} яростно закалывается розами.";
         if (reasoninenglish == $"{name} was somehow impaled by a pillar of crystals.")
-            reasoninenglish = $"{name} was somehow impaled by a pillar of crystals.";
+            reasoninenglish = $"{name} каким-то образом пронзается столбом кристаллов.";
 
         return orig.Invoke(reasoninenglish);
     }
