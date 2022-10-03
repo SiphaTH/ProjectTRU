@@ -31,7 +31,19 @@ public sealed class ModVersionException : Exception
                 case ExceptionType.OutdatedFargowiltas:
                 case ExceptionType.OutdatedFargowiltasSouls:
                 case ExceptionType.OutdatedStarsAbove:
-                    return $"Было обнаружено, что ваша версия '{ModName}' {CurrectModVersion} не соответствует требуемой версии {ExpectedModVersion}, которую переводит русификатор.";
+                    return @$"
+ [c/FF0000:###]                     [c/FF0000:###]                     [c/FF0000:###]
+ [c/FF0000:# #]                     [c/FF0000:# #]                     [c/FF0000:# #]
+[c/FF0000:## ##]                   [c/FF0000:## ##]                   [c/FF0000:## ##]
+ [c/FF0000:# #]                     [c/FF0000:# #]                     [c/FF0000:# #]
+  [c/FF0000:#]                       [c/FF0000:#]                       [c/FF0000:#]
+Было обнаружено, что ваша версия '{ModName}' {CurrectModVersion} не соответствует требуемой версии {ExpectedModVersion}, которую переводит русификатор.
+  [c/FF0000:#]                       [c/FF0000:#]                       [c/FF0000:#]
+ [c/FF0000:# #]                     [c/FF0000:# #]                     [c/FF0000:# #]
+[c/FF0000:## ##]                   [c/FF0000:## ##]                   [c/FF0000:## ##]
+ [c/FF0000:# #]                     [c/FF0000:# #]                     [c/FF0000:# #]
+ [c/FF0000:###]                     [c/FF0000:###]                     [c/FF0000:###]
+";
                 default:
                     throw new ArgumentOutOfRangeException();
             }

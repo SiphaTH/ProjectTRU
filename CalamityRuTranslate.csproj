@@ -12,19 +12,19 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CalamityMod">
-      <HintPath>..\Mod Libraries\CalamityMod_v2.0.1.1.dll</HintPath>
+      <HintPath>..\ModAssemblies\CalamityMod_v2.0.1.1.dll</HintPath>
     </Reference>
     <Reference Include="Fargowiltas">
-      <HintPath>..\Mod Libraries\Fargowiltas_v2.8.2.dll</HintPath>
+      <HintPath>..\ModAssemblies\Fargowiltas_v2.8.5.dll</HintPath>
     </Reference>
     <Reference Include="FargowiltasSouls">
-      <HintPath>..\Mod Libraries\FargowiltasSouls_v1.4.0.5.dll</HintPath>
+      <HintPath>..\ModAssemblies\FargowiltasSouls_v1.4.0.7.dll</HintPath>
     </Reference>
     <Reference Include="InfernumMode">
-      <HintPath>..\Mod Libraries\InfernumMode_v1.7.1.dll</HintPath>
+      <HintPath>..\ModAssemblies\InfernumMode_v1.7.4.dll</HintPath>
     </Reference>
     <Reference Include="StarsAbove">
-      <HintPath>..\Mod Libraries\StarsAbove_v1.2.3.2.dll</HintPath>
+      <HintPath>..\ModAssemblies\StarsAbove_v1.2.3.2.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

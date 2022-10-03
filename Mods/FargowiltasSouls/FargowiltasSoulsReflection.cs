@@ -30,6 +30,7 @@ public class FargowiltasSoulsReflection : ContentTranslation, ILoadableContent
         soulToggler.OnButton.Text = "Включить все эффекты";
         soulToggler.MinimalButton.Text = "Предустановленные настройки минимума эффектов";
         soulToggler.SomeEffectsButton.Text = "Предустановленные настройки некоторых эффектов";
+        soulToggler.SearchBar.HintText = "Поиск...";
     }
 
     public void UnloadContent() { }

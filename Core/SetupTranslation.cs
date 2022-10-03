@@ -73,8 +73,7 @@ public abstract class SetupTranslation : IModSetup
             {
                 if (CheckModVersion && modInstance.Version != ExpectedVersion)
                 {
-                    throw new ModVersionException(_modNameException, modInstance.Version, ExpectedVersion,
-                        _outdatedType);
+                    throw new ModVersionException(_modNameException, modInstance.Version, ExpectedVersion, _outdatedType);
                 }
             }
         }
@@ -107,13 +106,10 @@ public abstract class SetupTranslation : IModSetup
                 }
                 catch (NullReferenceException)
                 {
-                    switch (TRuConfig.Instance.ModVersionException)
-                    {
-                        case false:
-                            continue;
-                        case true:
-                            throw new IdTypeException(buffs.Name);
-                    }
+                    if (!TRuConfig.Instance.ModVersionException)
+                        continue;
+                    
+                    throw new IdTypeException(buffs.Name, InternalName);
                 }
                 catch (KeyNotFoundException)
                 {
@@ -140,7 +136,7 @@ public abstract class SetupTranslation : IModSetup
                     if (!TRuConfig.Instance.ModVersionException)
                         continue;
                     
-                    throw new IdTypeException(items.Name);
+                    throw new IdTypeException(items.Name, InternalName);
                 }
                 catch (KeyNotFoundException)
                 {
@@ -165,7 +161,7 @@ public abstract class SetupTranslation : IModSetup
                     if (!TRuConfig.Instance.ModVersionException)
                         continue;
 
-                    throw new IdTypeException(npcs.Name);
+                    throw new IdTypeException(npcs.Name, InternalName);
                 }
                 catch (KeyNotFoundException)
                 {
@@ -191,7 +187,7 @@ public abstract class SetupTranslation : IModSetup
                     if (!TRuConfig.Instance.ModVersionException)
                         continue;
                     
-                    throw new IdTypeException(prefixes.Name);
+                    throw new IdTypeException(prefixes.Name, InternalName);
                 }
                 catch (KeyNotFoundException)
                 {
@@ -215,7 +211,7 @@ public abstract class SetupTranslation : IModSetup
                     continue;
     
                 if (TRuConfig.Instance.ModVersionException)
-                    throw new IdTypeException(id);
+                    throw new IdTypeException(id, InternalName);
             }
             catch (KeyNotFoundException)
             {
@@ -245,7 +241,7 @@ public abstract class SetupTranslation : IModSetup
                     continue;
         
                 if (TRuConfig.Instance.ModVersionException)
-                    throw new IdTypeException(tileData.Id);
+                    throw new IdTypeException(tileData.Id, InternalName);
             }
             catch (KeyNotFoundException)
             {

@@ -138,7 +138,7 @@ public class FargowiltasSpecificItemsTooltipTranslation : GlobalItem
             });
         }
         
-        ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "TooltipUnlim" && l.Text == "[i:87] [c/AAAAAA:Unlimited buff at 15 stack in inventory, Piggy Bank, or Safe]", tooltip =>
+        ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "TooltipUnlim" && l.Text == "[i:87] [c/AAAAAA:Unlimited buff at 30 stack in inventory, Piggy Bank, or Safe]", tooltip =>
         {
             tooltip.Text = LangHelper.GetTextValue("Fargowiltas.Items.TooltipTags.TooltipUnlim.ItemBuff");
         });
@@ -158,8 +158,7 @@ public class FargowiltasSpecificItemsTooltipTranslation : GlobalItem
             tooltip.Text = LangHelper.GetTextValue("Fargowiltas.Items.TooltipTags.TooltipTorchGod2");
         });
 
-        if (item.type is ItemID.SharpeningStation or ItemID.AmmoBox or ItemID.CrystalBall or ItemID.BewitchingTable
-            or ItemID.SliceOfCake)
+        if (item.type is ItemID.SharpeningStation or ItemID.AmmoBox or ItemID.CrystalBall or ItemID.BewitchingTable or ItemID.SliceOfCake)
         {
             ItemHelper.TranslateTooltip(item, tooltips, "TooltipUnlim", tooltip =>
             {
