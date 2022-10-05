@@ -14,6 +14,7 @@ public class InfernumModeTranslation : SetupTranslation
     {
         IsBuffsEndabled = true;
         IsItemsEnabled = true;
+        IsNPCsEnabled = true;
         Tiles = InfernumModeCatalog.Tiles;
     }
 }
