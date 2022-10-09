@@ -1336,8 +1336,8 @@
             }
             
             MoonFistBuff: {
-                Name: Moon Fist
-                Description: Catch these hands
+                Name: Лунный кулак
+                Description: Поймай-ка эти руки
             }
     
             FungalClumpBuff: {
@@ -1459,8 +1459,8 @@
             }
             
             PuffWarriorBuff: {
-                Name: Puff Warrior
-                Description: It confidently and excitedly protects you
+                Name: Пуфвоин
+                Description: Он смело и взволнованно защищает вас
             }
     
             SarosPossessionBuff: {
@@ -2337,7 +2337,7 @@
                 Tooltip:
                     '''
                     Все ближайшие враги и боссы помечаются мишенью
-                    Стрелковые атаки, попадающие по мишени, наносят критический удар и обладают повышенным уроном
+                    Стрелковые атаки, попадающие по мишени, наносят критический удар и обладают увеличенным уроном
                     При попадании по мишени она исчезает, а затем появляется в новом месте
                     Взрывы и крупные снаряды не могут поразить мишень
                     Конвертирует все стрелковые бонусы к шансу критического удара в дополнительный критический урон
@@ -3268,8 +3268,8 @@
                     '''
                     Чистота
                     Призывает стража-целителя, исцеляющего определённое количество здоровья каждые несколько секунд
-                    Призывает стража-защитника, повышающего скорость передвижения и сопротивление урону
-                    Призывает атакующего стража, повышающего призываемое число миньонов
+                    Призывает стража-защитника, увеличивающего скорость передвижения и сопротивление урону
+                    Призывает атакующего стража, увеличивающего призываемое число миньонов
                     Если вы получите удар, большинство их эффектов исчезнет на 5 секунд
                     '''
             }
@@ -5378,7 +5378,7 @@
                 Tooltip:
                     '''
                     Стреляет быстрыми сериями снарядов средней дальности
-                    Игнорирует 10 единиц защиты врага
+                    Игнорирует 10 ед. защиты врага
                     '[c/878787:Кому нужны хлысты, когда вы можете призывать самого себя?]'
                     '''
             }
@@ -5398,11 +5398,11 @@
             }
             
             AndroombaItem: {
-                Name: Androomba
+                Name: Андромба
                 Tooltip:
                     '''
-                    Right click the roomba with a solution to insert it
-                    While a solution is inserted, the roomba will start spreading its contents
+                    Нажмите <right> с раствором в руках по Андромбе, чтобы загрузить его
+                    Если загружен раствор, Андромба начинает распространять его содержимое
                     '''
             }
             
@@ -5417,22 +5417,22 @@
             }
             
             NanodroidDysfunctionalItem: {
-                Name: Dysfunctional Nanodroid
+                Name: Нефункциональный нанодрон
                 Tooltip: ""
             }
             
             NanodroidItem: {
-                Name: Nanodroid
+                Name: Нанодрон
                 Tooltip: ""
             }
             
             NanodroidPlagueGreenItem: {
-                Name: Green Plague Nanodroid
+                Name: Зелёный чумной нанодрон
                 Tooltip: ""
             }
             
             NanodroidPlagueRedItem: {
-                Name: Red Plague Nanodroid
+                Name: Красный чумной нанодрон
                 Tooltip: ""
             }
             
@@ -5442,7 +5442,7 @@
             }
             
             RepairUnitItem: {
-                Name: Repair Unit
+                Name: Ремонтный бот
                 Tooltip: ""
             }
             
@@ -5510,37 +5510,37 @@
             
             DraedonsLogHell: {
                 Name: Журнал Дрэйдона — Ад
-                Tooltip: Нажмите, чтобы просмотреть его содержимое
+                Tooltip: Нажмите, чтобы просмотреть содержимое
             }
             
             DraedonsLogJungle: {
                 Name: Журнал Дрэйдона — Джунгли и чума
-                Tooltip: Нажмите, чтобы просмотреть его содержимое
+                Tooltip: Нажмите, чтобы просмотреть содержимое
             }
             
             DraedonsLogPlanetoid: {
                 Name: Журнал Дрэйдона — Космос
-                Tooltip: Нажмите, чтобы просмотреть его содержимое
+                Tooltip: Нажмите, чтобы просмотреть содержимое
             }
             
             DraedonsLogSnowBiome: {
                 Name: Журнал Дрэйдона — Ледяная пустошь
-                Tooltip: Нажмите, чтобы просмотреть его содержимое
+                Tooltip: Нажмите, чтобы просмотреть содержимое
             }
             
             DraedonsLogSunkenSea: {
                 Name: Журнал Дрэйдона — Исследование затерянной акватической флоры и фауны
-                Tooltip: Нажмите, чтобы просмотреть его содержимое
+                Tooltip: Нажмите, чтобы просмотреть содержимое
             }
             
             EncryptedSchematicHell: {
-                Name: Зашифрованная схема (Ад)
+                Name: Зашифрованная схема (ад)
                 Tooltip: {
                     $parentVal: Для расшифровки требуется Дешифратор с продвинутым монитором
                     Unlocked:
                         '''
                         Уже расшифровано
-                        Нажмите, чтобы просмотреть его содержимое
+                        Нажмите, чтобы просмотреть содержимое
                         Разблокированные рецепты:
                         '''
                     MeleeDisplay: "[i:CalamityMod/PulseDragon] {$Mods.CalamityRuTranslate.CalamityMod.Items.PulseDragon.Name}"
@@ -5553,13 +5553,13 @@
             }
             
             EncryptedSchematicIce: {
-                Name: Зашифрованная схема (Льды)
+                Name: Зашифрованная схема (льды)
                 Tooltip: {
                     $parentVal: Для расшифровки требуется Дешифратор со сложной системой регулировки напряжения
                     Unlocked:
                         '''
                         Уже расшифровано
-                        Нажмите, чтобы просмотреть его содержимое
+                        Нажмите, чтобы просмотреть содержимое
                         Разблокированные рецепты:
                         '''
                     MeleeDisplay: "[i:CalamityMod/Phaseslayer] {$Mods.CalamityRuTranslate.CalamityMod.Items.Phaseslayer.Name}"
@@ -5572,13 +5572,13 @@
             }
             
             EncryptedSchematicJungle: {
-                Name: Зашифрованная схема (Джунгли)
+                Name: Зашифрованная схема (джунгли)
                 Tooltip: {
                     $parentVal: Для расшифровки требуется Дешифратор с настроенными датчиками дальнего действия
                     Unlocked:
                         '''
                         Уже расшифровано
-                        Нажмите, чтобы просмотреть его содержимое
+                        Нажмите, чтобы просмотреть содержимое
                         Разблокированные рецепты:
                         '''
                     MeleeDisplay: "[i:CalamityMod/GalvanizingGlaive] {$Mods.CalamityRuTranslate.CalamityMod.Items.GalvanizingGlaive.Name}"
@@ -5591,13 +5591,13 @@
             }
             
             EncryptedSchematicPlanetoid: {
-                Name: Зашифрованная схема (Планетоид)
+                Name: Зашифрованная схема (планетоид)
                 Tooltip: {
                     $parentVal: Для расшифровки требуется Дешифратор с базовым дешифровальным компьютером
                     Unlocked:
                         '''
                         Уже расшифровано
-                        Нажмите, чтобы просмотреть его содержимое
+                        Нажмите, чтобы просмотреть содержимое
                         Разблокированные рецепты:
                         '''
                     MeleeDisplay: "[i:CalamityMod/HydraulicVoltCrasher] {$Mods.CalamityRuTranslate.CalamityMod.Items.HydraulicVoltCrasher.Name}"
@@ -8065,7 +8065,7 @@
             }
             
             WulfrumAmplifierBanner: {
-                Name: Wulfrum Amplifier Banner
+                Name: Знамя вульфрумового усилителя
                 Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.CalamityMod.NPCs.WulfrumAmplifier.Name}"
             }
             
@@ -9909,136 +9909,136 @@
             }
             
             EyeOfTheAccursedBanner: {
-                Name: Eye of the Accursed Banner
+                Name: Знамя глаза проклятого
                 Tooltip: ""
             }
             
             LargeRitualCandle: {
-                Name: Large Ritual Candle
-                Tooltip: Right click to place in a different style
+                Name: Большая ритуальная свеча
+                Tooltip: Нажмите <right>, чтобы разместить в различных стилях
             }
             
             MonolithOfTheAccursed: {
-                Name: Monolith of the Accursed
+                Name: Монолит проклятого
                 Tooltip:
                     '''
-                    Let the sky burn a blazing red
-                    The monolith has two different modes
+                    Да подожжем же небо пылающе-красным
+                    Монолит имеет два разных режима
                     '''
             }
             
             OccultBrickItem: {
-                Name: Occult Brick
+                Name: Оккультный кирпич
                 Tooltip: ""
             }
             
             OccultLegionnaireBanner: {
-                Name: Occult Legionnaire Banner
+                Name: Знамя оккультного легионера
                 Tooltip: ""
             }
             
             OccultPlatformItem: {
-                Name: Occult Platform
+                Name: Оккультная платформа
                 Tooltip: ""
             }
             
             RitualCandle: {
-                Name: Ritual Candle
-                Tooltip: Right click to place in a different style
+                Name: Ритуальная свеча
+                Tooltip: Нажмите <right>, чтобы разместить в различных стилях
             }
             
             SacrilegiousBathtub: {
-                Name: Sacrilegious Bathtub
+                Name: Языческая ванна
                 Tooltip: ""
             }
             
             SacrilegiousBed: {
-                Name: Sacrilegious Bed
+                Name: Языческая кровать
                 Tooltip: ""
             }
             
             SacrilegiousBench: {
-                Name: Sacrilegious Bench
+                Name: Языческая скамья
                 Tooltip: ""
             }
             
             SacrilegiousBookcase: {
-                Name: Sacrilegious Bookcase
+                Name: Языческий книжный шкаф
                 Tooltip: ""
             }
             
             SacrilegiousCandelabra: {
-                Name: Sacrilegious Candelabra
+                Name: Языческий подсвечник
                 Tooltip: ""
             }
             
             SacrilegiousCandle: {
-                Name: Sacrilegious Candle
+                Name: Языческая свеча
                 Tooltip: ""
             }
             
             SacrilegiousChair: {
-                Name: Sacrilegious Chair
+                Name: Языческий стул
                 Tooltip: ""
             }
             
             SacrilegiousChandelier: {
-                Name: Sacrilegious Chandelier
+                Name: Языческая люстра
                 Tooltip: ""
             }
             
             SacrilegiousChest: {
-                Name: Sacrilegious Chest
+                Name: Языческий сундук
                 Tooltip: ""
             }
             
             SacrilegiousClock: {
-                Name: Sacrilegious Clock
+                Name: Языческие часы
                 Tooltip: ""
             }
             
             SacrilegiousDoor: {
-                Name: Sacrilegious Door
+                Name: Языческая дверь
                 Tooltip: ""
             }
             
             SacrilegiousDresser: {
-                Name: Sacrilegious Dresser
+                Name: Языческий комод
                 Tooltip: ""
             }
             
             SacrilegiousLamp: {
-                Name: Sacrilegious Lamp
+                Name: Языческая напольная лампа
                 Tooltip: ""
             }
             
             SacrilegiousLantern: {
-                Name: Sacrilegious Lantern
+                Name: Языческий фонарь
                 Tooltip: ""
             }
             
             SacrilegiousOrgan: {
-                Name: Sacrilegious Organ
+                Name: Языческий орган
                 Tooltip: ""
             }
             
             SacrilegiousSink: {
-                Name: Sacrilegious Sink
-                Tooltip: Counts as a water, honey, and lava source
+                Name: Языческая раковина
+                Tooltip: Считается источником воды, лавы и мёда
             }
             
             SacrilegiousTable: {
-                Name: Sacrilegious Table
+                Name: Языческий стол
                 Tooltip: ""
             }
             
             SacrilegiousWorkBench: {
-                Name: Sacrilegious Work Bench
+                Name: Языческий верстак
                 Tooltip: ""
             }
             
             DraedonsAmbienceMusicBox: {
-                Name: Music Box (Draedon's Ambience)
+                Name: Музыкальная шкатулка (присутствие Дрэйдона)
                 Tooltip: ""
             }
             
@@ -10533,12 +10533,12 @@
             }
             
             ThankYouPainting: {
-                Name: Thank You
+                Name: Картина «Спасибо»
                 Tooltip:
                     '''
-                    Thanks to the entire team, everyone who supported, and those who all play the mod and keep it alive!
-                    The confines of this painting is not enough to fit the entire team
-                    Hold SHIFT to see a list of past and current devs and CTRL to see past and current testers
+                    Спасибо всей команде, всем кто поддерживает и всем, кто играет с модом, помогая сохранить его активным!
+                    Рамок этой картины недостаточно, чтобы вместить всю команду
+                    Держите SHIFT, чтобы отобразить список прошлых и нынешних разработчиков и CTRL, чтобы отобразить список прошлых и нынешних тестеров
                     '''
             }
             
@@ -10951,7 +10951,7 @@
             }
             
             OccultBrickWallItem: {
-                Name: Occult Brick Wall
+                Name: Оккультная кирпичная стена
                 Tooltip: ""
             }
             
@@ -11935,7 +11935,7 @@
                 Tooltip:
                     '''
                     Его механизм генерирует лучи яркого света, способные разрушать стены с большого расстояния
-                    Игнорирует 10 единиц защиты врага
+                    Игнорирует 10 ед. защиты врага
                     '''
             }
             
@@ -11944,7 +11944,7 @@
                 Tooltip:
                     '''
                     Использует алмазную фокусировку для проецирования длинноволнового добывающего луча света
-                    Игнорирует 5 единиц защиты врага
+                    Игнорирует 5 ед. защиты врага
                     '''
             }
             
@@ -12412,12 +12412,12 @@
             }
             
             TheAnomalysNanogun: {
-                Name: The Anomaly's Nanogun
+                Name: Нанопушка Аномалии
                 Tooltip:
                     '''
-                    'Welcome to the party, pal'
-                    Left click to charge up 5 rapid-fire plasma beams
-                    Right click to launch 3 fission bombs
+                    'Добро пожаловать на вечеринку, дружище'
+                    Нажмите <left>, чтобы зарядить пять быстрых плазменных шаров
+                    Нажмите <right>, чтобы запустить три расщепляющих бомбы
                     '''
             }
             
@@ -13171,13 +13171,13 @@
             }
             
             SubsumingVortex: {
-                Name: Поглощающий вихрь
+                Name: Всеохватывающий вихрь
                 Tooltip:
                     '''
-                    Left clicking releases a barrage of vortices that race towards enemies
-                    Right clicking casts a gigantic vortex in front of you with a bias towards the mouse
-                    When enemies are near the vortex, it sends multiple fast-moving smaller vortices towards them
-                    After enough time has passed the vortex stops shooting, and releasing the right mouse button fires the vortex towards the mouse
+                    Нажмите <left>, чтобы запустить шквал вихрей, устремляющихся к врагам
+                    Нажмите <right>, чтобы создать перед вами гигантский вихрь, направляющийся в сторону мыши
+                    Когда рядом с вихрем находятся враги, он посылает к ним множество быстрых малых вихрей
+                    Спустя время вихрь прекращает стрельбу, и, если вы отпустите <right>, выстреливает в сторону мыши
                     '''
             }
             
@@ -14172,7 +14172,7 @@
             
             MycelialClaws: {
                 Name: Мицелиальные когти
-                Tooltip: При нанесении ударов по врагу даёт бафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Mushy.Name}» на 6 секунд
+                Tooltip: Нанося удары по врагу, даёт бафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Mushy.Name}» на 6 секунд
             }
             
             Nadir: {
@@ -14328,7 +14328,7 @@
                 Tooltip:
                     '''
                     При нанесении удара отравляет врагов
-                    Нацеливание копья перед собой во время бега удерживает его с повышенным отбрасыванием
+                    Нацеливание копья перед собой во время бега удерживает его с увеличенным отбрасыванием
                     Отпускание кнопки атаки после заряда совершает выпад вверх, подбрасывая врагов в воздух
                     [c/5C95A1:Люди моря были искусными охотниками, но ненавидели ненужное насилие]
                     [c/5C95A1:К сожалению, остальные народы были жестоки, и им пришлось создать свои орудия войны]
@@ -15338,9 +15338,9 @@
                 Name: Небесный шторм
                 Tooltip:
                     '''
-                    Fires a rapid stream of supercharged exo-crystals
-                    Holding the bow and waiting for some time before firing causes the crystals to become more powerful
-                    If the crystals are sufficiently powerful enough they will summon torrents of exo-lightning above whatever target they hit
+                    Стреляет быстрым потоком сверхзаряженных экзо-кристаллов
+                    Долгая зарядка лука перед выстрелом усиливает кристаллы
+                    Достаточно усиленные кристаллы вызывают потоки экзо-молний над любой целью, в которую попадут
                     '''
             }
             
@@ -16000,7 +16000,7 @@
                     '''
                     Использует для стрельбы вульфрумовый металлолом или серебряные монеты
                     Разброс выстрела можно сократить, если целиться дальше, ценой меньшего урона
-                    Игнорирует 3 единицы защиты врага
+                    Игнорирует 3 ед. защиты врага
                     '[c/83B87E:Основной плюс вульфрумовых механизмов в том, что если они ломаются быстро, то чинятся ещё быстрее]'
                     '[c/83B87E:Довольно часто можно встретить робота, который превратился в боеприпасы прямо после поломки]'
                     '''
@@ -17498,17 +17498,17 @@
             }
             
             AtlasMunitionsBeacon: {
-                Name: Atlas Munitions Beacon
+                Name: Маячок установки «Атлас»
                 Tooltip:
                     '''
-                    Drops down a crate from the sky that opens up to reveal a mounted, stationary cannon
-                    The cannon will fire at any potential enemies within its range, and enter overdrive mode if said enemy is close to the cannon
-                    When in overdrive mode the cannon uses three barrels that each collectively fire. The cannon also heats up the more it fires in overdrive mode
-                    Players may right click to pick up the cannon and use it for themselves, if they are selecting an Atlas Munitions Beacon
-                    When players fire the cannon, it automatically enters overdrive mode
-                    If the held cannon becomes hot due to overdrive mode, you are forced to drop it. Otherwise, right clicking allows you to drop it manually
-                    If the held cannon is dropped back onto the mount, it is attached again
-                    It's surprisingly easy to pick up
+                    Вызывает падение ящика с неба, который развёртывается в закрепленную неподвижную пушку
+                    Пушка стреляет в любых потенциальных врагов в пределах досягаемости и переходит в режим перегрузки, если враг находится близко к пушке
+                    Находясь в режиме перегрузки пушка использует три ствола. Пушка нагревается тем сильнее, чем больше она стреляет в режиме перегрузки
+                    Игроки могут нажать <right>, чтобы взять в пушку и использовать её, если у них выбран маячок установки «Атлас»
+                    Если из пушки стреляют игроки, она автоматически переходит в режим перегрузки
+                    Если пушка игрока перегревается, он вынужден выбросить её. Нажатие <right> позволяет выбросить её самостоятельно
+                    Если пушка игрока выброшена обратно на крепление, она снова закрепляется
+                    Её на удивление легко подобрать
                     '''
             }
             
@@ -17635,7 +17635,7 @@
             }
             
             CosmicViperEngine: {
-                Name: Двигатель Космического Вайпера
+                Name: Двигатель космического Вайпера
                 Tooltip:
                     '''
                     Призывает обстреливающий врагов космический боевой корабль
@@ -17901,12 +17901,12 @@
                 Name: Заражённый дистанционный пульт
                 Tooltip:
                     '''
-                    Summons a humanoid-hybrid Plaguebringer, codenamed 'Virili', to aid you in battle
-                    Virili requires 3f minion slots to summon, and can only be summoned once
-                    Virili uses a variety of attacks which she cycles through on a timer
-                    All attacks spread the plague, as was her original design intention
-                    'A single note graces the back:'
-                    'WARNING: Subject is extremely corrosive and contagious. Avoid direct contact'
+                    Призывает гуманоидно-гибридную разносчицу чумы под кодовым именем «Вирили», сражающуюся за вас
+                    Вирили требует 3 призываемых миньонов для призыва, также её можно призвать только один раз
+                    Вирили использует множество атак, которые она цикличестки сменяет по таймеру
+                    Все атаки распространяют чуму, что и было первоначальной задумкой
+                    'На задней стороне есть записка:'
+                    'ВНИМАНИЕ: чрезвычайно едкая и заразная. Избегайте прямого контакта'
                     '''
             }
             
@@ -17964,8 +17964,8 @@
             }
             
             PuffShroom: {
-                Name: Puff Shroom
-                Tooltip: Summons a cute mushroom warrior to fight for you
+                Name: Пуфгриб
+                Tooltip: Призывает милого грибного воина, сражающегося за вас
             }
             
             ResurrectionButterfly: {
@@ -18174,10 +18174,10 @@
             }
             
             WarloksMoonFist: {
-                Name: Warloks' Moon Fist
+                Name: Лунный кулак чернокнижника
                 Tooltip:
                     '''
-                    Вызывает небесный кулак, который избивает врагов
+                    Призывает небесный кулак, избивающий врагов
                     Занимает 4 слота призываемых миньонов
                     '''
             }
@@ -20135,19 +20135,19 @@
                 }
                 
                 SolarFlareDrill: {
-                    Tooltip: Способна добывать буйноцвет
+                    Tooltip: Способен добывать буйноцвет
                 }
                 
                 VortexDrill: {
-                    Tooltip: Способна добывать буйноцвет
+                    Tooltip: Способен добывать буйноцвет
                 }
                 
                 NebulaDrill: {
-                    Tooltip: Способна добывать буйноцвет
+                    Tooltip: Способен добывать буйноцвет
                 }
                 
                 StardustDrill: {
-                    Tooltip: Способна добывать буйноцвет
+                    Tooltip: Способен добывать буйноцвет
                 }
                 
                 BottledHoney: {
@@ -20637,7 +20637,7 @@
                     
                 ReaverExplore:
                     '''
-                    Освещает все сокровища поблизости
+                    Подсвечивает ближайшие сокровища
                     Увеличивает дальность подбора предметов и размещения блоков
                     Добыча блоков восстанавливает дыхание под водой
                     Призывает сферу разорителя освещать область вокруг вас
@@ -21112,7 +21112,7 @@
                     Mining:
                         '''
                         {$LegacyTooltip.48} Увеличивает скорость добычи на 40%
-                        Mining ore will sometimes have additional yield
+                        Добыча руды иногда приводит к дополнительной выгоде
                         '''
                 }
             }
@@ -21225,11 +21225,11 @@
             DevourerofGodsBody.Name: Пожиратель богов
             DevourerofGodsHead.Name: Пожиратель богов
             DevourerofGodsTail.Name: Пожиратель богов
-            Androomba.Name: Androomba
-            Nanodroid.Name: Nanodroid
-            NanodroidDysfunctional.Name: Nanodroid
-            NanodroidPlagueGreen.Name: Nanodroid
-            NanodroidPlagueRed.Name: Nanodroid
+            Androomba.Name: Андромба
+            Nanodroid.Name: Нанодрон
+            NanodroidDysfunctional.Name: Нанодрон
+            NanodroidPlagueGreen.Name: Нанодрон
+            NanodroidPlagueRed.Name: Нанодрон
             CosmicGuardianBody.Name: Космический защитник
             CosmicGuardianHead.Name: Космический защитник
             CosmicGuardianTail.Name: Космический защитник
@@ -21312,7 +21312,7 @@
             SuperDummyNPC.Name: Сверхманекен
             ThiccWaifu.Name: Облачный элементаль
             WildBumblefuck.Name: Драконий роитель
-            WulfrumAmplifier.Name: Wulfrum Amplifier
+            WulfrumAmplifier.Name: Вульфрумовый усилитель
             WulfrumDrone.Name: Вульфрумовый дрон
             WulfrumGyrator.Name: Вульфрумовый вращатель
             WulfrumHovercraft.Name: Вульфрумовый автолёт
@@ -21407,7 +21407,7 @@
             SupremeCataclysm.Name: Высший Катаклизм
             SupremeCatastrophe.Name: Высший Катастроф
             Yharon.Name: Дракон джунглей, Ярон
-            AndroombaFriendly.Name: Androomba Pal
+            AndroombaFriendly.Name: Дружбан Андромба
             DILF.Name: Архимаг
             FAP.Name: Пьяная принцесса
             SEAHOE.Name: Морской король
@@ -21627,8 +21627,8 @@
                 ArmsDealer: {
                     1: Ну ничего себе мотылёк! Для его убийства тебе явно понадобится большая пушка.
                     2: Мне кажется, или твоё оружие становится всё больше и больше?
-                    3: That old man left a cranky old gun on his deathbed. You catching my drift?
-                    4: Hah! Look at that rusty old shotty. It looks straight out of the 70's!
+                    3: Старик оставил старый капризный пистолет на своём смертном одре. Улавливаешь мою мысль?
+                    4: Хах! Ты только п на этот старый ржавый дробовик. Выглядит, словно сбежал из 70-х!
                 }
                 
                 Dryad: {
@@ -21666,7 +21666,7 @@
                 
                 Wizard: {
                     1: Как-то тут тесновато, не находишь?
-                    2: I wanted to sell you a special rod I found in the Hallow, but it appears I have misplaced it. Maybe a trip back there would refresh my memory.
+                    2: Я хотел продать тебе особый жезл, который нашёл в освящении, но я, кажется, потерял его. Быть может, поездка туда освежит мою память.
                 }
                 
                 Mechanic: {
@@ -22225,7 +22225,7 @@
             DesertScourgeHead: Если вы когда-то вглядывались в бескрайние барханы пустынь и наблюдали, как подобно морским волнам колеблются дюны, то вполне вероятно, что это проделки существа, скрывающегося в глубинах.
             CosmicGuardianHead: Межпространственное творение Пожирателя, взятое из его родного измерения, дабы помочь ему в битве. Хотя никто их них даже близко не сравнится с силой его Стражей.
             DevourerofGodsHead: Его невероятное самомнение известно также, как и подавляющая сила повсюду, ведь во время боя он постоянно ею хвастается. Стоит признать, он один из немногих, кто может подтвердить свои заявления.
-            Androomba: Slowly moving back and forth, these contraptions operate endlessly with the fruitless goal of cleaning the now long abandoned labs.
+            Androomba: Медленно передвигаясь по пустым залам, эти хитроумные устройства неустанно работают ради пустой цели очистки давно заброшенных лабораторий.
             RepairUnitCritter: Благодаря этим крохотным машинам, лаборатории до сих пор не рассыпались в пыль. Однако, похоже, они не в состоянии справиться с ржавчиной.
             Draedon: Многоуважаемый учёный собственной персоной. Его ИИ загружен в базу данных, отсекая от разного рода опасностей. Именно поэтому уничтожение его разведывательных тел ни к чему не приведёт.
             Apollo: Механизм, чьи внутренности полны смеси гнева и греческого огня. Совершённые изменения в сравнение с прошлой версией себя позволяют развивать невероятную скорость и манёвренность.
@@ -22342,10 +22342,10 @@
             SupremeCalamitas: Суровая жизнь Серной Ведьмы видна по магии, что она плетёт. Изменчивая и мощная, но в то же время утончённая. Её темперамент, по слухам, настолько вспыльчив, что способен превратить в пепел целое королевство.
             SupremeCataclysm: Несмотря на сохранение гуманоидной формы, ему не ведомы никакие высшие мысли. Он знает только насилие.
             SupremeCatastrophe: Никто не способен превзойти Каламитас в мастерстве некромантии, но и никто не способен по-настоящему воскрешать из мёртвых.
-            AndroombaFriendly: Easily reversed engineered, these robots can be made to spread whatever you put into them, giving them a new purpose.
+            AndroombaFriendly: Легко перепрограммирумые, эти роботы могут быть созданы для распространения всего, что вы в них вкладываете, давая им новую цель.
             DILF: На его лице виден как большой возраст, так и великая мудрость. Однажды Архимаг выступил против Тирана Джунглей и поплатился за это. Он продаёт различные ледяные побрякушки, но самые мощные заклинания, конечно же, держит при себе.
             FAP: Никто не знает, откуда она появилась, но никто и не против её присутствия. Она хороший человек, с которым можно выпить. Ну, если только не вывести её из себя.
-            SEAHOE: Морской король древней цивилизации, ныне затерянной в песках времени (и пустыни). Дожив до этих дней, он способен дать полезные советы об окружающем вас мире. И ещё ему нравятся моллюски.
+            SEAHOE: Морской король древней цивилизации, ныне затерянной в песках времени (и пустыни). Дожив до этих дней, он способен дать полезные советы об окружающем вас мире. И ещё ему нравились моллюски.
             THIEF: Клептоманьячка, немного пасующая, когда дело доходит до драк лицом к лицу. Она мастер попадать в опасные ситуации и выпутываться из них.
             WITCH: Сколь удивительное зрелище - видеть этого могущественного врага в живых, так ещё и рядом с дружелюбными лицами. Повторится ли история или же ей, наконец, удалось вырваться из крепкой хватки Тирана?
             Yharon: Возможно... последний в своём роде. Он мог бы уничтожить джунгли в одно мгновение, если бы захотел. Однако, кажется, он осторожен, чтобы не допустить такого.
@@ -24093,7 +24093,7 @@
             SacrilegiousChestTile: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.SacrilegiousChest.Name}"
                 Container: {
-                    Name: Sacrilegious Chest
+                    Name: Языческий сундук
                 }
             }
             
@@ -24850,10 +24850,10 @@
             AbovegroundAstralBiome: Поверхность Астрала
             AbovegroundAstralDesertBiome: Поверхность астральной пустыни
             AbovegroundAstralSnowBiome: Поверхность астральных снегов
-            AbyssLayer1Biome: Бездна: Первый слой
-            AbyssLayer2Biome: Бездна: Второй слой
-            AbyssLayer3Biome: Бездна: Третий слой
-            AbyssLayer4Biome: Бездна: Четвёртый слой
+            AbyssLayer1Biome: Бездна: первый слой
+            AbyssLayer2Biome: Бездна: второй слой
+            AbyssLayer3Biome: Бездна: третий слой
+            AbyssLayer4Biome: Бездна: четвёртый слой
             AcidRainBiome: Кислотный дождь
             ArsenalLabBiome: Оружейные лаборатории
             BrimstoneCragsBiome: Серная скала
@@ -24962,7 +24962,7 @@
         MoonBossText2: Космические ужасы наблюдают...
         PlagueBossText: ЧУМНЫЕ ЯДЕРНЫЕ РАКЕТЫ НАЦЕЛЕНЫ. ПОДГОТАВЛИВАЮСЬ К ЗАПУСКУ!
         PlagueBossText2: РАКЕТЫ ЗАПУЩЕНЫ! ПРОТОКОЛ ИНИЦИИРОВАН!
-        ProfanedBossText: Holy flames burn away at your wings...
+        ProfanedBossText: Священное пламя сжигает ваши крылья...
         ProfanedBossText2: Из Темницы доносятся крики.
         ProfanedBossText3: Бедственные существа переполнились кровавым камнем.
         ProfanedBossText4: Осквернённая богиня признала вашу преданность чистоте!
@@ -25104,37 +25104,37 @@
         CometShardText: Вы уже съели осколок кометы. Переедание вызывает тошноту
         EtherealCoreText: Вы уже использовали эфирное ядро. Не стоит превозмогать себя
         PhantomHeartText: Вы уже использовали фантомное сердце. Хорошо, что вы больше не можете это использовать
-        SlimeGodRun: The Slime God flees to fight another day...
+        SlimeGodRun: Бог слизней убегает, чтобы сразиться в другой раз...
     }
     
     GameTips: {
-        SunkenSeaTip: "Deep below the Underground Desert lie the ruined outskirts of a fallen kingdom."
-        ArsenalLabTip: "Old labs can be found scattered throughout the Underground."
-        PlanetoidTip: "You can find Planetoids in outer space!"
-        AbyssTip: "The Abyss can be found deep below the Sulphurous Sea. It's very difficult to explore without proper diving gear."
-        BanditTip: "The Bandit is most interested in those who save up enough money worth to swindle."
-        RefundTip: "If you've been reforging a lot with the Goblin Tinkerer, it might pay off to give the Bandit a visit."
-        DrunkPrincessTip: "The Drunk Princess is great to party with. If you carry her favorite vodka, she might move in."
-        SeaKingTip: "The Sea King used to like clams. He changed his mind when he got eaten by one."
-        AmidiasBlessingTip: "The Sea King can provide a bubble to aid with breathing underwater to any who ask for help."
-        ArchmageTip: "The Archmage can be freed if you destroy the very castle he was imprisoned in."
-        BrimstoneWitchTip: "The Brimstone Witch can enchant items to grant them new powers."
-        TitanHeartTip: "Titan Hearts can be used as an offering at a Beacon found in the Astral Infection."
-        NightProvTip: "Summoning the sun goddess under the light of the moon massively empowers her strength and endurance."
-        DayEoLTip: "Summoning the fae goddess under the light of day will start a vicious and persistent battle."
-        BossEnemyTip: "Killing the most harmless of enemies can awaken the wrath of a much stronger monster. Slay them at your own risk!"
-        RoDAbyssTip: "Use the Rod of Discord in the Abyss at your own risk. The chaotic traces left behind may attract the attention of unwanted foes."
-        TerminusTip: "An ancient artifact resides at the bottom of the Abyss. Use with great caution."
-        CodebreakerTip: "The Codebreaker can be upgraded, allowing you to decrypt new schematics found in various labs around the world."
-        ChargeTip: "Certain weaponry requires charge to use. Weapons can be charged at a Charging Station with Draedon Power Cells."
-        PowerCellTip: "Power Cell Factories generate Draedon Power Cells over time."
-        FactoryChargingTip: "Power Cell Factories and Charging Stations can be looted from labs in the Underground."
-        StealthTip: "Wearing any rogue class armor lets you build stealth!"
-        SummonNerfTip: "Holding a non-summoner weapon reduces the damage of your minions."
-        DefenseDamageTip: "Certain attacks will chip away at your defense, but it will quickly regenerate afterward."
-        PointBlankTip: "Ranged weapons fired at point blank will do a lot more damage."
-        RevengeanceTip: "Need a challenge beyond Expert Mode? Try Revengeance Mode!"
-        BloodOrbTip: "Blood Orbs collected during the Blood Moon can craft almost any potion."
-        KeybindsTip: "Modded controls can be bound in Settings."
+        SunkenSeaTip: "Глубоко под подземной пустыней покоятся руины разрушенного королевства."
+        ArsenalLabTip: "По всему подземелью можно найти старые лаборатории."
+        PlanetoidTip: "В открытом космосе можно найти планетойды!"
+        AbyssTip: "Глубоко под серным морем можно найти бездну. Её очень трудно исследовать без надлежащего снаряжения для дайвинга."
+        BanditTip: "Бандита больше всего интересуют те, кто накопил достаточно денег, чтобы обокрасть их."
+        RefundTip: "Если вы делали много перековок с гоблином-изобретателем, возможно, стоит нанести визит бандиту."
+        DrunkPrincessTip: "С пьяной принцессой круто тусить. Она может заселиться, если вы носите с собой её любимую водку."
+        SeaKingTip: "Морскому королю нравились моллюски. Он изменил своё мнение, когда один из них его съел."
+        AmidiasBlessingTip: "Морской король может предоставить пузырь, чтобы помочь дышать под водой любому, кто попросит о помощи."
+        ArchmageTip: "Архимага можно освободить, если разрушив замок, в котором он заключен."
+        BrimstoneWitchTip: "Серная ведьма может зачаровывать предметы, наделяя их новыми способностями."
+        TitanHeartTip: "Сердца титанов можно использовать как подношения на маяке, что можно найти в астральной инфекции."
+        NightProvTip: "Призыв богини солнца при свете луны значительно увеличивает её силу и стойкость."
+        DayEoLTip: "Призыв богини фей при свете дня начнёт жестокую и продолжительную битву."
+        BossEnemyTip: "Убийство безобиднейшего из врагов может пробудить гнев гораздо более сильного монстра. Убивайте с осторожностью!"
+        RoDAbyssTip: "Находясь в бездне, используйте жезл раздора на свой страх и риск. Хаотичные следы, оставленные его использованием, могут привлечь внимание нежелательных врагов."
+        TerminusTip: "На дне бездны находится древний артефакт. Используйте его с большой осторожностью."
+        CodebreakerTip: "Дешифратор можно модернизировать, что позволяет расшифровывать новые схемы, находящиеся в различных лабораториях по всему миру."
+        ChargeTip: "Для использования некоторого оружия требуется заряд. Оружие можно заряжать на зарядном устройстве с помощью батареек Дрэйдона."
+        PowerCellTip: "Фабрика по производству силовых ячеек генерирует батарейки Дрэйдона с течением времени."
+        FactoryChargingTip: "Фабрики по производству силовых ячеек и зарядные устройства можно найти в старых лабораториях."
+        StealthTip: "Ношение любой брони разбойника позволяет накапливать скрытность!"
+        SummonNerfTip: "Держа в руках оружие, не относящееся к классу призывателя, урон миньонов снижается."
+        DefenseDamageTip: "Некоторые атаки разрушают вашу защиту, но она быстро восстанавливается."
+        PointBlankTip: "Стрелковое оружие, выпущенное в упор, наносит гораздо больше урона."
+        RevengeanceTip: "Нужен вызов, что сложнее режима Эксперта? Попробуйте режим Мести!"
+        BloodOrbTip: "Кровавые сферы, выпадающие с врагов во время кровавой луны, можн использовать для создания практически любого зелья."
+        KeybindsTip: "Клавиши управления из модов можно изменить в настройках."
     }
 }
