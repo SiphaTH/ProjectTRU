@@ -421,6 +421,8 @@ public class CalamityNpcChat : ContentTranslation, INpcChatText
             {
                 "That's the biggest moth I've ever seen for sure. You'd need one big gun to take one of those down." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.ArmsDealer.1"),
                 "Is it me or are your weapons getting bigger and bigger?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.ArmsDealer.2"),
+                "That old man left a cranky old gun on his deathbed. You catching my drift?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.ArmsDealer.3"),
+                "Hah! Look at that rusty old shotty. It looks straight out of the 70's!" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.ArmsDealer.4"),
                 _ => npcPhrase
             };
         }
@@ -487,6 +489,7 @@ public class CalamityNpcChat : ContentTranslation, INpcChatText
             npcPhrase = npcPhrase switch
             {
                 "Space just got way too close for comfort." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Wizard.1"),
+                "I wanted to sell you a special rod I found in the Hallow, but it appears I have misplaced it. Maybe a trip back there would refresh my memory." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Wizard.2"),
                 _ => npcPhrase
             };
         }

@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Reflection;
 using CalamityMod;
 using CalamityMod.DataStructures;
+using CalamityMod.Items.Placeables.Furniture.DevPaintings;
 using CalamityMod.NPCs.CeaselessVoid;
 using CalamityMod.NPCs.Ravager;
-using CalamityMod.NPCs.SlimeGod;
 using CalamityMod.Systems;
 using CalamityMod.UI;
 using CalamityMod.UI.CalamitasEnchants;
@@ -50,8 +50,6 @@ public class CalamityReflection : ContentTranslation, ILoadableContent
             {491, new BossHealthBarManager.BossEntityExtension("Пушек", 492)},
             {ModContent.NPCType<CeaselessVoid>(), new BossHealthBarManager.BossEntityExtension("Тёмной энергии", ModContent.NPCType<DarkEnergy>())},
             {ModContent.NPCType<RavagerBody>(), new BossHealthBarManager.BossEntityExtension("Частей тела", ModContent.NPCType<RavagerClawLeft>(), ModContent.NPCType<RavagerClawRight>(), ModContent.NPCType<RavagerLegLeft>(), ModContent.NPCType<RavagerLegRight>())},
-            {ModContent.NPCType<SlimeGodCore>(), new BossHealthBarManager.BossEntityExtension("Больших слизней", ModContent.NPCType<EbonianSlimeGod>(), ModContent.NPCType<SplitEbonianSlimeGod>(), ModContent.NPCType<CrimulanSlimeGod>(), ModContent.NPCType<SplitCrimulanSlimeGod>())},
-            
         };
         BossHealthBarManager.EntityExtensionHandler = dictionary;
         
@@ -160,6 +158,9 @@ public class CalamityReflection : ContentTranslation, ILoadableContent
         DifficultyModeSystem.Difficulties[2].ShortDescription = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.Death.ShortDescription");
         DifficultyModeSystem.Difficulties[3].Name = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.Malice.Name");
         DifficultyModeSystem.Difficulties[3].ShortDescription = LangHelper.GetText("CalamityMod.DifficultyModeSystem.Difficulties.Malice.ShortDescription");
+
+        ThankYouPainting.devList.RemoveAt(0);
+        ThankYouPainting.devList.Insert(0, "Fabsol, основатель и владелец мода");
     }
 
     public void UnloadContent() { }

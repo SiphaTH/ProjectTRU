@@ -25,9 +25,6 @@ public class SpecificBuffsTooltipTranslation : GlobalBuff
             tip = tip switch
             {
                 "The Profaned Babs will accompany you!" => LangHelper.GetTextValue("CalamityMod.Buffs.ProfanedBabs.Description.1"),
-                "The Profaned Babs will fight for and defend you!" => LangHelper.GetTextValue("CalamityMod.Buffs.ProfanedBabs.Description.2"),
-                "The Defensive Duo will protect and heal you!" => LangHelper.GetTextValue("CalamityMod.Buffs.ProfanedBabs.Description.3"),
-                "The Offensive Duo will fight for and heal you!" => LangHelper.GetTextValue("CalamityMod.Buffs.ProfanedBabs.Description.4"),
                 _ => tip
             };
         }

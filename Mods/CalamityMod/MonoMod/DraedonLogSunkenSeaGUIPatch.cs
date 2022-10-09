@@ -1,5 +1,5 @@
 using System.Reflection;
-using CalamityMod.UI;
+using CalamityMod.UI.DraedonLogs;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;

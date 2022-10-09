@@ -123,7 +123,7 @@ public class InfenumModeCombatText : ContentTranslation, ICombatText
                     "It's still going?!" => LangHelper.GetText("InfernumMode.CombatTexts.102"),
                     "The ninja shoots more shurikens the farther you are, so don't go too far!" => LangHelper.GetText("InfernumMode.CombatTexts.103"),
                     "Home stretch! try focusing on yourself more than the boss!" => LangHelper.GetText("InfernumMode.CombatTexts.104"),
-                    "They're working together now! Anahita will take the advantage to hurl homing icicles at you!" => LangHelper.GetText("InfernumMode.CombatTexts.105"),
+                    // "They're working together now! Anahita will take the advantage to hurl homing icicles at you!" => LangHelper.GetText("InfernumMode.CombatTexts.105"),
                     "The Moon Lord seems angry! Try to dodge the side projectiles, and don't touch that black hole!" => LangHelper.GetText("InfernumMode.CombatTexts.106"),
                     "Brace yourself! A barrage of slow bolts are going to be released!" => LangHelper.GetText("InfernumMode.CombatTexts.107"),
                     "Staying calm and still will help dodge the slow projectiles!" => LangHelper.GetText("InfernumMode.CombatTexts.108"),

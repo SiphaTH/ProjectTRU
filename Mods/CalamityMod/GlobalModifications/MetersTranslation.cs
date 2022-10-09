@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using CalamityMod.Items.Accessories;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
@@ -114,79 +113,6 @@ public class MetersTranslation : GlobalItem
                     .Replace("Other Abyss stats are only displayed while in the Abyss", "Другие характеристики бездны отображаются только во время нахождения в бездне")
                     .Replace("sec", "сек");
 
-            });
-        }
-        else if (item.type == ModContent.ItemType<MeleeLevelMeter>())
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-            {
-                string[] array = Regex.Split(tooltip.Text, "\n");
-
-                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.MeleeLevelMeter.Tooltip.0",
-                    Regex.Split(array[3], ": ")[1],
-                    Regex.Split(array[4], ": ")[1],
-                    Regex.Split(array[5], ": ")[1],
-                    Regex.Split(array[6], ": ")[1],
-                    Regex.Split(array[7], ": ")[1]);
-            });
-        }
-
-        else if (item.type == ModContent.ItemType<MagicLevelMeter>())
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-            {
-                string[] array = Regex.Split(tooltip.Text, "\n");
-
-                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.MagicLevelMeter.Tooltip.0",
-                    Regex.Split(array[3], ": ")[1],
-                    Regex.Split(array[4], ": ")[1],
-                    Regex.Split(array[5], ": ")[1],
-                    Regex.Split(array[6], ": ")[1],
-                    Regex.Split(array[7], ": ")[1]);
-            });
-        }
-
-        else if (item.type == ModContent.ItemType<RangedLevelMeter>())
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-            {
-                string[] array = Regex.Split(tooltip.Text, "\n");
-
-                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RangedLevelMeter.Tooltip.0",
-                    Regex.Split(array[3], ": ")[1],
-                    Regex.Split(array[4], ": ")[1],
-                    Regex.Split(array[5], ": ")[1],
-                    Regex.Split(array[6], ": ")[1],
-                    Regex.Split(array[7], ": ")[1]);
-            });
-        }
-
-        else if (item.type == ModContent.ItemType<RogueLevelMeter>())
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-            {
-                string[] array = Regex.Split(tooltip.Text, "\n");
-
-                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RogueLevelMeter.Tooltip.0",
-                    Regex.Split(array[3], ": ")[1],
-                    Regex.Split(array[4], ": ")[1],
-                    Regex.Split(array[5], ": ")[1],
-                    Regex.Split(array[6], ": ")[1],
-                    Regex.Split(array[7], ": ")[1]);
-            });
-        }
-
-        else if (item.type == ModContent.ItemType<SummonLevelMeter>())
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-            {
-                string[] array = Regex.Split(tooltip.Text, "\n");
-
-                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SummonLevelMeter.Tooltip.0",
-                    Regex.Split(array[3], ": ")[1],
-                    Regex.Split(array[4], ": ")[1],
-                    Regex.Split(array[5], ": ")[1],
-                    Regex.Split(array[6], ": ")[1]);
             });
         }
     }

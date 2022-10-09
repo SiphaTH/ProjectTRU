@@ -519,6 +519,18 @@ public class BestiaryTranslation : GlobalNPC
             bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.DevourerofGodsHead")));
         }
         
+        if (npc.type == ModContent.NPCType<Androomba>())
+        {
+            bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.Androomba")));
+        }
+        
+        if (npc.type == ModContent.NPCType<Nanodroid>())
+        {
+            bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.Nanodroid")));
+        }
+        
         if (npc.type == ModContent.NPCType<RepairUnitCritter>())
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
@@ -879,6 +891,12 @@ public class BestiaryTranslation : GlobalNPC
             bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.WildBumblefuck")));
         }
         
+        if (npc.type == ModContent.NPCType<WulfrumAmplifier>())
+        {
+            bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.WulfrumAmplifier")));
+        }
+        
         if (npc.type == ModContent.NPCType<WulfrumDrone>())
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
@@ -896,13 +914,7 @@ public class BestiaryTranslation : GlobalNPC
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
             bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.WulfrumHovercraft")));
         }
-        
-        if (npc.type == ModContent.NPCType<WulfrumPylon>())
-        {
-            bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
-            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.WulfrumPylon")));
-        }
-        
+            
         if (npc.type == ModContent.NPCType<WulfrumRover>())
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
@@ -1213,6 +1225,12 @@ public class BestiaryTranslation : GlobalNPC
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
             bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.SupremeCatastrophe")));
+        }
+        
+        if (npc.type == ModContent.NPCType<AndroombaFriendly>())
+        {
+            bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.AndroombaFriendly")));
         }
         
         if (npc.type == ModContent.NPCType<DILF>())

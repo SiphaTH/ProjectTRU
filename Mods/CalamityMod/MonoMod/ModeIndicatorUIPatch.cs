@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 using CalamityMod.Systems;
-using CalamityMod.UI;
+using CalamityMod.UI.ModeIndicator;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;

@@ -5,11 +5,8 @@ namespace CalamityRuTranslate.Common.Exceptions;
 public sealed class ModVersionException : Exception
 {
     private string ModName { get; }
-
     private Version ExpectedModVersion { get; }
-
     private Version CurrectModVersion { get; }
-
     private ExceptionType OutdatedType { get; }
 
     public ModVersionException(string modName, Version currectModVersion, Version expectedModVersion, ExceptionType outdatedType)
@@ -31,6 +28,7 @@ public sealed class ModVersionException : Exception
                 case ExceptionType.OutdatedFargowiltas:
                 case ExceptionType.OutdatedFargowiltasSouls:
                 case ExceptionType.OutdatedStarsAbove:
+                case ExceptionType.OutdatedInfernumMode:
                     return @$"
  [c/FF0000:###]                     [c/FF0000:###]                     [c/FF0000:###]
  [c/FF0000:# #]                     [c/FF0000:# #]                     [c/FF0000:# #]
@@ -56,6 +54,7 @@ public sealed class ModVersionException : Exception
         OutdatedThorium,
         OutdatedFargowiltas,
         OutdatedFargowiltasSouls,
-        OutdatedStarsAbove
+        OutdatedStarsAbove,
+        OutdatedInfernumMode,
     }
 }

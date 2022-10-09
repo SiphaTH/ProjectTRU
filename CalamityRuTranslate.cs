@@ -10,6 +10,7 @@ using CalamityRuTranslate.Mods.CalamityMod;
 using CalamityRuTranslate.Mods.Fargowiltas;
 using CalamityRuTranslate.Mods.FargowiltasSouls;
 using CalamityRuTranslate.Mods.InfernumMode;
+using Microsoft.Xna.Framework;
 using MonoMod.RuntimeDetour;
 using ReLogic.Graphics;
 using Terraria;
@@ -24,7 +25,7 @@ public class CalamityRuTranslate : Mod
     internal static CalamityRuTranslate Instance;
     public List<ContentTranslation> Contents;
     public DynamicSpriteFont BossIntroScreensFont;
-    public readonly SetupTranslation[] Mods =
+    public readonly TranslateMod[] Mods =
     {
         new CalamityTranslation(),
         new FargowiltasTranslation(),
@@ -133,8 +134,8 @@ public class CalamityRuTranslate : Mod
 
     public override void PostSetupContent()
     {
-        foreach (SetupTranslation mod in Mods)
-            mod.LoadSetupContentTranslation();
+        foreach (TranslateMod mod in Mods)
+            mod.LoadTranslate();
 
         if (TRuConfig.Instance.WikithisInfo && ModsCall.Wikithis != null && !Main.dedServ)
         {

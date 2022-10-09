@@ -1417,7 +1417,7 @@
     
             MiniOldDukeBuff: {
                 Name: Маленький Старый герцог
-                Description: Вас защищает юный Герцог
+                Description: Вас защищает юный герцог
             }
     
             PerditionBuff: {
@@ -3281,6 +3281,12 @@
                         '''
                         Обращает вас в эмиссара осквернённой богини
                         ModifyTooltips
+                        '''
+                    1:
+                        '''
+                        Для использования следующих эффектов требуется 10 слотов призываемых миньонов
+                        Всё оружие не призывателя преобразуется в мощные вариации призыва
+                        Показатель здоровья ниже 50% усилит эти атаки
                         '''
                     RejectLine: Торговцы отвергнут осквернённую душу, подобную этой
                     MeleeAttack: Превращает атаки ближнего боя в шквал копий
@@ -5615,11 +5621,8 @@
                     $parentVal:
                         '''
                         На голографическом экране мелькают детализированные схемы многочисленных устройств и оружий
-                        Оружие, что я поставляю работникам лаборатории, слабое. Оно едва годится для сражений
-                        Но даже его достаточно для защиты от моих механизмов, что могли выйти из под контроля
-                        Дополнение: если считаете себя сильным, то найдите в верхних слоях атмосферы строение, схожее с подобным в затерянном море
-                        И в конце я узнаю, достойны ли вы сразиться с моими творениями
                         Подбор этого предмета или его нахождение в инвентаре навсегда открывает новые рецепты
+                        Нажмите, чтобы просмотреть содержимое
                         '''
                     MeleeDisplay: "[i:CalamityMod/GaussDagger] {$Mods.CalamityRuTranslate.CalamityMod.Items.GaussDagger.Name}"
                     RangedDisplay: "[i:CalamityMod/Taser] {$Mods.CalamityRuTranslate.CalamityMod.Items.Taser.Name}"
@@ -9922,7 +9925,7 @@
                 Name: Монолит проклятого
                 Tooltip:
                     '''
-                    Да подожжем же небо пылающе-красным
+                    Да подожжём же небо пылающе-красным
                     Монолит имеет два разных режима
                     '''
             }
@@ -10024,7 +10027,7 @@
             
             SacrilegiousSink: {
                 Name: Языческая раковина
-                Tooltip: Считается источником воды, лавы и мёда
+                Tooltip: Считается источником воды, мёда и лавы
             }
             
             SacrilegiousTable: {
@@ -10536,9 +10539,9 @@
                 Name: Картина «Спасибо»
                 Tooltip:
                     '''
-                    Спасибо всей команде, всем кто поддерживает и всем, кто играет с модом, помогая сохранить его активным!
+                    Спасибо всей команде, всем, кто поддерживает, и всем, кто играет с модом, помогая сохранить его активным!
                     Рамок этой картины недостаточно, чтобы вместить всю команду
-                    Держите SHIFT, чтобы отобразить список прошлых и нынешних разработчиков и CTRL, чтобы отобразить список прошлых и нынешних тестеров
+                    Держите SHIFT, чтобы отобразить список прошлых и нынешних разработчиков, и CTRL, чтобы отобразить список прошлых и нынешних тестеров
                     '''
             }
             
@@ -11270,7 +11273,7 @@
                 Name: Зелье Теслы
                 Tooltip:
                     '''
-                    Призывает ауру электричества, электрофицирующую и замедляющую врагов
+                    Призывает ауру электричества, электрифицирующую и замедляющую врагов
                     Урон от ауры снижен на боссах
                     Снижает длительность дебаффа «{$BuffName.Electrified}»
                     '''
@@ -12416,7 +12419,7 @@
                 Tooltip:
                     '''
                     'Добро пожаловать на вечеринку, дружище'
-                    Нажмите <left>, чтобы зарядить пять быстрых плазменных шаров
+                    Нажмите <left>, чтобы зарядить пять быстрых плазменных лучей
                     Нажмите <right>, чтобы запустить три расщепляющих бомбы
                     '''
             }
@@ -13175,9 +13178,9 @@
                 Tooltip:
                     '''
                     Нажмите <left>, чтобы запустить шквал вихрей, устремляющихся к врагам
-                    Нажмите <right>, чтобы создать перед вами гигантский вихрь, направляющийся в сторону мыши
-                    Когда рядом с вихрем находятся враги, он посылает к ним множество быстрых малых вихрей
-                    Спустя время вихрь прекращает стрельбу, и, если вы отпустите <right>, выстреливает в сторону мыши
+                    Нажмите <right>, чтобы создать перед вами гигантский вихрь, направляющийся в сторону курсора
+                    Когда рядом с вихрем находятся враги, он посылает к ним множество быстрых вихрей меньшего размера
+                    Спустя время вихрь прекращает стрельбу и если вы отпустите <right> выстреливает в сторону курсора
                     '''
             }
             
@@ -15339,8 +15342,8 @@
                 Tooltip:
                     '''
                     Стреляет быстрым потоком сверхзаряженных экзо-кристаллов
-                    Долгая зарядка лука перед выстрелом усиливает кристаллы
-                    Достаточно усиленные кристаллы вызывают потоки экзо-молний над любой целью, в которую попадут
+                    Заряженные атака лука перед выстрелом усиливает кристаллы
+                    При достаточном заряде кристаллы вызывают потоки экзо-молний над любой целью, в которую попадут
                     '''
             }
             
@@ -17501,13 +17504,13 @@
                 Name: Маячок установки «Атлас»
                 Tooltip:
                     '''
-                    Вызывает падение ящика с неба, который развёртывается в закрепленную неподвижную пушку
-                    Пушка стреляет в любых потенциальных врагов в пределах досягаемости и переходит в режим перегрузки, если враг находится близко к пушке
-                    Находясь в режиме перегрузки пушка использует три ствола. Пушка нагревается тем сильнее, чем больше она стреляет в режиме перегрузки
-                    Игроки могут нажать <right>, чтобы взять в пушку и использовать её, если у них выбран маячок установки «Атлас»
+                    Сбрасывает с неба ящик, который развёртывается в закреплённую неподвижную пушку
+                    Пушка будет стрелять в любых потенциальных врагов в пределах её досягаемости и перейдёт в режим перегрузки, если враг находится близко к пушке
+                    В режиме перегрузки пушка использует три ствола, которые одновременно стреляют. Чем больше пушка стреляет в режиме перегрузки, тем сильнее она нагревается
+                    Игроки могут нажать <right>, чтобы взять пушку в руку и использовать её, если у них выбран маячок установки «Атлас»
                     Если из пушки стреляют игроки, она автоматически переходит в режим перегрузки
-                    Если пушка игрока перегревается, он вынужден выбросить её. Нажатие <right> позволяет выбросить её самостоятельно
-                    Если пушка игрока выброшена обратно на крепление, она снова закрепляется
+                    Если пушка в руках игрока перегревается, он вынужден выбросить её. Нажатие <right> позволяет выбросить её самостоятельно
+                    Если пушка в руках игрока выброшена обратно на крепление, она вновь закрепляется
                     Её на удивление легко подобрать
                     '''
             }
@@ -17544,7 +17547,7 @@
             
             CadaverousCarrion: {
                 Name: Трупная мертвечина
-                Tooltip: Призывает мерзкую голову старого Герцога на землю
+                Tooltip: Призывает мерзкую голову старого герцога на землю
             }
             
             CalamarisLament: {
@@ -17902,8 +17905,8 @@
                 Tooltip:
                     '''
                     Призывает гуманоидно-гибридную разносчицу чумы под кодовым именем «Вирили», сражающуюся за вас
-                    Вирили требует 3 призываемых миньонов для призыва, также её можно призвать только один раз
-                    Вирили использует множество атак, которые она цикличестки сменяет по таймеру
+                    Вирили требует 3 слота призываемых миньонов для призыва, и её можно призвать только один раз
+                    Вирили использует множество атак, которые она циклически сменяет по таймеру
                     Все атаки распространяют чуму, что и было первоначальной задумкой
                     'На задней стороне есть записка:'
                     'ВНИМАНИЕ: чрезвычайно едкая и заразная. Избегайте прямого контакта'
@@ -19364,11 +19367,18 @@
                 }
                 
                 Magiluminescence: {
-                    Tooltip:
-                        '''
-                        Освещает при ношении
-                        Обеспечивает небольшим количеством света в бездне
-                        '''
+                    Tooltip: {
+                        0:
+                            '''
+                            Увеличивает ускорение и торможение на 25%
+                            Увеличивает скорость передвижения на 5%. Этот бонус распространяется на аксессуары ботинок
+                            '''
+                        1:
+                            '''
+                            Освещает при ношении
+                            Обеспечивает небольшим количеством света в бездне
+                            '''
+                    }
                 }
                 
                 ArcticDivingGear: {
@@ -19394,14 +19404,6 @@
                         скорость регенерации здоровья, защиту, скорость добычи и отбрасывание призывателя
                         Умеренно увеличивает запас воздуха в бездне
                         Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Nightwither.Name}» и «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.HolyFlames.Name}»
-                        '''
-                }
-                
-                Magiluminescence: {
-                    Tooltip:
-                        '''
-                        Увеличивает ускорение и торможение на 25%
-                        Увеличивает скорость передвижения на 5%. This bonus applies to running boot accessories
                         '''
                 }
                 
@@ -21628,7 +21630,7 @@
                     1: Ну ничего себе мотылёк! Для его убийства тебе явно понадобится большая пушка.
                     2: Мне кажется, или твоё оружие становится всё больше и больше?
                     3: Старик оставил старый капризный пистолет на своём смертном одре. Улавливаешь мою мысль?
-                    4: Хах! Ты только п на этот старый ржавый дробовик. Выглядит, словно сбежал из 70-х!
+                    4: Хах! Ты только посмотри на этот старый ржавый дробовик. Выглядит, словно сбежал из 70-х!
                 }
                 
                 Dryad: {
@@ -22225,7 +22227,7 @@
             DesertScourgeHead: Если вы когда-то вглядывались в бескрайние барханы пустынь и наблюдали, как подобно морским волнам колеблются дюны, то вполне вероятно, что это проделки существа, скрывающегося в глубинах.
             CosmicGuardianHead: Межпространственное творение Пожирателя, взятое из его родного измерения, дабы помочь ему в битве. Хотя никто их них даже близко не сравнится с силой его Стражей.
             DevourerofGodsHead: Его невероятное самомнение известно также, как и подавляющая сила повсюду, ведь во время боя он постоянно ею хвастается. Стоит признать, он один из немногих, кто может подтвердить свои заявления.
-            Androomba: Медленно передвигаясь по пустым залам, эти хитроумные устройства неустанно работают ради пустой цели очистки давно заброшенных лабораторий.
+            Androomba: Медленно передвигаясь по пустым залам, эти хитроумные устройства неустанно работают ради пустой цели - очистки давно заброшенных лабораторий.
             RepairUnitCritter: Благодаря этим крохотным машинам, лаборатории до сих пор не рассыпались в пыль. Однако, похоже, они не в состоянии справиться с ржавчиной.
             Draedon: Многоуважаемый учёный собственной персоной. Его ИИ загружен в базу данных, отсекая от разного рода опасностей. Именно поэтому уничтожение его разведывательных тел ни к чему не приведёт.
             Apollo: Механизм, чьи внутренности полны смеси гнева и греческого огня. Совершённые изменения в сравнение с прошлой версией себя позволяют развивать невероятную скорость и манёвренность.
@@ -22342,7 +22344,7 @@
             SupremeCalamitas: Суровая жизнь Серной Ведьмы видна по магии, что она плетёт. Изменчивая и мощная, но в то же время утончённая. Её темперамент, по слухам, настолько вспыльчив, что способен превратить в пепел целое королевство.
             SupremeCataclysm: Несмотря на сохранение гуманоидной формы, ему не ведомы никакие высшие мысли. Он знает только насилие.
             SupremeCatastrophe: Никто не способен превзойти Каламитас в мастерстве некромантии, но и никто не способен по-настоящему воскрешать из мёртвых.
-            AndroombaFriendly: Легко перепрограммирумые, эти роботы могут быть созданы для распространения всего, что вы в них вкладываете, давая им новую цель.
+            AndroombaFriendly: Легко перепрограммируемые, эти роботы могут быть созданы для распространения всего, что вы в них вкладываете, давая им новую цель.
             DILF: На его лице виден как большой возраст, так и великая мудрость. Однажды Архимаг выступил против Тирана Джунглей и поплатился за это. Он продаёт различные ледяные побрякушки, но самые мощные заклинания, конечно же, держит при себе.
             FAP: Никто не знает, откуда она появилась, но никто и не против её присутствия. Она хороший человек, с которым можно выпить. Ну, если только не вывести её из себя.
             SEAHOE: Морской король древней цивилизации, ныне затерянной в песках времени (и пустыни). Дожив до этих дней, он способен дать полезные советы об окружающем вас мире. И ещё ему нравились моллюски.
@@ -22889,10 +22891,6 @@
                 Name: Дешифратор
             }
             
-            MonsterBanner: {
-                Name: "{$MapObject.Banner}"
-            }
-            
             AuricToiletTile: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AuricToilet.Name}"
             }
@@ -22947,10 +22945,6 @@
             
             SeaMinnowJarTile: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.SeaMinnowJar.Name}"
-            }
-            
-            ThaumaticChairTile: {
-                Name: "{$MapObject.Chair}"
             }
             
             TranquilityCandle: {
@@ -23021,22 +23015,6 @@
                 Name: Thank You Painting
             }
             
-            AbyssFountainTile: {
-                Name: "{$MapObject.WaterFountain}"
-            }
-            
-            AstralFountainTile: {
-                Name: "{$MapObject.WaterFountain}"
-            }
-            
-            SulphurousFountainTile: {
-                Name: "{$MapObject.WaterFountain}"
-            }
-            
-            SunkenSeaFountainTile: {
-                Name: "{$MapObject.WaterFountain}"
-            }
-            
             AbyssBathtub: {
                 Name: "{$ItemName.Bathtub}"
             }
@@ -23057,14 +23035,6 @@
                 Name: "{$ItemName.Candle}"
             }
             
-            AbyssChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            AbyssChandelier: {
-                Name: "{$MapObject.Chandelier}"
-            }
-            
             AbyssChest: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AbyssChest.Name}"
                 Container: {
@@ -23076,14 +23046,6 @@
                 Name: Дедушкины часы
             }
             
-            AbyssDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            AbyssDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             AbyssDresser: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AbyssDresser.Name}"
                 Container: {
@@ -23091,28 +23053,8 @@
                 }
             }
             
-            AbyssLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            AbyssLantern: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             AbyssSynth: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AbyssSynth.Name}"
-            }
-            
-            AbyssSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            AbyssSofa: {
-                Name: "{$ItemName.Bench}"
-            }
-            
-            AbyssTable: {
-                Name: "{$ItemName.Table}"
             }
             
             AbyssTorch: {
@@ -23131,10 +23073,6 @@
                 Name: "{$ItemName.Bed}"
             }
             
-            AcidwoodBenchTile: {
-                Name: "{$ItemName.Bench}"
-            }
-            
             AcidwoodBookcaseTile: {
                 Name: "{$ItemName.Bookcase}"
             }
@@ -23145,14 +23083,6 @@
             
             AcidwoodCandleTile: {
                 Name: "{$ItemName.Candle}"
-            }
-            
-            AcidwoodChairTile: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            AcidwoodChandelierTile: {
-                Name: "{$MapObject.Chandelier}"
             }
             
             AcidwoodChestTile: {
@@ -23166,14 +23096,6 @@
                 Name: Дедушкины часы
             }
             
-            AcidwoodDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            AcidwoodDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             AcidwoodDresserTile: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AcidwoodDresser.Name}"
                 Container: {
@@ -23181,24 +23103,8 @@
                 }
             }
             
-            AcidwoodLampTile: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            AcidwoodLanternTile: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             AcidwoodPianoTile: {
                 Name: "{$ItemName.Piano}"
-            }
-            
-            AcidwoodSinkTile: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            AcidwoodTableTile: {
-                Name: "{$ItemName.Table}"
             }
             
             AcidwoodWorkBenchTile: {
@@ -23221,35 +23127,11 @@
                 Name: "{$ItemName.Bookcase}"
             }
             
-            AncientChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            AncientChandelier: {
-                Name: "{$MapObject.Chandelier}"
-            }
-            
-            AncientDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            AncientDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             AncientDresser: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AncientDresser.Name}"
                 Container: {
                     Name: Древний комод
                 }
-            }
-            
-            AncientLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            AncientLantern: {
-                Name: "{$MapObject.Lantern}"
             }
             
             AncientMonolith: {
@@ -23258,18 +23140,6 @@
             
             AncientPipeOrgan: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AncientPipeOrgan.Name}"
-            }
-            
-            AncientSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            AncientSofa: {
-                Name: "{$ItemName.Bench}"
-            }
-            
-            AncientTable: {
-                Name: "{$ItemName.Table}"
             }
             
             AncientWorkBench: {
@@ -23300,27 +23170,11 @@
                 Name: "{$ItemName.Candle}"
             }
             
-            AshenChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            AshenChandelier: {
-                Name: "{$MapObject.Chandelier}"
-            }
-            
             AshenChest: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AshenChest.Name}"
                 Container: {
                     Name: Пепельный сундук
                 }
-            }
-            
-            AshenDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            AshenDoorOpen: {
-                Name: "{$MapObject.Door}"
             }
             
             AshenDresser: {
@@ -23330,32 +23184,12 @@
                 }
             }
             
-            AshenLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            AshenLantern: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             AshenMonolith: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AshenMonolith.Name}"
             }
             
             AshenPipeOrgan: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AshenPipeOrgan.Name}"
-            }
-            
-            AshenSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            AshenSofa: {
-                Name: "{$ItemName.Bench}"
-            }
-            
-            AshenTable: {
-                Name: "{$ItemName.Table}"
             }
             
             AshenWorkBench: {
@@ -23370,10 +23204,6 @@
                 Name: "{$ItemName.Bed}"
             }
             
-            BotanicBench: {
-                Name: "{$ItemName.Bench}"
-            }
-            
             BotanicBookcase: {
                 Name: "{$ItemName.Bookcase}"
             }
@@ -23384,14 +23214,6 @@
             
             BotanicCandle: {
                 Name: "{$ItemName.Candle}"
-            }
-            
-            BotanicChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            BotanicChandelier: {
-                Name: "{$MapObject.Chandelier}"
             }
             
             BotanicChest: {
@@ -23405,14 +23227,6 @@
                 Name: Дедушкины часы
             }
             
-            BotanicDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            BotanicDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             BotanicDresser: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.BotanicDresser.Name}"
                 Container: {
@@ -23420,24 +23234,8 @@
                 }
             }
             
-            BotanicLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            BotanicLantern: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             BotanicPiano: {
                 Name: "{$ItemName.Piano}"
-            }
-            
-            BotanicSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            BotanicTable: {
-                Name: "{$ItemName.Table}"
             }
             
             BotanicWorkBench: {
@@ -23468,14 +23266,6 @@
                 Name: "{$ItemName.Candle}"
             }
             
-            CosmiliteChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            CosmiliteChandelier: {
-                Name: "{$MapObject.Chandelier}"
-            }
-            
             CosmiliteChest: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.CosmiliteChest.Name}"
                 Container: {
@@ -23487,27 +23277,11 @@
                 Name: Дедушкины часы
             }
             
-            CosmiliteDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            CosmiliteDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             CosmiliteDresser: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.CosmiliteDresser.Name}"
                 Container: {
                     Name: Космилитовый комод
                 }
-            }
-            
-            CosmiliteLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            CosmiliteLantern: {
-                Name: "{$MapObject.Lantern}"
             }
             
             CosmilitePiano: {
@@ -23516,18 +23290,6 @@
             
             CosmiliteSconce: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.CosmiliteSconce.Name}"
-            }
-            
-            CosmiliteSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            CosmiliteSofa: {
-                Name: "{$ItemName.Bench}"
-            }
-            
-            CosmiliteTable: {
-                Name: "{$ItemName.Table}"
             }
             
             CosmiliteWorkBench: {
@@ -23542,10 +23304,6 @@
                 Name: "{$ItemName.Bed}"
             }
             
-            EutrophicBench: {
-                Name: "{$ItemName.Bench}"
-            }
-            
             EutrophicBookcase: {
                 Name: "{$ItemName.Bookcase}"
             }
@@ -23556,14 +23314,6 @@
             
             EutrophicCandle: {
                 Name: "{$ItemName.Candle}"
-            }
-            
-            EutrophicChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            EutrophicChandelier: {
-                Name: "{$MapObject.Chandelier}"
             }
             
             EutrophicChest: {
@@ -23577,14 +23327,6 @@
                 Name: Дедушкины часы
             }
             
-            EutrophicDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            EutrophicDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             EutrophicDresser: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.EutrophicDresser.Name}"
                 Container: {
@@ -23592,24 +23334,8 @@
                 }
             }
             
-            EutrophicLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            EutrophicLantern: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             EutrophicPiano: {
                 Name: "{$ItemName.Piano}"
-            }
-            
-            EutrophicSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            EutrophicTable: {
-                Name: "{$ItemName.Table}"
             }
             
             EutrophicWorkBench: {
@@ -23634,14 +23360,6 @@
             
             ExoCandleTile: {
                 Name: "{$ItemName.Candle}"
-            }
-            
-            ExoChairTile: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            ExoChandelierTile: {
-                Name: "{$MapObject.Chandelier}"
             }
             
             ExoChestTile: {
@@ -23682,32 +23400,12 @@
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ExoKeyboard.Name}"
             }
             
-            ExoLampTile: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            ExoLanternTile: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             ExoScreenTile: {
                 Name: Экран
             }
             
             ExoServerTile: {
                 Name: Сервер
-            }
-            
-            ExoSinkTile: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            ExoSofaTile: {
-                Name: "{$ItemName.Bench}"
-            }
-            
-            ExoTableTile: {
-                Name: "{$ItemName.Table}"
             }
             
             ExoTerminalTile: {
@@ -23730,10 +23428,6 @@
                 Name: "{$ItemName.Bed}"
             }
             
-            MonolithBench: {
-                Name: "{$ItemName.Bench}"
-            }
-            
             MonolithBookcase: {
                 Name: "{$ItemName.Bookcase}"
             }
@@ -23744,14 +23438,6 @@
             
             MonolithCandle: {
                 Name: "{$ItemName.Candle}"
-            }
-            
-            MonolithChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            MonolithChandelier: {
-                Name: "{$MapObject.Chandelier}"
             }
             
             MonolithChest: {
@@ -23765,14 +23451,6 @@
                 Name: Дедушкины часы
             }
             
-            MonolithDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            MonolithDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             MonolithDresser: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.MonolithDresser.Name}"
                 Container: {
@@ -23780,24 +23458,8 @@
                 }
             }
             
-            MonolithLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            MonolithLantern: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             MonolithPiano: {
                 Name: "{$ItemName.Piano}"
-            }
-            
-            MonolithSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            MonolithTable: {
-                Name: "{$ItemName.Table}"
             }
             
             MonolithWorkBench: {
@@ -23824,14 +23486,6 @@
                 Name: "{$ItemName.Candle}"
             }
             
-            OtherworldlyChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            OtherworldlyChandelier: {
-                Name: "{$MapObject.Chandelier}"
-            }
-            
             OtherworldlyChest: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.OtherworldlyChest.Name}"
                 Container: {
@@ -23843,14 +23497,6 @@
                 Name: Дедушкины часы
             }
             
-            OtherworldlyDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            OtherworldlyDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             OtherworldlyDresser: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.OtherworldlyDresser.Name}"
                 Container: {
@@ -23858,28 +23504,8 @@
                 }
             }
             
-            OtherworldlyLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            OtherworldlyLantern: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             OtherworldlyPiano: {
                 Name: "{$ItemName.Piano}"
-            }
-            
-            OtherworldlySink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            OtherworldlySofa: {
-                Name: "{$ItemName.Bench}"
-            }
-            
-            OtherworldlyTable: {
-                Name: "{$ItemName.Table}"
             }
             
             OtherworldlyWorkBench: {
@@ -23910,14 +23536,6 @@
                 Name: "{$ItemName.Candle}"
             }
             
-            PlaguedPlateChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            PlaguedPlateChandelier: {
-                Name: "{$MapObject.Chandelier}"
-            }
-            
             PlaguedPlateChest: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.PlaguedPlateChest.Name}"
                 Container: {
@@ -23929,14 +23547,6 @@
                 Name: Дедушкины часы
             }
             
-            PlaguedPlateDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            PlaguedPlateDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             PlaguedPlateDresser: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.PlaguedPlateDresser.Name}"
                 Container: {
@@ -23944,28 +23554,8 @@
                 }
             }
             
-            PlaguedPlateLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            PlaguedPlateLantern: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             PlaguedPlatePiano: {
                 Name: "{$ItemName.Piano}"
-            }
-            
-            PlaguedPlateSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            PlaguedPlateSofa: {
-                Name: "{$ItemName.Bench}"
-            }
-            
-            PlaguedPlateTable: {
-                Name: "{$ItemName.Table}"
             }
             
             PlaguedPlateWorkbench: {
@@ -23980,10 +23570,6 @@
                 Name: "{$ItemName.Bed}"
             }
             
-            ProfanedBench: {
-                Name: "{$ItemName.Bench}"
-            }
-            
             ProfanedBookcase: {
                 Name: "{$ItemName.Bookcase}"
             }
@@ -23994,14 +23580,6 @@
             
             ProfanedCandle: {
                 Name: "{$ItemName.Candle}"
-            }
-            
-            ProfanedChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            ProfanedChandelier: {
-                Name: "{$MapObject.Chandelier}"
             }
             
             ProfanedChest: {
@@ -24015,14 +23593,6 @@
                 Name: Дедушкины часы
             }
             
-            ProfanedDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            ProfanedDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             ProfanedDresser: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.ProfanedDresser.Name}"
                 Container: {
@@ -24030,40 +23600,16 @@
                 }
             }
             
-            ProfanedLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            ProfanedLantern: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             ProfanedPiano: {
                 Name: "{$ItemName.Piano}"
-            }
-            
-            ProfanedSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            ProfanedTable: {
-                Name: "{$ItemName.Table}"
             }
             
             ProfanedWorkbench: {
                 Name: "{$ItemName.WorkBench}"
             }
             
-            LargeRitualCandleTile: {
-                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.LargeRitualCandle.Name}"
-            }
-            
             MonolithOfTheAccursedTile: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.MonolithOfTheAccursed.Name}"
-            }
-            
-            RitualCandleTile: {
-                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.RitualCandle.Name}"
             }
             
             SacrilegiousBathtubTile: {
@@ -24072,10 +23618,6 @@
             
             SacrilegiousBedTile: {
                 Name: "{$ItemName.Bed}"
-            }
-            
-            SacrilegiousBenchTile: {
-                Name: "{$ItemName.Bench}"
             }
             
             SacrilegiousBookcaseTile: {
@@ -24129,10 +23671,6 @@
                 Name: "{$ItemName.Bed}"
             }
             
-            SilvaBench: {
-                Name: "{$ItemName.Bench}"
-            }
-            
             SilvaBookcase: {
                 Name: "{$ItemName.Bookcase}"
             }
@@ -24143,14 +23681,6 @@
             
             SilvaCandle: {
                 Name: "{$ItemName.Candle}"
-            }
-            
-            SilvaChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            SilvaChandelier: {
-                Name: "{$MapObject.Chandelier}"
             }
             
             SilvaChest: {
@@ -24164,14 +23694,6 @@
                 Name: Дедушкины часы
             }
             
-            SilvaDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            SilvaDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             SilvaDresser: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.SilvaDresser.Name}"
                 Container: {
@@ -24179,24 +23701,8 @@
                 }
             }
             
-            SilvaLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            SilvaLantern: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             SilvaPiano: {
                 Name: "{$ItemName.Piano}"
-            }
-            
-            SilvaSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            SilvaTable: {
-                Name: "{$ItemName.Table}"
             }
             
             SilvaWorkBench: {
@@ -24223,14 +23729,6 @@
                 Name: "{$ItemName.Candle}"
             }
             
-            StatigelChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            StatigelChandelier: {
-                Name: "{$MapObject.Chandelier}"
-            }
-            
             StatigelChest: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.StatigelChest.Name}"
                 Container: {
@@ -24242,43 +23740,15 @@
                 Name: Дедушкины часы
             }
             
-            StatigelDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            StatigelDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             StatigelDresser: {
-                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.StatigelSofa.Name}"
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.StatigelDresser.Name}"
                 Container: {
                     Name: Статиджеловый комод
                 }
             }
             
-            StatigelLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            StatigelLantern: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             StatigelPiano: {
                 Name: "{$ItemName.Piano}"
-            }
-            
-            StatigelSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            StatigelSofa: {
-                Name: "{$ItemName.Bench}"
-            }
-            
-            StatigelTable: {
-                Name: "{$ItemName.Table}"
             }
             
             StatigelWorkbench: {
@@ -24305,14 +23775,6 @@
                 Name: "{$ItemName.Candle}"
             }
             
-            StratusChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            StratusChandelier: {
-                Name: "{$MapObject.Chandelier}"
-            }
-            
             StratusChest: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.StratusChest.Name}"
                 Container: {
@@ -24324,14 +23786,6 @@
                 Name: Дедушкины часы
             }
             
-            StratusDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            StratusDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             StratusDresser: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.StratusDresser.Name}"
                 Container: {
@@ -24339,28 +23793,8 @@
                 }
             }
             
-            StratusLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            StratusLantern: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             StratusPiano: {
                 Name: "{$ItemName.Piano}"
-            }
-            
-            StratusSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            StratusSofa: {
-                Name: "{$ItemName.Bench}"
-            }
-            
-            StratusTable: {
-                Name: "{$ItemName.Table}"
             }
             
             StratusWorkbench: {
@@ -24387,14 +23821,6 @@
                 Name: "{$ItemName.Candle}"
             }
             
-            VoidChair: {
-                Name: "{$MapObject.Chair}"
-            }
-            
-            VoidChandelier: {
-                Name: "{$MapObject.Chandelier}"
-            }
-            
             VoidChest: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.VoidChest.Name}"
                 Container: {
@@ -24406,14 +23832,6 @@
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.VoidObelisk.Name}"
             }
             
-            VoidDoorClosed: {
-                Name: "{$MapObject.Door}"
-            }
-            
-            VoidDoorOpen: {
-                Name: "{$MapObject.Door}"
-            }
-            
             VoidDresser: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.VoidDresser.Name}"
                 Container: {
@@ -24421,28 +23839,8 @@
                 }
             }
             
-            VoidLamp: {
-                Name: "{$MapObject.FloorLamp}"
-            }
-            
-            VoidLantern: {
-                Name: "{$MapObject.Lantern}"
-            }
-            
             VoidPiano: {
                 Name: "{$ItemName.Piano}"
-            }
-            
-            VoidSink: {
-                Name: "{$MapObject.Sink}"
-            }
-            
-            VoidSofa: {
-                Name: "{$ItemName.Bench}"
-            }
-            
-            VoidTable: {
-                Name: "{$ItemName.Table}"
             }
             
             VoidWorkbench: {
@@ -24580,6 +23978,7 @@
             12: Трипл!
             13: Дубль!
             14: Банкротство!
+            15: АЙ! ГОРЯЧО!
         }
         
         DifficultyModeSystem: {
@@ -24608,6 +24007,85 @@
                         '''
                 }
             }
+        }
+        
+        BestiaryNotes: {
+            FirstKillText: Выпадает только при первом убийстве
+            BloodMoonText: Выпадает во время кровавой луны
+            MechBossText: Выпадает при первом убийстве последнего механического босса
+            SentinelText: Выпадает при первом убийстве последнего Стража Пожирателя
+            ProvidenceHallowText:
+                '''
+                Выпадает, если Провиденс было призвана в освящении
+                Или если с Провиденс сражались только в ночью
+                '''
+            ProvidenceUnderworldText:
+                '''
+                Выпадает, если Провиденс было призвана в аду
+                Или если с Провиденс сражались только в ночью
+                '''
+            ProvidenceNightText: Выпадает, если с Провиденс сражались только в ночью
+            ProvidenceChallengeText:
+                '''
+                Выпадает, если Провиденс была побеждена только с использованием [i:CalamityMod/ProfanedSoulArtifact] Осквернённого артефакта душ
+                Предмет режима Эксперта
+                '''
+            TrasherText: Выпадает, если скормить мусорщику
+            RevNoMaster: Предмет режима Мести
+            PostKS: Выпадает после победы над Королём слизней
+            PostDS: Выпадает после победы над Пустынным бичом
+            PostEoC: Выпадает после победы над Глазом Ктулху
+            PostCrab: Выпадает после победы над Крабулоном
+            PostEvil1: Выпадает после победы над Мозгом Ктулху
+            PostEvil2: Выпадает после победы над пожирателем миров
+            PostHM: Выпадает после победы над Разумом Улья
+            PostPerfs: Выпадает после победы над Перфораторами
+            PostQB: Выпадает после победы над Королевой пчёл
+            PostDeer: Выпадает после победы над Циклоп-оленем
+            PostSkele: Выпадает после победы над Скелетроном
+            PostSG: Выпадает после победы над богом слизней
+            Hardmode: Выпадает в хардмоде
+            PostQS: Выпадает после победы над Королевой слизней
+            PostCryo: Выпадает после победы над Криогеном
+            PostAS: Выпадает после победы над Акватический бичом
+            PostBrim: Выпадает после победы над Серным элементалём
+            PostDest: Выпадает после победы над Уничтожителем
+            PostTwins: Выпадает после победы над Близнецами
+            PostSP: Выпадает после победы над Скелетроном Праймом
+            Post1Mech: Выпадает после победы над механическим боссом
+            Post3Mechs: Выпадает после победы над всеми тремя механическими боссами
+            PostCal: Выпадает после победы над Каламитас
+            PostPlant: Выпадает после победы над Плантерой
+            PostCalPlant: Выпадает после победы над Каламитас и Плантерой
+            PostLevi: Выпадает после победы над Левиафаном и Анахитой
+            PostAureus: Выпадает после победы над Аструм Ареусом
+            PostGolem: Выпадает после победы над Големом
+            PostPBG: Выпадает после победы над Разносчицей чумы, Голиаф
+            PostEoL: Выпадает после победы над Императрицей света
+            PostFish: Выпадает после победы над Герцогом Рыброном
+            PostRav: Выпадает после победы над Разрушителем
+            PostLC: Выпадает после победы над Культистом-лунатиком
+            PostAD: Выпадает после победы над Аструм Деусом
+            PostML: Выпадает после победы над Лунным лордом
+            PostGuard: Выпадает после победы над Осквернённым стражем
+            PostBirb: Выпадает после победы над Псевдодраконом
+            PostProv: Выпадает после победы над Провиденс
+            PostSig: Выпадает после победы над Сигнусом
+            PostSW: Выпадает после победы над Штормовым ткачом
+            PostCV: Выпадает после победы над Нескончаемой пустотой
+            PostPolter: Выпадает после победы над Полтергастом
+            PostOD: Выпадает после победы над Старым герцогом
+            PostDoG: Выпадает после победы над Пожирателем богов
+            PostYharon: Выпадает после победы над Яроном
+            PostExos: Выпадает после победы над экзо-механизмами
+            PostSCal: Выпадает после победы над Высшей Каламитас
+            PostAEW: Выпадает после победы над Эйдолонским змеем
+            PostClam: Выпадает после победы над гигантским моллюском
+            PostClamHM: Выпадает после победы над гигантским моллюском в хардмоде
+            PostGSS: Выпадает после победы над великой песчаной акулой
+            PostBetsy: Выпадает после победы над Бэтси
+            PostT1AR: Выпадает после победы над первым рангом события «Кислотный дождь»
+            PostT2AR: Выпадает после победы над вторым рангом события «Кислотный дождь»
         }
     }
     
@@ -25105,36 +24583,36 @@
         EtherealCoreText: Вы уже использовали эфирное ядро. Не стоит превозмогать себя
         PhantomHeartText: Вы уже использовали фантомное сердце. Хорошо, что вы больше не можете это использовать
         SlimeGodRun: Бог слизней убегает, чтобы сразиться в другой раз...
-    }
-    
-    GameTips: {
-        SunkenSeaTip: "Глубоко под подземной пустыней покоятся руины разрушенного королевства."
-        ArsenalLabTip: "По всему подземелью можно найти старые лаборатории."
-        PlanetoidTip: "В открытом космосе можно найти планетойды!"
-        AbyssTip: "Глубоко под серным морем можно найти бездну. Её очень трудно исследовать без надлежащего снаряжения для дайвинга."
-        BanditTip: "Бандита больше всего интересуют те, кто накопил достаточно денег, чтобы обокрасть их."
-        RefundTip: "Если вы делали много перековок с гоблином-изобретателем, возможно, стоит нанести визит бандиту."
-        DrunkPrincessTip: "С пьяной принцессой круто тусить. Она может заселиться, если вы носите с собой её любимую водку."
-        SeaKingTip: "Морскому королю нравились моллюски. Он изменил своё мнение, когда один из них его съел."
-        AmidiasBlessingTip: "Морской король может предоставить пузырь, чтобы помочь дышать под водой любому, кто попросит о помощи."
-        ArchmageTip: "Архимага можно освободить, если разрушив замок, в котором он заключен."
-        BrimstoneWitchTip: "Серная ведьма может зачаровывать предметы, наделяя их новыми способностями."
-        TitanHeartTip: "Сердца титанов можно использовать как подношения на маяке, что можно найти в астральной инфекции."
-        NightProvTip: "Призыв богини солнца при свете луны значительно увеличивает её силу и стойкость."
-        DayEoLTip: "Призыв богини фей при свете дня начнёт жестокую и продолжительную битву."
-        BossEnemyTip: "Убийство безобиднейшего из врагов может пробудить гнев гораздо более сильного монстра. Убивайте с осторожностью!"
-        RoDAbyssTip: "Находясь в бездне, используйте жезл раздора на свой страх и риск. Хаотичные следы, оставленные его использованием, могут привлечь внимание нежелательных врагов."
-        TerminusTip: "На дне бездны находится древний артефакт. Используйте его с большой осторожностью."
-        CodebreakerTip: "Дешифратор можно модернизировать, что позволяет расшифровывать новые схемы, находящиеся в различных лабораториях по всему миру."
-        ChargeTip: "Для использования некоторого оружия требуется заряд. Оружие можно заряжать на зарядном устройстве с помощью батареек Дрэйдона."
-        PowerCellTip: "Фабрика по производству силовых ячеек генерирует батарейки Дрэйдона с течением времени."
-        FactoryChargingTip: "Фабрики по производству силовых ячеек и зарядные устройства можно найти в старых лабораториях."
-        StealthTip: "Ношение любой брони разбойника позволяет накапливать скрытность!"
-        SummonNerfTip: "Держа в руках оружие, не относящееся к классу призывателя, урон миньонов снижается."
-        DefenseDamageTip: "Некоторые атаки разрушают вашу защиту, но она быстро восстанавливается."
-        PointBlankTip: "Стрелковое оружие, выпущенное в упор, наносит гораздо больше урона."
-        RevengeanceTip: "Нужен вызов, что сложнее режима Эксперта? Попробуйте режим Мести!"
-        BloodOrbTip: "Кровавые сферы, выпадающие с врагов во время кровавой луны, можн использовать для создания практически любого зелья."
-        KeybindsTip: "Клавиши управления из модов можно изменить в настройках."
+        
+        GameTips: {
+            SunkenSeaTip: Глубоко под подземной пустыней покоятся руины разрушенного королевства.
+            ArsenalLabTip: По всему подземелью можно найти старые лаборатории.
+            PlanetoidTip: В открытом космосе можно найти планетоиды!
+            AbyssTip: Глубоко под серным морем можно найти бездну. Её очень трудно исследовать без надлежащего снаряжения для дайвинга.
+            BanditTip: Бандита больше всего интересуют те, кто накопил достаточно денег, чтобы обокрасть их.
+            RefundTip: Если вы делали много перековок с гоблином-изобретателем возможно, стоит нанести визит бандиту.
+            DrunkPrincessTip: С пьяной принцессой круто тусить. Она может заселиться, если вы носите с собой её любимую водку.
+            SeaKingTip: Морскому королю нравились моллюски. Он изменил своё мнение, когда один из них его съел.
+            AmidiasBlessingTip: Морской король может предоставить пузырь, чтобы помочь дышать под водой любому, кто попросит о помощи.
+            ArchmageTip: Архимага можно освободить, если разрушив замок, в котором он заключён.
+            BrimstoneWitchTip: Серная ведьма может зачаровывать предметы, наделяя их новыми способностями.
+            TitanHeartTip: Сердца титанов можно использовать как подношения на маяке, что можно найти в астральной инфекции.
+            NightProvTip: Призыв богини солнца при свете луны значительно увеличивает её силу и стойкость.
+            DayEoLTip: Призыв богини фей при свете дня начнёт жестокую и продолжительную битву.
+            BossEnemyTip: Убийство безобиднейшего из врагов может пробудить гнев гораздо более сильного монстра. Убивайте с осторожностью!
+            RoDAbyssTip: Находясь в бездне, используйте жезл раздора на свой страх и риск. Хаотичные следы, оставленные его использованием, могут привлечь внимание нежелательных врагов.
+            TerminusTip: На дне бездны находится древний артефакт. Используйте его с большой осторожностью.
+            CodebreakerTip: Дешифратор можно модернизировать, что позволяет расшифровывать новые схемы, находящиеся в различных лабораториях по всему миру.
+            ChargeTip: Для использования некоторого оружия требуется заряд. Оружие можно заряжать на зарядном устройстве с помощью батареек Дрэйдона.
+            PowerCellTip: Фабрика по производству силовых ячеек генерирует батарейки Дрэйдона с течением времени.
+            FactoryChargingTip: Фабрики по производству силовых ячеек и зарядные устройства можно найти в старых лабораториях.
+            StealthTip: Ношение любой брони разбойника позволяет накапливать скрытность!
+            SummonNerfTip: Держа в руках оружие, не относящееся к классу призывателя, урон миньонов снижается.
+            DefenseDamageTip: Некоторые атаки разрушают вашу защиту, но она быстро восстанавливается.
+            PointBlankTip: Стрелковое оружие, выпущенное в упор, наносит гораздо больше урона.
+            RevengeanceTip: Нужен вызов, что сложнее режима Эксперта? Попробуйте режим Мести!
+            BloodOrbTip: Кровавые сферы, выпадающие с врагов во время кровавой луны, можно использовать для создания практически любого зелья.
+            KeybindsTip: Клавиши управления из модов можно изменить в настройках.
+        }
     }
 }

@@ -41,9 +41,7 @@ public class VanillaBuffsTranslation : GlobalBuff
             BuffID.WeaponImbuePoison => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.WeaponImbuePoison.Description"),
             BuffID.IceBarrier => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.IceBarrier.Description"),
             BuffID.ChaosState => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.ChaosState.Description"),
-            BuffID.CursedInferno => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.CursedInferno.Description"),
             BuffID.Warmth => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.Warmth.Description"),
-            BuffID.Invisibility => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.Invisibility.Description"),
             BuffID.Daybreak => Language.GetTextValue("BuffDescription.Daybreak"),
             _ => tip
         };

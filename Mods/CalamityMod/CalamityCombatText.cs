@@ -33,6 +33,7 @@ public class CalamityCombatText : ContentTranslation, ICombatText
                     "Triples!" => LangHelper.GetText("CalamityMod.CombatTexts.12"),
                     "Doubles!" => LangHelper.GetText("CalamityMod.CombatTexts.13"),
                     "Bust!" => LangHelper.GetText("CalamityMod.CombatTexts.14"),
+                    "OUCH! HOT!" => LangHelper.GetText("CalamityMod.CombatTexts.15"),
                     _ => Main.combatText[i].text
                 };
             }

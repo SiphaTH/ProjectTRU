@@ -409,6 +409,38 @@ public class VanillaItemsTranslation : GlobalItem
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.StardustPickaxe.Tooltip"));
             });
         }
+        else if (item.type == ItemID.SolarFlareDrill)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Can mine Uelibloom Ore",
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.SolarFlareDrill.Tooltip"));
+            });
+        }
+        else if (item.type == ItemID.VortexDrill)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Can mine Uelibloom Ore",
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.VortexDrill.Tooltip"));
+            });
+        }
+        else if (item.type == ItemID.NebulaDrill)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Can mine Uelibloom Ore",
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.NebulaDrill.Tooltip"));
+            });
+        }
+        else if (item.type == ItemID.StardustDrill)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Can mine Uelibloom Ore",
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.StardustDrill.Tooltip"));
+            });
+        }
         else if (item.type == ItemID.FalconBlade)
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
@@ -498,6 +530,7 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.FlaskofParty => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FlaskofParty.Tooltip"),
                 ItemID.FlaskofPoison => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FlaskofPoison.Tooltip"),
                 ItemID.MiningHelmet => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MiningHelmet.Tooltip"),
+                ItemID.UltrabrightHelmet => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.UltrabrightHelmet.Tooltip"),
                 ItemID.RodofDiscord => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.RodofDiscord.Tooltip"),
                 ItemID.SuperAbsorbantSponge => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.SuperAbsorbantSponge.Tooltip"),
                 ItemID.CrimsonHeart => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CrimsonHeart.Tooltip"),
@@ -507,13 +540,15 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.FairyBell => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FairyBell.Tooltip"),
                 ItemID.DD2PetGhost => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.DD2PetGhost.Tooltip"),
                 ItemID.WispinaBottle => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.WispinaBottle.Tooltip"),
+                ItemID.PumpkingPetItem => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PumpkingPetItem.Tooltip"),
+                ItemID.GolemPetItem => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.GolemPetItem.Tooltip"),
+                ItemID.FairyQueenPetItem => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FairyQueenPetItem.Tooltip"),
                 ItemID.DivingHelmet => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.DivingHelmet.Tooltip"),
                 ItemID.NeptunesShell => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.NeptunesShell.Tooltip"),
                 ItemID.MoonShell => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MoonShell.Tooltip"),
                 ItemID.TitanGlove => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TitanGlove.Tooltip"),
                 ItemID.YoyoBag => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.YoyoBag.Tooltip"),
                 ItemID.YoYoGlove => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.YoYoGlove.Tooltip"),
-                ItemID.InvisibilityPotion => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.InvisibilityPotion.Tooltip"),
                 ItemID.ArcheryPotion => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.ArcheryPotion.Tooltip"),
                 ItemID.SwiftnessPotion => Language.GetTextValue("ItemTooltip.SwiftnessPotion").Replace("25", "15"),
                 ItemID.EndurancePotion => Language.GetTextValue("ItemTooltip.EndurancePotion").Replace("10", "5"),
@@ -577,7 +612,7 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.ArmorBracing => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.ArmorBracing.Tooltip"),
                 ItemID.ArcaneFlower => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.ArcaneFlower.Tooltip"),
                 ItemID.MagnetFlower => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MagnetFlower.Tooltip"),
-                ItemID.Magiluminescence => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Magiluminescence.Tooltip"),
+                ItemID.Magiluminescence => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Magiluminescence.Tooltip.0"),
                 ItemID.EmpressFlightBooster => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.EmpressFlightBooster.Tooltip.0"),
                 ItemID.MagicQuiver => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MagicQuiver.Tooltip"),
                 ItemID.MoltenQuiver => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MoltenQuiver.Tooltip.0"),
@@ -645,6 +680,7 @@ public class VanillaItemsTranslation : GlobalItem
             {
                 ItemID.FireGauntlet => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.FireGauntlet.Tooltip.1"),
                 ItemID.JellyfishDivingGear => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.JellyfishDivingGear.Tooltip"),
+                ItemID.Magiluminescence => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Magiluminescence.Tooltip.1"),
                 ItemID.ArcticDivingGear => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.ArcticDivingGear.Tooltip"),
                 ItemID.SuspiciousLookingTentacle => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.SuspiciousLookingTentacle.Tooltip"),
                 ItemID.PowerGlove => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PowerGlove.Tooltip"),
@@ -737,6 +773,10 @@ public class VanillaItemsTranslation : GlobalItem
             if (player.armor[0].type == ItemID.SpectreHood && player.armor[1].type == ItemID.SpectreRobe && player.armor[2].type == ItemID.SpectrePants)
             {
                 tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Vanilla.SpectreHealing");
+            }
+            if (player.armor[0].type == ItemID.MiningHelmet || player.armor[0].type == ItemID.UltrabrightHelmet && player.armor[1].type == ItemID.MiningShirt && player.armor[2].type == ItemID.MiningPants)
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Vanilla.Mining");
             }
 
             switch (item.type)

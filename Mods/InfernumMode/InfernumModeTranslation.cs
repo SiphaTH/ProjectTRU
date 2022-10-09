@@ -4,11 +4,10 @@ using CalamityRuTranslate.Core;
 
 namespace CalamityRuTranslate.Mods.InfernumMode;
 
-public class InfernumModeTranslation : SetupTranslation
+public class InfernumModeTranslation : TranslateMod
 {
-    public override string InternalName => "InfernumMode";
-    public override Version ExpectedVersion => new();
-    public override bool CheckModVersion => false;
+    public override string InternalModName => "InfernumMode";
+    public override Version ExpectedVersion => new(1, 7, 7);
 
     public InfernumModeTranslation()
     {

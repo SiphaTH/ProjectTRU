@@ -4,10 +4,11 @@ using CalamityRuTranslate.Core;
 
 namespace CalamityRuTranslate.Mods.CalamityMod;
 
-public class CalamityTranslation : SetupTranslation
+public class CalamityTranslation : TranslateMod
 {
-    public override string InternalName => "CalamityMod";
-    public override Version ExpectedVersion => new(2, 0, 1, 1);
+    public override string InternalModName => "CalamityMod";
+    public override Version ExpectedVersion => new(2, 0, 1, 2);
+    
     public CalamityTranslation()
     {
         IsBuffsEndabled = true;

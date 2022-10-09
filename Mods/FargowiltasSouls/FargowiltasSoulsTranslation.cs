@@ -4,9 +4,9 @@ using CalamityRuTranslate.Core;
 
 namespace CalamityRuTranslate.Mods.FargowiltasSouls;
 
-public class FargowiltasSoulsTranslation : SetupTranslation
+public class FargowiltasSoulsTranslation : TranslateMod
 {
-    public override string InternalName => "FargowiltasSouls";
+    public override string InternalModName => "FargowiltasSouls";
     public override Version ExpectedVersion => new(1, 4, 0, 8);
 
     public FargowiltasSoulsTranslation()

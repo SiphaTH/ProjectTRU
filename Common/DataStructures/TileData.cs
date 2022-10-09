@@ -8,23 +8,23 @@ public readonly struct TileData
     public string MapEntryName { get; }
     public string TranslationKey { get; }
     public Color Color { get; }
-    public bool ContainerName { get; }
+    public bool HasContainerName { get; }
 
-    public TileData(string id, string mapEntryName, Color color, string translationKey, bool containerName = false)
+    public TileData(string id, string mapEntryName, Color color, string translationKey, bool hasContainerName = false)
     {
         Id = id;
         MapEntryName = mapEntryName;
         TranslationKey = translationKey;
         Color = color;
-        ContainerName = containerName;
+        HasContainerName = hasContainerName;
     }
 
-    public TileData(string id, string mapEntryName, Color color, bool containerName = false)
+    public TileData(string id, string mapEntryName, Color color, bool hasContainerName = false)
     {
         Id = id;
         MapEntryName = mapEntryName;
         TranslationKey = id;
         Color = color;
-        ContainerName = containerName;
+        HasContainerName = hasContainerName;
     }
 }

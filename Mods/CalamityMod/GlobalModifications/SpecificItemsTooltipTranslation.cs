@@ -89,40 +89,48 @@ public class SpecificItemsTooltipTranslation : GlobalItem
                 tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ElysianAegis.Tooltip.5", ModsCall.AegisHotKey);
             });
         }
-        else if (item.type == ModContent.ItemType<Nanotech>())
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip7", tooltip =>
-            {
-                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.Nanotech.Tooltip.7", tooltip.Text.Split(' ')[3]);
-            });
-        }
-        else if (item.type == ModContent.ItemType<RaidersTalisman>())
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
-            {
-                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.RaidersTalisman.Tooltip.3", tooltip.Text.Split(' ')[3]);
-            });
-        }
         else if (item.type == ModContent.ItemType<ProfanedSoulCrystal>())
         {
-            if (!ModsCall.DownedSCal || !ModsCall.DownedExoMechs)
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "Tooltip1" && l.Text == "The soul within this crystal has been defiled by overwhelming energy waves from dangerous mechanations", tooltip =>
             {
-                ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "Tooltip1" && l.Text == "[c/f05a5a:The soul within this crystal has been defiled by overwhelming energy waves from dangerous mechanations]\nMerchants will reject a defiled soul such as this.", tooltip =>
-                {
-                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.NoDownedCondition.1");
-                });
-                ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "Tooltip1" && l.Text == "[c/f05a5a:The soul within this crystal has been defiled by the powerful magic of a supreme witch]\nMerchants will reject a defiled soul such as this.", tooltip =>
-                {
-                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.NoDownedCondition.2");
-                });
-            }
-            else
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.NoDownedCondition.1");
+            });
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "Tooltip1" && l.Text == "The soul within this crystal has been defiled by the powerful magic of a supreme witch", tooltip =>
             {
-                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
-                {
-                    tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.1", (int)(100f * Main.player[Main.myPlayer].manaCost));
-                });
-            }
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.NoDownedCondition.2");
+            });
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Name == "Tooltip1" && l.Text == "Requires 10 minion slots to use in order to grant the following effects\nAll non-summon weapons are converted into powerful summon variations\nFalling below 50% life will empower these attacks", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.1");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RejectLine", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.RejectLine");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MeleeAttack", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.MeleeAttack");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MageAttack", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.MageAttack", (int)(100f * Main.player[Main.myPlayer].manaCost));
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RangedAttack", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.RangedAttack");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RogueAttack", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.RogueAttack");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RemainingTip", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.RemainingTip");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:PurityTip", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedSoulCrystal.Tooltip.PurityTip");
+            });
         }
         else if (item.type == ModContent.ItemType<SandCloak>())
         {
@@ -486,6 +494,30 @@ public class SpecificItemsTooltipTranslation : GlobalItem
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicHell.Tooltip.Unlocked");
                 }
             });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MeleeDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicHell.Tooltip.MeleeDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RangedDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicHell.Tooltip.RangedDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MageDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicHell.Tooltip.MageDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:SummonDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicHell.Tooltip.SummonDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RogueDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicHell.Tooltip.RogueDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:CodeDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicHell.Tooltip.CodeDisplay");
+            });
         }
         else if (item.type == ModContent.ItemType<EncryptedSchematicIce>())
         {
@@ -495,6 +527,30 @@ public class SpecificItemsTooltipTranslation : GlobalItem
                 {
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicIce.Tooltip.Unlocked");
                 }
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MeleeDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicIce.Tooltip.MeleeDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RangedDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicIce.Tooltip.RangedDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MageDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicIce.Tooltip.MageDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:SummonDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicIce.Tooltip.SummonDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RogueDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicIce.Tooltip.RogueDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:CodeDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicIce.Tooltip.CodeDisplay");
             });
         }
         else if (item.type == ModContent.ItemType<EncryptedSchematicJungle>())
@@ -506,6 +562,30 @@ public class SpecificItemsTooltipTranslation : GlobalItem
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicJungle.Tooltip.Unlocked");
                 }
             });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MeleeDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicJungle.Tooltip.MeleeDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RangedDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicJungle.Tooltip.RangedDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MageDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicJungle.Tooltip.MageDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:SummonDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicJungle.Tooltip.SummonDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RogueDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicJungle.Tooltip.RogueDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:CodeDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicJungle.Tooltip.CodeDisplay");
+            });
         }
         else if (item.type == ModContent.ItemType<EncryptedSchematicPlanetoid>())
         {
@@ -515,6 +595,57 @@ public class SpecificItemsTooltipTranslation : GlobalItem
                 {
                     tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicPlanetoid.Tooltip.Unlocked");
                 }
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MeleeDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicPlanetoid.Tooltip.MeleeDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RangedDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicPlanetoid.Tooltip.RangedDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MageDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicPlanetoid.Tooltip.MageDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:SummonDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicPlanetoid.Tooltip.SummonDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RogueDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicPlanetoid.Tooltip.RogueDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:CodeDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicPlanetoid.Tooltip.CodeDisplay");
+            });
+        }
+        else if (item.type == ModContent.ItemType<EncryptedSchematicSunkenSea>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MeleeDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicSunkenSea.Tooltip.MeleeDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RangedDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicSunkenSea.Tooltip.RangedDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MageDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicSunkenSea.Tooltip.MageDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:SummonDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicSunkenSea.Tooltip.SummonDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RogueDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicSunkenSea.Tooltip.RogueDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:CodeDisplay", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicSunkenSea.Tooltip.CodeDisplay");
             });
         }
         
@@ -545,6 +676,81 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         {
             tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.TooltipTags.CalamityDev");
             tooltip.OverrideColor = new Color(255, 0, 255);
+        });
+        ItemHelper.TranslateTooltip(item, tooltips, "BestiaryNotes", tooltip =>
+        {
+            tooltip.Text = tooltip.Text switch
+            {
+                "Drops only on the first kill" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.FirstKillText"),
+                "Drops during the Blood Moon" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.BloodMoonText"),
+                "Drops on the first kill of the final Mechanical Boss" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.MechBossText"),
+                "Drops on the first kill of the final Sentinel of the Devourer" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.SentinelText"),
+                "Drops if Providence was summoned in the Hallow\nor if Providence is only attacked during nighttime" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.ProvidenceHallowText"),
+                "Drops if Providence was summoned in the Underworld\nor if Providence is only attacked during nighttime" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.ProvidenceUnderworldText"),
+                "Drops if Providence is only attacked during nighttime" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.ProvidenceNightText"),
+                "Drops if fed to a Trasher" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.TrasherText"),
+                "This is a Revengeance Mode drop rate" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.RevNoMaster"),
+                "Drops after defeating King Slime" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostKS"),
+                "Drops after defeating the Desert Scourge" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostDS"),
+                "Drops after defeating the Eye of Cthulhu" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostEoC"),
+                "Drops after defeating Crabulon" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostCrab"),
+                "Drops after defeating the Brain of Cthulhu" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostEvil1"),
+                "Drops after defeating the Eater of Worlds" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostEvil2"),
+                "Drops after defeating the Hive Mind" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostHM"),
+                "Drops after defeating the Perforators" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostPerfs"),
+                "Drops after defeating the Queen Bee" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostQB"),
+                "Drops after defeating Deerclops" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostDeer"),
+                "Drops after defeating Skeletron" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostSkele"),
+                "Drops after defeating the Slime God" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostSG"),
+                "Drops in Hardmode" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.Hardmode"),
+                "Drops after defeating Queen Slime" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostQS"),
+                "Drops after defeating Cryogen" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostCryo"),
+                "Drops after defeating the Aquatic Scourge" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostAS"),
+                "Drops after defeating the Brimstone Elemental" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostBrim"),
+                "Drops after defeating the Destroyer" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostDest"),
+                "Drops after defeating the Twins" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostTwins"),
+                "Drops after defeating Skeletron Prime" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostSP"),
+                "Drops after defeating a Mechanical Boss" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.Post1Mech"),
+                "Drops after defeating all three Mechanical Bosses" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.Post3Mechs"),
+                "Drops after defeating Calamitas" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostCal"),
+                "Drops after defeating Plantera" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostPlant"),
+                "Drops after defeating Calamitas or Plantera" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostCalPlant"),
+                "Drops after defeating the Leviathan and Anahita" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostLevi"),
+                "Drops after defeating Astrum Aureus" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostAureus"),
+                "Drops after defeating Golem" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostGolem"),
+                "Drops after defeating the Plaguebringer Goliath" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostPBG"),
+                "Drops after defeating the Empress of Light" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostEoL"),
+                "Drops after defeating Duke Fishron" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostFish"),
+                "Drops after defeating the Ravager" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostRav"),
+                "Drops after defeating the Lunatic Cultist" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostLC"),
+                "Drops after defeating Astrum Deus" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostAD"),
+                "Drops after defeating the Moon Lord" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostML"),
+                "Drops after defeating the Profaned Guardian" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostGuard"),
+                "Drops after defeating the Dragonfolly" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostBirb"),
+                "Drops after defeating Providence" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostProv"),
+                "Drops after defeating Signus" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostSig"),
+                "Drops after defeating the Storm Weaver" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostSW"),
+                "Drops after defeating the Ceaseless Void" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostCV"),
+                "Drops after defeating the Polterghast" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostPolter"),
+                "Drops after defeating the Old Duke" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostOD"),
+                "Drops after defeating the Devourer of Gods" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostDoG"),
+                "Drops after defeating Yharon" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostYharon"),
+                "Drops after defeating the Exo Mechs" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostExos"),
+                "Drops after defeating Supreme Calamitas" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostSCal"),
+                "Drops after defeating the Adult Eidolon Wyrm" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostAEW"),
+                "Drops after defeating the Giant Clam" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostClam"),
+                "Drops after defeating the Giant Clam in Hardmode" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostClamHM"),
+                "Drops after defeating the Great Sand Shark" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostGSS"),
+                "Drops after defeating Betsy" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostBetsy"),
+                "Drops after defeating the first tier of Acid Rain" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostT1AR"),
+                "Drops after defeating the second tier of Acid Rain" => LangHelper.GetTextValue("CalamityMod.BestiaryNotes.PostT2AR"),
+                _ => tooltip.Text
+            };
+
+            if (tooltip.Text == $"Drops if Providence was defeated only with the [i:{ModContent.ItemType<ProfanedSoulArtifact>()}] Profaned Soul Artifact\nThis is an Expert Mode drop rate")
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.BestiaryNotes.ProvidenceChallengeText");
+            }
         });
         
         if (ModsCall.Fargo != null)
