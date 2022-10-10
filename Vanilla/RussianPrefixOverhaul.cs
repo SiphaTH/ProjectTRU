@@ -387,6 +387,7 @@ internal static class RussianPrefixOverhaul
 		ItemID.ScytheWhip,
 		ItemID.MaceWhip,
 		ItemID.Mace,
+		ItemID.TheMeatball,
 	};
 
 	//Средний
