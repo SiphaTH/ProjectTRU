@@ -112,7 +112,6 @@ public class MetersTranslation : GlobalItem
                     .Replace("Life Lost Per Tick at Zero Breath", "Потеря здоровья за тик при нулевом дыхании")
                     .Replace("Other Abyss stats are only displayed while in the Abyss", "Другие характеристики бездны отображаются только во время нахождения в бездне")
                     .Replace("sec", "сек");
-
             });
         }
     }
