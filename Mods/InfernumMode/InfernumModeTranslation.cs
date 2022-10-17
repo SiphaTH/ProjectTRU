@@ -7,7 +7,8 @@ namespace CalamityRuTranslate.Mods.InfernumMode;
 public class InfernumModeTranslation : TranslateMod
 {
     public override string InternalModName => "InfernumMode";
-    public override Version ExpectedVersion => new(1, 7, 9);
+    public override Version ExpectedVersion => new();
+    public override bool ShouldCheckModVersion => false;
 
     public InfernumModeTranslation()
     {

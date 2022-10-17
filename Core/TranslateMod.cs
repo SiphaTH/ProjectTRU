@@ -11,6 +11,7 @@ public abstract class TranslateMod : ILoadable
 {
     public abstract string InternalModName { get; }
     public abstract Version ExpectedVersion { get; }
+    public virtual bool ShouldCheckModVersion => true;
     
     protected bool IsBuffsEndabled;
     protected bool IsItemsEnabled;
@@ -67,7 +68,7 @@ public abstract class TranslateMod : ILoadable
         if (!TranslationHelper.IsRussianLanguage)
             return;
         
-        if (ModLoader.TryGetMod(InternalModName, out Mod modInstance) && modInstance.Version != ExpectedVersion)
+        if (ModLoader.TryGetMod(InternalModName, out Mod modInstance) && modInstance.Version != ExpectedVersion && ShouldCheckModVersion)
             throw new ModVersionException(_modNameException, modInstance.Version, ExpectedVersion, _outdatedType);
     }
 
