@@ -238,7 +238,7 @@
 #            
 #            DreamlikeCharisma: {
 #                Name: Сказочная харизма
-#                Description: Урон увеличивается, и ещё больше увеличивается при максимальном запасе маны
+#                Description: Урон увеличивается, и ещё больше увеличивается при превышении 100 единиц маны
 #            }
 #            
 #            DuckHuntBirdPetBuff: {
@@ -279,6 +279,40 @@
 #            EyeOfEuthymiaBuff: {
 #                Name: Око эвтюмии
 #                Description: С вами глаз молнии
+#            }
+#            
+#            EverlastingGunpowderAttackCooldown: {
+#                Name: Gunpowder Cooldown
+#                Description: ""
+#            }
+#            
+#            EverlastingGunpowderCooldown: {
+#                Name: Gunpowder Cooldown
+#                Description: ""
+#            }
+#            
+#            EverlastingGunpowderLoaded: {
+#                Name: Everlasting Gunpowder Loaded
+#                Description:
+#                    '''
+#                    The Everlasting Pickaxe has gained new attacking abilities
+#                    Damage is increased by 80%
+#                    '''
+#            }
+#            
+#            EverlastingGunpowderMiningCooldown: {
+#                Name: Gunpowder Cooldown
+#                Description: ""
+#            }
+#            
+#            EverlastingGunpowderMiningTrigger: {
+#                Name: Gunpowder Cooldown
+#                Description: ""
+#            }
+#            
+#            GunpowderSwapCooldown: {
+#                Name: Gunpowder Cooldown
+#                Description: ""
 #            }
 #            
 #            FerryPetBuff: {
@@ -1893,6 +1927,35 @@
 #                    '''
 #            }
 #            
+#            EverlastingPickaxe: {
+#                Name: The Everlasting Pickaxe
+#                Tooltip:
+#                    '''
+#                    Right click to place a dusting of [c/82D1D5:Everlasting Gunpowder] on yourself, which lasts for 6 seconds (20 second cooldown)
+#                    Swinging the pickaxe near the [c/82D1D5:Everlasting Gunpowder] causes consecutive explosions towards your cursor, destroying tiles
+#                    Press the Weapon Action Key to load [c/82D1D5:Everlasting Gunpowder] into the pickaxe
+#                    When [c/82D1D5:Everlasting Gunpowder] is loaded, mining is disabled but attacking capabilities are extended and damage is increased by 80%
+#                    Attacks swing in an alternating arc, firing a portion of [c/82D1D5:Everlasting Gunpowder] towards the cursor (4 second cooldown)
+#                    Once the [c/82D1D5:Everlasting Gunpowder] makes contact with an enemy, it will detonate multiple times before disappearing
+#                    If the [c/82D1D5:Everlasting Gunpowder] lands on a tile, it will explode once and then disappear
+#                    Pressing the Weapon Action Key when [c/82D1D5:Everlasting Gunpowder] is loaded will revert to the original state
+#                    '''
+#            }
+#            
+#            ElCapitansHardware: {
+#                Name: El Capitan's Hardware
+#                Tooltip:
+#                    '''
+#                    Attacks with this weapon pierce foes and bounce off walls up to 4 times
+#                    Striking foes charges the [??? Gauge] (Critical strikes grant more charge)
+#                    Once the [??? Gauge] is above 50%, right-click to consume the [??? Gauge], swapping weapons and firing a [Gyro Disk]
+#                    The [Gyro Disk] targets and attacks up to 3 nearby foes, and can be moved by right-clicking
+#                    After 10 seconds, the [Gyro Disk] disappears and the [??? Gauge] can gain energy again
+#                    If the [??? Gauge] is higher than 50% on activation, the [Gyro Disk] gains bonus damage proportional to the amount consumed
+#                    'GAME RIGHTS?!'
+#                    '''
+#            }
+#            
 #            EternalStar: {
 #                Name: Вечная звезда
 #                Tooltip:
@@ -3086,7 +3149,11 @@
 #            
 #            VagrantBossBag: {
 #                Name: Treasure Bag (Vagrant of Space and Time)
-#                Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+#                Tooltip:
+#                    '''
+#                    Currently unobtainable
+#                    {$CommonItemTooltip.RightClickToOpen}
+#                    '''
 #            }
 #            
 #            WarriorBossBag: {
@@ -4028,6 +4095,15 @@
 #                    '''
 #            }
 #            
+#            EssenceOfTheAbyss: {
+#                Name: Essence of the Abyss
+#                Tooltip:
+#                    '''
+#                    A gift from your Starfarer
+#                    Utilized in the creation of 'The Everlasting Pickaxe'
+#                    '''
+#            }
+#            
 #            StarfarerEssence: {
 #                Name: Эссенция Астры
 #                Tooltip:
@@ -4574,15 +4650,6 @@
 #                    [c/9C3B3B:Эгида древних]
 #                    При использовании Сверхновой накладывает на вас баффы «{$BuffName.Rage}», «{$BuffName.Wrath}», «{$BuffName.Titan}» и «{$BuffName.Endurance}»
 #                    Длительность баффов 12 секунд
-#                    '''
-#            }
-#            
-#            CalamitousPrism: {
-#                Name: Бедственная призма
-#                Tooltip:
-#                    '''
-#                    [c/FF8C6D:Уникальная звёздная призма]
-#                    Ничего не делает
 #                    '''
 #            }
 #            
