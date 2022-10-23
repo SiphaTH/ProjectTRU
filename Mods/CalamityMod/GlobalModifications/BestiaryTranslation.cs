@@ -261,12 +261,6 @@ public class BestiaryTranslation : GlobalNPC
             bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.Trilobite")));
         }
         
-        if (npc.type == ModContent.NPCType<WaterLeech>())
-        {
-            bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
-            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.WaterLeech")));
-        }
-        
         if (npc.type == ModContent.NPCType<AdultEidolonWyrmHead>())
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);

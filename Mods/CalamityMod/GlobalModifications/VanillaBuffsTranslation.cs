@@ -25,9 +25,6 @@ public class VanillaBuffsTranslation : GlobalBuff
             BuffID.NebulaUpDmg1 => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.NebulaUpDmg1.Description"),
             BuffID.NebulaUpDmg2 => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.NebulaUpDmg2.Description"),
             BuffID.NebulaUpDmg3 => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.NebulaUpDmg3.Description"),
-            BuffID.BeetleMight1 => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.BeetleMight1.Description"),
-            BuffID.BeetleMight2 => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.BeetleMight2.Description"),
-            BuffID.BeetleMight3 => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.BeetleMight3.Description"),
             BuffID.BeetleEndurance1 => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.BeetleEndurance1.Description"),
             BuffID.BeetleEndurance2 => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.BeetleEndurance2.Description"),
             BuffID.BeetleEndurance3 => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.BeetleEndurance3.Description"),
@@ -43,6 +40,9 @@ public class VanillaBuffsTranslation : GlobalBuff
             BuffID.ChaosState => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.ChaosState.Description"),
             BuffID.Warmth => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.Warmth.Description"),
             BuffID.Daybreak => Language.GetTextValue("BuffDescription.Daybreak"),
+            BuffID.WellFed => Language.GetTextValue("BuffDescription.WellFed"),
+            BuffID.WellFed2 => Language.GetTextValue("BuffDescription.WellFed2"),
+            BuffID.WellFed3 => Language.GetTextValue("BuffDescription.WellFed3"),
             _ => tip
         };
     }

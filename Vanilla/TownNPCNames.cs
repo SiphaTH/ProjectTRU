@@ -94,6 +94,7 @@ public class TownNpcNames : GlobalNPC
         {"Bear", "Бир"},
         {"Felix", "Феликс"},
         {"Katsafaros", "Катсафарос"},
+        {"Kiriku", "Кирику"},
     };
 
     public override bool IsLoadingEnabled(Mod mod)

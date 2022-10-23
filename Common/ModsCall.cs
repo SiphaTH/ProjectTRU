@@ -32,7 +32,6 @@ internal static class ModsCall
     internal static string EternityDiscoHex => Eternity.DisoHex;
     internal static string AngelicAllianceHotKey => CalamityKeybinds.AngelicAllianceHotKey.TooltipHotkeyString();
     internal static string GodSlayerDashHotKey => CalamityKeybinds.GodSlayerDashHotKey.TooltipHotkeyString();
-    internal static string ExoChairSpeedupHotkey => CalamityKeybinds.ExoChairSpeedupHotkey.TooltipHotkeyString();
     internal static string ExoChairSlowdownHotkey => CalamityKeybinds.ExoChairSlowdownHotkey.TooltipHotkeyString();
     internal static bool EarlyHardmodeProgressionRework => CalamityConfig.Instance.EarlyHardmodeProgressionRework;
 }

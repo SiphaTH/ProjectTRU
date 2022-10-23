@@ -10,7 +10,6 @@ using CalamityRuTranslate.Mods.CalamityMod;
 using CalamityRuTranslate.Mods.Fargowiltas;
 using CalamityRuTranslate.Mods.FargowiltasSouls;
 using CalamityRuTranslate.Mods.InfernumMode;
-using Microsoft.Xna.Framework;
 using MonoMod.RuntimeDetour;
 using ReLogic.Graphics;
 using Terraria;

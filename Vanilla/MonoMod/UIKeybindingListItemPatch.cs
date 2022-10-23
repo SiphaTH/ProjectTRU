@@ -39,7 +39,6 @@ public class UIKeybindingListItemPatch : ContentTranslation, ILoadableContent
             "CalamityMod: Booster Dash" => "CalamityMod: Усилитель рывка",
             "CalamityMod: Angelic Alliance Blessing" => "CalamityMod: Божественность альянса ангелов",
             "CalamityMod: God Slayer Dash" => "CalamityMod: Рывок богоубийцы",
-            "CalamityMod: Exo Chair Speed Up" => "CalamityMod: Ускорение экзо-бокса",
             "CalamityMod: Exo Chair Slow Down" => "CalamityMod: Замедление экзо-бокса",
             "Fargowiltas: Quick Recall/Mirror" => "Fargowiltas: Быстрое зелье возврата/зеркало",
             "Fargowiltas: Quick Rod of Discord" => "Fargowiltas: Быстрый жезл раздора",

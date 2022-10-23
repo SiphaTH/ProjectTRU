@@ -195,11 +195,6 @@ public class SpecificItemsTooltipTranslation : GlobalItem
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ExoThrone.Tooltip.1",
-                    ModsCall.ExoChairSpeedupHotkey);
-            });
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
-            {
-                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ExoThrone.Tooltip.2",
                     ModsCall.ExoChairSlowdownHotkey);
             });
         }
@@ -535,6 +530,10 @@ public class SpecificItemsTooltipTranslation : GlobalItem
             ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RangedDisplay", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicIce.Tooltip.RangedDisplay");
+            });
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:RangedDisplay2", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.EncryptedSchematicIce.Tooltip.RangedDisplay2");
             });
             ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:MageDisplay", tooltip =>
             {
