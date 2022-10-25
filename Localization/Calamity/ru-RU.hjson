@@ -411,7 +411,7 @@
             }
     
             BrimlingBuff: {
-                Name: Пепельничок
+                Name: Серняш
                 Description: Защищай её или страдай в агонии
             }
     
@@ -1221,8 +1221,8 @@
             }
     
             Corroslime: {
-                Name: Искажённый слизень
-                Description: Вас защищает искажённый слизень
+                Name: Порчелизень
+                Description: Вас защищает порчелизень
             }
     
             CorvidHarbringerBuff: {
@@ -1246,8 +1246,8 @@
             }
     
             Crimslime: {
-                Name: Багряный слизень
-                Description: Вас защищает багряный слизень
+                Name: Багролизень
+                Description: Вас защищает багролизень
             }
     
             DaedalusGolemBuff: {
@@ -1301,7 +1301,7 @@
             }
             
             EntropysVigilBuff: {
-                Name: Бдительность разложения
+                Name: Охранник энтропии
                 Description: Вас защищают некромантические клоны с неослабевающей бдительностью
             }
             
@@ -1446,7 +1446,7 @@
             }
     
             PoleWarperBuff: {
-                Name: Деформатор полюса
+                Name: Искажатель полюса
                 Description: Чувственные магниты притягиваются к вам
             }
     
@@ -1469,7 +1469,7 @@
             }
     
             ResurrectionButterflyBuff: {
-                Name: Бабочка воскрешения
+                Name: Бабочка воскресения
                 Description: Спи под цветущей вишней, красно-белая бабочка
             }
     
@@ -17596,8 +17596,8 @@
             }
             
             CorroslimeStaff: {
-                Name: Посох искажённого слизня
-                Tooltip: Призывает искажённого слизня, сражающегося за вас
+                Name: Посох порчелизня
+                Tooltip: Призывает порчелизня, сражающегося за вас
             }
             
             CorvidHarbringerStaff: {
@@ -17642,8 +17642,8 @@
             }
             
             CrimslimeStaff: {
-                Name: Посох багряного слизня
-                Tooltip: Призывает багряного слизня, сражающегося за вас
+                Name: Посох багролизня
+                Tooltip: Призывает багролизня, сражающегося за вас
             }
             
             CryogenicStaff: {
@@ -21174,7 +21174,7 @@
             StellarCulex.Name: Звёздный москит
             Twinkler.Name: Мерцатель
             AstrumAureus.Name: Аструм Ареус
-            AureusSpawn.Name: Отродье Ареуса
+            AureusSpawn.Name: Отпрыск Ареуса
             AstrumDeusBody.Name: Аструм Деус
             AstrumDeusHead.Name: Аструм Деус
             AstrumDeusTail.Name: Аструм Деус
@@ -21351,10 +21351,10 @@
             CrimulanSlimeGod.Name: Багротановый бог слизней
             SplitCrimulanSlimeGod.Name: Багротановый бог слизней
             SplitEbonianSlimeGod.Name: Эбонитовый бог слизней
-            CorruptSlimeSpawn.Name: Искажённый слизень
-            CorruptSlimeSpawn2.Name: Искажённый слизень
-            CrimsonSlimeSpawn.Name: Багряный слизень
-            CrimsonSlimeSpawn2.Name: Багряный слизень
+            CorruptSlimeSpawn.Name: Отпрыск искажённого слизня
+            CorruptSlimeSpawn2.Name: Отпрыск искажённого слизня
+            CrimsonSlimeSpawn.Name: Отпрыск багряного слизня
+            CrimsonSlimeSpawn2.Name: Отпрыск багряного слизня
             StormWeaverBody.Name: Штормовой ткач
             StormWeaverHead.Name: Штормовой ткач
             StormWeaverTail.Name: Штормовой ткач
