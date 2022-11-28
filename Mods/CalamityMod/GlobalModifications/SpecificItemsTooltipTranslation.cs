@@ -659,7 +659,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
                 .Replace("The Sunken Sea schematic must be deciphered first", "Сначала необходимо расшифровать схему затерянного моря")
                 .Replace("The Planetoid schematic must be deciphered first", "Сначала необходимо расшифровать схему планетоида")
                 .Replace("The Jungle schematic must be deciphered first", "Сначала необходимо расшифровать схему джунглей")
-                .Replace("The Underworld schematic must be deciphered first", "Сначала необходимо расшифровать схему ада")
+                .Replace("The Underworld schematic must be deciphered first", "Сначала необходимо расшифровать схему преисподней")
                 .Replace("The Ice biome schematic must be deciphered first", "Сначала необходимо расшифровать схему льдов");
         });
         ItemHelper.TranslateTooltip(item, tooltips, "CalamityCharge", tooltip =>

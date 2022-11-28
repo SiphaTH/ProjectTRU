@@ -487,7 +487,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<KnowledgeProfanedGuardians>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
-            $"Используйте [i:{ModContent.ItemType<ProfanedShard>()}] в освящении или в аду.",
+            $"Используйте [i:{ModContent.ItemType<ProfanedShard>()}] в освящении или в преисподней.",
             CalamityUtils.ColorMessage("Стражи должны защищать свою богиню любой ценой.", new Color(255, 165, 0)),
             () => true,
             delegate(SpriteBatch sb, Rectangle rect, Color color)
@@ -533,7 +533,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<KnowledgeProvidence>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
-            $"Используйте [i:{ModContent.ItemType<ProfanedCore>()}] в освящении или в аду.",
+            $"Используйте [i:{ModContent.ItemType<ProfanedCore>()}] в освящении или в преисподней.",
             CalamityUtils.ColorMessage("Осквернённая богиня исчезает в горящем пламени.", new Color(255, 165, 0)),
             () => true,
             delegate(SpriteBatch sb, Rectangle rect, Color color)
@@ -624,7 +624,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<KnowledgeSentinels>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
-            $"Используйте [i:{ModContent.ItemType<RuneofKos>()}] в аду.",
+            $"Используйте [i:{ModContent.ItemType<RuneofKos>()}] в преисподней.",
             CalamityUtils.ColorMessage("Убийца Пожирателя выполнил свою лёгкую задачу.", new Color(186, 85, 211)),
             () => true
         );

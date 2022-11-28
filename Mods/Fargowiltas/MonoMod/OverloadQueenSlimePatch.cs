@@ -16,6 +16,6 @@ public class OverloadQueenSlimePatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Welcome to the truer slime rain!", "Добро пожаловать в настоящий слизнепад!");
+        TranslationHelper.ModifyIL(il, "Welcome to the truer slime rain!", "Добро пожаловать в истинно-верный слизнепад!");
     };
 }
