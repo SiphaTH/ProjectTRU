@@ -15,7 +15,7 @@ public class MutantPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Pre Hardmode", "Прехардмод");
+        TranslationHelper.ModifyIL(il, "Pre Hardmode", "Пре-хардмод");
         TranslationHelper.ModifyIL(il, "Hardmode", "Хардмод");
         TranslationHelper.ModifyIL(il, "Post Moon Lord", "Пост-Лунный лорд");
         TranslationHelper.ModifyIL(il, "Cycle Shop", "Переключить магазин");

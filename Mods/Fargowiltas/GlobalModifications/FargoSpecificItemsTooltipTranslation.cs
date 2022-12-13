@@ -38,7 +38,7 @@ public class FargowiltasSpecificItemsTooltipTranslation : GlobalItem
                 .Replace("Sold By Squirrel", "Продаётся белкой")
                 .Replace("Some Materials Sold", "Продаются некоторые материалы")
                 .Replace("Craftable Materials Sold", "Продаются материалы для крафта")
-                .Replace("Sold At Thirty Stack", "Продаётся по тридцать штук")
+                .Replace("Sold At Thirty Stack", "Продаётся от тридцати штук")
                 .Replace("None", "Нет");
         });
 

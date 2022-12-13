@@ -374,7 +374,6 @@ internal static class RussianPrefixOverhaul
 		ItemID.DD2ExplosiveTrapT2Popper,
 		ItemID.BookStaff,
 		ItemID.DD2BetsyBow,
-		ItemID.Celeb2,
 		ItemID.FossilPickaxe,
 		ItemID.OrangePhasesaber,
 		ItemID.SharpTears,
@@ -388,6 +387,7 @@ internal static class RussianPrefixOverhaul
 		ItemID.MaceWhip,
 		ItemID.Mace,
 		ItemID.TheMeatball,
+		ItemID.ObsidianSwordfish,
 	};
 
 	//Средний
@@ -431,6 +431,7 @@ internal static class RussianPrefixOverhaul
 		ItemID.FlowerPow,
 		ItemID.DarkLance,
 		ItemID.Spear,
+		ItemID.Celeb2,
 	};
 
 	//Множественный

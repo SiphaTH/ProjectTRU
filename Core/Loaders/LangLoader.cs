@@ -21,7 +21,7 @@ public class LangLoader : ContentTranslation, ILoadableContent
 
     public void UnloadContent()
     {
-        Translations.Clear();
+        Translations?.Clear();
         Translations = null;
     }
 }

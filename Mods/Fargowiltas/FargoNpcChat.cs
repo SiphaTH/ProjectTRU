@@ -1,57 +1,24 @@
-﻿using System.Reflection;
-using CalamityRuTranslate.Common;
+﻿using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core;
-using Fargowiltas;
+using Fargowiltas.NPCs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.Fargowiltas;
 
-public class FargoNpcChat : ContentTranslation, INpcChatText
+public class FargoNpcChat : GlobalNPC
 {
-    public override bool IsTranslationEnabled => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
-    
-    public override float Priority => 1f;
-    
-    #region Properties
-    private int Abominationn => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Abominationn").Type);
-    private int Mutant => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Mutant").Type);
-    private int Deviantt => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Deviantt").Type);
-    private int LumberJack => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("LumberJack").Type);
-    private int Squirrel => NPC.FindFirstNPC(ModsCall.Fargo.Find<ModNPC>("Squirrel").Type);
-    private int Mechanic => NPC.FindFirstNPC(NPCID.Mechanic);
-    private int Angler => NPC.FindFirstNPC(NPCID.Angler);
-    private int Dryad => NPC.FindFirstNPC(NPCID.Dryad);
-    private int Nurse => NPC.FindFirstNPC(NPCID.Nurse);
-    private int PartyGirl => NPC.FindFirstNPC(NPCID.PartyGirl);
-    private int WitchDoctor => NPC.FindFirstNPC(NPCID.WitchDoctor);
-    private int Stylist => NPC.FindFirstNPC(NPCID.Stylist);
-    private int Truffle => NPC.FindFirstNPC(NPCID.Truffle);
-    private int TaxCollector => NPC.FindFirstNPC(NPCID.TaxCollector);
-    private int Guide => NPC.FindFirstNPC(NPCID.Guide);
-    private int Cyborg => NPC.FindFirstNPC(NPCID.Cyborg);
-    private int Demolitionist => NPC.FindFirstNPC(NPCID.Demolitionist);
-    private int DD2Bartender => NPC.FindFirstNPC(NPCID.DD2Bartender);
-    private int DyeTrader => NPC.FindFirstNPC(NPCID.DyeTrader);
-    private bool IsTalking => Main.LocalPlayer.talkNPC >= 0;
-    private int TalkingNpc => Main.player[Main.myPlayer].talkNPC;
-    #endregion
-    private bool IsExistingNPC(int npcType) => npcType >= 0;
-
-    private int AbomClearCD => (int)typeof(FargoWorld).GetField("AbomClearCD", BindingFlags.Static | BindingFlags.NonPublic)?.GetValue(null)!;
-    
-    public void NpcChatTextTranslation()
+    public override bool IsLoadingEnabled(Mod mod)
     {
-        if (!IsTalking)
-            return;
-            
-        string npcPhrase = Main.npcChatText;
+        return ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
+    }
 
-        if (TalkingNpc == Abominationn)
+    public override void GetChat(NPC npc, ref string chat)
+    {
+        if (npc.type == ModContent.NPCType<Abominationn>())
         {
-            npcPhrase = npcPhrase switch
+            chat = chat switch
             {
                 "Where'd I get my scythe from? Ask me later." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.1"),
                 "Where'd I get my scythe from? You'll figure it out." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.2"),
@@ -77,206 +44,19 @@ public class FargoNpcChat : ContentTranslation, INpcChatText
                 "Overloaded events...? Yeah, they're pretty cool." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.22"),
                 "It's not like I don't enjoy your company, but can you buy something?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.23"),
                 "I have slain one thousand humans! Huh? You're a human? There's so much blood on your hands.." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.24"),
-                "I don't think there's an event right now." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.28"),
                 "You really defeated me... not bad. Now do it again without getting hit. Oh, and Copper Shortsword only." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.29"),
                 "I hope all these graves lying around don't belong to you." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.30"),
-                "Hocus pocus, the event is over" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.31"),
                 "What nostalgic armor you're wearing... No, it doesn't fit on me anymore. And its battery takes too long to charge." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.32"),
-                _ => npcPhrase
+                _ => chat
             };
 
-            if (IsExistingNPC(Mutant) && npcPhrase == $"That one guy, {Main.npc[Mutant].GivenName}, he is my brother... I've fought more bosses than him.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.25"), Main.npc[Mutant].GivenName);
-            }
-
-            if (IsExistingNPC(Deviantt) && npcPhrase == $"That one girl, {Main.npc[Deviantt].GivenName}, she is my sister... I've defeated more events than her.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.26"), Main.npc[Deviantt].GivenName);
-            }
-
-            if (IsExistingNPC(Mechanic) && npcPhrase == $"Can you please ask {Main.npc[Mechanic].GivenName} to stop touching my laser arm please.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.27"), Main.npc[Mechanic].GivenName);
-            }
+            if (NPC.AnyNPCs(NPCID.Mechanic) && chat == $"Can you please ask {Main.npc[NPC.FindFirstNPC(NPCID.Mechanic)].GivenName} to stop touching my laser arm please.")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.27"), Main.npc[NPC.FindFirstNPC(NPCID.Mechanic)].GivenName);
         }
-        else if (TalkingNpc == Deviantt)
+
+        if (npc.type == ModContent.NPCType<Mutant>())
         {
-            npcPhrase = npcPhrase switch
-            {
-                "The blood moon's effects? I'm not human anymore, so nope!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.1"),
-                "Did you know? The only real music genres are death metal and artcore." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.2"),
-                "I'll have you know I'm over a hundred Fargo years old! Don't ask me how long a Fargo year is." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.3"),
-                "I might be able to afford a taller body if you keep buying!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.4"),
-                "Where's that screm cat?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.5"),
-                "You're the Terrarian? Honestly, I was expecting someone a little... taller." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.6"),
-                "Don't look at me like that! The only thing I've deviated from is my humanity." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.7"),
-                "Rip and tear and buy from me for more things to rip and tear!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.8"),
-                "What's a chee-bee doe-goe?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.9"),
-                "Wait a second. Are you sure this house isn't what they call 'prison?'" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.10"),
-                "Deviantt has awoken! Quick, give her all your money to defeat her!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.11"),
-                "One day, I'll sell a summon for myself! ...Just kidding." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.12"),
-                "Hmm, I can tell! You've killed a lot, but you haven't killed enough!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.13"),
-                "Why the extra letter, you ask? Only the strongest sibling is allowed to remove their own!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.14"),
-                "The more rare things you kill, the more stuff I sell! Simple, right?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.15"),
-                "Embrace suffering... and while you're at it, embrace another purchase!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.16"),
-                "This world looks tougher than usual, so you can have these on the house just this once! Talk to me if you need any tips, yeah?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.17"),
-                "We all came from the end of time. This past world is a lot better than the timeless abyss of nothing!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.18"),
-                "Lumberjack is 'the one who cuts.' That means trees, connections, and even severing alternate timelines." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.19"),
-                "Who do you think we are? We're parts of you, a few hundred million years from now after you shed the need for a physical body." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.20"),
-                "Mutant is inhabiting the physical shell of your future self, but we're all manifestations of your power and experience." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.21"),
-                "In our first past, it took you eons to amass power. Since we happened to come back, we decided to help speed it up a little!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.22"),
-                "Even if the three of us joined forces again, we still wouldn't regain the full power of our original self. You could probably still beat us!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.23"),
-                "To accelerate your growth, Mutant released his powers to the rest of the world. Good work gathering it all back for yourself!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.24"),
-                "Don't worry about our true names. We don't actually have any!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.25"),
-                "No hard feelings about killing Abominationn, by the way. He comes back, right? Not that it won't miff Mutant if you do it again!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.26"),
-                "We summon enemies and control events because we are them! Sort of. It's a long story." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.27"),
-                "Take on a bigger form? I could do that, but I don't feel like it! Sorry!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.28"),
-                "Why was Mutant in that big slime? It was the best way to power it up. Too bad he's too lazy to do that with the rest!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.29"),
-                "Don't worry about the end of time, it's still billions of years away! I think. Dunno how this timey-wimey stuff works, really!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.30"),
-                "There's no fighting Lumberjack at full power. He's already cut away every timeline in which you tried." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.31"),
-                "Cthulhu? Hastur? All I know is where we came from, so your guess is as good as mine when it comes to them!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.32"),
-                "I once heard Mutant mention a once cat-like being so far beyond us that its existence transcends cause and effect. It's more like a law of reality."
-                   => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.33"),
-                "What's that? You want to fight me for real? ...nah, I can't put up a good fight on my own." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.41"),
-                "Hey, you've almost made it to the end! Got all your Soul accessories ready? What's that? You want to fight my big brother? ...maybe if he had a reason to." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.42"),
-                "Ready to fight my big brother? Remember how you've learned to learn. Stay focused, look for patterns, and don't panic. Good luck!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.43"),
-                "Only a specific type of weapon will work against each specific pillar. As for that moon guy, his weakness will keep changing." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.44"),
-                "Some powerful enemies like that dungeon guy can create their own arenas. You won't be able to escape, so make full use of the room you do have." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.45"),
-                "Did you beat that fish pig dragon yet? He reduces your maximum life a little on every hit. He's also strong enough to break defenses in one hit. Too bad you don't have any reinforced plating to prevent that, right?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.46"),
-                "That temple? Reach the altar to regain wire control! The golem gets upset when you leave, so fighting in there is best. Platforms won't work, but a Lihzahrd Instactuation Bomb can help clear space!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.47"),
-                "That overgrown plant inflicts a special venom that works her into an enraged frenzy if she stacks enough hits on you. She also has a ring of crystal leaves, but minions go through it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.48"),
-                "Good work getting one over on me! Hope I didn't make you sweat too much. Keep at the grind - I wanna see how far you can go!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.49"),
-                "That metal worm has a few upgrades, but its probes were downgraded to compensate. It'll start shooting homing dark stars and flying. When it coils around you, don't try to escape!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.50"),
-                "I saw that metal eye spinning while firing a huge laser the other day. Also, even if you kill them, they won't die until they're both killed!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.51"),
-                "Focus on taking down that metal skull, not its limbs. Don't try to outrun its spinning limbs! Keep your eyes open and learn to recognize what's doing what." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.52"),
-                "That thing's mouth is as good as immune to damage, so you'll have to aim for the eye. Only one of them is vulnerable at a time, though. What thing? You know, that thing!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.53"),
-                "Next up is me! Make sure you can recognize whatever attack I'll throw at you. Blocks and turning away can nullify petrification!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.54"),
-                "The master of the dungeon can use its babies to attack! Which attack it uses depends on whether or not it's spinning. It'll also take a last stand, so be ready to run when you make the kill!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.55"),
-                "The queen bee will summon her progeny for backup. She's harder to hurt while they're there, so take them out first. Oh, and her swarm can't hit right above or below her!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.56"),
-                "Focus on how the ichor moves and don't get overwhelmed! When the brain gets mad, it'll confuse you every few seconds. Four rings to confuse you, one ring when it wears off!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.57"),
-                "The more the world eater splits, the more worms can rush you at once. The head is extra sturdy now, but don't let them pile up too much!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.58"),
-                "Watch out when you break your second Crimson Heart! It might attract the goblins, so prepare before you do it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.59"),
-                "Watch out when you break your second Shadow Orb! It might attract the goblins, so prepare before you do it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.60"),
-                "That big eyeball has the power of the moon, but it's too flashy for its own good! Learn to notice and focus only on the bits that threaten to hurt you." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.61"),
-                "Gonna fight that slime king soon? Crafting a Mini Instabridge or two might help, and mind the spike rain. Don't stay up and out of his range or he'll get mad, though!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.62"),
-                "Seems like everyone's learning to project auras these days. If you look at the particles, you can see whether it'll affect you at close range or a distance!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.63"),
-                "There's probably a thousand items to protect against all these debuffs. It's a shame you don't have a thousand hands to carry them all at once!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.64"),
-                "Don't forget you can turn off your soul toggles! They're all in that little wrench button right below your inventory. Those small buttons at the very bottom of the list include a recommended low-lag preset!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.65"),
-                // "Just so you know, ammos are less effective. Only a bit of their damage contributes to your total output!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.66"),
-                // "Found any Top Hat Squirrels yet? Keep one in your inventory and maybe a special friend will show up!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.67"),
-                "I don't have any more Life Crystals for you, but I think my big brother left some in the fat slime king. Maybe he'll share if you beat it up!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.68"),
-                "I've always wondered why those other monsters never bothered to carry any healing potions. Well, you probably shouldn't wait and see if they actually do." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.69"),
-                "Watch out for those fish! Sharks will leave you alone if you leave them alone, but piranhas go wild when they smell blood. They can jump out of water to get you!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.70"),
-                "The water is bogging you down? Never had an issue with it, personally... Have you tried breathing water instead of air?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.71"),
-                "The underworld has gotten a lot hotter since the last time I visited. I hear an obsidian skull is a good luck charm against burning alive, though!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.72"),
-                "Want to have a breath-holding contest? The empty vacuum of space would be perfect. No, I won't cheat by breathing water instead of air!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.73"),
-                "UWAH! Please don't hurt... wait, it's just you. Don't scare me like that! And why is that THING following you?!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.74"),
-                "Why not go hunting for some rare monsters every once in a while? Plenty of treasure to be looted and all that." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.75"),
-                // case "Why're you so sad? Has the underground hallow been disorientating? Try turning that frown upside-down, I hear that gravity potions can help!":
-                //     npcPhrase = LangUtils.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.76");
-                //     break;
-                "If you ask me, Plantera is really letting herself go. A diet of Chlorophyte Ore and Life Fruit isn't THAT healthy! Why don't you help her slim down?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.77"),
-                "Trick or treat? Merry Christmas? I don't have anything for you, but go ask Pumpking or Ice Queen!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.78"),
-                "Wanna craft Forces, but missing Enchantments? Craft the Sigil of Champions and they'll give you what you want, so long as you earn it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.79"),
-                "Now's a good time to go for Betsy! Don't worry. If you reach the last wave and lose, you won't have to retry the event for more attempts at her. Careful not to slip up before then, and mind her debuffs!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.80"),
-                "That's a funny face you're making... Is the underground Hallow too disorienting? Try controlling gravity on your own and maybe it can't flip you by force!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.81"),
-                _ => npcPhrase
-            };
-
-            if (npcPhrase == $"{Main.LocalPlayer.name}! I saw something rodent-y just now! You don't have a hamster infestation, right? Right!?")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.34"), Main.LocalPlayer.name);
-            }
-
-            if (IsExistingNPC(Mutant))
-            {
-                if (npcPhrase == $"Can you tell {Main.npc[Mutant].GivenName} to put some clothes on?")
-                {
-                    npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.35"), Main.npc[Mutant].GivenName);
-                }
-                else if (npcPhrase == $"One day, I'll sell a summon for myself! ...Just kidding. That's {Main.npc[Mutant].GivenName}'s job.")
-                {
-                    npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.36"), Main.npc[Mutant].GivenName);
-                }
-                else if (npcPhrase == $"{Main.npc[Mutant].GivenName} is here! That's my big brother!")
-                {
-                    npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.37"), Main.npc[Mutant].GivenName);
-                }
-            }
-
-            if (IsExistingNPC(Abominationn) && npcPhrase == $"{Main.npc[Abominationn].GivenName} is here! That's my big-but-not-biggest brother!")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.38"), Main.npc[Abominationn].GivenName);
-            }
-
-            if (IsExistingNPC(LumberJack) && npcPhrase == $"What's that? You want to fight {Main.npc[LumberJack].GivenName}? ...even I know better than to try.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.39"), Main.npc[LumberJack].GivenName);
-            }
-
-            if (IsExistingNPC(Angler) && npcPhrase == $"Have you ever considered throwing {Main.npc[Angler].GivenName} back where you found him?")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.40"), Main.npc[Angler].GivenName);
-            }
-        }
-        else if (TalkingNpc == LumberJack)
-        {
-            npcPhrase = npcPhrase switch
-            {
-                "Dynasty wood? Between you and me, that stuff ain't real wood!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.1"),
-                "Sure cactus isn't wood, but I can still chop it with me trusty axe." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.2"),
-                "You wouldn't by chance have any fantasies about me... right?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.3"),
-                "I eat a bowl of woodchips for breakfast... without any milk." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.4"),
-                "TIIIIIIIIIMMMBEEEEEEEERRR!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.5"),
-                "I'm a lumberjack and I'm okay, I sleep all night and I work all day!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.6"),
-                "You won't ever need an axe again with me around." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.7"),
-                "I have heard of people cutting trees with fish, who does that?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.8"),
-                "You wanna see me work without my shirt on? Maybe in 2030." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.9"),
-                "You ever seen the world tree?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.10"),
-                "You want what? ...Sorry that's not the kind of wood I'm selling." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.11"),
-                "Why don't I sell acorns? ...I replant all the trees I chop, don't you?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.12"),
-                "What's the best kind of tree? ... Any if I can chop it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.13"),
-                "Can I axe you a question?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.14"),
-                "Might take a nap under a tree later, care to join me?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.15"),
-                "I'm an expert in all wood types." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.16"),
-                "I'm glad there's more trees to chop here at journey's end." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.17"),
-                "Red is one of my favourite colors, right after wood." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.18"),
-                "It's always flannel season." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.19"),
-                "I'm glad my wood put such a big smile on your face." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.20"),
-                "Astroturf? Sorry I only grow trees on real grass." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.21"),
-                "Yew tree? Sakura tree? Nope, haven't found any." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.22"),
-                "While I was chopping down a cactus these things leaped at me, why don't you take care of them?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.23"),
-                "These mahogany trees are full of life, but a tree only has one purpose: to be chopped. Oh yea these fell out of the last one." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.24"),
-                "This place is a bit fanciful for my tastes, but the wood's as choppable as any. Nighttime has these cool bugs though, take a few." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.25"),
-                "Whatever causes these to glow is beyond me, you're probably gonna eat them anyway so have this while you're at it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.26"),
-                "The trees here are probably the toughest in this branch of reality.. Sorry, just tree puns. I found these for you here." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.27"),
-                "Back in the day, people used to forge butterflies into powerful gear. We try to forget those days... but here have one." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.28"),
-                "These little critters are always falling out of the trees I cut down. Maybe you can find a use for them?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.29"),
-                "Chopping trees at night is always relaxing... well except for the flying eyeballs. Have one of these little guys to keep you company." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.30"),
-                "I looked around here for a while and didn't find any trees. I did find this little thing though. Maybe you'll want it?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.31"),
-                "I'm resting after a good day of chopping, come back tomorrow and maybe I'll have something else for you." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.32"),
-                "This neck of the woods is pretty eh? Here I've got some of my favorite wood for you." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.35"),
-                "Lucy from that universe.. Interesting things await you." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.36"),
-                "Even on vacation, I always fit in a little chopping. A couple annoying birds fell out of a palm tree. Take them off my hands.. maybe cook them up?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.37"),
-                "I looked around here for a while and didn't find any trees. I did find these little guys though. Maybe you'll want them?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.38"),
-                "I certainly didn't expect to find such wonderful trees down here. Check this out." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.39"),
-                _ => npcPhrase
-            };
-
-            if (IsExistingNPC(Dryad) && npcPhrase == $"{Main.npc[Dryad].GivenName} told me to start hugging trees... I hug trees with my chainsaw.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.33"), Main.npc[Dryad].GivenName);
-            }
-
-            if (IsExistingNPC(Nurse) && npcPhrase == $"I always see {Main.npc[Nurse].GivenName} looking at my biceps when I'm working. Wonder if she wants some of my wood.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.34"), Main.npc[Nurse].GivenName);
-            }
-        }
-        else if (TalkingNpc == Mutant)
-        {
-            npcPhrase = npcPhrase switch
+            chat = chat switch
             {
                 "Savagery, barbarism, bloodthirst, that's what I like seeing in people." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.1"),
                 "The stronger you get, the more stuff I sell. Makes sense, right?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.2"),
@@ -341,91 +121,210 @@ public class FargoNpcChat : ContentTranslation, INpcChatText
                 "Good work beating me, I guess. I still feel like stretching my wings... Why don't we go at it for real next time?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.75"),
                 "I heard of a rumor of infinite use boss summons. Makes me sick.." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.76"),
                 "Nice armor you have, very realistic skin. As a matter of fact, mind if I borrow it? Your skin, that is." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.77"),
-                _ => npcPhrase
+                _ => chat
             };
+            
+            if (NPC.AnyNPCs(NPCID.PartyGirl) && chat == $"{Main.npc[NPC.FindFirstNPC(NPCID.PartyGirl)].GivenName} is the one who invited me, I don't understand why though.")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.60"), Main.npc[NPC.FindFirstNPC(NPCID.PartyGirl)].GivenName);
 
-            if (IsExistingNPC(PartyGirl) && npcPhrase == $"{Main.npc[PartyGirl].GivenName} is the one who invited me, I don't understand why though.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.60"), Main.npc[PartyGirl].GivenName);
-            }
+            if (NPC.AnyNPCs(NPCID.Nurse) && chat == $"Whenever we're alone, {Main.npc[NPC.FindFirstNPC(NPCID.Nurse)].GivenName} keeps throwing syringes at me, no matter how many times I tell her to stop!")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.62"), Main.npc[NPC.FindFirstNPC(NPCID.Nurse)].GivenName);
 
-            if (IsExistingNPC(LumberJack) && npcPhrase == $"It's okay {Main.npc[Mutant].GivenName}, just don't look straight into {Main.npc[LumberJack].GivenName}'s eyes. He can't scare you that way...")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.61"), Main.npc[Mutant].GivenName, Main.npc[LumberJack].GivenName);
-            }
+            if (NPC.AnyNPCs(NPCID.WitchDoctor) && chat == $"Please go tell {Main.npc[NPC.FindFirstNPC(NPCID.WitchDoctor)].GivenName} to drop the 'mystical' shtick, I mean, come on! I get it, you make tainted water or something.")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.63"), Main.npc[NPC.FindFirstNPC(NPCID.WitchDoctor)].GivenName);
 
-            if (IsExistingNPC(Nurse) && npcPhrase == $"Whenever we're alone, {Main.npc[Nurse].GivenName} keeps throwing syringes at me, no matter how many times I tell her to stop!")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.62"), Main.npc[Nurse].GivenName);
-            }
+            if (NPC.AnyNPCs(NPCID.Dryad) && chat == $"Why does {Main.npc[NPC.FindFirstNPC(NPCID.Dryad)].GivenName}'s outfit make my wings flutter?")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.64"), Main.npc[NPC.FindFirstNPC(NPCID.Dryad)].GivenName);
 
-            if (IsExistingNPC(WitchDoctor) && npcPhrase == $"Please go tell {Main.npc[WitchDoctor].GivenName} to drop the 'mystical' shtick, I mean, come on! I get it, you make tainted water or something.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.63"), Main.npc[WitchDoctor].GivenName);
-            }
+            if (NPC.AnyNPCs(NPCID.Stylist) && chat == $"{Main.npc[NPC.FindFirstNPC(NPCID.Stylist)].GivenName} once gave me a wig... I look hideous with long hair.")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.65"), Main.npc[NPC.FindFirstNPC(NPCID.Stylist)].GivenName);
 
-            if (IsExistingNPC(Dryad) && npcPhrase == $"Why does {Main.npc[Dryad].GivenName}'s outfit make my wings flutter?")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.64"), Main.npc[Dryad].GivenName);
-            }
+            if (NPC.AnyNPCs(NPCID.Truffle) && chat == "That mutated mushroom seems like my type of fella.")
+                chat = LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.66");
 
-            if (IsExistingNPC(Stylist) && npcPhrase == $"{Main.npc[Stylist].GivenName} once gave me a wig... I look hideous with long hair.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.65"), Main.npc[Stylist].GivenName);
-            }
+            if (NPC.AnyNPCs(NPCID.TaxCollector) && chat == $"{Main.npc[NPC.FindFirstNPC(NPCID.TaxCollector)].GivenName} keeps asking me for money, but he won't accept my spawners!")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.67"), Main.npc[NPC.FindFirstNPC(NPCID.TaxCollector)].GivenName);
 
-            if (IsExistingNPC(Truffle) && npcPhrase == "That mutated mushroom seems like my type of fella.")
-            {
-                npcPhrase = LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.66");
-            }
+            if (NPC.AnyNPCs(NPCID.Guide) && chat == $"Any idea why {Main.npc[NPC.FindFirstNPC(NPCID.Guide)].GivenName} is always cowering in fear when I get near him?")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.68"),
+                    Main.npc[NPC.FindFirstNPC(NPCID.Guide)].GivenName);
 
-            if (IsExistingNPC(TaxCollector) && npcPhrase == $"{Main.npc[TaxCollector].GivenName} keeps asking me for money, but he won't accept my spawners!")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.67"), Main.npc[TaxCollector].GivenName);
-            }
+            if (NPC.AnyNPCs(NPCID.Truffle) && NPC.AnyNPCs(NPCID.WitchDoctor) && NPC.AnyNPCs(NPCID.Cyborg) && chat == $"If any of us could play instruments, I'd totally start a band with {Main.npc[NPC.FindFirstNPC(NPCID.WitchDoctor)].GivenName}, {Main.npc[NPC.FindFirstNPC(NPCID.Truffle)].GivenName}, and {Main.npc[NPC.FindFirstNPC(NPCID.Cyborg)].GivenName}.")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.69"), Main.npc[NPC.FindFirstNPC(NPCID.WitchDoctor)].GivenName, Main.npc[NPC.FindFirstNPC(NPCID.Truffle)].GivenName, Main.npc[NPC.FindFirstNPC(NPCID.Cyborg)].GivenName);
 
-            if (IsExistingNPC(Guide) && npcPhrase == $"Any idea why {Main.npc[Guide].GivenName} is always cowering in fear when I get near him?")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.68"), Main.npc[Guide].GivenName);
-            }
+            if (NPC.AnyNPCs(NPCID.PartyGirl) && chat == $"Man, {Main.npc[NPC.FindFirstNPC(NPCID.PartyGirl)].GivenName}'s confetti keeps getting stuck to my wings")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.70"), Main.npc[NPC.FindFirstNPC(NPCID.PartyGirl)].GivenName);
 
-            if (IsExistingNPC(Truffle) && IsExistingNPC(WitchDoctor) && IsExistingNPC(Cyborg) && npcPhrase == $"If any of us could play instruments, I'd totally start a band with {Main.npc[WitchDoctor].GivenName}, {Main.npc[Truffle].GivenName}, and {Main.npc[Cyborg].GivenName}.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.69"), Main.npc[WitchDoctor].GivenName, Main.npc[Truffle].GivenName, Main.npc[Cyborg].GivenName);
-            }
+            if (NPC.AnyNPCs(NPCID.Demolitionist) && chat == $"I'm surprised {Main.npc[NPC.FindFirstNPC(NPCID.Demolitionist)].GivenName} hasn't blown a hole in the floor yet, on second thought that sounds fun.")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.71"), Main.npc[NPC.FindFirstNPC(NPCID.Demolitionist)].GivenName);
 
-            if (IsExistingNPC(PartyGirl) && npcPhrase == $"Man, {Main.npc[PartyGirl].GivenName}'s confetti keeps getting stuck to my wings")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.70"), Main.npc[PartyGirl].GivenName);
-            }
+            if (NPC.AnyNPCs(NPCID.DD2Bartender) && chat == $"{Main.npc[NPC.FindFirstNPC(NPCID.DD2Bartender)].GivenName} keeps suggesting I drink some beer, something tells me he wouldn't like me when I'm drunk though.")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.72"), Main.npc[NPC.FindFirstNPC(NPCID.DD2Bartender)].GivenName);
 
-            if (IsExistingNPC(Demolitionist) && npcPhrase == $"I'm surprised {Main.npc[Demolitionist].GivenName} hasn't blown a hole in the floor yet, on second thought that sounds fun.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.71"), Main.npc[Demolitionist].GivenName);
-            }
-
-            if (IsExistingNPC(DD2Bartender) && npcPhrase == $"{Main.npc[DD2Bartender].GivenName} keeps suggesting I drink some beer, something tells me he wouldn't like me when I'm drunk though.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.72"), Main.npc[DD2Bartender].GivenName);
-            }
-
-            if (IsExistingNPC(DyeTrader) && npcPhrase == $"{Main.npc[DyeTrader].GivenName} wants to see what I would look like in blue... I don't know how to feel.")
-            {
-                npcPhrase = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.73"), Main.npc[DyeTrader].GivenName);
-            }
+            if (NPC.AnyNPCs(NPCID.DyeTrader) && chat == $"{Main.npc[NPC.FindFirstNPC(NPCID.DyeTrader)].GivenName} wants to see what I would look like in blue... I don't know how to feel.")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Mutant.73"), Main.npc[NPC.FindFirstNPC(NPCID.DyeTrader)].GivenName);
         }
-        else if (TalkingNpc == Squirrel)
+
+        if (npc.type == ModContent.NPCType<Squirrel>())
         {
-            npcPhrase = npcPhrase switch
+            chat = chat switch
             {
                 "[c/FF0000:You will suffer.]" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Squirrel.1"),
                 "*squeak*" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Squirrel.2"),
                 "*chitter*" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Squirrel.3"),
                 "*crunch crunch*" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Squirrel.4"),
-                _ => npcPhrase
+                _ => chat
             };
         }
 
-        Main.npcChatText = npcPhrase;
+        if (npc.type == ModContent.NPCType<LumberJack>())
+        {
+            chat = chat switch
+            {
+                "Dynasty wood? Between you and me, that stuff ain't real wood!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.1"),
+                "Sure cactus isn't wood, but I can still chop it with me trusty axe." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.2"),
+                "You wouldn't by chance have any fantasies about me... right?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.3"),
+                "I eat a bowl of woodchips for breakfast... without any milk." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.4"),
+                "TIIIIIIIIIMMMBEEEEEEEERRR!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.5"),
+                "I'm a lumberjack and I'm okay, I sleep all night and I work all day!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.6"),
+                "You won't ever need an axe again with me around." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.7"),
+                "I have heard of people cutting trees with fish, who does that?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.8"),
+                "You wanna see me work without my shirt on? Maybe in 2030." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.9"),
+                "You ever seen the world tree?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.10"),
+                "You want what? ...Sorry that's not the kind of wood I'm selling." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.11"),
+                "Why don't I sell acorns? ...I replant all the trees I chop, don't you?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.12"),
+                "What's the best kind of tree? ... Any if I can chop it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.13"),
+                "Can I axe you a question?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.14"),
+                "Might take a nap under a tree later, care to join me?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.15"),
+                "I'm an expert in all wood types." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.16"),
+                "I'm glad there's more trees to chop here at journey's end." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.17"),
+                "Red is one of my favourite colors, right after wood." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.18"),
+                "It's always flannel season." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.19"),
+                "I'm glad my wood put such a big smile on your face." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.20"),
+                "Lucy from that universe.. Interesting things await you." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.36"),
+                _ => chat
+            };
+            
+            if (NPC.AnyNPCs(NPCID.Nurse) && chat == $"I always see {Main.npc[NPC.FindFirstNPC(NPCID.Nurse)].GivenName} looking at my biceps when I'm working. Wonder if she wants some of my wood.")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.34"), Main.npc[NPC.FindFirstNPC(NPCID.Nurse)].GivenName);
+        }
+
+        if (npc.type == ModContent.NPCType<Deviantt>())
+        {
+            chat = chat switch
+            {
+                "The blood moon's effects? I'm not human anymore, so nope!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.1"),
+                "Did you know? The only real music genres are death metal and artcore." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.2"),
+                "I'll have you know I'm over a hundred Fargo years old! Don't ask me how long a Fargo year is." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.3"),
+                "I might be able to afford a taller body if you keep buying!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.4"),
+                "Where's that screm cat?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.5"),
+                "You're the Terrarian? Honestly, I was expecting someone a little... taller." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.6"),
+                "Don't look at me like that! The only thing I've deviated from is my humanity." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.7"),
+                "Rip and tear and buy from me for more things to rip and tear!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.8"),
+                "What's a chee-bee doe-goe?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.9"),
+                "Wait a second. Are you sure this house isn't what they call 'prison?'" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.10"),
+                "Deviantt has awoken! Quick, give her all your money to defeat her!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.11"),
+                "One day, I'll sell a summon for myself! ...Just kidding." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.12"),
+                "Hmm, I can tell! You've killed a lot, but you haven't killed enough!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.13"),
+                "Why the extra letter, you ask? Only the strongest sibling is allowed to remove their own!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.14"),
+                "The more rare things you kill, the more stuff I sell! Simple, right?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.15"),
+                "Embrace suffering... and while you're at it, embrace another purchase!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.16"),
+                "This world looks tougher than usual, so you can have these on the house just this once! Talk to me if you need any tips, yeah?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.17"),
+                "UWAH! Please don't hurt... wait, it's just you. Don't scare me like that! And why is that THING following you?!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.74"),
+                "Ooh, that's my hoodie! So how is it? Comfy and great for gaming, right? Maybe you'll even go beat a boss without taking damage!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.66"),
+                "Good work getting one over on me! Hope I didn't make you sweat too much. Keep at the grind - I wanna see how far you can go!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.49"),
+                _ => chat
+            };
+            
+            if (chat == $"{Main.LocalPlayer.name}! I saw something rodent-y just now! You don't have a hamster infestation, right? Right!?")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.34"), Main.LocalPlayer.name);
+            
+            if (NPC.AnyNPCs(ModContent.NPCType<Mutant>()))
+            {
+                if (chat == $"Can you tell {Main.npc[NPC.FindFirstNPC(ModContent.NPCType<Mutant>())].GivenName} to put some clothes on?")
+                    chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.35"), Main.npc[NPC.FindFirstNPC(ModContent.NPCType<Mutant>())].GivenName);
+                
+                else if (chat == $"One day, I'll sell a summon for myself! ...Just kidding. That's {Main.npc[NPC.FindFirstNPC(ModContent.NPCType<Mutant>())].GivenName}'s job.")
+                    chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.36"), Main.npc[NPC.FindFirstNPC(ModContent.NPCType<Mutant>())].GivenName);
+            }
+            
+            if (NPC.AnyNPCs(ModContent.NPCType<LumberJack>()) && chat == $"What's that? You want to fight {Main.npc[NPC.FindFirstNPC(ModContent.NPCType<LumberJack>())].GivenName}? ...even I know better than to try.")
+                chat = string.Format(LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.39"), Main.npc[NPC.FindFirstNPC(ModContent.NPCType<LumberJack>())].GivenName);
+        }
+    }
+
+    public override void OnChatButtonClicked(NPC npc, bool firstButton)
+    {
+        if (npc.type == ModContent.NPCType<Abominationn>())
+        {
+            Main.npcChatText = Main.npcChatText switch
+            {
+                "I don't think there's an event right now." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.28"),
+                "Hocus pocus, the event is over" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.31"),
+                _ => Main.npcChatText
+            };
+        }
+        
+        if (npc.type == ModContent.NPCType<LumberJack>())
+        {
+            Main.npcChatText = Main.npcChatText switch
+            {
+                "While I was chopping down a cactus these things leaped at me, why don't you take care of them?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.23"),
+                "These mahogany trees are full of life, but a tree only has one purpose: to be chopped. Oh yea these fell out of the last one." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.24"),
+                "This place is a bit fanciful for my tastes, but the wood's as choppable as any. Nighttime has these cool bugs though, take a few." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.25"),
+                "Whatever causes these to glow is beyond me, you're probably gonna eat them anyway so have this while you're at it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.26"),
+                "The trees here are probably the toughest in this branch of reality.. Sorry, just tree puns. I found these for you here." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.27"),
+                "This neck of the woods is pretty eh? Here I've got some of my favorite wood for you." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.35"),
+                "Even on vacation, I always fit in a little chopping. A couple annoying birds fell out of a palm tree. Take them off my hands.. maybe cook them up?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.37"),
+                "I looked around here for a while and didn't find any trees. I did find these little guys though. Maybe you'll want them?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.38"),
+                "I certainly didn't expect to find such wonderful trees down here. Check this out." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.39"),
+                "Back in the day, people used to forge butterflies into powerful gear. We try to forget those days... but here have one." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.28"),
+                "These little critters are always falling out of the trees I cut down. Maybe you can find a use for them?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.29"),
+                "Chopping trees at night is always relaxing... well except for the flying eyeballs. Have one of these little guys to keep you company." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.30"),
+                "I'm resting after a good day of chopping, come back tomorrow and maybe I'll have something else for you." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.32"),
+                _ => Main.npcChatText
+            };
+        }
+        
+        if (npc.type == ModContent.NPCType<Deviantt>())
+        {
+            Main.npcChatText = Main.npcChatText switch
+            {
+                "What's that? You want to fight me for real? ...nah, I can't put up a good fight on my own." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.41"),
+                "Hey, you've almost made it to the end! Got all your Soul accessories ready? What's that? You want to fight my big brother? ...maybe if he had a reason to." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.42"),
+                "Ready to fight my big brother? Remember how you've learned to learn. Stay focused, look for patterns, and don't panic. Good luck!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.43"),
+                "Wanna craft Forces, but missing Enchantments? Craft the Sigil of Champions and they'll give you what you want, so long as you earn it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.79"),
+                "Only a specific type of weapon will work against each specific pillar. As for that moon guy, his weakness will keep changing." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.44"),
+                "Some powerful enemies like that dungeon guy can create their own arenas. You won't be able to escape, so make full use of the room you do have." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.45"),
+                "Did you beat that fish pig dragon yet? He reduces your maximum life a little on every hit. He's also strong enough to break defenses in one hit. Too bad you don't have any reinforced plating to prevent that, right?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.46"),
+                "Now's a good time to go for Betsy! Don't worry. If you reach the last wave and lose, you won't have to retry the event for more attempts at her. Careful not to slip up before then, and mind her debuffs!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.80"),
+                "That temple? Reach the altar to regain wire control! The golem gets upset when you leave, so fighting in there is best. Platforms won't work, but a Lihzahrd Instactuation Bomb can help clear space!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.47"),
+                "That overgrown plant inflicts a special venom that works her into an enraged frenzy if she stacks enough hits on you. She also has a ring of crystal leaves, but minions go through it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.48"),
+                "That metal worm has a few upgrades, but its probes were downgraded to compensate. It'll start shooting homing dark stars and flying. When it coils around you, don't try to escape!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.50"),
+                "I saw that metal eye spinning while firing a huge laser the other day. Also, even if you kill them, they won't die until they're both killed!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.51"),
+                "Focus on taking down that metal skull, not its limbs. Don't try to outrun its spinning limbs! Keep your eyes open and learn to recognize what's doing what." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.52"),
+                "That thing's mouth is as good as immune to damage, so you'll have to aim for the eye. Only one of them is vulnerable at a time, though. What thing? You know, that thing!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.53"),
+                "Next up is me! Make sure you can recognize whatever attack I'll throw at you. Blocks and turning away can nullify petrification!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.54"),
+                "The master of the dungeon can use its babies to attack! Which attack it uses depends on whether or not it's spinning. It'll also take a last stand, so be ready to run when you make the kill!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.55"),
+                "The queen bee will summon her progeny for backup. She's harder to hurt while they're there, so take them out first. Oh, and her swarm can't hit right above or below her!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.56"),
+                "Focus on how the ichor moves and don't get overwhelmed! When the brain gets mad, it'll confuse you every few seconds. Four rings to confuse you, one ring when it wears off!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.57"),
+                "The more the world eater splits, the more worms can rush you at once. The head is extra sturdy now, but don't let them pile up too much!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.58"),
+                "Watch out when you break your second Crimson Heart! It might attract the goblins, so prepare before you do it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.59"),
+                "Watch out when you break your second Shadow Orb! It might attract the goblins, so prepare before you do it." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.60"),
+                "That big eyeball has the power of the moon, but it's too flashy for its own good! Learn to notice and focus only on the bits that threaten to hurt you." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.61"),
+                "Gonna fight that slime king soon? Crafting a Mini Instabridge or two might help, and mind the spike rain. Don't stay up and out of his range or he'll get mad, though!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.62"),
+                "Seems like everyone's learning to project auras these days. If you look at the particles, you can see whether it'll affect you at close range or a distance!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.63"),
+                "There's probably a thousand items to protect against all these debuffs. It's a shame you don't have a thousand hands to carry them all at once!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.64"),
+                "Don't forget you can turn off your soul toggles! They're all in that little wrench button right below your inventory. Those small buttons at the very bottom of the list include a recommended low-lag preset!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.65"),
+                "I don't have any more Life Crystals for you, but I think my big brother left some in the fat slime king. Maybe he'll share if you beat it up!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.68"),
+                "Watch out for those fish! Sharks will leave you alone if you leave them alone, but piranhas go wild when they smell blood. They can jump out of water to get you!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.70"),
+                "The water is bogging you down? Never had an issue with it, personally... Have you tried breathing water instead of air?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.71"),
+                "The underworld has gotten a lot hotter since the last time I visited. I hear an obsidian skull is a good luck charm against burning alive, though!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.72"),
+                "Want to have a breath-holding contest? The empty vacuum of space would be perfect. No, I won't cheat by breathing water instead of air!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.73"),
+                "That's a funny face you're making... Is the underground Hallow too disorienting? Try controlling gravity on your own and maybe it can't flip you by force!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.81"),
+                "If you ask me, Plantera is really letting herself go. A diet of Chlorophyte Ore and Life Fruit isn't THAT healthy! Why don't you help her slim down?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.77"),
+                _ => Main.npcChatText
+            };
+        }
     }
 }

@@ -7,7 +7,7 @@ using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Mods.CalamityMod.MonoMod;
 
-public class FAPPatch : ILPatcher
+public class FAPSetChatButtons : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
         
@@ -16,5 +16,17 @@ public class FAPPatch : ILPatcher
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Death Count", "Количество смертей");
+    };
+}
+
+public class FAPGetChat : ILPatcher
+{
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+
+    public override MethodInfo ModifiedMethod => typeof(FAP).GetCachedMethod(nameof(FAP.GetChat));
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    {
+        TranslationHelper.ModifyIL(il, " was slapped too hard.", " получает слишком сильную пощёчину.");
     };
 }

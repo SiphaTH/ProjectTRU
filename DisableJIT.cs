@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using CalamityRuTranslate.Common;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate;

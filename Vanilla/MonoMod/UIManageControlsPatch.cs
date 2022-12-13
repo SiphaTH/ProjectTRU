@@ -1,7 +1,8 @@
-﻿using CalamityRuTranslate.Common.Utilities;
+﻿using System.Reflection;
+using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core;
-using IL.Terraria.GameContent.UI.States;
-using MonoMod.Cil;
+using Terraria;
+using Terraria.UI;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
 
@@ -11,13 +12,19 @@ public class UIManageControlsPatch : ContentTranslation, ILoadableContent
 
     public override float Priority => 1f;
     
-    public void LoadContent() => UIManageControls.OnInitialize += UIManageControlsOnOnInitialize;
-
-    public void UnloadContent() => UIManageControls.OnInitialize -= UIManageControlsOnOnInitialize;
-
-    private void UIManageControlsOnOnInitialize(ILContext il)
+    public void LoadContent()
     {
-        TranslationHelper.ModifyIL(il, 0f, 700f);
-        TranslationHelper.ModifyIL(il, 600f, 700f);
+        Main.ManageControlsMenu.RemoveAllChildren();
+        Main.ManageControlsMenu.Initialize();
+        UIElement outerContainer = Main.ManageControlsMenu.GetType().GetField("_outerContainer", BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(Main.ManageControlsMenu) as UIElement;
+        outerContainer?.Width.Set(700f, 0.8f);
+        outerContainer?.MaxWidth.Set(700f, 0f);
+    }
+
+    public void UnloadContent()
+    {
+        UIElement outerContainer = Main.ManageControlsMenu.GetType().GetField("_outerContainer", BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(Main.ManageControlsMenu) as UIElement;
+        outerContainer?.Width.Set(600f, 0.8f);
+        outerContainer?.MaxWidth.Set(600f, 0f);
     }
 }

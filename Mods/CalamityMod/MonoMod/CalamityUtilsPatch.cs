@@ -17,7 +17,7 @@ public class CalamityUtilsPatch : OnPatcher
 
     private delegate string GenerateRandomAlphanumericStringDelegate(int length);
 
-    public override Delegate Delegate { get; } = (GenerateRandomAlphanumericStringDelegate orig, int length) =>
+    public override Delegate Delegate { get; } = (GenerateRandomAlphanumericStringDelegate _, int length) =>
     {
         const string alphanumericCharacters = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ0123456789";
         return new string(Enumerable.Repeat(alphanumericCharacters, length).Select(s => s[Main.rand.Next(s.Length)])
