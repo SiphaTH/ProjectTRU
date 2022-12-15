@@ -1,6 +1,5 @@
 ﻿using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using FargowiltasSouls.Buffs;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Mods.FargowiltasSouls.GlobalModifications;
