@@ -2420,11 +2420,6 @@
                     '''
             }
 
-            VoidSoul: {
-                Name: Душа пустоты
-                Tooltip: Призывает ЧТО-ТО
-            }
-
             WorldShaperSoul: {
                 Name: Душа архитектора
                 Tooltip:
@@ -3511,7 +3506,6 @@
                 Tooltip:
                     '''
                     Нажмите <right> по блоку, чтобы установить точку возрождения
-                    Перезаписывается кроватями
                     Не требует жилья
                     '''
             }
@@ -3547,6 +3541,50 @@
                     Превращает пули в освящённые выстрелы света
                     После 20 выстрелов нажмите <right>, чтобы выстрелить световой бомбой
                     25% шанс не использовать боеприпасы
+                    '''
+            }
+            
+            AbomMusicBox: {
+                Name: Music Box (Abominationn)
+                Tooltip: Sakuzyo 'Stigma'
+            }
+            
+            ChampionMusicBox: {
+                Name: Music Box (Champions)
+                Tooltip: Sakuzyo 'Ordeal'
+            }
+            
+            DeviMusicBox: {
+                Name: Music Box (Deviantt)
+                Tooltip: Sakuzyo 'Lexus Cyanixs'
+            }
+            
+            MutantMusicBox: {
+                Name: Music Box (Mutant)
+                Tooltip: Sakuzyo 'Steel Red'
+            }
+            
+            RePrologueMusicBox: {
+                Name: Music Box (???)
+                Tooltip: Sakuzyo 'rePrologue'
+            }
+            
+            StoriaMusicBox: {
+                Name: Music Box (???)
+                Tooltip: Xi vs Sakuzyo 'Storia'
+            }
+            
+            CoffinSummon: {
+                Name: Coffin Summon
+                Tooltip: While in the underground Desert, summon the Cursed Coffin
+            }
+            
+            SpiritLongbow: {
+                Name: Spirit Longbow
+                Tooltip:
+                    '''
+                    Converts arrows to Spirit Arrows that release spirit energy behind them
+                    Hold button to charge shots for more damage and higher speed
                     '''
             }
 
@@ -3647,6 +3685,7 @@
             MutantBoss.Name: Мутант
             MutantIllusion.Name: Мутант
             LifeChallenger.Name: Lieflight
+            #CursedCoffin.Name: Cursed Coffin
         }
 
         Tiles: {
@@ -3672,6 +3711,30 @@
             
             SquidwardDoorOpen: {
                 Name: "{$Mods.CalamityRuTranslate.FargowiltasSouls.Items.LifeRevitalizer.Name}"
+            }
+            
+            AbomMusicBoxSheet: {
+                Name: "{$ItemName.MusicBox}"
+            }
+            
+            ChampionMusicBoxSheet: {
+                Name: "{$ItemName.MusicBox}"
+            }
+            
+            DeviMusicBoxSheet: {
+                Name: "{$ItemName.MusicBox}"
+            }
+            
+            MutantMusicBoxSheet: {
+                Name: "{$ItemName.MusicBox}"
+            }
+            
+            RePrologueMusicBoxSheet: {
+                Name: "{$ItemName.MusicBox}"
+            }
+            
+            StoriaMusicBoxSheet: {
+                Name: "{$ItemName.MusicBox}"
             }
         }
     }
@@ -3812,6 +3875,7 @@
 
             TrojanSquirrelDespawn: Троянская белка возвращается в свой беличий клан...
             LifeChallengerDespawn: Lieflight fades away...
+            #CursedCoffinDespawn: The Cursed Coffin returns to its slumber...
 
             DeviBossSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/DevisCurse]."
             AbomBossSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/AbomsCurse]."
@@ -3827,6 +3891,7 @@
             CosmosChampionSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в космосе."
             TrojanSquirrelSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SquirrelCoatofArms]."
             LifeChallengerSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/FragilePixieLamp] в освящении днём."
+            LifeChallengerSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/CoffinSummon] в подземной пустыне."
         }
 
         Message: {
@@ -3918,7 +3983,6 @@
             RoyalSubject: Королевская особа пробуждается!
             QueenBeeEnrage: "{$NPCName.QueenBee} входит в ярость за пределами джунглей!"
             MoonsDeathPenalty: Прогресс волны откатился!
-            FatherOfLies: Было ошибкой появляться тут.
         }
 
         DeathMessage: {
@@ -4252,32 +4316,51 @@
 
 
             PetHeader: Питомцы
-            PetBlackCatConfig: Питомец чёрный кот
-            PetCompanionCubeConfig: Питомец куб-компаньон
-            PetCursedSaplingConfig: Питомец проклятый проросток
+            
             PetDinoConfig: Питомец динозаврик
-            PetDragonConfig: Питомец дракон
-            PetEaterConfig: Питомец пожиратель
-            PetEyeSpringConfig: Питомец пружинящий глаз
-            PetFaceMonsterConfig: Питомец лицемонстрик
-            PetGatoConfig: Питомец гато с пропеллером
-            PetHornetConfig: Питомец шершень
-            PetLizardConfig: Питомец ящерица
-            PetMinitaurConfig: Питомец маленький минотавр
-            PetParrotConfig: Питомец ручной попугай
-            PetPenguinConfig: Питомец пингвин
-            PetPupConfig: Питомец щенок
-            PetSeedConfig: Питомец проросток
-            PetDGConfig: Питомец Скелетрон
-            PetSnowmanConfig: Питомец снеговичок
-            PetGrinchConfig: Питомец малыш Гринч
-            PetSpiderConfig: Питомец паучок
-            PetSquashConfig: Питомец тыковка
-            PetTikiConfig: Питомец полинезийский дух
-            PetShroomConfig: Питомец малыш-трюфель
-            PetTurtleConfig: Питомец ручная черепаха
-            PetZephyrConfig: Питомец зефирная рыба
-            PetHeartConfig: Питомец багряное сердце
+            PetEaterConfig: Eater Pet
+            PetFaceMonsterConfig: Face Monster Pet
+            PetGrinchConfig: Grinch Pet
+            PetHornetConfig: Hornet Pet
+            PetImpConfig: Imp Pet
+            PetPenguinConfig: Penguin Pet
+            PetPandaConfig: Pet Red Panda
+            PetDGConfig: Dungeon Guardian Pet
+            PetSnowmanConfig: Snowman Pet
+            PetShroomConfig: Truffle Pet
+            PetWerewolfConfig: Pet Werewolf
+            PetBernieConfig: Pet Bernie
+            PetBlackCatConfig: Black Cat Pet
+            PetChesterConfig: Chester Pet
+            PetCompanionCubeConfig: Companion Cube Pet
+            PetCursedSaplingConfig: Cursed Sapling Pet
+            PetKittenConfig: Kitten Pet
+            PetEsteeConfig: Estee Pet
+            PetEyeSpringConfig: Eye Spring Pet
+            PetFoxConfig: Fennec Fox Pet
+            PetButterflyConfig: Butterfly Pet
+            PetGlommerConfig: Glommer Pet
+            PetDragonConfig: Dragon Pet
+            PetHarpyConfig: Harpy Pet
+            PetLizardConfig: Lizard Pet
+            PetMinitaurConfig: Mini Minotaur Pet
+            PetParrotConfig: Parrot Pet
+            PetPigmanConfig: Pigman Pet
+            PetPlanteroConfig: Plantero Pet
+            PetGatoConfig: Gato Pet
+            PetPupConfig: Puppy Pet
+            PetSeedConfig: Seedling Pet
+            PetSpiderConfig: Spider Pet
+            PetMimicConfig: Mimic Pet
+            PetSharkConfig: Shark Pet
+            PetSquashConfig: Squashling Pet
+            PetGliderConfig: Sugar Glider Pet
+            PetTikiConfig: Tiki Pet
+            PetTurtleConfig: Turtle Pet
+            PetVoltConfig: Volt Bunny Pet
+            PetZephyrConfig: Zephyr Fish Pet
+            
+            PetHeartConfig: Crimson Heart Pet
             PetNaviConfig: Питомец фея
             PetFlickerConfig: Питомец огонёк
             PetLanternConfig: Питомец магический фонарь
@@ -4285,6 +4368,30 @@
             PetSuspEyeConfig: Питомец подозрительный глаз
             PetWispConfig: Питомец огонёк
 
+            PetKSConfig: King Slime Pet
+            PetEoCConfig: Eye of Cthulhu Pet
+            PetEoWConfig: Eater of World Pet
+            PetBoCConfig: Brain of Cthulhu Pet
+            PetDeerConfig: Deerclops Pet
+            PetQBConfig: Queen Bee Pet
+            PetSkeleConfig: Skeletron Pet
+            PetQSConfig: Queen Slime Pet
+            PetDestroyerConfig: Destroyer Pet
+            PetTwinsConfig: Twins Pet
+            PetSkelePrimeConfig: Skeletron Prime Pet
+            
+            PetOgreConfig: Ogre Pet
+            PetPlanteraConfig: Plantera Pet
+            PetPumpkingConfig: Pumpking Pet
+            PetEverscreamConfig: Everscream Pet
+            PetIceQueenConfig: Ice Queen Pet
+            PetDukeConfig: Duke Fishron Pet
+            PetGolemConfig: Golem Pet
+            PetEoLConfig: Empress of Light Pet
+            PetBetsyConfig: Besty Pet
+            PetMartianConfig: Martian Pet
+            PetLCConfig: Phantasmal Dragon Pet
+            PetMLConfig: Moonling Pet
 
             PatreonHeader: Предметы патронов
             PatreonRoomba: Робот-пылесос
