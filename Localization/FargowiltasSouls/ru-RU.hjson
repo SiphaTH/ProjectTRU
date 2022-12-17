@@ -3545,33 +3545,33 @@
             }
             
             AbomMusicBox: {
-                Name: Music Box (Abominationn)
-                Tooltip: Sakuzyo 'Stigma'
+                Name: Музыкальная шкатулка (Мерзостть)
+                Tooltip: Композитор Sakuzyo - 'Stigma'
             }
             
             ChampionMusicBox: {
-                Name: Music Box (Champions)
-                Tooltip: Sakuzyo 'Ordeal'
+                Name: Музыкальная шкатулка (Чемпионы)
+                Tooltip: Композитор Sakuzyo - 'Ordeal'
             }
             
             DeviMusicBox: {
-                Name: Music Box (Deviantt)
-                Tooltip: Sakuzyo 'Lexus Cyanixs'
+                Name: Музыкальная шкатулка (Девиантт)
+                Tooltip: Композитор Sakuzyo - 'Lexus Cyanixs'
             }
             
             MutantMusicBox: {
-                Name: Music Box (Mutant)
-                Tooltip: Sakuzyo 'Steel Red'
+                Name: Музыкальная шкатулка (Мутант)
+                Tooltip: Композитор Sakuzyo - 'Steel Red'
             }
             
             RePrologueMusicBox: {
-                Name: Music Box (???)
-                Tooltip: Sakuzyo 'rePrologue'
+                Name: Музыкальная шкатулка (???)
+                Tooltip: Композитор Sakuzyo - 'rePrologue'
             }
             
             StoriaMusicBox: {
-                Name: Music Box (???)
-                Tooltip: Xi vs Sakuzyo 'Storia'
+                Name: Музыкальная шкатулка (???)
+                Tooltip: Композитор Xi vs Sakuzyo - 'Storia'
             }
             
             CoffinSummon: {
@@ -3891,7 +3891,7 @@
             CosmosChampionSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в космосе."
             TrojanSquirrelSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SquirrelCoatofArms]."
             LifeChallengerSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/FragilePixieLamp] в освящении днём."
-            LifeChallengerSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/CoffinSummon] в подземной пустыне."
+            CursedCoffinSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/CoffinSummon] в подземной пустыне."
         }
 
         Message: {
@@ -4318,49 +4318,49 @@
             PetHeader: Питомцы
             
             PetDinoConfig: Питомец динозаврик
-            PetEaterConfig: Eater Pet
-            PetFaceMonsterConfig: Face Monster Pet
-            PetGrinchConfig: Grinch Pet
-            PetHornetConfig: Hornet Pet
-            PetImpConfig: Imp Pet
-            PetPenguinConfig: Penguin Pet
-            PetPandaConfig: Pet Red Panda
-            PetDGConfig: Dungeon Guardian Pet
-            PetSnowmanConfig: Snowman Pet
-            PetShroomConfig: Truffle Pet
-            PetWerewolfConfig: Pet Werewolf
-            PetBernieConfig: Pet Bernie
-            PetBlackCatConfig: Black Cat Pet
-            PetChesterConfig: Chester Pet
-            PetCompanionCubeConfig: Companion Cube Pet
-            PetCursedSaplingConfig: Cursed Sapling Pet
-            PetKittenConfig: Kitten Pet
-            PetEsteeConfig: Estee Pet
-            PetEyeSpringConfig: Eye Spring Pet
-            PetFoxConfig: Fennec Fox Pet
-            PetButterflyConfig: Butterfly Pet
-            PetGlommerConfig: Glommer Pet
-            PetDragonConfig: Dragon Pet
-            PetHarpyConfig: Harpy Pet
-            PetLizardConfig: Lizard Pet
-            PetMinitaurConfig: Mini Minotaur Pet
-            PetParrotConfig: Parrot Pet
+            PetEaterConfig: Питомец пожиратель
+            PetFaceMonsterConfig: Питомец лицемонстрик
+            PetGrinchConfig: Питомец малыш Гринч
+            PetHornetConfig: Питомец шершень
+            PetImpConfig: Питомец бесёнок
+            PetPenguinConfig: Питомец пингвин
+            PetPandaConfig: Питомец красная панда
+            PetDGConfig: Питомец страж Темницы
+            PetSnowmanConfig: Питомец снеговичок
+            PetShroomConfig: Питомец малыш-трюфель
+            PetWerewolfConfig: Питомец волчонок-оборотень
+            PetBernieConfig: Питомец Берни
+            PetBlackCatConfig: Питомец чёрный кот
+            PetChesterConfig: Питомец Честер
+            PetCompanionCubeConfig: Питомец куб-компаньон
+            PetCursedSaplingConfig: Питомец проклятый проросток
+            PetKittenConfig: Питомец котёнок
+            PetEsteeConfig: Питомец Красотулька
+            PetEyeSpringConfig: Питомец пружинящий глаз
+            PetFoxConfig: Питомец Фенек
+            PetButterflyConfig: Питомец бабочка
+            PetGlommerConfig: Питомец Гломмер
+            PetDragonConfig: Питомец дракон
+            PetHarpyConfig: Питомец гарпия
+            PetLizardConfig: Питомец ящерица
+            PetMinitaurConfig: Питомец маленький минотавр
+            PetParrotConfig: Питомец ручной попугай
             PetPigmanConfig: Pigman Pet
-            PetPlanteroConfig: Plantero Pet
-            PetGatoConfig: Gato Pet
-            PetPupConfig: Puppy Pet
-            PetSeedConfig: Seedling Pet
-            PetSpiderConfig: Spider Pet
-            PetMimicConfig: Mimic Pet
-            PetSharkConfig: Shark Pet
-            PetSquashConfig: Squashling Pet
-            PetGliderConfig: Sugar Glider Pet
-            PetTikiConfig: Tiki Pet
-            PetTurtleConfig: Turtle Pet
-            PetVoltConfig: Volt Bunny Pet
-            PetZephyrConfig: Zephyr Fish Pet
+            PetPlanteroConfig: Питомец Плантеро
+            PetGatoConfig: Питомец гато
+            PetPupConfig: Питомец щенок
+            PetSeedConfig: Питомец проросток
+            PetSpiderConfig: Питомец паучок
+            PetMimicConfig: Питомец мимик
+            PetSharkConfig: Питомец акулёнок
+            PetSquashConfig: Питомец тыковка
+            PetGliderConfig: Питомец белка-летяга
+            PetTikiConfig: Питомец полинезийский дух
+            PetTurtleConfig: Питомец ручная черепаха
+            PetVoltConfig: Питомец вольтовый кролик
+            PetZephyrConfig: Питомец зефирная рыба
             
-            PetHeartConfig: Crimson Heart Pet
+            PetHeartConfig: Питомец багряное сердце
             PetNaviConfig: Питомец фея
             PetFlickerConfig: Питомец огонёк
             PetLanternConfig: Питомец магический фонарь
@@ -4368,30 +4368,30 @@
             PetSuspEyeConfig: Питомец подозрительный глаз
             PetWispConfig: Питомец огонёк
 
-            PetKSConfig: King Slime Pet
-            PetEoCConfig: Eye of Cthulhu Pet
-            PetEoWConfig: Eater of World Pet
-            PetBoCConfig: Brain of Cthulhu Pet
-            PetDeerConfig: Deerclops Pet
-            PetQBConfig: Queen Bee Pet
-            PetSkeleConfig: Skeletron Pet
-            PetQSConfig: Queen Slime Pet
-            PetDestroyerConfig: Destroyer Pet
-            PetTwinsConfig: Twins Pet
-            PetSkelePrimeConfig: Skeletron Prime Pet
+            PetKSConfig: Питомец принц слизней
+            PetEoCConfig: Питомец подозрительный глаз
+            PetEoWConfig: Питомец пожиратель червей
+            PetBoCConfig: Питомец мозг-паук
+            PetDeerConfig: Питомец циклоп-оленёнок
+            PetQBConfig: Питомец медоносная пчела
+            PetSkeleConfig: Питомец скелетрон-младший
+            PetQSConfig: Питомец принцесса слизней
+            PetDestroyerConfig: Питомец уничтожитель-лайт
+            PetTwinsConfig: Питомецы Рез и Спаз
+            PetSkelePrimeConfig: Питомец маленький Прайм
             
-            PetOgreConfig: Ogre Pet
-            PetPlanteraConfig: Plantera Pet
-            PetPumpkingConfig: Pumpking Pet
-            PetEverscreamConfig: Everscream Pet
-            PetIceQueenConfig: Ice Queen Pet
-            PetDukeConfig: Duke Fishron Pet
-            PetGolemConfig: Golem Pet
-            PetEoLConfig: Empress of Light Pet
-            PetBetsyConfig: Besty Pet
-            PetMartianConfig: Martian Pet
-            PetLCConfig: Phantasmal Dragon Pet
-            PetMLConfig: Moonling Pet
+            PetOgreConfig: Питомец огрёнок
+            PetPlanteraConfig: Питомец проросток Плантеры
+            PetPumpkingConfig: Питомец светильник Джека
+            PetEverscreamConfig: Питомец проросток вечнозлой ели
+            PetIceQueenConfig: Питомец ледяная королева
+            PetDukeConfig: Питомец крошка Рыброн
+            PetGolemConfig: Питомец игрушечный голем
+            PetEoLConfig: Питомец фея-принцесса
+            PetBetsyConfig: Питомец крошка Бэтси
+            PetMartianConfig: Питомец скейтер-инопланетянин
+            PetLCConfig: Питомец призрачный дракон
+            PetMLConfig: Питомец лунник
 
             PatreonHeader: Предметы патронов
             PatreonRoomba: Робот-пылесос
