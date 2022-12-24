@@ -8,7 +8,7 @@ namespace CalamityRuTranslate.Vanilla.MonoMod;
 
 public class UIManageControlsPatch : ContentTranslation, ILoadableContent
 {
-    public override bool IsTranslationEnabled => TranslationHelper.IsRussianLanguage;
+    public override bool IsTranslationEnabled => TranslationHelper.IsRussianLanguage && !Main.dedServ;
 
     public override float Priority => 1f;
     

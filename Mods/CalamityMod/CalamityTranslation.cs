@@ -7,7 +7,7 @@ namespace CalamityRuTranslate.Mods.CalamityMod;
 public class CalamityTranslation : TranslateMod
 {
     public override string InternalModName => "CalamityMod";
-    public override Version ExpectedVersion => new(2, 0, 1, 3);
+    public override Version ExpectedVersion => new(2, 0, 1, 4);
     
     public CalamityTranslation()
     {
