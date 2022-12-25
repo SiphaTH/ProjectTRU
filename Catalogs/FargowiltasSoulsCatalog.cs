@@ -13,5 +13,12 @@ internal static class FargowiltasSoulsCatalog
         new TileData("MutantStatueGift", "", new Color(144, 144, 144)),
         new TileData("SquidwardDoorClosed", "", new Color(200, 200, 200)),
         new TileData("SquidwardDoorOpen", "", new Color(200, 200, 200)),
+        new TileData("LifeRevitalizerPlaced", "", Color.Pink),
+        new TileData("AbomMusicBoxSheet", "", new Color(200, 200, 200)),
+        new TileData("ChampionMusicBoxSheet", "", new Color(200, 200, 200)),
+        new TileData("DeviMusicBoxSheet", "", new Color(200, 200, 200)),
+        new TileData("MutantMusicBoxSheet", "", new Color(200, 200, 200)),
+        new TileData("RePrologueMusicBoxSheet", "", new Color(200, 200, 200)),
+        new TileData("StoriaMusicBoxSheet", "", new Color(200, 200, 200)),
     };
 }

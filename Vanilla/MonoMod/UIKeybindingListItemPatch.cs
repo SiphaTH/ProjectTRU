@@ -48,7 +48,7 @@ public class UIKeybindingListItemPatch : ContentTranslation, ILoadableContent
             "FargowiltasSouls: Turn Gold" => "FargowiltasSouls: Превращение в золото",
             "FargowiltasSouls: Throw Smoke Bomb" => "FargowiltasSouls: Дымовая бомба",
             "FargowiltasSouls: Special Dash" => "FargowiltasSouls: Особый рывок",
-            "FargowiltasSouls: Mutant Bomb" => "FargowiltasSouls: Бомба Мутанта",
+            "FargowiltasSouls: Bomb" => "FargowiltasSouls: Бомба",
             "FargowiltasSouls: Open Soul Toggler" => "FargowiltasSouls: Открыть настройки эффектов душ",
             "FargowiltasSouls: Precision Movement" => "FargowiltasSouls: Точное передвижение",
             "FargowiltasSouls: Magical Cleanse" => "FargowiltasSouls: Магическое очищение",
