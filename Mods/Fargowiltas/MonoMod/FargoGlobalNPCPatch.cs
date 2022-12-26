@@ -56,6 +56,11 @@ public class FargoGlobalNPCCheckDead : ILPatcher
         TranslationHelper.ModifyIL(il, "Abominationn", "Мерзостти", 2);
         TranslationHelper.ModifyIL(il, "Abominationn", "Мерзостти", 3);
         TranslationHelper.ModifyIL(il, "Abominationn", "Мерзостти", 4);
+        TranslationHelper.ModifyIL(il, "Abominationn", "Мерзостти", 5);
+        TranslationHelper.ModifyIL(il, "Abominationn", "Мерзостти", 6);
+        TranslationHelper.ModifyIL(il, "Abominationn", "Мерзостти", 7);
+        TranslationHelper.ModifyIL(il, "Abominationn", "Мерзостти", 8);
+        TranslationHelper.ModifyIL(il, "Abominationn", "Мерзостти", 9);
         TranslationHelper.ModifyIL(il, "Betsy has been defeated!", "Бэтси побеждена!");
     };
 }

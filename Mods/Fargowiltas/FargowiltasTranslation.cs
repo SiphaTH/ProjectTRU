@@ -7,7 +7,7 @@ namespace CalamityRuTranslate.Mods.Fargowiltas;
 public class FargowiltasTranslation : TranslateMod
 {
     public override string InternalModName => "Fargowiltas";
-    public override Version ExpectedVersion => new(2, 8, 5);
+    public override Version ExpectedVersion => new(2, 8, 6);
 
     public FargowiltasTranslation()
     {

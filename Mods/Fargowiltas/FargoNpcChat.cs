@@ -230,6 +230,10 @@ public class FargoNpcChat : GlobalNPC
                 "The more rare things you kill, the more stuff I sell! Simple, right?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.15"),
                 "Embrace suffering... and while you're at it, embrace another purchase!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.16"),
                 "This world looks tougher than usual, so you can have these on the house just this once! Talk to me if you need any tips, yeah?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.17"),
+                "Wow, you smell rancid. When's the last time you took a shower, stinky?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.18"),
+                "Oh, hi! I, uh, definitely don't have any Stink Potions on me right now! Not that I normally would!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.19"),
+                "No, I'm totally not throwing Love Potions while you're not looking! Um, I mean... oh, just buy something!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.20"),
+                "Shower thought. If I put you in a meat grinder and all that's left is two Dye... I'd probably be rich! Not that I would, not to you, specifically, I mean... never mind!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.21"),
                 "UWAH! Please don't hurt... wait, it's just you. Don't scare me like that! And why is that THING following you?!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.74"),
                 "Ooh, that's my hoodie! So how is it? Comfy and great for gaming, right? Maybe you'll even go beat a boss without taking damage!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.66"),
                 "Good work getting one over on me! Hope I didn't make you sweat too much. Keep at the grind - I wanna see how far you can go!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.Deviantt.49"),
@@ -282,6 +286,9 @@ public class FargoNpcChat : GlobalNPC
                 "These little critters are always falling out of the trees I cut down. Maybe you can find a use for them?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.29"),
                 "Chopping trees at night is always relaxing... well except for the flying eyeballs. Have one of these little guys to keep you company." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.30"),
                 "I'm resting after a good day of chopping, come back tomorrow and maybe I'll have something else for you." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.32"),
+                "Went for a long haul today, but there were only so many of those strange trees to go around. I did find a lot of these, why don't you give some of them a new home?" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.31"),
+                "Seems like the wind brought a bunch of these out of hiding. Some people say they're good luck. All I know is, the only luck I need is a sharp axe!" => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.33"),
+                "I found this, but I'm not a sappy person. You can have it instead." => LangHelper.GetText("Fargowiltas.NPCs.Dialogues.LumberJack.21"),
                 _ => Main.npcChatText
             };
         }

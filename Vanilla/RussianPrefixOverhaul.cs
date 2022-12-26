@@ -970,7 +970,6 @@ internal static class RussianPrefixOverhaul
 				ModContent.Find<ModItem>("FargowiltasSouls", "TerrariaSoul").Type,
 				ModContent.Find<ModItem>("FargowiltasSouls", "TrawlerSoul").Type,
 				ModContent.Find<ModItem>("FargowiltasSouls", "UniverseSoul").Type,
-				ModContent.Find<ModItem>("FargowiltasSouls", "VoidSoul").Type,
 				ModContent.Find<ModItem>("FargowiltasSouls", "WorldShaperSoul").Type,
 				ModContent.Find<ModItem>("FargowiltasSouls", "BoneZone").Type,
 				ModContent.Find<ModItem>("FargowiltasSouls", "DestroyerGun").Type,

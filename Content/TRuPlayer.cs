@@ -10,7 +10,7 @@ public class TRuPlayer : ModPlayer
 
     public override void Kill(double damage, int hitDirection, bool pvp, PlayerDeathReason damageSource)
     {
-        string[] deathText = { Lang.inter[38].Value, "Skill Issue", "Потрачено", "Ай больно в ноге, бл*", "Неудачник, хи-хи-хи", "Повезёт в следующий раз (нет)", "Удали игру", "Геншин тебя уже заждался", "Здесь может быть ваша реклама", "По..и...те мы в ...вале" };
+        string[] deathText = { Lang.inter[38].Value, "Skill Issue", "Потрачено", "Ай больно в ноге, бл*", "Неудачник, хи-хи-хи", "Повезёт в следующий раз (нет)", "Удали игру", "Геншин тебя уже заждался", "Здесь может быть ваша реклама" };
         RandomDeathText = Utils.SelectRandom(Main.rand, deathText);
     }
 }

@@ -18,5 +18,6 @@ internal static class FargowiltasCatalog
         new TileData("OmnistationSheet", "", new Color(221, 85, 125)),
         new TileData("OmnistationSheet2", "", new Color(102, 116, 130)),
         new TileData("RegalStatueSheet", "", new Color(200, 200, 200)),
+        new TileData("SemistationSheet", "", new Color(221, 85, 125)),
     };
 }

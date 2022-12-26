@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using Fargowiltas.Items.Summons;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -17,21 +16,6 @@ public class FargowiltasSpecificItemsTooltipTranslation : GlobalItem
 
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
     {
-        if (item.type == ModContent.ItemType<MapViewer>())
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
-            {
-                if (Main.netMode != NetmodeID.MultiplayerClient)
-                {
-                    tooltip.Text = LangHelper.GetTextValue("Fargowiltas.Items.MapViewer.Tooltip.Single");
-                }
-                else
-                {
-                    tooltip.Text = LangHelper.GetTextValue("Fargowiltas.Items.MapViewer.Tooltip.Multi");
-                }
-            });
-        }
-        
         ItemHelper.TranslateTooltip(item, tooltips, "TooltipSquirrel", tooltip =>
         {
             tooltip.Text = tooltip.Text

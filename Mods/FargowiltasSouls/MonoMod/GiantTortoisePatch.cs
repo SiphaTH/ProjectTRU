@@ -11,7 +11,7 @@ public class GiantTortoisePatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.FargoSouls != null && TranslationHelper.IsRussianLanguage;
 
-    public override MethodInfo ModifiedMethod => typeof(GiantTortoise).GetCachedMethod(nameof(GiantTortoise.OnHitByItem));
+    public override MethodInfo ModifiedMethod => typeof(GiantTortoise).GetCachedMethod(nameof(GiantTortoise.SafeOnHitByItem));
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
