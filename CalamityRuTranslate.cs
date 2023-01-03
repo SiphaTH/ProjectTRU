@@ -130,8 +130,69 @@ public class CalamityRuTranslate : Mod
         {
             if (ModsCall.Calamity != null)
             {
-                ModsCall.Wikithis.Call(0, ModsCall.Calamity, "calamitymod.wiki.gg");
-                ModsCall.Wikithis.Call(0, ModsCall.Calamity, "terraria-calamity-mod.fandom.com/ru", GameCulture.CultureName.Russian);
+	            ModsCall.Wikithis.Call("AddModURL", ModsCall.Calamity, "calamitymod.wiki.gg/ru", GameCulture.CultureName.Russian);
+	            ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "BloodOrange").Type, "Кровавый апельсин (calamity)", GameCulture.CultureName.Russian);
+                ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "Elderberry").Type, "Бузина (calamity)", GameCulture.CultureName.Russian);
+                ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "PineapplePet").Type, "Ананас (calamity)", GameCulture.CultureName.Russian);
+                ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "TrashmanTrashcan").Type, "Урна (питомец)", GameCulture.CultureName.Russian);
+                ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "Butcher").Type, "Мясник (оружие)", GameCulture.CultureName.Russian);
+                ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "SandstormGun").Type, "Песчаная буря (оружие)", GameCulture.CultureName.Russian);
+                ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "Thunderstorm").Type, "Гроза (оружие)", GameCulture.CultureName.Russian);
+                ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "AtlasMunitionsBeacon").Type, "Маячок установки Атлас", GameCulture.CultureName.Russian);
+                ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeAquaticScourge").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+                ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeAstralInfection").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeAstrumAureus").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeAstrumDeus").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeBloodMoon").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeBrainofCthulhu").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeBrimstoneCrag").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeBrimstoneElemental").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeCalamitas").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeCalamitasClone").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeCorruption").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeCrabulon").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeCrimson").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeCryogen").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeDesertScourge").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeDestroyer").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeDevourerofGods").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeDragonfolly").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeDukeFishron").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeEaterofWorlds").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeExoMechs").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeEyeofCthulhu").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeGolem").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeHiveMind").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeKingSlime").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeLeviathanAnahita").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeLunaticCultist").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeMechs").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeMoonLord").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeOcean").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeOldDuke").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgePerforators").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgePlaguebringerGoliath").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgePlantera").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgePolterghast").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeProfanedGuardians").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeProvidence").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeQueenBee").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeRavager").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeSentinels").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeSkeletron").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeSkeletronPrime").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeSlimeGod").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeSulphurSea").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeTwins").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeUnderworld").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeWallofFlesh").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(1, ModContent.Find<ModItem>("CalamityMod", "KnowledgeYharon").Type, "История#Предметы_истории", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(2, ModContent.Find<ModNPC>("CalamityMod", "Catfish").Type, "Сом (враг)", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(2, ModContent.Find<ModNPC>("CalamityMod", "HiveEnemy").Type, "Улей (враг)", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(2, ModContent.Find<ModNPC>("CalamityMod", "KingSlimeJewel").Type, "Королевская драгоценность (враг)", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(2, ModContent.Find<ModNPC>("CalamityMod", "OldDukeToothBall").Type, "Зубастый шар (Старый герцог)", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(2, ModContent.Find<ModNPC>("CalamityMod", "CalamitasEnchantDemon").Type, "Зачарование", GameCulture.CultureName.Russian);
+				ModsCall.Wikithis.Call(2, ModContent.Find<ModNPC>("CalamityMod", "LeviathanStart").Type, "%3F%3F%3F", GameCulture.CultureName.Russian);
             }
         }
     }
