@@ -29,8 +29,14 @@ public class TRuConfig : ModConfig
     public bool PreviewArmorSetBonus;
     
     [Label("Wikipedia предметов")]
-    [Tooltip("Для работы требуется мод Wikithis\nПозволяет быстро перейти из игры на статью предмета в русской вики\nПлохо работает с ванильными предметами.")]
+    [Tooltip("Для работы требуется мод Wikithis\nПозволяет быстро перейти из игры на статью предмета в русской вики.")]
     [DefaultValue(true)]
     [ReloadRequired]
     public bool WikithisInfo;
+    
+    [Label("Забавные фразы смерти")]
+    [Tooltip("Добавляет несколько новых забавных фраз смерти, когда игрок умирает.")]
+    [DefaultValue(true)]
+    [ReloadRequired]
+    public bool RandomDeathText;
 }

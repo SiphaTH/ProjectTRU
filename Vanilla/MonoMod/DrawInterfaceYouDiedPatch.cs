@@ -9,7 +9,7 @@ namespace CalamityRuTranslate.Vanilla.MonoMod;
 
 public class DrawInterfaceYouDiedPatch : ContentTranslation, ILoadableContent
 {
-    public override bool IsTranslationEnabled => TranslationHelper.IsRussianLanguage;
+    public override bool IsTranslationEnabled => TranslationHelper.IsRussianLanguage && TRuConfig.Instance.RandomDeathText;
 
     public override float Priority => 1f;
 

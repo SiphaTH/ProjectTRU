@@ -87,7 +87,7 @@ public class CalamityRuTranslate : Mod
         TRuConfig.Instance = null;
         
         if (Contents != null)
-            foreach (ContentTranslation content in Contents.Where(x => x.IsTranslationEnabled))
+            foreach (ContentTranslation content in Contents)
                 (content as ILoadableContent)?.UnloadContent();
         
         if (_ilHooks != null)
