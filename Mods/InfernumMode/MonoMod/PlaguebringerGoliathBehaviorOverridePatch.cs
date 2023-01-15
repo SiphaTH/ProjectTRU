@@ -2,7 +2,7 @@
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
-using InfernumMode.BehaviorOverrides.BossAIs.PlaguebringerGoliath;
+using InfernumMode.Content.BehaviorOverrides.BossAIs.PlaguebringerGoliath;
 using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;

@@ -56,7 +56,7 @@ public class TownNpcNames : GlobalNPC
         {"Cap'n Deek", "Кэп'н Дик"},
         {"Catalyst", "Каталист"},
         {"Sans Undertale", "Санс Андертейлов"},
-        {"Papyrus Undertale", "Папирус Андертлейлов"},
+        {"Papyrus Undertale", "Папирус Андертейлов"},
         {"Vorbis", "Ворбис"},
         {"Angel", "Энжел"},
         {"Amber", "Янтарь"},

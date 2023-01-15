@@ -15,8 +15,8 @@ public class ExoMechSelectionUIPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Thanatos, a serpentine terror with impervious armor and innumerable laser turrets.", "Танатос - змееподобное создание с непробиваемой броней и бесчисленным количеством лазерных турелей.");
-        TranslationHelper.ModifyIL(il, "Ares, a heavyweight, diabolical monstrosity with four Exo superweapons.", "Арес - тяжеловесное чудовище с четырьмя экзо-супероружиями.");
-        TranslationHelper.ModifyIL(il, "Artemis and Apollo, a pair of extremely persistent automatons with unstable energy reserves.", "Артемида и Аполлон - тандем исключительно стойких механизмов с нестабильным запасом энергии.");
+        TranslationHelper.ModifyIL(il, "Thanatos, a serpentine terror with impervious armor and innumerable laser turrets.", "Танатос - змееподобный ужас с непробиваемой броней и бесчисленным количеством лазерных турелей.");
+        TranslationHelper.ModifyIL(il, "Ares, a heavyweight, diabolical monstrosity with four Exo superweapons.", "Арес - тяжеловес, дьявольское чудовище с четырьмя экзо-супероружиями.");
+        TranslationHelper.ModifyIL(il, "Artemis and Apollo, a pair of extremely persistent automatons with unstable energy reserves.", "Артемида и Аполлон - тандем исключительно стойких механизмов, обладающих нестабильным запасом энергии.");
     };
 }

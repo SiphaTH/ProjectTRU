@@ -127,7 +127,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<KnowledgeCrabulon>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
-            $"Используйте [i:{ModContent.ItemType<DecapoditaSprout>()}] в грибном биоме.",
+            $"Используйте [i:{ModContent.ItemType<DecapoditaSprout>()}] в грибных пустошах.",
             CalamityUtils.ColorMessage("Мицелиевый краб потерял интерес.", new Color(100, 149, 237)),
             () => true
         );

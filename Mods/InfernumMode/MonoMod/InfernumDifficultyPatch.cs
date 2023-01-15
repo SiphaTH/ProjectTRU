@@ -2,7 +2,7 @@
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
-using InfernumMode.Systems;
+using InfernumMode.Core.GlobalInstances.Systems;
 using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
@@ -15,7 +15,7 @@ public class InfernumDifficultyExpandedDescription : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "[c/B32E81:Many major foes will be different, having more challenging AI.] \n[c/B32E81:Adrenaline takes considerably longer to charge.] \n[c/FF0055:Adaptability is imperative.]", "[c/B32E81:Большинство основных врагов будут отличаться, обладая более сложным искусственным интеллектом.]\n[c/B32E81:Адреналин заряжается значительно дольше.]\n[c/FF0055:Крайне рекомендуется адаптивность.]");
+        TranslationHelper.ModifyIL(il, "[c/B32E81:Many major foes will be different, having more challenging AI.] \n[c/B32E81:Adrenaline takes considerably longer to charge.] \n[c/FF0055:Adaptability is imperative.]", "[c/B32E81:Большинство основных врагов будут отличаться, обладая более сложным ИИ.]\n[c/B32E81:Адреналин заряжается значительно дольше.]\n[c/FF0055:Крайне рекомендуется адаптивность.]");
     };
 }
 

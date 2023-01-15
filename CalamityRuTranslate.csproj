@@ -21,7 +21,7 @@
       <HintPath>..\ModAssemblies\FargowiltasSouls_v1.4.1.dll</HintPath>
     </Reference>
     <Reference Include="InfernumMode">
-      <HintPath>..\ModAssemblies\InfernumMode_v1.7.14.dll</HintPath>
+      <HintPath>..\ModAssemblies\InfernumMode_v1.8.0.dll</HintPath>
     </Reference>
     <Reference Include="StarsAbove">
       <HintPath>..\ModAssemblies\StarsAbove_v1.2.3.2.dll</HintPath>

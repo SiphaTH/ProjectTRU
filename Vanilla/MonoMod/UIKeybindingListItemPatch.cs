@@ -55,6 +55,8 @@ public class UIKeybindingListItemPatch : ContentTranslation, ILoadableContent
             "FargowiltasSouls: Frigid Spell" => "FargowiltasSouls: Холодное заклинание",
             "FargowiltasSouls: Debuff Install" => "FargowiltasSouls: Инсталляция дебаффа",
             "FargowiltasSouls: Ammo Cycle" => "FargowiltasSouls: Смена боеприпаса",
+            "InfernumMode: Wayfinder Create Key" => "InfernumMode: Wayfinder Create Key",
+            "InfernumMode: Wayfinder Destroy Key" => "InfernumMode: Wayfinder Destroy Key",
             _ => orig.Invoke(self)
         };
     }

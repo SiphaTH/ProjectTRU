@@ -10,5 +10,6 @@ internal static class InfernumModeCatalog
     {
         new TileData("GolemArena", "", new Color(40, 70, 70)),
         new TileData("MoonlordArena", "", new Color(40, 70, 70)),
+        new TileData("SeaShell", "", new Color(158, 120, 103)),
     };
 }

@@ -2,16 +2,16 @@
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
-using InfernumMode;
+using InfernumMode.GlobalInstances.GlobalItems;
 using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
-public class PoDItemsPatch : ILPatcher
+public class UseRestrictionGlobalItemPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
-    public override MethodInfo ModifiedMethod => typeof(PoDItems).GetCachedMethod("DoGTeleportDenialText");
+    public override MethodInfo ModifiedMethod => typeof(UseRestrictionGlobalItem).GetCachedMethod(nameof(UseRestrictionGlobalItem.DisplayDoGTeleportDenialText));
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {

@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using CalamityMod.Events;
 using CalamityMod.Items.SummonItems;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using InfernumMode.Items.Relics;
-using InfernumMode.Systems;
+using InfernumMode.Content.Items;
+using InfernumMode.Content.Items.Relics;
+using InfernumMode.Core.GlobalInstances.Systems;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -20,7 +22,6 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
 
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
     {
-        bool flag = !BossRushEvent.BossRushActive && WorldSaveSystem.InfernumMode;
         if (item.type == ItemID.CelestialSigil)
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
@@ -84,8 +85,8 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                if (flag)
-                    tooltip.Text += "\n" + LangHelper.GetTextValue("InfernumMode.Items.Vanilla.LihzahrdPowerCell.Tooltip");
+                if (WorldSaveSystem.InfernumMode)
+                    tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.Vanilla.LihzahrdPowerCell.Tooltip");
             });
         }
         else if (item.type == ModContent.ItemType<EyeOfCthulhuRelic>())
@@ -156,6 +157,67 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
             ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Sometimes pure reaction skill is the most valuable thing to cultivate.\nYou are in the final stretch. Your determination has proven invaluable up to this point.\nMay it guide you through the last challenges.", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.DevourerOfGodsRelic.Tooltip.0");
+            });
+        }
+        else if (item.type == ModContent.ItemType<Wayfinder>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.Wayfinder.Tooltip.2", KeybindSystem.WayfinderCreateKey.GetAssignedKeys().FirstOrDefault(), KeybindSystem.WayfinderDestroyKey.GetAssignedKeys().FirstOrDefault());
+            });
+        }
+        else if (item.type == ModContent.ItemType<SandstormsCore>())
+        {
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Opens a portal to the Lost Colosseum", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.SandstormsCore.Tooltip.HasGeneratedColosseumEntrance");
+            });
+            
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Your world does not currently have a Lost Gateway. Kill the Lunatic Cultist again to generate it.", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.SandstormsCore.Tooltip.NotGeneratedColosseumEntrance");
+            });
+        }
+        else if (item.type == ModContent.ItemType<DecapoditaSprout>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.DecapoditaSprout.Tooltip");
+            });
+        }
+        else if (item.type == ItemID.WormFood)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.WormFood.Tooltip");
+            });
+        }
+        else if (item.type == ItemID.BloodySpine)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.BloodySpine.Tooltip");
+            });
+        }
+        else if (item.type == ModContent.ItemType<Teratoma>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.Teratoma.Tooltip");
+            });
+        }
+        else if (item.type == ModContent.ItemType<BloodyWormFood>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.BloodyWormFood.Tooltip");
+            });
+        }
+        else if (item.type == ModContent.ItemType<NecroplasmicBeacon>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.NecroplasmicBeacon.Tooltip");
             });
         }
     }

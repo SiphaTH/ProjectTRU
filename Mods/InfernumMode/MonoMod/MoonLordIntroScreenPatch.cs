@@ -2,7 +2,7 @@
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
-using InfernumMode.BossIntroScreens;
+using InfernumMode.Content.BossIntroScreens;
 using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
@@ -15,6 +15,6 @@ public class MoonLordIntroScreenPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The Remains of the Moon Lord-", "ОСТАНКИ ЛУННОГО ЛОРДА");
+        TranslationHelper.ModifyIL(il, "Eldritch Remains\nThe Moon Lord", "ЖУТКИЕ ОСТАНКИ\nЛУННЫЙ ЛОРД");
     };
 }
