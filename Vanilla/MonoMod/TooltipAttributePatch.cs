@@ -23,10 +23,10 @@ public class TooltipAttributePatch : OnPatcher
         
         return header switch
         {
-            "Enables boss introduction animations. They only activate when Infernum Mode is active." => "",
-            "Determines whether the pet from the Blasted Tophat should display its tips in chat or not." => "",
-            "Enables reduced graphics mode. Useful if performance is low." => "",
-            "How intense color saturation bloom effects should be. Such effects are disabled when this value is zero." => "",
+            "Enables boss introduction animations. They only activate when Infernum Mode is active." => "Включает вступительную анимацию босса. Она активируются только когда включёна сложность Инфернум.",
+            "Determines whether the pet from the Blasted Tophat should display its tips in chat or not." => "Отвечает за то, должен ли питомец проклятого цилиндра отображать свои подсказки в чате или нет.",
+            "Enables reduced graphics mode. Useful if performance is low." => "Включает режим сниженной графики. Полезно при низкой производительности.",
+            "How intense color saturation bloom effects should be. Such effects are disabled when this value is zero." => "Насколько интенсивными должны быть эффекты насыщенности свечения. Такие эффекты отключаются, когда эта настройка равняется нулю.",
             _ => orig.Invoke(self)
         };
     }

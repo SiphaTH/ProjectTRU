@@ -23,10 +23,10 @@ public class LabelAttributePatch : OnPatcher
         
         return header switch
         {
-            "Boss Introduction Animations" => "",
-            "Blasted Tophat Tips in Chat" => "",
-            "Reduced Graphical Settings" => "",
-            "Saturation Bloom Intensity" => "",
+            "Boss Introduction Animations" => "Вступительная анимация босса",
+            "Blasted Tophat Tips in Chat" => "Советы в чате проклятого цилиндра",
+            "Reduced Graphical Settings" => "Сниженные графические настройки",
+            "Saturation Bloom Intensity" => "Интенсивность насыщенности свечения",
             _ => orig.Invoke(self)
         };
     }
