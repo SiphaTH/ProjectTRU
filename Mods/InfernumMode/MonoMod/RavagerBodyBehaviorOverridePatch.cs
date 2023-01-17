@@ -21,6 +21,6 @@ public class RavagerBodyBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, RavagerBodyBehaviorOverride self)
     {
-        yield return n => "Некоторые атаки Разрушителя вознаграждают, если ты рядом. Попробуй не убегать!";
+        yield return n => "Некоторые атаки Разрушителя вознаграждают, если ты остаёшься рядом. Попробуй не убегать!";
     }
 }

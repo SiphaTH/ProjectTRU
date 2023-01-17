@@ -15,7 +15,7 @@ public class BereftVassalBossTitle : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Bereft Vassal", "");
+        TranslationHelper.ModifyIL(il, "Bereft Vassal", "Обездоленный вассал");
     };
 }
 
@@ -27,8 +27,8 @@ public class BereftVassalSpawnRequirement : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Use a [i:", "");
-        TranslationHelper.ModifyIL(il, "] at the pedestal in the heart of the desert.", "");
+        TranslationHelper.ModifyIL(il, "Use a [i:", "Используйте [i:");
+        TranslationHelper.ModifyIL(il, "] at the pedestal in the heart of the desert.", "] на пьедестале в сердце пустыни.");
     };
 }
 
@@ -40,6 +40,6 @@ public class BereftVassalDespawnMessage : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Argus returns to quiet solitude at the center of the Colosseum.", "");
+        TranslationHelper.ModifyIL(il, "Argus returns to quiet solitude at the center of the Colosseum.", "Аргус возвращается к тихому уединению в центре колизея.");
     };
 }

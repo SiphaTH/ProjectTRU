@@ -19,7 +19,7 @@ public class TwinsAttackSynchronizerPatch : ILPatcher
         TranslationHelper.ModifyIL(il, "SPA-MK1", "СПА-МК1", 2);
         TranslationHelper.ModifyIL(il, "RET-MK1", "РЕТ-МК1");
         TranslationHelper.ModifyIL(il, "RET-MK1", "РЕТ-МК1", 2);
-        TranslationHelper.ModifyIL(il, ": DEFENSES PENETRATED. INITIATING PROCEDURE SHLD-17ECF9.", ": ЗАЩИТА ПРОРВАНА. ИНИЦИИРУЮ ПРОЦЕДУРУ  ЩТ-17ECF9.");
+        TranslationHelper.ModifyIL(il, ": DEFENSES PENETRATED. INITIATING PROCEDURE SHLD-17ECF9.", ": ЗАЩИТА ПРОРВАНА. ИНИЦИИРУЮ ПРОЦЕДУРУ  ЩТ-17ЕЦФ9.");
         TranslationHelper.ModifyIL(il, ": ERROR DETECTING SECONDARY UNIT. BURNING EXCESS FUEL RESERVES.", ": ВТОРИЧНАЯ ЕДИНИЦА НЕ ОБНАРУЖЕНА. СЖИГАНИЕ ИЗБЫТОЧНЫХ ЗАПАСОВ ТОПЛИВА.");
     };
 }

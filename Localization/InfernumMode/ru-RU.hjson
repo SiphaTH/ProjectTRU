@@ -34,37 +34,37 @@
         
         Items: {
             CherishedSealocket: {
-                Name: Cherished Sealocket
+                Name: Заветный морской медальон
                 Tooltip:
                     '''
-                    Grants a water forcefield that dissipates after 2 hits
-                    When the forcefield is up, hard-hitting hits do 60% less damage overall, and you recieve a 12% damage boost
-                    The forcefield reappears after 90 seconds
+                    Создаёт водяное силовое поле, которое рассеивается после 2 ударов
+                    Когда силовое поле активировано, мощные удары в целом наносят на 60% меньше урона, а вы получаете бонус к наносимому урону на 12%
+                    Силовое поле восстанавливается через 90 секунд
                     '''
             }
             
             BereftVassalBossBag: {
-                Name: Treasure Bag (Bereft Vassal)
+                Name: Мешок с сокровищами (Обездоленный вассал)
                 Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
             }
             
             KnowledgeBereftVassal: {
-                Name: The Bereft Vassal and Great Sand Shark
+                Name: История — Обездоленный вассал и великая песчаная акула
                 Tooltip:
                     '''
-                    A most unusual allegiance
-                    Once a great warrior under the Sea King, it appears that the destruction of his home had left him despondent
-                    And yet, it would seem that fighting you has reignited his spirits
+                    Какая необыкновенная преданность
+                    Некогда он был великим стражем морского короля, но после разрушения королевства утратил всякое желание сражаться
+                    И всё же, казалось бы, сражение с вами возродило его дух
                     '''
             }
             
             BereftVassalTrophy: {
-                Name: Bereft Vassal Trophy
+                Name: Трофей обездоленного вассала
                 Tooltip: ""
             }
             
             GrandStatueItem: {
-                Name: Grand Statue
+                Name: Великая статуя
                 Tooltip: ""
             }
             
@@ -74,28 +74,28 @@
             }
             
             WaterglassToken: {
-                Name: Waterglass Token
+                Name: Знак водяного стекла
                 Tooltip:
                     '''
-                    Teleports you to the Lost Colosseum and back
-                    This item cannot be used when being held by the mouse and must be in the hotbar
+                    Телепортирует вас к затерянному колизею и обратно
+                    Этот предмет нельзя использовать если взять его мышкой, он должен использоваться с панели быстрого доступа
                     '''
             }
             
             Wayfinder: {
-                Name: The Wayfinder
+                Name: Проводник
                 Tooltip: {
                     $parentVal:
                         '''
-                        Creates a magical gate that allows you to fast travel to it
-                        Does not work when a boss is alive
+                        Создаёт магические врата, позволяющие быстро переместиться к ним
+                        Не работает, пока босс жив
                         ModifyTooltips
                         '''
                     2:
                         '''
-                        Hold LMB to teleport to the gate
-                        Hold LMB and {0} to set the gate to your position
-                        Hold LMB and {1} to remove the gate
+                        Зажмите ЛКМ для телепортации к вратам
+                        Зажмите {0} и удерживайте ЛКМ, чтобы установить врата в вашей позиции
+                        Зажмите {1} и удерживайте ЛКМ, чтобы убрать врата
                         '''
                 }
             }
@@ -163,11 +163,11 @@
             }
             
             RedBait: {
-                Name: Red Bait
+                Name: Красная приманка
                 Tooltip:
                     '''
-                    Summons the Dreadnautilus
-                    Can only be used at night
+                    Призывает Дреднаутилуса
+                    Можно использовать только ночью
                     Не расходуется
                     '''
             }
@@ -183,57 +183,57 @@
             }
             
             TrufflePlatter: {
-                Name: Truffle Worm Platter
+                Name: Блюдо с трюфельными червями
                 Tooltip:
                     '''
-                    Summons Duke Fishron
-                    Can only be used at the Ocean
+                    Призывает герцога Рыброна
+                    Можно использовать не только в океане
                     Не расходуется
                     '''
             }
             
             AridBattlecry: {
-                Name: Arid Battlecry
-                Tooltip: "Summons sharks below the cursor that fly towards enemies"
+                Name: Боевой клич засухи
+                Tooltip: Призывает акул под курсором, которые летят на врагов
             }
             
             Myrindael: {
-                Name: Myrindael
+                Name: Мириндаль
                 Tooltip:
                     '''
-                    Holding left click spins the spear before throwing it. After being thrown, enemy hits release lightning and sparks towards enemies
-                    Right clicks perform a powerful lunge that releases lightning from the sky on enemy hits
-                    To fight, to destroy, is to take away from the world
-                    And yet, when the world itself clashes against you, what else can you do?
+                    Зажмите <left>, чтобы начать раскачивать копьё перед броском. После броска попадание копьём во врага выпускает молнии и искры на врага
+                    Нажмите <right>, чтобы выполнить мощный выпад, который выпускает молнию с неба при столкновении с врагом
+                    Сражаться, разрушать - значит лишать себя мира
+                    Но когда сам мир противостоит тебе, что ещё ты можешь сделать?
                     '''
             }
             
             TheGlassmaker: {
-                Name: The Glassmaker
+                Name: Стеклодув
                 Tooltip:
                     '''
-                    90% chance to not consume gel
-                    Sometimes releases hot glass shards that home in on nearby targets
+                    90% шанс не использовать гель
+                    Иногда выпускает раскалённые стеклянные осколки, которые наводятся в ближайших врагов
                     '''
             }
             
             WanderersShell: {
-                Name: Wanderer's Shell
+                Name: Ракушка скитальца
                 Tooltip:
                     '''
-                    Throws a spread of sea shells that home in on enemies before bouncing off of them and lingering on the ground
-                    Stealth strikes cause all lingering shells to explode into water geysers that target nearby enemies
-                    The open edge is too sharp to put near your ear
+                    Бросает в разброс морские ракушки, которые наводятся на врагов, отскакивают от них и оседают на землю
+                    При скрытном ударе все осевшие ракушки взрываются в водяные гейзеры, которые направляются на ближайших врагов
+                    Устье ракушки слишком острое, чтобы прикладывать его к уху
                     '''
             }
             
             SandstormsCore: {
                 Tooltip: {
-                    HasGeneratedColosseumEntrance: Opens a portal to the Lost Colosseum
+                    HasGeneratedColosseumEntrance: Открывает портал к затерянному колизею
                     NotGeneratedColosseumEntrance:
                         '''
-                        Your world does not currently have a Lost Gateway
-                        Kill the Lunatic Cultist again to generate it
+                        На данный момент в вашем мире отсутствуют затерянные врата
+                        Повторно убейте культиста-лунатика, чтобы сгенерировать их
                         '''
                 }
             }
@@ -278,7 +278,7 @@
             }
             
             BereftVassalRelic: {
-                Name: Infernal Bereft Vassal Relic
+                Name: Инфернальная реликвия обездоленного вассала
                 Tooltip: ModifyTooltips
             }
             
@@ -412,7 +412,7 @@
                 Name: Инфернальная реликвия Голема
                 Tooltip: {
                     $parentVal: ModifyTooltips
-                    0: Чательная подготовка и планирование тактики к бою поможет тебе в достижении цели. Это сыграет немаловажную роль в преодолении будущих препятствий
+                    0: Тщательная подготовка и планирование тактики к бою поможет тебе в достижении цели. Это сыграет немаловажную роль в преодолении будущих препятствий
                 }
             }
             
@@ -593,7 +593,7 @@
                     $parentVal: Призывает осквернённых стражей при использовании в осквернённом саду, находящимся далеко справа в преисподней
                     Warning:
                         '''
-                        На данный момент в вашем мире нет сада. Убейте Лунного лорда повторно, чтобы сгенерировать его
+                        На данный момент в вашем мире отсутствует сад. Повторно убейте Лунного лорда, чтобы сгенерировать его
                         Но сперва заберите из лаборатории схему преисподней, поскольку генерация сада может её разрушить
                         '''
                 }
@@ -625,7 +625,7 @@
         }
         
         Bestiary: {
-            BereftVassal: A vigilant guardian, once wandering without a purpose. Having learned that his king lives on, it'd seem that he has started to regain his will to live. He looks forward to fighting you again.
+            BereftVassal: Неутомимый страж, утративший смысл жизни. Узнав, что его король жив и здравствует, вновь обрёл волю к жизни. Он с нетерпением ждёт следующего поединка с вами.
         }
         
         NPCs:{
@@ -662,7 +662,7 @@
             SplitBigSlime.Name: Нестабильный слизень
             SplitBigSlimeAnimation.Name: Нестабильный слизень
             UnworldlyEntity.Name: Неземная сущность
-            BereftVassal.Name: Argus, the Bereft Vassal
+            BereftVassal.Name: Аргус, Обездоленный вассал
 
             Dialogues: {
                 Nurse: {
@@ -692,14 +692,15 @@
                     ShortDescription:
                         '''
                         [c/B32E81:Настоящий вызов для тех, кто предпочитает нечто совершенно новое, и в то же время более сложное, чем режим Смерть.]
-                        [c/B32E81:Сложность нельзя включить если мир создан в режиме Мастер или в сиде «For the Worthy».]
+                        [c/B32E81:Сложность нельзя включить если мир создан в режиме Мастер или в генерации «For the Worthy».]
                         '''
                 }
             }
         }
         
         CombatTexts: {
-            1: Infernum must be enabled to enter the Colosseum!
+            1: Чтобы зайти в колизей, необходимо включить сложность Инфернум!
+            2: Врата не установлены!
         }
     }
     
@@ -713,7 +714,7 @@
         
         ModBiome: {
             ProfanedTempleBiome: Осквернённый храм
-            LostColosseumBiome: Lost Colosseum
+            LostColosseumBiome: Затерянный колизей
         }
     }
 }

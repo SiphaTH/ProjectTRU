@@ -25,8 +25,8 @@ public class DoGPhase1HeadBehaviorOverridePatch : OnPatcher
         yield return n =>
         {
             if (!Main.LocalPlayer.HasDash())
-                return "Знаешь, аксессуар, дающий рывки, был тут пипец полезен...";
-            return !Main.LocalPlayer.HasShieldBash() ? "Возможность врезать ему в голову с помощью тарана звучит неплохо, не находишь?" : string.Empty;
+                return "Знаешь, аксессуар, дающий рывки, был бы весьма кстати...";
+            return !Main.LocalPlayer.HasShieldBash() ? "Возможность врезать ему с тарана в харю звучит неплохо, не находишь?" : string.Empty;
         };
     }
 }

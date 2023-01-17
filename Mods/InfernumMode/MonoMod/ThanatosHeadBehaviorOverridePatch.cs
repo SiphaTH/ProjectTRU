@@ -15,7 +15,7 @@ public class ThanatosHeadBehaviorOverrideDoBehavior_MaximumOverdrive : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "THANATOS-05: EXO TURRETS BURNING AT UNSTABLE ENERGY LEVELS. SELF DESTRUCTION IMMINENT.", "");
-        TranslationHelper.ModifyIL(il, "THANATOS-05: PREPARING 'MAXIMUM OVERDRIVE CHARGE' MUTUTAL DESTRUCTION PROTOCOL.", "");
+        TranslationHelper.ModifyIL(il, "THANATOS-05: EXO TURRETS BURNING AT UNSTABLE ENERGY LEVELS. SELF DESTRUCTION IMMINENT.", "ТАНАТОС-05: ЭКЗО-ТУРЕЛИ РАБОТАЮТ НА НЕСТАБИЛЬНОМ УРОВНЕ ЭНЕРГИИ. САМОУНИЧТОЖЕНИЕ НЕИЗБЕЖНО.");
+        TranslationHelper.ModifyIL(il, "THANATOS-05: PREPARING 'MAXIMUM OVERDRIVE CHARGE' MUTUTAL DESTRUCTION PROTOCOL.", "ТАНАТОС-05: ПОДГОТОВКА ПРОТОКОЛА ОБОЮДНОГО УНИЧТОЖЕНИЯ 'МАКСИМАЛЬНАЯ ПЕРЕГРУЗКА ЗАРЯДА'");
     };
 }

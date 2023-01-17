@@ -18,8 +18,8 @@ public class ApolloBehaviorOverrideDoBehavior_ThemonuclearBlitz : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "ARTEMIS-01: COMBINED ENERGY RESERVES AT LOW CAPACITY. SYSTEM FAILURE IMMINENT.", "");
-        TranslationHelper.ModifyIL(il, "APOLLO-03: PREPARING 'THERMONUCLEAR BLITZ' MUTUAL DESTRUCTION PROTOCOL.", "");
+        TranslationHelper.ModifyIL(il, "ARTEMIS-01: COMBINED ENERGY RESERVES AT LOW CAPACITY. SYSTEM FAILURE IMMINENT.", "АРТЕМИДА-01: РЕЗЕРВЫ КОМБИНИРОВАННОЙ ЭНЕРГИИ НА НИЗКОЙ МОЩНОСТИ. ОТКАЗ СИСТЕМЫ НЕИЗБЕЖЕН.");
+        TranslationHelper.ModifyIL(il, "APOLLO-03: PREPARING 'THERMONUCLEAR BLITZ' MUTUAL DESTRUCTION PROTOCOL.", "АПОЛЛОН-03: ПОДГОТОВКА ПРОТОКОЛА ОБОЮДНОГО УНИЧТОЖЕНИЯ 'ТЕРМОЯДЕРНЫЙ ВЗРЫВ'.");
     };
 }
 
@@ -35,6 +35,6 @@ public class ApolloBehaviorOverrideGetTips : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, ApolloBehaviorOverride self)
     {
-        yield return n => "Экзо-близнецы замечательно синхронизированы, попробуй понять ритм и перехитрить их!";
+        yield return n => "Экзо-близнецы великолепно синхронизированы, попробуй понять ритм и перехитрить их!";
     }
 }

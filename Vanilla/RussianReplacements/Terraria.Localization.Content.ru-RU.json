@@ -627,7 +627,7 @@
     "BlueWires": "Синие провода",
     "DarknessDanger": "Здесь так темно... вы чувствуете опасность...",
     "DarknessSafe": "Опасность тьмы миновала.",
-    "DroppedCoins": "...и потеряли {0}",
+    "DroppedCoins": "Вы потеряли {0}",
     "EnemiesDefeatedAnnouncement": "{1} повержен(а) {0} раз!",
     "EnemiesDefeatedByAnnouncement": "{2} повержен(а) игроком {0} {1} раз!",
     "FinalWave": "Последняя волна",

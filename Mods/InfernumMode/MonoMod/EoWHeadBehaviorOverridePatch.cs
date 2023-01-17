@@ -22,8 +22,8 @@ public class EoWHeadBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, EoWHeadBehaviorOverride self)
     {
-        yield return n => "Множество многоуровневых платформ помогут избежать взрывающихся проклятых огней!";
-        yield return n => "Крюк и рывок могут очень помочь уклоняться на взрывы скорости Пожирателей!";
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Думаю, он жрёт нечто большее, чем просто миры." : string.Empty;
+        yield return n => "Многоуровневые платформы помогут избежать взрывающихся проклятых огней!";
+        yield return n => "Крюк и рывок значительно помогают реагировать на резкие всплески скоростей пожирателей!";
+        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Думаю, он пожирает нечто большее, чем просто миры." : string.Empty;
     }
 }

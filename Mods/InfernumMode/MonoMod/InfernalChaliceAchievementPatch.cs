@@ -15,7 +15,7 @@ public class InfernalChaliceAchievementPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Baptized By Hellfire", "");
-        TranslationHelper.ModifyIL(il, "Complete the final challenge, and earn your reward\n[c/777777:Obtain the Infernal Chalice]", "");
+        TranslationHelper.ModifyIL(il, "Baptized By Hellfire", "Окрещённый адским огнём");
+        TranslationHelper.ModifyIL(il, "Complete the final challenge, and earn your reward\n[c/777777:Obtain the Infernal Chalice]", "Завершите последнее испытание и получи свою награду\n[c/777777:Заполучите чашу Инфернума]");
     };
 }

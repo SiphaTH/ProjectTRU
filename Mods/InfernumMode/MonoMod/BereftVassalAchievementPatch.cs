@@ -15,7 +15,7 @@ public class BereftVassalAchievementPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Forgotten Sands", "");
-        TranslationHelper.ModifyIL(il, "Best the Bereft Vassal in combat, in the far reaches of the desert's dunes\n[c/777777:Defeat the Bereft Vassal]", "");
+        TranslationHelper.ModifyIL(il, "Forgotten Sands", "Забытые пески");
+        TranslationHelper.ModifyIL(il, "Best the Bereft Vassal in combat, in the far reaches of the desert's dunes\n[c/777777:Defeat the Bereft Vassal]", "Одолейте обездоленного вассала в дальних уголках пустынных дюн\n[c/777777:Одолейте обездоленного вассала]");
     };
 }

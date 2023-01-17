@@ -36,7 +36,7 @@ public class TRuConfig : ModConfig
     
     [Label("Забавные фразы смерти")]
     [Tooltip("Добавляет несколько новых забавных фраз смерти, когда игрок умирает.")]
-    [DefaultValue(true)]
+    [DefaultValue(false)]
     [ReloadRequired]
     public bool RandomDeathText;
 }

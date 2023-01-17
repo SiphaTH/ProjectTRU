@@ -15,6 +15,6 @@ public class SealocketForcefieldRechargePatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Sealocket Forcefield Cooldown", "");
+        TranslationHelper.ModifyIL(il, "Sealocket Forcefield Cooldown", "Перезарядка силового поля морского медальона");
     };
 }

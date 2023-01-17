@@ -21,7 +21,7 @@ public class BoCBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, BoCBehaviorOverride self)
     {
-        yield return n => "Мозг Ктулху использует в своих атаках много предсказаний и хитростей, так что не тупи!";
-        yield return n => "Мозг собирается попробовать запутать тебя различными играми с разумом, но ты должен следить за настоящим!";
+        yield return n => "Мозг Ктулху часто пользуется предвидением и хитростью в своих атаках, так что не тупи!";
+        yield return n => "Мозг попытается одурачить тебя обманом зрения, но ты должен следить за настоящим!";
     }
 }

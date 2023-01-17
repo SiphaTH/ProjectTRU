@@ -15,6 +15,6 @@ public class AchievementUIManagerPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Death Wishes", "");
+        TranslationHelper.ModifyIL(il, "Death Wishes", "Предсмертные желания");
     };
 }

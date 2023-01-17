@@ -21,7 +21,7 @@ public class CryogenBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, CryogenBehaviorOverride self)
     {
-        yield return n => "Меньше двигайся, пока он находится над тобой. Это должно уменьшить его резкие скачки!";
+        yield return n => "По возможности меньше двигайся, пока он находится над тобой. Так он реже делает резкие скачки!";
         yield return n => "Следи за зазорами в сосульках вокруг Криогена, они указывают на безопасное положение!";
     }
 }

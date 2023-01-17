@@ -15,7 +15,7 @@ public class KillAllBossesAchievementPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Infer-it-all!", "");
-        TranslationHelper.ModifyIL(il, "Rip and tear, until it is done\n[c/777777:Beat every Infernum Boss]", "");
+        TranslationHelper.ModifyIL(il, "Infer-it-all!", "Отинферь их всех!");
+        TranslationHelper.ModifyIL(il, "Rip and tear, until it is done\n[c/777777:Beat every Infernum Boss]", "Рвите и кромсайте, пока они не иссякнут\n[c/777777:Одолейте каждого инфернального босса]");
     };
 }

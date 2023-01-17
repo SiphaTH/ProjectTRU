@@ -18,7 +18,7 @@ public class ProvidenceBehaviorOverridePreAI : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The blazing air rises...", "Поднимается обжигающий воздух...");
+        TranslationHelper.ModifyIL(il, "The blazing air rises...", "Вздымает обжигающий воздух...");
         TranslationHelper.ModifyIL(il, "The blue flames roar...", "Ревёт синее пламя...");
     };
 }

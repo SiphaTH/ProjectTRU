@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using CalamityRuTranslate.Common;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -1106,6 +1107,19 @@ internal static class RussianPrefixOverhaul
 		return new List<int>();
 	}
 
+	private static List<int> InfernumModeTypeW()
+	{
+		if (ModsCall.Calamity != null && ModsCall.Infernum != null)
+		{
+			return new List<int>
+			{
+				ModContent.Find<ModItem>("InfernumMode", "WanderersShell").Type,
+			};
+		}
+		
+		return new List<int>();
+	}
+
 	internal static string GetGenderedPrefix(string[] prefix, int id)
 	{
 		if (ModsCall.Calamity != null && !_isFirstTime)
@@ -1113,6 +1127,10 @@ internal static class RussianPrefixOverhaul
 			TypeW.AddRange(CalamityTypeW());
 			TypeU.AddRange(CalamityTypeU());
 			TypePl.AddRange(CalamityTypePl());
+			if (ModsCall.Infernum != null)
+			{
+				TypeW.AddRange(InfernumModeTypeW());
+			}
 			_isFirstTime = true;
 		}
 

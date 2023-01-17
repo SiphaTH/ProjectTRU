@@ -20,6 +20,7 @@ public class InfenumModeCombatText : ContentTranslation, ICombatText
                 Main.combatText[i].text = Main.combatText[i].text switch
                 {
                     "Infernum must be enabled to enter the Colosseum!" => LangHelper.GetText("InfernumMode.CombatTexts.1"),
+                    "Gate not set!" => LangHelper.GetText("InfernumMode.CombatTexts.2"),
                     _ => Main.combatText[i].text
                 };
             }

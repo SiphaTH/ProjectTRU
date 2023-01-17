@@ -15,6 +15,6 @@ public class AchievementMenuUIHookEditPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Open Death Wishes", "");
+        TranslationHelper.ModifyIL(il, "Open Death Wishes", "Открыть предсмертные желания");
     };
 }

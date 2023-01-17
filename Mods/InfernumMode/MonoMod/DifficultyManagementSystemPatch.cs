@@ -15,7 +15,7 @@ public class DifficultyManagementSystemPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Infernum is not allowed in Master Mode or For the Worthy.", "Вы не можете включить сложность Инфернум, потому что создали мир в режиме Мастер или в сиде «For the Worthy».");
+        TranslationHelper.ModifyIL(il, "Infernum is not allowed in Master Mode or For the Worthy.", "Вы не можете включить сложность Инфернум, потому что создали мир или в режиме Мастер, или в генерации «For the Worthy».");
         TranslationHelper.ModifyIL(il, "Eternity mode's boss AI changes are overridden by Infernum if there are conflicts.", "Изменения ИИ боссов в режиме Вечность из Fargo Souls аннулируются Инфернумом в случае возникновения конфликтов.");
     };
 }

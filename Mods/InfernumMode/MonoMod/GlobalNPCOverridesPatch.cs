@@ -16,6 +16,6 @@ public class GlobalNPCOverridesPatch : ILPatcher
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "A profaned shrine has erupted from the ashes at the underworld's edge!", "Осквернённое святилище вырывается из пепла на границе преисподней!");
-        TranslationHelper.ModifyIL(il, "Mysterious ruins have materialized in the heart of the desert!", "");
+        TranslationHelper.ModifyIL(il, "Mysterious ruins have materialized in the heart of the desert!", "Загадочные руины материализовались в самом сердце пустыни!");
     };
 }

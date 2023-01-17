@@ -15,6 +15,6 @@ public class GreatSandSharkIntroScreenPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Taurus\nThe Great Sand Shark", "");
+        TranslationHelper.ModifyIL(il, "Taurus\nThe Great Sand Shark", "ТАУРУС\nВЕЛИКАЯ ПЕСЧАНАЯ АКУЛА");
     };
 }

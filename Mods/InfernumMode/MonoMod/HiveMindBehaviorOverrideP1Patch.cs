@@ -23,8 +23,8 @@ public class HiveMindBehaviorOverrideP1Patch : OnPatcher
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, HiveMindBehaviorOverrideP1 self)
     {
         yield return n => "В этот раз тебе нужно изучить движения врагов, воспользоваться их подсказками, чтобы получить преимущество!";
-        yield return n => "Старайся отвести его дождевой заряд, подбежав к разуму Улья. Это поможет сохранить твою арену чистой!";
-        yield return n => "Разум Улья начинает свою следующую атаку раньше, если ты атакуешь его; подожди, пока он закончит атаку, прежде чем стрелять!";
+        yield return n => "Старайся отвести его дождевой заряд, подбежав к разуму улья. Это поможет сохранить твою арену чистой!";
+        yield return n => "Разум улья начнёт атаковать раньше, если ты атакуешь его; подожди, пока он закончит атаку, прежде чем стрелять!";
         yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Не сработало, но не волнуйся! Этот сынуля у нас ещё попляшет!" : string.Empty;
         yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Я бы сделала ехидный комментарий, но мне, пожалуй, стоит заняться своими делами..." : string.Empty;
     }

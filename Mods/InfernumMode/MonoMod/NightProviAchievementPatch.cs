@@ -15,7 +15,7 @@ public class NightProviAchievementPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Night Knight", "");
-        TranslationHelper.ModifyIL(il, "Challenge the Profaned Goddess under the gaze of the stars\n[c/777777:Beat Infernum Night Providence]", "");
+        TranslationHelper.ModifyIL(il, "Night Knight", "Рыцарь Ночи");
+        TranslationHelper.ModifyIL(il, "Challenge the Profaned Goddess under the gaze of the stars\n[c/777777:Beat Infernum Night Providence]", "Бросьте вызов осквернённой богине под покровом ночи\n[c/777777:Одолейте инфернальную ночную Провиденс]");
     };
 }

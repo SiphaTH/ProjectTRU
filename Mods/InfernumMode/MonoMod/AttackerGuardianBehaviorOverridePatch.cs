@@ -21,7 +21,7 @@ public class AttackerGuardianBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, AttackerGuardianBehaviorOverride self)
     {
-        yield return n => "Не приближайся к энергетическим полям! Стоя рядом с ними, можно навредить себе!";
+        yield return n => "Не приближайся к энергетическим полям! Находясь рядом с ними, можно навредить себе!";
         yield return n => "Круговые движения помогают против копий атакующего стража!";
     }
 }

@@ -15,6 +15,6 @@ public class BereftVassalIntroScreenPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Argus\nThe Bereft Vassal", "");
+        TranslationHelper.ModifyIL(il, "Argus\nThe Bereft Vassal", "АРГУС\nОБЕЗДОЛЕННЫЙ ВАССАЛ");
     };
 }

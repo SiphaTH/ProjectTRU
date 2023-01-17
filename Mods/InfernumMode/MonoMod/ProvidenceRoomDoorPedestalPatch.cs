@@ -15,6 +15,6 @@ public class ProvidenceRoomDoorPedestalPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, " was somehow impaled by a pillar of crystals.", "");
+        TranslationHelper.ModifyIL(il, " was somehow impaled by a pillar of crystals.", " каким-то образом пронзается столбом кристаллов.");
     };
 }
