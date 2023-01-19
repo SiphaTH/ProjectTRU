@@ -11,7 +11,7 @@ public class CalamityTranslation : TranslateMod
     
     public CalamityTranslation()
     {
-        IsBuffsEndabled = true;
+        IsBuffsEnabled = true;
         IsItemsEnabled = true;
         IsNPCsEnabled = true;
         IsPrefixesEnabled = true;

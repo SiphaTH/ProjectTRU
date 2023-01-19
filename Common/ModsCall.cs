@@ -1,6 +1,8 @@
-﻿using CalamityMod;
+﻿using System.Linq;
+using CalamityMod;
 using CalamityMod.Items.Weapons.Magic;
 using CalamityMod.World;
+using InfernumMode.Core.GlobalInstances.Systems;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Common;
@@ -34,4 +36,6 @@ internal static class ModsCall
     internal static string GodSlayerDashHotKey => CalamityKeybinds.GodSlayerDashHotKey.TooltipHotkeyString();
     internal static string ExoChairSlowdownHotkey => CalamityKeybinds.ExoChairSlowdownHotkey.TooltipHotkeyString();
     internal static bool EarlyHardmodeProgressionRework => CalamityConfig.Instance.EarlyHardmodeProgressionRework;
+    internal static string WayfinderCreateKey => KeybindSystem.WayfinderCreateKey.GetAssignedKeys().FirstOrDefault();
+    internal static string WayfinderDestroyKey => KeybindSystem.WayfinderDestroyKey.GetAssignedKeys().FirstOrDefault();
 }

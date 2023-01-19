@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using CalamityRuTranslate.Common;
-using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 

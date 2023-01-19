@@ -135,7 +135,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
         AddBoss(
             bosschecklist,
             calamity,
-            "Разум Улья",
+            "Разум улья",
             3.98f,
             ModContent.NPCType<HiveMind>(),
             () => DownedBossSystem.downedHiveMind,

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using CalamityMod.Items.SummonItems;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
@@ -162,7 +161,7 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
             {
-                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.Wayfinder.Tooltip.2", KeybindSystem.WayfinderCreateKey.GetAssignedKeys().FirstOrDefault() ?? "[NONE]", KeybindSystem.WayfinderDestroyKey.GetAssignedKeys().FirstOrDefault() ?? "[NONE]");
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.Wayfinder.Tooltip.2", ModsCall.WayfinderCreateKey ?? "[NONE]", ModsCall.WayfinderDestroyKey ?? "[NONE]");
             });
         }
         else if (item.type == ModContent.ItemType<SandstormsCore>())

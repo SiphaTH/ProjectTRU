@@ -19,9 +19,9 @@ public class TooltipAttributePatch : OnPatcher
     
     private string Translation(TooltipDelegate orig, TooltipAttribute self)
     {
-        string header = self.GetType().GetField("tooltip", (BindingFlags)60)?.GetValue(self) as string;
+        string tooltip = self.GetType().GetField("tooltip", (BindingFlags)60)?.GetValue(self) as string;
         
-        return header switch
+        return tooltip switch
         {
             "Enables boss introduction animations. They only activate when Infernum Mode is active." => "Включает вступительную анимацию босса. Она активируются только когда включёна сложность Инфернум.",
             "Determines whether the pet from the Blasted Tophat should display its tips in chat or not." => "Отвечает за то, должен ли питомец проклятого цилиндра отображать свои подсказки в чате или нет.",

@@ -19,9 +19,9 @@ public class LabelAttributePatch : OnPatcher
     
     private string Translation(LabelDelegate orig, LabelAttribute self)
     {
-        string header = self.GetType().GetField("label", (BindingFlags)60)?.GetValue(self) as string;
+        string label = self.GetType().GetField("label", (BindingFlags)60)?.GetValue(self) as string;
         
-        return header switch
+        return label switch
         {
             "Boss Introduction Animations" => "Вступительная анимация босса",
             "Blasted Tophat Tips in Chat" => "Советы в чате проклятого цилиндра",

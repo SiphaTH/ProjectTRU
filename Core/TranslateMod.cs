@@ -13,7 +13,7 @@ public abstract class TranslateMod : ILoadable
     public abstract Version ExpectedVersion { get; }
     public virtual bool ShouldCheckModVersion => true;
     
-    protected bool IsBuffsEndabled;
+    protected bool IsBuffsEnabled;
     protected bool IsItemsEnabled;
     protected bool IsNPCsEnabled;
     protected bool IsPrefixesEnabled;
@@ -25,7 +25,7 @@ public abstract class TranslateMod : ILoadable
 
     public TranslateMod()
     {
-        IsBuffsEndabled = new();
+        IsBuffsEnabled = new();
         IsItemsEnabled = new();
         IsNPCsEnabled = new();
         IsPrefixesEnabled = new();
@@ -80,7 +80,7 @@ public abstract class TranslateMod : ILoadable
         if (ModLoader.TryGetMod(InternalModName, out Mod modInstance) && modInstance != null)
         {
             TranslateManager translateManager = new TranslateManager(InternalModName, IsItemsEnabled,
-                IsBuffsEndabled, IsNPCsEnabled, IsPrefixesEnabled, Projectiles, Tiles);
+                IsBuffsEnabled, IsNPCsEnabled, IsPrefixesEnabled, Projectiles, Tiles);
             translateManager.TranslateBuffs();
             translateManager.TranslateItems();
             translateManager.TranslatePrefixes();

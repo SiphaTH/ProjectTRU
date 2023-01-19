@@ -12,7 +12,7 @@ public class InfernumModeTranslation : TranslateMod
 
     public InfernumModeTranslation()
     {
-        IsBuffsEndabled = true;
+        IsBuffsEnabled = true;
         IsItemsEnabled = true;
         IsNPCsEnabled = true;
         Tiles = InfernumModeCatalog.Tiles;
