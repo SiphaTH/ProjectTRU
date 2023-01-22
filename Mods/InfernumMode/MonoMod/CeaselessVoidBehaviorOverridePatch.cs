@@ -21,7 +21,7 @@ public class CeaselessVoidBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, CeaselessVoidBehaviorOverride self)
     {
-        yield return n => "В начале боя старайся не особо не передвигаться. Найди хорошее положение и оставайся рядом с ним - это очень помогает!";
+        yield return n => "В начале боя старайся особо не передвигаться. Найди хорошее положение и оставайся рядом с ним - это очень помогает!";
         yield return n => "Большинство атак Пустоты требуют быстрой реакции для уклонения. Внимательно следи за любыми снарядами на экране!";
     }
 }

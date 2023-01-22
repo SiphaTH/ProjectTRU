@@ -15,7 +15,7 @@ public class BabysFirstAchievementPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "First Of Many", "Первый из многих");
-        TranslationHelper.ModifyIL(il, "The higher the count, the more you've learnt\n[c/777777:Die to an Infernum boss]", "Чем больше ошибок, тем быстрее рост\n[c/777777:Умрите от инфернального босса]");
+        TranslationHelper.ModifyIL(il, "First Of Many", "Всё бывает в первый раз");
+        TranslationHelper.ModifyIL(il, "The higher the count, the more you've learnt\n[c/777777:Die to an Infernum boss]", "Выше значение - больше изучение\n[c/777777:Погибнуть от босса в Инфернуме]");
     };
 }

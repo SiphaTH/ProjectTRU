@@ -16,6 +16,6 @@ public class MechaMayhemAchievementPatch : ILPatcher
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Malicious Machinery", "Заводные злыдни");
-        TranslationHelper.ModifyIL(il, "Decommission the Maniacal Mechanical trio in one fell swoop!\n[c/777777:Beat Infernum Mecha-Mayhem]", "Прихлопните одним махом трио механических убийц!\n[c/777777:Одолейте инфернальный механический хаос]");
+        TranslationHelper.ModifyIL(il, "Decommission the Maniacal Mechanical trio in one fell swoop!\n[c/777777:Beat Infernum Mecha-Mayhem]", "Деконструировать сразу всю троицу безумных механических убийц за раз!\n[c/777777:Одержать победу во время Мехорубки в Инфернуме]");
     };
 }

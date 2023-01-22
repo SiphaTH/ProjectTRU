@@ -16,6 +16,6 @@ public class ExoPathAchievementPatch : ILPatcher
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Lab Rat", "Лабораторная крыса");
-        TranslationHelper.ModifyIL(il, "Become Draedon's favorite test subject\n[c/777777:Beat all Infernum Exo Mech combinations]", "Стать любимым подопытным Дрэйдона\n[c/777777:Одолейте все комбинации инфернальных экзо-механизмов]");
+        TranslationHelper.ModifyIL(il, "Become Draedon's favorite test subject\n[c/777777:Beat all Infernum Exo Mech combinations]", "Стать любимым подопытным Дрэйдона\n[c/777777:Одержать победу над всеми комбинациями экзо-механизмов в Инфернуме]");
     };
 }
