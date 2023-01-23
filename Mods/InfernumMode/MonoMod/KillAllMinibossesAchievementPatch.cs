@@ -15,7 +15,7 @@ public class KillAllMinibossesAchievementPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Mini-Meany!", "Малыши-плахиши");
+        TranslationHelper.ModifyIL(il, "Mini-Meany!", "Малыши-плохиши");
         TranslationHelper.ModifyIL(il, "Defeat the various minor threats across the world!\n[c/777777:Beat every Infernum Miniboss]", "Одолеть различные мелкие угрозы, встречающиеся по всему миру\n[c/777777:Одержать победу над каждым минибоссом в Инфернуме]");
     };
 }

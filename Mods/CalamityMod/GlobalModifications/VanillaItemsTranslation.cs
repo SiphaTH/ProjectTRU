@@ -772,7 +772,7 @@ public class VanillaItemsTranslation : GlobalItem
             }
             if (player.armor[0].type == ItemID.SpectreHood && player.armor[1].type == ItemID.SpectreRobe && player.armor[2].type == ItemID.SpectrePants)
             {
-                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Vanilla.SpectreHealing");
+                tooltip.Text = $"{Language.GetText("LegacyTooltip.48").Value} {Language.GetText("ArmorSetBonus.SpectreHealing").Value.Replace("40%", "20%")}";
             }
             if (player.armor[0].type == ItemID.MiningHelmet || player.armor[0].type == ItemID.UltrabrightHelmet && player.armor[1].type == ItemID.MiningShirt && player.armor[2].type == ItemID.MiningPants)
             {

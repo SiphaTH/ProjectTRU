@@ -18,10 +18,10 @@
       <HintPath>..\ModAssemblies\Fargowiltas_v2.8.6.dll</HintPath>
     </Reference>
     <Reference Include="FargowiltasSouls">
-      <HintPath>..\ModAssemblies\FargowiltasSouls_v1.4.1.dll</HintPath>
+      <HintPath>..\ModAssemblies\FargowiltasSouls_v1.4.1.2.dll</HintPath>
     </Reference>
     <Reference Include="InfernumMode">
-      <HintPath>..\ModAssemblies\InfernumMode_v1.8.7.dll</HintPath>
+      <HintPath>..\ModAssemblies\InfernumMode_v1.8.8.dll</HintPath>
     </Reference>
     <Reference Include="StarsAbove">
       <HintPath>..\ModAssemblies\StarsAbove_v1.2.3.2.dll</HintPath>

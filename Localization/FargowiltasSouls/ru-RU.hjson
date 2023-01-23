@@ -807,7 +807,7 @@
                 Tooltip:
                     '''
                     Позволяет делать рывок
-                    Нажмите клавишу «Assassin», чтобы бросить дымовую бомбу
+                    Нажмите клавишу «Дымовая бомба», чтобы бросить дымовую бомбу
                     Нажмите повторно, чтобы телепортироваться к ней и получить бафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FirstStrike.Name}»
                     Использование жезла раздора также накладывает этот бафф
                     «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FirstStrike.Name}» гарантирует, что ваша следующая атака попадёт в уязвимое место врага, нанося трёхкратный урон и снижая защиту на 10
@@ -1031,9 +1031,9 @@
                 Name: Усиление ниндзя
                 Tooltip:
                     '''
-                    Значительно увеличивает скорость снаряда
+                    Значительно увеличивает скорость снаряда и атаки
                     Снижает урон, компенсируя увеличение скорости
-                    Увеличивает пробивание брони на 10
+                    Увеличивает пробивание брони на 15
                     'Атакуй быстрее, чем видит твой глаз'
                     '''
             }
@@ -1499,7 +1499,8 @@
                     [i:FargowiltasSouls/ShadowEnchant] Вокруг кружатся четыре теневые сферы
                     [i:FargowiltasSouls/AncientShadowEnchant] Атаки могут наложить дебафф «{$BuffName.Darkness}»
                     [i:FargowiltasSouls/NecroEnchant] Убитые враги могут выронить груду костей
-                    [i:FargowiltasSouls/NinjaEnchant] Бросьте дымовую бомбу, чтобы телепортироваться к ней и получить бафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FirstStrike.Name}»
+                    [i:FargowiltasSouls/NinjaEnchant] Значительно увеличивает скорость снаряда и атаки, но снижает урон
+                    [i:FargowiltasSouls/CrystalAssassinEnchant] Бросьте дымовую бомбу, чтобы телепортироваться к ней и получить бафф «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.FirstStrike.Name}»
                     [i:FargowiltasSouls/CrystalAssassinEnchant] Эффекты от предмета «{$ItemName.VolatileGelatin}»
                     [i:FargowiltasSouls/SpookyEnchant] Все миньоны получают дополнительную атаку в виде косы
                     [i:FargowiltasSouls/MonkEnchant] Вы получите одноразовый рывок монаха, если не атакуете
@@ -3777,7 +3778,7 @@
             Mythril: Увеличивает бонус максимальной скорости атаки и эффект длится дольше
             Nebula: ""
             Necro: ""
-            Ninja: Увеличивает скорость снарядов в 3 раза вместо 2 и пробивание брони на 20
+            Ninja: Увеличивает пробивание брони на 45
             Obsidian: Вам больше не нужна лава для создания взрывов и снижает время перезарядки эффекта
             Orichalcum: Увеличивает множитель урона в 4 раза
             Palladium: Бафф «{$BuffName.RapidHealing}» всегда длится 5 секунд и увеличивает урон сфер
@@ -4172,7 +4173,7 @@
             ShinobiDashConfig: Телепортационный рывок шиноби
             ShinobiConfig: Рывок сквозь стены шиноби
             SpookyConfig: Жуткие косы
-            NinjaSpeedConfig: Скорость снаряда
+            NinjaSpeedConfig: Скорость ниндзя
             CrystalDashConfig: Рывок кристального ассасина
 
             SpiritHeader: "{$Mods.FargowiltasSouls.ItemName.SpiritForce}"

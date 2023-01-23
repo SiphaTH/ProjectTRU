@@ -59,7 +59,7 @@
             }
             
             BereftVassalTrophy: {
-                Name: Трофей обездоленного вассала
+                Name: Трофей Обездоленного вассала
                 Tooltip: ""
             }
             
@@ -278,7 +278,7 @@
             }
             
             BereftVassalRelic: {
-                Name: Инфернальная реликвия обездоленного вассала
+                Name: Инфернальная реликвия Обездоленного вассала
                 Tooltip: ModifyTooltips
             }
             
