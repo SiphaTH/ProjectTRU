@@ -74,11 +74,11 @@ public class CalamityNpcChat : GlobalNPC
             
             if (NPC.AnyNPCs(NPCID.Angler))
             {
-                if (chat == $"Meet me at {Main.npc[NPC.FindFirstNPC(NPCID.PartyGirl)].GivenName}'s house at night. We will throw him to the Trashers.")
-                    chat = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.9"), Main.npc[NPC.FindFirstNPC(NPCID.PartyGirl)].GivenName);
+                if (chat == $"Meet me at {Main.npc[NPC.FindFirstNPC(NPCID.Angler)].GivenName}'s house at night. We will throw him to the Trashers.")
+                    chat = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.9"), Main.npc[NPC.FindFirstNPC(NPCID.Angler)].GivenName);
                 
-                else if (chat == $"Not sure how {Main.npc[NPC.FindFirstNPC(NPCID.PartyGirl)].GivenName} has not been roasted and digested by now, hanging around the sulphuric seas for so long. Perhaps it got to his head.")
-                    chat = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.10"), Main.npc[NPC.FindFirstNPC(NPCID.PartyGirl)].GivenName);
+                else if (chat == $"Not sure how {Main.npc[NPC.FindFirstNPC(NPCID.Angler)].GivenName} has not been roasted and digested by now, hanging around the sulphuric seas for so long. Perhaps it got to his head.")
+                    chat = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.10"), Main.npc[NPC.FindFirstNPC(NPCID.Angler)].GivenName);
             }
             
             if (NPC.AnyNPCs(ModContent.NPCType<FAP>()) && chat == $"Rumor has it {Main.npc[NPC.FindFirstNPC(ModContent.NPCType<FAP>())].GivenName} drinks to forget her troubled past.")
