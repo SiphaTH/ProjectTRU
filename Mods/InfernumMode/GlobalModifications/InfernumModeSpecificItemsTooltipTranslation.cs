@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using CalamityMod;
 using CalamityMod.Items.SummonItems;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using InfernumMode.Content.Items;
 using InfernumMode.Content.Items.Relics;
 using InfernumMode.Core.GlobalInstances.Systems;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -218,5 +220,11 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
                 tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.NecroplasmicBeacon.Tooltip");
             });
         }
+
+        ItemHelper.TranslateTooltip(item, tooltips, "Developer", tooltip =>
+        {
+            Color devColor = CalamityUtils.ColorSwap(Color.OrangeRed, Color.DarkRed, 2);
+            tooltip.Text = $"[c/{devColor.Hex3()}:{LangHelper.GetTextValue("InfernumMode.Items.TooltipTags.Developer")}]";
+        });
     }
 }

@@ -14,7 +14,7 @@ public class ApolloBehaviorOverrideDoBehavior_ThemonuclearBlitz : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
-    public override MethodInfo ModifiedMethod => typeof(ApolloBehaviorOverride).GetCachedMethod(nameof(ApolloBehaviorOverride.DoBehavior_ThemonuclearBlitz));
+    public override MethodInfo ModifiedMethod => typeof(ApolloBehaviorOverride).GetCachedMethod(nameof(ApolloBehaviorOverride.DoBehavior_ThermonuclearBlitz));
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
