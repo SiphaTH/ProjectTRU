@@ -441,46 +441,6 @@ public class VanillaItemsTranslation : GlobalItem
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BladedGlove.Tooltip"));
             });
         }
-        else if (item.type == ItemID.BloodButcherer)
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
-            {
-                tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
-                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BloodButcherer.Tooltip"));
-            });
-        }
-        else if (item.type == ItemID.TheRottedFork)
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
-            {
-                tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
-                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TheRottedFork.Tooltip"));
-            });
-        }
-        else if (item.type == ItemID.TheMeatball)
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
-            {
-                tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
-                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TheMeatball.Tooltip"));
-            });
-        }
-        else if (item.type == ItemID.CrimsonYoyo)
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
-            {
-                tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
-                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CrimsonYoyo.Tooltip"));
-            });
-        }
-        else if (item.type == ItemID.CrimsonRod)
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
-            {
-                tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
-                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CrimsonRod.Tooltip"));
-            });
-        }
         else if (item.type == ItemID.IronskinPotion)
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>

@@ -22,8 +22,8 @@ public class CalamityPlayerPreKill : ILPatcher
         TranslationHelper.ModifyIL(il, "'s soul was extinguished.", " гасит свою душу.");
         TranslationHelper.ModifyIL(il, " was melted by the toxic waste.", " расплавляется токсичными отходами.");
         TranslationHelper.ModifyIL(il, "'s ashes scatter in the wind.", " развеивает по ветру свой прах.");
-        TranslationHelper.ModifyIL(il, " was blown away by miraculous technological advancements.", "");
-        TranslationHelper.ModifyIL(il, " disintegrated from the overpowering exotic resonance.", "");
+        TranslationHelper.ModifyIL(il, " was blown away by miraculous technological advancements.", " ошеломляется чудесными технологическими разработками.");
+        TranslationHelper.ModifyIL(il, " disintegrated from the overpowering exotic resonance.", " расщепляется от всепоглощающего экзотического резонанса.");
         TranslationHelper.ModifyIL(il, " was turned to ashes by the Profaned Goddess.", " обращается Осквернённой богиней в пепел.");
         TranslationHelper.ModifyIL(il, " fell prey to their sins.", " становится жертвой собственных грехов.");
         TranslationHelper.ModifyIL(il, "'s spirit was turned to ash.", " превращает свой дух в пепел.");

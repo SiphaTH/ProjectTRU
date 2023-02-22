@@ -128,7 +128,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "Yharon, Resplendent Phoenix")
             {
-                typeName = "Yharon, Resplendent Phoenix";
+                typeName = "Ярон, Восходящий феникс";
             }
         }
     }

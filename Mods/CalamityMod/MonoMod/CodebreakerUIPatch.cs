@@ -40,8 +40,8 @@ public class CodebreakerUIHandleDraedonSummonButton : ILPatcher
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Contact", "Контакт");
-        TranslationHelper.ModifyIL(il, "Summon", "");
-        TranslationHelper.ModifyIL(il, "Evoke", "");
+        TranslationHelper.ModifyIL(il, "Summon", "Призыв");
+        TranslationHelper.ModifyIL(il, "Evoke", "Пробуждение");
     };
 }
 
@@ -65,6 +65,6 @@ public class CodebreakerUIInquiryText : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "State your inquiry.", "");
+        TranslationHelper.ModifyIL(il, "State your inquiry.", "Назовите свой запрос.");
     };
 }

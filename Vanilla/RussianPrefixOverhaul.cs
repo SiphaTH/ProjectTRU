@@ -757,6 +757,11 @@ internal static class RussianPrefixOverhaul
 				ModContent.Find<ModItem>("CalamityMod", "WulfrumScrewdriver").Type,
 				ModContent.Find<ModItem>("CalamityMod", "Effervescence").Type,
 				ModContent.Find<ModItem>("CalamityMod", "TheAnomalysNanogun").Type,
+				ModContent.Find<ModItem>("CalamityMod", "EnchantedConch").Type,
+				ModContent.Find<ModItem>("CalamityMod", "SmokingComet").Type,
+				ModContent.Find<ModItem>("CalamityMod", "Hydra").Type,
+				ModContent.Find<ModItem>("CalamityMod", "FreedomStar").Type,
+				ModContent.Find<ModItem>("CalamityMod", "SanctifiedSpark").Type,
 			};
 		}
 

@@ -256,8 +256,8 @@
             }
     
             MiracleBlight: {
-                Name: Miracle Blight
-                Description: Exotic resonance shreds your corporeal form
+                Name: Чудо-болезнь
+                Description: Экзотический резонанс кромсает вашу телесную основу
             }
     
             Nightwither: {
@@ -406,8 +406,8 @@
             }
             
             EidolonSnailBuff: {
-                Name: Escargidolon Snail
-                Description: What a silly little prehistoric snail
+                Name: Эскаргидолоновая улитка
+                Description: Какая глупая маленькая доисторическая улитка
             }
     
             BloodBound: {
@@ -451,8 +451,8 @@
             }
             
             GoldieBuff: {
-                Name: GoldieBuff
-                Description: All that glitters is gold
+                Name: Голди
+                Description: Всё, что блестит - золото
             }
     
             MiniMindBuff: {
@@ -1749,11 +1749,11 @@
             }
             
             SulphurousSeaWorldSideChanger: {
-                Name: Sulphurous Sea World Side Changer
+                Name: Переключатель стороны сернистого моря
                 Tooltip:
                     '''
-                    Spawn and use this if your regular ocean counts as a Sulphurous Sea
-                    This will also fix the Abyss if it is broken
+                    Используйте это, если ваш обычный океан считается сернистым морем
+                    Это также исправляет бездну, если она сломана
                     '''
             }
             
@@ -2296,7 +2296,7 @@
                 Tooltip:
                     '''
                     Одна из древних реликвий
-                    Multiplies all cold-based debuff damage by 1.5
+                    Умножает урон всех накладываемых игроком дебаффов холода на 50%
                     Создаёт вокруг вас вращающийся ледяной щит, наносящий урон и замедляющий врагов при контакте
                     '''
             }
@@ -2711,9 +2711,9 @@
                 Name: Грибной симбионт
                 Tooltip:
                     '''
-                    You grow mushrooms on the grass beneath you
-                    Consuming mushrooms provides the Mushy buff, increasing defense by 6 and life regen by 2
-                    All mushroom-based weapons deal 10% more damage and emit non-damaging mushrooms
+                    На траве, по которой прошлись, начинают расти грибы
+                    Употребление грибов даёт бафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Mushy.Name}», увеличивая защиту на 6 и регенерацию здоровья на 2
+                    Все грибные оружия наносят на 10% больше урона и испускают не наносящие урон грибы
                     '''
             }
             
@@ -2756,8 +2756,8 @@
                 Name: Медальон гладиатора
                 Tooltip:
                     '''
-                    Enemies drop a healing orb on kill
-                    Gain an increase to your damage and movement speed the lower your health is, up to 20%
+                    Из убитых вами врагов выпадает исцеляющая сфера
+                    Увеличивает урон и скорость передвижения тем сильнее, чем ниже уровень здоровья, вплоть до 20%
                     '''
             }
             
@@ -3038,7 +3038,7 @@
                 Tooltip:
                     '''
                     Во время использования импульсного конденсатора ваша максимальная скорость будет постоянно и неконтролируемо увеличиваться
-                    This effect only works if there are no bosses alive
+                    Этот эффект работает, только если нет живых боссов
                     '''
             }
             
@@ -3438,9 +3438,9 @@
                     $parentVal:
                         '''
                         Даже осквернившись ненавистью, оно до сих пор содержит в себе большую часть сил Сообщества...
-                        Increases damage by 10% and critical strike chance by 5%
-                        Increases max health by 10%, damage reduction by 5%, defense by 10 and life regen by 2
-                        Increases movement speed by 10% and flight time by 20%
+                        Увеличивает урон на 10% и шанс критического удара на 5%
+                        Увеличивает максимальный запас здоровья на 10%, сопротивление урону на 5%, защиту на 10 и регенерацию здоровья на 2
+                        Увеличивает скорость передвижения на 10% и время полёта на 20%
                         Вы постоянно накапливаете ярость и ярость не сбрасывается вне боя
                         После получения урона даёт ярость, этому эффекту не препятствуют ваши защитные характеристики
                         В режиме ярости эффект снижен вдвое
@@ -3460,16 +3460,16 @@
             }
             
             ShieldoftheHighRuler: {
-                Name: Shield of the High Ruler
+                Name: Щит верховного правителя
                 Tooltip:
                     '''
-                    For the fate of the kingdom
-                    Grants immunity to knockback
-                    Immune to most debuffs
-                    +10 max life
-                    Grants an improved Shield of Cthulhu dash
-                    Bonking an enemy reduces the delay before you can dash again by 50%
-                    If you are facing a projectile when it hits you it will deal 15% less damage
+                    Ради судьбы королевства
+                    Даёт невосприимчивость к отбрасыванию
+                    Даёт невосприимчивость к большинству дебаффов
+                    Увеличивает максимальный запас здоровья на 10
+                    Позволяет делать улучшенный рывок щита Ктулху
+                    Врезавшись в врага, вы снижаете перезарядку перед повторным рывком на 50%
+                    Если вы стоите лицом к снаряду, то при попадании он нанесёт на 15% меньше урона
                     '''
             }
             
@@ -3791,7 +3791,7 @@
                 Name: Трансформер
                 Tooltip:
                     '''
-                    Multiplies all electricity-based debuff damage by 1.5
+                    Умножает урон всех накладываемых игроком электрических дебаффов на 50%
                     Испускает заряд искр после получения урона
                     Даёт невосприимчивость к дебаффу «{$BuffName.Electrified}» и снижает получаемый урон от электрических снарядов и атак врагов
                     Вражеские пули наносят вам половину урона и отражаются обратно во врага в виде 800% от первоначального урона
@@ -3804,7 +3804,7 @@
                     '''
                     Призывает разрушительную ауру чумы, которая наносит урон ближайшим врагам
                     Делает вас невосприимчивым к дебаффу «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Plague.Name}»
-                    Multiplies all sickness-based debuff damage by 1.5
+                    Умножает урон всех накладываемых игроком истощающих дебаффов на 50%
                     '''
             }
             
@@ -3812,8 +3812,8 @@
                 Name: Брелок ци
                 Tooltip:
                     '''
-                    Provides 10% damage reduction after not being hit for 15 seconds, this is removed when you are hit
-                    Provides 2 life regen for you and everyone on your team
+                    Если вы не получали ударов в течение 15 секунд, сопротивление урону увеличивается на 10%, но это прекращается при получении удара
+                    Увеличивает регенерацию здоровья на 2 вам и всем членам вашей команды
                     '''
             }
             
@@ -3821,8 +3821,8 @@
                 Name: Нестабильное гранитное ядро
                 Tooltip:
                     '''
-                    Periodically gain an unstable energy field that repeatedly zaps nearby enemies with arcing energy
-                    The arcing energy ignores a substantial amount of enemy defense
+                    Периодически создаёт нестабильное энергетическое поле, которое многократно поражает ближайших врагов дугообразной энергией
+                    Дугообразная энергия игнорирует значительную часть защиты врага
                     '''
             }
             
@@ -3910,8 +3910,8 @@
                 Tooltip:
                     '''
                     Превращает экипированный крюк в вульфрумовый канат
-                    The slingshot allows for advanced rope-swinging physics
-                    Automatically grapples nearby walls if a lethal fall is detected
+                    Канат использует продвинутую физику раскачивания верёвки
+                    Автоматически цепляется за ближайшие стены при обнаружении смертельного падения
                     Эта система безопасности не сработает, если зажать клавишу ВНИЗ
                     Увеличивает скорость передвижения на 8%
                     '''
@@ -3958,10 +3958,10 @@
             }
             
             BubonicRound: {
-                Name: Bubonic Round
+                Name: Бубонная пуля
                 Tooltip:
                     '''
-                    Bursts into virulent plague on contact
+                    Накладывает дебафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.Plague.Name}» при попадании
                     Чем выше защита цели, тем больше наносит урона
                     '''
             }
@@ -4057,11 +4057,11 @@
             }
             
             MarksmanRound: {
-                Name: Marksman Round
+                Name: Стрелковая пуля
                 Tooltip:
                     '''
-                    A carefully crafted round which can be ricocheted off of midair coins
-                    Any gun firing this bullet can perform Ricoshots with coins tossed using Midas Prime
+                    Тщательно разработанная пуля, которая может срикошетить от монет в воздухе
+                    Любое оружие, стреляющее этой пулей, способно совершать рикошеты с монетами, подброшенными Мидас Праймом
                     '''
             }
             
@@ -5485,46 +5485,46 @@
             }
             
             DraedonsLogHell: {
-                Name: Environmental Pollution Log
+                Name: Журнал загрязнения окружающей среды
                 Tooltip:
                     '''
-                    [Environment Log] - Pollution and 'Wall of Flesh'
+                    [Журнал окружающей среды] - Загрязнение и 'Стена плоти'
                     Нажмите, чтобы просмотреть содержимое
                     '''
             }
             
             DraedonsLogJungle: {
-                Name: Plague Nanomachine Log
+                Name: Журнал чумных наномашин
                 Tooltip:
                     '''
-                    [Nanomachine Experimentation Results] - 'The Plague'
+                    [Результаты экспериментов с наномашинами] - 'Чума'
                     Нажмите, чтобы просмотреть содержимое
                     '''
             }
             
             DraedonsLogPlanetoid: {
-                Name: Low Orbit Study Log
+                Name: Журнал орбитальных исследований
                 Tooltip:
                     '''
-                    [Space and Soil Survey] - Low Terraria Orbit
+                    [Исследование пространства и почвы] - Низкая орбита Террарии
                     Нажмите, чтобы просмотреть содержимое
                     '''
             }
             
             DraedonsLogSnowBiome: {
-                Name: Cryonic Material Log
+                Name: Журнал крионических материалов
                 Tooltip:
                     '''
-                    [Material Science Report] - Archmage's 'Cryonic Metal'
+                    [Отчёт по материаловедению] - Крионический металл Архимага
                     Нажмите, чтобы просмотреть содержимое
                     '''
             }
             
             DraedonsLogSunkenSea: {
-                Name: Marine Biology Log
+                Name: Журнал морской биологии
                 Tooltip:
                     '''
-                    [Bioform Research] - Aquatic Life of Ilmeris
+                    [Исследование биоформы] - Водная жизнь Ильмериса
                     Нажмите, чтобы просмотреть содержимое
                     '''
             }
@@ -5932,7 +5932,7 @@
             }
             
             Havocfish: {
-                Name: Havocfish
+                Name: Рыба хаоса
                 Tooltip:
                     '''
                     Рога проклянут тех, кто к ним прикоснётся
@@ -6055,7 +6055,7 @@
             }
             
             SulphurousCrate: {
-                Name: Sulphurous Crate
+                Name: Сернистый ящик
                 Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
             }
             
@@ -6144,8 +6144,8 @@
             }
             
             OnyxSeekingMechanism: {
-                Name: Onyx Seeking Mechanism
-                Tooltip: Moves swiftly towards a lab within the caverns
+                Name: Ониксовый поисковой механизм
+                Tooltip: Стремительно направляется к лаборатории, расположенной в пещерах
             }
             
             RedSeekingMechanism: {
@@ -6154,8 +6154,8 @@
             }
             
             WhiteSeekingMechanism: {
-                Name: White Seeking Mechanism
-                Tooltip: White Seeking Mechanism
+                Name: Белый поисковой механизм
+                Tooltip: Стремительно направляется к лаборатории, расположенной в замороженных пещерах
             }
             
             YellowSeekingMechanism: {
@@ -6167,8 +6167,8 @@
                 Name: История — Акватический бич
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6184,8 +6184,8 @@
                 Name: История — Астральная инфекция
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6203,8 +6203,8 @@
                 Name: История — Аструм Ареус
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6221,8 +6221,8 @@
                 Name: История — Аструм Деус
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6236,11 +6236,11 @@
             }
             
             LoreAwakening: {
-                Name: История — Awakening
+                Name: История — Пробуждение
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6256,8 +6256,8 @@
                 Name: История — Кровавая луна
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6273,8 +6273,8 @@
                 Name: История — Мозг Ктулху
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6289,8 +6289,8 @@
                 Name: История — Azafure
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6306,8 +6306,8 @@
                 Name: История — Серный элементаль
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6325,8 +6325,8 @@
                 Name: История — Каламитас
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6348,8 +6348,8 @@
                 Name: История — Клон Каламитас
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6365,8 +6365,8 @@
                 Name: История — Искажение
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6380,8 +6380,8 @@
                 Name: История — Крабулон
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6395,8 +6395,8 @@
                 Name: История — Багрянец
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6410,8 +6410,8 @@
                 Name: История — Cynosure
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6428,11 +6428,11 @@
             }
             
             LoreArchmage: {
-                Name: История — The Archmage
+                Name: История — Архимаг
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6449,8 +6449,8 @@
                 Name: История — Пустынный бич
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6464,8 +6464,8 @@
                 Name: История — Уничтожитель
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6482,8 +6482,8 @@
                 Name: История — Пожиратель богов
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6503,8 +6503,8 @@
                 Name: История — Псевдодракон
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6522,8 +6522,8 @@
                 Name: История — Герцог Рыброн
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6539,8 +6539,8 @@
                 Name: История — Пожиратель миров
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6555,8 +6555,8 @@
                 Name: История — Императрица света
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6573,8 +6573,8 @@
                 Name: История — Экзо-механическое трио
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6594,8 +6594,8 @@
                 Name: История — Глаз Ктулху
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6609,8 +6609,8 @@
                 Name: История — Голем
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6627,8 +6627,8 @@
                 Name: История — Разум улья
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6643,8 +6643,8 @@
                 Name: История — Король слизней
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6658,8 +6658,8 @@
                 Name: История — Левиафан и Анахита
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6673,11 +6673,11 @@
             }
             
             LorePrelude: {
-                Name: История — Prelude
+                Name: История — Пролог
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6696,8 +6696,8 @@
                 Name: История — Механическое трио
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6711,11 +6711,11 @@
             }
             
             LoreRequiem: {
-                Name: История — Requiem
+                Name: История — Реквием
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6735,8 +6735,8 @@
                 Name: История — Сигнус
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6754,8 +6754,8 @@
                 Name: История — Бездна
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6774,8 +6774,8 @@
                 Name: История — Старый герцог
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6792,8 +6792,8 @@
                 Name: История — Перфораторы и их Улей
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6808,8 +6808,8 @@
                 Name: История — Разносчица чумы, Голиаф
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6827,8 +6827,8 @@
                 Name: История — Плантера
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6846,8 +6846,8 @@
                 Name: История — Полтергаст
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6866,8 +6866,8 @@
                 Name: История — Осквернённые стражи
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6883,8 +6883,8 @@
                 Name: История — Провиденс, Осквернённая богиня
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6902,8 +6902,8 @@
                 Name: История — Королева пчёл
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6918,8 +6918,8 @@
                 Name: История — Королева слизней
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6934,8 +6934,8 @@
                 Name: История — Разрушитель
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6953,8 +6953,8 @@
                 Name: История — Нескончаемая пустота
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6973,8 +6973,8 @@
                 Name: История — Скелетрон
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -6989,8 +6989,8 @@
                 Name: История — Скелетрон Прайм
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -7006,8 +7006,8 @@
                 Name: История — Бог слизней
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -7023,8 +7023,8 @@
                 Name: История — Штормовой ткач
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -7042,8 +7042,8 @@
                 Name: История — Сернистое море
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -7059,8 +7059,8 @@
                 Name: История — Близнецы
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -7077,8 +7077,8 @@
                 Name: История — Преисподняя
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -7094,8 +7094,8 @@
                 Name: История — Стена плоти
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -7109,11 +7109,11 @@
             }
             
             LoreYharon: {
-                Name: История — Yharon, Resplendent Phoenix
+                Name: История — Ярон, Восходящий феникс
                 Tooltip:
                     '''
-                    Whispers from on high dance in your ears...
-                    Press "Left Shift" to listen closer
+                    Шёпот издалека доносится до ваших ушей...
+                    Удерживайте 'Левый Shift', чтобы лучше слышать
                     '''
                 Lore:
                     '''
@@ -7205,7 +7205,7 @@
             }
             
             CoreofHavoc: {
-                Name: Core of Havoc
+                Name: Ядро хаоса
                 Tooltip: ""
             }
             
@@ -7285,8 +7285,8 @@
             }
             
             EssenceofHavoc: {
-                Name: Essence of Havoc
-                Tooltip: The essence of chaotic creatures
+                Name: Эссенция хаоса
+                Tooltip: Эссенция хаотических существ
             }
             
             EssenceofEleum: {
@@ -7316,7 +7316,7 @@
             
             YharonSoulFragment: {
                 Name: Фрагмент души Ярона
-                Tooltip: A shard of a draconic Auric Soul
+                Tooltip: Осколок драконьей золотосодержащей души
             }
             
             InfectedArmorPlating: {
@@ -7535,7 +7535,7 @@
                 Tooltip:
                     '''
                     Призывает теневого дракона
-                    Hold W to ascend faster
+                    Удерживайте W для ускоренного подъёма
                     '''
             }
             
@@ -7705,12 +7705,12 @@
             }
             
             AbyssShellFossil: {
-                Name: Abyss Shell Fossil
+                Name: Ископаемая ракушка бездны
                 Tooltip:
                     '''
-                    A fossil of a prehistoric creature, long forgotten in the deep abyss
-                    Summons a pet Escargidolon Snail to follow you
-                    Slightly reduces creatures' ability to detect you in the abyss while equipped
+                    Окаменелость доисторического существа, давным-давно забытая в глубинах бездны
+                    Призывает питомца Эскаргидолоновую улитку, следующий за вами
+                    Пока экипирован, немного снижает область обнаружения у существ бездны
                     '''
             }
             
@@ -7883,9 +7883,9 @@
                 Name: Дайм вора
                 Tooltip:
                     '''
-                    Once worthless treasure, now a relic of a thief's companionship
-                    Summons Goldie the coin to light your way and collects nearby coins
-                    Provides a small amount of light in the abyss
+                    Ранее ничтожное сокровище, теперь артефакт воровского партнёрства
+                    Призывает монетку Голди, которая освещает вам путь и собирает монеты поблизости
+                    Обеспечивает небольшим количеством света в бездне
                     '''
             }
             
@@ -7930,8 +7930,8 @@
             }
             
             AstralGrassSeeds: {
-                Name: AstralGrassSeeds
-                Tooltip: Places grass on astral dirt
+                Name: Семена астральной травы
+                Tooltip: Сажает траву на астральной земле
             }
             
             AstralIce: {
@@ -7965,7 +7965,7 @@
             }
             
             BrimstoneSlab: {
-                Name: Brimstone Slab
+                Name: Серная плитка
                 Tooltip: ""
             }
             
@@ -7980,8 +7980,8 @@
             }
             
             CinderBlossomSeeds: {
-                Name: Cinder Blossom Seeds
-                Tooltip: Places cinder blossom grass on scorched remains
+                Name: Семена пепельного цветка
+                Tooltip: Сажает пепельную цветущую траву на обгоревших останках
             }
             
             ScoriaBrick: {
@@ -8031,26 +8031,26 @@
             
             PrismShard: {
                 Name: Осколок призмы
-                Tooltip: Glows brighter underwater
+                Tooltip: Под водой сияет ярче
             }
             
             PyreMantle: {
-                Name: Pyre Mantle
+                Name: Погребальное покрытие
                 Tooltip: ""
             }
             
             PyreMantleMolten: {
-                Name: Molten Pyre Mantle
+                Name: Литое погребальное покрытие
                 Tooltip: ""
             }
             
             ScorchedBone: {
-                Name: Scorched Bone
+                Name: Обгоревшая кость
                 Tooltip: ""
             }
             
             ScorchedRemains: {
-                Name: Scorched Remains
+                Name: Обгоревшие останки
                 Tooltip: ""
             }
             
@@ -8060,13 +8060,13 @@
             }
             
             SeaPrismBrick: {
-                Name: Sea Prism Brick
+                Name: Кирпич морской призмы
                 Tooltip: ""
             }
             
             SpineSapling: {
-                Name: Small Spine
-                Tooltip: Plants Giant Spine saplings on Brimstone Slag
+                Name: Маленький хребет
+                Tooltip: Сажает саженцы гигантского хребта на серном шлаке
             }
             
             SulphurousSand: {
@@ -8080,7 +8080,7 @@
             }
             
             SulphurousShale: {
-                Name: Sulphurous Shale
+                Name: Сернистый сланец
                 Tooltip: ""
             }
             
@@ -8090,7 +8090,7 @@
             }
             
             VernalSoil: {
-                Name: Vernal Soil
+                Name: Весенняя почва
                 Tooltip: ""
             }
             
@@ -8225,7 +8225,7 @@
             }
             
             ToxicatfishBanner: {
-                Name: Знамя Toxicatfish
+                Name: Знамя токсичного сома
                 Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.CalamityMod.NPCs.Toxicatfish.Name}"
             }
             
@@ -8350,7 +8350,7 @@
             }
             
             SulflounderBanner: {
-                Name: Знамя Sulflounder
+                Name: Знамя сернистой камбалы
                 Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.CalamityMod.NPCs.Sulflounder.Name}"
             }
             
@@ -9175,11 +9175,11 @@
             }
             
             AshenAccentSlab: {
-                Name: Ashen Accent Slab
+                Name: Пепельная декоративная плитка
                 Tooltip:
                     '''
-                    An Ashen Slab variant that merges differently with nearby blocks
-                    Favored by advanced builders
+                    Разновидность пепельной плитки, которая по-разному сочетается с соседними блоками
+                    Предпочитается продвинутыми строителями
                     '''
             }
             
@@ -9289,13 +9289,13 @@
             }
             
             AbyssTreasureChest: {
-                Name: Ancient Treasure Chest
+                Name: Древний сундук с сокровищами
                 Tooltip: ""
             }
             
             AlgalPrismTorch: {
-                Name: Algal Prism Torch
-                Tooltip: Can be placed in water
+                Name: Альгальный призмовый факел
+                Tooltip: Может быть размещён в воде
             }
             
             AstralBeaconItem: {
@@ -9729,18 +9729,18 @@
             }
             
             GloomTorch: {
-                Name: Gloom Torch
+                Name: Мрачный факел
                 Tooltip: ""
             }
             
             LanternCenter: {
-                Name: Lantern Center
-                Tooltip: Lights up the night sky with celebratory lanterns
+                Name: Фонарный комплекс
+                Tooltip: Освещает ночное небо торжественными фонарями
             }
             
             NavyPrismTorch: {
-                Name: Navy Prism Torch
-                Tooltip: Can be placed in water
+                Name: Морской призмовый факел
+                Tooltip: Может быть размещён в воде
             }
             
             EutrophicBathtub: {
@@ -10269,8 +10269,8 @@
             }
             
             RefractivePrismTorch: {
-                Name: Refractive Prism Torch
-                Tooltip: Can be placed in water
+                Name: Преломляющий призмовый факел
+                Tooltip: Может быть размещён в воде
             }
             
             PlaguebringerGoliathRelic: {
@@ -10688,7 +10688,7 @@
             
             DraedonsAmbienceMusicBox: {
                 Name: Музыкальная шкатулка (Присутствие Дрэйдона)
-                Tooltip: Plays high tech ambience by PinpinNeon
+                Tooltip: Воспроизводит высокотехнологичную атмосферу от PinpinNeon
             }
             
             RustyChest: {
@@ -10867,8 +10867,8 @@
             }
             
             SulphurousTorch: {
-                Name: Sulphurous Torch
-                Tooltip: Can be placed in water
+                Name: Сернистый факел
+                Tooltip: Может быть размещён в воде
             }
             
             StaticRefiner: {
@@ -11187,8 +11187,8 @@
             }
             
             WulfrumLabstationItem: {
-                Name: Wulfrum Labstation
-                Tooltip: Used for special crafting
+                Name: Вульфрумовая лабораторная станция
+                Tooltip: Используется для создания особых предметов
             }
             
             ThankYouPainting: {
@@ -11257,92 +11257,92 @@
             }
             
             WulfrumBathtub: {
-                Name: Wulfrum Bathtub
+                Name: Вульфрумовая ванна
                 Tooltip: ""
             }
             
             WulfrumBed: {
-                Name: Wulfrum Bed
+                Name: Вульфрумовая кровать
                 Tooltip: ""
             }
             
             WulfrumBookcase: {
-                Name: Wulfrum Bookcase
+                Name: Вульфрумовый книжный шкаф
                 Tooltip: ""
             }
             
             WulfrumCandelabra: {
-                Name: Wulfrum Candelabra
+                Name: Вульфрумовый подсвечник
                 Tooltip: ""
             }
             
             WulfrumCandle: {
-                Name: Wulfrum Candle
+                Name: Вульфрумовая свеча
                 Tooltip: ""
             }
             
             WulfrumChair: {
-                Name: Wulfrum Chair
+                Name: Вульфрумовый стул
                 Tooltip: ""
             }
             
             WulfrumChandelier: {
-                Name: Wulfrum Chandelier
+                Name: Вульфрумовая люстра
                 Tooltip: ""
             }
             
             WulfrumClock: {
-                Name: Wulfrum Clock
+                Name: Вульфрумовые часы
                 Tooltip: ""
             }
             
             WulfrumDresser: {
-                Name: Wulfrum Dresser
+                Name: Вульфрумовый комод
                 Tooltip: ""
             }
             
             WulfrumLamp: {
-                Name: Wulfrum Lamp
+                Name: Вульфрумовая лампа
                 Tooltip: ""
             }
             
             WulfrumLantern: {
-                Name: Wulfrum Lantern
+                Name: Вульфрумовый фонарь
                 Tooltip: ""
             }
             
             WulfrumPiano: {
-                Name: Wulfrum Piano
+                Name: Вульфрумовое пианино
                 Tooltip: ""
             }
             
             WulfrumPlating: {
-                Name: Wulfrum Plating
+                Name: Вульфрумовое покрытие
                 Tooltip: ""
             }
             
             WulfrumSink: {
-                Name: Wulfrum Sink
+                Name: Вульфрумовая раковина
                 Tooltip: ""
             }
             
             WulfrumSofa: {
-                Name: Wulfrum Sofa
+                Name: Вульфрумовый диван
                 Tooltip: ""
             }
             
             WulfrumTable: {
-                Name: Wulfrum Table
+                Name: Вульфрумовый стол
                 Tooltip: ""
             }
             
             WulfrumToilet: {
-                Name: Wulfrum Toilet
+                Name: Вульфрумовый унитаз
                 Tooltip: ""
             }
             
             WulfrumWorkbench: {
-                Name: Wulfrum Workbench
+                Name: Вульфрумовый верстак
                 Tooltip: ""
             }
             
@@ -11400,7 +11400,7 @@
             }
             
             AerialiteOreDisenchanted: {
-                Name: Disenchanted Aerialite Ore
+                Name: Не обогащённая аэриалитовая руда
                 Tooltip: ""
             }
             
@@ -11410,7 +11410,7 @@
             }
             
             InfernalSuevite: {
-                Name: Infernal Suevite
+                Name: Адский зювит
                 Tooltip: ""
             }
             
@@ -11421,7 +11421,7 @@
             
             AuricOre: {
                 Name: Золотосодержащая руда
-                Tooltip: Infused with long lost draconic energies
+                Tooltip: Насыщен издавна утраченными драконьими силами
             }
             
             ExodiumCluster: {
@@ -11455,7 +11455,7 @@
             }
             
             Havocplate: {
-                Name: Havocplate
+                Name: Хаосопластина
                 Tooltip: Резонирует с потусторонней энергией
             }
             
@@ -11485,8 +11485,8 @@
             }
             
             Onyxplate: {
-                Name: Onyxplate
-                Tooltip: It resonates with otherworldly energy
+                Name: Чернопластина
+                Tooltip: Резонирует с потусторонней энергией
             }
             
             Plagueplate: {
@@ -11580,7 +11580,7 @@
             }
             
             BrimstoneSlabWall: {
-                Name: Brimstone Slab Wall
+                Name: Стена из серной плитки
                 Tooltip: ""
             }
             
@@ -11595,7 +11595,7 @@
             }
             
             HavocplateWall: {
-                Name: Havocplate Wall
+                Name: Хаосопластинчатая стена
                 Tooltip: ""
             }
             
@@ -11720,7 +11720,7 @@
             }
             
             OnyxplateWall: {
-                Name: Onyxplate Wall
+                Name: Чернопластинчатая стена
                 Tooltip: ""
             }
             
@@ -11780,7 +11780,7 @@
             }
             
             ScorchedBoneWall: {
-                Name: Scorched Bone Wall
+                Name: Стена из обгоревших костей
                 Tooltip: ""
             }
             
@@ -11845,7 +11845,7 @@
             }
             
             SulphurousShaleWall: {
-                Name: Sulphurous Shale Wall
+                Name: Сернистая сланцевая стена
                 Tooltip: ""
             }
             
@@ -11894,11 +11894,11 @@
             }
             
             BlasphemousDonut: {
-                Name: Blasphemous Donut
+                Name: Богохульный пончик
                 Tooltip:
                     '''
                     {$CommonItemTooltip.MediumStats}
-                    'Donut worry, it's perfectly edible'
+                    'Не волнуйся, он вполне съедобен'
                     '''
             }
             
@@ -11955,11 +11955,8 @@
             }
             
             FlaskOfHolyFlames: {
-                Name: Flask of Holy Flames
-                Tooltip:
-                    '''
-                    Melee, Whip, and Rogue attacks inflict Holy Flames
-                    '''
+                Name: Флакон святых огней
+                Tooltip: Ближние и разбойные атаки, а также хлысты накладывают дебафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.HolyFlames.Name}»
             }
             
             OmegaHealingPotion: {
@@ -12395,18 +12392,18 @@
                 Tooltip:
                     '''
                     Сегодня будет ужасная ночь...
-                    Призывает клон Каламитас при использовании в ночное время
+                    Призывает клона Каламитас при использовании в ночное время
                     Входит в ярость во время дня
                     Не расходуется
                     '''
             }
             
             YharonEgg: {
-                Name: Blessed Phoenix Egg
+                Name: Благословлённое яйцо феникса
                 Tooltip:
                     '''
-                    An effigy of a Phoenix Dragon egg, used in worship
-                    Summons Yharon, Dragon of Rebirth
+                    Образ дракона-феникса в яичной скорлупе, используемый для поклонения
+                    Призывает Ярона, Дракона возрождения
                     Входит в ярость за пределами огненных стен
                     Не расходуется
                     '''
@@ -12650,7 +12647,7 @@
             
             GreatbayPickaxe: {
                 Name: Кирка великого залива
-                Tooltip: Способна добывать демонит, багротан и метеорит, Sea Prisms and Sea Prism Crystals
+                Tooltip: Способна добывать демонит, багротан, метеорит, морскую призму и кристалл морской призмы
             }
             
             InfernaCutter: {
@@ -13553,8 +13550,8 @@
             }
             
             GrandStaffoftheNebulaMage: {
-                Name: Grand Staff of the Nebula Mage
-                Tooltip: The true power of the Nebula Mage rests in your hands...
+                Name: Великий посох мага туманности
+                Tooltip: Истинная сила мага туманности теперь в ваших руках...
             }
             
             GruesomeEminence: {
@@ -13668,7 +13665,7 @@
             
             Lazhar: {
                 Name: Лазар
-                Tooltip: Fires a highly volatile concentrated solar beam
+                Tooltip: Стреляет крайне взрывоопасным концентрированным солнечным лучом
             }
             
             LightGodsBrilliance: {
@@ -14236,7 +14233,7 @@
                     0:
                         '''
                         При нажатии ЛКМ совершает серию из 5 взмахов, которая завершается броском клинка
-                        Releasing left click while the blade is out will deal extra damage and give 2 charges
+                        Если отпустить ЛКМ, когда клинок брошен, это нанесёт дополнительный урон и даст 2 заряда
                         '''
                     1:
                         '''
@@ -14371,7 +14368,7 @@
             
             CatastropheClaymore: {
                 Name: Клеймор катастрофы
-                Tooltip: Fires sparkles which inflicts Frostbite, Hellfire, or Ichor
+                Tooltip: Выпускает искры, которые накладывают дебафф «{$BuffName.Frostburn2}», «{$BuffName.OnFire3}» или «{$BuffName.Ichor}»
             }
             
             CausticEdge: {
@@ -14654,7 +14651,7 @@
                     '''
                     FUNCTION_DESC
                     FUNCTION_PASSIVE
-                    Freed from earthly shackles and coursing with cosmic power
+                    Освобождён от земных оков и наполненный космической энергией
                     Имеет доступ ко всем настройкам в любое время
                     Нажимайте <right> для переключения настроек меча в зависимости от положения курсора
                     Активная настройка : [Нет]
@@ -14933,7 +14930,7 @@
             }
             
             OldLordClaymore: {
-                Name: Old Lord Claymore
+                Name: Клеймор старого лорда
                 Tooltip:
                     '''
                     Реликвия древнего подземного мира
@@ -15126,10 +15123,10 @@
             }
             
             SmokingComet: {
-                Name: Smoking Comet
+                Name: Дымчатая комета
                 Tooltip:
                     '''
-                    Rains stars from the sky
+                    Обрушивает звёзды с неба
                     Очень манёвренное йо-йо
                     '''
             }
@@ -15272,7 +15269,7 @@
                     '''
                     Связан с сущностью Террарии
                     При нанесении истинных ударов ближнего боя исцеляет игрока
-                    Fires a piercing energy bolt that causes hit targets to explode and be slashed
+                    Выпускает пронзающий энергетический заряд, который взрывается и рассекает поражённые цели
                     '''
             }
             
@@ -15392,7 +15389,7 @@
             }
             
             ExaltedOathblade: {
-                Name: Exalted Oathblade
+                Name: Возвышенный клинок клятвы
                 Tooltip: Выпускает разброс демонических кос и при нанесении критических ударов вызывает взрывы теневого пламени
             }
             
@@ -15795,14 +15792,14 @@
             }
             
             CorinthPrime: {
-                Name: Corinth Prime
+                Name: Коринф Прайм
                 Tooltip:
                     '''
-                    Shoots a tight burst of 6 high velocity bullets
-                    Converts musket balls into high velocity explosive bullets
-                    Right click to fire a grenade
-                    The grenade emits a massive explosion if it doesn't touch anything for 2 seconds
-                    Otherwise, the grenade emits an extremely weak explosion
+                    Стреляет плотной очередью из 6 высокоскоростных пуль
+                    Превращает мушкетные пули в высокоскоростные разрывные пули
+                    Нажмите <right>, чтобы выстрелить гранатой
+                    Граната испускает мощный взрыв, если в течение 2 секунд она ни к чему не прикасается
+                    В ином случае граната испускает крайне слабый взрыв
                     '''
             }
             
@@ -15901,7 +15898,7 @@
             }
             
             HoarfrostBow: {
-                Name: Hoarfrost Bow
+                Name: Лук морозного покрова
                 Tooltip:
                     '''
                     Стреляет двумя стрелами за раз
@@ -15910,14 +15907,14 @@
             }
             
             Hydra: {
-                Name: Hydra
+                Name: Гидра
                 Tooltip:
                     '''
-                    Fires a spread of 4 toxic bullets
-                    Grows a gun-head every 3 seconds, up to a maximum of 3 heads
-                    Left-click to command any existing heads to fire
-                    Right-click to launch the heads for powerful explosive damage
-                    [c/9D80B0:Fusion of heavy machinery and Lernaean blood]
+                    Стреляет разбросом из 4 токсичных пуль
+                    Раз в 3 секунды появляется новая голова-пушка, максимум 3 головы
+                    Нажмите <left>, чтобы приказать всем существующим головам стрелять
+                    Нажмите <right>, чтобы запустить головы для нанесения мощного взрывного урона
+                    [c/9D80B0:Слияние тяжёлой машины и крови Лернейской гидры]
                     '''
             }
             
@@ -16002,11 +15999,11 @@
             }
             
             FreedomStar: {
-                Name: Freedom Star
+                Name: Свободная звезда
                 Tooltip:
                     '''
-                    Tap to fire energy orbs
-                    Hold to charge and fire a beam that explodes on hit
+                    Одиночные нажатия выстреливают энергетическими шарами
+                    Зажатие ЛКМ заряжает оружие и выпускает луч, который взрывается при попадании
                     '''
             }
             
@@ -16488,7 +16485,7 @@
                 Name: Ракушкострел
                 Tooltip:
                     '''
-                    Fires slow but powerful arrows
+                    Стреляет медленными, но мощными стрелами
                     Превращает деревянные стрелы в тяжёлые пронзающие морские ракушки
                     '''
             }
@@ -17864,7 +17861,7 @@
                 Tooltip:
                     '''
                     Бросает быстрый клинок, который создаёт исцеляющие шары, когда убивает врага
-                    Stealth strikes repeatedly stab the struck enemy from random directions
+                    При скрытном ударе клинок многократно наносит удары по поражённому врагу из случайных направлений
                     '''
             }
             
@@ -17987,9 +17984,9 @@
                 Name: Штормовая бритва
                 Tooltip:
                     '''
-                    Throws a knife that summons lightning on hit.
-                    При скрытном ударе нож летит быстрее and summon multiple lightning bolts on hit
-                    [c/24c7f0:Strike and stem the flow]
+                    Бросает нож, который при попадании призывает молнию
+                    При скрытном ударе нож летит быстрее и призывает несколько молний при попадании
+                    [c/24c7f0:Нанесите удар и прекратите поток]
                     '''
             }
 
@@ -18220,11 +18217,11 @@
             }
             
             AquasScepter: {
-                Name: Aqua's Scepter
+                Name: Скипетр Аквы
                 Tooltip:
                     '''
-                    Summons a giant storm cloud sentry to rain down on your foes, and strike nearby enemies with overloading tesla energy
-                    'Captain! I think- we've got a risk of rain!'
+                    Призывает гигантское грозовое облако, которое обрушивает на врагов ливень и поражает ближайших врагов перегруженной тесла-энергией
+                    "Капитан! Мне кажется, что у нас есть угроза дождя!"
                     '''
             }
             
@@ -18505,7 +18502,7 @@
             }
             
             SanctifiedSpark: {
-                Name: Sanctified Spark
+                Name: Сакральная искра
                 Tooltip: Призывает осквернённую энергетическую турель, сражающуюся за вас
             }
             
@@ -18652,7 +18649,7 @@
             }
             
             EnchantedConch: {
-                Name: Enchanted Conch
+                Name: Зачарованная ракушка
                 Tooltip: Призывает рака-отшельника, сражающегося за вас
             }
             
@@ -18738,8 +18735,8 @@
                 Tooltip:
                     '''
                     Обретите абсолютный контроль над самим светом
-                    Can only be summoned once
-                    Uses 8 minion slots
+                    Можно призвать только один раз
+                    Занимает 8 слотов призываемых миньонов
                     '''
             }
             
@@ -18767,8 +18764,8 @@
                 Tooltip:
                     '''
                     Призывает ярчайшую звезду на ночном небе, сияя на врагов
-                    Can only be summoned once
-                    Uses 6 minion slots
+                    Можно призвать только один раз
+                    Занимает 6 слотов призываемых миньонов
                     '''
             }
             
@@ -18846,14 +18843,14 @@
                 Tooltip:
                     '''
                     Удивительно крепкий. С мафией, думаю, одним ударом справится
-                    Summons a variety of tools to assist you in battle:
-                    - A vermilion arrow to pierce your adversaries
-                    - A marmalade hammer to bonk enemies in style
-                    - A jade axe to cleave monsters and occasionally fell a tree
-                    - A cyan umbrella to beat down your foes with grace
-                    - A lavender rifle to snipe those who stand in your way
-                    Best of all, you get to wear a top hat
-                    Requires 5 minion slots to use and there can only be one set of tools
+                    Призывает различные инструменты, помогающие вам в бою:
+                    - Киноварная стрела, пронзающая ваших врагов
+                    - Мармеладный молот для стильного битья врагов
+                    - Нефритовый топор, способный разрубать монстров и изредка валить деревья
+                    - Голубой зонт для изящного избиения врагов
+                    - Лавандовое ружьё, которое стреляет в тех, кто стоит на вашем пути
+                    Лучше всего, если вы наденете шляпу
+                    Для использования требуется 5 слотов призываемых миньонов и возможен только один набор инструментов
                     '''
             }
             
@@ -19829,7 +19826,7 @@
                     Tooltip:
                         '''
                         {$ItemTooltip.YoyoBag}
-                        Secondary yoyos will do 50% less damage
+                        Второе йо-йо наносит на 50% меньше урона
                         '''
                 }
                 
@@ -19837,7 +19834,7 @@
                     Tooltip:
                         '''
                         {$ItemTooltip.YoYoGlove}
-                        Secondary yoyos will do 50% less damage
+                        Второе йо-йо наносит на 50% меньше урона
                         '''
                 }
                 
@@ -20025,24 +20022,24 @@
                     Tooltip:
                         '''
                         {$ItemTooltip.SlimeGun}
-                        Slimed enemies take more damage from fire-based debuffs
+                        Покрытые слизью враги получают больше урона от огненных дебаффов
                         '''
                 }
                 
                 GelBalloon: {
                     Tooltip:
                         '''
-                        Throws a mixture of slime and sparkling crystals
-                        Slimed enemies take more damage from fire-based debuffs
+                        Бросает смесь из слизи и сверкающих кристаллов
+                        Покрытые слизью враги получают больше урона от огненных дебаффов
                         '''
                 }
                 
                 GoldPickaxe: {
-                    Tooltip: Can mine Demonite, Crimtane, Meteorite, Sea Prisms and Sea Prism Crystals
+                    Tooltip: Способна добывать демонит, багротан, метеорит, морскую призму и кристалл морской призмы
                 }
                 
                 PlatinumPickaxe: {
-                    Tooltip: Can mine Demonite, Crimtane, Meteorite, Sea Prisms and Sea Prism Crystals
+                    Tooltip: Способна добывать демонит, багротан, метеорит, морскую призму и кристалл морской призмы
                 }
                 
                 IronskinPotion: {
@@ -20053,8 +20050,8 @@
                     Tooltip:
                         '''
                         {$LegacyTooltip.36}
-                        20 of any tombstone turns the surrounding area into a graveyard
-                        Graveyards have various new item sales and recipes
+                        20 любых надгробий превращают окружающую область в кладбище
+                        На кладбище появляются новые предметы для продажи и рецепты
                         '''
                 }
                 
@@ -20062,8 +20059,8 @@
                     Tooltip:
                         '''
                         {$LegacyTooltip.36}
-                        20 of any tombstone turns the surrounding area into a graveyard
-                        Graveyards have various new item sales and recipes
+                        20 любых надгробий превращают окружающую область в кладбище
+                        На кладбище появляются новые предметы для продажи и рецепты
                         '''
                 }
                 
@@ -20071,8 +20068,8 @@
                     Tooltip:
                         '''
                         {$LegacyTooltip.36}
-                        20 of any tombstone turns the surrounding area into a graveyard
-                        Graveyards have various new item sales and recipes
+                        20 любых надгробий превращают окружающую область в кладбище
+                        На кладбище появляются новые предметы для продажи и рецепты
                         '''
                 }
                 
@@ -20080,8 +20077,8 @@
                     Tooltip:
                         '''
                         {$LegacyTooltip.36}
-                        20 of any tombstone turns the surrounding area into a graveyard
-                        Graveyards have various new item sales and recipes
+                        20 любых надгробий превращают окружающую область в кладбище
+                        На кладбище появляются новые предметы для продажи и рецепты
                         '''
                 }
                 
@@ -20089,8 +20086,8 @@
                     Tooltip:
                         '''
                         {$LegacyTooltip.36}
-                        20 of any tombstone turns the surrounding area into a graveyard
-                        Graveyards have various new item sales and recipes
+                        20 любых надгробий превращают окружающую область в кладбище
+                        На кладбище появляются новые предметы для продажи и рецепты
                         '''
                 }
                 
@@ -20098,8 +20095,8 @@
                     Tooltip:
                         '''
                         {$LegacyTooltip.36}
-                        20 of any tombstone turns the surrounding area into a graveyard
-                        Graveyards have various new item sales and recipes
+                        20 любых надгробий превращают окружающую область в кладбище
+                        На кладбище появляются новые предметы для продажи и рецепты
                         '''
                 }
                 
@@ -20107,8 +20104,8 @@
                     Tooltip:
                         '''
                         {$LegacyTooltip.36}
-                        20 of any tombstone turns the surrounding area into a graveyard
-                        Graveyards have various new item sales and recipes
+                        20 любых надгробий превращают окружающую область в кладбище
+                        На кладбище появляются новые предметы для продажи и рецепты
                         '''
                 }
                 
@@ -20116,8 +20113,8 @@
                     Tooltip:
                         '''
                         {$LegacyTooltip.36}
-                        20 of any tombstone turns the surrounding area into a graveyard
-                        Graveyards have various new item sales and recipes
+                        20 любых надгробий превращают окружающую область в кладбище
+                        На кладбище появляются новые предметы для продажи и рецепты
                         '''
                 }
                 
@@ -20125,8 +20122,8 @@
                     Tooltip:
                         '''
                         {$LegacyTooltip.36}
-                        20 of any tombstone turns the surrounding area into a graveyard
-                        Graveyards have various new item sales and recipes
+                        20 любых надгробий превращают окружающую область в кладбище
+                        На кладбище появляются новые предметы для продажи и рецепты
                         '''
                 }
                 
@@ -20134,8 +20131,8 @@
                     Tooltip:
                         '''
                         {$LegacyTooltip.36}
-                        20 of any tombstone turns the surrounding area into a graveyard
-                        Graveyards have various new item sales and recipes
+                        20 любых надгробий превращают окружающую область в кладбище
+                        На кладбище появляются новые предметы для продажи и рецепты
                         '''
                 }
                 
@@ -20143,8 +20140,8 @@
                     Tooltip:
                         '''
                         {$LegacyTooltip.36}
-                        20 of any tombstone turns the surrounding area into a graveyard
-                        Graveyards have various new item sales and recipes
+                        20 любых надгробий превращают окружающую область в кладбище
+                        На кладбище появляются новые предметы для продажи и рецепты
                         '''
                 }
                 
@@ -20978,26 +20975,6 @@
                 BladedGlove: {
                     Tooltip: Получает 50% от суммарного бонуса скорости атаки ближнего боя
                 }
-                
-                BloodButcherer: {
-                    Tooltip: Inflicts Burning Blood on hit
-                }
-                
-                TheRottedFork: {
-                    Tooltip: Inflicts Burning Blood on hit
-                }
-                
-                TheMeatball: {
-                    Tooltip: Inflicts Burning Blood on hit
-                }
-                
-                CrimsonYoyo: {
-                    Tooltip: Inflicts Burning Blood on hit
-                }
-                
-                CrimsonRod: {
-                    Tooltip: Inflicts Burning Blood on hit
-                }
             }
             
             TooltipTags: {
@@ -21824,7 +21801,7 @@
                     Platinum:
                         '''
                         {$LegacyTooltip.48} {$ArmorSetBonus.Platinum}
-                        Каждые 15 защиты даёт 1 регенерацию здоровья и 1% шанс критического удара
+                        Каждые 15 защиты даёт 1 единицу регенерации здоровья и 1% шанс критического удара
                         Оба эти эффекта имеют ограничение в 45 защиты
                         '''
                         
@@ -22139,7 +22116,7 @@
             ProfanedGuardianCommander.Name: Осквернённый страж
             ProfanedGuardianDefender.Name: Осквернённый страж
             ProfanedGuardianHealer.Name: Осквернённый страж
-            ProfanedRocks.Name: Profaned Rocks
+            ProfanedRocks.Name: Осквернённые камни
             Providence.Name: Провиденс, Осквернённая богиня
             ProvSpawnDefense.Name: Осквернённый страж
             ProvSpawnHealer.Name: Осквернённый страж
@@ -22170,8 +22147,8 @@
             StormWeaverTail.Name: Штормовой ткач
             AnthozoanCrab.Name: Коралловый краб
             BelchingCoral.Name: Изрыгающий коралл
-            Toxicatfish.Name: Toxicatfish
-            Sulflounder.Name: Sulflounder
+            Toxicatfish.Name: Токсичный сом
+            Sulflounder.Name: Сернистая камбала
             Gnasher.Name: Грифовая черепаха
             Mauler.Name: Мучитель
             MicrobialCluster.Name: Сгусток микроорганизмов
@@ -22200,7 +22177,7 @@
             SupremeCalamitas.Name: Высшая ведьма, Каламитас
             SupremeCataclysm.Name: Высший Катаклизм
             SupremeCatastrophe.Name: Высший Катастроф
-            Yharon.Name: Yharon, Dragon of Rebirth
+            Yharon.Name: Ярон, Дракон возрождения
             AndroombaFriendly.Name: Дружбан Андромба
             DILF.Name: Архимаг
             FAP.Name: Пьяная принцесса
@@ -22590,7 +22567,7 @@
             FlameBurstHostile.Name: Взрыв
             GammaAcid.Name: Кислота
             GammaBeam.Name: Гамма-луч
-            GammaRayBurst.Name: G-FUEL BEAM
+            GammaRayBurst.Name: Луч энергии G-FUEL
             HorsWaterBlast.Name: Вода
             InkBombHostile.Name: Чернильная бомба
             InkPoisonCloud.Name: Чернильное облако
@@ -22704,7 +22681,7 @@
             OldDukeSummonDrop.Name: Кислота
             OldDukeToothBallSpike.Name: Шип
             OldDukeVortex.Name: Сернистый вихрь
-            PeanutRocket.Name: High Explosive Peanut Shell
+            PeanutRocket.Name: Взрывчатая арахисовая шелуха
             OverlyDramaticDukeSummoner.Name: Призыватель старого герцога
             PhantomBlast.Name: Фантомный взрыв
             PhantomBlast2.Name: Мощный фантомный взрыв
@@ -22907,7 +22884,7 @@
                 
                 Traitorous: {
                     Name: Предательский
-                    Description: Using this item below 25% mana instantly consumes your remaining mana, unleashing a monster that harms both you and enemies
+                    Description: При использовании с уровнем маны ниже 25% мгновенно расходует оставшуюся ману, высвобождая монстра, который наносит вред как вам, так и врагам
                 }
                 
                  Withering: {
@@ -24650,7 +24627,7 @@
             }
             
             AerialiteOreDisenchanted: {
-                Name: Disenchanted Aerialite
+                Name: Не обогащённый аэриалит
             }
             
             AstralOre: {
@@ -24738,70 +24715,70 @@
             }
             
             VernalSoil: {
-                Name: Vernal Soil
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.VernalSoil.Name}"
             }
             
             AbyssTreasureChest: {
                 Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.AbyssTreasureChest.Name}"
                 Container: {
-                    Name: Ancient Treasure Chest
+                    Name: Древний сундук с сокровищами
                 }
             }
             
             AbyssVent1: {
-                Name: Steam Vent
+                Name: Паровое жерло
             }
             
             AbyssVent2: {
-                Name: Steam Vent
+                Name: Паровое жерло
             }
             
             AbyssVent3: {
-                Name: Steam Vent
+                Name: Паровое жерло
             }
             
             PirateCrate1: {
-                Name: Abandoned Crate
+                Name: Заброшенный ящик
             }
             
             PirateCrate2: {
-                Name: Abandoned Crate
+                Name: Заброшенный ящик
             }
             
             PirateCrate3: {
-                Name: Abandoned Crate
+                Name: Заброшенный ящик
             }
             
             PirateCrate4: {
-                Name: Abandoned Crate
+                Name: Заброшенный ящик
             }
             
             PirateCrate5: {
-                Name: Abandoned Crate
+                Name: Заброшенный ящик
             }
             
             PirateCrate6: {
-                Name: Abandoned Crate
+                Name: Заброшенный ящик
             }
             
             ThermalVent1: {
-                Name: Thermal Vent
+                Name: Термическое жерло
             }
             
             ThermalVent2: {
-                Name: Thermal Vent
+                Name: Термическое жерло
             }
             
             ThermalVent3: {
-                Name: Thermal Vent
+                Name: Термическое жерло
             }
             
             AstralVines: {
-                Name: Astral Vines
+                Name: Астральные лозы
             }
             
             BrimstoneSlab: {
-                Name: Brimstone Slab
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.BrimstoneSlab.Name}"
             }
             
             GloomTorch: {
@@ -24809,19 +24786,19 @@
             }
             
             SpineSapling: {
-                Name: Spine Sapling
+                Name: Саженец хребта
             }
             
             SpineTree: {
-                Name: Giant Spine
+                Name: Гигантский хребет
             }
             
             OnyxExcavatorTile: {
-                Name: Onyx Excavator
+                Name: Ониксовый землекоп
             }
             
             LanternCenterTile: {
-                Name: Lantern Center
+                Name: "{$Mods.CalamityRuTranslate.CalamityMod.Items.LanternCenter.Name}"
             }
             
             WulfrumLabstation: {
@@ -24964,7 +24941,7 @@
         BestiaryNotes: {
             FirstKillText: Выпадает только при первом убийстве
             MechBossText: Выпадает при первом убийстве последнего механического босса
-            CynosureText: Drops once you have defeated both Draedon and Calamitas
+            CynosureText: Выпадает после победы над Дрэйдоном и Каламитас
             ProvidenceHallowText:
                 '''
                 Выпадает, если Провиденс было призвана в освящении
@@ -25005,7 +24982,7 @@
             PostSP: Выпадает после победы над Скелетроном Праймом
             Post1Mech: Выпадает после победы над механическим боссом
             Post3Mechs: Выпадает после победы над всеми тремя механическими боссами
-            PostCal: Выпадает после победы над Клоном Каламитас
+            PostCal: Выпадает после победы над клоном Каламитас
             PostPlant: Выпадает после победы над Плантерой
             PostCalPlant: Выпадает после победы над Каламитас и Плантерой
             PostLevi: Выпадает после победы над Левиафаном и Анахитой
@@ -25057,11 +25034,11 @@
                 AdrenalineMeterPosX: "[i:2799] Позиция по X индикатора адреналина"
                 AdrenalineMeterPosY: "[i:2799] Позиция по Y индикатора адреналина"
                 Afterimages: "[i:1742] Послеобразы"
-                BossesStopWeather: "[i:CalamityMod/TorrentialTear] Bosses Stop Weather"
+                BossesStopWeather: "[i:CalamityMod/TorrentialTear] Боссы останавливают погоду"
                 BossHealthBarExtraInfo: "[i:CalamityMod/EncryptedSchematicPlanetoid] Дополнительная информация на панели здоровья босса"
                 BossHealthBoost: "[i:29] Увеличение здоровья босса в процентах"
                 BossZen: "[i:CalamityMod/ZenPotion] Боссы сильно снижают скорость появления врагов"
-                PotionSelling: "[i:296] Town NPC Potion Selling"
+                PotionSelling: "[i:296] Продажа зелий жителями"
                 ChargeMeter: "[i:CalamityMod/DraedonPowerCell] Индикатор заряда"
                 ChargeMeterPosX: "[i:2799] Позиция по X индикатора заряда"
                 ChargeMeterPosY: "[i:2799] Позиция по Y индикатора заряда"
@@ -25071,11 +25048,11 @@
                 EarlyHardmodeProgressionRework: "[i:367] Переработка прогрессии раннего хардмода"
                 ForceTownSafety: "[i:63] Принудительная безопасность города"
                 MeterPosLock: "[i:3647] Фиксация позиций индикаторов"
-                FasterBaseSpeed: "[i:54] Повышенная базовая скорость передвижения"
-                HigherJumpHeight: "[i:159] Повышенная базовая высота прыжка"
-                FasterJumpSpeed: "[i:2423] Повышенная базовая скорость прыжка"
-                FasterFallHotkey: "[i:CalamityMod/BallAndChain] Enable Fast Falling"
-                FasterTilePlacement: "[i:3061] Increase Base Building Speed"
+                FasterBaseSpeed: "[i:54] Увеличенная базовая скорость передвижения"
+                HigherJumpHeight: "[i:159] Увеличенная базовая высота прыжка"
+                FasterJumpSpeed: "[i:2423] Увеличенная базовая скорость прыжка"
+                FasterFallHotkey: "[i:CalamityMod/BallAndChain] Активация быстрого падения"
+                FasterTilePlacement: "[i:3061] Увеличенная базовая скорость строительства"
                 NerfExpertDebuffs: "[i:1612] Убирает увеличенную длительность дебаффа"
                 ParticleLimit: "[i:3459] Максимальное количество частиц"
                 RageMeterPosX: "[i:2799] Позиция по X индикатора ярости"
@@ -25117,8 +25094,8 @@
                     '''
                 BossesStopWeather:
                     '''
-                    When enabled, many late game bosses while stop all rain and related weather when spawned.
-                    Enable if you have performance issues during late game boss fights.
+                    При включении этой настройки многие боссы на поздних стадиях игры останавливают дождь и другие погодные эффекты при появлении.
+                    Включите, если вы испытываете проблемы с производительностью во время сражений с боссами на поздних стадиях игры.
                     '''
                 BossHealthBarExtraInfo:
                     '''
@@ -25178,30 +25155,30 @@
                     '''
                 FasterBaseSpeed:
                     '''
-                    Increases the player's base movement speed substantially by always giving them +50% movement speed.
-                    This setting does nothing if the mod Terraria Overhaul is loaded.
-                    Calamity is balanced around this setting being enabled.
+                    Увеличивает базовую скорость передвижения на 50%.
+                    Эта настройка ничего не делает, если включён мод Terraria Overhaul.
+                    Calamity сбалансирован таким образом, чтобы эта настройка была включена.
                     '''
                 HigherJumpHeight:
                     '''
-                    Increases the player's base jump height by 10% so that they can jump 7 tiles.
-                    Calamity is balanced around this setting being enabled.
+                    Увеличивает базовую высоту прыжка на 10%, позволяя прыгать на 7 блоков в высоту.
+                    Calamity сбалансирован таким образом, чтобы эта настройка была включена.
                     '''
                 FasterJumpSpeed:
                     '''
-                    Slightly increases the player's base jump speed.
-                    Calamity is balanced around this setting being enabled.
+                    Немного увеличивает базовую скорость прыжка.
+                    Calamity сбалансирован таким образом, чтобы эта настройка была включена.
                     '''
                 FasterFallHotkey:
                     '''
-                    When enabled, you can hold the DOWN key while in the air to accelerate downwards faster.
-                    This config does not increase your maximum falling speed, just how quickly you accelerate to it.
-                    Calamity is balanced around this setting being enabled.
+                    Если включена эта настройка, вы можете зажать клавишу ВНИЗ, когда находитесь в воздухе, чтобы ускорить падение.
+                    Эта настройка не увеличивает вашу максимальную скорость падения, а только то, как быстро вы ускоряетесь.
+                    Calamity сбалансирован таким образом, чтобы эта настройка была включена.
                     '''
                 FasterTilePlacement:
                     '''
-                    Substantially increases how rapidly the player can place tiles and walls.
-                    This config stacks with the Brick Layer, Portable Cement Mixer and other accessories.
+                    Значительно увеличивает скорость, с которой игрок может размещать блоки и стены.
+                    Эта настройка комбинируется с «{$ItemName.BrickLayer}», «{$ItemName.PortableCementMixer}» и другими аксессуарами.
                     '''
                 NerfExpertDebuffs:
                     '''
@@ -25284,8 +25261,8 @@
                     '''
                 PotionSelling:
                     '''
-                    Allows town NPCs to sell various potions.
-                    Certain potions are sold after specific bosses have been defeated.
+                    Позволяет жителям продавать различные зелья.
+                    Конекретные зелья продаются после победы над определёнными боссами.
                     '''
                 TownNPCSpawnRateMultiplier:
                     '''
@@ -25314,10 +25291,10 @@
             AbovegroundAstralBiome: Поверхность Астрала
             AbovegroundAstralDesertBiome: Поверхность астральной пустыни
             AbovegroundAstralSnowBiome: Поверхность астральных снегов
-            AbyssLayer1Biome: Sulphuric Depths
-            AbyssLayer2Biome: Murky Waters
-            AbyssLayer3Biome: Thermal Vents
-            AbyssLayer4Biome: The Void
+            AbyssLayer1Biome: Сернистые глубины
+            AbyssLayer2Biome: Мутные воды
+            AbyssLayer3Biome: Термические жерла
+            AbyssLayer4Biome: Пустота
             AcidRainBiome: Кислотный дождь
             ArsenalLabBiome: Оружейные лаборатории
             BrimstoneCragsBiome: Серная скала
@@ -25415,9 +25392,9 @@
         IceOreText: Ледяные пещеры трещат морозной энергией.
         PlantOreText: Под землёй образуется растительное вещество, полное энергии.
         TreeOreText: Окаменевшая древесная кора прорывается сквозь грязь джунглей.
-        AuricOreText: Ancient draconic power manifests in the caverns, lacing itself through the rock.
+        AuricOreText: Древняя драконья сила проявляется в пещерах, проникая сквозь камень.
         FutureOreText: В космосе материализовалась холодная и тёмная энергия.
-        SkeletronAbyssChestNotification: Tсhe First Dryad's vines deem you worthy of their abyssal treasures.
+        SkeletronAbyssChestNotification: Лозы Первородной Дриады признали вас достойным получить их бездонные сокровища.
         UglyBossText: Дрожит затерянное море...
         SteelSkullBossText: Кроваво-красный ад скрывается в ночи...
         WetWormBossText: Сернистое небо темнеет...
@@ -25488,7 +25465,7 @@
         SandSharkText2: Приближается огромный высший хищник...
         SandSharkText3: Песок пустынь движется всё сильнее!
         CryogenBossText: Криоген истощается!
-        PyrogenBossText: Pyrogen is derping out!
+        PyrogenBossText: Пироген истощается!
         DraedonIntroductionText1: Как долго я ждал этого момента.
         DraedonIntroductionText2: Твоя природа столь же чарует меня, сколь я её не понимаю.
         DraedonIntroductionText3: Ты сразишься с моими творениями, что превзошли богов.
@@ -25520,9 +25497,9 @@
         DraedonEndText8: До этого ты справлялся. И уверен, рано или поздно ты сам сможешь найти путь к Тирану.
         DraedonEndText9: Итак, я признаю твою победу. А теперь предпочту вернуться к своим механизмам.
         DraedonEndKillAttemptText: ...Совершенно излишне.
-        DraedonMechdusaBeginText: ...Die.
-        DraedonMechdusaEndText1: Wait what? How?
-        DraedonMechdusaEndText2: No
+        DraedonMechdusaBeginText: ...Умри.
+        DraedonMechdusaEndText1: Погоди? Как?
+        DraedonMechdusaEndText2: Нет
         HardmodeOreTier1Text: Мир благословлён кобальтом и палладием!
         HardmodeOreTier2Text: Мир благословлён мифрилом и орихалком!
         HardmodeOreTier3Text: Мир благословлён адамантием и титаном!
@@ -25554,7 +25531,7 @@
         ThirdSageBlessingText2: Третий Мудрец отменил своё благословение...
         AprilFools: ЛОРД приближается...
         AprilFools2: Бумер ждёт...
-        AprilFoolsGFB: La Ruga is approaching...
+        AprilFoolsGFB: Ла Руг приближается...
         AcidRainStart: Токсичный ливень начался над морями пустоши!
         AcidRainEnd: Сернистое небо светлеет...
         DefenseDamage: ед. урона по защите
@@ -25576,8 +25553,8 @@
         EtherealCoreText: Вы уже использовали эфирное ядро. Не стоит превозмогать себя.
         PhantomHeartText: Вы уже использовали фантомное сердце. Хорошо, что вы больше не можете это использовать.
         SlimeGodRun: Бог слизней убегает, чтобы сразиться в другой раз...
-        SulphurSwitchLeft: The Sulphurous Sea is now on the left side of the world.
-        SulphurSwitchRight: The Sulphurous Sea is now on the right side of the world.
+        SulphurSwitchLeft: Серноистое море теперь находится в левой стороне мира.
+        SulphurSwitchRight: Серноистое море теперь находится в правой стороне мира.
         
         GameTips: {
             SunkenSeaTip: Глубоко под подземной пустыней покоятся руины разрушенного королевства.

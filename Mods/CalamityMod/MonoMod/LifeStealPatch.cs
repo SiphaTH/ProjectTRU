@@ -15,6 +15,6 @@ public class LifeStealPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Life Steal Cooldown", "");
+        TranslationHelper.ModifyIL(il, "Life Steal Cooldown", "Перезарядка кражи здоровья");
     };
 }
