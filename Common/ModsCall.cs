@@ -21,8 +21,6 @@ internal static class ModsCall
     internal static Mod Infernum => ModLoader.TryGetMod("InfernumMode", out Mod infernum) ? infernum : null;
 
     internal static bool Revenge => CalamityWorld.revenge;
-    internal static bool DownedSCal => DownedBossSystem.downedSCal;
-    internal static bool DownedExoMechs => DownedBossSystem.downedExoMechs;
     internal static string AegisHotKey => CalamityKeybinds.AegisHotKey.TooltipHotkeyString();
     internal static string AstralArcanumUiHotkey => CalamityKeybinds.AstralArcanumUIHotkey.TooltipHotkeyString();
     internal static string AstralTeleportHotKey => CalamityKeybinds.AstralTeleportHotKey.TooltipHotkeyString();
@@ -35,6 +33,7 @@ internal static class ModsCall
     internal static string AngelicAllianceHotKey => CalamityKeybinds.AngelicAllianceHotKey.TooltipHotkeyString();
     internal static string GodSlayerDashHotKey => CalamityKeybinds.GodSlayerDashHotKey.TooltipHotkeyString();
     internal static string ExoChairSlowdownHotkey => CalamityKeybinds.ExoChairSlowdownHotkey.TooltipHotkeyString();
+    internal static string DashHotkey => CalamityKeybinds.DashHotkey.TooltipHotkeyString();
     internal static bool EarlyHardmodeProgressionRework => CalamityConfig.Instance.EarlyHardmodeProgressionRework;
     internal static string WayfinderCreateKey => KeybindSystem.WayfinderCreateKey.GetAssignedKeys().FirstOrDefault();
     internal static string WayfinderDestroyKey => KeybindSystem.WayfinderDestroyKey.GetAssignedKeys().FirstOrDefault();

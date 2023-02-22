@@ -23,7 +23,7 @@ public class RevengeanceDifficultyPatch : ILPatcher
         TranslationHelper.ModifyIL(il, ": mechanic. You gain Rage when in proximity of enemies or by using certain items] \n[c/", ":. Вы получаете ярость, находясь рядом с врагами или используя специальные предметы]\n[c/");
         TranslationHelper.ModifyIL(il, ":    When Rage is maxed, press] ", ":Когда шкала ярости заполнена, нажмите] ");
         TranslationHelper.ModifyIL(il, ":for a temporary damage boost] \n[c/", ":для временного увеличения урона]\n[c/");
-        TranslationHelper.ModifyIL(il, ":Most foes have higher stats and deal more damage] \n[c/", ":Большинство врагов имеют более высокие характеристики и наносят больше урона]\n[c/");
+        TranslationHelper.ModifyIL(il, ":Most foes have higher stats and more aggressive AIs] \n[c/", ":Большинство врагов имеют более высокие характеристики и агрессивный ИИ]\n[c/");
         TranslationHelper.ModifyIL(il, ":Bosses have new AI mechanics, new phases, and will drop Master Mode loot. Enemies spawn more frequently] \n[c/F7342A:This mode is more difficult than Expert. Be sure to prepare for the challenge]", ":У боссов новая механика ИИ, новые фазы, и из них выпадают предметы режима Мастера. Враги появляются чаще]\n[c/F7342A:Этот режим сложнее, чем Эксперт. Будьте готовы к испытаниям]");
     };
 }

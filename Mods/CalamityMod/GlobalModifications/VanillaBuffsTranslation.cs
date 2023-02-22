@@ -17,11 +17,12 @@ public class VanillaBuffsTranslation : GlobalBuff
     {
         tip = type switch
         {
-            BuffID.Endurance => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.Endurance.Description"),
+            BuffID.Ironskin => tip.Replace("Increase defense by", "Защита увеличена на"),
             BuffID.MagicPower => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.MagicPower.Description"),
             BuffID.Archery => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.Archery.Description"),
             BuffID.Swiftness => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.Swiftness.Description"),
             BuffID.SugarRush => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.SugarRush.Description"),
+            BuffID.LeafCrystal => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.LeafCrystal.Description"),
             BuffID.NebulaUpDmg1 => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.NebulaUpDmg1.Description"),
             BuffID.NebulaUpDmg2 => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.NebulaUpDmg2.Description"),
             BuffID.NebulaUpDmg3 => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.NebulaUpDmg3.Description"),
@@ -39,7 +40,6 @@ public class VanillaBuffsTranslation : GlobalBuff
             BuffID.IceBarrier => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.IceBarrier.Description"),
             BuffID.ChaosState => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.ChaosState.Description"),
             BuffID.Warmth => LangHelper.GetTextValue("CalamityMod.Buffs.Vanilla.Warmth.Description"),
-            BuffID.Daybreak => Language.GetTextValue("BuffDescription.Daybreak"),
             BuffID.WellFed => Language.GetTextValue("BuffDescription.WellFed"),
             BuffID.WellFed2 => Language.GetTextValue("BuffDescription.WellFed2"),
             BuffID.WellFed3 => Language.GetTextValue("BuffDescription.WellFed3"),

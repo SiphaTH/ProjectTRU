@@ -7,7 +7,7 @@ using CalamityMod.NPCs.AstrumAureus;
 using CalamityMod.NPCs.AstrumDeus;
 using CalamityMod.NPCs.BrimstoneElemental;
 using CalamityMod.NPCs.Bumblebirb;
-using CalamityMod.NPCs.Calamitas;
+using CalamityMod.NPCs.CalClone;
 using CalamityMod.NPCs.CeaselessVoid;
 using CalamityMod.NPCs.Crabulon;
 using CalamityMod.NPCs.Crags;
@@ -585,10 +585,10 @@ public class BestiaryTranslation : GlobalNPC
             bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.HiveBlob")));
         }
         
-        if (npc.type == ModContent.NPCType<HiveCyst>())
+        if (npc.type == ModContent.NPCType<HiveTumor>())
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
-            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.HiveCyst")));
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.HiveTumor")));
         }
         
         if (npc.type == ModContent.NPCType<HiveMind>())
@@ -1107,16 +1107,16 @@ public class BestiaryTranslation : GlobalNPC
             bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.BelchingCoral")));
         }
         
-        if (npc.type == ModContent.NPCType<Catfish>())
+        if (npc.type == ModContent.NPCType<Toxicatfish>())
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
-            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.Catfish")));
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.Toxicatfish")));
         }
         
-        if (npc.type == ModContent.NPCType<Flounder>())
+        if (npc.type == ModContent.NPCType<Sulflounder>())
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
-            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.Flounder")));
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("CalamityMod.Bestiary.Sulflounder")));
         }
         
         if (npc.type == ModContent.NPCType<Gnasher>())

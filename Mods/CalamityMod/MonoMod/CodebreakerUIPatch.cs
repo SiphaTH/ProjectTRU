@@ -40,6 +40,8 @@ public class CodebreakerUIHandleDraedonSummonButton : ILPatcher
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Contact", "Контакт");
+        TranslationHelper.ModifyIL(il, "Summon", "");
+        TranslationHelper.ModifyIL(il, "Evoke", "");
     };
 }
 
@@ -52,5 +54,17 @@ public class CodebreakerUIDisplayNotStrongEnoughErrorText : ILPatcher
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Encryption unsolveable: Upgrades required.", "Шифрование нерешаемое: требуются обновления.");
+    };
+}
+
+public class CodebreakerUIInquiryText : ILPatcher
+{
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+        
+    public override MethodInfo ModifiedMethod => typeof(CodebreakerUI).GetCachedMethod("get_InquiryText");
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    {
+        TranslationHelper.ModifyIL(il, "State your inquiry.", "");
     };
 }

@@ -45,7 +45,6 @@ internal static class GlobalArmorSetBonus
             case "GodSlayerRogue":
                  return LangHelper.GetTextValue($"CalamityMod.Items.SetBonus.{set}", ModsCall.GodSlayerDashHotKey);
 
-            case "ShroomiteVisage":
             case "AerospecMagic":
             case "AerospecMelee":
             case "AerospecSummoner":

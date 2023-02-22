@@ -38,12 +38,6 @@ public class ArmorSetBonusLoader : ILoadable
             "AncientForbiddenCirclet")
         );
         CalamityArmorSets.Add(new ArmorSetData(
-            ModContent.Find<ModItem>("CalamityMod", "ShroomiteVisage").Type,
-            ItemID.ShroomiteBreastplate,
-            ItemID.ShroomiteLeggings,
-            "ShroomiteVisage")
-        );
-        CalamityArmorSets.Add(new ArmorSetData(
             ModContent.Find<ModItem>("CalamityMod", "AerospecHat").Type,
             ModContent.Find<ModItem>("CalamityMod", "AerospecBreastplate").Type,
             ModContent.Find<ModItem>("CalamityMod", "AerospecLeggings").Type,

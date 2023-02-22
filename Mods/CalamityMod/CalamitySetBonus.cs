@@ -36,12 +36,12 @@ public class CalamitySetBonus : GlobalItem
 
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
     {
-        if (item.type == ItemID.AncientBattleArmorHat || item.type == ItemID.AncientBattleArmorShirt ||
-            item.type == ItemID.AncientBattleArmorPants && !Main.player[Main.myPlayer].Calamity().forbiddenCirclet)
+        if ((item.type == ItemID.AncientBattleArmorHat || item.type == ItemID.AncientBattleArmorShirt ||
+            item.type == ItemID.AncientBattleArmorPants) && !Main.player[Main.myPlayer].Calamity().forbiddenCirclet)
         {
             ItemHelper.TranslateTooltip(item, tooltips, "SetBonus", tooltip =>
             {
-                tooltip.Text = tooltip.Text.Replace("The minion damage nerf is reduced while wielding magic weapons",
+                tooltip.Text = tooltip.Text.Replace("Minions no longer deal less damage while wielding magic weapons",
                     LangHelper.GetTextValue("CalamityMod.Items.SetBonus.Forbidden"));
             });
         }

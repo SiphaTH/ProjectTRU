@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using CalamityMod;
+using CalamityMod.Items;
 using CalamityMod.Items.Armor.Vanity;
 using CalamityMod.Items.LoreItems;
 using CalamityMod.Items.Materials;
@@ -14,13 +15,12 @@ using CalamityMod.Items.Potions.Alcohol;
 using CalamityMod.Items.SummonItems;
 using CalamityMod.Items.SummonItems.Invasion;
 using CalamityMod.NPCs.AcidRain;
-using CalamityMod.NPCs.AdultEidolonWyrm;
 using CalamityMod.NPCs.AquaticScourge;
 using CalamityMod.NPCs.AstrumAureus;
 using CalamityMod.NPCs.AstrumDeus;
 using CalamityMod.NPCs.BrimstoneElemental;
 using CalamityMod.NPCs.Bumblebirb;
-using CalamityMod.NPCs.Calamitas;
+using CalamityMod.NPCs.CalClone;
 using CalamityMod.NPCs.CeaselessVoid;
 using CalamityMod.NPCs.Crabulon;
 using CalamityMod.NPCs.Cryogen;
@@ -85,7 +85,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<DesertScourgeTrophy>(),
                 ModContent.ItemType<DesertScourgeMask>(),
-                ModContent.ItemType<KnowledgeDesertScourge>(),
+                ModContent.ItemType<LoreDesertScourge>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<DesertMedallion>()}] в пустыне.",
@@ -124,7 +124,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<CrabulonTrophy>(),
                 ModContent.ItemType<CrabulonMask>(),
-                ModContent.ItemType<KnowledgeCrabulon>(),
+                ModContent.ItemType<LoreCrabulon>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<DecapoditaSprout>()}] в грибных пустошах.",
@@ -144,11 +144,11 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<HiveMindTrophy>(),
                 ModContent.ItemType<HiveMindMask>(),
-                ModContent.ItemType<KnowledgeHiveMind>(),
+                ModContent.ItemType<LoreHiveMind>(),
                 ModContent.ItemType<RottingEyeball>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
-            $"Убейте кисту или используйте [i:{ModContent.ItemType<Teratoma>()}] в искажении.",
+            $"Убейте опухоль или используйте [i:{ModContent.ItemType<Teratoma>()}] в искажении.",
             CalamityUtils.ColorMessage("Искажённая стая начала поиски нового места для размножения.", new Color(148, 0, 211)),
             () => true,
             null,
@@ -167,7 +167,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<PerforatorTrophy>(),
                 ModContent.ItemType<PerforatorMask>(),
-                ModContent.ItemType<KnowledgePerforators>(),
+                ModContent.ItemType<LorePerforators>(),
                 ModContent.ItemType<BloodyVein>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
@@ -194,7 +194,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<SlimeGodTrophy>(),
                 ModContent.ItemType<SlimeGodMask>(),
                 ModContent.ItemType<SlimeGodMask2>(),
-                ModContent.ItemType<KnowledgeSlimeGod>(),
+                ModContent.ItemType<LoreSlimeGod>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<OverloadedSludge>()}].",
@@ -214,7 +214,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<CryogenTrophy>(),
                 ModContent.ItemType<CryogenMask>(),
-                ModContent.ItemType<KnowledgeCryogen>(),
+                ModContent.ItemType<LoreArchmage>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<CryoKey>()}] в снегах.",
@@ -242,8 +242,8 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<AquaticScourgeTrophy>(),
                 ModContent.ItemType<AquaticScourgeMask>(),
-                ModContent.ItemType<KnowledgeAquaticScourge>(),
-                ModContent.ItemType<KnowledgeSulphurSea>(),
+                ModContent.ItemType<LoreAquaticScourge>(),
+                ModContent.ItemType<LoreSulphurSea>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<Seafood>()}] или подождите его появление в сернистом море.",
@@ -255,6 +255,20 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 sb.Draw(value, new Vector2(rect.Center.X - value.Width / 2, rect.Center.Y - value.Height / 2), color);
             },
             "CalamityMod/NPCs/AquaticScourge/AquaticScourgeHead_Head_Boss"
+        );
+        
+        AddMiniBoss(
+            bosschecklist,
+            calamity,
+            "Болотистый скалозев",
+            9.52f,
+            ModContent.NPCType<CragmawMire>(),
+            () => DownedBossSystem.downedCragmawMire,
+            null,
+            null,
+            $"Появляется во время кислотного дождя после победы над Акватическим бичом.\nНачните кислотный дождь использовав [i:{ModContent.ItemType<CausticTear>()}].",
+            CalamityUtils.ColorMessage("The Cragmaw Mire buries itself within the sand.", new Color(240, 230, 140)),
+            () => true
         );
 
         AddBoss(
@@ -269,8 +283,8 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<BrimstoneElementalTrophy>(),
                 ModContent.ItemType<BrimstoneWaifuMask>(),
-                ModContent.ItemType<KnowledgeBrimstoneCrag>(),
-                ModContent.ItemType<KnowledgeBrimstoneElemental>(),
+                ModContent.ItemType<LoreAzafure>(),
+                ModContent.ItemType<LoreBrimstoneElemental>(),
                 ModContent.ItemType<CharredRelic>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
@@ -285,17 +299,17 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             "Клон Каламитас",
             11.7f,
             ModContent.NPCType<CalamitasClone>(),
-            () => DownedBossSystem.downedCalamitas,
+            () => DownedBossSystem.downedCalamitasClone,
             ModContent.ItemType<EyeofDesolation>(),
             new List<int>
             {
-                ModContent.ItemType<CalamitasTrophy>(),
+                ModContent.ItemType<CalamitasCloneTrophy>(),
                 ModContent.ItemType<CataclysmTrophy>(),
                 ModContent.ItemType<CatastropheTrophy>(),
-                ModContent.ItemType<CalamitasMask>(),
+                ModContent.ItemType<CalamitasCloneMask>(),
                 ModContent.ItemType<HoodOfCalamity>(),
                 ModContent.ItemType<RobesOfCalamity>(),
-                ModContent.ItemType<KnowledgeCalamitasClone>(),
+                ModContent.ItemType<LoreCalamitasClone>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<EyeofDesolation>()}] ночью.",
@@ -338,8 +352,8 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<AnahitaTrophy>(),
                 ModContent.ItemType<LeviathanMask>(),
                 ModContent.ItemType<AnahitaMask>(),
-                ModContent.ItemType<KnowledgeOcean>(),
-                ModContent.ItemType<KnowledgeLeviathanAnahita>(),
+                ModContent.ItemType<LoreAbyss>(),
+                ModContent.ItemType<LoreLeviathanAnahita>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             "Убейте неизвестное существо в океане.",
@@ -364,7 +378,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<AstrumAureusTrophy>(),
                 ModContent.ItemType<AstrumAureusMask>(),
-                ModContent.ItemType<KnowledgeAstrumAureus>(),
+                ModContent.ItemType<LoreAstrumAureus>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<AstralChunk>()}] ночью в астральном биоме.",
@@ -386,7 +400,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<PlaguebringerGoliathTrophy>(),
                 ModContent.ItemType<PlaguebringerGoliathMask>(),
-                ModContent.ItemType<KnowledgePlaguebringerGoliath>(),
+                ModContent.ItemType<LorePlaguebringerGoliath>(),
                 ModContent.ItemType<PlagueCaller>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
@@ -421,7 +435,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<RavagerTrophy>(),
                 ModContent.ItemType<RavagerMask>(),
-                ModContent.ItemType<KnowledgeRavager>(),
+                ModContent.ItemType<LoreRavager>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<DeathWhistle>()}].",
@@ -456,8 +470,8 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<AstrumDeusTrophy>(),
                 ModContent.ItemType<AstrumDeusMask>(),
-                ModContent.ItemType<KnowledgeAstrumDeus>(),
-                ModContent.ItemType<KnowledgeAstralInfection>(),
+                ModContent.ItemType<LoreAstrumDeus>(),
+                ModContent.ItemType<LoreAstralInfection>(),
                 ModContent.ItemType<ChromaticOrb>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
@@ -484,7 +498,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<ProfanedGuardianTrophy>(),
                 ModContent.ItemType<ProfanedGuardianMask>(),
-                ModContent.ItemType<KnowledgeProfanedGuardians>(),
+                ModContent.ItemType<LoreProfanedGuardians>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<ProfanedShard>()}] в освящении или в преисподней.",
@@ -493,7 +507,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             delegate(SpriteBatch sb, Rectangle rect, Color color)
             {
                 Texture2D value = ModContent.Request<Texture2D>("CalamityMod/NPCs/ProfanedGuardians/ProfanedGuardians_BossChecklist", AssetRequestMode.ImmediateLoad).Value;
-                sb.Draw(value, new Vector2(rect.Center.X - value.Width / 2, rect.Center.Y - value.Height / 2), color);
+                sb.Draw(value, new Vector2(rect.Center.X - value.Width * 0.7f / 2f, rect.Center.Y - value.Height * 0.7f / 2f), null, color, 0f, Vector2.Zero, 0.7f, 0, 0f);
             },
             "CalamityMod/NPCs/ProfanedGuardians/ProfanedGuardianCommander_Head_Boss"
         );
@@ -510,7 +524,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<DragonfollyTrophy>(),
                 ModContent.ItemType<BumblefuckMask>(),
-                ModContent.ItemType<KnowledgeDragonfolly>(),
+                ModContent.ItemType<LoreDragonfolly>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<ExoticPheromones>()}] в джунглях.",
@@ -530,7 +544,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<ProvidenceTrophy>(),
                 ModContent.ItemType<ProvidenceMask>(),
-                ModContent.ItemType<KnowledgeProvidence>(),
+                ModContent.ItemType<LoreProvidence>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<ProfanedCore>()}] в освящении или в преисподней.",
@@ -563,7 +577,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<AncientGodSlayerHelm>(),
                 ModContent.ItemType<AncientGodSlayerChestplate>(),
                 ModContent.ItemType<AncientGodSlayerLeggings>(),
-                ModContent.ItemType<KnowledgeSentinels>(),
+                ModContent.ItemType<LoreCeaselessVoid>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<RuneofKos>()}] в Темнице.",
@@ -591,7 +605,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<AncientGodSlayerHelm>(),
                 ModContent.ItemType<AncientGodSlayerChestplate>(),
                 ModContent.ItemType<AncientGodSlayerLeggings>(),
-                ModContent.ItemType<KnowledgeSentinels>(),
+                ModContent.ItemType<LoreStormWeaver>(),
                 ModContent.ItemType<LittleLight>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
@@ -621,7 +635,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<AncientGodSlayerHelm>(),
                 ModContent.ItemType<AncientGodSlayerChestplate>(),
                 ModContent.ItemType<AncientGodSlayerLeggings>(),
-                ModContent.ItemType<KnowledgeSentinels>(),
+                ModContent.ItemType<LoreSignus>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<RuneofKos>()}] в преисподней.",
@@ -645,7 +659,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<PolterghastTrophy>(),
                 ModContent.ItemType<PolterghastMask>(),
-                ModContent.ItemType<KnowledgePolterghast>(),
+                ModContent.ItemType<LorePolterghast>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Убейте 30 фантомных духов или используйте [i:{ModContent.ItemType<NecroplasmicBeacon>()}] в Темнице.",
@@ -653,6 +667,34 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             () => true
         );
 
+        AddMiniBoss(
+            bosschecklist,
+            calamity,
+            "Мучитель",
+            20.491f,
+            ModContent.NPCType<Mauler>(),
+            () => DownedBossSystem.downedMauler,
+            null,
+            null,
+            $"Появляется во время кислотного дождя после победы над Полтергастом.\nНачните кислотный дождь использовав [i:{ModContent.ItemType<CausticTear>()}].",
+            CalamityUtils.ColorMessage("Прожорливая акула растерзала все тела.", new Color(240, 230, 140)),
+            () => true
+        );
+        
+        AddMiniBoss(
+            bosschecklist,
+            calamity,
+            "Ядерный террор",
+            20.492f,
+            ModContent.NPCType<NuclearTerror>(),
+            () => DownedBossSystem.downedNuclearTerror,
+            null,
+            null,
+            $"Появляется во время кислотного дождя после победы над Полтергастом.\nНачните кислотный дождь использовав [i:{ModContent.ItemType<CausticTear>()}].",
+            CalamityUtils.ColorMessage("Радиоактивное чудище подтвердило своё прозвище.", new Color(240, 230, 140)),
+            () => true
+        );
+        
         AddBoss(
             bosschecklist,
             calamity,
@@ -668,7 +710,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<OldDukeTrophy>(),
                 ModContent.ItemType<OldDukeMask>(),
-                ModContent.ItemType<KnowledgeOldDuke>(),
+                ModContent.ItemType<LoreOldDuke>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Одолейте событие «Кислотный дождь» после победы над Полтергастом или выловите с помощью [i:{ModContent.ItemType<BloodwormItem>()}] в сернистом море.",
@@ -688,7 +730,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             {
                 ModContent.ItemType<DevourerofGodsTrophy>(),
                 ModContent.ItemType<DevourerofGodsMask>(),
-                ModContent.ItemType<KnowledgeDevourerofGods>(),
+                ModContent.ItemType<LoreDevourerofGods>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<CosmicWorm>()}].",
@@ -709,18 +751,18 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             22f,
             ModContent.NPCType<Yharon>(),
             () => DownedBossSystem.downedYharon,
-            ModContent.ItemType<JungleDragonEgg>(),
+            ModContent.ItemType<YharonEgg>(),
             new List<int>
             {
                 ModContent.ItemType<YharonTrophy>(),
                 ModContent.ItemType<YharonMask>(),
-                ModContent.ItemType<KnowledgeYharon>(),
+                ModContent.ItemType<LoreYharon>(),
                 ModContent.ItemType<ForgottenDragonEgg>(),
                 ModContent.ItemType<McNuggets>(),
                 ModContent.ItemType<FoxDrive>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
-            $"Используйте [i:{ModContent.ItemType<JungleDragonEgg>()}] в джунглях.",
+            $"Используйте [i:{ModContent.ItemType<YharonEgg>()}].",
             CalamityUtils.ColorMessage("Ярон считает вас слишком слабым, чтобы оставаться с вашим надгробием.", new Color(255, 165, 0)),
             () => true,
             null,
@@ -752,7 +794,8 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<ThanatosMask>(),
                 ModContent.ItemType<ArtemisMask>(),
                 ModContent.ItemType<ApolloMask>(),
-                ModContent.ItemType<KnowledgeExoMechs>(),
+                ModContent.ItemType<LoreExoMechs>(),
+                ModContent.ItemType<LoreCynosure>(),
                 ModContent.ItemType<ThankYouPainting>()
             },
             "При использовании высокотехнологичного компьютера.",
@@ -768,10 +811,10 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
         AddBoss(
             bosschecklist,
             calamity,
-            "Высшая Каламитас",
+            "Высшая ведьма, Каламитас",
             23f,
             ModContent.NPCType<SupremeCalamitas>(),
-            () => DownedBossSystem.downedSCal,
+            () => DownedBossSystem.downedCalamitas,
             new List<int>
             {
                 ModContent.ItemType<AshesofCalamity>(),
@@ -786,7 +829,8 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<SCalMask>(),
                 ModContent.ItemType<SCalRobes>(),
                 ModContent.ItemType<SCalBoots>(),
-                ModContent.ItemType<KnowledgeCalamitas>(),
+                ModContent.ItemType<LoreCalamitas>(),
+                ModContent.ItemType<LoreCynosure>(),
                 ModContent.ItemType<BrimstoneJewel>(),
                 ModContent.ItemType<Levi>(),
                 ModContent.ItemType<ThankYouPainting>()
@@ -796,26 +840,6 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
             () => true,
             null,
             "CalamityMod/NPCs/SupremeCalamitas/HoodedHeadIcon"
-        );
-
-        AddBoss(
-            bosschecklist,
-            calamity,
-            "Эйдолонский змей",
-            23.5f,
-            ModContent.NPCType<AdultEidolonWyrmHead>(),
-            () => DownedBossSystem.downedAdultEidolonWyrm,
-            1326,
-            new List<int> {ModContent.ItemType<ThankYouPainting>()},
-            "Находясь в бездне, используйте предмет, который накладывает дебафф «Хаотичность».",
-            CalamityUtils.ColorMessage("...", new Color(127, 255, 212)),
-            () => true,
-            delegate(SpriteBatch sb, Rectangle rect, Color color)
-            {
-                Texture2D value = ModContent.Request<Texture2D>("CalamityMod/NPCs/AdultEidolonWyrm/AdultEidolonWyrm_BossChecklist", AssetRequestMode.ImmediateLoad).Value;
-                sb.Draw(value, new Vector2(rect.Center.X - value.Width / 2, rect.Center.Y - value.Height / 2), color);
-            },
-            "CalamityMod/NPCs/AdultEidolonWyrm/AdultEidolonWyrmHead_Head_Boss"
         );
     };
 
@@ -875,7 +899,7 @@ public class WeakReferenceSupportCensusSupport : OnPatcher
         ModsCall.Census.Call(
             "TownNPCCondition",
             ModContent.NPCType<WITCH>(),
-            "Одолейте Высшую Каламитас"
+            "Одолейте Высшую ведьму, Каламитас"
         );
     };
 }
@@ -981,6 +1005,25 @@ public class WeakReferenceSupportAddCalamityInvasions : OnPatcher
                 sb.Draw(value, new Vector2(rect.Center.X - value.Width * 0.9f / 2f, rect.Center.Y - value.Height * 0.9f / 2f), null, color, 0f, Vector2.Zero, 0.9f, 0, 0f);
             },
             "CalamityMod/UI/MiscTextures/AcidRainIcon"
+        );
+        
+        AddInvasion(
+            bossChecklist,
+            calamity,
+            "Босс-раш",
+            23.75f,
+            new List<int>(),
+            () => DownedBossSystem.downedBossRush,
+            new List<int> {ModContent.ItemType<Terminus>()},
+            new List<int> {ModContent.ItemType<Rock>()},
+            $"Используйте [i:{ModContent.ItemType<Terminus>()}], найденный на дне бездны.",
+            () => true,
+            delegate(SpriteBatch sb, Rectangle rect, Color color)
+            {
+                Texture2D value = ModContent.Request<Texture2D>("CalamityMod/Skies/XerocEye", AssetRequestMode.ImmediateLoad).Value;
+                sb.Draw(value, new Vector2(rect.Center.X - value.Width * 0.5f / 2f, rect.Center.Y - value.Height * 0.5f / 2f), null, color, 0f, Vector2.Zero, 0.5f, 0, 0f);
+            },
+            "CalamityMod/UI/MiscTextures/BossRushIcon"
         );
     };
 

@@ -22,6 +22,8 @@ public class CalamityPlayerPreKill : ILPatcher
         TranslationHelper.ModifyIL(il, "'s soul was extinguished.", " гасит свою душу.");
         TranslationHelper.ModifyIL(il, " was melted by the toxic waste.", " расплавляется токсичными отходами.");
         TranslationHelper.ModifyIL(il, "'s ashes scatter in the wind.", " развеивает по ветру свой прах.");
+        TranslationHelper.ModifyIL(il, " was blown away by miraculous technological advancements.", "");
+        TranslationHelper.ModifyIL(il, " disintegrated from the overpowering exotic resonance.", "");
         TranslationHelper.ModifyIL(il, " was turned to ashes by the Profaned Goddess.", " обращается Осквернённой богиней в пепел.");
         TranslationHelper.ModifyIL(il, " fell prey to their sins.", " становится жертвой собственных грехов.");
         TranslationHelper.ModifyIL(il, "'s spirit was turned to ash.", " превращает свой дух в пепел.");
@@ -54,7 +56,6 @@ public class CalamityPlayerKillPlayer : ILPatcher
         TranslationHelper.ModifyIL(il, "Oxygen failed to reach ", "Кислород в глубинах бездны не достигает ");
         TranslationHelper.ModifyIL(il, " from the depths of the Abyss.", ".");
         TranslationHelper.ModifyIL(il, " failed the challenge at hand.", " не справляется с испытанием.");
-        TranslationHelper.ModifyIL(il, " was destroyed by a mysterious force.", " уничтожается таинственной силой.");
     };
 }
 
@@ -78,7 +79,8 @@ public class CalamityPlayerOnEnterWorld : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, " [c/EE4939:Be sure to check out the Official Calamity Mod Wiki at ][c/3989FF:calamitymod.wiki.gg][c/EE4939:!] ", " [c/EE4939:Актуальную информацию вы можете посмотреть на официальной вики Каламити] [c/3989FF:calamitymod.wiki.gg][c/EE4939:!] ");
+        TranslationHelper.ModifyIL(il, " [c/EE4939:Check out the Official Calamity Mod Wiki at ][c/3989FF:calamitymod.wiki.gg][c/EE4939:!] ", " [c/EE4939:Актуальную информацию вы можете посмотреть на официальной вики Каламити] [c/3989FF:calamitymod.wiki.gg][c/EE4939:!] ");
+        TranslationHelper.ModifyIL(il, " [c/EE4939:Note: The Fandom wiki is no longer supported by Calamity.] ", " [c/EE4939:Обратите внимание: Вики Fandom больше не поддерживается Calamity.] ");
     };
 }
 
@@ -91,5 +93,17 @@ public class CalamityPlayerUpdateBadLifeRegen : ILPatcher
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "'s flesh was dissolved by sulphuric water.", " растворяет свою плоть в сернистых водах.");
+    };
+}
+
+public class CalamityPlayerHandleTileEffects : ILPatcher
+{
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+
+    public override MethodInfo ModifiedMethod => typeof(CalamityPlayer).GetCachedMethod("HandleTileEffects");
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    {
+        TranslationHelper.ModifyIL(il, " was not worthy", " недостоин");
     };
 }

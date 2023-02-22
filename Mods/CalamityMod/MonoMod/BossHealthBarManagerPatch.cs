@@ -49,7 +49,7 @@ public class AttemptToAddBar : OnPatcher
             flag = false;
         
         if (npc.type == ModContent.NPCType<Apollo>())
-            overridingName = "ВП-01 Артемида и ВП-03 Аполлон";
+            overridingName = npc.ModNPC<Apollo>().exoMechdusa ? "Eyes of XB-∞ Hekate" : "ВП-01 Артемида и ВП-03 Аполлон";
         
         if (!flag)
             return;

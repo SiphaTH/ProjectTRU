@@ -117,7 +117,7 @@ public class VanillaItemsTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
-                tooltip.Text = tooltip.Text.Replace("Inflicts Holy Flames\nDeals double damage to enemies above 75% life",
+                tooltip.Text = tooltip.Text.Replace("Deals double damage to enemies above 75% life",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Excalibur.Tooltip"));
             });
         }
@@ -125,7 +125,7 @@ public class VanillaItemsTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
-                tooltip.Text = tooltip.Text.Replace("Inflicts Holy Flames\nDeals double damage to enemies above 75% life",
+                tooltip.Text = tooltip.Text.Replace("Deals double damage to enemies above 75% life",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Gungnir.Tooltip"));
             });
         }
@@ -133,7 +133,7 @@ public class VanillaItemsTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
             {
-                tooltip.Text = tooltip.Text.Replace("Inflicts Holy Flames\nDeals double damage to enemies above 75% life",
+                tooltip.Text = tooltip.Text.Replace("Deals double damage to enemies above 75% life",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TrueExcalibur.Tooltip"));
             });
         }
@@ -297,14 +297,6 @@ public class VanillaItemsTranslation : GlobalItem
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BreakerBlade.Tooltip"));
             });
         }
-        else if (item.type == ItemID.LightsBane)
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
-            {
-                tooltip.Text = tooltip.Text.Replace("Inflicts Shadowflame on hit",
-                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.LightsBane.Tooltip"));
-            });
-        }
         else if (item.type == ItemID.NightsEdge)
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
@@ -319,22 +311,6 @@ public class VanillaItemsTranslation : GlobalItem
             {
                 tooltip.Text = tooltip.Text.Replace("Inflicts Shadowflame on hit",
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TrueNightsEdge.Tooltip"));
-            });
-        }
-        else if (item.type == ItemID.BallOHurt)
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
-            {
-                tooltip.Text = tooltip.Text.Replace("Inflicts Shadowflame on hit",
-                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BallOHurt.Tooltip"));
-            });
-        }
-        else if (item.type == ItemID.CorruptYoyo)
-        {
-            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
-            {
-                tooltip.Text = tooltip.Text.Replace("Inflicts Shadowflame on hit",
-                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CorruptYoyo.Tooltip"));
             });
         }
         else if (item.type == ItemID.BloodButcherer)
@@ -465,6 +441,53 @@ public class VanillaItemsTranslation : GlobalItem
                     LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BladedGlove.Tooltip"));
             });
         }
+        else if (item.type == ItemID.BloodButcherer)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BloodButcherer.Tooltip"));
+            });
+        }
+        else if (item.type == ItemID.TheRottedFork)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TheRottedFork.Tooltip"));
+            });
+        }
+        else if (item.type == ItemID.TheMeatball)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.TheMeatball.Tooltip"));
+            });
+        }
+        else if (item.type == ItemID.CrimsonYoyo)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CrimsonYoyo.Tooltip"));
+            });
+        }
+        else if (item.type == ItemID.CrimsonRod)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Knockback", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Inflicts Burning Blood on hit",
+                    LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CrimsonRod.Tooltip"));
+            });
+        }
+        else if (item.type == ItemID.IronskinPotion)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.Vanilla.IronskinPotion.Tooltip", tooltip.Text.Split(' ')[3]);
+            });
+        }
 
         if (item.prefix > 0)
         {
@@ -493,6 +516,14 @@ public class VanillaItemsTranslation : GlobalItem
                     });
                     break;
             }
+        }
+        
+        if (item.master)
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Master", tooltip =>
+            {
+                tooltip.Text = tooltip.Text.Replace("Мастер or Revengeance", "Мастер или Месть");
+            });
         }
         
         ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
@@ -551,7 +582,6 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.YoYoGlove => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.YoYoGlove.Tooltip"),
                 ItemID.ArcheryPotion => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.ArcheryPotion.Tooltip"),
                 ItemID.SwiftnessPotion => Language.GetTextValue("ItemTooltip.SwiftnessPotion").Replace("25", "15"),
-                ItemID.EndurancePotion => Language.GetTextValue("ItemTooltip.EndurancePotion").Replace("10", "5"),
                 ItemID.DD2ElderCrystal => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.DD2ElderCrystal.Tooltip"),
                 ItemID.BlackBelt => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BlackBelt.Tooltip"),
                 ItemID.BrainOfConfusion => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.BrainOfConfusion.Tooltip"),
@@ -597,8 +627,6 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.PalladiumBreastplate => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PalladiumBreastplate.Tooltip"),
                 ItemID.PalladiumLeggings => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PalladiumLeggings.Tooltip"),
                 ItemID.MythrilHood => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.MythrilHood.Tooltip"),
-                ItemID.MythrilChainmail => Language.GetTextValue("ItemTooltip.MythrilChainmail").Replace("7", "12"),
-                ItemID.MythrilGreaves => Language.GetTextValue("ItemTooltip.MythrilGreaves").Replace("10", "14"),
                 ItemID.OrichalcumBreastplate => Language.GetTextValue("ItemTooltip.OrichalcumBreastplate").Replace("6", "10"),
                 ItemID.AdamantiteHeadgear => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.AdamantiteHeadgear.Tooltip"),
                 ItemID.ObsidianSkull => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.ObsidianSkull.Tooltip"),
@@ -658,6 +686,10 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.StarWrath => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.StarWrath.Tooltip"),
                 ItemID.NorthPole => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.NorthPole.Tooltip"),
                 ItemID.PsychoKnife => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PsychoKnife.Tooltip"),
+                ItemID.SlimeGun => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.SlimeGun.Tooltip"),
+                ItemID.GelBalloon => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.GelBalloon.Tooltip"),
+                ItemID.GoldPickaxe => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.GoldPickaxe.Tooltip"),
+                ItemID.PlatinumPickaxe => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.PlatinumPickaxe.Tooltip"),
                 _ => tooltip.Text
             };
         });
@@ -968,6 +1000,25 @@ public class VanillaItemsTranslation : GlobalItem
             tooltip.Text = item.type switch
             {
                 ItemID.SpaceGun => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.SpaceGun.Tooltip", (int)(item.mana * Main.LocalPlayer.manaCost * 0.5f)),
+                _ => tooltip.Text
+            };
+        });
+        
+        ItemHelper.TranslateTooltip(item, tooltips, "Material", tooltip =>
+        {
+            tooltip.Text = item.type switch
+            {
+                ItemID.Tombstone => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Tombstone.Tooltip"),
+                ItemID.GraveMarker => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.GraveMarker.Tooltip"),
+                ItemID.CrossGraveMarker => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.CrossGraveMarker.Tooltip"),
+                ItemID.Headstone => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Headstone.Tooltip"),
+                ItemID.Gravestone => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Gravestone.Tooltip"),
+                ItemID.Obelisk => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.Obelisk.Tooltip"),
+                ItemID.RichGravestone1 => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.RichGravestone1.Tooltip"),
+                ItemID.RichGravestone2 => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.RichGravestone2.Tooltip"),
+                ItemID.RichGravestone3 => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.RichGravestone3.Tooltip"),
+                ItemID.RichGravestone4 => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.RichGravestone4.Tooltip"),
+                ItemID.RichGravestone5 => LangHelper.GetTextValue("CalamityMod.Items.Vanilla.RichGravestone5.Tooltip"),
                 _ => tooltip.Text
             };
         });

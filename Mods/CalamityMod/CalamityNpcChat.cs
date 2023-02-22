@@ -22,7 +22,7 @@ public class CalamityNpcChat : GlobalNPC
             chat = chat switch
             {
                 "I'm considering moving back to that old cave of mine." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.1"),
-                "I certainly can't return to the Tyrant's old dwellings now, have you got any places to stay?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.2"),
+                "I certainly can't return to Yharim's old dwellings now, have you got any places to stay?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.2"),
                 "I can't pay rent, but if you've got any dead relative you want me to try and... what? You don't?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.3"),
                 "One of these days, I was thinking of starting a garden with the flowers from the old capitol of hell. I love the smell of brimstone in the morning." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.4"),
                 "I think I've settled comfortably, thank you very much." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.5"),
@@ -40,8 +40,8 @@ public class CalamityNpcChat : GlobalNPC
             if (NPC.AnyNPCs(ModContent.NPCType<SEAHOE>()) && chat == "I cannot understand the Sea King. He does not seem to want me dead. That amount of compassion I just can't understand.")
                 chat = LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.12");
 
-            if (NPC.AnyNPCs(ModContent.NPCType<DILF>()) && chat == "That frosty old man... even if you ignore our brands of magic and our old alliances, I doubt I'd ever get along with him.")
-                chat = LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.13");
+            // if (NPC.AnyNPCs(ModContent.NPCType<DILF>()) && chat == "That frosty old man... even if you ignore our brands of magic and our old alliances, I doubt I'd ever get along with him.")
+            //     chat = LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.13");
 
             if (NPC.AnyNPCs(ModContent.NPCType<FAP>()) && chat == $"I wonder if {Main.npc[NPC.FindFirstNPC(ModContent.NPCType<FAP>())].GivenName} ever feels cold given how revealing her dress is. Perhaps she should cover up a bit more.")
                 chat = string.Format(LangHelper.GetText("CalamityMod.NPCs.Dialogues.Witch.14"), Main.npc[NPC.FindFirstNPC(ModContent.NPCType<FAP>())].GivenName);
@@ -64,8 +64,9 @@ public class CalamityNpcChat : GlobalNPC
                 "Hm... The veil has fallen, and the world begins to show its true colors. I hope you will trek a righteous path, though even I am not sure what that may be." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.16"),
                 "These days, the night sky feels... just a little less oppressive now." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.17"),
                 "Some of these beings I had thought previously to be only legends. To see them in all their glory... what a macabre privilege." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.18"),
-                "To see that Tyrant’s serpent free of its shackles. It gave me chills." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.19"),
-                "How much more has the world fallen to ruin? Even the Tyrant’s empire..." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.20"),
+                "To see that Tyrant's serpent free of its shackles. It gave me chills." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.19"),
+                "How much more has the world fallen to ruin? Even the Tyrant's empire..." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.20"),
+                "I do not expect a kingdom from you, but I would appreciate a safe haven." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.21"),
                 _ => chat
             };
             
@@ -93,13 +94,13 @@ public class CalamityNpcChat : GlobalNPC
             chat = chat switch
             {
                 "The sun beats down harshly upon my creations here. If you would allow me to conjure a blizzard every now and then..." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.1"),
-                "I must admit, I’m not quite used to this weather. It's far too warm for my tastes..." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.2"),
+                "I must admit, I'm not quite used to this weather. It's far too warm for my tastes..." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.2"),
                 "Nightfall is a good time for practicing magic. We mages often rely on celestial bodies and their fragments to enhance our mana." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.3"),
                 "Necromancy was never a field I found interesting. Why utilize the rotting corpses of people, when you could form far more elegant servants of ice?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.4"),
                 "The tundra’s unnatural state is not all my doing. Decades ago, I came across it and amplified the climate with my magic." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.5"),
                 "If you have a request, make it quick. I am in the process of weaving a spell, which requires great focus." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.6"),
                 "You have the makings of a gifted mage. Tell me, what do you think of ice magic?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.7"),
-                "Flowers and the like don’t hold a candle to the beauty of intricately formed ice." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.8"),
+                "Flowers and the like don't hold a candle to the beauty of intricately formed ice." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.8"),
                 "Sometimes... I feel like all I'm good for during these events is making ice cubes and slushies." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.9"),
                 "If your blood were to thoroughly freeze, it would be quite fatal." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.10"),
                 "The undead which roam tonight are still monsters of blood and guts, but they seem... fresher." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Archmage.11"),
@@ -235,8 +236,8 @@ public class CalamityNpcChat : GlobalNPC
                 "All sorts of new weapons to be found and looted. Get to that, and I'll share some of my collection too!" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.20"),
                 "There's so much scrap around this land with valuable parts to them. Makes you wonder who could afford to leave em all around." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.21"),
                 "Crypts, tombs, dungeons, those're all just treasure troves to me. The dead are dead, they've got nothing to do with it." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.22"),
-                "If you find anything cool, make sure to drop by and show it to me, I promise I’ll keep my hands off it." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.23"),
-                "So many new things to steal, I can’t think of where to start!" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.24"),
+                "If you find anything cool, make sure to drop by and show it to me, I promise I'll keep my hands off it." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.23"),
+                "So many new things to steal, I can't think of where to start!" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.24"),
                 "If I end up angering some deities or whatever, would you mind taking the blame for me?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.25"),
                 "Oh man, did you rip that off a shark!? Now that's a weapon!" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.26"),
                 "I'd rather not be here. This place has bad vibes, y'know? It brings back some unpleasant memories." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.Bandit.27"),
@@ -558,48 +559,48 @@ public class CalamityNpcChat : GlobalNPC
             Main.npcChatText = Main.npcChatText switch
             {
                 "If this shows up, something went wrong." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.22"),
-                "Draedon's style of confrontation is very... alien and hands-off. You may be more likely to fight any one of his mechs before taking him down." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.23"),
-                "Lord Yharim possesses god-like strength. He may not even fight you at full power which is fortunate for you. His attacks may just kill you in one hit, so be careful." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.24"),
-                "Pockets of ore have appeared once more in the land. This will allow you to create the most powerful weaponry and armor imagined!" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.25"),
-                //"Ah, the dragon Yharon is fickle. You may find that he will refuse to use his full power unless you are strong enough to unleash the power of the Dark Sun." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.26"),
-                "The Devourer of Gods is extremely powerful. However, he is young, foolhardy, and very lazy. Perhaps if he had been given time to develop he would have turned into quite the threat." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.27"),
+                "Draedon isn't a frontline fighter; he is a scientist and inventor. He is unlikely to face you directly, and will likely have his creations confront you instead. Be prepared for anything that blasphemous machine could throw at you." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.23"),
+                "The Golden Heretic, Yharim, possesses strength that may just surpass all of the Gods. When you face him, be well prepared for the battle of your life." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.24"),
+                "Auric is near impossible to work with without being attuned to a Dragon or using the claimed soul of a Dragon to perform a \"mock\" attunement. However, if one can work with it truly powerful things can be created; enough so that using it in anything was deemed heretical by the Gods." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.25"),
+                "When exploring the jungle temple be careful. You may not wish to disturb the Lihzahrd's idol, the Golem. It's quite the destructive force." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.26"),
+                "The Devourer of Gods is truly an enigma. Some say it's not even from this world at all. What is known is that he is a being that can devour the essence of Gods entirely, leaving absolutely nothing left. It's no wonder Yharim recruited that monster." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.27"),
                 "With the cosmic steel you can fashion many of your weapons into much more powerful forms." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.28"),
-                "The Devourer of God's cosmic armor is unique in that it is capable of not only protecting his body from tearing itself apart when ripping through the fabric of space and time, but also allows him to control his powers." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.29"),
+                "The Devourer's armor was specially made by Draedon. Extremely flexible yet durable and massive, it may be one of his most impressive creations. I shudder to think of what unholy things he may be able to create now, if his research has not stopped." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.29"),
                 "Ah... I can sense a powerful change in the weather. You may want to venture to the Sulphurous Seas once more during the rain to experience it." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.30"),
                 "The Abyss holds many secrets revealed with time. Checking it out again may not be a bad idea." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.31"),
-                "The Dungeon seems to be more active now. You may hear the faint whisperings of angry spirits who have not left to the Void... I would recommend searching there before taking on the Sentinels." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.32"),
-                "Ironic, is it not, that Statis was defeated by the very Sentinel his people fashioned their art of stealth from. Fate so often weaves cruel tales." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.33"),
+                "I do wonder what has happened to Braelor and Statis. I have heard or seen very little of either. In my days, both were great heroes to those who worshiped the Gods. Have they been killed, captured, or are they simply in hiding?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.32"),
+                // "Ironic, is it not, that Statis was defeated by the very Sentinel his people fashioned their art of stealth from. Fate so often weaves cruel tales." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.33"),
                 "The Rune of Kos holds a significant portion of Providence's brand of magic, easily distinguishable from all others. Activating it in certain places would have some... risky consequences." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.34"),
-                "The stories have it that when Providence faced and defeated Yharim and his forces she lost a lot of energy and reverted to a more skeletal form. She's merely a fraction of the power she was before." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.35"),
-                "Providence is as much the sun goddess as much as the Moon Lord is the moon god. They are two sides of the same coin, choosing to remain neutral amongst our petty squabbles." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.36"),
-                "Touching Providence's offerings is usually a death wish. Shame that Yharim didn't think to just mess with her things to get her out of hiding." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.37"),
-                "The Profaned Guardians will do anything to protect their goddess. Makes sense they would die for her since they can be revived just as quickly." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.38"),
+                "Providence was a great threat to Yharim and his army. She would appear out of seemingly thin air, wreck havoc, and vanish before much damage could be done to her. Perhaps she would be overconfident in facing but a single warrior." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.35"),
+                "Providence can likely be drawn out for combat by using the relic her Guardians left behind. I wonder... Why has Yharim not challenged her? Is he simply that negligent now?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.36"),
+                "The Profaned Guardians serve Providence, one of the few Gods even I despise. The Guardians attempt to eliminate threats to their Goddess preemptively, and it is likely that their next target is you." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.37"),
+                // "The Profaned Guardians will do anything to protect their goddess. Makes sense they would die for her since they can be revived just as quickly." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.38"),
                 "Profaned creatures now lurk in the Hallow and in Hell. If you destroy enough and gather their essence together you shall be able to capture the attention of the Profaned Guardians." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.39"),
                 "Your adventure focuses to the jungle it seems. The Dragonfolly and its swarming offspring should be eliminated before their numbers spiral out of control." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.40"),
-                "The plague was just one of the many experiments authorized by Yharim to raze towns to the ground. This is probably one of the few he shelved for being too terrible." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.41"),
+                "The nature of this plague in the jungle bothers me; it certainly is not the average infection. From afar they seem normal, yet up close it is obvious that the infected creatures are equipped with lights and metallic plating. Whatever it may be, it certainly isn't natural." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.41"),
                 "The Abyss has become far more active than before. You might be able to mine some of the volcanic rubble contained within." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.42"),
                 "The men at the front of the dungeon are performing a ritual to keep the Moon Lord contained in his prison. In order to gain Yharim's attention, however, you may need to defeat them." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.43"),
-                "When exploring the jungle temple be careful. You may not wish to disturb the Lihzahrd's idol, the Golem. It's quite the destructive force." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.44"),
+                "Have you ever heard of the Archmage, Permafrost? Once an advisor to Yharim, he one day vanished and Calamitas abandoned Yharim's cause soon after. From what I know, Permafrost was akin to a father to her. Perhaps if she had something to do with his disappearance, he may yet live...?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.44"),
                 "Be careful when defeating Plantera and the Golem. You might accidentally unleash a new threat in the jungle that needs to be quelled." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.45"),
                 "If you've gathered the souls used to power those automatons head once more to the jungle. You will find a powerful enemy to fight, which will unleash the full fervor of the jungle once defeated. Do not underestimate it!" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.46"),
-                "The Brimstone Crags... Yharim despised that place, and did everything he could to raze it to the ground. It might explain a few things about him." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.47"),
+                // "The Brimstone Crags... Yharim despised that place, and did everything he could to raze it to the ground. It might explain a few things about him." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.47"),
                 "If you take an idol down to the Brimstone Crags you might be able to see just what is lurking in the shadows." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.48"),
-                "Once those mechanical creations have been defeated you would do well to seek out the crippled clone of the witch, Calamitas. It might provide some useful weaponry." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.49"),
-                "I would recommend saving some of your old items. You never know if you can engineer them into stronger weapons in the future." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.50"),
-                "Have you heard of the story of Archmage Permafrost? Rumor has it he's been locked away in an icy prison by Lord Yharim. Perhaps you would be able to free him if Cryogen was destroyed." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.51"),
-                "You will find more ores have been unlocked due to the magic sealing them away being dispelled. Some of them may require more than just the ore itself to create." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.52"),
+                "I would recommend saving some of your old items. You never know if you can engineer them into stronger weapons in the future." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.49"),
+                "Azafure, the city founded in the Brimstone Crags, was one of the first places to support Yharim in his war. Now, it is nothing more than ruins... Just what happened there?" => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.50"),
+                // "Have you heard of the story of Archmage Permafrost? Rumor has it he's been locked away in an icy prison by Lord Yharim. Perhaps you would be able to free him if Cryogen was destroyed." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.51"),
+                // "You will find more ores have been unlocked due to the magic sealing them away being dispelled. Some of them may require more than just the ore itself to create." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.52"),
                 "Throughout the world lie various structures left behind by Draedon. Archaic defenses may remain, but the goods inside may be worth your while." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.53"),
-                "The Crimson used to be easily manageable and controlled by nature. However, the recent wars and pollution have tipped the balance out of favor." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.54"),
-                "The Corruption used to be easily manageable and controlled by nature. However, the recent wars and pollution have tipped the balance out of favor." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.55"),
+                "The Crimson is a relatively recent development in the world, and its formation marked the start of Yharim's treacherous war. Although the source of its growth would be sealed away, nothing was ever done about the original manifestations." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.54"),
+                "The Corruption is a relatively recent development in the world, and its formation marked the start of Yharim's treacherous war. Although the source of its growth would be sealed away, nothing was ever done about the original manifestations." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.55"),
                 //"The dungeon is a dark place. None of us know of its true purpose, however, the ancient Eidolist cultists used it for worship before Lord Yharim took it over." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.56"),
-                "I'm assuming you've heard the legends that speak of the ninja, Statis? There are some who say that if you were able to defeat the gods which his clan once worshipped you would be able to harness some of his powers." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.57"),
+                "I assume you have heard of the legendary ninja, Statis? He and his clan worshiped the God of slime, who may be a survivor of the war due to its trickery and knowing when to hide or flee." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.57"),
                 "Scattered across the lands are shrines dedicated to the gods. They contain powerful gear that may help you on your adventures." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.58"),
                 "Be careful what you attack in the Crimson. You might just unveil a greater threat than what was there before." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.59"),
                 "Be careful what you attack in the Corruption. You might just unveil a greater threat than what was there before." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.60"),
-                "The Sulphurous Seas were created long ago, when Yharim's dungeon could no longer hold as many corpses as it needed to. Many of the bodies were dumped into the ocean. This, along with severe pollution from the heydays of Draedon's experiments have turned a paradise into a wasteland." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.61"),
+                "The Sulphurous Sea was created more than a millenia ago, but it has gotten truly unbearable in the past decades. It's the fault of that accursed robot, Draedon, dumping waste and abandoned projects in there constantly. It's viler than it's ever been, thanks to him." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.61"),
                 "The Sulphurous Seas are dangerous. The toxic waters will burn your skin, but if you can brave them you will be able to reach the Abyss, where there are powerful weapons and dangers aplenty." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.62"),
                 "Ah yes, the Abyss. That trench is full of powerful creatures that could devour you in a heartbeat. I would explore the dungeon first." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.63"),
-                "Have you heard of the Brimstone Crags? It was once a grand kingdom, not too different from my own. However, it also met a similar fate. I would not advise going down there, unless you seek a painful death." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.64"),
+                "Have you heard of the city in the Brimstone Crags? It lies in the Underworld, and was constructed beneath the Abyss. It was once the oldest and largest city in the world, though it seems nothing but danger lies there now. It would be wise to avoid it." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.64"),
                 "There are rumors of ores that lay in latency. When you defeat certain bosses you will undo the ancient magic which conceals those materials." => LangHelper.GetText("CalamityMod.NPCs.Dialogues.SeaKing.65"),
                 _ => Main.npcChatText
             };
