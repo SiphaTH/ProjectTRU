@@ -40,7 +40,7 @@ public class UIKeybindingListItemPatch : ContentTranslation, ILoadableContent
             "CalamityMod: Angelic Alliance Blessing" => "CalamityMod: Божественность альянса ангелов",
             "CalamityMod: God Slayer Dash" => "CalamityMod: Рывок богоубийцы",
             "CalamityMod: Exo Chair Slow Down" => "CalamityMod: Замедление экзо-бокса",
-            "CalamityMod: Dash Double Tap Override" => "CalamityMod: Dash Double Tap Override",
+            "CalamityMod: Dash Double Tap Override" => "CalamityMod: Переопределение клавиши рывка",
             "Fargowiltas: Quick Recall/Mirror" => "Fargowiltas: Быстрое зелье возврата/зеркало",
             "Fargowiltas: Quick Rod of Discord" => "Fargowiltas: Быстрый жезл раздора",
             "Fargowiltas: Quick Use Custom (Bottom Left Inventory Slot)" => "Fargowiltas: Быстрое использ. (нижний левый слот инвентаря)",

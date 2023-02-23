@@ -1059,6 +1059,13 @@ public class SpecificItemsTooltipTranslation : GlobalItem
                 tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.Terminus.Name");
             });
         }
+        else if (item.type == ModContent.ItemType<Lacerator>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.Lacerator.Tooltip.2");
+            });
+        }
         
         ItemHelper.TranslateTooltip(item, tooltips, "SchematicKnowledge1", tooltip =>
         {
