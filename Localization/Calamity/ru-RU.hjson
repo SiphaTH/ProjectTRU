@@ -4827,7 +4827,7 @@
             }
             
             SilvaHeadMagic: {
-                Name: Шляпа-маска Сильвы
+                Name: Маскировочная шляпа Сильвы
                 Tooltip:
                     '''
                     Увеличивает магический урон на 23% и шанс критического урона на 13%
@@ -6400,9 +6400,9 @@
                     '''
                 Lore:
                     '''
-                    The foul air, the morbid fauna, the disgusting terrain... Here lies my first mistake of my crusade
-                    The essence of a God does not simply vanish when the body dies. It must be properly disposed of or destroyed entirely
-                    Essence of a pious God could never fester into a mire as dreadful as this
+                    Затхлый воздух, заражённая фауна, омерзительная почва... Здесь я совершил свою первую ошибку в моём «крестовом походе»
+                    Душа бога не исчезает без следа после смерти тела. Она нуждается в правильной очистке или полном уничтожении
+                    Не может быть, чтобы душа благочестивого бога породило такой ужас
                     '''
             }
             
@@ -6719,15 +6719,15 @@
                     '''
                 Lore:
                     '''
-                    As the Light Dragon was fading, the monk visited him. Nearly none understand what transpired that day
-                    Most say his passing was eased. The truth? Zeratros' Auric soul was consumed, utterly
-                    The monk stood, wreathed in Primordial Light, and declared themselves Xeroc, the First God
-                    When a Dragon is laid to rest on the Aerie, its powers are relinquished so they may one day return
-                    Xeroc renounced their sworn oath and broke the cycle, becoming a traitor without equal
-                    Word of the ascension spread quickly. Many attempted to follow suit and claim an Auric soul for themselves
-                    Now you know… Good intentions or no, all Gods are sinners. Each and every one complicit in genocide
-                    Wherever your journey may lead, whether you are with me or against, may fortune favor you
-                    For nothing else will
+                    Когда Дракон Света увядал, его посетил монах. Почти никто не понимает, что произошло того дня
+                    Большинство утверждают, что его кончина была лёгкой. Но правда в том, что златая душа Зератроса была полностью поглощена
+                    Обрамлённый Первозданным светом, монах провозгласил себя Ксероком, Первым богом
+                    Когда дракон покоится на Эрии, он отказывается от своих сил, чтобы однажды их вернуть
+                    Ксерок отрёкся от своей клятвы и прервал цикл, став предателем, которому нет равных
+                    Слухи о вознесении быстро распространились. Многие пытались последовать его примеру и завладеть златой душой
+                    Теперь ты знаешь... Благие намерения или нет, все боги - грешники. Каждый из них причастен к геноциду
+                    Куда бы ни привела тебя судьба, будь то со мной или против меня, пусть удача благоволит тебе
+                    Ведь ничто другое не имеет значения
                     '''
             }
             
