@@ -15,6 +15,6 @@ public class SilvaRevivePatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Silva Revive Cooldown", "Перезарядка возрождения леса");
+        TranslationHelper.ModifyIL(il, "Silva Revive Cooldown", "Перезарядка возрождения Сильвы");
     };
 }
