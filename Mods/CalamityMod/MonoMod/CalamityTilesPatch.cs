@@ -250,3 +250,15 @@ public class VoidSofaPatch : ILPatcher
         TranslationHelper.ModifyIL(il, "Bench", "ItemName.Bench");
     };
 }
+
+public class WulfrumSofaPatch : ILPatcher
+{
+    public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+    
+    public override MethodInfo ModifiedMethod => typeof(global::CalamityMod.Tiles.FurnitureWulfrum.WulfrumSofa).GetCachedMethod(nameof(global::CalamityMod.Tiles.FurnitureWulfrum.WulfrumSofa.SetStaticDefaults));
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    {
+        TranslationHelper.ModifyIL(il, "Bench", "ItemName.Bench");
+    };
+}
