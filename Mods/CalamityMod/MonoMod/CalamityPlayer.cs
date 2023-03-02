@@ -104,6 +104,6 @@ public class CalamityPlayerHandleTileEffects : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, " was not worthy", " недостоин");
+        TranslationHelper.ModifyIL(il, " was not worthy.", " недостоин.");
     };
 }

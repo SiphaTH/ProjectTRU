@@ -98,6 +98,9 @@ public class TownNpcNames : GlobalNPC
         {"Felix", "Феликс"},
         {"Katsafaros", "Катсафарос"},
         {"Kiriku", "Кирику"},
+        {"Morshu", "Моршу"},
+        {"Captain Billy Bones", "Капитан Билли Бонс"},
+        {"Slap Battles", "Слэп Баттлс"},
     };
 
     public override bool IsLoadingEnabled(Mod mod)

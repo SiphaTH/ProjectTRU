@@ -24,7 +24,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "Corrosive Eye of XB-в€ћ Hekate")
             {
-                typeName = "Corrosive Eye of XB-в€ћ Hekate";
+                typeName = "Едкий глаз ХВ-в€ћ Гекаты";
             }
         }
         
@@ -32,7 +32,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "XB-в€ћ Hekate")
             {
-                typeName = "XB-в€ћ Hekate";
+                typeName = "ХВ-в€ћ Геката";
             }
         }
         
@@ -40,7 +40,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "XB-∞ Hekate Gauss Nuke")
             {
-                typeName = "XB-∞ Hekate Gauss Nuke";
+                typeName = "Ядерная Гаусс-пушка ХВ-∞ Гекаты";
             }
         }
         
@@ -48,7 +48,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "XB-∞ Hekate Laser Cannon")
             {
-                typeName = "XB-∞ Hekate Laser Cannon";
+                typeName = "Лазерная пушка ХВ-∞ Гекаты";
             }
         }
         
@@ -56,7 +56,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "XB-∞ Hekate Plasma Flamethrower")
             {
-                typeName = "XB-∞ Hekate Plasma Flamethrower";
+                typeName = "Плазмомёт ХВ-∞ Гекаты";
             }
         }
         
@@ -64,7 +64,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "XB-∞ Hekate Tesla Cannon")
             {
-                typeName = "XB-∞ Hekate Tesla Cannon";
+                typeName = "Тесла-пушка ХВ-∞ Гекаты";
             }
         }
         
@@ -72,7 +72,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "Blazing Eye of XB-в€ћ Hekate")
             {
-                typeName = "Blazing Eye of XB-в€ћ Hekate";
+                typeName = "Пылающий глаз ХВ-в€ћ Гекаты";
             }
         }
         
@@ -80,7 +80,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "Spine of XB-∞ Hekate")
             {
-                typeName = "Spine of XB-∞ Hekate";
+                typeName = "Хребет ХВ-∞ Гекаты";
             }
         }
         
@@ -88,7 +88,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "Spine of XB-∞ Hekate")
             {
-                typeName = "Spine of XB-∞ Hekate";
+                typeName = "Хребет ХВ-∞ Гекаты";
             }
         }
         
@@ -96,7 +96,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "Spine of XB-∞ Hekate")
             {
-                typeName = "Spine of XB-∞ Hekate";
+                typeName = "Хребет ХВ-∞ Гекаты";
             }
         }
         
@@ -104,7 +104,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "Spine of XB-∞ Hekate")
             {
-                typeName = "Spine of XB-∞ Hekate";
+                typeName = "Хребет ХВ-∞ Гекаты";
             }
         }
         
