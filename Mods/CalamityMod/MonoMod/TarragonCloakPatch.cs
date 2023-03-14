@@ -15,6 +15,6 @@ public class TarragonCloakPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Tarragon Cloak Cooldown", "Перезарядка плаща таррагона");
+        TranslationHelper.ModifyIL(il, "Tarragon Cloak Cooldown", "Перезарядка эстрагонового плаща");
     };
 }

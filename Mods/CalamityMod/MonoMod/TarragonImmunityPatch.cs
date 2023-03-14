@@ -15,6 +15,6 @@ public class TarragonImmunityPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Tarragon Immunity Cooldown", "Перезарядка неуязвимости таррагона");
+        TranslationHelper.ModifyIL(il, "Tarragon Immunity Cooldown", "Перезарядка эстрагоновой неуязвимости");
     };
 }
