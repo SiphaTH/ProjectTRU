@@ -64,7 +64,7 @@ public class CalamityModeGlobalNPC : GlobalNPC
         {
             if (typeName == "XB-∞ Hekate Tesla Cannon")
             {
-                typeName = "Тесла-пушка ХВ-∞ Гекаты";
+                typeName = "Электро-пушка ХВ-∞ Гекаты";
             }
         }
         

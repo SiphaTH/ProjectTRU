@@ -57,7 +57,7 @@ public class HatGirlPatch : OnPatcher
             "Plantera isn't keeping anything back, watch out!" => "Плантера больше не сдерживается, берегись!",
             "Manage those clouds carefully. You'll need to weave through them to find the gap in her tentacles!" => "Внимательно следи за облаками. Тебе нужно будет пробираться сквозь них, чтобы найти брешь в её щупальцах!",
             "Polterghast's spirits have been released! But they don't seem very happy with us..." => "Духи Полтергаста были освобождены! Но, кажется, они нам не очень-то рады...",
-            "Those blue tesla mines are going to explode into gas; take cover!" => "Эти синие мины Тесла сейчас взорвутся газом, прячься!",
+            "Those blue tesla mines are going to explode into gas; take cover!" => "Эти синие электро-мины сейчас взорвутся газом, прячься!",
             "Pay attention to where you move. Try to stay in one spot so that those bombs aren't all over the arena!" => "Обращай внимание на то, куда двигаешься. Старайся оставаться на одном месте, чтобы бомбы не разлетелись по всей арене!",
             "Don't move around too quickly! Small but quick horizontal movements are important for evading those crystals!" => "Не двигайся слишком быстро! Небольшие, но быстрые горизонтальные движения помогут уклониться от кристаллов!",
             "Pay attention to where you move. You don't want Providence to fire her lasers when near a wall!" => "Обращай внимание на то, куда двигаешься. Уж поверь, ты не хочешь, чтобы Провиденс стреляла из своих лазеров, когда ты рядом со стеной!",
