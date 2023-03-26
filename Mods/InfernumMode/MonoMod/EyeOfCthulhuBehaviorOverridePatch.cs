@@ -23,7 +23,7 @@ public class EyeOfCthulhuBehaviorOverridePatch : OnPatcher
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, EyeOfCthulhuBehaviorOverride self)
     {
         yield return n => "Остерегайся этих зубных бомб! Зубы вылетают из места приземления бомбы, старайся держаться поближе!";
-        yield return n => "Крюк или высокая мобильность могут оказаться полезными для уклонения от зарядов глаза Ктулху!";
+        yield return n => "Крюк или высокая мобильность могут оказаться полезными для уклонения от зарядов Глаза Ктулху!";
         yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Глазам не могу поверить, ты умер." : string.Empty;
     }
 }

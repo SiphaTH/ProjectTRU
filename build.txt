@@ -1,6 +1,6 @@
 displayName = Project tRU
 author = tRU Team
-version = 3.0.2.11
+version = 3.0.2.12
 hideCode = true
 hideResources = true
 playableOnPreview = false;

@@ -21,7 +21,7 @@ public class QueenSlimeBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, QueenSlimeBehaviorOverride self)
     {
-        yield return n => "Давай, беги, наши ноги не для скуки! Эта желатиновая королева не остановится, пока не сокрушит своих врагов!";
+        yield return n => "Давай, беги, наши ноги не для скуки! Эта желатиновая Королева не остановится, пока не сокрушит своих врагов!";
         yield return n => "Короткие прыжки намного полезнее, чем попытки улететь от этой хрустальной шрапнели!";
     }
 }

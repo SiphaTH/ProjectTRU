@@ -879,7 +879,7 @@ public class WeakReferenceSupportCensusSupport : OnPatcher
         ModsCall.Census.Call(
             "TownNPCCondition",
             ModContent.NPCType<SEAHOE>(),
-            "Одолейте Гигантского моллюска после победы над Пустынным бичом"
+            "Одолейте гигантского моллюска после победы над Пустынным бичом"
         );
         ModsCall.Census.Call(
             "TownNPCCondition",
@@ -889,7 +889,7 @@ public class WeakReferenceSupportCensusSupport : OnPatcher
         ModsCall.Census.Call(
             "TownNPCCondition",
             ModContent.NPCType<FAP>(),
-            $"В инвентаре должна находится [i:{ModContent.ItemType<FabsolsVodka>()}] в Хардмоде"
+            $"В инвентаре должна находится [i:{ModContent.ItemType<FabsolsVodka>()}] в хардмоде"
         );
         ModsCall.Census.Call(
             "TownNPCCondition",
@@ -930,7 +930,7 @@ public class WeakReferenceSupportAddCalamityInvasions : OnPatcher
             () => DownedBossSystem.downedEoCAcidRain,
             ModContent.ItemType<CausticTear>(),
             new List<int> {ModContent.ItemType<RadiatingCrystal>()},
-            $"Используйте [i:{ModContent.ItemType<CausticTear>()}] или дождитесь, пока событие произойдёт естественным образом после победы над глазом Ктулху.",
+            $"Используйте [i:{ModContent.ItemType<CausticTear>()}] или дождитесь, пока событие произойдёт естественным образом после победы над Глазом Ктулху.",
             () => true,
             delegate(SpriteBatch sb, Rectangle rect, Color color)
             {

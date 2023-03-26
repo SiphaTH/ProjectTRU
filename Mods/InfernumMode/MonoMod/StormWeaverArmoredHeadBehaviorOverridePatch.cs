@@ -21,7 +21,7 @@ public class StormWeaverArmoredHeadBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, StormWeaverArmoredHeadBehaviorOverride self)
     {
-        yield return n => "Старайся не отходить слишком далеко во время вращения Ткача на месте, иначе не увидишь заряды до того, как они слишком сильно ускорятся!";
+        yield return n => "Старайся не отходить слишком далеко во время вращения Штормового ткача на месте, иначе не увидишь заряды до того, как они слишком сильно ускорятся!";
 
     }
 }

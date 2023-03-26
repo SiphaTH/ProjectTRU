@@ -8,7 +8,7 @@
 
             AbomPresence: {
                 Name: Мерзкое присутствие
-                Description: "Защита, сопротивление урону и регенерация здоровья снижены; эффект от дебаффа «{$BuffName.MoonLeech}»"
+                Description: Защита, сопротивление урону и регенерация здоровья снижены; эффект от дебаффа «{$BuffName.MoonLeech}»
             }
 
             DeviPresence: {
@@ -340,13 +340,13 @@
             }
 
             BigBrainMinion: {
-                Name: Большой мозг Ктулху
-                Description: За вас сражается большой мозг Ктулху
+                Name: Большой Мозг Ктулху
+                Description: За вас сражается большой Мозг Ктулху
             }
 
             BrainMinion: {
                 Name: Мозг Ктулху
-                Description: За вас сражается маленький мозг Ктулху
+                Description: За вас сражается маленький Мозг Ктулху
             }
 
             CrystalSkull: {
@@ -356,7 +356,7 @@
 
             EaterMinion: {
                 Name: Пожиратель миров
-                Description: За вас сражается маленький пожиратель миров
+                Description: За вас сражается маленький Пожиратель миров
             }
 
             JungleMimicSummonBuff: {
@@ -410,8 +410,8 @@
             }
 
             TrueEyes: {
-                Name: Истинные глаза Ктулху
-                Description: Вас защищают глаза Ктулху
+                Name: Истинные Глаза Ктулху
+                Description: Вас защищают Глаза Ктулху
             }
 
             TwinsEX: {
@@ -575,13 +575,13 @@
             }
 
             KingSlimeMinionBuff: {
-                Name: Маленький король слизней
-                Description: За вас сражается маленький король слизней
+                Name: Маленький Король слизней
+                Description: За вас сражается маленький Король слизней
             }
 
             DukeFishronBuff: {
                 Name: Герцог Рыброн
-                Description: За вас сражается герцог Рыброн
+                Description: За вас сражается Герцог Рыброн
             }
 
             RoombaPetBuff: {
@@ -681,7 +681,7 @@
                 Tooltip:
                     '''
                     Даёт щит, способный отражать снаряды
-                    Призывает миньона-Террапризму, усиливающегося от урона призывателя
+                    Призывает миньона-террапризму, усиливающегося от урона призывателя
                     'Достаточно ли в тебе силы, чтобы владеть мной?'
                     '''
             }
@@ -1521,7 +1521,7 @@
                     [i:FargowiltasSouls/ForbiddenEnchant] Двойное нажатие ВНИЗ вызовет древнюю бурю в место расположения курсора
                     [i:FargowiltasSouls/ForbiddenEnchant] Любые снаряды, пролетевшие через бурю, получат 60% прибавку к урону
                     [i:FargowiltasSouls/AncientHallowEnchant] Даёт щит, способный отражать снаряды
-                    [i:FargowiltasSouls/AncientHallowEnchant] Призывает миньона-Террапризму
+                    [i:FargowiltasSouls/AncientHallowEnchant] Призывает миньона-террапризму
                     [i:FargowiltasSouls/AncientHallowEnchant] Значительно увеличивает скорость миньонов
                     [i:FargowiltasSouls/HallowEnchant] При нанесении ударов по врагу даёт неуязвимость к урону
                     [i:FargowiltasSouls/TikiEnchant] Хлестайте своих миньонов, заставляя их работать усерднее
@@ -1781,7 +1781,7 @@
                     '''
                     Даёт невосприимчивость к дебаффам «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.NullificationCurse.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Flipped.Name}», «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.Unstable.Name}» и «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.CurseoftheMoon.Name}»
                     Позволяет контролировать гравитацию
-                    Призывает на помощь истинные глаза Ктулху
+                    Призывает на помощь истинные Глаза Ктулху
                     Увеличивает время полёта на 100%
                     'Всегда наблюдаю'
                     '''
@@ -1841,7 +1841,7 @@
                     Уворачиваясь вблизи снаряда можно получить бомбу, которая замораживает почти всех врагов и снаряды
                     Снижает размер вашей зоны поражения для вражеских снарядов
                     Удерживайте клавишу «Точное передвижение», чтобы отключить рывки и двойные прыжки
-                    Призывает дружелюбных маленькую марсианскую тарелку и истинные глаза Ктулху
+                    Призывает дружелюбных маленькую марсианскую тарелку и истинные Глаза Ктулху
                     'Тёплое, бьющееся, не требует тела'
                     '''
             }
@@ -3065,7 +3065,7 @@
             }
 
             EaterStaff: {
-                Name: Посох пожирателя миров
+                Name: Посох Пожирателя миров
                 Tooltip:
                     '''
                     Призывает 4 сегмента за каждый слот призываемых миньонов
@@ -3103,7 +3103,7 @@
             }
 
             SlimeKingsSlasher: {
-                Name: Рассекатель короля слизней
+                Name: Рассекатель Короля слизней
                 Tooltip: "'Вырван из побеждённого врага...'"
             }
 
@@ -3378,7 +3378,7 @@
 
             MedallionoftheFallenKing: {
                 Name: Медальон павшего короля
-                Tooltip: Призывает миньона короля слизней, усиливающегося от урона призывателя
+                Tooltip: Призывает миньона-Короля слизней, усиливающегося от урона призывателя
             }
 
             ComputationOrb: {
@@ -3395,7 +3395,7 @@
                 Name: Посох необузданного океана
                 Tooltip:
                     '''
-                    Призывает герцога Рыброна, сражающегося за вас
+                    Призывает Герцога Рыброна, сражающегося за вас
                     Герцог Рыброн игнорирует до 400 ед. защиты врага
                     'Направьте вашу злость против них!'
                     '''
@@ -3885,21 +3885,21 @@
             LifeChallengerDespawn: Лайфлайт исчезает...
             #CursedCoffinDespawn: Проклятый гроб возвращается к своему сну...
 
-            DeviBossSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/DevisCurse]."
-            AbomBossSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/AbomsCurse]."
-            MutantBossSpawnInfo: "Бросьте [i:FargowiltasSouls/AbominationnVoodooDoll] в лаву, пока Мерзостть жив в присутствии Мутанта."
-            TimberChampionSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] на поверхности днём.."
-            TerraChampionSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] под землёй.."
-            EarthChampionSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в преисподней."
-            NatureChampionSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в подземных снегах."
-            LifeChampionSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в освящении днём.."
-            ShadowChampionpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в искажении или багрянце ночью.."
-            SpiritChampionSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в подземной пустыне.."
-            WillChampionSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в океане."
-            CosmosChampionSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в космосе."
-            TrojanSquirrelSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/SquirrelCoatofArms]."
-            LifeChallengerSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/FragilePixieLamp] в освящении днём."
-            CursedCoffinSpawnInfo: "Призывается при использовании [i:FargowiltasSouls/CoffinSummon] в подземной пустыне."
+            DeviBossSpawnInfo: Призывается при использовании [i:FargowiltasSouls/DevisCurse].
+            AbomBossSpawnInfo: Призывается при использовании [i:FargowiltasSouls/AbomsCurse].
+            MutantBossSpawnInfo: Бросьте [i:FargowiltasSouls/AbominationnVoodooDoll] в лаву, пока Мерзостть жив в присутствии Мутанта.
+            TimberChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] на поверхности днём..
+            TerraChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] под землёй.
+            EarthChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в преисподней.
+            NatureChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в подземных снегах.
+            LifeChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в освящении днём.
+            ShadowChampionpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в искажении или багрянце ночью.
+            SpiritChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в подземной пустыне.
+            WillChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в океане.
+            CosmosChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в космосе.
+            TrojanSquirrelSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SquirrelCoatofArms].
+            LifeChallengerSpawnInfo: Призывается при использовании [i:FargowiltasSouls/FragilePixieLamp] в освящении днём.
+            CursedCoffinSpawnInfo: Призывается при использовании [i:FargowiltasSouls/CoffinSummon] в подземной пустыне.
         }
 
         Message: {
@@ -4180,7 +4180,7 @@
             FossilConfig: Ископаемые кости при получении удара
             ForbiddenConfig: Запретная буря
             HallowDodgeConfig: Освящённое уклонение
-            HallowedConfig: Древний освящённый миньон-Террапризма
+            HallowedConfig: Древний освящённый миньон-террапризма
             HallowSConfig: Древний освящённый щит
             SilverSpeedConfig: Серебряная скорость миньонов
             SpectreConfig: Спектральные сферы
@@ -4190,7 +4190,7 @@
             MeteorConfig: Метеоритный дождь
             NebulaConfig: Баффы-усилители туманности
             SolarConfig: Солнечный щит
-            SolarFlareConfig: "Накладывание дебаффа «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.SolarFlare.Name}»"
+            SolarFlareConfig: Накладывание дебаффа «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.SolarFlare.Name}»
             StardustConfig: Хранитель звёздной пыли
             VortexSConfig: Вихревая скрытность
             VortexVConfig: Вихревые пустоты
@@ -4227,7 +4227,7 @@
             MasoNymphConfig: Атаки создают сердца
             MasoSqueakConfig: Игрушка-пищалка при получении удара
             MasoPouchConfig: Усиленные замедленные атаки теневым пламенем
-            MasoClippedConfig: "Накладывание дебаффа «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.ClippedWings.Name}»"
+            MasoClippedConfig: Накладывание дебаффа «{$Mods.CalamityRuTranslate.FargowiltasSouls.Buffs.ClippedWings.Name}»
             TribalCharmConfig: Автоатаки племенного талисмана
             TribalCharmClickBonusConfig: Клик-бонус племенного талисмана
 
@@ -4282,10 +4282,10 @@
             UniverseConfig: Вселенская скорость атаки
 
             WorldShaperHeader: "{$Mods.FargowiltasSouls.ItemName.WorldShaperSoul}"
-            MiningHuntConfig: "Бафф «{$ItemName.HunterPotion}»"
-            MiningDangerConfig: "Бафф «{$BuffName.Dangersense}»"
-            MiningSpelunkConfig: "Бафф «{$ItemName.SpelunkerPotion}»"
-            MiningShineConfig: "Бафф «{$ItemName.ShinePotion}»"
+            MiningHuntConfig: Бафф «{$ItemName.HunterPotion}»
+            MiningDangerConfig: Бафф «{$BuffName.Dangersense}»
+            MiningSpelunkConfig: Бафф «{$ItemName.SpelunkerPotion}»
+            MiningShineConfig: Бафф «{$ItemName.ShinePotion}»
             BuilderConfig: Режим строителя
 
             ColossusHeader: "{$Mods.FargowiltasSouls.ItemName.ColossusSoul}"
@@ -4476,7 +4476,7 @@
                     Атаки провоцируют теневой уворот
                     Атаки провоцируют выстрелы огнеплюя
                     Атаки провоцируют тыквенные атаки
-                    Атаки провоцируют заклинания культиста-лунатика
+                    Атаки провоцируют заклинания Культиста-лунатика
                     Атаки провоцируют метеоритный дождь
                     Все снаряды могут разделиться
                     Снаряды могут разбиться
@@ -4655,7 +4655,7 @@
                 Calamity:
                     '''
                     Эффекты комплекта брони аэроспека
-                    Эффекты комплекта статиджеловой брони
+                    Эффекты комплекта Статигелевой брони
                     Эффекты комплекта брони Дедала
                     Эффекты комплекта брони кровавой вспышки
                     Эффекты комплекта брони прилива
@@ -4758,9 +4758,9 @@
         }
 
         EModeBalance: {
-            Nerf: '[c/ff0000:Режим Вечности:]'
-            Buff: '[c/00ff00:Режим Вечности:]'
-            Neutral: '[c/ffff00:Режим Вечности:]'
+            Nerf: "[c/ff0000:Режим Вечности:]"
+            Buff: "[c/00ff00:Режим Вечности:]"
+            Neutral: "[c/ffff00:Режим Вечности:]"
 
             Damage: Урон снижен на {0}%
             Speed: Скорость атаки снижена на {0}%

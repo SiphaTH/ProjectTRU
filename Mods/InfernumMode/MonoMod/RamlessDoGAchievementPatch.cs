@@ -16,6 +16,6 @@ public class RamlessDoGAchievementPatch : ILPatcher
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Ramification", "Таранизация");
-        TranslationHelper.ModifyIL(il, "Best the Devourer at his own game: without a ram!\n[c/777777:Beat the Infernum Devourer of Gods without using a ram dash]", "Одолеть Пожирателя на его собственном поле. Без таранов!\n[c/777777:Одержать победу над Пожирателем богов в Инфернуме без использ. таранящего рывка]");
+        TranslationHelper.ModifyIL(il, "Best the Devourer at his own game: without a ram!\n[c/777777:Beat the Infernum Devourer of Gods without using a ram dash]", "Одолеть Пожирателя богов на его собственном поле. Без таранов!\n[c/777777:Одержать победу над Пожирателем богов в Инфернуме без использ. таранящего рывка]");
     };
 }

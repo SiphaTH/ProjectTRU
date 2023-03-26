@@ -35,7 +35,7 @@ public class HatGirlPatch : OnPatcher
             "Lightning is going to aim ahead of you! Try to bait it!" => "Молния старается бить перед тобой! Попробуй обмануть её!",
             "Try to get between those lines, before the ice barrages explode!" => "Попытайся пройти между этими линиями, пока ледяные заграждения не взорвались!",
             "Prepare for it's final stand! Watch for red laser telegraphs and prepare to dash to safety!" => "Готовься к финальной атаке! Следи за красными полосами света и готовься к рывкам в безопасные зоны!",
-            "Don't feel intimidated, face fear in the eyes and dash directly into the Devourer's maw!" => "Не поддавайся страху, посмотри ему в глаза и ринься прямо в пасть Пожирателя!",
+            "Don't feel intimidated, face fear in the eyes and dash directly into the Devourer's maw!" => "Не поддавайся страху, посмотри ему в глаза и ринься прямо в пасть Пожирателя богов!",
             "Oh man, theres so many lasers! Slow and precise movements seem like your best bet here..." => "Божечки, сколько лазеров! Лучше всего здесь двигаться медленно и точно...",
             "Seems like they are combining efforts, beware!" => "По всей видимости, они объединяются, берегись!",
             "Don't fret, face fear in the eyes and dash directly into Thanatos' face-plates!" => "Не бойся, взгляни страху в глаза и ринься прямо в лицевые пластины Танатоса!",

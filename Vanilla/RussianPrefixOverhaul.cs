@@ -568,7 +568,6 @@ internal static class RussianPrefixOverhaul
 				ModContent.Find<ModItem>("CalamityMod", "MoonstoneCrown").Type,
 				ModContent.Find<ModItem>("CalamityMod", "Nanotech").Type,
 				ModContent.Find<ModItem>("CalamityMod", "OldDie").Type,
-				ModContent.Find<ModItem>("CalamityMod", "PlaguedFuelPack").Type,
 				ModContent.Find<ModItem>("CalamityMod", "RadiantOoze").Type,
 				ModContent.Find<ModItem>("CalamityMod", "RogueEmblem").Type,
 				ModContent.Find<ModItem>("CalamityMod", "SandCloak").Type,
@@ -762,6 +761,7 @@ internal static class RussianPrefixOverhaul
 				ModContent.Find<ModItem>("CalamityMod", "Hydra").Type,
 				ModContent.Find<ModItem>("CalamityMod", "FreedomStar").Type,
 				ModContent.Find<ModItem>("CalamityMod", "SanctifiedSpark").Type,
+				ModContent.Find<ModItem>("CalamityMod", "PermafrostsConcoction").Type,
 			};
 		}
 
@@ -793,7 +793,6 @@ internal static class RussianPrefixOverhaul
 				ModContent.Find<ModItem>("CalamityMod", "MirageMirror").Type,
 				ModContent.Find<ModItem>("CalamityMod", "NebulousCore").Type,
 				ModContent.Find<ModItem>("CalamityMod", "NecklaceofVexation").Type,
-				ModContent.Find<ModItem>("CalamityMod", "PermafrostsConcoction").Type,
 				ModContent.Find<ModItem>("CalamityMod", "ReaperToothNecklace").Type,
 				ModContent.Find<ModItem>("CalamityMod", "AquaticHeart").Type,
 				ModContent.Find<ModItem>("CalamityMod", "StarbusterCore").Type,

@@ -21,7 +21,7 @@ public class DragonfollyBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, DragonfollyBehaviorOverride self)
     {
-        yield return n => "Бой с псевдодраконом весьма хаотичен и динамичен. Хорошая мобильность и скорость реакции очень помогают!";
+        yield return n => "Бой с Псевдодраконом весьма хаотичен и динамичен. Хорошая мобильность и скорость реакции очень помогают!";
         yield return n => "Эти большие красные столбы молний можно избежать, просто пролетев под ними!";
     }
 }
