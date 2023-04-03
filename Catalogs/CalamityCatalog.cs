@@ -127,7 +127,6 @@ internal static class CalamityCatalog
         "InfernadoRevenge",
         "JewelProjectile",
         "LeviathanBomb",
-        "LeviathanSpawner",
         "MajesticSparkle",
         "MoltenBlast",
         "MoltenBlob",
