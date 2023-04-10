@@ -37,7 +37,7 @@ public class UIKeybindingListItemPatch : ContentTranslation, ILoadableContent
             "CalamityMod: Sand Cloak Effect" => "CalamityMod: Эффект песчаной мантии",
             "CalamityMod: Spectral Veil Teleport" => "CalamityMod: Телепортация спектральной вуали",
             "CalamityMod: Booster Dash" => "CalamityMod: Усилитель рывка",
-            "CalamityMod: Angelic Alliance Blessing" => "CalamityMod: Божественность альянса ангелов",
+            "CalamityMod: Angelic Alliance Blessing" => "CalamityMod: Благословение альянса ангелов",
             "CalamityMod: God Slayer Dash" => "CalamityMod: Рывок богоубийцы",
             "CalamityMod: Exo Chair Slow Down" => "CalamityMod: Замедление экзо-бокса",
             "CalamityMod: Dash Double Tap Override" => "CalamityMod: Переопределение клавиши рывка",

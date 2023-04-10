@@ -15,6 +15,6 @@ public class DivineBlessPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Divine Bless Cooldown", "Перезарядка божественности");
+        TranslationHelper.ModifyIL(il, "Divine Bless Cooldown", "Перезарядка божественного благословения");
     };
 }

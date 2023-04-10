@@ -1689,7 +1689,7 @@
             }
             
             BleachBall: {
-                Name: Хлористая бомба
+                Name: Пляжный хлоромячик
                 Tooltip: Пометьте как избранное, чтобы предотвратить естественное появление Акватического бича
             }
             
@@ -2141,7 +2141,7 @@
                     $parentVal:
                         '''
                         Увеличивает разбойный урон на 12% и скорость снарядов разбойника на 15%
-                        Увеличивает скорость накапления скрытности на 10%
+                        Увеличивает скорость накопления скрытности на 10%
                         Призывает ауру красной молнии, которая окружает игрока и электрифицирует ближайших врагов
                         ModifyTooltips
                         Этот эффект имеет 1 секунду перезарядки перед повторным использованием
@@ -3346,7 +3346,7 @@
             }
             
             RottenDogtooth: {
-                Name: Гнилой собачий зуб
+                Name: Гнилой клык
                 Tooltip: Скрытные удары накладывают дебафф «{$Mods.CalamityRuTranslate.CalamityMod.Buffs.ArmorCrunch.Name}» и наносят на 10% больше урона
             }
             
@@ -8538,7 +8538,7 @@
             }
             
             RotdogBanner: {
-                Name: Знамя гнилой собаки
+                Name: Знамя гнильдога
                 Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.CalamityMod.NPCs.Rotdog.Name}"
             }
             
@@ -8558,7 +8558,7 @@
             }
             
             ScryllarBanner: {
-                Name: Знамя скриллара
+                Name: Знамя сциллара
                 Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CalamityRuTranslate.CalamityMod.NPCs.Scryllar.Name}"
             }
             
@@ -21995,8 +21995,8 @@
             CultistAssassin.Name: Культист-ассасин
             DespairStone.Name: Камень отчаяния
             HeatSpirit.Name: Дух тепла
-            Scryllar.Name: Скриллар
-            ScryllarRage.Name: Скриллар
+            Scryllar.Name: Сциллар
+            ScryllarRage.Name: Сциллар
             SoulSlurper.Name: Поглотитель душ
             Cryogen.Name: Криоген
             CryogenShield.Name: Щит Криогена
@@ -22087,7 +22087,7 @@
             Plagueshell.Name: Чумной панцирь
             ProfanedEnergyBody.Name: Осквернённая энергия
             ProfanedEnergyLantern.Name: Осквернённая энергия
-            Rotdog.Name: Гнилая собака
+            Rotdog.Name: Гнильдог
             ScornEater.Name: Презренный пожиратель
             SeaUrchin.Name: Морской ёж
             ShockstormShuttle.Name: Шаттл шокового шторма
