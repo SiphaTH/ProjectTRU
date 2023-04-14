@@ -24,7 +24,7 @@ public class TRuConfig : ModConfig
     public bool ColoredDamageTypes;
 
     [Label("Предварительный просмотр бонуса комплекта брони")]
-    [Tooltip("Показывает бонус комплекта брони на шлемах при зажатой клавише.")]
+    [Tooltip("Показывает бонус комплекта брони на шлемах при удержании клавиши.")]
     [DefaultValue(true)]
     public bool PreviewArmorSetBonus;
     
