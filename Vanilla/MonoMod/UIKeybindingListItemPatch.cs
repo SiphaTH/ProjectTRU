@@ -41,7 +41,7 @@ public class UIKeybindingListItemPatch : ContentTranslation, ILoadableContent
             "CalamityMod: God Slayer Dash" => "CalamityMod: Рывок богоубийцы",
             "CalamityMod: Exo Chair Slow Down" => "CalamityMod: Замедление экзо-бокса",
             "CalamityMod: Dash Double Tap Override" => "CalamityMod: Переопределение клавиши рывка",
-            "Fargowiltas: Quick Recall/Mirror" => "Fargowiltas: Быстрое зелье возврата/зеркало",
+            "Fargowiltas: Quick Recall/Mirror" => "Fargowiltas: Быстрый возврат/зеркало",
             "Fargowiltas: Quick Rod of Discord" => "Fargowiltas: Быстрый жезл раздора",
             "Fargowiltas: Quick Use Custom (Bottom Left Inventory Slot)" => "Fargowiltas: Быстрое использ. (нижний левый слот инвентаря)",
             "Fargowiltas: Open Stat Sheet" => "Fargowiltas: Открыть таблицу характеристик",

@@ -27,7 +27,7 @@ public class TooltipAttributePatch : OnPatcher
             "Determines whether the pet from the Blasted Tophat should display its tips in chat or not." => "Отвечает за то, должен ли питомец проклятого цилиндра отображать свои подсказки в чате или нет.",
             "Enables reduced graphics mode. Use this if lag is an issue." => "Включает режим сниженной графики. Используйте это, если низкая производительность вызывает проблемы.",
             "How intense color saturation bloom effects should be. Such effects are disabled when this value is zero." => "Насколько интенсивными должны быть эффекты насыщенности свечения. Такие эффекты отключаются, когда эта настройка равняется нулю.",
-            "Enables screen overlay 'flashbang' effects. This will not directly affect gameplay mechanics." => "Включает оверлей эффектов 'вспышек' на экране. Это никак не влияет на игровую механику.",
+            "Enables screen overlay 'flashbang' effects. This will not directly affect gameplay mechanics." => "Включает наложение эффектов 'вспышек' на экране. Это никак не влияет на игровую механику.",
             _ => orig.Invoke(self)
         };
     }

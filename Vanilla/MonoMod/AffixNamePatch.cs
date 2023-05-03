@@ -23,14 +23,14 @@ public class AffixName : ContentTranslation, ILoadableContent
             return self.Name;
 
         string prefix = Lang.prefix[self.prefix].Value;
+        PrefixOverhaul prefixOverhaul = new PrefixOverhaul();
         if (prefix == string.Empty)
             return self.Name;
 
-        foreach (var t in RussianPrefixOverhaul.Prefixes)
+        foreach (var t in prefixOverhaul.Prefixes)
         {
             if (t[0] == prefix)
-                return RussianPrefixOverhaul.GetGenderedPrefix(t, self.type) + " " +
-                       self.Name.ToLower();
+                return prefixOverhaul.GetGenderedPrefix(t, self.type) + " " + self.Name.ToLower();
         }
 
         return prefix + " " + self.Name;
@@ -51,25 +51,26 @@ public class AffixNameWithCalamity : ContentTranslation, ILoadableContent
     {
         string calamityEnchantment = string.Empty;
         string goblinPrefix = string.Empty;
-
-        foreach (string[] t in RussianPrefixOverhaul.Prefixes)
+        PrefixOverhaul prefixOverhaul = new PrefixOverhaul();
+        
+        foreach (string[] t in prefixOverhaul.Prefixes)
         {
             if (!self.IsAir && self.Calamity().AppliedEnchantment != null)
             {
                 if (t[0] == self.Calamity().AppliedEnchantment?.Name)
-                    calamityEnchantment = RussianPrefixOverhaul.GetGenderedPrefix(t, self.type) + " ";
+                    calamityEnchantment = prefixOverhaul.GetGenderedPrefix(t, self.type) + " ";
 
                 if (calamityEnchantment != string.Empty)
                     goblinPrefix = goblinPrefix.ToLower();
             }
 
             if (t[0] == Lang.prefix[self.prefix].Value)
-                goblinPrefix = RussianPrefixOverhaul.GetGenderedPrefix(t, self.type) + " ";
+                goblinPrefix = prefixOverhaul.GetGenderedPrefix(t, self.type) + " ";
         }
 
         if (goblinPrefix == string.Empty && calamityEnchantment == string.Empty)
             return self.Name;
-
+        
         return calamityEnchantment + goblinPrefix + self.Name.ToLower();
     }
 }

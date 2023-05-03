@@ -9,6 +9,11 @@ public class TownNpcNames : GlobalNPC
 {
     public override bool InstancePerEntity => true;
 
+    public override bool AppliesToEntity(NPC entity, bool lateInstantiation)
+    {
+        return entity.townNPC;
+    }
+
     private readonly Dictionary<string, string> _townNpcNames = new()
     {
         {"Dazren", "Дазрен"},
@@ -45,6 +50,7 @@ public class TownNpcNames : GlobalNPC
         {"Wilbur", "Уилбур"},
         {"Good Game Design", "иноп тибюл лосбаФ"},
         {"Danmaku", "Данмаку"},
+        {"Grylken", "Грилькен"},
         {"Lilly", "Лилли"},
         {"Daawn", "Даан"},
         {"Robin", "Робин"},
@@ -60,8 +66,8 @@ public class TownNpcNames : GlobalNPC
         {"Papyrus Undertale", "Папирус Андертейлов"},
         {"Vorbis", "Ворбис"},
         {"Angel", "Энжел"},
-        {"Amber", "Янтарь"},
-        {"Faith", "Вера"},
+        {"Amber", "Эмбер"},
+        {"Faith", "Фейт"},
         {"Xsiana", "Ксиана"},
         {"Tim Lockwood", "Тим Локвуд"},
         {"Sir Samuel Winchester Jenkins Kester II", "Сэр Сэмюэль Винчестер Дженкинс Кестер II"},
@@ -108,7 +114,7 @@ public class TownNpcNames : GlobalNPC
         return TranslationHelper.IsRussianLanguage;
     }
 
-    public override void AI(NPC npc)
+    public override void PostAI(NPC npc)
     {
         if (_townNpcNames.ContainsKey(npc.GivenName))
         {

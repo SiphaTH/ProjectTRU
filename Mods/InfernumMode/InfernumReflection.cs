@@ -1,4 +1,5 @@
-﻿using CalamityMod.Systems;
+﻿
+using CalamityMod.Systems;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core;

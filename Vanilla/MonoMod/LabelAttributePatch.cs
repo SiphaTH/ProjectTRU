@@ -27,7 +27,7 @@ public class LabelAttributePatch : OnPatcher
             "Blasted Tophat Tips in Chat" => "Советы в чате проклятого цилиндра",
             "Reduced Graphical Settings" => "Сниженные графические настройки",
             "Saturation Bloom Intensity" => "Интенсивность насыщенности свечения",
-            "Screen Overlays" => "Оверлей на экране",
+            "Screen Overlays" => "Наложение на экране",
             _ => orig.Invoke(self)
         };
     }

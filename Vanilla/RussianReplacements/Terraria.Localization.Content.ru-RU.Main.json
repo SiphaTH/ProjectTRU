@@ -507,7 +507,7 @@
   "GameUI": {
     "ActuationDeviceOff": "Устройство-актуатор: ВЫКЛ",
     "ActuationDeviceOn": "Устройство-актуатор: ВКЛ",
-    "BaitPower": "{0}% качества наживки",
+    "BaitPower": "{0}% мощности наживки",
     "BaitRequired": "Для ловли рыбы нужна наживка",
     "Bright": "Яркий",
     "Buy": "Купить",
