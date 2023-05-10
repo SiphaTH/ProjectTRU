@@ -40,6 +40,6 @@ public class BereftVassalDespawnMessage : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Argus returns to quiet solitude at the center of the Colosseum.", "Аргус возвращается к тихому уединению в центре колизея.");
+        TranslationHelper.ModifyIL(il, "Argus returns to quiet solitude at the center of the Colosseum.", "Аргус возвращается к тихому уединению в центре Колизея.");
     };
 }

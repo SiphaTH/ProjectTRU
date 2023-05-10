@@ -2,7 +2,7 @@
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
-using InfernumMode.Content.Achievements.UI;
+using InfernumMode.Content.UI;
 using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
@@ -15,6 +15,7 @@ public class AchievementUIManagerPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
+        TranslationHelper.ModifyIL(il, 900f, 1000f);
         TranslationHelper.ModifyIL(il, "Death Wishes", "Предсмертные желания");
     };
 }

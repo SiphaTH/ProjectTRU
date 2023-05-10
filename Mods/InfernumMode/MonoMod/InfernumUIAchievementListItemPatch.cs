@@ -2,7 +2,7 @@
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
-using InfernumMode.Content.Achievements.UI;
+using InfernumMode.Content.UI;
 using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
@@ -15,7 +15,6 @@ public class InfernumUIAchievementListItemPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, 20f, -100f);
         TranslationHelper.ModifyIL(il, "Spazmatism", "Спазматизм");
         TranslationHelper.ModifyIL(il, "The Twins", "Близнецы");
         TranslationHelper.ModifyIL(il, "Moon Lord Core", "Сердце Лунного лорда");

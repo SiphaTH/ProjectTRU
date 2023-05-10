@@ -24,7 +24,7 @@ public class SkeletronHeadBehaviorOverridePatch : OnPatcher
     {
         yield return n => "Всё немного не так, как ты думаешь. Бег сквозь стены теневого пламени не сработает, не торопись!";
         yield return n => n.life < n.lifeMax * 0.85f ? "Не паникуй, когда Скелетрон выпускает шквал огненных шаров! Просто прыгай и сохраняй спокойствие!" : string.Empty;
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Иии... СЛИЛСЯ!!!" : string.Empty;
+        yield return n => TipsManager.ShouldUseJokeText ? "Тебя полностью ПОИМЕЛИ!!!" : string.Empty;
         
     }
 }

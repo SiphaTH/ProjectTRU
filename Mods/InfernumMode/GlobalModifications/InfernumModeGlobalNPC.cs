@@ -1,4 +1,5 @@
-﻿using CalamityMod.NPCs.GreatSandShark;
+﻿using CalamityMod.NPCs.CalClone;
+using CalamityMod.NPCs.GreatSandShark;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using InfernumMode.Core.GlobalInstances.Systems;
@@ -16,7 +17,19 @@ public class InfernumModeGlobalNPC : GlobalNPC
     
     public override void ModifyTypeName(NPC npc, ref string typeName)
     {
-        if (npc.type == ModContent.NPCType<GreatSandShark>() && WorldSaveSystem.InfernumMode)
-            typeName = "Таурус, Великая песчаная акула";
+        if (WorldSaveSystem.InfernumMode)
+        {
+            if (npc.type == ModContent.NPCType<GreatSandShark>())
+                typeName = "Таурус, Великая песчаная акула";
+            
+            if (npc.type == ModContent.NPCType<CalamitasClone>())
+                typeName = "Забытая тень Каламитас";
+            
+            if (npc.type == ModContent.NPCType<Cataclysm>())
+                typeName = "Забытая тень Катаклизма";
+            
+            if (npc.type == ModContent.NPCType<Catastrophe>())
+                typeName = "Забытая тень Катастрофа";
+        }
     }
 }

@@ -114,7 +114,7 @@ public class TownNpcNames : GlobalNPC
         return TranslationHelper.IsRussianLanguage;
     }
 
-    public override void PostAI(NPC npc)
+    public override void AI(NPC npc)
     {
         if (_townNpcNames.ContainsKey(npc.GivenName))
         {

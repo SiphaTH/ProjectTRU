@@ -11,11 +11,11 @@ using Terraria;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
-public class YharonBehaviorOverridePreAI : ILPatcher
+public class YharonBehaviorOverrideDoBehavior_EnterSecondPhase : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
-    public override MethodInfo ModifiedMethod => typeof(YharonBehaviorOverride).GetCachedMethod(nameof(YharonBehaviorOverride.PreAI));
+    public override MethodInfo ModifiedMethod => typeof(YharonBehaviorOverride).GetCachedMethod(nameof(YharonBehaviorOverride.DoBehavior_EnterSecondPhase));
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
@@ -33,6 +33,18 @@ public class YharonBehaviorOverrideDoBehavior_FinalDyingRoar : ILPatcher
     {
         TranslationHelper.ModifyIL(il, "The heat is surging...", "Жара нарастает...");
         TranslationHelper.ModifyIL(il, "The heat is surging...", "Жара нарастает...", 2);
+    };
+}
+
+public class YharonBehaviorOverrideDisplayAEWNotificationText : ILPatcher
+{
+    public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+    
+    public override MethodInfo ModifiedMethod => typeof(YharonBehaviorOverride).GetMethod("DisplayAEWNotificationText", BindingFlags.Instance | BindingFlags.NonPublic);
+
+    public override ILContext.Manipulator PatchMethod { get; } = il =>
+    {
+        TranslationHelper.ModifyIL(il, "A primordial light shimmers at the nadir of the abyssal depths...", "В недрах бездны мерцает первобытный свет...");
     };
 }
 

@@ -22,7 +22,7 @@ public class WallOfFleshMouthBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, WallOfFleshMouthBehaviorOverride self)
     {
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Обязательно беги в противоположном направлении!" : string.Empty;
+        yield return n => TipsManager.ShouldUseJokeText ? "Обязательно беги в противоположном направлении!" : string.Empty;
 
     }
 }

@@ -22,8 +22,8 @@ public class KingSlimeBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, KingSlimeBehaviorOverride self)
     {
-        yield return n => "Старайся выучить паттерн прыжков Короля слизней! Это поможет тебе лучше спланировать свой следующий шаг.";
+        yield return n => "Старайся выучить цикл прыжков Короля слизней! Это поможет тебе лучше спланировать свой следующий шаг.";
         yield return n => "Высоко он прыгает. Интересно, смог бы ты поднырнуть под него?";
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Довольно в непростую ситуацию ты угодил..." : string.Empty;
+        yield return n => TipsManager.ShouldUseJokeText ? "Довольно в непростую ситуацию ты угодил..." : string.Empty;
     }
 }

@@ -15,6 +15,6 @@ public class DragonfollyIntroScreenPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Failed Experiment\nThe Dragonfolly", "НЕУДАВШИЙСЯ ЭКСПЕРИМЕНТ\nПСЕВДОДРАКОН");
+        TranslationHelper.ModifyIL(il, "False Offspring\nThe Dragonfolly", "ЛОЖНЫЙ ОТПРЫСК\nПСЕВДОДРАКОН");
     };
 }

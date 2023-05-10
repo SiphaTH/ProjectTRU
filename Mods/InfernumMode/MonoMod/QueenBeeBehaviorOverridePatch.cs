@@ -24,7 +24,7 @@ public class QueenBeeBehaviorOverridePatch : OnPatcher
     {
         yield return n => "Эти медовые выстрелы невероятно прыгучие. Не двигайся слишком быстро, иначе они повсюду разлетятся!";
         yield return n => "Избавление от лишних шершней должно стать твоей приоритетной задачей!";
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Обжужжаться можно совершенно неуместно!" : string.Empty;
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Уф, вот это жалко..." : string.Empty;
+        yield return n => TipsManager.ShouldUseJokeText ? "Обжужжаться можно совершенно неуместно!" : string.Empty;
+        yield return n => TipsManager.ShouldUseJokeText ? "Уф, вот это жалко..." : string.Empty;
     }
 }

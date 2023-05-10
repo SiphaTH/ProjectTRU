@@ -24,6 +24,6 @@ public class EoWHeadBehaviorOverridePatch : OnPatcher
     {
         yield return n => "Многоуровневые платформы помогут избежать взрывающихся проклятых огней!";
         yield return n => "Крюк и рывок значительно помогают реагировать на резкие всплески скоростей пожирателей!";
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Думаю, он пожирает нечто большее, чем просто миры." : string.Empty;
+        yield return n => TipsManager.ShouldUseJokeText ? "Думаю, он пожирает нечто большее, чем просто миры." : string.Empty;
     }
 }

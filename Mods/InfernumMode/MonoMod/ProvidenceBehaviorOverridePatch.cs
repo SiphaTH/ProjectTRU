@@ -10,16 +10,15 @@ using Terraria;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
-public class ProvidenceBehaviorOverridePreAI : ILPatcher
+public class ProvidenceBehaviorOverrideDoBehavior_EnterFireFormBulletHell : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
-    public override MethodInfo ModifiedMethod => typeof(ProvidenceBehaviorOverride).GetCachedMethod(nameof(ProvidenceBehaviorOverride.PreAI));
+    public override MethodInfo ModifiedMethod => typeof(ProvidenceBehaviorOverride).GetCachedMethod(nameof(ProvidenceBehaviorOverride.DoBehavior_EnterFireFormBulletHell));
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "The blazing air rises...", "Вздымается обжигающий воздух...");
-        TranslationHelper.ModifyIL(il, "The blue flames roar...", "Ревёт синее пламя...");
+        TranslationHelper.ModifyIL(il, "Lava is rising from below!", "Из-под земли поднимается лава!");
     };
 }
 
@@ -36,5 +35,6 @@ public class ProvidenceBehaviorOverrideGetTips : OnPatcher
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, ProvidenceBehaviorOverride self)
     {
         yield return n => "Не утруждай себя зацепами к стенам или ещё чем. Провиденс даёт неограниченное время полёта!";
+        yield return n => Main.dayTime && Main.time >= 50400.0 ? "Следи за тем, чтобы не наступили сумерки, если собираешься повторно сразиться с ней!" : !Main.dayTime && Main.time >= 28800.0 ? "Следи за тем, чтобы не наступил рассвет, если собираешься повторно сразиться с ней!" : string.Empty;
     }
 }

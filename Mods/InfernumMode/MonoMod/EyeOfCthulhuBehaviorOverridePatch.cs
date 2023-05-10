@@ -24,6 +24,6 @@ public class EyeOfCthulhuBehaviorOverridePatch : OnPatcher
     {
         yield return n => "Остерегайся этих зубных бомб! Зубы вылетают из места приземления бомбы, старайся держаться поближе!";
         yield return n => "Крюк или высокая мобильность могут оказаться полезными для уклонения от зарядов Глаза Ктулху!";
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Глазам не могу поверить, ты умер." : string.Empty;
+        yield return n => TipsManager.ShouldUseJokeText ? "Глазам не могу поверить, ты умер." : string.Empty;
     }
 }

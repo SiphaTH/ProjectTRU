@@ -24,7 +24,6 @@ public class DesertScourgeHeadBigBehaviorOverridePatch : OnPatcher
     {
         yield return n => "Бич обычно рычит, когда собирается поднять песчаную бурю, забирайся на возвышенность!";
         yield return n => "Крюк может помочь быстро выбраться из-под челюстей бича!";
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Я не люблю песок, он грубый, жёсткий, неприятный и проникает в каждую часть моих ног." : string.Empty;
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Лучше тебе приготовить мне что-нибудь сладкое после этого ..." : string.Empty;
+        yield return n => TipsManager.ShouldUseJokeText ? "Лучше тебе приготовить мне что-нибудь сладкое после этого ..." : string.Empty;
     }
 }

@@ -35,7 +35,7 @@ public class SupremeCalamitasBehaviorOverrideGetTips : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, SupremeCalamitasBehaviorOverride self)
     {
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Хочешь мою шляпу ведьмы? Подбирать под неё наряд может быть забавно..." : string.Empty;
+        yield return n => TipsManager.ShouldUseJokeText ? "Хочешь мою шляпу ведьмы? Подбирать под неё наряд может быть забавно..." : string.Empty;
 
     }
 }

@@ -15,6 +15,6 @@ public class TwinsIntroScreenPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Mechanical Observers\nRetinazer and Spazmatism", "МЕХАНИЧЕСКИЕ НАБЛЮДАТЕЛИ\nРЕТИНАЙЗЕР И СПАЗМАТИЗМ");
+        TranslationHelper.ModifyIL(il, "Mechanical Observers\nThe Twins", "МЕХАНИЧЕСКИЕ НАБЛЮДАТЕЛИ\nБЛИЗНЕЦЫ");
     };
 }

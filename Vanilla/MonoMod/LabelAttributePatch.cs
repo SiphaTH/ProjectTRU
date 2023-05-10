@@ -24,10 +24,11 @@ public class LabelAttributePatch : OnPatcher
         return label switch
         {
             "Boss Introduction Animations" => "Вступительная анимация босса",
-            "Blasted Tophat Tips in Chat" => "Советы в чате проклятого цилиндра",
+            "Blasted Tophat Tips in Chat" => "Советы в чате Проклятого цилиндра",
             "Reduced Graphical Settings" => "Сниженные графические настройки",
             "Saturation Bloom Intensity" => "Интенсивность насыщенности свечения",
             "Screen Overlays" => "Наложение на экране",
+            "Boss Footage Credits Recording" => "Запись кадров босса для титров",
             _ => orig.Invoke(self)
         };
     }

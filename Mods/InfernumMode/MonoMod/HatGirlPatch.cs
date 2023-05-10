@@ -3,7 +3,7 @@ using System.Reflection;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
-using InfernumMode.Content.Projectiles;
+using InfernumMode.Content.Projectiles.Pets;
 using Terraria;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
@@ -23,15 +23,11 @@ public class HatGirlPatch : OnPatcher
     {
         text = text switch
         {
-            "The Scourge will stop at nothing to snack on you! Stay on the move!" => "Бича ничего не остановит, лишь бы полакомиться тобой! Будь начеку!",
             "That thing seems to have shed its outer shell. Brace yourself, it's going to be a lot faster now!" => "Это существо, похоже, сбросило свою внешнюю оболочку. Готовься, теперь всё будет намного быстрее!",
             "Don't forget about that rubble! It will rain down from above!" => "Не забывай про булыжники! Они будут осыпаться сверху!",
             "Don't panic while trying to evade the bolts!" => "Не паникуй, пытаясь уклониться от снарядов!",
             "Stay near the center of your arena if you can. Those thorns are really good at cornering you!" => "Старайся держаться ближе к центру арены. Эти шипы хорошо загоняют в угол!",
             "The beam predicts your position, try baiting it into shooting away from you!" => "Луч предугадывает твою позицию, попробуй заставить его выстрелить на опережение!",
-            "It seems like she's going to give it all she has! Brace yourself!" => "Кажется, она собирается выложиться по полной! Соберись с духом!",
-            "Try and move as precisely as possible here; you don't want to waste arena space!" => "Постарайся двигаться как можно точнее, ты же не хочешь впустую потратить часть арены!",
-            "This is the Void's last stand! Try not to get sucked in, and weave through the energy bolts!" => "Пустота решила дать последний бой! Старайся, чтобы тебя не засосало, и прорывайся через энергетические заряды!",
             "Lightning is going to aim ahead of you! Try to bait it!" => "Молния старается бить перед тобой! Попробуй обмануть её!",
             "Try to get between those lines, before the ice barrages explode!" => "Попытайся пройти между этими линиями, пока ледяные заграждения не взорвались!",
             "Prepare for it's final stand! Watch for red laser telegraphs and prepare to dash to safety!" => "Готовься к финальной атаке! Следи за красными полосами света и готовься к рывкам в безопасные зоны!",
@@ -58,12 +54,9 @@ public class HatGirlPatch : OnPatcher
             "Manage those clouds carefully. You'll need to weave through them to find the gap in her tentacles!" => "Внимательно следи за облаками. Тебе нужно будет пробираться сквозь них, чтобы найти брешь в её щупальцах!",
             "Polterghast's spirits have been released! But they don't seem very happy with us..." => "Духи Полтергаста были освобождены! Но, кажется, они нам не очень-то рады...",
             "Those blue tesla mines are going to explode into gas; take cover!" => "Эти синие тесла-мины сейчас взорвутся газом, прячься!",
-            "Pay attention to where you move. Try to stay in one spot so that those bombs aren't all over the arena!" => "Обращай внимание на то, куда двигаешься. Старайся оставаться на одном месте, чтобы бомбы не разлетелись по всей арене!",
             "Don't move around too quickly! Small but quick horizontal movements are important for evading those crystals!" => "Не двигайся слишком быстро! Небольшие, но быстрые горизонтальные движения помогут уклониться от кристаллов!",
-            "Pay attention to where you move. You don't want Providence to fire her lasers when near a wall!" => "Обращай внимание на то, куда двигаешься. Уж поверь, ты не хочешь, чтобы Провиденс стреляла из своих лазеров, когда ты рядом со стеной!",
             "Watch out, he might try to trick you at the end!" => "Смотри, будь аккуратнее, в конце он может попробовать тебя одурачить!",
             "Those bombs will explode into kunai that fly towards you. Be careful!" => "Эти бомбы взорвутся и превратятся в кунаи, которые полетят в твою сторону. Будь осторожен!",
-            "The Weaver has shed its exterior. It will now move far faster!" => "Ткач сбросил свой внешний слой. Теперь он будет двигаться гораздо быстрее!",
             "The Weaver seems to be creating a bunch of clouds above you! Try to weave through the resulting bolts as they fall!" => "Ткач формирует кучу облаков над тобой! Постарайся проскочить сквозь образовавшиеся заряды, пока они падают!",
             "So many skulls, but it appears they aren't focused directly at you! Try going inbetween!" => "Как много черепов, но, похоже, они не направлены прямо на тебя! Попробуй проскочить между ними!",
             "Calamitas' is laying exploding brimstone magic with every charge, try to direct them away from a safe location!" => "Каламитас использует взрывную серную магию. С каждым зарядом старайся увести их подальше от безопасной зоны!",
@@ -75,6 +68,26 @@ public class HatGirlPatch : OnPatcher
             "Don't let the flashbang faze you! Keep your eyes peeled for where the embers are!" => "Не отвлекайся на вспышки! Следи за тем, где сейчас находятся снаряды!",
             "Yharon's burning some serious energy now! Stay focused!" => "Ярон сейчас пылает просто невероятной энергией! Не отвлекайся!",
             "It seems as if it is manipulating telelocational magic, your Rod of Discord is of no use here!" => "Видимо, он манипулирует телелокационной магией, твой жезл раздора бесполезен!",
+            "Stay calm and circle! Don't lose focus!" => "Сохраняй спокойствие и двигайся по кругу! Не отвлекайся!",
+            "Those blobs seem to spin in a spiral! Spin with them!" => "Следуй вращающимся образованиям в спирали! И вращайся вместе с ними!",
+            "Those portals are preparing something! Get near the void, quickly!" => "Порталы готовят нечто особенное! Приблизься к пустоте, скорее!",
+            "That thing is releasing so much energy! Try to get to the edge and move up and down to weave through it!" => "Это существо источает огромное количество энергии! Попробуй достичь края и маневрировать вверх и вниз, чтобы проникнуть сквозь неё!",
+            "Those chains wont seem to hold it much longer, brace yourself!" => "Эти цепи не смогут долго его удерживать, приготовься!",
+            "Ohhh, he's really mad now! Stay on your toes!" => "О-о-у, теперь он в ярости! Будь на чеку!",
+            "They've holed themselves up on the right, but if you get there you can probably breach their defenses!" => "Они укрепились справа, но если ты сумеешь достичь этого места, ты, вероятно, сможешь прорвать их оборону!",
+            "It's getting physical now! Don't let one distract you from the other!" => "Сейчас начинается настоящая схватка! Не позволяй одному отвлечь тебя от другого!",
+            "Try ramming into the defender!" => "Попробуй протаранить защитника!",
+            "That bleach bubble looks like a good place to recover from the acidic water!" => "Похоже, этот хлорный пузырь идеально подходит для восстановления после контакта с кислотной водой!",
+            "Bonk!" => "Боньк!",
+            "The water is almost boiling, I'd surface unless you want to become fried human!" => "Вода на грани закипания, лучше всплывай, если не хочешь стать плавленым человеком!",
+            "Looks like that's not all this serpent could do, we gotta skeddadle!" => "Похоже, у этого змея есть ещё несколько козырей в рукаве, пора сматывать отсюда!",
+            "The profaned magic seems to be blocking your Rod of Discord!" => "Похоже, что осквернённая магия мешает использовать твой Жезл раздора!",
+            "Those crystals are equally spaced... seems like you can dodge them the same way consistently!" => "Расстояние между кристаллами одинаковое... кажется, ты можешь надёжно уворачиваться от них, придерживаясь одной и той же тактики!",
+            "Who opened the faucets again?!" => "то снова пустил воду?!",
+            "The lava is rising, get to higher ground!" => "Разливается лава, спешите на возвышенность!",
+            "It looks like Providence is preparing something!" => "Похоже, что Провиденс к чему-то готовится!",
+            "Those fireballs seem to only explode if they hit lava, you should probably bait them away!" => "Если огненные шары столкнутся с лавой, они моментально взорвутся, попытайся отвести их в сторону!",
+            "They're a really good team! You'll want to manage everything at once, taking it slow is your best shot!" => "У них прекрасное взаимодействие! Тебе следует умело управлять всем сразу, ведь медленность и последовательность - твоя лучшая стратегия!",
             _ => text
         };
         

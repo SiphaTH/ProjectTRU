@@ -15,6 +15,6 @@ public class PBGIntroScreenPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Infected Insectoid\nThe Plaguebringer Goliath", "ЗАРАЖЁННОЕ НАСЕКОМОЕ\nРАЗНОСЧИЦА ЧУМЫ, ГОЛИАФ");
+        TranslationHelper.ModifyIL(il, "Biomechanical Colossus\nThe Plaguebringer Goliath", "БИОМЕХАНИЧЕСКИЙ КОЛОСС\nРАЗНОСЧИЦА ЧУМЫ, ГОЛИАФ");
     };
 }

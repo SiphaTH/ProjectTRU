@@ -21,7 +21,6 @@ public class PerforatorHiveBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, PerforatorHiveBehaviorOverride self)
     {
-        yield return n => "Может одна-две платформы помогут избежать некоторых атак?";
         yield return n => "Улей извергает тонну гнилого ихора, так что управление пространством - ключ к победе!";
     }
 }

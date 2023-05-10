@@ -15,6 +15,6 @@ public class QueenBeeIntroScreenPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Oversized Insect\nQueen Bee", "ОГРОМНОЕ НАСЕКОМОЕ\nКОРОЛЕВА ПЧЁЛ");
+        TranslationHelper.ModifyIL(il, "Hive Matriarch\nQueen Bee", "МАТРИАРХ УЛЬЯ\nКОРОЛЕВА ПЧЁЛ");
     };
 }

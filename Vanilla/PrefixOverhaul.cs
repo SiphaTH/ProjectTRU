@@ -1054,7 +1054,9 @@ public class InfernumModeItems : IItemGender
         get
         {
             string[] items = {
-                "WanderersShell"
+                "WanderersShell",
+                "Purity",
+                "IllusionersReverie",
             };
         
             List<int> types = new List<int>();
@@ -1066,7 +1068,23 @@ public class InfernumModeItems : IItemGender
         }
     }
 
-    public List<int> Neuter { get; } = new();
+    public List<int> Neuter
+    {
+        get
+        {
+            string[] items = {
+                "StormMaidensRetribution",
+                "EyeOfMadness",
+            };
+        
+            List<int> types = new List<int>();
+            if (ModsCall.Calamity != null && ModsCall.Infernum != null)
+            {
+                types.AddRange(items.Select(itemName => ModContent.Find<ModItem>("InfernumMode", itemName).Type));
+            }
+            return types;
+        }
+    }
     
     public List<int> Plural { get; } = new();
 }

@@ -24,6 +24,6 @@ public class DeerclopsBehaviorOverridePatch : OnPatcher
     {
         yield return n => "Циклоп-олень - близорукий, из-за этого он держит тебя вблизи. Не позволяй ему зажать тебя!";
         yield return n => "Циклоп-олень следует определённому паттерну, просто выучи его!";
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "Божечки оленёшечки..." : string.Empty;
+        yield return n => TipsManager.ShouldUseJokeText ? "Божечки оленёшечки..." : string.Empty;
     }
 }

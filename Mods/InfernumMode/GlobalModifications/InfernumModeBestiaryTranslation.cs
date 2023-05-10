@@ -1,5 +1,6 @@
 ﻿using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
+using InfernumMode.Content.BehaviorOverrides.AbyssAIs;
 using InfernumMode.Content.BehaviorOverrides.BossAIs.GreatSandShark;
 using Terraria;
 using Terraria.GameContent.Bestiary;
@@ -20,6 +21,24 @@ public class InfernumModeBestiaryTranslation : GlobalNPC
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
             bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("InfernumModec.Bestiary.BereftVassal")));
+        }
+        
+        if (npc.type == ModContent.NPCType<DepthFeeder>())
+        {
+            bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("InfernumModec.Bestiary.DepthFeeder")));
+        }
+        
+        if (npc.type == ModContent.NPCType<Herring>())
+        {
+            bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("InfernumModec.Bestiary.Herring")));
+        }
+        
+        if (npc.type == ModContent.NPCType<LionfishEnemy>())
+        {
+            bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("InfernumModec.Bestiary.LionfishEnemy")));
         }
     }
 }

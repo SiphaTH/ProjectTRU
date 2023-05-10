@@ -4,6 +4,7 @@ using CalamityMod.Items.SummonItems;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using InfernumMode.Content.Items;
+using InfernumMode.Content.Items.LoreItems;
 using InfernumMode.Content.Items.Relics;
 using InfernumMode.Core.GlobalInstances.Systems;
 using Microsoft.Xna.Framework;
@@ -37,7 +38,7 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
             });
             ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Bruh? What the heck? Are you OK?\nYou were supposed to fight her at night AFTER beating her during the day first!", tooltip =>
             {
-                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.ProvidenceRelic.Tooltip.HasBeatedInfernumNightProvBeforeDay");
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.ProvidenceRelic.Tooltip.HasBeatenInfernumNightProvBeforeDay");
             });
         }
         else if (item.type == ModContent.ItemType<DraedonRelic>())
@@ -64,7 +65,7 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
         }
         else if (item.type == ModContent.ItemType<ProfanedShard>())
         {
-            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Summons the Profaned Guardians when used in the profaned garden at the far right of the underworld", tooltip =>
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Summons the Profaned Guardians when used on the cliff in the profaned garden at the far right of the underworld", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.ProfanedShard.Tooltip");
             });
@@ -213,11 +214,49 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
                 tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.BloodyWormFood.Tooltip");
             });
         }
+        else if (item.type == ModContent.ItemType<Seafood>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.Seafood.Tooltip");
+            });
+        }
+        else if (item.type == ModContent.ItemType<Abombination>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.Abombination.Tooltip");
+            });
+        }
         else if (item.type == ModContent.ItemType<NecroplasmicBeacon>())
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip2", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.NecroplasmicBeacon.Tooltip");
+            });
+        }
+        else if (item.type == ModContent.ItemType<EyeofDesolation>())
+        {
+            if (WorldSaveSystem.InfernumMode)
+            {
+                ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+                {
+                    tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.EyeofDesolation.Tooltip");
+                });
+            }
+        }
+        else if (item.type == ModContent.ItemType<RuneofKos>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "RuneofKos", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.RuneofKos.CVWarning");
+            });
+        }
+        else if (item.type == ModContent.ItemType<KnowledgeBereftVassal>())
+        {
+            ItemHelper.TranslateTooltip(item, tooltips, "CalamityMod:Lore", tooltip =>
+            {
+                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.KnowledgeBereftVassal.Lore");
             });
         }
 

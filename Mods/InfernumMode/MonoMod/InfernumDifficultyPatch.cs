@@ -2,7 +2,7 @@
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Core.MonoMod;
-using InfernumMode.Core.GlobalInstances.Systems;
+using InfernumMode.Content.UI;
 using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;

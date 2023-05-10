@@ -21,6 +21,7 @@ public class AquaticScourgeHeadBehaviorOverridePatch : OnPatcher
 
     private IEnumerable<Func<NPC, string>> Translation(GetTipsDelegate orig, AquaticScourgeHeadBehaviorOverride self)
     {
-        yield return n => "Если не получается уклоняться на высоких скоростях, попробуй заставить его кружить вокруг себя!";
+        yield return n => "Змеиные беспорядочные движения в воде делают её более простой для преодоления, ты, вероятно, сможешь плавать, даже без помощи рук!";
+        yield return n => "Если тебе нужно больше пространства, попробуй освободить место, очистив окружающий сернистый песок!";
     }
 }

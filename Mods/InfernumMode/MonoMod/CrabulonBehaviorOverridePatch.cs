@@ -24,6 +24,6 @@ public class CrabulonBehaviorOverridePatch : OnPatcher
     {
         yield return n => "Крабулон запускает свои споры каждый третий прыжок, поэтому веди счёт!";
         yield return n => "Сосредоточься на крабовых грибах. Если игнорировать их, они тебя просто задавят!";
-        yield return n => HatGirlTipsManager.ShouldUseJokeText ? "На нас троих грибов не хватит, и я могу сказать, кто выиграл рулетку." : string.Empty;
+        yield return n => TipsManager.ShouldUseJokeText ? "На нас троих грибов не хватит, и я могу сказать, кто выиграл рулетку." : string.Empty;
     }
 }
