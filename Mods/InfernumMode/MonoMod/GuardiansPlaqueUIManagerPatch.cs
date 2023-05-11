@@ -19,7 +19,7 @@ public class GuardiansPlaqueUIManagerDraw : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Three disciples. One mind. One deity. One purpose. Tempered by the holy flames of Providence, an ancient artifact is crystalized, with the sole purpose of initiating the Ritual at the cliff of this Temple.", "Три ученика. Одно единое сознание. Одна богиня. Одна священная миссия. Окутанный священным пламенем Провиденс, древний артефакт кристаллизуется с единственной целью инициировать ритуал на утёсе этого храма.");
+        TranslationHelper.ModifyIL(il, "Three disciples. One mind. One deity. One purpose. Tempered by the holy flames of Providence, an ancient artifact is crystalized, with the sole purpose of initiating the Ritual at the cliff of this Temple.", "Три апостола. Одно единое сознание. Одна богиня. Одна священная миссия. Окутанный священным пламенем Провиденс, древний артефакт кристаллизуется с единственной целью инициировать ритуал на утёсе этого храма.");
         TranslationHelper.ModifyIL(il, "ancient artifact", "древний артефакт");
         TranslationHelper.ModifyIL(il, "ancient artifact", "древний артефакт", 2);
         TranslationHelper.ModifyIL(il, "ancient artifact", "древний артефакт", 3);
