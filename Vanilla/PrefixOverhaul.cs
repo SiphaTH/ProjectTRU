@@ -1216,23 +1216,6 @@ public class PrefixOverhaul
         new [] {"Блудливый", "Блудливая", "Блудливое", "Блудливые"}
     };
 
-    // public bool IsItemToLower(int item)
-    // {
-    //     ItemInfo info = _feminine.FirstOrDefault(x => x.ItemId == item);
-    //     if (info is {ToLower: false})
-    //         return false;
-    //
-    //     info = _neuter.FirstOrDefault(x => x.ItemId == item);
-    //     if (info is {ToLower: false})
-    //         return false;
-    //
-    //     info = _plural.FirstOrDefault(x => x.ItemId == item);
-    //     if (info is {ToLower: false})
-    //         return false;
-    //
-    //     return true;
-    // }
-    
     public string GetGenderedPrefix(string[] prefix, int item)
     {
         Load();
