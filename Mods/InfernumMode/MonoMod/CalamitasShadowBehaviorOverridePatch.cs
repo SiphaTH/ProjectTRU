@@ -7,7 +7,7 @@ using MonoMod.Cil;
 
 namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
 
-public class CalamitasCloneBehaviorOverrideDoBehavior_BrothersPhasePatch : ILPatcher
+public class CalamitasShadowBehaviorOverrideDoBehavior_BrothersPhasePatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
@@ -22,7 +22,7 @@ public class CalamitasCloneBehaviorOverrideDoBehavior_BrothersPhasePatch : ILPat
     };
 }
 
-public class CalamitasCloneBehaviorOverrideDoBehavior_TransitionToFinalPhasePatch : ILPatcher
+public class CalamitasShadowBehaviorOverrideDoBehavior_TransitionToFinalPhasePatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
@@ -34,7 +34,7 @@ public class CalamitasCloneBehaviorOverrideDoBehavior_TransitionToFinalPhasePatc
     };
 }
 
-public class CalamitasCloneBehaviorOverrideDoBehavior_DeathAnimationPatch : ILPatcher
+public class CalamitasShadowBehaviorOverrideDoBehavior_DeathAnimationPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     

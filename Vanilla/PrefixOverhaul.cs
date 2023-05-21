@@ -656,6 +656,7 @@ public class CalamityItems : IItemGender
                 "PermafrostsConcoction",
                 "Sacrifice",
                 "GodsParanoia",
+                "Malevolence",
             };
             List<int> types = new List<int>();
             
@@ -763,7 +764,6 @@ public class CalamityItems : IItemGender
                 "RedtideSpear",
                 "HeartoftheElements",
                 "DeathsAscension",
-                "Malevolence"
             };
             List<int> types = new List<int>();
             

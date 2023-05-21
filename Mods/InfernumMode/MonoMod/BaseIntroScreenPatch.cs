@@ -107,7 +107,7 @@ public class BaseIntroScreenUpdate : OnPatcher
                 "Hungering Conglomeration\nThe Wall of Flesh" => "ВЕЧНОГОЛОДНАЯ ВЛАДЫКА\nСТЕНА ПЛОТИ",
                 "Prediction Game Master\nAres" => "МАСТЕР ПРОГНОЗОВ\nАРЕС",
                 "The Ultimate War Machine\nAres" => "АБСОЛЮТНАЯ МАШИНА ВОЙНЫ\nАРЕС",
-                "NUMBER ! SALSMAN\n[Circa 1997]" => "ПРОДАВЕЦ НОМЕР !\n[С 1997 года]",
+                "NUMBER ! SALSMAN\n[Circa 1997]" => "ПРОДАВЕЦ НОМЕР !\n[С 1997 ГОДА]",
                 "The Ancient Idol\nGolem" => "ДРЕВНИЙ ИДОЛ\nГОЛЕМ",
                 "Speed Demon\nThe Old Duke" => "ДЕМОН СКОРОСТИ\nСТАРЫЙ ГЕРЦОГ",
                 "Sulphuric Terror\nThe Old Duke" => "СЕРНИСТЫЙ УЖАС\nСТАРЫЙ ГЕРЦОГ",
