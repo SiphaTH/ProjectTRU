@@ -116,9 +116,9 @@ public class TownNpcNames : GlobalNPC
 
     public override void AI(NPC npc)
     {
-        if (_townNpcNames.ContainsKey(npc.GivenName))
+        if (_townNpcNames.TryGetValue(npc.GivenName, out string name))
         {
-            npc.GivenName = _townNpcNames[npc.GivenName];
+            npc.GivenName = name;
         }
     }
 }

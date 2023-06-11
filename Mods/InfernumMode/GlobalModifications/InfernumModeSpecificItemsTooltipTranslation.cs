@@ -188,16 +188,16 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
         }
         else if (item.type == ItemID.WormFood)
         {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.WormFood.Tooltip");
+                tooltip.Text = tooltip.Text.Replace(" подземного ", " ");
             });
         }
         else if (item.type == ItemID.BloodySpine)
         {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.BloodySpine.Tooltip");
+                tooltip.Text = tooltip.Text.Replace(" подземного ", " ");
             });
         }
         else if (item.type == ModContent.ItemType<Teratoma>())

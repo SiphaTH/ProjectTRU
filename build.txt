@@ -1,9 +1,8 @@
 displayName = Project tRU
 author = tRU Team
-version = 3.0.2.23
+version = 3.0.2.24
 hideCode = true
 hideResources = true
 playableOnPreview = false;
 weakReferences = CalamityMod, Fargowiltas, FargowiltasSouls, InfernumMode
-sortAfter = InfernumMode
 homepage = https://discord.gg/zxMHFFpqCX

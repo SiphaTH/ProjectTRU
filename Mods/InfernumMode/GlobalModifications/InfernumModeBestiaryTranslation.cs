@@ -20,25 +20,25 @@ public class InfernumModeBestiaryTranslation : GlobalNPC
         if (npc.type == ModContent.NPCType<BereftVassal>())
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
-            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("InfernumModec.Bestiary.BereftVassal")));
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("InfernumMode.Bestiary.BereftVassal")));
         }
         
         if (npc.type == ModContent.NPCType<DepthFeeder>())
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
-            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("InfernumModec.Bestiary.DepthFeeder")));
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("InfernumMode.Bestiary.DepthFeeder")));
         }
         
         if (npc.type == ModContent.NPCType<Herring>())
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
-            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("InfernumModec.Bestiary.Herring")));
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("InfernumMode.Bestiary.Herring")));
         }
         
         if (npc.type == ModContent.NPCType<LionfishEnemy>())
         {
             bestiaryEntry.Info.RemoveAt(bestiaryEntry.Info.Count - 1);
-            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("InfernumModec.Bestiary.LionfishEnemy")));
+            bestiaryEntry.Info.Add(new FlavorTextBestiaryInfoElement(LangHelper.GetTextValue("InfernumMode.Bestiary.LionfishEnemy")));
         }
     }
 }

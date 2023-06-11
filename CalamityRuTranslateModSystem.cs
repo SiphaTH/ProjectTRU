@@ -22,7 +22,7 @@ public class CalamityRuTranslateModSystem : ModSystem
     {
         foreach (KeyValuePair<int, RecipeGroup> recipeGroupName in RecipeGroup.recipeGroups)
         {
-            recipeGroupName.Value.GetText = recipeGroupName.Value.GetText.Invoke() switch
+            recipeGroupName.Value.GetText = recipeGroupName.Value.GetText() switch
             {
                 "Any Hardmode Anvil" => () => "Хардмодная наковальня",
                 "Any Hardmode Forge" => () => "Хардмодная кузня",
