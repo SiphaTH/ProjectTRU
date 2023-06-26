@@ -355,7 +355,7 @@
                 Tooltip:
                     '''
                     Призывает Герцога Рыброна
-                    Необязательно использовать в океане
+                    Можно использовать только в океане
                     Не расходуется
                     '''
             }
@@ -921,7 +921,7 @@
             BuilderDroneBig.Name: Большой строительный дрон
             BuilderDroneSmall.Name: Маленький строительный дрон
             CursedOrb.Name: Сфера проклятого огня
-            DeusSpawn.Name: Отродье Деуса
+            DeusSpawn.Name: Порождение Деуса
             EnergyOrb.Name: Энергетическая сфера
             EtherealHand.Name: Эфирная рука
             ExplodingServant.Name: Прислужник Ктулху

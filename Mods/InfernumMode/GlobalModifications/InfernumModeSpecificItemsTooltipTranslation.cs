@@ -247,7 +247,7 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
         }
         else if (item.type == ModContent.ItemType<RuneofKos>())
         {
-            ItemHelper.TranslateTooltip(item, tooltips, "RuneofKos", tooltip =>
+            ItemHelper.TranslateTooltip(item, tooltips, "CVWarning", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.RuneofKos.CVWarning");
             });
