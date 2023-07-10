@@ -66,7 +66,6 @@ public class BaseIntroScreenUpdate : OnPatcher
                 "Mother of Wyverns\nBetsy" => "МАТЬ ВИВЕРН\nБЭТСИ",
                 "Eldritch Mind\nThe Brain of Cthulhu" => "ЖУТКИЙ РАЗУМ\nМОЗГ КТУЛХУ",
                 "Scarred Numen\nThe Brimstone Elemental" => "ИЗРАНЕННОЕ БОЖЕСТВО\nСЕРНЫЙ ЭЛЕМЕНТАЛЬ",
-                "False Witch\nCalamitas' Clone" => "ЛОЖНАЯ ВЕДЬМА\nКЛОН КАЛАМИТАС",
                 "False Witch\nCalamitas' Shadow" => "ЛОЖНАЯ ВЕДЬМА\nТЕНЬ КАЛАМИТАС",
                 "The Never-Ending\nCeaseless Void" => "БЕСКОНЕЧНАЯ\nНЕСКОНЧАЕМАЯ ПУСТОТА",
                 "The Reanimated Carcass\nCrabulon" => "ОЖИВШАЯ ОБОЛОЧКА\nКРАБУЛОН",

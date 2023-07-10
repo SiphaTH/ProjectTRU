@@ -764,6 +764,7 @@ public class CalamityItems : IItemGender
                 "RedtideSpear",
                 "HeartoftheElements",
                 "DeathsAscension",
+                "HellionFlowerSpear",
             };
             List<int> types = new List<int>();
             

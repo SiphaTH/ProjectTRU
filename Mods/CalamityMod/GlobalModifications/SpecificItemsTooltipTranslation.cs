@@ -296,14 +296,14 @@ public class SpecificItemsTooltipTranslation : GlobalItem
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
             {
                 tooltip.Text = tooltip.Text
-                    .Replace("Main Attunement", "Основная настройка")
+                    .Replace("Main Attunement", "Основной резонанс")
                     .Replace("None", "Нет");
             });
 
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
             {
                 tooltip.Text = tooltip.Text
-                    .Replace("Secondary Attunement", "Вторичная настройка")
+                    .Replace("Secondary Attunement", "Вторичный резонанс")
                     .Replace("None", "Нет");
             });
         }
@@ -311,7 +311,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
             {
-                tooltip.Text = tooltip.Text.Replace("Active Attunement", "Активная настройка");
+                tooltip.Text = tooltip.Text.Replace("Active Attunement", "Активный резонанс");
             });
 
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
@@ -323,25 +323,25 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                tooltip.Text = tooltip.Text.Replace("Does nothing..yet\nIt seems that upgrading the blade expanded the scope of the previous attunements", "Ничего не делает... пока\nПохоже, что улучшение клинка расширило возможности предыдущих настроек");
+                tooltip.Text = tooltip.Text.Replace("Does nothing..yet\nIt seems that upgrading the blade expanded the scope of the previous attunements", "Ничего не делает... пока\nПохоже, что улучшение клинка расширило возможности предыдущих резонансов");
             });
 
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
             {
-                tooltip.Text = tooltip.Text.Replace("Your secondary attunement can now provide passive bonuses", "Ваша вторичная настройка теперь может давать пассивные бонусы");
+                tooltip.Text = tooltip.Text.Replace("Your secondary attunement can now provide passive bonuses", "Ваш вторичный резонанс теперь может давать пассивные бонусы");
             });
 
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
             {
                 tooltip.Text = tooltip.Text
-                    .Replace("Active Attunement", "Активная настройка")
+                    .Replace("Active Attunement", "Активный резонанс")
                     .Replace("None", "Нет");
             });
 
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip5", tooltip =>
             {
                 tooltip.Text = tooltip.Text
-                    .Replace("Passive Attunement", "Пассивная настройка")
+                    .Replace("Passive Attunement", "Пассивный резонанс")
                     .Replace("None", "Нет");
             });
         }
@@ -349,20 +349,20 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         {
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
             {
-                tooltip.Text = tooltip.Text.Replace("Does nothing..yet\nRepairing the blade seems to have improved its attuning capacities", "Ничего не делает... пока\nПохоже, что восстановление клинка улучшило его возможности настройки");
+                tooltip.Text = tooltip.Text.Replace("Does nothing..yet\nRepairing the blade seems to have improved its attuning capacities", "Ничего не делает... пока\nПохоже, что восстановление клинка усилило потенциал его резонанса");
             });
 
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip3", tooltip =>
             {
                 tooltip.Text = tooltip.Text
-                    .Replace("Main Attunement", "Основная настройка")
+                    .Replace("Main Attunement", "Основной резонанс")
                     .Replace("None", "Нет");
             });
 
             ItemHelper.TranslateTooltip(item, tooltips, "Tooltip4", tooltip =>
             {
                 tooltip.Text = tooltip.Text
-                    .Replace("Secondary Attunement", "Вторичная настройка")
+                    .Replace("Secondary Attunement", "Вторичный резонанс")
                     .Replace("None", "Нет");
             });
         }
@@ -1047,7 +1047,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         }
         else if (item.type == ModContent.ItemType<SandstormsCore>())
         {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip0", tooltip =>
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Summons the Great Sand Shark when used in the desert", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.SandstormsCore.Tooltip.0");
             });

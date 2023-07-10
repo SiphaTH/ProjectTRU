@@ -79,7 +79,7 @@ public class CalamityPlayerOnEnterWorld : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, " [c/EE4939:Check out the Official Calamity Mod Wiki at ][c/3989FF:calamitymod.wiki.gg][c/EE4939:!] ", " [c/EE4939:Актуальную информацию вы можете посмотреть на официальной вики Каламити] [c/3989FF:calamitymod.wiki.gg][c/EE4939:!] ");
+        TranslationHelper.ModifyIL(il, " [c/EE4939:Check out the Official Calamity Mod Wiki at ][c/3989FF:calamitymod.wiki.gg][c/EE4939:!] ", " [c/EE4939:Актуальную информацию вы можете посмотреть на официальной вики Calamity] [c/3989FF:calamitymod.wiki.gg][c/EE4939:!] ");
         TranslationHelper.ModifyIL(il, " [c/EE4939:Note: The Fandom wiki is no longer supported by Calamity.] ", " [c/EE4939:Обратите внимание: Вики Fandom больше не поддерживается Calamity.] ");
     };
 }

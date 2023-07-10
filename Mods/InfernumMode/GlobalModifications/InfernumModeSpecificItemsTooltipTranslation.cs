@@ -77,7 +77,7 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
         }
         else if (item.type == ModContent.ItemType<ProfanedCore>())
         {
-            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Summons Providence when used at the alter in the profaned temple at the far right of the underworld", tooltip =>
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Summons Providence when used at the altar in the profaned temple at the far right of the underworld", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.ProfanedCore.Tooltip");
             });

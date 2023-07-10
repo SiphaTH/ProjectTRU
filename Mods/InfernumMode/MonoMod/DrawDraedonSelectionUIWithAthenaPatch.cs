@@ -29,7 +29,7 @@ public class CustomExoMechSelectionSystemHandleInteractionWithButtonPatch : ILPa
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
         TranslationHelper.ModifyIL(il, "Thanatos, a serpentine terror with impervious armor and innumerable laser turrets.", "Танатос - змееподобный ужас с непробиваемой броней и бесчисленным количеством лазерных турелей.");
-        TranslationHelper.ModifyIL(il, "Ares, a heavyweight, diabolical monstrosity with four Exo superweapons.", "Арес - тяжеловес, дьявольское чудовище с четырьмя экзо-супероружиями.");
+        TranslationHelper.ModifyIL(il, "Ares, a heavyweight, diabolical monstrosity with six Exo superweapons.", "Арес - тяжеловес, дьявольское чудовище с шестью экзо-супероружиями.");
         TranslationHelper.ModifyIL(il, "Artemis and Apollo, a pair of extremely agile destroyers with unstable energy reserves.", "Артемида и Аполлон - тандем чрезвычайно манёвренных уничтожителей, обладающих нестабильным запасом энергии.");
     };
 }
