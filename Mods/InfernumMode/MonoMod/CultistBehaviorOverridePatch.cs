@@ -46,6 +46,6 @@ public class CultistBehaviorOverridePreAIPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, " was repelled by celestial forces.", " отбрасывается небесными силами.");
+        TranslationHelper.ModifyIL(il, " was repelled by celestial forces.", " отбрасывается неземными силами.");
     };
 }

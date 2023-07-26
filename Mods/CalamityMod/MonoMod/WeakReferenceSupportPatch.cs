@@ -289,7 +289,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<CharredIdol>()}] в серной скале.",
-            CalamityUtils.ColorMessage("Элементаль всегда остаётся верной своему посту, охраняя Азафур с непреклонностью...", new Color(220, 20, 60)),
+            CalamityUtils.ColorMessage("Элементаль продолжает свой скорбный дозор над Азафуром...", new Color(220, 20, 60)),
             () => true
         );
 
@@ -763,7 +763,7 @@ public class WeakReferenceSupportAddCalamityBosses : OnPatcher
                 ModContent.ItemType<ThankYouPainting>()
             },
             $"Используйте [i:{ModContent.ItemType<YharonEgg>()}].",
-            CalamityUtils.ColorMessage("Ярон скрывается из виду, его задача выполнена.", new Color(255, 165, 0)),
+            CalamityUtils.ColorMessage("Ярон взмывает в небо, выполнив свою задачу.", new Color(255, 165, 0)),
             () => true,
             null,
             "CalamityMod/NPCs/Yharon/Yharon_Head_Boss"

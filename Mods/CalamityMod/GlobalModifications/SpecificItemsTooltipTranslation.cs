@@ -1040,7 +1040,7 @@ public class SpecificItemsTooltipTranslation : GlobalItem
         }
         else if (item.type == ModContent.ItemType<ProfanedShard>())
         {
-            ItemHelper.TranslateTooltip(item, tooltips, "Tooltip1", tooltip =>
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (_, l) => l.Text == "Summons the Profaned Guardians when used in the Hallow or Underworld during daytime", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("CalamityMod.Items.ProfanedShard.Tooltip.1");
             });

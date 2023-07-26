@@ -65,7 +65,7 @@ public class InfernumModeSpecificItemsTooltipTranslation : GlobalItem
         }
         else if (item.type == ModContent.ItemType<ProfanedShard>())
         {
-            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Summons the Profaned Guardians when used on the cliff in the profaned garden at the far right of the underworld", tooltip =>
+            ItemHelper.ApplyTooltipEdits(item, tooltips, (i, l) => l.Text == "Summons the Profaned Guardians when used on the cliff in the profaned garden at the far right of the underworld during day", tooltip =>
             {
                 tooltip.Text = LangHelper.GetTextValue("InfernumMode.Items.ProfanedShard.Tooltip");
             });
