@@ -19,15 +19,3 @@ public class KillAllMinibossesAchievementPatch : ILPatcher
         TranslationHelper.ModifyIL(il, "Defeat the various minor threats across the world!\n[c/777777:Beat every Infernum Miniboss]", "Одолеть различные мелкие угрозы, встречающиеся по всему миру\n[c/777777:Одержать победу над каждым мини-боссом в Инфернуме]");
     };
 }
-
-public class KillAllMinibossesAchievementOrderedMinibossesComplete : ILPatcher
-{
-    public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
-    
-    public override MethodInfo ModifiedMethod => typeof(KillAllMinibossesAchievement).GetCachedMethod("get_OrderedMinibossesComplete");
-
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
-    {
-        TranslationHelper.ModifyIL(il, 8, 9, 2);
-    };
-}
