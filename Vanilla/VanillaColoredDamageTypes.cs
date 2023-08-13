@@ -19,18 +19,18 @@ public class VanillaColoredDamageTypes : GlobalItem
         if (!TRuConfig.Instance.ColoredDamageTypes)
             return;
 
-        ItemHelper.TranslateTooltip(item, tooltips, "Damage", tooltip =>
+        ItemHelper.TranslateTooltip(tooltips, "Damage", tooltip =>
         {
-            if (item.CountsAsClass(DamageClass.Melee))
+            if (item.CountsAsClass<MeleeDamageClass>() && (tooltip.Text.Contains(Language.GetTextValue("LegacyTooltip.2")) || tooltip.Text.Contains("ед. истинного урона ближнего боя")))
                 tooltip.OverrideColor = new Color(255, 85, 85);
 
-            else if (item.CountsAsClass(DamageClass.Magic) && tooltip.Text.Contains(Language.GetTextValue("LegacyTooltip.4")))
+            else if (item.CountsAsClass<MagicDamageClass>() && tooltip.Text.Contains(Language.GetTextValue("LegacyTooltip.4")))
                 tooltip.OverrideColor = new Color(189, 147, 249);
 
-            else if (item.CountsAsClass(DamageClass.Ranged))
+            else if (item.CountsAsClass<RangedDamageClass>() && tooltip.Text.Contains(Language.GetTextValue("LegacyTooltip.3")))
                 tooltip.OverrideColor = new Color(80, 250, 123);
 
-            else if (item.CountsAsClass(DamageClass.Summon) || item.CountsAsClass(DamageClass.SummonMeleeSpeed))
+            else if ((item.CountsAsClass<SummonDamageClass>() || item.CountsAsClass<SummonMeleeSpeedDamageClass>()) && tooltip.Text.Contains(Language.GetTextValue("LegacyTooltip.53")))
                 tooltip.OverrideColor = new Color(241, 250, 140);
         });
     }

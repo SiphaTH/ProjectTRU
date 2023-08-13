@@ -1,63 +1,75 @@
 using CalamityMod;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core;
 using Terraria;
-using Item = On.Terraria.Item;
+using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
 
-public class AffixName : ContentTranslation, ILoadableContent
+public class AffixName : ILoadable
 {
-    public override bool IsTranslationEnabled => ModsCall.Calamity == null && TranslationHelper.IsRussianLanguage;
+    public bool IsLoadingEnabled(Mod mod)
+    {
+        return ModsCall.Calamity == null && TranslationHelper.IsRussianLanguage;
+    }
 
-    public override float Priority => 1f;
+    public void Load(Mod mod)
+    {
+        On_Item.AffixName += ItemOnAffixName;
+    }
 
-    public void LoadContent() => Item.AffixName += ItemOnAffixName;
+    public void Unload()
+    {
+        On_Item.AffixName -= ItemOnAffixName;
+    }
 
-    public void UnloadContent() => Item.AffixName -= ItemOnAffixName;
-
-    private string ItemOnAffixName(Item.orig_AffixName orig, Terraria.Item self)
+    private string ItemOnAffixName(On_Item.orig_AffixName orig, Item self)
     {
         if (self.prefix < 0 && self.prefix >= Lang.prefix.Length)
             return self.Name;
 
         string prefix = Lang.prefix[self.prefix].Value;
-        PrefixOverhaul prefixOverhaul = new PrefixOverhaul();
+        PrefixOverhaul prefixOverhaul = new();
         if (prefix == string.Empty)
             return self.Name;
 
         foreach (var t in prefixOverhaul.Prefixes)
         {
             if (t[0] == prefix)
-                return prefixOverhaul.GetGenderedPrefix(t, self.type) + " " + self.Name.ToLower();
+                return prefixOverhaul.GetGenderedPrefix(t, self.type) + " " + (self.Name.Contains('.') ? self.Name : self.Name.ToLower());
         }
 
         return prefix + " " + self.Name;
     }
 }
 
-public class AffixNameWithCalamity : ContentTranslation, ILoadableContent
+public class AffixNameWithCalamity : ILoadable
 {
-    public override bool IsTranslationEnabled => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
-
-    public override float Priority => 1f;
-
-    public void LoadContent() => Item.AffixName += ItemOnAffixName;
-
-    public void UnloadContent() => Item.AffixName -= ItemOnAffixName;
-
-    private string ItemOnAffixName(Item.orig_AffixName orig, Terraria.Item self)
+    public bool IsLoadingEnabled(Mod mod)
     {
-        string calamityEnchantment = string.Empty;
-        string goblinPrefix = string.Empty;
-        PrefixOverhaul prefixOverhaul = new PrefixOverhaul();
+        return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+    }
+
+    public void Load(Mod mod)
+    {
+        On_Item.AffixName += ItemOnAffixName;
+    }
+
+    public void Unload()
+    {
+        On_Item.AffixName -= ItemOnAffixName;
+    }
+
+    private string ItemOnAffixName(On_Item.orig_AffixName orig, Item self)
+    {
+        string calamityEnchantment = string.Empty, goblinPrefix = string.Empty;
+        PrefixOverhaul prefixOverhaul = new();
         
         foreach (string[] t in prefixOverhaul.Prefixes)
         {
-            if (!self.IsAir && self.Calamity().AppliedEnchantment != null)
+            if (!self.IsAir && self.Calamity().AppliedEnchantment.HasValue)
             {
-                if (t[0] == self.Calamity().AppliedEnchantment?.Name)
+                if (t[0] == self.Calamity().AppliedEnchantment?.Name.ToString())
                     calamityEnchantment = prefixOverhaul.GetGenderedPrefix(t, self.type) + " ";
 
                 if (calamityEnchantment != string.Empty)
@@ -71,6 +83,6 @@ public class AffixNameWithCalamity : ContentTranslation, ILoadableContent
         if (goblinPrefix == string.Empty && calamityEnchantment == string.Empty)
             return self.Name;
         
-        return calamityEnchantment + goblinPrefix + self.Name.ToLower();
+        return calamityEnchantment + goblinPrefix + (self.Name.Contains('.') ? self.Name : self.Name.ToLower());
     }
 }

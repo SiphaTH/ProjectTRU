@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoMod.Cil;
@@ -8,43 +7,38 @@ using ReLogic.Content;
 using Terraria;
 using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.UI.Elements;
+using Terraria.GameContent.UI.States;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
 
-public class UIBestiaryPatch : ContentTranslation, ILoadableContent
+public class UIBestiaryPatch : ILoadable
 {
-    public override bool IsTranslationEnabled => TranslationHelper.IsRussianLanguage;
-
-    public override float Priority => 1f;
-    
-    public void LoadContent()
+    public bool IsLoadingEnabled(Mod mod)
     {
-        On.Terraria.GameContent.UI.Elements.UIBestiaryNPCEntryPortrait.ctor += UIBestiaryNPCEntryPortraitOnctor;
-        On.Terraria.GameContent.Bestiary.NPCStatsReportInfoElement.ProvideUIElement += NPCStatsReportInfoElementOnProvideUIElement;
-        IL.Terraria.GameContent.UI.Elements.UIBestiaryEntryInfoPage.ctor += UIBestiaryEntryInfoPage;
-        IL.Terraria.GameContent.UI.Elements.UIBestiaryNPCEntryPortrait.ctor += UIBestiaryNPCEntryPortrait;
-        IL.Terraria.GameContent.Bestiary.NPCPortraitInfoElement.ProvideUIElement += NPCPortraitInfoElementOnProvideUIElement;
-        //IL.Terraria.GameContent.Bestiary.FlavorTextBestiaryInfoElement.ProvideUIElement += FlavorTextBestiaryInfoElementOnProvideUIElement;
-        IL.Terraria.GameContent.UI.States.UIWorldCreation.BuildPage += UIWorldCreationOnBuildPage;
+        return TranslationHelper.IsRussianLanguage;
     }
 
-    public void UnloadContent()
+    public void Load(Mod mod)
     {
-        On.Terraria.GameContent.UI.Elements.UIBestiaryNPCEntryPortrait.ctor -= UIBestiaryNPCEntryPortraitOnctor;
-        On.Terraria.GameContent.Bestiary.NPCStatsReportInfoElement.ProvideUIElement -= NPCStatsReportInfoElementOnProvideUIElement;
-        IL.Terraria.GameContent.UI.Elements.UIBestiaryEntryInfoPage.ctor -= UIBestiaryEntryInfoPage;
-        IL.Terraria.GameContent.UI.Elements.UIBestiaryNPCEntryPortrait.ctor -= UIBestiaryNPCEntryPortrait;
-        IL.Terraria.GameContent.Bestiary.NPCPortraitInfoElement.ProvideUIElement -= NPCPortraitInfoElementOnProvideUIElement;
-        //IL.Terraria.GameContent.Bestiary.FlavorTextBestiaryInfoElement.ProvideUIElement -= FlavorTextBestiaryInfoElementOnProvideUIElement;
-        IL.Terraria.GameContent.UI.States.UIWorldCreation.BuildPage -= UIWorldCreationOnBuildPage;
+        On_UIBestiaryNPCEntryPortrait.ctor += UIBestiaryNPCEntryPortraitOnctor;
+        On_NPCStatsReportInfoElement.ProvideUIElement += NPCStatsReportInfoElementOnProvideUIElement;
+        IL_UIBestiaryEntryInfoPage.ctor += UIBestiaryEntryInfoPage;
+        IL_UIBestiaryNPCEntryPortrait.ctor += UIBestiaryNPCEntryPortrait;
+        IL_NPCPortraitInfoElement.ProvideUIElement += NPCPortraitInfoElementOnProvideUIElement;
+        IL_UIWorldCreation.BuildPage += UIWorldCreationOnBuildPage;
     }
 
-    private void FlavorTextBestiaryInfoElementOnProvideUIElement(ILContext il)
+    public void Unload()
     {
-        TranslationHelper.ModifyIL(il, 0.8f, 1f);
+        On_UIBestiaryNPCEntryPortrait.ctor -= UIBestiaryNPCEntryPortraitOnctor;
+        On_NPCStatsReportInfoElement.ProvideUIElement -= NPCStatsReportInfoElementOnProvideUIElement;
+        IL_UIBestiaryEntryInfoPage.ctor -= UIBestiaryEntryInfoPage;
+        IL_UIBestiaryNPCEntryPortrait.ctor -= UIBestiaryNPCEntryPortrait;
+        IL_NPCPortraitInfoElement.ProvideUIElement -= NPCPortraitInfoElementOnProvideUIElement;
+        IL_UIWorldCreation.BuildPage -= UIWorldCreationOnBuildPage;
     }
     
     private void NPCPortraitInfoElementOnProvideUIElement(ILContext il)
@@ -70,7 +64,7 @@ public class UIBestiaryPatch : ContentTranslation, ILoadableContent
         TranslationHelper.ModifyIL(il, 500f, 620f);
     }
     
-    private void UIBestiaryNPCEntryPortraitOnctor(On.Terraria.GameContent.UI.Elements.UIBestiaryNPCEntryPortrait.orig_ctor orig, UIBestiaryNPCEntryPortrait self, BestiaryEntry entry, Asset<Texture2D> portraitbackgroundasset, Color portraitcolor, List<IBestiaryBackgroundOverlayAndColorProvider> overlays)
+    private void UIBestiaryNPCEntryPortraitOnctor(On_UIBestiaryNPCEntryPortrait.orig_ctor orig, UIBestiaryNPCEntryPortrait self, BestiaryEntry entry, Asset<Texture2D> portraitbackgroundasset, Color portraitcolor, List<IBestiaryBackgroundOverlayAndColorProvider> overlays)
     {
         orig.Invoke(self, entry, portraitbackgroundasset, portraitcolor, overlays);
         
@@ -82,14 +76,12 @@ public class UIBestiaryPatch : ContentTranslation, ILoadableContent
         });
     }
     
-    private UIElement NPCStatsReportInfoElementOnProvideUIElement(On.Terraria.GameContent.Bestiary.NPCStatsReportInfoElement.orig_ProvideUIElement orig, NPCStatsReportInfoElement self, BestiaryUICollectionInfo info)
+    private UIElement NPCStatsReportInfoElementOnProvideUIElement(On_NPCStatsReportInfoElement.orig_ProvideUIElement orig, NPCStatsReportInfoElement self, BestiaryUICollectionInfo info)
     {
         if (info.UnlockState == BestiaryEntryUnlockState.NotKnownAtAll_0)
             return null;
 
-        int gameMode = Main.GameMode;
-        if (self.GameMode != gameMode)
-            return null;
+        self.UpdateBeforeSorting();
 
         UIElement uIElement = new UIElement
         {

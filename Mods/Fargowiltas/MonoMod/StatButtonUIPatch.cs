@@ -15,8 +15,8 @@ namespace CalamityRuTranslate.Mods.Fargowiltas.MonoMod;
 
 public class StatButtonUIRebuildStatList : OnPatcher
 {
-    private FieldInfo _BattleCry => typeof(FargoPlayer).GetField("BattleCry", BindingFlags.Instance | BindingFlags.NonPublic);
-    private FieldInfo _CalmingCry => typeof(FargoPlayer).GetField("CalmingCry", BindingFlags.Instance | BindingFlags.NonPublic);
+    private FieldInfo BattleCry => typeof(FargoPlayer).GetCachedField("BattleCry");
+    private FieldInfo CalmingCry => typeof(FargoPlayer).GetCachedField("CalmingCry");
 
     public override bool AutoLoad => ModsCall.Fargo != null && TranslationHelper.IsRussianLanguage;
     
@@ -70,7 +70,7 @@ public class StatButtonUIRebuildStatList : OnPatcher
         self.AddStat($"Сопротивление урону: {Math.Round(player.endurance * 100)}%", ItemID.WormScarf);
         self.AddStat($"Удача: {Math.Round(player.luck, 2)}", ItemID.Torch);
         self.AddStat($"Выполненных заданий рыбака: {player.anglerQuestsFinished}", ItemID.AnglerEarring);
-        self.AddStat($"Боевой клич: {((bool) _BattleCry.GetValue(modPlayer)! ? "[c/ff0000:Боевой]" : (bool) _CalmingCry.GetValue(modPlayer)! ? "[c/00ffff:Успокаивающий]" : "Нет")}", ModContent.ItemType<BattleCry>());
+        self.AddStat($"Боевой клич: {((bool) BattleCry.GetValue(modPlayer)! ? "[c/ff0000:Боевой]" : (bool) CalmingCry.GetValue(modPlayer)! ? "[c/00ffff:Успокаивающий]" : "Нет")}", ModContent.ItemType<BattleCry>());
         self.AddStat($"Максимальная скорость: {(int)((player.accRunSpeed + player.maxRunSpeed) / 2f * player.moveSpeed * 6)} км/ч", ItemID.HermesBoots);
 
         string RenderWingStat(double stat) => stat <= 0 ? "???" : stat.ToString();

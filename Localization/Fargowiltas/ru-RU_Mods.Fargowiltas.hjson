@@ -1,0 +1,2596 @@
+﻿Bestiary: {
+    Deviantt: Протянет предметы призыва монстров и (если захочет) руку помощи. Это жизнерадостное и активное существо любит деньги почти столь же сильно, сколь она любит жестокость. Просто немного иначе.
+    Abominationn: Может контролировать погоду и останавливать нашествия, но ленив, а его оружие слилось с руками. Слава богу, ему не нужно есть, а двери перед ним магическим образом открываются.
+    Mutant: Родственники называют его братом, однако он не хочет раскрывать свой пол. Он больше заинтересован наблюдениями за сражениями и милыми зверушками, нежели разговорами о прошлом. Кажется, он ищет кого-то сильного...
+    LumberJack: Вполне обычный лесоруб, любящий собирать животных и колоть дрова всех мастей. Но может ли в нём быть нечто, скрываемое от наших глаз? Божественные силы? ...Да нет.
+    Squirrel: Эта элегантная зверушка продаёт копии ценных предметов, которые она замечает в чужих инвентарях. Не расскажет, откуда она их достаёт. В основном потому, что не умеет говорить.
+}
+
+Config: {
+    CanSpawn: может заселиться
+    TownNPCsHeader: Жители
+    SeasonsHeader: Сезоны
+    SeedsHeader: Секретные генерации мира
+    UnlimitedHeader: Бесконечные вещи
+    MiscHeader: Прочее
+}
+
+RecipeGroups: {
+    EvilWood: Древесина мирового зла
+    CommonFish: Обычная рыба
+    Dragonfly: Стрекоза
+    Butterfly: Бабочка
+    CaughtNPC: Пойманный житель
+    Banner: Знамя
+    ArmoredBones: Знамя бронированного скелета
+    PirateBanner: Знамя пирата
+}
+
+MessageInfo: {
+    SiblingPylonNotNearSiblings: Этому пилону требуется мутировавшая троица для пользования.
+    NearbySiblingPylonNotNearSiblings: Ближайшему пилону требуется мутировавшая троица для пользования.
+}
+
+Buffs: {
+    Omnistation: {
+        DisplayName: Универсальная станция
+        Description: Эффекты всех ванильных баффающих станций
+    }
+
+    Semistation: {
+        DisplayName: Полустанция
+        Description: Эффекты некоторых ванильных баффающих станций
+    }
+
+    WoodDrop: {
+        DisplayName: Выпадающая древесина
+        Description: ""
+    }
+}
+
+Items: {
+    BoneQuiver: {
+        DisplayName: Колчан с бесконечными костяными стрелами
+        Tooltip: ""
+    }
+
+    ChlorophyteQuiver: {
+        DisplayName: Колчан с бесконечными хлорофитовыми стрелами
+        Tooltip: "{$ItemTooltip.ChlorophyteArrow}"
+    }
+
+    CursedQuiver: {
+        DisplayName: Колчан с бесконечными проклятыми стрелами
+        Tooltip: ""
+    }
+
+    FlameQuiver: {
+        DisplayName: Колчан с бесконечными поджигающими стрелами
+        Tooltip: ""
+    }
+
+    FrostburnQuiver: {
+        DisplayName: Колчан с бесконечными стрелами обжигающего холода
+        Tooltip: ""
+    }
+
+    HellfireQuiver: {
+        DisplayName: Колчан с бесконечными стрелами адского огня
+        Tooltip: ""
+    }
+
+    HolyQuiver: {
+        DisplayName: Колчан с бесконечными святыми стрелами
+        Tooltip: "{$ItemTooltip.HolyArrow}"
+    }
+
+    IchorQuiver: {
+        DisplayName: Колчан с бесконечными ихорными стрелами
+        Tooltip: "{$ItemTooltip.IchorArrow}"
+    }
+
+    JesterQuiver: {
+        DisplayName: Колчан с бесконечными шутовскими стрелами
+        Tooltip: ""
+    }
+
+    LuminiteQuiver: {
+        DisplayName: Колчан с бесконечными люминитовыми стрелами
+        Tooltip: "{$ItemTooltip.MoonlordArrow}"
+    }
+
+    UnholyQuiver: {
+        DisplayName: Колчан с бесконечными нечестивыми стрелами
+        Tooltip: ""
+    }
+
+    VenomQuiver: {
+        DisplayName: Колчан с бесконечными ядовитыми стрелами
+        Tooltip: ""
+    }
+
+    BrittleBone: {
+        DisplayName: Хрупкая кость
+        Tooltip: ""
+    }
+
+    ChlorophytePouch: {
+        DisplayName: Подсумок с бесконечными хлорофитовыми пулями
+        Tooltip: "{$ItemTooltip.ChlorophyteBullet}"
+    }
+
+    CrystalPouch: {
+        DisplayName: Подсумок с бесконечными кристальными пулями
+        Tooltip: "{$ItemTooltip.CrystalBullet}"
+    }
+
+    CursedPouch: {
+        DisplayName: Подсумок с бесконечными проклятыми пулями
+        Tooltip: ""
+    }
+
+    ExplosivePouch: {
+        DisplayName: Подсумок с бесконечными взрывными пулями
+        Tooltip: "{$ItemTooltip.ExplodingBullet}"
+    }
+
+    GoldenPouch: {
+        DisplayName: Подсумок с бесконечными золотыми пулями
+        Tooltip: "{$ItemTooltip.GoldenBullet}"
+    }
+
+    IchorPouch: {
+        DisplayName: Подсумок с бесконечными ихорными пулями
+        Tooltip: "{$ItemTooltip.IchorBullet}"
+    }
+
+    LuminitePouch: {
+        DisplayName: Подсумок с бесконечными люминитовыми пулями
+        Tooltip: "{$ItemTooltip.MoonlordBullet}"
+    }
+
+    MeteorPouch: {
+        DisplayName: Подсумок с бесконечными метеоритными пулями
+        Tooltip: ""
+    }
+
+    NanoPouch: {
+        DisplayName: Подсумок с бесконечными нанопулями
+        Tooltip: "{$ItemTooltip.NanoBullet}"
+    }
+
+    PartyPouch: {
+        DisplayName: Подсумок с бесконечными праздничными пулями
+        Tooltip: "{$ItemTooltip.PartyBullet}"
+    }
+
+    SilverPouch: {
+        DisplayName: Подсумок с бесконечными серебряными пулями
+        Tooltip: ""
+    }
+
+    TungstenPouch: {
+        DisplayName: Подсумок с бесконечными вольфрамовыми пулями
+        Tooltip: ""
+    }
+
+    VelocityPouch: {
+        DisplayName: Подсумок с бесконечными высокоскоростными патронами
+        Tooltip: ""
+    }
+
+    VenomPouch: {
+        DisplayName: Подсумок с бесконечными ядовитыми пулями
+        Tooltip: "{$ItemTooltip.VenomBullet}"
+    }
+
+    CopperCoinBag: {
+        DisplayName: Подсумок с бесконечными медными монетами
+        Tooltip: ""
+    }
+
+    GoldCoinBag: {
+        DisplayName: Подсумок с бесконечными золотыми монетами
+        Tooltip: ""
+    }
+
+    PlatinumCoinBag: {
+        DisplayName: Подсумок с бесконечными платиновыми монетами
+        Tooltip: ""
+    }
+
+    SilverCoinBag: {
+        DisplayName: Подсумок с бесконечными серебряными монетами
+        Tooltip: ""
+    }
+
+    CrystalDartBox: {
+        DisplayName: Коробка с бесконечными кристальными дротиками
+        Tooltip: ""
+    }
+
+    CursedDartBox: {
+        DisplayName: Коробка с бесконечными проклятыми дротиками
+        Tooltip: ""
+    }
+
+    IchorDartBox: {
+        DisplayName: Коробка с бесконечными ихорными дротиками
+        Tooltip: ""
+    }
+
+    PoisonDartBox: {
+        DisplayName: Коробка с бесконечными отравленными дротиками
+        Tooltip: ""
+    }
+
+    GelPack: {
+        DisplayName: Упаковка с бесконечным гелем
+        Tooltip: ""
+    }
+
+    ClusterRocket1Bag: {
+        DisplayName: Сумка с бесконечными кластерными ракетами I
+        Tooltip: ""
+    }
+
+    ClusterRocket2Bag: {
+        DisplayName: Сумка с бесконечными кластерными ракетами II
+        Tooltip: ""
+    }
+
+    DryRocketBag: {
+        DisplayName: Сумка с бесконечными высушивающими ракетами
+        Tooltip: ""
+    }
+
+    HoneyRocketBag: {
+        DisplayName: Сумка с бесконечными медовыми ракетами
+        Tooltip: ""
+    }
+
+    LavaRocketBag: {
+        DisplayName: Сумка с бесконечными лавовыми ракетами
+        Tooltip: ""
+    }
+
+    MiniNuke1Bag: {
+        DisplayName: Сумка с бесконечными мини-ядерными зарядами I
+        Tooltip: ""
+    }
+
+    MiniNuke2Bag: {
+        DisplayName: Сумка с бесконечными мини-ядерными зарядами II
+        Tooltip: ""
+    }
+
+    Rocket1Bag: {
+        DisplayName: Сумка с бесконечными ракетами I
+        Tooltip: ""
+    }
+
+    Rocket2Bag: {
+        DisplayName: Сумка с бесконечными ракетами II
+        Tooltip: ""
+    }
+
+    Rocket3Bag: {
+        DisplayName: Сумка с бесконечными ракетами III
+        Tooltip: ""
+    }
+
+    Rocket4Bag: {
+        DisplayName: Сумка с бесконечными ракетами IV
+        Tooltip: ""
+    }
+
+    WetRocketBag: {
+        DisplayName: Сумка с бесконечными водными ракетами
+        Tooltip: ""
+    }
+
+    StarPouch: {
+        DisplayName: Подсумок с бесконечными упавшими звёздами
+        Tooltip: ""
+    }
+
+    AltarExterminator: {
+        DisplayName: Искоренитель алтарей
+        Tooltip: Уничтожает все естественные демонические и багряные алтари
+    }
+
+    AutoHouse: {
+        DisplayName: Автодом
+        Tooltip: Размещает дом, подходящий жителям
+    }
+
+    BoomShuriken: {
+        DisplayName: Взрывной сюрикен
+        Tooltip:
+            '''
+            Взрывчатка быстрого действия
+            Использует мощность вашей кирки
+            'Кратчайший путь к центру планеты лежит через взрывчатку!'
+            '''
+    }
+
+    CityBuster: {
+        DisplayName: Крушитель городов
+        Tooltip:
+            '''
+            Разрушает большую площадь
+            Не разрушает фоновые стены
+            Используйте на ваш страх и риск
+            '''
+    }
+
+    DoubleObsidianInstabridge: {
+        DisplayName: Двойной обсидиановый автомост
+        Tooltip:
+            '''
+            Создаёт 2 обсидиановых платформы длинной во весь мир
+            Кроме того, очищает пространство между и над ними
+            Нижний мост создаётся рядом с курсором
+            Не стоит использовать рядом с важными постройками
+            '''
+    }
+
+    GraveBuster: {
+        DisplayName: Крушитель могил
+        Tooltip: Уничтожает надгробия в большой области
+    }
+
+    HalfInstavator: {
+        DisplayName: Половинчатый автолифт
+        Tooltip:
+            '''
+            Бросает бомбу, которая создаёт половину «лифта» в преисподнюю
+            Не копает ниже определённой глубины 
+            Не стоит использовать, если внизу есть важные постройки
+            '''
+    }
+
+    InstaBridge: {
+        DisplayName: Автомост
+        Tooltip:
+            '''
+            Создаёт платформу длиной во весь мир
+            Кроме того, очищает пространство над ней
+            Мост создаётся рядом с курсором
+            Не стоит использовать рядом с важными постройками
+            '''
+    }
+
+    InstaTrack: {
+        DisplayName: Авторельсы
+        Tooltip:
+            '''
+            Создаёт рельсовую дорогу длиной во весь мир
+            Кроме того, очищает пространство над ней
+            Дорога создаётся рядом с курсором
+            Не стоит использовать рядом с важными постройками
+            '''
+    }
+
+    Instavator: {
+        DisplayName: Автолифт
+        Tooltip:
+            '''
+            Бросает бомбу, которая создаёт «лифт» в преисподнюю
+            Не стоит использовать, если внизу есть важные постройки
+            '''
+    }
+
+    LihzahrdInstactuationBomb: {
+        DisplayName: Бомба автоактивации яхщеров
+        Tooltip:
+            '''
+            Очищает пространство вокруг алтаря яхщеров, если использовать, находясь перед ним
+            Активирует яхщеровые кирпичи и уничтожает остальные блоки
+            Работает только в Храме джунглей и только после убийства Плантеры
+            '''
+    }
+
+    MiniInstaBridge: {
+        DisplayName: Мини-автомост
+        Tooltip:
+            '''
+            Создаёт длинную платформу рядом с курсором
+            Не ломает блоки
+            '''
+    }
+
+    ObsidianInstaBridge: {
+        DisplayName: Обсидиановый автомост
+        Tooltip:
+            '''
+            Создаёт обсидиановую платформу длиной во весь мир
+            Кроме того, очищает пространство над ней
+            Мост создаётся рядом с курсором
+            Не стоит использовать рядом с важными постройками
+            '''
+    }
+
+    OmniBridgifier: {
+        DisplayName: Универсальный мостострой
+        Tooltip:
+            '''
+            Можно использовать бесконечно
+            Улучшает платформу, на которой вы стоите, для использования универсальной станции
+            НЕ строит платформу!
+            '''
+    }
+
+    BattleCry: {
+        DisplayName: Боевой клич
+        Tooltip:
+            '''
+            Нажмите <left>, чтобы увеличить скорость появления врагов в 10 раз
+            Нажмите <right>, чтобы снизить скорость появления врагов в 10 раз
+            '''
+    }
+
+    DeathFruit: {
+        DisplayName: Фрукт смерти
+        Tooltip:
+            '''
+            Навсегда снижает максимальный запас здоровья на 20
+            Эффект нельзя обратить для персонажей использовавших модовые предметы, увеличивающие здоровье
+            '''
+    }
+
+    InstantResearch: {
+        DisplayName: Мгновенный исследователь
+        Tooltip:
+            '''
+            ПРЕДМЕТ ОТЛАДКИ
+            Исследует всё
+            '''
+    }
+
+    MapViewer: {
+        DisplayName: Карта древнего мастера из рода забытого короля
+        Tooltip: Открывает карту
+    }
+
+    ModeToggle: {
+        DisplayName: Мировой знак
+        Tooltip: Переключает режимы сложности
+    }
+
+    PortableSundial: {
+        DisplayName: Карманные солнечные часы
+        Tooltip:
+            '''
+            Нажмите <left>, чтобы мгновенно сменить время
+            Время сменяется между рассветом, полднем, вечером и полночью
+            Нажатие <right> активирует эффект зачарованных солнечных часов
+            Смена времени на рассвет обновляет магазин странствующего торговца
+            '''
+    }
+
+    PylonCleaner: {
+        DisplayName: Очиститель пилонов
+        Tooltip:
+            '''
+            Очищает область вокруг каждого пилона
+            Использует синий раствор на пилоне освящения и зелёный раствор на остальных
+            '''
+    }
+
+    SuperDummy: {
+        DisplayName: Сверхманекен
+        Tooltip:
+            '''
+            Создаёт сверхманекена в позиции курсора
+            Все миньоны и снаряды самонаводятся на него
+            При попадании также срабатывают эффекты
+            Нажмите <right>, чтобы убить всех сверхманекенов
+            Можно создать до 50 сверхманекенов за раз
+            '''
+    }
+
+    CorruptRenewal: {
+        DisplayName: Искажённый восстановитель
+        Tooltip: Распространяет искажение в большом радиусе
+    }
+
+    CorruptRenewalSupreme: {
+        DisplayName: Искажённый мегавосстановитель
+        Tooltip: Распространяет искажение по всему миру
+    }
+
+    CrimsonRenewal: {
+        DisplayName: Багряный восстановитель
+        Tooltip: Распространяет багрянец в большом радиусе
+    }
+
+    CrimsonRenewalSupreme: {
+        DisplayName: Багряный мегавосстановитель
+        Tooltip: Распространяет багрянец по всему миру
+    }
+
+    HallowRenewal: {
+        DisplayName: Освящённый восстановитель
+        Tooltip: Распространяет освящение в большом радиусе
+    }
+
+    HallowRenewalSupreme: {
+        DisplayName: Освящённый мегавосстановитель
+        Tooltip: Распространяет освящение по всему миру
+    }
+
+    MushroomRenewal: {
+        DisplayName: Грибной восстановитель
+        Tooltip: Распространяет грибные пустоши в большом радиусе
+    }
+
+    MushroomRenewalSupreme: {
+        DisplayName: Грибной мегавосстановитель
+        Tooltip: Распространяет грибные пустоши по всему миру
+    }
+
+    PurityRenewal: {
+        DisplayName: Восстановитель чистоты
+        Tooltip: Очищает всё в большом радиусе
+    }
+
+    PurityRenewalSupreme: {
+        DisplayName: Мегавосстановитель чистоты
+        Tooltip: Очищает весь мир
+    }
+
+    Abeemination2: {
+        DisplayName: Мерзопчёланизация
+        Tooltip: Призывает Королеву пчёл в любом биоме
+    }
+
+    Anemometer: {
+        DisplayName: Анемометр
+        Tooltip: Начинает ветреный день
+    }
+
+    BatteredClub: {
+        DisplayName: Поношенная дубина
+        Tooltip: Призывает огра
+    }
+
+    BetsyEgg: {
+        DisplayName: Драконье яйцо
+        Tooltip: Призывает Бэтси
+    }
+
+    FestiveOrnament: {
+        DisplayName: Праздничное украшение
+        Tooltip:
+            '''
+            Призывает вечнокричащую ель
+            Можно использовать только ночью
+            '''
+    }
+
+    ForbiddenScarab: {
+        DisplayName: Запретный скарабей
+        Tooltip: Начинает песчаную бурю
+    }
+
+    ForbiddenTome: {
+        DisplayName: Запретный том
+        Tooltip: Призывает тёмного мага
+    }
+
+    HeadofMan: {
+        DisplayName: Голова человека
+        Tooltip:
+            '''
+            Призывает всадника без головы
+            Можно использовать только ночью
+            '''
+    }
+
+    IceKingsRemains: {
+        DisplayName: Останки ледяного короля
+        Tooltip:
+            '''
+            Призывает ледяную королеву
+            Можно использовать только ночью
+            '''
+    }
+
+    MartianMemoryStick: {
+        DisplayName: Марсианская карта памяти
+        Tooltip: Призывает марсианскую тарелку
+    }
+
+    MatsuriLantern: {
+        DisplayName: Фонарь мацури
+        Tooltip: Превращает каждую ночь в ночь фонарей, если это возможно
+    }
+
+    NaughtyList: {
+        DisplayName: Список непослушных
+        Tooltip:
+            '''
+            Призывает Санта-NK1
+            Можно использовать только ночью
+            '''
+    }
+
+    PartyCone: {
+        DisplayName: Праздничный колпак
+        Tooltip:
+            '''
+            Начинает вечеринку!
+            Для использования требуется минимум 5 жителей
+            '''
+    }
+
+    PillarSummon: {
+        DisplayName: Портал внешних сил
+        Tooltip: Призывает неземные башни
+    }
+
+    RunawayProbe: {
+        DisplayName: Убегающий зонд
+        Tooltip: Вызывает событие «Марсианское безумие»
+    }
+
+    SlimyBarometer: {
+        DisplayName: Слизистый барометр
+        Tooltip: Вызывает слизнепад
+    }
+
+    SpentLantern: {
+        DisplayName: Изношенный фонарь
+        Tooltip: Деактивирует эффект фонаря мацури
+    }
+
+    SpookyBranch: {
+        DisplayName: Жуткая ветвь
+        Tooltip:
+            '''
+            Призывает плакучего древня
+            Можно использовать только ночью
+            '''
+    }
+
+    SuspiciousLookingScythe: {
+        DisplayName: Подозрительно выглядящая коса
+        Tooltip:
+            '''
+            Призывает тыквенного короля
+            Можно использовать только ночью
+            '''
+    }
+
+    WeatherBalloon: {
+        DisplayName: Метеозонд
+        Tooltip: Начинает дождь
+    }
+
+    CelestialSigil2: {
+        DisplayName: Печать неземности
+        Tooltip: Моментально призывает Лунного лорда
+    }
+
+    DeerThing2: {
+        DisplayName: Странность оленя
+        Tooltip: Призывает Циклопа-оленя в любом биоме
+    }
+
+    AmalgamatedSkull: {
+        DisplayName: Сросшийся череп
+        Tooltip:
+            '''
+            Призывает скелетов-стрелков
+            Можно использовать только ночью или под землёй
+            '''
+    }
+
+    AmalgamatedSpirit: {
+        DisplayName: Сросшийся дух
+        Tooltip:
+            '''
+            Призывает скелетов-магов
+            Можно использовать только ночью или под землёй
+            '''
+    }
+
+    AthenianIdol: {
+        DisplayName: Афинский идол
+        Tooltip:
+            '''
+            Призывает медузу
+            Можно использовать только ночью или под землёй
+            '''
+    }
+
+    AttractiveOre: {
+        DisplayName: Привлекательная руда
+        Tooltip:
+            '''
+            Призывает нежить-шахтёра
+            Можно использовать только ночью или под землёй
+            '''
+    }
+
+    BloodSushiPlatter: {
+        DisplayName: Поднос с кровавой суши
+        Tooltip:
+            '''
+            Призывает Дреднаутилуса
+            Можно использовать только во время кровавой луны
+            '''
+    }
+
+    BloodUrchin: {
+        DisplayName: Кровавый ёж
+        Tooltip:
+            '''
+            Призывает кровавого угря
+            Можно использовать только во время кровавой луны
+            '''
+    }
+
+    CloudSnack: {
+        DisplayName: Облачная закуска
+        Tooltip: Призывает виверну
+    }
+
+    ClownLicense: {
+        DisplayName: Удостоверение клоуна
+        Tooltip:
+            '''
+            Призывает клоуна
+            Можно использовать только ночью или под землёй
+            '''
+    }
+
+    CoreoftheFrostCore: {
+        DisplayName: Ядро морозного ядра
+        Tooltip: Призывает ледяного голема
+    }
+
+    CorruptChest: {
+        DisplayName: Искажённый сундук
+        Tooltip: Призывает искажённого мимика
+    }
+
+    CrimsonChest: {
+        DisplayName: Багряный сундук
+        Tooltip: Призывает багряного мимика
+    }
+
+    DemonicPlushie: {
+        DisplayName: Демоническая плюшевая игрушка
+        Tooltip:
+            '''
+            Призывает красного дьявола
+            Можно использовать только в преисподней
+            '''
+    }
+
+    DilutedRainbowMatter: {
+        DisplayName: Разбавленная радужная материя
+        Tooltip: Призывает радужного слизня
+    }
+
+    Eggplant: {
+        DisplayName: Баклажан
+        Tooltip:
+            '''
+            Призывает доктора Бонса
+            Можно использовать только ночью или под землёй
+            '''
+    }
+
+    ForbiddenForbiddenFragment: {
+        DisplayName: Запрещённый запретный фрагмент
+        Tooltip: Призывает песчаного элементаля
+    }
+
+    GnomeHat: {
+        DisplayName: Гномский колпак
+        Tooltip: Призывает гнома
+    }
+
+    GoblinScrap: {
+        DisplayName: Гоблинский мусор
+        Tooltip: Призывает гоблина-разведчика
+    }
+
+    GoldenSlimeCrown: {
+        DisplayName: Корона золотого слизня
+        Tooltip: Призывает золотого слизня
+    }
+
+    GrandCross: {
+        DisplayName: Большой крест
+        Tooltip:
+            '''
+            Призывает паладина
+            Можно использовать только ночью или под землёй
+            '''
+    }
+
+    HallowChest: {
+        DisplayName: Освящённый сундук
+        Tooltip: Призывает освящённого мимика
+    }
+
+    HeartChocolate: {
+        DisplayName: Шоколадное сердце
+        Tooltip:
+            '''
+            Призывает нимфу
+            Можно использовать только ночью или под землёй
+            '''
+    }
+
+    HemoclawCrab: {
+        DisplayName: Краб-гемоклешень
+        Tooltip:
+            '''
+            Призывает акулу-гемогоблина
+            Можно использовать только во время кровавой луны
+            '''
+    }
+
+    HolyGrail: {
+        DisplayName: Святой Грааль
+        Tooltip:
+            '''
+            Призывает Тима
+            Можно использовать только ночью или под землёй
+            '''
+    }
+
+    JungleChest: {
+        DisplayName: Сундук джунглей
+        Tooltip: Призывает мимика джунглей
+    }
+
+    LeesHeadband: {
+        DisplayName: Повязка Ли
+        Tooltip:
+            '''
+            Призывает Костюса Ли
+            Можно использовать только ночью или под землёй
+            '''
+    }
+
+    MothLamp: {
+        DisplayName: Мотыльковая лампа
+        Tooltip: Призывает мотылька
+    }
+
+    MothronEgg: {
+        DisplayName: Яйцо Мотрон
+        Tooltip:
+            '''
+            Призывает Мотрон
+            Можно использовать только во время солнечного затмения
+            '''
+    }
+
+    Pincushion: {
+        DisplayName: Игольница
+        Tooltip:
+            '''
+            Призывает Гвоздеголового
+            Можно использовать только во время солнечного затмения
+            '''
+    }
+
+    PinkSlimeCrown: {
+        DisplayName: Корона розового слизня
+        Tooltip: Призывает Пинки
+    }
+
+    PirateFlag: {
+        DisplayName: Пиратский флаг
+        Tooltip: Призывает капитана пиратов
+    }
+
+    PlunderedBooty: {
+        DisplayName: Награбленная добыча
+        Tooltip: Призывает Летучий голландец
+    }
+
+    RuneOrb: {
+        DisplayName: Руническая сфера
+        Tooltip:
+            '''
+            Призывает руноманта
+            Можно использовать только ночью или под землёй
+            '''
+    }
+
+    ShadowflameIcon: {
+        DisplayName: Знак теневого пламени
+        Tooltip:
+            '''
+            Призывает гоблина-призывателя
+            Можно использовать только во время события «Армия гоблинов»
+            '''
+    }
+
+    SlimyLockBox: {
+        DisplayName: Слизистый ларец
+        Tooltip: Призывает слизня Темницы
+    }
+
+    SuspiciousLookingChest: {
+        DisplayName: Подозрительно выглядящий сундук
+        Tooltip:
+            '''
+            Призывает мимика
+            Призывает ледяного мимика при использовании в снегах
+            '''
+    }
+
+    SuspiciousLookingLure: {
+        DisplayName: Подозрительно выглядящий крючок
+        Tooltip:
+            '''
+            Призывает блуждающего рыбоглаза и зомби-тритона
+            Можно использовать только ночью
+            '''
+    }
+
+    WormSnack: {
+        DisplayName: Закуска для червей
+        Tooltip:
+            '''
+            Призывает гигантского червя в пре-хардмоде
+            Призывает землекопа в хардмоде
+            Можно использовать только под землёй
+            '''
+    }
+
+    GoreySpine: {
+        DisplayName: Красный окрашенный хребет
+        Tooltip: Призывает Мозг Ктулху в любом биоме
+    }
+
+    MechEye: {
+        DisplayName: Какой-то железный глаз
+        Tooltip: Призывает Близнецов
+    }
+
+    MechSkull: {
+        DisplayName: Какой-то железный череп
+        Tooltip: Призывает Скелетрона Прайма
+    }
+
+    MechWorm: {
+        DisplayName: Какой-то железный червь
+        Tooltip: Призывает Уничтожителя
+    }
+
+    AncientSeal: {
+        DisplayName: Древняя печать
+        Tooltip:
+            '''
+            Призывает ВСЕХ боссов, даже модовых
+            Можно использовать только ночью
+            'Используйте на ваш страх и риск'
+            '''
+    }
+
+    CultistSummon: {
+        DisplayName: Имущество фанатика
+        Tooltip:
+            '''
+            Призывает Культиста-лунатика
+            Не призывает неземные башни, если Культист-лунатик был уже побеждён
+            '''
+    }
+
+    DeathBringerFairy: {
+        DisplayName: Фея погибели
+        Tooltip:
+            '''
+            Призывает всех пре-хардмодных боссов
+            Можно использовать только ночью
+            Некоторые боссы будут появляться только в определённых биомах
+            '''
+    }
+
+    FleshyDoll: {
+        DisplayName: Кукла из плоти
+        Tooltip:
+            '''
+            Призывает Стену плоти
+            Убедитесь, что используете её в преисподней
+            '''
+    }
+
+    JellyCrystal: {
+        DisplayName: Желейный кристалл
+        Tooltip: Призывает Королеву слизней
+    }
+
+    MechanicalAmalgam: {
+        DisplayName: Механическая амальгама
+        Tooltip: Призывает всех 3 механических боссов
+    }
+
+    MutantVoodoo: {
+        DisplayName: Кукла вуду мутанта
+        Tooltip: Призывает ВСЕХ боссов
+    }
+
+    PlanterasFruit: {
+        DisplayName: Фрукт Плантеры
+        Tooltip: Призывает Плантеру
+    }
+
+    PrismaticPrimrose: {
+        DisplayName: Призматический первоцвет
+        Tooltip: Призывает Императрицу света
+    }
+
+    SuspiciousSkull: {
+        DisplayName: Подозрительный череп
+        Tooltip:
+            '''
+            Призывает Скелетрона без убийства портного
+            Призывает стража Темницы, если использовать днём
+            '''
+    }
+
+    SlimyCrown: {
+        DisplayName: Липкая корона
+        Tooltip: Призывает Короля слизней
+    }
+
+    SuspiciousEye: {
+        DisplayName: Глаз, который можно рассматривать как подозрительный
+        Tooltip: Призывает Глаз Ктулху
+    }
+
+    EnergizerBee: {
+        DisplayName: Жужжащий аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadBee.DisplayName}»
+            'На вкус пахнет как мёд'
+            '''
+    }
+
+    EnergizerBetsy: {
+        DisplayName: Драконий аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadBetsy.DisplayName}»
+            'Кажется, словно прошло три тысячелетия'
+            '''
+    }
+
+    EnergizerBrain: {
+        DisplayName: Мозговитый аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadBrain.DisplayName}»
+            'Вы всё ещё ощущаете себя тупым'
+            '''
+    }
+
+    EnergizerCultist: {
+        DisplayName: Аккумулятор безумия
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadCultist.DisplayName}»
+            'Скорее всего вы сошли с ума'
+            '''
+    }
+
+    EnergizerDarkMage: {
+        DisplayName: Загадочный аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadDarkMage.DisplayName}»
+            'Кажется, словно прошло тысячелетие'
+            '''
+    }
+
+    EnergizerDeer: {
+        DisplayName: Олений аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadDeer.DisplayName}»
+            'Вызывает голодание'
+            '''
+    }
+
+    EnergizerDestroy: {
+        DisplayName: Аккумулятор уничтожения
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadDestroyer.DisplayName}»
+            'Теперь вам хочется разбить детей'
+            '''
+    }
+
+    EnergizerDG: {
+        DisplayName: Сверхкостяной аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadSkele.DisplayName}»
+            'Напоминает злую корову'
+            '''
+    }
+
+    EnergizerEmpress: {
+        DisplayName: Сказочный аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadEmpress.DisplayName}»
+            'Надевайте ночки при просмотре'
+            '''
+    }
+
+    EnergizerEye: {
+        DisplayName: Оптический аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadEye.DisplayName}»
+            'Кажется, она наблюдает за вами'
+            '''
+    }
+
+    EnergizerFish: {
+        DisplayName: Рыбный аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadFish.DisplayName}»
+            'Вы удовлетворены'
+            '''
+    }
+
+    EnergizerGolem: {
+        DisplayName: Яхщеровый аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadGolem.DisplayName}»
+            'Вот бы писалось «ящер»'
+            '''
+    }
+
+    EnergizerMoon: {
+        DisplayName: Лунный аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadMoon.DisplayName}»
+            'М-м-м, сыр...'
+            '''
+    }
+
+    EnergizerPlant: {
+        DisplayName: Лиственный аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadPlant.DisplayName}»
+            'Быть листиком весело'
+            '''
+    }
+
+    EnergizerPrime: {
+        DisplayName: Прайм-аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadPrime.DisplayName}»
+            'Ты - новый ты'
+            '''
+    }
+
+    EnergizerQueenSlime: {
+        DisplayName: Кристаллиновый аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadQueenSlime.DisplayName}»
+            'Очень липкая на ощупь'
+            '''
+    }
+
+    EnergizerSkele: {
+        DisplayName: Костяной аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadSkele.DisplayName}»
+            'Напоминает корову'
+            '''
+    }
+
+    EnergizerSlime: {
+        DisplayName: Слизистый аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadSlimeCrown.DisplayName}»
+            'Липкая на ощупь'
+            '''
+    }
+
+    EnergizerTwins: {
+        DisplayName: Аккумулятор родни
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadTwins.DisplayName}»
+            'Хотелось бы, чтобы у вас их было больше'
+            '''
+    }
+
+    EnergizerWall: {
+        DisplayName: Настенный аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadWall.DisplayName}»
+            'Вы чувствуете клаустрофобию'
+            '''
+    }
+
+    EnergizerWorm: {
+        DisplayName: Червивый аккумулятор
+        Tooltip:
+            '''
+            Образуется после использования 10 «{$Items.OverloadWorm.DisplayName}»
+            'Мягкая на ощупь'
+            '''
+    }
+
+    OverloadBee: {
+        DisplayName: Переполненный кокон
+        Tooltip:
+            '''
+            Призывает несколько Королев пчёл
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadBetsy: {
+        DisplayName: Лоток драконьих яиц
+        Tooltip:
+            '''
+            Призывает несколько Бэтси
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadBrain: {
+        DisplayName: Мозговой штурм
+        Tooltip:
+            '''
+            Призывает несколько Мозгов Ктулху
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadCultist: {
+        DisplayName: Безумие фанатика
+        Tooltip:
+            '''
+            Призывает несколько Культистов-лунатиков
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadDarkMage: {
+        DisplayName: Действительно запретный том
+        Tooltip:
+            '''
+            Призывает несколько тёмных магов
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadDeer: {
+        DisplayName: Оленье слияние
+        Tooltip:
+            '''
+            Призывает несколько Циклопов-оленей
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadDestroyer: {
+        DisplayName: Сейсмический активатор
+        Tooltip:
+            '''
+            Призывает несколько Уничтожителей
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadedSlimeRain: {
+        DisplayName: Слизистый буревестник
+        Tooltip:
+            '''
+            Вызывает перегруженный слизнепад
+            Используйте повторно, чтобы закончить событие
+            '''
+    }
+
+    OverloadEmpress: {
+        DisplayName: Банка со златоглазками
+        Tooltip:
+            '''
+            Призывает несколько Императриц света
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    Overloader: {
+        DisplayName: Перегрузчик
+        Tooltip:
+            '''
+            Используется для создания перегруженных предметов призыва
+            При использовании весь стак перегруженных предметов призыва будет потрачена
+            Чем больше использовано, тем больше боссов призовётся
+            Трофей выпадает за каждые 10 убийств
+            Аккумулятор выпадает за каждые 100 убийств
+            '''
+    }
+
+    OverloadEye: {
+        DisplayName: Глазослияние
+        Tooltip:
+            '''
+            Призывает несколько Глаз Ктулху
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadFish: {
+        DisplayName: Клубок трюфельных червяков
+        Tooltip:
+            '''
+            Призывает несколько Герцогов Рыбронов
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadFrostMoon: {
+        DisplayName: Мешок подарков для непослушных
+        Tooltip:
+            '''
+            Вызывает перегруженную морозную луну
+            Используйте повторно, чтобы закончить событие
+            '''
+    }
+
+    OverloadGoblins: {
+        DisplayName: Военное знамя гоблинов
+        Tooltip:
+            '''
+            Вызывает перегруженное событие «Армия гоблинов»
+            Используйте повторно, чтобы закончить событие
+            '''
+    }
+
+    OverloadGolem: {
+        DisplayName: Рунический элемент питания
+        Tooltip:
+            '''
+            Призывает несколько Големов
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadMartians: {
+        DisplayName: Марсианский спутник связи
+        Tooltip:
+            '''
+            Вызывает перегруженное событие «Марсианское безумие»
+            Используйте повторно, чтобы закончить событие
+            '''
+    }
+
+    OverloadMoon: {
+        DisplayName: Руническая скрижаль
+        Tooltip:
+            '''
+            Призывает несколько Лунных лордов
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadPirates: {
+        DisplayName: Пиратская награда
+        Tooltip:
+            '''
+            Вызывает перегруженное событие «Пиратское нашествие»
+            Используйте повторно, чтобы закончить событие
+            '''
+    }
+
+    OverloadPlant: {
+        DisplayName: Сердце джунглей
+        Tooltip:
+            '''
+            Призывает несколько Плантер
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadPrime: {
+        DisplayName: Чип управления Праймом
+        Tooltip:
+            '''
+            Призывает несколько Скелетронов Праймов
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadPumpkinMoon: {
+        DisplayName: Перегруженный медальон тыквенной луны
+        Tooltip:
+            '''
+            Призывает перегруженную тыквенную луну
+            Используйте повторно, чтобы закончить событие
+            '''
+    }
+
+    OverloadQueenSlime: {
+        DisplayName: Роящийся кристалл
+        Tooltip:
+            '''
+            Призывает несколько Королев слизней
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadSkele: {
+        DisplayName: Ожерелья с цепочкой из черепов
+        Tooltip:
+            '''
+            Призывает несколько Скелетронов ночью
+            Призывает несколько стражей Темницы, если использовать днём
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadSlimeCrown: {
+        DisplayName: Сверхкорона
+        Tooltip:
+            '''
+            Призывает несколько Королей слизней
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadTwins: {
+        DisplayName: Омнифокальные линзы
+        Tooltip:
+            '''
+            Призывает несколько пар Близнецов
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadWall: {
+        DisplayName: Связка кукол
+        Tooltip:
+            '''
+            Призывает несколько Стен плоти
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    OverloadWorm: {
+        DisplayName: Червивая курица
+        Tooltip:
+            '''
+            Призывает несколько Пожирателей миров
+            Выпадают только мешки с сокровищами
+            '''
+    }
+
+    TruffleWorm2: {
+        DisplayName: Червивый трюфель
+        Tooltip: Призывает Герцога Рыброна без рыбалки
+    }
+
+    LihzahrdPowerCell2: {
+        DisplayName: Яхщеровый аккумулятор
+        Tooltip: Призывает Голема без алтаря
+    }
+
+    WormyFood: {
+        DisplayName: Червивый корм
+        Tooltip: Призывает Пожирателя миров в любом биоме
+    }
+
+    CrimsonAltar: {
+        DisplayName: Багряный алтарь
+        Tooltip: ""
+    }
+
+    CrucibleCosmos: {
+        DisplayName: Горнило вселенной
+        Tooltip:
+            '''
+            Работает как все станции изготовления одновременно
+            'В нём скрывается великолепная сила'
+            '''
+    }
+
+    DemonAltar: {
+        DisplayName: Демонический алтарь
+        Tooltip: ""
+    }
+
+    EchPainting: {
+        DisplayName: Картина «Ъ»
+        Tooltip: "'Эь'"
+    }
+
+    ElementalAssembler: {
+        DisplayName: Элементальный сборщик
+        Tooltip: Работает как несколько основных станций изготовления одновременно
+    }
+
+    GoldenDippingVat: {
+        DisplayName: Чан с золотой краской
+        Tooltip: Используется для создания золотых животных
+    }
+
+    MultitaskCenter: {
+        DisplayName: Мультифункциональный центр
+        Tooltip: Работает как несколько основных станций изготовления одновременно
+    }
+
+    Omnistation: {
+        DisplayName: Универсальная станция
+        Tooltip:
+            '''
+            Можно использовать бесконечно
+            Эффекты всех ванильных станций
+            Даёт бафф «{$BuffName.Honey}» при касании
+            Находясь поблизости значительно увеличивает удачу
+            '''
+    }
+
+    Omnistation2: {
+        DisplayName: Универсальная станция
+        Tooltip:
+            '''
+            Можно использовать бесконечно
+            Эффекты всех ванильных станций
+            Даёт бафф «{$BuffName.Honey}» при касании
+            Находясь поблизости значительно увеличивает удачу
+            '''
+    }
+
+    RegalStatue: {
+        DisplayName: Королевская статуя
+        Tooltip: Жители возрождаются очень быстро, если размещена поблизости
+    }
+
+    Semistation: {
+        DisplayName: Полустанция
+        Tooltip:
+            '''
+            Можно использовать бесконечно
+            Эффекты некоторых ванильных баффающих станций
+            '''
+    }
+
+    SiblingPylon: {
+        DisplayName: Пилон родни
+        Tooltip:
+            '''
+            Телепортирует к другому пилону, когда Мутант, Мерзостть и Девиантт находятся поблизости
+            Можно установить только один тип
+            '''
+    }
+
+    UnsafeBlueBrickWall: {
+        DisplayName: Опасная синяя кирпичная стена
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    UnsafeBlueSlabWall: {
+        DisplayName: Опасная стена из синей плитки
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    UnsafeBlueTileWall: {
+        DisplayName: Опасная синяя облицовка
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    UnsafeGraniteWall: {
+        DisplayName: Опасная гранитная стена
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    UnsafeGreenBrickWall: {
+        DisplayName: Опасная зелёная кирпичная стена
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    UnsafeGreenSlabWall: {
+        DisplayName: Опасная стена из зелёной плитки
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    UnsafeGreenTileWall: {
+        DisplayName: Опасная зелёная облицовка
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    UnsafeLihzahrdBrickWall: {
+        DisplayName: Опасная яхщеровая кирпичная стена
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    UnsafeMarbleWall: {
+        DisplayName: Опасная мраморная стена
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    UnsafePinkBrickWall: {
+        DisplayName: Опасная розовая кирпичная стена
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    UnsafePinkSlabWall: {
+        DisplayName: Опасная стена из розовой плитки
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    UnsafePinkTileWall: {
+        DisplayName: Опасная розовая облицовка
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    UnsafeSpiderWall: {
+        DisplayName: Опасная стена паучьего гнезда
+        Tooltip: Позволяет появляться особым для области врагам
+    }
+
+    WalkingRick: {
+        DisplayName: Картина «Идущий Рик»
+        Tooltip: "'Махасиро Сарукаи'"
+    }
+
+    WiresPainting: {
+        DisplayName: Картина «Провода»
+        Tooltip: "'Взгляд изнутри'"
+    }
+
+    WoodenToken: {
+        DisplayName: Древесный знак
+        Tooltip: "'Символ истинного любителя деревьев'"
+    }
+
+    AbominationnBody: {
+        DisplayName: Тело Мерзостти
+        Tooltip: ""
+    }
+
+    AbominationnMask: {
+        DisplayName: Маска Мерзостти
+        Tooltip: ""
+    }
+
+    AbominationnPants: {
+        DisplayName: Штаны Мерзостти
+        Tooltip: ""
+    }
+
+    AbominationnScythe: {
+        DisplayName: Коса Мерзостти
+        Tooltip: ""
+    }
+
+    DevianttBody: {
+        DisplayName: Тело Девиантт
+        Tooltip: ""
+    }
+
+    DevianttMask: {
+        DisplayName: Маска Девиантт
+        Tooltip: ""
+    }
+
+    DevianttPants: {
+        DisplayName: Штаны Девиантт
+        Tooltip: ""
+    }
+
+    LumberHat: {
+        DisplayName: Шапка лесоруба
+        Tooltip: ""
+    }
+
+    LumberjackBody: {
+        DisplayName: Тело лесоруба
+        Tooltip: ""
+    }
+
+    LumberjackMask: {
+        DisplayName: Маска лесоруба
+        Tooltip: ""
+    }
+
+    LumberjackPants: {
+        DisplayName: Штаны лесоруба
+        Tooltip: ""
+    }
+
+    MutantBody: {
+        DisplayName: Тело Мутанта
+        Tooltip: ""
+    }
+
+    MutantMask: {
+        DisplayName: Маска Мутанта
+        Tooltip: ""
+    }
+
+    MutantPants: {
+        DisplayName: Штаны Мутанта
+        Tooltip: ""
+    }
+
+    LumberJaxe: {
+        DisplayName: Дровотопор
+        Tooltip:
+            '''
+            С убитых врагов может выпасть древесина
+            'Бывшее оружие настоящего героя, владеющего топором'
+            '''
+    }
+
+    Abominationn: {
+        DisplayName: Мерзостть
+        Tooltip: "'Я очень хочу быть боссом'"
+    }
+
+    Angler: {
+        DisplayName: "{$NPCName.Angler}"
+        Tooltip: "'Из тебя бы получился хороший прислужник!'"
+    }
+
+    ArmsDealer: {
+        DisplayName: "{$NPCName.ArmsDealer}"
+        Tooltip: "'Руки прочь от моей пушки, дружище!'"
+    }
+
+    Clothier: {
+        DisplayName: "{$NPCName.Clothier}"
+        Tooltip: "'Ещё раз спасибо, что освободил меня от проклятия'"
+    }
+
+    Cyborg: {
+        DisplayName: "{$NPCName.Cyborg}"
+        Tooltip: "'Эффективность моей экспедиции резко снизилась, когда снаряд попал мне в коленный привод'"
+    }
+
+    Demolitionist: {
+        DisplayName: "{$NPCName.Demolitionist}"
+        Tooltip: "'Хороший день, чтобы умереть'"
+    }
+
+    Deviantt: {
+        DisplayName: Девиантт
+        Tooltip: "'Почувствуй страдания... и, пока ты занят, купи ещё что-нибудь!'"
+    }
+
+    Dryad: {
+        DisplayName: "{$NPCName.Dryad}"
+        Tooltip: "'Будь осторожен, Террария нуждается в тебе!'"
+    }
+
+    DyeTrader: {
+        DisplayName: "{$NPCName.DyeTrader}"
+        Tooltip: "'Друг мой прелестный, что за обноски ты носишь'"
+    }
+
+    GoblinTinkerer: {
+        DisplayName: "{$NPCName.GoblinTinkerer}"
+        Tooltip: "'Ищешь эксперта по гаджетам? {$NPCName.GoblinTinkerer} в твоём распоряжении!'"
+    }
+
+    Golfer: {
+        DisplayName: "{$NPCName.Golfer}"
+        Tooltip: "'Ранняя птичка носок прочищает, а поздняя глаза продирает'"
+    }
+
+    Guide: {
+        DisplayName: "{$NPCName.Guide}"
+        Tooltip: "'Говорят, что есть человек, рассказывающий, как выжить на этой земле'"
+    }
+
+    LumberJack: {
+        DisplayName: Дровосек
+        Tooltip: "'Я ем опилки на завтрак... без молока'"
+    }
+
+    Mechanic: {
+        DisplayName: "{$NPCName.Mechanic}"
+        Tooltip: "'Всегда покупай проводов больше, чем надо!'"
+    }
+
+    Merchant: {
+        DisplayName: "{$NPCName.Merchant}"
+        Tooltip: "'«Золото», мне не послышалось?'"
+    }
+
+    Mutant: {
+        DisplayName: Мутант
+        Tooltip: "'Тебе повезло, что я на твоей стороне'"
+    }
+
+    Nurse: {
+        DisplayName: "{$NPCName.Nurse}"
+        Tooltip: "'Покажи где болит'"
+    }
+
+    Painter: {
+        DisplayName: "{$NPCName.Painter}"
+        Tooltip: "'Я отличаю бирюзовый от цвета морской волны, но не скажу тебе как'"
+    }
+
+    PartyGirl: {
+        DisplayName: "{$NPCName.PartyGirl}"
+        Tooltip: "'Нам надо поговорить. Речь о... о вечеринке'"
+    }
+
+    Pirate: {
+        DisplayName: "{$NPCName.Pirate}"
+        Tooltip: "'Держись подальше от моих сокровищ, сухопутная крыса!'"
+    }
+
+    SantaClaus: {
+        DisplayName: "{$NPCName.SantaClaus}"
+        Tooltip: "'Что? Думал, меня не существует?'"
+    }
+
+    SkeletonMerchant: {
+        DisplayName: "{$NPCName.SkeletonMerchant}"
+        Tooltip: "'Не поверишь, чем только не бросались в меня люди... Хочешь купить что-нибудь из этого?'"
+    }
+
+    Squirrel: {
+        DisplayName: Белка
+        Tooltip: *писк*
+    }
+
+    Steampunker: {
+        DisplayName: "{$NPCName.Steampunker}"
+        Tooltip: "'Покажи мне пару шестерёнок!'"
+    }
+
+    Stylist: {
+        DisplayName: "{$NPCName.Stylist}"
+        Tooltip: "'Не пробовал сегодня расчесаться?'"
+    }
+
+    Tavernkeep: {
+        DisplayName: "{$NPCName.DD2Bartender}"
+        Tooltip: "'И что я тут делаю...'"
+    }
+
+    TaxCollector: {
+        DisplayName: "{$NPCName.TaxCollector}"
+        Tooltip: "'Снова ты? Дай угадаю, хочешь ещё больше денег?!'"
+    }
+
+    TravellingMerchant: {
+        DisplayName: "{$NPCName.TravellingMerchant}"
+        Tooltip: "'Я продаю изделия из мест, которые могут даже не существовать!'"
+    }
+
+    Truffle: {
+        DisplayName: "{$NPCName.Truffle}"
+        Tooltip: "'Все в этом городе немного странные'"
+    }
+
+    WitchDoctor: {
+        DisplayName: "{$NPCName.WitchDoctor}"
+        Tooltip: "'Я тебе не доктор! Я знахарь'"
+    }
+
+    Wizard: {
+        DisplayName: "{$NPCName.Wizard}"
+        Tooltip: "'Хочешь, вытащу монетку из твоего уха? Нет? Ну, ладно'"
+    }
+
+    Zoologist: {
+        DisplayName: "{$NPCName.BestiaryGirl}"
+        Tooltip: "'Мне нравятся животные, прям очень!'"
+    }
+
+    Princess: {
+        DisplayName: "{$NPCName.Princess}"
+        Tooltip: "'Розовый — лучший цвет, о котором кто-либо может попросить!'"
+    }
+
+    TownDog: {
+        DisplayName: "{$NPCName.TownDog}"
+        Tooltip: "'Гав!'"
+    }
+
+    TownCat: {
+        DisplayName: "{$NPCName.TownCat}"
+        Tooltip: "'Мяу!'"
+    }
+
+    TownBunny: {
+        DisplayName: "{$NPCName.TownBunny}"
+        Tooltip: "'*Звуки кролика*'"
+    }
+
+    SemiBridgifier: {
+        DisplayName: Полумостострой
+        Tooltip:
+            '''
+            Можно использовать бесконечно
+            Улучшает платформу, на которой вы стоите, для использования универсальной станции
+            НЕ строит платформу!
+            '''
+    }
+
+    PurityTotem: {
+        DisplayName: Тотем чистоты
+        Tooltip:
+            '''
+            Можно использовать бесконечно
+            Позволяет жителям обитать в биомах мирового зла
+            Предотвращает формирование блоков мирового зла в биомах мирового зла
+            Предотвращает формирование кладбищ из надгробий
+            '''
+    }
+}
+
+NPCs: {
+    Abominationn: {
+        DisplayName: Мерзостть
+
+        TownNPCMood: {
+            Content: Я доволен.
+            NoHome: Ты мне дом, я тебе меньшие цены.
+            FarFromHome: Я бы полетел обратно домой, но не хочется, чтобы это видели.
+            LoveSpace: Без толпы лишнего народа тут неплохо.
+            DislikeCrowded: Вокруг слишком много народа. Они постоянно тыкают мне в лицо.
+            HateCrowded: Хоть представляешь, насколько трудно держать косу и никого не порезать, когда вокруг столько народа?
+            LoveBiome: Мне очень нравится космос. Перед приземлением мы прибыли сюда.
+            LikeBiome: Мне нравится океан. Это дом прекрасного оппонента с крыльями моего брата.
+            DislikeBiome: Тут в Темнице слишком много слабых врагов.
+            LoveNPC: "{NPCName} мой брат... Я сражался с боссами куда больше него, но он силён."
+            LikeNPC: "{NPCName} моя сестра... Я справлялся с нашествиями куда больше неё, но она тоже ничего."
+            HateNPC: "{NPCName} убивает всё величие сражения. Не желаю видеть её вблизи себя."
+            LikeNPC_Princess: "{NPCName} ничего так."
+            Princess_LovesNPC: "{NPCName} рассказывает потрясающие истории о своих битвах!"
+        }
+        
+        Dialogues: {
+            1: Откуда я достал эту косу? Спроси потом.
+            2: Откуда я достал эту косу? Скоро поймёшь.
+            3: Я победил всё в округе... ничто не может меня убить.
+            4: К твоей руке когда-нибудь прилипало оружие? Это немного несподручно.
+            5: Что случилось с Ёрамуром? Я понятия не имею, о ком ты говоришь.
+            6: Хочется одеваться, как я? Ха! А хотя знаешь, да... ты можешь.
+            7: Когда-нибудь читал древние книги? Мне нравятся битвы из них.
+            8: Я поэт мирового класса! Когда-нибудь читал о неминуемости гибели?
+            9: Хочешь толпу из событий? Может, в следующем году.
+            10: Нравятся мои крылья? Спасибо. А вот предыдущему хозяину они не сильно нравились.
+            11: Героизму не место в этом мире, давай лучше сыграем в пинг-понг.
+            12: Почему ты на меня так смотришь? С твоим чувством стиля ты тоже не выиграешь никаких наград.
+            13: Нет, шляпу я не дам.
+            14: Почувствуй страдания... В смысле, эта фраза уже занята?
+            15: Я могу оценить твою попытку использовать мой гнев, но меня не разозлить.
+            16: Разве это преступление, когда все так делают?
+            17: Заставлять других страдать - это самое весёлое занятие тут.
+            18: Ирония - лучший вид юмора. Разве не иронично?
+            19: Мне нравится Кот... В смысле кто такой Кот?
+            20: Посмотри вики, если тебе что-то нужно. Кирб уже почти привёл её в порядок.
+            21: Я слышал легенды о Дайвере... Ладно, что ты там говорил про гигантских медуз?
+            22: Перегруженные вторжения?.. Ну да, это прикольно.
+            23: Знаешь, не хочу звучать, будто меня не удовлетворяет твоя компания, но ты не мог купить что-нибудь?
+            24: Я убил тысячи людей! А? Ты человек? На твоих руках так много крови...
+            #25: "Этот парень, {0} - мой брат... Я убил больше боссов, чем он."
+            #26: "Эта девчонка, {0} - моя сестра... Я победил больше вторжений, чем она."
+            27: Не мог бы ты попросить {0} перестать трогать мою руку-лазер? Заранее спасибо.
+            28: Не думаю, что сейчас происходит какое-то событие.
+            29: Действительно победил меня... неплохо. А теперь сделай это снова без получения урона. О, и только медным кинжалом.
+            30: Надеюсь, все эти надгробия, стоящие в округе, не твои.
+            31: Вжух, и событие кончилось.
+            32: Ах, твоя броня вызывает ностальгию... Нет, теперь она мне не подходит. И её аккумулятор слишком долго заряжается.
+        }
+    }
+
+    Deviantt: {
+        DisplayName: Девиантт
+
+        TownNPCMood: {
+            Content: Мне здесь хорошо!
+            NoHome: Есть свободный домишко? Пожалуйста? Ну, хоть комната какая-нибудь? Сойдёт даже тюремная камера!
+            FarFromHome: Мой дом только что был тут... если только ты меня не утащил куда-то?
+            LoveSpace: Мир и покой - вот наслаждение!
+            DislikeCrowded: Больше людей - веселее, и всё такое. Но по ощущениям тут уже слишком тесновато.
+            HateCrowded: Я даже ногу не могу вытянуть, чтобы не задеть кого-то...
+            LoveBiome: Звёзды над головой такие красивые! Я люблю смотреть, как они иногда пролетают мимо!
+            LikeBiome: Пха-ха-ха, нечто в джунглях вызывает у меня просто неконтролируемый смех!
+            DislikeBiome: Нельзя ли переселить меня куда-то где потеплее?
+            HateBiome: Хочу жить где угодно, лишь бы не здесь! Здесь ужасно! Я уже вся от пота промокла!
+            LoveNPC: "{NPCName} здесь! Это мой старший братишка! Ну разве он не крутейший?!"
+            LikeNPC: "{NPCName} мой-старший-но-не-самый-старший брат. Он довольно крут!"
+            DislikeNPC: Не выношу девушек наподобие {NPCName}. Она здесь словно для определённой аудитории.
+            HateNPC: "{NPCName} меня бесит. Между нами. Не думал выкинуть его туда, где нашёл?"
+            LikeNPC_Princess: "Наконец-то {NPCName} - девушка, которая меня понимает! Скоро посещу её ещё раз."
+            Princess_LovesNPC: "{NPCName} такая интересная, с ней можно говорить часами!"
+        }
+        
+        Dialogues: {
+            1: Эффекты кровавой луны? Я больше не человек, так что не-а!
+            2: А ты знал, что единственные настоящие жанры музыки - это дез-метал и арткор?
+            3: Напоминаю тебе, мне больше тысячи Фарго-лет! Не спрашивай, сколько длится Фарго-год.
+            4: Знаешь, если ты продолжишь покупать, я смогу позволить себе тело повыше!
+            5: Не видел Оливера?
+            6: Ты террариец? Если честно, я думала ты будешь немного... повыше.
+            7: Успокойся. Единственное, в отношении чего меня можно называть девиантом, так это в отношении моей человечности.
+            8: Рви и терзай, чтобы купить больше моих товаров, чтобы рвать и терзать ещё больше!
+            9: Что такое си-бу и-ну?
+            10: Секунду. Уверен, что это место - это не то, что зовётся 'тюрьмой'?
+            11: Девиантт пробудилась! Быстро отдай ей все свои деньги для победы!
+            12: Когда-нибудь я буду продавать предмет для призыва самой себя... Шучу.
+            13: Хмм, ясно-ясно! Тебя много убивали, но, как я поняла, недостаточно!
+            14: Откуда ещё одна буква 'т'? Лишь сильнейший из моих братьев способен убрать её!
+            15: Чем больше редких вещей ты убиваешь, тем больше штукенций я продаю. Довольно просто, правда?
+            16: Почувствуй страдания... и пока ты занят, купи ещё что-нибудь!
+            17: Этот мир выглядит немного хуже, чем тот, откуда мы прибыли. Пока что возьми это и поговори со мной, если тебе что-нибудь нужно.
+            18: Вау, ну и запашок. Когда в последний раз принимал душ, вонючка?
+            19: Ох, привет! Я это, определённо не воняю зельями вонючки сегодня! Да и не сегодня тоже!
+            20: Нет, я абсолютно точно не кидаю в тебя любовные зелья, пока ты не смотришь! Эм, ну я про... ай, да просто купи что-нибудь!
+            21: Кстати о душе. Если бы я засунула тебя в мясорубку, то всё, чтобы от тебя осталось - это два красителя... я бы точно разбогатела! Ну, не то, что бы я хотела, ну не тебя, ну, я про... забудь!
+            #22: В нашем прошлом тебе понадобились эоны, чтобы набрать силу. И раз уж мы пришли обратно, мы можем помочь тебе немного ускориться!
+            #23: Даже если бы все трое из нас объединили свои силы, мы не смогли бы достичь твоего уровня. Ты всё ещё смог бы победить нас!
+            #24: Мутант распустил свою силу по всему миру, чтобы ускорить твой прогресс. Удачи в получении её обратно, хех.
+            #25: Не волнуйся о наших настоящих именах. Их у нас попросту нет!
+            #26: Ничего страшного, если ты убьёшь Мерзостть. Он постоянно возвращается, верно? Однако Мутант может разозлиться, если ты сделаешь это снова.
+            #27: Мы призываем врагов и управляем событиями, потому что мы и есть они! Ну, типа. Долгая история.
+            #28: Стать больше? Я могла бы это сделать, но не хочу. Извиняй.
+            #29: Почему Мутант был в том огромном слизне? Это простейший способ усилить его! Жаль, что Мутант слишком ленив, чтобы проделать это с остальными боссами.
+            #30: Не волнуйся о конце времени. Он произойдёт только через десятки миллиардов лет! Или нет. Я не знаю, как работают все эти временные штучки.
+            #31: Ты не можешь сразиться с Лесорубом. Точка. Он уже отрубил все таймлайны, в которых ты это пробовал.
+            #32: Ктулху? Хастур? Я знаю только то, что узнал ты, так что в этом я тебе не помощник.
+            #33: Однажды я слышала, как Мутант упоминал какое-то котоподобное существо, которое вознеслось над богами. Оно не имеет причины и следствия. Это что-то наподобие закона физики.
+            34: "{0}! Я только что видела что-то грызунье! Этот дом точно не заражён хомяками? Точно-точно?"
+            35: Не мог бы ты попросить {0} надеть немного одежды?
+            36: Когда-нибудь я буду продавать предмет для призыва самой себя... Шучу, для этого есть {0}.
+            #37: "{0} тут! Это мой старший брат!"
+            #38: "{0} тут! Это мой старший-но-не-самый-старший брат!"
+            39: Что? Хочешь сразиться с {0}? ...даже я не стала бы пытаться.
+            #40: "Когда-нибудь думал кинуть {0} туда, откуда ты его достал?"
+            41: Что? Ты правда хочешь сразиться со мной? Не-е, я не самый лучший боец, знаешь ли.
+            42: Воу, ты совсем близок к концу. Уже подготовил все артефакты Душ? Стоп. Ты что, хочешь сразиться с моим старшим братом? Если бы у него была причина...
+            43: Готов сразиться с моим старшим братом? Вспомни все свои уроки. Сфокусируйся, следи за паттернами и не паникуй. Удачи!
+            44: Только один тип атак будет наносить урон башням. Кстати, слабость того лунного парня будет постоянно меняться.
+            45: Некоторые сильные враги, вроде того типа из Темницы, могут создавать свои арены. Ты не сможешь убежать, поэтому используй место, что у тебя есть, с умом.
+            46: Ты уже победил того рыбо-свино-дракона? Он уменьшает твоё максимальное здоровье с каждым ударом. Также он достаточно силён, чтобы сломать любую защиту за один удар. У тебя же нет укреплённой обшивки, способной это предотвратить, верно?
+            47: Храм? Доберись до алтаря, чтобы восстановить контроль над проводами! Голем обидится, если ты выйдешь из его Храма, так что лучше всего сражаться с ним там. Платформы там не работают, однако бомбы автоактивации яхщеров помогут расчистить место.
+            48: То растение-переросток наносит немного особого яда, который при определённой дозе введёт её в дикое безумие. Ещё у неё есть кольцо из кристальных листьев, но миньоны проходят сквозь него.
+            49: Молодец, что переиграл меня! Надеюсь, я не заставила тебя сильно попотеть. Продолжай в том же духе. Я хочу посмотреть, как далеко ты сможешь зайти!
+            50: Тот металлический червь получил несколько улучшений, но его зонды были ослаблены взамен. Теперь он может летать и стрелять самонаводящимися тёмными звёздами. Если он начнёт виться вокруг тебя, не пытайся сбежать!
+            51: Недавно я заметила, что тот металлический глаз стреляет огромным лазером, когда вращается. А ещё даже если здоровье одного опустится до 0, то он не умрёт, пока здоровье второго тоже не опустится до 0.
+            52: Сфокусируйся на стальном черепе, забудь про его руки. Не пытайся убежать от них. Учись распознавать его действия.
+            53: Рот той штуки практически не получает урона, поэтому тебе придётся бить по глазу. Однако только один из них уязвим за раз.
+            54: Следующая на очереди я! Убедись, что ты сможешь понять, какую атаку я использую. Блоки и поворот в другую сторону могут остановить окаменение!
+            55: Мастер темницы может использовать разные атаки. Их выбор зависит от того, крутится он или нет. И перед его убийством тебе придётся преодолеть последний рубеж. Так что будь готов.
+            56: Королева пчёл может призвать своё потомство на подмогу. Пока они живы, Королева получает меньше урона, поэтому сначала избавься от них. И да, они не могут атаковать над или под ней.
+            57: Следи за ихором и не сбивайся. Когда мозг разозлится, он будет запутывать тебя каждые несколько секунд. 4 кольца на запутывание, одно, когда оно спадает!
+            58: Чем больше Пожиратель миров разделяется, тем больше червей может броситься на вас сразу. Не позволяй им накапливаться слишком много!
+            59: Берегись, когда будешь ломать второе багряное сердце! Это может привлечь гоблинов, так что подготовься, прежде чем сделаешь это.
+            60: Берегись, когда будешь ломать вторую теневую сферу! Это может привлечь гоблинов, так что подготовься, прежде чем сделаешь это.
+            61: Этот глаз овладел силой луны и стал слишком ярким! Учись обращать внимание и фокусироваться только на том, что может причинить тебе боль.
+            62: Собираешься бить того слизневого короля? Сделай парочку мини-автомостов они тебе пригодятся. Не забывай о дожде из шипов. Кстати, не убегай слишком высоко, или он разозлится!
+            63: Похоже, в последнее время все учатся создавать ауры. Ты сможешь различить их виды по частицам, которые они создают!
+            64: Наверное, существует тысяча предметов, которые защищают от всех этих дебаффов. Жаль, что у тебя не хватит рук для ношения их всех!
+            65: Не забывай, что ты можешь выключать некоторые души! Снизу в твоём инвентаре есть небольшая кнопка с гаечным ключом. Кнопки в самом низу содержат пресеты, включая пресет для слабых ПК.
+            66: Ооо, это же моя толстовка! Скажи же, она удобная и отлично подходит для гейминга? Может, с ней ты даже сможешь одолеть босса без получения урона!
+            #67: Уже находил белок с цилиндрами? Держи их в своём инвентаре и к тебе может придти особый гость!
+            68: Извини, у меня больше нет кристаллов-сердец но я думаю, мой старший брат запрятал немного в том жирном королевском слизне. Может быть, он поделится с тобой, если ты изобьёшь этого слизня.
+            #69: Я никогда не понимала, почему все эти монстры не носят с собой лечебные зелья. С другой стороны, тебе не стоит ждать, пока они научатся.
+            70: Не забывай про рыб! Акулы отстанут от тебя, если ты отстанешь от них. Но пираньи сходят с ума от запаха крови. Они могут выпрыгнуть из воды и атаковать тебя!
+            71: Бесит вода? Не знаю, у меня никогда не было с ней проблем... Пробовал ли ты дышать водой, а не воздухом?
+            72: Преисподняя теперь намного горячее, чем была тогда. Я слышала, что обсидиановый череп - хороший оберег от, знаешь, сгорания заживо!
+            73: Хочешь проверить, насколько долго ты сможешь задержать дыхание? Вакуум космоса - идеальное место для этого. И нет, я не буду дышать водой вместо воздуха.
+            74: АААА! Пожалуйста, не бей... а, погоди, это ты. Не пугай меня так! И почему за тобой следует ЭТА штука?!
+            #75: Ух, это же моя толстовка! Ну и как она? Удобная и отлично подходит для гейминга, как думаешь? Возможно, ты даже победишь босса, не получив урона!
+            #76: Почему ты такой грустный? Подземное освящение тебя путает? Попробуй зелья гравитации, они, вроде, помогают.
+            77: Знаешь, в последнее время Плантера совсем распустилась. Хлорофито-фруктовая диета не может быть настолько эффективной. Помоги-ка ей сбросить немного веса.
+            #78: Сладость иль гадость? С Рождеством? У меня по этому поводу ничего нет, но спроси тыквенного короля или ледяную королеву!
+            79: Хочешь сделать Силы, но у тебя не хватает Усилений? Создай сигил чемпионов и докажи, что достоин получить недостающие.
+            80: Шикарное время, чтобы убить Бэтси. Не беспокойся. Если ты достигнешь последней волны и проиграешь, то тебе не придётся повторять всё событие заново. Главное - дожить до этого. И не забывай про её дебаффы.
+            81: Ну и выражение лица у тебя... Святые пещеры слишком ошеломляющие? Попробуй контролировать свою гравитацию, и, возможно, оно не сможет застать тебя врасплох.
+        }
+    }
+
+    LumberJack: {
+        DisplayName: Дровосек
+
+        TownNPCMood: {
+            Content: Я счастлив, пока в мире есть лес, который нужно рубить.
+            NoHome: Не бывает лесоруба без бревенчатой хижины, которую можно назвать домом!
+            FarFromHome: Я слишком далеко от моей хижины. Мне нужно вернуться и наточить топор.
+            LoveSpace: Меньше людей вокруг означает, что я могу размахивать топором сколько угодно, и никто мне не помешает.
+            DislikeCrowded: Думаю, здесь становится довольно тесно.
+            HateCrowded: Слишком много людей вокруг. Ничто так не портит хорошую рубку, как рубка кого-то.
+            LoveBiome: Нет ничего лучше старой доброй рубки деревьев в лесу!
+            LikeNPC: Я рублю деревья, {NPCName} их сажает, мы идеальный дуэт.
+            DislikeNPC: "{NPCName} сказала мне начать обнимать деревья... и я научил свой топор обнимать деревья за меня."
+            HateNPC: "{NPCName} абсолютно не понимает меня. Подрыв деревьев - не рубка!"
+            LikeNPC_Princess: "{NPCName} не так плоха в обращении топором, как я думал!"
+            Princess_LovesNPC: "{NPCName} настолько силён, что мне захотелось попробовать срубить дрова вместе с ним!"
+        }
+        
+        Dialogues: {
+            1: Восточная древесина? Давай между нами, это ж ненастоящая древесина!
+            2: Кактус, конечно, не древесина, но от моего верного топора это не спасёт.
+            3: У тебя ж нет никаких фантазий насчёт меня... правда?
+            4: Я ем опилки на завтрак... без молока.
+            5: РРРРУБИТТТТЬ!
+            6: Я лесоруб и я хорош, весь день рублю и сплю всю ночь!
+            7: Пока я тут, топор тебе не понадобится.
+            8: Слыхал, люди рубят деревья рыбами... кто вообще так делает?
+            9: Хочешь увидеть меня за работой без рубашки? Э-э-э... Может, в 2030.
+            10: Когда-нибудь видел мировое дерево?
+            11: Чего-чего? Ну, сосну так сосну.
+            12: Почему я не продаю жёлуди? Потому что я сразу же их высаживаю... ты ж ведь тоже, да?..
+            13: Какое дерево я люблю больше всего? Любое, пока я могу его срубить.
+            14: Предлагаю самые топорные решения проблем!
+            15: Думаю вздремнуть чуток под деревом. Не хочешь присоединиться?
+            16: Я замечательно разбираюсь в видах деревьев.
+            17: Я рад, что даже здесь, в конце путешествия, есть ещё множество деревьев для рубки.
+            18: Красный - один из моих любимых цветов. Сразу после деревянного.
+            19: Я всегда ношу фланель.
+            20: Как вижу, тебе очень нравится моя древесина... это веский повод для улыбки.
+            21: Вот, нашёл это, но сентименталом меня не назвать. Возьми лучше себе.
+            #22: Тис? Сакура? Нет, не видел.
+            23: Когда я рубил кактусы, эта штука прыгнула на меня. Позаботься о ней, ладно?
+            24: Эти красные деревья полны жизни, но у дерева есть только одно предназначение: быть срубленным. А с последнего упала эта штука, бери.
+            25: Место малость причудливое, но деревья рубятся не хуже других. А ещё тут по ночам бывают вот эти странные жуки. Можешь взять парочку.
+            26: Понятия не имею, почему они светятся. Но ты всё равно это съешь, так что бери, пока можешь.
+            27: Здешние деревья, возможно, самые жёсткие в этой ветви реальности... Извини, просто игра слов. Держи, нашёл это для тебя.
+            28: Давным-давно люди перековывали бабочек в могущественное снаряжение. Мы пытаемся забыть эти времена... но держи одну.
+            29: С деревьев, которые я срубаю, всегда падают эти зверьки. Может ты найдёшь им применение?
+            30: Ночная рубка деревьев всегда расслабляет... ну, когда тебе не мешают летающие глаза. Держи, пусть один из них составит тебе компанию.
+            31: Сегодня надолго отходил, но вокруг только эти странные деревья. Нашёл вот кучу всякого. Не дашь им новый дом?
+            32: Я сейчас отдыхаю после отличного сеанса рубки. Возвращайся завтра, может что-то и появится.
+            33: Кучу всего приносит ветер. Некоторые говорят, что это к удаче. Но единственная удача, которая мне нужна - острый топор!
+            34: Мой бицепс постоянно ловит взгляд {0}, когда я работаю. Интересно, хочет ли она моего бревна?
+            35: Неплохая часть леса, а? Вот, я нарубил для тебя немного дерева.
+            36: Люси из этой вселенной... Интересные дела тебя ожидают.
+            37: Даже на отдыхе я могу позволить себе немного порубить. С пальмы упала пара раздражающих птиц. Забери их... можешь пожарить, думаю?
+            38: Я осмотрелся и не нашёл ни одного дерева. Зато нашёл вот этих малышей. Возможно, тебе они будет нужнее?
+            39: Вот чего не ждал, так это таких прекрасных деревьев здесь, внизу. Зацени.
+        }
+    }
+
+    Mutant: {
+        DisplayName: Мутант
+
+        TownNPCMood: {
+            Content: Спасибо за жилище, полагаю.
+            NoHome: Наличие дома не повредит, но мне и так сойдёт.
+            FarFromHome: Я ем слизней и зомби. Но полакомиться человеческой пищей у себя дома тоже было бы неплохо.
+            LoveSpace: Тишина между сражениями с боссами приятна. Тяжело это понять, когда вокруг куча народа.
+            DislikeCrowded: Здесь слишком много людей. И, кажется, их бесит, что я постоянно побеждаю в гляделках.
+            HateCrowded: Если хоть ещё один человек в этом тесном городке ещё раз наступит на мой мозг... неважно.
+            LoveBiome: Жить здесь наверху здорово, но когда ты собираешься найти мой храм?
+            LikeBiome: Лес. Все мы начинаем в лесу. Хорошее место.
+            DislikeBiome: Освящение должно впечатлить меня? Большая фея этого не сделает, это точно.
+            LoveNPC: "{NPCName} и я прошли через множество битв. Даже жаль, что подобной возможности больше не предвидится."
+            LikeNPC: Я забыл, когда {NPCName} присоединилась к семье, но своё место она заслужила.
+            DislikeNPC: За что {NPCName} вообще здесь? Ах, нужно успокоится. Просто не смотри ему в глаза, и он не сможет тебя напугать...
+            LikeNPC_Princess: "{NPCName} выглядит дружелюбной."
+            Princess_LovesNPC: "{NPCName} обладает потрясающими предметами, которые помогут завести новых друзей!"
+        }
+        
+        Dialogues: {
+            1: Жестокость, варварство, жажда крови - вот что я люблю в людях.
+            2: Чем сильнее ты становишься, тем больше ништяков я продаю. Понятно?
+            3: У всех вас есть что-то, чего нет у меня... Вроде как это называют восприятием смерти.
+            4: Было бы здорово, если бы я продавал свои предметы для призыва.
+            5: Единственный способ стать сильнее - покупать мои предметы. Можно и в рассрочку!
+            6: Чего ты на меня так смотришь? Я просто ем яблоко.
+            7: Ни о чём не беспокойся, ведь всё, что тебе когда-либо понадобится, уже здесь.
+            8: Радуйся, что я на твоей стороне.
+            9: Спасибо за дом, что ли.
+            10: Знаешь, я бы не отказался от бутерброда с сыром и ветчиной.
+            11: Может начать носить одежду? Не-е-е-е.
+            12: Не то что бы мне было куда тратить всё твоё золото...
+            13: Жестокость за жестокость. Таков закон зверя.
+            14: Людям нужно больше креатива. Да почему битва с каждым начальным боссом происходит в пустыне?!
+            15: Говоришь, хочешь знать, каким образом Мутант и Мерзостть могут быть братьями? Лучше уж тебе не знать.
+            16: Я - всё, что тебе нужно для бедствия.
+            17: И ПАДЁТ ВСЁ ПЕРЕДО МНОЙ... после твоей покупки, конечно.
+            18: Я, конечно, тебе помогаю, но что это за место? Дом? Зачем? Да я зомби на завтрак ем.
+            19: Могу ли я прыгать? Нет, у меня нет штуки под названием 'пробел'.
+            20: Твой носик теперь у меня! Ну, просто мой старый испортился.
+            21: Что такое Терри?
+            22: Почему так много существ держат у себя странную синюю куклу? Кто знает...
+            23: Надвигается неминуемая гибель... если ты ничего не купишь, конечно.
+            24: Я слышал про Третье Измерение. Интересно, как оно выглядит?
+            25: Ай, как же я сегодня хорош.
+            26: У тебя меньше друзей, чем у меня глаз.
+            27: Океан - опасное место. Интересно, Дайвер там?
+            28: Ты знаешь, что такое Зе-емля?
+            29: Я не могу даже произнести 'апофеоз'. С чего бы мне знать, что это?
+            30: Откуда у монстров монеты? Ну, знаешь, у меня же вот нет карманов.
+            31: Собаки крутые и всё такое. Но кошки хотя бы не пытаются съесть мой мозг.
+            32: Остерегайся зелёного дракона... Эй, что с лицом?
+            33: Где находится это О-га-йо о котором все говорят?
+            34: Повторяю пятьдесят шестой раз. Я занят... А, так ты за покупками. Думаю, на это у меня время найдётся.
+            35: Я слышал про 'Душу Душ', которая существует только в 2015.
+            36: Добавив ЕХ после названия чего-нибудь, ты сделаешь это в 10 раз сложнее.
+            37: Как по мне, современное искусство выглядит круто. Особенно эти красные пятна.
+            38: Сколько нужно Гидов, чтобы вкрутить лампочку? ... Ну не знаю. Может, спросишь его самого?
+            39: Хорошо, что у меня нет кровати, иначе я бы из неё не вылезал.
+            40: Что такое 'обновление'? Звучит как какая-то редкость.
+            41: Если буду тебе нужен, то, скорее всего, я где-то валяюсь.
+            42: В СМЫСЛЕ КТО ТАКОЙ ФАРГО?!
+            43: Не видел, случаем, Эх-Кота?
+            44: Не понимаю я современную музыку. Отдаю предпочтение лёгкому джазу... или крикам бьющихся в агонии монстров.
+            45: Куда там Ктулху до меня!
+            46: Ну, ты победил того парня, пора собирать материалы!
+            47: А, хочешь сразиться со мной?.. ну ладно.
+            48: А, хочешь сразиться со мной?.. если бы у меня была причина...
+            49: А, хочешь сразиться со мной?.. ты недостоин, скотина.
+            50: Ну и зачем?
+            51: Я чувствую сильный дисбаланс...
+            52: Хороший выбор, однако не сильно приятно насчёт того Пустынного босса.
+            53: Немного кошмаров на улице, верно?
+            54: Я бы попросил плед, но, думаю, моего размера у тебя нет.
+            55: Странная сегодня погодка, тебе так не кажется?
+            56: Чудесная ночь, не правда ли?
+            57: Надеюсь, что эта ругань из-за стены не по моему поводу.
+            58: Я бы тебе помог, но слишком занят сидением на стуле.
+            59: Не знаю, почему все так счастливы, но пока меня не приняли за пиньяту, я тоже счастлив.
+            60: Меня пригласила {0}. Однако я не понимаю, зачем.
+            #61: "Всё хорошо, {0}, просто не смотри в глаза {1}. Так он не сможет тебя напугать."
+            62: Когда мы наедине, {0} постоянно кидает в меня шприцы, несмотря на то, что я прошу её остановиться!
+            63: Пожалуйста, попроси {0} прекратить с этим 'мистическим' бредом. Нет, я понимаю, ты варишь отвары, но и что с того?
+            64: Почему когда я вижу {0}, мои крылья начинают дрожать?
+            65: "{0} когда-то дала мне парик... Мне не идут длинные волосы."
+            66: Этот мутировавший гриб выглядит отличным парнем.
+            67: "{0} требует с меня деньги, но он не принимает мои товары!"
+            68: Есть идеи, почему {0} постоянно прячется в углу, когда я рядом?
+            69: Если бы хоть один из нас умел играть на инструментах, я бы создал группу из {0}, {1} и {2}.
+            70: Как же надоела {0}. Её конфетти постоянно прилипает к моим крыльям.
+            71: Удивительно, что {0} ещё не сделал дыру в полу. Хотя, знаешь, звучит весело.
+            72: "{0} постоянно предлагает мне пиво. Что-то подсказывает мне, что пьяный я ему не понравлюсь."
+            73: "{0} хочет увидеть меня в синем... я даже не знаю, что об этом думать."
+            74: Поздравляю. Ты и в правду ужился с Вечностью... по крайней мере, я так думаю?.. И что дальше? Перейдёшь на высший уровень бытия? Сразишься с непостижимой кошачьей сущностью? Уничтожишь мир? Вся мощь отныне в твоих руках.
+            75: Неплохо, неплохо. Одолеть меня не каждому дано. Но я всё ещё чувствую желание расправить крылья... Почему бы нам не повторить?
+            76: Ходят слухи про нерасходуемые предметы призыва боссов. Ну и гадость...
+            77: Хорошая у тебя броня, а уж какая кожа реалистичная. Не против, если я позаимствую её? Конечно же я про кожу.
+        }
+    }
+
+    Squirrel: {
+        DisplayName: Белка
+
+        TownNPCMood: {
+            Content: *удовлетворённый писк*
+            NoHome: *несчастный писк бездомного*
+            FarFromHome: *грустный потерянный писк*
+            LoveSpace: *счастливый писк свободы*
+            DislikeCrowded: *грустный писк о толпе народа*
+            HateCrowded: *очень грустный писк о толпе народа*
+            LoveBiome: *очень счастливый писк о лесе*
+            HateBiome: *очень грустный писк о подземелье*
+            LikeNPC: *{NPCName} вызывает счастливый писк*
+            LikeNPC_Princess: *{NPCName} вызывает счастливый писк*
+            Princess_LovesNPC: "{NPCName} просто очаровашка!"
+        }
+        
+        Dialogues: {
+            1: "[c/ff0000:Ты будешь страдать.]"
+            2: *писк*
+            3: *треск*
+            4: *хруст*
+        }
+    }
+
+    SuperDummy.DisplayName: Сверхманекен
+}
+
+Projectiles: {
+    CorruptNukeProj.DisplayName: CorruptRenewal
+    CorruptNukeSupremeProj.DisplayName: CorruptRenewalSupreme
+    CrimsonNukeProj.DisplayName: CrimsonRenewal
+    CrimsonNukeSupremeProj.DisplayName: CrimsonRenewalSupreme
+    DeathScythe.DisplayName: Abominationn Scythe
+    Explosion.DisplayName: Explosion
+    AltarExterminatorProj.DisplayName: Altar Exterminator
+    AutoHouseProj.DisplayName: Auto House Proj
+    CityBuster.DisplayName: City Buster
+    DoubleObsInstaBridgeProj.DisplayName: Double Obsidian Instabridge
+    GraveBuster.DisplayName: Grave Buster
+    HalfInstaProj.DisplayName: Half Instavator
+    InstabridgeProj.DisplayName: Instabridge
+    InstaHouseVisual.DisplayName: Insta House Visual
+    InstaProj.DisplayName: Instavator
+    InstatrackProj.DisplayName: Instatrack
+    LihzahrdInstactuationBombProj.DisplayName: Lihzahrd Instactuation Bomb
+    MiniInstabridgeProj.DisplayName: Mini Instabridge
+    ObsInstabridgeProj.DisplayName: Obsidian Instabridge
+    OmniBridgifierProj.DisplayName: Omni-Bridgifier
+    ShurikenProj.DisplayName: Shuriken
+    EyeProjectile.DisplayName: EyeProjectile
+    FakeHeart2Deviantt.DisplayName: Fake Heart
+    FakeHeartDeviantt.DisplayName: Fake Heart
+    FakeHeartMarkDeviantt.DisplayName: Fake Heart
+    HallowNukeProj.DisplayName: HallowRenewal
+    HallowNukeSupremeProj.DisplayName: HallowRenewalSupreme
+    LumberJaxe.DisplayName: LumberJaxe
+    MechEyeProjectile.DisplayName: MechEyeProjectile
+    MushroomNukeProj.DisplayName: MushroomRenewal
+    MushroomNukeSupremeProj.DisplayName: MushroomRenewalSupreme
+    PhantasmalEyeProjectile.DisplayName: PhantasmalEyeProjectile
+    PurityNukeProj.DisplayName: PurityRenewal
+    PurityNukeSupremeProj.DisplayName: PurityRenewalSupreme
+    SpawnProj.DisplayName: Spawn
+    SemiBridgifierProj.DisplayName: Semi-Bridgifier
+}
+
+Tiles: {
+    CrimsonAltarSheet.MapEntry: "{$MapObject.CrimsonAltar}"
+    CrucibleCosmosSheet.MapEntry: "{$Items.CrucibleCosmos.DisplayName}"
+    DemonAltarSheet.MapEntry: "{$MapObject.DemonAltar}"
+    ElementalAssemblerSheet.MapEntry: "{$Items.ElementalAssembler.DisplayName}"
+    GoldenDippingVatSheet.MapEntry: "{$Items.GoldenDippingVat.DisplayName}"
+    MultitaskCenterSheet.MapEntry: "{$Items.MultitaskCenter.DisplayName}"
+    OmnistationSheet.MapEntry: "{$Items.Omnistation.DisplayName}"
+    OmnistationSheet2.MapEntry: "{$Items.Omnistation.DisplayName}"
+    RegalStatueSheet.MapEntry: "{$Items.RegalStatue.DisplayName}"
+    SemistationSheet.MapEntry: "{$Items.Semistation.DisplayName}"
+    SiblingPylonTile.MapEntry: ""
+    PurityTotemSheet.MapEntry: "{$Items.PurityTotem.DisplayName}"
+}
+
+Conditions: {
+    BossDown: ""
+    DutchmanDown: ""
+    MageDown: ""
+    OgreDown: ""
+    BetsyDown: ""
+    PillarsDown: ""
+    Downed: ""
+    WormDown: ""
+    PinkyDown: ""
+    ScoutDown: ""
+    DoctorDown: ""
+    MinerDown: ""
+    TimDown: ""
+    GnomeDown: ""
+    GoldSlimeDown: ""
+    DungeonSlimeDown: ""
+    MedusaDown: ""
+    ClownDown: ""
+    NymphDown: ""
+    MothDown: ""
+    RainbowSlimeDown: ""
+    WyvernDown: ""
+    RuneDown: ""
+    MimicDown: ""
+    MimicHallowDown: ""
+    MimicCorruptDown: ""
+    MimicCrimsonDown: ""
+    MimicJungleDown: ""
+    IceGolemDown: ""
+    SandDown: ""
+    DevilDown: ""
+    BloodFishDown: ""
+    BloodEelDown: ""
+    BloodGoblinDown: ""
+    BloodNautDown: ""
+    SummonerDown: ""
+    PirateDown: ""
+    NailheadDown: ""
+    MothronDown: ""
+    LeeDown: ""
+    PaladinDown: ""
+    SkeleGunDown: ""
+    SiblingPylon: ""
+}
+
+Configs: {
+    FargoConfig: {
+        DisplayName: Конфигурация Fargo
+
+        Mutant: {
+            Label: "{$Config.Mutant}"
+            Tooltip: ""
+        }
+
+        Abom: {
+            Label: "{$Config.Abom}"
+            Tooltip: ""
+        }
+
+        Devi: {
+            Label: "{$Config.Devi}"
+            Tooltip: ""
+        }
+
+        Lumber: {
+            Label: "{$Config.Lumber}"
+            Tooltip: ""
+        }
+
+        Squirrel: {
+            Label: "{$Config.Squirrel}"
+            Tooltip: ""
+        }
+
+        CatchNPCs: {
+            Label: "[i:267] Возможность ловить жителей"
+            Tooltip: ""
+        }
+
+        NPCSales: {
+            Label: "[i:267] Дополнительные товары жителей"
+            Tooltip: ""
+        }
+
+        SaferBoundNPCs: {
+            Label: "[i:1274] Спасённые жители не получают контактного урона"
+            Tooltip: ""
+        }
+
+        Halloween: {
+            Label: "[i:1774] Сезон Хэллоуина"
+            Tooltip: ""
+        }
+
+        Christmas: {
+            Label: "[i:1869] Сезон Рождества"
+            Tooltip: ""
+        }
+
+        DrunkWorld: {
+            Label: "[i:353] Генерация мира «Drunk»"
+            Tooltip: ""
+        }
+
+        BeeWorld: {
+            Label: "[i:1133] Генерация мира «Bee»"
+            Tooltip: ""
+        }
+
+        WorthyWorld: {
+            Label: "[i:2107] Генерация мира «For the Worthy»"
+            Tooltip: ""
+        }
+
+        CelebrationWorld: {
+            Label: "[i:3732] Генерация мира «Celebration»"
+            Tooltip: ""
+        }
+
+        ConstantWorld: {
+            Label: "[i:5109] Генерация мира «Constant»"
+            Tooltip: ""
+        }
+
+        UnlimitedAmmo: {
+            Label: "[i:771] Бесконечные боеприпасы при 3996+ в хардмоде"
+            Tooltip: ""
+        }
+
+        UnlimitedConsumableWeapons: {
+            Label: "[i:42] Бесконечные расходуемые оружия при 3996+ в хардмоде"
+            Tooltip: ""
+        }
+
+        UnlimitedPotionBuffsOn120: {
+            Label: "[i:292] Бесконечные баффы при наличии определённого стака"
+            Tooltip: 30+ для зелий, 3+ для классовых станций (т.к. точильный станок) и кусочка торта
+        }
+
+        ExtraBuffSlots: {
+            Label: "[i:3000] Дополнительные бафф-слоты"
+            Tooltip: ""
+        }
+
+        ExpandedTooltips: {
+            Label: "[i:171] Дополнительные подсказки изменений в Mutant моде"
+            Tooltip: ""
+        }
+
+        AnglerQuestInstantReset: {
+            Label: "[i:2374] Мгновенный сброс заданий рыбака"
+            Tooltip: ""
+        }
+
+        ExtraLures: {
+            Label: "[i:2373] Дополнительные поплавки для удочек"
+            Tooltip: ""
+        }
+
+        StalkerMoneyTrough: {
+            Label: "[i:3213] Преследующее денежное корыто"
+            Tooltip: ""
+        }
+
+        RottenEggs: {
+            Label: "[i:1809] Мощные тухлые яйца"
+            Tooltip: ""
+        }
+
+        BannerRecipes: {
+            Label: "[i:1683] Создание знамён"
+            Tooltip: ""
+        }
+
+        IncreaseMaxStack: {
+            Label: "[i:2] Увеличенные стаки предметов"
+            Tooltip: ""
+        }
+
+        ExtractSpeed: {
+            Label: "[i:997] Увеличенная скорость промывателя"
+            Tooltip: ""
+        }
+
+        Fountains: {
+            Label: "[i:909] Фонтаны размещают биомы"
+            Tooltip: ""
+        }
+
+        BossZen: {
+            Label: "[i:3117] Во время битвы с боссами не появляются враги"
+            Tooltip: ""
+        }
+
+        PiggyBankAcc: {
+            Label: "[i:87] Работа информационных и строительных аксессуаров в свинье-копилке"
+            Tooltip: ""
+        }
+
+        FasterLavaFishing: {
+            Label: "[i:4881] Быстрая рыбалка в лаве"
+            Tooltip: ""
+        }
+
+        TorchGodEX: {
+            Label: "[i:5043] Суть бога факелов автоматически изменяет размещаемые факела"
+            Tooltip: Соответствует истинной удаче факела, может отличаться от сути бога факелов
+        }
+
+        DebuffOpacity: {
+            Label: "[i:1612] Максимальная прозрачность иконок дебаффов"
+            Tooltip: ""
+        }
+
+        DebuffFaderRatio: {
+            Label: "[i:1612] Прозрачность затухания длительности иконок дебаффов"
+            Tooltip: ""
+        }
+
+        TransparentFriendlyProjectiles: {
+            Label: "[i:1309] Прозрачность дружелюбных снарядов"
+            Tooltip: "Экспериментируйте со значением для получения оптимального эффекта"
+        }
+    }
+
+    SeasonSelections: {
+        Tooltip: ""
+        Normal.Label: Как обычно
+        AlwaysOn.Label: Всегда ВКЛ
+        AlwaysOff.Label: Всегда ВЫКЛ
+    }
+}
+
+Keybinds: {
+    "Quick Recall/Mirror.DisplayName": Быстрое зелье возврата/зеркало
+    "Quick Rod of Discord.DisplayName": Быстрый жезл раздора
+    "Quick Use Custom (Bottom Left Inventory Slot).DisplayName": Быстрое использ. (нижний левый слот инвентаря)
+    "Open Stat Sheet.DisplayName": Открыть таблицу характеристик
+}

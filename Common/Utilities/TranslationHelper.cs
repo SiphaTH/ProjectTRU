@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Reflection;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
 using Terraria.Localization;
+using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Common.Utilities;
 
@@ -40,7 +42,7 @@ internal static class TranslationHelper
         cursor.Emit(OpCodes.Pop);
         cursor.Emit(OpCodes.Ldc_I4, replace);
     }
-        
+
     internal static void ModifyIL(ILContext il, float orig, float replace, int iterations = 1)
     {
         ILCursor cursor = new ILCursor(il);
@@ -55,5 +57,47 @@ internal static class TranslationHelper
 
         cursor.Emit(OpCodes.Pop);
         cursor.Emit(OpCodes.Ldc_R4, replace);
+    }
+    
+    internal static void ModifyIL(ILContext il, FieldInfo orig, FieldInfo replace, int iterations = 1)
+    {
+        ILCursor cursor = new ILCursor(il);
+
+        for (int i = 0; i < iterations; i++)
+        {
+            if (!cursor.TryGotoNext(MoveType.After, x => x.MatchLdsflda(orig)))
+            {
+                throw new Exception($"[IL] Не удалось заменить '{orig}' на '{replace}' в методе [c/70FF8D:{il.Method.Name}]");
+            }
+        }
+
+        cursor.Emit(OpCodes.Pop);
+        cursor.Emit(OpCodes.Ldsflda, replace);
+    }
+
+    internal static void WikithisRedirectItem(string id, string wikiPage)
+    {
+        int itemType = ModContent.Find<ModItem>("CalamityMod", id).Type;
+        ModsCall.Wikithis.Call(1, itemType, wikiPage, GameCulture.CultureName.Russian);
+    }
+    
+    internal static void WikithisRedirectItem(string[] ids, string wikiPage)
+    {
+        foreach (var id in ids)
+        {
+            int itemType = ModContent.Find<ModItem>("CalamityMod", id).Type;
+            ModsCall.Wikithis.Call(1, itemType, wikiPage, GameCulture.CultureName.Russian);
+        }
+    }
+
+    internal static void WikithisRedirectNPC(string id, string wikiPage)
+    {
+        int npcType = ModContent.Find<ModNPC>("CalamityMod", id).Type;
+        ModsCall.Wikithis.Call(2, npcType, wikiPage, GameCulture.CultureName.Russian);
+    }
+    
+    internal static LocalizedText GetText(string key)
+    {
+        return Language.GetOrRegister("Mods." + key);
     }
 }

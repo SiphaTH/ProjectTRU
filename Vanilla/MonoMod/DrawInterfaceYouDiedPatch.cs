@@ -1,26 +1,27 @@
 ﻿using CalamityRuTranslate.Common.Utilities;
 using CalamityRuTranslate.Content;
-using CalamityRuTranslate.Core;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
 using Terraria;
+using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
 
-public class DrawInterfaceYouDiedPatch : ContentTranslation, ILoadableContent
+public class DrawInterfaceYouDiedPatch : ILoadable
 {
-    public override bool IsTranslationEnabled => TranslationHelper.IsRussianLanguage && TRuConfig.Instance.RandomDeathText;
-
-    public override float Priority => 1f;
-
-    public void LoadContent()
+    public bool IsLoadingEnabled(Mod mod)
     {
-        IL.Terraria.Main.DrawInterface_35_YouDied += MainOnDrawInterface_35_YouDied;
+        return TranslationHelper.IsRussianLanguage && TRuConfig.Instance.RandomDeathText;
     }
 
-    public void UnloadContent()
+    public void Load(Mod mod)
     {
-        IL.Terraria.Main.DrawInterface_35_YouDied -= MainOnDrawInterface_35_YouDied;
+        IL_Main.DrawInterface_35_YouDied += MainOnDrawInterface_35_YouDied;
+    }
+
+    public void Unload()
+    {
+        IL_Main.DrawInterface_35_YouDied -= MainOnDrawInterface_35_YouDied;
     }
     
     private void MainOnDrawInterface_35_YouDied(ILContext il)

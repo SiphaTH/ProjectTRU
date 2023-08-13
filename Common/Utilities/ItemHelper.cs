@@ -1,48 +1,35 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Xna.Framework;
-using Terraria;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Common.Utilities;
 
-internal static class ItemHelper
+public static class ItemHelper
 {
-    internal static void TranslateTooltip(Item item, List<TooltipLine> tooltips, string lineName, Action<TooltipLine> action)
+    public static void TranslateTooltip(List<TooltipLine> tooltips, string lineName, Action<TooltipLine> action)
     {
-        ApplyTooltipEdits(item, tooltips, TooltipLineName(lineName), action);
+        ApplyTooltipEdits(tooltips, tooltipLine => tooltipLine.Name == lineName, action);
     }
 
-    internal static void ApplyTooltipEdits(Item item, List<TooltipLine> lines, Func<Item, TooltipLine, bool> predicate, Action<TooltipLine> action)
+    public static void TranslateTooltip(List<TooltipLine> tooltips, Func<TooltipLine, bool> predicate, Action<TooltipLine> action)
     {
-        foreach (var line in lines.Where(line => predicate(item, line)))
+        ApplyTooltipEdits(tooltips, predicate, action);
+    }
+
+    public static void ReplaceText(this List<TooltipLine> tooltips, string oldValue, string newValue)
+    {
+        TooltipLine value = tooltips.FirstOrDefault(x => x.Text.Contains(oldValue));
+        if (value != null)
+        {
+            value.Text = value.Text.Replace(oldValue, newValue);
+        }
+    }
+
+    private static void ApplyTooltipEdits(List<TooltipLine> lines, Func<TooltipLine, bool> predicate, Action<TooltipLine> action)
+    {
+        foreach (var line in lines.Where(predicate))
             if (line != null)
                 action(line);
-    }
-
-    private static Func<Item, TooltipLine, bool> TooltipLineName(string name)
-    {
-        return (item, tooltip) => tooltip.Name == name;
-    }
-
-    internal static Color ColorSwap(Color firstColor, Color secondColor, float seconds)
-    {
-        float num = (float) ((Math.Sin(6.28318548202515 / seconds * Main.GlobalTimeWrappedHourly) + 1.0) * 0.5);
-
-        return Color.Lerp(firstColor, secondColor, num);
-    }
-
-    internal static void SetBonusColorTooltip(Item item, List<TooltipLine> tooltips, params string[] tooltipLine)
-    {
-        for (int i = 0; i < tooltipLine.Length; i++)
-        {
-            TranslateTooltip(item, tooltips, i == 0 ? "SetBonus" : $"CalamityMod:SetBonus{i}", tooltip =>
-            {
-                if (tooltipLine[i] != "") {
-                    tooltip.Text = LangHelper.GetTextValue(tooltipLine[i]);
-                }
-            });
-        }
     }
 }

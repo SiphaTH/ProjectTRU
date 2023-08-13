@@ -20,6 +20,7 @@ public class TownNpcNames : GlobalNPC
         [NPCID.Angler] = new Dictionary<string, string>
         {
             {"Dazren", "Дазрен"},
+            {"Johnny Test", "Джонни Тест"},
         },
         [NPCID.ArmsDealer] = new Dictionary<string, string>
         {
@@ -32,6 +33,7 @@ public class TownNpcNames : GlobalNPC
             {"XiaoEn0426", "СяоЭн0426"},
             {"Jeffred", "Джеффред"},
             {"The Cooler Arthur", "Крутой Артур"},
+            {"Markie", "Марки"},
         },
         [NPCID.Clothier] = new Dictionary<string, string>
         {
@@ -51,6 +53,7 @@ public class TownNpcNames : GlobalNPC
             {"Izuna", "Изуна"},
             {"Jasmine", "Жасмин"},
             {"Cybil", "Сибил"},
+            {"Ruth", "Рут"},
         },
         [NPCID.GoblinTinkerer] = new Dictionary<string, string>
         {
@@ -62,6 +65,7 @@ public class TownNpcNames : GlobalNPC
             {"G'tok", "Г'ток"},
             {"Katto", "Катто"},
             {"Him", "Хим"},
+            {"Tooshiboots", "Тушибутс"},
         },
         [NPCID.Guide] = new Dictionary<string, string>
         {
@@ -77,6 +81,8 @@ public class TownNpcNames : GlobalNPC
             {"Danmaku", "Данмаку"},
             {"Grylken", "Грилькен"},
             {"Outlaw", "Изгой"},
+            {"Alfred Rend", "Альфред Ренд"},
+            {"Leeman", "Лиман"},
         },
         [NPCID.Mechanic] = new Dictionary<string, string>
         {
@@ -93,6 +99,7 @@ public class TownNpcNames : GlobalNPC
         {
             {"Farsni", "Фарсни"},
             {"Fanny", "Фанни"},
+            {"Mausi", "Мауси"},
         },
         [NPCID.Painter] = new Dictionary<string, string>
         {
@@ -107,6 +114,7 @@ public class TownNpcNames : GlobalNPC
             {"Tyler Van Hook", "Тайлер Ван Хук"},
             {"Cap'n Deek", "Кэп'н Дик"},
             {"Captain Billy Bones", "Капитан Билли Бонс"},
+            {"Captain J. Crackers", " Капитан Дж. Крэкерс"},
         },
         [NPCID.Princess] = new Dictionary<string, string>
         {
@@ -114,6 +122,7 @@ public class TownNpcNames : GlobalNPC
             {"Nyapano", "Няпано"},
             {"Jade", "Джейд"},
             {"Nyavi Aceso", "Ньяви Ацесо"},
+            {"Octo", "Окто"},
         },
         [NPCID.SkeletonMerchant] = new Dictionary<string, string>
         {
@@ -175,12 +184,15 @@ public class TownNpcNames : GlobalNPC
         [NPCID.BestiaryGirl] = new Dictionary<string, string>
         {
             {"Kiriku", "Кирику"},
+            {"Lacuna", "Лакуна"},
         },
         [NPCID.TownDog] = new Dictionary<string, string>
         {
             {"Ozymandias", "Озимандиас"},
             {"Kendra", "Кендра"},
             {"Yoshi", "Йоши"},
+            {"Riley", "Райли"},
+            {"Splinter", "Сплинтер"},
         },
         [NPCID.TownCat] = new Dictionary<string, string>
         {
@@ -189,6 +201,8 @@ public class TownNpcNames : GlobalNPC
             {"Katsafaros", "Катсафарос"},
             {"Bear", "Миша"},
             {"Felix", "Феликс"},
+            {"Lucerne", "Люцерн"},
+            {"Milo", "Мило"},
         },
     };
 

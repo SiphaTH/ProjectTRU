@@ -1,8 +1,4 @@
-﻿using System.Linq;
-using CalamityMod;
-using CalamityMod.Items.Weapons.Magic;
-using CalamityMod.World;
-using InfernumMode.Core.GlobalInstances.Systems;
+﻿using CalamityMod;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Common;
@@ -19,22 +15,8 @@ internal static class ModsCall
     internal static Mod StarsAbove => ModLoader.TryGetMod("StarsAbove", out Mod starsAbove) ? starsAbove : null;
     internal static Mod Wikithis => ModLoader.TryGetMod("Wikithis", out Mod wikithis) ? wikithis : null;
     internal static Mod Infernum => ModLoader.TryGetMod("InfernumMode", out Mod infernum) ? infernum : null;
+    internal static Mod TModLoader => ModLoader.TryGetMod("ModLoader", out Mod tMod) ? tMod : null;
+    internal static Mod StarlightRiver => ModLoader.TryGetMod("StarlightRiver", out Mod slr) ? slr : null;
 
-    internal static bool Revenge => CalamityWorld.revenge;
-    internal static string AegisHotKey => CalamityKeybinds.AegisHotKey.TooltipHotkeyString();
-    internal static string AstralArcanumUiHotkey => CalamityKeybinds.AstralArcanumUIHotkey.TooltipHotkeyString();
-    internal static string AstralTeleportHotKey => CalamityKeybinds.AstralTeleportHotKey.TooltipHotkeyString();
-    internal static string SandCloakHotkey => CalamityKeybinds.SandCloakHotkey.TooltipHotkeyString();
-    internal static string SpectralVeilHotKey => CalamityKeybinds.SpectralVeilHotKey.TooltipHotkeyString();
-    internal static string NormalityRelocatorHotKey => CalamityKeybinds.NormalityRelocatorHotKey.TooltipHotkeyString();
-    internal static string PlaguePackHotKey => CalamityKeybinds.PlaguePackHotKey.TooltipHotkeyString();
-    internal static string SetBonusHotKey => CalamityKeybinds.SetBonusHotKey.TooltipHotkeyString();
-    internal static string EternityDiscoHex => Eternity.DisoHex;
-    internal static string AngelicAllianceHotKey => CalamityKeybinds.AngelicAllianceHotKey.TooltipHotkeyString();
-    internal static string GodSlayerDashHotKey => CalamityKeybinds.GodSlayerDashHotKey.TooltipHotkeyString();
-    internal static string ExoChairSlowdownHotkey => CalamityKeybinds.ExoChairSlowdownHotkey.TooltipHotkeyString();
-    internal static string DashHotkey => CalamityKeybinds.DashHotkey.TooltipHotkeyString();
     internal static bool EarlyHardmodeProgressionRework => CalamityConfig.Instance.EarlyHardmodeProgressionRework;
-    internal static string WayfinderCreateKey => KeybindSystem.WayfinderCreateKey.GetAssignedKeys().FirstOrDefault();
-    internal static string WayfinderDestroyKey => KeybindSystem.WayfinderDestroyKey.GetAssignedKeys().FirstOrDefault();
 }

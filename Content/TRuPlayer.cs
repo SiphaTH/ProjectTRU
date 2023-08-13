@@ -1,4 +1,5 @@
-﻿using Terraria;
+﻿using System.Collections.Generic;
+using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
@@ -10,7 +11,7 @@ public class TRuPlayer : ModPlayer
 
     public override void Kill(double damage, int hitDirection, bool pvp, PlayerDeathReason damageSource)
     {
-        string[] deathText = { Lang.inter[38].Value, "Skill Issue", "Потрачено", "Ай больно в ноге, бл*", "Неудачник, хи-хи-хи", "Повезёт в следующий раз (нет)", "Удали игру", "Геншин тебя уже заждался", "Здесь может быть ваша реклама", "Запахло горелым", "Не забудь ударить монитор", "Даже собака играет лучше тебя"};
+        string[] deathText = { Lang.inter[38].Value, "Skill Issue", "Потрачено", "Ай больно в ноге, бл*", "Неудачник, хи-хи-хи", "Повезёт в следующий раз (нет)", "Удали игру", "Геншин тебя уже заждался", "Здесь может быть ваша реклама", "Запахло горелым", "Не забудь ударить монитор", "Даже собака играет лучше тебя", "Тиктокер обнаружен", "Время учить уроки" };
         RandomDeathText = Utils.SelectRandom(Main.rand, deathText);
     }
 }

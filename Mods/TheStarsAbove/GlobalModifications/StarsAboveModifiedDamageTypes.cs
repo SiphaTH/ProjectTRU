@@ -8,12 +8,8 @@
 //
 // namespace CalamityRuTranslate.Mods.TheStarsAbove.GlobalModifications;
 //
-// [JITWhenModsEnabled("StarsAbove")]
 // public class StarsAboveModifiedDamageTypes : GlobalItem
 // {
-//     public DamageClass Celestial => ModContent.GetInstance<CelestialDamageClass>();
-//     public DamageClass Incarnation => ModContent.GetInstance<IncarnationDamageClass>();
-//     
 //     public override bool IsLoadingEnabled(Mod mod)
 //     {
 //         return ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
@@ -21,21 +17,14 @@
 //     
 //     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
 //     {
-//         ItemHelper.TranslateTooltip(item, tooltips, "Damage", tooltip =>
+//         ItemHelper.TranslateTooltip(tooltips, "Damage", tooltip =>
 //         {
-//             if (item.CountsAsClass(Celestial))
+//             if (item.DamageType.CountsAsClass<CelestialDamageClass>() || item.DamageType.CountsAsClass<IncarnationDamageClass>() ||
+//                 item.DamageType.CountsAsClass<AuricDamageClass>() || item.DamageType.CountsAsClass<GadgetDamageClass>() ||
+//                 item.DamageType.CountsAsClass<PsychomentDamageClass>())
 //             {
-//                 tooltip.Text = tooltip.Text.Replace("celestial damage", "ед. неземного урона");
-//             
-//                 //if (TRuConfig.Instance.ColoredDamageTypes)
-//                     //tooltip.OverrideColor = new Color(255, 184, 108);
-//             }
-//             else if (item.CountsAsClass(Incarnation))
-//             {
-//                 tooltip.Text = tooltip.Text.Replace("incarnated damage", "ед. урона");
-//                 
 //                 if (TRuConfig.Instance.ColoredDamageTypes)
-//                     tooltip.OverrideColor = new Color(145, 178, 203);
+//                     tooltip.OverrideColor = new Color(231, 255, 149);
 //             }
 //         });
 //     }

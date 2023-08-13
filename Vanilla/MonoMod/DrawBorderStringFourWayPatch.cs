@@ -1,29 +1,30 @@
 ﻿using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using On.Terraria;
 using ReLogic.Graphics;
+using Terraria;
+using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
 
-public class DrawBorderStringFourWayPatch : ContentTranslation, ILoadableContent
+public class DrawBorderStringFourWayPatch : ILoadable
 {
-    public override bool IsTranslationEnabled => TranslationHelper.IsRussianLanguage;
-
-    public override float Priority => 1f;
-    
-    public void LoadContent()
+    public bool IsLoadingEnabled(Mod mod)
     {
-        Utils.DrawBorderStringFourWay += UtilsOnDrawBorderStringFourWay;
+        return TranslationHelper.IsRussianLanguage;
     }
 
-    public void UnloadContent()
+    public void Load(Mod mod)
     {
-        Utils.DrawBorderStringFourWay -= UtilsOnDrawBorderStringFourWay;
+        On_Utils.DrawBorderStringFourWay += UtilsOnDrawBorderStringFourWay;
+    }
+
+    public void Unload()
+    {
+        On_Utils.DrawBorderStringFourWay -= UtilsOnDrawBorderStringFourWay;
     }
     
-    private void UtilsOnDrawBorderStringFourWay(Utils.orig_DrawBorderStringFourWay orig, SpriteBatch sb, DynamicSpriteFont font, string text, float x, float y, Color textcolor, Color bordercolor, Vector2 origin, float scale)
+    private void UtilsOnDrawBorderStringFourWay(On_Utils.orig_DrawBorderStringFourWay orig, SpriteBatch sb, DynamicSpriteFont font, string text, float x, float y, Color textcolor, Color bordercolor, Vector2 origin, float scale)
     {
         text = text switch
         {
@@ -34,4 +35,6 @@ public class DrawBorderStringFourWayPatch : ContentTranslation, ILoadableContent
 
         orig.Invoke(sb, font, text, x, y, textcolor, bordercolor, origin, scale);
     }
+
+    
 }

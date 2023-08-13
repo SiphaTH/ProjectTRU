@@ -18,20 +18,6 @@ public class VanillaItems : IItemGender
         ItemID.RangerEmblem,
         ItemID.NeptunesShell,
         ItemID.TitanGlove,
-        ItemID.MusicBoxOverworldDay,
-        ItemID.MusicBoxEerie,
-        ItemID.MusicBoxNight,
-        ItemID.MusicBoxTitle,
-        ItemID.MusicBoxUnderground,
-        ItemID.MusicBoxBoss1,
-        ItemID.MusicBoxJungle,
-        ItemID.MusicBoxCorruption,
-        ItemID.MusicBoxUndergroundCorruption,
-        ItemID.MusicBoxTheHallow,
-        ItemID.MusicBoxBoss2,
-        ItemID.MusicBoxUndergroundHallow,
-        ItemID.MusicBoxBoss3,
-        ItemID.MusicBox,
         ItemID.DiscountCard,
         ItemID.LuckyCoin,
         ItemID.SandstorminaBottle,
@@ -54,22 +40,6 @@ public class VanillaItems : IItemGender
         ItemID.ClothierVoodooDoll,
         ItemID.ObsidianRose,
         ItemID.FireGauntlet,
-        ItemID.MusicBoxSnow,
-        ItemID.MusicBoxCrimson,
-        ItemID.MusicBoxBoss4,
-        ItemID.MusicBoxAltOverworldDay,
-        ItemID.MusicBoxRain,
-        ItemID.MusicBoxIce,
-        ItemID.MusicBoxDesert,
-        ItemID.MusicBoxDungeon,
-        ItemID.MusicBoxPlantera,
-        ItemID.MusicBoxBoss5,
-        ItemID.MusicBoxTemple,
-        ItemID.MusicBoxEclipse,
-        ItemID.MusicBoxMushrooms,
-        ItemID.MusicBoxPumpkinMoon,
-        ItemID.MusicBoxAltUnderground,
-        ItemID.MusicBoxFrostMoon,
         ItemID.PortableCementMixer,
         ItemID.CelestialEmblem,
         ItemID.MysteriousCape,
@@ -78,16 +48,11 @@ public class VanillaItems : IItemGender
         ItemID.HighTestFishingLine,
         ItemID.AnglerEarring,
         ItemID.GingerBeard,
-        ItemID.MusicBoxUndergroundCrimson,
         ItemID.LaserRuler,
         ItemID.SummonerEmblem,
-        ItemID.MusicBoxLunarBoss,
         ItemID.CelestialShell,
         ItemID.GoblinTech,
         ItemID.BejeweledValkyrieWing,
-        ItemID.MusicBoxMartians,
-        ItemID.MusicBoxPirates,
-        ItemID.MusicBoxHell,
         ItemID.BoneGlove,
         ItemID.BalloonHorseshoeFart,
         ItemID.BalloonHorseshoeHoney,
@@ -109,69 +74,18 @@ public class VanillaItems : IItemGender
         ItemID.RainbowString,
         ItemID.BlackString,
         ItemID.YoyoBag,
-        ItemID.MusicBoxTowers,
-        ItemID.MusicBoxGoblins,
         ItemID.WingsNebula,
         ItemID.Yoraiz0rDarkness,
         ItemID.PartyBundleOfBalloonsAccessory,
-        ItemID.MusicBoxSandstorm,
-        ItemID.MusicBoxDD2,
         ItemID.BerserkerGlove,
         ItemID.AncientChisel,
-        ItemID.MusicBoxOceanAlt,
-        ItemID.MusicBoxSlimeRain,
-        ItemID.MusicBoxSpaceAlt,
-        ItemID.MusicBoxTownDay,
-        ItemID.MusicBoxTownNight,
-        ItemID.MusicBoxWindyDay,
-        ItemID.MusicBoxDayRemix,
         ItemID.PortableStool,
-        ItemID.MusicBoxTitleAlt,
-        ItemID.MusicBoxStorm,
-        ItemID.MusicBoxGraveyard,
-        ItemID.MusicBoxUndergroundJungle,
-        ItemID.MusicBoxJungleNight,
         ItemID.GhostarsWings,
         ItemID.LongRainbowTrailWings,
-        ItemID.MusicBoxQueenSlime,
-        ItemID.MusicBoxEmpressOfLight,
         ItemID.EmpressFlightBooster,
-        ItemID.MusicBoxDukeFishron,
-        ItemID.MusicBoxMorningRain,
-        ItemID.MusicBoxConsoleTitle,
-        ItemID.MusicBoxUndergroundDesert,
-        ItemID.MusicBoxOWRain,
-        ItemID.MusicBoxOWDay,
-        ItemID.MusicBoxOWNight,
-        ItemID.MusicBoxOWUnderground,
-        ItemID.MusicBoxOWDesert,
-        ItemID.MusicBoxOWOcean,
-        ItemID.MusicBoxOWMushroom,
-        ItemID.MusicBoxOWDungeon,
-        ItemID.MusicBoxOWSpace,
-        ItemID.MusicBoxOWUnderworld,
-        ItemID.MusicBoxOWSnow,
-        ItemID.MusicBoxOWCorruption,
-        ItemID.MusicBoxOWUndergroundCorruption,
-        ItemID.MusicBoxOWCrimson,
-        ItemID.MusicBoxOWUndergroundCrimson,
-        ItemID.MusicBoxOWUndergroundSnow,
-        ItemID.MusicBoxOWUndergroundHallow,
-        ItemID.MusicBoxOWBloodMoon,
-        ItemID.MusicBoxOWBoss2,
-        ItemID.MusicBoxOWBoss1,
-        ItemID.MusicBoxOWInvasion,
-        ItemID.MusicBoxOWTowers,
-        ItemID.MusicBoxOWMoonLord,
-        ItemID.MusicBoxOWPlantera,
-        ItemID.MusicBoxOWJungle,
-        ItemID.MusicBoxOWWallOfFlesh,
-        ItemID.MusicBoxOWHallow,
-        ItemID.MusicBoxCredits,
         ItemID.WilsonBeardShort,
         ItemID.WilsonBeardLong,
         ItemID.WilsonBeardMagnificent,
-        ItemID.MusicBoxDeerclops,
         ItemID.IronPickaxe,
         ItemID.Vilethorn,
         ItemID.Starfury,
@@ -257,7 +171,6 @@ public class VanillaItems : IItemGender
         ItemID.DD2BallistraTowerT2Popper,
         ItemID.DD2LightningAuraT2Popper,
         ItemID.DD2ExplosiveTrapT2Popper,
-        ItemID.BookStaff,
         ItemID.DD2BetsyBow,
         ItemID.FossilPickaxe,
         ItemID.OrangePhasesaber,
@@ -273,6 +186,11 @@ public class VanillaItems : IItemGender
         ItemID.Mace,
         ItemID.TheMeatball,
         ItemID.ObsidianSwordfish,
+        ItemID.WandofFrosting,
+        ItemID.WaffleIron,
+        ItemID.HandOfCreation,
+        ItemID.HorseshoeBundle,
+        ItemID.FlowerPow,
     };
 
     public List<int> Neuter { get; } = new()
@@ -304,7 +222,6 @@ public class VanillaItems : IItemGender
         ItemID.DontStarveShaderItem,
         ItemID.Blowgun,
         ItemID.Uzi,
-        ItemID.FalconBlade,
         ItemID.Tsunami,
         ItemID.PainterPaintballGun,
         ItemID.FireworksLauncher,
@@ -312,7 +229,6 @@ public class VanillaItems : IItemGender
         ItemID.DD2SquireDemonSword,
         ItemID.FairyQueenMagicItem,
         ItemID.TentacleSpike,
-        ItemID.FlowerPow,
         ItemID.DarkLance,
         ItemID.Spear,
         ItemID.Celeb2,
@@ -404,6 +320,8 @@ public class VanillaItems : IItemGender
         ItemID.ShroomiteDiggingClaw,
         ItemID.StylistKilLaKillScissorsIWish,
         ItemID.RedsWings,
+        ItemID.ReflectiveShades,
+        ItemID.JimsDroneVisor,
     };
 }
 
@@ -622,7 +540,6 @@ public class CalamityItems : IItemGender
                 "Turbulance",
                 "AncientIceChunk",
                 "CadaverousCarrion",
-                "ColdDivinity",
                 "Cosmilamp",
                 "ResurrectionButterfly",
                 "SarosPossession",
@@ -764,6 +681,7 @@ public class CalamityItems : IItemGender
                 "RedtideSpear",
                 "HeartoftheElements",
                 "DeathsAscension",
+                "Vigilance",
                 "HellionFlowerSpear",
             };
             List<int> types = new List<int>();
@@ -819,7 +737,8 @@ public class CalamityItems : IItemGender
                 "TerrorTalons",
                 "TotalityBreakers",
                 "FleshOfInfidelity",
-                "FlowersOfMortality"
+                "FlowersOfMortality",
+                "GlacialEmbrace",
             };
             List<int> types = new List<int>();
             
@@ -1120,8 +1039,8 @@ public class PrefixOverhaul
         new [] {"Смертоносный", "Смертоносная", "Смертоносное", "Смертоносные"},
         new [] {"Стойкий", "Стойкая", "Стойкое", "Стойкие"},
         new [] {"Отвратительный", "Отвратительная", "Отвратительное", "Отвратительные"},
-        new [] {"Сонный", "Сонная", "Сонное", "Сонные"},
-        new [] {"Неудобный", "Неудобная", "Неудобное", "Неудобные"},
+        new [] {"Замедленный", "Замедленная", "Замедленное", "Замедленные"},
+        new [] {"Неуклюжий", "Неуклюжая", "Неуклюжее", "Неуклюжие"},
         new [] {"Мощный", "Мощная", "Мощное", "Мощные"},
         new [] {"Мистический", "Мистическая", "Мистическое", "Мистические"},
         new [] {"Искусный", "Искусная", "Искусное", "Искусные"},
@@ -1175,7 +1094,7 @@ public class PrefixOverhaul
         new [] {"Злящий", "Злящая", "Злящее", "Злящие"},
         new [] {"Грозный", "Грозная", "Грозное", "Грозные"},
         new [] {"Юркий", "Юркая", "Юркое", "Юркие"},
-        new [] {"Рассекающий", "Рассекающая", "Рассекающее", "Рассекающие"},
+        new [] {"Порывистый", "Порывистая", "Порывистое", "Порывистые"},
         new [] {"Дикий", "Дикая", "Дикое", "Дикие"},
         new [] {"Опрометчивый", "Опрометчивая", "Опрометчивое", "Опрометчивые"},
         new [] {"Бесстрашный", "Бесстрашная", "Бесстрашное", "Бесстрашные"},
@@ -1247,6 +1166,7 @@ public class PrefixOverhaul
         {
             CalamityItemsCreator calamity = new CalamityItemsCreator();
             IItemGender calamityItems = calamity.Create();
+            
             _feminine.AddRange(calamityItems.Feminine);
             _neuter.AddRange(calamityItems.Neuter);
             _plural.AddRange(calamityItems.Plural);
@@ -1255,6 +1175,7 @@ public class PrefixOverhaul
             {
                 InfernumModeItemsCreator infernum = new InfernumModeItemsCreator();
                 IItemGender infernumItems = infernum.Create();
+                
                 _feminine.AddRange(infernumItems.Feminine);
                 _neuter.AddRange(infernumItems.Neuter);
                 _plural.AddRange(infernumItems.Plural);
@@ -1265,6 +1186,7 @@ public class PrefixOverhaul
         {
             FargoSoulsItemsCreator fargoSouls = new FargoSoulsItemsCreator();
             IItemGender fargoSoulsItems = fargoSouls.Create();
+            
             _feminine.AddRange(fargoSoulsItems.Feminine);
             _neuter.AddRange(fargoSoulsItems.Neuter);
             _plural.AddRange(fargoSoulsItems.Plural);

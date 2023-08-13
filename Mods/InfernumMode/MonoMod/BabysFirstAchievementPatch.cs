@@ -1,21 +1,21 @@
-﻿using System.Reflection;
-using CalamityRuTranslate.Common;
-using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core.MonoMod;
-using InfernumMode.Content.Achievements.InfernumAchievements;
-using MonoMod.Cil;
-
-namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
-
-public class BabysFirstAchievementPatch : ILPatcher
-{
-    public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
-    
-    public override MethodInfo ModifiedMethod => typeof(BabysFirstAchievement).GetCachedMethod(nameof(BabysFirstAchievement.Initialize));
-
-    public override ILContext.Manipulator PatchMethod { get; } = il =>
-    {
-        TranslationHelper.ModifyIL(il, "First Of Many", "Всё бывает в первый раз");
-        TranslationHelper.ModifyIL(il, "The higher the count, the more you've learnt\n[c/777777:Die to an Infernum boss]", "Выше значение - больше изучение\n[c/777777:Погибнуть от босса в Инфернуме]");
-    };
-}
+﻿// using System.Reflection;
+// using CalamityRuTranslate.Common;
+// using CalamityRuTranslate.Common.Utilities;
+// using CalamityRuTranslate.Core.MonoMod;
+// using InfernumMode.Content.Achievements.InfernumAchievements;
+// using MonoMod.Cil;
+//
+// namespace CalamityRuTranslate.Mods.InfernumMode.MonoMod;
+//
+// public class BabysFirstAchievementPatch : ILPatcher
+// {
+//     public override bool AutoLoad => ModsCall.Infernum != null && ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
+//     
+//     public override MethodInfo ModifiedMethod => typeof(BabysFirstAchievement).GetCachedMethod(nameof(BabysFirstAchievement.Initialize));
+//
+//     public override ILContext.Manipulator PatchMethod { get; } = il =>
+//     {
+//         TranslationHelper.ModifyIL(il, "First Of Many", "Всё бывает в первый раз");
+//         TranslationHelper.ModifyIL(il, "The higher the count, the more you've learnt\n[c/777777:Die to an Infernum boss]", "Выше значение - больше изучение\n[c/777777:Погибнуть от босса в Инфернуме]");
+//     };
+// }
