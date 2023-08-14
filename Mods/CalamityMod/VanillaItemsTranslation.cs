@@ -415,6 +415,12 @@ public class VanillaItemsTranslation : GlobalItem
             {
                 tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} Увеличивает скорость добычи на 10%\nДобываемая вами руда иногда даёт дополнительный кусок руды";
             }
+            if (player.armor[0].type == ItemID.NecroHelmet || player.armor[0].type == ItemID.AncientNecroHelmet &&
+                player.armor[1].type == ItemID.NecroBreastplate &&
+                player.armor[2].type == ItemID.NecroGreaves)
+            {
+                tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} {Language.GetText("ArmorSetBonus.Bone")}\nДаёт возможность временно пережить смертельный удар\nДаёт до 7 секунд жизни перед неминуемой смертью";
+            }
             
             switch (item.type)
             {

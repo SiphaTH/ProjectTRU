@@ -8,7 +8,7 @@ public class ModVersionChecker : ILoadable
 {
     private readonly ModInfo[] _modInfo =
     {
-        new("CalamityMod", new Version(2, 0, 3, 1), true),
+        new("CalamityMod", new Version(2, 0, 3, 2), true),
         new("StarlightRiver", new Version(1, 5, 0, 2), false),
         new("InfernumMode", new Version(0, 9, 16), false),
         new("FargowiltasSouls", new Version(1, 4, 2, 5), false),

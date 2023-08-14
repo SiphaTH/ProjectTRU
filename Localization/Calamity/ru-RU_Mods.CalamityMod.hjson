@@ -223,7 +223,7 @@
 }
 
 Bestiary: {
-    Bloatfish: Это скорее геологическое образование, чем живой организм. Вздутобрюх имеет липкую, похожую на клей кожу, которую он использует, чтобы покрыть своё тело пустотным камнем. Хоть это и защищает его от хищников, но из-за своего чудовищного веса оседает на самых глубинах бездны.
+    Bloatfish: Это скорее геологическое образование, чем живой организм. Вздутобрюх имеет липкую, похожую на клей кожу, которую он использует, чтобы покрыть своё тело пустотным камнем. Хоть это и защищает его от хищников, но из-за своего чудовищного веса оседает в самых глубинах бездны.
     BobbitWorm: Hiding away in the darkest corners of the void to strike at unsuspecting prey, bobbit worms take full advantage of the Abyss’ darkness. To live here, in the most extreme environment in the world, a creature must either be truly mighty, learn to use the environment to survive, or both.
     BoxJellyfish: Larger than the average jellyfish, the sting of these persistent pests packs a powerful punch. Though they can be found in most large bodies of water, they are locally extinct around Ilmeris after the Brimstone Witch turned her hexes against the kingdom.
     ChaoticPuffer: These creatures inhale trace amounts of scoria in the water while inflating, heating the liquid inside of them immensely. Hot enough to melt iron in this state, they cause horrific burns to those they make contact with, and predators attempting to consume them are boiled from the inside out.
@@ -277,7 +277,7 @@ Bestiary: {
     HeatSpirit: Citizens of Azafure who committed heinous crimes were cast out of the city and forced to don unremovable obsidian skulls as a mark of their sins, to let all know of their vile acts. Now the lost souls of those who were exiled are finally able to return home after the city’s fall, the skulls they wore being all that remains of them.
     InfernalCongealment: A lava slime that has absorbed pieces of the charred stone left behind by the Brimstone Elemental. Despite its simple nature, these creatures are just as much of a threat as the rest of the Crag’s current inhabitants.
     RenegadeWarlock: Victims caught in the crossfire during the battle between Calamitas and the Brimstone Elemental, cursed to wander the ruins of their former home for all eternity. Their final moments were spent clinging to life, and in death they seek survival by using the very magicks that slaughtered them.
-    Scryllar: Vengeful spirits of those who lost their lives during the clash between Calamitas and the Elemental, now forever bound to their home. Those who were close enough to bear witness to the battle perished in it, leaving few to know the truth of the battle’s outcome.
+    Scryllar: Vengeful spirits of those who lost their lives during the clash between Calamitas and the elemental, now forever bound to their home. Those who were close enough to bear witness to the battle perished in it, leaving few to know the truth of the battle’s outcome.
     SoulSlurper: An early form of Calamitas’ Soul Seekers, summoned by the Witch during her conflict with the Brimstone Elemental. Unlike the refined form that would follow it, she possessed very little control of them, leading to her creations going rogue shortly after the arduous battle was finally over.
     Androomba: One of the most mundane of Draedon’s creations, the directive of Androombas is simply to tidy up his labs and domiciles. He and his scientists could not afford to waste time on menial labor when there was endless research to be done.
     Nanodroid: Ambient lighting, total surveillance, instantaneous repair… With enough of these tiny machines working in unison, any problem is solvable.
@@ -292,10 +292,10 @@ Bestiary: {
     BlightSlime: Slimes that have absorbed some of the blighted godly essence. Riddled with impurity, they are now more putrid flesh than gelatin and, having taken in such an amount that they seem ready to burst. Yet unlike most slimes which have relatively basic minds, these seem to be collecting mass with a purpose.
     Cryon: Archmage Permafrost went through great pains to not take part in combat himself, instead molding cryons to act as his personal guardians. Noticing the spread of godly essence just as many other creatures have, they have come out of stasis to combat any signs of it so that they may defend their master.
     CryoSlime: Slimes enchanted by the Archmage, as a host to crystallize the frozen power of the tundra into a magical metal. He cast a spell to hide away most of his creations and research soon after leaving the Godseeeker’s side, well aware that Yharim may attempt to exploit his previous work.
-    Eidolist: Once members of the Dragon Cult, they now beg the favor of a new master. They are able to live in the abyss indefinitely thanks to their wyrm-like form, allowing them to serve a new purpose.
+    Eidolist: Once members of the dragon cult, they now beg the favor of a new master. They are able to live in the abyss indefinitely thanks to their wyrm-like form, allowing them to serve a new purpose.
     FearlessGoldfishWarrior: Though Goldfish thrive in their ponds and lakes, many take to land during storms to feed on the worms that have also surfaced. There are even accounts of aquatic warriors who carry daggers of shimmering gold, though most consider these tales far too fishy to be credible.
     Frogfish: Well-camouflaged and prepared to strike at any moment, Frogfish show that the ocean is rarely as serene as it seems. There are few places where one can find true peace here in the heart of what once was an empire unrivaled.
-    Horse: After the Brimstone Elemental became dormant, the forgemasters of Azafure used clockwork and crystal to bind the powers of an elemental to a mechanical body. While formidable, it seems the dream of creating a true replacement for an Elemental died unfulfilled with Azafure itself.
+    Horse: After the Brimstone Elemental became dormant, the forgemasters of Azafure used clockwork and crystal to bind the powers of an elemental to a mechanical body. While formidable, it seems the dream of creating a true replacement for an elemental died unfulfilled with Azafure itself.
     IceClasper: Though their exact origins are an enigma, what is known is that these ethereal beings seek to stamp out any and all sources of warmth that exist in their home. Due to this fact, and taking into account the fossil record, many speculate that ice claspers may have played a vital role in the tundra’s creation.
     ImpiousImmolator: An idol carved in the image of Her, it is lit ablaze with the crafter’s lifeforce. After all, what weight does one’s life hold when one wishes to see the world wreathed in Her holy flames?
     MantisShrimp: Though a variety of answers are given when one asks adventurers about dangerous creatures, few aside from sailors will mention the small yet mighty Mantis Shrimp. Their strikes are so swift that the energy generated from them heats the water to temperatures rivaling the magma of Azafure.
@@ -360,13 +360,13 @@ Bestiary: {
     CorruptSlimeSpawn: Slimes are extraordinarily hardy creatures: if a large slime has chunks of living gelatin severed from it, the chunks tend to continue on, albeit as their own beings. Even as gel, a slime is still technically alive– it simply exists in a state where it cannot function in any meaningful way.
     CrimsonSlimeSpawn: Slimes are extraordinarily hardy creatures: if a large slime has chunks of living gelatin severed from it, the chunks tend to continue on, albeit as their own beings.They even retain the memories of the original slime, and so continue to work in the interest of their “parent”.
     CrimsonSlimeSpawn2: Though many slimes may get objects stuck partway inside of it and learn to use them as weapons, these slimes are a unique case. The spikes of these slimes are a natural part of them, heavily sharpened so that they may impale those who dare defy their god.
-    Sepulcher: An amalgamation of souls and flesh given new form and purpose via necromancy. This twisted perversion of life is inspired by the Auric Dragons’ method of revival, though it is plain to see that any grace the dragons may have had is not present here. The school of magic used to create Sepulcher was forbidden in the Deific Era, yet many still practiced it in secrecy.
+    Sepulcher: An amalgamation of souls and flesh given new form and purpose via necromancy. This twisted perversion of life is inspired by the auric dragons’ method of revival, though it is plain to see that any grace the dragons may have had is not present here. The school of magic used to create Sepulcher was forbidden in the Deific Era, yet many still practiced it in secrecy.
     SoulSeekerSupreme: Created through a marriage of brimstone magic and necromancy, these foul beings serve their master’s whims unflinchingly. What they lack in sheer power they make up for in both sheer numbers and suprising amount of coordination.
     AquaticScourge: A peaceful yet intimidating being that roamed the Sulphurous Sea, its mere existence was enough to scare away most creatures from the shore. Without its presence to act as a deterrent, fearsome predators now feel safe to prowl during the acidic storms.
     AstrumAureus: Once meant for returning equipment from and surveying sites of prior battles, this creation of Draedon’s was overtaken by the Astral Infection. Unfortunately, its defeat has released what power it possessed, granting it instead to the star’s other warriors.
     AstrumDeus: When a star begins to die, under normal circumstances, its power simply fades as it falls to the nearest celestial body. However, some dying stars bloat and fester before falling. Astrum Deus exists to consume these stars before the Astral Infection manifests in them, and it has been revered for its sacred duty since time immemorial.
     BrimstoneElemental: Roused from her deep slumber in relatively recent years, her awakening set into motion the downfall of Azafure. Most blame her unexpected revival on the city’s overzealous mining of Brimstone, while a few blame the city’s pollution, and some fewer cite dubious prophecies. But behind closed doors, there are whisperings that she was revived deliberately as part of a plot by opposing forces.
-    Bumblefuck: Long ago, these siblings of the Auric Dragons hid themselves away in the depths of the jungle. They hunt prey using the immense static electricity generated by the flapping of their wings against their feathery bodies, manifesting as deadly bolts of red lightning.
+    Bumblefuck: Long ago, these siblings of the auric dragons hid themselves away in the depths of the jungle. They hunt prey using the immense static electricity generated by the flapping of their wings against their feathery bodies, manifesting as deadly bolts of red lightning.
     Calamitas: This machine which stalks the night carries the failed clone of the Supreme Witch. Though lacking her hexes and black magic, even a fragment of Calamitas’ brimstone power was enough to drive the clone to insanity. Nothing human remains.
     Cataclysm: A pitiable creation of the clone, made in an attempt to imitate one of the Supreme Witch’s brothers. Yet this and the clone’s other creations have no will of their own, amounting to little more than puppets she controls.
     Catastrophe: A pitiable creation of the clone, made in an attempt to imitate one of the Supreme Witch’s brothers. Not many would recognize them as such despite her efforts, though a few key characteristics have managed to survive in these abhorrent amalgamations.
@@ -381,12 +381,12 @@ Bestiary: {
     Artemis: The final superweapon to be created, Artemis only needed a single revision to its original blueprints. Draedon’s perfectionist nature allowed him to raise his skill in engineering to new heights, culminating with a machine possessed of unbelievable nimbleness and precision. To gaze upon the archer is to gaze a second too late.
     Thanatos: A mechanical serpent built using a revised variant of the Devourer’s armor plating, it was intended to be utterly invincible. Even its weakness of needing to vent due to overheating was turned to a strength, for no creature of flesh or metal can survive such temperatures. To gaze upon this serpentine terror is to know true power.
     HiveMind: Although Yharim's campaign would one day span the entire world, it all started in these lands with the massacre of ruthless dictator deities. As soon as their leaders fell at the hands of the Godseeker, their armies toppled like dominos. A hive mind cannot function without its brain, after all.
-    Anahita: Once a resident of the Abyss, she left it long ago due to Silva’s influence spreading through her former home. She wishes to see all overtaken by the ocean, so that her domain may encompass the world. Such is the nature of all Elementals.
+    Anahita: Once a resident of the Abyss, she left it long ago due to Silva’s influence spreading through her former home. She wishes to see all overtaken by the ocean, so that her domain may encompass the world. Such is the nature of all elementals.
     Leviathan: A gargantuan marine reptile that lurks the ocean depths along with the Water Elemental, Anahita. It is unknown if she is the last of her kind, or was simply manifested into existence like her master.
     GreatSandShark: These intelligent predators once swam the shores of the upper Ilmeran Sea, with many being trained to hold back Yharim’s forces. Yet when the day came, the sand sharks were barely even a distraction for the Supreme Witch, with this particular specimen surviving only by making a hasty retreat.
-    OldDuke: One of the original draconic offshoots who were born in the Draconic Era. Dragons who were born after all the Auric Souls had been gifted to their kind were forced to make do without, forever outside of the cycle of rebirth. Yet in a twist of fate, the Auric Dragons’ age would end, and those rejected would be the survivors in this new world.
+    OldDuke: One of the original draconic offshoots who were born in the Draconic Era. Dragons who were born after all the auric souls had been gifted to their kind were forced to make do without, forever outside of the cycle of rebirth. Yet in a twist of fate, the auric dragons’ age would end, and those rejected would be the survivors in this new world.
     Perforator: A living embodiment of some of the worst this world has to offer, these parasites made full use of their hive. Using it to seek ever more to gorge themselves upon, they sought to grow even larger, that they may one day perhaps regain what they lost.
-    PerforatorHive: To tear and consume, taking for only themselves until there is nothing left– this was the primal instinct left behind by the Gods which now form the Crimson. Their selfish desires coalesced into this hive, infested by ravenous worms whose sole desire is to devour.
+    PerforatorHive: To tear and consume, taking for only themselves until there is nothing left– this was the primal instinct left behind by the gods which now form the Crimson. Their selfish desires coalesced into this hive, infested by ravenous worms whose sole desire is to devour.
     PlaguebringerGoliath: The Plague’s creation initially began after the unsatisfactory results the soul-power machines provided, with Draedon seeking absolute control. After testing many different variants for decades, both the Plague and its goliath were born, with its spread allowing for an amount of control over life once thought impossible.
     Polterghast: The feral amalgamation that drove out the cult that once dwelled here, and inadvertently broke an alliance thought to be eternal. Many have delved into the dungeon in search of riches and knowledge long since lost, yet most simply join the spirits that have claimed this place as their own.
     PrimordialWyrm: The first Wyrm, blessed by the Goddess of Life, held staggering power that surpassed nearly all of its auric brethren. It held a deep hatred for any sign of usurped light, and would have attempted to strike down even the wielder of Primordial Light had they returned to reclaim their artifact. And yet, despite its immense power, it never would have stood a chance.
@@ -394,7 +394,7 @@ Bestiary: {
     ProfanedGuardianDefender: In a time lost to memory, there were four champions who used their loyalty to one another to slay a dragon, that one might gorge themself upon its auric soul. “I am the strongest,” declared their shieldmaiden, “I should be the one.” There was silence, until Providence spoke: “You lack strength of conviction, that you might try to pluck the stars from the sky.”
     ProfanedGuardianHealer: In a time lost to memory, there were four champions who used their fathomless determination to slay a dragon, that one might gorge themself upon its auric soul. “I am the most courageous,” declared their cleric, “I should be the one.” There was silence, until Providence spoke: “Your courage blinds you to the truth, that your overconfidence would doom you.”
     Providence: In a time lost to memory, there were four visionaries. With righteous fury, they slew a dragon, and their leader gorged Herself upon its auric soul of Flame. “The world is without guidance, and its people are filled with darkness.” She said. There was silence, until Providence spoke once more. “Let us go forth, and light the world anew.” And it was so.
-    Ravager: The mangled reincarnation of the God of Sacrifices, given life once more. Necromancers sworn to his faith returned his broken body to his temple, offering the only sacrifices they could– their own lives. Yet, necromancy is an imperfect art, and the god has very little of his mind left, simply destroying all it comes across.
+    Ravager: The mangled reincarnation of the God of Sacrifices, given life once more. Necromancers sworn to his faith returned his broken body to his temple, offering the only sacrifices they could to reverse his Death– their own lives. Yet, necromancy is an imperfect art, and the god has very little of his mind left, simply destroying all it comes across.
     Signus: ‘For any desire, there is a price’. A deal bound in Onyx and sealed in blood, and one can have any wish granted– a gateway, a promise, a betrayal. Curiously, there is no recorded history of Signus before the age of gods, and very little recorded to this day. Perhaps, for the right price, one might find out the truth of Signus for oneself.
     SlimeGodPaladin: The Slime God avoids direct combat due to its weakness, instead choosing to mold guardians to protect it. These guardians were created from countless blight slimes, their filth acting as a counterweight to the purity of their god.
     SlimeGodCore: Despite being a Gluttonous slime, the Slime God forbids itself from growing out of control to maintain the balance of the world. It was still pursued during the Crusade, but it managed to survive through countless strategic retreats. The duty it upholds and the methods it employs are the reason the Onyx Kinsmen worship such a puny deity.
@@ -1213,7 +1213,7 @@ Buffs: {
     }
 
     ElysianGuard: {
-        DisplayName: Элизийский страж
+        DisplayName: Элизийская защита
         Description: Скорость передвижения снижена, а остальные характеристики усилены
     }
 
@@ -1928,7 +1928,7 @@ Buffs: {
     }
 
     StellarTorusBuff: {
-        DisplayName: Бафф астрального возмездия
+        DisplayName: Звёздный торус
         Description: Призывает орбитальный торус, сжигающий ваших врагов
     }
 
@@ -1980,6 +1980,30 @@ Buffs: {
     WulfrumDroidBuff: {
         DisplayName: Вульфрумовый дроид
         Description: Вас защищает вульфрумовый дроид
+    }
+    
+    PinkJellyRegen: {
+    	DisplayName: Розовая желейная регенерация
+    	Description: Энергия слизи освежает вас, регенерация здоровья увеличена на 4
+    }
+    
+    GreenJellyRegen: {
+    	DisplayName: Зелёная желейная регенерация
+    	Description: Исцеляющая слизь усиливает вас, регенерация здоровья увеличена на 6
+    }
+    
+    AbsorberRegen: {
+    	DisplayName: Сверхрегенерация
+    	Description:
+    		'''
+    		Вы благословлены слиянием природных сил
+    		Регенерация здоровья увеличена на 7, урон на 10%, а сопротивление урону на 7%
+    		'''
+    }
+    
+    AbsorberAffliction: {
+    	DisplayName: Поглотитель недугов
+    	Description: Чёрт возьми, природа, ты ужасна!
     }
 }
 
@@ -2252,6 +2276,29 @@ Configs: {
                 '''
                 Значительно увеличивает скорость, с которой игрок может размещать блоки и стены.
                 Эта настройка комбинируется с «{$ItemName.BrickLayer}», «{$ItemName.PortableCementMixer}» и другими аксессуарами.
+                '''
+        }
+
+        FlightBar: {
+            Label: "[i:CalamityMod/DrewsWings] Отображение панели полёта"
+            Tooltip: Включает интерфейс панели полёта, показывающий способности полёта игрока.
+        }
+
+        FlightBarPosX: {
+            Label: "[i:LaserRuler] Позиция по X панели полёта"
+            Tooltip:
+                '''
+                Позиция по X панели полёта, измеряется в % от ширины экрана.
+                Индикатор можно перетаскивать мышью, если отключён параметр «Фиксация позиций индикаторов».
+                '''
+        }
+
+        FlightBarPosY: {
+            Label: "[i:LaserRuler] Позиция по Y панели полёта"
+            Tooltip:
+                '''
+                Позиция по Y панели полёта, измеряется в % от ширины экрана.
+                Индикатор можно перетаскивать мышью, если отключён параметр «Фиксация позиций индикаторов».
                 '''
         }
 
@@ -2750,8 +2797,6 @@ Items: {
                 Увеличивает максимальный запас здоровья на 40 и регенерацию здоровья
                 Позволяет делать космический огненный рывок, способный пробиваться сквозь врагов без получения урона
                 Можно использовать для тарана врагов
-                Нажмите [KEY] для активации баффа увеличивающий весь урон, шанс критического удара и защиту
-                Активация этого баффа снизит вашу скорость передвижения и увеличит вражескую агрессию
                 Находясь в жидкостях, увеличивает защиту на 20
                 '''
         }
@@ -2793,9 +2838,12 @@ Items: {
             Tooltip:
                 '''
                 Обжигающее ядро Осквернённой богини
-                При получения урона создаёт миниатюрное солнце, которое остаётся на месте и наносит урон ближайшим врагам
-                Солнце медленно притягивает к себе врагов
-                Одновременно может существовать только одно солнце
+                Нажатие [KEY] активирует элизианскую защиту, обволакивая вас сверкающим осквернённым кристаллом
+                Если вы получите удар сразу после обволакивания, кристалл разбивается
+                При разбивании кристалла, волны святых звёзд спирально распространятся, и урон, который вы должны были получить, сократится до 1 единицы
+                После такого разбивания, эффект снижения урона переходит в режим перезарядки
+                Если ещё одно обволакивание кристаллом разобьётся во время перезарядки, исцеляющие звёзды перемешаются с волнами звёзд
+                Получаемый урон от удара не снижается во время перезарядки
                 Обеспечивает умеренным количеством света в бездне
                 '''
         }
@@ -2947,7 +2995,20 @@ Items: {
     
         CrawCarapace: {
             DisplayName: Клешня пресноводного рака
-            Tooltip: Враги получают урон, когда касаются вас
+            Tooltip:
+                '''
+                Увеличивает урон на 5%
+                Враги, атакующие вас, получают урон и подвергаются дебаффу «{$Buffs.ArmorCrunch.DisplayName}»
+                '''
+        }
+        
+        Baroclaw: {
+        	DisplayName: Тяжёлый коготь
+        	Tooltip:
+        		'''
+        		Увеличивает урон на 8%
+        		Враги, атакующие вас, получают значительный урон и подвергаются дебаффу «{$Buffs.ArmorCrunch.DisplayName}» на продолжительное время
+        		'''
         }
     
         CrimsonFlask: {
@@ -3180,8 +3241,6 @@ Items: {
                 Увеличивает максимальный запас здоровья на 30
                 Позволяет делать усиленный святой огненный рывок, способный пробиваться сквозь врагов без получения урона
                 Можно использовать для тарана врагов
-                Нажмите [KEY] для активации баффа увеличивающий весь урон, шанс критического удара и защиту
-                Активация этого баффа снизит вашу скорость передвижения и увеличит вражескую агрессию
                 Благословенна осквернённым пламенем
                 '''
         }
@@ -3286,11 +3345,6 @@ Items: {
                 '''
         }
     
-        FungalCarapace: {
-            DisplayName: Грибной панцирь
-            Tooltip: Вы испускаете облако грибных спор после получения урона
-        }
-    
         FungalClump: {
             DisplayName: Грибной комок
             Tooltip:
@@ -3330,8 +3384,8 @@ Items: {
             DisplayName: Гигантский панцирь
             Tooltip:
                 '''
-                Снижает скорость передвижения на 15%
-                Получение урона делает вас очень быстрым на короткое время
+                Снижает скорость рывка на 10%
+                После получения удара снимает штраф на рывок и снижает защиту на 5 секунд
                 '''
         }
     
@@ -3339,9 +3393,9 @@ Items: {
             DisplayName: Гигантский черепаший панцирь
             Tooltip:
                 '''
-                Снижает скорость передвижения на 10%
-                Враги получают урон при атаке по вам
-                Даёт невосприимчивость к дебаффу «{$Buffs.ArmorCrunch.DisplayName}»
+                Увеличивает сопротивление урону на 5%
+                Снижает скорость рывка на 15%
+                После получения удара снимает штраф на рывок и снижает защиту и сопротивление урону на 5 секунд
                 '''
         }
     
@@ -3383,8 +3437,9 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает скорость передвижения и прыжка на 10%
-                Увеличивает максимальный запас здоровья и маны на 20
-                Не двигаясь, увеличивает регенерацию здоровья и восстановление маны
+                При использовании лечебного зелья создаёт очищающую ауру
+                WПрохождение через ауру снимает все дебаффы и восстанавливает урон по защите один раз
+                Аура увеличивает регенерацию здоровья для всех игроков, находящихся внутри, в течение 8 секунд
                 '''
         }
     
@@ -3392,9 +3447,14 @@ Items: {
             DisplayName: Звёздные гравитоны
             Tooltip:
                 '''
-                Нажмите клавишу {$Key.DOWN}, чтобы увеличить скорость падения на 5 секунд
-                Имеет 8 секунд перезарядки
-                Удар по земле с повышенной скоростью падения вызывает астральный взрыв
+                Увеличивает скорость прыжка на 20%
+                Даёт невосприимчивость к урону от падения
+                Удерживайте клавишу {$Key.DOWN}, чтобы увеличить максимальную скорость падения
+                Удерживайте клавишу [KEY] в течение 1 секунды находясь в воздухе, чтобы зарядить сверхскоростной удар
+                Во время удара вы пробиваетесь насквозь врагов и не получаете контактного урона
+                Когда вы достигаете земли, вы создёете взрыв у своих ног
+                Мощность взрыва увеличивается как в уроне, так и в размере, в зависимости от продолжительности удара
+                Временно увеличивается скорость прыжка на 40% после удара о землю
                 '''
         }
     
@@ -3518,8 +3578,8 @@ Items: {
             DisplayName: Желе жизни
             Tooltip:
                 '''
-                Увеличивает максимальный запас здоровья на 20
-                Не двигаясь, увеличивает регенерацию здоровья
+                При использовании лечебного зелья создаёт длительную ауру
+                Аура увеличивает регенерацию здоровья для всех игроков, находящихся внутри, в течение 5 секунд
                 '''
         }
     
@@ -3552,12 +3612,12 @@ Items: {
                 '''
         }
     
-        ManaJelly: {
-            DisplayName: Желе маны
+        CleansingJelly: {
+            DisplayName: Очищающее желе
             Tooltip:
                 '''
-                Увеличивает максимальный запас маны на 20
-                Не двигаясь, увеличивает восстановление маны
+                При использовании лечебного зелья создаёт очищающую ауру
+                Прохождение через ауру снимает все дебаффы и восстанавливает урон по защите один раз
                 '''
         }
     
@@ -3701,10 +3761,17 @@ Items: {
             DisplayName: Чешуя Старого герцога
             Tooltip:
                 '''
-                Во время действия дебаффа, наносящего постепенный урон, урон увеличивается на 10%, а шанс критического удара - на 5%
-                За каждые 25% потерянного здоровья урон увеличивается на 6%, а шанс критического удара - на 3%
-                Максимальное значение составит 18% увеличенного урона и 9% шанса критического удара при менее чем 25% здоровья
-                Даёт невосприимчивость к дебаффам «{$BuffName.Poisoned}», «{$BuffName.Venom}» и «{$Buffs.SulphuricPoisoning.DisplayName}»
+                Увеличивает сопротивление урону на 10%
+                Увеличивает максимальную скорость передвижения и ускорение на 10%
+                Увеличивает длину и скорость рывка на 25%
+                Показывает индикатор выносливости на панели перезарядки
+                При использовании любого рывка расходуется 20% выносливости
+                Выносливость постепенно восстанавливается до 100%, если вы не делаете рывков в течение 1 секунды
+                Выносливость восстанавливается быстрее, когда вы стоите на месте
+                Если выносливость достигает 0%, вы становитесь истощённым
+                [c/CE0E18:В состоянии истощения аннулирует бонусы этого предмета к сопротивлению урону и скорости передвижения]
+                [c/CE0E18:А также снижает скорость передвижения на 30% и скорость рывка на 50%]
+                Этот дебафф действует до тех пор, пока ваша выносливость не восстановится снова до 100%
                 '''
         }
     
@@ -4209,14 +4276,12 @@ Items: {
             DisplayName: Поглотитель
             Tooltip:
                 '''
-                Увеличивает скорость передвижения и прыжка на 5%
-                Увеличивает максимальный запас здоровья и маны на 20
-                Не двигаясь, увеличивает регенерацию здоровья и восстановление маны
-                Враги получают урон, когда касаются вас
-                Вы испускаете облако грибных спор после получения урона
-                Увеличивает сопротивление урону на 7%
+                Увеличивает скорость передвижения и прыжка на 10%
+                Враги получают огромный урон, когда касаются вас, и на них накладывается дебафф, существенно снижающий сопротивление урону
+                При использовании лечебного зелья создаёт очищающую ауру
+                Прохождение через ауру снимает все дебаффы и восстанавливает урон по защите один раз
+                Аура значительно увеличивает регенерацию здоровья, урон и сопротивление урону для всех игроков, находящихся внутри, на 15 секунд
                 Поглощает 5% урона от вражеских атак и преобразует его в исцеление
-                Даёт невосприимчивость к дебаффу «{$Buffs.ArmorCrunch.DisplayName}»
                 '''
         }
     
@@ -4298,17 +4363,7 @@ Items: {
     
         TheSponge: {
             DisplayName: Губка
-            Tooltip:
-                '''
-                Увеличивает сопротивление урону на 10%
-                Увеличивает максимальный запас здоровья и маны на 30
-                Увеличивает скорость передвижения и прыжка на 5%
-                Стоя на месте ускоряет регенерацию здоровья и маны
-                Враги получают урон, когда касаются вас
-                Вы испускаете облако грибных спор после получения урона
-                Поглощает 6.25% урона от вражеских атак и преобразует его в исцеление
-                Даёт невосприимчивость к дебаффу «{$Buffs.ArmorCrunch.DisplayName}»
-                '''
+            Tooltip: НЕ РАБОТАЕТ
         }
     
         TheTransformer: {
@@ -4972,7 +5027,7 @@ Items: {
                 DisplayName: Шлем Дедала
                 Tooltip:
                     '''
-                    Увеличивает урон ближнего боя yf 15%
+                    Увеличивает урон ближнего боя на 15%
                     Увеличивает шанс критического урона ближнего боя на 10%
                     '''
                 SetBonus:
@@ -6262,7 +6317,6 @@ Items: {
                     '''
                 CommonSetBonus:
                     '''
-                    Находясь под водой, увеличивает регенерацию здоровья на 3 и магический урон на 10%
                     При использовании любого оружия у вас есть 10% шанс метнуть морскую ракушку
                     Морская ракушка наносит чистый урон и не зависит от классового типа урона
                     Обеспечивает повышенной подводной подвижностью и слегка увеличивает запас воздуха в бездне
@@ -6281,23 +6335,33 @@ Items: {
             VictideHeadMagic: {
                 DisplayName: Шлем отшельника прилива
                 Tooltip: Увеличивает магический урон на 5%
+                SetBonus: Находясь под водой, увеличивает регенерацию здоровья на 3 и магический урон на 10%
             }
             
             VictideHeadMelee: {
                 DisplayName: Шлемакушка прилива
                 Tooltip: Увеличивает урон ближнего боя на 5%
-                SetBonus: Враги чаще выбирают вас в качестве цели
+                SetBonus:
+                    '''
+                    Враги чаще выбирают вас в качестве цели
+                    Находясь под водой, увеличивает регенерацию здоровья на 3 и урон ближнего боя на 10%
+                    '''
             }
             
             VictideHeadRanged: {
                 DisplayName: Коралловый тюрбан прилива
                 Tooltip: Увеличивает стрелковый урон на 5%
+                SetBonus: Находясь под водой, увеличивает регенерацию здоровья на 3 и стрелковый урон на 10%
             }
             
             VictideHeadRogue: {
                 DisplayName: Накрабовник прилива
                 Tooltip: Увеличивает разбойный урон на 5%
-                SetBonus: Увеличивает максимальную скрытность на 60
+                SetBonus:
+                    '''
+                    Увеличивает максимальную скрытность на 60
+                    Находясь под водой, увеличивает регенерацию здоровья на 3 и разбойный урон на 10%
+                    '''
             }
             
             VictideHeadSummon: {
@@ -6307,6 +6371,7 @@ Items: {
                     '''
                     Увеличивает призываемое число миньонов на 1
                     Призывает морского ежа, защищающего вас
+                    Находясь под водой, увеличивает регенерацию здоровья на 3 и урон призывателя на 10%
                     '''
             }
             
@@ -6718,7 +6783,7 @@ Items: {
                 Нажмите, чтобы просмотреть содержимое
                 '''
             ContentPage1: Центр разнообразной морской жизни и всё, что уцелело от Ильмериса после разрушения. Когда-то здесь были сельские окраины, а теперь - последний кусочек некогда могущественного королевства. Хорошо, что Ведьма сфокусировалась на атаке городов и сохранила некоторую часть моря от испепеления. Я давно мечтал исследовать эти воды вдоль и поперёк, но война мешала мне. Несмотря на множество исчезнувших видов, в этих глубинах всё ещё обитают удивительные существа. Именно здесь, в моей лаборатории, я смогу изучить морские формы жизни и раскрыть секреты их природы.
-            ContentPage2: Несмотря на наличие глаз у морской жизни в этих пещерах, некоторые из них способны обрабатывать лишь ограниченный спектр цветов. Их глаза настроены на восприятие света от морских призм, окружающих их среду, и многие из них полагаются на это, чтобы ориентироваться в затопленных пещерах. Их прочная, изрытая шрамами кожа покрыта кристаллическими наростами, которые я сначала принял за морские призмы, осевшие на их спинах. Однако вскрытие показало, что эти кристаллы расположены внутри существ, а наросты являются результатом прорыва внутренних морских призм из их кожи. Эти кристаллы разрастаются настолько быстро, что некоторые существа в определённых местах больше напоминают геологические образования, нежели живые организмы.
+            ContentPage2: Несмотря на наличие глаз у обитателей этих пещерах, некоторые из них способны обрабатывать лишь ограниченный спектр цветов. Их глаза настроены на восприятие света от морских призм, окружающих их среду, и многие из них полагаются на это, для ориентира в затопленных пещерах. Их прочная, изрытая шрамами кожа покрыта кристаллическими наростами, которые я сперва принял за морские призмы, осевшие на их спинах. Однако вскрытие показало, что эти кристаллы расположены внутри существ, а наросты являются результатом прорыва внутренних морских призм из их кожи. Эти кристаллы разрастаются настолько быстро, что некоторые существа в определённых местах больше напоминают геологические образования, нежели живые организмы.
             ContentPage3: Наибольший интерес для меня представляют аномально крупные моллюски, обитающие здесь. Они многократно превосходят в размерах обычного человека и настолько тяжелы, что не способны передвигаться привычным способом, как их меньшие сородичи. Вместо этого они полагаются на телепортацию для переноса своих массивных, бронированных тел. Согласно сведениям разведчиков, раньше эти моллюски обладали более высокими магическими способностями. Однако, так как их видели только издалека, их сведения могут быть неточными. А что, если их магические способности просто исчезли после падения Ильмериса? В любом случае, мне не следует исключать даже такую возможность.
         }
         
@@ -7167,7 +7232,11 @@ Items: {
         
         EnchantedStarfish: {
             DisplayName: Зачарованная рыба-звезда
-            Tooltip: Навсегда увеличивает максимальный запас маны на 20
+            Tooltip:
+                '''
+                {$ItemTooltip.ManaCrystal}
+                Действует как замена [i:ManaCrystal] кристаллу маны
+                '''
         }
         
         FishofEleum: {
@@ -13408,7 +13477,7 @@ Items: {
                 Не расходуется
                 '''
             SpawnNormal: Призывает Криогена при использовании в снегах
-            SpawnGFB: Призывает Пирогена?.. при использовании в снегах
+            SpawnGFB: Призывает Криогена?.. при использовании в снегах
         }
         
         DeathWhistle: {
@@ -14936,7 +15005,7 @@ Items: {
             
             ShaderainStaff: {
                 DisplayName: Посох теневого дождя
-                Tooltip: Стреляет штормовым облаком тени
+                Tooltip: Стреляет брызги зловещих облаков и дождя
             }
             
             ShadowboltStaff: {
@@ -15289,7 +15358,7 @@ Items: {
                 Tooltip:
                     '''
                     Выпускает самонаводящуюся кровь, когда враги находятся рядом
-                    Исключительно манёвренное йо-йо
+                    Очень манёвренное йо-йо
                     '''
             }
             
@@ -15385,7 +15454,7 @@ Items: {
                 Tooltip:
                     '''
                     Выпускает космические сферы, которые обстреливают ближайших врагов лазерами
-                    Очень манёвренное йо-йо
+                    Исключительно манёвренное йо-йо
                     'Уничтожьте вселенную в мгновение ока'
                     '''
             }
@@ -15912,7 +15981,7 @@ Items: {
                 Tooltip:
                     '''
                     Враги, в которых попадает йо-йо, теряют здоровье
-                    Очень манёвренное йо-йо
+                    Исключительно манёвренное йо-йо
                     [GFB]
                     '''
                 TooltipNormal: Кто-то в один момент подумал, что это будет хорошим оружием против ПБ, лол
@@ -15955,7 +16024,11 @@ Items: {
             
             MantisClaws: {
                 DisplayName: Когти богомола
-                Tooltip: При нанесении ударов по врагу взрывается
+                Tooltip:
+                    '''
+                    При нанесении ударов по врагу взрывается
+                    'Это всего лишь крошечная креветка'
+                    '''
             }
             
             MirrorBlade: {
@@ -16068,7 +16141,6 @@ Items: {
                     Выпускает ауритовые сферы при полном заряде
                     Исключительно манёвренное йо-йо
                     'Взгляните в прошлое, в настоящее, в будущее... и на причину вашей неминуемой смерти'
-            
                     '''
             }
             
@@ -16145,7 +16217,11 @@ Items: {
             
             Quagmire: {
                 DisplayName: Трясина
-                Tooltip: Выпускает облака спор
+                Tooltip:
+                    '''
+                    Выпускает облака спор
+                    Очень манёвренное йо-йо
+                    '''
             }
             
             RedSun: {
@@ -16180,11 +16256,7 @@ Items: {
             
             Riptide: {
                 DisplayName: Разрывное течение
-                Tooltip:
-                    '''
-                    Распыляет спираль водяных потоков
-                    Очень манёвренное йо-йо
-                    '''
+                Tooltip: Распыляет спираль водяных потоков
             }
             
             Roxcalibur: {
@@ -16234,11 +16306,7 @@ Items: {
             
             SmokingComet: {
                 DisplayName: Дымчатая комета
-                Tooltip:
-                    '''
-                    Обрушивает звёзды с неба
-                    Очень манёвренное йо-йо
-                    '''
+                Tooltip: Обрушивает звёзды с неба
             }
             
             SolarFlare: {
@@ -16246,7 +16314,7 @@ Items: {
                 Tooltip:
                     '''
                     При нанесении удара вызывает большие святые взрывы
-                    Очень манёвренное йо-йо
+                    Исключительно манёвренное йо-йо
                     '''
             }
             
@@ -16439,7 +16507,7 @@ Items: {
                 Tooltip:
                     '''
                     Облучает ближайших врагов радиацией
-                    Очень манёвренное йо-йо
+                    Исключительно манёвренное йо-йо
                     'Приготовление пищи стилем астральной инфекции'
                     '''
             }
@@ -19737,11 +19805,7 @@ Items: {
             
             HerringStaff: {
                 DisplayName: Посох селёдки
-                Tooltip:
-                    '''
-                    Призывает селёдку
-                    Каждая сельдь занимает только половину слота призываемых миньонов
-                    '''
+                Tooltip: Призывает стаю сельдей
             }
             
             HivePod: {
@@ -20216,10 +20280,11 @@ Keybinds: {
     AstralArcanumUIToggle.DisplayName: Телепортация астрального арканума
     AstralTeleport.DisplayName: Астральная телепортация
     ArmorSetBonus.DisplayName: Бонус комплекта брони
-    ElysianGuard.DisplayName: Элизийский страж
     AdrenalineMode.DisplayName: Режим адреналина
     RageMode.DisplayName: Режим ярости
     NormalityRelocator.DisplayName: Релокатор нормальной формы
+    BlazingCoreParry.DisplayName: Парирование пылающего ядра
+    GravistarSabatonHotkey.DisplayName: Звёздные гравитоны
 }
 
 Misc: {
@@ -20670,8 +20735,11 @@ NPCs: {
     THELORDE.DisplayName: ЛОРД
     PerforatorCyst.DisplayName: Киста Перфораторов
     PerforatorHeadLarge.DisplayName: Перфоратор
+    PerforatorLarge: Большой Перфоратор
     PerforatorHeadMedium.DisplayName: Перфоратор
+    PerforatorMedium: Средний Перфоратор
     PerforatorHeadSmall.DisplayName: Перфоратор
+    PerforatorSmall: Маленький Перфоратор
     
     PerforatorHive: {
         DisplayName: Улей Перфораторов
@@ -21450,6 +21518,10 @@ Projectiles: {
         ShinobiHealOrb.DisplayName: Blue Healing Orb
         SilvaOrb.DisplayName: Silva Orb
         TransfusionTrail.DisplayName: Лечение
+        AbsorberAura.DisplayName: Absorber Aura
+        BlueJellyAura.DisplayName: Blue Jelly Aura
+        GreenJellyAura.DisplayName: Green Jelly Aura
+        PinkJellyAura.DisplayName: Pink Jelly Aura
     }
     
     Magic: {
@@ -21802,7 +21874,6 @@ Projectiles: {
         CrescentMoonProj.DisplayName: Crescent Moon
         CrystylCrusherRay.DisplayName: Crystyl Crusher Ray
         Cyclone.DisplayName: Cyclone
-        Dark.DisplayName: Dark
         DarkBall.DisplayName: Dark Ball
         DarkBeam.DisplayName: Dark Beam
         DarkIceZero.DisplayName: Dark Ice
@@ -21851,6 +21922,8 @@ Projectiles: {
         Exocomet.DisplayName: Comet
         ExtantAbhorrence.DisplayName: Extant Abhorrence
         ExtantAbhorrenceMonolith.DisplayName: Abhorrent Monolith
+        FallenBlast.DisplayName: Fallen Paladin's Wrath
+        FallenPaladinsHammerEcho.DisplayName: Fallen Paladin's Hammer Echo
         FallenPaladinsHammerProj.DisplayName: Fallen Paladin's Hammer
         Feather.DisplayName: Feather
         Flarefrost.DisplayName: Flarefrost
@@ -21865,7 +21938,10 @@ Projectiles: {
         GalaxyBlast.DisplayName: Blast
         GalaxyBlastType2.DisplayName: Blast
         GalaxyBlastType3.DisplayName: Blast
+        GalaxySmasherBlast.DisplayName: Galactic Blast
+        GalaxySmasherEcho.DisplayName: Galaxy Smasher Echo
         GalaxySmasherHammer.DisplayName: Galaxy Smasher
+        GalaxySmasherMini.DisplayName: Galaxy Smasher
         GalaxyStar.DisplayName: Star
         GalileosMoon.DisplayName: Crescent Moon
         GalileosPlanet.DisplayName: Planet
@@ -21892,7 +21968,6 @@ Projectiles: {
         LamentationsOfTheChained.DisplayName: Lamentations of the Chained
         LaserFountain.DisplayName: Fountain
         LifeScythe.DisplayName: Коса
-        Light.DisplayName: Light
         LightBeam.DisplayName: Light Beam
         LightningThing.DisplayName: Lightning
         LuxorsGiftMelee.DisplayName: Gift
@@ -21934,7 +22009,10 @@ Projectiles: {
         PurityProjection.DisplayName: Purity Projection
         PurityProjectionSigil.DisplayName: Purity Sigil
         PwnagehammerEcho.DisplayName: Pwnagehammer Echo
+        PwnagehammerExplosionSmall.DisplayName: Pwnage Blast
+        PwnagehammerExplosionBig.DisplayName: Pwnage Blast
         PwnagehammerProj.DisplayName: Pwnagehammer
+        PwnagehammerSmallExplosion.DisplayName: Pwnage Blast
         RainBolt.DisplayName: Bolt
         RainbowBoom.DisplayName: Boom
         Razorwind.DisplayName: Razorwind
@@ -21991,6 +22069,8 @@ Projectiles: {
         YateveoBloomSpear.DisplayName: Yateveo Bloom
         SpineOfThanatosProjectile.DisplayName: Spine of Thanatos
         StarnightBeam.DisplayName: Beam
+        StellarContemptBlast.DisplayName: Stellar Blast
+        StellarContemptEcho.DisplayName: Echoes of Contempt
         StellarContemptHammer.DisplayName: Stellar Contempt
         StormBeam.DisplayName: Beam
         StormMark.DisplayName: Mark
@@ -22063,6 +22143,8 @@ Projectiles: {
         WulfrumScrew.DisplayName: Screw
         WulfrumScrewdriverProj.DisplayName: Screwdriver
         YateveoBloomProj.DisplayName: Yateveo Bloom
+        YinYoDark.DisplayName: Dark Shard
+        YinYoLight.DisplayName: Light Shard
         AirSpinnerYoyo.DisplayName: Air Spinner
         AortaYoyo.DisplayName: Aorta
         AzathothYoyo.DisplayName: Azathoth
@@ -22081,16 +22163,6 @@ Projectiles: {
         SolarFlareYoyo.DisplayName: Solar Flare
         SulphurousGrabberYoyo.DisplayName: Sulphurous Grabber
         YinYoyo.DisplayName: Yin-Yo
-        FallenPaladinsHammerEcho.DisplayName: Fallen Paladin's Hammer Echo
-        FallenBlast.DisplayName: Fallen Paladin's Wrath
-        StellarContemptEcho.DisplayName: Echoes of Contempt
-        PwnagehammerSmallExplosion.DisplayName: Pwnage Blast
-        PwnagehammerExplosionSmall.DisplayName: Pwnage Blast
-        PwnagehammerExplosionBig.DisplayName: Pwnage Blast
-        GalaxySmasherMini.DisplayName: Galaxy Smasher
-        GalaxySmasherEcho.DisplayName: Galaxy Smasher Echo
-        StellarContemptBlast.DisplayName: Stellar Blast
-        GalaxySmasherBlast.DisplayName: Galactic Blast
     }
     
     Misc: {
@@ -23024,7 +23096,10 @@ Projectiles: {
         CannonLaserbeam.DisplayName: Exothermal Deathray
         ExoskeletonGaussNukeCannon.DisplayName: Gauss Nuke
         ExoskeletonLaserCannon.DisplayName: Laser Cannon
-        ExoskeletonPanel.DisplayName: UI
+        ExoskeletonPanel: {
+        	DisplayName: UI
+        	NoSlots: Недостаточно слотов призываемых миньонов!
+        }
         ExoskeletonPlasmaCannon.DisplayName: Plasma Cannon
         ExoskeletonTeslaCannon.DisplayName: Tesla Cannon
         MinionGaussBoom.DisplayName: Gauss Hyperexplosion
@@ -23229,6 +23304,8 @@ Projectiles: {
         YanmeisKnifeSlash.DisplayName: Yanmei's Knife
         YellowLabSeeker.DisplayName: Seeking Mechanism
         TarragonAura.DisplayName: Tarragon Aura
+        BlazingStarHeal.DisplayName: Blazing Star Heal
+        BlazingStarThatDoesNotHeal.DisplayName: Blazing Star That Does Not Heal
     }
 }
 
@@ -23257,8 +23334,6 @@ Status: {
         EdgyBossText7: Ты не бог... но я буду пировать твоей сущностью, несмотря ни на что!
         EdgyBossText8: Думаешь... ты способен растерзать... МЕНЯ!?
         FlameText: Окружающий воздух нагревается.
-        DargonBossText: Тёмное солнце ждёт.
-        DargonBossText2: Мой дракон считает тебя недостойным противником. Обрети силу тёмного солнца и лицезреешь его истинную силу.
         DraedonIntroductionText1: Как долго я ждал этого момента.
         DraedonIntroductionText2: Твоя природа столь же чарует меня, сколь я её не понимаю.
         DraedonIntroductionText3: Ты сразишься с моими творениями, что превзошли богов.
@@ -23342,9 +23417,12 @@ Status: {
     }
     
     Death: {
+        AbyssDrown1: "{0} становится пищей для змий."
+        AbyssDrown2: Кислород в глубинах бездны не достигает игрока {0}.
         AlcoholBig1: "{0} выпивает слишком много напитков."
         AlcoholBig2: "{0} сажает печень."
         AlcoholSmall: "{0} поддаётся алкогольной болезни."
+        Armageddon: "{0} не справляется с испытанием."
         AstralInfection1: "{0} распространяет инфекцию слишком сильно."
         AstralInfection2: "{0} сменяет кожу астральным вирусом."
         AstralInjection: "{0} разрывает кровеносные сосуды от передозировки наркотиками."
@@ -23415,6 +23493,7 @@ Status: {
        AprilFools2: Бумер ждёт...
        DoGBossText: Холодная луна ярко мерцает!
        DoGBossText2: Урожайная луна жутко сияет.
+       DargonBossText: Тёмное солнце ждёт.
        AuricOreText: В пещерах пробуждается древняя драконья сила, пронизывая камень.
     }
 }
@@ -23476,6 +23555,7 @@ UI: {
     Adrenaline: Адреналин
     Nanomachines: Наномашины
     Rage: Ярость
+    Flight: Оставшееся время полёта: {0}
     Charge: Текущий заряд
     DefenseDamage: ед. урона по защите
     SulphurousWater: Сернистое отравление
@@ -23508,9 +23588,9 @@ UI: {
     RevengeanceExpandedInfo:
         '''
         [c/B55362:Активирует механику] [c/85FFE9:Адреналина] [c/B55362:Вы получаете адреналин, сражаясь с боссами. Получение урона опускает шкалу адреналина до 0]
-        [c/B55362:    Когда шкала адреналина заполнена, нажмите] {0} [c/B55362:для значительного увеличения урона]
+        [c/B55362:    Когда шкала адреналина заполнена, нажмите] {1} [c/B55362:для значительного увеличения урона]
         [c/B55362:Активирует механику] [c/FF8B54:Ярости] [c/B55362:Вы получаете ярость, находясь рядом с врагами или используя специальные предметы]
-        [c/B55362:    Когда шкала ярости заполнена, нажмите] {1} [c/B55362:для временного увеличения урона]
+        [c/B55362:    Когда шкала ярости заполнена, нажмите] {0} [c/B55362:для временного увеличения урона]
         [c/B55362:Большинство врагов имеют более высокие характеристики и агрессивный ИИ]
         [c/B55362:У боссов новая механика ИИ, новые фазы, и из них выпадают предметы режима Мастера. Враги появляются чаще]
         [c/F7342A:Этот режим сложнее, чем Эксперт. Будьте готовы к испытаниям]
@@ -23553,6 +23633,7 @@ UI: {
         DivineBless: Перезарядка божественного благословения
         DivingPlatesBreaking: Прочность пластин глубоководного водолазного костюма
         DivingPlatesBroken: Сломанные пластины глубоководного водолазного костюма
+        ElysianGuard: Перезарядка элизийской защиты
         EvasionScarf: Перезарядка шарфа
         FleshTotem: Перезарядка сокращения контактного урона вдвое
         GlobalDodge: Перезарядка уклонения
@@ -23563,6 +23644,7 @@ UI: {
         MasterChefShieldDurability: Прочность энергетического щита
         MasterChefShieldRecharge: Перезарядка энергетического щита
         NebulousCore: Перезарядка ядра туманности
+        OldDukeScalesFatigue: Выносливость
         OmegaBlueActive: Безумие бездны
         OmegaBlueCooldown: Перезарядка безумия бездны
         PermafrostConcoction: Перезарядка смеси Пермафроста
@@ -23585,11 +23667,11 @@ UI: {
         WulfrumRoverDriveRecharge: Перезарядка защитной матрицы
     }
     
+    Cost: "Стоимость: "
     Contact: Контакт
     Summon: Призыв
     Evoke: Пробуждение
     Communicate: Общение
-    Cost: "Стоимость: "
     ConfirmationText: Вы уверены?
     UpgradesRequired: Шифрование нерешаемое: требуются обновления.
     ThanatosIcon: Танатос - змееподобный ужас с непробиваемой бронёй и бесчисленным количеством лазерных турелей.

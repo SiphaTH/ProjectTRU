@@ -1,9 +1,6 @@
-using System;
 using System.Collections.Generic;
 using CalamityMod;
-using CalamityMod.CalPlayer;
 using CalamityMod.Items.SummonItems;
-using CalamityMod.Items.Weapons.Melee;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
 using Microsoft.Xna.Framework;

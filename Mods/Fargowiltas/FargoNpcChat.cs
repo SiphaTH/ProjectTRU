@@ -22,33 +22,33 @@ public class FargoNpcChat : GlobalNPC
         {
             chat = chat switch
             {
-                "Where'd I get my scythe from? Ask me later." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.1").ToString(),
-                "Where'd I get my scythe from? You'll figure it out." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.2").ToString(),
-                "I have defeated everything in this land... nothing can beat me." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.3").ToString(),
-                "Have you ever had a weapon stuck to your hand? It's not very handy." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.4").ToString(),
-                "What happened to Yoramur? No idea who you're talking about." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.5").ToString(),
-                "You wish you could dress like me? Ha! Actually yea.. you can." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.6").ToString(),
-                "You ever read the ancient classics, I love all the fighting in them." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.7").ToString(),
-                "I'm a world class poet, ever read my piece about impending doom?" => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.8").ToString(),
-                "You want swarm summons? Maybe next year." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.9").ToString(),
-                "Like my wings? Thanks, the thing I got them from didn't like it much." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.10").ToString(),
-                "Heroism has no place in this world, instead let's just play ping pong." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.11").ToString(),
-                "Why are you looking at me like that? Your fashion sense isn't going to be winning you any awards either." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.12").ToString(),
-                "No, you can't have my hat." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.13").ToString(),
-                "Embrace suffering... Wait what do you mean that's already taken?" => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.14").ToString(),
-                "Your attempt to exploit my anger is admirable, but I cannot be angered." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.15").ToString(),
-                "Is it really a crime if everyone else does it." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.16").ToString(),
-                "Inflicting suffering upon others is the most amusing thing there is." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.17").ToString(),
-                "Irony is the best kind of humor, isn't that ironic?" => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.18").ToString(),
-                "I like Cat... What do you mean who's Cat?" => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.19").ToString(),
-                "Check the wiki if you need anything, the kirb is slowly getting it up to par." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.20").ToString(),
-                "I've heard tales of a legendary Diver... Anyway what was that about a giant jellyfish?" => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.21").ToString(),
-                "Overloaded events...? Yeah, they're pretty cool." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.22").ToString(),
-                "It's not like I don't enjoy your company, but can you buy something?" => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.23").ToString(),
-                "I have slain one thousand humans! Huh? You're a human? There's so much blood on your hands.." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.24").ToString(),
-                "You really defeated me... not bad. Now do it again without getting hit. Oh, and Copper Shortsword only." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.29").ToString(),
-                "I hope all these graves lying around don't belong to you." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.30").ToString(),
-                "What nostalgic armor you're wearing... No, it doesn't fit on me anymore. And its battery takes too long to charge." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.32").ToString(),
+                "Where'd I get my scythe from? Ask me later." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.1").ToString(),
+                "Where'd I get my scythe from? You'll figure it out." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.2").ToString(),
+                "I have defeated everything in this land... nothing can beat me." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.3").ToString(),
+                "Have you ever had a weapon stuck to your hand? It's not very handy." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.4").ToString(),
+                "What happened to Yoramur? No idea who you're talking about." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.5").ToString(),
+                "You wish you could dress like me? Ha! Actually yea.. you can." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.6").ToString(),
+                "You ever read the ancient classics, I love all the fighting in them." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.7").ToString(),
+                "I'm a world class poet, ever read my piece about impending doom?" => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.8").ToString(),
+                "You want swarm summons? Maybe next year." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.9").ToString(),
+                "Like my wings? Thanks, the thing I got them from didn't like it much." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.10").ToString(),
+                "Heroism has no place in this world, instead let's just play ping pong." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.11").ToString(),
+                "Why are you looking at me like that? Your fashion sense isn't going to be winning you any awards either." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.12").ToString(),
+                "No, you can't have my hat." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.13").ToString(),
+                "Embrace suffering... Wait what do you mean that's already taken?" => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.14").ToString(),
+                "Your attempt to exploit my anger is admirable, but I cannot be angered." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.15").ToString(),
+                "Is it really a crime if everyone else does it." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.16").ToString(),
+                "Inflicting suffering upon others is the most amusing thing there is." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.17").ToString(),
+                "Irony is the best kind of humor, isn't that ironic?" => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.18").ToString(),
+                "I like Cat... What do you mean who's Cat?" => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.19").ToString(),
+                "Check the wiki if you need anything, the kirb is slowly getting it up to par." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.20").ToString(),
+                "I've heard tales of a legendary Diver... Anyway what was that about a giant jellyfish?" => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.21").ToString(),
+                "Overloaded events...? Yeah, they're pretty cool." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.22").ToString(),
+                "It's not like I don't enjoy your company, but can you buy something?" => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.23").ToString(),
+                "I have slain one thousand humans! Huh? You're a human? There's so much blood on your hands.." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.24").ToString(),
+                "You really defeated me... not bad. Now do it again without getting hit. Oh, and Copper Shortsword only." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.29").ToString(),
+                "I hope all these graves lying around don't belong to you." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.30").ToString(),
+                "What nostalgic armor you're wearing... No, it doesn't fit on me anymore. And its battery takes too long to charge." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.32").ToString(),
                 _ => chat
             };
         
@@ -56,7 +56,7 @@ public class FargoNpcChat : GlobalNPC
             {
                 if (chat == $"Can you please ask {GetNPCName(NPCID.Mechanic)} to stop touching my laser arm please.")
                 {
-                    chat = TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.27").WithFormatArgs(GetNPCName(NPCID.Mechanic)).ToString();
+                    chat = TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.27").WithFormatArgs(GetNPCName(NPCID.Mechanic)).ToString();
                 }
             }
         }
@@ -349,8 +349,8 @@ public class FargoNpcChat : GlobalNPC
         {
             Main.npcChatText = Main.npcChatText switch
             {
-                "I don't think there's an event right now." => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.28").ToString(),
-                "Hocus pocus, the event is over" => TranslationHelper.GetText("Fargowiltas.NPCs.Dialogues.Abominationn.31").ToString(),
+                "I don't think there's an event right now." => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.28").ToString(),
+                "Hocus pocus, the event is over" => TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.31").ToString(),
                 _ => Main.npcChatText
             };
         }

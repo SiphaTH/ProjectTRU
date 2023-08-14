@@ -193,6 +193,8 @@ public class CalamityRuTranslateModSystem : ModSystem
             ArmorSetBonus[ItemID.ApprenticeAltHead] = $"{Language.GetTextValue("ArmorSetBonus.ApprenticeTier3")}\nУвеличивает урон призывателя на 10% и магический шанс критического удара на 15%";
             ArmorSetBonus[ItemID.GladiatorHelmet] = $"{Language.GetTextValue("ArmorSetBonus.Gladiator")}\nУвеличивает защиту на 3\nУвеличивает максимальную скрытность на 60\nУвеличивает разбойный урон на 5% и скорость снарядов на 10%";
             ArmorSetBonus[ItemID.ObsidianHelm] = $"{Language.GetTextValue("ArmorSetBonus.ObsidianOutlaw")}\nДаёт невосприимчивость к огненным блокам и временную невосприимчивость к лаве";
+            ArmorSetBonus[ItemID.AncientNecroHelmet] = $"{Language.GetText("ArmorSetBonus.Bone")}\nДаёт возможность временно пережить смертельный удар\nДаёт до 7 секунд жизни перед неминуемой смертью";
+            ArmorSetBonus[ItemID.NecroHelmet] = $"{Language.GetText("ArmorSetBonus.Bone")}\nДаёт возможность временно пережить смертельный удар\nДаёт до 7 секунд жизни перед неминуемой смертью";
             
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "AstralHelm").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.AstralHelm.SetBonus");
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "BrimflameScowl").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.BrimflameScowl.SetBonus", "[Бонус комплекта брони]");
@@ -224,8 +226,12 @@ public class CalamityRuTranslateModSystem : ModSystem
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "PrismaticHelmet").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.PrismaticHelmet.SetBonus", "[Бонус комплекта брони]");
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "SnowRuffianMask").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.SnowRuffianMask.SetBonus");
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "SulphurousHelmet").Type] =Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.SulphurousHelmet.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "VictideHeadRanged").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideBreastplate.CommonSetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "VictideHeadMagic").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideBreastplate.CommonSetBonus");
+            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "VictideHeadRanged").Type] =
+                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideBreastplate.CommonSetBonus") + "\n" +
+                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideHeadRanged.SetBonus");
+            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "VictideHeadMagic").Type] =
+                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideBreastplate.CommonSetBonus") + "\n" +
+                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideHeadMagic.SetBonus");
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "StatigelHeadMagic").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.StatigelArmor.CommonSetBonus");
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "StatigelHeadRanged").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.StatigelArmor.CommonSetBonus");
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "HydrothermicHeadMagic").Type] =
