@@ -36,6 +36,8 @@ public static class ReflectionHelper
     public static ConstructorInfo GetCachedConstructor(this Type type, params Type[] types) => RetrieveFromCache(ReflectionType.Constructor, GetConstructorNameForCache(type, types), () => type.GetConstructor(UniversalFlags, null, types, null));
 
     public static MethodInfo GetCachedMethod(this Type type, string methodName) => RetrieveFromCache(ReflectionType.Method, GetMethodNameForCache(type, methodName), () => type.GetMethod(methodName, UniversalFlags));
+    
+    public static MethodInfo GetCachedMethod(this Type type, string methodName, Type[] types) => RetrieveFromCache(ReflectionType.Method, GetMethodNameForCache(type, methodName), () => type.GetMethod(methodName, UniversalFlags, types));
 
     public static object InvokeUnderlyingMethod(this FieldInfo field, string methodName, object fieldInstance, params object[] parameters) => field.FieldType.GetCachedMethod(methodName).Invoke(field.GetValue(fieldInstance), parameters);
 
@@ -79,6 +81,8 @@ public static class ReflectionHelper
     }
 
     public static TFieldType GetFieldValue<TType, TFieldType>(this TType obj, string field) => (TFieldType)typeof(TType).GetCachedField(field)?.GetValue(obj);
+    
+    public static TFieldType GetFieldValue<TFieldType>(this Type obj, string field) => (TFieldType)obj.GetCachedField(field)?.GetValue(null);
 
     public static void SetFieldValue<TType, TFieldType>(this TType obj, string field, TFieldType value) => typeof(TType).GetCachedField(field)?.SetValue(obj, value);
 
