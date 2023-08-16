@@ -224,9 +224,9 @@
 
 Bestiary: {
     Bloatfish: Это скорее геологическое образование, чем живой организм. Вздутобрюх имеет липкую, похожую на клей кожу, которую он использует, чтобы покрыть своё тело пустотным камнем. Хоть это и защищает его от хищников, но из-за своего чудовищного веса оседает в самых глубинах бездны.
-    BobbitWorm: Hiding away in the darkest corners of the void to strike at unsuspecting prey, bobbit worms take full advantage of the Abyss’ darkness. To live here, in the most extreme environment in the world, a creature must either be truly mighty, learn to use the environment to survive, or both.
-    BoxJellyfish: Larger than the average jellyfish, the sting of these persistent pests packs a powerful punch. Though they can be found in most large bodies of water, they are locally extinct around Ilmeris after the Brimstone Witch turned her hexes against the kingdom.
-    ChaoticPuffer: These creatures inhale trace amounts of scoria in the water while inflating, heating the liquid inside of them immensely. Hot enough to melt iron in this state, they cause horrific burns to those they make contact with, and predators attempting to consume them are boiled from the inside out.
+    BobbitWorm: Прячась в самых тёмных уголках пустоты, с целью внезапно напасть на ничего не подозревающую жертву, волнистые черви пользуются всеми преимуществами темноты бездны. Чтобы жить здесь, в самой экстремальной среде в мире, существу нужно быть либо по-настоящему могучим, либо научиться использовать окружающую среду для выживания, либо и то, и другое.
+    BoxJellyfish: Крупнее, чем у среднестатистической медузы, жало этих стойких вредителей способно нанести куда более мощный удар. Хотя их можно встретить в большинстве крупных водоемов, они вымерли лишь в окрестностях Ильмериса после того, как Серная ведьма обратила свои чары против королевства.
+    ChaoticPuffer: Эти существа, раздуваясь, вдыхают следы магматита, содержащегося в воде, что приводит к интенсивному нагреву жидкости внутри их организма. Получившаяся температура настолько высока, что способна расплавить даже железо. Они наносят страшные ожоги тем, кто к ним прикасается, а хищники, пожирающие их, свариваются изнутри.
     ColossalSquid: This species of squid has grown immensely in size and strength due to the effects Silva’s essence has had on them. As they are able to consume the growths she caused directly due to being herbivores in the past, more life flows within them than nearly every other Abyss creature.
     Cuttlefish: Using natural camouflage to hide from greater predators and catch unsuspecting prey, cuttlefish wait patiently on the ground for their time to strike. They chase other creatures relentlessly once disturbed, with ferocity enough to scare off any of their would-be predators.
     DevilFish: So called for their demonic horns, devilfish absorb the fumes left behind by Azafure’s pollution, using the flames to empower themselves. The Abyss’ lower layers are largely unmarred by waste and toxins thanks to these enigmatic creatures.
@@ -363,7 +363,7 @@ Bestiary: {
     Sepulcher: An amalgamation of souls and flesh given new form and purpose via necromancy. This twisted perversion of life is inspired by the auric dragons’ method of revival, though it is plain to see that any grace the dragons may have had is not present here. The school of magic used to create Sepulcher was forbidden in the Deific Era, yet many still practiced it in secrecy.
     SoulSeekerSupreme: Created through a marriage of brimstone magic and necromancy, these foul beings serve their master’s whims unflinchingly. What they lack in sheer power they make up for in both sheer numbers and suprising amount of coordination.
     AquaticScourge: A peaceful yet intimidating being that roamed the Sulphurous Sea, its mere existence was enough to scare away most creatures from the shore. Without its presence to act as a deterrent, fearsome predators now feel safe to prowl during the acidic storms.
-    AstrumAureus: Once meant for returning equipment from and surveying sites of prior battles, this creation of Draedon’s was overtaken by the Astral Infection. Unfortunately, its defeat has released what power it possessed, granting it instead to the star’s other warriors.
+    AstrumAureus: Когда-то это было изобретение Дрэйдона, созданное для того, чтобы возвращать оборудование и исследовать места минувших сражений. Но оно подверглось астральному заражению. К сожалению, его смерть высвободила всю силу, которой он обладал, сделав прочих существ астрала ещё сильнее.
     AstrumDeus: When a star begins to die, under normal circumstances, its power simply fades as it falls to the nearest celestial body. However, some dying stars bloat and fester before falling. Astrum Deus exists to consume these stars before the Astral Infection manifests in them, and it has been revered for its sacred duty since time immemorial.
     BrimstoneElemental: Roused from her deep slumber in relatively recent years, her awakening set into motion the downfall of Azafure. Most blame her unexpected revival on the city’s overzealous mining of Brimstone, while a few blame the city’s pollution, and some fewer cite dubious prophecies. But behind closed doors, there are whisperings that she was revived deliberately as part of a plot by opposing forces.
     Bumblefuck: Long ago, these siblings of the auric dragons hid themselves away in the depths of the jungle. They hunt prey using the immense static electricity generated by the flapping of their wings against their feathery bodies, manifesting as deadly bolts of red lightning.
@@ -402,7 +402,7 @@ Bestiary: {
     SupremeCalamitas: After inheriting nigh limitless magical power as a mere teenager, she was recruited into Yharim’s army, where she served for nearly a decade. She reveled in the violence of it all, the endless dance of madness and death, allowing the Godseeker to wield her as a weapon in his endless war against the gods. But now that the fire inside her has died, all that remains are the smoldering embers of regret.
     SupremeCataclysm: The eldest of the three siblings, this brother was a brawler of great renown in Azafure, with few in the city being capable of matching his raw strength. He was protective of his sister, vowing to always be there for her in her times of need. The brother continues to fulfill this promise, even in death.
     SupremeCatastrophe: The middle child of the three siblings was a skilled swordsman in life, taking up mercenary work to put food on the table. Despite his rather bloody career choice, he did his best to be kind to his sister and keep her out of any danger his occupation could have put his remaining family in. He continues to defend her, even in death.
-    Yharon: Each dragon once wielded nigh limitless power over their domain, a fundamental power drawn directly from the world's fragmented soul. The dragons were masters of all; life, death, even the great Primordial Light that banishes the eternal night beyond. And yet, one of these majestic beings reached a height of power possibly second only to their king. He who made his kind eternal through his powers of Rebirth... and yet, even eternity did not last.
+    Yharon: В древности каждый дракон обладал своей непреодолимой властью. Они владели разрушительной магией, питаемой напрямую из фрагментов мировой сущности. Драконы владели всем: жизнью и смертью. Даже Первозданный свет, рассеивающий вечную ночь, был подчинён их воле. Но среди них появился тот, кто достиг силы, уступающей лишь их королю. Тот, кто сделал свой род вечным, прибегнув к силе Возрождения... однако ничто не вечно, даже вечность.
 }
 
 Biomes: {
@@ -2057,7 +2057,7 @@ Condition: {
         DownedYharon: Выпадает после победы над Яроном
         DownedExos: Выпадает после победы над Экзо-механизмами
         DownedSCal: Выпадает после победы над Каламитас
-        DownedAEW: Выпадает после победы над Первозданным змеем
+        DownedAEW: Выпадает после победы над Первозданным змием
         DownedClam: Выпадает после победы над гигантским моллюском
         DownedClamHM: Выпадает после победы над гигантским моллюском в хардмоде
         DownedGSS: Выпадает после победы над великой песчаной акулой
@@ -15831,9 +15831,9 @@ Items: {
                     '''
                 ParryInfo:
                     '''
-                    Нажмите ПКМ для вытягивания ковчега перед собой
-                    Удар клинковыми ножницами по врагу парируют атаку, давая на мгновение неуязвимость
-                    Вы также можете парировать снаряды и временно снизить их урон на 50 единиц
+                    Нажмите <right> для вытягивания ковчега перед собой
+                    Удары клинковыми ножницами по врагу парируют атаку, давая на мгновение неуязвимость
+                    Вы также можете парировать снаряды, снижая их урон на 50 единиц на короткий период времени
                     Парирование усиливает следующие 10 взмахов мечом, увеличивая их урон и позволяя выпускать снаряды
                     '''
             }

@@ -231,6 +231,11 @@ IntroScreen: {
         '''
     PerforatorHiveIntroScreen.TextToDisplay:
         '''
+        КРОВАВЫЕ ПАРАЗИТЫ
+        ПЕРФОРАТОРЫ
+        '''
+    PlanteraIntroScreen.TextToDisplay:
+        '''
         РАСТЕНИЕ-ПЕРЕРОСТОК
         ПЛАНТЕРА
         '''
@@ -246,8 +251,8 @@ IntroScreen: {
         '''
     ProfanedTempleIntroScreen.TextToDisplay:
         '''
-        Cleansed Site
-        The Profaned Garden
+        ОЧИЩЕННЫЙ УЧАСТОК
+        ОСКВЕРНЁННЫЙ САД
         '''
 
     ProvidenceIntroScreen: {
