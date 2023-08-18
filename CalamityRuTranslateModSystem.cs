@@ -200,8 +200,8 @@ public class CalamityRuTranslateModSystem : ModSystem
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "BrimflameScowl").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.BrimflameScowl.SetBonus", "[Бонус комплекта брони]");
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadMagic").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.DaedalusHeadMagic.SetBonus");
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadMelee").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.DaedalusHeadMelee.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadRanged").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.DaedalusHeadRogue.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadRanged").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.DaedalusHeadRogue.SetBonus");
+            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadRanged").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.DaedalusHeadRanged.SetBonus");
+            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadRogue").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.DaedalusHeadRogue.SetBonus");
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadSummon").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.DaedalusHeadSummon.SetBonus");
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "FathomSwarmerVisage").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.FathomSwarmerVisage.SetBonus");
             ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "ForbiddenCirclet").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.ForbiddenCirclet.SetBonus", "[Бонус комплекта брони]", 60f * Main.player[Main.myPlayer].manaCost);

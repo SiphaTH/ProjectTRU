@@ -3860,11 +3860,11 @@ Items: {
     }
 
     WizardShoes: {
-        // DisplayName: Wizard Shoes
+        // DisplayName: Ботинки волшебника
         /* Tooltip:
             '''
-            5% increased movement speed
-            While running, your mana regeneration is increased
+            Увеличивает скорость передвижения на 5%
+            Во время бега увеличивает восстановление маны
             ''' */
     }
 

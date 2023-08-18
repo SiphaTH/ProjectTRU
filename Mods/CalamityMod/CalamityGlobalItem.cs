@@ -17,6 +17,14 @@ public class CalamityGlobalItem : GlobalItem
         return ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     }
 
+    public override void SetDefaults(Item item)
+    {
+        if (item.ModItem?.Mod == ModsCall.Calamity)
+        {
+            item.ClearNameOverride();
+        }
+    }
+    
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
     {
         if (item.type == ModContent.ItemType<SandstormsCore>())
