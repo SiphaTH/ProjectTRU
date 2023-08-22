@@ -395,9 +395,9 @@ Bestiary: {
     ProfanedGuardianHealer: In a time lost to memory, there were four champions who used their fathomless determination to slay a dragon, that one might gorge themself upon its auric soul. “I am the most courageous,” declared their cleric, “I should be the one.” There was silence, until Providence spoke: “Your courage blinds you to the truth, that your overconfidence would doom you.”
     Providence: In a time lost to memory, there were four visionaries. With righteous fury, they slew a dragon, and their leader gorged Herself upon its auric soul of Flame. “The world is without guidance, and its people are filled with darkness.” She said. There was silence, until Providence spoke once more. “Let us go forth, and light the world anew.” And it was so.
     Ravager: The mangled reincarnation of the God of Sacrifices, given life once more. Necromancers sworn to his faith returned his broken body to his temple, offering the only sacrifices they could to reverse his Death– their own lives. Yet, necromancy is an imperfect art, and the god has very little of his mind left, simply destroying all it comes across.
-    Signus: ‘For any desire, there is a price’. A deal bound in Onyx and sealed in blood, and one can have any wish granted– a gateway, a promise, a betrayal. Curiously, there is no recorded history of Signus before the age of gods, and very little recorded to this day. Perhaps, for the right price, one might find out the truth of Signus for oneself.
-    SlimeGodPaladin: The Slime God avoids direct combat due to its weakness, instead choosing to mold guardians to protect it. These guardians were created from countless blight slimes, their filth acting as a counterweight to the purity of their god.
-    SlimeGodCore: Despite being a Gluttonous slime, the Slime God forbids itself from growing out of control to maintain the balance of the world. It was still pursued during the Crusade, but it managed to survive through countless strategic retreats. The duty it upholds and the methods it employs are the reason the Onyx Kinsmen worship such a puny deity.
+    Signus: ‘За любое желание нужно платить’. Сделка утверждённая Ониксом и скреплённая кровью, позволяет исполнить любое желание — будь то проход, обещание или даже предательство. Что интересно, о Сигнусе до эпохи богов нет никаких записей, и до наших дней дошло очень мало сведений. Возможно, за соответствующую цену можно было бы выяснить правду о Сигнусе самому.
+    SlimeGodPaladin: Бог слизней избегает прямого столкновения из-за своей слабости, вместо этого создавая стражей для своей защиты. Эти стражи созданы из множества гибельных слизней, и их скверна служит противовесом чистоте и божественности их бога.
+    SlimeGodCore: Вопреки своей жадности, Бог слизней сдерживает свой рост, чтобы поддерживать равновесие мира. Во время Крестового похода за ним все ещё охотились, но он сумел выжить, прибегая к бесчисленным стратегическим отступлениям. За долг, который он выполняет, и методы, которые он выбирает, служат причиной уважения Ониксовых сородичей к этому маленькому божеству.
     StormWeaver: Вторженец из другого измерения, который был окрещён королем небес, покоряет верхние слои атмосферы с невероятной скоростью. Штормовой ткач не преследует высших целей, как некоторые другие обитатели Искривления, он лишь объедает остатки цивилизации, когда-то обитавшей в небесных просторах.
     SupremeCalamitas: После того, как в юном возрасте она унаследовала практически безграничную магическую силу, она была зачислена в армию Ярима, где прослужила почти десять лет. Она упивалась всей этой жестокостью, бесконечной пляской безумия и смерти, позволяя Богоискателю использовать её как орудие в своей нескончаемой войне против богов. Но сейчас, когда пламя в её душе погасло, всё, что осталось, лишь тлеющие угли сожаления.
     SupremeCataclysm: Старший из двух братьев и сестры, он был знаменитым бойцом в Азафуре; мало кто в городе мог сравниться с его необузданной силой. Он оберегал свою сестру, пообещав всегда быть рядом с ней в трудные моменты. Даже после смерти он продолжает выполнять данное обещание.
@@ -7416,7 +7416,7 @@ Items: {
                 Я полагал, что эта ледяная глыба была его старой конструкцией, бродящей без присмотра хозяина
                 Пермафрост был моим старым союзником, несущим почётное звание Архимага и пользующимся заслуженной известностью
                 Благодаря его мудрости я смог добиться своих первых побед, или, точнее, смог вообще добиться успеха
-                С ростом моих амбиций и развитием моего крестового похода, он яростно осуждал мои действия
+                С ростом моих амбиций и развитием моего Крестового похода, он яростно осуждал мои действия
                 Там, где он раньше видел справедливость, теперь царила тирания. Он ушёл, а Ведьма вслед за ним
                 '''
         }
@@ -7591,7 +7591,7 @@ Items: {
             DisplayName: История — Багрянец
             Lore:
                 '''
-                Зловонный воздух, заражённая фауна, омерзительная почва... Здесь я допустил свою первую ошибку в моём крестовом походе
+                Зловонный воздух, заражённая фауна, омерзительная почва... Здесь я допустил свою первую ошибку в моём Крестовом походе
                 Душа бога не исчезает без следа после смерти тела. Она нуждается в правильной очистке или полном уничтожении
                 Не может быть, чтобы душа благочестивого бога породила такой ужас
                 '''
@@ -7851,7 +7851,7 @@ Items: {
                 В этих проклятых стенах никто не смог обрести покой, и души замученных заключённых слились в бесформенное чудовище
                 Кипящее от ярости, утопающее в горе, кричащее в безумии. Слияние было неконтролируемым
                 Лидер драконьего культа был в ярости и потребовал, чтобы я лично уничтожил этого призрака
-                Но я промолчал. Я давно перестал слышать мир за пределами своего крестового похода. Не повторяй моих ошибок
+                Но я промолчал. Я давно перестал слышать мир за пределами своего Крестового похода. Не повторяй моих ошибок
                 '''
         }
         
@@ -16346,7 +16346,7 @@ Items: {
                 Tooltip:
                     '''
                     Выпускает 3 быстрых металлических хлыста
-                    Излучает призму света, когда все три призмы сталкиваются вместе
+                    Излучает призму света, когда все три хлыста сталкиваются вместе
                     Если враг находится в пределах прямой видимости столкнувшихся хлыстов, в его сторону будет направлена призма света
                     '''
             }

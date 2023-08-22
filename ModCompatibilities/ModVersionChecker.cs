@@ -12,7 +12,7 @@ public class ModVersionChecker : ILoadable
         new("StarlightRiver", new Version(1, 5, 0, 2), false),
         new("InfernumMode", new Version(1, 9, 28), false),
         new("FargowiltasSouls", new Version(1, 5), true),
-        new("Fargowiltas", new Version(3, 1), true),
+        new("Fargowiltas", new Version(3, 1, 1), true),
         new("StarsAbove", new Version(1, 5, 0, 4), false),
     };
 
