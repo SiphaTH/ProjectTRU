@@ -16,7 +16,7 @@ public class FargowiltasGlobalItem : GlobalItem
 
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
     {
-        ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "Fargowiltas" && l.Name == "TooltipSquirrel", tooltip =>
+        ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "Fargowiltas" && l.Name == "TooltipSquirrel", _ =>
         {
             tooltips.ReplaceText("Sold By Squirrel", "Продаётся белкой");
             tooltips.ReplaceText("Some Materials Sold", "Продаются некоторые материалы");

@@ -59,6 +59,14 @@ public class FargoNpcChat : GlobalNPC
                     chat = TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.27").WithFormatArgs(GetNPCName(NPCID.Mechanic)).ToString();
                 }
             }
+
+            if (NPC.AnyNPCs(ModContent.NPCType<Mutant>()))
+            {
+                if (chat == "He turned into a squirrel. Funniest thing I've ever seen.")
+                {
+                    chat = TranslationHelper.GetText("Fargowiltas.NPCs.Abominationn.Dialogues.25").ToString();
+                }
+            }
         }
 
         if (npc.type == ModContent.NPCType<Mutant>())

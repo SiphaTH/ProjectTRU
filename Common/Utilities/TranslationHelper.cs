@@ -95,6 +95,26 @@ internal static class TranslationHelper
         int npcType = ModContent.Find<ModNPC>("CalamityMod", id).Type;
         ModsCall.Wikithis.Call(2, npcType, wikiPage, GameCulture.CultureName.Russian);
     }
+
+    internal static string GetTextValue(string name, string suffix)
+    {
+        return Language.GetTextValue(GetTextFromModItem(name, suffix).Key);
+    }
+    
+    internal static string GetTextValue(string name, string suffix, params object[] args)
+    {
+        return Language.GetTextValue(GetTextFromModItem(name, suffix).Key, args);
+    }
+    
+    internal static LocalizedText GetTextFromModItem(string name, string suffix)
+    {
+        return ModContent.GetModItem(ModContent.Find<ModItem>(name).Type).GetLocalization(suffix);
+    }
+
+    internal static int GetItemID(string fullName)
+    {
+        return ModContent.Find<ModItem>(fullName).Type;
+    }
     
     internal static LocalizedText GetText(string key)
     {

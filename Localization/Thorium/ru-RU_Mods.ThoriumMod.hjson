@@ -1,5 +1,5 @@
 ﻿Announcements: {
-    // WorldEngineChange: World difficulty has been changed to {0}.
+    // WorldEngineChange: Сложность мира была изменена на {0}.
     // LodestoneWarning1: Your world has been sundered with Lodestone!
     // LodestoneWarning2: Your world has been sundered with an abundance of Lodestone!
     // ValadiumWarning1: Your world has been enchanted with Valadium!
@@ -117,51 +117,51 @@ Buffs: {
         // CommonDescription: Что-то движется во мраке...
     }
 
-    // AbyssalShadowBuff3.Description: The waters ripple...
+    // AbyssalShadowBuff3.Description: Воды трепещут...
 
     AbyssalShellBuff: {
-        // DisplayName: Abyssal Shell
-        // Description: Just about nothing can harm you!
+        // DisplayName: Глубоководный панцирь
+        // Description: Вы практически неуязвимы!
     }
 
     AbyssalWeight: {
-        // DisplayName: Abyssal Weight
-        // Description: Damage, defense, and movement speed greatly reduced
+        // DisplayName: Давление глубин
+        // Description: Урон, защита и скорость передвижения значительно снижены
     }
 
     AirStrikeShieldBuff: {
-        // DisplayName: Air Strike Shield
-        // Description: You're taking 15 less damage from all sources
+        // DisplayName:  Воздушная защита
+        // Description: Весь получаемый урон снижен на 15
     }
 
     AquaAffinity: {
-        // DisplayName: Aqua Affinity
-        // Description: Movement is increased while you're wet
+        // DisplayName: Родство с водой
+        // Description: Пока вы мокрые, скорость передвижения увеличена
     }
 
     Aquamancer: {
-        // DisplayName: Aquamancer
-        // Description: Your magic damage and casting speed are increased substantially
+        // DisplayName: Аквамант
+        // Description: Ваш магический урон и скорость чтения заклинаний значительно увеличены
     }
 
     AquaticAptitude: {
-        // DisplayName: Aquatic Aptitude
-        // Description: The surrounding water empowers you!
+        // DisplayName: Подводник
+        // Description: Окружающая вода усиливает вас!
     }
 
     ArcanePotionBuff: {
-        // DisplayName: Arcane Energy
-        // Description: Magic and radiant damage generates mini stars
+        // DisplayName: Тайная энергия
+        // Description: Магический и лучезарный урон создают мини-звёзды
     }
 
     ArtilleryBuff: {
-        // DisplayName: Artillery
-        // Description: Increases your max number of sentries
+        // DisplayName: Артиллерия
+        // Description: Увеличивает призываемое число стражей
     }
 
     AssassinPotionBuff: {
-        // DisplayName: Assassin
-        // Description: Out of combat throwing attacks will crit for x4 damage
+        // DisplayName: Ассасин
+        // Description: Вне боя метательные атаки наносят в 4 раза больше критического урона
     }
 
     AudioOverload: {

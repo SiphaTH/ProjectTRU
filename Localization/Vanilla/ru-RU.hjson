@@ -3687,7 +3687,7 @@
         DaedalusStormbow: Штормовой лук Дедала
         Damselfish: Рыба-ласточка
         DandelionBanner: Знамя злобного одуванчика
-        DaoofPow: Учение Пуха
+        DaoofPow: Дао мощь
         DarkBlueSolution: Тёмно-синий раствор
         DarkCelestialBrick: Тёмный неземной кирпич
         DarkCelestialBrickWall: Стена из тёмного неземного кирпича
@@ -3956,7 +3956,7 @@
         ElfHat: Эльфийская шапка
         ElfMelter: Эльфийский растопитель
         ElfPants: Эльфийские штаны
-        ElfShirt: Эльфийская сорочка
+        ElfShirt: Эльфийская рубашка
         Emerald: Изумруд
         EmeraldBunnyCage: Террариум с изумрудным кроликом
         EmeraldEcho: Изумрудная каменная стена
@@ -3987,9 +3987,9 @@
         EngineeringHelmet: Каска инженера
         EoCShield: Щит Ктулху
         Escargot: Эскарго
-        EskimoCoat: Снежное пальто
-        EskimoHood: Снежный капюшон
-        EskimoPants: Снежные штаны
+        EskimoCoat: Шуба эскимоса
+        EskimoHood: Капюшон эскимоса
+        EskimoPants: Штаны эскимоса
         EucaluptusSap: Эвкалиптовый сок
         EverscreamMasterTrophy: Реликвия вечнокричащей ели
         EverscreamPetItem: Кустарная звезда
@@ -6131,9 +6131,9 @@
         PinkDungeonVase: Ваза розовой Темницы
         PinkDungeonWorkBench: Верстак розовой Темницы
         PinkDye: Розовый краситель
-        PinkEskimoCoat: Розовое снежное пальто
-        PinkEskimoHood: Розовый снежный капюшон
-        PinkEskimoPants: Розовые снежные штаны
+        PinkEskimoCoat: Розовая шуба эскимоса
+        PinkEskimoHood: Розовый капюшон эскимоса
+        PinkEskimoPants: Розовые штаны эскимоса
         PinkFairyJar: Розовая фея в банке
         PinkGel: Розовый гель
         PinkGelDye: Розовый гелевый краситель
@@ -6534,7 +6534,7 @@
         RockGolemBanner: Знамя каменного голема
         RockGolemHead: Голова каменного голема
         RockLobster: Скалистый лобстер
-        RocketBoots: Реактивные сапоги
+        RocketBoots: Реактивные ботинки
         RocketI: Ракета I
         RocketII: Ракета II
         RocketIII: Ракета III
@@ -7955,7 +7955,7 @@
         Abeemination: Призывает Королеву пчёл
         AbigailsFlower:
             '''
-            Призывает дружелюбного призрака, сражающегося за вас
+            Призывает дружелюбного призрака
             'Он прекрасен до ужаса'
             '''
         AccentSlab:
@@ -8224,7 +8224,7 @@
             {$CommonItemTooltip.MajorStats}
             'Идеальная прожарка!'
             '''
-        BabyBirdStaff: Призывает птенца зяблика, сражающегося за вас
+        BabyBirdStaff: Призывает птенца зяблика
         BabyGrinchMischiefWhistle: Призывает малыша Гринча
         Bacon:
             '''
@@ -9105,7 +9105,7 @@
         DeadMansChest: Активируется при открытии
         DeadlandComesAlive: "{$PaintingArtist.Crowno}"
         DeadlySphereBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.DeadlySphere}"
-        DeadlySphereStaff: Призывает смертоносную сферу, сражающуюся за вас
+        DeadlySphereStaff: Призывает смертоносную сферу
         DeathSickle: Стреляет смертельной косой
         DeathbringerPickaxe: Способна добывать адский камень
         DeerThing: Призывает Циклопа-оленя
@@ -9291,7 +9291,7 @@
         Elderberry:
             '''
             {$CommonItemTooltip.MinorStats}
-            'Пахнет как твой отец'
+            'Пахнет, как твой отец'
             '''
         ElfArcherBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.ElfArcher}"
         ElfCopterBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.ElfCopter}"
@@ -9305,16 +9305,16 @@
             Увеличивает максимальный запас маны на 60
             Снижает расход маны на 11%
             '''
-        EmpressBlade: Призывает зачарованный меч, сражающийся за вас
-        EmpressButterfly: "'Эти крылья такие тонкие, тебе нужно быть аккуратнее, чтобы не повредить их...'"
+        EmpressBlade: Призывает зачарованный меч
+        EmpressButterfly: "'Её крылья настолько хрупкие, что следует быть осторожным, чтобы не повредить их...'"
         EmpressFlightBooster:
             '''
-            Позволяет бесконечно летать на крыльях или реактивных сапогах
+            Позволяет бесконечно летать на крыльях и реактивных сапогах
             Улучшает подвижность в полёте и прыжке
             '''
         EmptyBucket: Можно зачерпнуть небольшое количество жидкости
         EmptyBullet: Используется для создания различных видов боеприпасов
-        EnchantedSword: Стреляет зачарованными мечами, подобно лучам
+        EnchantedSword: Стреляет зачарованным мечевидным лучом
         EnchantedSwordBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.EnchantedSword}"
         EncumberingStone:
             '''
@@ -9511,7 +9511,7 @@
             Увеличивает урон призывателя на 5%
             Увеличивает призываемое число миньонов на 1
             '''
-        FlinxStaff: Призывает снежного флинкса, сражающегося за вас
+        FlinxStaff: Призывает снежного флинкса
         Flipper: Позволяет плавать
         FlipperPotion: Позволяет быстрее передвигаться в жидкостях
         FloatingIslandFishingCrate: "{$CommonItemTooltip.RightClickToOpen}"
@@ -10071,7 +10071,7 @@
         HoplitePizza: "{$PaintingArtist.Cheesy}"
         HoppinJackBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.HoppinJack}"
         HornetBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.Hornet}"
-        HornetStaff: Призывает шершня, сражающегося за вас
+        HornetStaff: Призывает шершня
         HorseshoeBundle:
             '''
             Позволяет совершать четверной прыжок
@@ -10155,7 +10155,7 @@
         IlluminantSlimeBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.IlluminantSlime}"
         ImbuingStation: Используется для создания флаконов смазывающих оружие
         ImpFace: "{$PaintingArtist.Myhre}"
-        ImpStaff: Призывает беса, сражающегося за вас
+        ImpStaff: Призывает беса
         Impact: "{$PaintingArtist.Wright}"
         InfectedScabbardfish: "'Водится в искажении'"
         InfernoFork: Выстреливает огненным шаром, который взрывается адским пламенем
@@ -10924,7 +10924,7 @@
         OcularResonance: "{$PaintingArtist.Criddle}"
         OldMiner: "{$PaintingArtist.Myhre}"
         OminousPresence: "{$PaintingArtist.Craig}"
-        OpticStaff: Призывает Близнецов, сражающихся за вас
+        OpticStaff: Призывает Близнецов
         OrangeBloodroot: Используется для создания оранжевого красителя
         OrangePressurePlate: Активируется и ломается, когда игрок наступает на неё
         OrangeString: "{$CommonItemTooltip.String}"
@@ -11143,7 +11143,7 @@
             Призывает ездовую чёрную метку
             'Ар-р-р! Бунт на корабле!'
             '''
-        PirateStaff: Призывает пиратов, сражающихся за вас
+        PirateStaff: Призывает пиратов
         PixelBox:
             '''
             Распределяет провода
@@ -11268,7 +11268,7 @@
             '''
         Pwnhammer: В нём сокрыты силы, способные уничтожать демонические алтари
         PygmyNecklace: Увеличивает призываемое число миньонов на 1
-        PygmyStaff: Призывает пигмея, сражающегося за вас
+        PygmyStaff: Призывает пигмея
         QuadBarrelShotgun: "'Когда двух или трёх попросту не хватает'"
         QueenBeeBossBag: "{$CommonItemTooltip.RightClickToOpen}"
         QueenBeePetItem:
@@ -11326,7 +11326,7 @@
         RareEnchantment: "{$PaintingArtist.Phelps}"
         RavagerScorpionBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.DesertScorpionWalk}"
         RavenBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.Raven}"
-        RavenStaff: Призывает ворона, сражающегося за вас
+        RavenStaff: Призывает ворона
         RazorbladeTyphoon: Выстреливает быстрыми бритвенными дисками
         Razorpine: Стреляет бритвенно-острыми сосновыми иголками
         ReaperBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.Reaper}"
@@ -11527,7 +11527,7 @@
             Увеличивает высоту прыжка
             '''
         SandstorminaBottle: Позволяет совершать улучшенный двойной прыжок
-        SanguineStaff: Призывает кровавую летучую мышь, сражающуюся за вас
+        SanguineStaff: Призывает кровавую летучую мышь
         SantankMountItem:
             '''
             Призывает ездовой Санта-NK1
@@ -11754,13 +11754,13 @@
         SlimeBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.BlueSlime}"
         SlimeCrown: Призывает Короля слизней
         SlimeGun: Стреляет безобидной струёй слизи
-        SlimeStaff: Призывает слизнячка, сражающегося за вас
+        SlimeStaff: Призывает слизнячка
         Slimefish: "'Водится на поверхности леса'"
         SlimerBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.Slimer}"
         SlimySaddle: Призывает ездового слизня
         Smolstar:
             '''
-            Призывает зачарованный кинжал, сражающийся за вас
+            Призывает зачарованный кинжал
             Игнорирует значительную часть показателя защиты врагов
             Наносит быстрые удары ценой 25% дополнительного урона от метки хлыстов
             'Не позволяй маленькому размеру кинжала обмануть себя'
@@ -11901,7 +11901,7 @@
             Увеличивает урон призывателя на 5%
             '''
         SpiderSinkSpiderSinkDoesWhateverASpiderSinkDoes: "'Чёткость ног, ловкость рук, это раковина-паук...'"
-        SpiderStaff: Призывает паука, сражающегося за вас
+        SpiderStaff: Призывает паука
         SpiderWallUnsafe: Кусок паучьей стены с яйцами внутри, из которых вылупляются пауки
         Spiderfish: "'Водится в подземелье и пещерах'"
         SpiffoPlush: Призывает енота Спиффо!
@@ -11985,12 +11985,12 @@
             '''
         StardustCellStaff:
             '''
-            Призывает клетку звёздной пыли, сражающуюся за вас
+            Призывает клетку звёздной пыли
             'Моя маленькая инфекция'
             '''
         StardustDragonStaff:
             '''
-            Призывает дракона звёздной пыли, сражающегося за вас
+            Призывает дракона звёздной пыли
             'Кому вообще нужна орда миньонов, когда у тебя есть здоровенный дракон?'
             '''
         StardustHelmet:
@@ -12062,7 +12062,7 @@
             'Пахнет просроченным кориандром'
             '''
         Stopwatch: Отображает скорость передвижения игрока
-        StormTigerStaff: Призывает белого тигра, сражающегося за вас
+        StormTigerStaff: Призывает белого тигра
         StrangeBrew:
             '''
             Побочные эффекты могут включать следующие явления:
@@ -12174,7 +12174,7 @@
             Работает везде
             'Нужно БОЛЬШЕ пилонов'
             '''
-        TempestStaff: Призывает акулонадо, сражающийся за вас
+        TempestStaff: Призывает акулонадо
         TempleKey: Отпирает дверь Храма джунглей
         TentacleSpike:
             '''
@@ -12406,7 +12406,7 @@
         Uzi: Совершает мощнейший и очень быстрый выстрел
         ValkyrieYoyo: "{$CommonItemTooltip.DevItem}"
         VampireBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.VampireBat}"
-        VampireFrogStaff: Призывает лягушку-вампира, сражающуюся за вас
+        VampireFrogStaff: Призывает лягушку-вампира
         VampireKnives: Быстро метает ножи, похищающие здоровье врагов
         VenomArrow: Накладывает дебафф «{$BuffName.Venom}»
         VenomBullet: Накладывает дебафф «{$BuffName.Venom}»
@@ -12592,7 +12592,7 @@
         Wrench: Размещает красный провод
         WyvernBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.WyvernHead}"
         Wyverntail: "'Водится в небесных озёрах'"
-        XenoStaff: Призывает НЛО, сражающийся за вас
+        XenoStaff: Призывает НЛО
         XenonMoss: "'Незабываемое зрелище, на которое можно смотреть бесконечно'"
         YellowAndGreenBulb: "{$CommonItemTooltip.PlaceableOnXmasTree}"
         YellowAndGreenLights: "{$CommonItemTooltip.PlaceableOnXmasTree}"

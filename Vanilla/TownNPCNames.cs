@@ -8,13 +8,6 @@ namespace CalamityRuTranslate.Vanilla;
 
 public class TownNpcNames : GlobalNPC
 {
-    public override bool InstancePerEntity => true;
-
-    public override bool AppliesToEntity(NPC entity, bool lateInstantiation)
-    {
-        return entity.townNPC;
-    }
-
     private readonly Dictionary<int, Dictionary<string, string>> _townNpcNames = new()
     {
         [NPCID.Angler] = new Dictionary<string, string>
@@ -206,6 +199,13 @@ public class TownNpcNames : GlobalNPC
         },
     };
 
+    public override bool InstancePerEntity => true;
+    
+    public override bool AppliesToEntity(NPC entity, bool lateInstantiation)
+    {
+        return entity.townNPC || entity.type == NPCID.SkeletonMerchant;
+    }
+    
     public override bool IsLoadingEnabled(Mod mod)
     {
         return TranslationHelper.IsRussianLanguage;

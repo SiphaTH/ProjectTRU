@@ -10,6 +10,7 @@ Mods.StarsAbove: {
 #    }
 #
 #    Boss.WarriorOfLight: Воин Света снисходит!
+#    TempInfo: Hello! It looks like you're playing The Stars Above in Multiplayer! It is recommended to use a dedicated server to host multiplayer sessions. Additionally, try having one player in the main world at all times to avoid issues! 
 #
 #    CombatText: {
 #        Adornment: {
@@ -72,7 +73,7 @@ Mods.StarsAbove: {
 #            NoPortal: No nearby portal detected!
 #            WeakStellaglyph: Your Stellaglyph is not powerful enough to attempt transit!
 #            AnomalyCooldown: Anomaly voyages are currently on cooldown.
-#            LunarEvents: Celestial energy prevents the Astrolabe from functioning- try defeating the invading creatures first!
+#            LunarEvents: Celestial energy prevents the Astrolabe from functioning...
 #            MultiplayerCompatibility: Multiplayer compatibility mode enabled; spawning relevant items instead of attempting transit.
 #            MultiplayerNoLoot: Multiplayer compatibility mode enabled; transit disabled at this time.
 #            LootCooldown: Loot still on cooldown!
@@ -377,7 +378,7 @@ Mods.StarsAbove: {
 #
 #            UmbralEntropy: {
 #                Name: "[c/C2BDFF:Ранг 1] [c/FFEED1:'Теневая энтропия»']"
-#                Description: Все снаряды и атаки ближнего боя накладывают дебафф «{$Buffs.Starblight.DisplayName}» при критическом ударе. Вы получаете эффект кражи здоровья от врагов, поражённых дебаффом «{$Buffs.Starblight.DisplayName}». Исцеление ограничено 5 единицами здоровья в секунду.
+#                Description: Все атаки накладывают дебафф «{$Buffs.Starblight.DisplayName}» при критическом ударе. Вы получаете эффект кражи здоровья от врагов, поражённых дебаффом «{$Buffs.Starblight.DisplayName}». Исцеление ограничено 5 единицами здоровья в секунду.
 #                Unlock: "[c/9D9D9D:Заблокировано:] Одолейте Лунного лорда"
 #            }
 #
@@ -1417,15 +1418,15 @@ Mods.StarsAbove: {
 #
 #            NormalIdleDialogue4: {
 #                Asphodene: {
-#                    1: What is a 'Starfarer' you ask? Hmm, there's a lot to go over.
-#                    2: In short, we're the manifestation of the universe's will to vanquish threats...?
-#                    3: Sorry. I think my memory's a little foggy. Just know I'm on your side, whatever may come.
+#                    1: What is a 'Starfarer' you ask? Would you be suprised if I said I had nearly no idea?
+#                    2: We appear through summoning, and then... Well, our brother sent us off.
+#                    3: You know what? I don't even remember how or when I or Eri was summoned- isn't that strange?
 #                }
 #
 #                Eridani: {
-#                    1: What is a 'Starfarer'? Let me see...
-#                    2: Using your terms, we would be referred to as a sort of demigod. The universe calls us into action when needed.
-#                    3: That wasn't very helpful? Sorry. I feel like my memories are foggy. Don't fret, though- I'm with you all the way.
+#                    1: What is a 'Starfarer'? I hate to tell you this, but we only have cursory knowledge.
+#                    2: We appear through a summoning spell- no, I can't remember my summoning, strangely.
+#                    3: My earliest memories are being reoriented by my brother. Other than that...
 #                }
 #            }
 #
@@ -1535,16 +1536,8 @@ Mods.StarsAbove: {
 #            }
 #
 #            HardIdleDialogue5: {
-#                Asphodene: {
-#                    1: After all this is over with, how do you feel about joining me? Think of all the good times we've had already!
-#                    2: Uh, yeah. A lot of it was just fighting things.
-#                    3: But hey- that was fun too, wasn't it?
-#                }
-#
-#                Eridani: {
-#                    1: I could use your aid in the days to come... You wouldn't mind joining me, no?
-#                    2: ..Maybe we should come back to this conversation. We've still got a long way to go.
-#                }
+#                Asphodene.1: I could seriously do with a break...
+#                Eridani.1: Let's, uh... take a break from time to time.
 #            }
 #
 #            HardIdleDialogue6: {
@@ -1572,6 +1565,86 @@ Mods.StarsAbove: {
 #
 #            HardIdleDialogue8: {
 #                Asphodene: {
+#                    1: Okay, theoretically, because I can resurrect you from the brink of death at your bed...
+#                    2: What if- hear me out- we tied the bed to you. Boom, invincibility! Right? Right...
+#                }
+#
+#                Eridani: {
+#                    1: Have you ever tried... using two weapons at once? Like, one weapon in each hand?
+#                    2: You spend so much time in the air, your feet are open. Maybe we could quadruple our damage ou- It would be too difficult? I see. I guess I knew that.
+#                }
+#            }
+#
+#            HardIdleDialogue9: {
+#                Asphodene: {
+#                    1: Yes, my hair does get a bit frazzled from time to time. Actually, Eri does my hair- could you tell?
+#                    2: If I'm quick enough, I can leave the Observatory in the morning before she finds me. Heh.
+#                }
+#
+#                Eridani: {
+#                    1: Asphodene likes to follow rules as much as possible, but to be honest, there's a time and place for everything.
+#                    2: Sometimes, you have to bend the regulations to help who you need. That's just how things work. If you're quick enough, nobody will even notice.
+#                    3: Let's keep something straight though- there's usually other options, and you have to weigh those as well. Always resorting to crime is what bad people do.
+#                }
+#            }
+#
+#            HardIdleDialogue10: {
+#                Asphodene: {
+#                    1: From looking at her, you probably get the impression that Eridani is a bit of a "honor student" type, right?
+#                    2: Think again! She does whatever the heck she wants most of the time. Luckily she still has her moral compass, or I'd set her straight!
+#                }
+#
+#                Eridani: {
+#                    1: Asphodene is technically the older one... but I bet you couldn't tell.
+#                    2: She has that sort of air about her. No, I wouldn't say childlike- more like... chaotic? Yes, chaotic.
+#                }
+#            }
+#
+#            HardIdleDialogue11: {
+#                Asphodene: {
+#                    1: What I like? Waking up when I want to! Yes, I'd say that nears the top of the list.
+#                    2: Okay, it's a little vapid of me. I like fresh fruit too, is that better?
+#                    3: Oh, oh- magical food is the best. Once you've tried some, things aren't the same.
+#                    4: Travelling is a blast, as well- if your heart doesn't flutter upon visiting new vistas, are you even alive?
+#                }
+#
+#                Eridani: {
+#                    1: Things that I like? Are you asking about banal things, or... Okay.
+#                    2: Well, I do enjoy the night air. Surrounded by life and noise, yet everything's still. Right, tranquility and silence.
+#                    3: If you're looking for something more material, well... I concede, I have a bit of a sweet tooth.
+#                }
+#            }
+#
+#            HardIdleDialogue12: {
+#                Asphodene: {
+#                    1: Things that I dislike? Let's see...
+#                    2: I hate being weak, but being too strong makes things boring, which isn't what I want either. You get it, right?
+#                    3: Oh, I also really don't like being sick, but who does?
+#                }
+#
+#                Eridani: {
+#                    1: What I dislike? Other than bugs... Okay, may I vent a little?
+#                    2: There are times when you start something, get really, really close to finishing, and then it all blows up in your face. And then-
+#                    3: The second time around, you only get a third of the way through before it gets all messed up again. I can't think of anything more demoralizing...
+#                }
+#            }
+#
+#            HardIdleDialogue13: {
+#                Asphodene: {
+#                    1: My hobbies, huh. Well, I collect knicknacks from the places I visit. That's cool, right?
+#                    2: I also, uh, try to create new weapons. Most of them are a little volatile, but I am getting better!
+#                    3: I also play the piano! Not great, but... It's a step by step process. When I mean step by step, I really mean it.
+#                }
+#
+#                Eridani: {
+#                    1: Hobbies? Well, the biggest thing I can think of is alchemy. Yes, alchemy has been solved- if you think on a planetary scale.
+#                    2: Mix fundamentals from even two different planets with epochs of divergent history, things start getting quite messy.
+#                    3: Sure, it's overwhelming- that's why it's a hobby, and not anything more. I'm no genius, but it is quite enjoyable.
+#                }
+#            }
+#
+#            HardIdleDialogue14: {
+#                Asphodene: {
 #                    1: Truly... The Hallowed is just a big facade.
 #                    2: For such a pretty biome, it REALLY wants to kill you.
 #                }
@@ -1579,18 +1652,6 @@ Mods.StarsAbove: {
 #                Eridani: {
 #                    1: Strip away the Hallowed's mask, and it may even be harsher than the Underworld itself.
 #                    2: If you're off to farm Souls, stay safe. Even the best can can be caught off-guard.
-#                }
-#            }
-#
-#            HardIdleDialogue9: {
-#                Asphodene: {
-#                    1: We've come a long way..  don't you think?
-#                    2: That doesn't mean it's time to stop!
-#                }
-#
-#                Eridani: {
-#                    1: Looking back on this journey.. We've come far.
-#                    2: And yet, we have so much more to accomplish.
 #                }
 #            }
 #
@@ -2041,6 +2102,16 @@ Mods.StarsAbove: {
 #                    Choices: {
 #                        1: X
 #                        2: X
+#                    }
+#                }
+#
+#                2: {
+#                    Dialogue.0: This world is not the world your character originally came from and may have progression further than your own. Sync world progression to your character?
+#
+#                    Choices: {
+#                        1: Sync progression from this world.
+#                        2: Do not sync progression.
+#                        3: Always sync progress, and don't ask again.
 #                    }
 #                }
 #                
@@ -3143,8 +3214,8 @@ Mods.StarsAbove: {
 #            UnlimitedBladeWorks: {
 #                AbilityName: Unlimited Blade Works
 #                AbilitySubName: "[c/FC643B:Projected Reality of Wrought Iron]"
-#                AbilityDescription: Summon a portal to a world of blades, creating a field of empowerment for 20 seconds. After activation, rain down a barrage of blades, reducing enemy damage dealt by 10% for 20 seconds on hit. Additonally, all allies within the radius will gain Bladeforged, which increases damage, knockback, critical strike chance, and armor penetration by 2% up to 10% depending on current HP (capped at 500 HP.) Duration in seconds is proportional to Energy Cost divided by 10.
-#                AstralBonus: Bladeforged's cap is raised to 15% and now increases defense based on percentage values up to 8. Additonally, Bladeforged perists for 10 seconds after the Nova ends.
+#                AbilityDescription: Summon a portal to a world of blades, creating a field of empowerment for 20 seconds. After activation, rain down a barrage of blades, reducing enemy damage dealt by 10% for 20 seconds on hit. Additionally, all allies within the radius will gain Bladeforged, which increases damage, knockback, critical strike chance, and armor penetration by 2% up to 10% depending on current HP (capped at 500 HP.) Duration in seconds is proportional to Energy Cost divided by 10.
+#                AstralBonus: Bladeforged's cap is raised to 15% and now increases defense based on percentage values up to 8. Additionally, Bladeforged perists for 10 seconds after the Nova ends.
 #                UmbralBonus: Bladeforged no longer increases damage, but attacking with projectiles trigger follow-up attacks (3 second cooldown.) Foes within the field take 10% more damage.
 #            }
 #            
@@ -3382,7 +3453,7 @@ Mods.StarsAbove: {
 #        WarriorOfLight.DisplayName: The Warrior Of Light
 #        Nalhaun.DisplayName: Mods.StarsAbove.NPCName.Nalhaun
 #        Tsukiyomi.DisplayName: Mods.StarsAbove.NPCName.Tsukiyomi
-#        Tsukiyomi2.DisplayName: Mods.StarsAbove.NPCName.Tsukiyomi2
+#        Tsukiyomi2.DisplayName: Mods.StarsAbove.NPCName.Tsukiyomi
 #        AmethystHeadpiercer.DisplayName: Amethyst Headpiercer
 #        AmethystSwordsinner.DisplayName: Amethyst Swordsinner
 #        AsteroidWormBody.DisplayName: Stardigrade
@@ -3395,8 +3466,8 @@ Mods.StarsAbove: {
 #            DisplayName: The Vagrant of Space and Time
 #
 #            BossChecklistIntegration: {
-#                EntryName: "The Vagrant of Space and Time"
-#                SpawnInfo: "Defeat this strange foe through the Shattered Disk, obtained from your Starfarer after King Slime is defeated. This fight will be critical to progression later!"
+#                EntryName: The Vagrant of Space and Time
+#                SpawnInfo: Defeat this strange foe through the Shattered Disk, obtained from your Starfarer after the Eye of Cthulhu is defeated. This fight will be critical to progression later!
 #                DespawnMessage: ""
 #            }
 #        }
@@ -3911,7 +3982,7 @@ Mods.StarsAbove: {
 #                '''
 #                Critical strikes with this weapon will grant a stack of [c/F1AF42:Radiance] (Up to 10)
 #                Right click with 5 stacks of [c/F1AF42:Radiance] to unleash the [c/F35B43:Radiant Soul], consuming all [c/F1AF42:Radiance]
-#                When the [c/F35B43:Radiant Soul] is unleashed, gain 2 seconds of Invincibility
+#                When the [c/F35B43:Radiant Soul] is unleashed, gain 1 second of Invincibility
 #                The [c/F35B43:Radiant Soul] will deal powerful critical damage to nearby foes in a large radius
 #                The [c/F35B43:Radiant Soul]'s damage is influenced by a portion of defense and current stacks of [c/F1AF42:Radiance]
 #                Gaining [c/F1AF42:Radiance] past 10 stacks will instead grant Ironskin for 4 seconds
@@ -4349,7 +4420,7 @@ Mods.StarsAbove: {
 #                Calls forth an instance of your rebellious heart
 #                Unleashes incredibly powerful bullets
 #                Gain a sizeable amount of bonus damage relative to Max HP and MP
-#                Additonally, the highest critical chance percentage of all damage types is converted into bonus damage
+#                Additionally, the highest critical chance percentage of all damage types is converted into bonus damage
 #                Only one can be summoned at a time
 #                Uses 5 minion slots
 #                'Ravage them'
@@ -4395,8 +4466,8 @@ Mods.StarsAbove: {
 #        DeathInFourActs: {
 #            Tooltip:
 #                '''
-#                Every fourth shot will always deal critical damage and grant Swiftness
-#                After the fourth shot is taken, the gun will take time to reload
+#                Every fourth shot will always be a critical strike and grant Swiftness
+#                After the fourth shot is taken, the gun will two seconds to reload
 #                'In carnage, I bloom, like a flower in the dawn'
 #                '''
 #            DisplayName: Death In Four Acts
@@ -5416,8 +5487,6 @@ Mods.StarsAbove: {
 #                Attacks fire quick long-ranged bullets
 #                Proximity to hostile projectiles or enemies with contact damage grants the buff Death's Dance for 2 seconds
 #                Death's Dance grants 30% increased damage
-#                Right click to activate [c/A6F3C4:Phantom Slash], spinning the weapon around you for 3x base damage (8 second cooldown)
-#                If Death's Dance is currently active, [c/A6F3C4:Phantom Slash] will do 6x base damage instead and grant Swiftness for 4 seconds
 #                'If there is something I can't make clear, I try cutting it!'
 #                '''
 #            DisplayName: Konpaku Katana
@@ -5464,7 +5533,7 @@ Mods.StarsAbove: {
 #                Will fire a blade of light that will deal double damage and burn foes with 50 mana if mana is available
 #                Right click to unleash your inner potential, gaining the unrivaled strength of [c/F1AF42:Limit Break] for 20 seconds (1 minute cooldown)
 #                While under the influence of [c/F1AF42:Limit Break], health will be converted to mana without limit until mana is full
-#                Additonally, all damage is increased by 10% and all magic damage is increased by an additional 100%
+#                Additionally, all damage is increased by 10% and all magic damage is increased by an additional 100%
 #                'I shall transcend you!'
 #                '''
 #            DisplayName: Light Unrelenting
@@ -6733,7 +6802,7 @@ Mods.StarsAbove: {
 #                [c/25ACF0:Riptide Bolts] will apply [c/4A91FF:Riptide] to foes struck for 12 seconds
 #                Right click to consume 200 mana, entering [c/2361C1:Raging Tides] for 8 seconds
 #                Within [c/2361C1:Raging Tides], attacks are changed into rapid close-ranged melee strikes that deal double damage and mana will not regenerate
-#                Additonally, gain extra Movement Speed for the buff's duration
+#                Additionally, gain extra Movement Speed for the buff's duration
 #                Attacking foes afflicted with [c/4A91FF:Riptide] in this stance will deal extra damage
 #                This weapon does not use ammo
 #                'Shouldn't let your guard down!'
@@ -7960,7 +8029,11 @@ Mods.StarsAbove: {
 #
 #        StellarSpoils: {
 #            DisplayName: Stellar Spoils
-#            Tooltip: ""
+#            Tooltip:
+#                '''
+#                Concentrated confluence of celestial energy
+#                Contains unique Stellar Spoils, obtained from celestial bosses
+#                '''
 #        }
 #
 #        StellarRemnant: {
@@ -8152,6 +8225,20 @@ Mods.StarsAbove: {
 #                [c/73C84E:Suppress] becomes [c/C84EB6:Corrupted Suppress], consuming 50 HP to restore 50% Max MP and increase [c/7A1AE7:Void Corruption] by 25%
 #                '..and so it comes... for all of us.'
 #                '''
+#        }
+#
+#        Poltergrasp5000: {
+#            Tooltip:
+#                '''
+#                When held, vaccums all nearby items to your position instantly
+#                Use the item to grab items further away
+#                '''
+#            DisplayName: Poltergrasp 5000
+#        }
+#
+#        GundbitStaves: {
+#            DisplayName: Gundbit Staves
+#            Tooltip: ""
 #        }
 #    }
 #
@@ -9007,6 +9094,8 @@ Mods.StarsAbove: {
 #        DraggedBelowFloodCorrupted.DisplayName: Dragged Below Flood Corrupted
 #        DraggedBelowFloodExplosion.DisplayName: Dragged Below Flood Explosion
 #        DraggedBelowFloodExplosionCorrupted.DisplayName: Dragged Below Flood Explosion Corrupted
+#        VagrantTrackingStar.DisplayName: Starmatter
+#        YoumuHeld.DisplayName: Youmu Held
 #    }
 #
 #    Buffs: {
@@ -10824,7 +10913,7 @@ Mods.StarsAbove: {
 #
 #        LVBuff: {
 #            DisplayName: LV
-#            Description: ""
+#            Description: Empowered by karmic strength
 #        }
 #
 #        ManiacalJusticeCooldown: {
@@ -11083,18 +11172,6 @@ Mods.StarsAbove: {
 #
 #        ManaSicknessAlter.Description: All damage reduced by {0}%
 #        DarkAuraBuff.Description: "{0} sacrifice(s) have been consumed"
-#        LVBuff20.Description:
-#            '''
-#            Attack speed increased by 20%
-#            Cooldown of Slaughtering Slash halved
-#            '''
-#        LVBuff50.Description:
-#            '''
-#            Attack speed increased by 30%
-#            Cooldown of Slaughtering Slash halved
-#            Attacks inflict Karmic Retribution for 10 seconds
-#            '''
-#        LVBuff100.Description: Able to unleash a Special Attack upon pressing the Weapon Action Key
 #
 #        SpectrumAbsorption: {
 #            DisplayName: Преломляющее поглощение

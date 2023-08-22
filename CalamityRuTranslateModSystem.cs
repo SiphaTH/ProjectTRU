@@ -193,152 +193,161 @@ public class CalamityRuTranslateModSystem : ModSystem
             ArmorSetBonus[ItemID.ApprenticeAltHead] = $"{Language.GetTextValue("ArmorSetBonus.ApprenticeTier3")}\nУвеличивает урон призывателя на 10% и магический шанс критического удара на 15%";
             ArmorSetBonus[ItemID.GladiatorHelmet] = $"{Language.GetTextValue("ArmorSetBonus.Gladiator")}\nУвеличивает защиту на 3\nУвеличивает максимальную скрытность на 60\nУвеличивает разбойный урон на 5% и скорость снарядов на 10%";
             ArmorSetBonus[ItemID.ObsidianHelm] = $"{Language.GetTextValue("ArmorSetBonus.ObsidianOutlaw")}\nДаёт невосприимчивость к огненным блокам и временную невосприимчивость к лаве";
-            ArmorSetBonus[ItemID.AncientNecroHelmet] = $"{Language.GetText("ArmorSetBonus.Bone")}\nДаёт возможность временно пережить смертельный удар\nДаёт до 7 секунд жизни перед неминуемой смертью";
-            ArmorSetBonus[ItemID.NecroHelmet] = $"{Language.GetText("ArmorSetBonus.Bone")}\nДаёт возможность временно пережить смертельный удар\nДаёт до 7 секунд жизни перед неминуемой смертью";
+            ArmorSetBonus[ItemID.AncientNecroHelmet] = $"{Language.GetTextValue("ArmorSetBonus.Bone")}\nДаёт возможность временно пережить смертельный удар\nДаёт до 7 секунд жизни перед неминуемой смертью";
+            ArmorSetBonus[ItemID.NecroHelmet] = $"{Language.GetTextValue("ArmorSetBonus.Bone")}\nДаёт возможность временно пережить смертельный удар\nДаёт до 7 секунд жизни перед неминуемой смертью";
             
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "AstralHelm").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.AstralHelm.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "BrimflameScowl").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.BrimflameScowl.SetBonus", "[Бонус комплекта брони]");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadMagic").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.DaedalusHeadMagic.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadMelee").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.DaedalusHeadMelee.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadRanged").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.DaedalusHeadRanged.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadRogue").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.DaedalusHeadRogue.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DaedalusHeadSummon").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.DaedalusHeadSummon.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "FathomSwarmerVisage").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.FathomSwarmerVisage.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "ForbiddenCirclet").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.ForbiddenCirclet.SetBonus", "[Бонус комплекта брони]", 60f * Main.player[Main.myPlayer].manaCost);
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "LunicCorpsHelmet").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.LunicCorpsHelmet.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "MolluskShellmet").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.MolluskShellmet.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "PlaguebringerVisor").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.PlaguebringerVisor.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "PlagueReaperMask").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.PlagueReaperMask.SetBonus", "[Бонус комплекта брони]");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "ReaverHeadExplore").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.ReaverHeadExplore.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "ReaverHeadMobility").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.ReaverHeadMobility.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "ReaverHeadTank").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.ReaverHeadTank.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "TitanHeartMask").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.TitanHeartMask.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "UmbraphileHood").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.UmbraphileHood.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "AuricTeslaHoodedFacemask").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.AuricTeslaHoodedFacemask.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "AuricTeslaPlumedHelm").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.AuricTeslaPlumedHelm.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "AuricTeslaRoyalHelm").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.AuricTeslaRoyalHelm.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "AuricTeslaSpaceHelmet").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.AuricTeslaSpaceHelmet.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "AuricTeslaWireHemmedVisage").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.AuricTeslaWireHemmedVisage.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DemonshadeHelm").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.DemonshadeHelm.SetBonus", "[Бонус комплекта брони]");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "EmpyreanMask").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.EmpyreanMask.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "FearmongerGreathelm").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.FearmongerGreathelm.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "OmegaBlueHelmet").Type] =Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.OmegaBlueHelmet.SetBonus", "[Бонус комплекта брони]");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "PrismaticHelmet").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.PrismaticHelmet.SetBonus", "[Бонус комплекта брони]");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "SnowRuffianMask").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.SnowRuffianMask.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "SulphurousHelmet").Type] =Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.SulphurousHelmet.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "VictideHeadRanged").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideHeadRanged.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "VictideHeadMagic").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideHeadMagic.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "StatigelHeadMagic").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.StatigelArmor.CommonSetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "StatigelHeadRanged").Type] = Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.StatigelArmor.CommonSetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "HydrothermicHeadMagic").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.HydrothermicArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.HydrothermicHeadMagic.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "HydrothermicHeadMelee").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.HydrothermicArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.HydrothermicHeadMelee.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "HydrothermicHeadRanged").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.HydrothermicArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.HydrothermicHeadRanged.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "HydrothermicHeadRogue").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.HydrothermicArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.HydrothermicHeadRogue.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "HydrothermicHeadSummon").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.HydrothermicArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.Hardmode.HydrothermicHeadSummon.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "BloodflareHeadMagic").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.BloodflareBodyArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.BloodflareHeadMagic.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "BloodflareHeadMelee").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.BloodflareBodyArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.BloodflareHeadMelee.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "BloodflareHeadRanged").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.BloodflareBodyArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.BloodflareHeadRanged.SetBonus", "[Бонус комплекта брони]");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "BloodflareHeadRogue").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.BloodflareBodyArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.BloodflareHeadRogue.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "BloodflareHeadSummon").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.BloodflareBodyArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.BloodflareHeadSummon.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "GodSlayerHeadMelee").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.GodSlayerChestplate.CommonSetBonus", "[Бонус комплекта брони]", 45) + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.GodSlayerHeadMelee.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "GodSlayerHeadRanged").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.GodSlayerChestplate.CommonSetBonus", "[Бонус комплекта брони]", 45) + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.GodSlayerHeadRanged.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "GodSlayerHeadRogue").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.GodSlayerChestplate.CommonSetBonus", "[Бонус комплекта брони]", 45) + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.GodSlayerHeadRogue.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "SilvaHeadMagic").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.SilvaArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.SilvaHeadMagic.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "SilvaHeadSummon").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.SilvaArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.SilvaHeadSummon.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "TarragonHeadMagic").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.TarragonBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.TarragonHeadMagic.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "TarragonHeadMelee").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.TarragonBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.TarragonHeadMelee.SetBonus", "[Бонус комплекта брони]");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "TarragonHeadRanged").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.TarragonBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.TarragonHeadRanged.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "TarragonHeadRogue").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.TarragonBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.TarragonHeadRogue.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "TarragonHeadSummon").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.TarragonBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PostMoonLord.TarragonHeadSummon.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "AerospecHat").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.AerospecBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.AerospecHat.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "AerospecHeadgear").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.AerospecBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.AerospecHeadgear.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "AerospecHelm").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.AerospecBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.AerospecHelm.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "AerospecHelmet").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.AerospecBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.AerospecHelmet.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "AerospecHood").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.AerospecBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.AerospecHood.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "DesertProwlerHat").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.DesertProwlerHat.SetBonus", 1) + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.DesertProwlerHat.AbilityBrief") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.DesertProwlerHat.AbilityDescription", 200, 100, 1.5f);
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "StatigelHeadMelee").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.StatigelArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.StatigelHeadMelee.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "StatigelHeadRogue").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.StatigelArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.StatigelHeadRogue.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "StatigelHeadSummon").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.StatigelArmor.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.StatigelHeadSummon.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "VictideHeadMelee").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideHeadMelee.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "VictideHeadRogue").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideHeadRogue.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "VictideHeadSummon").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideBreastplate.CommonSetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.VictideHeadSummon.SetBonus");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "WulfrumHat").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.WulfrumHat.SetBonus") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.WulfrumHat.AbilityBrief") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.WulfrumHat.AbilityDescription",
-                    $"[i:{ModContent.Find<ModItem>("CalamityMod", "WulfrumMetalScrap").Type}] {Language.GetTextValue("Mods.CalamityMod.Items.Materials.WulfrumMetalScrap.DisplayName")}");
-            ArmorSetBonus[ModContent.Find<ModItem>("CalamityMod", "MarniteArchitectHeadgear").Type] =
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.MarniteArchitectHeadgear.AbilityBrief") + "\n" +
-                Language.GetTextValue("Mods.CalamityMod.Items.Armor.PreHardmode.MarniteArchitectHeadgear.AbilityDescription");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/AstralHelm")] = TranslationHelper.GetTextValue("CalamityMod/AstralHelm", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/BrimflameScowl")] = TranslationHelper.GetTextValue("CalamityMod/BrimflameScowl", "SetBonus", "[Бонус комплекта брони]");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/DaedalusHeadMagic")] = TranslationHelper.GetTextValue("CalamityMod/DaedalusHeadMagic", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/DaedalusHeadMelee")] = TranslationHelper.GetTextValue("CalamityMod/DaedalusHeadMelee", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/DaedalusHeadRanged")] = TranslationHelper.GetTextValue("CalamityMod/DaedalusHeadRanged", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/DaedalusHeadRogue")] = TranslationHelper.GetTextValue("CalamityMod/DaedalusHeadRogue", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/DaedalusHeadSummon")] = TranslationHelper.GetTextValue("CalamityMod/DaedalusHeadSummon", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/FathomSwarmerVisage")] = TranslationHelper.GetTextValue("CalamityMod/FathomSwarmerVisage", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/ForbiddenCirclet")] = TranslationHelper.GetTextValue("CalamityMod/ForbiddenCirclet", "SetBonus", "[Бонус комплекта брони]", "[X]");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/LunicCorpsHelmet")] = TranslationHelper.GetTextValue("CalamityMod/LunicCorpsHelmet", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/MolluskShellmet")] = TranslationHelper.GetTextValue("CalamityMod/MolluskShellmet", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/PlaguebringerVisor")] = TranslationHelper.GetTextValue("CalamityMod/PlaguebringerVisor", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/PlagueReaperMask")] = TranslationHelper.GetTextValue("CalamityMod/PlagueReaperMask", "SetBonus", "[Бонус комплекта брони]");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/ReaverHeadExplore")] = TranslationHelper.GetTextValue("CalamityMod/ReaverHeadExplore", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/ReaverHeadMobility")] = TranslationHelper.GetTextValue("CalamityMod/ReaverHeadMobility", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/ReaverHeadTank")] = TranslationHelper.GetTextValue("CalamityMod/ReaverHeadTank", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/TitanHeartMask")] = TranslationHelper.GetTextValue("CalamityMod/TitanHeartMask", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/UmbraphileHood")] = TranslationHelper.GetTextValue("CalamityMod/UmbraphileHood", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/AuricTeslaHoodedFacemask")] = TranslationHelper.GetTextValue("CalamityMod/AuricTeslaHoodedFacemask", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/AuricTeslaPlumedHelm")] = TranslationHelper.GetTextValue("CalamityMod/AuricTeslaPlumedHelm", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/AuricTeslaRoyalHelm")] = TranslationHelper.GetTextValue("CalamityMod/AuricTeslaRoyalHelm", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/AuricTeslaSpaceHelmet")] = TranslationHelper.GetTextValue("CalamityMod/AuricTeslaSpaceHelmet", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/AuricTeslaWireHemmedVisage")] = TranslationHelper.GetTextValue("CalamityMod/AuricTeslaWireHemmedVisage", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/DemonshadeHelm")] = TranslationHelper.GetTextValue("CalamityMod/DemonshadeHelm", "SetBonus", "[Бонус комплекта брони]");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/EmpyreanMask")] = TranslationHelper.GetTextValue("CalamityMod/EmpyreanMask", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/FearmongerGreathelm")] = TranslationHelper.GetTextValue("CalamityMod/FearmongerGreathelm", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/OmegaBlueHelmet")] = TranslationHelper.GetTextValue("CalamityMod/OmegaBlueHelmet", "SetBonus", "[Бонус комплекта брони]");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/PrismaticHelmet")] = TranslationHelper.GetTextValue("CalamityMod/PrismaticHelmet", "SetBonus", "[Бонус комплекта брони]");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/SnowRuffianMask")] = TranslationHelper.GetTextValue("CalamityMod/SnowRuffianMask", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/SulphurousHelmet")] =TranslationHelper.GetTextValue("CalamityMod/SulphurousHelmet", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/VictideHeadRanged")] =
+                TranslationHelper.GetTextValue("CalamityMod/VictideBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/VictideHeadRanged", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/VictideHeadMagic")] =
+                TranslationHelper.GetTextValue("CalamityMod/VictideBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/VictideHeadMagic", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/StatigelHeadMagic")] = TranslationHelper.GetTextValue("CalamityMod/StatigelArmor", "CommonSetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/StatigelHeadRanged")] = TranslationHelper.GetTextValue("CalamityMod/StatigelArmor", "CommonSetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/HydrothermicHeadMagic")] =
+                TranslationHelper.GetTextValue("CalamityMod/HydrothermicArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/HydrothermicHeadMagic", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/HydrothermicHeadMelee")] =
+                TranslationHelper.GetTextValue("CalamityMod/HydrothermicArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/HydrothermicHeadMelee", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/HydrothermicHeadRanged")] =
+                TranslationHelper.GetTextValue("CalamityMod/HydrothermicArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/HydrothermicHeadRanged", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/HydrothermicHeadRogue")] =
+                TranslationHelper.GetTextValue("CalamityMod/HydrothermicArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/HydrothermicHeadRogue", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/HydrothermicHeadSummon")] =
+                TranslationHelper.GetTextValue("CalamityMod/HydrothermicArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/HydrothermicHeadSummon", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/BloodflareHeadMagic")] =
+                TranslationHelper.GetTextValue("CalamityMod/BloodflareBodyArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/BloodflareHeadMagic", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/BloodflareHeadMelee")] =
+                TranslationHelper.GetTextValue("CalamityMod/BloodflareBodyArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/BloodflareHeadMelee", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/BloodflareHeadRanged")] =
+                TranslationHelper.GetTextValue("CalamityMod/BloodflareBodyArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/BloodflareHeadRanged", "SetBonus", "[Бонус комплекта брони]");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/BloodflareHeadRogue")] =
+                TranslationHelper.GetTextValue("CalamityMod/BloodflareBodyArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/BloodflareHeadRogue", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/BloodflareHeadSummon")] =
+                TranslationHelper.GetTextValue("CalamityMod/BloodflareBodyArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/BloodflareHeadSummon", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/GodSlayerHeadMelee")] =
+                TranslationHelper.GetTextValue("CalamityMod/GodSlayerChestplate", "CommonSetBonus", "[Бонус комплекта брони]", 45) + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/GodSlayerHeadMelee", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/GodSlayerHeadRanged")] =
+                TranslationHelper.GetTextValue("CalamityMod/GodSlayerChestplate", "CommonSetBonus", "[Бонус комплекта брони]", 45) + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/GodSlayerHeadRanged", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/GodSlayerHeadRogue")] =
+                TranslationHelper.GetTextValue("CalamityMod/GodSlayerChestplate", "CommonSetBonus", "[Бонус комплекта брони]", 45) + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/GodSlayerHeadRogue", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/SilvaHeadMagic")] =
+                TranslationHelper.GetTextValue("CalamityMod/SilvaArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/SilvaHeadMagic", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/SilvaHeadSummon")] =
+                TranslationHelper.GetTextValue("CalamityMod/SilvaArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/SilvaHeadSummon", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/TarragonHeadMagic")] =
+                TranslationHelper.GetTextValue("CalamityMod/TarragonBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/TarragonHeadMagic", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/TarragonHeadMelee")] =
+                TranslationHelper.GetTextValue("CalamityMod/TarragonBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/TarragonHeadMelee", "SetBonus", "[Бонус комплекта брони]");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/TarragonHeadRanged")] =
+                TranslationHelper.GetTextValue("CalamityMod/TarragonBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/TarragonHeadRanged", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/TarragonHeadRogue")] =
+                TranslationHelper.GetTextValue("CalamityMod/TarragonBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/TarragonHeadRogue", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/TarragonHeadSummon")] =
+                TranslationHelper.GetTextValue("CalamityMod/TarragonBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/TarragonHeadSummon", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/AerospecHat")] =
+                TranslationHelper.GetTextValue("CalamityMod/AerospecBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/AerospecHat", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/AerospecHeadgear")] =
+                TranslationHelper.GetTextValue("CalamityMod/AerospecBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/AerospecHeadgear", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/AerospecHelm")] =
+                TranslationHelper.GetTextValue("CalamityMod/AerospecBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/AerospecHelm", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/AerospecHelmet")] =
+                TranslationHelper.GetTextValue("CalamityMod/AerospecBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/AerospecHelmet", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/AerospecHood")] =
+                TranslationHelper.GetTextValue("CalamityMod/AerospecBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/AerospecHood", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/DesertProwlerHat")] =
+                TranslationHelper.GetTextValue("CalamityMod/DesertProwlerHat", "SetBonus", 1) + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/DesertProwlerHat", "AbilityBrief") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/DesertProwlerHat", "AbilityDescription", 200, 100, 1.5f);
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/StatigelHeadMelee")] =
+                TranslationHelper.GetTextValue("CalamityMod/StatigelArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/StatigelHeadMelee", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/StatigelHeadRogue")] =
+                TranslationHelper.GetTextValue("CalamityMod/StatigelArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/StatigelHeadRogue", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/StatigelHeadSummon")] =
+                TranslationHelper.GetTextValue("CalamityMod/StatigelArmor", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/StatigelHeadSummon", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/VictideHeadMelee")] =
+                TranslationHelper.GetTextValue("CalamityMod/VictideBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/VictideHeadMelee", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/VictideHeadRogue")] =
+                TranslationHelper.GetTextValue("CalamityMod/VictideBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/VictideHeadRogue", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/VictideHeadSummon")] =
+                TranslationHelper.GetTextValue("CalamityMod/VictideBreastplate", "CommonSetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/VictideHeadSummon", "SetBonus");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/WulfrumHat")] =
+                TranslationHelper.GetTextValue("CalamityMod/WulfrumHat", "SetBonus") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/WulfrumHat", "AbilityBrief") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/WulfrumHat", "AbilityDescription",
+                    $"[i:{TranslationHelper.GetItemID("CalamityMod/WulfrumMetalScrap")}] {TranslationHelper.GetTextValue("CalamityMod/WulfrumMetalScrap", "DisplayName")}");
+            ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/MarniteArchitectHeadgear")] =
+                TranslationHelper.GetTextValue("CalamityMod/MarniteArchitectHeadgear", "AbilityBrief") + "\n" +
+                TranslationHelper.GetTextValue("CalamityMod/MarniteArchitectHeadgear", "AbilityDescription");
+        }
+
+        if (ModsCall.FargoSouls != null)
+        {
+            ArmorSetBonus[TranslationHelper.GetItemID("FargowiltasSouls/EridanusHat")] = Language.GetTextValue("Mods.FargowiltasSouls.SetBonus.EridanusOff", Language.GetTextValue(Main.ReversedUpDownArmorSetBonuses ? "Key.UP" : "Key.DOWN"));
+            ArmorSetBonus[TranslationHelper.GetItemID("FargowiltasSouls/GaiaHelmet")] = Language.GetTextValue("Mods.FargowiltasSouls.SetBonus.Gaia", Language.GetTextValue(Main.ReversedUpDownArmorSetBonuses ? "Key.UP" : "Key.DOWN"));
+            ArmorSetBonus[TranslationHelper.GetItemID("FargowiltasSouls/MutantMask")] = Language.GetTextValue("Mods.FargowiltasSouls.SetBonus.Mutant");
+            ArmorSetBonus[TranslationHelper.GetItemID("FargowiltasSouls/StyxCrown")] = Language.GetTextValue("Mods.FargowiltasSouls.SetBonus.Styx", Language.GetTextValue(Main.ReversedUpDownArmorSetBonuses ? "Key.UP" : "Key.DOWN"));
+            ArmorSetBonus[TranslationHelper.GetItemID("FargowiltasSouls/NekomiHood")] = Language.GetTextValue("Mods.FargowiltasSouls.SetBonus.Nekomi", Language.GetTextValue(Main.ReversedUpDownArmorSetBonuses ? "Key.UP" : "Key.DOWN"));
         }
     }
 }

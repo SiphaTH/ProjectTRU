@@ -87,7 +87,7 @@ public class CalamityGlobalItem : GlobalItem
          
         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "CalamityMod" && l.Name == "CalamityDev", tooltip =>
         {
-            tooltip.Text ="- Предмет разработчика -";
+            tooltip.Text = "- Предмет разработчика -";
             tooltip.OverrideColor = new Color(255, 0, 255);
         });
          

@@ -434,8 +434,9 @@ Items: {
         DisplayName: Фрукт смерти
         Tooltip:
             '''
-            Навсегда снижает максимальный запас здоровья на 20
-            Эффект нельзя обратить для персонажей использовавших модовые предметы, увеличивающие здоровье
+            <left> снижает количество кристаллов жизни или фруктов жизни, если у вас есть, на 1
+            Если оба равны 0, то снижает базовый максимальный запас здоровья на 20, но не меньше 1
+            <right> отменяет 1 использование последнего эффекта
             '''
     }
 
@@ -538,6 +539,36 @@ Items: {
     PurityRenewalSupreme: {
         DisplayName: Мегавосстановитель чистоты
         Tooltip: Очищает весь мир
+    }
+    
+    SnowRenewal: {
+        DisplayName: Снежный восстановитель
+        Tooltip: Распространяет снег в большом радиусе
+    }
+
+    SnowRenewalSupreme: {
+        DisplayName: Снежный мегавосстановитель
+        Tooltip: Распространяет снег по всему миру
+    }
+    
+    SandRenewal: {
+        DisplayName: Пустынный восстановитель
+        Tooltip: Распространяет песок в большом радиусе
+    }
+
+    SandRenewalSupreme: {
+        DisplayName: Пустынный мегавосстановитель
+        Tooltip: Распространяет песок по всему миру
+    }
+    
+    DirtRenewal: {
+        DisplayName: Лесной восстановитель
+        Tooltip: Распространяет землю в большом радиусе
+    }
+
+    DirtRenewalSupreme: {
+        DisplayName: Лесной мегавосстановитель
+        Tooltip: Распространяет землю по всему миру
     }
 
     Abeemination2: {
@@ -1944,6 +1975,66 @@ Items: {
             Предотвращает формирование кладбищ из надгробий
             '''
     }
+    
+    HoneyRocketBox: {
+        DisplayName: Коробка с медовыми ракетами
+        Tooltip: ""
+    }
+
+    DryRocketBox: {
+        DisplayName: Коробка с высушивающими ракетами
+        Tooltip: ""
+    }
+
+    ClusterRocket2Box: {
+        DisplayName: Коробка с кластерными ракетами II
+        Tooltip: ""
+    }
+
+    ClusterRocket1Box: {
+        DisplayName: Коробка с кластерными ракетами I
+        Tooltip: ""
+    }
+
+    LavaRocketBox: {
+        DisplayName: Коробка с лавовыми ракетами
+        Tooltip: ""
+    }
+
+    MiniNuke1Box: {
+        DisplayName: Коробка с мини-ядерными зарядами I
+        Tooltip: ""
+    }
+
+    MiniNuke2Box: {
+        DisplayName: Коробка с мини-ядерными зарядами II
+        Tooltip: ""
+    }
+
+    Rocket1Box: {
+        DisplayName: Коробка с ракетами I
+        Tooltip: ""
+    }
+
+    Rocket2Box: {
+        DisplayName: Коробка с ракетами II
+        Tooltip: ""
+    }
+
+    Rocket3Box: {
+        DisplayName: Коробка с ракетами III
+        Tooltip: ""
+    }
+
+    Rocket4Box: {
+        DisplayName: Коробка с ракетами IV
+        Tooltip: ""
+    }
+
+    WetRocketBox: {
+        DisplayName: Коробка с водными ракетами
+        Tooltip: ""
+    }
 }
 
 NPCs: {
@@ -1992,7 +2083,7 @@ NPCs: {
             22: Перегруженные вторжения?.. Ну да, это прикольно.
             23: Знаешь, не хочу звучать, будто меня не удовлетворяет твоя компания, но ты не мог купить что-нибудь?
             24: Я убил тысячи людей! А? Ты человек? На твоих руках так много крови...
-            #25: "Этот парень, {0} - мой брат... Я убил больше боссов, чем он."
+            25: Он превратился в белку. Это было самое забавное, что мне когда-либо довелось увидеть.
             #26: "Эта девчонка, {0} - моя сестра... Я победил больше вторжений, чем она."
             27: Не мог бы ты попросить {0} перестать трогать мою руку-лазер? Заранее спасибо.
             28: Не думаю, что сейчас происходит какое-то событие.
@@ -2337,6 +2428,13 @@ Projectiles: {
     PurityNukeSupremeProj.DisplayName: PurityRenewalSupreme
     SpawnProj.DisplayName: Spawn
     SemiBridgifierProj.DisplayName: Semi-Bridgifier
+    DirtNukeProj.DisplayName: DirtRenewal
+    DirtNukeSupremeProj.DisplayName: DirtRenewalSupreme
+    SandNukeProj.DisplayName: SandRenewal
+    SandNukeSupremeProj.DisplayName: SandRenewalSupreme
+    SnowNukeProj.DisplayName: SnowRenewal
+    SnowNukeSupremeProj.DisplayName: SnowRenewalSupreme
+    WorldTokenProj.DisplayName: World Token Proj
 }
 
 Tiles: {
