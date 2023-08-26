@@ -18,12 +18,6 @@ public class FargowiltasSoulsReflection : ILoadable
     {
         const float backWidth = 540f;
         SoulToggler soulToggler = FargoUIManager.SoulToggler;
-        SoulTogglerButton soulTogglerButton = FargoUIManager.SoulTogglerButton;
-        
-        soulTogglerButton.OncomingMutant.TextEMode = "Включён режим Вечности";
-        soulTogglerButton.OncomingMutant.TextMaso = "Включён режим Мазохиста";
-        soulTogglerButton.IconHighlight.Text = "Настройки эффектов аксессуаров";
-        
         soulToggler.BackPanel.Width.Set(backWidth, 0f);
         soulToggler.InnerPanel.Width.Set(backWidth - 12f, 0f);
         soulToggler.Scrollbar.Left.Set(soulToggler.InnerPanel.Width.Pixels - soulToggler.Scrollbar.Width.Pixels - 18f, 0f);

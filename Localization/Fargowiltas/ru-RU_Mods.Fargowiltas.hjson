@@ -6,24 +6,213 @@
     Squirrel: Эта элегантная зверушка продаёт копии ценных предметов, которые она замечает в чужих инвентарях. Не расскажет, откуда она их достаёт. В основном потому, что не умеет говорить.
 }
 
-Config: {
-    CanSpawn: может заселиться
-    TownNPCsHeader: Жители
-    SeasonsHeader: Сезоны
-    SeedsHeader: Секретные генерации мира
-    UnlimitedHeader: Бесконечные вещи
-    MiscHeader: Прочее
+Configs: {
+    FargoServerConfig: {
+        DisplayName: Серверная конфигурация
+
+        Mutant: {
+            Label: "[i:Fargowiltas/MutantMask] [c/ffffff:{$Mods.Fargowiltas.NPCs.Mutant.DisplayName} {$Mods.Fargowiltas.Configs.Common.CanSpawn}]"
+            Tooltip: ""
+        }
+
+        Abom: {
+            Label: "[i:Fargowiltas/AbominationnMask] [c/ffffff:{$Mods.Fargowiltas.NPCs.Abominationn.DisplayName} {$Mods.Fargowiltas.Configs.Common.CanSpawn}]"
+            Tooltip: ""
+        }
+
+        Devi: {
+            Label: "[i:Fargowiltas/DevianttMask] [c/ffffff:{$Mods.Fargowiltas.NPCs.Deviantt.DisplayName} {$Mods.Fargowiltas.Configs.Common.CanSpawn}]"
+            Tooltip: ""
+        }
+
+        Lumber: {
+            Label: "[i:Fargowiltas/LumberjackMask] [c/ffffff:{$Mods.Fargowiltas.NPCs.LumberJack.DisplayName} {$Mods.Fargowiltas.Configs.Common.CanSpawn}]"
+            Tooltip: ""
+        }
+
+        Squirrel: {
+            Label: "[i:239] [c/ffffff:{$Mods.Fargowiltas.NPCs.Squirrel.DisplayName} {$Mods.Fargowiltas.Configs.Common.CanSpawn}]"
+            Tooltip: ""
+        }
+
+        CatchNPCs: {
+            Label: "[i:267] Возможность ловить жителей"
+            Tooltip: ""
+        }
+
+        NPCSales: {
+            Label: "[i:267] Дополнительные товары жителей"
+            Tooltip: ""
+        }
+
+        SaferBoundNPCs: {
+            Label: "[i:1274] Спасённые жители не получают контактного урона"
+            Tooltip: ""
+        }
+
+        Halloween: {
+            Label: "[i:1774] Сезон Хэллоуина"
+            Tooltip: ""
+        }
+
+        Christmas: {
+            Label: "[i:1869] Сезон Рождества"
+            Tooltip: ""
+        }
+
+        DrunkWorld: {
+            Label: "[i:353] Генерация мира «Drunk»"
+            Tooltip: ""
+        }
+
+        BeeWorld: {
+            Label: "[i:1133] Генерация мира «Bee»"
+            Tooltip: ""
+        }
+
+        WorthyWorld: {
+            Label: "[i:2107] Генерация мира «For the Worthy»"
+            Tooltip: ""
+        }
+
+        CelebrationWorld: {
+            Label: "[i:3732] Генерация мира «Celebration»"
+            Tooltip: ""
+        }
+
+        ConstantWorld: {
+            Label: "[i:5109] Генерация мира «Constant»"
+            Tooltip: ""
+        }
+
+        UnlimitedAmmo: {
+            Label: "[i:771] Бесконечные боеприпасы при 3996+ в хардмоде"
+            Tooltip: ""
+        }
+
+        UnlimitedConsumableWeapons: {
+            Label: "[i:42] Бесконечные расходуемые оружия при 3996+ в хардмоде"
+            Tooltip: ""
+        }
+
+        UnlimitedPotionBuffsOn120: {
+            Label: "[i:292] Бесконечные баффы и наживка при наличии определённого стака"
+            Tooltip: 30+ для зелий и наживки, 3+ для классовых станций (т.к. точильный станок) и кусочка торта
+        }
+
+        ExtraBuffSlots: {
+            Label: "[i:3000] Дополнительные бафф-слоты"
+            Tooltip: ""
+        }
+
+        AnglerQuestInstantReset: {
+            Label: "[i:2374] Мгновенный сброс заданий рыбака"
+            Tooltip: ""
+        }
+
+        ExtraLures: {
+            Label: "[i:2373] Дополнительные поплавки для удочек"
+            Tooltip: ""
+        }
+
+        StalkerMoneyTrough: {
+            Label: "[i:3213] Преследующее денежное корыто"
+            Tooltip: ""
+        }
+
+        RottenEggs: {
+            Label: "[i:1809] Мощные тухлые яйца"
+            Tooltip: ""
+        }
+
+        BannerRecipes: {
+            Label: "[i:1683] Создание знамён"
+            Tooltip: ""
+        }
+
+        IncreaseMaxStack: {
+            Label: "[i:2] Увеличенные стаки предметов"
+            Tooltip: ""
+        }
+
+        ExtractSpeed: {
+            Label: "[i:997] Увеличенная скорость промывателя"
+            Tooltip: ""
+        }
+
+        Fountains: {
+            Label: "[i:909] Фонтаны размещают биомы"
+            Tooltip: ""
+        }
+
+        BossZen: {
+            Label: "[i:3117] Во время битвы с боссами не появляются враги"
+            Tooltip: ""
+        }
+
+        PiggyBankAcc: {
+            Label: "[i:87] Работа информационных и строительных аксессуаров в свинье-копилке"
+            Tooltip: ""
+        }
+
+        FasterLavaFishing: {
+            Label: "[i:4881] Быстрая рыбалка в лаве"
+            Tooltip: ""
+        }
+
+        TorchGodEX: {
+            Label: "[i:5043] Суть бога факелов автоматически изменяет размещаемые факела"
+            Tooltip: Соответствует истинной удаче факела, может отличаться от сути бога факелов
+        }
+
+        Headers: {
+            TownNPCs: Жители
+            Seasons: Сезоны
+            Seeds: Секретные генерации мира
+            Unlimited: Бесконечные вещи
+            Misc: Прочее
+        }
+    }
+
+    FargoClientConfig: {
+        DisplayName: Клиентская конфигурация
+
+        ExpandedTooltips: {
+            Label: "[i:171] Дополнительные подсказки изменений в Mutant моде"
+            Tooltip: ""
+        }
+
+        DebuffOpacity: {
+            Label: "[i:1612] Максимальная прозрачность иконок дебаффов"
+            Tooltip: ""
+        }
+
+        DebuffFaderRatio: {
+            Label: "[i:1612] Прозрачность затухания длительности иконок дебаффов"
+            Tooltip: ""
+        }
+
+        TransparentFriendlyProjectiles: {
+            Label: "[i:1309] Прозрачность дружелюбных снарядов"
+            Tooltip: "Экспериментируйте со значением для получения оптимального эффекта"
+        }
+    }
+
+    SeasonSelections: {
+        Tooltip: ""
+        Normal.Label: Как обычно
+        AlwaysOn.Label: Всегда ВКЛ
+        AlwaysOff.Label: Всегда ВЫКЛ
+    }
+
+    Common.CanSpawn: может заселиться
 }
 
 RecipeGroups: {
     EvilWood: Древесина мирового зла
     CommonFish: Обычная рыба
-    Dragonfly: Стрекоза
-    Butterfly: Бабочка
     CaughtNPC: Пойманный житель
-    Banner: Знамя
-    ArmoredBones: Знамя бронированного скелета
-    PirateBanner: Знамя пирата
+    ArmoredBonesBanner: Знамя бронированного скелета
 }
 
 MessageInfo: {
@@ -296,7 +485,11 @@ Items: {
 
     AltarExterminator: {
         DisplayName: Искоренитель алтарей
-        Tooltip: Уничтожает все естественные демонические и багряные алтари
+        Tooltip:
+            '''
+            Уничтожает все естественные демонические и багряные алтари
+            'Также известен как Wraithmaker 200'
+            '''
     }
 
     AutoHouse: {
@@ -2496,194 +2689,6 @@ Conditions: {
     PaladinDown: ""
     SkeleGunDown: ""
     SiblingPylon: ""
-}
-
-Configs: {
-    FargoConfig: {
-        DisplayName: Конфигурация Fargo
-
-        Mutant: {
-            Label: "{$Config.Mutant}"
-            Tooltip: ""
-        }
-
-        Abom: {
-            Label: "{$Config.Abom}"
-            Tooltip: ""
-        }
-
-        Devi: {
-            Label: "{$Config.Devi}"
-            Tooltip: ""
-        }
-
-        Lumber: {
-            Label: "{$Config.Lumber}"
-            Tooltip: ""
-        }
-
-        Squirrel: {
-            Label: "{$Config.Squirrel}"
-            Tooltip: ""
-        }
-
-        CatchNPCs: {
-            Label: "[i:267] Возможность ловить жителей"
-            Tooltip: ""
-        }
-
-        NPCSales: {
-            Label: "[i:267] Дополнительные товары жителей"
-            Tooltip: ""
-        }
-
-        SaferBoundNPCs: {
-            Label: "[i:1274] Спасённые жители не получают контактного урона"
-            Tooltip: ""
-        }
-
-        Halloween: {
-            Label: "[i:1774] Сезон Хэллоуина"
-            Tooltip: ""
-        }
-
-        Christmas: {
-            Label: "[i:1869] Сезон Рождества"
-            Tooltip: ""
-        }
-
-        DrunkWorld: {
-            Label: "[i:353] Генерация мира «Drunk»"
-            Tooltip: ""
-        }
-
-        BeeWorld: {
-            Label: "[i:1133] Генерация мира «Bee»"
-            Tooltip: ""
-        }
-
-        WorthyWorld: {
-            Label: "[i:2107] Генерация мира «For the Worthy»"
-            Tooltip: ""
-        }
-
-        CelebrationWorld: {
-            Label: "[i:3732] Генерация мира «Celebration»"
-            Tooltip: ""
-        }
-
-        ConstantWorld: {
-            Label: "[i:5109] Генерация мира «Constant»"
-            Tooltip: ""
-        }
-
-        UnlimitedAmmo: {
-            Label: "[i:771] Бесконечные боеприпасы при 3996+ в хардмоде"
-            Tooltip: ""
-        }
-
-        UnlimitedConsumableWeapons: {
-            Label: "[i:42] Бесконечные расходуемые оружия при 3996+ в хардмоде"
-            Tooltip: ""
-        }
-
-        UnlimitedPotionBuffsOn120: {
-            Label: "[i:292] Бесконечные баффы при наличии определённого стака"
-            Tooltip: 30+ для зелий, 3+ для классовых станций (т.к. точильный станок) и кусочка торта
-        }
-
-        ExtraBuffSlots: {
-            Label: "[i:3000] Дополнительные бафф-слоты"
-            Tooltip: ""
-        }
-
-        ExpandedTooltips: {
-            Label: "[i:171] Дополнительные подсказки изменений в Mutant моде"
-            Tooltip: ""
-        }
-
-        AnglerQuestInstantReset: {
-            Label: "[i:2374] Мгновенный сброс заданий рыбака"
-            Tooltip: ""
-        }
-
-        ExtraLures: {
-            Label: "[i:2373] Дополнительные поплавки для удочек"
-            Tooltip: ""
-        }
-
-        StalkerMoneyTrough: {
-            Label: "[i:3213] Преследующее денежное корыто"
-            Tooltip: ""
-        }
-
-        RottenEggs: {
-            Label: "[i:1809] Мощные тухлые яйца"
-            Tooltip: ""
-        }
-
-        BannerRecipes: {
-            Label: "[i:1683] Создание знамён"
-            Tooltip: ""
-        }
-
-        IncreaseMaxStack: {
-            Label: "[i:2] Увеличенные стаки предметов"
-            Tooltip: ""
-        }
-
-        ExtractSpeed: {
-            Label: "[i:997] Увеличенная скорость промывателя"
-            Tooltip: ""
-        }
-
-        Fountains: {
-            Label: "[i:909] Фонтаны размещают биомы"
-            Tooltip: ""
-        }
-
-        BossZen: {
-            Label: "[i:3117] Во время битвы с боссами не появляются враги"
-            Tooltip: ""
-        }
-
-        PiggyBankAcc: {
-            Label: "[i:87] Работа информационных и строительных аксессуаров в свинье-копилке"
-            Tooltip: ""
-        }
-
-        FasterLavaFishing: {
-            Label: "[i:4881] Быстрая рыбалка в лаве"
-            Tooltip: ""
-        }
-
-        TorchGodEX: {
-            Label: "[i:5043] Суть бога факелов автоматически изменяет размещаемые факела"
-            Tooltip: Соответствует истинной удаче факела, может отличаться от сути бога факелов
-        }
-
-        DebuffOpacity: {
-            Label: "[i:1612] Максимальная прозрачность иконок дебаффов"
-            Tooltip: ""
-        }
-
-        DebuffFaderRatio: {
-            Label: "[i:1612] Прозрачность затухания длительности иконок дебаффов"
-            Tooltip: ""
-        }
-
-        TransparentFriendlyProjectiles: {
-            Label: "[i:1309] Прозрачность дружелюбных снарядов"
-            Tooltip: "Экспериментируйте со значением для получения оптимального эффекта"
-        }
-    }
-
-    SeasonSelections: {
-        Tooltip: ""
-        Normal.Label: Как обычно
-        AlwaysOn.Label: Всегда ВКЛ
-        AlwaysOff.Label: Всегда ВЫКЛ
-    }
 }
 
 Keybinds: {

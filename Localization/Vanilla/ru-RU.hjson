@@ -3987,9 +3987,9 @@
         EngineeringHelmet: Каска инженера
         EoCShield: Щит Ктулху
         Escargot: Эскарго
-        EskimoCoat: Шуба эскимоса
-        EskimoHood: Капюшон эскимоса
-        EskimoPants: Штаны эскимоса
+        EskimoCoat: Снежная шуба
+        EskimoHood: Снежный капюшон
+        EskimoPants: Снежные штаны
         EucaluptusSap: Эвкалиптовый сок
         EverscreamMasterTrophy: Реликвия вечнокричащей ели
         EverscreamPetItem: Кустарная звезда
@@ -6131,9 +6131,9 @@
         PinkDungeonVase: Ваза розовой Темницы
         PinkDungeonWorkBench: Верстак розовой Темницы
         PinkDye: Розовый краситель
-        PinkEskimoCoat: Розовая шуба эскимоса
-        PinkEskimoHood: Розовый капюшон эскимоса
-        PinkEskimoPants: Розовые штаны эскимоса
+        PinkEskimoCoat: Розовая снежная шуба
+        PinkEskimoHood: Розовый снежный капюшон
+        PinkEskimoPants: Розовые снежные штаны
         PinkFairyJar: Розовая фея в банке
         PinkGel: Розовый гель
         PinkGelDye: Розовый гелевый краситель
@@ -9331,7 +9331,7 @@
         Escargot:
             '''
             {$CommonItemTooltip.MediumStats}
-            'Вы только посмотрите на этот гоночный болид!'
+            'Вы только посмотрите на эту машину с турбонаддувом!'
             '''
         EucaluptusSap: Призывает питомца сахарную летягу
         EverscreamPetItem:

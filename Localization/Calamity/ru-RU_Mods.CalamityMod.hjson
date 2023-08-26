@@ -227,8 +227,8 @@ Bestiary: {
     BobbitWorm: Прячась в самых тёмных уголках пустоты, с целью внезапно напасть на ничего не подозревающую жертву, волнистые черви пользуются всеми преимуществами темноты бездны. Чтобы жить здесь, в самой экстремальной среде в мире, существу нужно быть либо по-настоящему могучим, либо научиться использовать окружающую среду для выживания, либо и то, и другое.
     BoxJellyfish: Крупнее, чем у среднестатистической медузы, жало этих стойких вредителей способно нанести куда более мощный удар. Хотя их можно встретить в большинстве крупных водоемов, они вымерли лишь в окрестностях Ильмериса после того, как Серная ведьма обратила свои чары против королевства.
     ChaoticPuffer: Эти существа, раздуваясь, вдыхают следы магматита, содержащегося в воде, что приводит к интенсивному нагреву жидкости внутри их организма. Получившаяся температура настолько высока, что способна расплавить даже железо. Они наносят страшные ожоги тем, кто к ним прикасается, а хищники, пожирающие их, свариваются изнутри.
-    ColossalSquid: This species of squid has grown immensely in size and strength due to the effects Silva’s essence has had on them. As they are able to consume the growths she caused directly due to being herbivores in the past, more life flows within them than nearly every other Abyss creature.
-    Cuttlefish: Using natural camouflage to hide from greater predators and catch unsuspecting prey, cuttlefish wait patiently on the ground for their time to strike. They chase other creatures relentlessly once disturbed, with ferocity enough to scare off any of their would-be predators.
+    ColossalSquid: Этот вид кальмаров значительно увеличился в размерах и силе из-за воздействия на них сущности Сильвы. Поскольку в прошлом они были травоядными и могли напрямую поглощать выращенные ею ростки, в них циркулирует куда больше жизни, чем во всех остальных обитателях бездны.
+    Cuttlefish: Используя свой врождённый камуфляж, каракатицы умеют скрываться от более крупных хищников и охотиться на ничего не подозревающую добычу, терпеливо выжидая на дне момент для нападения. Но стоит их разозлить, как они начинают безжалостно преследовать других существ, обладая такой яростью, что и самые опасные хищники могут испугаться.
     DevilFish: So called for their demonic horns, devilfish absorb the fumes left behind by Azafure’s pollution, using the flames to empower themselves. The Abyss’ lower layers are largely unmarred by waste and toxins thanks to these enigmatic creatures.
     DevilFishAlt: So called for their demonic horns, devilfish absorb the fumes left behind by Azafure’s pollution, using the flames to empower themselves. The Abyss’ lower layers are largely unmarred by waste and toxins thanks to these enigmatic creatures.
     EidolonWyrm: Родственники ауритовых драконов, они нашли укрытие в забытом уголке мира, чтобы выжить в период великих чисток. И всё же, даже без ауритовых душ, сила эйдолонских змиев сравнима с многими из их сородичей, обладавшими этой силой.
@@ -259,7 +259,7 @@ Bestiary: {
     Trilobite: These aquatic arthropods make leaps and bounds in both water and air despite possessing shells like stone, both in texture and weight. Thanks to their immense shells, they are capable of passing through predators’ digestion systems unscathed.
     Aries: These creatures bound across the landscape endlessly, chasing down any intruders that dare enter the hive mind’s home. The star’s power has bestowed them limitless stamina, rendering them unable to feel exhaustion.
     Astralachnea: Once black widows, they have now been reduced to their most basic functions. The effects of the Astral Infection are far more intense underground than it is on the surface, the air heavy with the thick fog and vestiges of the star burrowed deeply into the earth.
-    AstralProbe: What were once simply common birds have been transmuted by the overwhelming amounts of mana. Though weak on their own, they choose to harass those who are unassimilated while the victim attempts to fight off other infected beasts.
+    AstralProbe: Те, что некогда были обычными птицами, претерпели превращение под воздействием огромного объёма маны. Хотя сами по себе они слабы, они предпочитают досаждать тем, кто не приспособился, пока жертва пытается отбиться от других заражённых зверей.
     AstralSlime: With slimes already acclimated to absorbing both matter and energy from the environment, it is a trivial matter for the star’s mana to overtake the gelatinous creatures of this land. But the slimes care not, for little about their existence is changed.
     Atlas: Knights of the infection, these fusions of creatures pack an immense punch. Though slow due to their overbearing weight, a single blow from an atlas is easily able to pulverize a monolith. Their hearts continue to slowly beat even after being ripped from their bodies, for their lives seemingly cannot truly end.
     FusionFeeder: Bloated with mana, the immense amount of magical power has dulled the instincts of these former sand sharks, their movements now slow and sluggish. Their need for food has been permanently sated, and they now thirst only for distant stars.
@@ -305,7 +305,7 @@ Bestiary: {
     Piggy: These little swines waddle their little legs across these lands with little purpose, but they are happy with just that. Yet, little is known about how their little stomach carries a not-so-little amount of coins.
     ProfanedEnergyBody: Those most devout to Her travel the world, being planted into societies and acting as spies and assassins. Among their duties is constructing shrines in Her honor infused with Her divine power, that She might bless pagans blinded by darkness with visions of Her new age of light.
     Rimehound: These hounds were bred and trained to survive in the tundra’s hostile conditions by Yharim’s forces, so that they may act as scouts. Most were simply abandoned by their masters out of either necessity or choice, and were resigned to roam forever without purpose.
-    Rotdog: Fast and furious, these hounds prowl the night, hunting prey with their razor sharp teeth. They are similar in nature to the demon eyes, both being spawned from the same vile mire, yet these creatures are tailored made to end those who have proven themselves a threat to it.
+    Rotdog: Быстрые и свирепые, эти гончие скрываются в ночи, охотясь на добычу своими острыми, как бритва, зубами. Они имеют схожую природу с демоническими глазами, которые родом из той же отвратительной трясины, но эти создания созданы специально для уничтожения тех, кто доказал, что может стать для них угрозой.
     ScornEater: For one to be weak of will does not inherently mean they are weak of body. Within these powerful individuals does a powerful fire burn, and She is all too willing to fan the flames. All one need give in return for Her gracious blessing is their free will, and they shall be gifted Her enlightenment.
     SeaUrchin: Massive urchins that roll and hop their way across the sea floor, catching both fish hiding in the sand thanks to their spikes that allow them to comb the sea floor and those far above with their incredible leaps. Their surprising size is due to this species’ carnivorous diet, rather than consuming plants like most types of urchins.
     ShockstormShuttle: Mining devices and scouts for a civilization from a long lost world. They now seek whatever resources are left on other nearby planets, and perhaps even this world as a potential replacement for their ruined home.
@@ -391,10 +391,10 @@ Bestiary: {
     Polterghast: The feral amalgamation that drove out the cult that once dwelled here, and inadvertently broke an alliance thought to be eternal. Many have delved into the dungeon in search of riches and knowledge long since lost, yet most simply join the spirits that have claimed this place as their own.
     PrimordialWyrm: The first Wyrm, blessed by the Goddess of Life, held staggering power that surpassed nearly all of its auric brethren. It held a deep hatred for any sign of usurped light, and would have attempted to strike down even the wielder of Primordial Light had they returned to reclaim their artifact. And yet, despite its immense power, it never would have stood a chance.
     ProfanedGuardianCommander: In a time lost to memory, there were four soldiers who used their wits and teamwork to slay a dragon, that one might gorge themself upon its auric soul. “I am the wisest,” declared their commander, “I should be the one.” There was silence, until Providence spoke: “You need temper your wisdom with action, that we might impose our will upon this world.”
-    ProfanedGuardianDefender: In a time lost to memory, there were four champions who used their loyalty to one another to slay a dragon, that one might gorge themself upon its auric soul. “I am the strongest,” declared their shieldmaiden, “I should be the one.” There was silence, until Providence spoke: “You lack strength of conviction, that you might try to pluck the stars from the sky.”
-    ProfanedGuardianHealer: In a time lost to memory, there were four champions who used their fathomless determination to slay a dragon, that one might gorge themself upon its auric soul. “I am the most courageous,” declared their cleric, “I should be the one.” There was silence, until Providence spoke: “Your courage blinds you to the truth, that your overconfidence would doom you.”
-    Providence: In a time lost to memory, there were four visionaries. With righteous fury, they slew a dragon, and their leader gorged Herself upon its auric soul of Flame. “The world is without guidance, and its people are filled with darkness.” She said. There was silence, until Providence spoke once more. “Let us go forth, and light the world anew.” And it was so.
-    Ravager: The mangled reincarnation of the God of Sacrifices, given life once more. Necromancers sworn to his faith returned his broken body to his temple, offering the only sacrifices they could to reverse his Death– their own lives. Yet, necromancy is an imperfect art, and the god has very little of his mind left, simply destroying all it comes across.
+    ProfanedGuardianDefender: В незапамятные времена было четверо бесстрашных героев, которые воспользовались своей преданностью друг другу сразили дракона, дабы один из них насытился его аурической душой. “Я самая сильнейшая” - провозгласила защитница, “Это должна быть я”. И воцарилась тишина, пока Провиденс не заговорила вновь: “Ты не стоишь на своём, мечтая о невозможном”.
+    ProfanedGuardianHealer: В незапамятные времена было четверо бесстрашных героев, которые с безграничной решимостью сразили дракона, дабы один из них насытился его аурической душой. “Я самый храбрый” - провозгласил целитель, “Это должен быть я”. И воцарилась тишина, пока Провиденс не заговорила вновь: “Твоя храбрость ослепляет тебя перед истинной, и твоя чрезмерная самоуверенность приведёт тебя к гибели”.
+    Providence: В незапамятные времена жили четверо провидцев. С праведной яростью они сразили дракона, и их предводительница насытилась его ауритовой душой Пламени. “Мир лишён наставлений, а его жители охвачены тьмой” - сказала она. И воцарилась тишина, пока Провиденс не заговорила вновь. “Пойдем же и озарим мир заново”. И так оно и случилось.
+    Ravager: Изуродованное воплощение Бога жертвоприношений, которому вновь была дарована жизнь. Некроманты, поклявшиеся ему в вере, вернули его изломанное тело в храм, принося единственную жертву, которые могли, чтобы предотвратить его Смерть - свою собственную жизнь. И всё же некромантия - несовершенное искусство, ведь у бога сохранились лишь крохи разума; он просто разрушает всё, что попадается ему на пути.
     Signus: ‘За любое желание нужно платить’. Сделка утверждённая Ониксом и скреплённая кровью, позволяет исполнить любое желание — будь то проход, обещание или даже предательство. Что интересно, о Сигнусе до эпохи богов нет никаких записей, и до наших дней дошло очень мало сведений. Возможно, за соответствующую цену можно было бы выяснить правду о Сигнусе самому.
     SlimeGodPaladin: Бог слизней избегает прямого столкновения из-за своей слабости, вместо этого создавая стражей для своей защиты. Эти стражи созданы из множества гибельных слизней, и их скверна служит противовесом чистоте и божественности их бога.
     SlimeGodCore: Вопреки своей жадности, Бог слизней сдерживает свой рост, чтобы поддерживать равновесие мира. Во время Крестового похода за ним все ещё охотились, но он сумел выжить, прибегая к бесчисленным стратегическим отступлениям. За долг, который он выполняет, и методы, которые он выбирает, служат причиной уважения Ониксовых сородичей к этому маленькому божеству.
@@ -3002,8 +3002,8 @@ Items: {
                 '''
         }
         
+        	DisplayName: Бароклешня
         Baroclaw: {
-        	DisplayName: Тяжёлый коготь
         	Tooltip:
         		'''
         		Увеличивает урон на 8%
@@ -15024,7 +15024,7 @@ Items: {
                 TooltipNormal:
                     '''
                     Стреляет плазменными сферами, которые задерживаются на одном месте и испускают массивные взрывы
-                    Нажмите <right>, чтобы стрелять мощными энергетическими лучами
+                    Нажмите ПКМ, чтобы стрелять мощными энергетическими лучами
                     '''
                 TooltipGFB: Оно снова масштабируется :)
             }
@@ -16071,7 +16071,7 @@ Items: {
                     '''
                     Выпускает пустотные эссенции, разрывающие ближайших врагов щупальцами
                     Игнорирует кадры неуязвимости
-                    'Бездна долго смотрела на вас. Теперь она говорит... и делает она это отнюдь не тихо'
+                    'Бездна долго всматривалась в вас. Теперь она заговорила... и отнюдь не тихо'
                     '''
             }
             

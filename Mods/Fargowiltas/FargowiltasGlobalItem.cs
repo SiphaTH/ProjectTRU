@@ -131,6 +131,11 @@ public class FargowiltasGlobalItem : GlobalItem
             tooltip.Text = "[i:87] [c/AAAAAA:Работает из свиньи-копилки и сейфа]";
         });
         
+        ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "Fargowiltas" && l.Name == "TooltipUnlim" && l.Text == "[i:87] [c/AAAAAA:Unlimited use at 30 stack]", tooltip =>
+        {
+            tooltip.Text = "[i:87] [c/AAAAAA:Бесконечное использование при стаке в 30]";
+        });
+        
         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "Fargowiltas" && l.Name == "TooltipTorchGod1", tooltip =>
         {
             tooltip.Text = "[i:5043] [c/AAAAAA:Автоматически изменяет размещаемые факелы для увеличения удачи]";

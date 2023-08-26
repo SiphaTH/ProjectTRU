@@ -29,8 +29,6 @@
 // Bestiary.InfoElements.ExpertModeInfoElement: Только режим Эксперта
 
 GravestoneText: {
-    # Bit ugly but you need to keep updating these numbers to be consecutive (no gaps), and also update the total count in code (GraveyardPass.GravestoneTextCount)
-    # The code bit hopefully won't be necessary with 1.4.4
     // 0: Beloved.
     // 1: Ever loved.
     // 2: In loving memory.
@@ -165,38 +163,38 @@ Buffs: {
     }
 
     AudioOverload: {
-        // DisplayName: Audio Overload
-        // Description: Symphonic damage increased by 15%
+        // DisplayName: Звуковая перегрузка
+        // Description: Симфонический урон увеличен на 15%
     }
 
     ConductorsStandBuff: {
-        // DisplayName: Conductor
-        // Description: Empowerment duration and effect radius increased
+        // DisplayName: Дирижёр
+        // Description: Продолжительность и радиус действия усиления увеличены
     }
 
     CreativeBlock: {
-        // DisplayName: Creative Block
-        // Description: Cannot unleash your endless creativity
+        // DisplayName: Творческий застой
+        // Description: Не удаётся раскрыть свой безграничный творческий потенциал
     }
 
     CreativityPotionBuff: {
-        // DisplayName: Creativity
-        // Description: Your base inspiration drop chance is doubled
+        // DisplayName: Креативность
+        // Description: Базовый шанс получить вдохновение удвоен
     }
 
     EarwormPotionBuff: {
-        // DisplayName: Earworm
-        // Description: Your empowerments will last 25% longer
+        // DisplayName: Заводной мотив
+        // Description: Длительность усилений увеличена на 25%
     }
 
     InspirationReachPotionBuff: {
-        // DisplayName: Inspirational Reach
-        // Description: Increased inspiration note pickup range
+        // DisplayName: Вдохновляющее прикосновение
+        // Description: Дальность подбора нот вдохновения увеличена
     }
 
     MaestroSetDebuff: {
-        // DisplayName: Fallen Chorus
-        // Description: Your ghost chorus is recharging
+        // DisplayName: Падший хор
+        // Description: Ваш призрачный хор перезаряжается
     }
 
     MetronomeBuff: {
@@ -1174,8 +1172,8 @@ Buffs: {
     }
 
     SkunkBuff: {
-        // DisplayName: Skunk
-        // Description: Don't startle him, or you'll regret it...
+        // DisplayName: Скунс
+        // Description: Не испугайте его, иначе пожалеете...
     }
 
     SnowyOwlBuff: {
@@ -1701,7 +1699,6 @@ Conditions: {
     // CompletedMonsterContract: Completed the {0} {$NPCs.Tracker.DisplayName} contract
 }
 
-# All texts in vanilla start with "Drops" so generic conditions from the Condition/ThoriumConditions classes won't work
 DropConditions: {
     // AquaticDepthsKeyCondition.Description: Drops in the {$Biomes.DepthsBiome.DisplayName} in Hardmode
     // UnderworldKeyCondition.Description: Drops in {$Bestiary_Biomes.TheUnderworld} in Hardmode
@@ -1818,27 +1815,27 @@ InfoDisplays: {
 
 Items: {
     AbyssalShadow: {
-        // DisplayName: Abyssal Shadow
+        // DisplayName: Глубинная тень
         // Tooltip: ""
     }
 
     AbyssalShadow2: {
-        // DisplayName: Abyssal Shadow
+        // DisplayName: Глубинная тень
         /* Tooltip:
             '''
-            Summons a being long forgotten by time
-            Only usable in the aquatic depths
+            Призывает существо, что временем давно забыто
+            Можно использовать только в морских глубинах
             ''' */
     }
 
     AbyssalShell: {
-        // DisplayName: Abyssal Shell
+        // DisplayName: Глубинный панцирь
         /* Tooltip:
             '''
-            Pressing the 'Encase' key will place you in an impenetrable shell
-            While encased, you can't use items or health potions, life regeneration is heavily reduced, and damage is nearly nullified
-            Leaving the shell will greatly lower your speed, damage reduction and damage briefly
-            Leaving the shell will prohibit the use of the shell again for 20 seconds
+            Нажатие клавиши '{$Mods.ThoriumMod.Keybinds.Encase.DisplayName}' помещает вас в непроницаемый панцирь
+            Находясь в панцире нельзя использовать предметы или лечебные зелья, регенерация здоровья значительно снижена, а наносимый урон практически нулевой
+            Выход из панциря существенно снижает скорость передвижения, сопротивление урону и наносимый урон на короткое время
+            После выхода из панциря вы сможете повторно воспользоваться им через 20 секунд
             ''' */
     }
 
@@ -5209,40 +5206,40 @@ Items: {
     }
 
     AirStrikeShield: {
-        // DisplayName: Air Strike Shield
+        // DisplayName: Воздушный щит
         /* Tooltip:
             '''
-            Projects a protective shield around your cursor when held
-            Players within the shield take 15 less damage from all sources
+            Проецирует защитный щит вокруг вашего курсора при удержании
+            Игроки внутри щита получают на 15 единиц меньше урона от всех источников
             ''' */
     }
 
     AmmutsebaSash: {
-        // DisplayName: Ammutseba's Sash
+        // DisplayName: Пояс Аммуцебы
         /* Tooltip:
             '''
-            Can temporarily grapple to midair at the cost of 1% of your maximum health
-            Flight time is not reset if used to grapple to the air
+            Может временно зацепиться за воздух ценой 1% вашего максимального здоровья
+            Время полёта не сбрасывается при зацеплении за воздух
             ''' */
     }
 
     AromaticBiscuit: {
-        // DisplayName: Aromatic Biscuit
-        // Tooltip: Releases a skunk pet to follow you around
+        // DisplayName: Ароматное печенье
+        // Tooltip: Выпускает скунса-питомца, который следует за вами
     }
 
     ArsenalStaff: {
-        // DisplayName: Arsenal Staff
+        // DisplayName: Оружейный посох
         /* Tooltip:
             '''
-            Summons a possessed sword and shield to protect you
-            Continued summons increase the power of the possessed weapons up to 4 times each
+            Призывает одержимый меч и щит
+            Повторные призывы увеличивают мощность одержимого оружия до 4 раз каждый
             ''' */
     }
 
     Arthropod: {
-        // DisplayName: Arthropod
-        // Tooltip: Periodically releases a toxic needle barrage when near enemies
+        // DisplayName: Членистоногий
+        // Tooltip: Периодически выпускает залп ядовитых игл, когда поблизости находятся враги
     }
 
     BalanceBloom: {
@@ -5292,6 +5289,16 @@ Items: {
     BioPod: {
         // DisplayName: Bio-Pod
         // Tooltip: Releases a strange alien creature
+    }
+
+    BirdFeeder: {
+        // DisplayName: Bird Feeder
+        /* Tooltip:
+            '''
+            Place seeds or a fruit within the feeder to attract the attention of a bird
+            Birds leave behind random fruits if you placed seeds
+            Birds leave behind potions based on what fruit you placed in the feeder
+            ''' */
     }
 
     BlackMIDI: {
@@ -5802,8 +5809,8 @@ Items: {
         // DisplayName: Fragrant Corsage
         /* Tooltip:
             '''
-            Increases your life regeneration rate
             Increases your life regeneration based on your bonus healing
+            Increases your life regeneration rate based on your bonus healing
             ''' */
     }
 
@@ -7147,22 +7154,22 @@ Items: {
     }
 
     TheMassacre: {
-        // DisplayName: The Massacre
-        // Tooltip: Charges up an experimental explosion launcher at the cost of your health
+        // DisplayName: Резня
+        // Tooltip: Заряжает экспериментальную взрывную пусковую установку ценой вашего здоровья
     }
 
     TheNuclearOption: {
-        // DisplayName: The Nuclear Option
+        // DisplayName: Ядерный аргумент
         /* Tooltip:
             '''
-            Every 5th rocket launcher use will propel a radioactive missile
-            This missile deals double the damage and knockback of the rocket it replaces
+            Пусковые установки каждый 5 выстрел выпускают радиоактивную ракету
+            Эта ракета наносит двойной урон и отбрасывание по сравнению с ракетой, которую она заменяет
             ''' */
     }
 
     TheWhirlpool: {
-        // DisplayName: The Whirlpool
-        // Tooltip: Constantly sucks in nearby enemies
+        // DisplayName: Водоворот
+        // Tooltip: Непрерывно затягивает ближайших врагов
     }
 
     Thunderstruck: {
@@ -18456,6 +18463,11 @@ Items: {
         // TunePlayerLifeRegen.PrefixName: Jazz
         // TunePlayerMovementSpeed.PrefixName: Disco
     }
+    
+    BirdFeederRequirement: {
+        // DisplayName: Bird Feeder Requirement
+        // Tooltip: ""
+    }
 }
 
 NPCs: {
@@ -21498,7 +21510,7 @@ MonsterContracts: {
 
     RecluseContract: {
         // Title: Not so Itsy Bitsy
-        // Description: Alright kid, I've got a bit of a double contract for you this time; a lot of our fellow townsfolk have severe cases of arachnophobia it seems. Rumors of a '{$NPCs.BrownRecluse.DisplayName}' roaming the spider caverns have surfaced, but it seems like our only way to draw it out of hiding is to ALSO take down some kind of icy 'Gargantuan Spider', which prowls the tundra during harsh blizzards. If you can take both of them down, the folks around here should feel a lot safer.
+        // Description: Alright kid, I've got a bit of a double contract for you this time; a lot of our fellow townsfolk have severe cases of arachnophobia it seems. Rumors of a '{$NPCs.BrownRecluseWall.DisplayName}' roaming the spider caverns have surfaced, but it seems like our only way to draw it out of hiding is to ALSO take down some kind of icy 'Gargantuan Spider', which prowls the tundra during harsh blizzards. If you can take both of them down, the folks around here should feel a lot safer.
     }
 
     RuneContract: {

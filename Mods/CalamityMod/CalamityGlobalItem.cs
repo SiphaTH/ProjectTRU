@@ -72,8 +72,8 @@ public class CalamityGlobalItem : GlobalItem
             tooltips.ReplaceText("The Jungle schematic must be deciphered first","Сначала необходимо расшифровать схему джунглей");
             tooltips.ReplaceText("The Underworld schematic must be deciphered first","Сначала необходимо расшифровать схему преисподней");
             tooltips.ReplaceText("The Ice biome schematic must be deciphered first", "Сначала необходимо расшифровать схему льдов");
-            ;
         });
+        
         ItemHelper.TranslateTooltip(tooltips, "CalamityCharge", tooltip =>
         {
             tooltip.Text = $"Текущий заряд: {tooltip.Text.Split(' ')[2]}";

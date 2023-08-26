@@ -1,61 +1,62 @@
 ﻿WizardEffect: {
     Adamantite: Разделяет выпущенные снаряды оружий на 3
-    AncientHallow: ""
-    AncientShadow: ""
-    Angler: ""
-    Bee: ""
-    Beetle: ""
+    AncientHallow: Отсутствуют улучшение
+    AncientShadow: Увеличивает количество теневых сфер
+    Angler: Отсутствуют улучшение
+    Bee: Отсутствуют улучшение
+    Beetle: Отсутствуют улучшение
     Boreal: Выстреливает больше снежков и чаще
     Cactus: Увеличивает число игл и урон
-    Chlorophyte: ""
+    Chlorophyte: Отсутствуют улучшение
     Cobalt: Усиливает эффект взрыва
     Copper: Увеличивает урон молнии и снижает время перезарядки эффекта
-    Crimson: ""
-    CrystalAssassin: ""
-    DarkArtist: ""
-    Ebonwood: Увеличивает порог урона до 25 и дополнительно убивает любого врага с уровнем здоровья ниже 200
-    Forbidden: ""
-    Fossil: ""
-    Frost: ""
-    Gladiator: ""
-    Gold: ""
-    Hallow: ""
+    Crimson: Отсутствуют улучшение
+    CrystalAssassin: Отсутствуют улучшение
+    DarkArtist: Отсутствуют улучшение
+    Ebonwood: Увеличивает размер ауры и снижение защиты до 30 единиц
+    Forbidden: Отсутствуют улучшение
+    Fossil: Отсутствуют улучшение
+    Frost: Отсутствуют улучшение
+    Gladiator: Отсутствуют улучшение
+    Gold: Отсутствуют улучшение
+    Hallow: Отсутствуют улучшение
     Iron: Увеличивает дальность притягивания предметов в 4 раза и бонус к созданию предметов теперь распространяется на мифриловую наковальню
     Lead: Увеличивает урон дебаффа «{$Buffs.LeadPoisonBuff.DisplayName}» и сопротивление постепенному урону на 60%
-    Meteor: ""
-    Miner: ""
+    Meteor: Отсутствуют улучшение
+    Miner: Отсутствуют улучшение
     Molten: Кольцо инферно наносит больше урона и может воздействовать на врагов в чуть большем радиусе
     Mythril: Увеличивает бонус к максимальной скорости атаки и длительности эффекта
-    Nebula: ""
-    Necro: ""
+    Nebula: Отсутствуют улучшение
+    Necro: Отсутствуют улучшение
     Ninja: Увеличивает пробивание брони до 45
-    Obsidian: Вам больше не нужна лава для создания взрывов и снижает время перезарядки эффекта
+    Obsidian: Вам больше не нужна лава для создания взрывов или огненных шаров, а также снижает время перезарядки эффекта
     Orichalcum: Увеличивает множитель урона до 4 раз
     Palladium: Бафф «{$BuffName.RapidHealing}» всегда длится 5 секунд и увеличивает урон сфер
     PalmWood: Увеличивает скорость атаки и урон пальмовых стражей и можно призывать дополнительно 2 стража
     Pearlwood: Увеличивает урон и снижает время перезарядки эффекта
-    Platinum: ""
-    Pumpkin: ""
-    Rain: ""
-    RedRiding: ""
+    Platinum: Отсутствуют улучшение
+    Pumpkin: Отсутствуют улучшение
+    Rain: Отсутствуют улучшение
+    RedRiding: Отсутствуют улучшение
     RichMahogany: Крюки вылетают в 2.5 раза быстрее и значительно увеличивает сопротивление урону и эффект шипов
     Shadewood: Увеличивает размер и урон ауры крови, а также дополнительно накладывает дебафф «{$BuffName.Ichor}»
-    Shinobi: ""
-    Shroomite: ""
+    Shinobi: Отсутствуют улучшение
+    Shroomite: Грибы появляются чаще
     Silver: Парирование блокирует до 200 единиц урона и даёт бафф «{$BuffName.ParryDamageBuff}»
-    Solar: ""
-    Spectre: ""
-    Spider: ""
-    Spooky: ""
-    Stardust: ""
-    Tiki: ""
+    Solar: Отсутствуют улучшение
+    Spectre: Отсутствуют улучшение
+    Spider: Отсутствуют улучшение
+    Spooky: Отсутствуют улучшение
+    Stardust: Отсутствуют улучшение
+    Tiki: Увеличивает дальность хлыстов на 20%
     Tin: Увеличивает минимальный шанс критического удара до 10%, максимальный шанс теперь составляет не менее 50% и снижает время перезарядки эффекта
     Titanium: Увеличивает урон осколков, длительность титанового щита до 5 секунд и сопротивление урону до 75%
     Tungsten: Увеличивает размер оружия до 300%, бонусный урон до 20% и снижает время перезарядки эффекта
-    Turtle: ""
-    ValhallaKnight: ""
-    Vortex: ""
+    Turtle: Отсутствуют улучшение
+    ValhallaKnight: Отсутствуют улучшение
+    Vortex: Отсутствуют улучшение
     Wood: Увеличивает множитель заполнения записей в бестиарии и получение знамён до 5
+    AshWood: Чаще выпускает огненные шары
 }
 
 SetBonus: {
@@ -174,7 +175,7 @@ BossChecklist: {
     EarthChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в преисподней.
     NatureChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в подземных снегах.
     LifeChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в освящении днём.
-    ShadowChampionpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в искажении или багрянце ночью.
+    ShadowChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в искажении или багрянце ночью.
     SpiritChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в подземной пустыне.
     WillChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в океане.
     CosmosChampionSpawnInfo: Призывается при использовании [i:FargowiltasSouls/SigilOfChampions] в космосе.
@@ -381,6 +382,7 @@ Toggler: {
     TungstenConfig: Вольфрамовый эффект предмета
     TungstenProjConfig: Вольфрамовый эффект снаряда
     ObsidianConfig: Обсидиановые взрывы
+    AshWoodConfig: Пепельные огненные шары
     WillHeader: "{$Mods.FargowiltasSouls.Items.WillForce.DisplayName}"
     GladiatorConfig: Гладиаторский дождь
     GoldConfig: Золотая счастливая монетка
@@ -523,6 +525,7 @@ Toggler: {
     DefenseFleshKnuckleConfig: Агрессия кастет из плоти
     DefensePaladinConfig: "{$ItemName.PaladinsShield}"
     DefenseFrozenConfig: "{$ItemName.FrozenTurtleShell}"
+    ShimmerImmunityConfig: Невосприимчивость к «{$BuffName.Shimmer}»
     FlightMasteryHeader: "{$Mods.FargowiltasSouls.Items.FlightMasterySoul.DisplayName}"
     FlightMasteryInsigniaConfig: Ускорение парящей инсигнии
     FlightMasteryGravityConfig: Увеличенная гравитация
@@ -578,7 +581,7 @@ Toggler: {
     PetPlanteroConfig: Питомец Плантеро
     PetGatoConfig: Питомец мурлыка-вертолётик
     PetPupConfig: Питомец щенок
-    PetSeedConfig: Питомец проросток
+    PetSeedConfig: Питомец растеньице
     PetSpiderConfig: Питомец паучок
     PetMimicConfig: Питомец теневого мимика
     PetSharkConfig: Питомец акулёнок
@@ -607,7 +610,7 @@ Toggler: {
     PetTwinsConfig: Питомцы Рез и Спаз
     PetSkelePrimeConfig: Питомец маленький Прайм
     PetOgreConfig: Питомец огрёнок
-    PetPlanteraConfig: Питомец проросток Плантеры
+    PetPlanteraConfig: Питомец нововыросшая Плантера
     PetPumpkingConfig: Питомец светильник Джека
     PetEverscreamConfig: Питомец проросток вечнокричащей ели
     PetIceQueenConfig: Питомец ледяная королева
@@ -984,7 +987,7 @@ EModeBalance: {
     BrainOfConfusion: Снижает наносимый вами урон при успешном уклонении
     ZenithNone: Без изменений
     ZenithHitRate: Значительно снижена частота попаданий, улучшается при победе над:
-    VampireKnives: Сила кражи здоровья снижена, если здоровье больше 33%
+    VampireKnives: Сила кражи здоровья снижена, если здоровье больше 50%
     Zapinator: Не может накапливать множители урона
     OOASet: Бонус комплекта увеличивает минимальный урон призывателя, если вы атакуете, используя оружие другого класса
     MiningHelmet: Увеличивает скорость появления нежити-шахтёров
@@ -1078,6 +1081,11 @@ Buffs: {
     SeekerOfTreasuresBuff: {
         DisplayName: Искатель сокровищ
         Description: Дайте ему несколько тысяч лет, чтобы вырасти
+    }
+    
+    NibbleBuff: {
+        DisplayName: Кусака
+        Description: Просто один крошечный укус (пожалуйста)
     }
 
     ObsidianLavaWetBuff: {
@@ -1664,6 +1672,11 @@ Buffs: {
         DisplayName: Кровавый гейзер
         Description: ""
     }
+    
+    CorruptingBuff: {
+        DisplayName: Разложение
+        Description: Вы разлагаетесь
+    }
 
     TimeFrozenBuff: {
         DisplayName: Заморозка времени
@@ -1704,6 +1717,16 @@ Buffs: {
         DisplayName: Проклятые чары
         Description: Щупальца теневого пламени; урон значительно увеличен, но также значительно снижена скорость передвижения и защита
     }
+    
+    CorruptedBuff: {
+        DisplayName: Бафф разложения
+        Description: ""
+    }
+
+    CorruptedBuffForce: {
+        DisplayName: Усиление баффа разложения
+        Description: ""
+    }
 }
 
 Items: {
@@ -1715,6 +1738,16 @@ Items: {
             Выпущенные снаряды наносят 50% урона
             Они поражают дважды и получают пробивание брони, равное 50% урона
             'Хаос'
+            '''
+    }
+    
+    AshWoodEnchant: {
+        DisplayName: Пепельное усиление
+        Tooltip:
+            '''
+            Дебафф «{$BuffName.OnFire}» не наносит урона вам или жителям
+            Во время горения атаки сопровождаются огненными шарами
+            Снижает урон, наносимый при контакте с лавой
             '''
     }
 
@@ -1763,8 +1796,8 @@ Items: {
         DisplayName: Пчелиное усиление
         Tooltip:
             '''
-            Увеличивает силу дружелюбных пчёл
             Удары ближнего боя и большинство пронзающих атак создают пчёл
+            Эффекты от предмета «{$ItemName.HiveBackpack}»
             'Согласно всем известным законам авиации, пчела - не вертолёт'
             '''
     }
@@ -1872,8 +1905,9 @@ Items: {
         DisplayName: Эбонитово-древесное усиление
         Tooltip:
             '''
-            Окружает аурой теневого пламени
-            Все снаряды, которые нанесли бы вам менее 10 урона, уничтожаются
+            Окружает аурой, которая накапливает разложение на врагах
+            После 4 секунд накопления, они взрываются, заражая всех ближайших врагов
+            Заражённые враги имеют на 10 единиц меньше защиты и наносят на 10% меньше контактного урона
             'Нераскрытый потенциал'
             '''
     }
@@ -2082,9 +2116,10 @@ Items: {
         DisplayName: Обсидиановое усиление
         Tooltip:
             '''
-            Даёт невосприимчивость к огню и лаве
+            Даёт невосприимчивость к лаве
             Позволяет свободно передвигаться и плавать в лаве
-            Находясь в лаве или пока наложен бафф «{$Buffs.ObsidianLavaWetBuff.DisplayName}», ваши атаки создают взрывы и применяет эффект от предмета «{$ItemName.FireWhip}»
+            Находясь в лаве или пока наложен бафф «{$Buffs.ObsidianLavaWetBuff.DisplayName}», ваши атаки создают взрывы и сопровождаются огненными шарами
+            Эффекты от «Пепельного усиления»
             'Земля зовёт'
             '''
     }
@@ -2314,7 +2349,6 @@ Items: {
         DisplayName: Усиление тики
         Tooltip:
             '''
-            Увеличивает дальность хлыстов на 20%
             Хлестайте своих миньонов, заставляя их работать усерднее
             'Аку-аку!'
             '''
@@ -2392,7 +2426,7 @@ Items: {
         DisplayName: Усиление волшебника
         Tooltip:
             '''
-            Усиливает эффекты всех других «Усилений» до уровня «Сил»
+            Усиливает эффекты большинства других «Усилений» до уровня «Сил»
             'Я кто?'
             '''
     }
@@ -2456,9 +2490,8 @@ Items: {
         Tooltip:
             '''
             Работает в инвентаре
-            Не двигаясь, отображает местоположение сокровищ поблизости
+            Не двигаясь, отображает местоположение сокровищ и врагов поблизости
             Даёт автоатаку всем предметам
-            Немного снижает скорость использования затронутых предметов
             '''
     }
 
@@ -2508,6 +2541,7 @@ Items: {
             [i:FargowiltasSouls/PumpkinEnchant] На земле, по которой прошлись, начинают расти тыквы
             [i:FargowiltasSouls/CactusEnchant] Враги могут взорваться иглами после смерти
             [i:FargowiltasSouls/BeeEnchant] Удары ближнего боя и большинство пронзающих атак создают пчёл
+            [i:FargowiltasSouls/BeeEnchant] Эффекты от предмета «{$ItemName.HiveBackpack}»
             [i:FargowiltasSouls/SpiderEnchant] Даёт 30% шанс для миньонов и стражей нанести критический удар на х1.5 урона вместо стандартных х2
             [i:FargowiltasSouls/TurtleEnchant] Если вы стоите на месте и не атакуете, то окружаетесь панцирем
             [i:FargowiltasSouls/BeetleEnchant] Жуки помогают как в атаке, так и в защите
@@ -2542,7 +2576,6 @@ Items: {
             [i:FargowiltasSouls/NecroEnchant] Убитые враги могут выронить груду костей
             [i:FargowiltasSouls/NinjaEnchant] Значительно увеличивает скорость снаряда и атаки, но снижает урон
             [i:FargowiltasSouls/CrystalAssassinEnchant] Бросьте дымовую бомбу, чтобы телепортироваться к ней и получить бафф «{$Buffs.FirstStrikeBuff.DisplayName}»
-            [i:FargowiltasSouls/CrystalAssassinEnchant] Эффекты от предмета «{$ItemName.VolatileGelatin}»
             [i:FargowiltasSouls/SpookyEnchant] Все миньоны получают дополнительную атаку косой
             [i:FargowiltasSouls/MonkEnchant] Если не атакуете, вы получите одноразовый рывок монаха
             [i:FargowiltasSouls/ShinobiEnchant] Позволяет мгновенно телепортироваться сквозь стены при использовании рывка
@@ -2580,7 +2613,8 @@ Items: {
             [i:FargowiltasSouls/LeadEnchant] Вы получаете на 60% меньше постепенного урона
             [i:FargowiltasSouls/SilverEnchant] Нажмите <right>, чтобы прикрыться щитом
             [i:FargowiltasSouls/TungstenEnchant] Увеличивает размер меча и снаряда на 300% каждые четверть секунды
-            [i:FargowiltasSouls/ObsidianEnchant] Даёт невосприимчивость к огню и лаве
+            [i:FargowiltasSouls/ObsidianEnchant] Даёт невосприимчивость к лаве
+            [i:FargowiltasSouls/AshWoodEnchant] Во время горения или нахождения в лаве, атаки игрока и жителей сопровождаются огненными шарами
             'Земля придаёт вам силу'
             '''
     }
@@ -3284,7 +3318,7 @@ Items: {
             Увеличивает максимальный запас здоровья на 100
             Увеличивает сопротивление урону на 15%
             Увеличивает регенерацию здоровья на 5
-            Даёт невосприимчивость к отбрасыванию, нескольким дебаффам и урону от падения
+            Даёт невосприимчивость к отбрасыванию, нескольким дебаффам, «{$BuffName.Shimmer}» и урону от падения
             Враги чаще выбирают вас в качестве цели
             Эффекты от предметов «{$ItemName.BrainOfConfusion}», «{$ItemName.StarVeil}» и «{$ItemName.BeeCloak}»
             Эффекты от предметов «{$ItemName.ShinyStone}», «{$ItemName.PaladinsShield}» и «{$ItemName.FrozenTurtleShell}»
@@ -3474,7 +3508,7 @@ Items: {
             '''
             Увеличивает скорость размещения блоков и стен на 50%
             Почти бесконечный радиус размещения блоков и добычи
-            Увеличивает скорость добычи в 3 раза
+            Увеличивает скорость добычи в 3 раза, а также эффект от «{$ItemName.AncientChisel}»
             Отображает местоположение сокровищ, источников опасности и врагов поблизости
             Автоматическая покраска и эффект актуатора
             Излучает свет и позволяет контролировать гравитацию
@@ -3482,7 +3516,7 @@ Items: {
             Блоки и стены не будут расходоваться
             Увеличивает скорость и дальность размещения блоков
             Эффект можно отключить в настройках эффектов душ
-            Эффекты от предметов «{$ItemName.CellPhone}» и «{$ItemName.RoyalGel}»
+            Эффекты от предметов «{$ItemName.CellPhone}», «{$ItemName.RoyalGel}» и «{$ItemName.TreasureMagnet}»
             Призывает питомца магический фонарь
             'Безграничные возможности'
             '''
@@ -3681,7 +3715,7 @@ Items: {
         DisplayName: Оленьи сухожилия
         Tooltip:
             '''
-            Позволяет делать рывок
+            Позволяет делать рывок при отсутствии аксессуара для рывка
             Нажмите дважды в нужном направлении для рывка
             Получение урона может ненадолго заморозить вас
             Снижает урон при увеличении скорости передвижения, вплоть до 0.85х при максимальном значении
@@ -3868,6 +3902,11 @@ Items: {
             'Он только что вылупился из... камня?'
             '''
     }
+    
+    WiresPainting: {
+        DisplayName: Картина «Кот разочаровался»
+        Tooltip: Пристальный взгляд
+    }
 
     PortableFogMachine: {
         DisplayName: Карманный генератор тумана
@@ -3884,6 +3923,15 @@ Items: {
             '''
             Призывает порождение Мутанта
             'Думаешь, ты в безопасности?'
+            '''
+    }
+    
+    HokeyBall: {
+        DisplayName: Хоккейный мяч
+        Tooltip:
+            '''
+            Призывает Кусаку
+            'Показать Кусаку'
             '''
     }
 
@@ -4836,6 +4884,7 @@ NPCs: {
     }
 
     DetonatingBubbleNPC.DisplayName: Взрывающийся пузырь
+    StardustMinion.DisplayName: Клетка звёздной пыли
 }
 
 Tiles: {
@@ -5519,14 +5568,27 @@ Projectiles: {
     MimicTitanGlove.DisplayName: Titan Glove
     KamikazePixie.DisplayName: Pixie
     BabyLifelight.DisplayName: Petlight
+    Nibble.DisplayName: Nibble
+    SolarMeteor.DisplayName: Solar Meteor
+    SolarFlamePillarSpawner.DisplayName: Solar Flame Pillar Spawner
+    SolarFlamePillar.DisplayName: Solar Flame Pillar
+    LightningTelegraph.DisplayName: Lightning Telegraph
+    PillarSpawner.DisplayName: Pillar Spawner
+    VortexVortex.DisplayName: Vortex Vortex
+    VortexVortexProjectile.DisplayName: Vortex Vortex Projectile
+    PillarNebulaBlaze.DisplayName: Pillar Nebula Blaze
+    NebulaDeathray.DisplayName: Nebula Deathray
+    NebulaPillarProj.DisplayName: Nebula Pillar Proj
+    NebulaTelegraph.DisplayName: Nebula Telegraph
+    PillarArcanum.DisplayName: Pillar Arcanum
 }
 
-WoodHeader: "[i:FargowiltasSouls/TimberForce] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.WoodHeader}]"
-BorealConfig: "[i:FargowiltasSouls/BorealWoodEnchant] [c/8B7464:{$Mods.FargowiltasSouls.Toggler.BorealConfig}]"
-MahoganyConfig: "[i:FargowiltasSouls/RichMahoganyEnchant] [c/b56c64:{$Mods.FargowiltasSouls.Toggler.MahoganyConfig}]"
-EbonConfig: "[i:FargowiltasSouls/EbonwoodEnchant] [c/645a8d:{$Mods.FargowiltasSouls.Toggler.EbonConfig}]"
-ShadeConfig: "[i:FargowiltasSouls/ShadewoodEnchant] [c/586876:{$Mods.FargowiltasSouls.Toggler.ShadeConfig}]"
-ShadeOnHitConfig: "[i:FargowiltasSouls/ShadewoodEnchant] [c/586876:{$Mods.FargowiltasSouls.Toggler.ShadeOnHitConfig}]"
+WoodHeader: "[i:FargowiltasSouls/TimberForce][c/ffffff:{$Mods.FargowiltasSouls.Toggler.WoodHeader}]"
+BorealConfig: "[i:FargowiltasSouls/BorealWoodEnchant][c/8B7464:{$Mods.FargowiltasSouls.Toggler.BorealConfig}]"
+MahoganyConfig: "[i:FargowiltasSouls/RichMahoganyEnchant][c/b56c64:{$Mods.FargowiltasSouls.Toggler.MahoganyConfig}]"
+EbonConfig: "[i:FargowiltasSouls/EbonwoodEnchant][c/645a8d:{$Mods.FargowiltasSouls.Toggler.EbonConfig}]"
+ShadeConfig: "[i:FargowiltasSouls/ShadewoodEnchant][c/586876:{$Mods.FargowiltasSouls.Toggler.ShadeConfig}]"
+ShadeOnHitConfig: "[i:FargowiltasSouls/ShadewoodEnchant][c/586876:{$Mods.FargowiltasSouls.Toggler.ShadeOnHitConfig}]"
 PalmConfig: "[i:FargowiltasSouls/PalmWoodEnchant][c/b78d56:{$Mods.FargowiltasSouls.Toggler.PalmConfig}]"
 PearlConfig: "[i:FargowiltasSouls/PearlwoodEnchant][c/ad9a5f:{$Mods.FargowiltasSouls.Toggler.PearlConfig}]"
 EarthHeader: "[i:FargowiltasSouls/EarthForce][c/ffffff:{$Mods.FargowiltasSouls.Toggler.EarthHeader}]"
@@ -5546,6 +5608,7 @@ TinConfig: "[i:FargowiltasSouls/TinEnchant][c/a28b4e:{$Mods.FargowiltasSouls.Tog
 TungstenConfig: "[i:FargowiltasSouls/TungstenEnchant][c/b0d2b2:{$Mods.FargowiltasSouls.Toggler.TungstenConfig}]"
 TungstenProjConfig: "[i:FargowiltasSouls/TungstenEnchant][c/b0d2b2:{$Mods.FargowiltasSouls.Toggler.TungstenProjConfig}]"
 ObsidianConfig: "[i:FargowiltasSouls/ObsidianEnchant][c/453e73:{$Mods.FargowiltasSouls.Toggler.ObsidianConfig}]"
+AshWoodConfig: "[i:FargowiltasSouls/AshWoodEnchant][c/958083:{$Mods.FargowiltasSouls.Toggler.AshWoodConfig}]"
 WillHeader: "[i:FargowiltasSouls/WillForce][c/ffffff:{$Mods.FargowiltasSouls.Toggler.WillHeader}]"
 GladiatorConfig: "[i:FargowiltasSouls/GladiatorEnchant][c/9c924e:{$Mods.FargowiltasSouls.Toggler.GladiatorConfig}]"
 GoldConfig: "[i:FargowiltasSouls/GoldEnchant][c/e7b21c:{$Mods.FargowiltasSouls.Toggler.GoldConfig}]"
@@ -5688,6 +5751,7 @@ DefensePanicConfig: "[i:FargowiltasSouls/ColossusSoul][c/ffffff:{$Mods.Fargowilt
 DefenseFleshKnuckleConfig: "[i:FargowiltasSouls/ColossusSoul][c/ffffff:{$Mods.FargowiltasSouls.Toggler.DefenseFleshKnuckleConfig}]"
 DefensePaladinConfig: "[i:FargowiltasSouls/ColossusSoul][c/ffffff:{$Mods.FargowiltasSouls.Toggler.DefensePaladinConfig}]"
 DefenseFrozenConfig: "[i:FargowiltasSouls/ColossusSoul][c/ffffff:{$Mods.FargowiltasSouls.Toggler.DefenseFrozenConfig}]"
+ShimmerImmunityConfig: "[i:FargowiltasSouls/ColossusSoul][c/ffffff:{$Mods.FargowiltasSouls.Toggler.ShimmerImmunityConfig}]"
 FlightMasteryHeader: "[i:FargowiltasSouls/FlightMasterySoul][c/ffffff:{$Mods.FargowiltasSouls.Toggler.FlightMasteryHeader}]"
 FlightMasteryInsigniaConfig: "[i:FargowiltasSouls/FlightMasterySoul][c/ffffff:{$Mods.FargowiltasSouls.Toggler.FlightMasteryInsigniaConfig}]"
 FlightMasteryGravityConfig: "[i:FargowiltasSouls/FlightMasterySoul][c/ffffff:{$Mods.FargowiltasSouls.Toggler.FlightMasteryGravityConfig}]"
@@ -5710,79 +5774,79 @@ TrawlerJumpConfig: "[i:FargowiltasSouls/TrawlerSoul][c/ffffff:{$Mods.Fargowiltas
 TrawlerGelConfig: "[i:FargowiltasSouls/TrawlerSoul][c/ffffff:{$Mods.FargowiltasSouls.Toggler.TrawlerGelConfig}]"
 EternityHeader: "[i:FargowiltasSouls/EternitySoul][c/ffffff:{$Mods.FargowiltasSouls.Toggler.EternityHeader}]"
 EternityConfig: "[i:FargowiltasSouls/EternitySoul][c/ffffff:{$Mods.FargowiltasSouls.Toggler.EternityConfig}]"
-PetHeader: "[i:2420] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetHeader}]"
-PetDinoConfig: "[i:1242] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetDinoConfig}]"
-PetEaterConfig: "[i:994] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEaterConfig}]"
-PetFaceMonsterConfig: "[i:3060] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetFaceMonsterConfig}]"
-PetGrinchConfig: "[i:1959] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetGrinchConfig}]"
-PetHornetConfig: "[i:1170] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetHornetConfig}]"
-PetImpConfig: "[i:4551] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetImpConfig}]"
-PetPenguinConfig: "[i:669] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPenguinConfig}]"
-PetPandaConfig: "[i:4550] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPandaConfig}]"
-PetDGConfig: "[i:1169] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetDGConfig}]"
-PetSnowmanConfig: "[i:1312] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSnowmanConfig}]"
-PetShroomConfig: "[i:1181] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetShroomConfig}]"
-PetWerewolfConfig: "[i:4736] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetWerewolfConfig}]"
-PetBernieConfig: "[i:5088] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetBernieConfig}]"
-PetBlackCatConfig: "[i:1810] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetBlackCatConfig}]"
-PetChesterConfig: "[i:5098] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetChesterConfig}]"
-PetCompanionCubeConfig: "[i:3628] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetCompanionCubeConfig}]"
-PetCursedSaplingConfig: "[i:1837] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetCursedSaplingConfig}]"
-PetKittenConfig: "[i:4735] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetKittenConfig}]"
-PetEsteeConfig: "[i:4365] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEsteeConfig}]"
-PetEyeSpringConfig: "[i:1311] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEyeSpringConfig}]"
-PetFoxConfig: "[i:4604] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetFoxConfig}]"
-PetButterflyConfig: "[i:4605] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetButterflyConfig}]"
-PetGlommerConfig: "[i:5089] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetGlommerConfig}]"
-PetDragonConfig: "[i:3857] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetDragonConfig}]"
-PetHarpyConfig: "[i:4603] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetHarpyConfig}]"
-PetLizardConfig: "[i:1172] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetLizardConfig}]"
-PetMinitaurConfig: "[i:2587] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetMinitaurConfig}]"
-PetParrotConfig: "[i:1180] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetParrotConfig}]"
-PetPigmanConfig: "[i:5091] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPigmanConfig}]"
-PetPlanteroConfig: "[i:4701] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPlanteroConfig}]"
-PetGatoConfig: "[i:3855] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetGatoConfig}]"
-PetPupConfig: "[i:1927] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPupConfig}]"
-PetSeedConfig: "[i:1182] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSeedConfig}]"
-PetSpiderConfig: "[i:1798] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSpiderConfig}]"
-PetMimicConfig: "[i:4737] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetMimicConfig}]"
-PetSharkConfig: "[i:4425] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSharkConfig}]"
-PetSquashConfig: "[i:1799] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSquashConfig}]"
-PetGliderConfig: "[i:4366] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetGliderConfig}]"
-PetTikiConfig: "[i:1171] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetTikiConfig}]"
-PetTurtleConfig: "[i:753] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetTurtleConfig}]"
-PetVoltConfig: "[i:4777] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetVoltConfig}]"
-PetZephyrConfig: "[i:2420] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetZephyrConfig}]"
-PetOrbConfig: "[i:115] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetOrbConfig}]"
-PetHeartConfig: "[i:3062] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetHeartConfig}]"
-PetLanternConfig: "[i:3043] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetLanternConfig}]"
-PetNaviConfig: "[i:425] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetNaviConfig}]"
-PetFlickerConfig: "[i:4816] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetFlickerConfig}]"
-PetWispConfig: "[i:1183] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetWispConfig}]"
-PetSuspEyeConfig: "[i:3577] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSuspEyeConfig}]"
-PetKSConfig: "[i:4797] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetKSConfig}]"
-PetEoCConfig: "[i:4798] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEoCConfig}]"
-PetEoWConfig: "[i:4799] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEoWConfig}]"
-PetBoCConfig: "[i:4800] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetBoCConfig}]"
-PetDeerConfig: "[i:5090] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetDeerConfig}]"
-PetQBConfig: "[i:4802] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetQBConfig}]"
-PetSkeleConfig: "[i:4801] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSkeleConfig}]"
-PetQSConfig: "[i:4960] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetQSConfig}]"
-PetDestroyerConfig: "[i:4803] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetDestroyerConfig}]"
-PetTwinsConfig: "[i:4804] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetTwinsConfig}]"
-PetSkelePrimeConfig: "[i:4805] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSkelePrimeConfig}]"
-PetOgreConfig: "[i:4816] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetOgreConfig}]"
-PetPlanteraConfig: "[i:4806] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPlanteraConfig}]"
-PetPumpkingConfig: "[i:4812] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPumpkingConfig}]"
-PetEverscreamConfig: "[i:4813] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEverscreamConfig}]"
-PetIceQueenConfig: "[i:4814] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetIceQueenConfig}]"
-PetDukeConfig: "[i:4808] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetDukeConfig}]"
-PetGolemConfig: "[i:4807] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetGolemConfig}]"
-PetEoLConfig: "[i:4811] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEoLConfig}]"
-PetBetsyConfig: "[i:4817] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetBetsyConfig}]"
-PetMartianConfig: "[i:4815] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetMartianConfig}]"
-PetLCConfig: "[i:4809] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetLCConfig}]"
-PetMLConfig: "[i:4810] [c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetMLConfig}]"
+PetHeader: "[i:2420][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetHeader}]"
+PetDinoConfig: "[i:1242][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetDinoConfig}]"
+PetEaterConfig: "[i:994][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEaterConfig}]"
+PetFaceMonsterConfig: "[i:3060][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetFaceMonsterConfig}]"
+PetGrinchConfig: "[i:1959][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetGrinchConfig}]"
+PetHornetConfig: "[i:1170][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetHornetConfig}]"
+PetImpConfig: "[i:4551][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetImpConfig}]"
+PetPenguinConfig: "[i:669][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPenguinConfig}]"
+PetPandaConfig: "[i:4550][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPandaConfig}]"
+PetDGConfig: "[i:1169][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetDGConfig}]"
+PetSnowmanConfig: "[i:1312][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSnowmanConfig}]"
+PetShroomConfig: "[i:1181][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetShroomConfig}]"
+PetWerewolfConfig: "[i:4736][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetWerewolfConfig}]"
+PetBernieConfig: "[i:5088][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetBernieConfig}]"
+PetBlackCatConfig: "[i:1810][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetBlackCatConfig}]"
+PetChesterConfig: "[i:5098][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetChesterConfig}]"
+PetCompanionCubeConfig: "[i:3628][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetCompanionCubeConfig}]"
+PetCursedSaplingConfig: "[i:1837][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetCursedSaplingConfig}]"
+PetKittenConfig: "[i:4735][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetKittenConfig}]"
+PetEsteeConfig: "[i:4365][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEsteeConfig}]"
+PetEyeSpringConfig: "[i:1311][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEyeSpringConfig}]"
+PetFoxConfig: "[i:4604][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetFoxConfig}]"
+PetButterflyConfig: "[i:4605][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetButterflyConfig}]"
+PetGlommerConfig: "[i:5089][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetGlommerConfig}]"
+PetDragonConfig: "[i:3857][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetDragonConfig}]"
+PetHarpyConfig: "[i:4603][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetHarpyConfig}]"
+PetLizardConfig: "[i:1172][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetLizardConfig}]"
+PetMinitaurConfig: "[i:2587][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetMinitaurConfig}]"
+PetParrotConfig: "[i:1180][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetParrotConfig}]"
+PetPigmanConfig: "[i:5091][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPigmanConfig}]"
+PetPlanteroConfig: "[i:4701][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPlanteroConfig}]"
+PetGatoConfig: "[i:3855][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetGatoConfig}]"
+PetPupConfig: "[i:1927][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPupConfig}]"
+PetSeedConfig: "[i:1182][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSeedConfig}]"
+PetSpiderConfig: "[i:1798][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSpiderConfig}]"
+PetMimicConfig: "[i:4737][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetMimicConfig}]"
+PetSharkConfig: "[i:4425][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSharkConfig}]"
+PetSquashConfig: "[i:1799][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSquashConfig}]"
+PetGliderConfig: "[i:4366][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetGliderConfig}]"
+PetTikiConfig: "[i:1171][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetTikiConfig}]"
+PetTurtleConfig: "[i:753][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetTurtleConfig}]"
+PetVoltConfig: "[i:4777][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetVoltConfig}]"
+PetZephyrConfig: "[i:2420][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetZephyrConfig}]"
+PetOrbConfig: "[i:115][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetOrbConfig}]"
+PetHeartConfig: "[i:3062][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetHeartConfig}]"
+PetLanternConfig: "[i:3043][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetLanternConfig}]"
+PetNaviConfig: "[i:425][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetNaviConfig}]"
+PetFlickerConfig: "[i:4816][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetFlickerConfig}]"
+PetWispConfig: "[i:1183][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetWispConfig}]"
+PetSuspEyeConfig: "[i:3577][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSuspEyeConfig}]"
+PetKSConfig: "[i:4797][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetKSConfig}]"
+PetEoCConfig: "[i:4798][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEoCConfig}]"
+PetEoWConfig: "[i:4799][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEoWConfig}]"
+PetBoCConfig: "[i:4800][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetBoCConfig}]"
+PetDeerConfig: "[i:5090][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetDeerConfig}]"
+PetQBConfig: "[i:4802][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetQBConfig}]"
+PetSkeleConfig: "[i:4801][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSkeleConfig}]"
+PetQSConfig: "[i:4960][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetQSConfig}]"
+PetDestroyerConfig: "[i:4803][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetDestroyerConfig}]"
+PetTwinsConfig: "[i:4804][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetTwinsConfig}]"
+PetSkelePrimeConfig: "[i:4805][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetSkelePrimeConfig}]"
+PetOgreConfig: "[i:4816][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetOgreConfig}]"
+PetPlanteraConfig: "[i:4806][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPlanteraConfig}]"
+PetPumpkingConfig: "[i:4812][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetPumpkingConfig}]"
+PetEverscreamConfig: "[i:4813][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEverscreamConfig}]"
+PetIceQueenConfig: "[i:4814][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetIceQueenConfig}]"
+PetDukeConfig: "[i:4808][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetDukeConfig}]"
+PetGolemConfig: "[i:4807][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetGolemConfig}]"
+PetEoLConfig: "[i:4811][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetEoLConfig}]"
+PetBetsyConfig: "[i:4817][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetBetsyConfig}]"
+PetMartianConfig: "[i:4815][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetMartianConfig}]"
+PetLCConfig: "[i:4809][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetLCConfig}]"
+PetMLConfig: "[i:4810][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PetMLConfig}]"
 PatreonHeader: "[i:FargowiltasSouls/RoombaPet][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PatreonHeader}]"
 PatreonRoomba: "[i:FargowiltasSouls/RoombaPet][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PatreonRoomba}]"
 PatreonOrb: "[i:FargowiltasSouls/ComputationOrb][c/ffffff:{$Mods.FargowiltasSouls.Toggler.PatreonOrb}]"
