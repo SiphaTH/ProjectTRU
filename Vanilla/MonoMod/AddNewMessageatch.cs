@@ -197,6 +197,10 @@ public class AddNewMessageatch : ILoadable
             // "The fabric of this world begins to fray!" => "",
             // "Your final days have arrived..." => "",
             // "The Stellar Array reaches new heights!" => "",
+            
+            // Thorium
+            // "It appears to be waiting for night..." => "",
+            // "It seems to be dormant..." => "",
             _ => text
         };
 

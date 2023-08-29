@@ -52,6 +52,13 @@ public class CombatTextPatch : ILoadable
             // "White Enchantment!" => "",
             // Infernum
             "Peck!" => "Библиять!",
+            // Thorium
+            // " life heal streak" => "",
+            // "ERADICATED" => "",
+            // "Close call" => "",
+            // "Freebie!" => "",
+            // " life/5 sec" => "",
+            // "No Blood Chamber in world" => "",
             _ => text
         };
         

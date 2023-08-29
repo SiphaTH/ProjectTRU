@@ -15,12 +15,7 @@ public class InfernumUIAchievementListItemPatch : ILPatcher
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {
-        TranslationHelper.ModifyIL(il, "Spazmatism", "Спазматизм");
-        TranslationHelper.ModifyIL(il, "The Twins", "Близнецы");
-        TranslationHelper.ModifyIL(il, "Moon Lord Core", "Сердце Лунного лорда");
-        TranslationHelper.ModifyIL(il, "Moon Lord", "Лунный лорд");
-        TranslationHelper.ModifyIL(il, "Guardian Commander", "Атакующий страж");
-        TranslationHelper.ModifyIL(il, "Profaned Guardians", "Осквернённые стражи");
-        TranslationHelper.ModifyIL(il, "Next: ", "Следующий: ");
+        // Увеличиваем длину для переноса текста на новую строку
+        TranslationHelper.ModifyIL(il, 20f, -30f);
     };
 }

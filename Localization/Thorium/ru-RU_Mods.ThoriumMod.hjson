@@ -1,46 +1,46 @@
 ﻿Announcements: {
     // WorldEngineChange: Сложность мира была изменена на {0}.
-    // LodestoneWarning1: Your world has been sundered with Lodestone!
-    // LodestoneWarning2: Your world has been sundered with an abundance of Lodestone!
-    // ValadiumWarning1: Your world has been enchanted with Valadium!
-    // ValadiumWarning2: Your world has been enchanted with an abundance of Valadium!
-    // LichWarning: The release of powerful souls has awoken something in the Graveyard...
-    // GraniteMarbleWarning: The pockets of Granite and Marble in your world tremble...
-    // IllumiteWarning: Plantera's luminescent energy brightens the earth...
-    // HMDepthsWarning: New life springs forth in the Aquatic Depths!
-    // ForgottenOneWarning: Something stirs in the Aquatic Depths...
-    // QueenJellyfishWarning: The aquatic depths bubble beneath the oceans surface!
-    // ExpertForgottenOne1: The Forgotten One's shell violently cracks!
-    // ExpertForgottenOne2: The Forgotten One breaks free of its ancient prison!
-    // ForgottenOneDefeat: The toxic haze of the depths has been lifted...
-    // SpiderWarning: The Spider Nests in your world rustle in anger...
-    // BoreanStriderAppear: An eight legged menace is prowling the tundra...
-    // PatchWerkDefeat: The dreaded {$NPCs.PatchWerk.DisplayName} has been removed from the world!
-    // CorpseBloomDefeat: The elusive {$NPCs.CorpseBloom.DisplayName} withers away...
-    // IllusionistDefeat: The enigmatic {$NPCs.Illusionist.DisplayName} shatters into pieces...
-    // BuriedChampionAppear: The {$NPCs.BuriedChampion.DisplayName} has broken free!
-    // GraniteEnergyStormAppear: The {$NPCs.GraniteEnergyStorm.DisplayName} has unleashed!
-    // DiverFree: Someone just fell out of that aquatic abomination!
-    // ThePrimordialsStart: Terraria trembles...
-    // DreamEaterAppear: The fabric of reality is tearing at the seams!
-    // DreamEaterDefeat: Reality resumes its tranquil state...
+    // LodestoneWarning1: Мир расколот магнетитом!
+    // LodestoneWarning2: Мир расколот изобилием магнетита!
+    // ValadiumWarning1: Мир наполнен валадиумом!
+    // ValadiumWarning2: Мир наполнен изобилием валадиума!
+    // LichWarning: Освобождение могущественных душ пробудило что-то на кладбище...
+    // GraniteMarbleWarning: Очаги гранита и мрамора содрогаются...
+    // IllumiteWarning: Люминесцентная энергия Плантеры озаряет землю...
+    // HMDepthsWarning: Новая жизнь рождается в водных глубинах!
+    // ForgottenOneWarning: Что-то пробуждается в водных глубинах...
+    // QueenJellyfishWarning: Водные глубины пузырятся под поверхностью океана!
+    // ExpertForgottenOne1: Панцирь Забытого неистово раскалывается!
+    // ExpertForgottenOne2: Забытый вырывается из своей древней тюрьмы!
+    // ForgottenOneDefeat: Токсичный смог глубин рассеялся...
+    // SpiderWarning: Паучьи гнёзда гудят от ярости...
+    // BoreanStriderAppear: Восьминогая угроза бродит по тундре...
+    // PatchWerkDefeat: Ужасный {$NPCs.PatchWerk.DisplayName} был удалён из мира!
+    // CorpseBloomDefeat: Неуловимый {$NPCs.CorpseBloom.DisplayName} увядает...
+    // IllusionistDefeat: Таинственный {$NPCs.Illusionist.DisplayName} разлетается на куски...
+    // BuriedChampionAppear: "{$NPCs.BuriedChampion.DisplayName} освободился!"
+    // GraniteEnergyStormAppear: "{$NPCs.GraniteEnergyStorm.DisplayName} разразился!"
+    // DiverFree: Кто-то только что выбрался из этой водной мерзости!
+    // ThePrimordialsStart: Террария содрогается...
+    // DreamEaterAppear: Ткань реальности трещит по швам!
+    // DreamEaterDefeat: Реальность возвращается к своему умиротворённому состоянию...
 }
 
 // Bestiary.InfoElements.ExpertModeInfoElement: Только режим Эксперта
 
 GravestoneText: {
-    // 0: Beloved.
-    // 1: Ever loved.
-    // 2: In loving memory.
-    // 3: Once met, never forgotten.
-    // 4: Forever in our hearts.
-    // 5: Rest in Peace.
-    // 6: A long life well lived.
-    // 7: Sleep till eternity.
-    // 8: Reunited at last.
-    // 9: He ended well.
-    // 10: She ended well.
-    // 11: I will see you again.
+    // 0: Возлюбленный.
+    // 1: Навеки в сердце.
+    // 2: Светлая память.
+    // 3: Встречённый однажды, никогда не забывается.
+    // 4: Навсегда в наших сердцах.
+    // 5: Покойся с миром.
+    // 6: Долгая и насыщенная жизнь.
+    // 7: Спи до скончания вечности.
+    // 8: Наконец воссоединение.
+    // 9: Он достойно завершил свой путь.
+    // 10: Она достойно завершила свой путь.
+    // 11: Увидимся снова.
 }
 
 GameTips: {
@@ -198,173 +198,173 @@ Buffs: {
     }
 
     MetronomeBuff: {
-        // DisplayName: Tick
-        // Description: Symphonic damage and playing speed increased
+        // DisplayName: Тик
+        // Description: Симфонический урон и скорость игры на инструменте увеличены
     }
 
     MetronomeDebuff: {
-        // DisplayName: Tock
-        // Description: Symphonic damage and playing speed decreased
+        // DisplayName: Так
+        // Description: Симфонический урон и скорость игры на инструменте снижены
     }
 
     ShockAbsorberBuff: {
-        // DisplayName: Shock Absorbtion
-        // Description: All damage increased by 15%
+        // DisplayName: Поглощение ударов
+        // Description: Весь урон увеличен на 15%
     }
 
     SoloistsHatSetBuff: {
-        // DisplayName: Endless Creativity
-        // Description: Your musical talent is second to none
+        // DisplayName: Безграничная креативность
+        // Description: Ваш музыкальный талант бесподобен
     }
 
     ZunpetBuff: {
-        // DisplayName: Zunpet Energy
-        // Description: Symphonic damage is increased
+        // DisplayName: Энергия Зунпета
+        // Description: Симфонический урон увеличен
     }
 
     BatRepellentBuff: {
-        // DisplayName: Repellent : Bats
-        // Description: Most bats will become friendly to you
+        // DisplayName: Репеллент: летучие мыши
+        // Description: Большинство летучих мышей становятся дружелюбными
     }
 
     BeetleCarapace: {
-        // DisplayName: Beetle Carapace
-        // Description: Damage reduction increased and reflecting damage
+        // DisplayName: Жучий панцирь
+        // Description: Сопротивление урону увеличено, а также способность отражать урон
     }
 
     BlightFever: {
-        // DisplayName: Blight Fever
-        // Description: Omnicide has claimed this being's soul...
+        // DisplayName: Чумная лихорадка
+        // Description: Омницид завладел душой этого существа...
     }
 
     BloodHarvest: {
-        // DisplayName: Blood Harvest
-        // Description: Cannot currently store blood charges
+        // DisplayName: Кровавая жатва
+        // Description: В данный момент нельзя накапливать заряды крови
     }
 
     BloodRush: {
-        // DisplayName: Blood Rush
-        // Description: 15% increased movement and mining speed
+        // DisplayName: Приток крови
+        // Description: Скорость передвижения и добычи увеличены на 15%
     }
 
     BloodyWandDebuff: {
-        // DisplayName: Bloody
-        // Description: Taking increased damage from blood bolts
+        // DisplayName: Кровавый
+        // Description: Получение увеличенного урона от кровавых снарядов
     }
 
     BouncingFlamePotionBuff: {
-        // DisplayName: Bouncing Flames
-        // Description: Your flaming debuffs will spread to nearby enemies
+        // DisplayName: Отскакивающее пламя
+        // Description: Ваши огненные дебаффы распространяются на ближайших врагов
     }
 
     Bubbled: {
-        // DisplayName: Bubbled
-        // Description: You're floating away!
+        // DisplayName: Запузырен
+        // Description: Вы улетаете!
     }
 
     CactusFruitBuff: {
-        // DisplayName: Prickly & Tasty
-        // Description: Immune to most status effect debuffs
+        // DisplayName: Колючий и вкусный
+        // Description: Невосприимчивость к большинству дебаффов, влияющих на состояние
     }
 
     ChaosState: {
-        // DisplayName: Chaos State: Teleportation
-        // Description: Your body is still recovering from teleporting
+        // DisplayName: Хаотичное состояние: телепортация
+        // Description: Ваше тело всё ещё восстанавливается после телепортации
     }
 
     Charmed: {
-        // DisplayName: Charmed
-        // Description: This enemy can't resist your allure!
+        // DisplayName: Очарован
+        // Description: Этот враг не может устоять перед вашим шармом!
     }
 
     Chill: {
-        // DisplayName: Chill
-        // Description: Getting chilly
+        // DisplayName: Озноб
+        // Description: Становится прохладно
     }
 
     ChokingAura: {
-        // DisplayName: Choking Aura
-        // Description: A presence most foul pollutes and poisons all nearby air
+        // DisplayName: Аура удушья
+        // Description: Зловонное присутствие загрязняет и отравляет весь окружающий воздух
     }
 
     CobblerBuff: {
-        // DisplayName: Shined Shoes
-        // Description: Movement speed, run acceleration, and jump height are increased
+        // DisplayName: Начищенная обувь
+        // Description: Скорость передвижения, ускорение и высота прыжка увеличены
     }
 
     ConflagrationPotionBuff: {
-        // DisplayName: Conflagrate
-        // Description: Your insides are burning up, but you deal more damage
+        // DisplayName: Воспламенение
+        // Description: Внутренности горят, но вы наносите больше урона
     }
 
     Corporeal: {
-        // DisplayName: Corporeal
-        // Description: Your spirit is recharging
+        // DisplayName: Телесный
+        // Description: Ваш дух перезаряжается
     }
 
     Corrosion: {
-        // DisplayName: Corrosion
-        // Description: Taking 5% more damage from all sources and damage over time
+        // DisplayName: Коррозия
+        // Description: Получаемый урон от всех источников и постепенного урона увеличен на 5%
     }
 
     CursedHurl: {
-        // DisplayName: Cursed Hurl
-        // Description: You're spinning out of control
+        // DisplayName: Проклятое швыряние
+        // Description: Вы теряете над собой контроль
     }
 
     DarknessWithin: {
-        // DisplayName: Darkness Within
-        // Description: Only the strongest foes will feed your hunger...
+        // DisplayName: Тьма внутри нас
+        // Description: Только сильнейшие из врагов смогут утолить ваш голод...
     }
 
     DecayingFlesh: {
-        // DisplayName: Decaying Flesh
-        // Description: This target's flesh is decaying heavily
+        // DisplayName: Гниющая плоть
+        // Description: Плоть жертвы сильно разлагается...
     }
 
     DeepFreezeCoatingBuff: {
-        // DisplayName: Thrown Weapon Imbue : Deep Freeze
-        // Description: Throwing damage has a chance to significantly hinder the hit enemies movement
+        // DisplayName: Смазанное метательное оружие: глубокая заморожка
+        // Description: Метательные атаки могут значительно затруднить передвижение поражённых врагов
     }
 
     DepthBreath: {
-        // DisplayName: Depth: Breath
-        // Description: You can breath underwater
+        // DisplayName: Глубина: дыхание
+        // Description: Позволяет дышать под водой
     }
 
     DepthDamage: {
-        // DisplayName: Depth: Damage
-        // Description: Damage done increased by 10%
+        // DisplayName: Глубина: урон
+        // Description: Урон увеличен на 10%
     }
 
     DepthSpeed: {
-        // DisplayName: Depth: Speed
-        // Description: Movement speed is increased by 10%
+        // DisplayName: Глубина: скорость
+        // Description: Скорость передвижения увеличена на 10%
     }
 
     Destabilized: {
-        // DisplayName: Destabilized
-        // Description: Your existence is phasing in and out
+        // DisplayName: Дестабилизирован
+        // Description: Ваше существование подобно коту Шрёдингера
     }
 
     DevilDaggerBuff: {
-        // DisplayName: Demonic Dance
-        // Description: Dealing 20% more magic damage
+        // DisplayName: Демонический танец
+        // Description: Магический урон увеличен на 20%
     }
 
     EmergencyAirTank: {
-        // DisplayName: Emergency Air Tank
-        // Description: Your breath will be replenished if it reaches critical level
+        // DisplayName: Аварийный баллон с воздухом
+        // Description: Ваше дыхание будет восстановлено, если оно достигнет критического уровня
     }
 
     EscapeRocketBuff: {
-        // DisplayName: Escape Rocket
-        // Description: The fiery thrusters are on full blast!
+        // DisplayName: Спасательная ракета
+        // Description: Огненные ускорители работают на полную мощность!
     }
 
     ExplosiveCoatingBuff: {
-        // DisplayName: Thrown Weapon Imbue : Explosive
-        // Description: Throwing damage has a chance to burst, setting nearby enemies on fire
+        // DisplayName: Смазанное метательное оружие : взрывчатость
+        // Description: Метательные атаки могут взорваться, поджигая ближайших врагов
     }
 
     FishRepellentBuff: {
@@ -1667,13 +1667,13 @@ Buffs: {
     }
 
     PurifiersRingBuff: {
-        // DisplayName: Purifier's Ring
-        // Description: From now on, there will be no more darkness...
+        // DisplayName: Кольцо очистителя
+        // Description: Теперь нет места для тьмы...
     }
 
     MoleCrateBuff: {
-        // DisplayName: Skull Cat
-        // Description: Time for a super animal adventure
+        // DisplayName: Черекопот
+        // Description: Настало время приключений с супер зверушкой
     }
 }
 
@@ -1684,7 +1684,7 @@ Conditions: {
     // DownedViscount: "{$NPCs.Viscount.DisplayName} has been defeated"
     // DownedBuriedChampion: "{$NPCs.BuriedChampion.DisplayName} has been defeated"
     // DownedStarScouter: "{$NPCs.StarScouter.DisplayName} has been defeated"
-    // DownedBoreanStrider: "{$NPCs.BoreanStrider.DisplayName} has been defeated"
+    // DownedBoreanStrider: "{$NPCs.BoreanStrider.DisplayName} побеждён"
     // DownedFallenBeholder: "{$NPCs.FallenBeholder.DisplayName} has been defeated"
     // DownedLich: "{$NPCs.Lich.DisplayName} has been defeated"
     // DownedForgottenOne: "{$NPCs.ForgottenOne.DisplayName} has been defeated"
@@ -1713,8 +1713,8 @@ DropConditions: {
 
 Empowerments: {
     AquaticAbility: {
-        // DisplayName: Aquatic Ability
-        // Tooltip: +{0}% underwater breath & speed
+        // DisplayName: Водное мастерство
+        // Tooltip: +{0}% длительность дыхания под водой и скорость
     }
 
     AttackSpeed: {
@@ -1744,72 +1744,72 @@ Empowerments: {
 
     EmpowermentProlongation: {
         // DisplayName: Продление усиления
-        // Tooltip: +{0} {^0:секунда;секунды;секунд}
+        // Tooltip: +{0} сек.
     }
 
     FlatDamage: {
-        // DisplayName: Flat Damage
-        // Tooltip: +{0} flat damage
+        // DisplayName: Фиксированный урон
+        // Tooltip: +{0} фиксированного урона
     }
 
     FlightTime: {
-        // DisplayName: Flight Time
-        // Tooltip: +{0}% flight time
+        // DisplayName: Время полёта
+        // Tooltip: +{0}% времени полета
     }
 
     InvincibilityFrames: {
-        // DisplayName: Invincibility Frames
-        // Tooltip: +{0} sec. of after hit invincibility
+        // DisplayName: Кадры неуязвимости
+        // Tooltip: +{0} сек. неуязвимости после получения удара
     }
 
     JumpHeight: {
-        // DisplayName: Jump Height
-        // Tooltip: +{0} {^0:block;blocks} of jump height
+        // DisplayName: Высота прыжка
+        // Tooltip: +{0} {^0:блок;блока;блоков} высоты прыжка
     }
 
     LifeRegeneration: {
-        // DisplayName: Life Regeneration
-        // Tooltip: +{0} life/sec
+        // DisplayName: Регенерация здоровья
+        // Tooltip: +{0} здоровья/сек
     }
 
     MovementSpeed: {
-        // DisplayName: Movement Speed
-        // Tooltip: +{0}% movement speed
+        // DisplayName: Скорость передвижения
+        // Tooltip: +{0}% скорости передвижения
     }
 
     NotImplemented: {
-        // DisplayName: Not Implemented
-        // Tooltip: not implemented
+        // DisplayName: Не реализовано
+        // Tooltip: Не реализовано
     }
 
     ResourceConsumptionChance: {
-        // DisplayName: Resource Consumption Chance
-        // Tooltip: +{0}% chance to save resource
+        // DisplayName: Шанс на использование ресурсов
+        // Tooltip: +{0}% шанс не использовать ресурсы
     }
 
     ResourceGrabRange: {
-        // DisplayName: Resource Grab Range
-        // Tooltip: +{0} resource item grab range
+        // DisplayName: Дальность подбора ресурсов
+        // Tooltip: +{0} дальности подбора предметов ресурсов
     }
 
     ResourceMaximum: {
-        // DisplayName: Resource Maximum
-        // Tooltip: +{0}% maximum resource
+        // DisplayName: Максимальный запас ресурсов
+        // Tooltip: +{0}% максимального запаса ресурсов
     }
 
     ResourceRegen: {
-        // DisplayName: Resource Regen
-        // Tooltip: +{0}% resource regeneration
+        // DisplayName: Восстановление ресурсов
+        // Tooltip: +{0}% скорости восстановления ресурсов
     }
 
-    // ItemTopTooltip: Playing empowers players with bonus:
+    // ItemTopTooltip: Игра на инструменте усиливает следующими бонусами:
     // EmpowermentNameLevel: "{$Common.Concatenate}"
 }
 
 InfoDisplays: {
     HPSInfoDisplay: {
-        // DisplayName: heals per second
-        // DisplayValue: "{0} heals per second"
+        // DisplayName: Лечение в секунду
+        // DisplayValue: "{0} ед. лечения в секунду"
     }
 }
 
@@ -1840,12 +1840,12 @@ Items: {
     }
 
     ForgottenOneMask: {
-        // DisplayName: Forgotten One Mask
+        // DisplayName: Маска Забытого
         // Tooltip: ""
     }
 
     ForgottenOneTrophy: {
-        // DisplayName: Forgotten One Trophy
+        // DisplayName: Трофей забытого
         // Tooltip: ""
     }
 
@@ -1887,20 +1887,20 @@ Items: {
     }
 
     TrenchSpitter: {
-        // DisplayName: Trench Spitter
-        // Tooltip: Rapidly fires two bullets at once
+        // DisplayName: Окопный Плевун
+        // Tooltip: Стремительно стреляет двумя пулями за раз
     }
 
     WhisperingHood: {
-        // DisplayName: Whispering Hood
+        // DisplayName: Шепчущий капюшон
         /* Tooltip:
             '''
-            Corrupts your radiant powers
-            25% decreased non-radiant damage
-            25% increased radiant damage
-            12% increased radiant critical strike chance
-            Maximum mana increased by 40
-            Healing spells will heal an additional 1 life
+            Искажает вашу лучезарную силу
+            Снижает весь урон, кроме лучезарного, на 25%
+            Увеличивает лучезарный урон на 25%
+            Увеличивает лучезарный шанс критического удара на 12%
+            Увеличивает максимальный запас маны на 40
+            Исцеляющие заклинания восстанавливают дополнительно 1 единицу здоровья
             ''' */
 
         SetBonusQuotes: {
@@ -1919,7 +1919,7 @@ Items: {
             // StarScouter: Their interference makes little difference...
             // WallofFlesh: Yes... Continue on your quest, 'Hero'...
             // FallenBeholder: Pathetic...
-            // BoreanStrider: To adapt and overcome is our specialty...
+            // BoreanStrider: Умение адаптироваться и преодолевать - наша сила...
             // QueenSlime: Self proclaimed leaders... Servants all the same...
             // SkeletronPrime: You continue to demonstrate your rage...
             // TheDestroyer: You continue to demonstrate your power...
@@ -1943,63 +1943,63 @@ Items: {
     }
 
     WhisperingLeggings: {
-        // DisplayName: Whispering Leggings
+        // DisplayName: Шепчущие поножи
         /* Tooltip:
             '''
-            25% decreased non-radiant damage
-            25% increased radiant damage
-            6% increased radiant critical strike chance
-            15% decreased mana cost
-            Healing spells will heal an additional 1 life
+            Снижает весь урон, кроме лучезарного, на 25%
+            Увеличивает лучезарный урон на 25%
+            Увеличивает лучезарный шанс критического удара на 6%
+            Снижает расход маны на 15%
+            Исцеляющие заклинания восстанавливают дополнительно 1 единицу здоровья
             ''' */
     }
 
     WhisperingTabard: {
-        // DisplayName: Whispering Tabard
+        // DisplayName: Шепчущий табард
         /* Tooltip:
             '''
-            35% decreased non-radiant damage
-            35% increased radiant damage
-            8% increased radiant critical strike chance
-            Healing spells will heal an additional 2 life
+            Снижает весь урон, кроме лучезарного, на 35%
+            Увеличивает лучезарный урон на 35%
+            Увеличивает лучезарный шанс критического удара на 8%
+            Исцеляющие заклинания восстанавливают дополнительно 2 единицы здоровья
             ''' */
     }
 
     Aerial: {
-        // DisplayName: Aerial
-        // Tooltip: Releases damaging feathers when nearby enemies
+        // DisplayName: Воздушный
+        // Tooltip: Выпускает наносящие урон перья, когда рядом враги
     }
 
     ArcaneArmorFabricator: {
-        // DisplayName: Arcane Armor Fabricator
-        // Tooltip: Allows you to craft unique weapons and armors
+        // DisplayName: Таинственный бронесоздатель
+        // Tooltip: Позволяет создавать уникальное оружие и броню
     }
 
     BloomingBlade: {
-        // DisplayName: Blooming Blade
-        // Tooltip: Damaging enemies grants brief life recovery
+        // DisplayName: Цветущий клинок
+        // Tooltip: При нанесении урона врагам кратковременно восполняет здоровье
     }
 
     BloomingBow: {
-        // DisplayName: Blooming Bow
+        // DisplayName: Цветущий лук
         /* Tooltip:
             '''
-            Turns wooden arrows into flower arrows which can be guided by right clicking
-            Damaging enemies grants brief life recovery
+            Превращает деревянные стрелы в цветочные, которые можно направлять нажатием <right>
+            При нанесении урона врагам кратковременно восполняет здоровье
             ''' */
     }
 
     BloomingShield: {
-        // DisplayName: Blooming Shield
-        // Tooltip: When out of combat, your life recovery will increase up to 5 over time
+        // DisplayName: Цветущий щит
+        // Tooltip: Вне боя, восполнение здоровья постепенно увеличивается до 5
     }
 
     BloomingStaff: {
-        // DisplayName: Blooming Staff
+        // DisplayName: Цветущий посох
         /* Tooltip:
             '''
-            Shoots a volley of petals
-            Damaging enemies grants brief life recovery
+            Стреляет залпом лепестков
+            При нанесении урона врагам кратковременно восполняет здоровье
             ''' */
     }
 
@@ -2018,11 +2018,11 @@ Items: {
     }
 
     FlightBoots: {
-        // DisplayName: Flight Boots
+        // DisplayName: Ботинки полёта
         /* Tooltip:
             '''
-            'The sky is your playing field'
-            10% increased movement speed
+            'Небо - это ваше игровое поле'
+            Увеличивает скорость передвижения на 10%
             ''' */
     }
 
@@ -2379,7 +2379,7 @@ Items: {
     }
 
     Cloth: {
-        // DisplayName: Cloth
+        // DisplayName: Ткань
         // Tooltip: ""
     }
 
@@ -2422,23 +2422,23 @@ Items: {
     }
 
     CreativityPotion: {
-        // DisplayName: Creativity Potion
-        // Tooltip: Doubles your base inspiration drop chance
+        // DisplayName: Зелье креативности
+        // Tooltip: Увеличивает вдвое базовый шанс получить вдохновение
     }
 
     CriersCap: {
-        // DisplayName: Crier's Cap
-        // Tooltip: Increases inspiration regeneration rate by 4%
+        // DisplayName: Шляпа глашатая
+        // Tooltip: Увеличивает скорость восстановления вдохновения на 4%
     }
 
     CriersLeggings: {
-        // DisplayName: Crier's Leggings
-        // Tooltip: Increases inspiration regeneration rate by 4%
+        // DisplayName: Поножи глашатая
+        // Tooltip: Увеличивает скорость восстановления вдохновения на 4%
     }
 
     CriersSash: {
-        // DisplayName: Crier's Sash
-        // Tooltip: Increases inspiration regeneration rate by 7%
+        // DisplayName: Пояс глашатая
+        // Tooltip: Увеличивает скорость восстановления вдохновения на 7%
     }
 
     CyberPunkHeadset: {
@@ -3468,32 +3468,32 @@ Items: {
     }
 
     YewWoodLute: {
-        // DisplayName: Yew Wood Lute
-        // Tooltip: Releases a boosted burst of sound
+        // DisplayName: Тисовая лютня
+        // Tooltip: Выпускает усиленный звуковой импульс
     }
 
     AirWalkers: {
-        // DisplayName: Air Walkers
+        // DisplayName: Воздушные бегуны
         /* Tooltip:
             '''
-            5% increased movement speed
-            Allows you to walk and jump on air briefly after leaving the ground
+            Увеличивает скорость передвижения на 5%
+            Позволяет недолго ходить и прыгать по воздуху после отрыва от земли
             ''' */
     }
 
     AmberRing: {
-        // DisplayName: Amber Ring
-        // Tooltip: Increases summon damage by 1
+        // DisplayName: Кольцо с янтарём
+        // Tooltip: Увеличивает урон призывателя на 1
     }
 
     AmethystRing: {
-        // DisplayName: Amethyst Ring
-        // Tooltip: Increases armor penetration by 1
+        // DisplayName: Кольцо с аметистом
+        // Tooltip: Увеличивает пробивание брони на 1
     }
 
     AquamarineRing: {
-        // DisplayName: Aquamarine Ring
-        // Tooltip: Increases radiant damage by 1
+        // DisplayName: Кольцо с аквамарином
+        // Tooltip: Увеличивает лучезарный урон на 1
     }
 
     ArtificersFocus: {
@@ -3531,11 +3531,11 @@ Items: {
     }
 
     CopperBuckler: {
-        // DisplayName: Copper Buckler
+        // DisplayName: Медный баклер
         /* Tooltip:
             '''
-            Defense increased by 1
-            You constantly generate an 8 life shield
+            Увеличивает защиту на 1
+            Непрерывно генерирует до 8 единиц жизненного щита
             ''' */
     }
 
@@ -3666,16 +3666,16 @@ Items: {
     }
 
     LeadShield: {
-        // DisplayName: Lead Shield
+        // DisplayName: Свинцовый щит
         /* Tooltip:
             '''
-            Defense increased by 1
-            You constantly generate an 11 life shield
+            Увеличивает защиту на 1
+            Непрерывно генерирует до 11 единиц жизненного щита
             ''' */
     }
 
     LeatherGlove: {
-        // DisplayName: Leather Glove
+        // DisplayName: Кожаная перчатка
         // Tooltip: ""
     }
 
@@ -3788,71 +3788,71 @@ Items: {
     }
 
     TheRing: {
-        // DisplayName: The Ring
+        // DisplayName: Кольцо
         /* Tooltip:
             '''
-            Increases all damage by 1
-            Increases armor penetration by 1
-            Increases critical strike chance by 4%
+            Увеличивает весь урон на 1
+            Увеличивает пробивание брони на 1
+            Увеличивает шанс критического удара на 4%
             ''' */
     }
 
     TinBuckler: {
-        // DisplayName: Tin Buckler
+        // DisplayName: Оловянный баклер
         /* Tooltip:
             '''
-            Defense increased by 1
-            You constantly generate a 9 life shield
+            Увеличивает защиту на 1
+            Непрерывно генерирует до 9 единиц жизненного щита
             ''' */
     }
 
     TopazRing: {
-        // DisplayName: Topaz Ring
-        // Tooltip: Increases throwing damage by 1
+        // DisplayName: Кольцо с топазом
+        // Tooltip: Увеличивает метательный урон на 1
     }
 
     TravelersBoots: {
-        // DisplayName: Traveler's Boots
+        // DisplayName: Ботинки путешественника
         /* Tooltip:
             '''
-            5% increased movement speed
-            Your dash will reach its peak faster
+            Увеличивает скорость передвижения на 5%
+            Рывок достигает максимальной скорости быстрее
             ''' */
     }
 
     TungstenBulwark: {
-        // DisplayName: Tungsten Bulwark
+        // DisplayName: Вольфрамовый оплот
         /* Tooltip:
             '''
-            Defense increased by 2
-            You constantly generate a 13 life shield
+            Увеличивает защиту на 2
+            Непрерывно генерирует до 13 единиц жизненного щита
             ''' */
     }
 
     TurboBoots: {
-        // DisplayName: Turbo Boots
+        // DisplayName: Турбо-ботинки
         /* Tooltip:
             '''
-            5% increased movement speed
-            Increases jump height
+            Увеличивает скорость передвижения на 5%
+            Увеличивает высоту прыжка
             ''' */
     }
 
     VileFlailCore: {
-        // DisplayName: Vile Flail-Core
+        // DisplayName: Мерзкий цеп-ядро
         /* Tooltip:
             '''
-            Flail weapons have a chance to release a vile spike ball on hit
-            The vile spike ball applies ichor to damaged enemies
+            Цепное оружие может выпустить мерзкий шипастый шар при ударе
+            Мерзкий шипастый шар накладывает дебафф «{$BuffName.Ichor}» на поражённых врагов
             ''' */
     }
 
     WeightedWinglets: {
-        // DisplayName: Weighted Winglets
+        // DisplayName: Утяжелённые летуны
         /* Tooltip:
             '''
-            5% increased movement speed
-            Allows you to control the rate of your descent with UP and DOWN
+            Увеличивает скорость передвижения на 5%
+            Позволяет контролировать скорость падения клавишами {$Key.UP} и {$Key.DOWN}
             ''' */
     }
 
@@ -3866,23 +3866,23 @@ Items: {
     }
 
     BoreanFangStaff: {
-        // DisplayName: Borean Fang Staff
-        // Tooltip: Releases a volley of freezing fangs
+        // DisplayName: Борейский посох клыков
+        // Tooltip: Выпускает залп замораживающих клыков
     }
 
     BoreanStriderMask: {
-        // DisplayName: Borean Strider Mask
+        // DisplayName: Маска Борейского шагателя
         // Tooltip: ""
     }
 
     BoreanStriderTrophy: {
-        // DisplayName: Borean Strider Trophy
+        // DisplayName: Трофей Борейского шагателя
         // Tooltip: ""
     }
 
     ForgottenLetter: {
-        // DisplayName: Forgotten Letter
-        // Tooltip: Summons a Snowy Owl to watch over you
+        // DisplayName: Забытое письмо
+        // Tooltip: Призывает снежную сову, которая присматривает за вами
     }
 
     FreezeRay: {
@@ -4062,8 +4062,8 @@ Items: {
     }
 
     BouncingFlamePotion: {
-        // DisplayName: Bouncing Flame Potion
-        // Tooltip: Causes your flaming debuffs to spread among nearby enemies
+        // DisplayName: Зелье отскакивающего пламени
+        // Tooltip: Позволяет вашим огненным дебаффам распространяться среди ближайших врагов
     }
 
     BubbleTea: {
@@ -4117,8 +4117,8 @@ Items: {
     }
 
     DeepFreezeCoatingItem: {
-        // DisplayName: Deep Freeze Coating
-        // Tooltip: Throwing attacks will have a chance to significantly hinder the hit enemies movement
+        // DisplayName: Покрытие глубокой заморозки
+        // Tooltip: Метательные атаки могут значительно затруднить передвижение поражённых врагов
     }
 
     EtherianGrog: {
@@ -4131,8 +4131,8 @@ Items: {
     }
 
     ExplosiveCoatingItem: {
-        // DisplayName: Explosive Coating
-        // Tooltip: Throwing attacks will have a chance to burst, causing nearby enemies to melt
+        // DisplayName: Взрывное покрытие
+        // Tooltip: Метательные атаки могут взорваться, заставляя ближайших врагов расплавляться
     }
 
     FishRepellent: {
@@ -5615,7 +5615,7 @@ Items: {
     }
 
     DarkNexusLeggings: {
-        // DisplayName: Леггинсы тёмного нексуса
+        // DisplayName: Поножи тёмного нексуса
         // Tooltip: ""
     }
 
@@ -6365,11 +6365,11 @@ Items: {
     }
 
     MoleCrate: {
-        // DisplayName: Mole Crate
+        // DisplayName: Ящик крота
         /* Tooltip:
             '''
-            'A souvenir friend from an animal park!'
-            Releases a strange cat to follow you around
+            'Сувенирный приятель из зоопарка!'
+            Выпускает необычную кошку, следящую за вами
             ''' */
     }
 
@@ -6671,24 +6671,24 @@ Items: {
     }
 
     PurifiersCap: {
-        // DisplayName: Purifier's Cap
-        // Tooltip: "'Purification in progress...'"
-        // VanityConfigName: Purifier's clothes
+        // DisplayName: Кепка очистителя
+        // Tooltip: "'Очищение в процессе...'"
+        // VanityConfigName: Одежда очистителя
     }
 
     PurifiersCleats: {
-        // DisplayName: Purifier's Cleats
-        // Tooltip: "'Purification in progress...'"
+        // DisplayName: Бутсы очистителя
+        // Tooltip: "'Очищение в процессе...'"
     }
 
     PurifiersUniform: {
-        // DisplayName: Purifier's Uniform
-        // Tooltip: "'Purification in progress...'"
+        // DisplayName: Униформа очистителя
+        // Tooltip: "'Очищение в процессе...'"
     }
 
     PurifiersRing: {
-        // DisplayName: Purifier's Ring
-        // Tooltip: "'Purification in progress...'"
+        // DisplayName: Кольцо очистителя
+        // Tooltip: "'Очищение в процессе...'"
     }
 
     QuakeGauntlet: {
@@ -8516,7 +8516,7 @@ Items: {
 
     AloeLeaf: {
         // DisplayName: Лист алоэ
-        // Tooltip: Исцеление союзника усиливает его регенерацию здоровья, добавляя 2 единицы на 10 секунд
+        // Tooltip: Исцеление союзника усиливает его восполнение здоровья, добавляя 2 единицы на 10 секунд
     }
 
     AncientAegis: {
@@ -9638,23 +9638,23 @@ Items: {
     }
 
     PhoenixStaff: {
-        // DisplayName: Phoenix Staff
+        // DisplayName: Посох феникса
         // Tooltip: "{$Common.Tooltips.ShoulderGuardianLimit}"
-        // RespawnTime: Summons a mythical phoenix that decreases the respawn time of nearby allies by [c/5aff5a:{0}%]
-        // RespawnLife: Additionally, nearby allies respawn with [c/5aff5a:{0}%] more life
+        // RespawnTime: Призывает мифического феникса, который сокращает время возрождения ближайших союзников на [c/5aff5a:{0}%]
+        // RespawnLife: Кроме того, ближайшие союзники возрождаются с [c/5aff5a:{0}%] дополнительного здоровья
     }
 
     Pill: {
-        // DisplayName: Pill
+        // DisplayName: Пилюля
         /* Tooltip:
             '''
-            Throws out a bouncing pill
-            Right click to throw a pill that increases an allies life recovery briefly
+            Бросает отскакивающую пилюлю
+            Нажмите <right>, чтобы бросить пилюлю, которая на короткое время увеличивает восполнение здоровья союзника
             ''' */
     }
 
     PocketGuardian: {
-        // DisplayName: Pocket Guardian
+        // DisplayName: Карманный страж
         /* Tooltip:
             '''
             Rapidly heals your selected pocket
@@ -9663,20 +9663,20 @@ Items: {
     }
 
     PoisonPrickler: {
-        // DisplayName: Poison Prickler
+        // DisplayName: Ядовитый колюш
         /* Tooltip:
             '''
-            Pokes enemies with a poisoned needle
-            Right click to spray a mist of toxins at the cost of mana
+            Прокалывает врагов ядовитой иглой
+            Нажмите <right>, чтобы распылить туман токсинов с расходом маны
             ''' */
     }
 
     Prophecy: {
-        // DisplayName: Prophecy
+        // DisplayName: Пророчество
         /* Tooltip:
             '''
-            Fires a cross of returning holy energy
-            Heals you for a lesser amount upon returning if an ally was healed
+            Выпускает крест возвращающейся святой энергии
+            Если союзник был исцелён, восстанавливает вам небольшое количество здоровья при возвращении
             ''' */
     }
 
@@ -10529,12 +10529,12 @@ Items: {
     }
 
     SpiritBand: {
-        // DisplayName: Spirit Band
+        // DisplayName: Браслет духа
         /* Tooltip:
             '''
-            'Your body has become incorporeal...'
-            While active, damage taken cannot exceed 150
-            This effect can only occur once every 10 seconds
+            'Ваше тело стало бестелесным...'
+            Пока действует, получаемый урон не может превышать 150
+            Этот эффект может срабатывать лишь раз в 10 секунд
             ''' */
     }
 
@@ -11054,8 +11054,8 @@ Items: {
     }
 
     DevilDagger: {
-        // DisplayName: Devil Dagger
-        // Tooltip: Killing enemies will boost your magic damage briefly
+        // DisplayName: Дьявольский кинжал
+        // Tooltip: Убийство врагов ненадолго увеличивает ваш урон
     }
 
     DevilsReach: {
@@ -11806,17 +11806,17 @@ Items: {
     }
 
     CactusFruit: {
-        // DisplayName: Cactus Fruit
+        // DisplayName: Опунция
         /* Tooltip:
             '''
-            'Despite the spikes, it looks kinda tasty...'
-            Grants immunity to status effect debuffs upon consumption
+            'Несмотря на колючки, он выглядит довольно аппетитно…'
+            При употреблении даёт невосприимчивость к дебаффам, влияющим на состояние 
             ''' */
     }
 
     Chum: {
-        // DisplayName: Chum
-        // Tooltip: "'This chum will surely attract some hungry sea life'"
+        // DisplayName: Подкормка
+        // Tooltip: "'Эта подкормка наверняка привлечёт голодных морских обитателей'"
     }
 
     CloudyChewToy: {
@@ -13525,264 +13525,264 @@ Items: {
     }
 
     LodestoneBathtub: {
-        // DisplayName: Lodestone Bathtub
+        // DisplayName: Магнетитовая ванна
         // Tooltip: ""
     }
 
     LodestoneBed: {
-        // DisplayName: Lodestone Bed
+        // DisplayName: Магнетитовая кровать
         // Tooltip: ""
     }
 
     LodestoneBookcase: {
-        // DisplayName: Lodestone Bookcase
+        // DisplayName: Магнетитовый книжный шкаф
         // Tooltip: ""
     }
 
     LodestoneCandelabra: {
-        // DisplayName: Lodestone Candelabra
+        // DisplayName: Магнетитовый подсвечник
         // Tooltip: ""
     }
 
     LodestoneCandle: {
-        // DisplayName: Lodestone Candle
+        // DisplayName: Магнетитовая свеча
         // Tooltip: ""
     }
 
     LodestoneChair: {
-        // DisplayName: Lodestone Chair
+        // DisplayName: Магнетитовый стул
         // Tooltip: ""
     }
 
     LodestoneChandelier: {
-        // DisplayName: Lodestone Chandelier
+        // DisplayName: Магнетитовая люстра
         // Tooltip: ""
     }
 
     LodestoneChest: {
-        // DisplayName: Lodestone Chest
+        // DisplayName: Магнетитовый сундук
         // Tooltip: ""
     }
 
     LodestoneChest_Trapped: {
-        // DisplayName: Trapped Lodestone Chest
+        // DisplayName: Магнетитовый сундук-ловушка
         // Tooltip: ""
     }
 
     LodestoneClock: {
-        // DisplayName: Lodestone Clock
+        // DisplayName: Магнетитовые часы
         // Tooltip: ""
     }
 
     LodestoneCup: {
-        // DisplayName: Lodestone Cup
+        // DisplayName: Магнетитовая чашка
         // Tooltip: ""
     }
 
     LodestoneDoor: {
-        // DisplayName: Lodestone Door
+        // DisplayName: Магнетитовая дверь
         // Tooltip: ""
     }
 
     LodestoneDresser: {
-        // DisplayName: Lodestone Dresser
+        // DisplayName: Магнетитовый комод
         // Tooltip: ""
     }
 
     LodestoneLamp: {
-        // DisplayName: Lodestone Lamp
+        // DisplayName: Магнетитовая лампа
         // Tooltip: ""
     }
 
     LodestoneLantern: {
-        // DisplayName: Lodestone Lantern
+        // DisplayName: Магнетитовый фонарь
         // Tooltip: ""
     }
 
     LodestonePiano: {
-        // DisplayName: Lodestone Piano
+        // DisplayName: Магнетитовое пианино
         // Tooltip: ""
     }
 
     LodestonePlatform: {
-        // DisplayName: Lodestone Platform
+        // DisplayName: Магнетитовая платформа
         // Tooltip: ""
     }
 
     LodestoneSink: {
-        // DisplayName: Lodestone Sink
+        // DisplayName: Магнетитовая раковина
         // Tooltip: ""
     }
 
     LodestoneSlab: {
-        // DisplayName: Lodestone Slab
+        // DisplayName: Магнетитовая плитка
         // Tooltip: ""
     }
 
     LodestoneSlabWall: {
-        // DisplayName: Lodestone Slab Wall
+        // DisplayName: Стена из магнетитовой плитки
         // Tooltip: ""
     }
 
     LodestoneSofa: {
-        // DisplayName: Lodestone Sofa
+        // DisplayName: Магнетитовый диван
         // Tooltip: ""
     }
 
     LodestoneTable: {
-        // DisplayName: Lodestone Table
+        // DisplayName: Магнетитовый стол
         // Tooltip: ""
     }
 
     LodestoneToilet: {
-        // DisplayName: Lodestone Toilet
+        // DisplayName: Магнетитовый унитаз
         // Tooltip: ""
     }
 
     LodestoneWorkbench: {
-        // DisplayName: Lodestone Work Bench
+        // DisplayName: Магнетитовый верстак
         // Tooltip: ""
     }
 
     MarineBathtub: {
-        // DisplayName: Marine Bathtub
+        // DisplayName: Морская ванна
         // Tooltip: ""
     }
 
     MarineBed: {
-        // DisplayName: Marine Bed
+        // DisplayName: Морская кровать
         // Tooltip: ""
     }
 
     MarineBookcase: {
-        // DisplayName: Marine Bookcase
+        // DisplayName: Морской книжный шкаф
         // Tooltip: ""
     }
 
     MarineCandelabra: {
-        // DisplayName: Marine Candelabra
+        // DisplayName: Морской подсвечник
         // Tooltip: ""
     }
 
     MarineCandle: {
-        // DisplayName: Marine Candle
+        // DisplayName: Морская свеча
         // Tooltip: ""
     }
 
     MarineChair: {
-        // DisplayName: Marine Chair
+        // DisplayName: Морской стул
         // Tooltip: ""
     }
 
     MarineChandelier: {
-        // DisplayName: Marine Chandelier
+        // DisplayName: Морская люстра
         // Tooltip: ""
     }
 
     MarineChest: {
-        // DisplayName: Marine Chest
+        // DisplayName: Морской сундук
         // Tooltip: ""
     }
 
     MarineChest_Trapped: {
-        // DisplayName: Trapped Marine Chest
+        // DisplayName: Морской сундук-ловушка
         // Tooltip: ""
     }
 
     MarineClock: {
-        // DisplayName: Marine Clock
+        // DisplayName: Морские часы
         // Tooltip: ""
     }
 
     MarineCup: {
-        // DisplayName: Marine Cup
+        // DisplayName: Морская чашка
         // Tooltip: ""
     }
 
     MarineDoor: {
-        // DisplayName: Marine Door
+        // DisplayName: Морская дверь
         // Tooltip: ""
     }
 
     MarineDresser: {
-        // DisplayName: Marine Dresser
+        // DisplayName: Морской комод
         // Tooltip: ""
     }
 
     MarineKelpPlanterBox: {
-        // DisplayName: Marine Kelp Planter Box
-        // Tooltip: Can only grow Marine Kelp
+        // DisplayName: Кадка для морских водорослей
+        // Tooltip: Можно выращивать только морские водоросли
     }
 
     MarineLamp: {
-        // DisplayName: Marine Lamp
+        // DisplayName: Морская лампа
         // Tooltip: ""
     }
 
     MarineLantern: {
-        // DisplayName: Marine Lantern
+        // DisplayName: Морской фонарь
         // Tooltip: ""
     }
 
     MarinePiano: {
-        // DisplayName: Marine Piano
+        // DisplayName: Морское пианино
         // Tooltip: ""
     }
 
     MarinePlatform: {
-        // DisplayName: Refined Marine Platform
+        // DisplayName: Обработанная морская платформа
         // Tooltip: ""
     }
 
     MarineSink: {
-        // DisplayName: Marine Sink
+        // DisplayName: Морская раковина
         // Tooltip: ""
     }
 
     MarineSofa: {
-        // DisplayName: Marine Sofa
+        // DisplayName: Морской диван
         // Tooltip: ""
     }
 
     MarineTable: {
-        // DisplayName: Marine Table
+        // DisplayName: Морской стол
         // Tooltip: ""
     }
 
     MarineToilet: {
-        // DisplayName: Marine Toilet
+        // DisplayName: Морской унитаз
         // Tooltip: ""
     }
 
     MarineWall: {
-        // DisplayName: Marine Wall
+        // DisplayName: Морская стена
         // Tooltip: ""
     }
 
     MarineWorkbench: {
-        // DisplayName: Marine Work Bench
+        // DisplayName: Морской верстак
         // Tooltip: ""
     }
 
     MarshyAstroturf: {
-        // DisplayName: Marshy Astroturf
-        // Tooltip: Can grow marshy weeds and yew trees
+        // DisplayName: Трясинный астрогазон
+        // Tooltip: Можно выращивать трясинные сорняки и тисовые деревья
     }
 
     MediciteBrick: {
-        // DisplayName: Medicite Brick
+        // DisplayName: Медицитовый кирпич
         // Tooltip: ""
     }
 
     MediciteBrickWall: {
-        // DisplayName: Medicite Brick Wall
+        // DisplayName: Медицитовая кирпичная стена
         // Tooltip: ""
     }
 
-    // MiniBossMusicBox.MiniBoss: Mini-Boss
+    // MiniBossMusicBox.MiniBoss: Мини-босс
 
     MinotaurStatue: {
-        // DisplayName: Minotaur Statue
+        // DisplayName: Статуя минотавра
         // Tooltip: ""
     }
 
@@ -14357,7 +14357,7 @@ Items: {
     }
 
     BoreanStriderRelic: {
-        // DisplayName: Borean Strider Relic
+        // DisplayName: Реликвия Борейского шагателя
         // Tooltip: ""
     }
 
@@ -17606,68 +17606,68 @@ Items: {
     }
 
     TheBlackBlade: {
-        // DisplayName: The Black Blade
+        // DisplayName: Кромешный клинок
         /* Tooltip:
             '''
-            Unleashes a dark wind slice
-            Dealing damage grants you stacking damage and withers enemies at 50 stacks
+            Высвобождает тёмный ветряной разрез
+            С каждым попаданием по цели накапливает увеличивающийся урон и изнуряет врагов при 50 стаках
             ''' */
     }
 
     TheBlackBow: {
-        // DisplayName: The Black Bow
+        // DisplayName: Кромешный лук
         /* Tooltip:
             '''
-            Fires a multi-shot volley of arrows
-            Dealing damage grants you stacking damage and withers enemies at 50 stacks
+            Стреляет залпом из нескольких стрел
+            С каждым попаданием по цели накапливает увеличивающийся урон и изнуряет врагов при 50 стаках
             ''' */
     }
 
     TheBlackCane: {
-        // DisplayName: The Black Cane
+        // DisplayName: Кромешная трость
         /* Tooltip:
             '''
-            Summons a pair of shadow weapons that attack enemies
-            Dealing damage grants you stacking damage and withers enemies at 50 stacks
+            Призывает пару теневых оружий, атакующих врагов
+            С каждым попаданием по цели накапливает увеличивающийся урон и изнуряет врагов при 50 стаках
             ''' */
     }
 
     TheBlackDagger: {
-        // DisplayName: The Black Dagger
+        // DisplayName: Кромешный кинжал
         /* Tooltip:
             '''
-            Right click to throw a volley of enemy sticking daggers
-            Dealing damage grants you stacking damage and withers enemies at 50 stacks
-            Overuse of this weapon exhausts you, massively reducing its damage
-            Killing enemies recovers some of your exhaustion
+            Нажмите <right>, чтобы бросить залп из кинжалов, вонзающихся во врагов
+            С каждым попаданием по цели накапливает увеличивающийся урон и изнуряет врагов при 50 стаках
+            Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
+            Убивая врагов, восстанавливает часть изматывания
             ''' */
     }
 
     TheBlackOtamatone: {
-        // DisplayName: The Black Otamatone
+        // DisplayName: Кромешный отаматон
         /* Tooltip:
             '''
-            Creates up to two otamatone which barrage each other with noise
-            The two otamatone must be within a set range of one another to work
-            Dealing damage grants you stacking damage and withers enemies at 50 stacks
+            Создаёт до двух отаматонов, которые обмениваются шумовыми залпами
+            Два отаматона должны быть рядом друг с другом для активации
+            С каждым попаданием по цели накапливает увеличивающийся урон и изнуряет врагов при 50 стаках
             ''' */
     }
 
     TheBlackScythe: {
-        // DisplayName: The Black Scythe
+        // DisplayName: Кромешная коса
         /* Tooltip:
             '''
-            Rapidly spins a shadow scythe all around you
-            Dealing damage grants you stacking damage and withers enemies at 50 stacks
+            Стремительно вращает теневую косу вокруг себя
+            С каждым попаданием по цели накапливает увеличивающийся урон и изнуряет врагов при 50 стаках
             ''' */
     }
 
     TheBlackStaff: {
-        // DisplayName: The Black Staff
+        // DisplayName: Кромешный посох
         /* Tooltip:
             '''
-            Fires a pulse of shadow creeping dark magic
-            Dealing damage grants you stacking damage and withers enemies at 50 stacks
+            Выпускает импульс теневой обволакивающей темной магии
+            С каждым попаданием по цели накапливает увеличивающийся урон и изнуряет врагов при 50 стаках
             ''' */
     }
 
@@ -17701,7 +17701,7 @@ Items: {
     }
 
     Whip: {
-        // DisplayName: Whip
+        // DisplayName: Хлыст
         // Tooltip: ""
     }
 
@@ -18605,7 +18605,7 @@ NPCs: {
     }
 
     BoreanStrider: {
-        // DisplayName: Borean Strider
+        // DisplayName: Борейский шагатель
         // BestiaryFlavorText: A species of arachnid hell-bent on surviving the harshness of a Terrarian blizzard. Something this stubborn is a danger to everyone.
 
         BossChecklistIntegration: {
@@ -18886,7 +18886,7 @@ NPCs: {
     }
 
     ForgottenOne: {
-        // DisplayName: Forgotten One
+        // DisplayName: Забытый
         // BestiaryFlavorText: A creature long forgotten by even the oldest Terrarians. It and its kind were sealed away centuries ago during a bloody war.
 
         BossChecklistIntegration: {
@@ -19401,9 +19401,9 @@ NPCs: {
     // LucidBubble.DisplayName: Lucid Bubble
 
     Omnicide: {
-        // DisplayName: Omnicide, the Life Defiler
-        // BestiaryNameOverride: Omnicide
-        // BestiaryFlavorText: The life defiler of reality, Omnicide represents all transition in the universe. It will judge those it deems worthy of its attention.
+        // DisplayName: Омницид, Осквернитель жизни
+        // BestiaryNameOverride: Омницид
+        // BestiaryFlavorText: Порабощающий жизнь разрушитель реальности, Омницид олицетворяет в себе все преобразования во вселенной. Он будет судить того, кого сочтёт достойным своего внимания.
     }
 
     DreamEater: {
@@ -21414,10 +21414,10 @@ Tiles: {
 }
 
 Keybinds: {
-    // ArmorAbility.DisplayName: Armor Ability
-    // AccessoryAbility.DisplayName: Accessory Ability
-    // ThrowingTechnique.DisplayName: Throwing Technique
-    // Encase.DisplayName: Encase
+    // ArmorAbility.DisplayName: Способность брони
+    // AccessoryAbility.DisplayName: Способность аксессуара
+    // ThrowingTechnique.DisplayName: Метательная техника
+    // Encase.DisplayName: Обволакивание
 }
 
 MonsterContracts: {
@@ -21577,11 +21577,11 @@ DeathText: {
 }
 
 ThrowerTechniques: {
-    // DisplayName: Technique: {0}
+    // DisplayName: Техника: {0}
     // TooltipBase: Нажмите клавишу '{$Keybinds.ThrowingTechnique.DisplayName}': {0}
-    // CostTooltip: Costs {0} {^0:technique point;technique points}
-    // UseToEnable: Sets your active technique on use | Deal throwing damage to build points
-    // UseToDisable: Technique Active | Use again to disable | Deal throwing damage to build points
+    // CostTooltip: Использует {0} {^0:очко;очка;очков} техники
+    // UseToEnable: Устанавливает активную технику при использовании | Наносите метательный урон для накопления очков
+    // UseToDisable: Техника активна | Нажмите повторно, чтобы отключить | Наносите метательный урон для накопления очков
 
     AbsoluteZero: {
         // DisplayName: Абсолютный нуль
@@ -21589,40 +21589,40 @@ ThrowerTechniques: {
     }
 
     BlindingDash: {
-        // DisplayName: Blinding Dash
-        // Description: Dash forward, stunning nearby enemies in the process
+        // DisplayName: Ослепляющий рывок
+        // Description: Совершает рывок вперёд, оглушая ближайших врагов на своём пути
     }
 
     BloodLotus: {
-        // DisplayName: Blood Lotus
+        // DisplayName: Кровавый лотос
         /* Description:
             '''
-            Stop in place and release a torrent of knives at the nearest enemy
-            Every knife heals you up to 10% of the damage dealt
+            Вы замираете на месте и выпускаете поток ножей в ближайшего врага
+            Каждый нож восстанавливает вам до 10% здоровья от нанесённого урона
             ''' */
     }
 
     CobraBite: {
-        // DisplayName: Cobra's Bite
+        // DisplayName: Укус кобры
         /* Description:
             '''
-            Throw out a spread of toxic fangs, which envenom damaged enemies
-            Has a guaranteed chance to critically strike enemies that are poisoned or envenomed
+            Бросает разброс токсичных клыков, которые накладывают дебафф «{$BuffName.Venom}» поражённых врагов
+            Имеется гарантированный шанс нанести критический удар врагам, подверженных дебаффу «{$BuffName.Poisoned}» или «{$BuffName.Venom}»
             ''' */
     }
 
     Decoy: {
-        // DisplayName: Decoy
+        // DisplayName: Приманка
         /* Description:
             '''
-            Call in an enemy decoy
-            The decoy will attempt to grab the attention of nearby enemies
+            Призывает вражескую приманку
+            Приманка попытается привлечь внимание ближайших врагов
             ''' */
     }
 
     GravityWell: {
-        // DisplayName: Gravity Well
-        // Description: Summon a gravity well upon your cursor's position, sucking in nearby enemies
+        // DisplayName: Гравитационная воронка
+        // Description: Призывает гравитационную воронку в позиции курсора, которая засасывает ближайших врагов
     }
 
     HiddenBlade: {
@@ -21922,15 +21922,15 @@ HealType: {
 }
 
 WishingGlassChoice: {
-    // Spawn: Spawn
-    // Home: Home
-    // DeathLocation: Death Location
-    // Random: Random
-    // Underworld: Underworld
-    // Beach: Beach
-    // Dungeon: Dungeon
-    // Temple: Temple
-    // None: None
+    // Spawn: Место появления
+    // Home: Дом
+    // DeathLocation: Место смерти
+    // Random: Случайное
+    // Underworld: Преисподняя
+    // Beach: Пляж
+    // Dungeon: Темница
+    // Temple: Храм
+    // None: Нет
 }
 
 WorldGen: {

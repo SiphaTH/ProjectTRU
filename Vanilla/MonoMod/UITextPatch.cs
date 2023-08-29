@@ -9,7 +9,7 @@
 // {
 //     public bool IsLoadingEnabled(Mod mod)
 //     {
-//         return ModsCall.StarsAbove != null && TranslationHelper.IsRussianLanguage;
+//         return TranslationHelper.IsRussianLanguage;
 //     }
 //
 //     public void Load(Mod mod)

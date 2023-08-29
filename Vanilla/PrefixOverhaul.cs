@@ -920,7 +920,8 @@ public class FargoSoulsItems : IItemGender
             "WyvernFeather",
             "DragonBreath",
             "TheSmallSting",
-            "TheBigSting"
+            "TheBigSting",
+            "AshWoodEnchant",
         };
         
         List<int> types = new List<int>();

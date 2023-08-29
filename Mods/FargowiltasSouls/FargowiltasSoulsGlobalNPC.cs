@@ -26,7 +26,7 @@ public class FargowiltasSoulsGlobalNPC : GlobalNPC
         {
             if (npc.GivenName == "John Crawltipede")
             {
-                npc.GivenName = "John Crawltipede";
+                npc.GivenName = "Джон Ползотычинк";
             }
         }
         if (npc.type is NPCID.CultistDragonHead or NPCID.CultistDragonBody1 or NPCID.CultistDragonBody2 or NPCID.CultistDragonBody3 or NPCID.CultistDragonBody4 or NPCID.CultistDragonTail)
