@@ -59,6 +59,7 @@ public class CombatTextPatch : ILoadable
             // "Freebie!" => "",
             // " life/5 sec" => "",
             // "No Blood Chamber in world" => "",
+            // "STRIKE" => "",
             _ => text
         };
         

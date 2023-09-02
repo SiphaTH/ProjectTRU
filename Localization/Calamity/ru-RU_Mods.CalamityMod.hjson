@@ -225,11 +225,11 @@
 Bestiary: {
     Bloatfish: Это скорее геологическое образование, чем живой организм. Вздутобрюх имеет липкую, похожую на клей кожу, которую он использует, чтобы покрыть своё тело пустотным камнем. Хоть это и защищает его от хищников, но из-за своего чудовищного веса оседает в самых глубинах бездны.
     BobbitWorm: Прячась в самых тёмных уголках пустоты, с целью внезапно напасть на ничего не подозревающую жертву, волнистые черви пользуются всеми преимуществами темноты бездны. Чтобы жить здесь, в самой экстремальной среде в мире, существу нужно быть либо по-настоящему могучим, либо научиться использовать окружающую среду для выживания, либо и то, и другое.
-    BoxJellyfish: Крупнее, чем у среднестатистической медузы, жало этих стойких вредителей способно нанести куда более мощный удар. Хотя их можно встретить в большинстве крупных водоемов, они вымерли лишь в окрестностях Ильмериса после того, как Серная ведьма обратила свои чары против королевства.
+    BoxJellyfish: Крупнее, чем у среднестатистической медузы, жало этих стойких вредителей способно нанести куда более мощный удар. Хотя их можно встретить в большинстве крупных водоёмов, они вымерли лишь в окрестностях Ильмериса после того, как Серная ведьма обратила свои чары против королевства.
     ChaoticPuffer: Эти существа, раздуваясь, вдыхают следы магматита, содержащегося в воде, что приводит к интенсивному нагреву жидкости внутри их организма. Получившаяся температура настолько высока, что способна расплавить даже железо. Они наносят страшные ожоги тем, кто к ним прикасается, а хищники, пожирающие их, свариваются изнутри.
     ColossalSquid: Этот вид кальмаров значительно увеличился в размерах и силе из-за воздействия на них сущности Сильвы. Поскольку в прошлом они были травоядными и могли напрямую поглощать выращенные ею ростки, в них циркулирует куда больше жизни, чем во всех остальных обитателях бездны.
     Cuttlefish: Используя свой врождённый камуфляж, каракатицы умеют скрываться от более крупных хищников и охотиться на ничего не подозревающую добычу, терпеливо выжидая на дне момент для нападения. Но стоит их разозлить, как они начинают безжалостно преследовать других существ, обладая такой яростью, что и самые опасные хищники могут испугаться.
-    DevilFish: So called for their demonic horns, devilfish absorb the fumes left behind by Azafure’s pollution, using the flames to empower themselves. The Abyss’ lower layers are largely unmarred by waste and toxins thanks to these enigmatic creatures.
+    DevilFish: Прозванные так из-за своих демонических рогов, рыбы-дьяволы поглощают испарения, выделяемые в результате загрязнения Азафура, и используют это пламя как источник силы. Благодаря этим загадочным существам, нижние слои бездны практически не загрязнены отходами и токсинами.
     DevilFishAlt: So called for their demonic horns, devilfish absorb the fumes left behind by Azafure’s pollution, using the flames to empower themselves. The Abyss’ lower layers are largely unmarred by waste and toxins thanks to these enigmatic creatures.
     EidolonWyrm: Родственники ауритовых драконов, они нашли укрытие в забытом уголке мира, чтобы выжить в период великих чисток. И всё же, даже без ауритовых душ, сила эйдолонских змиев сравнима с многими из их сородичей, обладавшими этой силой.
     GiantSquid: Squid are known to be cannibalistic animals, having few qualms with consuming their own kind when in need of food. Quite ironically, this creature’s main predator is itself.
@@ -323,7 +323,7 @@ Bestiary: {
     PlaguebringerMiniboss: Nothing can escape the Plague; everything is either assimilated or culled. Such is the case of queen bees. While strong enough to stave off plagued creatures, they are often forced to abandon their hives due to their subjects becoming infected. This leaves their larvae to be overtaken by nanites, and soon after, a plaguebringer is born.
     PlagueCharger: Spawn of the plaguebringers, these were born already taken by Draedon’s nanomachines. Nanites ensure they reach adulthood in a matter of hours by supercharging their aging process, even if this means their lifespan can be counted in days. Yet, this is exactly what makes them the perfect dispensable soldiers.
     Plagueshell: A turtle’s shell and nervous system are intertwined, making giant tortoises ideal targets for the Plague. Whatever pain is caused by the process of drilling into their shells is rapidly anesthetized, putting the tortoises under control without a single protest.
-    Viruling: Unlike derplings, who use their proboscis to drain the blood of other creatures, virulings use theirs by using it to inject the plague directly into their victims. Aside from the plaguebringers themselves, no creature is nearly as efficient at contaminating the local wildlife.
+    Viruling: Unlike derplings, who use their proboscis to drain the blood of other creatures, virulings use theirs to inject the plague directly into their victims. Aside from the plaguebringers themselves, no creature is nearly as efficient at contaminating the local wildlife.
     AnthozoanCrab: Они выглядят как простые камни; они легко могут швырять огромные валуны во всяких существ, и, заметив приближение, стремительно сбегают. В других местах, подобное создание процветало бы благодаря своей мощи, но в такой враждебной среде, как эта, оно вынуждено прилагать столько усилий лишь для выживания.
     AquaticUrchin: Closely related to sea urchins, aquatic urchins have been forced to adapt to the acidic water and radioactive waste. Normally their venomous spikes would normally deter predators, but in the environment it lives in, a painful meal is still a meal. Nothing in this sea can afford to be a picky eater.
     BelchingCoral: Все кораллы проявляют признаки жизни в разной степени, однако данный вид выделяется своим повышенным интеллектом. Они способны защищаться от существ, пытающихся съесть их, выпуская сернистый газ под давлением, когда они приближаются. Порой этот процесс издаёт гул, напоминающий музыку.
@@ -331,19 +331,19 @@ Bestiary: {
     Sulflounder: A relative to certain hadopelagic creatures living in the depths, the Sulflounders are a branch in their evolution with a fragile exterior. This allowed them not to sink to the bottom of the Abyss, though their flesh is barely enough to withstand the acidic water.
     Toxicatfish: Ранее эти рыбы представляли угрозу лишь своей пище, но радиация от ядерных выбросов, образовавшаяся в результате давних испытаний Дрэйдона, разложила их тела и разум. Атакуя всё, что попадается на глаза, этот некогда процветавший вид теперь находится на грани вымирания.
     Trasher: Despite being equipped with a mouth large enough to swallow a child whole, these crocodiles simply act as scavengers, devouring scraps and bones left over from predators’ meals. Needing to conserve energy due to eating relatively little, they rarely move at their full speed unless they feel threatened.
-    BabyGhostBell: Ghost Bells were bred in large numbers during the Ilmeran war, due to the Ilmerian army needing a staggering amount of electricity to keep Yharim and his forces at bay. Alas, their efforts were for naught, and the kingdom collapsed after the Great Incineration.
+    BabyGhostBell: В период Ильмеранской войны было выведено огромное количество призрачных колокольчиков. Это было необходимо Ильмерской армии, так как им требовалось огромное количество электроэнергии для противостояния Яриму и его армии. Однако все их усилия оказались тщетны, и королевство потерпело крах после Великого сожжения.
     BlindedAngler: Lacking most normal senses, these predators use a form of biological sonar to ‘see’ their surroundings. The glowing crystals on their backs draw in prey that use the sea’s shimmering prisms as their guiding light, like a moth to the flame.
     Clam: Clams once lived in the upper portion of the Ilmeran Sea before the Incineration, being forced to relocate after the battle. Though it was thanks in part to their adaptability and hardiness that their species survived, luck was also certainly on their side.
     EutrophicRay: Eutrophic Rays have formed a commensalistic relationship with Ghost Bells. The rays can store energy given by the Ghost Bells for electrical muscle stimulation, allowing for great bursts of speed.
     GhostBell: These high-voltage jellyfish can incapacitate most with a single touch, and were a major factor in the Ilmerian army’s strength. The sea kingdom used the electricity produced by Ghost Bells to drive back Yharim’s forces, electrifying the waters so that none could cross their borders.
     GiantClam: Моллюски постепенно кристаллизуют окружающую их магию в жемчуг, который растёт вместе с ними. Когда они достигают своего полного размера, они становятся гигантскими моллюсками и обретают способность извлекать магию из своих жемчужин.
-    PrismBack: Due to the beautiful prisms and calm behavior, these animals have been taken in as pets by many over the course of centuries, even outside of Ilmeris. Though far too slow and bulky to hunt normally, the sea prisms on their back act as a lure for small fish.
+    PrismBack: Из-за красивых призм и спокойного характера, эти существа на протяжении веков стали верными спутниками для многих, включая тех, кто живёт за пределами Ильмериса. И хотя их скорость и габариты делают их не слишком подходящими для охоты, морские призмы на их спинах привлекают мелкую рыбёшку, создавая уникальную приманку.
     SeaFloaty: Flatworms can be found in many seas and oceans across the world, and are exceptional at fitting through cracks or crevices due to their thin bodies. These particular flatworms only ever inhabited the lower sea, and were left entirely unthreatened by the carnage that annihilated most species’ homes.
     SeaMinnow: Schools of sea minnows were one of the most beautiful things one could witness during the days when Ilmeris was unshattered. Those permitted into the kingdom would gather to see these fish swimming in the open sea… yet, this is but a distant past now, even for the minnows themselves.
     SeaSerpent: Despite being one of the few carnivorous creatures to have ever existed in the Ilmeran Sea, even these serpents are unusually passive towards those they do not consider prey by the standards of elsewhere. The sea has only ever known one truly aggressive predator, and it abandoned a life of calming solitude years ago.
     AndroombaFriendly: Reverse-engineered Androombas that have been retrofitted to spread the Steampunker’s solutions rather than clean dust and debris off of floors. They can be used to purify the world– or ruin it further, if one so desires.
     DILF: One of the world’s foremost experts on magical theory, he is renowned for his skill with the arcane arts. In his days when he traveled with Yharim’s entourage, he acted as the Godseeker’s advisor, due to both his status and his distaste for actively participating in battle.
-    FAP: A princess from an unknown land. She drinks constantly in a vain attempt to escape the memories of her past, but is practically immune to alcohol. She makes a business of selling her mixtures, alcoholic and alchemic alike.
+    FAP: Принцесса, родом из таинственных земель, постоянно выпивает, пытаясь сбежать от воспоминаний о своём прошлом. Тем не менее, алкоголь практически не оказывает на неё никакого воздействия. Она организовала свой бизнес, продавая разнообразные смеси, будь то алкогольные или алхимические.
     SEAHOE: The seventeenth ruler of the constitutional monarchy of Ilmeris since the tribes of the Ilmeran Sea unified, under the Electric Goddess, Otonilou, and the elusive God of the Seas. Alas, one cannot be a ruler without subjects, and while he remains respected by those who opposed Godseeker Yharim, his kingdom is no more.
     THIEF: The bandit may have a bad habit of looting battlefields and taking what isn’t theirs, but their actions are mostly motivated by their hatred of the obscenely rich who haven’t truly earned the wealth they possess. Their methods are somewhat shady, but can always be relied upon to get a job done.
     WITCH: Recruited to Yharim’s forces late into the war, her magic overflows with such power that she is largely incapable of casting normal spells. Yet despite her great power, Calamitas prefers not to use it, as it takes a heavy toll on her psyche.
@@ -353,7 +353,7 @@ Bestiary: {
     DesertNuisance: Though these serpents are of the Desert Scourge’s species, they are notably younger and less developed. Choosing to hunt in a pack with the large scourge due to this weakness, many have seen them tear apart prey not unlike the piranhas that once populated the former sea.
     CosmicGuardian: Несмотря на то, что они принадлежат к тому же виду, что и безымянный змей, их ум и функции гораздо проще. У них едва есть своя воля и они беспрекословно выполняют приказы своего алчного повелителя.
     HiveTumor: This tumor acts as the brain of the putrid wasteland, being all that is left of the minds of the slain gods that lay there. The creatures of the Corruption exist to protect it, and those who attempt to harm it rarely live to tell the tale.
-    AquaticAberration: ASpawn of the immense Leviathan, their lifespan can be measured in hours. All they know is how to hunt for their masters. Even non-aquatic life is well within their reach, due to their uncanny ability to fly through air just as easily as swimming through water.
+    AquaticAberration: A spawn of the immense Leviathan, their lifespan can be measured in hours. All they know is how to hunt for their masters. Even non-aquatic life is well within their reach, due to their uncanny ability to fly through air just as easily as swimming through water.
     LeviathanStart: Приманка, созданная Водным элементалем, Анахитой. Её песни звучат нежно, а голос полон тепла и обещаний, но будьте бдительны: если последуете за зовом сирены, вы рискуете своей жизнью.
     PerforatorCyst: This twitching and convulsing pile of gore acts as the heart of the Perforator Hive, harvesting what small amount of diluted Ichor flowing through the Crimson is left and feeding it to the Hive. Little else is known about it, for those who dare to disturb it have become indistinguishable from the landscape.
     CosmicLantern: Внутри этих фонарей горит волшебное, искажённое пламя, которое не излучает никакого тепла. Если пристально всмотреться в него, можно увидеть целый новый мир.
@@ -367,12 +367,12 @@ Bestiary: {
     AstrumDeus: When a star begins to die, under normal circumstances, its power simply fades as it falls to the nearest celestial body. However, some dying stars bloat and fester before falling. Astrum Deus exists to consume these stars before the Astral Infection manifests in them, and it has been revered for its sacred duty since time immemorial.
     BrimstoneElemental: Roused from her deep slumber in relatively recent years, her awakening set into motion the downfall of Azafure. Most blame her unexpected revival on the city’s overzealous mining of Brimstone, while a few blame the city’s pollution, and some fewer cite dubious prophecies. But behind closed doors, there are whisperings that she was revived deliberately as part of a plot by opposing forces.
     Bumblefuck: Давным-давно эти сородичи ауритовых драконов укрылись в недрах джунглей. Они добывают пищу, используя гигантское статическое электричество, которое создаётся от трения их крыльев о их пернатые тела. Эта энергия проявляется в виде смертоносных разрядов багряной молнии.
-    Calamitas: Это машина, что скитается по ночам, - неудачная копия Высшей ведьмы. Ей не присущи её чары и тёмые исскуства, однако даже малый кусочек мощи серы Каламитас была достаточной, чтобы погрузить клон в безумие. От человечности в ней ничего не осталось.
+    Calamitas: Это машина, что скитается по ночам, - неудачная копия Высшей ведьмы. Ей не присущи её чары и тёмные искусства, однако даже малый кусочек мощи серы Каламитас была достаточной, чтобы погрузить клон в безумие. От человечности в ней ничего не осталось.
     Cataclysm: A pitiable creation of the clone, made in an attempt to imitate one of the Supreme Witch’s brothers. Yet this and the clone’s other creations have no will of their own, amounting to little more than puppets she controls.
     Catastrophe: A pitiable creation of the clone, made in an attempt to imitate one of the Supreme Witch’s brothers. Not many would recognize them as such despite her efforts, though a few key characteristics have managed to survive in these abhorrent amalgamations.
     CeaselessVoid: -
     Crabulon: A crustacean that once made its home in the heart of the Ilmeran Sea, managing to escape during the Great Incineration. Crabulon fled underground, enjoying the familiar blue glow given off by glowing mushrooms. Though it succumbed to the spores, it died in peace, reminded of its home.
-    Cryogen: Когда Ярим понял, что Архимаг перешел на другую сторону, он велел Каламитас отыскать и убить её бывшего наставника. После слёзного противостояния она решила запечатать и сфабриковать его смерть. Волшебство, которое присутствует в этой живой печати, восхищает и трагически олицетворяет каждый урок, который Пермофрост преподавал своей ученице.
+    Cryogen: Когда Ярим понял, что Архимаг перешёл на другую сторону, он велел Каламитас отыскать и убить её бывшего наставника. После слёзного противостояния она решила запечатать и сфабриковать его смерть. Волшебство, которое присутствует в этой живой печати, восхищает и трагически олицетворяет каждый урок, который Пермофрост преподавал своей ученице.
     DesertScourge: A sea serpent that once swam through the waters of the Ilmeran Sea, it curiously chose to stay in its home rather than find a new one deep below. Quickly taking to a diet of antlion and cactus, it was able to take the place of possibly the desert’s apex predator after its only competition went into hiding.
     DevourerofGods: Существо, увенчанное титулами и обрётшее массу известности, создаёт запутанную смесь правды и мифов вокруг своих многочисленных легендарных подвигов. Некогда Ярим верил, что сущность, которую он поглощает, полностью исчезает из бытия, однако это противоречит основному закону мироздания: энергию нельзя уничтожить, её можно лишь перенести из одной формы в другую.
     Draedon: Это одно из тех разведывательных тел, которые загадочный инженер Дрэйдон сотворил по своему образу и подобию. После того, как учёный покинул Богоискателя, он всё глубже погружался в себя и полностью отдавал себя своим бесконечным исследованиям.
@@ -393,15 +393,15 @@ Bestiary: {
     ProfanedGuardianCommander: In a time lost to memory, there were four soldiers who used their wits and teamwork to slay a dragon, that one might gorge themself upon its auric soul. “I am the wisest,” declared their commander, “I should be the one.” There was silence, until Providence spoke: “You need temper your wisdom with action, that we might impose our will upon this world.”
     ProfanedGuardianDefender: В незапамятные времена было четверо бесстрашных героев, которые воспользовались своей преданностью друг другу сразили дракона, дабы один из них насытился его аурической душой. “Я самая сильнейшая” - провозгласила защитница, “Это должна быть я”. И воцарилась тишина, пока Провиденс не заговорила вновь: “Ты не стоишь на своём, мечтая о невозможном”.
     ProfanedGuardianHealer: В незапамятные времена было четверо бесстрашных героев, которые с безграничной решимостью сразили дракона, дабы один из них насытился его аурической душой. “Я самый храбрый” - провозгласил целитель, “Это должен быть я”. И воцарилась тишина, пока Провиденс не заговорила вновь: “Твоя храбрость ослепляет тебя перед истинной, и твоя чрезмерная самоуверенность приведёт тебя к гибели”.
-    Providence: В незапамятные времена жили четверо провидцев. С праведной яростью они сразили дракона, и их предводительница насытилась его ауритовой душой Пламени. “Мир лишён наставлений, а его жители охвачены тьмой” - сказала она. И воцарилась тишина, пока Провиденс не заговорила вновь. “Пойдем же и озарим мир заново”. И так оно и случилось.
+    Providence: В незапамятные времена жили четверо провидцев. С праведной яростью они сразили дракона, и их предводительница насытилась его ауритовой душой Пламени. “Мир лишён наставлений, а его жители охвачены тьмой” - сказала она. И воцарилась тишина, пока Провиденс не заговорила вновь. “Пойдём же и озарим мир заново”. И так оно и случилось.
     Ravager: Изуродованное воплощение Бога жертвоприношений, которому вновь была дарована жизнь. Некроманты, поклявшиеся ему в вере, вернули его изломанное тело в храм, принося единственную жертву, которые могли, чтобы предотвратить его Смерть - свою собственную жизнь. И всё же некромантия - несовершенное искусство, ведь у бога сохранились лишь крохи разума; он просто разрушает всё, что попадается ему на пути.
     Signus: ‘За любое желание нужно платить’. Сделка утверждённая Ониксом и скреплённая кровью, позволяет исполнить любое желание — будь то проход, обещание или даже предательство. Что интересно, о Сигнусе до эпохи богов нет никаких записей, и до наших дней дошло очень мало сведений. Возможно, за соответствующую цену можно было бы выяснить правду о Сигнусе самому.
     SlimeGodPaladin: Бог слизней избегает прямого столкновения из-за своей слабости, вместо этого создавая стражей для своей защиты. Эти стражи созданы из множества гибельных слизней, и их скверна служит противовесом чистоте и божественности их бога.
     SlimeGodCore: Вопреки своей жадности, Бог слизней сдерживает свой рост, чтобы поддерживать равновесие мира. Во время Крестового похода за ним все ещё охотились, но он сумел выжить, прибегая к бесчисленным стратегическим отступлениям. За долг, который он выполняет, и методы, которые он выбирает, служат причиной уважения Ониксовых сородичей к этому маленькому божеству.
-    StormWeaver: Вторженец из другого измерения, который был окрещён королем небес, покоряет верхние слои атмосферы с невероятной скоростью. Штормовой ткач не преследует высших целей, как некоторые другие обитатели Искривления, он лишь объедает остатки цивилизации, когда-то обитавшей в небесных просторах.
+    StormWeaver: Вторженец из другого измерения, который был окрещён королём небес, покоряет верхние слои атмосферы с невероятной скоростью. Штормовой ткач не преследует высших целей, как некоторые другие обитатели Искривления, он лишь объедает остатки цивилизации, когда-то обитавшей в небесных просторах.
     SupremeCalamitas: После того, как в юном возрасте она унаследовала практически безграничную магическую силу, она была зачислена в армию Ярима, где прослужила почти десять лет. Она упивалась всей этой жестокостью, бесконечной пляской безумия и смерти, позволяя Богоискателю использовать её как орудие в своей нескончаемой войне против богов. Но сейчас, когда пламя в её душе погасло, всё, что осталось, лишь тлеющие угли сожаления.
     SupremeCataclysm: Старший из двух братьев и сестры, он был знаменитым бойцом в Азафуре; мало кто в городе мог сравниться с его необузданной силой. Он оберегал свою сестру, пообещав всегда быть рядом с ней в трудные моменты. Даже после смерти он продолжает выполнять данное обещание.
-    SupremeCatastrophe: В семье из двух братьев и сестры средний ребенок был искусным мечником, беря наёмнические задания, чтобы прокормить семью. Несмотря на кровавый выбор профессии, он всегда старался быть добрым к сестре и оберегать её от опасностей, которые могли подстерегать его близких из-за своей работы. Даже после смерти он продолжает защищать её.
+    SupremeCatastrophe: В семье из двух братьев и сестры средний ребёнок был искусным мечником, беря наёмнические задания, чтобы прокормить семью. Несмотря на кровавый выбор профессии, он всегда старался быть добрым к сестре и оберегать её от опасностей, которые могли подстерегать его близких из-за своей работы. Даже после смерти он продолжает защищать её.
     Yharon: В древности каждый дракон обладал своей непреодолимой властью. Они владели разрушительной магией, питаемой напрямую из фрагментов мировой сущности. Драконы владели всем: жизнью и смертью. Даже Первозданный свет, рассеивающий вечную ночь, был подчинён их воле. Но среди них появился тот, кто достиг силы, уступающей лишь их королю. Тот, кто сделал свой род вечным, прибегнув к силе Возрождения... однако ничто не вечно, даже вечность.
 }
 
@@ -646,6 +646,11 @@ Buffs: {
     CrushDepth: {
         DisplayName: Давление глубин
         Description: Раздавлен водной толщей
+    }
+    
+    RiptideDebuff: {
+        DisplayName: Разрывное течение
+        Description: Охваченный могучими водами
     }
 
     Dragonfire: {
@@ -1212,11 +1217,6 @@ Buffs: {
         Description: Регенерация здоровья увеличена и ваши миньоны накладывают дебафф «{$Buffs.BanishingFire.DisplayName}»
     }
 
-    ElysianGuard: {
-        DisplayName: Элизийская защита
-        Description: Скорость передвижения снижена, а остальные характеристики усилены
-    }
-
     EmpyreanRage: {
         DisplayName: Возвышенная ярость
         Description: Ярость космоса
@@ -1264,7 +1264,7 @@ Buffs: {
 
     Mushy: {
         DisplayName: Слащавый
-        Description: Защита увеличена на 6, а регенерация здоровья на 2
+        Description: Защита увеличена на 6, а регенерация здоровья на 1
     }
 
     PhantomicEmpowerment: {
@@ -1372,6 +1372,11 @@ Buffs: {
     ArmorCrunch: {
         DisplayName: Потресканная броня
         Description: Ваша броня разнесена в клочья
+    }
+    
+    Crumbling: {
+        DisplayName: Разрушение
+        Description: Ваша броня повреждена
     }
 
     Clamity: {
@@ -1826,10 +1831,10 @@ Buffs: {
         Description: Чувственные магниты притягиваются к вам
     }
 
-    ProfanedBabs: {
+    ProfanedSoulGuardians: {
         DisplayName: Осквернённая душа
-        Description: Осквернённые малыши будут сражаться и защищать вас!
-        VanityDescription: Вас сопровождают Осквернённые малыши!
+        Description: Осквернённые стражи душ будут сражаться и защищать вас!
+        VanityDescription: Вас сопровождают Осквернённые стражи душ!
     }
 
     PuffWarriorBuff: {
@@ -1908,8 +1913,8 @@ Buffs: {
     }
 
     SolarGodSpiritBuff: {
-        DisplayName: Дух солнечного бога
-        Description: Вас защищает дух солнечного бога
+        DisplayName: Мстительный солнечный дух
+        Description: Разъярённый солнечный дух готов защитать вас
     }
 
     SolarSpirit: {
@@ -1983,27 +1988,27 @@ Buffs: {
     }
     
     PinkJellyRegen: {
-    	DisplayName: Розовая желейная регенерация
-    	Description: Энергия слизи освежает вас, регенерация здоровья увеличена на 4
+        DisplayName: Розовая желейная регенерация
+        Description: Энергия слизи освежает вас, регенерация здоровья увеличена на 2
     }
     
     GreenJellyRegen: {
-    	DisplayName: Зелёная желейная регенерация
-    	Description: Исцеляющая слизь усиливает вас, регенерация здоровья увеличена на 6
+        DisplayName: Зелёная желейная регенерация
+        Description: Исцеляющая слизь усиливает вас, регенерация здоровья увеличена на 2.5
     }
     
     AbsorberRegen: {
-    	DisplayName: Сверхрегенерация
-    	Description:
-    		'''
-    		Вы благословлены слиянием природных сил
-    		Регенерация здоровья увеличена на 7, урон на 10%, а сопротивление урону на 7%
-    		'''
+        DisplayName: Сверхрегенерация
+        Description:
+            '''
+            Вы благословлены слиянием природных сил
+            Регенерация здоровья увеличена на 3, урон на 8%, а сопротивление урону на 5%
+            '''
     }
     
     AbsorberAffliction: {
-    	DisplayName: Поглотитель недугов
-    	Description: Чёрт возьми, природа, ты ужасна!
+        DisplayName: Поглотитель недугов
+        Description: Чёрт возьми, природа, ты ужасна!
     }
 }
 
@@ -2173,6 +2178,15 @@ Configs: {
                 Не влияет на уже появившихся боссов.
                 '''
         }
+        
+        DefaultDashEnabled: {
+            Label: "[i:Tabi] Стандартный рывок"
+            Tooltip:
+                '''
+                По умолчанию даёт игроку очень слабый рывок, для использования которого не требуется наличие специального снаряжения или предметов.
+                Этот рывок будет заменён любым другим доступным рывком, включая те, что из других модов.
+                '''
+        }
 
         BossZen: {
             Label: "[i:CalamityMod/ZenPotion] Боссы снижают скорость появления врагов"
@@ -2180,6 +2194,7 @@ Configs: {
                 '''
                 Все живые боссы значительно снижают скорость появления обычных врагов.
                 Это также предотвращает появление слизнепада, пока босс жив.
+                Calamity сбалансирован таким образом, чтобы эта настройка была включена.
                 '''
         }
 
@@ -2280,12 +2295,17 @@ Configs: {
         }
 
         FlightBar: {
-            Label: "[i:CalamityMod/DrewsWings] Отображение панели полёта"
-            Tooltip: Включает интерфейс панели полёта, показывающий способности полёта игрока.
+            Label: "[i:CalamityMod/DrewsWings] Отображение индикатора полёта"
+            Tooltip:
+                '''
+                Включает интерфейс индикатора полёта, показывающий оставшееся время полёта игрока.
+                Этот индикатор также будет информировать о снижении максимального времени полёта из-за наложенных дебафов.
+                Он будет мигать ярко синим, если у игрока в данный момент нет ограничений на максимальное время полёта.
+                '''
         }
 
         FlightBarPosX: {
-            Label: "[i:LaserRuler] Позиция по X панели полёта"
+            Label: "[i:LaserRuler] Позиция по X индикатора полёта"
             Tooltip:
                 '''
                 Позиция по X панели полёта, измеряется в % от ширины экрана.
@@ -2294,7 +2314,7 @@ Configs: {
         }
 
         FlightBarPosY: {
-            Label: "[i:LaserRuler] Позиция по Y панели полёта"
+            Label: "[i:LaserRuler] Позиция по Y индикатора полёта"
             Tooltip:
                 '''
                 Позиция по Y панели полёта, измеряется в % от ширины экрана.
@@ -2324,7 +2344,7 @@ Configs: {
             Label: "[i:GemLockTopaz] Фиксация позиций индикаторов"
             Tooltip:
                 '''
-                Предотвращает нажатие на индикаторы скрытности, заряда, ярости и адреналина.
+                Предотвращает нажатие на разные индикаторы Calamity на экране.
                 Это отключает их перетаскивание мышью.
                 '''
         }
@@ -2508,7 +2528,7 @@ Configs: {
             Tooltip:
                 '''
                 Добавляет ванильные дебаффы «{$BuffName.PotionSickness}» и «{$BuffName.ChaosState}» в панель перезарядки.
-                Это не удаляет их из списка баффов, но может помочь с их заметностью.
+                Дебаффы по-прежнему будут отображаться в массиве баффов, но это может помочь сделать их более заметными.
                 '''
         }
 
@@ -2583,8 +2603,8 @@ Items: {
             DisplayName: Амулет бездны
             Tooltip:
                 '''
-                Все атаки, включая миньонов, накладывают дебафф «{$Buffs.CrushDepth.DisplayName}»
-                Даёт невосприимчивость к дебаффу «{$Buffs.CrushDepth.DisplayName}»
+                Все атаки, включая миньонов, накладывают дебафф «{$Buffs.Riptide.DisplayName}»
+                Даёт невосприимчивость к дебаффу «{$Buffs.Riptide.DisplayName}»
                 Находясь в бездне, увеличивает максимальный запас здоровья на 10%
                 '''
         }
@@ -2650,7 +2670,7 @@ Items: {
             DisplayName: Скорбь
             Tooltip:
                 '''
-                Увеличивает вам и всем другим игрокам в команде регенерацию здоровья на 1
+                Увеличивает вам и всем другим игрокам в команде регенерацию здоровья на 0.5
                 Увеличивает максимальный запас здоровья на 10%, сопротивление урону на 7%, защиту на 13 и урон на 10%
                 '''
         }
@@ -2691,9 +2711,12 @@ Items: {
             DisplayName: Амброзиевая ампула
             Tooltip:
                 '''
-                Излучает свет
-                Увеличивает сопротивление урону на 5% и регенерацию здоровья
-                Даёт невосприимчивость к дебаффам «{$BuffName.Frozen}», «{$BuffName.Chilled}», «{$BuffName.Frostburn}», «{$BuffName.CursedInferno}» и «{$Buffs.BurningBlood.DisplayName}»
+                Увеличивает максимальный запас здоровья на 70
+                Увеличивает регенерацию здоровья от 2 до 6, в зависимости от недостающего здоровья
+                Всегда даёт регенерацию здоровья, как если бы вы стояли в мёде
+                Стоя на месте, вы получаете чрезвычайно мощную регенерацию здоровья
+                Снижает в два раза длительность дебаффов огня и истощения, наложенных на игрока
+                Излучает жёлтый свет, если видимость аксессуара включена
                 '''
         }
     
@@ -2728,7 +2751,7 @@ Items: {
                 Воспользуйтесь силой небес, усилив ваши атаки и атаки миньонов
                 Храбрость, Просветление, Благодать. Едины Правосудием
                 Увеличивает призываемое число миньонов на 2, урон призывателя на 15% и урон других классов на 8%
-                Увеличивает регенерацию здоровья во время прыжка
+                Увеличивает регенерацию здоровья на 2 во время полёта с использованием крыльев
                 Нажмите [KEY], чтобы на 15 секунд наделить себя божественностью
                 Под действием баффа «{$Buffs.DivineBless.DisplayName}» призывает на помощь архангела за каждого активного миньона
                 Каждый призванный ангел мгновенно восстановит 2 единицы здоровья
@@ -2794,7 +2817,7 @@ Items: {
                 '''
                 Даёт невосприимчивость к отбрасыванию
                 Даёт невосприимчивость к большинству дебаффов
-                Увеличивает максимальный запас здоровья на 40 и регенерацию здоровья
+                Увеличивает максимальный запас здоровья на 40 и регенерацию здоровья на 0.5
                 Позволяет делать космический огненный рывок, способный пробиваться сквозь врагов без получения урона
                 Можно использовать для тарана врагов
                 Находясь в жидкостях, увеличивает защиту на 20
@@ -2810,17 +2833,6 @@ Items: {
                 Находясь в жидкостях, увеличивает защиту на 16
                 Увеличивает максимальный запас здоровья на 20
                 Позволяет делать святой огненный рывок, способный пробиваться сквозь врагов без получения урона
-                '''
-        }
-    
-        AstralArcanum: {
-            DisplayName: Астральный арканум
-            Tooltip:
-                '''
-                Даёт невосприимчивостью к дебаффу «{$Buffs.AstralInfectionDebuff.DisplayName}»
-                Увеличивает регенерацию здоровья, даже под воздействием дебаффа, наносящего постепенный урон
-                Во время действия дебаффа, наносящего постепенный урон, вы получаете 15 единиц защиты
-                Нажмите [KEY] для открытия меню телепортации, пока нет живых боссов
                 '''
         }
     
@@ -2892,10 +2904,11 @@ Items: {
             DisplayName: Цветущий камень
             Tooltip:
                 '''
-                Вы быстро регенерируете здоровье стоя на земле
-                Этот эффект лучше всего работает в дневное время
+                Увеличивает регенерацию здоровья от 1 до 3 в зависимости от времени суток
+                Ускоряет регенерацию здоровья в зависимости от времени суток
+                Оба эффекта работают на максимум с полудня до заката
                 На траве, по которой прошлись, начинают расти цветы
-                Шанс вырастить случайное растение-краситель на бестравяной земле
+                Шанс вырастить случайное растение-краситель на земле, на которой нет травы
                 Одна из древних реликвий
                 '''
         }
@@ -2920,16 +2933,6 @@ Items: {
                 Враги, коснувшиеся пламени, получают огромный урон и накладывает на них дебафф «{$Buffs.VulnerabilityHex.DisplayName}»
                 Экипируйте в слот украшений, чтобы изменить вид курсора, не нанося урона
                 Эти изменения работают в сочетании с радужным курсором
-                '''
-        }
-    
-        CelestialJewel: {
-            DisplayName: Неземная драгоценность
-            Tooltip:
-                '''
-                Увеличивает регенерацию здоровья, даже под воздействием дебаффа, наносящего постепенный урон
-                Во время действия дебаффа, наносящего постепенный урон, вы получаете 11 единиц защиты
-                Нажмите [KEY] для телепортации в случайное место, пока нет живых боссов
                 '''
         }
     
@@ -2998,17 +3001,17 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает урон на 5%
-                Враги, атакующие вас, получают урон и подвергаются дебаффу «{$Buffs.ArmorCrunch.DisplayName}»
+                Враги, атакующие вас, получают урон и подвергаются дебаффу «{$Buffs.Crumbling.DisplayName}»
                 '''
         }
         
-        	DisplayName: Бароклешня
         Baroclaw: {
-        	Tooltip:
-        		'''
-        		Увеличивает урон на 8%
-        		Враги, атакующие вас, получают значительный урон и подвергаются дебаффу «{$Buffs.ArmorCrunch.DisplayName}» на продолжительное время
-        		'''
+            DisplayName: Бароклешня
+            Tooltip:
+                '''
+                Увеличивает урон на 10%
+                Враги, атакующие вас, получают значительный урон и подвергаются дебаффам «{$Buffs.ArmorCrunch.DisplayName}» и «{$Buffs.CrushDepth.DisplayName}»
+                '''
         }
     
         CrimsonFlask: {
@@ -3024,8 +3027,9 @@ Items: {
             DisplayName: Королевская драгоценность
             Tooltip:
                 '''
-                Увеличивает регенерацию здоровья, даже под воздействием дебаффа, наносящего постепенный урон
-                Во время действия дебаффа, наносящего постепенный урон, вы получаете 8 единиц защиты
+                Увеличивает регенерацию здоровья на 1
+                Дополнительно увеличивает регенерацию здоровья на 1.5, находясь под действием дебаффа
+                Значительно усиливает естественную регенерацию здоровья, находясь под действием дебаффа
                 '''
         }
     
@@ -3056,8 +3060,8 @@ Items: {
                 '''
         }
     
-        DarkGodsSheath: {
-            DisplayName: Ножны тёмного бога
+        DarkMatterSheath: {
+            DisplayName: Ножны тёмной сущности
             Tooltip:
                 '''
                 Увеличивает максимальную скрытность на 10
@@ -3072,11 +3076,11 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает урон на 12%
-                Увеличивает регенерацию здоровья на 1 и призываемое число миньонов на 2
+                Увеличивает регенерацию здоровья на 0.5 и призываемое число миньонов на 2
                 Увеличивает отбрасывание призывателя
-                В дневное время увеличивает регенерацию здоровья на 4
+                В дневное время увеличивает регенерацию здоровья на 2
                 Ночью увеличивает защиту на 20
-                Во время солнечного затмения увеличивает регенерацию здоровья на 2 и защиту на 10
+                Во время солнечного затмения увеличивает регенерацию здоровья на 1 и защиту на 10
                 'Содержит силу тёмного солнца'
                 '''
         }
@@ -3104,7 +3108,8 @@ Items: {
             Tooltip:
                 '''
                 Вызывает звездопад и увеличивает время неуязвимости после получения урона
-                Обеспечивает регенерацией здоровья и снижает длительность послезельевой болезни
+                Увеличивает регенерацию здоровья на 0.5
+                Снижает длительность послезельевой болезни
                 '''
         }
     
@@ -3359,7 +3364,7 @@ Items: {
             Tooltip:
                 '''
                 На траве, по которой прошлись, начинают расти грибы
-                Употребление грибов даёт бафф «{$Buffs.Mushy.DisplayName}», увеличивающий защиту на 6 и регенерацию здоровья на 2
+                Употребление грибов даёт бафф «{$Buffs.Mushy.DisplayName}», увеличивающий защиту на 6 и регенерацию здоровья на 1
                 Все грибные оружия наносят на 10% больше урона и испускают не наносящие урон грибы
                 '''
         }
@@ -3439,7 +3444,7 @@ Items: {
                 Увеличивает скорость передвижения и прыжка на 10%
                 При использовании лечебного зелья создаёт очищающую ауру
                 Прохождение через ауру снимает все дебаффы и восстанавливает урон по защите один раз
-                Аура увеличивает регенерацию здоровья для всех игроков, находящихся внутри, в течение 8 секунд
+                Аура увеличивает регенерацию здоровья на 2.5 для всех игроков, находящихся внутри, в течение 8 секунд
                 '''
         }
     
@@ -3500,7 +3505,7 @@ Items: {
             DisplayName: Шкура Аструм Деуса
             Tooltip:
                 '''
-                 После получения урона или атаки истинными ударами ближнего боя, с неба падает огромное количество астральных звёзд
+                После получения урона или атаки истинными ударами ближнего боя, с неба падает огромное количество астральных звёзд
                 При получении урона увеличивает истинный урон ближнего боя на 50%
                 Длительность увеличения зависит от количества нанесённого урона: чем выше урон, тем дольше длится бонус
                 Обеспечивает невосприимчивостью к дебаффам «{$Buffs.AstralInfectionDebuff.DisplayName}», «{$BuffName.CursedInferno}», «{$BuffName.OnFire}» и «{$BuffName.Frostburn}»
@@ -3512,10 +3517,10 @@ Items: {
             DisplayName: Медовая роса
             Tooltip:
                 '''
-                Находясь в джунглях, увеличивает сопротивление урону на 5%, защиту на 9 и регенерацию здоровья
-                Даёт невосприимчивость к дебаффам «{$BuffName.Poisoned}» и «{$BuffName.Venom}»
-                Мёдоподобная регенерация здоровья без штрафа скорости
-                Большинство пчёл/шершней и их снарядов наносят вам только 75% урона
+                Увеличивает максимальный запас здоровья на 30
+                Всегда даёт регенерацию здоровья, как если бы вы стояли в мёде
+                Стоя на месте в мёде, вы получаете чрезвычайно мощную регенерацию здоровья
+                Снижает в два раза длительность дебаффов истощения, наложенных на игрока
                 '''
         }
     
@@ -3523,8 +3528,22 @@ Items: {
             DisplayName: Сердце Хаула
             Tooltip:
                 '''
-                 Призывает Хаула, сражающегося за вас, Кальцифер освещает ваш путь, Пугало-Репка следует за вами повсюду
+                Призывает Хаула, сражающегося за вас, Кальцифер освещает ваш путь, Пугало-Репка следует за вами повсюду
                 Поместив в слот украшений, призывает трио без боевых или исследовательских способностей
+                '''
+        }
+        
+        InfectedJewel: {
+            DisplayName: Заражённая драгоценность
+            Tooltip:
+                '''
+                Увеличивает регенерацию здоровья на 1
+                Увеличивает защиту на 16 и регенерацию здоровья на 2, находясь под действием дебаффа
+                Значительно усиливает естественную регенерацию здоровья, находясь под действием дебаффа
+                Полученная защита быстро пропадает, если вы не находитесь под действием дебаффа
+                Увеличивает защиту на 5 за каждый дополнительный дебафф, начиная со второго
+                Делает дебафф «{$Buffs.AstralInfectionDebuff.DisplayName}» безвредным
+                'Изначально прекрасный драгоценный камень, затем потускневший от воздействия космической гнили'
                 '''
         }
     
@@ -3579,7 +3598,7 @@ Items: {
             Tooltip:
                 '''
                 При использовании лечебного зелья создаёт длительную ауру
-                Аура увеличивает регенерацию здоровья для всех игроков, находящихся внутри, в течение 5 секунд
+                Аура увеличивает регенерацию здоровья на 2 для всех игроков, находящихся внутри, в течение 5 секунд
                 '''
         }
     
@@ -3587,8 +3606,10 @@ Items: {
             DisplayName: Живая роса
             Tooltip:
                 '''
-                Находясь в джунглях, увеличивает сопротивление урону на 5%, защиту на 5 и регенерацию здоровья
-                Даёт невосприимчивость к дебаффу «{$BuffName.Poisoned}»
+                Увеличивает максимальный запас здоровья на 50
+                Всегда даёт регенерацию здоровья, как если бы вы стояли в мёде
+                Стоя на месте в мёде, вы получаете чрезвычайно мощную регенерацию здоровья
+                Снижает в два раза длительность дебаффов огня и истощения, наложенных на игрока
                 '''
         }
     
@@ -3626,7 +3647,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает максимальный запас маны на 50 и магический урон на 6%
-                Регенерация здоровья снижена на 3, если мана превышает 50% от максимального значения
+                Снижает регенерацию здоровья снижена на 1.5, если мана превышает 50% от максимального значения
                 Даёт спектральное исцеление, сила которого зависит от количества маны
                 Исцеление работает только в том случае, если вы держите магическое оружие
                 Чем больше у вас маны, тем больше вы исцеляетесь
@@ -3798,8 +3819,8 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает максимальный запас маны на 50 и снижает расход маны на 15%
-                Увеличивает регенерацию здоровья по мере его уменьшения
-                Увеличивает регенерацию здоровья при воздействии на вас любых огненных дебаффов
+                Увеличивает регенерацию на 0.5, если здоровье ниже 50%, на 1, если здоровье ниже 25%, и на 2, если здоровье ниже 10%
+                Увеличивает регенерацию здоровья на 3 при воздействии на вас любых огненных дебаффов
                 Вы переживёте смертельный урон и возродитесь с 30% здоровья. Эта способность перезаряжается 3 минуты
                 Вы находитесь в ледяном барьере в течение 3 секунд после возрождения
                 '''
@@ -3842,10 +3863,14 @@ Items: {
             DisplayName: Осквернённый артефакт душ
             Tooltip:
                 '''
-                Призывает стража-целителя, исцеляющего определённое количество здоровья каждые несколько секунд
-                Призывает стража-защитника, увеличивающего скорость передвижения и сопротивление урону
-                Призывает атакующего стража, увеличивающего призываемое число миньонов
-                Если вы получите удар, большинство их эффектов исчезнет на 5 секунд
+                Призывает стража-целителя, который восстанавливает 15 единиц здоровья каждые несколько секунд
+                Призывает стража-защитника, который даёт слабый щит, укреплённый осквернёнными камнями
+                После истощения барьер взрывается, и осквернённые камни разлетаются во все стороны
+                Барьер начинает заряжаться через 5 секунд после получения урона
+                Полная зарядка щита занимает 2 секунды
+                Повторное получение урона во время зарядки перезапускает таймер зарядки
+                Призывает атакующего стража, который увеличивает призываемое число миньонов на 1
+                Атакующий страж иногда выпускает копья при атаке
                 Чистота
                 '''
         }
@@ -3875,6 +3900,25 @@ Items: {
                 [c/FFBF49:И потому мы сожгли всё во имя чистоты]
                 '''
         }
+        
+        Purity: {
+            DisplayName: Чистота
+            Tooltip:
+                '''
+                Увеличивает максимальный запас здоровья на 100
+                Увеличивает регенерацию здоровья от 3 до 7, в зависимости от недостающего здоровья
+                Всегда даёт регенерацию здоровья, как если бы вы стояли в мёде
+                Стоя на месте, вы получаете чрезвычайно мощную регенерацию здоровья
+                Увеличивает защиту на 20 и даёт непрерывное лечение, находясь под действием дебаффа
+                Лечение со временем ослабевает, если вы подвержены дебаффу в течение длительного времени
+                Значительно усиливает естественную регенерацию здоровья, находясь под действием дебаффа
+                Увеличивает защиту на 8 за каждый дополнительный дебафф, начиная со второго
+                Полученная защита медленно пропадает, если вы не находитесь под действием дебаффа
+                Делает слабые дебаффы, наносящие постепенный урон, безвредными, и снижает в два раза длительность всех дебаффов, кроме самых мощных
+                Излучает сияющий синий свет, если видимость аксессуара включена
+                'Некогда гнилой кристалл, теперь мерцающий безупречной чистотой'
+                '''
+        }
     
         QuiverofNihility: {
             DisplayName: Колчан небытия
@@ -3889,7 +3933,11 @@ Items: {
     
         RadiantOoze: {
             DisplayName: Сияющая тина
-            Tooltip: При ношении ночью излучает свет и увеличивает регенерацию здоровья
+            Tooltip:
+                '''
+                Увеличивает регенерацию здоровья от 2 до 6, в зависимости от недостающего здоровья
+                Излучает жёлтый свет, если видимость аксессуара включена
+                '''
         }
     
         RaidersTalisman: {
@@ -3906,7 +3954,7 @@ Items: {
             Tooltip:
                 '''
                 Вызывает звездопад и увеличивает время неуязвимости после получения урона
-                Обеспечивает регенерацией здоровья и снижает длительность послезельевой болезни
+                Увеличивает регенерацию здоровья на 0.5 и снижает длительность послезельевой болезни
                 Поглощает 15% урона, нанесённого игрокам в команде
                 Этот эффект активен, только если здоровье владельца выше 25%
                 Даёт невосприимчивость к отбрасыванию
@@ -3928,7 +3976,7 @@ Items: {
             DisplayName: Регенатор
             Tooltip:
                 '''
-                Значительно увеличивает регенерацию здоровья
+                Увеличивает регенерацию здоровья на 6 и значительно ускоряет естественную регенерацию здоровья
                 Однако ваше здоровье не может превышать 50% от максимального показателя
                 '''
         }
@@ -3959,16 +4007,18 @@ Items: {
     
         RottenDogtooth: {
             DisplayName: Гнилой клык
-            Tooltip: Скрытные удары накладывают дебафф «{$Buffs.ArmorCrunch.DisplayName}» и наносят на 8% больше урона
+            Tooltip: Скрытные удары накладывают дебафф «{$Buffs.Crumbling.DisplayName}» и наносят на 8% больше урона
         }
     
         RoverDrive: {
             DisplayName: Привод скитальца
             Tooltip:
                 '''
-                Активирует защитную матрицу, поглощающую 40 урона и дающую 10 защиты
-                Однако система ненадёжна, и для полной зарядки щита потребуется 10 секунд
-                Получение урона во время перезарядки щита обнуляет его
+                Создаёт энергетический щит, поглощающий до 20 единиц урона
+                В активном состоянии щит увеличивает защиту на 10
+                После разрушения щита ему потребуется 10 секунд для восстановления заряда
+                Повторное получение урона во время зарядки перезапускает таймер зарядки
+                При необходимости цвет щита меняется в зависимости от выбранной команды
                 Можно переработать промывателем на запчасти
                 '''
         }
@@ -3996,7 +4046,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает скорость передвижения на 5%
-                Нажмите [KEY], чтобы использовать 10% от максимальной скрытности и создать завесу пыли, увеличивающую защиту на 6 и регенерацию здоровья на 2
+                Нажмите [KEY], чтобы использовать 10% от максимальной скрытности и создать завесу пыли, увеличивающую защиту на 6 и регенерацию здоровья на 1
                 Этот эффект имеет 30 секунд перезарядки перед повторным использованием
                 '''
         }
@@ -4025,7 +4075,7 @@ Items: {
                 '''
                 'Даже осквернившись ненавистью, оно до сих пор содержит в себе большую часть сил Сообщества...'
                 Увеличивает урон на 10% и шанс критического удара на 5%
-                Увеличивает максимальный запас здоровья на 10%, сопротивление урону на 5%, защиту на 10 и регенерацию здоровья на 2
+                Увеличивает максимальный запас здоровья на 10%, сопротивление урону на 5%, защиту на 10 и регенерацию здоровья на 1
                 Увеличивает скорость передвижения на 10% и время полёта на 20%
                 [RAGEDESC]
                 После получения урона даёт ярость, этому эффекту не препятствуют ваши защитные характеристики
@@ -4042,6 +4092,7 @@ Items: {
                 Когда ярость заполнена, нажмите {0}, чтобы временно увеличить урон
                 '''
             RageModified: Вы непрерывно накапливаете ярость, и она не сбрасывается вне боя
+            LevelUpText: Сообщество трещит...
         }
     
         ShieldoftheHighRuler: {
@@ -4063,7 +4114,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает защиту на 5 в жидкостях
-                Увеличивает скорость передвижения и регенерацию здоровья, если надет комплект прилива
+                Увеличивает скорость передвижения на 10% и регенерацию здоровья на 1, если надет комплект прилива
                 '''
         }
     
@@ -4142,7 +4193,7 @@ Items: {
             DisplayName: Проклятие Статиса
             Tooltip:
                 '''
-                 Увеличивает призываемое число миньонов на 3; не суммируется с предыдущим улучшением
+                Увеличивает призываемое число миньонов на 3; не суммируется с предыдущим улучшением
                 Увеличивает урон призывателя на 10%
                 Увеличивает отбрасывание призывателя
                 Миньоны накладывают дебаффы «{$Buffs.HolyFlames.DisplayName}» и «{$BuffName.ShadowFlame}»
@@ -4277,10 +4328,10 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает скорость передвижения и прыжка на 10%
-                Враги получают огромный урон, когда касаются вас, и на них накладывается дебафф, существенно снижающий сопротивление урону
+                Враги получают огромный урон, когда касаются вас, и на них накладывается наносящий урон истощающий дебафф, который существенно снижает сопротивление урону
                 При использовании лечебного зелья создаёт очищающую ауру
                 Прохождение через ауру снимает все дебаффы и восстанавливает урон по защите один раз
-                Аура значительно увеличивает регенерацию здоровья, урон и сопротивление урону для всех игроков, находящихся внутри, на 15 секунд
+                Аура увеличивает регенерацию здоровья на 3, урон на 8% и сопротивление урону на 5% для всех игроков, находящихся внутри, на 10 секунд
                 Поглощает 5% урона от вражеских атак и преобразует его в исцеление
                 '''
         }
@@ -4303,8 +4354,9 @@ Items: {
             DisplayName: Трутень
             Tooltip:
                 '''
-                 При полном здоровье урон увеличен в зависимости от сопротивления урону
+                При полном здоровье урон увеличен в зависимости от сопротивления урону
                 Урон, получаемый при полном здоровье, снижен вдвое
+                Если у вас есть энергетические щиты, они также должны быть полностью заряжены, чтобы эти эффекты сработали
                 Имеет 10 секунд перезарядки
                 '''
         }
@@ -4334,7 +4386,7 @@ Items: {
                 '''
                 Увеличивает урон на {0}% и шанс критического удара на {1}%
                 Увеличивает максимальный запас здоровья на {2}%, сопротивление урону на {3}% и защиту на {4}
-                Увеличивает регенерацию здоровья на {5} во время действия эффектов с постепенным уроном
+                Увеличивает регенерацию здоровья на {5}, находясь под действием дебаффов с постепенным уроном
                 Увеличивает скорость передвижения на {6}% и время полёта на {7}%
                 Усиливается с каждым побеждённым боссом (Сила {8}%)
                 '''
@@ -4347,7 +4399,7 @@ Items: {
                 Вы отражаете снаряды, когда они попадают в вас
                 Отражённые снаряды не наносят вам урона
                 Это отражение имеет 90 секунд перезарядки и распространяется на все другие уклонения и отражения
-                Если этот эффект срабатывает, вы получаете ускоренную регенерацию здоровья на 5 секунд
+                После отражения чего-либо увеличивает регенерацию здоровья на 1 и ускоряет регенерацию на 5 секунд
                 Если после этого в вас снова попал такой же снаряд, вы заблокируете 15% урона
                 '''
         }
@@ -4363,7 +4415,15 @@ Items: {
     
         TheSponge: {
             DisplayName: Губка
-            Tooltip: НЕ РАБОТАЕТ
+            Tooltip:
+                '''
+                Создаёт барьер из квантовой плёнки, поглощающий до 180 единиц урона
+                В активном состоянии барьер увеличивает защиту на 30 и снижает получаемый урон на 30%
+                Барьер начинает заряжаться через 9 секунд после получения урона
+                Полная зарядка барьера занимает 6 секунд
+                Повторное получение урона во время зарядки перезапускает таймер зарядки
+                При необходимости цвет барьера меняется в зависимости от выбранной команды
+                '''
         }
     
         TheTransformer: {
@@ -4391,7 +4451,7 @@ Items: {
             Tooltip:
                 '''
                 Если вы не получали ударов в течение 15 секунд, сопротивление урону увеличивается на 10%, но это прекращается при получении удара
-                Увеличивает регенерацию здоровья на 2 вам и всем членам вашей команды
+                Увеличивает регенерацию здоровья на 1 вам и всем членам вашей команды
                 '''
         }
     
@@ -4423,6 +4483,16 @@ Items: {
                 [c/83B87E:'Эта довольно хлипкая броня была распространена среди мародёров и грабителей]
                 [c/83B87E:Своей универсальностью и простотой она превратилась в некую валюту, применяемую в торговле']
                 '''
+        }
+        
+        HapuFruit: {
+            DisplayName: Фрукт Ха-пью
+            Tooltip: "'Фрукт, который снимает напряжение (может иметь непредвиденные побочные эффекты)'"
+        }
+        
+        RedBow: {
+            DisplayName: Красный бантик
+            Tooltip: "'Любимый бантик Пелузы'"
         }
     
         Popo: {
@@ -5104,7 +5174,7 @@ Items: {
                     '''
                     Увеличивает сопротивление урону на 6%
                     Увеличивает урон призывателя на 6%
-                    Увеличивает защиту и регенерацию здоровья, пока вы погружены в жидкость
+                    Увеличивает защиту на 10 и регенерацию здоровья на 2.5, пока вы погружены в жидкость
                     Снижает потерю защиты в бездне
                     '''
             }
@@ -5256,9 +5326,10 @@ Items: {
                 SetBonus:
                     '''
                     'Доведи бой до конца'
-                    Создаёт энергетический щит, который поглощает до 70 единиц урона
-                    Щит заряжается за 10 секунд после разрушения
-                    Если вы получаете урон во время перезарядки щита, процесс перезарядки начинается сначала
+                    Создаёт пузырь-щит, поглощающий до 50 единиц урона
+                    Щит начинает заряжаться через 5 секунд после получения урона
+                    Полная зарядка щита занимает 2 секунды
+                    Повторное получение урона во время зарядки перезапускает таймер зарядки
                     Увеличивает урон пуль на 10%
                     Увеличивает специализированный стрелковый урон на 10%
                     К этому относятся пусковые установки, дротикомёты или всё, что не стреляет стрелами/пулями
@@ -5323,7 +5394,7 @@ Items: {
                 Tooltip:
                     '''
                     Увеличивает урон призывателя на 13% и скорость передвижения на 15%
-                    На траве, по которой прошлись, начинают расти цветы. Шанс вырастить случайное растение-краситель на бестравяной земле
+                    На траве, по которой прошлись, начинают расти цветы. Шанс вырастить случайное растение-краситель на земле, на которой нет травы
                     Вы создаёте пчёл во время бега или рывка
                     '''
             }
@@ -5419,11 +5490,11 @@ Items: {
                     '''
                     Увеличивает сопротивление урону на 15%, но снижает урон на 30%
                     Увеличивает максимальный запас здоровья на 50
-                    Пассивно восстанавливает одну единицу здоровья каждую секунду
+                    Восстанавливает 1 единицу здоровья каждую секунду, действует отдельно от регенерации здоровья
                     '''
                 SetBonus:
                     '''
-                    Увеличивает защиту на 10 и регенерацию здоровья на 3
+                    Увеличивает защиту на 10 и регенерацию здоровья на 1.5
                     Враги чаще выбирают вас в качестве цели
                     Снижает потерю здоровья от дебаффов, наносящих постепенный урон, на 20%
                     Все атаки, включая миньонов, с небольшим шансом обладают вампиризмом и ускоряют регенерацию здоровья
@@ -5587,7 +5658,7 @@ Items: {
                     '''
                 CommonSetBonus:
                     '''
-                    Значительно увеличивает регенерацию здоровья
+                    Значительно увеличивает регенерацию здоровья до уровня, аналогичного багряному комплекту брони
                     У врагов с уровнем здоровья ниже 50% выпадает сердце при ударе
                     Этот эффект имеет 5 секунд перезарядки
                     '''
@@ -5614,7 +5685,7 @@ Items: {
             
             BloodflareHeadMelee: {
                 DisplayName: Маска барана кровавой вспышки
-                Tooltip: Увеличивает урон ближнего боя на 10%
+                Tooltip: Увеличивает урон ближнего боя на 10% и шанс критического удара на 5%
                 SetBonus:
                     '''
                     Увеличивает скорость атаки ближнего боя на 18%
@@ -5661,7 +5732,7 @@ Items: {
                     Увеличивает урон призывателя на 50% и призываемое число миньонов на 3
                     Призывает мины полтергаста, двигающиеся по кругу
                     При 90% здоровья и выше вы получаете 10% увеличение урона призывателя
-                    При 50% здоровья и ниже вы получаете 20 защиты и 2 единицы регенерации здоровья
+                    При 50% здоровья и ниже вы получаете 20 защиты и 1 единицу регенерации здоровья
                     '''
             }
             
@@ -5672,7 +5743,7 @@ Items: {
                     Увеличивает скорость атаки ближнего боя на 25%, урон и шанс критического удара на 15%
                     Враги получают чудовищный урон, когда касаются вас
                     Увеличивает максимальный запас здоровья и маны на 200
-                    Стоя неподвижно, вы поглощаете тени и увеличиваете регенерацию здоровья
+                    Стоя неподвижно, вы поглощаете тени и получаете экспоненциальное ускорение регенерации здоровья
                     '''
             }
             
@@ -5742,7 +5813,7 @@ Items: {
                     Увеличивает урон призывателя на 20% и призываемое число миньонов на 2
                     Миньоны больше не наносят сниженный урон, пока вы держите оружие другого класса
                     Даёт невосприимчивость ко всем формам мороза и огня
-                    Все атаки миньонов даруют колоссальную регенерацию здоровья
+                    Атаки миньонов увеличивают регенерацию здоровья на 3.5 и значительно ускоряют регенерацию здоровья
                     Увеличивает сопротивление урону на 15% во время тыквенной и ледяной луны
                     Это дополнительное сопротивление урону игнорирует ванильный предел
                     '''
@@ -5845,7 +5916,6 @@ Items: {
                     Враги чаще выбирают вас в качестве цели
                     Получив более 80 единиц урона за один удар, вы выпустите рой дротиков богоубийц с высоким уроном
                     Враги получают значительный урон, когда ударяют вас
-                    Урон от атаки, которая нанесёт вам 80 или меньше урона, будет снижен до 1 единицы
                     '''
             }
             
@@ -6005,7 +6075,7 @@ Items: {
                 Tooltip:
                     '''
                     Увеличивает урон на 10% и шанс критического удара на 5%
-                    Увеличивает регенерацию здоровья на 2 и максимальный запас здоровья на 40
+                    Увеличивает регенерацию здоровья на 1 и максимальный запас здоровья на 40
                     '''
                 CommonSetBonus:
                     '''
@@ -6068,8 +6138,8 @@ Items: {
                 SetBonus:
                     '''
                     Увеличивает максимальную скрытность на 115
-                    После каждых 25 разбойных критических ударов вы получаете неуязвимость к урону на 3 секунды
-                    Этот эффект может срабатывать только раз в 30 секунд
+                    После каждых 50 разбойных критических ударов вы получаете неуязвимость к урону на 2.5 секунды
+                    Этот эффект имеет 25 секунд перезарядки
                     Находясь под действием дебаффа, вы получаете 10% увеличенный разбойный урон
                     '''
             }
@@ -6335,7 +6405,7 @@ Items: {
             VictideHeadMagic: {
                 DisplayName: Шлем отшельника прилива
                 Tooltip: Увеличивает магический урон на 5%
-                SetBonus: Находясь под водой, увеличивает регенерацию здоровья на 3 и магический урон на 10%
+                SetBonus: Находясь под водой, увеличивает регенерацию здоровья на 1.5 и магический урон на 10%
             }
             
             VictideHeadMelee: {
@@ -6344,14 +6414,14 @@ Items: {
                 SetBonus:
                     '''
                     Враги чаще выбирают вас в качестве цели
-                    Находясь под водой, увеличивает регенерацию здоровья на 3 и урон ближнего боя на 10%
+                    Находясь под водой, увеличивает регенерацию здоровья на 1.5 и урон ближнего боя на 10%
                     '''
             }
             
             VictideHeadRanged: {
                 DisplayName: Коралловый тюрбан прилива
                 Tooltip: Увеличивает стрелковый урон на 5%
-                SetBonus: Находясь под водой, увеличивает регенерацию здоровья на 3 и стрелковый урон на 10%
+                SetBonus: Находясь под водой, увеличивает регенерацию здоровья на 1.5 и стрелковый урон на 10%
             }
             
             VictideHeadRogue: {
@@ -6360,7 +6430,7 @@ Items: {
                 SetBonus:
                     '''
                     Увеличивает максимальную скрытность на 60
-                    Находясь под водой, увеличивает регенерацию здоровья на 3 и разбойный урон на 10%
+                    Находясь под водой, увеличивает регенерацию здоровья на 1.5 и разбойный урон на 10%
                     '''
             }
             
@@ -6371,7 +6441,7 @@ Items: {
                     '''
                     Увеличивает призываемое число миньонов на 1
                     Призывает морского ежа, защищающего вас
-                    Находясь под водой, увеличивает регенерацию здоровья на 3 и урон призывателя на 10%
+                    Находясь под водой, увеличивает регенерацию здоровья на 1.5 и урон призывателя на 10%
                     '''
             }
             
@@ -9947,7 +10017,7 @@ Items: {
         
         CalamitasCloneRelic: {
             DisplayName: Реликвия Клона Каламитас
-            Tooltip: Мимолётный взгляд на то, что могло бы быть...
+            Tooltip: ""
         }
         
         CalamitasRelic: {
@@ -9972,7 +10042,7 @@ Items: {
         
         CryogenRelic: {
             DisplayName: Реликвия Криогена
-            Tooltip: Мимолётный взгляд на то, что могло бы быть...
+            Tooltip: ""
         }
         
         DesertScourgeRelic: {
@@ -9992,7 +10062,7 @@ Items: {
         
         DragonfollyRelic: {
             DisplayName: Реликвия Псевдодракона
-            Tooltip: Мимолётный взгляд на то, что могло бы быть...
+            Tooltip: ""
         }
         
         GiantClamRelic: {
@@ -10257,7 +10327,7 @@ Items: {
             DisplayName: Устойчивая свеча
             Tooltip:
                 '''
-                При размещении защита игроков поблизости блокирует на 5% больше урона
+                При размещении защита игроков поблизости блокирует на 15% больше урона
                 'Ни дождь, ни ветер не могут погасить её вечное пламя'
                 '''
         }
@@ -12945,72 +13015,100 @@ Items: {
         
         FireTurret: {
             DisplayName: Огненная турель
-            Tooltip: ""
+            Tooltip:
+                '''
+                Поджаривает на полной мощности ближайших врагов из огнемёта
+                Не атакует, пока босс жив
+                '''
         }
         
         HostileFireTurret: {
             DisplayName: Враждебная огненная турель
-            Tooltip: ""
+            Tooltip: Поджаривает на полной мощности ближайших игроков из огнемёта
         }
         
         HostileIceTurret: {
             DisplayName: Враждебная ледяная турель
-            Tooltip: ""
+            Tooltip: Бросает хрупкие ледяные туманные бомбы в ближайших игроков
         }
         
         HostileLabTurret: {
             DisplayName: Враждебная турель лаборатории
-            Tooltip: ""
+            Tooltip: Стреляет лазерными лучами в ближайших игроков
         }
         
         HostileLaserTurret: {
             DisplayName: Враждебная лазерная турель
-            Tooltip: ""
+            Tooltip: Стреляет лазерными лучами в ближайших игроков
         }
         
         HostileOnyxTurret: {
             DisplayName: Враждебная ониксовая турель
-            Tooltip: ""
+            Tooltip: Стреляет дробью пуль в ближайших игроков
         }
         
         HostilePlagueTurret: {
             DisplayName: Враждебная чумная турель
-            Tooltip: ""
+            Tooltip: Запускает самонаводящиеся чумные ракеты в ближайших игроков
         }
         
         HostileWaterTurret: {
             DisplayName: Враждебная водяная турель
-            Tooltip: ""
+            Tooltip: Стреляет высокоскоростными водными струями в ближайших игроков
         }
         
         IceTurret: {
             DisplayName: Ледяная турель
-            Tooltip: ""
+            Tooltip:
+                '''
+                Бросает хрупкие ледяные туманные бомбы в ближайших врагов
+                Не атакует, пока босс жив
+                '''
         }
         
         LabTurret: {
             DisplayName: Турель лаборатории
-            Tooltip: ""
+            Tooltip:
+                '''
+                Стреляет лазерными лучами в ближайших врагов
+                Не атакует, пока босс жив
+                '''
         }
         
         LaserTurret: {
             DisplayName: Лазерная турель
-            Tooltip: ""
+            Tooltip:
+                '''
+                Поражает ближайших врагов молниеносными лазерными лучами
+                Не атакует, пока босс жив
+                '''
         }
         
         OnyxTurret: {
             DisplayName: Ониксовая турель
-            Tooltip: ""
+            Tooltip:
+                '''
+                Стреляет дробью пуль в ближайших врагов
+                Не атакует, пока босс жив
+                '''
         }
         
         PlagueTurret: {
             DisplayName: Чумная турель
-            Tooltip: ""
+            Tooltip:
+                '''
+                Запускает самонаводящиеся чумные ракеты в ближайших врагов
+                Не атакует, пока босс жив
+                '''
         }
         
         WaterTurret: {
             DisplayName: Водяная турель
-            Tooltip: ""
+            Tooltip:
+                '''
+                Стреляет высокоскоростными водными струями в ближайших врагов
+                Не атакует, пока босс жив
+                '''
         }
     }
     
@@ -13089,7 +13187,7 @@ Items: {
         
         FlaskOfCrumbling: {
             DisplayName: Флакон разрушения
-            Tooltip: Ближние и разбойные атаки, а также хлысты накладывают дебафф «{$Buffs.ArmorCrunch.DisplayName}»
+            Tooltip: Ближние и разбойные атаки, а также хлысты накладывают дебафф «{$Buffs.Crumbling.DisplayName}»
         }
         
         FlaskOfHolyFlames: {
@@ -13192,7 +13290,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает урон и скорость передвижения на 10% во время кровавой луны
-                Снижает регенерацию здоровья на 4 и защиту на 4%
+                Снижает регенерацию здоровья на 2 и защиту на 4%
                 [c/B00BA5:'Очень пряная и кровавая!']
                 '''
         }
@@ -13201,7 +13299,7 @@ Items: {
             DisplayName: Карибский ром
             Tooltip:
                 '''
-                Ускоряет регенерацию здоровья на 2, скорость передвижения на 10% и время полёта крыльев на 20%
+                Ускоряет регенерацию здоровья на 1, скорость передвижения на 10% и время полёта крыльев на 20%
                 Делает вас вялым и снижает защиту на 10%
                 [c/B00BA5:'Ром-то за что?']
                 '''
@@ -13222,7 +13320,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает урон на 25%
-                Снижает регенерацию здоровья на 10 и защиту на 30%
+                Снижает регенерацию здоровья на 5 и защиту на 30%
                 [c/B00BA5:'Самая убойная выпивка, что у меня есть, будь осторожнее']
                 '''
         }
@@ -13232,7 +13330,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает урон всех накладываемых игроком истощающих и водных дебаффов на 25%
-                Снижает регенерацию здоровья на 1
+                Снижает регенерацию здоровья на 0.5
                 [c/B00BA5:'На вкус как рождественская ёлка, если можешь представить себе это']
                 '''
         }
@@ -13252,7 +13350,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает урон всех накладываемых игроком огненных дебаффов на 25%
-                Снижает регенерацию здоровья на 1
+                Снижает регенерацию здоровья на 0.5
                 [c/B00BA5:'Вкуснейший виски со вкусом корицы']
                 '''
         }
@@ -13271,7 +13369,7 @@ Items: {
             Tooltip:
                 '''
                 Снижает длительность большинства вредоносных дебаффов
-                Снижает защиту на 6% и регенерацию здоровья на 1
+                Снижает защиту на 6% и регенерацию здоровья на 0.5
                 Длительность действия: 3 мин.
                 [c/B00BA5:'Лучшее пойло из когда-либо созданных']
                 [c/B00BA5:'Медленно цедите и наслаждайтесь, пока не кончится']
@@ -13283,7 +13381,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает защиту на 10 и сопротивление урону на 3%
-                Снижает регенерацию здоровья на 1
+                Снижает регенерацию здоровья на 0.5
                 [c/B00BA5:'Довольно ядрёная штука, но я уверена, ты справишься']
                 '''
         }
@@ -13293,7 +13391,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает урон на 9%, отбрасывание на 50% и шанс критического удара на 3%
-                Снижает регенерацию здоровья на 4
+                Снижает регенерацию здоровья на 2
                 [c/B00BA5:'Услышав как-то о том, что медная кружка может быть токсичной, я сказала: 'слушай сюда, утырок! Да я и без меди отравляю себя']
                 '''
         }
@@ -13312,7 +13410,7 @@ Items: {
             DisplayName: Красное вино
             Tooltip:
                 '''
-                Снижает регенерацию здоровья на 1 на 15 секунд
+                Снижает регенерацию здоровья на 0.5 на 15 секунд
                 [c/B00BA5:'Слишком сухое, на мой вкус']
                 '''
         }
@@ -13321,7 +13419,7 @@ Items: {
             DisplayName: Ром
             Tooltip:
                 '''
-                Увеличивает регенерацию здоровья на 2 и скорость передвижения на 10%
+                Увеличивает регенерацию здоровья на 1 и скорость передвижения на 10%
                 Снижает защиту на 5%
                 [c/B00BA5:'Сладкий и мощный, всё как я люблю']
                 '''
@@ -13332,7 +13430,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает урон пронзающих снарядов на 5%
-                Снижает регенерацию здоровья на 1
+                Снижает регенерацию здоровья на 0.5
                 [c/B00BA5:'У вас шуруп не отвинтился?']
                 '''
         }
@@ -13342,7 +13440,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает максимальный запас маны на 50, магический урон на 8% и снижает расход маны на 10%
-                Снижает защиту на 6% и регенерацию здоровья на 2
+                Снижает защиту на 6% и регенерацию здоровья на 1
                 [c/B00BA5:'Я сварганила это из материалов, что нашла возле упавшего астрального метеора. Не кипишуй, это полностью безопасно']
                 '''
         }
@@ -13352,7 +13450,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает отбрасывание на 10%, шанс критического удара на 4% и защиту на 5 в дневное время
-                Снижает регенерацию здоровья на 1
+                Снижает регенерацию здоровья на 0.5
                 [c/B00BA5:'Отлично подходит для смешивания дневных коктейлей']
                 '''
         }
@@ -13362,7 +13460,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает отбрасывание на 20%, шанс критического удара на 8% и защиту на 10 в дневное время
-                Снижает регенерацию здоровья на 2
+                Снижает регенерацию здоровья на 1
                 [c/B00BA5:'Лучший дневной коктейль из всех, что я пила']
                 '''
         }
@@ -13372,7 +13470,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает урон на 6% и шанс критического удара на 2%
-                Снижает регенерацию здоровья на 1 и защиту на 5%
+                Снижает регенерацию здоровья на 0.5 и защиту на 5%
                 [c/B00BA5:'Номер один среди алкоголей для создания великолепных коктейлей']
                 '''
         }
@@ -13392,7 +13490,7 @@ Items: {
             Tooltip:
                 '''
                 Увеличивает магический урон на 8%
-                Снижает защиту на 6% и регенерацию здоровья на 1
+                Снижает защиту на 6% и регенерацию здоровья на 0.5
                 [c/B00BA5:'Как-то раз я умудрилась за ночь выпить полную бочку этой дряни, а на следующий день я не помнила кем была']
                 '''
         }
@@ -13486,7 +13584,7 @@ Items: {
                 '''
                 Призывает Разрушителя
                 Не расходуется
-                Очень старый храмовый свисток
+                Свисток, пропитанный кровью
                 '''
         }
         
@@ -13526,7 +13624,7 @@ Items: {
                 Призывает Псевдодракона при использовании в джунглях
                 Входит в ярость за пределами джунглей
                 Не расходуется
-                Разработаны с целью привлечения драконьих гибридов
+                Разработаны с целью привлечения драконьих потомков
                 '''
         }
         
@@ -13537,7 +13635,6 @@ Items: {
                 Призывает Клона Каламитас при использовании в ночное время[GFB]
                 Входит в ярость во время дня
                 Не расходуется
-                'Сегодня будет ужасная ночь...'
                 '''
             GFBInfo: Создаёт квадратную арену из блоков, в центре которой находится вы
         }
@@ -13635,12 +13732,13 @@ Items: {
             DisplayName: Руна Кос
             Tooltip:
                 '''
-                Содержит силу, за которой беспрестанно охотятся приспешники космического пожирателя
+                Изысканная печать осквернённого пламени
+                Ненависть всё ещё пылает на его брови
                 [SPAWN]
                 Не расходуется
                 Реликвия осквернённого пламени
                 '''
-            SpawnInfo: Использование в определённых частях мира высвобождает их
+            SpawnInfo: Такая мощь притягивает сущности из других миров
             SpawnVoid:
                 '''
                 Призывает Нескончаемую пустоту
@@ -14264,7 +14362,9 @@ Items: {
                 DisplayName: Змеиные глаза
                 Tooltip:
                     '''
-                    Призывает механического дрона-разведчика, который парит над врагами и безжалостно обстреливает их электричеством
+                    Призывает парящего дрона, который стреляет пронзающими, высококалиброванными энергетическими снарядами
+                    Если снаряд попадает, дрон мгновенно телепортируется на его траекторию и отражает его
+                    Отражённые снаряды самонаводятся и взрываются при контакте
                     [c/1FFBFF:'Оборудованный передовыми сенсорами, которые практически не дают шансов на уклонение. Ещё меньше возможностей ускользнуть от их непрекращающегося пристального наблюдения]
                     [c/1FFBFF:Превосходный связующий элемент, соединяющий мои эксперименты с машинами, питаемыми душами в качестве энергии, и основанными на зрении, и моим последним творением']
                     '''
@@ -15071,7 +15171,8 @@ Items: {
                     Нажмите <left>, чтобы запустить шквал вихрей, устремляющихся к врагам
                     Удерживайте <right>, чтобы создать перед вами гигантский вихрь, направляющийся в сторону курсора
                     Когда рядом с вихрем находятся враги, он посылает к ним множество быстрых вихрей меньшего размера
-                    Спустя время вихрь прекращает стрельбу и, если вы отпустите <right>, запускает его в сторону курсора
+                    При отпускании <right> выпускает вихрь в направлении курсора, если прошло достаточно времени
+                    Урон увеличивается в зависимости от продолжительности удержания вихря
                     '''
             }
             
@@ -15417,11 +15518,7 @@ Items: {
                     Вы можете парировать снаряды, снижая их урон на 100 единиц на короткий период времени
                     Парирование усиливает следующие 10 взмахов мечом, позволяя вам использовать оба клинка одновременно
                     '''
-                BlastInfo:
-                    '''
-                    Если нажать <right> при нажатой клавише {$Key.UP} с использованием усиленных зарядов, это спровоцирует Большой Разрыв пространства-времени и израсходует все заряды
-                    Если израсходовано более 5 зарядов, вы можете сделать рывок сквозь разрыв, удерживая клавишу {$Key.UP}
-                    '''
+                BlastInfo: Если нажать <right> при нажатой клавише {$Key.UP} с использованием усиленных зарядов, это спровоцирует Большой Разрыв пространства-времени и израсходует все заряды
             }
             
             AstralBlade: {
@@ -15614,8 +15711,7 @@ Items: {
                 DisplayName: Крушитель глубин
                 Tooltip:
                     '''
-                    При нанесении ударов по врагам накладывает дебафф «{$Buffs.CrushDepth.DisplayName}»
-                    Чем ниже защита врагов, тем больше урона они получат от этого дебаффа
+                    При нанесении ударов по врагам накладывает дебафф «{$Buffs.Riptide.DisplayName}»
                     Нажмите <right>, чтобы использовать как обычное оружие без разрушения стен
                     '''
             }
@@ -15729,14 +15825,14 @@ Items: {
             }
             
             EvilSmasher: {
-                DisplayName: Сокрушитель зла
+                DisplayName: Врагобой
                 Tooltip:
                     '''
                     За каждого убитого врага этот молот получает бонус к характеристикам
                     Эти бонусы суммируются, пока не достигнут предела
                     Бонусные характеристики сбрасываются, если вы переключаетесь на другой предмет
                     Бонусные стаки снижаются на 1 каждый раз, когда вы получаете удар
-                    'ЗЛО! кРушИТЬ зЛО! КруШИть...АР!'
+                    'ЗЛО! кРушИТЬ зЛО! КруШИть... А-р-р!'
                     '''
             }
             
@@ -16086,7 +16182,6 @@ Items: {
                     '''
                     Выпускает трезубец, который по мере полёта разбрасывает дополнительные трезубцы
                     При нанесении ударов по врагам накладывает дебафф «{$Buffs.CrushDepth.DisplayName}»
-                    Чем ниже защита врага, тем больше урона он получает от этого дебаффа
                     '''
             }
             
@@ -16760,7 +16855,7 @@ Items: {
                 DisplayName: Арбалест
                 Tooltip:
                     '''
-                    Стреляет залпом из 10 высокоскоростных стрел
+                    Стреляет залпом из 6 высокоскоростных стрел
                     Стрелы изначально маленькие и увеличиваются в размерах при непрерывном огне
                     Урон стрелы, разброс и отбрасывание зависят от размера стрелы
                     '''
@@ -17045,13 +17140,9 @@ Items: {
                     '''
             }
             
-            DeepcoreGK2: {
-                DisplayName: Deepcore GK2
-                Tooltip:
-                    '''
-                    Пули в два раза больше и игнорируют 15 ед. защиты врага
-                    'За камень и скалу!'
-                    '''
+            DeadSunsWind: {
+                DisplayName: Ветер погасшего солнца
+                Tooltip: 70% шанс не использовать боеприпасы
             }
             
             Deathwind: {
@@ -17060,6 +17151,15 @@ Items: {
                     '''
                     Стреляет разбросом из 4 стрел
                     Превращает деревянные стрелы в стрелы туманности
+                    '''
+            }
+            
+            DeepcoreGK2: {
+                DisplayName: Deepcore GK2
+                Tooltip:
+                    '''
+                    Пули в два раза больше и игнорируют 15 ед. защиты врага
+                    'За камень и скалу!'
                     '''
             }
             
@@ -17173,8 +17273,8 @@ Items: {
                 DisplayName: Лук огненного крыла
                 Tooltip:
                     '''
-                    Стреляет разбросом из 4 стрел
-                    Превращает деревянные стрелы в отскакивающих горящих обсидиановых летучих мышей
+                    Стреляет разбросом из 3 стрел
+                    Превращает деревянные стрелы в обсидиановых летучих мышей, которые самонаводятся после однократного пронзания
                     '''
             }
             
@@ -17214,11 +17314,6 @@ Items: {
             Galeforce: {
                 DisplayName: Штормовая сила
                 Tooltip: Стреляет разбросом перьев с низким уроном
-            }
-            
-            GodsBellows: {
-                DisplayName: Божий горн
-                Tooltip: 70% шанс не использовать боеприпасы
             }
             
             GoldenEagle: {
@@ -18112,7 +18207,7 @@ Items: {
                 Tooltip:
                     '''
                     Бросает лезвие, которое разделяется при попадании во врага
-                    При скрытном ударе лезвие разделяется сильнее и запускает шквал серных дротиков
+                    При скрытном ударе лезвие разделяется на большее количество и запускает шквал серных дротиков
                     '''
             }
             
@@ -18268,17 +18363,6 @@ Items: {
                     Бросает разнообразные смертоносные сферы с различными эффектами
                     Одновременно можно бросать до пяти сфер
                     При скрытном ударе бросает все 4 типа сферы за раз
-                    '''
-            }
-            
-            DeificThunderbolt: {
-                DisplayName: Божественный гром
-                Tooltip:
-                    '''
-                    Стреляет молнией, электризующей врагов
-                    Молния летит быстрее во время дождя
-                    Призывает молнию с неба при столкновении
-                    При скрытном ударе призывает больше молний, которые летят быстрее
                     '''
             }
             
@@ -18831,7 +18915,7 @@ Items: {
             
             PalladiumJavelin: {
                 DisplayName: Палладиевый дротик
-                Tooltip: При скрытном ударе копьё разделяется на несколько копий и усиливает регенерацию здоровья при попадании
+                Tooltip: При скрытном ударе копьё разделяется на несколько копий и усиливает естественную регенерацию здоровья при попадании
             }
             
             Penumbra: {
@@ -18906,7 +18990,7 @@ Items: {
                 Tooltip:
                     '''
                     Бросает кинжал, который разделяется через некоторое время
-                    При скрытном ударе кинжал разделяется сильнее, создаёт разрушительные взрывы и засасывает врагов
+                    При скрытном ударе кинжал разделяется на большее количество, создаёт разрушительные взрывы и засасывает врагов
                     '''
             }
             
@@ -19317,6 +19401,17 @@ Items: {
                     '''
             }
             
+            TwistingThunder: {
+                DisplayName: Извилистый гром
+                Tooltip:
+                    '''
+                    Стреляет молнией, электризующей врагов
+                    Молния летит быстрее во время дождя
+                    Призывает молнию с неба при столкновении
+                    При скрытном ударе призывает больше молний, которые летят быстрее
+                    '''
+            }
+            
             UrchinStinger: {
                 DisplayName: Игла морского ежа
                 Tooltip: При скрытном ударе игла прилипает к врагу, высвобождая серные пузыри
@@ -19326,7 +19421,7 @@ Items: {
                 DisplayName: Кухонный покер
                 Tooltip:
                     '''
-                    Стреляет случайной кухонной утварью очередями по три штуки
+                    Стреляет кухонной утварью очередями по три штуки
                     При скрытном ударе заменяет любую кухонную утварь мощным ножом мясника
                     'Космические цыплята, вот и всё'
                     '''
@@ -19784,11 +19879,6 @@ Items: {
                     '''
             }
             
-            GodspawnHelixStaff: {
-                DisplayName: Спиральный посох богорождения
-                Tooltip: Призывает астральные зонды
-            }
-            
             GuidelightofOblivion: {
                 DisplayName: Путеводный свет забвения
                 Tooltip:
@@ -19862,6 +19952,21 @@ Items: {
             MidnightSunBeacon: {
                 DisplayName: Маяк полночного солнца
                 Tooltip: Призывает НЛО, испаряющее врагов
+            }
+            
+            MirrorofKalandra: {
+                DisplayName: Зеркало Каландры
+                Tooltip:
+                    '''
+                    Призывает пять древних оружий, истребляющих врагов
+                    Каждого оружия может быть только по одному экземпляру
+                    [c/BD7F59:Немилость Атзири беспощадно рубит врагов на части]
+                    [c/E7A7FF:Звёздный горн прорывается сквозь врагов и иногда вызывает космические взрывы]
+                    [c/868B8F:Парадоксика телепортируется к врагам и молниеносно пронзает их]
+                    [c/EBC3A5:Рассекатель ветра выпускает одну высокоскоростную, мощную стрелу по врагам]
+                    [c/9B6856:Разрыватель надежд стреляет стрелами, которые разделяются на три и пронзают врагов дважды]
+                    'Величайшее, неизмеримое, непостижимое'
+                    '''
             }
             
             OrthoceraShell: {
@@ -20009,18 +20114,19 @@ Items: {
                 Tooltip: Призывает воздушного мехачервя
             }
             
+            StarspawnHelixStaff: {
+                DisplayName: Звездорождённый спиральный посох
+                Tooltip: Призывает астральные зонды
+            }
+            
+            StellarTorusStaff: {
+                DisplayName: Посох звёздного торуса
+                Tooltip: Призывает орбитальный торус, сжигающий врагов телескопическим световым лучом
+            }
+            
             StormjawStaff: {
                 DisplayName: Посох штормовой челюсти
                 Tooltip: Призывает маленького штормового льва
-            }
-            
-            SunGodStaff: {
-                DisplayName: Посох солнечного бога
-                Tooltip:
-                    '''
-                    Призывает духа солнечного бога
-                    Одновременно может существовать только один дух
-                    '''
             }
             
             SunSpiritStaff: {
@@ -20080,6 +20186,15 @@ Items: {
                     Попытка использовать этот предмет во время перезарядки вызовет короткое замыкание и нанесёт вам урон
                     [c/BB57FF:'Древний артефакт прошедших времён дожидается лишь вашей команды]
                     [c/BB57FF:Отвратительная идея, но ведь не ваша... Верно?']
+                    '''
+            }
+            
+            VengefulSunStaff: {
+                DisplayName: Посох мстительного солнца
+                Tooltip:
+                    '''
+                    Призывает духа солнечного бога
+                    Одновременно может существовать только один дух
                     '''
             }
             
@@ -20156,26 +20271,6 @@ Items: {
                     Призывает огненного драконида
                     Занимает 5 слотов призываемых миньонов
                     '''
-            }
-            
-            MirrorofKalandra: {
-                DisplayName: Зеркало Каландры
-                Tooltip:
-                    '''
-                    Призывает пять древних оружий, истребляющих врагов
-                    Каждого оружия может быть только по одному экземпляру
-                    [c/BD7F59:Немилость Атзири беспощадно рубит врагов на части]
-                    [c/E7A7FF:Звёздный горн прорывается сквозь врагов и иногда вызывает космические взрывы]
-                    [c/868B8F:Парадоксика телепортируется к врагам и молниеносно пронзает их]
-                    [c/EBC3A5:Рассекатель ветра выпускает одну высокоскоростную, мощную стрелу по врагам]
-                    [c/9B6856:Разрыватель надежд стреляет стрелами, которые разделяются на три и пронзают врагов дважды]
-                    'Величайшее, неизмеримое, непостижимое'
-                    '''
-            }
-            
-            StellarTorusStaff: {
-                DisplayName: Посох звёздного торуса
-                Tooltip: Призывает орбитальный торус, сжигающий врагов телескопическим световым лучом
             }
         }
         
@@ -20277,8 +20372,6 @@ Keybinds: {
     BoosterDash.DisplayName: Усилитель рывка
     SpectralVeilTeleport.DisplayName: Телепортация спектральной вуали
     SandCloakEffect.DisplayName: Эффект песчаной мантии
-    AstralArcanumUIToggle.DisplayName: Телепортация астрального арканума
-    AstralTeleport.DisplayName: Астральная телепортация
     ArmorSetBonus.DisplayName: Бонус комплекта брони
     AdrenalineMode.DisplayName: Режим адреналина
     RageMode.DisplayName: Режим ярости
@@ -20290,7 +20383,7 @@ Keybinds: {
 Misc: {
     RecipeGroup: {
         HardmodeAnvil: Хардмодная наковальня
-        HarmodeForge: Хардмодная кузня
+        HardmodeForge: Хардмодная кузня
         AnyLargeGem: Любой большой самоцвет
         AnyFood: Любая еда
         AnyEvilBar: Слиток мирового зла
@@ -22211,6 +22304,7 @@ Projectiles: {
         VoltageStream.DisplayName: Voltage Stream
         WavePounderBoom.DisplayName: Explosion
         WavePounderProjectile.DisplayName: Wave Pounder
+        SnakeEyesProjectile.DisplayName: Inescapable Bolt
         AcidDrop.DisplayName: Acid
         BrimstoneGeyser.DisplayName: Smoke
         GeyserTelegraph.DisplayName: Geyser
@@ -22603,7 +22697,7 @@ Projectiles: {
         DeepSeaDumbbellWeight.DisplayName: Deep Sea Dumbbell
         DeepWounderProjectile.DisplayName: Deep Wounder Projectile
         DeepWounderWater.DisplayName: Water Droplet
-        DeificThunderboltProj.DisplayName: Deific Thunderbolt
+        TwistingThunderProj.DisplayName: Deific Thunderbolt
         DesecratedBubble.DisplayName: Bubble
         DesecratedWaterProj.DisplayName: Desecrated Water
         DestructionBolt.DisplayName: Destruction Bolt
@@ -22622,6 +22716,7 @@ Projectiles: {
         EclipsesFallMain.DisplayName: Eclipse's Fall
         EclipsesSmol.DisplayName: Eclipse's Small
         EclipsesStealth.DisplayName: Eclipse's Fall
+        EclipseStealthBoom.DisplayName: Eclipse Blast
         EGloveSpark.DisplayName: Spark
         ElementalDiskProj.DisplayName: Elemental Disk
         ElementalDiskSplit.DisplayName: Elemental Disk
@@ -23027,6 +23122,7 @@ Projectiles: {
         MiniGuardianAttack.DisplayName: Offensive Guardian
         MiniGuardianDefense.DisplayName: Defensive Guardian
         MiniGuardianHealer.DisplayName: Healer Guardian
+        MiniGuardianRock.DisplayName: Rocky Road
         MiniGuardianSpear.DisplayName: Bab Spear
         MiniSandShark.DisplayName: Mini Sand Shark
         MK2FlaskSummon.DisplayName: Flask
@@ -23097,8 +23193,8 @@ Projectiles: {
         ExoskeletonGaussNukeCannon.DisplayName: Gauss Nuke
         ExoskeletonLaserCannon.DisplayName: Laser Cannon
         ExoskeletonPanel: {
-        	DisplayName: UI
-        	NoSlots: Недостаточно слотов призываемых миньонов!
+            DisplayName: UI
+            NoSlots: Недостаточно слотов призываемых миньонов!
         }
         ExoskeletonPlasmaCannon.DisplayName: Plasma Cannon
         ExoskeletonTeslaCannon.DisplayName: Tesla Cannon
@@ -23419,45 +23515,73 @@ Status: {
     Death: {
         AbyssDrown1: "{0} становится пищей для змий."
         AbyssDrown2: Кислород в глубинах бездны не достигает игрока {0}.
+        AbyssDrown3: "{0} растворяется, исчезнув в тёмных водах."
         AlcoholBig1: "{0} выпивает слишком много напитков."
         AlcoholBig2: "{0} сажает печень."
         AlcoholSmall: "{0} поддаётся алкогольной болезни."
         Armageddon: "{0} не справляется с испытанием."
         AstralInfection1: "{0} распространяет инфекцию слишком сильно."
         AstralInfection2: "{0} сменяет кожу астральным вирусом."
-        AstralInjection: "{0} разрывает кровеносные сосуды от передозировки наркотиками."
+        AstralInfection3: "{0} поддаётся воздействию своих космических пустул."
+        AstralInjection1: "{0} разрывает кровеносные сосуды от передозировки наркотиками."
+        AstralInjection2: "{0} не справляется с очередной передачей космической маны."
         AuricRejection: "{0} недостоин."
-        BloodBoiler1: "{0} страдает от тяжёлой анемии."
+        BloodBoiler1: "{0} теряет сознание от тяжёлой анемии."
         BloodBoiler2: "{0} не добивается переливания крови."
-        BrimstoneFlames: "{0} поглощается чёрным пламенем."
-        BurningBlood: "{0} становится кровавым гейзером."
+        BrimstoneFlames1: "{0} поглощается чёрным пламенем."
+        BrimstoneFlames2: "{0} обугливается серным инферно."
+        BrimstoneFlames3: Душа {0} сгорает до проклятой сажи.
+        BurningBlood1: "{0} становится кровавым гейзером."
+        BurningBlood2: "{0} разрывается при высокотемпературном кровоизлиянии."
         ChibiiDoggo: "{0} не выдерживает острых предметов."
-        CirrusSlap: "{0} получает слишком сильную пощёчину."
+        CirrusSlap1: "{0} получает слишком сильную пощёчину."
+        CirrusSlap2: "{0} решил пошутить и теперь сталкивается с последствиями."
         CorpusAvertor: "{0} становится жертвой кровавого бога."
         CrushDepth1: "{0} расплющивается давлением."
         CrushDepth2: "{0} выплёвывает лёгкие."
-        Dragonfire: "{0} развеивает по ветру свой прах."
-        GodSlayerInferno: "{0} гасит свою душу."
+        CrushDepth3: Кости {0} хрустнули под сильным давлением.
+        Riptide1: "{0} уносится приливами."
+        Riptide2: "{0} разрывается на куски течением."
+        Dragonfire1: "{0} развеивает по ветру свой прах."
+        Dragonfire2: "Пепел {0} медленно угасает в тёплом свечении."
+        Dragonfire3: "{0} больше не ощущает жар драконьего огня."
+        Dragonfire4: Это была битва, которую {0} не смог выиграть.
+        GodSlayerInferno1: "{0} схлопывается в ничего."
+        GodSlayerInferno2: "Тело {0} уходит в небытие."
+        GodSlayerInferno3: "{0} прекращает существовать в нашей вселенной."
         Goldfish: "{0} вновь обезглавливается золотой рыбкой."
-        HolyFlames: "{0} становится жертвой собственных грехов."
-        HolyInferno: "{0} обращается Осквернённой богиней в пепел."
-        ManaConversion: "{0} обращает свою жизнь в ману."
-        ManaConversionAlt: "{0} преобразовывает всё своё здоровье в ману."
+        HolyFlames1: "{0} становится жертвой собственных грехов."
+        HolyFlames2: "{0} взрывается, превращаясь в безгрешный пепел."
+        HolyFlames3: "{0} очищается проклятым пламенем."
+        HolyInferno: "{0} испепеляется осквернённой обратной тягой."
+        ManaBurn: "{0} обращает свою жизнь в ману."
+        ManaConversionEnchant: "Жизнь {0} полностью пронизывается тёмной магией."
         MiracleBlight1: "{0} ошеломляется чудесными технологическими разработками."
         MiracleBlight2: "{0} расщепляется от всепоглощающего экзотического резонанса."
+        MiracleBlight3: "Атомы, из которых состоит {0}, перестраиваются... неудачно."
         NecroRevive: "{0} преклоняется перед неизбежностью."
-        Nightwither: "{0} испепеляется лунными лучами."
+        Nightwither: "{0} истощается лунными лучами."
         Plague1: "{0} расплавляет свою плоть чумой."
-        Plague2: "{0} не делает прививку."
+        Plague2: "{0} не удалось сделать прививку от чумы."
+        Plague3: "{0} превращается в богатый питательными веществами осадок."
         ProfanedSoulCrystal: "{0} призывается слишком рано."
-        ProvidenceMelt: "{0} превращается в безгрешный пепел."
-        SearingLava: "{0} освобождает душу лавой."
-        Shadowflame: "{0} превращает свой дух в пепел."
-        SulphurMeter: "{0} растворяет свою плоть в сернистых водах."
-        SulphuricPoisoning: "{0} расплавляется токсичными отходами."
+        ProvidenceAntiHealing: "{0} очищается от их недостойного существования."
+        SearingLava1: "{0} освобождает душу лавой."
+        SearingLava2: "{0}  присоединяется к тем, кого забыла окаянная магма."
+        Shadowflame: "Тёмная волшебная сила иссушила душу {0}."
+        SulphurMeter: "{0} проводит в кислотных водах слишком много времени."
+        SulphuricPoisoning1: "{0} расплавляется токсичными отходами."
+        SulphuricPoisoning2: "{0} поглощает излишне много химических веществ."
+        SulphuricPoisoning3: "{0} не справляется с индустриальным стоком."
         ThornBlossom: "{0} яростно закалывается цветком."
         Vaporfied: "{0} испаряется в воздухе."
-        VulnerabilityHex: "{0} обугливается серным пекло."
+        VulnerabilityHex1: "{0} подвергается разрушительному воздействию неконтролируемой зловещей магии."
+        VulnerabilityHex2: "{0} становится жертвой безупречной ведьминской магии."
+        VulnerabilityHex3: "Душа {0} раскалывается от унижения и презрения."
+        VulnerabilityHexGrief: "{0} терзается от непостижимой скорби."
+        VulnerabilityHexLament: "{0} низвергается холодным пламенем печали."
+        VulnerabilityHexEpiphany: "Для {0} наступает поверхностное, жестокое озарение."
+        VulnerabilityHexAcceptance: "{0} не смиряется со своей унылой и равнодушной реальностью."
         Withered: "{0} увядает."
     }
     
@@ -23641,8 +23765,8 @@ UI: {
         InkBomb: Перезарядка чернильной бомбы
         LifeSteal: Перезарядка кражи здоровья
         LionHeartShield: Перезарядка энергетического панциря
-        MasterChefShieldDurability: Прочность энергетического щита
-        MasterChefShieldRecharge: Перезарядка энергетического щита
+        MasterChefShieldDurability: Прочность щита «Мьёльнир»
+        MasterChefShieldRecharge: Перезарядка щита «Мьёльнир»
         NebulousCore: Перезарядка ядра туманности
         OldDukeScalesFatigue: Выносливость
         OmegaBlueActive: Безумие бездны
@@ -23651,13 +23775,16 @@ UI: {
         PlagueBlackout: Перезарядка чумного ослепления
         PotionSickness: Перезарядка зелий лечения
         PrismaticLaser: Перезарядка призматического лазерного шквала
-        ProfanedSoulArtifact: Сожжение осквернённого артефакта душ
+        ProfanedSoulShieldDurability: Прочность осквернённого щита душ
+        ProfanedSoulShieldRecharge: Зарядка осквернённого щита душ
         RelicOfResilience: Перезарядка реликвии устойчивости
         RogueBooster: Перезарядка ускорителя разбойника
         SandCloak: Перезарядка песчаной мантии
         SandsmokeBombActive: Длительность бомбы песчаной завесы
         SandsmokeBombCooldown: Перезарядка бомбы песчаной завесы
         SilvaRevive: Перезарядка возрождения Сильвы
+        SpongeDurability: Прочность барьера губки
+        SpongeRecharge: Зарядка барьера губки
         TarragonCloak: Перезарядка эстрагонового плаща
         TarragonImmunity: Перезарядка эстрагоновой неуязвимости
         UniverseSplitter: Перезарядка рассекателя вселенной

@@ -23,8 +23,8 @@ public class VanillaItemsTranslation : GlobalItem
             {
                 ItemID.CobaltSword => tooltip.Text.Replace("Decreases enemy defense by 25% on hit", "Снижает защиту врага на 25% при ударе"),
                 ItemID.CobaltNaginata => tooltip.Text.Replace("Decreases enemy defense by 25% on hit", "Снижает защиту врага на 25% при ударе"),
-                ItemID.PalladiumSword => tooltip.Text.Replace("Increases life regen on hit", "Увеличивает регенерацию здоровья при ударе"),
-                ItemID.PalladiumPike => tooltip.Text.Replace("Increases life regen on hit", "Увеличивает регенерацию здоровья при ударе"),
+                ItemID.PalladiumSword => tooltip.Text.Replace("Increases natural life regen on hit", "Увеличивает естественную регенерацию здоровья при ударе"),
+                ItemID.PalladiumPike => tooltip.Text.Replace("Increases natural life regen on hit", "Увеличивает естественную регенерацию здоровья при ударе"),
                 ItemID.MythrilSword => tooltip.Text.Replace("Decreases enemy contact damage by 10% on hit", "Снижает контактный урон врага на 10% при ударе"),
                 ItemID.MythrilHalberd => tooltip.Text.Replace("Decreases enemy contact damage by 10% on hit", "Снижает контактный урон врага на 10% при ударе"),
                 ItemID.OrichalcumSword => tooltip.Text.Replace("Increases how frequently the Orichalcum set bonus triggers on hit", "При нанесении удара увеличивает частоту срабатывания бонуса орихалкового комплекта"),
@@ -56,8 +56,6 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.AntlionClaw => tooltip.Text.Replace("Ignores 50% of enemy defense", "Игнорирует 50% защиты врага"),
                 ItemID.BoneSword => tooltip.Text.Replace("Ignores 50% of enemy defense", "Игнорирует 50% защиты врага"),
                 ItemID.BreakerBlade => tooltip.Text.Replace("Ignores 50% of enemy defense", "Игнорирует 50% защиты врага"),
-                ItemID.NightsEdge => tooltip.Text.Replace("Inflicts Shadowflame on hit", $"Накладывает дебафф «{Language.GetTextValue("BuffName.ShadowFlame")}» при ударе"),
-                ItemID.TrueNightsEdge => tooltip.Text.Replace("Inflicts Shadowflame on hit", $"Накладывает дебафф «{Language.GetTextValue("BuffName.ShadowFlame")}» при ударе"),
                 ItemID.FalconBlade => tooltip.Text.Replace("Holding this item grants +20% increased movement speed", $"Держа в руках этот предмет, увеличивает скорость передвижения на 20%"),
                 ItemID.SolarFlarePickaxe => tooltip.Text.Replace("Can mine Uelibloom Ore", $"Способна добывать цветонит"),
                 ItemID.VortexPickaxe => tooltip.Text.Replace("Can mine Uelibloom Ore", $"Способна добывать цветонит"),
@@ -176,7 +174,7 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.CelestialStone => "Незначительно увеличивает урон,",
                 ItemID.ArcaneFlower => "Снижает расход маны на 12%",
                 ItemID.MagnetFlower => "Снижает расход маны на 12%",
-                ItemID.Magiluminescence => "Увеличивает ускорение и торможение на 25%\nУвеличивает скорость передвижения на 5%. Этот бонус распространяется на аксессуары ботинок",
+                ItemID.Magiluminescence => "Увеличивает ускорение и торможение на 75%\nУвеличивает скорость передвижения на 15%. Этот бонус распространяется на аксессуары ботинок",
                 ItemID.EmpressFlightBooster => "Увеличивает время полёта крыльев на 25%",
                 ItemID.MagicQuiver => "Увеличивает урон от стрел на 5% и значительно увеличивает скорость стрел",
                 ItemID.MoltenQuiver => "Увеличивает урон от стрел на 7% и значительно увеличивает скорость стрел",
@@ -195,7 +193,7 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.CopperChainmail => "Увеличивает шанс критического удара на 3%",
                 ItemID.CopperGreaves => "Увеличивает скорость передвижения на 5%",
                 ItemID.TinHelmet => "Увеличивает шанс критического удара на 3%",
-                ItemID.TinChainmail => "Увеличивает регенерацию здоровья на 1",
+                ItemID.TinChainmail => "Увеличивает регенерацию здоровья на 0.5",
                 ItemID.TinGreaves => "Увеличивает скорость передвижения на 5%",
                 ItemID.IronHelmet => "Увеличивает сопротивление урону на 3%",
                 ItemID.AncientIronHelmet => "Увеличивает сопротивление урону на 3%",
@@ -205,10 +203,10 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.LeadChainmail => "Увеличивает сопротивление урону на 3%",
                 ItemID.LeadGreaves => "Увеличивает сопротивление урону на 3%",
                 ItemID.SilverHelmet => "Увеличивает шанс критического удара на 5%",
-                ItemID.SilverChainmail => "Увеличивает регенерацию здоровья на 2",
+                ItemID.SilverChainmail => "Увеличивает регенерацию здоровья на 1",
                 ItemID.SilverGreaves => "Увеличивает скорость передвижения на 8%",
                 ItemID.TungstenHelmet => "Увеличивает урон на 7%",
-                ItemID.TungstenChainmail => "Увеличивает регенерацию здоровья на 1",
+                ItemID.TungstenChainmail => "Увеличивает регенерацию здоровья на 0.5",
                 ItemID.TungstenGreaves => "Увеличивает скорость передвижения на 8%",
                 ItemID.GoldHelmet => "Увеличивает урон на 6%",
                 ItemID.AncientGoldHelmet => "Увеличивает урон на 6%",
@@ -223,9 +221,9 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.AncientShadowScalemail => "Увеличивает урон на 5% и скорость прыжка на 7%",
                 ItemID.ShadowGreaves => "Увеличивает урон на 5% и скорость прыжка на 7%",
                 ItemID.AncientShadowGreaves => "Увеличивает урон на 5% и скорость прыжка на 7%",
-                ItemID.CrimsonHelmet => "Увеличивает урон на 5%\nУвеличивает регенерацию здоровья на 1",
-                ItemID.CrimsonScalemail => "Увеличивает урон на 5%\nУвеличивает регенерацию здоровья на 1",
-                ItemID.CrimsonGreaves => "Увеличивает урон на 5%\nУвеличивает регенерацию здоровья на 1",
+                ItemID.CrimsonHelmet => "Увеличивает урон на 5%\nУвеличивает регенерацию здоровья на 0.5",
+                ItemID.CrimsonScalemail => "Увеличивает урон на 5%\nУвеличивает регенерацию здоровья на 0.5",
+                ItemID.CrimsonGreaves => "Увеличивает урон на 5%\nУвеличивает регенерацию здоровья на 0.5",
                 ItemID.CobaltHat => "Увеличивает максимальный запас маны на 60",
                 ItemID.PalladiumBreastplate => "Увеличивает урон на 5%",
                 ItemID.PalladiumLeggings => "Увеличивает урон на 5%",
@@ -446,19 +444,19 @@ public class VanillaItemsTranslation : GlobalItem
                 case ItemID.IronChainmail:
                 case ItemID.IronHelmet:
                 case ItemID.AncientIronHelmet:
-                    tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} {Language.GetTextValue("ArmorSetBonus.MetalTier1")}\nУвеличивает сопротивление урону на 6%\nУвеличивает регенерацию здоровья на 2";
+                    tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} {Language.GetTextValue("ArmorSetBonus.MetalTier1")}\nУвеличивает сопротивление урону на 6%\nУвеличивает регенерацию здоровья на 1";
                     break;
                 
                 case ItemID.LeadHelmet:
                 case ItemID.LeadChainmail:
                 case ItemID.LeadGreaves:
-                    tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} {Language.GetTextValue("ArmorSetBonus.MetalTier2")}\nУвеличивает сопротивление урону на 3%\nУвеличивает регенерацию здоровья на 1\nДаёт невосприимчивость к отбрасыванию";
+                    tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} {Language.GetTextValue("ArmorSetBonus.MetalTier2")}\nУвеличивает сопротивление урону на 3%\nУвеличивает регенерацию здоровья на 0.5\nДаёт невосприимчивость к отбрасыванию";
                     break;
                 
                 case ItemID.SilverGreaves:
                 case ItemID.SilverChainmail:
                 case ItemID.SilverHelmet:
-                    tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} {Language.GetTextValue("ArmorSetBonus.MetalTier2")}\nУвеличивает регенерацию здоровья на 1\nЧерез две секунды после получения 20 или более урона восстанавливает 10 единиц здоровья\nПовторное попадание сбрасывает таймер, откладывая восстановление здоровья";
+                    tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} {Language.GetTextValue("ArmorSetBonus.MetalTier2")}\nУвеличивает регенерацию здоровья на 0.5\nЧерез две секунды после получения 20 или более урона восстанавливает 10 единиц здоровья\nПовторное попадание сбрасывает таймер, откладывая восстановление здоровья";
                     break;
             
                 case ItemID.TungstenHelmet:
@@ -477,7 +475,7 @@ public class VanillaItemsTranslation : GlobalItem
                 case ItemID.PlatinumHelmet:
                 case ItemID.PlatinumChainmail:
                 case ItemID.PlatinumGreaves:
-                    tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} {Language.GetTextValue("ArmorSetBonus.Platinum")}\nКаждые 15 единиц защиты дают 1 единицу регенерации здоровья и 1% шанс критического удара\nЭти эффекты ограничены максимумом в 45 единиц защиты";
+                    tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} {Language.GetTextValue("ArmorSetBonus.Platinum")}\nКаждые 10 единиц защиты увеличивают регенерации здоровья на 0.5, урон и шанс критического удара на 1%\nЭти эффекты ограничены максимумом в 40 единиц защиты";
                     break;
                 
                 case ItemID.MoltenHelmet:
@@ -597,7 +595,7 @@ public class VanillaItemsTranslation : GlobalItem
         {
             tooltip.Text = item.type switch
             {
-                ItemID.FairyBoots => "На траве, по которой прошлись, начинают расти цветы\nФеи появляются на поверхности в любое время и гораздо чаще\nНаходящиеся поблизости феи увеличивают регенерацию здоровья, защиту и скорость передвижения\nФеи невосприимчивы к урону и больше не улетают",
+                ItemID.FairyBoots => "На траве, по которой прошлись, начинают расти цветы\nФеи появляются на поверхности в любое время и гораздо чаще\nНаходящиеся поблизости феи увеличивают регенерацию здоровья на 2, защиту на 10 и скорость передвижения на 10%\nФеи невосприимчивы к урону и больше не улетают",
                 ItemID.MoonStone => $"защиту, скорость добычи и отбрасывание призывателя\nДаёт невосприимчивость к дебаффу «{Language.GetTextValue("Mods.CalamityMod.Buffs.Nightwither.DisplayName")}»",
                 ItemID.SunStone => $"защиту, скорость добычи и отбрасывание призывателя\nДаёт невосприимчивость к дебаффу «{Language.GetTextValue("Mods.CalamityMod.Buffs.HolyFlames.DisplayName")}»",
                 ItemID.CelestialStone => $"защиту, скорость добычи и отбрасывание призывателя\nДаёт невосприимчивость к дебаффам «{Language.GetTextValue("Mods.CalamityMod.Buffs.Nightwither.DisplayName")}» и «{Language.GetTextValue("Mods.CalamityMod.Buffs.HolyFlames.DisplayName")}»",

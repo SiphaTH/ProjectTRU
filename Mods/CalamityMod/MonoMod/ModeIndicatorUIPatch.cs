@@ -28,7 +28,7 @@ public class ModeIndicatorUIGetDifficultyStatus : OnPatcher
         {
             string name = DifficultyModeSystem.Difficulties[1].Name.ToString();
             bool flag = false;
-            for (int index = 1; index < DifficultyModeSystem.Difficulties.Length; ++index)
+            for (int index = 1; index < DifficultyModeSystem.Difficulties.Count; ++index)
             {
                 if (DifficultyModeSystem.GetCurrentDifficulty == DifficultyModeSystem.Difficulties[index])
                 {

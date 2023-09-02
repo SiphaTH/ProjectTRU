@@ -26,6 +26,45 @@ public class DrawColorCodedStringWithShadowPatch : ILoadable
 
     private Vector2 DrawColorCodedStringWithShadowHook(On_ChatManager.orig_DrawColorCodedStringWithShadow_SpriteBatch_DynamicSpriteFont_string_Vector2_Color_float_Vector2_Vector2_float_float orig, SpriteBatch spritebatch, DynamicSpriteFont font, string text, Vector2 position, Color basecolor, float rotation, Vector2 origin, Vector2 basescale, float maxwidth, float spread)
     {
+        // Thorium
+        // if (text.Contains("Total:") && text.Contains("Thorium:"))
+        // {
+        //     text = text
+        //         .Replace("Total", "Всего")
+        //         .Replace("Damage Reduction", "сопротивления урону")
+        //         .Replace("Before Cap", "До предельного значения")
+        //         .Replace("Vanilla", "Ванилла");
+        //     return orig.Invoke(spritebatch, font, text, position + new Vector2(-40f, 0f), basecolor, rotation, origin, basescale, maxwidth, spread);
+        // }
+        // if (text.Contains(":Healer Stats"))
+        // {
+        //     text = text
+        //         .Replace("Healer Stats", "Статистика целителя")
+        //         .Replace("Current Bonus Healing", "Текущее бонусное исцеление")
+        //         .Replace("Best Heal Streak", "Лучшая серия исцеления")
+        //         .Replace("Healing done", "Всего исцелено")
+        //         .Replace("Damage mitigated", "Урона сниженно")
+        //         .Replace("Lives saved", "Спасено жизней")
+        //         .Replace("Close calls", "На волоске");
+        //     return orig.Invoke(spritebatch, font, text, position + new Vector2(-75f, 0f), basecolor, rotation, origin, basescale, maxwidth, spread);
+        // }
+        // if (text.Contains(":Bard Stats"))
+        // {
+        //     text = text
+        //         .Replace("Bard Stats", "Статистика барда")
+        //         .Replace("Bonus Duration", "Бонусная продолжительность")
+        //         .Replace("sec(s)", "сек.")
+        //         .Replace("Max-Use Duration", "Максимальное время использования")
+        //         .Replace("Base Inspiration", "Базовое вдохновение")
+        //         .Replace("Bonus Inspiration", "Бонусное вдохновение")
+        //         .Replace("Timed Hits", "Точных ударов");
+        //     return orig.Invoke(spritebatch, font, text, position + new Vector2(-120f, 0f), basecolor, rotation, origin, basescale, maxwidth, spread);
+        // }
+        // if (text.Contains("Unlocks in shop"))
+        // {
+        //     text = text.Replace("Unlocks in shop", "Открывается в магазине");
+        // }
+            
         text = text switch
         {
             // Infernum

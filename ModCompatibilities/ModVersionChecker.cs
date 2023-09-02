@@ -8,12 +8,13 @@ public class ModVersionChecker : ILoadable
 {
     private readonly ModInfo[] _modInfo =
     {
-        new("CalamityMod", new Version(2, 0, 3, 2), true),
+        new("CalamityMod", new Version(2, 0, 3, 4), true),
         new("StarlightRiver", new Version(1, 5, 0, 2), false),
-        new("InfernumMode", new Version(1, 9, 29), true),
+        new("InfernumMode", new Version(1, 9, 30), true),
         new("FargowiltasSouls", new Version(1, 5, 1, 1), true),
         new("Fargowiltas", new Version(3, 1, 2), true),
         new("StarsAbove", new Version(1, 5, 0, 4), false),
+        new("ThoriumMod", new Version(1, 7, 1, 2), false),
     };
 
     public bool IsLoadingEnabled(Mod mod)

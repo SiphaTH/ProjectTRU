@@ -1,11 +1,17 @@
-﻿// using System.Collections.Generic;
+﻿// using System;
+// using System.Collections.Generic;
+// using System.Globalization;
 // using CalamityRuTranslate.Common;
 // using CalamityRuTranslate.Common.Utilities;
+// using Microsoft.Xna.Framework;
 // using Terraria;
 // using Terraria.ID;
+// using Terraria.Localization;
 // using Terraria.ModLoader;
 // using ThoriumMod.Items.ArcaneArmor;
 // using ThoriumMod.Items.BardItems;
+// using ThoriumMod.Items.BasicAccessories;
+// using ThoriumMod.Items.BossFallenBeholder;
 // using ThoriumMod.Items.BossForgottenOne;
 // using ThoriumMod.Items.BossLich;
 // using ThoriumMod.Items.BossThePrimordials.Aqua;
@@ -38,8 +44,10 @@
 // using ThoriumMod.Items.Thorium;
 // using ThoriumMod.Items.ThrownItems;
 // using ThoriumMod.Items.Titan;
+// using ThoriumMod.Items.TransformItems;
 // using ThoriumMod.Items.Valadium;
 // using ThoriumMod.Items.Vanity;
+// using ThoriumMod.Utilities;
 //
 // namespace CalamityRuTranslate.Mods.ThoriumMod;
 //
@@ -545,7 +553,7 @@
 //                 player.armor[1].type == ModContent.ItemType<ThoriumMail>() &&
 //                 player.armor[2].type == ModContent.ItemType<ThoriumGreaves>())
 //             {
-//                 tooltip.Text = "Damage done increased by 10%";
+//                 tooltip.Text = "Увеличивает урон на 10%";
 //             }
 //             
 //             if (player.armor[0].type == ModContent.ItemType<FungusHat>() &&
@@ -617,6 +625,317 @@
 //             {
 //                 tooltip.Text = "Lookin' good!";
 //             }
+//         });
+//
+//         if (item.type == ModContent.ItemType<SoulLink>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, "TransformationTag2", tooltip =>
+//             {
+//                 tooltip.Text = "-Early Testing-";
+//             });
+//             
+//             ItemHelper.TranslateTooltip(tooltips, "transformationText", _ =>
+//             {
+//                 tooltips.ReplaceText("Right click to throw a volley of acorns", "Нажмите ПКМ, чтобы бросить залп жёлудей");
+//                 tooltips.ReplaceText("Right click to release a toxic haze on either side of you", "Нажмите ПКМ, чтобы создать ядовитый дым с обеих сторон от вас");
+//                 tooltips.ReplaceText("Right click to leave a trail of burning napalm", "Нажмите ПКМ, чтобы оставить след из горящего напалма");
+//                 tooltips.ReplaceText("Right click to blow a larger bubble that stuns enemies or replenishes ally breath", "Нажмите ПКМ, чтобы надуть огромный пузырь, который оглушает врагов или пополняет запас воздуха союзника");
+//                 tooltips.ReplaceText("Right click to spit a bouncing globule of blood at the cost of 4 life", "Нажмите ПКМ, чтобы выплюнуть отскакивающую каплю крови ценой 4 единиц здоровья");
+//                 tooltips.ReplaceText("Right click to belch a volley of coins", "Нажмите ПКМ, чтобы изрыгнуть залпом монет");
+//                 tooltips.ReplaceText("Right click to harden your carapace, giving you damage reduction and a thorns effect briefly", "");
+//                 tooltips.ReplaceText("Right click to drop a large scale timed explosive", "Нажмите ПКМ, чтобы установить большой взрывчатый заряд с таймером");
+//                 tooltips.ReplaceText("Allows you to use unique abilities while transformed", "Позволяет использовать уникальные способности во время превращения");
+//             });
+//             
+//             ItemHelper.TranslateTooltip(tooltips, "transformationText2", _ =>
+//             {
+//                 tooltips.ReplaceText("Left click to dash forward, damaging an enemy in the process", "Нажмите ЛКМ, чтобы выполнить рывок вперёд, нанося урон врагам в процессе");
+//                 tooltips.ReplaceText("Left click to spit a heavy bubble that deals increased damage to poisoned enemies", "");
+//                 tooltips.ReplaceText("Left click to spit a stream of burning lava", "");
+//                 tooltips.ReplaceText("Left click to release a water-bound bubble stream", "");
+//                 tooltips.ReplaceText("Left click to fire pair of life stealing teeth", "");
+//                 tooltips.ReplaceText("Left click to leap forward, damaging an enemy in the process", "");
+//                 tooltips.ReplaceText("Left click to release a storm of venomous beetle needles", "");
+//                 tooltips.ReplaceText("Left click to place a timed explosive that boosts you upwards", "");
+//             });
+//             
+//             ItemHelper.TranslateTooltip(tooltips, "transformationText3", _ =>
+//             {
+//                 tooltips.ReplaceText("15 symbiotic damage", "15 ед. симбиотического урона");
+//                 tooltips.ReplaceText("12 symbiotic damage", "12 ед. симбиотического урона");
+//                 tooltips.ReplaceText("10 symbiotic damage", "10 ед. симбиотического урона");
+//                 tooltips.ReplaceText("50 symbiotic damage", "50 ед. симбиотического урона");
+//                 tooltips.ReplaceText("38 symbiotic damage", "38 ед. симбиотического урона");
+//                 tooltips.ReplaceText("65 symbiotic damage", "65 ед. симбиотического урона");
+//             });
+//         }
+//
+//         if (item.type == ModContent.ItemType<MusiciansHandbook>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "transformationText", tooltip =>
+//             {
+//                 tooltip.Text = $"Ваши инструменты играют на {tooltip.Text.Split(' ')[3]} быстрее";
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<TerrariumAutoharp>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "transformationText", _ =>
+//             {
+//                 tooltips.ReplaceText("Variety I", "Вариативность I");
+//                 tooltips.ReplaceText("Playing empowers players with bonus:", "Игра на инструменте даёт игрокам усиление:");
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<BeeBooties>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "AccessoryDamage", _ =>
+//             {
+//                 tooltips.ReplaceText("35 basic damage", "35 ед. базового урона");
+//                 tooltips.ReplaceText("20 basic damage", "20 ед. базового урона");
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<VoidPlanter>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "Healing", tooltip =>
+//             {
+//                 tooltips.ReplaceText($"Heals player life equal to {tooltip.Text.Split(' ')[5]} of the last damage they took", $"Восстанавливает здоровье игрока в размере {tooltip.Text.Split(' ')[5]} от последнего полученного им урона");
+//                 tooltips.ReplaceText("Max", "максимум");
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<BlastShield>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "AccessoryDamage", _ =>
+//             {
+//                 tooltips.ReplaceText("base damage", "ед. базового урона");
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<DarkGate>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//             {
+//                 string[] parts = tooltip.Text.Split(' ');
+//                 string duration = parts[^2];
+//                 if (double.TryParse(duration.Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out double seconds))
+//                 {
+//                     string secondsSuffix = seconds >= 5 ? "секунд" : "секунды";
+//                     tooltip.Text = $"Игроки могут использовать врата лишь раз в {duration} {secondsSuffix}";
+//                 }
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<DreamMegaphone>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//             {
+//                 int healBonus = 10 + 4 * Main.LocalPlayer.GetThoriumPlayer().healBonus;
+//                 string seconds = LocalizedText.ApplyPluralization("{^0:секунда;секунды;секунд}", healBonus);
+//                 tooltip.Text = $"Увеличивает урон всех ближайших союзников на 20% на [c/5aff5a:{healBonus}] {seconds}";
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<HolyHammer>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//             {
+//                 tooltips.ReplaceText("Right click to heal all nearby allies equal to your bonus healing", "Нажмите ПКМ, чтобы исцелить всех ближайших союзников на сумму, равную вашему бонусному исцелению");
+//                 tooltips.ReplaceText($"Right click to heal all nearby allies by {tooltip.Text.Split(' ')[8]} life", $"Нажмите ПКМ, чтобы исцелить всех ближайших союзников на {tooltip.Text.Split(' ')[8]} ед. здоровья");
+//                 tooltips.ReplaceText("Max", "максимум");
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<LadyLight>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "CritChance", tooltip =>
+//             {
+//                 tooltip.Text = "5% шанс критического удара";
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<SmitingHammer>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//             {
+//                 tooltips.ReplaceText("Right click to heal all nearby allies equal to the weapon's holy charges at twice the mana cost", "");
+//                 tooltips.ReplaceText($"Right click to heal all nearby allies by {tooltip.Text.Split(' ')[8]} life at twice the mana cost", "");
+//                 tooltips.ReplaceText("Right click to heal all nearby allies by 20 life (Max) at twice the mana cost", "");
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<BloomingWand>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//             {
+//                 tooltip.Text = $"Исцеляет {tooltip.Text.Split(' ')[1]} ед. здоровья союзника в течение 5 секунд";
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<GraniteIonStaff>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//             {
+//                 tooltip.Text = $"Оберегает союзника, давая ему от {tooltip.Text.Split(' ')[4]} до 50 единиц жизненного щита";
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<LargePopcorn>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", _ =>
+//             {
+//                 tooltips.ReplaceText("Heals ally and player life by 1", "Исцеляет союзника и игрока на 1 единицу");
+//                 tooltips.ReplaceText("Popcorn does not apply on heal effects when consumed", "Попкорн не влияет на эффекты исцеления при его употреблении");
+//                 tooltips.ReplaceText($"Throws out ({3 + Main.LocalPlayer.GetThoriumPlayer().healBonus}) eatable popcorn kernels", $"Бросает ({3 + Main.LocalPlayer.GetThoriumPlayer().healBonus}) съедобных зёрен попкорна");
+//                 tooltips.ReplaceText($"Up to ({(3 + Main.LocalPlayer.GetThoriumPlayer().healBonus) * 3}) kernels may be out at once", $"Одновременно может быть брошено до ({(3 + Main.LocalPlayer.GetThoriumPlayer().healBonus) * 3}) зёрен попкорна");
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<MartyrChalice>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//             {
+//                 tooltip.Text = $"Жертвует вашей жизнью, чтобы исцелить всех союзников в мире на {tooltip.Text.Split(' ')[12]} ед. здоровья";
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<NecroticStaff>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "lifeCost", tooltip =>
+//             {
+//                 tooltip.Text = "Использует 2.5% вашего максимального запаса здоровья";
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<Recuperate>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//             {
+//                 tooltip.Text = $"Удерживайте фолиант, преобразовывая {tooltip.Text.Split(' ')[4]} ед. маны в {tooltip.Text.Split(' ')[7]} ед. здоровья каждую секунду";
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<Renew>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//             {
+//                 tooltip.Text = $"Мгновенно восстанавливает {tooltip.Text.Split(' ')[2]} ед. здоровья";
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<RodofAesculapius>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//             {
+//                 tooltip.Text = $"Каждую секунду восстанавливает здоровье союзника на {tooltip.Text.Split(' ')[4]} ед.";
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<SnackLantern>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//             {
+//                 tooltip.Text = $"После взрыва исцеляет всех ближайших союзников на {tooltip.Text.Split(' ')[8]} ед. здоровья";
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<WarForger>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//             {
+//                 tooltip.Text = $"Оберегает союзника и игрока, давая им от {tooltip.Text.Split(' ')[6]} до 25 единиц жизненного щита";
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<BoneGrip>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "DisplayAmount", tooltip =>
+//             {
+//                 int startIndex = tooltip.Text.LastIndexOf(':') + 1;
+//                 int endIndex = tooltip.Text.LastIndexOf(' ');
+//                 string duplicatesStr = tooltip.Text.Substring(startIndex, endIndex - startIndex);
+//                 if (int.TryParse(duplicatesStr, out int value))
+//                 {
+//                     string color = (new Color(250, 210, 45) * (Main.mouseTextColor / 255f)).Hex3();
+//                     string items = LocalizedText.ApplyPluralization("{^0:предмет;предмета;предметов}", value);
+//                     tooltip.Text = $"Продублировано: [c/{color}:{duplicatesStr} {items}]";
+//                 }
+//             });
+//         }
+//         
+//         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "CookText", tooltip =>
+//         {
+//             tooltip.Text = $"Повар, возможно, заинтересуется этим: {tooltip.Text.Split(' ')[7]} / {tooltip.Text.Split(' ')[9]}";
+//         });
+//         
+//         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "BardTag", tooltip =>
+//         {
+//             tooltip.Text = "-Бард-";
+//         });
+//         
+//         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "InstrumentTag", _ =>
+//         {
+//             tooltips.ReplaceText("Instrument", "инструмент");
+//         });
+//         
+//         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "PrefixEmpowermentDuration", tooltip =>
+//         {
+//             tooltips.ReplaceText("s empowerment duration", "");
+//             string[] parts = tooltip.Text.Split(' ');
+//             string duration = parts[0];
+//             if (int.TryParse(duration, out int seconds))
+//             {
+//                 string secondsSuffix = seconds is 1 or -1 ? "секунда" : "секунды";
+//                 tooltip.Text = $"{duration} {secondsSuffix} к длительности усиления";
+//             }
+//         });
+//         
+//         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "InspirationCost", tooltip =>
+//         {
+//             string[] parts = tooltip.Text.Split(' ');
+//             string costValue = parts[1];
+//             if (int.TryParse(costValue, out int value))
+//             {
+//                 string valueSuffix = value == 1 ? "очко" : "очка";
+//                 tooltip.Text = $"Использует {costValue} {valueSuffix} вдохновения";
+//             }
+//         });
+//         
+//         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "RealityTag", tooltip =>
+//         {
+//             tooltip.Text = "-Разрушитель реальности-";
+//         });
+//         
+//         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "TransformationTag", tooltip =>
+//         {
+//             tooltip.Text = "-Превращение-";
+//         });
+//         
+//         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "ThrowerTag", tooltip =>
+//         {
+//             tooltip.Text = "-Метатель-";
+//         });
+//         
+//         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerTag", tooltip =>
+//         {
+//             tooltip.Text = "-Целитель-";
+//         });
+//         
+//         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "ScytheSoulCharge", tooltip =>
+//         {
+//             string[] parts = tooltip.Text.Split(' ');
+//             string scytheSoulCharge = parts[1];
+//             if (int.TryParse(scytheSoulCharge, out int value))
+//             {
+//                 string valueSuffix = value == 1 ? "эссенцию" : "эссенции";
+//                 tooltip.Text = $"Даёт {scytheSoulCharge} {valueSuffix} души при прямом попадании";
+//             }
+//         });
+//         
+//         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
+//         {
+//             
 //         });
 //     }
 // }
