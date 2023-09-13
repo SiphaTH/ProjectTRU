@@ -39,7 +39,7 @@ public class DrawColorCodedStringWithShadowPatch : ILoadable
         // if (text.Contains(":Healer Stats"))
         // {
         //     text = text
-        //         .Replace("Healer Stats", "Статистика целителя")
+        //         .Replace("Healer Stats", "Характеристики целителя")
         //         .Replace("Current Bonus Healing", "Текущее бонусное исцеление")
         //         .Replace("Best Heal Streak", "Лучшая серия исцеления")
         //         .Replace("Healing done", "Всего исцелено")
@@ -51,7 +51,7 @@ public class DrawColorCodedStringWithShadowPatch : ILoadable
         // if (text.Contains(":Bard Stats"))
         // {
         //     text = text
-        //         .Replace("Bard Stats", "Статистика барда")
+        //         .Replace("Bard Stats", "Характеристики барда")
         //         .Replace("Bonus Duration", "Бонусная продолжительность")
         //         .Replace("sec(s)", "сек.")
         //         .Replace("Max-Use Duration", "Максимальное время использования")
@@ -60,9 +60,14 @@ public class DrawColorCodedStringWithShadowPatch : ILoadable
         //         .Replace("Timed Hits", "Точных ударов");
         //     return orig.Invoke(spritebatch, font, text, position + new Vector2(-120f, 0f), basecolor, rotation, origin, basescale, maxwidth, spread);
         // }
-        // if (text.Contains("Unlocks in shop"))
+        // if (text.Contains("[Unlocks in shop]"))
         // {
         //     text = text.Replace("Unlocks in shop", "Открывается в магазине");
+        // }
+        // if (text.Contains("'s Gateway"))
+        // {
+        //     // IL hook ломает логику
+        //     text = text.Replace("'s Gateway", " - Врата");
         // }
             
         text = text switch
@@ -79,6 +84,13 @@ public class DrawColorCodedStringWithShadowPatch : ILoadable
             // "\n\nConsumes [i/s5:75] to change the world difficulty\nChange to Эксперт Mode" => "\n\nРасходует [i/s5:75] для изменения сложности мира\nПереключает сложность в режим Эксперта",
             // "\n\nConsumes [i/s5:75] to change the world difficulty\nChange to Классика Mode" => "\n\nРасходует [i/s5:75] для изменения сложности мира\nПереключает сложность в классический режим",
             // "\n\nYou cannot use this in Journey Mode, use its difficulty slider instead" => "Вы не можете использовать это в режиме Путешествия, используйте вместо этого его ползунок сложности.",
+            // "Some throwing items are now much weaker" => "Некоторые метательные предметы теперь намного слабее",
+            // "Too hot!" => "Перегрев!",
+            // "In Combat" => "В бою",
+            // "Out of Combat" => "Вне боя",
+            // "Close" => "Закрыть",
+            // "Previous" => "Предыдущий",
+            // "Next" => "Следующий",
             _ => text
         };
         return orig.Invoke(spritebatch, font, text, position, basecolor, rotation, origin, basescale, maxwidth, spread);

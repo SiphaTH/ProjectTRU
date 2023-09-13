@@ -1,5 +1,4 @@
-﻿// using System;
-// using System.Collections.Generic;
+﻿// using System.Collections.Generic;
 // using System.Globalization;
 // using CalamityRuTranslate.Common;
 // using CalamityRuTranslate.Common.Utilities;
@@ -138,35 +137,35 @@
 //                 player.armor[1].type == ModContent.ItemType<NoblesJerkin>() &&
 //                 player.armor[2].type == ModContent.ItemType<NoblesLeggings>())
 //             {
-//                 tooltip.Text = "Inspiration notes that drop are twice as potent and increase your symphonic damage briefly";
+//                 tooltip.Text = "Выпадающие ноты вдохновения вдвое мощнее и ненадолго увеличивают ваш симфонический урон";
 //             }
 //             
 //             if (player.armor[0].type == ModContent.ItemType<OrnateHat>() &&
 //                 player.armor[1].type == ModContent.ItemType<OrnateJerkin>() &&
 //                 player.armor[2].type == ModContent.ItemType<OrnateLeggings>())
 //             {
-//                 tooltip.Text = "Symphonic critical strikes cause a random active empowerment to ascend to a fourth level of intensity\nThis effect can only trigger once every 5 seconds";
+//                 tooltip.Text = "Симфонические критические удары поднимают случайное активное усилие до четвёртного уровня силы\nЭтот эффект может сработать лишь один раз в 5 секунд";
 //             }
 //             
 //             if (player.armor[0].type == ModContent.ItemType<ShootingStarHat>() &&
 //                 player.armor[1].type == ModContent.ItemType<ShootingStarShirt>() &&
 //                 player.armor[2].type == ModContent.ItemType<ShootingStarBoots>())
 //             {
-//                 tooltip.Text = "Increases the duration of your symphonic empowerments by 6 seconds\nEach unique empowerment you have increases your symphonic damage by 5%\nEach unique empowerment you have increases your inspiration regeneration by 2%";
+//                 tooltip.Text = "Увеличивает длительность симфонических усилений на 6 секунд\nКаждое имеющееся у вас уникальное усиление увеличивает симфонический урон на 5%\nКаждое имеющееся у вас уникальное усиление увеличивает скорость восстановления вдохновения на 2%";
 //             }
 //             
 //             if (player.armor[0].type == ModContent.ItemType<WhisperingHood>() &&
 //                 player.armor[1].type == ModContent.ItemType<WhisperingTabard>() &&
 //                 player.armor[2].type == ModContent.ItemType<WhisperingLeggings>())
 //             {
-//                 tooltip.Text = "You occasionally birth a tentacle of abyssal energy that attacks nearby enemies\nYou can have up to six tentacles and their damage saps 1 life & mana from the hit enemy%";
+//                 tooltip.Text = "Периодически порождает щупальце бездонной энергии, которое атакует ближайших врагов\nУ вас может быть до шести щупалец, а наносимый ими урон похищает у поражённого врага по 1 единице здоровья и маны";
 //             }
 //
 //             if (player.armor[0].type == ModContent.ItemType<LichCowl>() &&
 //                 player.armor[1].type == ModContent.ItemType<LichCarapace>() &&
 //                 player.armor[2].type == ModContent.ItemType<LichTalon>())
 //             {
-//                 tooltip.Text = "Killing an enemy will release a soul fragment\nTouching a soul fragment greatly increases your movement and throwing speed briefly";
+//                 tooltip.Text = "Из убитого врага можно извлечь фрагмент души\nКоснувшись фрагмента души, значительно увеличивает скорость передвижения и метания на короткое время";
 //             }
 //             
 //             if (player.armor[0].type == ModContent.ItemType<TideTurnerHelmet>() &&
@@ -650,13 +649,13 @@
 //             ItemHelper.TranslateTooltip(tooltips, "transformationText2", _ =>
 //             {
 //                 tooltips.ReplaceText("Left click to dash forward, damaging an enemy in the process", "Нажмите ЛКМ, чтобы выполнить рывок вперёд, нанося урон врагам в процессе");
-//                 tooltips.ReplaceText("Left click to spit a heavy bubble that deals increased damage to poisoned enemies", "");
-//                 tooltips.ReplaceText("Left click to spit a stream of burning lava", "");
-//                 tooltips.ReplaceText("Left click to release a water-bound bubble stream", "");
-//                 tooltips.ReplaceText("Left click to fire pair of life stealing teeth", "");
-//                 tooltips.ReplaceText("Left click to leap forward, damaging an enemy in the process", "");
-//                 tooltips.ReplaceText("Left click to release a storm of venomous beetle needles", "");
-//                 tooltips.ReplaceText("Left click to place a timed explosive that boosts you upwards", "");
+//                 tooltips.ReplaceText("Left click to spit a heavy bubble that deals increased damage to poisoned enemies", "Нажмите ЛКМ, чтобы выплюнуть тяжелый пузырь, который наносит увеличенный урон отравленным врагам");
+//                 tooltips.ReplaceText("Left click to spit a stream of burning lava", "Нажмите ЛКМ, чтобы выплюнуть струю раскалённой лавы");
+//                 tooltips.ReplaceText("Left click to release a water-bound bubble stream", "Нажмите ЛКМ, чтобы запустить водяной поток из пузырей");
+//                 tooltips.ReplaceText("Left click to fire pair of life stealing teeth", "Нажмите ЛКМ, чтобы запустить пару зубов, крадущих здоровье врагов");
+//                 tooltips.ReplaceText("Left click to leap forward, damaging an enemy in the process", "Нажмите ЛКМ, чтобы совершить скачок вперёд и при этом нанести урон врагу");
+//                 tooltips.ReplaceText("Left click to release a storm of venomous beetle needles", "Нажмите ЛКМ, чтобы выпустить шквал ядовитых жучьих игл");
+//                 tooltips.ReplaceText("Left click to place a timed explosive that boosts you upwards", "Нажмите ЛКМ, чтобы разместить взрывчатку с таймером, которая запустит вас вверх");
 //             });
 //             
 //             ItemHelper.TranslateTooltip(tooltips, "transformationText3", _ =>
@@ -759,9 +758,9 @@
 //         {
 //             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
 //             {
-//                 tooltips.ReplaceText("Right click to heal all nearby allies equal to the weapon's holy charges at twice the mana cost", "");
-//                 tooltips.ReplaceText($"Right click to heal all nearby allies by {tooltip.Text.Split(' ')[8]} life at twice the mana cost", "");
-//                 tooltips.ReplaceText("Right click to heal all nearby allies by 20 life (Max) at twice the mana cost", "");
+//                 tooltips.ReplaceText("Right click to heal all nearby allies equal to the weapon's holy charges at twice the mana cost", "Нажмите ПКМ, чтобы исцелить всех ближайших союзников на величину зарядов святости оружия при двойном расходе маны");
+//                 tooltips.ReplaceText($"Right click to heal all nearby allies by {tooltip.Text.Split(' ')[8]} life at twice the mana cost", $"Нажмите ПКМ, чтобы исцелить всех ближайших союзников на {tooltip.Text.Split(' ')[8]} ед. здоровья при двойном расходе маны");
+//                 tooltips.ReplaceText("Right click to heal all nearby allies by 20 life (Max) at twice the mana cost", "Нажмите ПКМ, чтобы исцелить всех ближайших союзников на 20 ед. здоровья (максимум) при двойном расходе маны");
 //             });
 //         }
 //         
@@ -785,7 +784,7 @@
 //         {
 //             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", _ =>
 //             {
-//                 tooltips.ReplaceText("Heals ally and player life by 1", "Исцеляет союзника и игрока на 1 единицу");
+//                 tooltips.ReplaceText("Heals ally and player life by 1", "Лечит союзника и игрока на 1 ед. здоровья");
 //                 tooltips.ReplaceText("Popcorn does not apply on heal effects when consumed", "Попкорн не влияет на эффекты исцеления при его употреблении");
 //                 tooltips.ReplaceText($"Throws out ({3 + Main.LocalPlayer.GetThoriumPlayer().healBonus}) eatable popcorn kernels", $"Бросает ({3 + Main.LocalPlayer.GetThoriumPlayer().healBonus}) съедобных зёрен попкорна");
 //                 tooltips.ReplaceText($"Up to ({(3 + Main.LocalPlayer.GetThoriumPlayer().healBonus) * 3}) kernels may be out at once", $"Одновременно может быть брошено до ({(3 + Main.LocalPlayer.GetThoriumPlayer().healBonus) * 3}) зёрен попкорна");
@@ -848,7 +847,7 @@
 //             });
 //         }
 //         
-//         if (item.type == ModContent.ItemType<BoneGrip>())
+//         if (item.type == ModContent.ItemType<BoneGrip>() || item.type == ModContent.ItemType<MagnetoGrip>() || item.type == ModContent.ItemType<PaddedGrip>())
 //         {
 //             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "DisplayAmount", tooltip =>
 //             {
@@ -861,6 +860,16 @@
 //                     string items = LocalizedText.ApplyPluralization("{^0:предмет;предмета;предметов}", value);
 //                     tooltip.Text = $"Продублировано: [c/{color}:{duplicatesStr} {items}]";
 //                 }
+//             });
+//         }
+//         
+//         if (item.type == ModContent.ItemType<TwilightStaff>())
+//         {
+//             ItemHelper.TranslateTooltip(tooltips, l => l.Name == "UseMana", _ =>
+//             {
+//                 tooltips.ReplaceText("Uses", "Использует");
+//                 tooltips.ReplaceText("mana &", "ед. маны и");
+//                 tooltips.ReplaceText("life", "ед. здоровья");
 //             });
 //         }
 //         
@@ -897,7 +906,7 @@
 //             string costValue = parts[1];
 //             if (int.TryParse(costValue, out int value))
 //             {
-//                 string valueSuffix = value == 1 ? "очко" : "очка";
+//                 string valueSuffix = LocalizedText.ApplyPluralization("{^0:очко;очка;очков}", value);
 //                 tooltip.Text = $"Использует {costValue} {valueSuffix} вдохновения";
 //             }
 //         });
@@ -928,14 +937,55 @@
 //             string scytheSoulCharge = parts[1];
 //             if (int.TryParse(scytheSoulCharge, out int value))
 //             {
-//                 string valueSuffix = value == 1 ? "эссенцию" : "эссенции";
+//                 string valueSuffix = LocalizedText.ApplyPluralization("{^0:эссенцию;эссенции}", value);
 //                 tooltip.Text = $"Даёт {scytheSoulCharge} {valueSuffix} души при прямом попадании";
 //             }
 //         });
 //         
 //         ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
 //         {
+//             string[] parts = tooltip.Text.Split(' ');
 //             
+//             if (tooltip.Text == $"Steals {parts[1]} life")
+//             {
+//                 tooltip.Text = $"Крадёт {parts[1]} ед. здоровья";
+//             }
+//             else if (tooltip.Text == $"Heals ally life by {parts[4]}")
+//             {
+//                 tooltip.Text = $"Лечит здоровье союзника на {parts[4]} ед. здоровья";
+//             }
+//             else if (tooltip.Text == "Heals ally life equal to your bonus healing")
+//             {
+//                 tooltip.Text = "Лечит союзника на сумму, равную вашему бонусному исцелению";
+//             }
+//             else if (tooltip.Text == "Heals ally and player life equal to your bonus healing")
+//             {
+//                 tooltip.Text = "Лечит союзника и игрока на сумму, равную вашему бонусному исцелению";
+//             }
+//             else if (tooltip.Text == $"Heals ally and player life by {parts[6]}")
+//             {
+//                 tooltip.Text = $"Лечит союзника и игрока на {parts[6]} ед. здоровья";
+//             }
+//             else if (tooltip.Text == $"Heals ally and player life by {parts[6]} (Max)")
+//             {
+//                 tooltip.Text = $"Лечит союзника и игрока на {parts[6]} ед. здоровья (максимум)";
+//             }
+//             else if (tooltip.Text == $"Heals ally and player life by {parts[6]} (5 Max)")
+//             {
+//                 tooltip.Text = $"Лечит союзника и игрока на {parts[6]} ед. здоровья (максимум 5 единиц)";
+//             }
+//             else if (tooltip.Text == $"Heals ally and player life by {parts[6]} (4 Max)")
+//             {
+//                 tooltip.Text = $"Лечит союзника и игрока на {parts[6]} ед. здоровья (максимум 4 единицы)";
+//             }
+//             else if (tooltip.Text == "Heals ally and player life equal to your bonus healing (5 Max)")
+//             {
+//                 tooltip.Text = "Лечит союзника и игрока на сумму, равную вашему бонусному исцелению (максимум 5 единиц)";
+//             }
+//             else if (tooltip.Text == "Heals ally and player life equal to your bonus healing (4 Max)")
+//             {
+//                 tooltip.Text = "Лечит союзника и игрока на сумму, равную вашему бонусному исцелению (максимум 4 единицы)";
+//             }
 //         });
 //     }
 // }

@@ -195,6 +195,7 @@ public class CalamityRuTranslateModSystem : ModSystem
             ArmorSetBonus[ItemID.ObsidianHelm] = $"{Language.GetTextValue("ArmorSetBonus.ObsidianOutlaw")}\nДаёт невосприимчивость к огненным блокам и временную невосприимчивость к лаве";
             ArmorSetBonus[ItemID.AncientNecroHelmet] = $"{Language.GetTextValue("ArmorSetBonus.Bone")}\nДаёт возможность временно пережить смертельный удар\nДаёт до 7 секунд жизни перед неминуемой смертью";
             ArmorSetBonus[ItemID.NecroHelmet] = $"{Language.GetTextValue("ArmorSetBonus.Bone")}\nДаёт возможность временно пережить смертельный удар\nДаёт до 7 секунд жизни перед неминуемой смертью";
+            ArmorSetBonus[ItemID.FrostHelmet] = $"Ближние и стрелковые атаки накладывают дебафф «{Language.GetTextValue("BuffName.Frostburn")}»\nУвеличивает урон на 15% в зависимости от того, насколько далеко от вас находится враг\nПри более близком расстоянии увеличивается урон в ближнем бою, а при дальнем - стрелковый";
             
             ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/AstralHelm")] = TranslationHelper.GetTextValue("CalamityMod/AstralHelm", "SetBonus");
             ArmorSetBonus[TranslationHelper.GetItemID("CalamityMod/BrimflameScowl")] = TranslationHelper.GetTextValue("CalamityMod/BrimflameScowl", "SetBonus", "[Бонус комплекта брони]");

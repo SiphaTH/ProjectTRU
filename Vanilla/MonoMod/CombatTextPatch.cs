@@ -1,6 +1,7 @@
 ﻿using CalamityRuTranslate.Common.Utilities;
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace CalamityRuTranslate.Vanilla.MonoMod;
@@ -24,6 +25,17 @@ public class CombatTextPatch : ILoadable
     
     private int On_CombatTextOnNewText_Rectangle_Color_string_bool_bool(On_CombatText.orig_NewText_Rectangle_Color_string_bool_bool orig, Rectangle location, Color color, string text, bool dramatic, bool dot)
     {
+        // string[] parts = text.Split(' ');
+        // var streak = parts[0];
+        // if (text == $"{streak} life heal streak")
+        // {
+        //     if (int.TryParse(streak, out int value))
+        //     {
+        //         string suffix = LocalizedText.ApplyPluralization("{^0:единицы;единиц;единиц}", value);
+        //         text = $"Серия из {value} {suffix} восстановленного здоровья";
+        //     }
+        // }
+        
         text = text switch
         {
             // Stars Above
@@ -53,13 +65,12 @@ public class CombatTextPatch : ILoadable
             // Infernum
             "Peck!" => "Библиять!",
             // Thorium
-            // " life heal streak" => "",
-            // "ERADICATED" => "",
-            // "Close call" => "",
-            // "Freebie!" => "",
-            // " life/5 sec" => "",
-            // "No Blood Chamber in world" => "",
-            // "STRIKE" => "",
+            // "ERADICATED" => "УНИЧТОЖЕН",
+            // "Close call" => "На волоске",
+            // "Freebie!" => "Даром!",
+            // " life/5 sec" => " здоровья/5 сек",
+            // "No Blood Chamber in world" => "В мире нет камеры крови",
+            // "STRIKE" => "УДАР",
             _ => text
         };
         

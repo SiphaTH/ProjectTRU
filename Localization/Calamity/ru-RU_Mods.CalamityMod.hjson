@@ -280,9 +280,9 @@ Bestiary: {
     Scryllar: Vengeful spirits of those who lost their lives during the clash between Calamitas and the elemental, now forever bound to their home. Those who were close enough to bear witness to the battle perished in it, leaving few to know the truth of the battle’s outcome.
     SoulSlurper: An early form of Calamitas’ Soul Seekers, summoned by the Witch during her conflict with the Brimstone Elemental. Unlike the refined form that would follow it, she possessed very little control of them, leading to her creations going rogue shortly after the arduous battle was finally over.
     Androomba: One of the most mundane of Draedon’s creations, the directive of Androombas is simply to tidy up his labs and domiciles. He and his scientists could not afford to waste time on menial labor when there was endless research to be done.
-    Nanodroid: Ambient lighting, total surveillance, instantaneous repair… With enough of these tiny machines working in unison, any problem is solvable.
+    Nanodroid: Окружающее освещение, всеобъемлющее слежение, быстрое восстановление... Когда эти маленькие механизмы действуют единым фронтом, нет неразрешимых проблем.
     RepairUnitCritter: These handy little helpers are the reason that Draedon’s decades-old labs stand to this day. Though bulkier and less energy efficient than nanodroids, having to take what power they need from the labs’ generators, they can easily clean up the dust, though struggle with the rust.
-    AeroSlime: Previously mundane slimes that have absorbed trace amounts of draconic essence from the outpour of energy caused by the re-enchantment of Aerialite. They now soar the skies with their newly sprouted wings, reaching heights few of their gelatinous kind ever have.
+    AeroSlime: В прошлом, обыкновенные слизни, впитавшие в себя небольшое количество драконьей сущности в результате выброса энергии, вызванного повторным зачарованием аэриалита. Теперь же они взмывают в небо, благодаря своим вновь выросшим крыльям, достигая таких высот, которые под силу лишь немногим из их желеобразного вида.
     ArmoredDigger: Despite being relatively primitive compared to Draedon’s current technology, armored diggers continue to see use to this day. Though their primary directive is mining and delivering minerals, they also once cleared room for the numerous underground laboratories.
     AuroraSpirit: Thought to be no more than an old wives’ tale, sightings of aurora spirits have become commonplace since the defeat of the wall of flesh. Upon closer inspection, it appears these “spirits” are rather wisp-like entities clad in a cryonic shell, a sure sign that these were created by Archmage Permafrost.
     BloomSlime: Imbued with profaned energy, this slime wishes to see the world reduced to ashes to ensure the suffering it brings is no more. However, the simplicity of their form makes it difficult for the slain goddess to fully impose her will onto them.
@@ -304,7 +304,7 @@ Bestiary: {
     PhantomSpirit: The spirits within the Dungeon only vaguely recall their lives, and yet there is one thing each and all clearly remember, that drives them to chaos: the man responsible for locking them in these cursed walls, and his overwhelming power– power that they have been reminded of, due to one ever growing in strength roaming their halls.
     Piggy: These little swines waddle their little legs across these lands with little purpose, but they are happy with just that. Yet, little is known about how their little stomach carries a not-so-little amount of coins.
     ProfanedEnergyBody: Those most devout to Her travel the world, being planted into societies and acting as spies and assassins. Among their duties is constructing shrines in Her honor infused with Her divine power, that She might bless pagans blinded by darkness with visions of Her new age of light.
-    Rimehound: These hounds were bred and trained to survive in the tundra’s hostile conditions by Yharim’s forces, so that they may act as scouts. Most were simply abandoned by their masters out of either necessity or choice, and were resigned to roam forever without purpose.
+    Rimehound: Эти гончие были специально выведены и обучены силами Ярима, чтобы выживать в непригодных для жизни условиях тундры и выполнять функции разведчиков. Многих из них просто бросили их хозяева из-за обстоятельств или по собственной воле, и они были приговорены к вечному бесцельному скитанию.
     Rotdog: Быстрые и свирепые, эти гончие скрываются в ночи, охотясь на добычу своими острыми, как бритва, зубами. Они имеют схожую природу с демоническими глазами, которые родом из той же отвратительной трясины, но эти создания созданы специально для уничтожения тех, кто доказал, что может стать для них угрозой.
     ScornEater: For one to be weak of will does not inherently mean they are weak of body. Within these powerful individuals does a powerful fire burn, and She is all too willing to fan the flames. All one need give in return for Her gracious blessing is their free will, and they shall be gifted Her enlightenment.
     SeaUrchin: Крупные морские ежи, перекатываясь и подпрыгивая по морскому дну, они охотятся как на рыб, которые прячутся в песке, с помощью своих шипов, позволяющие им прочёсывать морское дно, так и на тех, кто находится намного выше, совершая невероятные прыжки. Их поразительный размер обусловлен тем, что этот вид является хищником и питается флорой, а не фауной, как большинство видов морских ежей.
@@ -1015,7 +1015,7 @@ Buffs: {
 
     BaguetteBuff: {
         DisplayName: Багет
-        Description: "[c/B00BA5:'Если бы я только знала...' ~Циррус]"
+        Description: "[c/B00BA5:'Если бы я только знала... ~Циррус']"
     }
 
     BloodfinBoost: {
@@ -1099,12 +1099,12 @@ Buffs: {
 
     Zen: {
         DisplayName: Дзен
-        Description: Скорость появления врагов снижена
+        Description: Скорость появления врагов значительно снижена
     }
 
     Zerg: {
         DisplayName: Зерг
-        Description: Скорость появления врагов увеличена
+        Description: Скорость появления врагов значительно увеличена
     }
 
     RancorBurn: {
@@ -2603,8 +2603,8 @@ Items: {
             DisplayName: Амулет бездны
             Tooltip:
                 '''
-                Все атаки, включая миньонов, накладывают дебафф «{$Buffs.Riptide.DisplayName}»
-                Даёт невосприимчивость к дебаффу «{$Buffs.Riptide.DisplayName}»
+                Все атаки, включая миньонов, накладывают дебафф «{$Buffs.RiptideDebuff.DisplayName}»
+                Даёт невосприимчивость к дебаффу «{$Buffs.RiptideDebuff.DisplayName}»
                 Находясь в бездне, увеличивает максимальный запас здоровья на 10%
                 '''
         }
@@ -3558,7 +3558,7 @@ Items: {
         }
     
         IronBoots: {
-            DisplayName: Железные сапоги
+            DisplayName: Железные ботинки
             Tooltip: Позволяет быстрее падать в жидкостях
         }
     
@@ -5040,12 +5040,12 @@ Items: {
             }
             
             BrimflameRobes: {
-                DisplayName: Мантия серного пламени
+                DisplayName: Одеяние серного пламени
                 Tooltip: Увеличивает магический урон и шанс критического удара на 5%
             }
             
             BrimflameScowl: {
-                DisplayName: Колпак серного пламени
+                DisplayName: Клобук серного пламени
                 Tooltip:
                     '''
                     Увеличивает магический урон и шанс критического удара на 5%
@@ -5125,7 +5125,7 @@ Items: {
             }
             
             DaedalusHeadRogue: {
-                DisplayName: Закрытый капюшон Дедала
+                DisplayName: Защитная маска Дедала
                 Tooltip:
                     '''
                     Увеличивает разбойный урон на 13% и шанс критического удара на 7%
@@ -5159,7 +5159,7 @@ Items: {
             }
             
             FathomSwarmerBoots: {
-                DisplayName: Ботинки глубоководной стаи
+                DisplayName: Поножи глубоководной стаи
                 Tooltip:
                     '''
                     Увеличивает урон призывателя на 4%
@@ -5180,7 +5180,7 @@ Items: {
             }
             
             FathomSwarmerVisage: {
-                DisplayName: Налицовник глубоководной стаи
+                DisplayName: Лик глубоководной стаи
                 Tooltip:
                     '''
                     Увеличивает урон призывателя на 5%
@@ -5371,7 +5371,7 @@ Items: {
             }
             
             MolluskShellplate: {
-                DisplayName: Панцирный нагрудник моллюска
+                DisplayName: Панцирные латы моллюска
                 Tooltip:
                     '''
                     Увеличивает урон на 10% и шанс критического удара на 6%
@@ -5380,7 +5380,7 @@ Items: {
             }
             
             PlaguebringerCarapace: {
-                DisplayName: Панцирный доспех разносчицы чумы
+                DisplayName: Панцирь разносчицы чумы
                 Tooltip:
                     '''
                     Даёт невосприимчивость к дебаффу «{$Buffs.Plague.DisplayName}»
@@ -5428,7 +5428,7 @@ Items: {
             }
             
             PlagueReaperStriders: {
-                DisplayName: Страйдеры жнеца чумы
+                DisplayName: Походные ботинки жнеца чумы
                 Tooltip:
                     '''
                     Увеличивает стрелковый шанс критического удара на 3%
@@ -5473,7 +5473,7 @@ Items: {
             }
             
             ReaverHeadMobility: {
-                DisplayName: Налицовник разорителя
+                DisplayName: Лик разорителя
                 Tooltip: Увеличивает скорость прыжка на 10% и передвижения на 15%
                 SetBonus:
                     '''
@@ -5590,7 +5590,7 @@ Items: {
             }
             
             AuricTeslaHoodedFacemask: {
-                DisplayName: Закрытый ауритовый тесла-капюшон
+                DisplayName: Закрытая ауритовая тесла-маска с капюшоном
                 Tooltip: Увеличивает стрелковый урон и шанс критического удара на 30%
                 SetBonus: Бонусы от комплектов брони стрелка: эстрагоновой, кровавой вспышки и богоубийцы
             }
@@ -5636,7 +5636,7 @@ Items: {
             }
             
             AuricTeslaWireHemmedVisage: {
-                DisplayName: Окаймлённый проводами ауритовый тесла-налицовник
+                DisplayName: Окаймлённый проводами ауритовый тесла-лик
                 Tooltip:
                     '''
                     Увеличивает магический урон на 30% и шанс критического удара на 20%
@@ -5766,7 +5766,7 @@ Items: {
             }
             
             EmpyreanCloak: {
-                DisplayName: Возвышенная мантия
+                DisplayName: Возвышенный плащ
                 Tooltip:
                     '''
                     Доспех космоса
@@ -5776,7 +5776,7 @@ Items: {
             }
             
             EmpyreanCuisses: {
-                DisplayName: Возвышенные поножи
+                DisplayName: Возвышенные набедренники
                 Tooltip:
                     '''
                     Увеличивает разбойный урон и шанс критического удара на 5%
@@ -5801,7 +5801,7 @@ Items: {
             }
             
             FearmongerGreathelm: {
-                DisplayName: Великий шлем запугивателя
+                DisplayName: Большой шлем запугивателя
                 Tooltip:
                     '''
                     Чистый ужас излучается из ваших глаз
@@ -5831,7 +5831,7 @@ Items: {
             }
             
             FearmongerPlateMail: {
-                DisplayName: Латная кольчуга запугивателя
+                DisplayName: Латы запугивателя
                 Tooltip:
                     '''
                     Увеличивает максимальный запас здоровья на 100 и сопротивление урону на 8%
@@ -5881,7 +5881,7 @@ Items: {
             }
             
             GemTechSchynbaulds: {
-                DisplayName: Высокотехнологичные драгоценные наголенники
+                DisplayName: Высокотехнологичные драгоценные поножи
                 Tooltip: "'Око за око, зуб за зуб'"
             }
             
@@ -5904,7 +5904,7 @@ Items: {
             }
             
             GodSlayerHeadMelee: {
-                DisplayName: Рогатый великий шлем богоубийцы
+                DisplayName: Рогатый большой шлем богоубийцы
                 Tooltip:
                     '''
                     Увеличивает урон ближнего боя на 14%
@@ -6119,7 +6119,7 @@ Items: {
             }
             
             TarragonHeadRanged: {
-                DisplayName: Эстрагоновый налицовник
+                DisplayName: Эстрагоновый лик
                 Tooltip:
                     '''
                     Увеличивает стрелковый урон и шанс критического удара на 10%
@@ -6247,7 +6247,7 @@ Items: {
             }
             
             MarniteArchitectHeadgear: {
-                DisplayName: Мранитовый наголовник архитектора
+                DisplayName: Мранитовый головной убор архитектора
                 Tooltip: Увеличивает дальность размещения блоков и инструментов на 5
                 AbilityBrief: Мранитовый лифт - Вы можете призвать лифт под собой для подъёма на небольшую высоту
                 AbilityDescription:
@@ -6258,7 +6258,7 @@ Items: {
             }
             
             MarniteArchitectToga: {
-                DisplayName: Мранитовая роба архитектора
+                DisplayName: Мранитовая мантия архитектора
                 Tooltip: Увеличивает скорость размещения блоков на 50%
             }
             
@@ -6300,7 +6300,7 @@ Items: {
             }
             
             StatigelHeadMagic: {
-                DisplayName: Статигелевая шляпа
+                DisplayName: Статигелевый колпак
                 Tooltip:
                     '''
                     Увеличивает магический урон на 10% и снижает расход маны на 10%
@@ -6473,7 +6473,7 @@ Items: {
             }
             
             WulfrumJacket: {
-                DisplayName: Вульфрумовый жилет
+                DisplayName: Вульфрумовая куртка
                 Tooltip: Увеличивает сопротивление урону на 5%
             }
             
@@ -6595,7 +6595,7 @@ Items: {
             }
             
             GodSlayerVisage: {
-                DisplayName: Налицовник богоубийцы
+                DisplayName: Лик богоубийцы
                 Tooltip: ""
             }
             
@@ -14286,7 +14286,7 @@ Items: {
             }
             
             Phaseslayer: {
-                DisplayName: Фазовый убийца
+                DisplayName: Фазовый палач
                 Tooltip:
                     '''
                     Проецирует гигантский лазерный клинок, управляемый курсором
@@ -14988,7 +14988,7 @@ Items: {
             
             ParasiticSceptor: {
                 DisplayName: Паразитический скипетр
-                Tooltip: Стреляет разбросом водных пиявок, которые цепляются за врагов, нанося нарастающий постепенный урон за каждую пиявку
+                Tooltip: Стреляет разбросом радиоактивных водных пиявок, которые цепляются за врагов, нанося нарастающий постепенный урон за каждую пиявку
             }
             
             PhantasmalFury: {
@@ -15326,7 +15326,7 @@ Items: {
                 DisplayName: Живая чистота
                 Tooltip:
                     '''
-                    Стреляет пятью случайными лучами элементальной энергии в направлении курсора
+                    Стреляет пятью случайными лучами экзо-энергии в направлении курсора
                     При попадании во врага или блок лучи разрываются яркой вспышкой, призывая с неба дополнительный лазер, либо разделяются на энергетические сферы
                     'Его величество вдохновляет на гениальные действия'
                     '''
@@ -15344,7 +15344,7 @@ Items: {
             
             Waywasher: {
                 DisplayName: Мойщик пути
-                Tooltip: Запускает неточные водяные заряды
+                Tooltip: Запускает поток неточных водяных зарядов
             }
             
             Wingman: {
@@ -15711,7 +15711,7 @@ Items: {
                 DisplayName: Крушитель глубин
                 Tooltip:
                     '''
-                    При нанесении ударов по врагам накладывает дебафф «{$Buffs.Riptide.DisplayName}»
+                    При нанесении ударов по врагам накладывает дебафф «{$Buffs.RiptideDebuff.DisplayName}»
                     Нажмите <right>, чтобы использовать как обычное оружие без разрушения стен
                     '''
             }
@@ -17963,7 +17963,7 @@ Items: {
                 DisplayName: Улей
                 Tooltip:
                     '''
-                    Стреляет различными ракетами, которые разрываются пчёлами после смерти
+                    Стреляет различными ракетами, которые разрываются дружелюбными пчёлами
                     Ракеты могут разрушать блоки с разрушающими блоки боеприпасами
                     '''
             }
@@ -18100,7 +18100,7 @@ Items: {
                 DisplayName: Альфа-вирус
                 Tooltip:
                     '''
-                    Бросает гигантскую чумную ячейку со смертельной аурой, которая разделяется на 6 чумных искателей
+                    Бросает гигантскую чумную ячейку со смертельной аурой, которая взрывается на 6 самонаводящихся чумных искателей
                     При скрытном ударе чумная ячейка движется медленнее, накапливая ауру кружащихся чумных искателей во время полёта
                     '''
             }
@@ -18197,7 +18197,7 @@ Items: {
                 DisplayName: Солоноватая колба
                 Tooltip:
                     '''
-                    Бросает бомбу, которая разрывается ядовитым взрывом морской воды
+                    Бросает колбу, которая разрывается ядовитыми струями морской воды
                     При скрытном ударе вызывает солоноватый наконечник копья
                     '''
             }
@@ -19101,8 +19101,8 @@ Items: {
                     '''
                     Запускает быструю раскалённую сковороду
                     При попадании во врага призывает огненные шары, кружащие вокруг цели
-                    Три последовательных попадания по врагу запустят золотую сковороду
-                    Золотая сковорода стремительно направляет все огненные шары в свою цель
+                    Три последовательных попадания по врагу запустят золотую сковороду при следующем броске
+                    Золотая сковорода стремительно направляет все огненные шары в свою цель при попадании
                     При скрытном ударе раскалённая сковорода действует аналогично золотой сковороде, но также взрывается золотыми искрами
                     При скрытном ударе также призывает дополнительные огненные шары при попадании
                     [c/842593:'а ТеПеРь Мы ЗаСуНеМ еЁ пОд ГиДрАвЛиЧеСкИй ПрЕсС']
@@ -19114,7 +19114,7 @@ Items: {
                 Tooltip:
                     '''
                     Бросает безумно быстрый кинжал, который постепенно замедляется и рассеивается светом
-                    По окончании рассеивания высвобождаются 6 быстрых разделяющихся клинка, которые устремляются к ближайшим целям и рассекают их, а вместе с ними и большой лазерный луч
+                    По окончании рассеивания высвобождаются 6 разделяющихся лезвий, которые кромсают ближайшие цели, а вместе с ними и большой лазерный луч
                     При скрытном ударе запускает залп из 7 пучков света, которые взрываются в маленькие лазерные лучи вместе с кинжалом
                     '''
             }
@@ -19939,8 +19939,8 @@ Items: {
                 DisplayName: Метастаз
                 Tooltip:
                     '''
-                    Призывает могильщика
-                    Пока могильщик активен, вокруг вас начнут появляться и вращаться серные сердца
+                    Призывает Могильщика
+                    Пока Могильщик активен, вокруг вас начнут появляться и вращаться серные сердца
                     Он будет пытаться атаковать вас всё чаще и чаще, в зависимости от количества сердец
                     Занимает 4 слота призываемых миньонов и одновременно может существовать только один
                     [c/C61B40:Возможное будущее космического змея]
@@ -21116,8 +21116,8 @@ NPCs: {
             HasAlicorn3: Нет, можешь даже не спрашивать. В человеческом облике я НЕ имею на бедре знак в виде сердца. И вообще, как хочу, так и превращаюсь!
         }
 
-        DeathCountButton: Количество смертей + Подписчики
-        DeathCount: Вы умерли {0} {^0:раз;раза}.
+        DeathCountButton: Кол-во смертей + Патроны
+        DeathCount: Ты умер {0} {^0:раз;раза;раз}.
         Death10000: Мои поздравления! Теперь ты официально самый большой неудачник в истории Террарии. Номер один, я бы сказала! Кто второй? Да чёрт его знает.
         Death5000: Даже не знаю, что сказать. Ты плох и чувствовать себя должен плохо? Это и так понятно.
         Death2500: Господи, да я, бухая в хламину, лучше уклоняюсь.
@@ -23582,7 +23582,7 @@ Status: {
         VulnerabilityHexLament: "{0} низвергается холодным пламенем печали."
         VulnerabilityHexEpiphany: "Для {0} наступает поверхностное, жестокое озарение."
         VulnerabilityHexAcceptance: "{0} не смиряется со своей унылой и равнодушной реальностью."
-        Withered: "{0} увядает."
+        Withered: "{0} иссыхает."
     }
     
     Progression: {

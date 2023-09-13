@@ -57,6 +57,15 @@
     Vortex: Отсутствуют улучшение
     Wood: Увеличивает множитель заполнения записей в бестиарии и получение знамён до 5
     AshWood: Чаще выпускает огненные шары
+    BorealWood: Отсутствуют улучшение
+    AncientCobalt: Отсутствуют улучшение
+    Apprentice: Отсутствуют улучшение
+    Huntress: Отсутствуют улучшение
+    Jungle: Отсутствуют улучшение
+    Monk: Отсутствуют улучшение
+    Shadow: Отсутствуют улучшение
+    Snow: Отсутствуют улучшение
+    Squire: Отсутствуют улучшение
 }
 
 SetBonus: {
@@ -253,7 +262,7 @@ Message: {
     PatreonNameEffect: Ваш особый эффект покровителя -
     SkeletronRegrow: "{$NPCName.SkeletronHead} отрастил себе руки!"
     SkeletronPrimeRegrow: "{$NPCName.SkeletronPrime} отрастил себе руки!"
-    SkeletronGuardian: "{$NPCName.SkeletronHead} ппревратился в стража Темницы!"
+    SkeletronGuardian: "{$NPCName.SkeletronHead} превратился в стража Темницы!"
     SkeletronPrimeGuardian: "{$NPCName.SkeletronPrime} превратился в стража Темницы!"
     TwinsEndure: переживает смертельный удар, чтобы сражаться вместе со своим близнецом!
     TwinsRevive: возрождается!
@@ -445,7 +454,7 @@ Toggler: {
     MasoHeader2: Аксессуары режима Вечности
     DeerSinewDashConfig: Рывок оленьих сухожилий
     MasoAeolusConfig: Прыжок Эола
-    MasoAeolusFlowerConfig: Цветочные сапоги
+    MasoAeolusFlowerConfig: Цветочные ботинки
     MasoIconConfig: Скорость появления врагов зловещей иконы
     MasoIconDropsConfig: Двойная добыча зловещей иконы
     MasoGrazeConfig: Уворот вблизи снаряда
@@ -538,7 +547,7 @@ Toggler: {
     SupersonicJumpsConfig: Сверхзвуковые прыжки
     SupersonicRocketBootsConfig: Сверхзвуковые реактивные ботинки
     SupersonicCarpetConfig: Сверхзвуковой ковёр
-    SupersonicFlowerConfig: Сверхзвуковые цветочные сапоги
+    SupersonicFlowerConfig: Сверхзвуковые цветочные ботинки
     CthulhuShieldConfig: "{$ItemName.EoCShield}"
     BlackBeltConfig: "{$ItemName.BlackBelt}"
     TrawlerHeader: "{$Mods.FargowiltasSouls.Items.TrawlerSoul.DisplayName}"
@@ -917,7 +926,7 @@ ItemExtra: {
             Эффекты от предмета «{$Mods.CalamityMod.Items.Accessories.AmidiasPendant.DisplayName}»
             Эффекты от предмета «{$Mods.CalamityMod.Items.Accessories.FlameLickedShell.DisplayName}»
             Эффекты от предмета «{$Mods.CalamityMod.Items.Accessories.PlagueHive.DisplayName}»
-            Эффекты от предмета «{$Mods.CalamityMod.Items.Accessories.AstralArcanum.DisplayName}»
+            Эффекты от предмета «{$Mods.CalamityMod.Items.Accessories.Purity.DisplayName}»
             Эффекты от предмета «{$Mods.CalamityMod.Items.Accessories.HideofAstrumDeus.DisplayName}»
             Эффекты от предмета «{$Mods.CalamityMod.Items.Accessories.ProfanedSoulArtifact.DisplayName}»
             Эффекты от предмета «{$Mods.CalamityMod.Items.Accessories.DarkSunRing.DisplayName}»
@@ -3492,7 +3501,7 @@ Items: {
             Увеличивает скорость стрельбы на 50%
             Критические удары наносят в 4 раза больше урона
             Всё оружие имеет двойное отбрасывание
-            Увеличивает максимальный запас мана на 300
+            Увеличивает максимальный запас маны на 300
             Увеличивает призываемое число миньонов на 2
             Увеличивает призываемое число стражей на 2
             Все атаки накладывают дебафф «{$Buffs.FlamesoftheUniverseBuff.DisplayName}»
@@ -3544,7 +3553,7 @@ Items: {
     }
 
     EridanusBattleplate: {
-        DisplayName: Боевой нагрудник Эридана
+        DisplayName: Боевой доспех Эридана
         Tooltip:
             '''
             Увеличивает урон на 10%
@@ -3566,7 +3575,7 @@ Items: {
     }
 
     EridanusLegwear: {
-        DisplayName: Ноговицы Эридана
+        DisplayName: Поножи Эридана
         Tooltip:
             '''
             Увеличивает урон на 5%
@@ -3677,7 +3686,7 @@ Items: {
     }
 
     StyxLeggings: {
-        DisplayName: Штаны Стикса
+        DisplayName: Поножи Стикса
         Tooltip:
             '''
             Увеличивает урон на 10%

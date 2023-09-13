@@ -351,7 +351,7 @@ public class CalamityItems : IItemGender
                 "AsgardsValor",
                 "BloodstainedGlove",
                 "VoidofCalamity",
-                "CelestialJewel",
+                "Baroclaw",
                 "CoinofDeceit",
                 "CorruptFlask",
                 "CrawCarapace",
@@ -574,6 +574,9 @@ public class CalamityItems : IItemGender
                 "Sacrifice",
                 "GodsParanoia",
                 "Malevolence",
+                "InfectedJewel",
+                "Purity",
+                "BlazingStar",
             };
             List<int> types = new List<int>();
             
@@ -683,6 +686,7 @@ public class CalamityItems : IItemGender
                 "DeathsAscension",
                 "Vigilance",
                 "HellionFlowerSpear",
+                "MirrorofKalandra",
             };
             List<int> types = new List<int>();
             
@@ -702,7 +706,7 @@ public class CalamityItems : IItemGender
             string[] items =
             {
                 "AngelTreads",
-                "DarkGodsSheath",
+                "DarkMatterSheath",
                 "IronBoots",
                 "SilencingSheath",
                 "StressPills",

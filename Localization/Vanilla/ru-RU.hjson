@@ -2150,7 +2150,7 @@
         40: Искажение полна расщелин: смотрите под ноги.
         41: Время вылечит все раны.
         42: Если кончилось дерево, посадите жёлуди в землю, чтобы вырастить новое!
-        43: Ракетостроение подарило нам ракетные сапоги.
+        43: Ракетостроение подарило нам реактивные ботинки.
         44: Облако в банке и блестящий красный надувной шарик улучшают вашу способность к прыжкам. Совместите их, чтобы получить облако в надувном шарике.
         45: Если вы храните свои монеты в сундуке или свинье-копилке то вряд ли их потеряете.
         46: Для приготовления зелий поместите пустую банку на стол и получите алхимическую станцию! Двойная работа, двойная забота!
@@ -2526,7 +2526,7 @@
         AdamantiteGlaive: Адамантитовая глефа
         AdamantiteHeadgear: Адамантитовый головной убор
         AdamantiteHelmet: Адамантитовый шлем
-        AdamantiteLeggings: Адамантитовые ботинки
+        AdamantiteLeggings: Адамантитовые поножи
         AdamantiteMask: Адамантитовая маска
         AdamantiteOre: Адамантитовая руда
         AdamantitePickaxe: Адамантитовая кирка
@@ -2615,8 +2615,8 @@
         AncientArmorShirt: Древний наряд
         AncientBattleArmorHat: Запретная маска
         AncientBattleArmorMaterial: Запретный фрагмент
-        AncientBattleArmorPants: Запретные ботинки
-        AncientBattleArmorShirt: Запретный нагрудник
+        AncientBattleArmorPants: Запретные ботфорты
+        AncientBattleArmorShirt: Запретное одеяние
         AncientBlueDungeonBrick: Древний синий кирпич
         AncientBlueDungeonBrickWall: Древняя синяя кирпичная стена
         AncientChisel: Древняя стамеска
@@ -2625,7 +2625,7 @@
         AncientCobaltBrick: Древний кобальтовый кирпич
         AncientCobaltBrickWall: Древняя кобальтовая кирпичная стена
         AncientCobaltHelmet: Древний кобальтовый шлем
-        AncientCobaltLeggings: Древние кобальтовые ботинки
+        AncientCobaltLeggings: Древние кобальтовые поножи
         AncientCopperBrick: Древний медный кирпич
         AncientCopperBrickWall: Древняя медная кирпичная стена
         AncientCultistTrophy: Трофей Культиста-лунатика
@@ -2634,12 +2634,12 @@
         AncientGoldHelmet: Древний золотой шлем
         AncientGreenDungeonBrick: Древний зелёный кирпич
         AncientGreenDungeonBrickWall: Древняя зелёная кирпичная стена
-        AncientHallowedGreaves: Древние освящённые наголенники
+        AncientHallowedGreaves: Древние освящённые поножи
         AncientHallowedHeadgear: Древний освящённый головной убор
         AncientHallowedHelmet: Древний освящённый шлем
         AncientHallowedHood: Древний освящённый капюшон
         AncientHallowedMask: Древняя освящённая маска
-        AncientHallowedPlateMail: Древняя освящённая латная кольчуга
+        AncientHallowedPlateMail: Древние освящённые латы
         AncientHellstoneBrick: Древний кирпич адского камня
         AncientHellstoneBrickWall: Стена из древнего кирпича адского камня
         AncientHorn: Древний рог
@@ -2674,7 +2674,7 @@
         AnkhBanner: Знамя анха
         AnkhCharm: Амулет анха
         AnkhShield: Щит анха
-        AnkletoftheWind: Браслет ветра
+        AnkletoftheWind: Ножной браслет ветра
         AnnouncementBox: Панель оповещения
         AnomuraFungusBanner: Знамя грибовидного аномуры
         AntiGravityHook: Антигравитационный крюк
@@ -2689,14 +2689,14 @@
         ApplePie: Яблочный пирог
         ApplePieSlice: Кусок яблочного пирога
         ApprenticeAltHead: Шляпа мёртвого анархиста
-        ApprenticeAltPants: Штаны мёртвого анархиста
-        ApprenticeAltShirt: Накидка мёртвого анархиста
+        ApprenticeAltPants: Поножи мёртвого анархиста
+        ApprenticeAltShirt: Одеяние мёртвого анархиста
         ApprenticeBait: Наживка новичка
         ApprenticeHat: Шляпа подмастерья
         ApprenticeRobe: Одеяние подмастерья
         ApprenticeScarf: Шарф подмастерья
         ApprenticeStaffT3: Гнев Бэтси
-        ApprenticeTrousers: Брюки подмастерья
+        ApprenticeTrousers: Штаны подмастерья
         Apricot: Абрикос
         AquaScepter: Водный скипетр
         ArapaimaBanner: Знамя арапаймы
@@ -2742,7 +2742,7 @@
         AshWoodDoor: Дверь из пепельного дерева
         AshWoodDresser: Комод из пепельного дерева
         AshWoodFence: Забор из пепельного дерева
-        AshWoodGreaves: Ботинки из пепельного дерева
+        AshWoodGreaves: Поножи из пепельного дерева
         AshWoodHammer: Молот из пепельного дерева
         AshWoodHelmet: Шлем из пепельного дерева
         AshWoodLamp: Напольная лампа из пепельного дерева
@@ -2852,7 +2852,7 @@
         BeeGreaves: Пчелиные ботинки
         BeeGun: Пчеломёт
         BeeHat: Пчелиная шапка
-        BeeHeadgear: Пчелиный шлем
+        BeeHeadgear: Пчелиный головной убор
         BeeHive: Пчелиный улей
         BeeKeeper: Пчеловод
         BeeMask: Маска Королевы пчёл
@@ -2865,7 +2865,7 @@
         BeesKnees: Опчеленительный лук
         BeetleHelmet: Жучий шлем
         BeetleHusk: Жучий хитин
-        BeetleLeggings: Жучьи ботинки
+        BeetleLeggings: Жучьи поножи
         BeetleMinecart: Жучья вагонетка
         BeetleScaleMail: Жучья чешуйчатая кольчуга
         BeetleShell: Жучий панцирь
@@ -3102,7 +3102,7 @@
         BorealWoodDoor: Дверь из северного дерева
         BorealWoodDresser: Комод из северного дерева
         BorealWoodFence: Забор из северного дерева
-        BorealWoodGreaves: Ботинки из северного дерева
+        BorealWoodGreaves: Поножи из северного дерева
         BorealWoodHammer: Молот из северного дерева
         BorealWoodHelmet: Шлем из северного дерева
         BorealWoodLamp: Напольная лампа из северного дерева
@@ -3236,7 +3236,7 @@
         CactusHelmet: Кактусовый шлем
         CactusLamp: Кактусовая напольная лампа
         CactusLantern: Кактусовый фонарь
-        CactusLeggings: Кактусовые ботинки
+        CactusLeggings: Кактусовые поножи
         CactusPiano: Кактусовое пианино
         CactusPickaxe: Кактусовая кирка
         CactusPlatform: Кактусовая платформа
@@ -3355,7 +3355,7 @@
         ChlorophyteOre: Хлорофитовая руда
         ChlorophytePartisan: Хлорофитовый протазан
         ChlorophytePickaxe: Хлорофитовая кирка
-        ChlorophytePlateMail: Хлорофитовая латная кольчуга
+        ChlorophytePlateMail: Хлорофитовые латы
         ChlorophyteSaber: Хлорофитовая сабля
         ChlorophyteShotbow: Хлорофитовый многозарядный арбалет
         ChlorophyteWarhammer: Хлорофитовый боевой молот
@@ -3400,7 +3400,7 @@
         CobaltDrill: Кобальтовый бур
         CobaltHat: Кобальтовая шляпа
         CobaltHelmet: Кобальтовый шлем
-        CobaltLeggings: Кобальтовые ботинки
+        CobaltLeggings: Кобальтовые поножи
         CobaltMask: Кобальтовая маска
         CobaltNaginata: Кобальтовая нагината
         CobaltOre: Кобальтовая руда
@@ -3452,7 +3452,7 @@
         CopperChainmail: Медная кольчуга
         CopperChandelier: Медная люстра
         CopperCoin: Медная монета
-        CopperGreaves: Медные ботинки
+        CopperGreaves: Медные поножи
         CopperHammer: Медный молот
         CopperHelmet: Медный шлем
         CopperOre: Медная руда
@@ -3550,7 +3550,7 @@
         CrimsonFishingCrateHard: Кровяной ящик
         CrimsonGoldfishBanner: Знамя свирепой золотой рыбки
         CrimsonGrassEcho: Стена из багряной травы
-        CrimsonGreaves: Багряные ботинки
+        CrimsonGreaves: Багряные поножи
         CrimsonHardenedSand: Затвердевший багряный песок
         CrimsonHardenedSandWall: Стена из затвердевшего багряного песка
         CrimsonHeart: Багряное сердце
@@ -3562,7 +3562,7 @@
         CrimsonRod: Багряный жезл
         CrimsonSandstone: Багряный песчаник
         CrimsonSandstoneWall: Багряная песчаниковая стена
-        CrimsonScalemail: Багряный нагрудник
+        CrimsonScalemail: Багряная чешуйчатая кольчуга
         CrimsonSeeds: Семена багрянца
         CrimsonTigerfish: Багряная тигровая рыба
         CrimsonTorch: Багряный факел
@@ -3929,7 +3929,7 @@
         EbonwoodDoor: Дверь из эбонитового дерева
         EbonwoodDresser: Комод из эбонитового дерева
         EbonwoodFence: Забор из эбонитового дерева
-        EbonwoodGreaves: Ботинки из эбонитового дерева
+        EbonwoodGreaves: Поножи из эбонитового дерева
         EbonwoodHammer: Молот из эбонитового дерева
         EbonwoodHelmet: Шлем из эбонитового дерева
         EbonwoodLamp: Напольная лампа из эбонитового дерева
@@ -4020,7 +4020,7 @@
         FaceMonsterBanner: Знамя лицемонстра
         FacingtheCerebralMastermind: Картина «Возле выдающегося интеллекта»
         FairyBell: Волшебный колокольчик
-        FairyBoots: Сказочные сапоги
+        FairyBoots: Сказочные ботинки
         FairyCritterBlue: Голубая фея
         FairyCritterGreen: Зелёная фея
         FairyCritterPink: Розовая фея
@@ -4165,7 +4165,7 @@
         FlameAndSilverDye: Пламенно-серебряный краситель
         FlameDye: Пламенный краситель
         FlameTrap: Огненная ловушка
-        FlameWakerBoots: Огнемётные сапоги
+        FlameWakerBoots: Ботинки-поджигатели
         FlameWings: Пламенные крылья
         Flamelash: Огнеплеть
         Flamethrower: Огнемёт
@@ -4223,7 +4223,7 @@
         FloretProtectorHelmet: Шлем цветочного хранителя
         FloretProtectorLegs: Ботинки цветочного хранителя
         Flounder: Камбала
-        FlowerBoots: Цветочные сапоги
+        FlowerBoots: Цветочные ботинки
         FlowerBoyHat: Лепестки нелепого подсолнуха
         FlowerBoyPants: Стебель нелепого подсолнуха
         FlowerBoyShirt: Листья нелепого подсолнуха
@@ -4241,7 +4241,7 @@
         FlowerofFire: Цветок огня
         FlowerofFrost: Цветок мороза
         FlowingMagma: Картина «Текущая магма»
-        FlurryBoots: Сапоги метели
+        FlurryBoots: Ботинки метели
         FlyingAntlionBanner: Знамя муравьиной стрекозы
         FlyingCarpet: Ковёр-самолёт
         FlyingDutchmanMasterTrophy: Реликвия «Летучего голландца»
@@ -4261,10 +4261,10 @@
         ForestTroll: Картина «Лесной тролль»
         FormatC: Формат:C
         FossilHelm: Ископаемый шлем
-        FossilOre: Затвердевшее ископаемое
-        FossilPants: Ископаемые ботинки
+        FossilOre: Окаменелое ископаемое
+        FossilPants: Ископаемые поножи
         FossilPickaxe: Ископаемая кирка
-        FossilShirt: Ископаемый нагрудник
+        FossilShirt: Ископаемые латы
         FoxEars: Лисьи уши
         FoxMask: Маска лисы
         FoxPants: Лапы лисы
@@ -4290,12 +4290,12 @@
         FrostCore: Морозное ядро
         FrostDaggerfish: Морозная рыба-кинжал
         FrostHelmet: Морозный шлем
-        FrostLeggings: Морозные ботинки
+        FrostLeggings: Морозные поножи
         FrostMinnow: Морозный гольян
         FrostStaff: Морозный посох
         Frostbrand: Ледяная марка
         FrostburnArrow: Стрела обжигающего холода
-        FrostsparkBoots: Искромётные морозные сапоги
+        FrostsparkBoots: Искромётные морозные ботинки
         FrozenBathtub: Замороженная ванна
         FrozenBed: Замороженная кровать
         FrozenBookcase: Замороженный книжный шкаф
@@ -4394,7 +4394,7 @@
         GiantBow: Бант
         GiantCursedSkullBanner: Знамя гигантского проклятого черепа
         GiantFlyingFoxBanner: Знамя гигантской летучей лисицы
-        GiantHarpyFeather: Перо гигантской гарпии
+        GiantHarpyFeather: Гигантское перо гарпии
         GiantShellyBanner: Знамя гигантского ракушечника
         GillsPotion: Зелье жабр
         GingerBeard: Рыжая борода
@@ -4402,7 +4402,7 @@
         GingerbreadManBanner: Знамя пряничного человечка
         GladiatorBreastplate: Гладиаторский нагрудник
         GladiatorHelmet: Гладиаторский шлем
-        GladiatorLeggings: Гладиаторские ботинки
+        GladiatorLeggings: Гладиаторские поножи
         Gladius: Гладиус
         Glass: Стекло
         GlassBathtub: Стеклянная ванна
@@ -4479,7 +4479,7 @@
         GoldGoldfishBowl: Золотой аквариум
         GoldGrasshopper: Золотой кузнечик
         GoldGrasshopperCage: Террариум с золотым кузнечиком
-        GoldGreaves: Золотые ботинки
+        GoldGreaves: Золотые поножи
         GoldHammer: Золотой молот
         GoldHelmet: Золотой шлем
         GoldLadyBug: Золотая божья коровка
@@ -4764,14 +4764,14 @@
         HallowedFishingCrate: Освящённый ящик
         HallowedFishingCrateHard: Божественный ящик
         HallowedGrassEcho: Стена из освящённой травы
-        HallowedGreaves: Освящённые наголенники
+        HallowedGreaves: Освящённые поножи
         HallowedHeadgear: Освящённый головной убор
         HallowedHelmet: Освящённый шлем
         HallowedHood: Освящённый капюшон
         HallowedKey: Освящённый ключ
         HallowedKeyMold: Слепок для освящённого ключа
         HallowedMask: Освящённая маска
-        HallowedPlateMail: Освящённая латная кольчуга
+        HallowedPlateMail: Освящённые латы
         HallowedRepeater: Освящённый самострел
         HallowedSeeds: Освящённые семена
         HallowedTorch: Освящённый факел
@@ -4823,7 +4823,7 @@
         HellbatBanner: Знамя адской летучей мыши
         HellboundBanner: Знамя связанных адом
         HellfireArrow: Стрела адского огня
-        HellfireTreads: Сапоги адского огня
+        HellfireTreads: Ботфорты адского пламени
         Hellforge: Адская кузня
         HellhoundBanner: Знамя адской гончей
         Hellstone: Адский камень
@@ -4836,7 +4836,7 @@
         Hemopiranha: Кровавая пиранья
         HerbBag: Мешочек с травами
         HerculesBeetle: Жук-геркулес
-        HermesBoots: Сапоги Гермеса
+        HermesBoots: Ботинки Гермеса
         HeroShield: Щит героя
         HerosHat: Шляпа героя
         HerosPants: Штаны героя
@@ -4901,7 +4901,7 @@
         Hungerfish: Голодная рыба
         HunterCloak: Охотничий плащ
         HunterPotion: Зелье охотника
-        HuntressAltHead: Капюшон Красной Шапочки
+        HuntressAltHead: Шапочка Красной Шапочки
         HuntressAltPants: Лосины Красной Шапочки
         HuntressAltShirt: Платье Красной Шапочки
         HuntressBuckler: Баклер охотницы
@@ -4978,7 +4978,7 @@
         IronCrateHard: Мифриловый ящик
         IronDoor: Железная дверь
         IronFence: Железный забор
-        IronGreaves: Железные ботинки
+        IronGreaves: Железные поножи
         IronHammer: Железный молот
         IronHelmet: Железный шлем
         IronOre: Железная руда
@@ -5029,7 +5029,7 @@
         JungleHat: Шляпа джунглей
         JungleKey: Ключ джунглей
         JungleKeyMold: Слепок ключа джунглей
-        JunglePants: Ботинки джунглей
+        JunglePants: Штаны джунглей
         JungleRose: Роза джунглей
         JungleShirt: Рубашка джунглей
         JungleSlimeBanner: Знамя слизня джунглей
@@ -5133,7 +5133,7 @@
         LavaRocket: Лавовая ракета
         LavaSkull: Магматический череп
         LavaSlimeBanner: Знамя лавового слизня
-        LavaWaders: Сапоги-лавоходы
+        LavaWaders: Бродни лавы
         LavafallBlock: Блок с лавопадом
         LavafallWall: Стена с лавопадом
         Lavafly: Лавовый светлячок
@@ -5151,7 +5151,7 @@
         LeadChainmail: Свинцовая кольчуга
         LeadDoor: Свинцовая дверь
         LeadFence: Свинцовый забор
-        LeadGreaves: Свинцовые ботинки
+        LeadGreaves: Свинцовые поножи
         LeadHammer: Свинцовый молот
         LeadHelmet: Свинцовый шлем
         LeadOre: Свинцовая руда
@@ -5216,7 +5216,7 @@
         LightMummyBanner: Знамя светлой мумии
         LightShard: Светлый осколок
         LightlessChasms: Картина «Сумрачные расщелины»
-        LightningBoots: Молниеносные сапоги
+        LightningBoots: Молниеносные ботинки
         LightningBug: Жук-светляк
         LightningBuginaBottle: Жук-светляк в банке
         LightningCarrot: Молниеносная морковка
@@ -5500,10 +5500,10 @@
         MeteorHamaxe: Метеоритный молотопор
         MeteorHeadBanner: Знамя метеорика
         MeteorHelmet: Метеоритный шлем
-        MeteorLeggings: Метеоритные ботинки
+        MeteorLeggings: Метеоритные поножи
         MeteorShot: Метеоритная пуля
         MeteorStaff: Метеоритный посох
-        MeteorSuit: Метеоритный нагрудник
+        MeteorSuit: Метеоритный костюм
         Meteorite: Метеорит
         MeteoriteBar: Метеоритный слиток
         MeteoriteBathtub: Метеоритная ванна
@@ -5565,11 +5565,11 @@
         MoneyTrough: Денежное корыто
         MonkAltHead: Шлем синоби-лазутчика
         MonkAltPants: Штаны синоби-лазутчика
-        MonkAltShirt: Нагрудник синоби-лазутчика
+        MonkAltShirt: Облачение синоби-лазутчика
         MonkBelt: Пояс монаха
         MonkBrows: Лысина и густые брови монаха
         MonkPants: Штаны монаха
-        MonkShirt: Накидка монаха
+        MonkShirt: Рубашка монаха
         MonkStaffT1: Сонный осьмижезл
         MonkStaffT2: Жуткая глефа
         MonkStaffT3: Ярость небесного дракона
@@ -5761,7 +5761,7 @@
         MythrilChainmail: Мифриловая кольчуга
         MythrilChainsaw: Мифриловая бензопила
         MythrilDrill: Мифриловый бур
-        MythrilGreaves: Мифриловые ботинки
+        MythrilGreaves: Мифриловые поножи
         MythrilHalberd: Мифриловая алебарда
         MythrilHat: Мифриловая шляпа
         MythrilHelmet: Мифриловый шлем
@@ -5876,12 +5876,12 @@
         ObsidianLamp: Обсидиановая напольная лампа
         ObsidianLantern: Обсидиановый фонарь
         ObsidianLockbox: Обсидиановый ларец
-        ObsidianPants: Обсидиановые ботинки
+        ObsidianPants: Обсидиановые штаны
         ObsidianPiano: Обсидиановое пианино
         ObsidianPlatform: Обсидиановая платформа
         ObsidianRose: Обсидиановая роза
         ObsidianShield: Обсидиановый щит
-        ObsidianShirt: Обсидиановое пальто
+        ObsidianShirt: Обсидиановый сюртук
         ObsidianSink: Обсидиановая раковина
         ObsidianSkinPotion: Зелье обсидиановой кожи
         ObsidianSkull: Обсидиановый череп
@@ -5891,7 +5891,7 @@
         ObsidianTable: Обсидиановый стол
         ObsidianVase: Обсидиановая ваза
         ObsidianWatcherBanner: Знамя обсидианового наблюдателя
-        ObsidianWaterWalkingBoots: Обсидиановые сапоги хождения по воде
+        ObsidianWaterWalkingBoots: Обсидиановые ботинки хождения по воде
         ObsidianWorkBench: Обсидиановый верстак
         Obsidifish: Обсидиановая рыба
         OceanCrate: Океанический ящик
@@ -5926,7 +5926,7 @@
         OrichalcumHalberd: Орихалковая алебарда
         OrichalcumHeadgear: Орихалковый головной убор
         OrichalcumHelmet: Орихалковый шлем
-        OrichalcumLeggings: Орихалковый поножи
+        OrichalcumLeggings: Орихалковые поножи
         OrichalcumMask: Орихалковая маска
         OrichalcumOre: Орихалковая руда
         OrichalcumPickaxe: Орихалковая кирка
@@ -6055,7 +6055,7 @@
         PearlwoodDoor: Дверь из жемчужного дерева
         PearlwoodDresser: Комод из жемчужного дерева
         PearlwoodFence: Забор из жемчужного дерева
-        PearlwoodGreaves: Ботинки из жемчужного дерева
+        PearlwoodGreaves: Поножи из жемчужного дерева
         PearlwoodHammer: Молот из жемчужного дерева
         PearlwoodHelmet: Шлем из жемчужного дерева
         PearlwoodLamp: Напольная лампа из жемчужного дерева
@@ -6205,7 +6205,7 @@
         PlatinumChandelier: Платиновая люстра
         PlatinumCoin: Платиновая монета
         PlatinumCrown: Платиновая корона
-        PlatinumGreaves: Платиновые ботинки
+        PlatinumGreaves: Платиновые поножи
         PlatinumHammer: Платиновый молот
         PlatinumHelmet: Платиновый шлем
         PlatinumOre: Платиновая руда
@@ -6266,7 +6266,7 @@
         PottedLavaPlantBush: Серный куст в горшке
         PottedLavaPlantPalm: Магматическая пальма в горшке
         PottedLavaPlantTendrils: Тлеющие усики в горшке
-        PowerGlove: Силовая перчатка
+        PowerGlove: Перчатка силы
         PoweredbyBirds: Картина «Птичий привод»
         PrehistoryPreserved: Доисторические останки
         Present: Подарок
@@ -6308,7 +6308,7 @@
         PumpkinHelmet: Тыквенный шлем
         PumpkinLamp: Тыквенная напольная лампа
         PumpkinLantern: Тыквенный фонарь
-        PumpkinLeggings: Тыквенные ботинки
+        PumpkinLeggings: Тыквенные поножи
         PumpkinMask: Тыквенная верхушка
         PumpkinMoonMedallion: Медальон тыквенной луны
         PumpkinPants: Тыквенный стебель
@@ -6510,7 +6510,7 @@
         RichMahoganyDoor: Дверь из красного дерева
         RichMahoganyDresser: Комод из красного дерева
         RichMahoganyFence: Забор из красного дерева
-        RichMahoganyGreaves: Ботинки из красного дерева
+        RichMahoganyGreaves: Поножи из красного дерева
         RichMahoganyHammer: Молот из красного дерева
         RichMahoganyHelmet: Шлем из красного дерева
         RichMahoganyLamp: Напольная лампа из красного дерева
@@ -6590,7 +6590,7 @@
         SafemanSunHair: Солнечный день Safeman
         SafemanWings: Покров Safeman
         Sail: Парус
-        SailfishBoots: Сапоги рыбы-парусника
+        SailfishBoots: Марлиновые ботинки
         SailorHat: Бескозырка
         SailorPants: Ботинки моряка
         SailorShirt: Тельняшка
@@ -6598,7 +6598,7 @@
         SalamanderBanner: Знамя саламандры
         Salmon: Лосось
         SandBlock: Песок
-        SandBoots: Сапоги дюноходца
+        SandBoots: Дюноходные ботинки
         SandElementalBanner: Знамя песчаного элементаля
         SandFallBlock: Блок с пескопадом
         SandFallWall: Стена с пескопадом
@@ -6713,7 +6713,7 @@
         ShadewoodDoor: Дверь из мрачного дерева
         ShadewoodDresser: Комод из мрачного дерева
         ShadewoodFence: Забор из мрачного дерева
-        ShadewoodGreaves: Ботинки из мрачного дерева
+        ShadewoodGreaves: Поножи из мрачного дерева
         ShadewoodHammer: Молот из мрачного дерева
         ShadewoodHelmet: Шлем из мрачного дерева
         ShadewoodLamp: Напольная лампа из мрачного дерева
@@ -6832,7 +6832,7 @@
         SilverChandelier: Серебряная люстра
         SilverCoin: Серебряная монета
         SilverDye: Серебряный краситель
-        SilverGreaves: Серебряные ботинки
+        SilverGreaves: Серебряные поножи
         SilverHammer: Серебряный молот
         SilverHelmet: Серебряный шлем
         SilverOre: Серебряная руда
@@ -6987,7 +6987,7 @@
         SolarFlareDrill: Бур солнечной вспышки
         SolarFlareHammer: Молот солнечной вспышки
         SolarFlareHelmet: Шлем солнечной вспышки
-        SolarFlareLeggings: Ботинки солнечной вспышки
+        SolarFlareLeggings: Поножи солнечной вспышки
         SolarFlarePickaxe: Кирка солнечной вспышки
         SolarLamp: Солнечная напольная лампа
         SolarLantern: Солнечный фонарь
@@ -7034,7 +7034,7 @@
         SpearStatue: Статуя копья
         SpearTrap: Ловушка с копьём
         SpectreBar: Спектральный слиток
-        SpectreBoots: Спектральные сапоги
+        SpectreBoots: Спектральные ботинки
         SpectreGoggles: Спектральные очки
         SpectreHamaxe: Спектральный молотопор
         SpectreHood: Спектральный капюшон
@@ -7044,7 +7044,7 @@
         SpectrePaintbrush: Спектральная кисть
         SpectrePants: Спектральные штаны
         SpectrePickaxe: Спектральная кирка
-        SpectreRobe: Спектральная мантия
+        SpectreRobe: Спектральное одеяние
         SpectreStaff: Спектральный посох
         SpecularFish: Зеркальная рыба
         SpeedHairDye: Краска для волос цвета скорости
@@ -7070,7 +7070,7 @@
         SpiderEcho: Паучья стена
         SpiderEgg: Паучье яйцо
         SpiderFang: Хелицера
-        SpiderGreaves: Паучьи ботинки
+        SpiderGreaves: Паучьи поножи
         SpiderLamp: Паучья напольная лампа
         SpiderLantern: Паучий фонарь
         SpiderMask: Паучья маска
@@ -7108,7 +7108,7 @@
         SpookyHook: Жуткий крюк
         SpookyLamp: Жуткая напольная лампа
         SpookyLantern: Жуткий фонарь
-        SpookyLeggings: Жуткие ботинки
+        SpookyLeggings: Жуткие поножи
         SpookyPiano: Жуткое пианино
         SpookyPlatform: Платформа из жуткого дерева
         SpookySink: Жуткая раковина
@@ -7127,11 +7127,11 @@
         SquidBanner: Знамя кальмара
         SquigglesWallpaper: Обои с загогулинами
         SquireAltHead: Шлем рыцаря Вальхаллы
-        SquireAltPants: Ботинки рыцаря Вальхаллы
+        SquireAltPants: Поножи рыцаря Вальхаллы
         SquireAltShirt: Нагрудник рыцаря Вальхаллы
         SquireGreatHelm: Большой шлем оруженосца
-        SquireGreaves: Ботинки оруженосца
-        SquirePlating: Нагрудник оруженосца
+        SquireGreaves: Поножи оруженосца
+        SquirePlating: Латы оруженосца
         SquireShield: Щит оруженосца
         Squirrel: Белка
         SquirrelCage: Террариум с белкой
@@ -7379,7 +7379,7 @@
         Terrarian: Террариец
         TerrarianGothic: Картина «Террарийская готика»
         Terrarium: Террариум
-        TerrasparkBoots: Искромётные терра-сапоги
+        TerrasparkBoots: Искромётные терра-ботинки
         TheAxe: Топор
         TheBreaker: Крушитель
         TheBrideBanner: Знамя невесты
@@ -7449,7 +7449,7 @@
         TinCan: Консервная банка
         TinChainmail: Оловянная кольчуга
         TinChandelier: Оловянная люстра
-        TinGreaves: Оловянные ботинки
+        TinGreaves: Оловянные поножи
         TinHammer: Оловянный молот
         TinHelmet: Оловянный шлем
         TinOre: Оловянная руда
@@ -7582,7 +7582,7 @@
         TungstenBullet: Вольфрамовая пуля
         TungstenChainmail: Вольфрамовая кольчуга
         TungstenChandelier: Вольфрамовая люстра
-        TungstenGreaves: Вольфрамовые ботинки
+        TungstenGreaves: Вольфрамовые поножи
         TungstenHammer: Вольфрамовый молот
         TungstenHelmet: Вольфрамовый шлем
         TungstenOre: Вольфрамовая руда
@@ -7595,7 +7595,7 @@
         TurtleJungle: Черепаха джунглей
         TurtleJungleCage: Террариум с черепахой джунглей
         TurtleLeggings: Черепашьи поножи
-        TurtleScaleMail: Черепашья кольчуга
+        TurtleScaleMail: Черепашья чешуйчатая кольчуга
         TurtleShell: Черепаший панцирь
         TurtleStatue: Статуя черепахи
         TuxedoPants: Брюки
@@ -7610,7 +7610,7 @@
         UglySweater: Уродливый свитер
         UltraAbsorbantSponge: Ультравпитывающая губка
         UltraBrightCampfire: Ультраяркий костёр
-        UltrabrightHelmet: Ультраяркий шлем
+        UltrabrightHelmet: Шлем улучшенного ночного видения
         UltrabrightTorch: Ультраяркий факел
         Uluru: Картина «Улуру»
         UlyssesButterfly: Парусник Улисс
@@ -7758,7 +7758,7 @@
         WaterGun: Водяной пистолет
         WaterStrider: Водомерка
         WaterStriderCage: Террариум с водомеркой
-        WaterWalkingBoots: Сапоги хождения по воде
+        WaterWalkingBoots: Ботинки хождения по воде
         WaterWalkingPotion: Зелье хождения по воде
         WaterfallBlock: Блок с водопадом
         WaterfallWall: Стена с водопадом
@@ -7846,7 +7846,7 @@
         Wood: Древесина
         WoodBreastplate: Деревянный нагрудник
         WoodFishingPole: Деревянная удочка
-        WoodGreaves: Деревянные ботинки
+        WoodGreaves: Деревянные поножи
         WoodHelmet: Деревянный шлем
         WoodPlatform: Деревянная платформа
         WoodShelf: Деревянная полка
@@ -9486,7 +9486,7 @@
             Позволяет ходить по воде, мёду и лаве
             Даёт невосприимчивость к огненным блокам и 7 секунд невосприимчивости к лаве
             '''
-        FlameWakerBoots: "'Теперь ты никогда не застудишь ноги'"
+        FlameWakerBoots: "'Забудьте о холодных ногах'"
         FlameWings: "{$CommonItemTooltip.FlightAndSlowfall}"
         Flamelash: Призывает управляемый огненный шар
         Flamethrower:
@@ -11503,7 +11503,7 @@
         SandBoots:
             '''
             Позволяет супербыстро бегать, а по песку ещё быстрее
-            'Двигайся хаотично и тогда не привлечёшь червя'
+            'Шагайте хаотично и тогда червь вас не заметит'
             '''
         SandElementalBanner: "{$CommonItemTooltip.BannerBonus}{$NPCName.SandElemental}"
         SandFallBlock: Вы можете без опаски смотреть на то, как сыпется песок
@@ -14348,10 +14348,10 @@
         4: Кирилл «BrotKrip» Кайзер
         5: Кирилл «osaka_drift» «umbra» Маков
         6: Blank Hush
-        7: Виктор «Зырительная машина» Coreds
-        8: Ролан «RDz» Джумагулов
-        9: Женя «Ники» Твикс
-        10: Ми
+        7: ""
+        8: ""
+        9: ""
+        10: ""
     }
     
     CreditsRollCategory_Marketing: {
@@ -14399,7 +14399,7 @@
         32: Enjoy
         33: Foxy_Chipher
         34: Rikopara
-        35: "banned ⠃⠁⠝⠝⠑⠙"
+        35: detoxx
         36: Клише
         37: Момотик
         38: AVX

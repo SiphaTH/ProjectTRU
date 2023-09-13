@@ -85,11 +85,6 @@ public class VanillaItemsTranslation : GlobalItem
             {
                 tooltip.Text = tooltip.Text.Replace("stealth generation", "к скорости накопления скрытности");
             });
-        
-            ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "CalamityMod" && l.Name == "PrefixStealthDamageBoost", tooltip =>
-            {
-                tooltip.Text = tooltip.Text.Replace("stealth strike damage", "к урону скрытного удара");
-            });
         }
         
         if (item.master)
@@ -99,6 +94,11 @@ public class VanillaItemsTranslation : GlobalItem
                 tooltips.ReplaceText("Мастер or Revengeance", "Мастер или Месть");
             });
         }
+        
+        ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "CalamityMod" && l.Name == "PrefixStealthDamageBoost", tooltip =>
+        {
+            tooltip.Text = tooltip.Text.Replace("stealth strike damage", "к урону скрытного удара");
+        });
         
         ItemHelper.TranslateTooltip(tooltips, "Tooltip0", tooltip =>
         {
@@ -548,6 +548,12 @@ public class VanillaItemsTranslation : GlobalItem
                 case ItemID.CrystalNinjaChestplate:
                 case ItemID.CrystalNinjaLeggings:
                     tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} {Language.GetTextValue("ArmorSetBonus.CrystalNinja")}";
+                    break;
+                
+                case ItemID.FrostHelmet:
+                case ItemID.FrostBreastplate:
+                case ItemID.FrostLeggings:
+                    tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} Ближние и стрелковые атаки накладывают дебафф «{Language.GetTextValue("BuffName.Frostburn")}»\nУвеличивает урон на 15% в зависимости от того, насколько далеко от вас находится враг\nПри более близком расстоянии увеличивается урон в ближнем бою, а при дальнем - стрелковый";
                     break;
             }
         });

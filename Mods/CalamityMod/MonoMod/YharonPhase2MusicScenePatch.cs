@@ -20,6 +20,6 @@
 //
 //     private int? Translation(MusicModMusicDelegate orig, YharonPhase2MusicScene self)
 //     {
-//         return MusicLoader.GetMusicSlot(CalamityRuTranslate.Instance, "Sounds/CalamityMod/YharonPhase2");
+//         return MusicLoader.GetMusicSlot(CalamityRuTranslate.Instance, "Sounds/Music/YharonPhase2");
 //     }
 // }
