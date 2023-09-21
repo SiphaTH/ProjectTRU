@@ -1297,8 +1297,8 @@ Buffs: {
     }
 
     SheathBuff: {
-        // DisplayName: Sheath
-        // Description: Your equipped sheath is ready to strike
+        // DisplayName: Ножны
+        // Description: Ваши ножны готовы нанести удар
     }
 
     Singed: {
@@ -3360,7 +3360,7 @@ Items: {
         /* Tooltip:
             '''
             Scratches the turntable, releasing a pulse of fresh vibes on either side of you
-            Hit enemies will be charmed, lowering their speed and contact damage
+            Накладывает на врагов дебафф «{$Buffs.Charmed.DisplayName}», снижая их скорость передвижения и контактный урон
             ''' */
     }
 
@@ -3394,7 +3394,7 @@ Items: {
         /* Tooltip:
             '''
             Releases an alluring boost of bouncing sound
-            Hit enemies will be charmed, lowering their speed and contact damage
+            Накладывает на врагов дебафф «{$Buffs.Charmed.DisplayName}», снижая их скорость передвижения и контактный урон
             ''' */
     }
 
@@ -3402,8 +3402,8 @@ Items: {
         // DisplayName: Vuvuzela Blue
         /* Tooltip:
             '''
-            Releases an agonizing sound burst
-            Doubles in damage and ricochets upon killing an enemy
+            Выпускает душераздирающий звуковой импульс
+            При убийстве врага урон увеличивается вдвое и импульс рикошетит
             ''' */
     }
 
@@ -3411,8 +3411,8 @@ Items: {
         // DisplayName: Vuvuzela Green
         /* Tooltip:
             '''
-            Releases an agonizing sound burst
-            Doubles in damage and ricochets upon killing an enemy
+            Выпускает душераздирающий звуковой импульс
+            При убийстве врага урон увеличивается вдвое и импульс рикошетит
             ''' */
     }
 
@@ -3420,8 +3420,8 @@ Items: {
         // DisplayName: Vuvuzela Red
         /* Tooltip:
             '''
-            Releases an agonizing sound burst
-            Doubles in damage and ricochets upon killing an enemy
+            Выпускает душераздирающий звуковой импульс
+            При убийстве врага урон увеличивается вдвое и импульс рикошетит
             ''' */
     }
 
@@ -3429,8 +3429,8 @@ Items: {
         // DisplayName: Vuvuzela Yellow
         /* Tooltip:
             '''
-            Releases an agonizing sound burst
-            Doubles in damage and ricochets upon killing an enemy
+            Выпускает душераздирающий звуковой импульс
+            При убийстве врага урон увеличивается вдвое и импульс рикошетит
             ''' */
     }
 
@@ -3438,17 +3438,17 @@ Items: {
         // DisplayName: Waxy Rosin
         /* Tooltip:
             '''
-            Piercing string instrument attacks will lose 15% less damage per hit
-            Piercing string instrument attacks will increase in speed every hit
+            Снижает штраф урона от пронзающих атак струнных инструментов до 15%
+            Пронзающие атаки струнных инструментов увеличивают свою скорость с каждым попаданием
             ''' */
     }
 
     WindChimes: {
-        // DisplayName: Wind Chimes
+        // DisplayName: Ветряной колокольчик
         /* Tooltip:
             '''
-            Releases a barrage of chime pulses
-            Every fourth pulse will critically strike and stun hit enemies
+            Выпускает залп звуковых колокольчиков
+            Каждый четвертый импульс наносит критический удар и оглушает поражённых врагов
             ''' */
     }
 
@@ -3500,8 +3500,8 @@ Items: {
         // DisplayName: Artificer's Focus
         /* Tooltip:
             '''
-            Pressing and holding the '{$Keybinds.AccessoryAbility.DisplayName}' key will channel artificer's energy
-            Every second channeled increases your next damage by 20 up to 100
+            Нажмите и удерживайте клавишу '{$Keybinds.AccessoryAbility.DisplayName}', чтобы зарядить энергию изобретателя
+            Каждая секунда зарядки увеличивает урон следующей атаки на 20, вплоть до 100
             ''' */
     }
 
@@ -4985,7 +4985,7 @@ Items: {
     }
 
     MossyMarineBlock: {
-        // DisplayName: Mossy Marine Block
+        // DisplayName: Мшистый морской блок
         // Tooltip: ""
     }
 
@@ -5843,7 +5843,7 @@ Items: {
         /* Tooltip:
             '''
             {$Common.Tooltips.Sheath}
-            Additionally you teleport to and damage your cursor from this attack
+            Кроме того, вы телепортируетесь к курсору и наносите урон
             ''' */
     }
 
@@ -6140,7 +6140,7 @@ Items: {
         /* Tooltip:
             '''
             Releases a massive barrage of expanding sound waves
-            Hit enemies will be charmed, lowering their speed and contact damage
+            Накладывает на врагов дебафф «{$Buffs.Charmed.DisplayName}», снижая их скорость передвижения и контактный урон
             ''' */
     }
 
@@ -6150,13 +6150,13 @@ Items: {
             '''
             Allows you to double tap dash into enemies, releasing an explosion of energy on hit
             Hold DOWN to drastically increase fall speed and release energy upon landing
-            Increases jump height
+            Увеличивает высоту прыжка
             ''' */
     }
 
     InfernalAnimator: {
         // DisplayName: Infernal Animator
-        // Tooltip: Summons a stationary molten protector to repel and burn foes
+        // Tooltip: Призывает неподвижного раскалённого защитника, который отталкивает и сжигает врагов
     }
 
     InfernoLordsFocus: {
@@ -11000,7 +11000,7 @@ Items: {
         /* Tooltip:
             '''
             {$Common.Tooltips.Sheath}
-            Additionally you recover {2}% of your missing health from this attack
+            Кроме того, вы восстанавливаете {2}% недостающего здоровья при использовании этой атаки
             ''' */
     }
 
@@ -11031,12 +11031,12 @@ Items: {
 
     TitanSlayerSheath: {
         // DisplayName: Titan Slayer Sheath
-        // Tooltip: Sword strikes critically strike bosses for {0}% damage if held and not used for {1} {^1:second;seconds}
+        // Tooltip: Если держать меч в руках и не использовать его в течение {1} {^1:секунды;секунд}, то при следующей атаке он нанесёт критический удар боссам в размере {0}%
     }
 
     WrithingSheath: {
         // DisplayName: Writhing Sheath
-        // Tooltip: Sword strikes summon a barrage of void blades if held and not used for {0} {^0:second;seconds}
+        // Tooltip: Если держать меч в руках и не использовать его в течение {0} {^0:секунды;секунд}, то при следующей атаке он призовёт град пустотных клинков
     }
 
     SeethingCharge: {
@@ -11880,26 +11880,26 @@ Items: {
 
     DetachedBlaster: {
         // DisplayName: Detached Blaster
-        // Tooltip: Fires a potent pulse of energy
+        // Tooltip: Стреляет мощным импульсом энергии
     }
 
     DiverHelmet: {
-        // DisplayName: Diver's Helmet
+        // DisplayName: Водолазный шлем
         // Tooltip: ""
     }
 
     DiverLeggings: {
-        // DisplayName: Diver's Leggings
+        // DisplayName: Водолазные поножи
         // Tooltip: ""
     }
 
     DiverSuit: {
-        // DisplayName: Diver's Suit
+        // DisplayName: Водолазный костюм
         // Tooltip: ""
     }
 
     DruidCloak: {
-        // DisplayName: Druid's Cloak
+        // DisplayName: Плащ друида
         // Tooltip: ""
     }
 
@@ -12456,7 +12456,7 @@ Items: {
     }
 
     AquamarineMarineBlock: {
-        // DisplayName: Aquamarine Marine Block
+        // DisplayName: Аквамариновый морской блок
         // Tooltip: ""
     }
 
@@ -12949,7 +12949,7 @@ Items: {
     }
 
     DestinyStatue: {
-        // DisplayName: Destiny Statue
+        // DisplayName: Статуя судьбы
         // Tooltip: ""
     }
 
@@ -13204,132 +13204,132 @@ Items: {
     }
 
     GemBottle: {
-        // DisplayName: Gem Bottle
+        // DisplayName: Банка с самоцветами
         // Tooltip: ""
     }
 
     GingerbreadBathtub: {
-        // DisplayName: Gingerbread Bathtub
+        // DisplayName: Пряничная ванна
         // Tooltip: ""
     }
 
     GingerbreadBed: {
-        // DisplayName: Gingerbread Bed
+        // DisplayName: Пряничная кровать
         // Tooltip: ""
     }
 
     GingerbreadBlock: {
-        // DisplayName: Gingerbread Block
+        // DisplayName: Пряничный блок
         // Tooltip: ""
     }
 
     GingerbreadBookcase: {
-        // DisplayName: Gingerbread Bookcase
+        // DisplayName: Пряничный книжный шкаф
         // Tooltip: ""
     }
 
     GingerbreadCandelabra: {
-        // DisplayName: Gingerbread Candelabra
+        // DisplayName: Пряничный подсвечник
         // Tooltip: ""
     }
 
     GingerbreadCandle: {
-        // DisplayName: Gingerbread Candle
+        // DisplayName: Пряничная свеча
         // Tooltip: ""
     }
 
     GingerbreadChair: {
-        // DisplayName: Gingerbread Chair
+        // DisplayName: Пряничный стул
         // Tooltip: ""
     }
 
     GingerbreadChandelier: {
-        // DisplayName: Gingerbread Chandelier
+        // DisplayName: Пряничная люстра
         // Tooltip: ""
     }
 
     GingerbreadChest: {
-        // DisplayName: Gingerbread Chest
+        // DisplayName: Пряничный сундук
         // Tooltip: ""
     }
 
     GingerbreadChest_Trapped: {
-        // DisplayName: Trapped Gingerbread Chest
+        // DisplayName: Пряничный сундук-ловушка
         // Tooltip: ""
     }
 
     GingerbreadClock: {
-        // DisplayName: Gingerbread Clock
+        // DisplayName: Пряничные часы
         // Tooltip: ""
     }
 
     GingerbreadCup: {
-        // DisplayName: Gingerbread Cup
+        // DisplayName: Пряничная чашка
         // Tooltip: ""
     }
 
     GingerbreadDoor: {
-        // DisplayName: Gingerbread Door
+        // DisplayName: Пряничная дверь
         // Tooltip: ""
     }
 
     GingerbreadDresser: {
-        // DisplayName: Gingerbread Dresser
+        // DisplayName: Пряничный комод
         // Tooltip: ""
     }
 
     GingerbreadLamp: {
-        // DisplayName: Gingerbread Lamp
+        // DisplayName: Пряничная лампа
         // Tooltip: ""
     }
 
     GingerbreadLantern: {
-        // DisplayName: Gingerbread Lantern
+        // DisplayName: Пряничный фонарь
         // Tooltip: ""
     }
 
     GingerbreadPiano: {
-        // DisplayName: Gingerbread Piano
+        // DisplayName: Пряничное пианино
         // Tooltip: ""
     }
 
     GingerbreadPlatform: {
-        // DisplayName: Gingerbread Platform
+        // DisplayName: Пряничная платформа
         // Tooltip: ""
     }
 
     GingerbreadSink: {
-        // DisplayName: Gingerbread Sink
+        // DisplayName: Пряничная раковина
         // Tooltip: ""
     }
 
     GingerbreadSofa: {
-        // DisplayName: Gingerbread Sofa
+        // DisplayName: Пряничный диван
         // Tooltip: ""
     }
 
     GingerbreadTable: {
-        // DisplayName: Gingerbread Table
+        // DisplayName: Пряничный стол
         // Tooltip: ""
     }
 
     GingerbreadToilet: {
-        // DisplayName: Gingerbread Toilet
+        // DisplayName: Пряничный унитаз
         // Tooltip: ""
     }
 
     GingerbreadWall: {
-        // DisplayName: Gingerbread Wall
+        // DisplayName: Пряничная стена
         // Tooltip: ""
     }
 
     GingerbreadWorkbench: {
-        // DisplayName: Gingerbread Work Bench
+        // DisplayName: Пряничный верстак
         // Tooltip: ""
     }
 
     GlowingMarineBlock: {
-        // DisplayName: Glowing Marine Block
+        // DisplayName: Светящийся морской блок
         // Tooltip: ""
     }
 
@@ -13389,17 +13389,17 @@ Items: {
     }
 
     LeakyMarineBlock: {
-        // DisplayName: Leaky Marine Block
+        // DisplayName: Протекающий морской блок
         // Tooltip: ""
     }
 
     LeakyMarineWall: {
-        // DisplayName: Leaky Marine Wall
+        // DisplayName: Протекающая морская стена
         // Tooltip: ""
     }
 
     LeakyMossyMarineBlock: {
-        // DisplayName: Leaky Mossy Marine Block
+        // DisplayName: Протекающий мшистый морской блок
         // Tooltip: ""
     }
 
@@ -14341,7 +14341,7 @@ Items: {
     }
 
     RefinedMarineBlock: {
-        // DisplayName: Refined Marine Block
+        // DisplayName: Обработанный морской блок
         // Tooltip: ""
     }
 
@@ -16559,7 +16559,7 @@ Items: {
         // DisplayName: Костяная хватка
         /* Tooltip:
             '''
-            Поднятие метательного предмета с 33% шансом создаёт его дубликат и увеличивает скорость броска
+            Поднятие метательного предмета с 33% шансом создаёт его дубликат и увеличивает метательную скорость атаки
             Этот эффект может сработать лишь раз каждые полсекунды и не срабатывает во время боя
             ''' */
     }
@@ -16817,7 +16817,7 @@ Items: {
         /* Tooltip:
             '''
             Увеличивает дальность подбора метательных предметов с земли
-            Picking up a throwing item has a 33% chance to duplicate it and increase your throwing speed
+            Поднятие метательного предмета с 33% шансом создаёт его дубликат и увеличивает метательную скорость атаки
             Этот эффект может сработать лишь раз каждые полсекунды и не срабатывает во время боя
             ''' */
     }
@@ -16832,8 +16832,8 @@ Items: {
     }
 
     MeteoriteClusterBomb: {
-        // DisplayName: Meteorite Cluster Bomb
-        // Tooltip: Explodes into timed, mini explosions
+        // DisplayName: Метеоритная кассетная бомба
+        // Tooltip: Взрывается через определённый промежуток времени серией мини-взрывов
     }
 
     MoltenKnife: {
@@ -16865,11 +16865,11 @@ Items: {
     }
 
     NitrogenVial: {
-        // DisplayName: Nitrogen Vial
+        // DisplayName: Азотный пузырёк
         /* Tooltip:
             '''
-            Bursts into a deep-freezing cloud upon impact
-            Causes nearby plague gas to flash freeze
+            При столкновении образует облако ледяного тумана
+            Мгновенно замораживает окружающий чумной газ
             ''' */
     }
 
@@ -16892,7 +16892,7 @@ Items: {
         // DisplayName: Padded Grip
         /* Tooltip:
             '''
-            Picking up a throwing item has a 25% chance to duplicate it
+            Поднятие метательного предмета с 25% шансом создаёт его дубликат
             Этот эффект может сработать лишь раз каждые полсекунды и не срабатывает во время боя
             ''' */
     }
@@ -16903,10 +16903,10 @@ Items: {
     }
 
     PharaohsSlab: {
-        // DisplayName: Pharaoh's Slab
+        // DisplayName: Плита фараона
         /* Tooltip:
             '''
-            Hurls a slab of ancient pyramid stone, releasing homing worms on impact
+            Швыряет глыбу древнего камня пирамиды, которая высвобождает при ударе самонаводящихся червей
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -21554,7 +21554,7 @@ Common: {
             // EatWhileFull: Вы не сможете съесть блюдо {$NPCs.Cook.DisplayName}а, будучи сытым
         }
 
-        // Sheath: Sword strikes critically strike for {0}% damage if held and not used for {1} {^1:second;seconds}
+        // Sheath: Если держать меч в руках и не использовать его в течение {1} {^1:секунды;секунд}, то при следующей атаке он нанесёт критический удар в размере {0}%
     }
 
     // TreasureBag: Мешок с сокровищами ({0})

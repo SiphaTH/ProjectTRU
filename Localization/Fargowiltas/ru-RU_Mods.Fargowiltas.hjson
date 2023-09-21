@@ -374,22 +374,22 @@ Items: {
     }
 
     CopperCoinBag: {
-        DisplayName: Подсумок с бесконечными медными монетами
+        DisplayName: Сейф с бесконечными медными монетами
         Tooltip: ""
     }
 
     GoldCoinBag: {
-        DisplayName: Подсумок с бесконечными золотыми монетами
+        DisplayName: Сейф с бесконечными золотыми монетами
         Tooltip: ""
     }
 
     PlatinumCoinBag: {
-        DisplayName: Подсумок с бесконечными платиновыми монетами
+        DisplayName: Сейф с бесконечными платиновыми монетами
         Tooltip: ""
     }
 
     SilverCoinBag: {
-        DisplayName: Подсумок с бесконечными серебряными монетами
+        DisplayName: Сейф с бесконечными серебряными монетами
         Tooltip: ""
     }
 
