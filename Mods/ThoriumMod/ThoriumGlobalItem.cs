@@ -768,7 +768,7 @@
 //         {
 //             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
 //             {
-//                 tooltip.Text = $"Исцеляет {tooltip.Text.Split(' ')[1]} ед. здоровья союзника в течение 5 секунд";
+//                 tooltip.Text = $"Лечит союзника на {tooltip.Text.Split(' ')[1]} ед. здоровья в течение 5 секунд";
 //             });
 //         }
 //         
@@ -835,7 +835,7 @@
 //         {
 //             ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "ThoriumMod" && l.Name == "HealerAmount", tooltip =>
 //             {
-//                 tooltip.Text = $"После взрыва исцеляет всех ближайших союзников на {tooltip.Text.Split(' ')[8]} ед. здоровья";
+//                 tooltip.Text = $"После взрыва лечит всех ближайших союзников на {tooltip.Text.Split(' ')[8]} ед. здоровья";
 //             });
 //         }
 //         

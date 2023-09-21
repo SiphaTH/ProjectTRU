@@ -3299,14 +3299,19 @@ Mods.StarsAbove: {
 #            Tooltip: Ignores the Starfarer Text Speed option; all text will appear instantly.
 #        }
 #
-#        DisableDraggingDialogue: {
-#            Label: Disable dragging Starfarer Dialogue
-#            Tooltip: Starfarer Dialogue is locked in position.
+#        MovingDialogueAmount: {
+#            Label: Starfarer Menu Movement
+#            Tooltip: Adjust how much the Starfarer menus move while you're moving.
 #        }
 #
 #        PromptLoc: {
 #            Label: Starfarer Prompt positiion
 #            Tooltip: Position is measured from the bottom right of the screen!
+#        }
+#
+#        MovingDialogueAmount: {
+#            Label: Moving Dialogue Amount
+#            Tooltip: ""
 #        }
 #
 #        CommentaryTimer: {
@@ -3398,6 +3403,7 @@ Mods.StarsAbove: {
 #        SpeedUpLight: The everlasting light is catalyzed, preventing night from falling...
 #        TsukiyomiBossChecklist: Boss Checklist обновляется, открывая скрытого врага!
 #        CanBeShimmeredSpoils: Can be Shimmered, converting into Stellar Remnants
+#        BlockedNova: A powerful foe prevents use of the Stellar Nova!
 #    }
 #
 #    DamageClass.CelestialDamageClass: celestial damage
@@ -3683,7 +3689,7 @@ Mods.StarsAbove: {
 #                [c/FFAB4D:Melee]: The weapon swings much faster and defense is added to critical strike damage
 #                [c/EF4DFF:Magic]: Instead of swinging, the weapon will will conjure 6 explosive blasts in a fan pattern dealing 1/3 base damage
 #                [c/4DFF5B:Ranged]: Instead of swinging, the weapon will quickly fire piercing shots without consuming ammo, dealing 1/2 base damage
-#                [c/00CDFF:Summon]: The [c/6EF367:Luminary Armament] periodically attacks nearby foes independently, dealing half of your current HP as base damage and can crit
+#                [c/00CDFF:Summon]: The [c/6EF367:Luminary Armament] periodically attacks nearby foes and can deal critical strikes
 #                'For the future!'
 #                '''
 #        }
@@ -3917,11 +3923,7 @@ Mods.StarsAbove: {
 #        }
 #
 #        VagrantBossBag: {
-#            Tooltip:
-#                '''
-#                Currently unobtainable
-#                {$CommonItemTooltip.RightClickToOpen}
-#                '''
+#            Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
 #            DisplayName: Treasure Bag (Vagrant of Space and Time)
 #        }
 #
@@ -6465,6 +6467,7 @@ Mods.StarsAbove: {
 #        PrismOfTheCosmicPhoenix: {
 #            Tooltip:
 #                '''
+#                Legacy item (Unobtainable)
 #                [c/FF4F9F:Tier 3 Stellar Prism]
 #                Affix to a Stellar Nova to gain the following abilities:
 #                [c/C05CC8:Stellar Drive]
@@ -6476,7 +6479,6 @@ Mods.StarsAbove: {
 #                [c/796B8C:On Wings of Faith]
 #                Lose the ability to fly below 40 Mana
 #                [c/C77878:Tier 3 Prisms can only be slotted in the first slot of the Stellar Nova Menu]
-#                'I'm not about to stop here!'
 #                '''
 #            DisplayName: Prism of the Cosmic Phoenix
 #        }
@@ -6484,6 +6486,7 @@ Mods.StarsAbove: {
 #        PrismOfTheRuinedKing: {
 #            Tooltip:
 #                '''
+#                Legacy item (Unobtainable)
 #                [c/FF4F9F:Tier 3 Stellar Prism]
 #                Affix to a Stellar Nova to gain the following abilities:
 #                [c/6ECBA5:Harrowed Path]
@@ -6497,7 +6500,6 @@ Mods.StarsAbove: {
 #                [c/9AC89F:The Mist Recedes]
 #                Lose Stellar Nova Energy upon getting hit
 #                [c/C77878:Tier 3 Prisms can only be slotted in the first slot of the Stellar Nova Menu]
-#                'You are not the hero of this tale! You are not anything!'
 #                '''
 #            DisplayName: Prism of the Ruined King
 #        }
@@ -8047,7 +8049,7 @@ Mods.StarsAbove: {
 #
 #        QuantumButterflyBody: {
 #            DisplayName: Quantum Butterfly Garb
-#            Tooltip: "'This is getting troublesome..."
+#            Tooltip: "'This is getting troublesome...'"
 #        }
 #
 #        QuantumButterflyLegs: {
@@ -8062,7 +8064,7 @@ Mods.StarsAbove: {
 #
 #        BaselessBladeLegs: {
 #            DisplayName: Baseless Blade Leggings
-#            Tooltip: "'I think it's time to retire'"
+#            Tooltip: ""
 #        }
 #        
 #        ReprintedBlueprint: {
@@ -8237,8 +8239,37 @@ Mods.StarsAbove: {
 #        }
 #
 #        GundbitStaves: {
-#            DisplayName: Gundbit Staves
-#            Tooltip: ""
+#            DisplayName: Gund-bit Siege
+#            Tooltip:
+#                '''
+#                WORK IN PROGRESS
+#                Holding this weapon summons [c/B6E3F5:Bit Staves] and grants [c/3899E1:Aerial Defensive Array], granting bonus defense based on current Mana (up to 10)
+#                Attacks with this weapon fire piercing lasers and mark targets, causing the [c/B6E3F5:Bit Staves] to orbit and attack
+#                Press the Weapon Action Key to recall all [c/B6E3F5:Bit Staves] to form a defensive shield for 3 seconds (20 second cooldown)
+#                During this time, the shield will follow your cursor and destroy all hostile projectiles in contact
+#                Additionally, while the shield is active the effect of [c/3899E1:Aerial Defensive Array] is amplified by 50%
+#                Right click to recall all [c/B6E3F5:Bit Staves], transforming the weapon after a short delay (30 second cooldown)
+#                After transformation, unleash an extremely powerful beam that ignores collision and strikes multiple times
+#                Only one effect that utilizes the [c/B6E3F5:Bit Staves] can be active at a time
+#                '''
+#        }
+#
+#        DragaliaFound: {
+#            DisplayName: Dragalia Found
+#            Tooltip:
+#                '''
+#                Holding this weapon grants [c/CAFF93:Tempest's Dragonlight], granting 2 defense for every minion slot
+#                After completing a combo, gain [c/FFF593:Bondforged Blade] for 3 seconds, charging [c/78F178:Dragonshift Energy] when active
+#                Once [c/78F178:Dragonshift Energy] reaches 50% or more, press the Weapon Action Key to activate [c/9AFE35:Windwyrm State]
+#                [c/9AFE35:Windwyrm State] transforms yourself into a powerful dragon, healing 100 HP instantly while constantly draining [c/78F178:Dragonshift Energy]
+#                Additionally, taking damage subtracts [c/78F178:Dragonshift Energy] instead
+#                Within [c/9AFE35:Windwyrm State], attacks become powerful claw slashes that deal 2x damage in a large area and inflict [c/CCEDAA:Stormlash] for 3 seconds
+#                [c/CCEDAA:Stormlash] is consumed when minions deal damage and increases damage dealt by 1% for every minion slot
+#                Right click to summon powerful tornadoes on all nearby foes while inflicting [c/CCEDAA:Stormlash] for 1 second per hit (6 second cooldown)
+#                [c/9AFE35:Windwyrm State] ends when all [c/78F178:Dragonshift Energy] is depleted
+#                Swapping off this weapon will immediately end [c/9AFE35:Windwyrm State] and reset [c/78F178:Dragonshift Energy]
+#                Damage scales with world progression
+#                '''
 #        }
 #    }
 #
@@ -9096,6 +9127,22 @@ Mods.StarsAbove: {
 #        DraggedBelowFloodExplosionCorrupted.DisplayName: Dragged Below Flood Explosion Corrupted
 #        VagrantTrackingStar.DisplayName: Starmatter
 #        YoumuHeld.DisplayName: Youmu Held
+#        GundbitGunUncharged.DisplayName: Gundbit Gun Uncharged
+#        GundbitUnchargedLaser.DisplayName: Gundbit Uncharged Laser
+#        GundbitGunCharged.DisplayName: Gundbit Gun Charged
+#        Gundbits.DisplayName: Gundbits
+#        GundbitLaser.DisplayName: Gundbit Laser
+#        GundbitMinionLaser.DisplayName: Gundbit Minion Laser
+#        GundbitShield.DisplayName: Gundbit Shield
+#        DragonArm.DisplayName: Dragon Arm
+#        StarsAboveSwordEffect.DisplayName: Stars Above Sword Effect
+#        DragaliaFoundSword.DisplayName: Dragalia Found Sword
+#        DragaliaFoundSwordRecoil.DisplayName: Dragalia Found Sword Recoil
+#        DragaliaFoundSwordSpin.DisplayName: Dragalia Found Sword Spin
+#        StarsAboveSwordEffectSpin.DisplayName: Stars Above Sword Effect Spin
+#        DragaliaFoundStab.DisplayName: Dragalia Found Stab
+#        DragaliaFoundDragonAttack.DisplayName: Dragalia Found Dragon Attack
+#        DragonTornado.DisplayName: Dragon Tornado
 #    }
 #
 #    Buffs: {
@@ -11170,7 +11217,10 @@ Mods.StarsAbove: {
 #            Description: Timeless Potential will fail to be obtained if this debuff is present
 #        }
 #
-#        ManaSicknessAlter.Description: All damage reduced by {0}%
+#        ManaSicknessAlter: {
+#            DisplayName: Mana Sickness
+#            Description: All damage reduced by {0}%
+#        }
 #        DarkAuraBuff.Description: "{0} sacrifice(s) have been consumed"
 #
 #        SpectrumAbsorption: {
@@ -11350,12 +11400,67 @@ Mods.StarsAbove: {
 #        
 #        BladeWorksDamageReduction: {
 #            DisplayName: Blade Works Damage Reduction
-#            Description: Mods.StarsAbove.Buffs.BladeWorksDamageReduction.Description
+#            Description: ""
 #        }
 #        
 #        BladeworksDefenseReduction: {
 #            DisplayName: Bladeworks Defense Reduction
-#            Description: Mods.StarsAbove.Buffs.BladeworksDefenseReduction.Description
+#            Description: ""
+#        }
+#        
+#        AerialDefensiveArray: {
+#            DisplayName: Aerial Defensive Array
+#            Description: ""
+#        }
+#
+#        GundbitBeamAttack: {
+#            DisplayName: Gundbit Beam Attack
+#            Description: ""
+#        }
+#
+#        GundbitMarked: {
+#            DisplayName: Gundbit Marked
+#            Description: ""
+#        }
+#
+#        GundbitLaserCooldown: {
+#            DisplayName: Gundbit Laser Cooldown
+#            Description: ""
+#        }
+#
+#        GundbitShieldBuff: {
+#            DisplayName: Gundbit Shield Buff
+#            Description: ""
+#        }
+#
+#        GundbitShieldCooldown: {
+#            DisplayName: Gundbit Shield Cooldown
+#            Description: ""
+#        }
+#        
+#        DragonshiftActiveBuff: {
+#            DisplayName: Windwyrm Shift
+#            Description: Transformed into a wind-aspected dragon
+#        }
+#
+#        BondforgedBladeBuff: {
+#            DisplayName: Bondforged Blade
+#            Description: Charging draconic energy
+#        }
+#
+#        DragonshiftSpecialAttackCooldownBuff: {
+#            DisplayName: Dragonshift Special Attack Cooldown
+#            Description: ""
+#        }
+#
+#        TempestDragonlightBuff: {
+#            DisplayName: Tempest's Dragonlight
+#            Description: Gaining draconic defenses based on minion slots
+#        }
+#
+#        DragaliaTagDamage: {
+#            DisplayName: Dragalia Tag Damage
+#            Description: Mods.StarsAbove.Buffs.DragaliaTagDamage.Description
 #        }
 #    }
 #

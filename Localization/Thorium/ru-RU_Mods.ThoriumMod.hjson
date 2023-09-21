@@ -739,7 +739,7 @@ Buffs: {
 
     HydrationBuff: {
         // DisplayName: Hydration
-        // Description: Your exhaustion and technique points are regenerating faster
+        // Description: Скорость восстановления изматывания и очков техники увеличена
     }
 
     IlluminatedNPC: {
@@ -793,8 +793,8 @@ Buffs: {
     }
 
     LightCurse: {
-        // DisplayName: Light Curse
-        // Description: Pure darkness is melting this enemy
+        // DisplayName: Лёгкое проклятие
+        // Description: Чистая тьма расплавляет этого врага
     }
 
     Liquefied: {
@@ -1137,8 +1137,8 @@ Buffs: {
     }
 
     MaidBuff: {
-        // DisplayName: Lil' Maid
-        // Description: There really isn't much to clean...
+        // DisplayName: Маленька горничная
+        // Description: Здесь действительно нечего убирать...
     }
 
     ModelGunBuff: {
@@ -1197,7 +1197,7 @@ Buffs: {
     }
 
     SweetBeetBuff: {
-        // DisplayName: Beet Cookie
+        // DisplayName: Свекольное печенье
         // Description: Where ever you run, they'll follow
     }
 
@@ -1328,7 +1328,7 @@ Buffs: {
 
     SporeCoatingBuff: {
         // DisplayName: Смазанное метательное оружие : заражение спорами
-        // Description: Метательные атаки могут заразить врагов мицелием.
+        // Description: Метательные атаки могут заразить врагов мицелием
     }
 
     Spored: {
@@ -2056,12 +2056,12 @@ Items: {
 
     GoblinWarshield: {
         // DisplayName: Goblin War Shield
-        // Tooltip: While standing still, gain 5 defense, 2 life recovery, and knockback immunity
+        // Tooltip: Стоя на месте увеличивает защиту на 5, регенерацию здоровья на 2 и даёт невосприимчивость к отбрасыванию
     }
 
     GoblinWarSpear: {
-        // DisplayName: Goblin War Spear
-        // Tooltip: Has a chance to gouge the hit enemy, causing additional damage
+        // DisplayName: Боевое копье гоблинов
+        // Tooltip: Может наложить дебафф «{$Buffs.Gouge.DisplayName}» на поражённых врагов, нанося дополнительный урон
     }
 
     HarpiesBarrage: {
@@ -2476,7 +2476,7 @@ Items: {
         /* Tooltip:
             '''
             Вы и ближайшие союзники поджигаете врагов при нанесении урона и невосприимчивы к огню
-            Удваивает радиус действия ваших усилий
+            Удваивает радиус действия ваших усилений
             ''' */
     }
 
@@ -2487,7 +2487,7 @@ Items: {
             Увеличивает симфонический урон на 10%
             Увеличивает симфонический шанс критического удара на 6%
             Критические удары ударными инструментами наносят на 10% больше урона
-            Percussion critical strikes will briefly stun enemies
+            Критические удары ударных инструментов могут на короткое время оглушить врагов
             ''' */
     }
 
@@ -2496,14 +2496,14 @@ Items: {
         /* Tooltip:
             '''
             Увеличивает скорость восстановления вдохновения на 10%
-            Your symphonic damage will burn hit enemies with shadowflame
-            Symphonic critical strikes cause a large eruption of shadowy music notes
+            Ваш симфонический урон поджигает поражённых врагов теневым пламенем
+            Симфонические критические удары вызывают большое извержение теневых музыкальных нот
             ''' */
     }
 
     DragonsWail: {
         // DisplayName: Dragon's Wail
-        // Tooltip: Belches forth a stream of burning dragon breath
+        // Tooltip: Изрыгает струю горящего дыхания дракона
     }
 
     DrumMallet: {
@@ -2517,12 +2517,12 @@ Items: {
 
     DukesRegalCarnyx: {
         // DisplayName: Duke's Regal Carnyx
-        // Tooltip: Blows a barrage of bubbles that violently pop against enemies
+        // Tooltip: Выдувает шквал пузырей, которые неистово лопаются о врагов
     }
 
     DynastyGuzheng: {
         // DisplayName: Dynasty Guzheng
-        // Tooltip: Releases a set of soothing multi-shot, bouncing riffs
+        // Tooltip: Выпускает набор умиротворяющих многоударных, отскакивающих риффов
     }
 
     EarwormPotion: {
@@ -2560,19 +2560,19 @@ Items: {
     }
 
     FanLetter: {
-        // DisplayName: Fan Letter
+        // DisplayName: Письмо от фаната
         /* Tooltip:
             '''
-            'Full of intrusive compliments... but is surprisingly inspirational'
+            'Полон навязчивыми комплиментами... но поразительно вдохновляющий'
             Увеличивают максимальный запас вдохновения на 3
             ''' */
     }
 
     FanLetter2: {
-        // DisplayName: Fan Letter
+        // DisplayName: Письмо от фаната
         /* Tooltip:
             '''
-            'Full of intrusive compliments... but is surprisingly inspirational'
+            'Полон навязчивыми комплиментами... но поразительно вдохновляющий'
             Увеличивают максимальный запас вдохновения на 3
             ''' */
     }
@@ -2587,13 +2587,13 @@ Items: {
     }
 
     FleshHorn: {
-        // DisplayName: Горн из плоти
-        // Tooltip: Charges up an ichor-infused sound beam, which decreases enemy defense
+        // DisplayName: Мясистый горн
+        // Tooltip: Заряжает звуковой луч, насыщенный ихором, снижающий защиту врага
     }
 
     Flute: {
         // DisplayName: Флейта
-        // Tooltip: Releases a weakly homing flute toot
+        // Tooltip: Выпускает слабый самонаводящийся мелодичный звук флейты
     }
 
     ForestOcarina: {
@@ -2640,7 +2640,7 @@ Items: {
 
     GoldBugleHorn: {
         // DisplayName: Золотой горн
-        // Tooltip: Releases a twin pulse of sound
+        // Tooltip: Выпускает двойной звуковой импульс
     }
 
     GrandPiano: {
@@ -2667,7 +2667,7 @@ Items: {
         /* Tooltip:
             '''
             Увеличивает скорость симфонической игры на инструменте на 5%
-            String weapon projectiles bounce an additional time
+            Снаряды струнного оружия отскакивают несколько раз
             ''' */
     }
 
@@ -2762,7 +2762,7 @@ Items: {
 
     InspirationGem: {
         // DisplayName: Inspiration Gem
-        // Tooltip: Permanently increases inspiration regeneration rate
+        // Tooltip: Навсегда увеличивает скорость восстановления вдохновения
     }
 
     InspirationHairDye: {
@@ -2773,8 +2773,8 @@ Items: {
     // InspirationNote.DisplayName: Нота вдохновения
 
     InspirationReachPotion: {
-        // DisplayName: Inspirational Reach Potion
-        // Tooltip: Increases pickup range for inspiration notes
+        // DisplayName: Зелье притяжения вдохновения
+        // Tooltip: Увеличивает дальность подбора нот вдохновения
     }
 
     JarOMayo: {
@@ -2804,12 +2804,12 @@ Items: {
 
     JestersShirt: {
         // DisplayName: Рубашка шута
-        // Tooltip: Symphonic damage has a 20% chance to empower players with bonus life regeneration
+        // Tooltip: Симфонический урон с 20% шансом усиливает игроков дополнительной регенерацией здоровья
     }
 
     JestersShirt2: {
         // DisplayName: Рубашка шута
-        // Tooltip: Symphonic damage has a 20% chance to empower players with bonus flat damage
+        // Tooltip: Симфонический урон с 20% шансом усиливает игроков дополнительным фиксированным уроном
     }
 
     JingleBells: {
@@ -3271,7 +3271,7 @@ Items: {
             '''
             Увеличивает симфонический урон на 10%
             Увеличивает симфонический шанс критического удара на 6%
-            Critical strikes caused by brass instrument attacks release a spread of piercing energy
+            При критических ударах духовыми инструментами, высвобождается распространяющаяся пронзающая энергия
             ''' */
     }
 
@@ -3279,8 +3279,8 @@ Items: {
         // DisplayName: Subwoofer
         /* Tooltip:
             '''
-            You and nearby allies receive 2 additional armor piercing
-            Doubles the range of your empowerments effect radius
+            Увеличивает пробивание брони на 2 для вас и ближайших союзников
+            Удваивает радиус действия ваших усилений
             ''' */
     }
 
@@ -3309,7 +3309,7 @@ Items: {
             '''
             Увеличивает симфонический урон на 10%
             You and nearby allies have a chance to elementally backlash enemies when attacking
-            Doubles the range of your empowerments effect radius
+            Удваивает радиус действия ваших усилений
             ''' */
     }
 
@@ -3458,11 +3458,11 @@ Items: {
     }
 
     Xylophone: {
-        // DisplayName: Xylophone
+        // DisplayName: Ксилофон
         /* Tooltip:
             '''
-            Allows you to rhythmically play on a big xylophone
-            Successfully timing hits will steadily increase its damage, empowerment level, and explosion radius
+            Позволяет ритмично играть на большом ксилофоне
+            Удары, соблюдающие ритм, постепенно увеличивают его урон, уровень усиления и радиус взрыва
             {$Common.Tooltips.BigInstrument}
             ''' */
     }
@@ -3507,16 +3507,16 @@ Items: {
 
     ArtificersRocketeers: {
         // DisplayName: Artificer's Rocketeers
-        // Tooltip: Allows quickened flight at the cost of artificer's energy
+        // Tooltip: Позволяет ускорить полёт за счёт энергии изобретателя
     }
 
     ArtificersShield: {
-        // DisplayName: Artificer's Shield
+        // DisplayName: Щит изобретателя
         /* Tooltip:
             '''
-            Reduces the amount of knockback you take from getting hit
-            Grants 2 defense for every 20 artificer's energy you have
-            Taking damage saps 20 artificer's energy
+            Снижает силу отбрасывания, которую вы получаете от ударов
+            Даёт 2 защиты за каждые 20 единиц энергии изобретателя, которые у вас есть
+            При получении урона теряется 20 единиц энергии изобретателя
             ''' */
     }
 
@@ -3526,7 +3526,7 @@ Items: {
             '''
             'It's best not to think about how they work...'
             Позволяет очень быстро бегать
-            While running, you will periodically generate bees
+            Во время бега периодически создаёт пчёл
             ''' */
     }
 
@@ -3658,10 +3658,10 @@ Items: {
         // DisplayName: Kinetic Battery
         /* Tooltip:
             '''
-            Critical strikes deal 15% more damage
-            Critical strikes will no longer randomly occur
-            Your hits now fill a gauge up to 100% based on critical strike chance
-            The attack that fills the gauge will critically strike
+            Критические удары наносят на 15% больше урона
+            Критические удары больше не случайны
+            Теперь ваши удары заполняют шкалу до 100% в зависимости от шанса критического удара
+            Первая атака, которая заполняет шкалу, наносит критический удар
             ''' */
     }
 
@@ -3684,7 +3684,7 @@ Items: {
         /* Tooltip:
             '''
             Увеличивает скорость передвижения на 5%
-            While running, your inspiration regeneration is increased
+            Во время бега увеличивает скорость восстановления вдохновения
             ''' */
     }
 
@@ -3693,13 +3693,13 @@ Items: {
         /* Tooltip:
             '''
             Увеличивает шанс критического удара на 8%
-            Critical strikes deal 12% more damage
+            Критические удары наносят на 12% больше урона
             ''' */
     }
 
     MoltenScale: {
-        // DisplayName: Molten Scale
-        // Tooltip: Nearby enemies will be set on fire
+        // DisplayName: Раскалённая чешуя
+        // Tooltip: Поджигает ближайших врагов
     }
 
     MoltenSpearTip: {
@@ -3708,12 +3708,12 @@ Items: {
     }
 
     ObsidianScale: {
-        // DisplayName: Obsidian Scale
+        // DisplayName: Обсидиановая чешуя
         /* Tooltip:
             '''
-            Grants immunity to fire blocks
-            Reduces the amount of knockback you take from getting hit
-            Nearby enemies will melt away
+            Даёт невосприимчивость к огненным блокам
+            Снижает силу отбрасывания, которую вы получаете от ударов
+            Ближайшие враги начнут постепенно испаряться
             ''' */
     }
 
@@ -3732,13 +3732,13 @@ Items: {
     }
 
     RubyRing: {
-        // DisplayName: Ruby Ring
-        // Tooltip: Increases melee damage by 1
+        // DisplayName: Кольцо с рубином
+        // Tooltip: Увеличивает урон ближнего боя на 1
     }
 
     SapphireRing: {
-        // DisplayName: Sapphire Ring
-        // Tooltip: Increases magic damage by 1
+        // DisplayName: Кольцо с сапфиром
+        // Tooltip: Увеличивает магический урон на 1
     }
 
     SilverBulwark: {
@@ -3760,7 +3760,7 @@ Items: {
         /* Tooltip:
             '''
             Увеличивает скорость передвижения на 8%
-            Damaging slag drops from below your boots
+            Из-под ботинок выпадает наносящий урон шлак
             ''' */
     }
 
@@ -3924,11 +3924,11 @@ Items: {
     }
 
     StriderTear: {
-        // DisplayName: Strider's Tear
+        // DisplayName: Слеза Шагателя
         /* Tooltip:
             '''
-            Attracts the attention of a frosty foe
-            Only usable during a blizzard
+            Привлекает внимание морозного врага
+            Можно использовать только во время метели
             ''' */
     }
 
@@ -4111,7 +4111,7 @@ Items: {
         // DisplayName: Cranberry
         /* Tooltip:
             '''
-            Major improvements to all stats
+            Значительно увеличивает все характеристики
             'Now we just need roasted bird'
             ''' */
     }
@@ -4210,10 +4210,10 @@ Items: {
     }
 
     Kumquat: {
-        // DisplayName: Kumquat
+        // DisplayName: Кумкват
         /* Tooltip:
             '''
-            Medium improvements to all stats
+            Умеренно увеличивает все характеристики
             'My favorite funny word!'
             ''' */
     }
@@ -4255,7 +4255,7 @@ Items: {
         // DisplayName: Mangosteen
         /* Tooltip:
             '''
-            Major improvements to all stats
+            Значительно увеличивает все характеристики
             'Best eaten in moderation... If at all...'
             ''' */
     }
@@ -4288,7 +4288,7 @@ Items: {
     }
 
     MeatSlab: {
-        // DisplayName: Meat Slab
+        // DisplayName: Кусок мяса
         // Tooltip: ""
     }
 
@@ -4310,7 +4310,7 @@ Items: {
         // DisplayName: Persimmon
         /* Tooltip:
             '''
-            Medium improvements to all stats
+            Умеренно увеличивает все характеристики
             'Do I have permission to eat this?'
             ''' */
     }
@@ -4337,7 +4337,7 @@ Items: {
         // DisplayName: Raspberry
         /* Tooltip:
             '''
-            Major improvements to all stats
+            Значительно увеличивает все характеристики
             'Still on the hunt for the elusive blue variety'
             ''' */
     }
@@ -4360,7 +4360,7 @@ Items: {
         // DisplayName: Soursop
         /* Tooltip:
             '''
-            Major improvements to all stats
+            Значительно увеличивает все характеристики
             'So good it will give you the shakes'
             ''' */
     }
@@ -4392,7 +4392,7 @@ Items: {
         // DisplayName: Takoyaki
         /* Tooltip:
             '''
-            Medium improvements to all stats
+            Умеренно увеличивает все характеристики
             'The traveling merchant's favorite snack'
             ''' */
     }
@@ -4423,7 +4423,7 @@ Items: {
 
     CoralCaltrop: {
         // DisplayName: Coral Caltrop
-        // Tooltip: The rough, coral edges have a chance to gouge the hit enemy, dealing additional damage
+        // Tooltip: Грубые края кораллов могут наложить дебафф «{$Buffs.Gouge.DisplayName}» на поражённых врагов, нанося дополнительный урон
     }
 
     CoralChestGuard: {
@@ -5136,14 +5136,14 @@ Items: {
         // Tooltip: ""
     }
 
-    // BlockyMask.DisplayName: Blocky Mask
-    // BlockyPants.DisplayName: Blocky Pants
-    // BlockyShirt.DisplayName: Blocky Shirt
-    // BrutalChestguard.DisplayName: Brutal Chestguard
-    // BrutalGreaves.DisplayName: Brutal Greaves
-    // BrutalMask.DisplayName: Brutal Mask
-    // CataclysmicsGarb.DisplayName: Cataclysmic Garb
-    // CataclysmicsHollowMask.DisplayName: Cataclysmic Hollow Mask
+    // BlockyMask.DisplayName: Блочная маска
+    // BlockyPants.DisplayName: Блочные штаны
+    // BlockyShirt.DisplayName: Блочная рубашка
+    // BrutalChestguard.DisplayName: Жестокий нагрудник
+    // BrutalGreaves.DisplayName: Жестокие поножи
+    // BrutalMask.DisplayName: Жестокая маска
+    // CataclysmicsGarb.DisplayName: Облачение катаклизма
+    // CataclysmicsHollowMask.DisplayName: Маска полого катаклизма
     // ChunkyGreaves.DisplayName: Chunky Greaves
     // ChunkyHelmet.DisplayName: Chunky Helmet
     // ChunkyMail.DisplayName: Chunky Mail
@@ -5375,7 +5375,7 @@ Items: {
         /* Tooltip:
             '''
             'Bleed for me...'
-            Critical strikes gouge the hit target
+            Критические удары накладывают дебафф «{$Buffs.Gouge.DisplayName}» на поражённых врагов
             ''' */
     }
 
@@ -5536,11 +5536,11 @@ Items: {
     }
 
     ClimbersIceAxe: {
-        // DisplayName: Climber's Ice Axe
+        // DisplayName: Ледоруб альпиниста
         /* Tooltip:
             '''
-            Every sixth throw will release a super chilled axe
-            The super chilled axe deals 15% more damage, flies faster, and freezes hit enemies
+            Каждый шестой бросок выпускает сверххолодный топор
+            Сверххолодный топор наносит на 15% больше урона, летит быстрее и замораживает поражённых врагов
             ''' */
     }
 
@@ -5851,7 +5851,7 @@ Items: {
         // DisplayName: Garlic Bread
         /* Tooltip:
             '''
-            Major improvements to all stats
+            Значительно увеличивает все характеристики
             'Bosses are cool and all... but have you ever eaten garlic bread?'
             ''' */
     }
@@ -6112,8 +6112,8 @@ Items: {
     }
 
     HolyHammer: {
-        // DisplayName: Holy Hammer
-        // Tooltip: Throws out a returning radiant hammer
+        // DisplayName: Святой молот
+        // Tooltip: Бросает возвращающийся сияющий молот
     }
 
     HungeringBlossom: {
@@ -6160,23 +6160,24 @@ Items: {
     }
 
     InfernoLordsFocus: {
-        // DisplayName: Inferno Lord's Focus
-        // Tooltip: Critical strikes release a burst of damaging sparks
+        // DisplayName: Сосредоточение владыки пламени
+        // Tooltip: Критические удары вызывают вспышку разрушительных искр
     }
 
+    # Не переводить
     JetstreamSheath: {
         // DisplayName: Jetstream Sheath
         // Tooltip: Sword strikes release a flurry of slashes against nearby enemies if held and not used for {0} {^0:second;seconds}
     }
 
     JewellersWallGrip: {
-        // DisplayName: Jeweller's Wall Grip
+        // DisplayName: Стенохват ювелира
         // Tooltip: ""
     }
 
     KineticPotion: {
-        // DisplayName: Kinetic Potion
-        // Tooltip: Allows you to double tap dash
+        // DisplayName: Кинетическое зелье
+        // Tooltip: Позволяет делать рывок
     }
 
     Kinetoscythe: {
@@ -6560,7 +6561,7 @@ Items: {
     }
 
     PillPopper: {
-        // DisplayName: Pill Popper
+        // DisplayName: Таблетомёт
         /* Tooltip:
             '''
             Rapidly fires pills
@@ -6832,7 +6833,7 @@ Items: {
         /* Tooltip:
             '''
             {$Items.Sawblade.CommonTooltip}
-            Freezes hit enemies, slowing them greatly
+            Накладывает на врагов дебафф «{$Buffs.Freezing.DisplayName}», значительно замедляя их 
             ''' */
     }
 
@@ -6841,7 +6842,7 @@ Items: {
         /* Tooltip:
             '''
             {$Items.Sawblade.CommonTooltip}
-            Afflicts hit enemies with ichor
+            Накладывает на врагов дебафф «{$BuffName.Ichor}»
             ''' */
     }
 
@@ -6850,7 +6851,7 @@ Items: {
         /* Tooltip:
             '''
             {$Items.Sawblade.CommonTooltip}
-            Afflicts hit enemies with confusion
+            Накладывает на врагов дебафф «{$BuffName.Confused}»
             ''' */
     }
 
@@ -6859,7 +6860,7 @@ Items: {
         /* Tooltip:
             '''
             {$Items.Sawblade.CommonTooltip}
-            Sets hit enemies on fire
+            Накладывает на врагов дебафф «{$BuffName.OnFire}»
             ''' */
     }
 
@@ -6874,7 +6875,7 @@ Items: {
 
     ShadowFlareBow: {
         // DisplayName: Shadow-Flare Bow
-        // Tooltip: Turns arrows into ricocheting shadow beams
+        // Tooltip: Превращает стрелы в рикошетящие теневые лучи
     }
 
     ShadowOrbStaff: {
@@ -6892,7 +6893,7 @@ Items: {
         /* Tooltip:
             '''
             Увеличивает метательный шанс критического удара на 6%
-            Dealing two consecutive throwing critical strikes will discharge dark lightning and increase throwing speed briefly
+            Нанесение двух последовательных метательных критических ударов вызывает разряд тёмной молнии и на короткое время увеличивает метательную скорость атаки
             ''' */
     }
 
@@ -6900,24 +6901,24 @@ Items: {
         // DisplayName: Shockbuster
         /* Tooltip:
             '''
-            Fires off weaker static bolts that stick to enemies
-            Right click to launch a shock grenade, detonating nearby static bolts for massive damage
+            Стреляет слабыми статическими зарядами, которые прилипают к врагам
+            Нажмите <right>, чтобы запустить ударную гранату, которая взрывает ближайшие статические заряды, нанося огромный урон
             ''' */
     }
 
     ShusWrath: {
         // DisplayName: Shu's Wrath
-        // Tooltip: Turns wooden arrows into lingering sand splashes on impact
+        // Tooltip: Превращает деревянные стрелы в медленно исчезающие песчаные всплески при попадании
     }
 
     SimpleBroom: {
-        // DisplayName: Simple Broom
-        // Tooltip: Summons a cute lil' maid to follow you around
+        // DisplayName: Обыкновенная метла
+        // Tooltip: Призывает миленькую маленькую горничную, которая следует за вами
     }
 
     SinisterHonk: {
         // DisplayName: Sinister Honk
-        // Tooltip: Squeezes out a rubber goose call
+        // Tooltip: Сжимает резиновый гусиный свисток, издавая звук
     }
 
     Skadoosh: {
@@ -6942,7 +6943,7 @@ Items: {
 
     SnowWhite: {
         // DisplayName: Snow White
-        // Tooltip: Right Click to switch between four different elemental attacks
+        // Tooltip: Нажимайте <right> для переключения между четырьмя разными элементальными атаками
     }
 
     SoulAnchor: {
@@ -6956,42 +6957,42 @@ Items: {
     }
 
     SoulReaver: {
-        // DisplayName: Soul Reaver
+        // DisplayName: Похититель душ
         /* Tooltip:
             '''
             'He told you...'
-            Left click to hurl impaling echoes of the soul reaver, which stick into enemies
-            Right click to stab the soul reaver forward, stealing life equal to the amount of echoes in the enemy
+            Нажмите <left>, чтобы метнуть разящее эхо похитителя душ, которое впивается во врагов
+            Нажмите <right>, чтобы вонзить похитителя душ, крадущего здоровье, равное количеству эхо на враге
             ''' */
     }
 
     Spearmint: {
         // DisplayName: Spearmint
-        // Tooltip: Attacks apply a stacking poison
+        // Tooltip: Атаки накапливают на враге дебафф «{$Buffs.SpearmintDebuff.DisplayName}»
     }
 
     SpectralFang: {
         // DisplayName: Spectral Fang
-        // Tooltip: Summons a mountable spectral tiger
+        // Tooltip: Призывает ездового призрачного тигра
     }
 
     SpiritArrow: {
-        // DisplayName: Spirit Arrow
-        // Tooltip: Pierces tiles and enemies, but fades quickly
+        // DisplayName: Духовная стрела
+        // Tooltip: Пронзает блоки и врагов, но быстро исчезает
     }
 
     SpiritBreaker: {
         // DisplayName: Spirit Breaker
         /* Tooltip:
             '''
-            Spews forth spirit flame that steals life on critical strikes
-            Uses gel for ammo
+            Извергает духовное пламя, обладающее кражей здоровья при критических ударах
+            Использует гель в качестве боеприпасов
             ''' */
     }
 
     StaticProd: {
         // DisplayName: Static Prod
-        // Tooltip: Creates a discharge of delayed electrical blasts at your cursor
+        // Tooltip: Создаёт разряд отсроченных электрических взрывов в позиции курсора
     }
 
     StealthBandanna: {
@@ -7014,7 +7015,7 @@ Items: {
         // DisplayName: Steamgunner Controller
         /* Tooltip:
             '''
-            Summons a fast attacking gunner drone to assault nearby enemies
+            Призывает быстрого атакующего дрона-стрелка, который атакует ближайших врагов
             Занимает два слота призываемых миньонов
             ''' */
     }
@@ -7023,24 +7024,24 @@ Items: {
         // DisplayName: Stellar Rod
         /* Tooltip:
             '''
-            Commands up to three stars to attack towards your cursor's position
-            The stars leave a rainbow detonation at your cursor's position before returning
+            Приказывает звёздам атаковать в направлении курсора
+            Звёзды оставляют за собой радужный взрыв в позиции курсора перед возвращением
             ''' */
     }
 
     StellarSystem: {
         // DisplayName: Stellar System
-        // Tooltip: Surrounds you in an orbit of planetoids, which can be launched with left click
+        // Tooltip: Создаёт вокруг вас кружащиеся планетоиды, которые можно запустить, нажав <left>
     }
 
     StrangeSkull: {
-        // DisplayName: Strange Skull
-        // Tooltip: Summons a ghastly skull to shoot laser beams at enemies, which cause damage over time
+        // DisplayName: Странный череп
+        // Tooltip: Призывает призрачный череп, который стреляет лазерными лучами во врагов, наносящие постепенный урон
     }
 
     StrawberryHeart: {
-        // DisplayName: Strawberry Heart
-        // Tooltip: Releases a captivating harmony heart
+        // DisplayName: Земляничное сердце
+        // Tooltip: Выпускает очаровательное сердце гармонии
     }
 
     SubspaceWings: {
@@ -7061,8 +7062,8 @@ Items: {
         // DisplayName: Super Anvil
         /* Tooltip:
             '''
-            Summons a ridable anvil
-            The anvil can barely move, but is incredibly heavy
+            Призывает ездовую наковальню
+            Наковальня едва передвигается, но невероятно тяжёлая
             ''' */
     }
 
@@ -7070,8 +7071,8 @@ Items: {
         // DisplayName: Super Plasma Cannon
         /* Tooltip:
             '''
-            Launches an exploding ball of energized plasma
-            Can be charged to unleash an empowered version
+            Запускает взрывающийся шар заряженной плазмы
+            Можно зарядить для высвобождения усиленной версии
             ''' */
     }
 
@@ -7080,17 +7081,17 @@ Items: {
         /* Tooltip:
             '''
             'Gib your enemies!'
-            Turns fired rockets into an incredibly fast missile
+            Превращает запущенные ракеты в молниеносные снаряды
             ''' */
     }
 
     SweetBeet: {
-        // DisplayName: Sweet Beet
-        // Tooltip: Releases a sentient cookie to run after you
+        // DisplayName: Сладкая свекла
+        // Tooltip: Призывает разумное печенье, которое бегает за вами
     }
 
     SweetBoots: {
-        // DisplayName: Sweet Boots
+        // DisplayName: Сладкие ботинки
         // Tooltip: ""
     }
 
@@ -7103,8 +7104,8 @@ Items: {
         // DisplayName: Sweet Vengeance
         /* Tooltip:
             '''
-            Increases length of invincibility and movement speed when damaged
-            Causes bees and stars to appear when damaged
+            Увеличивает длительность неуязвимости и скорость передвижения при получении урона
+            При получении урона появляются пчёлы и звёзды
             ''' */
     }
 
@@ -7118,9 +7119,9 @@ Items: {
         // DisplayName: Teleologic Imposition
         /* Tooltip:
             '''
-            Propels a surge of ritualistic magic
-            Upon hitting an enemy or tile, a star storm will shortly begin
-            The star storm must complete before a new one may begin
+            Запускает всплеск ритуальной магии.
+            После попадания во врага или блок начинается звёздный шторм
+            Звёздный шторм должен завершиться, прежде чем начнётся следующий
             ''' */
     }
 
@@ -7128,19 +7129,19 @@ Items: {
         // DisplayName: Terrarian's Last Knife
         /* Tooltip:
             '''
-            Rapidly swings a large, life-siphoning knife
-            Right click to unleash a massive torrent of blood at the cost of life
+            Стремительно размахивает большим ножом, высасывающим здоровье
+            Нажмите <right>, чтобы высвободить массивную лавину крови, пожертвовав частью своего здоровья
             ''' */
     }
 
     Teslanator: {
         // DisplayName: Teslanator
-        // Tooltip: Attempts to create a damaging electrical current between five enemies
+        // Tooltip: Пытается создать разрушающий электрический ток между пятью врагами
     }
 
     TheBopper: {
         // DisplayName: The Bopper
-        // Tooltip: Fires different sound waves based on your instrument's pitch
+        // Tooltip: Выпускает разнообразные звуковые волны в зависимости от высоты тона инструмента
     }
 
     TheDigester: {
@@ -7214,11 +7215,11 @@ Items: {
     }
 
     UmbraBlaster: {
-        // DisplayName: Umbra Blaster
+        // DisplayName: Теневой бластер
         /* Tooltip:
             '''
-            Fires a delayed shrapnel blast with additional delayed shadow shards
-            Release to manually detonate blasts
+            Стреляет отсроченным осколочным взрывом с дополнительными отсроченными теневыми осколками
+            Отпустите <left>, чтобы самостоятельно вызвать взрыв
             ''' */
     }
 
@@ -7825,7 +7826,7 @@ Items: {
             '''
             'Leave your mark upon the world...'
             Стремительно вращает разрежающую реальность косу вокруг вас
-            Nearby enemies are rapidly torn from reality
+            Ближайшие враги стремительно исчезают из реальности
             ''' */
     }
 
@@ -7881,7 +7882,7 @@ Items: {
         /* Tooltip:
             '''
             'Blacken the sky with your projectile storm'
-            12% increased arrow damage
+            Увеличивает урон стрел на 12%
             12% increased specialist ranged damage
             These are launchers, dartguns, or anything else that doesn't shoot arrows/bullets
             Arrow critical strikes turn into death arrows and ricochet
@@ -7894,7 +7895,7 @@ Items: {
         /* Tooltip:
             '''
             'Gun powder will cull the weak'
-            24% increased arrow and bullet damage
+            Увеличивает урон стрел и пуль на 24%
             The nearest enemy is scouted and takes 10% more damage from all sources
             Your ranged damage applies cursed flames to enemies
             ''' */
@@ -7934,8 +7935,8 @@ Items: {
         /* Tooltip:
             '''
             'Belch your wrath upon those undeserving of life...'
-            Uses gel for ammo
-            Releases a torrent of caustic wyrm breath
+            Использует гель в качестве боеприпасов
+            Выпускает поток едкого дыхания змия
             {$CommonItemTooltip.PercentChanceToSaveAmmo}
             ''' */
     }
@@ -7950,8 +7951,8 @@ Items: {
         /* Tooltip:
             '''
             'Break free from your perceived limitations...'
-            Plays a mythical guitar, releasing multiple super riffs
-            Gains increased damage after every bounce
+            Играет на мифической гитаре, выпуская несколько супер-риффов
+            Увеличивает урон после каждого отскока
             ''' */
     }
 
@@ -7960,8 +7961,8 @@ Items: {
         /* Tooltip:
             '''
             'Surround your audience with pure imagination...'
-            Quickly releases harmonizing sound bolts
-            Right click to create up to 5 mind runes that duplicate your attack
+            Быстро выпускает гармонизирующие звуковые снаряды
+            Нажмите <right> для создания до 5 рун разума, которые дублируют вашу атаку
             ''' */
     }
 
@@ -7973,8 +7974,8 @@ Items: {
             Увеличивает скорость восстановления вдохновения на 25%
             Критические удары ударными инструментами наносят на 15% больше урона
             Увеличивают максимальный запас вдохновения на 5
-            Inspiration notes that drop will become more potent
-            Additionally, they give a random level 1 empowerment to all nearby allies
+            Выпавшие ноты вдохновения становятся более эффективными
+            Кроме того, они дают случайное усиление 1 уровня всем ближайшим союзникам
             ''' */
     }
 
@@ -8018,8 +8019,8 @@ Items: {
         /* Tooltip:
             '''
             'The vibrating destruction quiets the noise of hate...'
-            Unleashes a vibrating hyper beam that tunes enemies
-            Tuned enemies take 10% more damage
+            Высвобождает вибрирующий гиперлуч, который накладывает на врагов дебафф «{$Buffs.Tuned.DisplayName}»
+            Враги, подверженные дебаффу «{$Buffs.Tuned.DisplayName}» получают на 10% больше урона
             ''' */
     }
 
@@ -8040,7 +8041,7 @@ Items: {
         /* Tooltip:
             '''
             'Misery loves company...'
-            Rapidly unleashes flaming, homing skulls
+            Стремительно высвобождает пылающие, самонаводящиеся черепа
             ''' */
     }
 
@@ -8049,7 +8050,7 @@ Items: {
         /* Tooltip:
             '''
             'Blinding molten fury eviscerates the weak...'
-            Unleashes slashes of infinite heat at your cursor's position
+            Высвобождат разрезы бесконечного жара в позиции курсора
             ''' */
     }
 
@@ -8064,15 +8065,15 @@ Items: {
     }
 
     InfernoEssence: {
-        // DisplayName: Inferno Essence
-        // Tooltip: "'Fragment of the first flame'"
+        // DisplayName: Эссенция инферно
+        // Tooltip: "'Частица первого пламени'"
     }
 
     MagmaSeersMask: {
         // DisplayName: Magma Seer's Mask
         /* Tooltip:
             '''
-            'Command a magma fortified army'
+            'Повелевайте армией, укреплённой магмой'
             Увеличивает урон призывателя на 50%
             Увеличивает призываемое число миньонов на 6
             Увеличивает призываемое число стражей на 2
@@ -8096,9 +8097,9 @@ Items: {
             'Your molten gaze should be feared'
             Увеличивает магический урон на 20%
             Увеличивает максимальный запас маны на 60 и значительно увеличивает восстановление маны
-            Every nearby enemy that's burning increases your magic damage by 0.5%
-            This effect is 10x as effective against bosses
-            Magical attacks will Singe and Ignite enemies
+            Увеличивает магический урон на 0.5% за каждого ближайшего горящего врага 
+            Эффект в 10 раз мощнее против боссов
+            Магические атаки накладывают на врагов дебаффы «{$Buffs.Singed.DisplayName}» и «{$Buffs.Ignite.DisplayName}»
             ''' */
     }
 
@@ -8106,8 +8107,8 @@ Items: {
         // DisplayName: Pyromancer's Leggings
         /* Tooltip:
             '''
-            'You're overcome with molten fury'
-            14% increased magic & summon damage
+            'Вы наполняетесь раскалённой яростью'
+            Увеличивает магический урон и урон призывателя на 14%
             Увеличивает максимальный запас маны на 20
             Увеличивает скорость передвижения на 15%
             ''' */
@@ -8117,10 +8118,10 @@ Items: {
         // DisplayName: Pyromancer's Tabard
         /* Tooltip:
             '''
-            'You're overcome with molten fury'
-            18% increased magic & summon damage
+            'Вы наполняетесь раскалённой яростью'
+            Увеличивает магический урон и урон призывателя на 18%
             Увеличивает максимальный запас маны на 20
-            16% increased magic critical strike chance
+            Увеличивает магический шанс критического удара на 16%
             ''' */
     }
 
@@ -8159,7 +8160,7 @@ Items: {
 
     EnergyStormBolter: {
         // DisplayName: Energy Storm Bolter
-        // Tooltip: Turns musket balls into homing energy bolts
+        // Tooltip: Превращает мушкетные пули в самонаводящиеся энергетические снаряды
     }
 
     EnergyStormPartisan: {
@@ -8194,7 +8195,7 @@ Items: {
     }
 
     UnstableCore: {
-        // DisplayName: Unstable Core
+        // DisplayName: Нестабильное ядро
         /* Tooltip:
             '''
             Summons a storm of dangerous energy
@@ -8231,20 +8232,20 @@ Items: {
     }
 
     HellishHalberd: {
-        // DisplayName: Hellish Halberd
+        // DisplayName: Адская алебарда
         /* Tooltip:
             '''
-            Unleashes a fiery vortex after 5 successful strikes
-            Vortex homes in on the last enemy hit by the spear
+            Высвобождает огненный вихрь после 5 успешных нанесённых ударов
+            Вихрь нацеливается на последнего врага, поражённого копьём
             ''' */
     }
 
     HellRoller: {
-        // DisplayName: Hell Roller
+        // DisplayName: Адский волчок
         /* Tooltip:
             '''
-            Throws an explosive rebounding roller
-            Number and damage of explosions increase the longer the roller rebounds
+            Бросает взрывной отскакивающий волчок
+            Количество взрывов и их урон увеличиваются с каждым отскоком волчка
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -8254,18 +8255,18 @@ Items: {
         // DisplayName: Mirror of the Beholder
         /* Tooltip:
             '''
-            'Beauty is subjective after all'
-            You gain vision of your cursor's current position
-            Enemies around your cursor are briefly revealed and take 15% more damage from all sources
+            'Красота - это субъективное понятие в конце концов'
+            Подсвечивает место под курсором
+            Враги вокруг курсора ненадолго обнаруживаются и получают на 15% больше урона от всех источников
             ''' */
     }
 
     Obliterator: {
-        // DisplayName: Obliterator
+        // DisplayName: Стиратель
         /* Tooltip:
             '''
-            Fires a delayed shrapnel blast
-            Release to manually detonate blasts
+            Стреляет отсроченным осколочным взрывом
+            Отпустите <left>, чтобы самостоятельно вызвать взрыв
             ''' */
     }
 
@@ -8278,8 +8279,8 @@ Items: {
         // DisplayName: Tome of the Void Gazer's Chariot
         /* Tooltip:
             '''
-            'Become the harbinger of the void'
-            Summons a mountable Beholder
+            'Станьте предвестником пустоты'
+            Призывает ездового Созерцателя
             ''' */
     }
 
@@ -8287,14 +8288,14 @@ Items: {
         // DisplayName: Пустотная линза
         /* Tooltip:
             '''
-            Summons an entity from another dimension
-            Only usable within the underworld
+            Призывает сущность из другого измерения
+            Можно использовать только в преисподней
             ''' */
     }
 
     VoidPlanter: {
-        // DisplayName: Void Planter
-        // Tooltip: Plants up to 3 gestating void seeds at your cursor
+        // DisplayName: Пустотный сеятель
+        // Tooltip: Сажает до 3 созревающих семян пустоты под курсором
     }
 
     BloodBelcher: {
@@ -8316,12 +8317,12 @@ Items: {
     }
 
     FleshAxe: {
-        // DisplayName: Топор из плоти
+        // DisplayName: Мясистый топор
         // Tooltip: ""
     }
 
     FleshBody: {
-        // DisplayName: Тело из плоти
+        // DisplayName: Мясистое тело
         /* Tooltip:
             '''
             'Симбиотически связан с вашим телом'
@@ -8331,32 +8332,32 @@ Items: {
     }
 
     FleshBow: {
-        // DisplayName: Лук из плоти
+        // DisplayName: Мясистый лук
         // Tooltip: Атаки могут красть здоровье врага, но ненадолго предотвращают регенерацию здоровья
     }
 
     FleshChainSaw: {
-        // DisplayName: Бензопила из плоти
+        // DisplayName: Мясистая бензопила
         // Tooltip: ""
     }
 
     FleshDrill: {
-        // DisplayName: Бур из плоти
+        // DisplayName: Мясистый бур
         // Tooltip: ""
     }
 
     FleshHammer: {
-        // DisplayName: Молот из плоти
+        // DisplayName: Мясистый молот
         // Tooltip: ""
     }
 
     FleshJackhammer: {
-        // DisplayName: Отбойный молоток из плоти
+        // DisplayName: Мясистый отбойный молоток
         // Tooltip: ""
     }
 
     FleshLegs: {
-        // DisplayName: Ноги из плоти
+        // DisplayName: Мясистые ноги
         /* Tooltip:
             '''
             'Симбиотически связан с вашим телом'
@@ -8365,12 +8366,12 @@ Items: {
     }
 
     FleshMace: {
-        // DisplayName: Flesh Mace
-        // Tooltip: Attacks have a chance to steal life, but briefly prevent life regeneration
+        // DisplayName: Мясистая булава
+        // Tooltip: Атаки могут красть здоровье врага, но ненадолго предотвращают регенерацию здоровья
     }
 
     FleshMask: {
-        // DisplayName: Маска из плоти
+        // DisplayName: Мясистая маска
         /* Tooltip:
             '''
             'Симбиотически связан с вашим телом'
@@ -8379,17 +8380,17 @@ Items: {
     }
 
     FleshPickAxe: {
-        // DisplayName: Flesh Pickaxe
+        // DisplayName: Мясистая кирка
         // Tooltip: ""
     }
 
     FleshSkewer: {
-        // DisplayName: Flesh Skewer
-        // Tooltip: Attacks have a chance to steal life, but briefly prevent life regeneration
+        // DisplayName: Мясистый штык
+        // Tooltip: Атаки могут красть здоровье врага, но ненадолго предотвращают регенерацию здоровья
     }
 
     FleshWings: {
-        // DisplayName: Flesh Wings
+        // DisplayName: Мясистые крылья
         // Tooltip: {$CommonItemTooltip.FlightAndSlowfall}
     }
 
@@ -8402,14 +8403,14 @@ Items: {
         // DisplayName: Tooth of The Consumer
         /* Tooltip:
             '''
-            Attacks have a chance to steal life, but briefly prevent life regeneration
+            Атаки могут красть здоровье врага, но ненадолго предотвращают регенерацию здоровья
             Right click releases grasping blood at the cost of 3 life
             ''' */
     }
 
     UnfathomableFlesh: {
-        // DisplayName: Unfathomable Flesh
-        // Tooltip: "'It writhes and wiggles, attempting to latch onto you'"
+        // DisplayName: Непостижимая плоть
+        // Tooltip: "'Оно скручивается и изгибается, словно пытаясь зацепиться за вас'"
     }
 
     CrystalArrow: {
@@ -8418,47 +8419,47 @@ Items: {
     }
 
     CrystalGeode: {
-        // DisplayName: Crystal Geode
-        // Tooltip: "'It glitters in the dark...'"
+        // DisplayName: Кристальная жеода
+        // Tooltip: "'Сверкает в темноте...'"
     }
 
     GeodeChestplate: {
-        // DisplayName: Geode Chestplate
+        // DisplayName: Жеодовый нагрудник
         // Tooltip: Увеличивает скорость добычи на 15%
     }
 
     GeodeGatherer: {
-        // DisplayName: Geode Gatherer
-        // Tooltip: Has a chance to fish up geodes from water
+        // DisplayName: Собиратель жеод
+        // Tooltip: Может вылавливать жеоды из воды
     }
 
     GeodeGreaves: {
-        // DisplayName: Geode Greaves
+        // DisplayName: Жеодовые поножи
         // Tooltip: Увеличивает скорость добычи на 10%
     }
 
     GeodeHamaxe: {
-        // DisplayName: Geode Hamaxe
+        // DisplayName: Жеодовый молотопор
         // Tooltip: ""
     }
 
     GeodeHelmet: {
-        // DisplayName: Geode Helmet
-        // Tooltip: You see the location of ores, chests, and other treasures
+        // DisplayName: Жеодовый шлем
+        // Tooltip: Вы видите расположение руд, сундуков и других сокровищ
     }
 
     GeodePickaxe: {
-        // DisplayName: Geode Pickaxe
-        // Tooltip: Mining ore grants you a 25 life shield
+        // DisplayName: Жеодовая кирка
+        // Tooltip: Добыча руды даёт жизненный щит на 25 единиц
     }
 
     GraniteChestGuard: {
-        // DisplayName: Granite Chestguard
+        // DisplayName: Гранитный нагрудник
         // Tooltip: "'Защитно заряженный'"
     }
 
     GraniteControlRod: {
-        // DisplayName: Granite Control Rod
+        // DisplayName: Гранитная управляющая удочка
         // Tooltip: ""
     }
 
@@ -8472,8 +8473,8 @@ Items: {
     }
 
     GraniteEnergyCore: {
-        // DisplayName: Granite Energy Core
-        // Tooltip: "'This strange, rune etched core gave the minerals sentience'"
+        // DisplayName: Гранитное энергетическое ядро
+        // Tooltip: "'Это странное ядро с выгравированными рунами, придаёт камням жизнь'"
     }
 
     GraniteGreaves: {
@@ -8537,16 +8538,16 @@ Items: {
 
     ApothecarysCyanVial: {
         // DisplayName: Apothecary's Cyan Vial
-        // Tooltip: Upon drinking a healing potion, all nearby players recover 50 mana
+        // Tooltip: После использования лечебного зелья, все ближайшие игроки восстанавливают 25 единиц маны
     }
 
     ApothecarysScarletVial: {
         // DisplayName: Apothecary's Scarlet Vial
-        // Tooltip: Upon drinking a healing potion, all nearby players recover 25 life
+        // Tooltip: После использования лечебного зелья, все ближайшие игроки восстанавливают 25 единиц здоровья
     }
 
     AquaiteScythe: {
-        // DisplayName: Aquaite Scythe
+        // DisplayName: Аквайтовая коса
         // Tooltip: Стремительно вращает водную косу вокруг вас
     }
 
@@ -8574,36 +8575,36 @@ Items: {
     }
 
     AscensionStatuette: {
-        // DisplayName: Ascension Statuette
+        // DisplayName: Статуэтка восхождения
         /* Tooltip:
             '''
-            Taking fatal damage unleashes your inner spirit
-            Your inner spirit will constantly release beams of healing energy towards your cursor
+            При получении смертельного урона высвобождает ваш внутренний дух
+            Дух будет непрерывно выпускать лучи исцеляющей энергии в сторону курсора
             ''' */
     }
 
     AuraStaff: {
-        // DisplayName: Aura Staff
+        // DisplayName: Посох ауры
         /* Tooltip:
             '''
-            Left click to create a life recovery aura around your cursor
-            Right click to create a damage reduction aura around your cursor
-            Each aura lasts for 1 minute and only works on allies
+            Нажмите <left>, чтобы создать ауру восполнения здоровья вокруг курсора
+            Нажмите <right>, чтобы создать ауру сопротивления урону вокруг курсора
+            Каждая аура длится 1 минуту и действует только на союзников
             ''' */
     }
 
     BarrierGenerator: {
-        // DisplayName: Barrier Generator
+        // DisplayName: Генератор щита
         /* Tooltip:
             '''
-            Fires off a ripple of ally encasing electricity
-            Shields ally life by 10 up to 50
+            Выпускает импульс электричества, обволакивающий союзника
+            Оберегает союзника, давая ему от {0} до {1} единиц жизненного щита
             ''' */
     }
 
     BeltoftheQuickResponse: {
-        // DisplayName: Belt of the Quick Response
-        // Tooltip: Healing an ally will increase your movement and healing speed
+        // DisplayName: Пояс быстрого реагирования
+        // Tooltip: Лечение союзника увеличивает вашу скорость передвижения и лечения
     }
 
     BioTechGarment: {
@@ -8653,16 +8654,16 @@ Items: {
     }
 
     BloodTransfusion: {
-        // DisplayName: Blood Transfusion
-        // Tooltip: Damage dealt will return a life-giving blood globule to you
+        // DisplayName: Переливание крови
+        // Tooltip: Наносимый урон возвращает к вам кровавый шар, восстанавливающий здоровье
     }
 
     BloomGuard: {
-        // DisplayName: Bloom Guard
+        // DisplayName: Защитный цветок
         /* Tooltip:
             '''
-            Summons a bloom bulb that periodically generates booster spores
-            Touching the spores increases defense and life recovery briefly
+            Призывает цветочный бутон, который периодически создаёт споры-усилители
+            При касании к спорам на короткое время увеличивает защиту и восполнение здоровья
             ''' */
     }
 
@@ -8700,12 +8701,12 @@ Items: {
     }
 
     BloomingWand: {
-        // DisplayName: Blooming Wand
+        // DisplayName: Цветущий жезл
         /* Tooltip:
             '''
-            Expels a large wave of life recovering petals
-            Allies touched by the petals start to recover health over time
-            Does not trigger on heal effects and only receives bonus healing in sets of 5
+            Выпускает большую волну лечебных лепестков, восстанавливающих здоровье
+            Союзники, коснувшиеся лепестков, постепенно начинают восстанавливать здоровье
+            Не активирует эффекты исцеления других лечебных предметов и увеличивает силу лечения за каждый набор из 5 единиц бонусного исцеления
             ''' */
     }
 
@@ -8714,7 +8715,7 @@ Items: {
         /* Tooltip:
             '''
             Стремительно вращает созданную из костей дубинку вокруг вас
-            Your first hit every swing has a chance to release a burning bone
+            Первый удар при каждом взмахе может вызвать выброс горящей кости
             ''' */
     }
 
@@ -8730,15 +8731,15 @@ Items: {
 
     BrainCoral: {
         // DisplayName: Brain Coral
-        // Tooltip: Increases the life recovery of additional allies around the target
+        // Tooltip: Увеличивает восполнение здоровья ближайших союзников, находящихся рядом с исцелённым союзником
     }
 
     BubbleBulwarkWand: {
         // DisplayName: Bubble-Bulwark Wand
         /* Tooltip:
             '''
-            Releases an ally seeking, protective bubble
-            Allies protected by the bubble take 0 damage from one attack
+            Выпускает защитный пузырь, который автоматически направляется к союзникам
+            Союзники, защищённые пузырём, получают 0 урона от одной атаки
             ''' */
     }
 
@@ -8797,7 +8798,7 @@ Items: {
 
     CelestialWand: {
         // DisplayName: Celestial Wand
-        // Tooltip: Unleashes multiple ally homing streams of light, which increase ally life recovery and life recovery rate
+        // Tooltip: Высвобождает несколько самонаводящихся потоков света, которые увеличивают восполнение здоровья и скорость восполнения здоровья союзника
     }
 
     ChristmasCheer: {
@@ -8805,7 +8806,7 @@ Items: {
         /* Tooltip:
             '''
             Стремительно вращает дух Рождества вокруг вас
-            Releases a harmless, but freezing icicle on swing
+            При взмахе выпускает безвредную, но замораживающую ледяную сосульку
             ''' */
     }
 
@@ -8829,7 +8830,7 @@ Items: {
 
     CoralPurifier: {
         // DisplayName: Coral Purifier
-        // Tooltip: Releases sharp coral fragments from your healed ally
+        // Tooltip: Выпускает острые коралловые осколки из исцелённого союзника
     }
 
     CrimsonScythe: {
@@ -8860,7 +8861,7 @@ Items: {
         // DisplayName: Crystal Honey
         /* Tooltip:
             '''
-            'The strange properties of honey are not easily extracted'
+            'Таинственные свойства мёда не так-то просто извлечь'
             Увеличивает максимальный запас здоровья на 20
             Увеличивает лучезарный урон на 10%
             Увеличивает лучезарный шанс критического удара на 5%
@@ -8891,7 +8892,7 @@ Items: {
             '''
             Усиливает некоторые лучезарные атаки тёмной энергией
             Увеличивает лучезарный урон на 15%
-            Enemies afflicted with shadowflame or light curse increase your life regeneration
+            Враги подверженные дебаффу «{$BuffName.ShadowFlame}» или «{$BuffName.LightCurse}» увеличивает вашу регенерацию здоровья
             ''' */
     }
 
@@ -8918,8 +8919,8 @@ Items: {
             '''
             Усиливает некоторые лучезарные атаки тёмной энергией
             Увеличивает лучезарный урон на 10%
-            Your healing bonus is reduced by 1
-            Enemies you hit take 100% more damage from shadowflame and light curse damage over time
+            Снижает бонусное лечение на 1
+            Поражённые враги становятся более уязвимыми к дебаффам «{$BuffName.ShadowFlame}» и «{$BuffName.LightCurse}», получая на 100% больше постепенного урона
             ''' */
     }
 
@@ -8932,28 +8933,28 @@ Items: {
         // DisplayName: Deep Staff
         /* Tooltip:
             '''
-            Releases a bolt of dark magic at the cost of life
-            Hit enemies are briefly burned by shadow energy
+            Выпускает заряд тёмной магии ценой собственного здоровья
+            Поражённые враги на короткое время обжигаются теневой энергией
             Половина затраченного здоровья передаётся союзнику с наименьшим запасом здоровья
             ''' */
     }
 
     DefenderWand: {
-        // DisplayName: Defender's Wand
+        // DisplayName: Жезл защитника
         /* Tooltip:
             '''
-            Heals all nearby villagers, plus the Eternia Crystal
-            Releases seeking energy upon healing the Eternia Crystal
+            Лечит всех ближайших жителей, а также лечит кристалл Этернии во время события
+            После лечения кристалла Этернии высвобождается самонаводящаяся энергия
             ''' */
     }
 
     DemonTongue: {
-        // DisplayName: Demon Tongue
+        // DisplayName: Язык демона
         /* Tooltip:
             '''
             Усиливает некоторые лучезарные атаки тёмной энергией
             Увеличивает лучезарный урон на 12%
-            Halves radiant life costs but not its life transferring effect
+            Снижает вдвое стоимость здоровья на лучезарную магию, но не влияет на эффект передачи здоровья союзнику
             ''' */
     }
 
@@ -8961,8 +8962,8 @@ Items: {
         // DisplayName: Dew Collector
         /* Tooltip:
             '''
-            Healing an ally grants them 2 life recovery and generates dew
-            Picking up dew increases your own life recovery by 4
+            Лечение союзника даёт ему 2 единицы восполнения здоровья и создаёт росу
+            Поднятие росы увеличивает ваше собственное восполнение здоровья на 4 единицы
             ''' */
     }
 
@@ -9231,7 +9232,7 @@ Items: {
         /* Tooltip:
             '''
             После лечения ближайшего союзника, из вас высвобождается дух жизни
-            Этот дух направляется к союзнику с наименьшим запасом здоровья и исцеляет его на 2 единицы
+            Этот дух направляется к союзнику с наименьшим запасом здоровья и лечит его на 2 единицы
             ''' */
     }
 
@@ -9265,7 +9266,7 @@ Items: {
         /* Tooltip:
             '''
             Стреляет тремя зарядами светящейся энергии
-            Нанесённый урон исцеляет всех раненых союзников поблизости
+            Нанесённый урон лечит всех раненых союзников поблизости
             ''' */
     }
 
@@ -9684,7 +9685,7 @@ Items: {
         /* Tooltip:
             '''
             Увеличивает защиту на 2
-            Снижает эффект отбрасывания, которые вы получаете от ударов
+            Снижает силу отбрасывания, которую вы получаете от ударов
             Успешное лечение союзника с использованием исцеляющего заклинания восстанавливает 4 единицы здоровья
             ''' */
     }
@@ -9718,7 +9719,7 @@ Items: {
         /* Tooltip:
             '''
             Выпускает искры целительной энергии
-            Исцеляет в 3 раза больше базового значения, если вы и ваш союзник находитесь вне боя
+            Лечит в 3 раза больше базового значения, если вы и ваш союзник находитесь вне боя
             ''' */
     }
 
@@ -9753,7 +9754,7 @@ Items: {
             '''
             Выпускает омолаживающий прилив энергии
             Союзники, задетые приливом, будут медленно восстанавливать здоровье в течение 15 секунд
-            Не срабатывает при эффектах исцеления
+            Не активирует эффекты исцеления других лечебных предметов
             ''' */
     }
 
@@ -9844,7 +9845,7 @@ Items: {
 
     SentinelWand: {
         // DisplayName: Жезл часового
-        // Tooltip: Исцеляет всех жилетей вокруг вас
+        // Tooltip: Лечит всех жилетей вокруг вас
     }
 
     SeraphimIdol: {
@@ -9877,7 +9878,7 @@ Items: {
             Призывает дрона-защитника, который быстро защищает союзников
             {$Common.Tooltips.ShoulderGuardianLimit}
             ''' */
-        // ShieldAmountNone: Оберегает союзника, давая ему жизненний щит на сумму, равную вашему бонусному исцелению, максимум {0} единиц
+        // ShieldAmountNone: Оберегает союзника, давая ему жизненный щит на сумму, равную вашему бонусному исцелению, максимум {0} единиц
         // ShieldAmount: Оберегает союзника, давая ему от {0} до {1} единиц жизненного щита
         // ShieldAmountMax: Оберегает союзника, давая ему от {0} до {1} единиц жизненного щита (максимум)
     }
@@ -9918,15 +9919,15 @@ Items: {
 
     StaffofSol: {
         // DisplayName: Staff of Sol
-        // Tooltip: Greatly heals an ally under your cursor
+        // Tooltip: Эффективно лечит союзника под курсором
     }
 
     SunrayStaff: {
-        // DisplayName: Sunray Staff
+        // DisplayName: Посох солнечных лучей
         /* Tooltip:
             '''
-            Propels a cauterizing flame pulse
-            Allies hit are singed for a short duration after being healed
+            Запускает сжигающий импульс пламени
+            На союзников, попавших под воздействие, накладывается дебафф «{$Buffs.Singed.DisplayName}» на короткое время после исцеления
             ''' */
     }
 
@@ -9942,15 +9943,15 @@ Items: {
 
     Syringe: {
         // DisplayName: Syringe
-        // Tooltip: Pricks an ally with a life-giving needle
+        // Tooltip: Прокалывает союзника животворящей иглой
     }
 
     TemplarJudgment: {
         // DisplayName: Templar's Judgement
         /* Tooltip:
             '''
-            Swings a purified mace that releases lingering healing energy on its first hit
-            Up to 5 healing energy can exist at once
+            Размахивает очищенной булавой, которая высвобождает заживляющую энергию при первом ударе
+            Одновременно может существовать до 5 целебных энергий
             ''' */
     }
 
@@ -9969,8 +9970,8 @@ Items: {
         // DisplayName: Templar's Grace
         /* Tooltip:
             '''
-            Can heal up to three allies, with vary amounts of potency
-            The first heal is 25% more potent and the third 25% less potent
+            Может исцелить до трёх союзников с разной силой лечения
+            Первое исцеление на 25% сильнее, а третье на 25% слабее
             ''' */
     }
 
@@ -10038,7 +10039,7 @@ Items: {
         /* Tooltip:
             '''
             Swings a gruesome mace that releases lingering healing energy on its first hit
-            Up to 3 healing energy can exist at once
+            Одновременно может существовать до 3 целебных энергий
             ''' */
     }
 
@@ -10237,7 +10238,7 @@ Items: {
 
     ChampionSwiftBlade: {
         // DisplayName: Быстрый клинок чемпиона
-        // Tooltip: Your first hit every swing releases a quick wind slash
+        // Tooltip: Первый удар при каждом взмахе высвобождает быстрый ветровой разрез
     }
 
     ChampionWing: {
@@ -10333,7 +10334,7 @@ Items: {
         /* Tooltip:
             '''
             Launches a barrage of illumite rockets, which temporarily illuminate hit enemies
-            Illuminated enemies shine brightly and take 10% more damage
+            Враги подверженные дебаффу «{$Buffs.IlluminatedNPC.DisplayName}» ярко светятся и получают на 10% больше урона
             ''' */
     }
 
@@ -10342,7 +10343,7 @@ Items: {
         /* Tooltip:
             '''
             Fires a close range illumination beam
-            Hit enemies will be illuminated and take 10% more damage
+            Поражённые враги подсвечиваются и получают на 10% больше урона
             ''' */
     }
 
@@ -10351,7 +10352,7 @@ Items: {
         /* Tooltip:
             '''
             Bullets shot from this gun will temporarily illuminate hit enemies
-            Illuminated enemies shine brightly and take 10% more damage
+            Враги подверженные дебаффу «{$Buffs.IlluminatedNPC.DisplayName}» ярко светятся и получают на 10% больше урона
             ''' */
     }
 
@@ -10424,7 +10425,7 @@ Items: {
         /* Tooltip:
             '''
             Стремительно вращает светящуюся косу вокруг вас
-            Hit enemies will be illuminated and take 10% more damage
+            Поражённые враги подсвечиваются и получают на 10% больше урона
             ''' */
     }
 
@@ -10433,7 +10434,7 @@ Items: {
         /* Tooltip:
             '''
             Arrows shot from this bow will temporarily illuminate hit enemies
-            Illuminated enemies shine brightly and take 10% more damage
+            Враги подверженные дебаффу «{$Buffs.IlluminatedNPC.DisplayName}» ярко светятся и получают на 10% больше урона
             ''' */
     }
 
@@ -10451,8 +10452,8 @@ Items: {
         // DisplayName: Cadaver's Cornet
         /* Tooltip:
             '''
-            Releases multiple tendrils of ghastly grasping sound energy
-            Killing blows against enemies replenish 4 inspiration
+            Выпускает несколько щупалец призрачной, цепкой звуковой энергии
+            Убийства врагов восполняют 4 единицы вдохновения
             ''' */
     }
 
@@ -10504,7 +10505,7 @@ Items: {
 
     PhantomWand: {
         // DisplayName: Phantom Wand
-        // Tooltip: Summons a pack of volatile phantoms that unleash energy at your cursor
+        // Tooltip: Призывает стаю нестабильных призраков, которые высвобождают энергию в месте курсора
     }
 
     SoulBomb: {
@@ -10516,7 +10517,7 @@ Items: {
         // DisplayName: Soul Cleaver
         /* Tooltip:
             '''
-            Rapidly throws a large piercing cleaver that lowers enemy defense
+            Стремительно бросает большой пронзающий тесак, который снижает защиту врага
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -10524,7 +10525,7 @@ Items: {
 
     SoulRender: {
         // DisplayName: Soul Render
-        // Tooltip: Shoots a volatile soul blade
+        // Tooltip: Стреляет нестабильным клинком души
     }
 
     SpiritBand: {
@@ -10550,8 +10551,8 @@ Items: {
         // DisplayName: Wither Staff
         /* Tooltip:
             '''
-            Rapidly withers a selected enemy under your cursor, while ignoring their defense
-            Deals less damage to enemies outside of your line of sight
+            Стремительно иссушает выбранного врага под вашим курсором, игнорируя его броню
+            Наносит меньше урона врагам вне поля зрения
             ''' */
     }
 
@@ -10585,7 +10586,7 @@ Items: {
         // DisplayName: Lodestone Claymore
         /* Tooltip:
             '''
-            Right click to create an eruption of earth
+            Нажмите <right>, чтобы создать извержение земли
             Атаки раскалывает врагов, увеличивая получаемый ими урон на 10%
             ''' */
     }
@@ -10617,7 +10618,7 @@ Items: {
 
     LodestoneJavelin: {
         // DisplayName: Магнетитовый дротик
-        // Tooltip: Every third javelin stuck to an enemy sunders them, increasing the damage they take by 10%
+        // Tooltip: Каждое третье копьё, вонзившиеся во врага, делают его уязвимым, увеличивая получаемый им урон на 10%
     }
 
     LodeStonePickaxe: {
@@ -10693,7 +10694,7 @@ Items: {
         /* Tooltip:
             '''
             Увеличивает магический урон на 15%
-            10% increased magic critical strike chance
+            Увеличивает магический шанс критического удара на 10%
             Значительно увеличивает восстановление маны
             ''' */
     }
@@ -10838,7 +10839,7 @@ Items: {
         /* Tooltip:
             '''
             Увеличивает магический урон на 5%
-            5% increased magic critical strike chance
+            Увеличивает магический шанс критического удара на 5%
             ''' */
     }
 
@@ -10847,7 +10848,7 @@ Items: {
         /* Tooltip:
             '''
             Увеличивает магический урон на 5%
-            6% increased magic critical strike chance
+            Увеличивает магический шанс критического удара на 6%
             ''' */
     }
 
@@ -11159,7 +11160,7 @@ Items: {
         // DisplayName: Spark Taser
         /* Tooltip:
             '''
-            Throws a static-arcing slash of electricity
+            Бросает статический дуговой разрез электричества
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -11167,7 +11168,7 @@ Items: {
 
     SSDevastator: {
         // DisplayName: S. S. Devastator
-        // Tooltip: Fires off a homing rocket every 7 shots
+        // Tooltip: Стреляет самонаводящейся ракетой каждые 7 выстрелов
     }
 
     StrangePlating: {
@@ -11177,17 +11178,17 @@ Items: {
 
     TheJuggernaut: {
         // DisplayName: The Juggernaut
-        // Tooltip: While extending, critical strikes hurl a bouncing ball forward
+        // Tooltip: Во время удлинения критические удары выбрасывают вперёд отскакивающий шар
     }
 
     TwinsIre: {
         // DisplayName: Twin's Ire
-        // Tooltip: Fires a charged blast of magic that can hit the same target multiple times
+        // Tooltip: Стреляет заряженным магическим зарядом, который может поразить одну и ту же цель несколько раз
     }
 
     AdventurersLantern: {
         // DisplayName: Adventurer's Lantern
-        // Tooltip: Lightly illuminates your cursor's position while held
+        // Tooltip: Пока вы держите этот предмет в руках, ваш курсор подсвечивается слабым светом
     }
 
     AncientHallowedChapeau: {
@@ -12365,7 +12366,7 @@ Items: {
     }
 
     RedMistPaint: {
-        // DisplayName: Red Mist
+        // DisplayName: Картина «Красный Туман»
         // Tooltip: "'B. Mitts'"
     }
 
@@ -12760,122 +12761,122 @@ Items: {
     }
 
     CursedBathtub: {
-        // DisplayName: Cursed Bathtub
+        // DisplayName: Проклятая ванна
         // Tooltip: ""
     }
 
     CursedBed: {
-        // DisplayName: Cursed Bed
+        // DisplayName: Проклятая кровать
         // Tooltip: ""
     }
 
     CursedBlock: {
-        // DisplayName: Cursed Block
+        // DisplayName: Проклятый блок
         // Tooltip: ""
     }
 
     CursedBookcase: {
-        // DisplayName: Cursed Bookcase
+        // DisplayName: Проклятый книжный шкаф
         // Tooltip: ""
     }
 
     CursedCandelabra: {
-        // DisplayName: Cursed Candelabra
+        // DisplayName: Проклятый подсвечник
         // Tooltip: ""
     }
 
     CursedCandle: {
-        // DisplayName: Cursed Candle
+        // DisplayName: Проклятая свеча
         // Tooltip: ""
     }
 
     CursedChair: {
-        // DisplayName: Cursed Chair
+        // DisplayName: Проклятый стул
         // Tooltip: ""
     }
 
     CursedChandelier: {
-        // DisplayName: Cursed Chandelier
+        // DisplayName: Проклятая люстра
         // Tooltip: ""
     }
 
     CursedChest: {
-        // DisplayName: Cursed Chest
+        // DisplayName: Проклятый сундук
         // Tooltip: ""
     }
 
     CursedChest_Trapped: {
-        // DisplayName: Trapped Cursed Chest
+        // DisplayName: Проклятый сундук-ловушка
         // Tooltip: ""
     }
 
     CursedClock: {
-        // DisplayName: Cursed Clock
+        // DisplayName: Проклятые часы
         // Tooltip: ""
     }
 
     CursedCup: {
-        // DisplayName: Cursed Cup
+        // DisplayName: Проклятая чашка
         // Tooltip: ""
     }
 
     CursedDoor: {
-        // DisplayName: Cursed Door
+        // DisplayName: Проклятая дверь
         // Tooltip: ""
     }
 
     CursedDresser: {
-        // DisplayName: Cursed Dresser
+        // DisplayName: Проклятый комод
         // Tooltip: ""
     }
 
     CursedLamp: {
-        // DisplayName: Cursed Lamp
+        // DisplayName: Проклятая лампа
         // Tooltip: ""
     }
 
     CursedLantern: {
-        // DisplayName: Cursed Lantern
+        // DisplayName: Проклятый фонарь
         // Tooltip: ""
     }
 
     CursedPiano: {
-        // DisplayName: Cursed Piano
+        // DisplayName: Проклятое пианино
         // Tooltip: ""
     }
 
     CursedPlatform: {
-        // DisplayName: Cursed Platform
+        // DisplayName: Проклятая платформа
         // Tooltip: ""
     }
 
     CursedSink: {
-        // DisplayName: Cursed Sink
+        // DisplayName: Проклятая раковина
         // Tooltip: ""
     }
 
     CursedSofa: {
-        // DisplayName: Cursed Sofa
+        // DisplayName: Проклятый диван
         // Tooltip: ""
     }
 
     CursedTable: {
-        // DisplayName: Cursed Table
+        // DisplayName: Проклятый стол
         // Tooltip: ""
     }
 
     CursedToilet: {
-        // DisplayName: Cursed Toilet
+        // DisplayName: Проклятый унитаз
         // Tooltip: ""
     }
 
     CursedWall: {
-        // DisplayName: Cursed Wall
+        // DisplayName: Проклятая стена
         // Tooltip: ""
     }
 
     CursedWorkbench: {
-        // DisplayName: Cursed Work Bench
+        // DisplayName: Проклятый верстак
         // Tooltip: ""
     }
 
@@ -13093,112 +13094,112 @@ Items: {
     }
 
     FossilBathtub: {
-        // DisplayName: Fossil Bathtub
+        // DisplayName: Ископаемая ванна
         // Tooltip: ""
     }
 
     FossilBed: {
-        // DisplayName: Fossil Bed
+        // DisplayName: Ископаемая кровать
         // Tooltip: ""
     }
 
     FossilBookcase: {
-        // DisplayName: Fossil Bookcase
+        // DisplayName: Ископаеый книжный шкаф
         // Tooltip: ""
     }
 
     FossilCandelabra: {
-        // DisplayName: Fossil Candelabra
+        // DisplayName: Ископаеый подсвечник
         // Tooltip: ""
     }
 
     FossilCandle: {
-        // DisplayName: Fossil Candle
+        // DisplayName: Ископаемая свеча
         // Tooltip: ""
     }
 
     FossilChair: {
-        // DisplayName: Fossil Chair
+        // DisplayName: Ископаеый стул
         // Tooltip: ""
     }
 
     FossilChandelier: {
-        // DisplayName: Fossil Chandelier
+        // DisplayName: Ископаемая люстра
         // Tooltip: ""
     }
 
     FossilChest: {
-        // DisplayName: Fossil Chest
+        // DisplayName: Ископаеый сундук
         // Tooltip: ""
     }
 
     FossilChest_Trapped: {
-        // DisplayName: Trapped Fossil Chest
+        // DisplayName: Ископаеый сундук-ловушка
         // Tooltip: ""
     }
 
     FossilClock: {
-        // DisplayName: Fossil Clock
+        // DisplayName: Ископаемые часы
         // Tooltip: ""
     }
 
     FossilCup: {
-        // DisplayName: Fossil Cup
+        // DisplayName: Ископаемая чашка
         // Tooltip: ""
     }
 
     FossilDoor: {
-        // DisplayName: Fossil Door
+        // DisplayName: Ископаемая дверь
         // Tooltip: ""
     }
 
     FossilDresser: {
-        // DisplayName: Fossil Dresser
+        // DisplayName: Ископаемый комод
         // Tooltip: ""
     }
 
     FossilLamp: {
-        // DisplayName: Fossil Lamp
+        // DisplayName: Ископаемая лампа
         // Tooltip: ""
     }
 
     FossilLantern: {
-        // DisplayName: Fossil Lantern
+        // DisplayName: Ископаемый фонарь
         // Tooltip: ""
     }
 
     FossilPiano: {
-        // DisplayName: Fossil Piano
+        // DisplayName: Ископаемое пианино
         // Tooltip: ""
     }
 
     FossilPlatform: {
-        // DisplayName: Fossil Platform
+        // DisplayName: Ископаемая платформа
         // Tooltip: ""
     }
 
     FossilSink: {
-        // DisplayName: Fossil Sink
+        // DisplayName: Ископаемая раковина
         // Tooltip: ""
     }
 
     FossilSofa: {
-        // DisplayName: Fossil Sofa
+        // DisplayName: Ископаемый диван
         // Tooltip: ""
     }
 
     FossilTable: {
-        // DisplayName: Fossil Table
+        // DisplayName: Ископаемый стол
         // Tooltip: ""
     }
 
     FossilToilet: {
-        // DisplayName: Fossil Toilet
+        // DisplayName: Ископаемый унитаз
         // Tooltip: ""
     }
 
     FossilWorkbench: {
-        // DisplayName: Fossil Work Bench
+        // DisplayName: Ископаемый верстак
         // Tooltip: ""
     }
 
@@ -14390,12 +14391,12 @@ Items: {
     }
 
     LichRelic: {
-        // DisplayName: Lich Relic
+        // DisplayName: Реликвия Лича
         // Tooltip: ""
     }
 
     PatchWerkRelic: {
-        // DisplayName: Patch Werk Relic
+        // DisplayName: Реликвия Лоскутика
         // Tooltip: ""
     }
 
@@ -14405,7 +14406,7 @@ Items: {
     }
 
     StarScouterRelic: {
-        // DisplayName: Star Scouter Relic
+        // DisplayName: Реликвия Звёздного разведчика
         // Tooltip: ""
     }
 
@@ -15371,13 +15372,13 @@ Items: {
         /* Tooltip:
             '''
             Призывает Королеву медуз
-            Only usable at the beach during the day
+            Можно использовать только на пляже днём
             ''' */
     }
 
     JellyPondWand: {
-        // DisplayName: Jelly Pond Wand
-        // Tooltip: Sends out an aquatic orb that summons a swarm of jellyfish
+        // DisplayName: Жезл медузного пруда
+        // Tooltip: Выпускает водный шар, призывающий рой медуз
     }
 
     QueenJellyfishMask: {
@@ -15391,51 +15392,51 @@ Items: {
     }
 
     QueensGlowstick: {
-        // DisplayName: Queen's Glowstick
-        // Tooltip: Creates an endless amount of glowsticks
+        // DisplayName: Светящаяся палочка королевы
+        // Tooltip: Создаёт бесконечное количество светящихся палочек
     }
 
     SeaBreezePendant: {
-        // DisplayName: Sea Breeze Pendant
+        // DisplayName: Подвеска морского бриза
         /* Tooltip:
             '''
-            'Wearers of this pendant shall not fear the depths...'
+            'Носитель этой подвески не страшится морских глубин...'
             Увеличивает запас воздуха на 50% и позволяет плавать
             Увеличивает урон на 10% пока вы мокрые
             ''' */
     }
 
     SparkingJellyBall: {
-        // DisplayName: Sparking Jelly Ball
-        // Tooltip: Attacks may briefly paralyze the hit enemy
+        // DisplayName: Искрящийся медузный шар
+        // Tooltip: Атаки на короткое время могут наложить на врагов дебафф «{$Buffs.Paralyzed.DisplayName}»
     }
 
     AdamantiteCarbine: {
-        // DisplayName: Adamantite Carbine
+        // DisplayName: Адамантитовый карабин
         // Tooltip: ""
     }
 
     CinderString: {
-        // DisplayName: Cinder String
-        // Tooltip: Turns wooden arrows into a spread of flames
+        // DisplayName: Пепельная тетива
+        // Tooltip: Превращает деревянные стрелы в разлетающееся пламя
     }
 
     CobaltPopper: {
-        // DisplayName: Cobalt Popper
+        // DisplayName: Кобальтовый выстрел
         // Tooltip: ""
     }
 
     CometCrossfire: {
-        // DisplayName: Comet Crossfire
-        // Tooltip: The bow itself can critically strike, unleashing a powerful arrow
+        // DisplayName: Комета перекрёстного огня
+        // Tooltip: Лук может провести критическую атаку, выпустив мощную стрелу
     }
 
     DartPouch: {
-        // DisplayName: Dart Pouch
+        // DisplayName: Мешочек для дротиков
         /* Tooltip:
             '''
-            10% increased damage with dart weapons
-            Most darts have a chance to become retrievable after impact
+            Увеличивает урон дротиков на 10%
+            Пока экипирован, большинство дротиков можно вернуть после удара
             ''' */
     }
 
@@ -15558,42 +15559,42 @@ Items: {
     }
 
     Webgun: {
-        // DisplayName: Webgun
-        // Tooltip: Fires out a sticky globule of wet web
+        // DisplayName: Паутиномёт
+        // Tooltip: Запускает липкий комок мокрой паутины
     }
 
     aSandstonePickaxe: {
-        // DisplayName: Sandstone Pickaxe
-        // Tooltip: Periodically grants 'Wind Burst', increasing your tool speed
+        // DisplayName: Песчаниковая кирка
+        // Tooltip: Периодически даёт бафф «{$Buffs.WindBurst.DisplayName}», увеличивающий скорость инструмента
     }
 
     bSandstoneAxe: {
-        // DisplayName: Sandstone Axe
-        // Tooltip: Periodically grants 'Wind Burst', increasing your tool speed
+        // DisplayName: Песчаниковый топор
+        // Tooltip: Периодически даёт бафф «{$Buffs.WindBurst.DisplayName}», увеличивающий скорость инструмента
     }
 
     cSandstoneHammer: {
-        // DisplayName: Sandstone Hammer
-        // Tooltip: Periodically grants 'Wind Burst', increasing your tool speed
+        // DisplayName: Песчаниковый молот
+        // Tooltip: Периодически даёт бафф «{$Buffs.WindBurst.DisplayName}», увеличивающий скорость инструмента
     }
 
     dSandStoneScimtar: {
-        // DisplayName: Sandstone Scimitar
+        // DisplayName: Песчаниковый ятаган
         // Tooltip: ""
     }
 
     eSandStoneBow: {
-        // DisplayName: Sandstone Bow
+        // DisplayName: Песчаниковый лук
         // Tooltip: ""
     }
 
     fSandStoneSpear: {
-        // DisplayName: Sandstone Spear
+        // DisplayName: Песчаниковое копьё
         // Tooltip: ""
     }
 
     gSandStoneThrowingKnife: {
-        // DisplayName: Sandstone Throwing Knife
+        // DisplayName: Песчаниковый метательный нож
         // Tooltip: ""
     }
 
@@ -15643,10 +15644,10 @@ Items: {
     }
 
     GaussFlinger: {
-        // DisplayName: Gauss Flinger
+        // DisplayName: Метатель Гаусса
         /* Tooltip:
             '''
-            Throws a limitless supply of energy daggers
+            Бросает неограниченное количество энергетических кинжалов
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -15654,46 +15655,46 @@ Items: {
 
     HitScanner: {
         // DisplayName: Hit Scanner
-        // Tooltip: Musket balls shot from this gun will have no travel time
+        // Tooltip: Пули, выпущенные из этой пушки, мгновенно достигают цели
     }
 
     OmegaDrive: {
         // DisplayName: Omega Drive
-        // Tooltip: Summons an offensive pet probe with limited range
+        // Tooltip: Призывает боевого зонда-питомца с ограниченным радиусом действия
     }
 
     ParticleWhip: {
         // DisplayName: Particle Whip
-        // Tooltip: Shoots a burst of lighting that will bounce to additional enemies
+        // Tooltip: Стреляет всплеском молнии, который перепрыгивает на других врагов
     }
 
     Roboboe: {
-        // DisplayName: Roboboe
-        // Tooltip: Propels a zig-zagging energy burst
+        // DisplayName: Робобау
+        // Tooltip: Создаёт импульс энергии, движущийся зигзагами
     }
 
     StarCaller: {
-        // DisplayName: Star Caller
+        // DisplayName: Звёздный передатчик
         /* Tooltip:
             '''
-            'One should take proper precautions before contacting the unknown...'
-            Sends out a signal into outer space
-            Only usable high in the sky lands
+            'Прежде чем вступить в контакт с неизведанным, следует предпринять необходимые меры предосторожности...'
+            Посылает сигнал в космос
+            Можно использовать только высоко в небе
             ''' */
     }
 
     StarRod: {
-        // DisplayName: Star Rod
-        // Tooltip: Summons healing stars that impact your cursor's position
+        // DisplayName: Звёздный жезл
+        // Tooltip: Призывает исцеляющие звёзды, которые падают на позицию курсора
     }
 
     StarScouterMask: {
-        // DisplayName: Star Scouter Mask
-        // Tooltip: "'Who's up for some star gazing?'"
+        // DisplayName: Маска Звёздного разведчика
+        // Tooltip: "'Кто желает посмотреть на звёзды?'"
     }
 
     StarScouterTrophy: {
-        // DisplayName: Star Scouter Trophy
+        // DisplayName: Трофей Звёздного разведчика
         // Tooltip: ""
     }
 
@@ -15704,7 +15705,7 @@ Items: {
 
     BlacksmithsBarrier: {
         // DisplayName: Blacksmith's Barrier
-        // Tooltip: Reduces the amount of knockback you take from getting hit
+        // Tooltip: Снижает силу отбрасывания, которую вы получаете от ударов
     }
 
     DurasteelArrow: {
@@ -16286,7 +16287,7 @@ Items: {
             Allows flight, hyper fast running, and extra mobility on ice
             Увеличивает скорость передвижения на 12%
             Provides the ability to walk on water, honey & lava
-            Grants immunity to fire blocks and lava
+            Даёт невосприимчивость к огненным блокам и лаве
             ''' */
     }
 
@@ -16705,7 +16706,7 @@ Items: {
         // DisplayName: Embowelment
         /* Tooltip:
             '''
-            Throws a viscious dagger, which heals you when it impacts an enemy
+            Бросает порочный кинжал, который лечит вас при попадании во врага
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -16718,7 +16719,7 @@ Items: {
 
     EvisceratingClaw: {
         // DisplayName: Eviscerating Claw
-        // Tooltip: After three hits, every consecutive hit will lightly heal you
+        // Tooltip: После трёх ударов каждое последующее попадание слегка лечит вас
     }
 
     FesteringBalloon: {
@@ -16731,7 +16732,7 @@ Items: {
     }
 
     FungalPopper: {
-        // DisplayName: Fungal Popper
+        // DisplayName: Грибной протыкатель
         /* Tooltip:
             '''
             Throws a fragile mushroom that breaks apart after hitting an enemy
@@ -16778,7 +16779,7 @@ Items: {
 
     HydrationPotion: {
         // DisplayName: Hydration Potion
-        // Tooltip: Increases your exhaustion and technique point regeneration rates
+        // Tooltip: Увеличивает скорость восстановления изматывания и очков техники
     }
 
     IronTomahawk: {
@@ -16792,10 +16793,10 @@ Items: {
     }
 
     LightAnguish: {
-        // DisplayName: Light's Anguish
+        // DisplayName: Агония света
         /* Tooltip:
             '''
-            Throws a light-cursed dagger, which eats away at enemies it hits
+            Бросает лёгкий проклятый кинжал, который разъедает врагов, в которых попадает
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -16808,16 +16809,16 @@ Items: {
 
     MagicCard: {
         // DisplayName: Playing Card
-        // Tooltip: The card itself has a chance to critically strike, becoming explosive
+        // Tooltip: Сама карта может нанести критический удар, становясь взрывной
     }
 
     MagnetoGrip: {
         // DisplayName: Magneto Grip
         /* Tooltip:
             '''
-            Increases pickup range of throwing items on the ground
+            Увеличивает дальность подбора метательных предметов с земли
             Picking up a throwing item has a 33% chance to duplicate it and increase your throwing speed
-            This effect can only trigger once every half-second while out of combat
+            Этот эффект может сработать лишь раз каждые полсекунды и не срабатывает во время боя
             ''' */
     }
 
@@ -16825,8 +16826,8 @@ Items: {
         // DisplayName: Mermaid's Canteen
         /* Tooltip:
             '''
-            Non-consumable throwing weapons will take 60% longer to exhaust you
-            Non-consumable throwing weapons will deal up to 15% more damage the less exhausted you are
+            Нерасходуемое метательное оружие на 60% медленнее будут вас изматывать
+            Нерасходуемое метательное оружие будет наносить на 15% больше урона, чем меньше вы измотаны
             ''' */
     }
 
@@ -16836,16 +16837,16 @@ Items: {
     }
 
     MoltenKnife: {
-        // DisplayName: Molten Knife
-        // Tooltip: Burns the hit target
+        // DisplayName: Раскалённый нож
+        // Tooltip: Накладывает на врага дебафф «{$BuffName.OnFire}»
     }
 
     MorelGrenade: {
         // DisplayName: Morel Grenade
         /* Tooltip:
             '''
-            Releases a burst of glowing spores on collision
-            Damage infects the hit target with mycelium
+            Выпускает всплеск светящихся спор при столкновении
+            Урон заражает поражённого врага мицелием
             ''' */
     }
 
@@ -16892,7 +16893,7 @@ Items: {
         /* Tooltip:
             '''
             Picking up a throwing item has a 25% chance to duplicate it
-            This effect can only trigger once every half-second while out of combat
+            Этот эффект может сработать лишь раз каждые полсекунды и не срабатывает во время боя
             ''' */
     }
 
@@ -16920,8 +16921,8 @@ Items: {
         // DisplayName: Pirate's Purse
         /* Tooltip:
             '''
-            Enemies killed by your throwing damage release a spread of damaging coins
-            Enemies damaged by the coins are gouged and drop more money on death
+            Враги, убитые метательным уроном, выпускают разброс наносящих урон монет
+            На врагов, поражённых монетами, накладывается дебафф «{$Buffs.Gouge.DisplayName}» и из них выпадает больше монет после смерти
             ''' */
     }
 
@@ -16981,10 +16982,10 @@ Items: {
     }
 
     RocketFist: {
-        // DisplayName: Rocket Fist
+        // DisplayName: Ракетный кулак
         /* Tooltip:
             '''
-            'Perfect for knocking someone out a mile away'
+            'Отлично отбрасывает врагов на милю'
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -16992,7 +16993,7 @@ Items: {
 
     SeedBomb: {
         // DisplayName: Pod Bomb
-        // Tooltip: Releases a burst of poison on collision
+        // Tooltip: Выпускает взрыв яда при столкновении
     }
 
     ShadeKunai: {
@@ -18670,7 +18671,7 @@ NPCs: {
     }
 
     PatchWerk: {
-        // DisplayName: Patch Werk
+        // DisplayName: Лоскутик
         // BestiaryFlavorText: A horrifying creature formed from the maggot-filled, fallen remains of Terrarians. It calls out to anyone listening, begging to be put down.
         // BossChecklistIntegration.SpawnInfo: Randomly appears during the Blood Moon. Start the Blood Moon with a [i:BloodMoonStarter].
     }
@@ -21543,8 +21544,8 @@ Common: {
         // BannerPlacement: Places a single banner on the ground
         /* BigInstrument:
             '''
-            Mistiming hits will decrease these bonuses greatly and cost 5 inspiration
-            These bonuses will stay between weapon swaps, but gradually fade while not your active weapon
+            При ошибках в ритме ударов бонусы значительно снижаются и стоят 5 единиц вдохновения
+            Бонусы сохраняются при переключении оружия, но медленно угасают, если оно не используется
             ''' */
 
         CookFood: {
