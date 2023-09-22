@@ -30,4 +30,8 @@ public class TRuConfig : ModConfig
     [DefaultValue(false)]
     [ReloadRequired]
     public bool RandomDeathText;
+    
+    [DefaultValue(true)]
+    [ReloadRequired]
+    public bool YharonCover;
 }

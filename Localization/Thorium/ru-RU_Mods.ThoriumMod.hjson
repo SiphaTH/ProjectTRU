@@ -5125,9 +5125,9 @@ Items: {
         // DisplayName: Vampire Gland
         /* Tooltip:
             '''
-            Your damage will have a 10% chance to cause an eruption of blood
-            This blood can be picked up by players to heal themselves for 15% of the damage you dealt
-            Healing amount cannot exceed 15 life and picking up blood causes bleeding for 5 seconds
+            Ваши атаки с 10% шансом могут вызвать извержение крови
+            Игроки могут подобрать эту кровь, восстановив себе 15% здоровья от нанесённого вами урона
+            Количество восстановленного здоровья не может превышать 15 единиц, а поднятие крови накладывает дебафф «{$BuffName.Bleeding}» на 5 секунд
             ''' */
     }
 
@@ -5200,8 +5200,8 @@ Items: {
         // DisplayName: Aeon Staff
         /* Tooltip:
             '''
-            Summons the legendary Valefor to assault enemies and blow them away
-            Valefor can only exist in one place at a time
+            Призывает легендарного Валефора, который обрушивает свою мощь на врагов и отбрасывает их
+            Валефор не способен находиться в нескольких местах одновременно
             ''' */
     }
 
@@ -5281,14 +5281,14 @@ Items: {
         // DisplayName: Bellerose
         /* Tooltip:
             '''
-            After three successful attacks, you may right click to unleash a powerful tornado
-            Hold UP while falling to slow your descent
+            После трёх успешных атак, нажмите <right>, чтобы высвободить мощный торнадо
+            Удерживайте {$Key.UP}, чтобы парить
             ''' */
     }
 
     BioPod: {
         // DisplayName: Bio-Pod
-        // Tooltip: Releases a strange alien creature
+        // Tooltip: Выпускает странное инопланетное существо
     }
 
     BirdFeeder: {
@@ -5918,7 +5918,7 @@ Items: {
 
     GolemsGaze: {
         // DisplayName: Golem's Gaze
-        // Tooltip: Rapidly unleashes enemy melting fire beams
+        // Tooltip: Стремительно высвобождает огненные лучи, которые испепеляют врагов
     }
 
     GrayDPaintingItem: {
@@ -5937,34 +5937,34 @@ Items: {
     }
 
     GreedyHat: {
-        // DisplayName: Greedy Hat
+        // DisplayName: Шляпа жадности
         // Tooltip: ""
-        // VanityConfigName: Greedy clothes
+        // VanityConfigName: Одежда жадности
     }
 
     GreedyMagnet: {
-        // DisplayName: Greedy Magnet
-        // Tooltip: Magnetizes all loose items on the screen
+        // DisplayName: Магнит жадности
+        // Tooltip: Притягивает все лежащие предметы на экране
     }
 
     GreedyPants: {
-        // DisplayName: Greedy Pants
+        // DisplayName: Штаны жадности
         // Tooltip: ""
     }
 
     GreedyShirt: {
-        // DisplayName: Greedy Shirt
+        // DisplayName: Рубашка жадности
         // Tooltip: ""
     }
 
     GreenFirefly: {
         // DisplayName: Green Firefly
-        // Tooltip: Calls in a lost girl for you to watch over
+        // Tooltip: Призывает заблудившуюся девочку, чтобы вы могли о ней позаботиться
     }
 
     GrimFlayer: {
         // DisplayName: Grim Flayer
-        // Tooltip: Attacks have a chance to steal life
+        // Tooltip: Атаки обладают способностью восстанавливать здоровье
     }
 
     GuardiansBoots: {
@@ -5985,12 +5985,12 @@ Items: {
 
     GuidesFinalGift: {
         // DisplayName: Guide's Final Gift
-        // Tooltip: Functions as almost every vanilla crafting station
+        // Tooltip: Является аналогом практически всех станций изготовления
     }
 
     GuildsStaff: {
         // DisplayName: Guild's Staff
-        // Tooltip: Summons a tiny lich to follow you around
+        // Tooltip: Призывает крохотного лича, который следует за вами
     }
 
     GuiltyPleasure: {
@@ -6006,8 +6006,8 @@ Items: {
         // DisplayName: Gut Wrencher's Gauntlet
         /* Tooltip:
             '''
-            Increases the damage you take by 25%
-            When below 50% health, you deal 10% increased damage and have a 1% life steal effect
+            Увеличивает получаемый урон на 25%
+            Когда здоровье ниже 50% вы наносите на 10% больше урона и восстанавливаете 1% здоровья от нанесённого урона
             ''' */
     }
 
@@ -17056,21 +17056,21 @@ Items: {
 
     ShinobiSlicer: {
         // DisplayName: Shinobi Slicer
-        // Tooltip: Bounces against tiles
+        // Tooltip: Отскакивает от блоков
     }
 
     SoftServeSunderer: {
         // DisplayName: Soft Serve Sunderer
         /* Tooltip:
             '''
-            Sticking five ice cream cones to an enemy permanently decreases its defense
+            Пять рожков мороженого, вонзившиеся во врага, навсегда снижает его защиту
             15% шанс не использовать предмет при броске
             ''' */
     }
 
     Soulslasher: {
         // DisplayName: Soulslasher
-        // Tooltip: Upon hitting an enemy, the knife will increase in speed, damage and ignore tiles
+        // Tooltip: При попадании во врага нож увеличивает свою скорость, урон и игнорирует блоки
     }
 
     SpartanSandles: {
@@ -17096,7 +17096,7 @@ Items: {
         // DisplayName: Stalker's Snippers
         /* Tooltip:
             '''
-            Attacking the same target four times in a row causes a bloody burst of damage
+            Четыре последовательных удара по одной ии той же цели вызывают кровавый взрыв, наносящий урон
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -17106,7 +17106,7 @@ Items: {
         // DisplayName: Star Eater
         /* Tooltip:
             '''
-            Every star eater stuck into an enemy increases the damage the next one deals by 25%
+            Каждый звёздный пожиратель, вонзившийся во врага, увеличивает наносимый урон следующего на 25%
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -17121,29 +17121,29 @@ Items: {
         // DisplayName: Swamp Rot
         /* Tooltip:
             '''
-            Can infest an enemy up to five times, causing endless stacking damage
+            Может заразить врага до пяти раз, вызывая бесконечный накапливающийся урон
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
     }
 
     TechniqueBlankScroll: {
-        // DisplayName: Blank Technique Scroll
+        // DisplayName: Пустой свиток техники
         /* Tooltip:
             '''
-            'Used in the crafting of unique technique abilities'
-            After activating a technique, deal throwing damage to charge technique points
-            Technique points decay over time if damage is not continually dealt
-            Press the '{$Keybinds.ThrowingTechnique.DisplayName}' key to use your active technique's ability
+            'Используется в создании уникальных техник'
+            После активации техники наносите метательный урон, чтобы накопить очки техники
+            Очки техники постепенно исчезают со временем, если постоянно не наносить урон
+            Нажмите клавишу '{$Keybinds.ThrowingTechnique.DisplayName}', чтобы использовать способность активной техники
             ''' */
     }
 
     TerraKnife: {
-        // DisplayName: Terra Knife
+        // DisplayName: Терра-нож
         /* Tooltip:
             '''
-            Left click to quickly throw terra daggers
-            Right click to throw an impaling terra knife, which constantly damages your chosen target
+            Нажмите <left>, чтобы быстро бросить терра-кинжалы
+            Нажмите <right>, чтобы бросить вонзающий терра-нож, который постоянно наносит урон выбранной цели
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -17187,7 +17187,7 @@ Items: {
         // DisplayName: True Carnwennan
         /* Tooltip:
             '''
-            Throws out five enchanted images of the legendary dagger
+            Бросает пять зачарованных образов легендарного кинжала
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -17197,19 +17197,19 @@ Items: {
         // DisplayName: True Embowelment
         /* Tooltip:
             '''
-            Throws out a life consuming dagger
-            Striking an enemy releases a blood barrage upon the hit enemy
+            Бросает кинжал, поглощающий здоровье
+            При попадании во врага вызывает град крови
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
     }
 
     TrueLightAnguish: {
-        // DisplayName: True Light's Anguish
+        // DisplayName: Истинная агония света
         /* Tooltip:
             '''
-            Throws out a light eating dagger
-            Striking an enemy releases a corruption barrage upon the hit enemy
+            Бросает лёгкий пожирающий кинжал
+            При попадании во врага вызывает град порчи
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -17224,7 +17224,7 @@ Items: {
         // DisplayName: Volt Hatchet
         /* Tooltip:
             '''
-            Throw up to three paralyzing hatchets at enemies
+            Бросает до трёх секир, парализующих врагов
             Чрезмерное использование этого оружия изматывает вас, значительно снижая его урон
             Убийство врагов восстанавливает часть изматывания
             ''' */
@@ -17232,7 +17232,7 @@ Items: {
 
     WackWrench: {
         // DisplayName: Wack Wrench
-        // Tooltip: Slowly moves through the air, piercing multiple targets
+        // Tooltip: Медленно парит в воздухе, пронзая несколько целей
     }
 
     WhiteDwarfDye: {
@@ -17319,28 +17319,28 @@ Items: {
     }
 
     GrandFlareGun: {
-        // DisplayName: Grand Flare Gun
+        // DisplayName: Высшая сигнальная ракетница
         /* Tooltip:
             '''
-            'Aim to the skies!'
-            Requires Storm Flares to function
-            Summons The Grand Thunder Bird, but only during the day in the desert
+            'Цельтесь в небо!'
+            Для использования требуются штормовые сигнальные ракеты
+            Призывает Великую громовую птицу, но только днём в пустыне
             ''' */
     }
 
     StormFlare: {
-        // DisplayName: Storm Flare
-        // Tooltip: When used with the grand flare gun, something might happen
+        // DisplayName: Штормовая сигнальная ракета
+        // Tooltip: При использовании с высшей сигнальной ракетницей может произойти что-то неожиданное
     }
 
     StormHatchlingStaff: {
-        // DisplayName: Storm-Hatchling Staff
-        // Tooltip: Summons a storm-hatchling to zap your foes
+        // DisplayName: Посох штормового птенца
+        // Tooltip: Призывает штормового птенца, который атакует молниями ваших врагов
     }
 
     TalonBurst: {
-        // DisplayName: Talon Burst
-        // Tooltip: Turns wooden arrows into Storm Bolts, which can hit the same target twice
+        // DisplayName: Когтистый шторм
+        // Tooltip: Превращает деревянные стрелы в молнии, которые могут поразить одну и ту же цель дважды
     }
 
     TheGrandThunderBirdMask: {
@@ -17354,8 +17354,8 @@ Items: {
     }
 
     ThunderTalon: {
-        // DisplayName: Thunder Talon
-        // Tooltip: Zaps another nearby enemy on hit
+        // DisplayName: Громовой коготь
+        // Tooltip: При нанесении удара поражает электрическим зарядом ближайшего врага
     }
 
     ZephyrsGrip: {

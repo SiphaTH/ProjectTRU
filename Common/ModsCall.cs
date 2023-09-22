@@ -17,6 +17,7 @@ internal static class ModsCall
     internal static Mod Infernum => ModLoader.TryGetMod("InfernumMode", out Mod infernum) ? infernum : null;
     internal static Mod TModLoader => ModLoader.TryGetMod("ModLoader", out Mod tMod) ? tMod : null;
     internal static Mod StarlightRiver => ModLoader.TryGetMod("StarlightRiver", out Mod slr) ? slr : null;
+    internal static Mod CalamityModMusic => ModLoader.TryGetMod("CalamityModMusic", out Mod calamityModMusic) ? calamityModMusic : null;
 
     internal static bool EarlyHardmodeProgressionRework => CalamityConfig.Instance.EarlyHardmodeProgressionRework;
 }
