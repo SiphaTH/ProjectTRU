@@ -145,13 +145,5 @@ public class FargowiltasGlobalItem : GlobalItem
         {
             tooltip.Text = "[i:5043] [c/AAAAAA:Соответствует истинной удаче факела при замене факелов, может отличаться от выбора по умолчанию]";
         });
-        
-        if (item.type is ItemID.SharpeningStation or ItemID.AmmoBox or ItemID.CrystalBall or ItemID.BewitchingTable or ItemID.SliceOfCake)
-        {
-            ItemHelper.TranslateTooltip(tooltips, l => l.Mod == "Fargowiltas" && l.Name == "TooltipUnlim", tooltip =>
-            {
-                tooltip.Text = "[i:87] [c/AAAAAA:Бесконечный бафф при стаке в 3 в инвентаре, свинье-копилке или сейфе]";
-            });
-        }
     }
 }

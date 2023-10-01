@@ -390,7 +390,7 @@ public class VanillaItemsTranslation : GlobalItem
                 player.armor[1].type == ItemID.EskimoCoat || player.armor[1].type == ItemID.PinkEskimoCoat &&
                 player.armor[2].type == ItemID.EskimoPants || player.armor[2].type == ItemID.PinkEskimoPants)
             {
-                tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} Увеличивает урон всех дебаффов связанных с холодом на 25%\nВраги, связанные с холодом, наносят сниженный контактный урон\nОбеспечивает невосприимчивостью к дебаффам «{Language.GetTextValue("BuffName.Chilled")}», «{Language.GetTextValue("BuffName.Frozen}")}», «{Language.GetTextValue("BuffName.Frostburn")}» и «{Language.GetTextValue("Mods.CalamityMod.Buffs.GlacialState.DisplayName")}»";
+                tooltip.Text = $"{Language.GetTextValue("LegacyTooltip.48")} Увеличивает урон всех дебаффов связанных с холодом на 25%\nВраги, связанные с холодом, наносят сниженный контактный урон\nОбеспечивает невосприимчивостью к дебаффам «{Language.GetTextValue("BuffName.Chilled")}», «{Language.GetTextValue("BuffName.Frozen")}», «{Language.GetTextValue("BuffName.Frostburn")}» и «{Language.GetTextValue("Mods.CalamityMod.Buffs.GlacialState.DisplayName")}»";
             }
             
             if (player.armor[0].type == ItemID.ChlorophyteHeadgear ||

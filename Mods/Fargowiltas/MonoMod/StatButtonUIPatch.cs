@@ -39,7 +39,7 @@ public class StatButtonUIRebuildStatList : OnPatcher
 
         self.AddStat($"Урон ближнего боя: {Damage(DamageClass.Melee)}%", ItemID.CopperBroadsword);
         self.AddStat($"Шанс крит. удара ближнего боя: {Crit(DamageClass.Melee)}%", ItemID.CopperBroadsword);
-        self.AddStat($"Скорость атаки ближнего боя: {(int)(1f / player.GetAttackSpeed(DamageClass.Melee) * 100)}%", ItemID.CopperBroadsword);
+        self.AddStat($"Скорость атаки ближнего боя: {(int)Math.Round(player.GetAttackSpeed(DamageClass.Melee) * 100)}%", ItemID.CopperBroadsword);
         self.AddStat($"Стрелковый урон: {Damage(DamageClass.Ranged)}%", ItemID.CopperBow);
         self.AddStat($"Стрелковый шанс крит. удара: {Crit(DamageClass.Ranged)}%", ItemID.CopperBow);
         self.AddStat($"Магический урон: {Damage(DamageClass.Magic)}%", ItemID.WandofSparking);
@@ -71,7 +71,7 @@ public class StatButtonUIRebuildStatList : OnPatcher
         self.AddStat($"Удача: {Math.Round(player.luck, 2)}", ItemID.Torch);
         self.AddStat($"Выполненных заданий рыбака: {player.anglerQuestsFinished}", ItemID.AnglerEarring);
         self.AddStat($"Боевой клич: {((bool) BattleCry.GetValue(modPlayer)! ? "[c/ff0000:Боевой]" : (bool) CalmingCry.GetValue(modPlayer)! ? "[c/00ffff:Успокаивающий]" : "Нет")}", ModContent.ItemType<BattleCry>());
-        self.AddStat($"Максимальная скорость: {(int)((player.accRunSpeed + player.maxRunSpeed) / 2f * player.moveSpeed * 6)} км/ч", ItemID.HermesBoots);
+        self.AddStat($"Максимальная скорость: {(int)((player.accRunSpeed + player.maxRunSpeed) / 2f * player.moveSpeed * 3)} км/ч", ItemID.HermesBoots);
 
         string RenderWingStat(double stat) => stat <= 0 ? "???" : stat.ToString();
         self.AddStat(player.wingTimeMax / 60 > 60 || player.empressBrooch ? "Время полёта: Да" : $"Время полёта: {RenderWingStat(Math.Round(player.wingTimeMax / 60.0, 2))} сек", ItemID.AngelWings);

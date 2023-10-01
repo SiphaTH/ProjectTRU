@@ -31,6 +31,7 @@ public class FargowiltasSoulsReflection : ILoadable
         soulToggler.CustomButton[0].Text = "Пользовательский набор 1 (ПКМ, чтобы сохранить)";
         soulToggler.CustomButton[1].Text = "Пользовательский набор 2 (ПКМ, чтобы сохранить)";
         soulToggler.CustomButton[2].Text = "Пользовательский набор 3 (ПКМ, чтобы сохранить)";
+        soulToggler.ReloadButton.Text = "Перезагрузить настройки эффектов (ПКМ, чтобы сбросить)";
     }
 
     public void Unload()

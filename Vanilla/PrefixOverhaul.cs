@@ -829,6 +829,8 @@ public class FargoSoulsItems : IItemGender
                 "ParadoxWolfSoul",
                 "MissDrakovisFishingPole",
                 "BoxofGizmos",
+                "PrismaRegalia",
+                "NavalRustrifle",
             };
         
             List<int> types = new List<int>();
