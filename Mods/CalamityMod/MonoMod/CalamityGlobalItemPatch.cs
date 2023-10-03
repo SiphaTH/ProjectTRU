@@ -10,7 +10,7 @@ public class CalamityGlobalItemPatch : ILPatcher
 {
     public override bool AutoLoad => ModsCall.Calamity != null && TranslationHelper.IsRussianLanguage;
     
-    public override MethodInfo ModifiedMethod => typeof(global::CalamityMod.Items.CalamityGlobalItem).GetCachedMethod("<ModifyVanillaTooltips>g__HookStatsTooltip|100_150");
+    public override MethodInfo ModifiedMethod => typeof(global::CalamityMod.Items.CalamityGlobalItem).GetCachedMethod("<ModifyVanillaTooltips>g__HookStatsTooltip|100_151");
 
     public override ILContext.Manipulator PatchMethod { get; } = il =>
     {

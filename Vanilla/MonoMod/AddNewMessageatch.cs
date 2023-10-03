@@ -52,6 +52,13 @@ public class AddNewMessageatch : ILoadable
             text = text.Replace("was repelled by celestial forces.", "отбрасывается неземными силами.");
         if (text.Contains("was violently pricked by roses."))
             text = text.Replace("was violently pricked by roses.", "яростно закалывается розами.");
+        if (text.Contains("Profaned Garden location"))
+        {
+            text = text.Replace("Profaned Garden location moved from", "Положение осквернённого сада перемещено с");
+            text = text.Replace("Profaned Garden location reverted to", "Положение осквернённого сада возвращено на");
+            text = text.Replace("from", "с");
+            text = text.Replace("to", "на");
+        }
 
         text = text switch
         {

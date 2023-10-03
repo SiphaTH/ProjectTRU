@@ -76,6 +76,7 @@ public class TownNpcNames : GlobalNPC
             {"Outlaw", "Изгой"},
             {"Alfred Rend", "Альфред Ренд"},
             {"Leeman", "Лиман"},
+            {"Mihai", "Михай"},
         },
         [NPCID.Mechanic] = new Dictionary<string, string>
         {
@@ -197,6 +198,9 @@ public class TownNpcNames : GlobalNPC
             {"Lucerne", "Люцерн"},
             {"Milo", "Мило"},
         },
+        // [NPCID.TownBunny] = new Dictionary<string, string>
+        // {
+        // },
     };
 
     public override bool InstancePerEntity => true;

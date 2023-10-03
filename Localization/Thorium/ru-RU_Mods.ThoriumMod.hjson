@@ -2543,8 +2543,9 @@ Items: {
         // DisplayName: Epic Mouthpiece
         /* Tooltip:
             '''
-            Увеличивает симфонический урон на 10%
-            Увеличивает скорость симфонической игры на инструменте на 5%
+            Увеличивает симфонический урон на {0}%
+            Увеличивает скорость симфонической игры на инструменте на {1}%
+            Увеличивает скорость наведения духовых инструментов на {2}%
             Your wind instrument attacks now attempt to quickly home in on enemies
             If the attack already homes onto enemies, it does so far more quickly
             ''' */
@@ -2950,7 +2951,7 @@ Items: {
         // DisplayName: Mouthpiece
         /* Tooltip:
             '''
-            Увеличивает скорость симфонической игры на инструменте на 5%
+            Увеличивает скорость симфонической игры на инструменте на {0}%
             Your wind instrument attacks now attempt to home in on enemies
             If the attack already homes onto enemies, it does so more quickly
             ''' */
@@ -4905,7 +4906,7 @@ Items: {
     }
 
     DumboOctopus: {
-        // DisplayName: Dumbo Octopus
+        // DisplayName: Осьминог Дамбо
         // Tooltip: ""
     }
 
@@ -4925,7 +4926,7 @@ Items: {
     }
 
     GoldDumboOctopus: {
-        // DisplayName: Gold Dumbo Octopus
+        // DisplayName: Золотой осьминог Дамбо
         // Tooltip: ""
     }
 
@@ -5046,7 +5047,7 @@ Items: {
     }
 
     PurpleDumboOctopus: {
-        // DisplayName: Purple Dumbo Octopus
+        // DisplayName: Фиолетовый осьминог Дамбо
         // Tooltip: ""
     }
 
@@ -8006,10 +8007,10 @@ Items: {
         /* Tooltip:
             '''
             'Докажите всем, что ваш талант не имеет себе равных'
-            Увеличивает скорость симфонической игры на инструменте на 10%
-            Увеличивает симфонический шанс критического удара на 12%
-            Увеличивает скорость восстановления вдохновения на 15%
-            Увеличивает скорость наведения духовых инструментов
+            Увеличивает скорость симфонической игры на инструменте на {0}%
+            Увеличивает симфонический шанс критического удара на {1}%
+            Увеличивает скорость восстановления вдохновения на {2}%
+            Увеличивает скорость наведения духовых инструментов на {3}%
             Снаряды струнных инструментов отскакивают несколько раз
             ''' */
     }
@@ -12959,7 +12960,7 @@ Items: {
     }
 
     DumboOctopusCage: {
-        // DisplayName: Dumbo Octopus Cage
+        // DisplayName: Террариум с осьминогом Дамбо
         // Tooltip: ""
     }
 
@@ -13339,7 +13340,7 @@ Items: {
     }
 
     GoldDumboOctopusCage: {
-        // DisplayName: Gold Dumbo Octopus Cage
+        // DisplayName: Террариум с золотым осьминогом Дамбо
         // Tooltip: ""
     }
 
@@ -14336,7 +14337,7 @@ Items: {
     }
 
     PurpleDumboOctopusCage: {
-        // DisplayName: Purple Dumbo Octopus Cage
+        // DisplayName: Террариум с фиолетовым осьминогом Дамбо
         // Tooltip: ""
     }
 
@@ -18467,6 +18468,11 @@ Items: {
         // DisplayName: Требование к кормушке
         // Tooltip: ""
     }
+    
+    TestNeedle: {
+        // DisplayName: Test Needle
+        // Tooltip: Empowers while midair, poisoning hit enemies
+    }
 }
 
 NPCs: {
@@ -18925,7 +18931,7 @@ NPCs: {
     }
 
     DumboOctopus: {
-        // DisplayName: Dumbo Octopus
+        // DisplayName: Осьминог Дамбо
         // BestiaryFlavorText: A harmless species of octopus found in the depths of the Ocean. Likes peanuts.
     }
 
@@ -18950,7 +18956,7 @@ NPCs: {
     }
 
     GoldDumboOctopus: {
-        // DisplayName: Gold Dumbo Octopus
+        // DisplayName: Золотой осьминог Дамбо
         // BestiaryFlavorText: "{$CommonBestiaryFlavor.GoldCritter}"
     }
 
@@ -18990,7 +18996,7 @@ NPCs: {
     }
 
     PurpleDumboOctopus: {
-        // DisplayName: Purple Dumbo Octopus
+        // DisplayName: Фиолетовый осьминог Дамбо
         // BestiaryFlavorText: An uncommon variant of the Dumbo Octopus found in the depths of the Ocean. Still likes peanuts.
     }
 
@@ -19805,7 +19811,7 @@ Projectiles: {
     // HolophonorPro1.DisplayName: Holophonor Pro1
     // HoneyRecorderPro.DisplayName: Honey Recorder Pro
     // HotHornPro.DisplayName: Hot Horn Pro
-    // IcySoundWave.DisplayName: Icy Sound Wave
+    // IcyPiccoloPro.DisplayName: Icy Piccolo
     // IdolsMicrophonePro.DisplayName: Idols Microphone Pro
     // JarOMayoPro.DisplayName: Jar O Mayo Pro
     // JarOMayoPro2.DisplayName: Jar O' Mayo
@@ -21291,6 +21297,7 @@ Projectiles: {
     // WhiteDwarfKunaiPro2.DisplayName: White Dwarf Kunai Pro2
     // WhiteFlare.DisplayName: White Flare
     // WitchbladePro.DisplayName: Witchblade Pro
+    // TestNeedlePro.DisplayName: Test Needle
     // ThunderTalonPro.DisplayName: Thunder Talon Pro
     // TimeGatePro.DisplayName: Time Gate Pro
     // TitanBoomerangPro.DisplayName: Titan Boomerang Pro

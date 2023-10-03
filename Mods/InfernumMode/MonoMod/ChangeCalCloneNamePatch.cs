@@ -1,8 +1,6 @@
 ﻿using CalamityMod.NPCs.CalClone;
 using CalamityRuTranslate.Common;
 using CalamityRuTranslate.Common.Utilities;
-using CalamityRuTranslate.Core;
-using InfernumMode.Content.BehaviorOverrides.BossAIs.CalamitasShadow;
 using InfernumMode.Core.GlobalInstances.Systems;
 using Terraria;
 using Terraria.ModLoader;
@@ -28,9 +26,9 @@ public class ChangeCalCloneNamePatch : ILoadable
     
     private void ChangeName(On_NPC.orig_DoDeathEvents_DropBossPotionsAndHearts orig, NPC npc, ref string typeName)
     {
-        orig(npc, ref typeName);
+        orig.Invoke(npc, ref typeName);
         
-        if (npc.type == ModContent.NPCType<CalamitasClone>() && WorldSaveSystem.InfernumMode)
+        if (npc.type == ModContent.NPCType<CalamitasClone>() && WorldSaveSystem.InfernumModeEnabled)
             typeName = "Забытая тень Каламитас";
     }
 }

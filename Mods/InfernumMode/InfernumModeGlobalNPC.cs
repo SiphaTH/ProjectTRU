@@ -17,7 +17,7 @@ public class InfernumModeGlobalNPC : GlobalNPC
     
     public override void ModifyTypeName(NPC npc, ref string typeName)
     {
-        if (WorldSaveSystem.InfernumMode)
+        if (WorldSaveSystem.InfernumModeEnabled)
         {
             if (npc.type == ModContent.NPCType<GreatSandShark>())
                 typeName = "Таурус, Великая песчаная акула";

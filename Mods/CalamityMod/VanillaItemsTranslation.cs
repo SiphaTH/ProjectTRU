@@ -119,7 +119,6 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.FleshKnuckles => $"{Language.GetTextValue("ItemTooltip.FleshKnuckles")}\nУвеличивает максимальный запас здоровья на 45",
                 ItemID.HeroShield => "Даёт невосприимчивость к отбрасыванию\nУвеличивает максимальный запас здоровья на 45",
                 ItemID.BerserkerGlove => "Увеличивает отбрасывание ближнего боя\nУвеличивает максимальный запас здоровья на 45",
-                ItemID.RodofDiscord => $"Телепортирует вас в место, указанное курсором\nТелепортация невозможна, пока активен дебафф «{Language.GetTextValue("BuffName.ChaosState")}»",
                 ItemID.SuperAbsorbantSponge => $"{Language.GetTextValue("ItemTooltip.SuperAbsorbantSponge")}\nНельзя использовать в бездне",
                 ItemID.WarmthPotion => $"{Language.GetTextValue("ItemTooltip.WarmthPotion")}\nДаёт невосприимчивость к дебаффам «{Language.GetTextValue("BuffName.Chilled")}», «{Language.GetTextValue("BuffName.Frozen")}» и «{Language.GetTextValue("Mods.CalamityMod.Buffs.GlacialState.DisplayName")}»",
                 ItemID.ArcheryPotion => "Увеличивает скорость стрел на 20% и урон стрел на 5%",
@@ -179,6 +178,7 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.MagicQuiver => "Увеличивает урон от стрел на 5% и значительно увеличивает скорость стрел",
                 ItemID.MoltenQuiver => "Увеличивает урон от стрел на 7% и значительно увеличивает скорость стрел",
                 ItemID.MagicPowerPotion => Language.GetTextValue("ItemTooltip.MagicPowerPotion").Replace("20", "10"),
+                ItemID.FeatherfallPotion => $"{Language.GetTextValue("ItemTooltip.FeatherfallPotion")}\nОтключает все виды восстановления времени полёта в воздухе",
                 ItemID.MagicHat => Language.GetTextValue("ItemTooltip.MagicHat").Replace("6", "5"),
                 ItemID.TitanGlove => "Увеличивает отбрасывание ближнего боя\nУвеличивает истинный урон ближнего боя на 10%",
                 ItemID.PowerGlove => "Увеличивает отбрасывание ближнего боя\nУвеличивает истинный урон ближнего боя на 10%",
@@ -299,6 +299,7 @@ public class VanillaItemsTranslation : GlobalItem
                 ItemID.HellfireTreads => $"Позволяет очень быстро бегать и даёт невосприимчивость к дебаффу «{Language.GetTextValue("BuffName.OnFire")}»",
                 ItemID.Gi => "Увеличивает скорость прыжка и передвижения на 10%",
                 ItemID.MonkPants => "Увеличивает скорость передвижения на 20%",
+                ItemID.RodofDiscord => $"Вызывает «{Language.GetTextValue("BuffName.ChaosState")}»\nТелепортация невозможна, пока активен дебафф «{Language.GetTextValue("BuffName.ChaosState")}»",
                 _ => tooltip.Text
             };
         });
@@ -592,7 +593,7 @@ public class VanillaItemsTranslation : GlobalItem
         {
             tooltip.Text = item.type switch
             {
-                ItemID.CelestialShell => $"защиту, скорость добычи и отбрасывание призывателя\nУмеренно увеличивает запас воздуха в бездне\nДаёт невосприимчивость к дебаффам «{Language.GetTextValue("Mods.CalamityMod.Buffs.Nightwither.DisplayName")}» и «{Language.GetTextValue("Mods.CalamityMod.Buffs.HolyFlames.DisplayName")}»",
+                ItemID.CelestialShell => $"защиту, скорость добычи и отбрасывание призывателя\nУмеренно увеличивает запас воздуха в бездне\nСнижает урон от дебаффов «{Language.GetTextValue("Mods.CalamityMod.Buffs.Nightwither.DisplayName")}» и «{Language.GetTextValue("Mods.CalamityMod.Buffs.HolyFlames.DisplayName")}»",
                 _ => tooltip.Text
             };
         });
@@ -602,9 +603,9 @@ public class VanillaItemsTranslation : GlobalItem
             tooltip.Text = item.type switch
             {
                 ItemID.FairyBoots => "На траве, по которой прошлись, начинают расти цветы\nФеи появляются на поверхности в любое время и гораздо чаще\nНаходящиеся поблизости феи увеличивают регенерацию здоровья на 2, защиту на 10 и скорость передвижения на 10%\nФеи невосприимчивы к урону и больше не улетают",
-                ItemID.MoonStone => $"защиту, скорость добычи и отбрасывание призывателя\nДаёт невосприимчивость к дебаффу «{Language.GetTextValue("Mods.CalamityMod.Buffs.Nightwither.DisplayName")}»",
-                ItemID.SunStone => $"защиту, скорость добычи и отбрасывание призывателя\nДаёт невосприимчивость к дебаффу «{Language.GetTextValue("Mods.CalamityMod.Buffs.HolyFlames.DisplayName")}»",
-                ItemID.CelestialStone => $"защиту, скорость добычи и отбрасывание призывателя\nДаёт невосприимчивость к дебаффам «{Language.GetTextValue("Mods.CalamityMod.Buffs.Nightwither.DisplayName")}» и «{Language.GetTextValue("Mods.CalamityMod.Buffs.HolyFlames.DisplayName")}»",
+                ItemID.MoonStone => $"защиту, скорость добычи и отбрасывание призывателя\nСнижает урон от дебаффа «{Language.GetTextValue("Mods.CalamityMod.Buffs.Nightwither.DisplayName")}»",
+                ItemID.SunStone => $"защиту, скорость добычи и отбрасывание призывателя\nСнижает урон от дебаффа «{Language.GetTextValue("Mods.CalamityMod.Buffs.HolyFlames.DisplayName")}»",
+                ItemID.CelestialStone => $"защиту, скорость добычи и отбрасывание призывателя\nСнижает урон от дебаффов «{Language.GetTextValue("Mods.CalamityMod.Buffs.Nightwither.DisplayName")}» и «{Language.GetTextValue("Mods.CalamityMod.Buffs.HolyFlames.DisplayName")}»",
                 ItemID.CelestialShell => "Незначительно увеличивает урон,",
                 ItemID.MoltenQuiver => $"Поджигает деревянные стрелы и все стрелы накладывают дебафф «{Language.GetTextValue("BuffName.OnFire3")}»",
                 ItemID.HellfireTreads => $"Оставляет за вами огненный след\nУмножает весь урон накладываемых игроком огненных дебаффов на 50%\nВсе атаки, включая миньонов, накладывают дебафф «{Language.GetTextValue("BuffName.OnFire3")}»",
