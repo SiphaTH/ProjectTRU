@@ -366,7 +366,6 @@ public class CalamityItems : IItemGender
                 "FeatherCrown",
                 "FilthyGlove",
                 "FrostFlare",
-                "Gehenna",
                 "GiantPearl",
                 "GloveOfPrecision",
                 "GloveOfRecklessness",

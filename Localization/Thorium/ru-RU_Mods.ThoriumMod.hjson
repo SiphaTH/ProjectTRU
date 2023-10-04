@@ -838,8 +838,8 @@ Buffs: {
     }
 
     CrackedBattleHornBuff: {
-        // DisplayName: Battle Warg
-        // Description: Charge into battle upon your ebony warg!
+        // DisplayName: Боевой варг
+        // Description: Отправляйтесь в бой на вашем чёрном варге!
     }
 
     CyberneticSphereBuff: {
@@ -922,8 +922,8 @@ Buffs: {
     }
 
     SpectralFangBuff: {
-        // DisplayName: Spectral Tiger
-        // Description: Even in death, it's a loyal companion
+        // DisplayName: Спектральный тигр
+        // Description: Даже после смерти, его преданность не знает границ
     }
 
     SuperAnvilBuff: {
@@ -1187,8 +1187,8 @@ Buffs: {
     }
 
     SubterraneanAnglerBuff: {
-        // DisplayName: Subterranean Angler
-        // Description: It may look nasty, but it likes you!
+        // DisplayName: Подземный удильщик
+        // Description: Он может выглядеть устрашающе, но он дружелюбен!
     }
 
     SuspiciousMoisturizerBottleBuff: {
@@ -1222,8 +1222,8 @@ Buffs: {
     }
 
     WyvernPetBuff: {
-        // DisplayName: Wyvern Pup
-        // Description: He may be young, but he gives it his all!
+        // DisplayName: Виверна-щенок
+        // Description: Пусть он юн, но он выкладывается на полную!
     }
 
     Petrify: {
@@ -1492,8 +1492,8 @@ Buffs: {
     }
 
     MantisCaneBuff: {
-        // DisplayName: Razor Mantis
-        // Description: Male mates beware!
+        // DisplayName: Бритвенный богомол
+        // Description: Сацмы, берегитесь!
     }
 
     MastersLibramBuff: {
@@ -1532,8 +1532,8 @@ Buffs: {
     }
 
     SteamgunnerControllerBuff: {
-        // DisplayName: Steamgunner Drone
-        // Description: The drone runs one program: Shoot stuff
+        // DisplayName: Паровой дрон-стрелок
+        // Description: Дрон, который знает лишь одну команду: стрелять
     }
 
     StormHatchlingStaffBuff: {
@@ -6223,16 +6223,16 @@ Items: {
     }
 
     LightningStaff: {
-        // DisplayName: Lightning Staff
-        // Tooltip: Generates an arc of electricity
+        // DisplayName: Посох молнии
+        // Tooltip: Выпускает разряд электричества
     }
 
     LihzahrdTail: {
-        // DisplayName: Lihzahrd's Tail
+        // DisplayName: Яхщеровый хвост
         /* Tooltip:
             '''
-            Gives you a lizard tail with a pokey jungle spore on the end
-            Poisons enemies on hit and deals increased damage the faster it impacts an enemy
+            Даёт хвост яхщера с колючей спорой джунглей на конце
+            Отравляет врагов при ударе и наносит увеличенный урон, чем быстрее он попадает во врага
             ''' */
     }
 
@@ -6246,12 +6246,12 @@ Items: {
     }
 
     LittleRed: {
-        // DisplayName: Little Red
+        // DisplayName: Красная шапочка
         /* Tooltip:
             '''
-            Has an incredibly high recoil while moving, which sends you backwards
-            Right click to spin the rifle, gouging and knocking enemies away
-            Shooting enemies that are gouged expels a burst of rose petals
+            Обладает невероятно сильной отдачей при движении, которая отбрасывает вас назад
+            Нажмите <right>, чтобы вращать винтовку, накладывая на врагов дебафф «{$Buffs.Gouge.DisplayName}» и отбрасывая их
+            Выстрелы по врагам, на которых действует дебафф «{$Buffs.Gouge.DisplayName}», вызывает всплеск лепестков роз
             ''' */
     }
 
@@ -6259,59 +6259,59 @@ Items: {
         // DisplayName: Счастливая кроличья лапка
         /* Tooltip:
             '''
-            'Made with real fake fur!'
-            Your luck is slightly increased
-            Killed enemies have a chance to drop 100% more coins
+            'Сделана из настоящего искусственного меха!'
+            Слегка увеличивает удачу
+            Из убитый врагов может выпать на 100% больше монет
             ''' */
     }
 
     LunaticsHood: {
-        // DisplayName: Lunatic's Hood
-        // Tooltip: "'Fit the part of a true fanatic'"
-        // VanityConfigName: Lunatic clothes
+        // DisplayName: Капюшон лунатика
+        // Tooltip: "'Соответствует образу истинного фанатика'"
+        // VanityConfigName: Одежда лунатика
     }
 
     LunaticsLeggings: {
-        // DisplayName: Lunatic's Leggings
-        // Tooltip: "'Fit the part of a true fanatic'"
+        // DisplayName: Поножи лунатика
+        // Tooltip: "'Соответствует образу истинного фанатика'"
     }
 
     LunaticsRobe: {
-        // DisplayName: Lunatic's Robe
-        // Tooltip: "'Fit the part of a true fanatic'"
+        // DisplayName: Одеяние лунатика
+        // Tooltip: "'Соответствует образу истинного фанатика'"
     }
 
     ManHacker: {
-        // DisplayName: Man Hacker
-        // Tooltip: Uses Sawblades as ammunition
+        // DisplayName: Взламыватель людей
+        // Tooltip: Использует циркулярные пилы в качестве боеприпасов
     }
 
     MantisCane: {
-        // DisplayName: Mantis Cane
+        // DisplayName: Трость богомола
         /* Tooltip:
             '''
-            Summons razor wielding praying mantids to attack enemies
-            Mantids have a chance to gouge hit enemies
+            Призывает бритвенных богомолов, которые атакуют врагов
+            Богомолы могут наложить на врагов дебафф «{$Buffs.Gouge.DisplayName}»
             ''' */
     }
 
     MantleoftheProtector: {
-        // DisplayName: Mantle of the Protector
+        // DisplayName: Мантия защитника
         /* Tooltip:
             '''
-            'Honor, Humility, and Will... Those are the true shields'
-            Increases defense by 6
+            'Честь, смирение и воля... Вот подлинные щиты'
+            Увеличивает защиту на 6
             Увеличивает длительность неуязвимости после получения урона
-            Dispels up to one damaging debuff off of you every 6 seconds
+            Рассеивает с вас один наносящий урон дебафф каждые 6 секунд
             ''' */
     }
 
     MastersLibram: {
-        // DisplayName: Master's Libram
+        // DisplayName: Манускрипт магистра
         /* Tooltip:
             '''
-            Summons a sentient spell book to cast spells at enemies
-            Right click to switch between a variety of spell types
+            Призывает разумную книгу заклинаний, которая направляет заклинания во врагов
+            Нажмите <right> для переключения между различными типами заклинаний
             ''' */
     }
 
@@ -6810,27 +6810,27 @@ Items: {
     }
 
     SandweaversTiara: {
-        // DisplayName: Sandweaver's Tiara
-        // Tooltip: Sandy boulders will orbit around you and greatly damage enemies
+        // DisplayName: Тиара песчаного ткача
+        // Tooltip: Вокруг вас вращаются песчаные валуны, которые наносят огромный урон врагам
     }
 
     Sawblade: {
-        // DisplayName: Sawblade
-        // CommonTooltip: Pierces through multiple enemies and bounces against tiles
+        // DisplayName: Циркулярная пила
+        // CommonTooltip: Пронзает нескольких врагов и отскакивает от блоков
         // Tooltip: "{$Items.Sawblade.CommonTooltip}"
     }
 
     SawbladeCursed: {
-        // DisplayName: Cursed Sawblade
+        // DisplayName: Проклятая циркулярная пила
         /* Tooltip:
             '''
             {$Items.Sawblade.CommonTooltip}
-            Afflicts hit enemies with cursed flames
+            Накладывает на врагов дебафф «{$BuffName.CursedInferno}»
             ''' */
     }
 
     SawbladeFrozen: {
-        // DisplayName: Frozen Sawblade
+        // DisplayName: Морозная циркулярная пила
         /* Tooltip:
             '''
             {$Items.Sawblade.CommonTooltip}
@@ -6839,7 +6839,7 @@ Items: {
     }
 
     SawbladeIchor: {
-        // DisplayName: Vile Sawblade
+        // DisplayName: Мерзкая циркулярная пила
         /* Tooltip:
             '''
             {$Items.Sawblade.CommonTooltip}
@@ -6848,7 +6848,7 @@ Items: {
     }
 
     SawbladeLight: {
-        // DisplayName: Dazzling Sawblade
+        // DisplayName: Ослепительная циркулярная пила
         /* Tooltip:
             '''
             {$Items.Sawblade.CommonTooltip}
@@ -6857,7 +6857,7 @@ Items: {
     }
 
     SawbladeMolten: {
-        // DisplayName: Molten Sawblade
+        // DisplayName: Раскалённая циркулярная пила
         /* Tooltip:
             '''
             {$Items.Sawblade.CommonTooltip}
@@ -6866,11 +6866,11 @@ Items: {
     }
 
     SerpentShield: {
-        // DisplayName: Serpent Shield
+        // DisplayName: Змеиный щит
         /* Tooltip:
             '''
-            Up to two living vipers will latch onto nearby enemies
-            Latched enemies rapidly take damage and are envenomed
+            Выпускает до двух живых гадюк, которые цепляются за ближайших врагов
+            Захваченные враги быстро получают урон и отравляются
             ''' */
     }
 
@@ -6880,12 +6880,12 @@ Items: {
     }
 
     ShadowOrbStaff: {
-        // DisplayName: Shadow Orb Staff
+        // DisplayName: Посох теневой сферы
         /* Tooltip:
             '''
-            Summons an orb of pure shadow at the target location
-            Right click to unleash all summoned orbs towards the cursor's location
-            You can summon as many shadow orbs as you have maximum minion slots
+            Призывает сферу чистой тени в позиции курсора
+            Нажмите <right>, чтобы высвободить все призванные сферы в направлении курсора
+            Вы можете призвать столько теневых сфер, сколько у вас есть слотов призываемых миньонов
             ''' */
     }
 
@@ -6918,13 +6918,13 @@ Items: {
     }
 
     SinisterHonk: {
-        // DisplayName: Sinister Honk
+        // DisplayName: Зловещий гудок
         // Tooltip: Сжимает резиновый гусиный свисток, издавая звук
     }
 
     Skadoosh: {
-        // DisplayName: Skadoosh
-        // Tooltip: "'Find inner peace...'"
+        // DisplayName: Скидыщ
+        // Tooltip: "'Найдите внутренний покой...'"
     }
 
     SmitingHammer: {
@@ -6948,12 +6948,12 @@ Items: {
     }
 
     SoulAnchor: {
-        // DisplayName: Soul Anchor
+        // DisplayName: Якорь души
         /* Tooltip:
             '''
-            Anchors your soul and health to your current position
-            Right click to return to your soul, reverting health to its original value
-            Can only be used once every 5 minutes and saps your soul upon returning
+            Привязывает вашу душу и здоровье к текущему местоположению
+            Нажмите <right>, чтобы вернуться к своей душе, восстанавливая здоровье до первоначального значения
+            Можно использовать один раз в 5 минут, при этом душа будет истощена
             ''' */
     }
 
@@ -6961,7 +6961,7 @@ Items: {
         // DisplayName: Похититель душ
         /* Tooltip:
             '''
-            'He told you...'
+            'Он сказал вам...'
             Нажмите <left>, чтобы метнуть разящее эхо похитителя душ, которое впивается во врагов
             Нажмите <right>, чтобы вонзить похитителя душ, крадущего здоровье, равное количеству эхо на враге
             ''' */
@@ -6973,7 +6973,7 @@ Items: {
     }
 
     SpectralFang: {
-        // DisplayName: Spectral Fang
+        // DisplayName: Спектральный клык
         // Tooltip: Призывает ездового призрачного тигра
     }
 
@@ -6983,7 +6983,7 @@ Items: {
     }
 
     SpiritBreaker: {
-        // DisplayName: Spirit Breaker
+        // DisplayName: Убийца духа
         /* Tooltip:
             '''
             Извергает духовное пламя, обладающее кражей здоровья при критических ударах
@@ -6992,28 +6992,28 @@ Items: {
     }
 
     StaticProd: {
-        // DisplayName: Static Prod
+        // DisplayName: Статическое стрекало
         // Tooltip: Создаёт разряд отсроченных электрических взрывов в позиции курсора
     }
 
     StealthBandanna: {
-        // DisplayName: Stealth Bandanna
+        // DisplayName: Бандана скрытности
         // Tooltip: ""
-        // VanityConfigName: Stealth clothes
+        // VanityConfigName: Одежда скрытности
     }
 
     StealthPants: {
-        // DisplayName: Stealth Pants
+        // DisplayName: Штаны скрытности
         // Tooltip: ""
     }
 
     StealthShirt: {
-        // DisplayName: Stealth Shirt
+        // DisplayName: Рубашка скрытности
         // Tooltip: ""
     }
 
     SteamgunnerController: {
-        // DisplayName: Steamgunner Controller
+        // DisplayName: Контроллер парового стрелка
         /* Tooltip:
             '''
             Призывает быстрого атакующего дрона-стрелка, который атакует ближайших врагов
@@ -7055,8 +7055,8 @@ Items: {
     }
 
     SubterraneanBulb: {
-        // DisplayName: Subterranean Bulb
-        // Tooltip: Summons an angler from the depths of the sea
+        // DisplayName: Подземная лампочка
+        // Tooltip: Призывает удильщика из глубин моря
     }
 
     SuperAnvil: {
@@ -7141,17 +7141,17 @@ Items: {
     }
 
     TheBopper: {
-        // DisplayName: The Bopper
+        // DisplayName: Боппер
         // Tooltip: Выпускает разнообразные звуковые волны в зависимости от высоты тона инструмента
     }
 
     TheDigester: {
-        // DisplayName: The Digester
+        // DisplayName: Пищеваритель
         /* Tooltip:
             '''
-            Propels a globule of digestive ooze that sticks to enemies
-            Players that damage afflicted enemies recover 10% of their damage as health
-            Afflicted enemies can only grant 20 health per application of ooze
+            Выпускает сгусток желудочной слизи, который прилипает к врагам
+            Игроки, наносящие урон поражённым врагам, восстанавливают 10% нанесённого урона в виде здоровья
+            Каждый поражённый враг может дать не более 20 единиц здоровья за каждое применение слизи
             ''' */
     }
 
@@ -7290,8 +7290,8 @@ Items: {
     }
 
     ViciousMockery: {
-        // DisplayName: Vicious Mockery
-        // Tooltip: Propels an insulting burst, which deals increased damage while near max inspiration
+        // DisplayName: Мерзкая насмешка
+        // Tooltip: Выпускает поток оскорблений, который наносит увеличенный урон, если вдохновение близко к максимальному
     }
 
     WishingGlass: {
@@ -7325,31 +7325,31 @@ Items: {
     }
 
     YarnBall: {
-        // DisplayName: Yarn Ball
+        // DisplayName: Клубок шерсти
         /* Tooltip:
             '''
-            'Belonged to a never forgotten companion'
-            Summons a ferocious baby cat to attack enemies
+            'Принадлежал некогда забытому спутнику'
+            Призывает свирепого котёнка, который атакует врагов
             ''' */
     }
 
     YumasPendant: {
-        // DisplayName: Yuma's Pendant
+        // DisplayName: Подвеска Юмы
         /* Tooltip:
             '''
             Увеличивает урон призывателя на 10%
             Увеличивает призываемое число миньонов на 1
-            Taking damage releases a ghostly protector
+            При получении урона выпускает призрака-защитника
             ''' */
     }
 
     Zunpet: {
-        // DisplayName: Zunpet
+        // DisplayName: Зунпет
         /* Tooltip:
             '''
-            Propels a mystical star at enemies, that collects energy every hit
-            Collecting energy grants you symphonic damage and extra projectiles
-            At max energy, right click to release a nova of player protecting stars
+            Выпускает мистическую звезду на врагов, которая накапливает энергию при каждом попадании
+            Собранная энергия увеличивает симфонический урон и количество снарядов
+            При максимальной энергии нажмите <right>, чтобы выпустить кольцо звёзд, защищающих игрока
             ''' */
     }
 
@@ -7396,8 +7396,8 @@ Items: {
     }
 
     DragonsBreath: {
-        // DisplayName: Dragon's Breath
-        // Tooltip: Unleashes a torrent of burning dragon breath
+        // DisplayName: Драконье дыхание
+        // Tooltip: Выпускает поток жгучего дыхания дракона
     }
 
     DragonsGaze: {
@@ -7406,28 +7406,28 @@ Items: {
     }
 
     DragonsJackhammer: {
-        // DisplayName: Dragon's Jackhammer
+        // DisplayName: Драконий отбойный молоток
         // Tooltip: ""
     }
 
     DragonsMallet: {
-        // DisplayName: Dragon's Mallet
+        // DisplayName: Драконий молот
         // Tooltip: ""
     }
 
     DragonsPickAxe: {
-        // DisplayName: Dragon's Pickaxe
+        // DisplayName: Драконья кирка
         // Tooltip: ""
     }
 
     DragonTalon: {
-        // DisplayName: Dragon's Talon
-        // Tooltip: Attacks will burn the hit enemy with green fire
+        // DisplayName: Драконий коготь
+        // Tooltip: Атаки поджигают врагов зелёным огнём
     }
 
     DragonTalonNecklace: {
-        // DisplayName: Dragon's Talon Necklace
-        // Tooltip: Increases armor penetration by 15
+        // DisplayName: Ожерелье из драконьих когтей
+        // Tooltip: Увеличивает пробивание брони на 15
     }
 
     DragonTooth: {
@@ -11821,36 +11821,36 @@ Items: {
     }
 
     CloudyChewToy: {
-        // DisplayName: Cloudy Chew Toy
-        // Tooltip: Summons a juvenile... wyvern pup?
+        // DisplayName: Воздушная жевательная игрушка
+        // Tooltip: Призывает маленькую... виверну-щенка?
     }
 
     CooksApron: {
-        // DisplayName: Cook's Apron
-        // Tooltip: "'The iron chef has nothing on you'"
+        // DisplayName: Фартук повара
+        // Tooltip: "'Железный шеф-повар не сравнится с вами'"
     }
 
     CooksHat: {
-        // DisplayName: Cook's Hat
-        // Tooltip: "'The iron chef has nothing on you'"
+        // DisplayName: Шляпа повара
+        // Tooltip: "'Железный шеф-повар не сравнится с вами'"
     }
 
     CrackedBattleHorn: {
-        // DisplayName: Cracked Battle Horn
-        // Tooltip: Calls forth a ridable Warg
+        // DisplayName: Потрескавшийся боевой рог
+        // Tooltip: Призывает ездового варга
     }
 
     CrawdadClaw: {
-        // DisplayName: Crawdad Claw
-        // Tooltip: While in combat, your damage increases by 1 over time up to 3
+        // DisplayName: Коготь речного рака
+        // Tooltip: В бою ваш урон постепенно увеличивается на 1, пока не достигнет 3
     }
 
     DeathGazersGlass: {
-        // DisplayName: Death Gazer's Glass
+        // DisplayName: Стекло созерцателя смерти
         /* Tooltip:
             '''
-            'Those that often gaze upon their death quickly turn mad...'
-            Teleports you to your last death location
+            'Частое созерцание своей смерти может привести к безумию...'
+            Телепортирует к месту последней смерти
             ''' */
     }
 
@@ -11860,27 +11860,27 @@ Items: {
     }
 
     DesertAcolyteBoots: {
-        // DisplayName: Desert Acolyte's Boots
+        // DisplayName: Ботинки пустынного послушника
         // Tooltip: ""
     }
 
     DesertAcolyteCloak: {
-        // DisplayName: Desert Acolyte's Cloak
+        // DisplayName: Плащ пустынного послушника
         // Tooltip: ""
     }
 
     DesertAcolyteHeadcloth: {
-        // DisplayName: Desert Acolyte's Headcloth
+        // DisplayName: Накидка на голову пустынного послушника
         // Tooltip: ""
     }
 
     DesertAcolyteTunic: {
-        // DisplayName: Desert Acolyte's Tunic
+        // DisplayName: Туника пустынного послушника
         // Tooltip: ""
     }
 
     DetachedBlaster: {
-        // DisplayName: Detached Blaster
+        // DisplayName: Отсоединённый бластер
         // Tooltip: Стреляет мощным импульсом энергии
     }
 
@@ -11982,7 +11982,7 @@ Items: {
 
     GiantShellSpine: {
         // DisplayName: Giant Shell Spine
-        // Tooltip: While in combat, your defense increases by 1 over time up to 5
+        // Tooltip: В бою ваша защита постепенно увеличивается на 1, пока не достигнет 5
     }
 
     GraveBuster: {

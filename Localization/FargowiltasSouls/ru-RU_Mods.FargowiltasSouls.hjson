@@ -396,6 +396,7 @@ Toggler: {
     AshWoodConfig: Пепельные огненные шары
     WillHeader: "{$Mods.FargowiltasSouls.Items.WillForce.DisplayName}"
     GladiatorConfig: Гладиаторский дождь
+    GladiatorBannerConfig: Гладиаторское знамя
     GoldConfig: Золотая счастливая монетка
     GoldToPiggyConfig: Золото в свинью-копилку
     HuntressConfig: Способность охотницы
@@ -2045,8 +2046,7 @@ Items: {
         Tooltip:
             '''
             Работает в слотах для украшений и в инвентаре
-            Вы притягиваете предметы на большем расстоянии
-            При первом создании предмета будет использовано всего 33% материалов
+            При первом создании предмета каждый материал с 33% шансом можно сохранить
             Не работает с предметами на станции для создания «{$Mods.Fargowiltas.Items.CrucibleCosmos.DisplayName}»
             'Куй железо, пока горячо'
             '''
@@ -2662,7 +2662,7 @@ Items: {
             '''
             [i:FargowiltasSouls/CopperEnchant][i:FargowiltasSouls/ObsidianEnchant][i:FargowiltasSouls/LeadEnchant] Атаки создают молнии, взрывы и накладывают дебафф «{$Buffs.LeadPoisonBuff.DisplayName}»
             [i:FargowiltasSouls/TinEnchant] Устанавливает шанс критического удара на 10%, увеличивая его пока он не достигнет удвоенного текущего значения или 50%
-            [i:FargowiltasSouls/IronEnchant] Вы притягиваете предметы на большем расстоянии; При первом создании предмета будет использовано всего 33% материалов
+            [i:FargowiltasSouls/IronEnchant] Вы притягиваете предметы на большем расстоянии; При первом создании предмета каждый материал с 50% шансом можно сохранить
             [i:FargowiltasSouls/LeadEnchant] Вы получаете на 60% меньше постепенного урона
             [i:FargowiltasSouls/SilverEnchant] Нажмите <right>, чтобы прикрыться щитом
             [i:FargowiltasSouls/TungstenEnchant] Увеличивает размер оружия до 300% и снаряда каждые четверть секунды
@@ -4132,8 +4132,8 @@ Items: {
         DisplayName: Дряхлый пульт управления авиаударом
         Tooltip:
             '''
-            Отмечает местоположение прицелом, используя все ваши слоты призываемых стражей
-            Через несколько секунд там произойдёт мощный авиаудар, наносящий урон в зависимости от количества использованных слотов призываемых стражей
+            Отмечает местоположение прицелом, используя всех ваших стражей
+            Через несколько секунд там произойдёт мощный авиаудар, наносящий урон в зависимости от количества слотов призываемых стражей
             Все ваши миньоны, находящиеся в области взрыва, разлетаются на самонаводящиеся осколки
             Осколки могут наносить критические удары
             '''
@@ -5869,6 +5869,7 @@ ObsidianConfig: "[i:FargowiltasSouls/ObsidianEnchant][c/453e73:{$Mods.Fargowilta
 AshWoodConfig: "[i:FargowiltasSouls/AshWoodEnchant][c/958083:{$Mods.FargowiltasSouls.Toggler.AshWoodConfig}]"
 WillHeader: "[i:FargowiltasSouls/WillForce][c/ffffff:{$Mods.FargowiltasSouls.Toggler.WillHeader}]"
 GladiatorConfig: "[i:FargowiltasSouls/GladiatorEnchant][c/9c924e:{$Mods.FargowiltasSouls.Toggler.GladiatorConfig}]"
+GladiatorBannerConfig: "[i:FargowiltasSouls/GladiatorEnchant][c/9c924e:{$Mods.FargowiltasSouls.Toggler.GladiatorBannerConfig}]"
 GoldConfig: "[i:FargowiltasSouls/GoldEnchant][c/e7b21c:{$Mods.FargowiltasSouls.Toggler.GoldConfig}]"
 GoldToPiggyConfig: "[i:FargowiltasSouls/GoldEnchant][c/e7b21c:{$Mods.FargowiltasSouls.Toggler.GoldToPiggyConfig}]"
 HuntressConfig: "[i:FargowiltasSouls/HuntressEnchant][c/7ac04c:{$Mods.FargowiltasSouls.Toggler.HuntressConfig}]"
