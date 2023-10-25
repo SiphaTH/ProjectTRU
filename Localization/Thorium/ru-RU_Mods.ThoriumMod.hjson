@@ -458,32 +458,32 @@ Buffs: {
     }
 
     BloomBoost: {
-        // DisplayName: Bloom Boost
-        // Description: You are recovering life and have increased defense
+        // DisplayName: Цветущее усиление
+        // Description: Регенерация здоровья и защита увеличены
     }
 
     BloomingSetBuff: {
-        // DisplayName: Overgrowth
-        // Description: Your life recovery and life recovery rate have been increased
+        // DisplayName: Разрастание
+        // Description: Восстановление здоровья и скорость восстановления здоровья увеличены
     }
 
     BubbleBulwarkWandBuff: {
-        // DisplayName: Bulwark Bubble
-        // Description: The next attack against you deals 0 damage
+        // DisplayName: Защитный Пузырь
+        // Description: Следующая вражеская атака нанесёт вам 0 урона
     }
 
     CelestialSetAllyBuff: {
-        // DisplayName: Aura : Holy Shine
-        // Description: Your offensive and defensive attributes are increased greatly
+        // DisplayName: Aura : Святое Свечение
+        // Description: Ваши защита и сила значительно увеличены
     }
 
     CelestialSetDebuff: {
-        // DisplayName: Holy Aura
-        // Description: A protective aura surrounds your cursor
+        // DisplayName: Святая Аура
+        // Description: Защитная аура окружает ваш курсор
     }
 
     CosmicFluxStaffDamageBuff: {
-        // DisplayName: Radiant Nova
+        // DisplayName: Лучезарный Взрыв
         // Description: Лучезарный урон увеличен на 25%
     }
 
