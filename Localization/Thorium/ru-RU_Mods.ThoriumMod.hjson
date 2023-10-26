@@ -18479,53 +18479,53 @@ NPCs: {
     // AggroDummy.DisplayName: Aggro Dummy
 
     AncientArcher: {
-        // DisplayName: Ancient Archer
-        // BestiaryFlavorText: Precise units from an ancient civilization, they use powerful bronze bows to pick off opposition from a distance.
+        // DisplayName: Древний лучник
+        // BestiaryFlavorText: Меткие солдаты древней цивилизации, использующие мощные бронзовые луки, чтобы атаковать противника с расстояния.
     }
 
     AncientCharger: {
-        // DisplayName: Ancient Charger
-        // BestiaryFlavorText: Agile soldiers of an ancient civilization, they continue to fight in the hopes their champion will return.
+        // DisplayName: Древний налётчик
+        // BestiaryFlavorText: Ловкие солдаты древней цивилизации, продолжающие сражаться в надежде, что их герой вернётся.
     }
 
     AncientPhalanx: {
-        // DisplayName: Ancient Phalanx
-        // BestiaryFlavorText: Colossal guardians from an ancient civilization, they now have little to protect but themselves.
+        // DisplayName: Древняя фаланга
+        // BestiaryFlavorText: Огромные стражи древней цивилизации, которым нечего больше защиать, кроме себя
     }
 
     AquamarineBunny: {
-        // DisplayName: Aquamarine Bunny
+        // DisplayName: Аквамариновый кролик
         // BestiaryFlavorText: "{$CommonBestiaryFlavor.GemBunny}"
     }
 
     AquamarineSquirrel: {
-        // DisplayName: Aquamarine Squirrel
+        // DisplayName: Аквамариновая белка
         // BestiaryFlavorText: "{$CommonBestiaryFlavor.GemSquirrel}"
     }
 
     ArmyAnt: {
-        // DisplayName: Army Ant
-        // BestiaryFlavorText: A massive ant with a nasty bite. Just be thankful you haven't stumbled across its home nest!
+        // DisplayName: Муравей-военный
+        // BestiaryFlavorText: Огромный муравей с болезненным укусом. Радуйтесь, что вы не натолкнулись на его родное гнездо!
     }
 
     AstroBeetle: {
-        // DisplayName: Astro Beetle
-        // BestiaryFlavorText: A bulky alien life form that likes to hitch a ride on passing spacecraft and meteoroids.
+        // DisplayName: Космический жук
+        // BestiaryFlavorText: Неповоротливая внеземная форма жизни, которая любит прицепляться к пролетающим мимо космическим кораблям и метеоритам.
     }
 
     BabySpiderWall: {
-        // DisplayName: Baby Spider
-        // BestiaryFlavorText: Though just seconds old, in great numbers, they can pick apart a Terrarian in mere seconds.
+        // DisplayName: Маленький паук
+        // BestiaryFlavorText: Всего секундой от роду, в больших количествах могут порвать террарийца на кусочки за считанные секунды.
     }
 
     BiteyBaby: {
         // DisplayName: Bitey Baby
-        // BestiaryFlavorText: Servants of the Viscount. Often sent out to scout for new sources of blood and occasionally snacks.
+        // BestiaryFlavorText: Прислужники Виконта. Часто отправляются на поиски новых источников крови и, иногда, закусок.
     }
 
     Viscount: {
         // DisplayName: Viscount
-        // BestiaryFlavorText: Massive in both size and ego, the Viscount is the undisputed lord of the caverns.
+        // BestiaryFlavorText: Огромных размеров и с огромным эго, Виконт является неоспоримым лордом пещер
         // BossChecklistIntegration.SpawnInfo: Use [i/s{0}:{1}] at an underground Blood Chamber. Use a [i:{2}] to track down the Blood Chamber.
     }
 
@@ -18533,12 +18533,12 @@ NPCs: {
 
     Beholder: {
         // DisplayName: Beholder
-        // BestiaryFlavorText: A lesser entity from another dimension that seeks to learn, and vaporize, all that it can.
+        // BestiaryFlavorText: Малая сущность из иного измерения, которая жаждет изучить и испепелить всё, что сможет.
     }
 
     FallenBeholder: {
         // DisplayName: Fallen Beholder
-        // BestiaryFlavorText: A glimpse into what lies beyond the void. Its prolonged stay in the world of Terraria has left it weaker than in its home dimension.
+        // BestiaryFlavorText: Лишь незначительный пример того, что может жить за гранью Бездны. Его продолжительное пребывание в мире Террарии сильно ослабило его по сравнению с тем, что было в его родном измерении.
 
         BossChecklistIntegration: {
             // SpawnInfo: Use a [i:ThoriumMod/VoidLens] within the Underworld.
@@ -18548,17 +18548,17 @@ NPCs: {
 
     BigBone: {
         // DisplayName: Big Bone
-        // BestiaryFlavorText: This tough skeleton takes the term 'big boned' to the next level.
+        // BestiaryFlavorText: Этот крепкий скелет выводит понятие "просто кость широкая" на новый уровень.
     }
 
     Biter: {
         // DisplayName: Biter
-        // BestiaryFlavorText: The zombification process can result in some unique outcomes. This variant just bleeds a lot.
+        // BestiaryFlavorText: Процесс зомбификации может давать уникальные результаты. Этот вариант просто сильно кровоточит.
     }
 
     Blacksmith: {
         // DisplayName: Кузнец
-        // BestiaryFlavorText: The Blacksmith is a grouchy old man with an unrivaled skill in smelting. His crafted equipment would interest any Terrarian.
+        // BestiaryFlavorText: Кузнец это ворчливый старик с непревзойдённым мастерством в плавке. Снаряжение, созданное им, заинтересует любого террарийца.
 
         TownNPCMood: {
             // Content: Конечно, я в порядке, олух! Чего спрашиваешь?
@@ -18581,37 +18581,37 @@ NPCs: {
 
     BlackWidowWall: {
         // DisplayName: Black Widow
-        // BestiaryFlavorText: Ths stealthy spider's venom is potent enough to corrode steel. What do you think it'll do to a Terrarian...?
+        // BestiaryFlavorText: Яд этого скрытного паука может разъесть даже сталь. Как думаете, что он сделает с террарийцем?..
     }
 
     Blister: {
         // DisplayName: Blister
-        // BestiaryFlavorText: A swollen sack filled to the brim with corrosive ichor. Even the smallest touch could release its contents!
+        // BestiaryFlavorText: Набухший мешок, до краёв наполненный ихором. малейшее касание заставит его выплеснуть своё содержимое наружу!
     }
 
     BlisterPod: {
         // DisplayName: Blister Pod
-        // BestiaryFlavorText: A grotesque lesion produced by the viscera of the Crimson. Incubates and produces dangerous offspring.
+        // BestiaryFlavorText: Гротескная опухоль, созданная багрянцем. Она выращивает и выпускает опасных потомков.
     }
 
     BlizzardBat: {
         // DisplayName: Blizzard Bat
-        // BestiaryFlavorText: Imbued with all things chilly, this bat is out for blood-flavored snow cones.
+        // BestiaryFlavorText: Проникнутая холодом, это летучая мышь хочет мороженого со вкусом крови.
     }
 
     BoreanHopper: {
         // DisplayName: Borean Hopper
-        // BestiaryFlavorText: A newly born Strider that's just as hungry and freezing as its mother.
+        // BestiaryFlavorText: Новорождённый Шагатель, настолько же голодный и холодный, как его мать.
     }
 
     BoreanMyte: {
         // DisplayName: Borean Myte
-        // BestiaryFlavorText: A mutated baby Strider that leaks icy doom everywhere it goes.
+        // BestiaryFlavorText: Мутировавший маленький Шагатель, который повсюду разбрасывает ледянящую смерть.
     }
 
     BoreanStrider: {
         // DisplayName: Борейский шагатель
-        // BestiaryFlavorText: A species of arachnid hell-bent on surviving the harshness of a Terrarian blizzard. Something this stubborn is a danger to everyone.
+        // BestiaryFlavorText: Вид арахнидов, стремящийся выжить в суровых условиях метелей Террарии. Иногда упорство этого вида представляет опасность для всех.
 
         BossChecklistIntegration: {
             // SpawnInfo: Randomly appears during a Blizzard or summoned with a [i:ThoriumMod/StriderTear].
@@ -18621,37 +18621,37 @@ NPCs: {
 
     FrostBurnt: {
         // DisplayName: Frost Burnt
-        // BestiaryFlavorText: A frozen husk that has had their flesh blown from their body by the harsh, blizzard winds.
+        // BestiaryFlavorText: Замёрзшая оболочка, чья плоть была содрана суровыми ледяными ветрами.
     }
 
     FrostBurntFlayer: {
         // DisplayName: "{$NPCs.FrostBurnt.DisplayName}"
-        // BestiaryFlavorText: A deteriorating frozen husk that manages to wield a large icicle in battle. Their tongue is noticeably stuck to the end of it.
+        // BestiaryFlavorText: Разрушающаяся ледяная оболочка, которая использует огромную сосульку как оружие. Заметно, что её язык прилип к концу этой сосульки.
     }
 
     SnowElemental: {
         // DisplayName: Snow Elemental
-        // BestiaryFlavorText: An icy elemental packed to the brim with snow. Likes to explode in a beautiful flurry of snow... and death.
+        // BestiaryFlavorText: Ледяной элементаль, плотно набитый снегом. Любит взрываться красивой снежинкой... и смертью.
     }
 
     SnowyOwl: {
         // DisplayName: Snowy Owl
-        // BestiaryFlavorText: A hardy species of owl that does most of its hunting when an incoming blizzard blocks all sight.
+        // BestiaryFlavorText: Выносливый вид сов, который охотится во время уменьшающих видимость метелей.
     }
 
     Abomination: {
         // DisplayName: Abomination
-        // BestiaryFlavorText: The stitched remains of various zombies. The stitches themselves have seen better days...
+        // BestiaryFlavorText: Сшитые остатки различных зомби. Сами швы оставляют желать лучшего...
     }
 
     BloodDrop: {
         // DisplayName: Blood Drop
-        // BestiaryFlavorText: Animated blood behaves remarkably similar to the slimes of Terraria.
+        // BestiaryFlavorText: Оживашая кровь, которая ведёт себя заметно схоже со слизнями Террарии.
     }
 
     BloodMage: {
         // DisplayName: Blood Mage
-        // BestiaryFlavorText: An uncommon mutation of Blood Zombie that retains an ability to cast dark blood magic.
+        // BestiaryFlavorText: Необычная мутация кровавого зомби, которая сохранила способность к колдовству тёмной магии крови.
     }
 
     BloodyWarg: {
